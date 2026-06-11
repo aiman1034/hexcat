@@ -14,6 +14,13 @@ from pathlib import Path
 
 from . import constants as C
 from .config import Rules
+from .content_checks import (
+    banned_hard_hits,
+    banned_warn_hits,
+    count_paragraphs,
+    plain_text,
+    word_count,
+)
 from .writers import BOM, GERMAN_DECIMAL_RE
 
 # Glob patterns to locate each role's file in a bundle directory.
@@ -37,11 +44,6 @@ ROLE_SPEC = {
     "faq": (C.FAQ_COLUMNS, C.FAQ_DELIMITER, C.FAQ_BOM),
     "verification": (C.VERIFICATION_LOG_COLUMNS, C.VERIFICATION_LOG_DELIMITER, C.VERIFICATION_LOG_BOM),
 }
-
-_TAG_RE = re.compile(r"<[^>]+>")
-_P_OPEN_RE = re.compile(r"<p>")
-_P_CLOSE_RE = re.compile(r"</p>")
-
 
 @dataclass
 class Violation:
@@ -91,14 +93,6 @@ class Table:
     header: list[str]
     rows: list[list[str]]
     raw_lines: list[str]  # data lines only (no header), BOM stripped
-
-
-def _plain_text(html: str) -> str:
-    return _TAG_RE.sub("", html)
-
-
-def _word_count(html: str) -> int:
-    return len(_plain_text(html).split())
 
 
 def _read_table(role: str, path: Path, delimiter: str) -> Table:
@@ -209,9 +203,9 @@ class Validator:
                                    b.beschreibung.min_words, b.beschreibung.max_words)
             hersteller = row[i_herst]
             closer = self.rules.beschreibung_closer_prefix.format(brand=hersteller)
-            if closer not in _plain_text(besch):
+            if closer not in plain_text(besch):
                 self._fail(fname, sku, "Beschreibung", f"ends with '{closer}…'",
-                           _plain_text(besch)[-60:],
+                           plain_text(besch)[-60:],
                            "Beschreibung missing the authenticity closer")
             # 9. Titel-Tag
             titel = row[i_titel]
@@ -288,26 +282,22 @@ class Validator:
         return float(value.replace(",", "."))
 
     def _check_paragraphs(self, fname, sku, fieldname, html, want_p, min_w, max_w):
-        n_open = len(_P_OPEN_RE.findall(html))
-        n_close = len(_P_CLOSE_RE.findall(html))
+        n_open, n_close = count_paragraphs(html)
         if n_open != want_p or n_close != want_p:
             self._fail(fname, sku, fieldname, f"exactly {want_p} <p>…</p>",
                        f"{n_open} <p>/{n_close} </p>", "wrong number of <p> paragraphs")
-        words = _word_count(html)
+        words = word_count(html)
         if not (min_w <= words <= max_w):
             self._fail(fname, sku, fieldname, f"{min_w}-{max_w} words", f"{words} words",
                        "word count out of range")
 
     def _scan_banned(self, fname, sku, fieldname, text):
-        low = text.lower()
-        for phrase in self.rules.banned_hard_fail:
-            if phrase.lower() in low:
-                self._fail(fname, sku, fieldname, "no banned phrase", phrase,
-                           f"banned (hard-fail) phrase present: {phrase!r}")
-        for phrase in self.rules.banned_warn:
-            if phrase.lower() in low:
-                self._warn(fname, sku, fieldname,
-                           f"puffery flagged for review: {phrase!r}")
+        for phrase in banned_hard_hits(self.rules, text):
+            self._fail(fname, sku, fieldname, "no banned phrase", phrase,
+                       f"banned (hard-fail) phrase present: {phrase!r}")
+        for phrase in banned_warn_hits(self.rules, text):
+            self._warn(fname, sku, fieldname,
+                       f"puffery flagged for review: {phrase!r}")
 
     def _check_attributes(self):
         t = self.tables.get("attributes")

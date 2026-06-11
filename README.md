@@ -6,23 +6,44 @@ transformer: no model calls, no network access. Given a filled intake CSV it emi
 byte-exact, fully-validated set of import files, and **never** writes a non-compliant
 file — a failed validation check is a hard stop with an exact, located message.
 
-> **Phase 1 scope.** This is the deterministic core only (pipeline stages 1, 7, 8 of the
-> full design). Generative stages — datasheet spec extraction, German prose, SEO, FAQ
-> authoring via the Anthropic API — are **not** built here. See *Extension points* below.
+> **Scope.** The deterministic core (pipeline stages 1, 7, 8) plus **Phase 2** content
+> generation (German prose, SEO, FAQ via the Anthropic API — the `generate` command).
+> Phase 3 (datasheet fetch + spec extraction + verification) is **not** built here; see
+> *Extension points* below. The core build/validate path remains fully offline.
 
 ## Install
 
 Requires Python 3.11+.
 
 ```bash
-pip install -e .          # from the hexcat/ directory
+pip install -e .                 # core: build / validate / new-intake (offline)
+pip install -e ".[generate]"     # + Phase 2 AI content generation (adds the anthropic SDK)
 # or run without installing:
 PYTHONPATH=src python -m hexcat.cli --help
 ```
 
 Dependencies: `pydantic`, `typer`, `rich`, `pyyaml` (and `pytest` for the test suite).
+The `generate` command additionally requires `anthropic` (the `[generate]` extra) and an
+`ANTHROPIC_API_KEY` in the environment. The core build/validate path needs neither.
 
 ## Commands
+
+### `hexcat generate` — draft content with the Anthropic API (Phase 2)
+```bash
+export ANTHROPIC_API_KEY=sk-...
+hexcat generate --input my_batch_skeleton.csv --out my_batch_draft.csv \
+                [--model claude-opus-4-8] [--max-retries 4] [--limit N] [--only SKU,SKU]
+```
+Reads a **facts-only skeleton** intake (the five content columns
+`Kurzbeschreibung, Beschreibung, TitelTag, MetaDescription, FAQ` left blank; everything
+else — Vendor, Artikelname, KategorieEbene3, the 14 attributes, NettoVK, Condition —
+filled). For each SKU it drafts German prose/SEO/FAQ, then **self-checks the draft against
+the exact same budget/banned rules the build gate enforces** (`content_checks`), re-prompting
+with the unmet checks up to `--max-retries` times. It writes a **draft intake CSV** with the
+content filled in. A SKU that still fails after the retries is written but **flagged** in the
+report (and the build gate would quarantine it). This is the only command that makes network/
+model calls. Workflow: `generate` → **human review/edit the draft** → `build`. See
+`examples/Cisco_SampleBatch_skeleton.csv` for a runnable skeleton.
 
 ### `hexcat new-intake` — write a blank intake template
 ```bash
@@ -126,24 +147,37 @@ Structural column orders/headers (the byte-exact contract) live in
 ## Tests
 
 ```bash
-pytest            # 50 tests: writers, intake, ledger, assembly, and the full gate
+pytest            # 71 tests: writers, intake, ledger, assembly, the gate, content checks, generation
 ```
 The gate tests assemble the example bundle, then seed each contract violation (wrong column,
 wide-vs-long attributes, dot-decimal price, missing BOM, `Sonstige`, `Module` vs `Modul`,
 over-long Titel-Tag, banned phrase, missing closer, SKU missing from a file, missing
-verification row) and assert a precise, located failure.
+verification row) and assert a precise, located failure. The Phase 2 tests use an injected
+**fake completer** (no network), cover the self-check/retry/flag paths, and assert end-to-end
+that a generated draft flows through `read_intake → assemble → validate` and **passes the gate**.
 
-## Extension points (Phase 2 / 3 — not built here)
+## Phase 2 (built) — AI content generation
 
-The deterministic core is the foundation the generative phases plug into:
-- **`intake.py`** is where a generative module would *write* the wide intake rows
-  (Kurzbeschreibung/Beschreibung/Titel/Meta/FAQ) before `read_intake` consumes them.
-  Phase 1 already validates that structure, so generated content is gated the same way.
+`hexcat generate` (module `generate.py`) is the only network/model path. It plugs into the
+existing seams without rebuilding the deterministic core:
+- It writes the five content columns into the wide intake rows **before** `read_intake`
+  consumes them — exactly the `intake.py` seam — so generated content is gated identically.
+- Its self-check and the build gate share **one** set of predicates (`content_checks.py`):
+  there is no second copy of the budget/banned-phrase logic to drift.
+- The model is injected via a `completer` callable, so generation is fully testable offline.
+- Config-driven rules (`config/rules.yaml`) feed both the prompt and the gate, so new vendors,
+  categories, or budget changes need no code edits. The model id is `--model`-overridable.
+
+The **human-approval gate** is realized as the draft-file review step: `generate` never feeds
+the deterministic build directly — the operator reviews/edits the draft, then runs `build`.
+
+## Extension points (Phase 3 — not built here)
+
 - **Verification Log** (`assemble._verification_rows`, `SourceURLs`) is the seam for
   **Phase 3**: replace the `operator-provided` source/confidence with real datasheet URLs
   and extraction confidence; the gate already requires a log row per attribute value.
-- A **human-approval gate** (settled decision: after spec verification / stage 4, before
-  prose is written) slots between a future spec-extraction step and `intake.build_record`.
-- Config-driven rules mean new vendors, categories, or budget changes need no code edits.
+- A spec-extraction + verification step (after datasheet fetch) slots upstream of `generate`,
+  populating the facts skeleton from verified datasheet data instead of by hand.
 
-Phase 1 makes **no** network or model calls and writes only to `--out` and the ledger file.
+The Phase 1 commands (`build`, `validate`, `new-intake`) make **no** network or model calls
+and write only to `--out` and the ledger file.

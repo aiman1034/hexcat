@@ -1,7 +1,8 @@
-"""HexCat CLI (Phase 1): build, validate, new-intake.
+"""HexCat CLI: build, validate, new-intake (Phase 1) and generate (Phase 2).
 
-Phase 1 is 100% deterministic and offline — no network, no model calls. Writes only
-to --out and the ledger file.
+Phase 1 commands (build/validate/new-intake) are 100% deterministic and offline — no
+network, no model calls. The Phase 2 `generate` command is the ONLY one that calls the
+Anthropic API; it writes a draft intake CSV for human review before `build`.
 """
 from __future__ import annotations
 
@@ -23,6 +24,16 @@ for _stream in (sys.stdout, sys.stderr):
 from . import constants as C
 from .assemble import assemble_bundle
 from .config import load_rules, load_weights
+from .generate import (
+    DEFAULT_MAX_RETRIES,
+    DEFAULT_MODEL,
+    GenerateError,
+    Generator,
+    make_anthropic_completer,
+    merge_fields,
+    read_skeleton,
+    write_draft,
+)
 from .intake import IntakeError, read_intake
 from .ledger import Ledger
 from .models import INTAKE_COLUMNS
@@ -31,7 +42,7 @@ from .validate import validate_dir
 
 app = typer.Typer(
     add_completion=False,
-    help="HexCat — JTL-Ameise-ready CSV bundle generator for the Hexwaren catalog (Phase 1).",
+    help="HexCat — JTL-Ameise-ready CSV bundle generator for the Hexwaren catalog.",
 )
 console = Console()
 err_console = Console(stderr=True)
@@ -191,6 +202,87 @@ def new_intake(
     console.print(f"[green]Wrote intake template:[/] {out}")
     console.print("[dim]The first row is a commented example (Artikelnummer starts with '#') "
                   "and is skipped on build. Fill real rows below it.[/]")
+
+
+@app.command()
+def generate(
+    input: Path = typer.Option(..., "--input", "-i", help="Facts-only skeleton intake CSV."),
+    out: Path = typer.Option(..., "--out", "-o", help="Path to write the filled draft intake CSV."),
+    model: str = typer.Option(DEFAULT_MODEL, "--model", help="Anthropic model id."),
+    max_retries: int = typer.Option(
+        DEFAULT_MAX_RETRIES, "--max-retries", help="Self-check retries per SKU before flagging."
+    ),
+    limit: int = typer.Option(0, "--limit", help="Only generate the first N SKUs (0 = all)."),
+    only: str = typer.Option("", "--only", help="Comma-separated SKUs to generate (subset)."),
+):
+    """Phase 2: draft the German content fields per SKU via the Anthropic API.
+
+    Reads a facts-only skeleton intake, self-checks each draft against the build gate's
+    own rules (retrying with feedback), and writes a draft intake CSV for human review.
+    Run `hexcat build` on the reviewed draft. This command makes network/model calls.
+    """
+    rules = load_rules()
+
+    try:
+        facts = read_skeleton(input, rules)
+    except GenerateError as e:
+        err_console.print(f"[bold red]Skeleton error:[/] {e}")
+        raise typer.Exit(code=2)
+
+    if only.strip():
+        wanted = {s.strip() for s in only.split(",") if s.strip()}
+        facts = [f for f in facts if f.sku in wanted]
+    if limit > 0:
+        facts = facts[:limit]
+    if not facts:
+        err_console.print("[bold red]No SKUs selected to generate.[/]")
+        raise typer.Exit(code=2)
+
+    try:
+        completer = make_anthropic_completer(model)
+    except GenerateError as e:
+        err_console.print(f"[bold red]Cannot start generation:[/] {e}")
+        raise typer.Exit(code=2)
+
+    gen = Generator(rules, completer=completer, model=model, max_retries=max_retries)
+
+    console.print(
+        f"[bold]Generating[/] {len(facts)} SKU(s) with [cyan]{model}[/] "
+        f"(max {max_retries} attempts each)…"
+    )
+    results = []
+    out_rows = []
+    for f in facts:
+        res = gen.generate_one(f)
+        results.append(res)
+        out_rows.append(merge_fields(f.row, res.fields))
+        if res.ok:
+            console.print(
+                f"  [green]OK[/]      {res.sku}  "
+                f"(attempt {res.attempts}; kurz {res.kurz_words}w, "
+                f"besch {res.besch_words}w, {res.faq_pairs} FAQ)"
+            )
+        else:
+            console.print(f"  [red]FLAGGED[/] {res.sku}  ({len(res.issues)} unmet check(s))")
+            for issue in res.issues:
+                console.print(f"            [dim]- {issue}[/]")
+
+    write_draft(out, out_rows)
+
+    ok_n = sum(1 for r in results if r.ok)
+    flagged_n = len(results) - ok_n
+    console.print()
+    console.print(f"[bold]Draft written:[/] {out}")
+    console.print(f"  passed self-check: [green]{ok_n}[/]   flagged: "
+                  f"{'[red]' + str(flagged_n) + '[/]' if flagged_n else '0'}")
+    if flagged_n:
+        console.print(
+            "[yellow]Review the flagged SKUs in the draft before running "
+            "`hexcat build` — the gate will quarantine any that still fail.[/]"
+        )
+    else:
+        console.print("[dim]Review the draft, then run `hexcat build` on it.[/]")
+    raise typer.Exit(code=0 if flagged_n == 0 else 1)
 
 
 if __name__ == "__main__":
