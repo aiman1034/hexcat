@@ -1,0 +1,86 @@
+# HexCat — single source of truth for all locked catalog values (Phase 1).
+# Everything the operator might one day tweak lives here, NOT hardcoded in logic.
+# Structural column orders/headers live in src/hexcat/constants.py (not operator-tweakable).
+
+# Vendor -> (Hersteller token, URL slug). Keys are matched case-insensitively.
+vendors:
+  "HP":      { hersteller: "HP",      slug: "hpe-aruba" }
+  "HPE":     { hersteller: "HP",      slug: "hpe-aruba" }
+  "Aruba":   { hersteller: "HP",      slug: "hpe-aruba" }
+  "Cisco":   { hersteller: "Cisco",   slug: "cisco" }
+  "Juniper": { hersteller: "Juniper", slug: "juniper" }
+  "Arista":  { hersteller: "Arista",  slug: "arista" }
+  "Meraki":  { hersteller: "Meraki",  slug: "meraki" }
+
+# Fixed constants emitted verbatim.
+constants:
+  kategorie_ebene_1: "Netzwerk & Infrastruktur"
+  kategorie_ebene_2: "Transceivers & SFP Module"      # WITH final "e"
+  versandklasse: "standard"
+  verkaufseinheit: "Stk"
+  bestandsfuehrung_aktiv: "Y"
+  ueberverkaeufe_moeglich: "Y"
+  ueberverkauf_plattform_hexwaren: "TRUE"
+  # Attributgruppe is intentionally ONE character different from kategorie_ebene_2:
+  # "Modul" (no final "e"). This distinction is real and must be preserved.
+  attributgruppe_transceiver: "Transceivers & SFP Modul"   # NO final "e"
+
+# Locked Kategorie Ebene 3 set (22). Anything else is rejected; "Sonstige" never allowed.
+kategorie_ebene_3_allowed:
+  - "DAC Kabel"
+  - "AOC Kabel"
+  - "MPO Kabel"
+  - "QSFP+"
+  - "QSFP-DD"
+  - "QSFP-DD800"
+  - "QSFP28"
+  - "QSFP56"
+  - "QSFP112"
+  - "OSFP"
+  - "SFP"
+  - "SFP+"
+  - "SFP28"
+  - "SFP56"
+  - "X2"
+  - "XENPAK"
+  - "XFP"
+  - "CFP"
+  - "CFP2"
+  - "CPAK"
+  - "CXP"
+  - "GBIC"
+
+# Word / character budgets.
+budgets:
+  kurzbeschreibung: { min_words: 40, max_words: 80, p_count: 2 }
+  beschreibung:     { min_words: 90, max_words: 175, p_count: 3 }
+  titel_tag:        { max_chars: 60, must_end_with: " | Hexwaren" }
+  meta_description: { min_chars: 140, max_chars: 200 }
+  faq:              { min_pairs: 3, max_pairs: 10 }
+
+# Beschreibung must end with the authenticity closer "Originaler [Brand]-..."
+# This is the ONLY allowed authenticity signal. {brand} is the Hersteller token.
+beschreibung_closer_prefix: "Originaler {brand}-"
+
+# Banned language — HARD FAIL (availability/transactional claims, UWG §5 risk).
+banned_hard_fail:
+  - "sofort lieferbar"
+  - "sofort verfügbar"
+  - "Versand am selben Werktag"
+  - "ab Lager Deutschland"
+  - "B2B-Versand aus Deutschland"
+  - "Rechnungskauf"
+  - "neu und versiegelt"
+  - "voller Herstellergarantie"
+
+# Banned language — WARN ONLY (puffery; context-dependent, flag don't fail).
+banned_warn:
+  - "Premium"
+  - "die beste Lösung"
+  - "leistungsstark"
+
+# Condition functional attribute.
+condition:
+  attribute_name: "condition"
+  allowed: ["new", "used", "refurbished"]
+  default: "new"

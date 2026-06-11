@@ -1,0 +1,40 @@
+# HexCat — per-form-factor weights (kg). Keyed by the Formfaktor attribute value.
+# Used to DERIVE Artikelgewicht / Versandgewicht when the intake cell is blank.
+#
+# !!! ALL VALUES BELOW ARE PLACEHOLDERS !!!
+# Real per-form-factor weights are genuinely unknown at Phase 1. Every entry is
+# marked "# PLACEHOLDER — confirm". The supervisor report tells the operator which
+# emitted weights are still placeholders so they can be confirmed before a live import.
+#
+# Invariant enforced by config loader + validation gate: versand > artikel for every row.
+# Units: kilograms. Decimals as plain numbers here; output is German-locale formatted.
+
+defaults:
+  # Fallback used when a Formfaktor has no specific entry below. Also a placeholder.
+  artikel: 0.05   # PLACEHOLDER — confirm
+  versand: 0.20   # PLACEHOLDER — confirm
+
+form_factors:
+  "SFP":        { artikel: 0.02, versand: 0.15 }   # PLACEHOLDER — confirm
+  "SFP+":       { artikel: 0.02, versand: 0.15 }   # PLACEHOLDER — confirm
+  "SFP28":      { artikel: 0.02, versand: 0.15 }   # PLACEHOLDER — confirm
+  "SFP56":      { artikel: 0.02, versand: 0.15 }   # PLACEHOLDER — confirm
+  "QSFP+":      { artikel: 0.05, versand: 0.20 }   # PLACEHOLDER — confirm
+  "QSFP28":     { artikel: 0.05, versand: 0.20 }   # PLACEHOLDER — confirm
+  "QSFP56":     { artikel: 0.05, versand: 0.20 }   # PLACEHOLDER — confirm
+  "QSFP112":    { artikel: 0.05, versand: 0.20 }   # PLACEHOLDER — confirm
+  "QSFP-DD":    { artikel: 0.06, versand: 0.22 }   # PLACEHOLDER — confirm
+  "QSFP-DD800": { artikel: 0.06, versand: 0.22 }   # PLACEHOLDER — confirm
+  "OSFP":       { artikel: 0.06, versand: 0.22 }   # PLACEHOLDER — confirm
+  "X2":         { artikel: 0.08, versand: 0.25 }   # PLACEHOLDER — confirm
+  "XENPAK":     { artikel: 0.10, versand: 0.28 }   # PLACEHOLDER — confirm
+  "XFP":        { artikel: 0.03, versand: 0.16 }   # PLACEHOLDER — confirm
+  "CFP":        { artikel: 0.15, versand: 0.40 }   # PLACEHOLDER — confirm
+  "CFP2":       { artikel: 0.10, versand: 0.30 }   # PLACEHOLDER — confirm
+  "CPAK":       { artikel: 0.10, versand: 0.30 }   # PLACEHOLDER — confirm
+  "CXP":        { artikel: 0.08, versand: 0.25 }   # PLACEHOLDER — confirm
+  "GBIC":       { artikel: 0.05, versand: 0.18 }   # PLACEHOLDER — confirm
+  # Cable form factors (DAC/AOC/MPO) — weight varies with length; placeholder midpoints.
+  "DAC":        { artikel: 0.20, versand: 0.45 }   # PLACEHOLDER — confirm
+  "AOC":        { artikel: 0.15, versand: 0.40 }   # PLACEHOLDER — confirm
+  "MPO":        { artikel: 0.12, versand: 0.35 }   # PLACEHOLDER — confirm

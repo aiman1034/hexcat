@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# HexCat runtime artifacts
+*.sqlite3
+_scratch/
+out/
+out_demo*/
+_quarantine/
