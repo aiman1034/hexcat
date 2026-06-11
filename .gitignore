@@ -16,3 +16,17 @@ out/
 out_demo*/
 _quarantine/
 *.hexcat_cache.json
+
+# ruflo cross-session memory store (local SQLite + embeddings; never commit)
+.swarm/
+.hive-mind/
+.claude-flow/
+.ruflo/
+.claude/memory.db
+.claude/*.db
+.claude/*.db-shm
+.claude/*.db-wal
+# ruflo vector store (root-level runtime DB)
+ruvector.db
+ruvector.db-shm
+ruvector.db-wal
