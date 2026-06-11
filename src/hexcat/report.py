@@ -8,7 +8,6 @@ from rich.panel import Panel
 from rich.table import Table as RichTable
 
 from .assemble import BundleManifest
-from .ledger import LedgerResult
 from .models import SkuRecord
 from .validate import ValidationResult
 
@@ -19,7 +18,6 @@ def render_report(
     manifest: BundleManifest,
     records: list[SkuRecord],
     validation: ValidationResult,
-    ledger: LedgerResult | None,
     quarantined: bool,
 ) -> None:
     status = "[bold green]PASS[/]" if validation.ok else "[bold red]FAIL[/]"
@@ -84,13 +82,11 @@ def render_report(
             st.add_row(sku, ", ".join(attrs))
         console.print(st)
 
-    # Ledger
-    if ledger is not None:
-        console.print(
-            f"Ledger: [green]{len(ledger.new_skus)} new[/], "
-            f"[yellow]{len(ledger.duplicate_skus)} duplicate[/]"
-            + (f" (dupes: {', '.join(ledger.duplicate_skus)})" if ledger.duplicate_skus else "")
-        )
+    # v5.1 confirmation note (output format built to the v5.0 baseline).
+    console.print(
+        "[dim]Note: output built to the v5.0 baseline — v5.1 confirmation pending "
+        "(format is config-driven; the delta is a config edit, not a code change).[/]"
+    )
 
     # Output paths
     where = manifest.out_dir

@@ -135,11 +135,12 @@ VERIFICATION_SOURCE_OPERATOR = "operator-provided"
 VERIFICATION_CONFIDENCE_OPERATOR = "operator-provided"
 
 # ---- Output filename patterns ----------------------------------------------
-# {category} = category slug/name; {batch} = batch name; {n} = 1-based batch index.
-FN_MAIN = "Hexwaren_{category}_v5_0_Main.csv"
-FN_ATTRIBUTES = "Hexwaren_{category}_Attributes_v5_0.csv"
+# {category} = category slug/name; {batch} = batch name. Names follow the prompt's exact
+# output contract; format is built to the v5.0 baseline (v5.1 confirmation pending).
+FN_MAIN = "Hexwaren_{category}_Main.csv"
+FN_ATTRIBUTES = "Hexwaren_{category}_Attributes.csv"
 FN_PLATFORMFLAG = "Hexwaren_{category}_PlatformFlag.csv"
 FN_PRICES = "Hexwaren_{category}_Prices.csv"
 FN_CONDITION = "Hexwaren_Condition_{batch}.csv"
-FN_FAQ = "Hexwaren_FAQ_{batch}_Batch_{n}.csv"
+FN_FAQ = "Hexwaren_FAQ_{batch}.csv"
 FN_VERIFICATION_LOG = "Verification_Log_{batch}.csv"

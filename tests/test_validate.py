@@ -48,7 +48,7 @@ def test_wide_vs_long_attributes(good_bundle, rules):
     wide_header = "Artikelnummer," + ",".join(
         ["Formfaktor", "Geschwindigkeit", "Transceiver Typ"]
     )
-    write_text_bytes(_file(d, "*_Attributes_*.csv"),
+    write_text_bytes(_file(d, "*_Attributes.csv"),
                      "﻿" + wide_header + "\r\nSFP-10G-SR,SFP+,10 Gigabit,SR\r\n")
     r = validate_dir(rules, d)
     assert not r.ok
@@ -83,7 +83,7 @@ def test_sonstige_in_kat_l3(good_bundle, rules):
 def test_module_vs_modul_mixup(good_bundle, rules):
     d, _ = good_bundle
     # Attributgruppe must be "...Modul" (no e); inject the wrong "...Module".
-    _mutate(_file(d, "*_Attributes_*.csv"),
+    _mutate(_file(d, "*_Attributes.csv"),
             lambda t: t.replace("& SFP Modul,", "& SFP Module,"))
     r = validate_dir(rules, d)
     assert not r.ok

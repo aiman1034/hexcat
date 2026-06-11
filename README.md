@@ -1,4 +1,4 @@
-# HexCat — Hexwaren Catalog Automation (Phase 1)
+# HexCat — Hexwaren Catalog Automation
 
 HexCat generates **JTL-Ameise-ready CSV bundles** for the Hexwaren product catalog from
 a structured per-SKU intake file. It is a pure, **offline, deterministic** file
@@ -6,44 +6,70 @@ transformer: no model calls, no network access. Given a filled intake CSV it emi
 byte-exact, fully-validated set of import files, and **never** writes a non-compliant
 file — a failed validation check is a hard stop with an exact, located message.
 
-> **Scope.** The deterministic core (pipeline stages 1, 7, 8) plus **Phase 2** content
-> generation (German prose, SEO, FAQ via the Anthropic API — the `generate` command).
-> Phase 3 (datasheet fetch + spec extraction + verification) is **not** built here; see
-> *Extension points* below. The core build/validate path remains fully offline.
+> **Scope.** The deterministic core (pipeline stages 1, 7, 8) plus the **Phase 2 $0
+> content flow** (German prose, SEO, FAQ authored by Claude Code in-session — the
+> `worksheet` / `draft` commands). Phase 3 (datasheet fetch + spec extraction +
+> verification) is **not** built here; see *Extension points* below.
+
+> ## $0, no API key, no network
+>
+> **HexCat never makes a paid LLM API call.** There is no `anthropic` dependency and no
+> `ANTHROPIC_API_KEY`. The German prose is written by **Claude Code in-session** (under
+> your existing subscription), not by the tool. HexCat does the deterministic work:
+> it turns a facts-only skeleton into a fill-in **worksheet**, merges your authored
+> content back into a **draft** intake CSV, and **gates** that draft with the very same
+> content rules the build enforces.
 
 ## Install
 
 Requires Python 3.11+.
 
 ```bash
-pip install -e .                 # core: build / validate / new-intake (offline)
-pip install -e ".[generate]"     # + Phase 2 AI content generation (adds the anthropic SDK)
+pip install -e .                 # everything: build / validate / worksheet / draft (offline)
 # or run without installing:
 PYTHONPATH=src python -m hexcat.cli --help
 ```
 
 Dependencies: `pydantic`, `typer`, `rich`, `pyyaml` (and `pytest` for the test suite).
-The `generate` command additionally requires `anthropic` (the `[generate]` extra) and an
-`ANTHROPIC_API_KEY` in the environment. The core build/validate path needs neither.
+No API key, no network access — every command is fully offline and free to run.
 
-## Commands
+## The $0 content flow
 
-### `hexcat generate` — draft content with the Anthropic API (Phase 2)
-```bash
-export ANTHROPIC_API_KEY=sk-...
-hexcat generate --input my_batch_skeleton.csv --out my_batch_draft.csv \
-                [--model claude-opus-4-8] [--max-retries 4] [--limit N] [--only SKU,SKU]
 ```
-Reads a **facts-only skeleton** intake (the five content columns
-`Kurzbeschreibung, Beschreibung, TitelTag, MetaDescription, FAQ` left blank; everything
-else — Vendor, Artikelname, KategorieEbene3, the 14 attributes, NettoVK, Condition —
-filled). For each SKU it drafts German prose/SEO/FAQ, then **self-checks the draft against
-the exact same budget/banned rules the build gate enforces** (`content_checks`), re-prompting
-with the unmet checks up to `--max-retries` times. It writes a **draft intake CSV** with the
-content filled in. A SKU that still fails after the retries is written but **flagged** in the
-report (and the build gate would quarantine it). This is the only command that makes network/
-model calls. Workflow: `generate` → **human review/edit the draft** → `build`. See
-`examples/Cisco_SampleBatch_skeleton.csv` for a runnable skeleton.
+new-skeleton → fill facts → worksheet → (Claude Code fills the blocks in-session)
+            → draft → validate --input → fix any violations → build
+```
+
+### `hexcat new-skeleton` — write a facts-only skeleton
+```bash
+hexcat new-skeleton --out my_batch_skeleton.csv [--profile transceiver]
+```
+Writes the wide intake header plus one **commented example row** with the five content
+columns (`Kurzbeschreibung, Beschreibung, TitelTag, MetaDescription, FAQ`) left blank —
+the input shape `worksheet` expects. Fill real fact rows below it (Vendor, Artikelname,
+KategorieEbene3, the 14 attributes, NettoVK, Condition, SourceURLs).
+
+### `hexcat worksheet` — turn a skeleton into a fill-in surface
+```bash
+hexcat worksheet --input my_batch_skeleton.csv --out my_batch_worksheet.md
+```
+Emits a Markdown worksheet: the rendered **voice guide** (positioning + banned language,
+filled from `rules.yaml`), then one section per SKU showing its **verified facts**, the
+**per-field rules** (budgets, the authenticity closer, FAQ format), and an empty
+`BEGIN/END` block for each content field. Claude Code fills those blocks **in-session**
+(no API, no cost). FAQ is authored one pair per line as `Frage? :: Antwort.`.
+The facts stay authoritative in the skeleton — the worksheet only carries content.
+
+### `hexcat draft` — merge authored content + facts into a draft intake CSV
+```bash
+hexcat draft --worksheet my_batch_worksheet.md --out my_batch_draft.csv \
+             [--skeleton my_batch_skeleton.csv]
+```
+Reads the authored worksheet, re-reads the skeleton facts (path is embedded in the
+worksheet header; override with `--skeleton`), and writes a **draft intake CSV** with the
+five content columns filled. If any content block is empty it **errors without writing**,
+naming each `{SKU}/{field}` — so a draft is only produced once every block is authored.
+Next: `hexcat validate --input …`, then `hexcat build`.
 
 ### `hexcat new-intake` — write a blank intake template
 ```bash
@@ -54,30 +80,40 @@ starts with `#`, so it is skipped on build). Fill real rows below it.
 
 ### `hexcat build` — assemble + validate a bundle
 ```bash
-hexcat build --input my_batch_intake.csv --batch "Cisco_SampleBatch" \
+hexcat build --input my_batch_intake.csv --batch "Cisco_Transceivers" \
              --category Transceivers --out ./out
 ```
-Steps: validate intake → dedupe against the SQLite ledger → assemble the six files +
-verification log into a staging area → run the full validation gate → on **PASS** promote
-files to `--out` and record the ledger; on **FAIL** move the bundle to `--out/_quarantine`,
-write nothing compliant to `--out`, and exit non-zero. Prints a concise supervisor report.
+Steps: validate intake → assemble the six files + verification log into a staging area →
+run the full validation gate → on **PASS** promote files to `--out`; on **FAIL** move the
+bundle to `--out/_quarantine`, write nothing compliant to `--out`, and exit non-zero.
+Prints a concise supervisor report. (Phase 1 is files-only and stateless — there is **no
+database**; dedup against the live catalog arrives with the Excel ledger in Phase 3.)
 
 Useful options:
-- `--rebuild` — re-emit SKUs already recorded in the ledger (default: dedupe/skip them).
-- `--ledger <path>` — ledger DB location (default `hexcat_ledger.sqlite3`).
 - `--strict/--no-strict` — posture flag (default strict). Phase 1 always fails closed and
   never emits a non-compliant file regardless; warn-list items never block.
 
-### `hexcat validate` — re-check an existing bundle
+### `hexcat validate` — gate a draft, or re-check a bundle
 ```bash
-hexcat validate --dir ./out
+hexcat validate --input my_batch_draft.csv    # content gate on a draft before build
+hexcat validate --dir ./out                   # re-validate an already-produced bundle
 ```
-Re-runs the validation gate against an already-produced bundle (files on disk). Exit 0 on
-pass, 1 on fail (with each located violation printed).
+Pass **exactly one** of `--input` or `--dir`.
+
+- `--input` runs the **content gate** on a draft/intake CSV using the **same predicates**
+  `build` enforces (`content_checks`): word/char budgets, exact `<p>` counts, banned-language
+  hard-fail, Titel-Tag ≤ 60 + ` | Hexwaren` suffix, Meta 140–200, the Beschreibung
+  authenticity closer, FAQ format + 3–10 pairs, plus advisory soft-spec flags. Unlike the
+  build's fail-fast intake read, it collects **every** violation, each located as
+  `{SKU, field, expected, got}`. A draft that passes here passes the build gate's content
+  checks. Any leftover `[FLAG] ` marker in a content cell is a violation.
+- `--dir` re-runs the full structural+content+audit gate against files on disk.
+
+Exit 0 on pass, 1 on fail (each located violation printed; warnings/soft flags listed too).
 
 ## Intake schema (wide — one row per SKU)
 
-Columns (see `examples/Cisco_SampleBatch_intake.csv` for a filled, runnable example):
+Columns (see `examples/Cisco_Transceivers_intake.csv` for a filled, runnable example):
 
 ```
 Artikelnummer, Vendor, KategorieEbene3, Artikelname, Kurzbeschreibung, Beschreibung,
@@ -109,12 +145,12 @@ Notes:
 
 | # | File | Encoding | Delim | Notes |
 |---|------|----------|-------|-------|
-| 1 | `Hexwaren_{Category}_v5_0_Main.csv` | UTF-8 **BOM** | `;` | 19 columns, exact order |
-| 2 | `Hexwaren_{Category}_Attributes_v5_0.csv` | UTF-8 **BOM** | `,` | long format; Attributgruppe `Transceivers & SFP Modul` (**no** final "e") |
+| 1 | `Hexwaren_{Category}_Main.csv` | UTF-8 **BOM** | `;` | 19 columns, exact order |
+| 2 | `Hexwaren_{Category}_Attributes.csv` | UTF-8 **BOM** | `,` | long format; Attributgruppe `Transceivers & SFP Modul` (**no** final "e") |
 | 3 | `Hexwaren_{Category}_PlatformFlag.csv` | UTF-8 **BOM** | `;` | `Überverkauf Plattform Hexwaren = TRUE` |
 | 4 | `Hexwaren_{Category}_Prices.csv` | UTF-8 (no BOM) | `;` | `Artikelnummer;Netto-VK`, German decimals |
 | 5 | `Hexwaren_Condition_{Batch}.csv` | UTF-8 **BOM** | `,` | separate from Attributes; default `new` |
-| 6 | `Hexwaren_FAQ_{Batch}_Batch_{N}.csv` | UTF-8 **BOM** | `,` | FAQ cell always double-quoted |
+| 6 | `Hexwaren_FAQ_{Batch}.csv` | UTF-8 **BOM** | `,` | FAQ cell always double-quoted |
 | 7 | `Verification_Log_{Batch}.csv` | UTF-8 BOM | `,` | one row per emitted attribute value |
 
 Two category labels differ by exactly one character — both are intentional and preserved:
@@ -137,6 +173,14 @@ Every failure reports `{file, SKU, field, expected, got}`.
 - `config/rules.yaml` — vendor→(Hersteller, slug) map, constants, the locked 22-item
   `Kategorie Ebene 3` set, word/char budgets, the authenticity closer, banned-language
   lists (hard-fail + warn), and the condition rule. Tweak values here, not in code.
+- `config/prompts/transceiver_content.txt` — the **voice guide** shown at the top of the
+  worksheet. Budget/banned `{{TOKEN}}`s are filled from `rules.yaml` at runtime, so the
+  guide can't drift from the gate. `GUIDE_VERSION` (in `generate/prompt.py`) stamps the
+  worksheet header.
+- `config/taxonomy/transceivers.yaml` — the operator-facing canonical transceiver taxonomy:
+  the 22 sub-categories and the 14 ordered attributes (the `Sortiernummer` contract). On
+  build, `config.verify_taxonomy()` fails loudly if this file drifts from the structural
+  contract in `rules.yaml` / `constants.py`. A new **category** = a sibling taxonomy file.
 - `config/weights.yaml` — per-form-factor `Artikelgewicht`/`Versandgewicht`. **All values
   are placeholders** (marked `# PLACEHOLDER — confirm`); confirm them before a live import.
   The report lists which emitted weights are still placeholders.
@@ -147,37 +191,59 @@ Structural column orders/headers (the byte-exact contract) live in
 ## Tests
 
 ```bash
-pytest            # 71 tests: writers, intake, ledger, assembly, the gate, content checks, generation
+pytest            # 77 tests: writers, intake, taxonomy, assembly, the gate, content checks, the $0 flow
 ```
 The gate tests assemble the example bundle, then seed each contract violation (wrong column,
 wide-vs-long attributes, dot-decimal price, missing BOM, `Sonstige`, `Module` vs `Modul`,
 over-long Titel-Tag, banned phrase, missing closer, SKU missing from a file, missing
-verification row) and assert a precise, located failure. The Phase 2 tests use an injected
-**fake completer** (no network), cover the self-check/retry/flag paths, and assert end-to-end
-that a generated draft flows through `read_intake → assemble → validate` and **passes the gate**.
+verification row) and assert a precise, located failure. The Phase 2 tests cover the **$0
+flow** (no network, no mocking): the worksheet round-trip (block-per-field, embedded
+skeleton header, FAQ `::`→friendly-cell conversion), the **draft** merge + empty-block
+error, the **content validator** including a **seeded-bad draft** (over-long Beschreibung,
+banned phrase, over-long Titel-Tag, malformed FAQ) asserting each field is flagged and
+located, the missing-closer and **[FLAG]**-marker checks, the **soft spec** flag, and an
+**end-to-end** assertion that worksheet → author → draft → `validate_draft` → `read_intake`
+→ assemble → `validate_dir` **passes the gate** (validate-pass ⇒ build-pass).
 
-## Phase 2 (built) — AI content generation
+## Phase 2 (built) — the $0 content flow
 
-`hexcat generate` (module `generate.py`) is the only network/model path. It plugs into the
-existing seams without rebuilding the deterministic core:
+Generation is performed by **Claude Code in-session**, not by the tool — there is **no
+network/model path** in HexCat. The `generate/` package does the deterministic work:
+- `generate/prompt.py` — renders the voice guide (`config/prompts/transceiver_content.txt`)
+  with live rule values; owns `GUIDE_VERSION` (stamped into the worksheet header).
+- `generate/worksheet.py` — `write_worksheet` (skeleton → fill-in Markdown) and
+  `read_worksheet` (authored Markdown → `{SKU: {field: text}}`), via deterministic
+  `<!-- HEXCAT:BEGIN/END … -->` block markers.
+- `generate/engine.py` — facts-only skeleton intake (`read_skeleton`), the `merge_fields`
+  fold into a wide intake row, the advisory soft spec check, and the draft + skeleton writers.
+
+The design guarantees:
 - It writes the five content columns into the wide intake rows **before** `read_intake`
-  consumes them — exactly the `intake.py` seam — so generated content is gated identically.
-- Its self-check and the build gate share **one** set of predicates (`content_checks.py`):
-  there is no second copy of the budget/banned-phrase logic to drift.
-- The model is injected via a `completer` callable, so generation is fully testable offline.
-- Config-driven rules (`config/rules.yaml`) feed both the prompt and the gate, so new vendors,
-  categories, or budget changes need no code edits. The model id is `--model`-overridable.
+  consumes them — exactly the `intake.py` seam — so authored content is gated identically.
+- The draft content gate (`validate.validate_draft`) and the build gate share **one** set of
+  predicates (`content_checks.py`): there is no second copy of the budget/banned-phrase logic
+  to drift. A draft that passes `validate --input` passes the build gate's content checks.
+- Facts stay authoritative in the skeleton CSV (referenced by path in the worksheet header),
+  so they never round-trip through fragile Markdown parsing — `draft` re-reads them via
+  `read_skeleton` and only parses the content blocks from the worksheet.
 
-The **human-approval gate** is realized as the draft-file review step: `generate` never feeds
-the deterministic build directly — the operator reviews/edits the draft, then runs `build`.
+The **human-approval gate** is the draft-file review step: `draft` never feeds the
+deterministic build directly — the operator reviews/edits the draft, runs `validate --input`,
+then `build`.
 
-## Extension points (Phase 3 — not built here)
+## Extension points (Phases 3-4 — not built here)
 
 - **Verification Log** (`assemble._verification_rows`, `SourceURLs`) is the seam for
   **Phase 3**: replace the `operator-provided` source/confidence with real datasheet URLs
   and extraction confidence; the gate already requires a log row per attribute value.
-- A spec-extraction + verification step (after datasheet fetch) slots upstream of `generate`,
-  populating the facts skeleton from verified datasheet data instead of by hand.
+- A spec-extraction + verification step (after datasheet fetch) slots upstream of the
+  worksheet flow, populating the facts skeleton from verified datasheet data instead of by hand.
+- **`src/hexcat/ledger/`** (empty package, docstring) — Phase 3 builds the **Excel** 5-sheet
+  ledger (Fortschritt / Neue Artikel / Quellen-Tracker / PN-Korrekturen / Familien-Audit)
+  with `openpyxl`. Files-only, **no database**. Dedup against the live catalog lives here.
+- **`src/hexcat/adapters/base.py`** (`BrandAdapter`) — Phase 4 per-vendor Stage 1 logic
+  (`discover_datasheets` / `mine_part_numbers` / `hygiene_rules` / `taxonomy_map`).
+  Onboarding brand #2-18 is meant to be config (adapter + taxonomy map), not engine changes.
 
-The Phase 1 commands (`build`, `validate`, `new-intake`) make **no** network or model calls
-and write only to `--out` and the ledger file.
+The Phase 1 commands (`build`, `validate`, `new-intake`) make **no** network or model calls,
+use **no** database, and write only to `--out`.

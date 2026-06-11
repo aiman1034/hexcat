@@ -6,9 +6,13 @@ __pycache__/
 build/
 dist/
 
+# Secrets — never commit
+.env
+
 # HexCat runtime artifacts
 *.sqlite3
 _scratch/
 out/
 out_demo*/
 _quarantine/
+*.hexcat_cache.json

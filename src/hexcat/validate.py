@@ -25,12 +25,12 @@ from .writers import BOM, GERMAN_DECIMAL_RE
 
 # Glob patterns to locate each role's file in a bundle directory.
 ROLE_GLOBS = {
-    "main": "Hexwaren_*_v5_0_Main.csv",
-    "attributes": "Hexwaren_*_Attributes_v5_0.csv",
+    "main": "Hexwaren_*_Main.csv",
+    "attributes": "Hexwaren_*_Attributes.csv",
     "platformflag": "Hexwaren_*_PlatformFlag.csv",
     "prices": "Hexwaren_*_Prices.csv",
     "condition": "Hexwaren_Condition_*.csv",
-    "faq": "Hexwaren_FAQ_*_Batch_*.csv",
+    "faq": "Hexwaren_FAQ_*.csv",
     "verification": "Verification_Log_*.csv",
 }
 SIX_FILES = ("main", "attributes", "platformflag", "prices", "condition", "faq")
@@ -477,3 +477,132 @@ class Validator:
 
 def validate_dir(rules: Rules, directory: str | Path) -> ValidationResult:
     return Validator(rules, directory).run()
+
+
+# --------------------------------------------------------------------------- #
+# Draft validation (pre-build content gate on a wide intake/draft CSV)          #
+# --------------------------------------------------------------------------- #
+# Map a content_issues message prefix -> the intake field it concerns.
+_DRAFT_ISSUE_FIELD = {
+    "Kurzbeschreibung": "Kurzbeschreibung",
+    "Beschreibung": "Beschreibung",
+    "Titel-Tag": "TitelTag",
+    "Meta-Description": "MetaDescription",
+    "FAQ": "FAQ",
+}
+
+
+def _draft_field_for(issue: str) -> str:
+    for prefix, field in _DRAFT_ISSUE_FIELD.items():
+        if issue.startswith(prefix):
+            return field
+    return ""
+
+
+def validate_draft(rules: Rules, path: str | Path) -> ValidationResult:
+    """Validate the authored content of a draft/intake CSV against the build gate's rules.
+
+    Reuses the SAME predicates the build gate uses (`content_checks.content_issues`,
+    `intake.normalize_faq`), so a draft that passes here passes `hexcat build`'s content
+    checks. Unlike `read_intake` it collects EVERY content problem (it does not stop at the
+    first) and reports each as a located violation {SKU, field, rule, got}. It also fails on
+    any '[FLAG] ' marker left in a content cell, and surfaces soft spec flags as warnings.
+    """
+    # Imported here to avoid any import-order coupling with the generate package.
+    from .content_checks import content_issues
+    from .generate import FLAG_PREFIX, soft_spec_flags
+    from .intake import IntakeError, normalize_faq
+    from .models import INTAKE_COLUMNS
+
+    path = Path(path)
+    result = ValidationResult()
+    fname = path.name
+
+    if not path.exists():
+        result.violations.append(
+            Violation(fname, "", "", "an existing file", "(missing)", "draft file not found")
+        )
+        return result
+
+    with path.open("r", encoding="utf-8-sig", newline="") as fh:
+        reader = csv.DictReader(fh)
+        if reader.fieldnames is None:
+            result.violations.append(
+                Violation(fname, "", "", "header row", "(empty)", "draft file is empty")
+            )
+            return result
+        missing = [c for c in INTAKE_COLUMNS if c not in reader.fieldnames]
+        if missing:
+            result.violations.append(
+                Violation(fname, "", "header", list(INTAKE_COLUMNS), missing,
+                          "draft header missing required columns")
+            )
+            return result
+
+        seen_rows = False
+        for row in reader:
+            sku = (row.get("Artikelnummer") or "").strip()
+            if not sku or sku.startswith("#"):
+                continue
+            seen_rows = True
+
+            vendor = (row.get("Vendor") or "").strip()
+            entry = rules.resolve_vendor(vendor)
+            if entry is None:
+                result.violations.append(
+                    Violation(fname, sku, "Vendor", sorted(rules.vendors), vendor,
+                              "Vendor not in the allowed set")
+                )
+                continue
+            hersteller = entry.hersteller
+
+            fields = {
+                "Kurzbeschreibung": (row.get("Kurzbeschreibung") or "").strip(),
+                "Beschreibung": (row.get("Beschreibung") or "").strip(),
+                "TitelTag": (row.get("TitelTag") or "").strip(),
+                "MetaDescription": (row.get("MetaDescription") or "").strip(),
+            }
+
+            # Any leftover [FLAG] marker means the content was never reviewed/fixed.
+            for fld in ("Kurzbeschreibung", "Beschreibung", "TitelTag", "MetaDescription", "FAQ"):
+                val = (row.get(fld) or "")
+                if val.lstrip().startswith(FLAG_PREFIX):
+                    result.violations.append(
+                        Violation(fname, sku, fld, "no [FLAG] marker", FLAG_PREFIX.strip(),
+                                  "content still flagged — review and remove the [FLAG] marker")
+                    )
+
+            # FAQ pair count via the same normaliser the build path uses.
+            faq_pairs = 0
+            try:
+                pairs, _ = normalize_faq(row.get("FAQ") or "", sku)
+                faq_pairs = len(pairs)
+            except IntakeError as e:
+                result.violations.append(
+                    Violation(fname, sku, "FAQ", "well-formed Q::A pairs",
+                              (row.get("FAQ") or "")[:40], str(e))
+                )
+
+            for issue in content_issues(
+                rules,
+                hersteller=hersteller,
+                kurzbeschreibung=fields["Kurzbeschreibung"],
+                beschreibung=fields["Beschreibung"],
+                titel_tag=fields["TitelTag"],
+                meta_description=fields["MetaDescription"],
+                faq_pair_count=faq_pairs,
+            ):
+                result.violations.append(
+                    Violation(fname, sku, _draft_field_for(issue), "rule satisfied",
+                              "(see message)", issue)
+                )
+
+            for sf in soft_spec_flags({**fields, "FAQ": ""}, {k: (row.get(k) or "") for k in INTAKE_COLUMNS}):
+                result.warnings.append(Warning_(fname, sku, _draft_field_for(sf) or "content", sf))
+
+        if not seen_rows:
+            result.violations.append(
+                Violation(fname, "", "", "at least one SKU row", "(none)",
+                          "draft contained no SKU rows")
+            )
+    return result

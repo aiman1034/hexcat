@@ -1,8 +1,11 @@
-"""HexCat CLI: build, validate, new-intake (Phase 1) and generate (Phase 2).
+"""HexCat CLI — a ZERO-DOLLAR tool: it never makes a paid LLM API call.
 
-Phase 1 commands (build/validate/new-intake) are 100% deterministic and offline — no
-network, no model calls. The Phase 2 `generate` command is the ONLY one that calls the
-Anthropic API; it writes a draft intake CSV for human review before `build`.
+The deterministic core (build/validate/new-intake/new-skeleton) is 100% offline. The
+content flow is also $0: `worksheet` turns a facts-only skeleton into a fill-in surface
+that Claude Code completes IN-SESSION (no API key, no billing), `draft` merges that back
+into a draft intake CSV, and `validate` gates the draft with the SAME content rules the
+build uses. Workflow: new-skeleton → fill facts → worksheet → (Claude fills) → draft →
+validate → build.
 """
 from __future__ import annotations
 
@@ -23,22 +26,21 @@ for _stream in (sys.stdout, sys.stderr):
 
 from . import constants as C
 from .assemble import assemble_bundle
-from .config import load_rules, load_weights
+from .config import load_rules, load_weights, verify_taxonomy
 from .generate import (
-    DEFAULT_MAX_RETRIES,
-    DEFAULT_MODEL,
+    CONTENT_COLUMNS,
     GenerateError,
-    Generator,
-    make_anthropic_completer,
     merge_fields,
     read_skeleton,
+    read_worksheet,
     write_draft,
+    write_skeleton_template,
+    write_worksheet,
 )
 from .intake import IntakeError, read_intake
-from .ledger import Ledger
 from .models import INTAKE_COLUMNS
 from .report import render_report
-from .validate import validate_dir
+from .validate import validate_dir, validate_draft
 
 app = typer.Typer(
     add_completion=False,
@@ -57,13 +59,12 @@ def build(
     batch: str = typer.Option(..., "--batch", "-b", help="Batch name."),
     category: str = typer.Option(..., "--category", "-c", help="Category slug/name for filenames."),
     out: Path = typer.Option(..., "--out", "-o", help="Output directory."),
-    ledger_path: Path = typer.Option("hexcat_ledger.sqlite3", "--ledger", help="SQLite ledger path."),
-    rebuild: bool = typer.Option(False, "--rebuild", help="Re-emit SKUs already in the ledger."),
     strict: bool = typer.Option(True, "--strict/--no-strict", help="Strict posture (default)."),
 ):
-    """Validate intake, assemble the six files + log, run the gate, update the ledger."""
+    """Validate intake, assemble the six files + log, run the gate."""
     rules = load_rules()
     weights = load_weights()
+    verify_taxonomy()  # fail loud if config/taxonomy/transceivers.yaml drifts from the contract
 
     try:
         records = read_intake(input, rules, weights)
@@ -71,22 +72,7 @@ def build(
         err_console.print(f"[bold red]Intake error:[/] {e}")
         raise typer.Exit(code=2)
 
-    # Ledger dedupe.
-    led = Ledger(ledger_path)
-    ledger_result = led.classify([r.artikelnummer for r in records])
-    if not rebuild:
-        new_set = set(ledger_result.new_skus)
-        to_build = [r for r in records if r.artikelnummer in new_set]
-    else:
-        to_build = records
-
-    if not to_build:
-        console.print(
-            "[yellow]All SKUs are already in the ledger; nothing to build.[/] "
-            "Use --rebuild to re-emit."
-        )
-        led.close()
-        raise typer.Exit(code=0)
+    to_build = records
 
     out.mkdir(parents=True, exist_ok=True)
     staging = out / _STAGING
@@ -109,7 +95,6 @@ def build(
             f.path = dest
         manifest.out_dir = out
         shutil.rmtree(staging, ignore_errors=True)
-        led.record([r.artikelnummer for r in to_build], batch, category)
     else:
         # Never emit non-compliant files into the output dir; quarantine them.
         quarantine = out / _QUARANTINE
@@ -125,30 +110,47 @@ def build(
         manifest=manifest,
         records=to_build,
         validation=validation,
-        ledger=ledger_result,
         quarantined=quarantined,
     )
-    led.close()
     raise typer.Exit(code=0 if validation.ok else 1)
 
 
 @app.command()
 def validate(
-    dir: Path = typer.Option(..., "--dir", "-d", help="Bundle directory to re-validate."),
+    dir: Path = typer.Option(None, "--dir", "-d", help="Bundle directory to re-validate."),
+    input: Path = typer.Option(
+        None, "--input", "-i", help="Draft/intake CSV to content-validate before build."
+    ),
 ):
-    """Re-run the validation gate against an already-produced bundle."""
+    """Validate a produced bundle (`--dir`) or a draft intake CSV (`--input`).
+
+    `--input` runs the content gate (word/char budgets, exact <p> counts, banned language,
+    Titel-Tag suffix/length, Meta range, authenticity closer, FAQ format + pair count, plus
+    advisory soft spec flags) using the SAME predicates `build` enforces — so a draft that
+    passes here passes the build gate's content checks.
+    """
+    if (dir is None) == (input is None):
+        err_console.print("[bold red]Pass exactly one of[/] --dir [bold red]or[/] --input.")
+        raise typer.Exit(code=2)
+
     rules = load_rules()
-    result = validate_dir(rules, dir)
+    target = dir if dir is not None else input
+    result = validate_draft(rules, input) if input is not None else validate_dir(rules, dir)
+
     if result.ok:
-        console.print(f"[bold green]PASS[/] — 0 violations in {dir}")
+        console.print(f"[bold green]PASS[/] — 0 violations in {target}")
         if result.warnings:
-            console.print(f"[yellow]{len(result.warnings)} warn-list flag(s):[/]")
+            console.print(f"[yellow]{len(result.warnings)} warn/soft flag(s):[/]")
             for w in result.warnings:
                 console.print(f"  • {w}")
         raise typer.Exit(code=0)
-    console.print(f"[bold red]FAIL[/] — {len(result.violations)} violation(s) in {dir}:")
+    console.print(f"[bold red]FAIL[/] — {len(result.violations)} violation(s) in {target}:")
     for v in result.violations:
         console.print(f"  • {v}")
+    if result.warnings:
+        console.print(f"[yellow]{len(result.warnings)} warn/soft flag(s):[/]")
+        for w in result.warnings:
+            console.print(f"  • {w}")
     raise typer.Exit(code=1)
 
 
@@ -204,85 +206,106 @@ def new_intake(
                   "and is skipped on build. Fill real rows below it.[/]")
 
 
-@app.command()
-def generate(
-    input: Path = typer.Option(..., "--input", "-i", help="Facts-only skeleton intake CSV."),
-    out: Path = typer.Option(..., "--out", "-o", help="Path to write the filled draft intake CSV."),
-    model: str = typer.Option(DEFAULT_MODEL, "--model", help="Anthropic model id."),
-    max_retries: int = typer.Option(
-        DEFAULT_MAX_RETRIES, "--max-retries", help="Self-check retries per SKU before flagging."
-    ),
-    limit: int = typer.Option(0, "--limit", help="Only generate the first N SKUs (0 = all)."),
-    only: str = typer.Option("", "--only", help="Comma-separated SKUs to generate (subset)."),
+@app.command("new-skeleton")
+def new_skeleton(
+    out: Path = typer.Option(..., "--out", "-o", help="Path to write the facts-only skeleton."),
+    profile: str = typer.Option("transceiver", "--profile", help="Skeleton profile."),
 ):
-    """Phase 2: draft the German content fields per SKU via the Anthropic API.
+    """Write a facts-only intake skeleton (content columns blank) for `hexcat worksheet`."""
+    if profile != "transceiver":
+        err_console.print(f"[red]Unknown profile {profile!r}; only 'transceiver' in Phase 2.[/]")
+        raise typer.Exit(code=2)
+    write_skeleton_template(out)
+    console.print(f"[green]Wrote facts-only skeleton:[/] {out}")
+    console.print("[dim]Fill the facts (content columns stay blank), then run "
+                  "`hexcat worksheet`. The first row is a commented example.[/]")
 
-    Reads a facts-only skeleton intake, self-checks each draft against the build gate's
-    own rules (retrying with feedback), and writes a draft intake CSV for human review.
-    Run `hexcat build` on the reviewed draft. This command makes network/model calls.
+
+@app.command()
+def worksheet(
+    input: Path = typer.Option(..., "--input", "-i", help="Facts-only skeleton intake CSV."),
+    out: Path = typer.Option(..., "--out", "-o", help="Path to write the Markdown content worksheet."),
+):
+    """Turn a facts-only skeleton into a fill-in worksheet (the $0 content surface).
+
+    Emits the rendered voice guide plus one section per SKU — its verified facts, the
+    per-field rules from config, and an empty BEGIN/END block per content field. Claude
+    Code fills those blocks IN-SESSION (no API, no cost); then run `hexcat draft`.
     """
     rules = load_rules()
-
+    verify_taxonomy()
     try:
         facts = read_skeleton(input, rules)
     except GenerateError as e:
         err_console.print(f"[bold red]Skeleton error:[/] {e}")
         raise typer.Exit(code=2)
 
-    if only.strip():
-        wanted = {s.strip() for s in only.split(",") if s.strip()}
-        facts = [f for f in facts if f.sku in wanted]
-    if limit > 0:
-        facts = facts[:limit]
-    if not facts:
-        err_console.print("[bold red]No SKUs selected to generate.[/]")
+    write_worksheet(out, facts, rules, skeleton_path=input)
+    console.print(f"[green]Wrote content worksheet:[/] {out}   [dim]({len(facts)} SKU(s))[/]")
+    console.print(
+        "[dim]Fill each BEGIN/END content block (Claude Code, in-session), then run "
+        "`hexcat draft --worksheet …`.[/]"
+    )
+
+
+@app.command()
+def draft(
+    worksheet: Path = typer.Option(..., "--worksheet", "-w", help="Authored content worksheet."),
+    out: Path = typer.Option(..., "--out", "-o", help="Path to write the draft intake CSV."),
+    skeleton: Path = typer.Option(
+        None, "--skeleton", "-s",
+        help="Facts-only skeleton (default: the one referenced in the worksheet header).",
+    ),
+):
+    """Merge authored worksheet content with skeleton facts into a draft intake CSV.
+
+    Errors (without writing) if any content block is empty, naming the SKU/field. The
+    resulting draft is the input for `hexcat validate --input …` and then `hexcat build`.
+    """
+    rules = load_rules()
+    verify_taxonomy()
+
+    try:
+        embedded_skeleton, content = read_worksheet(worksheet)
+    except GenerateError as e:
+        err_console.print(f"[bold red]Worksheet error:[/] {e}")
+        raise typer.Exit(code=2)
+
+    skeleton_path = skeleton or (Path(embedded_skeleton) if embedded_skeleton else None)
+    if skeleton_path is None:
+        err_console.print(
+            "[bold red]No skeleton:[/] the worksheet has no HEXCAT:SKELETON header; "
+            "pass --skeleton explicitly."
+        )
         raise typer.Exit(code=2)
 
     try:
-        completer = make_anthropic_completer(model)
+        facts = read_skeleton(skeleton_path, rules)
     except GenerateError as e:
-        err_console.print(f"[bold red]Cannot start generation:[/] {e}")
+        err_console.print(f"[bold red]Skeleton error:[/] {e}")
         raise typer.Exit(code=2)
 
-    gen = Generator(rules, completer=completer, model=model, max_retries=max_retries)
-
-    console.print(
-        f"[bold]Generating[/] {len(facts)} SKU(s) with [cyan]{model}[/] "
-        f"(max {max_retries} attempts each)…"
-    )
-    results = []
-    out_rows = []
+    empty: list[str] = []
+    rows: list[dict[str, str]] = []
     for f in facts:
-        res = gen.generate_one(f)
-        results.append(res)
-        out_rows.append(merge_fields(f.row, res.fields))
-        if res.ok:
-            console.print(
-                f"  [green]OK[/]      {res.sku}  "
-                f"(attempt {res.attempts}; kurz {res.kurz_words}w, "
-                f"besch {res.besch_words}w, {res.faq_pairs} FAQ)"
-            )
-        else:
-            console.print(f"  [red]FLAGGED[/] {res.sku}  ({len(res.issues)} unmet check(s))")
-            for issue in res.issues:
-                console.print(f"            [dim]- {issue}[/]")
+        authored = content.get(f.sku)
+        if authored is None:
+            err_console.print(f"[bold red]Missing content:[/] worksheet has no blocks for {f.sku}.")
+            raise typer.Exit(code=2)
+        for col in CONTENT_COLUMNS:
+            if not (authored.get(col) or "").strip():
+                empty.append(f"{f.sku} / {col}")
+        rows.append(merge_fields(f.row, {c: authored.get(c, "") for c in CONTENT_COLUMNS}))
 
-    write_draft(out, out_rows)
+    if empty:
+        err_console.print(f"[bold red]Empty content blocks ({len(empty)})[/] — fill them, then re-run:")
+        for e in empty:
+            err_console.print(f"  • {e}")
+        raise typer.Exit(code=2)
 
-    ok_n = sum(1 for r in results if r.ok)
-    flagged_n = len(results) - ok_n
-    console.print()
-    console.print(f"[bold]Draft written:[/] {out}")
-    console.print(f"  passed self-check: [green]{ok_n}[/]   flagged: "
-                  f"{'[red]' + str(flagged_n) + '[/]' if flagged_n else '0'}")
-    if flagged_n:
-        console.print(
-            "[yellow]Review the flagged SKUs in the draft before running "
-            "`hexcat build` — the gate will quarantine any that still fail.[/]"
-        )
-    else:
-        console.print("[dim]Review the draft, then run `hexcat build` on it.[/]")
-    raise typer.Exit(code=0 if flagged_n == 0 else 1)
+    write_draft(out, rows)
+    console.print(f"[green]Wrote draft intake:[/] {out}   [dim]({len(rows)} SKU(s))[/]")
+    console.print("[dim]Next: `hexcat validate --input …`, fix any violations, then `hexcat build`.[/]")
 
 
 if __name__ == "__main__":

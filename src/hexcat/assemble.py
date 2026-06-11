@@ -137,7 +137,6 @@ def assemble_bundle(
     batch: str,
     category: str,
     out_dir: str | Path,
-    batch_n: int = 1,
     build_time: str | None = None,
 ) -> BundleManifest:
     out_dir = Path(out_dir)
@@ -165,7 +164,7 @@ def assemble_bundle(
          _price_rows(records), C.PRICES_DELIMITER, C.PRICES_BOM, frozenset()),
         ("condition", C.FN_CONDITION.format(batch=bat), C.CONDITION_COLUMNS,
          _condition_rows(records), C.CONDITION_DELIMITER, C.CONDITION_BOM, frozenset()),
-        ("faq", C.FN_FAQ.format(batch=bat, n=batch_n), C.FAQ_COLUMNS,
+        ("faq", C.FN_FAQ.format(batch=bat), C.FAQ_COLUMNS,
          _faq_rows(records), C.FAQ_DELIMITER, C.FAQ_BOM, faq_force_quote),
         ("verification", C.FN_VERIFICATION_LOG.format(batch=bat), C.VERIFICATION_LOG_COLUMNS,
          _verification_rows(records, bt), C.VERIFICATION_LOG_DELIMITER, C.VERIFICATION_LOG_BOM, frozenset()),

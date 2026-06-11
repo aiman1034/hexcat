@@ -25,13 +25,13 @@ def test_row_counts(good_bundle):
 def test_filenames_match_contract(good_bundle):
     d, manifest = good_bundle
     names = {f.path.name for f in manifest.files}
-    assert "Hexwaren_Transceivers_v5_0_Main.csv" in names
-    assert "Hexwaren_Transceivers_Attributes_v5_0.csv" in names
+    assert "Hexwaren_Transceivers_Main.csv" in names
+    assert "Hexwaren_Transceivers_Attributes.csv" in names
     assert "Hexwaren_Transceivers_PlatformFlag.csv" in names
     assert "Hexwaren_Transceivers_Prices.csv" in names
-    assert "Hexwaren_Condition_Cisco_SampleBatch.csv" in names
-    assert "Hexwaren_FAQ_Cisco_SampleBatch_Batch_1.csv" in names
-    assert "Verification_Log_Cisco_SampleBatch.csv" in names
+    assert "Hexwaren_Condition_Cisco_Transceivers.csv" in names
+    assert "Hexwaren_FAQ_Cisco_Transceivers.csv" in names
+    assert "Verification_Log_Cisco_Transceivers.csv" in names
 
 
 def test_main_bom_and_delimiter(good_bundle):

@@ -10,7 +10,7 @@ from hexcat.config import load_rules, load_weights
 from hexcat.intake import read_intake
 
 REPO = Path(__file__).resolve().parents[1]
-EXAMPLE_INTAKE = REPO / "examples" / "Cisco_SampleBatch_intake.csv"
+EXAMPLE_INTAKE = REPO / "examples" / "Cisco_Transceivers_intake.csv"
 
 
 @pytest.fixture(scope="session")
@@ -33,7 +33,7 @@ def good_bundle(tmp_path, good_records, rules):
     """Assemble the example into tmp_path and return (dir, manifest)."""
     manifest = assemble_bundle(
         good_records, rules,
-        batch="Cisco_SampleBatch", category="Transceivers",
+        batch="Cisco_Transceivers", category="Transceivers",
         out_dir=tmp_path, build_time="2026-06-11T00:00:00Z",
     )
     return tmp_path, manifest
