@@ -463,5 +463,48 @@ def ledger(
                       "[dim](Artikelnummer/Vendor/KategorieEbene3/SourceURLs seeded; specs blank)[/]")
 
 
+@app.command("stage3")
+def stage3(
+    ledger: Path = typer.Option(
+        Path("output/Cisco_Transceivers_Ledger.xlsx"), "--ledger", "-l",
+        help="DONE-VERIFIED Stage-1 ledger workbook (its 'Neue Artikel' sheet is the spine).",
+    ),
+    brand: str = typer.Option("Cisco", "--brand", "-b", help="Brand (Hersteller / URL prefix)."),
+    out: Path = typer.Option(
+        Path("output/stage3"), "--out", "-o", help="Directory for the v5.0 package files."
+    ),
+    stem: str = typer.Option(None, "--stem", help="Filename stem (default: <Brand>_Transceivers)."),
+):
+    """Stage 3: generate the byte-exact v5.0 JTL-Ameise import package from a verified ledger.
+
+    Deterministic scaffold — fills every ledger-derivable field (Artikelnummer, HAN, Hersteller,
+    URL-Pfad, Kategorie Ebene 1/2/3, flags, weights), placeholder prices (PRICES-PENDING), and a
+    Verification_Log. German prose + verified spec values are authored IN-SESSION ($0) on top.
+    """
+    from .stage3 import read_ledger_facts, write_package
+
+    if not ledger.exists():
+        err_console.print(f"[bold red]Ledger not found:[/] {ledger} (run `hexcat ledger … ` first).")
+        raise typer.Exit(code=2)
+
+    facts = read_ledger_facts(ledger)
+    if not facts:
+        err_console.print(f"[bold red]No SKUs[/] in {ledger} 'Neue Artikel' sheet.")
+        raise typer.Exit(code=2)
+
+    result = write_package(facts, out, brand=brand, stem=stem)
+    console.print(f"[bold green]Stage-3 package written:[/] {result.out_dir}  "
+                  f"[dim]({result.sku_count} SKUs)[/]")
+    for k, p in result.paths.items():
+        console.print(f"  [cyan]{k:13s}[/] {p.name}")
+    console.print(f"[bold]State:[/] {result.state}")
+    if result.pending_content:
+        console.print(f"[yellow]CONTENT-PENDING ({len(result.pending_content)}):[/] prose + "
+                      "verified spec attributes authored in-session ($0).")
+    if result.pending_prices:
+        console.print(f"[yellow]PRICES-PENDING ({len(result.pending_prices)}):[/] "
+                      "operator supplies Netto-VK (only operator-supplied field).")
+
+
 if __name__ == "__main__":
     app()
