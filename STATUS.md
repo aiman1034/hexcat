@@ -18,7 +18,7 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated-complete; whole-line datasheet) |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated to sourced line; FlexFabric/Comware = SKU-breadth gap, tracked) |
-| MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | NOT-STARTED | **DONE-VERIFIED** (HTML card-grid mode; 1 converter flagged-not-emitted; whole-line page) |
+| MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | **PRICES-PENDING (24/24 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (card-grid mode; per-SKU product-page facts; only operator Netto-VK outstanding) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
 | 13 others| 0 | not enumerated | — | — | — | NOT-STARTED |
 
@@ -63,6 +63,18 @@ SFP-10G-OLT20-X). Content gate (`content_issues`) passes for all 297. Only opera
 remains before IMPORT-READY. Notable flag-don't-emit calls: CFP-100G-SR10 DOM "Nein (laut Datenblatt)";
 DP01QSDD-ZF1 modulation QPSK per line-mode (datasheet "16QAM" column treated as typo); DWDM-SFP-6141
 DOM not asserted; coherent DCOs assert only datasheet-stated power/temp/connector.
+
+### MikroTik content authoring (COMPLETE 2026-06-12) — State = PRICES-PENDING (24/24)
+Authored all 24 MikroTik SKUs in-session ($0) into `stage3_content/MikroTik_content.json` (TRACKED).
+Facts spine = `output/stage3/mikrotik_facts.json` (gitignored): per-SKU honest-GET of each
+server-rendered product page (slug map in `_scratch/harvest_mikrotik.py`), pulling the spec
+`<li>` label/value pairs. 19 pages carry the full `basis-1/2 font-bold`/`font-light` spec list;
+**5 thin pages** (DQ+BC0003-DS+, S+31DLC10D, DDQ+DA0001/0003, DDQ+85MP01D) render specs outside
+that markup — round-tripped instead from their `og:description` (added as `og` key in the facts
+file). Families: SFP 6, SFP+ 3, SFP28 3, QSFP28 3, QSFP-DD 1, DAC 7, AOC 1. Every attribute →
+provenance to its product page; flag-or-omit on unstated specs (e.g. DDQ+85MP01D reichweite not
+asserted; S+31DLC10D reichweite "laut Hersteller"). `content_issues` passes for all 24; package
+written to `output/stage3/MikroTik_Transceivers_*` (5 CSVs). Only operator Netto-VK outstanding.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
