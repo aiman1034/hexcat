@@ -278,6 +278,32 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
   wrongly ingest IB parts (EDR/HDR/SPQ-CE-*). Need a subsection-gated token mode that tracks the
   current header and emits only Ethernet (or Ethernet-and-IB) rows. Tables are merged-cell/multi-row
   (one Name cell spans many length rows), so description reassembly is non-trivial.
+  - **PROTOTYPE RESULT (2026-06-12, `_scratch/nvidia_harvest.py`):** subsection-gated token scan
+    over `_scratch/nvidia_parts.txt` yields **86 Ethernet PNs** from this 1 PDF (orderable
+    Part-Number column MCP*/MFS*/MFA*/MMA*/MMS*/C-DQ*/T-DQ*; 980-* NVIDIA SKU column ignored;
+    MAM*-QSA port adaptors excluded like ADPT). Gating headers: INCLUDE on "…Ethernet Only" /
+    "InfiniBand and/or Ethernet" / "…and NNNGbE Ethernet" / "…and Spectrum Ethernet"; EXCLUDE on
+    "InfiniBand Only". **Two false-positive classes found (must fix before a real ledger):**
+    (1) cross-protocol HELPER rows — `MMA1T00-HS` (HDR *InfiniBand* SR4) is listed inside the
+    Ethernet 400G "…Transceivers Often Used with 400G … for Split Ends" caption; its true
+    Ethernet twin is `MMA1T00-VS`. (2) PAGE-BLEED — `MCP1650-V001E30/V01AE30/V002E26` (genuine
+    200GbE) surface under the p7 "200G HDR InfiniBand Only" header because pdfplumber merges the
+    table across the p7→p8 break. Root cause = `extract_text()` mangling merged-cell tables.
+    **Recommended real build:** geometry/word-bbox column extraction (read the Part-Number column
+    + the active subsection header by y-position) instead of line heuristics, run across ALL the
+    NVIDIA parts-list PDFs (this one + 400G 100G-PAM4 + 800G XDR + legacy 40/10/1G). Do NOT ship a
+    line-heuristic ledger — it would admit the 2 false-positive classes above.
+  - **PROTOTYPE v2 (2026-06-12, `_scratch/nvidia_harvest.py`) — ALGORITHM VALIDATED.** A
+    per-occurrence gating rule set resolves all 3 hazards and yields **85 clean Ethernet PNs**
+    (17 IB/helper dropped) for PDF #1, with edge-case asserts that PASS: drop `MMA1T00-HS`
+    (helper IB, code H), keep `MMA1T00-VS` (Eth twin), keep page-bled `MCP1650-V*` (also under a
+    real Ethernet header), keep dual `MMS1W50-HM` (under "IB and 200GbE Ethernet"), drop IB
+    `MMA1B00-E100`/`MFA1A00-E*`/`MCP1600-E*`. Rule: INCLUDE/EXCLUDE/HELPER header classes + a PN
+    protocol-code fallback (V/C/A/W/G/N=Eth, H/E=IB) used only for HELPER/none rows; emit a PN iff
+    it has >=1 Ethernet-positive occurrence OR (only-HELPER/none occurrences AND Eth code). NEXT:
+    fetch the other 3 parts-list PDFs, run the same harvester to get the full Ethernet PN universe,
+    build the per-PN grounding-description corpus, then wire as an engine mining mode + YAML +
+    V1-V9 (still prefer word-bbox column extraction for robust descriptions).
 - Palo Alto datasheet landing (not a direct PDF):
   `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
 - Supermicro eStore transceiver listings (WAF-403 on honest-GET — need headed/Tier-2):
