@@ -32238,14 +32238,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CXP-100G-SR10 100GBASE-SR10 CXP — 850 nm Multimode, MPO/MTP-24, bis 150 m OM4, DOM",
+    "titel_tag": "Cisco CXP-100G-SR10 100GBASE-SR10 150m | Hexwaren",
+    "meta_description": "Original Cisco CXP-100G-SR10 100GBASE-SR10 CXP-Modul kaufen — 850 nm Multimode, MPO/MTP-24, bis 100 m OM3 / 150 m OM4, 10×10G-Breakout, mit DOM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CXP-100G-SR10 ist ein originales 100GBASE-SR10 CXP-Modul, das 100GE über zwölf Multimode-Lanes bei 850 nm mit weiblichem MPO/MTP-24-Anschluss überträgt.</p><p>Es erreicht 100 m (OM3) bzw. 150 m (OM4), unterstützt 10×10G- und 40GBASE-SR4-Breakout sowie DOM und nimmt maximal 3,5 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CXP-100G-SR10 ist ein 100GBASE-SR10 CXP-Modul, das 100 Gigabit Ethernet über zwölf Multimode-Faserlanes bei 850 nm mit einem weiblichen MPO/MTP-24-Anschluss überträgt — eine sehr dichte Lösung für kurze Strecken im Rechenzentrum und in HPC-Netzen.",
+      "Über laseroptimierte Multimode-Faser erreicht es 100 Meter (OM3) bzw. 150 Meter (OM4); jede Lane erfüllt 10GBASE-SR und unterstützt OTN-Raten bis 11,25 Gb/s, sodass sich das Modul auch im 10×10-Gigabit-Modus sowie für 40GBASE-SR4-Breakout nutzen lässt. Es nimmt maximal 3,5 Watt auf und arbeitet von 0 bis 70 °C (Laser-Klasse 1).",
+      "Das Modul unterstützt Digital Optical Monitoring (DOM) und die Cisco Quality-ID zur Echtheitserkennung, ist im laufenden Betrieb steckbar und besitzt einen farbkodierten Pull-Release-Griff zur Reichweitenkennung. Im CXP-Formfaktor fügt es sich in CXP-Ports von Cisco-Switches, -Routern und optischen Plattformen ein (IEEE 802.3ba, Laser-Klasse 1, 0 bis 70 °C)."
+    ],
+    "kompatibilitaet": [
+      "Cisco CXP-Ports an Switches, Routern und optischen Plattformen (Rechenzentrum, HPC, Core-Aggregation, Transport)",
+      "Interoperabel mit IEEE-konformen 100GBASE-SR10-Formfaktoren",
+      "Maßgeblich ist die Cisco 100 Gigabit Ethernet Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (90 Tage)."
+      ],
+      [
+        "Kann das CXP-100G-SR10 auch als 10×10G genutzt werden?",
+        "Ja. Jede Lane erfüllt 10GBASE-SR; mit Ribbon-zu-Duplex-Breakout-Kabeln lässt es sich zu zehn 10GBASE-SR-Schnittstellen betreiben, zudem für 40GBASE-SR4-Breakout."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 100 Meter über OM3 und 150 Meter über OM4 bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CXP-100G-SR12",
+        "Cisco CXP-100G-SR12 — 100GBASE-SR10 über Multimode, 150 m"
+      ],
+      [
+        "CFP-100G-SR10",
+        "Cisco CFP-100G-SR10 — 100GBASE-SR10 CFP über Multimode, 150 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32253,12 +32283,89 @@
         "CXP"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (10× 10G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-SR10"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm (12 Lanes, 840–860 nm)"
+      ],
+      [
+        "Reichweite",
+        "100 m (OM3) / 150 m (OM4)"
+      ],
+      [
+        "Anschluss",
+        "MPO/MTP-24 (female)"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 3,5 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ]
+    }
   },
   "CXP-100G-SR12": {
     "_facts": {
@@ -32266,14 +32373,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CXP-100G-SR12 100GBASE-SR10 CXP — 850 nm Multimode, MPO/MTP-24, bis 150 m OM4, DOM",
+    "titel_tag": "Cisco CXP-100G-SR12 100GBASE-SR10 150m | Hexwaren",
+    "meta_description": "Original Cisco CXP-100G-SR12 100GBASE-SR10 CXP-Modul kaufen — 850 nm Multimode, MPO/MTP-24, bis 100 m OM3 / 150 m OM4, 12 Lanes (bis 120 Gb/s), mit DOM. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CXP-100G-SR12 ist ein originales 100GBASE-SR10 CXP-Modul, das 100GE über zwölf Multimode-Lanes bei 850 nm mit weiblichem MPO/MTP-24-Anschluss überträgt.</p><p>Es erreicht 100 m (OM3) bzw. 150 m (OM4), nutzt alle zwölf Lanes für bis zu 120 Gb/s, unterstützt 40GBASE-SR4-Breakout und DOM und nimmt maximal 3,5 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CXP-100G-SR12 ist ein 100GBASE-SR10 CXP-Modul, das 100 Gigabit Ethernet über zwölf Multimode-Faserlanes bei 850 nm mit einem weiblichen MPO/MTP-24-Anschluss überträgt und durch Nutzung aller zwölf optischen Lanes bis zu 120 Gb/s für dichte Interconnect-Anwendungen bereitstellt.",
+      "Über laseroptimierte Multimode-Faser erreicht es 100 Meter (OM3) bzw. 150 Meter (OM4) und unterstützt 40GBASE-SR4-Breakout; das Modul nimmt maximal 3,5 Watt auf und arbeitet im Temperaturbereich von 0 bis 70 °C (IEEE 802.3ba, Laser-Klasse 1).",
+      "Das Modul unterstützt Digital Optical Monitoring (DOM) und die Cisco Quality-ID zur Echtheitserkennung, ist im laufenden Betrieb steckbar und besitzt einen farbkodierten Pull-Release-Griff zur Reichweitenkennung. Im CXP-Formfaktor fügt es sich in CXP-Ports von Cisco-Switches, -Routern und optischen Plattformen ein (IEEE 802.3ba, Laser-Klasse 1, 0 bis 70 °C)."
+    ],
+    "kompatibilitaet": [
+      "Cisco CXP-Ports an Switches, Routern und optischen Plattformen (Rechenzentrum, HPC, Core-Aggregation, Transport)",
+      "Interoperabel mit IEEE-konformen 100GBASE-SR10-Formfaktoren",
+      "Maßgeblich ist die Cisco 100 Gigabit Ethernet Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (90 Tage)."
+      ],
+      [
+        "Worin unterscheidet sich das CXP-100G-SR12 vom CXP-100G-SR10?",
+        "Beide übertragen 100GBASE-SR10 über zwölf Lanes; das SR12 kann alle zwölf optischen Lanes für bis zu 120 Gb/s nutzen und unterstützt 40GBASE-SR4-Breakout."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 100 Meter über OM3 und 150 Meter über OM4 bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CXP-100G-SR10",
+        "Cisco CXP-100G-SR10 — 100GBASE-SR10 über Multimode, 150 m"
+      ],
+      [
+        "CFP-100G-SR10",
+        "Cisco CFP-100G-SR10 — 100GBASE-SR10 CFP über Multimode, 150 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32281,12 +32418,89 @@
         "CXP"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (10× 10G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-SR10"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm (12 Lanes, 840–860 nm)"
+      ],
+      [
+        "Reichweite",
+        "100 m (OM3) / 150 m (OM4)"
+      ],
+      [
+        "Anschluss",
+        "MPO/MTP-24 (female)"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 3,5 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-734364.html",
+        "datasheet"
+      ]
+    }
   },
   "QDD-400G-ZR-S": {
     "_facts": {
