@@ -5,6 +5,7 @@ from hexcat.content_checks import (
     content_issues,
     count_paragraphs,
     plain_text,
+    reuse_candidate_sentences,
     word_count,
 )
 
@@ -59,6 +60,43 @@ def test_helpers():
 
 def test_good_content_has_no_issues(rules):
     assert _issues(rules) == []
+
+
+# ---- cross-SKU reuse tokenization (regression: the </p><p> gluing bug) -----
+
+def test_reuse_sentences_do_not_fuse_across_paragraph_boundary():
+    # A sentence that opens the second <p> must be tokenized on its own, NOT glued onto the
+    # tail of the first <p>. The old plain_text stripped tags with no separator, so
+    # "…Tail.</p><p>Shared…" became "…tail.shared…" — one token — and a shared paragraph-
+    # initial sentence hid behind each SKU's unique first-paragraph tail.
+    html = (
+        "<p>Das XYZ-123 ist ein einzigartiger erster Satz mit dem Teilenamen darin.</p>"
+        "<p>Dieser zweite Satz ist bei vielen Artikeln voellig identischer Fuelltext.</p>"
+    )
+    sents = reuse_candidate_sentences(html)
+    assert "dieser zweite satz ist bei vielen artikeln voellig identischer fuelltext." in sents
+    # the shared sentence is a clean, separate token — never fused with the prior tail
+    assert not any("darin.dieser" in s for s in sents)
+
+
+def test_reuse_sentences_exempt_closer_and_short_fragments():
+    html = (
+        "<p>Ein hinreichend langer substantieller Satz mit genuegend Woertern hier.</p>"
+        "<p>Zu kurz. Originaler Cisco-Transceiver fuer den Einsatz im Netzwerk.</p>"
+    )
+    sents = reuse_candidate_sentences(html)
+    assert "ein hinreichend langer substantieller satz mit genuegend woertern hier." in sents
+    assert not any(s.startswith("original") for s in sents)   # closer is exempt
+    assert "zu kurz." not in sents                            # <6-word fragment dropped
+
+
+def test_reuse_no_blanket_authenticity_exemption():
+    # A sealed/new-goods CONDITION sentence is NOT exempt (only the "Original…" closer is):
+    # it must be varied per SKU, so the reuse check has to SEE it as a candidate.
+    html = ("<p>Als versiegelte Neuware wird der Artikel fabrikneu und ungeoeffnet "
+            "ausgeliefert.</p>")
+    sents = reuse_candidate_sentences(html)
+    assert any("versiegelte neuware" in s for s in sents)
 
 
 def test_kurz_paragraph_count(rules):

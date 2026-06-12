@@ -22,6 +22,27 @@ def plain_text(html: str) -> str:
     return _TAG_RE.sub("", html)
 
 
+def reuse_candidate_sentences(html: str) -> list[str]:
+    """Normalized body sentences for the cross-SKU reuse check.
+
+    Reduces each HTML tag to a SINGLE SPACE (not deletion, as `plain_text` does) so a
+    sentence never fuses with the next across a "</p><p>" boundary — otherwise every
+    paragraph-initial sentence glues onto the prior paragraph's (often unique, PN-bearing)
+    tail and genuine cross-SKU reuse hides as apparently-unique text. Splits on sentence
+    punctuation and normalizes whitespace + case. Drops the authenticity closer
+    ("Original…", identical by design) and trivial (<6-word) fragments; every remaining
+    sentence is expected to be unique per SKU.
+    """
+    spaced = " ".join(_TAG_RE.sub(" ", html).split())
+    out: list[str] = []
+    for sent in re.split(r"(?<=[.!?])\s+", spaced):
+        s = " ".join(sent.split()).lower()
+        if not s or s.startswith("original") or len(s.split()) < 6:
+            continue
+        out.append(s)
+    return out
+
+
 def word_count(html: str) -> int:
     return len(plain_text(html).split())
 

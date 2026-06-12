@@ -21,6 +21,7 @@ from .content_checks import (
     closer_present,
     count_paragraphs,
     plain_text,
+    reuse_candidate_sentences,
     word_count,
 )
 from .writers import BOM, GERMAN_DECIMAL_RE
@@ -55,11 +56,12 @@ SENTENCE_REUSE_FAIL_FRACTION = 0.25
 # Only escalate to FAIL once the brand bundle is big enough that a fraction is meaningful
 # (a 3-SKU slice trivially shares sentences; that is a WARN, not a ship-blocker).
 SENTENCE_REUSE_MIN_SKUS = 8
-# Authenticity / condition signals: these sentences are identical BY DESIGN (the sealed,
-# new-goods, Quality-ID statement is the legitimate analog of the closer) and are EXEMPT
-# from the reuse check — exactly like the "Original…" closer. This is what keeps a clean
-# brand (e.g. Cisco's "Als Cisco-Neuware versiegelt und mit Cisco Quality-ID") green.
-_AUTHENTICITY_RE = re.compile(r"versiegelt|neuware|quality-id|quality\s*id", re.IGNORECASE)
+# The ONLY by-design-identical sentence is the "Original…" authenticity closer, exempted
+# below via `startswith("original")`. Everything else — including sealed/new-goods/Quality-ID
+# *condition* statements — must be varied per SKU (e.g. by welding the part number) to stay
+# unique, exactly like every physics sentence. We deliberately do NOT blanket-exempt
+# "versiegelt/Neuware" wording: a broad keyword exemption would silently mask unvaried
+# boilerplate (it previously hid Arista's 243/347 cable + 104/347 module condition sentences).
 
 # --- optical-module completeness (FAIL) ------------------------------------------------
 # Any module whose Kategorie Ebene 3 is a transceiver form factor (NOT a DAC/AOC/MPO cable)
@@ -264,15 +266,11 @@ class Validator:
             if "?" in besch_plain:
                 self._warn(fname, sku, "Beschreibung",
                            "contains '?' — possible inline Q&A (FAQ belongs in the FAQ file)")
-            # Collect substantive sentences for the reuse check. Exempt: the authenticity
-            # closer ("Original…"), any authenticity/condition statement (sealed/new-goods/
-            # Quality-ID — identical by design), and trivial (<6-word) fragments.
-            for sent in re.split(r"(?<=[.!?])\s+", besch_plain):
-                s = " ".join(sent.split()).lower()
-                if not s or s.startswith("original") or len(s.split()) < 6:
-                    continue
-                if _AUTHENTICITY_RE.search(s):
-                    continue
+            # Collect substantive sentences for the reuse check (see reuse_candidate_sentences:
+            # tag->space tokenization so sentences don't fuse across "</p><p>"; only the
+            # "Original…" closer and <6-word fragments are exempt — condition statements
+            # included must be unique per SKU).
+            for s in reuse_candidate_sentences(besch):
                 besch_sentences.setdefault(s, set()).add(sku)
             hersteller = row[i_herst]
             if not closer_present(self.rules, hersteller, plain_text(besch)):
