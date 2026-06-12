@@ -29228,19 +29228,85 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco OSFP-800G-VR8 800GBASE-VR8 OSFP — 850 nm Multimode, 2× MPO-12 APC, 30/50 m, VDM",
+    "titel_tag": "Cisco OSFP-800G-VR8 800GBASE-VR8 50m MMF | Hexwaren",
+    "meta_description": "Original Cisco OSFP-800G-VR8 800GBASE-VR8 OSFP-Modul kaufen — 850 nm Multimode, 2× MPO-12 APC, 30 m OM3 / 50 m OM4/5, Breakout zu 8×100G, mit VDM. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco OSFP-800G-VR8 ist ein originales 800GBASE-VR8 OSFP-Modul mit integriertem Kühlkörper, das 800GE bei 850 nm über parallele Multimode-Faser überträgt und in 2×400G, 4×200G oder 8×100G aufgeteilt werden kann.</p><p>Über zwei MPO-12-APC-Anschlüsse erreicht es 30 m (OM3) bzw. 50 m (OM4/5), bei typisch 12,9 Watt, CMIS 5.3 und VDM. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco OSFP-800G-VR8 ist ein 800GBASE-VR8 OSFP-Transceiver mit integriertem Kühlkörper, der 800 Gigabit Ethernet über acht parallele Multimode-Faserpaare bei 850 nm überträgt und sich per Breakout in 2×400GBASE-VR4, 4×200GBASE-VR2 oder 8×100GBASE-VR1 aufteilen lässt.",
+      "Über zwei MPO-12-APC-Anschlüsse erreicht es 30 Meter über OM3 und 50 Meter über OM4/OM5; das Modul nimmt typisch 12,9 Watt (max. 16 Watt mit VDM) auf, ist IEEE-802.3-konform (Laser-Klasse 1) und für AI-Front-End- und -Back-End-Netze sowie Rechenzentren ausgelegt.",
+      "Das Modul ist im laufenden Betrieb steckbar, OIF-CMIS-5.3-konform mit Versatile Diagnostic Monitoring (VDM) und im Feld firmware-aktualisierbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im OSFP-Formfaktor mit integriertem Kühlkörper fügt es sich in die 800-Gigabit-OSFP-Ports von Cisco-Switches und -Routern ein und ist mit jedem IEEE-konformen Modul interoperabel."
+    ],
+    "kompatibilitaet": [
+      "Cisco 800-Gigabit-OSFP-Ports in Switches und Routern (Front-End- und Back-End-AI-Netze, Rechenzentren)",
+      "Breakout zu 2×400GE, 4×200GE und 8×100GE auf IEEE-konforme Module; optisch interoperabel unabhängig vom Formfaktor",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das Modul?",
+        "Es lässt sich per Breakout in 2×400GBASE-VR4, 4×200GBASE-VR2 oder 8×100GBASE-VR1 aufteilen."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 30 Meter über OM3 und 50 Meter über OM4/OM5-Multimode-Faser bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "OSFP-800G-VR8P",
+        "Cisco OSFP-800G-VR8P — VR8-Variante mit MPO-16-APC-Anschluss"
+      ],
+      [
+        "OSFP-800G-DR8",
+        "Cisco OSFP-800G-DR8 — 800GBASE-DR8 über Singlemode, 500 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "OSFP"
+        "OSFP (integrierter Kühlkörper)"
+      ],
+      [
+        "Geschwindigkeit",
+        "800 Gbit/s (8× 100G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 800GBASE-VR8"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm (842–948 nm)"
+      ],
+      [
+        "Reichweite",
+        "30 m (OM3) / 50 m (OM4/OM5)"
+      ],
+      [
+        "Anschluss",
+        "Dual MPO-12 APC"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4/OM5)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (VDM, CMIS 5.3)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "12,9 W typisch / 16 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29248,7 +29314,48 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "OSFP-800G-VR8P": {
     "_facts": {
@@ -29256,19 +29363,85 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco OSFP-800G-VR8P 800GBASE-VR8 OSFP — 850 nm Multimode, MPO-16 APC, 30/50 m, VDM",
+    "titel_tag": "Cisco OSFP-800G-VR8P 800GBASE-VR8 MPO-16 | Hexwaren",
+    "meta_description": "Original Cisco OSFP-800G-VR8P 800GBASE-VR8 OSFP-Modul kaufen — 850 nm Multimode, MPO-16 APC, 30 m OM3 / 50 m OM4/5, Breakout zu 8×100G, mit VDM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco OSFP-800G-VR8P ist ein originales 800GBASE-VR8 OSFP-Modul mit integriertem Kühlkörper, das 800GE bei 850 nm über parallele Multimode-Faser überträgt und in 2×400G, 4×200G oder 8×100G aufgeteilt werden kann.</p><p>Über einen MPO-16-APC-Anschluss erreicht es 30 m (OM3) bzw. 50 m (OM4/5), bei typisch 12,9 Watt, CMIS 5.3 und VDM. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco OSFP-800G-VR8P ist ein 800GBASE-VR8 OSFP-Transceiver mit integriertem Kühlkörper, der 800 Gigabit Ethernet über acht parallele Multimode-Faserpaare bei 850 nm überträgt und sich per Breakout in 2×400GBASE-VR4, 4×200GBASE-VR2 oder 8×100GBASE-VR1 aufteilen lässt.",
+      "Über einen MPO-16-APC-Anschluss erreicht es 30 Meter über OM3 und 50 Meter über OM4/OM5; das Modul nimmt typisch 12,9 Watt (max. 16 Watt mit VDM) auf, ist IEEE-802.3-konform (Laser-Klasse 1) und für AI-Front-End- und -Back-End-Netze sowie Rechenzentren ausgelegt.",
+      "Das Modul ist im laufenden Betrieb steckbar, OIF-CMIS-5.3-konform mit Versatile Diagnostic Monitoring (VDM) und im Feld firmware-aktualisierbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im OSFP-Formfaktor mit integriertem Kühlkörper fügt es sich in die 800-Gigabit-OSFP-Ports von Cisco-Switches und -Routern ein und ist mit jedem IEEE-konformen Modul interoperabel."
+    ],
+    "kompatibilitaet": [
+      "Cisco 800-Gigabit-OSFP-Ports in Switches und Routern (Front-End- und Back-End-AI-Netze, Rechenzentren)",
+      "Breakout zu 2×400GE, 4×200GE und 8×100GE auf IEEE-konforme Module; optisch interoperabel unabhängig vom Formfaktor",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Worin unterscheidet sich die -VR8P-Variante?",
+        "Sie nutzt einen einzelnen MPO-16-APC-Anschluss statt der zwei MPO-12-APC-Anschlüsse der OSFP-800G-VR8."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 30 Meter über OM3 und 50 Meter über OM4/OM5-Multimode-Faser bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "OSFP-800G-VR8",
+        "Cisco OSFP-800G-VR8 — VR8-Variante mit zwei MPO-12-APC-Anschlüssen"
+      ],
+      [
+        "OSFP-800G-DR8P",
+        "Cisco OSFP-800G-DR8P — 800GBASE-DR8 über Singlemode, MPO-16, 500 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "OSFP"
+        "OSFP (integrierter Kühlkörper)"
+      ],
+      [
+        "Geschwindigkeit",
+        "800 Gbit/s (8× 100G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 800GBASE-VR8"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm (842–948 nm)"
+      ],
+      [
+        "Reichweite",
+        "30 m (OM3) / 50 m (OM4/OM5)"
+      ],
+      [
+        "Anschluss",
+        "MPO-16 APC"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4/OM5)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (VDM, CMIS 5.3)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "12,9 W typisch / 16 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29276,7 +29449,48 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "OSFP-800G-DR8": {
     "_facts": {
@@ -29284,19 +29498,85 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco OSFP-800G-DR8 800GBASE-DR8 OSFP — 1310 nm Singlemode, 2× MPO-12 APC, 500 m, VDM",
+    "titel_tag": "Cisco OSFP-800G-DR8 800GBASE-DR8 500m SMF | Hexwaren",
+    "meta_description": "Original Cisco OSFP-800G-DR8 800GBASE-DR8 OSFP-Modul kaufen — 1310 nm Singlemode, 2× MPO-12 APC, bis 500 m, Breakout zu 8×100G, mit VDM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco OSFP-800G-DR8 ist ein originales 800GBASE-DR8 OSFP-Modul mit integriertem Kühlkörper, das 800GE bei 1310 nm über parallele Singlemode-Faser überträgt und in 2×400G, 4×200G oder 8×100G aufgeteilt werden kann.</p><p>Über zwei MPO-12-APC-Anschlüsse erreicht es bis 500 Meter, bei typisch 14,2 Watt, CMIS 5.3 und VDM. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco OSFP-800G-DR8 ist ein 800GBASE-DR8 OSFP-Transceiver mit integriertem Kühlkörper, der 800 Gigabit Ethernet über acht parallele Singlemode-Faserpaare bei 1310 nm überträgt und sich per Breakout in 2×400GBASE-DR4, 4×200GBASE-DR2 oder 8×100GBASE-DR1 aufteilen lässt.",
+      "Über zwei MPO-12-APC-Anschlüsse erreicht es bis zu 500 Meter über Singlemode-Faser (G.652); das Modul nimmt typisch 14,2 Watt (max. 17 Watt mit VDM) auf, ist IEEE-802.3-konform (Laser-Klasse 1) und für AI-Netze sowie Rechenzentren ausgelegt.",
+      "Das Modul ist im laufenden Betrieb steckbar, OIF-CMIS-5.3-konform mit Versatile Diagnostic Monitoring (VDM) und im Feld firmware-aktualisierbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im OSFP-Formfaktor mit integriertem Kühlkörper fügt es sich in die 800-Gigabit-OSFP-Ports von Cisco-Switches und -Routern ein und ist mit jedem IEEE-konformen Modul interoperabel."
+    ],
+    "kompatibilitaet": [
+      "Cisco 800-Gigabit-OSFP-Ports in Switches und Routern (Front-End- und Back-End-AI-Netze, Rechenzentren)",
+      "Breakout zu 2×400GE, 4×200GE und 8×100GE auf IEEE-konforme Module; optisch interoperabel unabhängig vom Formfaktor",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das Modul?",
+        "Es lässt sich per Breakout in 2×400GBASE-DR4, 4×200GBASE-DR2 oder 8×100GBASE-DR1 aufteilen."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 500 Meter über parallele Singlemode-Faser (G.652) bei 1310 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "OSFP-800G-DR8P",
+        "Cisco OSFP-800G-DR8P — DR8-Variante mit MPO-16-APC-Anschluss"
+      ],
+      [
+        "OSFP-800G-VR8",
+        "Cisco OSFP-800G-VR8 — 800GBASE-VR8 über Multimode, 50 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "OSFP"
+        "OSFP (integrierter Kühlkörper)"
+      ],
+      [
+        "Geschwindigkeit",
+        "800 Gbit/s (8× 100G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 800GBASE-DR8"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "500 m"
+      ],
+      [
+        "Anschluss",
+        "Dual MPO-12 APC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (VDM, CMIS 5.3)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "14,2 W typisch / 17 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29304,7 +29584,48 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "OSFP-800G-DR8P": {
     "_facts": {
@@ -29312,19 +29633,85 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco OSFP-800G-DR8P 800GBASE-DR8 OSFP — 1310 nm Singlemode, MPO-16 APC, 500 m, VDM",
+    "titel_tag": "Cisco OSFP-800G-DR8P 800GBASE-DR8 MPO-16 | Hexwaren",
+    "meta_description": "Original Cisco OSFP-800G-DR8P 800GBASE-DR8 OSFP-Modul kaufen — 1310 nm Singlemode, MPO-16 APC, bis 500 m, Breakout zu 8×100G, mit VDM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco OSFP-800G-DR8P ist ein originales 800GBASE-DR8 OSFP-Modul mit integriertem Kühlkörper, das 800GE bei 1310 nm über parallele Singlemode-Faser überträgt und in 2×400G, 4×200G oder 8×100G aufgeteilt werden kann.</p><p>Über einen MPO-16-APC-Anschluss erreicht es bis 500 Meter, bei typisch 14,2 Watt, CMIS 5.3 und VDM. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco OSFP-800G-DR8P ist ein 800GBASE-DR8 OSFP-Transceiver mit integriertem Kühlkörper, der 800 Gigabit Ethernet über acht parallele Singlemode-Faserpaare bei 1310 nm überträgt und sich per Breakout in 2×400GBASE-DR4, 4×200GBASE-DR2 oder 8×100GBASE-DR1 aufteilen lässt.",
+      "Über einen MPO-16-APC-Anschluss erreicht es bis zu 500 Meter über Singlemode-Faser (G.652); das Modul nimmt typisch 14,2 Watt (max. 17 Watt mit VDM) auf, ist IEEE-802.3-konform (Laser-Klasse 1) und für AI-Netze sowie Rechenzentren ausgelegt.",
+      "Das Modul ist im laufenden Betrieb steckbar, OIF-CMIS-5.3-konform mit Versatile Diagnostic Monitoring (VDM) und im Feld firmware-aktualisierbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im OSFP-Formfaktor mit integriertem Kühlkörper fügt es sich in die 800-Gigabit-OSFP-Ports von Cisco-Switches und -Routern ein und ist mit jedem IEEE-konformen Modul interoperabel."
+    ],
+    "kompatibilitaet": [
+      "Cisco 800-Gigabit-OSFP-Ports in Switches und Routern (Front-End- und Back-End-AI-Netze, Rechenzentren)",
+      "Breakout zu 2×400GE, 4×200GE und 8×100GE auf IEEE-konforme Module; optisch interoperabel unabhängig vom Formfaktor",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Worin unterscheidet sich die -DR8P-Variante?",
+        "Sie nutzt einen einzelnen MPO-16-APC-Anschluss statt der zwei MPO-12-APC-Anschlüsse der OSFP-800G-DR8."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 500 Meter über parallele Singlemode-Faser (G.652) bei 1310 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "OSFP-800G-DR8",
+        "Cisco OSFP-800G-DR8 — DR8-Variante mit zwei MPO-12-APC-Anschlüssen"
+      ],
+      [
+        "OSFP-2X400G-FR4",
+        "Cisco OSFP-2X400G-FR4 — 2×400GBASE-FR4, Duplex LC, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "OSFP"
+        "OSFP (integrierter Kühlkörper)"
+      ],
+      [
+        "Geschwindigkeit",
+        "800 Gbit/s (8× 100G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 800GBASE-DR8"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "500 m"
+      ],
+      [
+        "Anschluss",
+        "MPO-16 APC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (VDM, CMIS 5.3)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "14,2 W typisch / 17 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29332,7 +29719,48 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "OSFP-2X400G-FR4": {
     "_facts": {
@@ -29340,19 +29768,85 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco OSFP-2X400G-FR4 2×400GBASE-FR4 OSFP — CWDM Singlemode, Dual Duplex LC, 2 km, VDM",
+    "titel_tag": "Cisco OSFP-2X400G-FR4 2x400G-FR4 2km SMF | Hexwaren",
+    "meta_description": "Original Cisco OSFP-2X400G-FR4 OSFP-Modul kaufen — 2×400GBASE-FR4 bzw. 800GE, CWDM-Singlemode, Dual Duplex LC UPC, bis 2 km, mit VDM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco OSFP-2X400G-FR4 ist ein originales OSFP-Modul mit integriertem Kühlkörper, das zwei 400GBASE-FR4-Strecken bzw. 800GE über duale Duplex-Singlemode-Faser mit CWDM-Wellenlängen überträgt.</p><p>Über zwei Duplex-LC-UPC-Anschlüsse erreicht es bis 2 Kilometer, bei typisch 13,2 Watt, CMIS 5.3 und VDM. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco OSFP-2X400G-FR4 ist ein OSFP-Transceiver mit integriertem Kühlkörper, der zwei 400GBASE-FR4-Strecken — bzw. 800GE über die duale Duplex-Faserstrecke — mit je vier CWDM-Wellenlängen (1270/1290/1310/1330 nm) pro Faser überträgt.",
+      "Über zwei Duplex-LC-UPC-Anschlüsse auf Singlemode-Faser (G.652) erreicht es bis zu 2 Kilometer; das Modul nimmt typisch 13,2 Watt (max. 14,5 Watt) auf, ist IEEE-802.3-400GBASE-FR4-konform (Laser-Klasse 1) und für Rechenzentren und AI-Netze ausgelegt.",
+      "Das Modul ist im laufenden Betrieb steckbar, OIF-CMIS-5.3-konform mit Versatile Diagnostic Monitoring (VDM) und im Feld firmware-aktualisierbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im OSFP-Formfaktor mit integriertem Kühlkörper fügt es sich in die 800-Gigabit-OSFP-Ports von Cisco-Switches und -Routern ein und ist mit jedem IEEE-konformen Modul interoperabel."
+    ],
+    "kompatibilitaet": [
+      "Cisco 800-Gigabit-OSFP-Ports in Switches und Routern (Front-End- und Back-End-AI-Netze, Rechenzentren)",
+      "Breakout zu 2×400GE, 4×200GE und 8×100GE auf IEEE-konforme Module; optisch interoperabel unabhängig vom Formfaktor",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Unterstützt das OSFP-2X400G-FR4 800GE?",
+        "Ja. Es transportiert zwei 400GBASE-FR4-Strecken bzw. 800GE über die duale Duplex-Faserstrecke."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 2 Kilometer über Singlemode-Faser (G.652) mit Duplex-LC-UPC-Anschlüssen."
+      ]
+    ],
+    "verwandte": [
+      [
+        "OSFP-800G-DR8",
+        "Cisco OSFP-800G-DR8 — 800GBASE-DR8 über parallele Singlemode, 500 m"
+      ],
+      [
+        "OSFP-800G-VR8",
+        "Cisco OSFP-800G-VR8 — 800GBASE-VR8 über Multimode, 50 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "OSFP"
+        "OSFP (integrierter Kühlkörper)"
+      ],
+      [
+        "Geschwindigkeit",
+        "2× 400 Gbit/s (800G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 400GBASE-FR4 (2× / 800GE)"
+      ],
+      [
+        "Wellenlänge",
+        "1270 / 1290 / 1310 / 1330 nm (CWDM)"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual Duplex LC (UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (VDM, CMIS 5.3)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "13,2 W typisch / 14,5 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29360,7 +29854,48 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-2Q200-CU3M": {
     "_facts": {
