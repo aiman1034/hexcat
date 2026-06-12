@@ -31833,14 +31833,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-400G-DR4 400GBASE-DR4 QSFP112 — 1310 nm Singlemode, MPO-12, bis 500 m, Breakout",
+    "titel_tag": "Cisco QSFP-400G-DR4 400GBASE-DR4 500m | Hexwaren",
+    "meta_description": "Original Cisco QSFP-400G-DR4 400GBASE-DR4 QSFP112-Modul kaufen — 1310 nm Singlemode, MPO-12, bis 500 m, 2×200G-DR2 / 4×100G-DR1 Breakout. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-400G-DR4 ist ein originales 400GBASE-DR4 QSFP112-Modul, das 400GE über vier parallele Singlemode-Faserpaare bei 1310 nm mit MPO-12-Anschluss (APC) überträgt.</p><p>Es erreicht bis zu 500 Meter, unterstützt 2×200G-DR2 / 4×100G-DR1 Breakout und nimmt bis zu 9 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-400G-DR4 ist ein 400GBASE-DR4 QSFP112-Modul, das 400 Gigabit Ethernet über vier parallele Singlemode-Faserpaare bei 1310 nm mit einem MPO-12-Anschluss (APC) überträgt — eine Wellenlänge je Faser, 100 Gbit/s pro Lane im PAM4-Verfahren.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 500 Meter und lässt sich per Breakout als zwei 200G-DR2- oder vier 100G-DR1-Verbindungen nutzen; das Modul nimmt bis zu 9 Watt auf und arbeitet im Temperaturbereich von 0 bis 70 °C (400GAUI-4, IEEE 802.3).",
+      "Die Vorwärtsfehlerkorrektur (FEC) wird auf der Host-Plattform ausgeführt; das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für dichte AI-, HPC- und Cloud-Fabrics ausgelegt. Im QSFP112-Formfaktor fügt es sich in 400-Gigabit-Ethernet-QSFP112-Ports von Cisco-Hosts und qualifizierten Netzwerkkarten ein (QSFP112 MSA, IEEE 802.3ck, Laser-Klasse 1)."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP112-400G-Ports an Switches, Routern und Netzwerkkarten (NICs) für AI/ML-Fabrics und Rechenzentren",
+      "Interoperabel mit IEEE-802.3-konformen 400G-Schnittstellen sowie QSFP112-MSA-Modulen (CMIS)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (TMG)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (5 Jahre)."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das QSFP-400G-DR4?",
+        "Es lässt sich als zwei 200G-DR2- oder vier 100G-DR1-Verbindungen aufteilen, jeweils bis 500 Meter."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 500 Meter über parallele Singlemode-Faser (G.652) mit MPO-12-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-400G-FR4",
+        "Cisco QSFP-400G-FR4 — 400GBASE-FR4 über Duplex-Singlemode, 2 km"
+      ],
+      [
+        "QSFP-400G-VR4",
+        "Cisco QSFP-400G-VR4 — 400GBASE-VR4 über Multimode, 50 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -31848,12 +31878,89 @@
         "QSFP112"
       ],
       [
+        "Geschwindigkeit",
+        "400 Gbit/s (4× 100G PAM4)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 400GBASE-DR4 (400GAUI-4)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4 Lanes parallel)"
+      ],
+      [
+        "Reichweite",
+        "500 m"
+      ],
+      [
+        "Anschluss",
+        "MPO-12 (APC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-400G-VR4": {
     "_facts": {
@@ -31861,14 +31968,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-400G-VR4 400GBASE-VR4 QSFP112 — 850 nm Multimode, MPO-12, bis 50 m, Breakout",
+    "titel_tag": "Cisco QSFP-400G-VR4 400GBASE-VR4 50m MMF | Hexwaren",
+    "meta_description": "Original Cisco QSFP-400G-VR4 400GBASE-VR4 QSFP112-Modul kaufen — 850 nm Multimode, MPO-12, bis 50 m OM3/OM4/OM5, 2×200G-VR2 / 4×100G-VR1 Breakout. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-400G-VR4 ist ein originales 400GBASE-VR4 QSFP112-Modul, das 400GE über vier parallele Multimode-Faserpaare bei 850 nm mit MPO-12-Anschluss (APC) überträgt.</p><p>Es erreicht bis zu 50 Meter über OM3/OM4/OM5, unterstützt 2×200G-VR2 / 4×100G-VR1 Breakout und nimmt bis zu 9 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-400G-VR4 ist ein 400GBASE-VR4 QSFP112-Modul für kurze Strecken, das 400 Gigabit Ethernet über vier parallele Multimode-Faserpaare bei 850 nm mit einem MPO-12-Anschluss (APC) und PAM4-Signalisierung mit 100 Gbit/s pro Lane überträgt.",
+      "Über Multimode-Faser (OM3/OM4/OM5) erreicht es bis zu 50 Meter und lässt sich per Breakout als zwei 200G-VR2- oder vier 100G-VR1-Verbindungen nutzen; das Modul nimmt bis zu 9 Watt auf und arbeitet im Betrieb von 15 bis 70 °C (Kaltstart ab 0 °C).",
+      "Die Vorwärtsfehlerkorrektur (FEC) wird auf der Host-Plattform ausgeführt; das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für dichte AI-, HPC- und Cloud-Fabrics ausgelegt. Im QSFP112-Formfaktor fügt es sich in 400-Gigabit-Ethernet-QSFP112-Ports von Cisco-Hosts und qualifizierten Netzwerkkarten ein (QSFP112 MSA, IEEE 802.3ck, Laser-Klasse 1)."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP112-400G-Ports an Switches, Routern und Netzwerkkarten (NICs) für AI/ML-Fabrics und Rechenzentren",
+      "Interoperabel mit IEEE-802.3-konformen 400G-Schnittstellen sowie QSFP112-MSA-Modulen (CMIS)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (TMG)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (5 Jahre)."
+      ],
+      [
+        "Wie weit reicht das QSFP-400G-VR4?",
+        "Bis zu 50 Meter über laseroptimierte Multimode-Faser (OM3, OM4 oder OM5) bei 850 nm."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das Modul?",
+        "Es lässt sich als zwei 200G-VR2- oder vier 100G-VR1-Verbindungen aufteilen."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-400G-DR4",
+        "Cisco QSFP-400G-DR4 — 400GBASE-DR4 über Singlemode, 500 m"
+      ],
+      [
+        "QSFP-400G-FR4",
+        "Cisco QSFP-400G-FR4 — 400GBASE-FR4 über Duplex-Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -31876,12 +32013,89 @@
         "QSFP112"
       ],
       [
+        "Geschwindigkeit",
+        "400 Gbit/s (4× 100G PAM4)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 400GBASE-VR4 (400GAUI-4)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm (4 Lanes parallel)"
+      ],
+      [
+        "Reichweite",
+        "50 m (OM3/OM4/OM5)"
+      ],
+      [
+        "Anschluss",
+        "MPO-12 (APC)"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4/OM5)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "15 bis 70 °C (Kaltstart ab 0 °C)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-400G-FR4": {
     "_facts": {
@@ -31889,14 +32103,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-400G-FR4 400GBASE-FR4 QSFP112 — 1310 nm Singlemode WDM, Duplex LC, bis 2 km",
+    "titel_tag": "Cisco QSFP-400G-FR4 400GBASE-FR4 2km SMF | Hexwaren",
+    "meta_description": "Original Cisco QSFP-400G-FR4 400GBASE-FR4 QSFP112-Modul kaufen — 1310 nm Singlemode WDM, Duplex LC, bis 2 km über G.652. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-400G-FR4 ist ein originales 400GBASE-FR4 QSFP112-Modul, das 400GE über vier WDM-Wellenlängen auf einem Duplex-Singlemode-Faserpaar mit LC-Anschluss (UPC) überträgt.</p><p>Es erreicht bis zu 2 Kilometer über G.652, reduziert die Fasermenge und nimmt bis zu 9 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-400G-FR4 ist ein 400GBASE-FR4 QSFP112-Modul, das 400 Gigabit Ethernet über vier WDM-Wellenlängen (4× 100G PAM4) auf einem Duplex-Singlemode-Faserpaar mit LC-Anschluss (UPC) überträgt und so die Fasermenge gegenüber paralleler Optik reduziert.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 2 Kilometer und vereinfacht die Migration von vorhandener Duplex-Faser-Infrastruktur; das Modul nimmt bis zu 9 Watt auf und arbeitet im Temperaturbereich von 0 bis 70 °C (400GAUI-4, IEEE 400GBASE-FR4).",
+      "Die Vorwärtsfehlerkorrektur (FEC) wird auf der Host-Plattform ausgeführt; das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für dichte AI-, HPC- und Cloud-Fabrics ausgelegt. Im QSFP112-Formfaktor fügt es sich in 400-Gigabit-Ethernet-QSFP112-Ports von Cisco-Hosts und qualifizierten Netzwerkkarten ein (QSFP112 MSA, IEEE 802.3ck, Laser-Klasse 1)."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP112-400G-Ports an Switches, Routern und Netzwerkkarten (NICs) für AI/ML-Fabrics und Rechenzentren",
+      "Interoperabel mit IEEE-802.3-konformen 400G-Schnittstellen sowie QSFP112-MSA-Modulen (CMIS)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (TMG)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (5 Jahre)."
+      ],
+      [
+        "Wie weit reicht das QSFP-400G-FR4?",
+        "Bis zu 2 Kilometer über Duplex-Singlemode-Faser (G.652) mit LC-Anschluss."
+      ],
+      [
+        "Warum nur ein Faserpaar statt paralleler Optik?",
+        "Vier 100G-Wellenlängen werden per WDM auf ein Duplex-Faserpaar gemultiplext — das senkt die Fasermenge und vereinfacht die Migration von vorhandener Duplex-Infrastruktur."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-400G-DR4",
+        "Cisco QSFP-400G-DR4 — 400GBASE-DR4 über Singlemode, 500 m"
+      ],
+      [
+        "QSFP-400G-VR4",
+        "Cisco QSFP-400G-VR4 — 400GBASE-VR4 über Multimode, 50 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -31904,12 +32148,89 @@
         "QSFP112"
       ],
       [
+        "Geschwindigkeit",
+        "400 Gbit/s (4× 100G PAM4)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 400GBASE-FR4 (400GAUI-4)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4 WDM-Lanes)"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/400g-qsfp-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "CXP-100G-SR10": {
     "_facts": {
