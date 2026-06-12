@@ -46,3 +46,15 @@ skus:
     confidence: medium
     source: "https://pricetome.com/cisco/QSFP-100G-SR4-S="
     note: "100GBASE-SR4 QSFP28; Cisco GPL list via PriceToMe snippet"
+  GLC-SX-MMD:
+    list_usd: 612.63
+    kind: list-gpl
+    confidence: medium
+    source: "https://www.change-networks.com/ciscogpl/glc-sx-mmd"
+    note: "1000BASE-SX MMF 850nm SFP w/ DOM; Cisco GPL list via change-networks snippet (a second source cited $590 list)"
+  GLC-LH-SMD:
+    list_usd: 1174.00
+    kind: list-gpl
+    confidence: medium
+    source: "https://ormsystems.com/glc-lh-smd-price.html"
+    note: "1000BASE-LX/LH SMF 1310nm SFP; Cisco GPL list via ORM Systems/router-switch snippet"

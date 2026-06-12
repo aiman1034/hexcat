@@ -6,15 +6,15 @@
 policy_ref: "config/pricing_policy.yaml"
 grounded_inputs_ref: "config/market_prices/list_prices.yaml"
 total_skus: 902
-total_grounded: 4
-total_flagged: 898
+total_grounded: 6
+total_flagged: 896
 brands:
   Cisco:
     sku_count: 297
     grounded_T1: 0
-    grounded_T2: 4
+    grounded_T2: 6
     grounded_T3: 0
-    flagged: 293
+    flagged: 291
   Arista:
     sku_count: 347
     grounded_T1: 0
