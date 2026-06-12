@@ -81,6 +81,7 @@ class AttributeValue(BaseModel):
     value: str
     sortiernummer: int  # 1-based position in the fixed 14 order
     source_url: str     # real URL or VERIFICATION_SOURCE_OPERATOR
+    confidence: str = ""  # blank -> operator confidence; "derived:<rule>" for G2b derivations
 
 
 class SkuRecord(BaseModel):

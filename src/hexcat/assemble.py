@@ -124,7 +124,7 @@ def _verification_rows(records: list[SkuRecord], build_time: str) -> list[list[s
                 a.name,
                 a.value,
                 a.source_url,
-                C.VERIFICATION_CONFIDENCE_OPERATOR,
+                a.confidence or C.VERIFICATION_CONFIDENCE_OPERATOR,
                 build_time,
             ])
     return rows

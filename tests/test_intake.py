@@ -103,3 +103,46 @@ def test_empty_attributes_skipped(rules, weights):
 def test_missing_artikelnummer_raises(rules, weights):
     with pytest.raises(IntakeError):
         build_record(_base_intake(Artikelnummer=""), rules, weights)
+
+
+# --- §2 G2b: physics-grounded derivations wired into build_record ------------- #
+def test_derives_fasertyp_from_wavelength(rules, weights):
+    # Wellenlänge known, Fasertyp left empty -> derived Singlemode, stamped + canonically placed.
+    r = build_record(
+        _base_intake(Wellenlaenge="1310 nm", Fasertyp=""), rules, weights
+    )
+    ft = next(a for a in r.attributes if a.name == "Fasertyp")
+    assert ft.value == "Singlemode"
+    assert ft.confidence.startswith("derived:")
+    assert ft.sortiernummer == 5            # canonical position in the fixed 14
+    assert "Fasertyp" not in r.skipped_attributes
+
+
+def test_derives_faseranzahl_from_duplex_lc(rules, weights):
+    r = build_record(
+        _base_intake(Anschlusstyp="LC (Duplex)", Faseranzahl=""), rules, weights
+    )
+    fa = next(a for a in r.attributes if a.name == "Faseranzahl")
+    assert fa.value == "2"
+    assert fa.confidence.startswith("derived:")
+
+
+def test_does_not_derive_when_ungrounded(rules, weights):
+    # No Wellenlänge, ambiguous connector -> nothing invented; both stay real GAPs.
+    r = build_record(
+        _base_intake(Wellenlaenge="", Fasertyp="", Anschlusstyp="MPO", Faseranzahl=""),
+        rules, weights,
+    )
+    names = {a.name for a in r.attributes}
+    assert "Fasertyp" not in names and "Faseranzahl" not in names
+    assert "Fasertyp" in r.skipped_attributes and "Faseranzahl" in r.skipped_attributes
+
+
+def test_explicit_value_not_overridden_by_derivation(rules, weights):
+    # An extracted Fasertyp must win over the deriver and keep operator confidence.
+    r = build_record(
+        _base_intake(Wellenlaenge="850 nm", Fasertyp="Singlemode"), rules, weights
+    )
+    ft = next(a for a in r.attributes if a.name == "Fasertyp")
+    assert ft.value == "Singlemode"         # operator value kept, not the 850nm->Multimode guess
+    assert ft.confidence == ""              # not a derivation

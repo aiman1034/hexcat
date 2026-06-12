@@ -14,6 +14,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
+from . import attribute_depth
 from . import constants as C
 from .config import Rules, Weights
 from .models import (
@@ -114,22 +115,38 @@ def _derive_weights(
 
 
 def _build_attributes(intake: SkuIntake, source_url: str) -> tuple[list[AttributeValue], list[str]]:
-    """Transpose the fixed 14 attribute columns -> long rows; skip empty cells."""
+    """Transpose the fixed 14 attribute columns -> long rows; skip empty cells.
+
+    After collecting the populated cells, fire the physics-grounded derivers (§2 G2b):
+    a slot left empty by extraction is FILLED only when an already-known sibling slot pins
+    it unambiguously (Fasertyp from Wellenlänge, Faseranzahl from a duplex-LC connector).
+    Derived values inherit the SKU's grounding Source_URL and are stamped with the rule
+    label as their Confidence, so the Verification_Log shows exactly how each was obtained.
+    Everything still empty is reported as skipped (a real GAP) — never invented.
+    """
+    present = {
+        attr_name: getattr(intake, field, "").strip()
+        for attr_name, field in C.TRANSCEIVER_ATTRIBUTES
+        if getattr(intake, field, "").strip()
+    }
+    derived = attribute_depth.derive_all(present)  # {name: (value, rule_label)}
+
     attrs: list[AttributeValue] = []
     skipped: list[str] = []
-    for idx, (attr_name, field) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1):
-        value = getattr(intake, field, "").strip()
-        if not value:
+    for idx, (attr_name, _field) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1):
+        if attr_name in present:
+            attrs.append(AttributeValue(
+                name=attr_name, value=present[attr_name],
+                sortiernummer=idx, source_url=source_url,
+            ))
+        elif attr_name in derived:
+            value, rule_label = derived[attr_name]
+            attrs.append(AttributeValue(
+                name=attr_name, value=value,
+                sortiernummer=idx, source_url=source_url, confidence=rule_label,
+            ))
+        else:
             skipped.append(attr_name)
-            continue
-        attrs.append(
-            AttributeValue(
-                name=attr_name,
-                value=value,
-                sortiernummer=idx,  # canonical position in the fixed 14
-                source_url=source_url,
-            )
-        )
     return attrs, skipped
 
 
