@@ -154,6 +154,51 @@ def validate(
     raise typer.Exit(code=1)
 
 
+@app.command()
+def sweep(
+    dirs: list[Path] = typer.Argument(
+        ..., help="Two or more produced bundle directories (one per brand) to cross-check."
+    ),
+):
+    """Cross-brand merged-catalog sweep (§2 G6).
+
+    The per-bundle `validate` gate is blind to clashes BETWEEN brands. This sweep reads every
+    given bundle and FAILS on any cross-brand identity collision (Artikelnummer, URL-Pfad,
+    GTIN, Titel-Tag) or a body sentence reused across 3+ brands — defects that only appear once
+    the brands are merged into one JTL import. The brand label is the directory's trailing
+    name component (e.g. `output/stage3_Cisco` -> `Cisco`).
+    """
+    from .merged_sweep import SweepError, sweep_catalog
+
+    bundles: dict[str, Path] = {}
+    for d in dirs:
+        name = d.name
+        brand = name.split("stage3_", 1)[1] if "stage3_" in name else name
+        bundles[brand] = d
+    try:
+        result = sweep_catalog(bundles)
+    except SweepError as e:
+        err_console.print(f"[bold red]SWEEP ERROR[/] — {e}")
+        raise typer.Exit(code=2)
+
+    head = f"{result.n_brands} brands, {result.n_skus} SKUs"
+    if result.ok:
+        console.print(f"[bold green]PASS[/] — 0 cross-brand collisions ({head})")
+        if result.warnings:
+            console.print(f"[yellow]{len(result.warnings)} cross-brand warn(s):[/]")
+            for w in result.warnings:
+                console.print(f"  • {w}")
+        raise typer.Exit(code=0)
+    console.print(f"[bold red]FAIL[/] — {len(result.findings)} cross-brand collision(s) ({head}):")
+    for f in result.findings:
+        console.print(f"  • {f}")
+    if result.warnings:
+        console.print(f"[yellow]{len(result.warnings)} cross-brand warn(s):[/]")
+        for w in result.warnings:
+            console.print(f"  • {w}")
+    raise typer.Exit(code=1)
+
+
 @app.command("new-intake")
 def new_intake(
     out: Path = typer.Option(..., "--out", "-o", help="Path to write the blank template."),

@@ -21,6 +21,18 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
   (boilerplate), 2-3 WARNs. Calibrated to data (max legit dup=2). Self-audit fixture added.
 NEXT: §2 G6 merged-catalog sweep → G7 import-readiness validator.
 
+**§2 G6 MERGED-CATALOG SWEEP DONE (commit pending). 261 tests pass.** The per-bundle gate is
+blind to clashes BETWEEN brands; `src/hexcat/merged_sweep.py` + `hexcat sweep <dirs…>` CLI close
+that. Reads all 5 bundles, FAILs on any cross-brand identity collision (Artikelnummer, URL-Pfad,
+GTIN, Titel-Tag) and on a body sentence reused across ≥3 brands; WARNs at 2 brands. **Real finding:
+9 Artikelnummer collisions Cisco↔Arista** — both ship identical MSA part names (SFP-10G-SR,
+QSFP-40G-SR4, SFP-1G-SX, …). These are REAL distinct parts that collide on a single global
+Artikelnummer; re-keying is an operator merchandising decision (HAN must stay the true PN), so per
+flag-don't-emit it's recorded in tracked `config/merged_catalog_collisions.yaml` (auditable, DEFERRED)
+not silently re-keyed. URL/GTIN/Titel/3-brand-sentence all PASS; the 9 two-brand WARN sentences are
+grounded shared physics (identical DAC-length / wavelength facts), not padding. 10 sweep tests +
+schema test. Regen `_scratch/gen_merged_collisions.py`. NEXT: §2 G7 import-readiness validator.
+
 **§2 G2 ATTRIBUTE DEPTH DONE (commits d51af66 G2a, 6b5685b G2b, 78f62f3 flag artifact).**
 Populate-or-prove-absent for the locked 14 attributes is now real and auditable:
 - **G2a** `src/hexcat/attribute_depth.py` — pure, deterministic applicability model. `MediaClass`
