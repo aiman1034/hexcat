@@ -308,5 +308,107 @@ def draft(
     console.print("[dim]Next: `hexcat validate --input …`, fix any violations, then `hexcat build`.[/]")
 
 
+@app.command("ledger")
+def ledger(
+    seed: Path = typer.Option(
+        Path("Cisco_BUILD_LEDGER.xlsx"), "--seed",
+        help="Workbook whose Quellen-Tracker sheet is the source seed list.",
+    ),
+    source: str = typer.Option(
+        "c78-455693", "--source", "-s",
+        help="Datasheet source id to process (e.g. c78-455693), or 'all' for every resolvable seed row.",
+    ),
+    out: Path = typer.Option(
+        Path("output/Cisco_Transceivers_Ledger.xlsx"), "--out", "-o",
+        help="Path to write the 5-sheet ledger workbook.",
+    ),
+    live: Path = typer.Option(
+        None, "--live",
+        help="Optional CSV of existing PNs (default: inputs/live_pns_cisco.csv if present). "
+             "Enables new-vs-existing tagging + PN-Korrekturen.",
+    ),
+    skeleton_out: Path = typer.Option(
+        None, "--skeleton-out",
+        help="Optional: also export Neue Artikel as a Stage-3 skeleton intake CSV (§7 seam).",
+    ),
+    no_network: bool = typer.Option(
+        False, "--no-network", help="Disable Tier-1 fetch (use cache / manual drop-in only)."
+    ),
+):
+    """Stage 1: mine part numbers from a Cisco datasheet into the 5-sheet Excel ledger.
+
+    Fetch (cheapest tier) → mine the ordering table → normalize against the datasheet →
+    classify → dedup → write the workbook. ZERO-DOLLAR, deterministic, no model calls.
+    """
+    from .ledger import (
+        export_skeleton,
+        fetch_datasheet,
+        load_ledger_spec,
+        load_live_pns,
+        read_sources_from_workbook,
+        run_source,
+        verify_ledger_spec,
+        write_workbook,
+    )
+    from .ledger.fetch import FetchError
+    from .ledger.mine import MineError
+
+    if not seed.exists():
+        err_console.print(f"[bold red]Seed workbook not found:[/] {seed} "
+                          "(drop Cisco_BUILD_LEDGER.xlsx in the project root).")
+        raise typer.Exit(code=2)
+
+    try:
+        spec = verify_ledger_spec()  # fail loud if classification drifts from locked-22
+    except Exception as e:  # noqa: BLE001
+        err_console.print(f"[bold red]Ledger spec error:[/] {e}")
+        raise typer.Exit(code=2)
+
+    sources = read_sources_from_workbook(seed)
+    if source != "all":
+        sources = [s for s in sources if s.source_id == source.lower()]
+    if not sources:
+        err_console.print(f"[bold red]No matching source[/] for --source {source!r} in {seed}.")
+        raise typer.Exit(code=2)
+
+    live_path = live if live is not None else Path("inputs/live_pns_cisco.csv")
+    live_pns = load_live_pns(live_path)
+
+    results = []
+    for src in sources:
+        try:
+            fetched = fetch_datasheet(src.url, src.source_id, allow_network=not no_network)
+            res = run_source(src, spec, live_pns=live_pns, fetched=fetched)
+        except (FetchError, MineError) as e:
+            err_console.print(f"[bold red]{src.source_id}:[/] {e}")
+            raise typer.Exit(code=1)
+        results.append(res)
+        console.print(
+            f"[green]{src.source_id}[/] — tier=[cyan]{res.tier}[/], "
+            f"mined [bold]{res.mined_count}[/] PNs, "
+            f"corrections [bold]{len(res.corrections)}[/], flagged [bold]{len(res.flagged)}[/]"
+        )
+
+    out_path = write_workbook(results, out)
+    console.print(f"[bold green]Wrote ledger workbook:[/] {out_path}")
+
+    # Coverage summary.
+    cov: dict[str, int] = {}
+    for res in results:
+        for uk, n in res.coverage().items():
+            cov[uk] = cov.get(uk, 0) + n
+    console.print("[dim]Unterkategorie coverage:[/] " +
+                  ", ".join(f"{k}={v}" for k, v in sorted(cov.items())))
+
+    if live_pns is None:
+        console.print("[yellow]No live list[/] (inputs/live_pns_cisco.csv absent) — "
+                      "mined every PN, PN-Korrekturen empty, no new-vs-existing tag.")
+
+    if skeleton_out is not None:
+        sk = export_skeleton(results, skeleton_out, spec)
+        console.print(f"[green]Exported Stage-3 skeleton:[/] {sk}   "
+                      "[dim](Artikelnummer/Vendor/KategorieEbene3/SourceURLs seeded; specs blank)[/]")
+
+
 if __name__ == "__main__":
     app()

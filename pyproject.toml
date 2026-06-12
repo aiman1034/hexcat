@@ -17,6 +17,9 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
+# Phase 3 Stage-1 ledger engine (datasheet fetch + HTML mining + Excel workbook).
+# Kept optional so the Phase 1-2 deterministic core stays dependency-light.
+ledger = ["httpx>=0.27", "beautifulsoup4>=4.12", "openpyxl>=3.1"]
 
 [project.scripts]
 hexcat = "hexcat.cli:app"

@@ -1,0 +1,52 @@
+# Cisco Transceivers — Stage 1 ledger spec (Phase 3).
+#
+# Drives the deterministic ledger engine: how to mine part numbers from a Cisco
+# datasheet, normalize feed/live variants against the datasheet, classify each PN into
+# the operator's Unterkategorie convention, and map that convention to the locked-22
+# canonical token for the Stage-3 hand-off. Onboarding a new category/brand = a sibling
+# spec file, NOT engine code (the brand-adapter seam stays Phase 4).
+
+brand: Cisco
+hauptkategorie: Transceivers          # Kategorie Ebene 2 family for the pilot
+
+# --- Mining -----------------------------------------------------------------------
+# The ordering table is found structurally: the one table whose header carries a
+# Product-Number column. Robust across Cisco datasheets (no fragile TOC anchors).
+mine:
+  pn_header_patterns:                  # header cell that marks the PN column
+    - "product number"
+    - "product id"
+    - "part number"
+    - "bestellnummer"
+  # A mined token must look like a Cisco PN to be kept (guards against stray cells).
+  pn_token: '^[A-Z0-9]+(?:[-./][A-Z0-9]+)+$'
+
+# --- Normalization ----------------------------------------------------------------
+# The datasheet is the authority. A correction is only APPLIED when its canonical form
+# is actually present in the mined datasheet PN set; otherwise the variant is FLAGGED,
+# never forced. Every applied correction is logged to PN-Korrekturen.
+normalize:
+  feed_id_suffix: '-P-[0-9]+$'         # feed export appends e.g. -P-4683
+  problem_feed_id: "Feed-ID-Anhang -P-####"
+  spelling_fixes:                      # known variant -> datasheet-confirmed canonical
+    SFP-10G-TX: SFP-10G-T-X
+  problem_spelling: "Schreibweise (fehlender Bindestrich)"
+
+# --- Classification ---------------------------------------------------------------
+# First matching rule wins; tested against the canonical PN. `default` catches the rest.
+# Operator convention (matches the existing Cisco_BUILD_LEDGER.xlsx Unterkategorie values).
+classify:
+  rules:
+    - { pn_contains: "AOC",          unterkategorie: "AOC Kabel" }
+    - { pn_prefix:   "SFP-H10GB-",   unterkategorie: "DAC Kabel" }
+  default: "SFP+ (10G)"
+
+# --- Unterkategorie -> locked-22 canonical token ----------------------------------
+# Operator's ledger convention (left) mapped to the locked-22 Kategorie-Ebene-3 token
+# (right) used by Stage-3 / JTL. Identity is assumed for any label not listed here
+# (XFP -> XFP, QSFP28 -> QSFP28, ...). The engine asserts every target is in the
+# locked-22 set (config/taxonomy/transceivers.yaml), so a typo fails loud.
+locked22_map:
+  "SFP+ (10G)": "SFP+"
+  "DAC Kabel": "DAC Kabel"
+  "AOC Kabel": "AOC Kabel"

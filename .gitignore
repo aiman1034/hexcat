@@ -17,6 +17,15 @@ out_demo*/
 _quarantine/
 *.hexcat_cache.json
 
+# Phase 3 ledger runtime artifacts — fetched datasheets, caches, generated workbooks.
+# Never commit fetched datasheets or caches (manufacturer content + bandwidth).
+datasheets/cache/
+datasheets/*.html
+datasheets/*.htm
+datasheets/*.pdf
+output/
+inputs/live_pns_cisco.csv
+
 # ruflo cross-session memory store (local SQLite + embeddings; never commit)
 .swarm/
 .hive-mind/
