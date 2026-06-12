@@ -30419,14 +30419,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-GPON-B GPON OLT-Transceiver Klasse B+ — 1490Tx/1310Rx, Singlemode SC, DOM",
+    "titel_tag": "Cisco SFP-GPON-B GPON OLT Klasse B+ SFP | Hexwaren",
+    "meta_description": "Original Cisco SFP-GPON-B GPON-OLT-SFP der Klasse B+ kaufen — Einzelfaser 1490Tx/1310Rx, ITU-T G.984.2, DOM, 0–70 °C, für ME 4600 OLT. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-GPON-B ist ein originaler GPON-OLT-Transceiver der Klasse B+ (ITU-T G.984.2), der über eine Singlemode-Einzelfaser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.</p><p>Mit 1,5–5 dBm Sendeleistung und -28 dBm Empfindlichkeit bedient er das B+-Budget bis 28 dB, unterstützt DOM und arbeitet von 0 bis 70 °C. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco SFP-GPON-B ist ein GPON-OLT-Transceiver der Klasse B+ (ITU-T G.984.2) für das headendseitige Optical Line Terminal, der über eine einzelne Singlemode-Faser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.",
+      "Mit einer Sendeleistung von 1,5 bis 5 dBm und einer Empfängerempfindlichkeit bis -28 dBm bedient es das GPON-Verlustbudget der Klasse B+ (bis 28 dB); es unterstützt DOM, nimmt bis zu 1,9 Watt auf und arbeitet im kommerziellen Temperaturbereich von 0 bis 70 °C.",
+      "Als Einzelfaser-Transceiver mit Digital Optical Monitoring (DOM) trennt es Downstream (1490 nm, 2,488 Gbit/s) und Upstream (1310 nm, 1,244 Gbit/s) per Wellenlängenmultiplex und arbeitet im Punkt-zu-Mehrpunkt-Betrieb mit TDMA-Broadcast. Es ist RoHS6-konform, Laser-Klasse 1 und über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco ME 4600 Series OLT-Geräte (GPON-Linecards, z. B. ME4600-AMX-16GPON)",
+      "Punkt-zu-Mehrpunkt-GPON nach ITU-T G.984 über passive optische Splitter zu ONT/ONU am Teilnehmer",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Cisco-Geräten läuft das SFP-GPON-B?",
+        "Auf den Cisco ME 4600 Series OLT-Geräten (z. B. ME4600-AMX-16GPON)."
+      ],
+      [
+        "Worin liegt der Unterschied zwischen Klasse B+ und C+?",
+        "Klasse C+ bietet höhere Sendeleistung und bessere Empfindlichkeit und damit ein größeres ODN-Verlustbudget (bis 32 dB statt 28 dB) für höhere Splitverhältnisse oder größere Reichweiten."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-GPON-B-I",
+        "Cisco SFP-GPON-B-I — Klasse B+ in Industrie-Temperatur (-40 bis 85 °C)"
+      ],
+      [
+        "SFP-GPON-C",
+        "Cisco SFP-GPON-C — Klasse C+ mit größerem ODN-Budget"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -30434,12 +30464,105 @@
         "SFP"
       ],
       [
+        "Typ",
+        "GPON OLT-Transceiver (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Datenrate",
+        "2,488 Gbit/s Downstream / 1,244 Gbit/s Upstream"
+      ],
+      [
+        "Wellenlänge",
+        "Tx 1490 nm / Rx 1310 nm"
+      ],
+      [
+        "ODN-Klasse",
+        "ITU-T G.984.2 Klasse B+ (ODN-Budget bis 28 dB)"
+      ],
+      [
+        "Sendeleistung",
+        "1,5 bis 5 dBm"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "bis -28 dBm"
+      ],
+      [
+        "Anschluss",
+        "SC/PC (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 1,9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Datenrate": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "ODN-Klasse": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-GPON-B-I": {
     "_facts": {
@@ -30447,14 +30570,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-GPON-B-I GPON OLT-Transceiver Klasse B+ Industrie — 1490Tx/1310Rx, SC, DOM",
+    "titel_tag": "Cisco SFP-GPON-B-I GPON OLT B+ I-Temp | Hexwaren",
+    "meta_description": "Original Cisco SFP-GPON-B-I GPON-OLT-SFP der Klasse B+ (Industrie) kaufen — Einzelfaser 1490Tx/1310Rx, ITU-T G.984.2, DOM, -40 bis 85 °C. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-GPON-B-I ist ein originaler GPON-OLT-Transceiver der Klasse B+ (ITU-T G.984.2) in Industrie-Ausführung, der über eine Singlemode-Einzelfaser 1490 nm Down / 1310 nm Up überträgt.</p><p>Mit 1,5–5 dBm Sendeleistung und -28 dBm Empfindlichkeit bedient er das B+-Budget bis 28 dB, unterstützt DOM und arbeitet von -40 bis 85 °C. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco SFP-GPON-B-I ist ein GPON-OLT-Transceiver der Klasse B+ (ITU-T G.984.2) für das headendseitige Optical Line Terminal, der über eine einzelne Singlemode-Faser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.",
+      "Mit einer Sendeleistung von 1,5 bis 5 dBm und einer Empfängerempfindlichkeit bis -28 dBm bedient es das GPON-Verlustbudget der Klasse B+ (bis 28 dB); es unterstützt DOM, nimmt bis zu 1,9 Watt auf und arbeitet als Industrievariante im erweiterten Temperaturbereich von -40 bis 85 °C.",
+      "Als Einzelfaser-Transceiver mit Digital Optical Monitoring (DOM) trennt es Downstream (1490 nm, 2,488 Gbit/s) und Upstream (1310 nm, 1,244 Gbit/s) per Wellenlängenmultiplex und arbeitet im Punkt-zu-Mehrpunkt-Betrieb mit TDMA-Broadcast. Es ist RoHS6-konform, Laser-Klasse 1 und über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco ME 4600 Series OLT-Geräte (GPON-Linecards, z. B. ME4600-AMX-16GPON)",
+      "Punkt-zu-Mehrpunkt-GPON nach ITU-T G.984 über passive optische Splitter zu ONT/ONU am Teilnehmer",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Wofür ist die -I-Variante gedacht?",
+        "Für den Industrie-Temperaturbereich von -40 bis 85 °C in rauen Umgebungen."
+      ],
+      [
+        "Auf welchen Cisco-Geräten läuft das SFP-GPON-B-I?",
+        "Auf den Cisco ME 4600 Series OLT-Geräten (z. B. ME4600-AMX-16GPON)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-GPON-B",
+        "Cisco SFP-GPON-B — Klasse B+ in kommerzieller Temperatur (0 bis 70 °C)"
+      ],
+      [
+        "SFP-GPON-C-I",
+        "Cisco SFP-GPON-C-I — Klasse C+ Industrie mit größerem ODN-Budget"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -30462,12 +30615,105 @@
         "SFP"
       ],
       [
+        "Typ",
+        "GPON OLT-Transceiver (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Datenrate",
+        "2,488 Gbit/s Downstream / 1,244 Gbit/s Upstream"
+      ],
+      [
+        "Wellenlänge",
+        "Tx 1490 nm / Rx 1310 nm"
+      ],
+      [
+        "ODN-Klasse",
+        "ITU-T G.984.2 Klasse B+ (ODN-Budget bis 28 dB)"
+      ],
+      [
+        "Sendeleistung",
+        "1,5 bis 5 dBm"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "bis -28 dBm"
+      ],
+      [
+        "Anschluss",
+        "SC/PC (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 1,9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C (Industrie)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Datenrate": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "ODN-Klasse": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-GPON-C": {
     "_facts": {
@@ -30475,14 +30721,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-GPON-C GPON OLT-Transceiver Klasse C+ — 1490Tx/1310Rx, Singlemode SC, DOM",
+    "titel_tag": "Cisco SFP-GPON-C GPON OLT Klasse C+ SFP | Hexwaren",
+    "meta_description": "Original Cisco SFP-GPON-C GPON-OLT-SFP der Klasse C+ kaufen — Einzelfaser 1490Tx/1310Rx, ITU-T G.984.2, ODN-Budget bis 32 dB, DOM, 0–70 °C. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-GPON-C ist ein originaler GPON-OLT-Transceiver der Klasse C+ (ITU-T G.984.2), der über eine Singlemode-Einzelfaser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.</p><p>Mit 3–7 dBm Sendeleistung und -31 dBm Empfindlichkeit bedient er das größere C+-Budget bis 32 dB, unterstützt DOM und arbeitet von 0 bis 70 °C. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco SFP-GPON-C ist ein GPON-OLT-Transceiver der Klasse C+ (ITU-T G.984.2) für das headendseitige Optical Line Terminal, der über eine einzelne Singlemode-Faser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.",
+      "Mit einer höheren Sendeleistung von 3 bis 7 dBm und einer Empfängerempfindlichkeit bis -31 dBm bedient es das größere GPON-Verlustbudget der Klasse C+ (bis 32 dB) für höhere Splitverhältnisse oder größere Reichweiten; es unterstützt DOM, nimmt bis zu 1,9 Watt auf und arbeitet im kommerziellen Temperaturbereich von 0 bis 70 °C.",
+      "Als Einzelfaser-Transceiver mit Digital Optical Monitoring (DOM) trennt es Downstream (1490 nm, 2,488 Gbit/s) und Upstream (1310 nm, 1,244 Gbit/s) per Wellenlängenmultiplex und arbeitet im Punkt-zu-Mehrpunkt-Betrieb mit TDMA-Broadcast. Es ist RoHS6-konform, Laser-Klasse 1 und über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco ME 4600 Series OLT-Geräte (GPON-Linecards, z. B. ME4600-AMX-16GPON)",
+      "Punkt-zu-Mehrpunkt-GPON nach ITU-T G.984 über passive optische Splitter zu ONT/ONU am Teilnehmer",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Welchen Vorteil bietet die Klasse C+?",
+        "Höhere Sendeleistung (3–7 dBm) und bessere Empfindlichkeit (-31 dBm) ergeben ein ODN-Budget bis 32 dB — für höhere Splitverhältnisse oder größere Reichweiten als Klasse B+."
+      ],
+      [
+        "Auf welchen Cisco-Geräten läuft das SFP-GPON-C?",
+        "Auf den Cisco ME 4600 Series OLT-Geräten (z. B. ME4600-AMX-16GPON)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-GPON-C-I",
+        "Cisco SFP-GPON-C-I — Klasse C+ in Industrie-Temperatur (-40 bis 85 °C)"
+      ],
+      [
+        "SFP-GPON-B",
+        "Cisco SFP-GPON-B — Klasse B+ mit kleinerem ODN-Budget"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -30490,12 +30766,105 @@
         "SFP"
       ],
       [
+        "Typ",
+        "GPON OLT-Transceiver (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Datenrate",
+        "2,488 Gbit/s Downstream / 1,244 Gbit/s Upstream"
+      ],
+      [
+        "Wellenlänge",
+        "Tx 1490 nm / Rx 1310 nm"
+      ],
+      [
+        "ODN-Klasse",
+        "ITU-T G.984.2 Klasse C+ (ODN-Budget bis 32 dB)"
+      ],
+      [
+        "Sendeleistung",
+        "3 bis 7 dBm"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "bis -31 dBm"
+      ],
+      [
+        "Anschluss",
+        "SC/PC (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 1,9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Datenrate": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "ODN-Klasse": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-GPON-C-I": {
     "_facts": {
@@ -30503,14 +30872,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-GPON-C-I GPON OLT-Transceiver Klasse C+ Industrie — 1490Tx/1310Rx, SC, DOM",
+    "titel_tag": "Cisco SFP-GPON-C-I GPON OLT C+ I-Temp | Hexwaren",
+    "meta_description": "Original Cisco SFP-GPON-C-I GPON-OLT-SFP der Klasse C+ (Industrie) kaufen — Einzelfaser 1490Tx/1310Rx, ITU-T G.984.2, ODN-Budget bis 32 dB, -40 bis 85 °C. Neu, versiegelt, Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-GPON-C-I ist ein originaler GPON-OLT-Transceiver der Klasse C+ (ITU-T G.984.2) in Industrie-Ausführung, der über eine Singlemode-Einzelfaser 1490 nm Down / 1310 nm Up überträgt.</p><p>Mit 3–7 dBm Sendeleistung und -31 dBm Empfindlichkeit bedient er das C+-Budget bis 32 dB, unterstützt DOM und arbeitet von -40 bis 85 °C. Als Cisco-Neuware versiegelt, mit Quality-ID.</p>",
+    "intro": [
+      "Das Cisco SFP-GPON-C-I ist ein GPON-OLT-Transceiver der Klasse C+ (ITU-T G.984.2) für das headendseitige Optical Line Terminal, der über eine einzelne Singlemode-Faser Downstream bei 1490 nm und Upstream bei 1310 nm überträgt.",
+      "Mit einer höheren Sendeleistung von 3 bis 7 dBm und einer Empfängerempfindlichkeit bis -31 dBm bedient es das größere GPON-Verlustbudget der Klasse C+ (bis 32 dB); es unterstützt DOM, nimmt bis zu 1,9 Watt auf und arbeitet als Industrievariante im erweiterten Temperaturbereich von -40 bis 85 °C.",
+      "Als Einzelfaser-Transceiver mit Digital Optical Monitoring (DOM) trennt es Downstream (1490 nm, 2,488 Gbit/s) und Upstream (1310 nm, 1,244 Gbit/s) per Wellenlängenmultiplex und arbeitet im Punkt-zu-Mehrpunkt-Betrieb mit TDMA-Broadcast. Es ist RoHS6-konform, Laser-Klasse 1 und über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco ME 4600 Series OLT-Geräte (GPON-Linecards, z. B. ME4600-AMX-16GPON)",
+      "Punkt-zu-Mehrpunkt-GPON nach ITU-T G.984 über passive optische Splitter zu ONT/ONU am Teilnehmer",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Wofür ist die -I-Variante gedacht?",
+        "Für den Industrie-Temperaturbereich von -40 bis 85 °C in rauen Umgebungen, bei vollem C+-Verlustbudget bis 32 dB."
+      ],
+      [
+        "Auf welchen Cisco-Geräten läuft das SFP-GPON-C-I?",
+        "Auf den Cisco ME 4600 Series OLT-Geräten (z. B. ME4600-AMX-16GPON)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-GPON-C",
+        "Cisco SFP-GPON-C — Klasse C+ in kommerzieller Temperatur (0 bis 70 °C)"
+      ],
+      [
+        "SFP-GPON-B-I",
+        "Cisco SFP-GPON-B-I — Klasse B+ Industrie mit kleinerem ODN-Budget"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -30518,12 +30917,105 @@
         "SFP"
       ],
       [
+        "Typ",
+        "GPON OLT-Transceiver (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Datenrate",
+        "2,488 Gbit/s Downstream / 1,244 Gbit/s Upstream"
+      ],
+      [
+        "Wellenlänge",
+        "Tx 1490 nm / Rx 1310 nm"
+      ],
+      [
+        "ODN-Klasse",
+        "ITU-T G.984.2 Klasse C+ (ODN-Budget bis 32 dB)"
+      ],
+      [
+        "Sendeleistung",
+        "3 bis 7 dBm"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "bis -31 dBm"
+      ],
+      [
+        "Anschluss",
+        "SC/PC (Einzelfaser, bidirektional)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 1,9 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C (Industrie)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Datenrate": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "ODN-Klasse": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736392.html",
+        "datasheet"
+      ]
+    }
   },
   "CFP-40G-SR4": {
     "_facts": {
