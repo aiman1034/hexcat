@@ -32508,14 +32508,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QDD-400G-ZR-S 400G ZR QSFP-DD — kohärentes DWDM (DCO), C-Band volltunbar, bis 120 km",
+    "titel_tag": "Cisco QDD-400G-ZR-S 400ZR QSFP-DD 120km | Hexwaren",
+    "meta_description": "Original Cisco QDD-400G-ZR-S kohärentes 400G-ZR QSFP-DD-Modul (DCO) kaufen — OIF 400ZR, 16-QAM, C-FEC, C-Band volltunbar, bis 120 km, 400GE oder 4×100GE. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QDD-400G-ZR-S ist ein originales kohärentes 400G-ZR QSFP-DD-Modul (DCO) nach OIF 400ZR, das eine volltunbare C-Band-Wellenlänge mit 16-QAM und C-FEC überträgt.</p><p>Es erreicht bis zu 120 km Punkt-zu-Punkt (mit Mux/Demux + Verstärker) und bietet 400GE oder 4×100GE zum Host. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QDD-400G-ZR-S ist ein kohärentes 400G-ZR QSFP-DD-Modul (Digital Coherent Optics) nach OIF-400ZR-MSA, das eine volltunbare DWDM-Wellenlänge im C-Band mit 16-QAM-Modulation und C-FEC über Singlemode-Faser überträgt.",
+      "In Punkt-zu-Punkt-Topologie mit Mux/Demux und Verstärker erreicht es bis zu 120 Kilometer und stellt gegenüber dem Host wahlweise eine 400GE- oder eine 4×100GE-Schnittstelle bereit; die maximale Sendeleistung liegt bei −8,5 dBm (typ.), die maximale Empfangsleistung bei 13 dBm, die Dispersionstoleranz bei ±2400 ps/nm.",
+      "Als kohärentes Digital-Coherent-Optics-Modul (DCO) im QSFP-DD-Formfaktor ermöglicht es IPoDWDM direkt auf der Router-Linecard und ist über die Cisco Quality-ID als geprüftes Original erkennbar. Die Gehäusetemperatur ist für den Betrieb von 15 bis 75 °C spezifiziert (kurzzeitig bis 80 °C; Kaltstart ab −5 °C Umgebungstemperatur), bei einer MTBF von 442.477 Stunden."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD-Ports an Routern und Switches mit Unterstützung für kohärente DCO-Pluggables (IPoDWDM)",
+      "Interoperabel mit Komponenten nach OIF-400ZR- (ZR) bzw. OpenZR+-MSA (ZR+)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Wie weit reicht das QDD-400G-ZR-S?",
+        "Bis zu 120 Kilometer in Punkt-zu-Punkt-Topologie mit Mux/Demux und optischem Verstärker, gemäß OIF-400ZR-Standard."
+      ],
+      [
+        "Welche Host-Schnittstellen unterstützt das Modul?",
+        "Wahlweise eine 400GE-Schnittstelle oder vier 100GE-Schnittstellen (4×100GE) zur Host-Karte."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-400G-ZRP-S",
+        "Cisco QDD-400G-ZRP-S — kohärentes 400G-ZR+ QSFP-DD, regional bis Long-Haul"
+      ],
+      [
+        "QDD-400G-FR4-S",
+        "Cisco QDD-400G-FR4-S — 400GBASE-FR4 QSFP-DD über Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32523,12 +32553,113 @@
         "QSFP-DD"
       ],
       [
+        "Typ",
+        "Kohärentes DWDM-Modul (Digital Coherent Optics, DCO)"
+      ],
+      [
+        "Geschwindigkeit",
+        "400 Gbit/s (400GE oder 4× 100GE)"
+      ],
+      [
+        "Standard",
+        "OIF 400ZR (MSA)"
+      ],
+      [
+        "Modulation",
+        "16-QAM (400G)"
+      ],
+      [
+        "FEC",
+        "C-FEC"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band (volltunbar)"
+      ],
+      [
+        "Reichweite",
+        "bis 120 km (Punkt-zu-Punkt mit Mux/Demux + Verstärker)"
+      ],
+      [
+        "Max. Sendeleistung",
+        "−8,5 dBm (typ.)"
+      ],
+      [
+        "Max. Empfangsleistung",
+        "13 dBm"
+      ],
+      [
+        "Dispersionstoleranz",
+        "±2400 ps/nm"
+      ],
+      [
+        "Roundtrip-Latenz",
+        "7,9 µs (400GE) / 8,2 µs (4×100GE)"
+      ],
+      [
+        "Betriebstemperatur (Gehäuse)",
+        "15 bis 75 °C (kurzzeitig bis 80 °C)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Modulation": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "FEC": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Max. Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Max. Empfangsleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Dispersionstoleranz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Roundtrip-Latenz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur (Gehäuse)": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ]
+    }
   },
   "QDD-400G-ZRP-S": {
     "_facts": {
@@ -32536,14 +32667,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QDD-400G-ZRP-S 400G ZR+ QSFP-DD — kohärentes DWDM (DCO), OpenZR+, multiraten, Long-Haul",
+    "titel_tag": "Cisco QDD-400G-ZRP-S OpenZR+ QSFP-DD | Hexwaren",
+    "meta_description": "Original Cisco QDD-400G-ZRP-S kohärentes 400G-ZR+ QSFP-DD-Modul (DCO) kaufen — OpenZR+, oFEC, C-Band volltunbar, multiraten 100–400G (QPSK/8-QAM/16-QAM), regional bis Long-Haul. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco QDD-400G-ZRP-S ist ein originales kohärentes 400G-ZR+ QSFP-DD-Modul (DCO) nach OpenZR+, das eine volltunbare C-Band-Wellenlänge mit oFEC und flexibler Modulation überträgt.</p><p>Es ist multiratenfähig (100–400G) und erreicht regional bis Long-Haul über 120 km mit mehreren Verstärkerstrecken. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QDD-400G-ZRP-S ist ein kohärentes 400G-ZR+ QSFP-DD-Modul (Digital Coherent Optics) nach OpenZR+-MSA, das eine volltunbare DWDM-Wellenlänge im C-Band mit oFEC überträgt und durch flexible Modulation (QPSK, 8-QAM, 16-QAM) Strecken von regional bis Long-Haul abdeckt.",
+      "Es ist multiratenfähig und transportiert 100, 200, 300 oder 400 Gbit/s je Wellenlänge; dank des leistungsstarken oFEC erreicht es Distanzen über 120 Kilometer mit mehreren Verstärkerstrecken. Die maximale Empfangsleistung liegt bei 13 dBm, die Dispersionstoleranz ist bis ±160.000 ps/nm konfigurierbar.",
+      "Als kohärentes Digital-Coherent-Optics-Modul (DCO) im QSFP-DD-Formfaktor ermöglicht es IPoDWDM direkt auf der Router-Linecard und ist über die Cisco Quality-ID als geprüftes Original erkennbar. Die Gehäusetemperatur ist für den Betrieb von 15 bis 75 °C spezifiziert (kurzzeitig bis 80 °C; Kaltstart ab −5 °C Umgebungstemperatur), bei einer MTBF von 442.477 Stunden."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD-Ports an Routern und Switches mit Unterstützung für kohärente DCO-Pluggables (IPoDWDM)",
+      "Interoperabel mit Komponenten nach OIF-400ZR- (ZR) bzw. OpenZR+-MSA (ZR+)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie."
+      ],
+      [
+        "Worin unterscheidet sich das ZR+ vom 400ZR?",
+        "OpenZR+ ergänzt das 400ZR-Hostinterface um oFEC, multiratenfähige Ethernet-Clients (100–400G) und flexible Modulation (QPSK/8-QAM/16-QAM) und erreicht so Distanzen weit über 120 Kilometer."
+      ],
+      [
+        "Welche Datenraten unterstützt das QDD-400G-ZRP-S?",
+        "Multiraten 100, 200, 300 oder 400 Gbit/s je Wellenlänge, je nach gewählter Modulation."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-400G-ZR-S",
+        "Cisco QDD-400G-ZR-S — kohärentes 400G-ZR QSFP-DD, bis 120 km"
+      ],
+      [
+        "QDD-400G-FR4-S",
+        "Cisco QDD-400G-FR4-S — 400GBASE-FR4 QSFP-DD über Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32551,12 +32712,113 @@
         "QSFP-DD"
       ],
       [
+        "Typ",
+        "Kohärentes DWDM-Modul (Digital Coherent Optics, DCO)"
+      ],
+      [
+        "Geschwindigkeit",
+        "100–400 Gbit/s (multiraten; 100/200/300/400G)"
+      ],
+      [
+        "Standard",
+        "OpenZR+ (MSA)"
+      ],
+      [
+        "Modulation",
+        "QPSK / 8-QAM / 16-QAM (200G/300G/400G)"
+      ],
+      [
+        "FEC",
+        "oFEC"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band (volltunbar)"
+      ],
+      [
+        "Reichweite",
+        "regional bis Long-Haul (>120 km, mehrere Verstärkerstrecken)"
+      ],
+      [
+        "Max. Sendeleistung",
+        "−8,0 dBm (typ., ohne Tx-Shaping)"
+      ],
+      [
+        "Max. Empfangsleistung",
+        "13 dBm"
+      ],
+      [
+        "Dispersionstoleranz",
+        "konfigurierbar bis ±160.000 ps/nm"
+      ],
+      [
+        "Roundtrip-Latenz",
+        "4,7 µs (400GE)"
+      ],
+      [
+        "Betriebstemperatur (Gehäuse)",
+        "15 bis 75 °C (kurzzeitig bis 80 °C)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Modulation": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "FEC": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Max. Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Max. Empfangsleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Dispersionstoleranz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Roundtrip-Latenz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur (Gehäuse)": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-744377.html",
+        "datasheet"
+      ]
+    }
   },
   "QDD-8X100G-FR": {
     "_facts": {
