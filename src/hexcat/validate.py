@@ -78,6 +78,22 @@ _WAVELENGTH_EXEMPT_RE = re.compile(
 )
 _WELLENLAENGE_NAME = "Wellenlänge"
 
+
+def valid_gtin(s: str) -> bool:
+    """True if `s` is a structurally valid GTIN-8/12/13/14 (correct GS1 check digit).
+
+    EAN-13/UPC-A/GTIN-14 all share the same modulo-10 scheme: the rightmost body digit is
+    weighted 3, then weights alternate 1/3 leftward; the check digit makes the weighted sum a
+    multiple of 10. We never *fabricate* a GTIN (1000% rule) — but if one is ever supplied, a
+    transposed/typo'd barcode must not reach a live import, so the gate rejects an invalid one.
+    """
+    s = s.strip()
+    if not s.isdigit() or len(s) not in (8, 12, 13, 14):
+        return False
+    *body, check = (int(c) for c in s)
+    total = sum(d * (3 if i % 2 == 0 else 1) for i, d in enumerate(reversed(body)))
+    return (10 - total % 10) % 10 == check
+
 ROLE_SPEC = {
     "main": (C.MAIN_COLUMNS, C.MAIN_DELIMITER, C.MAIN_BOM),
     "attributes": (C.ATTRIBUTES_COLUMNS, C.ATTRIBUTES_DELIMITER, C.ATTRIBUTES_BOM),
@@ -451,6 +467,13 @@ class Validator:
             if row[i_val].strip() == "":
                 self._fail(fname, sku, "Attributwert", "non-empty", "(empty)",
                            "empty Wertliste row must not be emitted")
+            # GTIN is populate-or-prove-absent: empty is allowed (grounding deferred), but a
+            # PRESENT GTIN must pass the GS1 check digit — no fabricated/typo'd barcodes.
+            gtin = row[i_gtin].strip()
+            if gtin and not valid_gtin(gtin):
+                self._fail(fname, sku, "GTIN",
+                           "valid GTIN-8/12/13/14 (GS1 check digit) or empty", gtin,
+                           "GTIN present but fails the GS1 check digit")
             self._scan_banned(fname, sku, f"attribute:{name}", row[i_val])
         # order ascending within each SKU
         for sku, order in per_sku_order.items():

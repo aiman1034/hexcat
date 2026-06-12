@@ -221,6 +221,9 @@ CASES = [
     ("A9-missing-wellenlaenge",
      lambda d: _drop_lines(_file(d, "*_Attributes.csv"), "SFP-10G-SR,,Transceivers & SFP Modul,Wellenlänge,"),
      lambda r: _has(r, msg="optical-module completeness")),
+    ("A10-gtin-bad-check-digit",
+     _repl("*_Attributes.csv", "SFP-10G-SR,,Transceivers", "SFP-10G-SR,12345678,Transceivers"),
+     lambda r: _has(r, field="GTIN", msg="GS1 check digit")),
 
     # ---- P* Prices -----------------------------------------------------------
     ("P1-price-dot-decimal",

@@ -4,8 +4,34 @@ from pathlib import Path
 
 import pytest
 
-from hexcat.validate import validate_dir
+from hexcat.validate import valid_gtin, validate_dir
 from conftest import read_bytes_text, write_text_bytes
+
+
+def test_valid_gtin_empty_is_false():
+    # valid_gtin itself rejects empty; the GATE separately treats empty as "absent, OK".
+    assert valid_gtin("") is False
+
+
+@pytest.mark.parametrize("code", [
+    "00012345600012",  # GTIN-14
+    "4006381333931",   # EAN-13 (classic GS1 example)
+    "036000291452",    # UPC-A / GTIN-12
+    "73513537",        # GTIN-8
+])
+def test_valid_gtin_accepts_correct_check_digit(code):
+    assert valid_gtin(code) is True
+
+
+@pytest.mark.parametrize("code", [
+    "12345678",        # GTIN-8 with wrong check digit
+    "4006381333930",   # EAN-13 last digit off by one
+    "1234567890",      # wrong length (10)
+    "abcdefghijklm",   # non-numeric
+    "400638133393X",   # trailing non-digit
+])
+def test_valid_gtin_rejects_bad(code):
+    assert valid_gtin(code) is False
 
 
 def _file(d: Path, glob: str) -> Path:
