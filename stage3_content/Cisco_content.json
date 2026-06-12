@@ -29903,19 +29903,73 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-2Q200-CU3M Passives DAC-Breakout — QSFP-DD auf 2× QSFP56 200GBASE-CR4, 3 m",
+    "titel_tag": "Cisco QSFP-2Q200-CU3M QSFP-DD 2x200G DAC | Hexwaren",
+    "meta_description": "Original Cisco QSFP-2Q200-CU3M passives Kupferkabel kaufen — QSFP-DD auf 2× QSFP56 200GBASE-CR4, 3 m, Breakout 400G-Port zu 2×200GE. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-2Q200-CU3M ist ein originales passives Direct-Attach-Kupferkabel (DAC), das einen 400G-QSFP-DD-Port per Breakout mit zwei 200GE-QSFP56-Ports verbindet (2× 200GBASE-CR4).</p><p>Mit 3 Metern Länge bietet es eine kostengünstige Punkt-zu-Punkt-Verbindung im oder zwischen benachbarten Racks; jedes Ende nimmt rund 1,5 Watt auf, die FEC läuft auf dem Host. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-2Q200-CU3M ist ein passives Direct-Attach-Kupferkabel (DAC), das einen 400G-QSFP-DD-Port per Breakout mit zwei 200GE-QSFP56-Ports verbindet (QSFP-DD auf 2× QSFP56, 200GBASE-CR4).",
+      "Mit drei Metern Länge eignet es sich als kostengünstige Punkt-zu-Punkt-Verbindung zwischen Switches, Routern oder Servern innerhalb eines Racks oder über benachbarte Racks hinweg; jedes Ende nimmt rund 1,5 Watt auf.",
+      "Als passives Kabel benötigt es keine externe Stromversorgung und ist im laufenden Betrieb steckbar; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Es arbeitet im Temperaturbereich von 0 bis 70 °C und ist über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD-400G-Port auf der einen Seite, zwei QSFP56-200G-Ports auf der anderen Seite",
+      "Breakout eines 400G-QSFP-DD-Ports in zwei 200GBASE-CR4-Strecken nach OIF CEI-56G-VSR-PAM4",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Was verbindet das QSFP-2Q200-CU3M?",
+        "Einen 400G-QSFP-DD-Port mit zwei 200GE-QSFP56-Ports als 2× 200GBASE-CR4-Breakout."
+      ],
+      [
+        "Ist das Kabel aktiv oder passiv?",
+        "Es ist ein passives Kupferkabel ohne eigene Stromversorgung; jedes Ende benötigt rund 1,5 Watt, die FEC läuft auf der Host-Plattform."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-200G-SR4-S",
+        "Cisco QSFP-200G-SR4-S — 200GBASE-SR4 QSFP56 über Multimode"
+      ],
+      [
+        "QSFP-200G-FR4-S",
+        "Cisco QSFP-200G-FR4-S — 200GBASE-FR4 QSFP56 über Singlemode"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "DAC Kabel"
+        "QSFP-DD auf 2× QSFP56"
+      ],
+      [
+        "Typ",
+        "Passives Direct-Attach-Kupferkabel (DAC)"
+      ],
+      [
+        "Standard",
+        "2× 200GBASE-CR4 (OIF CEI-56G-VSR-PAM4)"
+      ],
+      [
+        "Länge",
+        "3 m"
+      ],
+      [
+        "Anschluss",
+        "QSFP-DD auf 2× QSFP56"
+      ],
+      [
+        "Leistungsaufnahme",
+        "ca. 1,5 W je Ende (passiv)"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -29923,7 +29977,36 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-200G-SR4-S": {
     "_facts": {
@@ -29931,14 +30014,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-200G-SR4-S 200GBASE-SR4 QSFP56 — 850 nm Multimode, MPO-12 UPC, bis 100 m OM4",
+    "titel_tag": "Cisco QSFP-200G-SR4-S 200GBASE-SR4 100m | Hexwaren",
+    "meta_description": "Original Cisco QSFP-200G-SR4-S 200GBASE-SR4 QSFP56-Modul kaufen — 850 nm Multimode, MPO-12 UPC, bis 100 m OM4, Breakout zu 2×100G / 4×50G. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-200G-SR4-S ist ein originales 200GBASE-SR4 QSFP56-Modul, das 200GE bei 850 nm über vier parallele Multimode-Faserpaare mit MPO-12-UPC-Anschluss überträgt.</p><p>Über OM4 erreicht es bis 100 Meter (70 m OM3) und lässt sich als 2×100G oder 4×50G aufteilen, bei bis zu 4,5 Watt. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-200G-SR4-S ist ein 200GBASE-SR4 QSFP56-Transceiver, der 200 Gigabit Ethernet über vier parallele Multimode-Faserpaare bei 850 nm (50 Gbit/s je Faser) mit MPO-12-UPC-Anschluss überträgt.",
+      "Über OM4-Multimode-Faser erreicht es bis zu 100 Meter (70 Meter über OM3) und lässt sich per Breakout als 2×100GBASE-SR2 oder 4×50GBASE-SR betreiben; das Modul nimmt bis zu 4,5 Watt auf, ist IEEE-802.3bm-/200GAUI-4-konform (Laser-Klasse 1) und für AI/ML- und Rechenzentrumsnetze ausgelegt.",
+      "Das Modul wird im laufenden Betrieb gesteckt, ist CMIS-konform und IEEE-802.3-kompatibel; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im QSFP56-Formfaktor fügt es sich in die 200-Gigabit-QSFP-Ports von Cisco-Switches, -Routern und -NICs ein und kann auch in QSFP112- und QSFP-DD-Ports betrieben werden."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP56-/200G-fähige Ports in Switches, Routern und NICs; auch in QSFP112- und QSFP-DD-Ports betreibbar",
+      "Wo unterstützt: Breakout zu 2×100GBASE-SR2/100GE bzw. 4×50GBASE-SR/50GE auf IEEE-konforme Module",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das QSFP-200G-SR4-S?",
+        "Es lässt sich als 2×100GBASE-SR2 oder 4×50GBASE-SR betreiben."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 100 Meter über OM4/OM5 und 70 Meter über OM3 bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-200G-SL4",
+        "Cisco QSFP-200G-SL4 — Short-Link-Variante bis 30 m"
+      ],
+      [
+        "QSFP-200G-FR4-S",
+        "Cisco QSFP-200G-FR4-S — 200GBASE-FR4 über Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -29946,12 +30059,89 @@
         "QSFP56"
       ],
       [
+        "Geschwindigkeit",
+        "200 Gbit/s (4× 50G PAM4)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 200GBASE-SR4"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "70 m (OM3) / 100 m (OM4/OM5)"
+      ],
+      [
+        "Anschluss",
+        "MPO-12 (UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4/OM5)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "4,5 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-200G-SL4": {
     "_facts": {
@@ -29959,14 +30149,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-200G-SL4 200GBASE-SR4 Short-Link QSFP56 — 850 nm Multimode, MPO-12 UPC, bis 30 m OM4",
+    "titel_tag": "Cisco QSFP-200G-SL4 200GBASE-SR4 30m MMF | Hexwaren",
+    "meta_description": "Original Cisco QSFP-200G-SL4 200GBASE-SR4 Short-Link QSFP56-Modul kaufen — 850 nm Multimode, MPO-12 UPC, bis 30 m OM4, Breakout zu 2×100G / 4×50G. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-200G-SL4 ist ein originales 200GBASE-SR4 QSFP56-Short-Link-Modul, das 200GE bei 850 nm über vier parallele Multimode-Faserpaare mit MPO-12-UPC-Anschluss überträgt.</p><p>Über OM4 erreicht es bis 30 Meter (20 m OM3) und lässt sich als 2×100G oder 4×50G aufteilen, bei bis zu 4,5 Watt. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QSFP-200G-SL4 ist ein 200GBASE-SR4 QSFP56-Transceiver für kurze Strecken (Short Link), der 200 Gigabit Ethernet über vier parallele Multimode-Faserpaare bei 850 nm mit MPO-12-UPC-Anschluss überträgt.",
+      "Über OM4-Multimode-Faser erreicht es bis zu 30 Meter (20 Meter über OM3) und lässt sich per Breakout als 2×100GBASE-SL2 oder 4×50GBASE-SL betreiben; das Modul nimmt bis zu 4,5 Watt auf, ist 200GAUI-4-/CEI-56G-VSR-PAM4-konform (Laser-Klasse 1) und für dichte Kurzstrecken in AI/ML- und Rechenzentrumsnetzen ausgelegt.",
+      "Das Modul wird im laufenden Betrieb gesteckt, ist CMIS-konform und IEEE-802.3-kompatibel; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im QSFP56-Formfaktor fügt es sich in die 200-Gigabit-QSFP-Ports von Cisco-Switches, -Routern und -NICs ein und kann auch in QSFP112- und QSFP-DD-Ports betrieben werden."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP56-/200G-fähige Ports in Switches, Routern und NICs; auch in QSFP112- und QSFP-DD-Ports betreibbar",
+      "Wo unterstützt: Breakout zu 2×100GBASE-SR2/100GE bzw. 4×50GBASE-SR/50GE auf IEEE-konforme Module",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Worin unterscheidet sich das QSFP-200G-SL4 vom -SR4-S?",
+        "Es ist die Short-Link-Variante für kürzere Strecken bis 30 m (OM4) statt 100 m und entsprechend kostenoptimiert; Breakout erfolgt zu 2×100GBASE-SL2 oder 4×50GBASE-SL."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 30 Meter über OM4/OM5 und 20 Meter über OM3 bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-200G-SR4-S",
+        "Cisco QSFP-200G-SR4-S — 200GBASE-SR4 bis 100 m OM4"
+      ],
+      [
+        "QSFP-200G-FR4-S",
+        "Cisco QSFP-200G-FR4-S — 200GBASE-FR4 über Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -29974,12 +30194,89 @@
         "QSFP56"
       ],
       [
+        "Geschwindigkeit",
+        "200 Gbit/s (4× 50G PAM4)"
+      ],
+      [
+        "Standard",
+        "200GBASE-SR4 (Short Link / -SL4)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "20 m (OM3) / 30 m (OM4/OM5)"
+      ],
+      [
+        "Anschluss",
+        "MPO-12 (UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4/OM5)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "4,5 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ]
+    }
   },
   "QSFP-200G-FR4-S": {
     "_facts": {
@@ -29987,14 +30284,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QSFP-200G-FR4-S 200GBASE-FR4 QSFP56 — CWDM Singlemode, Duplex LC, bis 2 km",
+    "titel_tag": "Cisco QSFP-200G-FR4-S 200GBASE-FR4 2km SMF | Hexwaren",
+    "meta_description": "Original Cisco QSFP-200G-FR4-S 200GBASE-FR4 QSFP56-Modul kaufen — CWDM-Singlemode (1270–1330 nm), Duplex LC, bis 2 km. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QSFP-200G-FR4-S ist ein originales 200GBASE-FR4 QSFP56-Modul, das 200GE über vier CWDM-Wellenlängen auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt.</p><p>Es erreicht bis zu 2 Kilometer und nimmt bis zu 5 Watt auf; Multiplexing erfolgt im Modul. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID und CMIS-Modulmanagement.</p>",
+    "intro": [
+      "Das Cisco QSFP-200G-FR4-S ist ein 200GBASE-FR4 QSFP56-Transceiver, der 200 Gigabit Ethernet über vier CWDM-Wellenlängen (1270/1290/1310/1330 nm) auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt; Multiplexing und Demultiplexing erfolgen im Modul.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 2 Kilometer; das Modul nimmt bis zu 5 Watt auf, ist IEEE-802.3-200GBASE-FR4-/200GAUI-4-konform (Laser-Klasse 1) und für Rechenzentrums-, AI/ML- und Service-Provider-Anwendungen ausgelegt.",
+      "Das Modul wird im laufenden Betrieb gesteckt, ist CMIS-konform und IEEE-802.3-kompatibel; die Forward Error Correction (FEC) wird auf der Host-Plattform ausgeführt. Im QSFP56-Formfaktor fügt es sich in die 200-Gigabit-QSFP-Ports von Cisco-Switches, -Routern und -NICs ein und kann auch in QSFP112- und QSFP-DD-Ports betrieben werden."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP56-/200G-fähige Ports in Switches, Routern und NICs; auch in QSFP112- und QSFP-DD-Ports betreibbar",
+      "Wo unterstützt: Breakout zu 2×100GBASE-SR2/100GE bzw. 4×50GBASE-SR/50GE auf IEEE-konforme Module",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Wie weit reicht das QSFP-200G-FR4-S?",
+        "Bis zu 2 Kilometer über Singlemode-Faser (G.652) mit Duplex-LC-Anschluss."
+      ],
+      [
+        "Wie werden die vier Wellenlängen verarbeitet?",
+        "Multiplexing und Demultiplexing der vier CWDM-Wellenlängen erfolgen vollständig innerhalb des Moduls."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QSFP-200G-SR4-S",
+        "Cisco QSFP-200G-SR4-S — 200GBASE-SR4 über Multimode, 100 m"
+      ],
+      [
+        "QSFP-200G-SL4",
+        "Cisco QSFP-200G-SL4 — 200GBASE-SR4 Short Link, 30 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -30002,12 +30329,89 @@
         "QSFP56"
       ],
       [
+        "Geschwindigkeit",
+        "200 Gbit/s (4× 50G PAM4)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 200GBASE-FR4"
+      ],
+      [
+        "Wellenlänge",
+        "1270 / 1290 / 1310 / 1330 nm (CWDM)"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (PC/UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS-Modulmanagement)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "5 W max"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-GPON-B": {
     "_facts": {
