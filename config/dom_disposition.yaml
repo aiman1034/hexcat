@@ -1,0 +1,72 @@
+# §Pass-2 — DOM Unterstützung (Digital Monitoring / DDM) per-brand grounding disposition.
+#
+# Mandate: "determine per brand whether DOM is truly not published (prove-absent) or just
+# wasn't extracted (extract it). Do not leave merely 'tracked.'" This file records that
+# determination with the datasheet evidence behind each verdict (the 1000% rule: a "Ja"/"Nein"
+# is only written when the official datasheet states it verbatim; where the datasheet is SILENT
+# the SKU stays an honest flagged GAP — we never assert "Nein" from absence).
+#
+# DOM is EXPECTED only on optical modules (per attribute_depth EXPECTED_WHEN); DAC/copper SKUs
+# are PROVABLY_ABSENT and are NOT counted as debt. The GAP numbers below are therefore the
+# EXPECTED-but-still-missing optical SKUs — the real, honest residual debt — taken from
+# config/attribute_gaps/residual_gaps.yaml.
+#
+# Verdicts:
+#   PUBLISHED_EXTRACTED  — datasheet states DOM per-SKU and we ground it verbatim.
+#   PUBLISHED_PENDING    — datasheet states DOM per-SKU but the layout resists clean extraction;
+#                          remains GAP until a strict-aligned mine succeeds (never guessed).
+#   SOURCE_SILENT        — the authoritative datasheet contains NO DOM statement; cannot ground
+#                          "Ja" and must not assert "Nein" from absence -> stays flagged GAP.
+
+source_of_truth: "config/attribute_gaps/residual_gaps.yaml (expected-but-missing optical SKUs)"
+value_terms:
+  yes: "Ja (Digital Monitoring)"   # verbatim-faithful to the datasheet's own 'Digital Monitoring: Yes'
+  no: "Nein"
+
+brands:
+  Cisco:
+    verdict: PUBLISHED_EXTRACTED
+    grounded: 282
+    expected_gap: 12
+    evidence: >-
+      Cisco transceiver datasheets publish DOM/DDM per SKU; already extracted into content.json
+      in an earlier stage. 12 optical SKUs remain GAP where the specific datasheet row was not
+      cleanly captured (PUBLISHED_PENDING for those 12, re-mine candidate — never guessed).
+  Arista:
+    verdict: SOURCE_SILENT
+    grounded: 0
+    expected_gap: 100
+    evidence: >-
+      The authoritative Arista datasheet (datasheets/cache/transceiver-data-sheet.pdf, 29pp)
+      contains ZERO occurrences of "DOM", "DDM", or "Digital Monitoring". With no source statement,
+      "Ja" cannot be grounded and "Nein" must not be asserted from silence. The 100 expected
+      optical SKUs stay flagged GAP — honest debt, not fabricated. Re-open only if Arista publishes
+      a per-SKU DOM source.
+  HPE:
+    verdict: PUBLISHED_PENDING
+    grounded: 0
+    expected_gap: 77
+    evidence: >-
+      The HPE/Aruba datasheet (datasheets/cache/hpe-aruba-transceivers.pdf, 220pp) DOES state DOM
+      per SKU inside the spec matrices from p38 onward (~48 DOM mentions located), but the extracted
+      text mangles the matrix column alignment, so a strict-aligned mine has not yet succeeded.
+      Held as PENDING: the 77 expected SKUs stay GAP until a column-safe extraction lands. No value
+      is guessed from the misaligned text.
+  Fortinet:
+    verdict: PUBLISHED_EXTRACTED
+    grounded: 32
+    expected_gap: 50
+    evidence: >-
+      The Fortinet datasheet (datasheets/cache/fortinet-transceivers.pdf, 16pp) publishes a per-SKU
+      "Digital Monitoring: Yes/No" spec row. _scratch/populate_fortinet_dom.py re-mined it with
+      STRICT column alignment (a table is used only when its SKU-header count equals its Yes/No-token
+      count, else skipped) and wrote 32 grounded values. The remaining 50 expected optical SKUs sit
+      in tables that did not pass the strict-alignment gate — left honestly GAP, never guessed.
+  MikroTik:
+    verdict: PUBLISHED_EXTRACTED
+    grounded: 7
+    expected_gap: 14
+    evidence: >-
+      MikroTik product pages state DOM per SKU for part of the line; 7 grounded in an earlier stage.
+      14 expected optical SKUs remain GAP pending a per-SKU source confirmation — not asserted from
+      absence.
