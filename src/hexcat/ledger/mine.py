@@ -179,7 +179,7 @@ def _mine_pdf_token(pages: list[str], pdf_cfg) -> list[MinedPN]:
     mined: list[MinedPN] = []
     seen: set[str] = set()
     for m in pdf_cfg.sku_re.finditer(text):
-        pn = m.group(0)
+        pn = pdf_cfg.rewrite_sku(m.group(0))  # repair footnote-superscript contamination
         if pn not in seen:
             seen.add(pn)
             mined.append(MinedPN(pn=pn, description=""))
@@ -245,7 +245,7 @@ def _mine_pdf_token_columns(data: bytes, pdf_cfg) -> list[MinedPN]:
                 m = sku_re.fullmatch(sku_txt)
                 if not m:
                     continue
-                pn = m.group(0)
+                pn = pdf_cfg.rewrite_sku(m.group(0))  # repair footnote-superscript contamination
                 if pn in seen:
                     continue
                 seen.add(pn)

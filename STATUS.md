@@ -178,7 +178,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | Brocade      | VALID PDF but **Fibre-Channel** "Transceiver Support Matrix" — wide multi-col Gen5/6/7/8, XBR-*/57-* PNs | **PARKED — OUT OF SCOPE this pass** (operator decision 2026-06-12). FC ≠ Ethernet protocol/domain; do NOT map XBR-/57- onto Ethernet form-factor buckets (an FC SFP+ is not a 10GBASE-SR SFP+ → wrong specs) and do NOT alter locked-22. If FC is later confirmed in-scope, build as a SEPARATE batch with dedicated FC Unterkategorien + FC-specific spec/voice templates. Not deleted; revisit on explicit go-ahead. |
 | Ubiquiti     | JS-shell (accessories.html: 1.6KB rendered text, 107 UACC-* only in script JSON) | §6b NEEDS-HEADED (Tier-2 render) |
 | Juniper      | hCaptcha-gated Next.js SPA                                          | §6b NEEDS-HEADED |
-| Arista       | fetched 3KB stub — corrupt, "No /Root object" (error page as .pdf) | fresh official QRG URL |
+| Arista       | **DONE-VERIFIED 2026-06-12** — real cached `transceiver-data-sheet.pdf` (29pp) HAS a clean "Ordering Information" enumeration pp.12-26; token mode, 347 SKUs, V1–V9 PASS (earlier "prose" triage was the 3KB QRG stub + misread pages) | — (done) |
 | Huawei       | fetched HTML is a **404** page                                     | fresh official URL |
 | Lenovo/IBM   | lp1042.pdf is the **wrong doc** (ThinkSystem SD650 server guide)   | correct transceiver-reference URL |
 | Dell         | Tier-1 fetch failed (stale/blocked)                                | fresh URL / Tier-2 |
@@ -204,18 +204,29 @@ currently supports exactly **three** source shapes:
   chunks → locus **`card`**, added to the shared `AUTHORITATIVE_LOCI`). Proven on MikroTik
   `sfp-qsfp` (24 emitted + 1 converter flagged; V1–V9 PASS).
 
-It does **NOT** support **prose / spec-sheet** datasheets where orderable PNs are scattered
-through descriptive text and the only tables are spec-attribute matrices (wavelength, reach,
-power) keyed by form factor. Confirmed on Arista's official `Transceiver-Data-Sheet.pdf`
-(29 pp, 24 tables, ~6 PN tokens in any table; PNs live in prose). Force-mining such a source
-would manufacture the exact phantom class V2 (authoritative-locus) is built to reject — so the
-verifier would (correctly) refuse the ledger. These brands need EITHER a different official
-document with a real ordering table/part-number appendix, OR a new extraction mode with a
-defensible locus. **Do not lower V2 to admit prose.**
+A genuine **prose / spec-sheet** datasheet — orderable PNs scattered through descriptive
+text, the only tables being spec-attribute matrices (wavelength, reach, power) keyed by form
+factor — would have no authoritative SKU locus to mine + verify against. Force-mining such a
+source manufactures the exact phantom class V2 (authoritative-locus) rejects, so the verifier
+would (correctly) refuse the ledger. Such a brand needs EITHER a different official document
+with a real ordering table/part-number appendix, OR a new extraction mode with a defensible
+locus. **Do not lower V2 to admit prose.**
+
+**CORRECTION (2026-06-12, Arista):** Arista is NOT a prose datasheet. The official
+`transceiver-data-sheet.pdf` (29 pp) carries a clean, authoritative two-column
+"Ordering Information" enumeration spanning pp.12-26 (every page footer reads "Optics Modules
+and Cables | Ordering Information"). It mines cleanly in **token mode** scoped to that heading
+→ **347 SKUs, V1–V9 PASS, DONE-VERIFIED**. The earlier "prose, ~6 PN tokens, unminable"
+triage was a mis-read: it inspected the 3 KB QRG stub + the front-matter spec-attribute pages,
+not the ordering-information chapter. Lesson: confirm you are looking at the *ordering* section
+before declaring a datasheet proseless. (One wrinkle solved here: pdfplumber glues
+footnote-reference superscripts onto table SKUs — repaired via config-gated `mine.pdf.sku_rewrites`,
+applied symmetrically in miner + verifier re-derivation + V1 raw text; empty/no-op for all
+other brands.)
 
 Probable bucket for the remaining brands (to confirm per-brand next pass):
-- prose spec-sheet → needs ordering-guide source or new mode: Arista (confirmed), likely
-  NVIDIA, Dell, Palo Alto, Huawei.
+- needs ordering-guide source confirmed before mode pick: NVIDIA, Dell, Palo Alto, Huawei
+  (do NOT assume "prose" — verify the ordering section first, as the Arista correction shows).
 - HTML **product-card grid** (no <table>, PNs in card markup) → card-extraction mode now BUILT:
   MikroTik **DONE** (24 SKUs); apply same mode to Supermicro, Ruijie (likely same shape).
 - NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme.
@@ -224,10 +235,8 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
 - MikroTik (current group page; old /group/optical-modules now 404):
   `https://mikrotik.com/products/group/sfp-qsfp` — server-rendered card grid, ~10 SFP PNs
   visible (S+RJ10, S-31DLC20D, S+31DLC10D, S+85DLC03D, S-3553LC20D, …), 0 tables.
-- Arista data sheet (fetched OK, but prose — see boundary above):
-  `https://www.arista.com/assets/data/pdf/Datasheets/Transceiver-Data-Sheet.pdf`;
-  also the compatibility guide `https://www.arista.com/assets/data/pdf/Transceiver-Guide.pdf`
-  (untried — may be more table-structured).
+- Arista data sheet (**DONE-VERIFIED** — token mode, 347 SKUs; see correction above):
+  `https://www.arista.com/assets/data/pdf/Datasheets/transceiver-data-sheet.pdf`.
 - Palo Alto datasheet landing (not a direct PDF):
   `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
 - Supermicro eStore transceiver listings (WAF-403 on honest-GET — need headed/Tier-2):
@@ -240,7 +249,7 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
 
 ## Next steps
 - **Source acquisition is the gate**, not spec authoring. Next autonomous pass: for the
-  stale-URL brands (Arista, Huawei, Lenovo, Dell, NVIDIA, Palo Alto, MikroTik, Supermicro,
+  stale-URL brands (Huawei, Lenovo, Dell, NVIDIA, Palo Alto, Supermicro,
   Ruijie) find the *current* official transceiver datasheet URL (web search ok — still
   "official manufacturer source"), re-fetch (Tier-2 render where JS-gated), then author a
   per-brand spec → mine → verify-gate PASS → ledger+audit → full suite green.

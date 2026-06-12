@@ -194,7 +194,8 @@ def extract_authoritative(data: bytes, pdf_cfg) -> list[SourceToken]:
             if not sku_hdr:
                 # No column geometry available — flat scan of the page text.
                 for m in sku_re.finditer(text.replace("\n", " ")):
-                    tokens.append(SourceToken(m.group(0), "", "flat", pidx))
+                    # Repair footnote-superscript contamination symmetrically with the miner.
+                    tokens.append(SourceToken(pdf_cfg.rewrite_sku(m.group(0)), "", "flat", pidx))
                 continue
 
             words = page.extract_words()
@@ -222,8 +223,8 @@ def extract_authoritative(data: bytes, pdf_cfg) -> list[SourceToken]:
                 )
                 m = sku_re.fullmatch(sku_txt)
                 if m:
-                    tokens.append(SourceToken(m.group(0), desc_txt, "sku_column", pidx))
+                    tokens.append(SourceToken(pdf_cfg.rewrite_sku(m.group(0)), desc_txt, "sku_column", pidx))
                 # Any SKU-shaped token sitting in the Description band is prose bleed.
                 for dm in sku_re.finditer(desc_txt):
-                    tokens.append(SourceToken(dm.group(0), desc_txt, "description", pidx))
+                    tokens.append(SourceToken(pdf_cfg.rewrite_sku(dm.group(0)), desc_txt, "description", pidx))
     return tokens

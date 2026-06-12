@@ -47,10 +47,32 @@ class PdfMineSpec(BaseModel):
     sku_column: str | None = None             # header text of the SKU column (e.g. "SKU")
     desc_column: str | None = None            # header text of the description column
     header_top_max: float = 200.0             # only words above this y are header candidates
+    # Footnote-superscript repair. Some manufacturer PDFs render a footnote-reference
+    # superscript GLUED to the SKU in the extracted text (Arista: 'OSFP-400G-ZR2' is
+    # 'OSFP-400G-ZR' + footnote '2'; 'QSFP-100G-ERL41' is 'ERL4' + footnote '1'). There is
+    # no font/position-free way to tell a footnote digit from a real one, so the operator
+    # supplies the exact contaminated->canonical map here, grounded in the datasheet's
+    # footnote bodies. It is applied SYMMETRICALLY — by the engine miner, by the verifier's
+    # independent re-derivation, AND to the raw text V1 round-trips against — so the emitted
+    # set, the re-derived authoritative set, and the verbatim corpus all carry the canonical
+    # PN (V1/V7/V8 stay honest). Default empty -> every other brand is byte-for-byte unaffected.
+    sku_rewrites: dict[str, str] = {}
 
     @property
     def sku_re(self) -> re.Pattern[str]:
         return re.compile(self.sku_token)
+
+    def rewrite_sku(self, pn: str) -> str:
+        """Map a footnote-contaminated SKU token to its canonical form (identity if unlisted)."""
+        return self.sku_rewrites.get(pn, pn)
+
+    def apply_sku_rewrites_to_text(self, text: str) -> str:
+        """Replace every contaminated SKU spelling with its canonical form in raw text, so the
+        verifier's verbatim corpus (V1) reflects the canonical PN. Longest keys first so a key
+        that is a prefix of another cannot pre-empt the more specific replacement."""
+        for bad in sorted(self.sku_rewrites, key=len, reverse=True):
+            text = text.replace(bad, self.sku_rewrites[bad])
+        return text
 
     @property
     def context_re(self) -> re.Pattern[str] | None:

@@ -78,6 +78,9 @@ def verify_ledger(
         else:
             tokens = extract_authoritative(pdf_bytes, pdf_cfg)
         raw_text = raw_source_text(pdf_bytes)
+        # Repair footnote-superscript contamination in the verbatim corpus too, so V1 round-trips
+        # the canonical PN (the emitted set, the re-derived tokens above, and this text all agree).
+        raw_text = pdf_cfg.apply_sku_rewrites_to_text(raw_text)
     elif html is not None:
         if spec.mine.html is not None and spec.mine.html.mode == "card":
             tokens = extract_authoritative_html_cards(html, spec)

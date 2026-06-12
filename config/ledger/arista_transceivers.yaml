@@ -1,0 +1,107 @@
+# Arista Transceivers — Stage 1 ledger spec (PDF token mode).
+#
+# Source: Arista "Optics Modules and Cables — Data Sheet" (transceiver-data-sheet.pdf,
+# 29pp, official arista.com). The datasheet carries a clean, authoritative "Ordering
+# Information" enumeration spanning pages 12-26 (every page footer reads
+# "Optics Modules and Cables | Ordering Information"), formatted as a 2-column
+# "Product Number  Product Description" list. We scope the token scan to those pages
+# (scope_heading "Ordering Information"), so the front-matter overview/spec tables and
+# the back-matter DWDM channel-number / compliance pages are excluded.
+#
+# Onboarding Arista was a sibling spec file, NOT engine code.
+
+brand: Arista
+hauptkategorie: Transceivers
+
+# --- Mining -----------------------------------------------------------------------
+mine:
+  pn_header_patterns: ["product number", "sku", "bestellnummer"]
+  # Arista SKU shape. Family prefix (incl. single-letter copper/AOC families C-/A-/H-),
+  # then hyphen-joined [A-Z0-9] segments; a length segment may carry a decimal + unit
+  # (CAB-Q-Q-100G-0.5M, CAB-D-D-400-2.5). The leading lookahead REQUIRES at least one
+  # digit somewhere in the contiguous token run, which rejects prose fragments like the
+  # "C-Band" in the SFP-10G-DZ-T description (no digit -> not a SKU) while keeping every
+  # real PN (each carries a speed/lane/length digit).
+  pn_token: '(?=[A-Z0-9.-]*[0-9])(?:AOC|CAB|OSFP|LPO|QDD|QSFP|ADPT|SFP|[ACH])-[A-Z0-9]+(?:\.[0-9]+[A-Z]*)?(?:-[A-Z0-9]+(?:\.[0-9]+[A-Z]*)?)*'
+  pdf:
+    mode: token
+    scope_heading: "Ordering Information"
+    sku_token: '(?=[A-Z0-9.-]*[0-9])(?:AOC|CAB|OSFP|LPO|QDD|QSFP|ADPT|SFP|[ACH])-[A-Z0-9]+(?:\.[0-9]+[A-Z]*)?(?:-[A-Z0-9]+(?:\.[0-9]+[A-Z]*)?)*'
+    # Footnote-superscript repair (grounded in the datasheet's own footnote bodies, pp.16/19/22):
+    # the Ordering-Information table glues a footnote-reference digit onto these SKUs. Footnote 2
+    # reads "OSFP-400G-ZR supported on specific platforms" / "QDD-400G-ZR supported …" — confirming
+    # the canonical PNs below. Each maps the contaminated token to the real Arista part number.
+    sku_rewrites:
+      "OSFP-400G-SRBD1": "OSFP-400G-SRBD"   # footnote 1
+      "OSFP-400G-ZR2": "OSFP-400G-ZR"       # footnote 2
+      "OSFP-200G-2LR43": "OSFP-200G-2LR4"   # footnote 3
+      "QDD-400G-SRBD1": "QDD-400G-SRBD"     # footnote 1
+      "QDD-400G-ZR2": "QDD-400G-ZR"         # footnote 2
+      "QDD-400G-ZRP2": "QDD-400G-ZRP"       # footnote 2
+      "QDD-200G-2LR43": "QDD-200G-2LR4"     # footnote 3
+      "QSFP-100G-ERL41": "QSFP-100G-ERL4"   # footnote 1
+      "QSFP-100G-ZR42": "QSFP-100G-ZR4"     # footnote 2
+
+# --- Normalization ----------------------------------------------------------------
+normalize:
+  feed_id_suffix: '-P-[0-9]+$'
+  problem_feed_id: "Feed-ID-Anhang"
+  spelling_fixes: {}
+  problem_spelling: ""
+
+# --- Classification ---------------------------------------------------------------
+# First matching rule wins. Arista PNs are opaque family-prefix codes, so we classify by
+# anchored pn_prefix. Cables carry no usable description in token mode (description=""),
+# so the universal V5 description classifier returns None for them and they are resolved
+# here by prefix: copper twinax / active-copper (CAB-/C-/H-) -> DAC Kabel, active-optical
+# (AOC-/A-) -> AOC Kabel. Optics map to their form factor; the 800G QSFP-DD optics
+# (QDD-800G-) are the locked-22 QSFP-DD800 family, distinct from the 400G QDD- (QSFP-DD).
+# Order: cable prefixes and the longer optic prefixes are placed so no rule shadows a more
+# specific one (QDD-800G before QDD-, QSFP-200G/100G/40G before the bare families).
+classify:
+  rules:
+    - { pn_prefix: "AOC",      unterkategorie: "AOC Kabel" }
+    - { pn_prefix: "CAB",      unterkategorie: "DAC Kabel" }
+    - { pn_prefix: "LPO",      unterkategorie: "OSFP" }
+    - { pn_prefix: "OSFP",     unterkategorie: "OSFP" }
+    - { pn_prefix: "QDD-800G", unterkategorie: "QSFP-DD800" }
+    - { pn_prefix: "QDD",      unterkategorie: "QSFP-DD" }
+    - { pn_prefix: "QSFP-200G", unterkategorie: "QSFP56" }
+    - { pn_prefix: "QSFP-100G", unterkategorie: "QSFP28" }
+    - { pn_prefix: "QSFP-40G", unterkategorie: "QSFP+" }
+    - { pn_prefix: "SFP-25G",  unterkategorie: "SFP28" }
+    - { pn_prefix: "SFP-10G",  unterkategorie: "SFP+" }
+    - { pn_prefix: "SFP-1G",   unterkategorie: "SFP" }
+    - { pn_prefix: "SFP-100M", unterkategorie: "SFP" }
+    - { pn_prefix: "A-",       unterkategorie: "AOC Kabel" }
+    - { pn_prefix: "C-",       unterkategorie: "DAC Kabel" }
+    - { pn_prefix: "H-",       unterkategorie: "DAC Kabel" }
+  default: "SFP"
+
+# --- Flag-don't-emit --------------------------------------------------------------
+# ADPT-O-Q-100G is an OSFP->QSFP mechanical port adapter, not a transceiver/optic — it
+# does not fit any locked-22 form-factor bucket, so it is flagged, not emitted.
+exclude:
+  - { pn_prefix: "ADPT", reason: "OSFP-to-QSFP port adapter (not a transceiver) — flagged, not emitted" }
+
+# --- Catalog coverage (V9) --------------------------------------------------------
+# The families Arista's own "Ordering Information" enumeration spans. Each is a locked-22
+# token AND reachable by a classify rule (or the V5 cable classifier). Arista lists no
+# SFP56 optic (50G appears only as the C-S50 copper cable -> DAC) and no standalone MPO
+# fan-out cable, so neither is expected; QSFP112 appears only as an AOC breakout endpoint
+# (AOC family), not as a standalone Arista module. A PASS here is CALIBRATED-COMPLETE.
+coverage:
+  expected_families:
+    - DAC Kabel
+    - AOC Kabel
+    - OSFP
+    - QSFP-DD800
+    - QSFP-DD
+    - QSFP56
+    - QSFP28
+    - QSFP+
+    - SFP28
+    - SFP+
+    - SFP
+
+locked22_map: {}
