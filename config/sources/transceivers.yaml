@@ -21,10 +21,14 @@ allowed_domains:
   - cisco.com
 
 # A link matching any of these is a terminal datasheet to FETCH (not crawled into).
+# Scoped to interface-module collateral so unrelated corporate PDFs (ESG / modern-slavery
+# reports that Cisco footers link from every page) are not mistaken for datasheets.
 datasheet_patterns:
-  - 'data[-_]?sheet'          # .../data_sheet_c78-455693.html, datasheet-c78-...
-  - 'c\d{2}-\d+'              # Cisco collateral doc ids (c78-..., c67-...)
-  - '\.pdf($|\?)'            # any PDF asset
+  - 'data[-_]?sheet'                     # .../data_sheet_c78-455693.html, datasheet-c78-...
+  - 'c\d{2}[-_]\d+'                      # Cisco collateral doc ids (c78-..., c78_489725)
+  - 'product_data_sheet'                 # legacy collateral filenames
+  - 'interfaces-modules/.*-ds(\.|-)'     # modern "-ds.html / -ds.pdf / -ds-cte" naming
+  - 'interfaces-modules/.*\.pdf($|\?)'   # PDFs only within interface-module collateral
 
 # A link matching any of these is an index/landing/listing page worth CRAWLING for more
 # links (bounded by crawl.max_depth / max_pages).

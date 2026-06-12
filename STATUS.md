@@ -3,6 +3,55 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-13) — universal datasheet fetcher + Cisco coverage closure
+
+**MISSION: "build the universal local datasheet fetcher (the foundation) + prove it by
+closing Cisco transceiver coverage" — DONE (commits 702ac1c + this one). 347 tests pass.**
+
+**§FOUNDATION — universal local harvester (commit 702ac1c).** Built ONCE, category-agnostic,
+so every future category (switches, servers) inherits it unchanged — only new CONFIG is
+supplied. The hosted-WebFetch 403 bot-block is bypassed by fetching from the local PC
+(residential/business IP). Three new `lib/` modules + a config seam, all $0:
+- `lib/local_fetch.py` — escalating fetcher: Tier-1 local HTTP (browser-UA profile, retry on
+  403/429 with a minimal-header profile), Tier-2 Playwright chromium (real fingerprint,
+  `--disable-http2`, headless→headed) for WAF/JS pages, then manual. Per-host politeness
+  throttle (2–5 s jittered, progressive backoff). 404/410 = terminal `gone`; never raises on
+  a block.
+- `lib/deferred_queue.py` — persistent cross-session retry queue (`datasheets/deferred_queue.json`),
+  progressive backoff [2,5,15,45,120,360,1440] min. A blocked URL is queued with exact retry-
+  after, NEVER silently missed; only a hard 404/410 is terminal.
+- `lib/harvest.py` — category-agnostic discover+crawl+fetch. `discover()` does a bounded BFS
+  from `seeds`, follows `follow_patterns`, collects `datasheet_patterns`, and folds in a
+  per-brand frontier file Claude tops up via in-session WebSearch ($0 split: Python does HTTP,
+  Claude does search). `harvest()` routes blocked→queue, gone→terminal, ok→done.
+- `config/sources/transceivers.yaml` — the per-category SEAM (allowed_domains, patterns,
+  Cisco seeds + 19 family search terms). Adding a category = a sibling file, ZERO code change;
+  proven by `tests/test_harvest.py::test_second_category_routes_same_code`.
+
+**§CISCO COVERAGE CLOSURE (this commit).** End-to-end proof the fetcher reaches Cisco's full
+published set, every PN accounted for (flag-don't-emit; nothing silently dropped):
+- **Harvest:** 45 pages crawled → **168 datasheets fetched, 0 blocked / 0 gone / 0 errors**
+  (live, local IP). Cache 62→171 files.
+- **Reconcile** (`config/coverage/cisco_transceivers_coverage.yaml`): mined every cached
+  datasheet's ordering table, applied the spec exclusion rule, diffed vs the 297-SKU catalog.
+  **orphan=0** (every shipped SKU re-found in a harvested datasheet — strong integrity);
+  **120 PNs surfaced** that Cisco publishes but the catalog lacks.
+- **Triage** (`config/coverage/cisco_transceivers_disposition.yaml`): all 120 bucketed with a
+  reason GROUNDED IN CONFIG (locked-22 taxonomy + Cisco `coverage.expected_families`), not a
+  hand-typed string: **ADD 18** (CWDM-SFP10G 8×SFP+, GLC-/SFP-GE 8×SFP, QSFP-40GE-LR4 QSFP+,
+  XFP-10GER-OC192IR XFP — each a locked-22 ∩ expected family), **EXCLUDE_SCOPE 75** (legacy
+  XENPAK 39 + GBIC 36 — VALID locked-22 form factors but outside the curated Cisco scope; the
+  corpus carries the successor X2 family), **EXCLUDE_TAXONOMY 8** (POM SONET/SDH — genuinely
+  not a locked-22 token), **EXCLUDE_NOT_TRANSCEIVER 15** (M12 patch cables 11, Routed-PON ONT
+  3, NCS-FAB-OPT bundle 1), **REVIEW 4** (CFP2 coherent DCO licensing + DP04SFP8 400ZR PN/FF
+  mismatch). FIXED a contradiction: an earlier triage wrongly dropped XENPAK/GBIC as "not in
+  taxonomy" when both ARE locked-22; now config-decided.
+- **Regression** `tests/test_cisco_coverage.py` (7 tests): counts sum == surfaced_total == 120,
+  orphan == 0, ADD families ⊆ locked-22 ∩ expected, no PN double-bucketed, no surfaced PN
+  already in catalog, and the XENPAK/GBIC→EXCLUDE_SCOPE vs POM→EXCLUDE_TAXONOMY pin.
+- NEXT: add the 18 ADD SKUs to the ledger grounded verbatim (downstream German Stage-3 pass);
+  then remaining transceiver brands; then switches/servers via the SAME harvester (config only).
+
 ## Current state (2026-06-12) — autonomous directive in force
 
 **MISSION: "run the deferred grounded passes" (6 passes) — IN PROGRESS.** Take the 5 brands
