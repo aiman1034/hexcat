@@ -212,7 +212,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | Huawei       | fetched HTML is a **404** page                                     | fresh official URL |
 | Lenovo/IBM   | lp1042.pdf is the **wrong doc** (ThinkSystem SD650 server guide)   | correct transceiver-reference URL |
 | Dell         | Tier-1 fetch failed (stale/blocked)                                | fresh URL / Tier-2 |
-| NVIDIA       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| NVIDIA       | **SOURCE CONFIRMED 2026-06-12** — official LinkX "Parts List" PDFs on docs.nvidia.com have clean PN columns (MCP*/MMA*/MMS*/C-DQ*/T-DQ*/MAM*), BUT interleave InfiniBand + Ethernet via subsection headers ("Straight Ethernet Only" / "InfiniBand Only" / "Ethernet and InfiniBand") and use irregular merged-cell multi-row tables | **NEW EXTRACTION MODE** — subsection-gated token scan (emit only under Ethernet / Ethernet-and-IB headers; skip IB-Only). Multi-PDF: see fresh-URLs below |
 | Palo Alto    | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | MikroTik     | **DONE-VERIFIED 2026-06-12** — card-grid mode, `sfp-qsfp` page, 24 SKUs, V1–V9 PASS | — (done) |
 | Supermicro   | **WAF 403** on eStore listing (honest-GET 403, 443B) — bot-blocked | §6b NEEDS-HEADED (Tier-2; eStore WAF may still gate headed). Alt: AOC compat-matrix (a matrix, not an ordering list) |
@@ -267,6 +267,17 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
   visible (S+RJ10, S-31DLC20D, S+31DLC10D, S+85DLC03D, S-3553LC20D, …), 0 tables.
 - Arista data sheet (**DONE-VERIFIED** — token mode, 347 SKUs; see correction above):
   `https://www.arista.com/assets/data/pdf/Datasheets/transceiver-data-sheet.pdf`.
+- NVIDIA LinkX **Parts List** PDFs (official ordering docs; Ethernet line spans 1G–1600G across
+  several lists — must enumerate ALL for full coverage). Cached: `nvidia-400g-200g-parts-list.pdf`
+  (21pp, text dump `_scratch/nvidia_parts.txt`) = the 50G-PAM4/25G-NRZ QSFP-DD/QSFP56/QSFP28/SFP28
+  list. Others to fetch:
+  `https://docs.nvidia.com/networking/display/400gbps-100g-pam4-transceivers-and-fiber-parts-list.pdf`
+  (400G 100G-PAM4), 800G XDR (200G-PAM4) parts list, + legacy 40G/10G/1G list. Hub:
+  `https://docs.nvidia.com/networking/interconnect/index.html`. **Extraction note:** the parts
+  lists carry Ethernet/InfiniBand SUBSECTION HEADERS that gate scope — a flat token scan would
+  wrongly ingest IB parts (EDR/HDR/SPQ-CE-*). Need a subsection-gated token mode that tracks the
+  current header and emits only Ethernet (or Ethernet-and-IB) rows. Tables are merged-cell/multi-row
+  (one Name cell spans many length rows), so description reassembly is non-trivial.
 - Palo Alto datasheet landing (not a direct PDF):
   `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
 - Supermicro eStore transceiver listings (WAF-403 on honest-GET — need headed/Tier-2):
