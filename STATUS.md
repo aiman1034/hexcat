@@ -89,6 +89,25 @@ datasheet weight per SKU, fill or prove-absent, never bucket-fill. Determination
   Versandgewicht policy. The 41 grounded values sit captured-and-ready; buckets stay flagged-debt.
   `config/weight_disposition.yaml` (auto-generated bucket tracker) left untouched. NEXT: Pass 5 (GTIN).
 
+**§Pass-5 GTIN — PROVEN-ABSENT (all 902 SKUs, all 5 brands; 311 tests pass).** Mandate: confirm
+official GTINs via GS1; capture or prove-absent. Determination in `config/gtin_disposition.yaml`:
+- **Evidence:** extracted + searched EVERY cached official datasheet/parts-list (HTML + PDF). ZERO
+  GTIN tokens and ZERO 12-/13-/14-digit barcode numbers in any source. The "UPC" tokens that appear
+  are a FALSE FRIEND — in fiber datasheets "UPC" = the connector polish "Ultra Physical Contact"
+  (MPO-12 UPC / LC UPC, paired with APC/PC), NOT Universal Product Code (verified verbatim in the
+  Arista + HPE datasheets).
+- **Why $0 can't ground a GTIN:** GS1's services are GTIN-KEYED (Verified by GS1 / GEPIR resolve a
+  barcode → brand owner; no part-number → GTIN query). The GS1 check-digit math VALIDATES but cannot
+  DISCOVER. Third-party barcode DBs are user-submitted = non-authoritative → forbidden (1000% rule,
+  same class as gray-market price noise). Manufacturer datasheets simply don't carry GTIN/EAN.
+- **Engine already correct, no code change:** `assemble.py:82` emits GTIN empty (populate-or-prove-
+  absent) and `validate.valid_gtin` enforces the GS1 mod-10 check digit on any PRESENT GTIN, so a
+  fabricated/typo'd barcode can never reach a live import while empty stays GREEN. GTIN is a
+  structural column (not one of the 14 tracked attributes), so it isn't in residual_gaps; this file
+  is the record that 'empty' = PROVEN-ABSENT, not un-checked. Re-open only with an authoritative
+  per-SKU source (manufacturer packaging/GS1 license or a licensed distributor feed). NEXT: Pass 6
+  (collision keying — propose for approval).
+
 **§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit 44b2570). 300 tests pass.** The engine is
 category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
 named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`

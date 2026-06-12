@@ -1,0 +1,56 @@
+# §Pass-5 — GTIN grounding determination (confirm official GTINs; capture where they exist,
+# prove-absent where they don't).
+#
+# Mandate: "confirm official GTINs via GS1; capture or prove-absent." VERDICT: PROVEN-ABSENT for
+# all 902 SKUs across all 5 brands — no official manufacturer source publishes a per-SKU GTIN/EAN,
+# and at $0 there is no authoritative product->GTIN lookup. GTIN therefore stays an honest flagged
+# GAP (the engine already emits it empty by design). Nothing is fabricated (the 1000% rule).
+#
+# EVIDENCE (every cached official datasheet / parts-list was extracted and searched):
+#   * ZERO GTIN tokens in any source (HTML or PDF).
+#   * ZERO 12-/13-/14-digit barcode numbers in any source.
+#   * The "UPC" tokens that DO appear are a FALSE FRIEND: in fiber/transceiver datasheets "UPC"
+#     means the connector polish "Ultra Physical Contact" (e.g. "MPO-12 UPC", "LC UPC", paired with
+#     "APC"/"PC") — NOT "Universal Product Code". Verified verbatim in transceiver-data-sheet.pdf
+#     ("40GBASE-SR4 MPO-12 UPC ...") and hpe-aruba-transceivers.pdf ("polish type PC (Physical
+#     Contact) or UPC (Ultra Physical Contact) ... APC or UPC"). So even the keyword hits are not
+#     barcodes.
+#
+# WHY $0 CANNOT GROUND A GTIN (the 1000% rule forbids the only available shortcuts):
+#   * GS1's own services are GTIN-KEYED, not name-keyed: "Verified by GS1" / GEPIR resolve a barcode
+#     -> brand owner. There is no authoritative manufacturer-part-number -> GTIN query. The GS1
+#     check-digit math (already wired in validate.valid_gtin) can VALIDATE a supplied GTIN but cannot
+#     DISCOVER one.
+#   * Third-party barcode databases (barcodelookup et al.) are user-submitted and non-authoritative
+#     -> excluded by the 1000% rule (same class as the gray-market price noise rejected in Pass-1).
+#   * Manufacturer product pages and datasheets do not carry GTIN/EAN (these live on retail packaging
+#     / distributor feeds, not the manufacturer's spec source). A reseller listing's EAN is NOT the
+#     manufacturer's authoritative datum.
+#
+# ENGINE ALREADY CORRECT (no code change needed — populate-or-prove-absent is the existing contract):
+#   * assemble.py:82 emits GTIN = "" for every SKU (empty = grounding deferred, allowed).
+#   * validate.valid_gtin() (validate.py:94) enforces the GS1 mod-10 check digit on any PRESENT GTIN,
+#     so a fabricated/transposed/typo'd barcode can never reach a live import. Empty is accepted.
+#   So the gate stays GREEN with GTIN absent, and the moment the operator supplies real GTINs (from
+#   packaging or a licensed GS1/distributor feed) they are validated, not trusted blindly.
+
+verdict: PROVEN_ABSENT_ALL_BRANDS
+captured: 0
+total_skus: 902
+source_of_truth: "datasheets/cache/* (all official datasheets/parts-lists extracted + searched)"
+engine_contract: "assemble.py:82 GTIN empty (populate-or-prove-absent); validate.valid_gtin GS1 check-digit gate on any present GTIN"
+
+brands:
+  Cisco:    { sku_count: 297, gtin_published: false, captured: 0 }
+  Arista:   { sku_count: 347, gtin_published: false, captured: 0 }
+  HPE:      { sku_count: 147, gtin_published: false, captured: 0 }
+  Fortinet: { sku_count: 87,  gtin_published: false, captured: 0 }
+  MikroTik: { sku_count: 24,  gtin_published: false, captured: 0 }
+
+notes:
+  - "GTIN is a structural top-level column, not one of the 14 tracked attributes; it is empty BY
+     DESIGN, so it does not appear in config/attribute_gaps/residual_gaps.yaml. This file is the
+     record that 'empty' here is PROVEN-ABSENT, not un-checked."
+  - "Re-open ONLY with an authoritative per-SKU source: the manufacturer's own packaging/GS1 license
+     data, or a licensed distributor master-data feed. A free product-name->GTIN web lookup is not
+     authoritative and must not be used (1000% rule)."
