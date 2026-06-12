@@ -10,7 +10,19 @@ miner it polices.
 """
 from __future__ import annotations
 
-from .verifier import VerifyResult, verify_ledger
+from .verifier import (
+    VerifyResult,
+    verify_catalog_coverage,
+    verify_ledger,
+    write_coverage_report,
+)
 from .extract import SourceToken, extract_authoritative
 
-__all__ = ["VerifyResult", "verify_ledger", "SourceToken", "extract_authoritative"]
+__all__ = [
+    "VerifyResult",
+    "verify_ledger",
+    "verify_catalog_coverage",
+    "write_coverage_report",
+    "SourceToken",
+    "extract_authoritative",
+]

@@ -244,3 +244,36 @@ def v8_count_honesty(emitted: list[EmittedRow], tokens: list[SourceToken]) -> Ch
         [] if passed else [f"{emitted_distinct} != {len(authoritative)}"],
         {"emitted_distinct": emitted_distinct, "authoritative_distinct": len(authoritative)},
     )
+
+
+# --- V9: catalog coverage (whole-brand, runs on the MERGED ledger) -----------------------
+def v9_catalog_coverage(emitted: list[EmittedRow],
+                        expected_families: list[str]) -> CheckResult:
+    """Every transceiver family the brand's line is known to span must be represented by at
+    least one emitted SKU in the merged ledger.
+
+    Unlike V1-V8 (per-source integrity), V9 is a WHOLE-CATALOG completeness gate: it runs once
+    over the merged emitted set across every source. A missing family does NOT mean the mine is
+    wrong (the SKUs that ARE present are still verbatim/provenanced) — it means the catalog is
+    KNOWN-INCOMPLETE and may not advance to DONE-VERIFIED until the gap is closed (another
+    source mined) or explicitly justified. Naming the missing families is the whole point: the
+    operator sees exactly which form factors still need a source.
+    """
+    emitted_families = {r.unterkategorie for r in emitted}
+    expected = list(dict.fromkeys(expected_families))  # de-dup, keep order
+    missing = [f for f in expected if f not in emitted_families]
+    extra = sorted(emitted_families - set(expected))
+    passed = not missing
+    by_family = {f: sum(1 for r in emitted if r.unterkategorie == f) for f in expected}
+    return CheckResult(
+        "V9", "Catalog coverage", passed,
+        (f"{len(expected) - len(missing)}/{len(expected)} expected families present"
+         + (f"; KNOWN-INCOMPLETE — missing: {', '.join(missing)}" if missing else "")),
+        missing,
+        {
+            "expected_families": expected,
+            "missing_families": missing,
+            "emitted_only_families": extra,  # present but not in the expected set (informational)
+            "skus_per_expected_family": by_family,
+        },
+    )

@@ -563,3 +563,51 @@ def test_verify_column_fixture_end_to_end_passes():
     res = verify_ledger(emitted, spec, brand="Fixture", pdf_bytes=data)
     assert res.passed, [c.name for c in res.checks if not c.passed]
     assert res.authoritative_count == 7
+
+
+# --- V9 catalog coverage (whole-brand, merged ledger) --------------------------------
+def test_v9_passes_when_every_expected_family_present():
+    from hexcat.verify import checks as C
+
+    expected = ["SFP", "SFP+", "QSFP28", "DAC Kabel"]
+    emitted = _emitted([("GLC-T", "SFP"), ("SFP-10G-SR", "SFP+"),
+                        ("QSFP-100G-LR4-S", "QSFP28"), ("QSFP-100G-CU3M", "DAC Kabel")])
+    res = C.v9_catalog_coverage(emitted, expected)
+    assert res.passed and not res.offenders
+    assert res.details["skus_per_expected_family"]["SFP+"] == 1
+
+
+def test_v9_flags_and_names_missing_family():
+    """A family with zero emitted SKUs marks the catalog KNOWN-INCOMPLETE and is named."""
+    from hexcat.verify import checks as C
+
+    expected = ["SFP", "SFP+", "QSFP28", "OSFP"]
+    emitted = _emitted([("GLC-T", "SFP"), ("SFP-10G-SR", "SFP+"),
+                        ("QSFP-100G-LR4-S", "QSFP28")])           # no OSFP
+    res = C.v9_catalog_coverage(emitted, expected)
+    assert not res.passed
+    assert res.offenders == ["OSFP"]
+    assert "OSFP" in res.summary
+
+
+def test_v9_uncalibrated_when_spec_has_no_coverage(tmp_path):
+    """A spec with no coverage.expected_families cannot certify DONE-VERIFIED -> V9 FAILs."""
+    from hexcat.verify.verifier import verify_catalog_coverage
+
+    spec = load_ledger_spec()
+    spec_no_cov = spec.model_copy(update={"coverage": None})
+    emitted = _emitted([("SFP-10G-SR", "SFP+")])
+    res = verify_catalog_coverage(emitted, spec_no_cov, brand="X")
+    assert not res.passed
+    assert "UNCALIBRATED" in res.checks[0].summary
+
+
+def test_cisco_spec_coverage_19_families_all_locked22_and_reachable():
+    """The Cisco V9 contract is the 19 known families; verify_ledger_spec already guards that
+    each is a locked-22 token AND reachable by a classify rule, so a clean load proves both."""
+    spec = verify_ledger_spec()
+    assert spec.coverage is not None
+    assert len(spec.coverage.expected_families) == 19
+    from hexcat.config import load_taxonomy
+    locked22 = set(load_taxonomy().subcategories)
+    assert all(f in locked22 for f in spec.coverage.expected_families)

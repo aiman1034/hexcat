@@ -95,6 +95,34 @@ classify:
   # (a future unseen family would land here -> V9 catalog-coverage will surface it).
   default: "SFP"
 
+# --- Catalog coverage (V9) --------------------------------------------------------
+# The transceiver families Cisco's Ethernet line is known to span (grounded in the curated
+# 297-PN / 29-source corpus). V9 runs over the MERGED ledger and asserts each has >=1 emitted
+# SKU; a missing family marks the catalog KNOWN-INCOMPLETE (names the gap) and blocks
+# DONE-VERIFIED until a source closing it is mined. Every token here is a locked-22 category
+# AND reachable by a classify rule above (verify_ledger_spec enforces both).
+coverage:
+  expected_families:
+    - SFP
+    - SFP+
+    - SFP28
+    - SFP56
+    - QSFP+
+    - QSFP28
+    - QSFP56
+    - QSFP112
+    - QSFP-DD
+    - QSFP-DD800
+    - OSFP
+    - XFP
+    - X2
+    - CFP
+    - CFP2
+    - CPAK
+    - CXP
+    - DAC Kabel
+    - AOC Kabel
+
 # --- Unterkategorie -> locked-22 canonical token ----------------------------------
 # The classifier now emits locked-22 tokens directly (QSFP28, SFP+, DAC Kabel, ...), so the
 # map is identity. verify_ledger_spec still asserts every emittable Unterkategorie is a real

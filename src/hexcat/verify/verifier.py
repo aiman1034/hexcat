@@ -128,6 +128,54 @@ def verify_source_result(res, spec: LedgerSpec, fetched, *,
                          pdf_bytes=fetched.read_bytes(), run_date=run_date)
 
 
+def verify_catalog_coverage(
+    emitted: list[EmittedRow],
+    spec: LedgerSpec,
+    *,
+    brand: str | None = None,
+    run_date: str | None = None,
+) -> VerifyResult:
+    """Run V9 (catalog coverage) over the MERGED emitted ledger for a whole brand.
+
+    This is the catalog-level gate that decides DONE-VERIFIED: V1-V8 prove each source was
+    mined honestly; V9 proves the merged result covers the brand's known transceiver families.
+    When the spec defines no coverage contract, V9 cannot fail (vacuously passes) but is
+    reported as UNCALIBRATED so the dashboard never claims DONE-VERIFIED on an unguarded brand.
+    """
+    brand = brand or spec.brand
+    run_date = run_date or date.today().isoformat()
+    expected = spec.coverage.expected_families if spec.coverage else []
+    v9 = C.v9_catalog_coverage(emitted, expected)
+    if not expected:
+        v9 = CheckResult(
+            "V9", "Catalog coverage", False,
+            "UNCALIBRATED — spec defines no coverage.expected_families; cannot certify the "
+            "merged catalog spans the brand's transceiver line. Add the expected family set.",
+            [], {"expected_families": []},
+        )
+    return VerifyResult(
+        brand=brand,
+        passed=v9.passed,
+        checks=[v9],
+        authoritative_count=len({r.pn for r in emitted}),
+        emitted_count=len({r.pn for r in emitted}),
+        run_date=run_date,
+    )
+
+
+def write_coverage_report(result: VerifyResult, out_dir: str | Path) -> tuple[Path, Path]:
+    """Write Coverage_Report_{Brand}.md + .json (the V9 catalog-coverage gate artifact)."""
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    safe = result.brand.replace("/", "_").replace(" ", "_")
+    md_path = out / f"Coverage_Report_{safe}.md"
+    json_path = out / f"Coverage_Report_{safe}.json"
+    md_path.write_text(render_markdown(result), encoding="utf-8")
+    json_path.write_text(json.dumps(result.to_json(), indent=2, ensure_ascii=False),
+                         encoding="utf-8")
+    return md_path, json_path
+
+
 def write_audit_report(result: VerifyResult, out_dir: str | Path) -> tuple[Path, Path]:
     """Write Audit_Report_{Brand}.md + Audit_Report_{Brand}.json. Returns both paths."""
     out = Path(out_dir)

@@ -426,6 +426,25 @@ def ledger(
     out_path = write_workbook(results, out, brand=spec.brand)
     console.print(f"[bold green]Wrote ledger workbook:[/] {out_path}")
 
+    # --- V9 catalog-coverage gate (whole-brand, on the MERGED ledger) ------------------------
+    # V1-V8 prove each source was mined honestly; V9 proves the merged catalog spans the brand's
+    # known transceiver families. Only a V9 PASS lets the brand reach DONE-VERIFIED (Stage-3).
+    from .verify.verifier import verify_catalog_coverage, write_coverage_report
+    from .verify.checks import EmittedRow
+
+    merged_emitted = [
+        EmittedRow(pn=r.pn, unterkategorie=r.unterkategorie, notiz=r.notiz or "")
+        for res in results for r in res.rows
+    ]
+    cov_res = verify_catalog_coverage(merged_emitted, spec)
+    cov_md, _ = write_coverage_report(cov_res, audit_dir)
+    v9 = cov_res.checks[0]
+    if cov_res.passed:
+        console.print(f"[bold green]✓ V9 Catalog coverage PASS[/] — DONE-VERIFIED — "
+                      f"{v9.summary} → {cov_md.name}")
+    else:
+        console.print(f"[bold yellow]⚠ V9 Catalog coverage:[/] {v9.summary} → {cov_md.name}")
+
     # Coverage summary.
     cov: dict[str, int] = {}
     for res in results:

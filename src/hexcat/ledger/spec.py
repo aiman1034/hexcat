@@ -106,6 +106,16 @@ class ClassifySpec(BaseModel):
     default: str
 
 
+class CoverageSpec(BaseModel):
+    """V9 catalog-coverage contract. `expected_families` is the set of locked-22
+    Unterkategorien the brand's transceiver line is known to span (grounded in the curated
+    source corpus). V9 asserts the MERGED ledger emits >=1 SKU for every expected family;
+    a missing family does not corrupt the mine (V1-V8 stay green) but marks the catalog
+    KNOWN-INCOMPLETE so it cannot reach DONE-VERIFIED until the gap is closed or justified.
+    """
+    expected_families: list[str] = []
+
+
 class ExcludeRule(BaseModel):
     """A 'flag, don't emit' rule. A mined token matching this is NOT a transceiver/optic that
     fits the locked-22 taxonomy (e.g. a software license, an RTU, a QSFP-to-SFP converter
@@ -176,6 +186,7 @@ class LedgerSpec(BaseModel):
     normalize: NormalizeSpec
     classify: ClassifySpec
     exclude: list[ExcludeRule] = []
+    coverage: CoverageSpec | None = None
     locked22_map: dict[str, str] = {}
 
     # --- exclusion ------------------------------------------------------------
@@ -264,4 +275,20 @@ def verify_ledger_spec(path: str | None = None) -> LedgerSpec:
                 f"classifier can emit Unterkategorie {uk!r} which maps to {mapped!r}, "
                 f"not in the locked-22 taxonomy. Add a locked22_map entry."
             )
+
+    # Every V9 expected-coverage family must be a real locked-22 token (else V9 could never
+    # be satisfied by an honest classifier) AND must be reachable by the classifier — a family
+    # the rules can never emit is a spec bug, not a catalog gap.
+    if spec.coverage is not None:
+        for fam in spec.coverage.expected_families:
+            if fam not in locked22:
+                raise LedgerSpecError(
+                    f"coverage.expected_families lists {fam!r}, not in the locked-22 taxonomy "
+                    f"(config/taxonomy/transceivers.yaml subcategories)."
+                )
+            if fam not in emittable:
+                raise LedgerSpecError(
+                    f"coverage.expected_families lists {fam!r} but no classify rule / chapter "
+                    f"can emit it — V9 could never pass. Add a rule or fix the family name."
+                )
     return spec

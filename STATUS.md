@@ -13,15 +13,21 @@ takes the list of per-source results; each source independently V1–V8 gated).
 
 ### §7 Dashboard (computed from files 2026-06-12)
 
-| Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Status |
-| -------- | ----------- | ---------- | ----- | ----------- | ------ |
-| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | NOT BUILT | V1–V8 green; V9 pending |
-| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | NOT BUILT | V9 pending (likely 1-source pass) |
-| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | NOT BUILT | V9 pending; FlexFabric/Comware gap unchecked |
-| Brocade  | — | FC (out of scope) | — | — | PARKED (operator decision) |
-| 14 others| 0 | not enumerated | — | — | NOT-STARTED |
+| Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Stage-3 | Status |
+| -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
+| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | NOT-STARTED | **DONE-VERIFIED** (V1–V9 green) |
+| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V1–V8 green; V9 coverage spec pending |
+| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V9 spec pending; FlexFabric/Comware gap unchecked |
+| Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
+| 14 others| 0 | not enumerated | — | — | — | NOT-STARTED |
 
-**DONE-VERIFIED count: 0** (V9 not yet built; nothing passes the full V1–V9 gate.)
+**DONE-VERIFIED count: 1** (Cisco passes the full V1–V9 gate). V9 (catalog-coverage) is BUILT:
+config-driven per-brand `coverage.expected_families`; runs on the MERGED ledger; each expected
+locked-22 family must have ≥1 SKU else KNOWN-INCOMPLETE (names the gap) and DONE-VERIFIED is
+blocked. `verify_ledger_spec` guards every coverage family is locked-22 AND reachable by a rule.
+A spec with no coverage set → V9 FAILs as UNCALIBRATED (never silently certifies). Stage-3 state:
+NOT-STARTED / GENERATED / PRICES-PENDING / IMPORT-READY (IMPORT-READY only when generated +
+content-verified + prices filled).
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
