@@ -1,0 +1,48 @@
+# §5 Pass-1 grounded pricing inputs — gathered by Claude IN-SESSION via WebSearch ($0, no paid
+# API, no network inside the engine). This file is the single seam that unstubs the pricing
+# engine: hexcat.price_inputs reads it and feeds hexcat.pricing.resolve_price. EVERY entry traces
+# to a real source URL (the 1000% rule). SKUs ABSENT here are NOT priced — they stay honest
+# flagged-debt until grounded, never invented.
+#
+# Grounding method (operator-confirmed): official manufacturer LIST price (Cisco Global Price
+# List / GPL = the manufacturer UVP). Net sell price = list_eur * pricing_policy.list_to_net (T2).
+# USD GPL figures are converted to EUR via the dated fx rate below. `confidence` is explicit and
+# carries the honesty: a GPL list surfaced from a price-aggregator search is `medium`, not a
+# verified-from-cisco.com `high`. This is a MULTI-TURN grind: GPL numbers surface from WebSearch
+# only ~40% of the time and the aggregator sites are not directly fetchable (403/parked), so
+# coverage grows pass-by-pass. Regenerate config/price_disposition.yaml after every expansion.
+
+fx:
+  # USD -> EUR. Grounded, dated, sourced. Re-fetch when stale.
+  usd_eur: 0.863
+  as_of: "2026-06-11"
+  source: "https://www.exchange-rates.org/exchange-rate-history/usd-eur-2026"
+
+# Cisco GPL list anchors (USD). list_usd is the manufacturer list price verbatim from the cited
+# source; the engine derives the EUR net via fx * list_to_net. Spanning bands (1G/10G/25G/100G)
+# so a feature-model fallback can later interpolate ungrounded SKUs from real anchors.
+skus:
+  GLC-TE:
+    list_usd: 529.65
+    kind: list-gpl
+    confidence: medium
+    source: "https://pricetome.com/cisco/GLC-TE="
+    note: "1000BASE-T copper SFP; Cisco GPL list via PriceToMe snippet"
+  SFP-10G-SR-S:
+    list_usd: 650.00
+    kind: list-gpl
+    confidence: medium
+    source: "https://pricetome.com/cisco/SFP-10G-SR-S"
+    note: "10GBASE-SR SFP+; Cisco GPL list via PriceToMe snippet"
+  SFP-25G-SR-S:
+    list_usd: 1171.12
+    kind: list-gpl
+    confidence: medium
+    source: "https://itprice.com/cisco-gpl/sfp-25g-sr-s"
+    note: "25GBASE-SR SFP28; Cisco GPL list via itprice snippet"
+  QSFP-100G-SR4-S:
+    list_usd: 2348.12
+    kind: list-gpl
+    confidence: medium
+    source: "https://pricetome.com/cisco/QSFP-100G-SR4-S="
+    note: "100GBASE-SR4 QSFP28; Cisco GPL list via PriceToMe snippet"
