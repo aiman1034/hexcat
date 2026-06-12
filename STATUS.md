@@ -52,11 +52,34 @@ V1–V8, frozen on synthetic tokens + a committed column-layout fixture
 config/ledger/<brand>_transceivers.yaml --out output/<Brand>_Ledger.xlsx --no-network`
 (new `--spec` option selects the per-brand mining spec; default = Cisco pilot.)
 
+## Remaining-brand triage (2026-06-12 fetch probe)
+
+Probed all 12 non-Juniper remaining brands Tier-1 (network IS up — 404s prove reachability).
+**Every recorded seed URL in `inputs/brand_sources.xlsx` is stale, wrong, JS-gated, or FC-only.**
+No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonomy yet.
+
+| Brand        | Source status from cached/probed fetch                            | Action needed |
+| ------------ | ----------------------------------------------------------------- | ------------- |
+| Brocade      | VALID PDF but **Fibre-Channel** "Transceiver Support Matrix" — wide multi-col Gen5/6/7/8, XBR-*/57-* PNs | §6c taxonomy decision: does the catalog carry FC optics, under which Unterkategorie? + bespoke wide-matrix extractor |
+| Ubiquiti     | JS-shell (accessories.html: 1.6KB rendered text, 107 UACC-* only in script JSON) | §6b NEEDS-HEADED (Tier-2 render) |
+| Juniper      | hCaptcha-gated Next.js SPA                                          | §6b NEEDS-HEADED |
+| Arista       | fetched 3KB stub — corrupt, "No /Root object" (error page as .pdf) | fresh official QRG URL |
+| Huawei       | fetched HTML is a **404** page                                     | fresh official URL |
+| Lenovo/IBM   | lp1042.pdf is the **wrong doc** (ThinkSystem SD650 server guide)   | correct transceiver-reference URL |
+| Dell         | Tier-1 fetch failed (stale/blocked)                                | fresh URL / Tier-2 |
+| NVIDIA       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| Palo Alto    | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| MikroTik     | Tier-1 HTTP 404 (URL path changed)                                 | fresh URL |
+| Supermicro   | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| Ruijie       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| Avaya/Extreme| Tier-1 fetch failed (JS-grid per notes)                            | §6b NEEDS-HEADED |
+
 ## Next steps
-- Extend the loop to the remaining 15 brands. Per `inputs/brand_sources.xlsx`:
-  CLEAN (mineable now): MikroTik, Supermicro, Ruijie, Avaya/Extreme (Tier-2 render).
-  NEEDS-PDF (have official PDF/URL, need a spec): Arista, Dell, Huawei, Lenovo/IBM,
-  NVIDIA/Mellanox, Palo Alto, Ubiquiti, Brocade.
-  BLOCKED-NEEDS-HEADED: Juniper (hCaptcha-gated SPA).
-- Each new brand: author spec → fetch (cache) → mine → verify-gate must pass → write ledger +
-  audit report → re-run FULL suite green (a fix for brand N must not regress 1…N-1).
+- **Source acquisition is the gate**, not spec authoring. Next autonomous pass: for the
+  stale-URL brands (Arista, Huawei, Lenovo, Dell, NVIDIA, Palo Alto, MikroTik, Supermicro,
+  Ruijie) find the *current* official transceiver datasheet URL (web search ok — still
+  "official manufacturer source"), re-fetch (Tier-2 render where JS-gated), then author a
+  per-brand spec → mine → verify-gate PASS → ledger+audit → full suite green.
+- **Escalated to human (§6):** (b) NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme;
+  (c) irreducible taxonomy decision: Brocade Fibre-Channel optics.
+- Invariant for every new brand: a fix for brand N must not regress 1…N-1 (full suite green).
