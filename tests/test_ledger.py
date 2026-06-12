@@ -187,7 +187,8 @@ def test_workbook_structure(tmp_path):
     import openpyxl
 
     res = _fixture_result()
-    out = write_workbook([res], tmp_path / "ledger.xlsx", run_date="2026-06-12")
+    out = write_workbook([res], tmp_path / "ledger.xlsx", run_date="2026-06-12",
+                         brand=SPEC.brand)
     wb = openpyxl.load_workbook(out)
     assert wb.sheetnames == [
         "Fortschritt", "Neue Artikel", "Quellen-Tracker",
@@ -332,3 +333,200 @@ def test_real_datasheet_yields_35_if_cached():
     for expected in ["SFP-10G-SR", "SFP-10G-LR", "SFP-10G-ER", "SFP-10G-LRM",
                      "SFP-10G-ZR", "SFP-10G-T-X", "SFP-H10GB-CU3M", "SFP-10G-AOC3M"]:
         assert expected in pns
+
+
+# =====================================================================================
+# Stage-1 SELF-AUDIT regression suite — one permanent fixture per defect class.
+# Backed by a COMMITTED column-layout fixture (sample_ordering_columns.pdf) so these run
+# in CI without the gitignored real datasheets. Bug classes locked here:
+#   #1 description-bleed phantoms      -> column extraction excludes them (V2)
+#   #2 trailing-'+' separator stripping-> preserved, base & '+' stay distinct (V3/V4)
+#   #3 MPO-vs-DAC misclassification    -> universal V5 from description (V5)
+#   #4 pack-of-four context            -> Notiz flag
+# plus the verifier's V1-V8 calibration frozen on synthetic tokens.
+# =====================================================================================
+SAMPLE_COLUMNS_PDF = FIXTURES / "sample_ordering_columns.pdf"
+
+
+def _columns_spec():
+    """LedgerSpec for the column fixture: column-aware token mode + a SFP+ default so cables
+    are forced to be classified by the universal V5 description rule, not a PN substring."""
+    from hexcat.ledger.spec import LedgerSpec
+
+    return LedgerSpec.model_validate({
+        "brand": "Fixture", "hauptkategorie": "Transceivers",
+        "mine": {"pn_header_patterns": ["sku"], "pn_token": r"^.+$", "pdf": {
+            "mode": "token", "scope_heading": "Ordering Information",
+            "sku_token": r"FX-[A-Z0-9]+(?:[-+][A-Z0-9]+)+\+?",
+            "sku_column": "SKU", "desc_column": "Description"}},
+        "normalize": {"feed_id_suffix": r"-P-[0-9]+$", "problem_feed_id": "x",
+                      "spelling_fixes": {}, "problem_spelling": ""},
+        "classify": {"rules": [], "default": "SFP+"}, "locked22_map": {},
+    })
+
+
+def test_classify_cable_from_description_universal_rule():
+    from hexcat.ledger.spec import classify_cable_from_description as cc
+
+    assert cc("10 GE SFP+ passive direct attach cable, 1m") == "DAC Kabel"
+    assert cc("10 GE SFP+ active direct attach cable, 10m") == "DAC Kabel"  # active copper, NOT AOC
+    assert cc("400 GE QSFPDD active optical cable, 3m") == "AOC Kabel"
+    assert cc("100 GE parallel breakout MPO to 10xLC connectors, OM3 MMF") == "MPO Kabel"
+    assert cc("40 GE QSFP+ transceiver module, MPO-12 connector") is None  # connector != breakout
+    assert cc("DAC") == "DAC Kabel"   # HPE-style bare-noun callout label
+    assert cc("AOC") == "AOC Kabel"
+    assert cc("Transceiver") is None
+    assert cc("") is None
+
+
+def test_mine_columns_excludes_description_phantom():
+    """#1: a SKU-shaped token bleeding through the Description column must NOT be mined."""
+    from hexcat.ledger.mine import mine_pdf
+
+    mined = mine_pdf(SAMPLE_COLUMNS_PDF.read_bytes(), _columns_spec())
+    pns = {m.pn for m in mined}
+    assert "FX-PHANTOM-XX" not in pns           # the description-prose phantom is excluded
+    assert "FX-TRAN-NOTE" in pns                # its real SKU-column neighbour is kept
+
+
+def test_mine_columns_preserves_trailing_plus_distinct():
+    """#2: FX-CABLE-DAC1 and FX-CABLE-DAC1+ are DISTINCT (the DR4/DR4+ class) — no '+' drop,
+    no silent collision."""
+    from hexcat.ledger.mine import mine_pdf
+
+    pns = {m.pn for m in mine_pdf(SAMPLE_COLUMNS_PDF.read_bytes(), _columns_spec())}
+    assert "FX-CABLE-DAC1" in pns and "FX-CABLE-DAC1+" in pns
+
+
+def test_mine_columns_v5_classifies_cables_from_description():
+    """#3: classification comes from the manufacturer description, not the PN substring."""
+    from hexcat.ledger.mine import mine_pdf
+
+    spec = _columns_spec()
+    uk = {m.pn: spec.resolve_unterkategorie(m.pn, description=m.description,
+                                            hint=m.unterkategorie)
+          for m in mine_pdf(SAMPLE_COLUMNS_PDF.read_bytes(), spec)}
+    assert uk["FX-CABLE-DAC1"] == "DAC Kabel"
+    assert uk["FX-CABLE-SR10"] == "MPO Kabel"   # OM3 MPO breakout, despite no 'MPO' in the PN
+    assert uk["FX-CABLE-AOC03"] == "AOC Kabel"
+    assert uk["FX-TRAN-SFP+LR"] == "SFP+"        # plain transceiver -> form factor
+
+
+def test_pack_of_four_flagged_in_notiz():
+    """#4: a Pack-of-four SKU carries a Viererpack Notiz through the engine."""
+    spec = _columns_spec()
+    src = Source(gruppe="Fixture", datasheet="Fixture Guide", url="https://x/columns.pdf")
+    fetched = type("F", (), {"tier": "fixture", "content_type": "pdf",
+                             "read_bytes": lambda self: SAMPLE_COLUMNS_PDF.read_bytes()})()
+    res = run_source(src, spec, verified_date="2026-06-12", fetched=fetched)
+    notiz = {r.pn: r.notiz for r in res.rows}
+    assert "Viererpack" in notiz["FX-TRAN-SX-4PACK"]
+    assert notiz["FX-CABLE-DAC1"] == ""          # non-pack rows carry no pack flag
+
+
+# --- verifier V1-V8 calibration, frozen on synthetic tokens --------------------------
+def _emitted(pairs):
+    from hexcat.verify.checks import EmittedRow
+
+    return [EmittedRow(pn=p, unterkategorie=u, notiz="") for p, u in pairs]
+
+
+def _tok(pn, desc="", locus="sku_column"):
+    from hexcat.verify.extract import SourceToken
+
+    return SourceToken(pn=pn, description=desc, locus=locus, page=1)
+
+
+def test_verifier_v2_flags_description_phantom():
+    from hexcat.verify import checks as C
+
+    tokens = [_tok("FX-TRAN-LR", "transceiver"),
+              _tok("FX-PHANTOM-XX", "see FX-PHANTOM-XX", locus="description")]
+    emitted = _emitted([("FX-TRAN-LR", "SFP+"), ("FX-PHANTOM-XX", "SFP+")])
+    res = C.v2_provenance(emitted, tokens)
+    assert not res.passed and res.offenders == ["FX-PHANTOM-XX"]
+
+
+def test_verifier_v1_v4_flag_trailing_plus_mangle():
+    from hexcat.verify import checks as C
+
+    tokens = [_tok("SP-CABLE-ADASFP+", "active direct attach cable")]
+    raw = "ordering SP-CABLE-ADASFP+ 10 GE active direct attach cable"
+    emitted = _emitted([("SP-CABLE-ADASFP", "DAC Kabel")])  # '+' stripped
+    v1 = C.v1_verbatim(emitted, raw, ["SP-CABLE-ADASFP+"])
+    v4 = C.v4_separator_integrity(emitted, tokens)
+    assert not v1.passed and "SP-CABLE-ADASFP" in v1.offenders
+    assert not v4.passed and "SP-CABLE-ADASFP" in v4.offenders
+
+
+def test_verifier_v3_flags_silent_collision_and_passes_when_both_kept():
+    from hexcat.verify import checks as C
+    from hexcat.ledger.spec import load_ledger_spec
+
+    spec = load_ledger_spec()
+    tokens = [_tok("FN-TRAN-QSFPDD-DR4", "500m"), _tok("FN-TRAN-QSFPDD-DR4+", "2km")]
+    lost = _emitted([("FN-TRAN-QSFPDD-DR4", "QSFP-DD")])          # '+' form silently deduped
+    both = _emitted([("FN-TRAN-QSFPDD-DR4", "QSFP-DD"),
+                     ("FN-TRAN-QSFPDD-DR4+", "QSFP-DD")])
+    assert not C.v3_no_silent_collision(lost, tokens, spec).passed
+    assert C.v3_no_silent_collision(both, tokens, spec).passed   # no false positive when kept
+
+
+def test_verifier_v4_no_false_positive_when_both_forms_emitted():
+    from hexcat.verify import checks as C
+
+    tokens = [_tok("FN-TRAN-QSFPDD-DR4", "500m"), _tok("FN-TRAN-QSFPDD-DR4+", "2km")]
+    emitted = _emitted([("FN-TRAN-QSFPDD-DR4", "QSFP-DD"),
+                        ("FN-TRAN-QSFPDD-DR4+", "QSFP-DD")])
+    assert C.v4_separator_integrity(emitted, tokens).passed  # DR4 is legit, not a mangle
+
+
+def test_verifier_v5_flags_mpo_misclassified_as_dac():
+    from hexcat.verify import checks as C
+
+    tokens = [_tok("FG-CABLE-SR10", "100 GE parallel breakout MPO to 10xLC connectors, OM3 MMF")]
+    emitted = _emitted([("FG-CABLE-SR10", "DAC Kabel")])   # wrong: it's an MPO breakout
+    res = C.v5_classification(emitted, tokens)
+    assert not res.passed and res.offenders == ["FG-CABLE-SR10"]
+
+
+def test_verifier_all_green_on_clean_set():
+    """True negative: a faithfully-mined set passes every check."""
+    from hexcat.verify import checks as C
+    from hexcat.ledger.spec import load_ledger_spec
+
+    spec = load_ledger_spec()
+    tokens = [_tok("FN-TRAN-SFP+LR", "10 GE SFP+ transceiver module"),
+              _tok("FN-CABLE-SFP+1", "10 GE SFP+ passive direct attach cable")]
+    raw = "FN-TRAN-SFP+LR 10 GE SFP+ transceiver module FN-CABLE-SFP+1 passive direct attach cable"
+    emitted = _emitted([("FN-TRAN-SFP+LR", "SFP+"), ("FN-CABLE-SFP+1", "DAC Kabel")])
+    skus = ["FN-TRAN-SFP+LR", "FN-CABLE-SFP+1"]
+    v2 = C.v2_provenance(emitted, tokens)
+    v4 = C.v4_separator_integrity(emitted, tokens)
+    checks = [
+        C.v1_verbatim(emitted, raw, skus), v2,
+        C.v3_no_silent_collision(emitted, tokens, spec), v4,
+        C.v5_classification(emitted, tokens), C.v6_switch_exclusion(emitted, tokens),
+        C.v7_completeness(emitted, tokens, v2, v4), C.v8_count_honesty(emitted, tokens),
+    ]
+    assert all(c.passed for c in checks), [c.name for c in checks if not c.passed]
+
+
+def test_verify_column_fixture_end_to_end_passes():
+    """The committed column fixture, mined + classified through the engine, must verify green."""
+    from hexcat.ledger.mine import mine_pdf
+    from hexcat.verify.checks import EmittedRow
+    from hexcat.verify.verifier import verify_ledger
+
+    spec = _columns_spec()
+    data = SAMPLE_COLUMNS_PDF.read_bytes()
+    emitted = [
+        EmittedRow(pn=m.pn,
+                   unterkategorie=spec.resolve_unterkategorie(
+                       m.pn, description=m.description, hint=m.unterkategorie),
+                   notiz="")
+        for m in mine_pdf(data, spec)
+    ]
+    res = verify_ledger(emitted, spec, brand="Fixture", pdf_bytes=data)
+    assert res.passed, [c.name for c in res.checks if not c.passed]
+    assert res.authoritative_count == 7

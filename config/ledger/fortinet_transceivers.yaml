@@ -13,14 +13,22 @@ hauptkategorie: Transceivers
 mine:
   # HTML fields kept for schema completeness (this brand mines via PDF, below).
   pn_header_patterns: ["sku", "product number", "bestellnummer"]
-  pn_token: '^(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+$'
+  pn_token: '^(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+\+?$'
   pdf:
     mode: token
     # Scope to Fortinet's authoritative orderable list (the pages headed "Ordering
     # Information"), not the whole datasheet — the spec/comparison tables elsewhere repeat
     # base SKUs and packaging variants that are not in the official ordering enumeration.
     scope_heading: "Ordering Information"
-    sku_token: '(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+'
+    # Trailing '\+?' preserves a final '+' separator: FN-TRAN-QSFPDD-DR4+ (2km) is a DISTINCT
+    # product from FN-TRAN-QSFPDD-DR4 (500m); dropping the '+' silently collided & lost it.
+    # Likewise SP-CABLE-ADASFP+ / FG-CABLE-SR10-SFP+ must keep their final '+'.
+    sku_token: '(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+\+?'
+    # Column-aware extraction: bucket words into rows and keep only the SKU column (by x-band),
+    # so SKU-shaped tokens that appear in the Description prose (FN-TRAN-1BU40 etc.) are not
+    # mistaken for orderable SKUs. desc_column feeds the universal V5 cable classifier.
+    sku_column: "SKU"
+    desc_column: "Description"
 
 # --- Normalization ----------------------------------------------------------------
 # No Fortinet feed-variant convention is in scope this session; kept structurally valid.

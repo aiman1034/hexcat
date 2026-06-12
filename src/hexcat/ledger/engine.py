@@ -17,6 +17,15 @@ from .normalize import normalize_pn
 from .spec import LedgerSpec, load_ledger_spec
 
 
+def _pack_notiz(m) -> str:
+    """Flag a pack-of-N SKU (e.g. FN-TRAN-SXI-4PACK) so the operator knows it is not a single
+    unit. Detected from the manufacturer's own '-4PACK' suffix or 'Pack of four' description."""
+    desc = (m.description or "").lower()
+    if "4pack" in m.pn.upper() or "pack of four" in desc:
+        return "Viererpack (Pack of four) — Mengeneinheit beachten"
+    return ""
+
+
 @dataclass(frozen=True)
 class Source:
     gruppe: str
@@ -130,9 +139,10 @@ def run_source(
 
     rows: list[LedgerRow] = []
     for m in mined:
-        # Section-mode PDFs decide the form factor at mine time (from the chapter heading,
-        # where the PN is opaque); prefer that hint, else classify from the PN via spec rules.
-        uk = m.unterkategorie or spec.classify_pn(m.pn)
+        # Universal V5 rule: the manufacturer DESCRIPTION decides DAC/AOC/MPO (identical across
+        # brands); otherwise the section-mode chapter hint (form factor where the PN is opaque);
+        # otherwise the per-brand PN-substring rules.
+        uk = spec.resolve_unterkategorie(m.pn, description=m.description, hint=m.unterkategorie)
         rows.append(
             LedgerRow(
                 pn=m.pn,
@@ -141,6 +151,7 @@ def run_source(
                 quelle=source.datasheet,
                 quell_url=source.url,
                 verifiziert_am=vdate,
+                notiz=_pack_notiz(m),
             )
         )
 
@@ -171,11 +182,11 @@ def run_source(
         # Tag mined rows new-vs-existing.
         new_count = 0
         for r in rows:
-            if r.pn in live_canonicals:
-                r.notiz = "bereits im Katalog"
-            else:
-                r.notiz = "neu"
+            tag = "bereits im Katalog" if r.pn in live_canonicals else "neu"
+            if r.pn not in live_canonicals:
                 new_count += 1
+            # Preserve any pack-of-N flag already set at mine time.
+            r.notiz = f"{tag}; {r.notiz}" if r.notiz else tag
 
     return SourceResult(
         source=source,

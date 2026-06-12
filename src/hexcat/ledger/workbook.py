@@ -17,11 +17,22 @@ SHEET_KORR = "PN-Korrekturen (Feed-ID)"
 SHEET_AUDIT = "Familien-Audit"
 SHEET_FORTSCHRITT = "Fortschritt"
 
-HEADERS_NEUE = [
-    "Artikelnummer (Part Number)", "Hauptkategorie", "Unterkategorie",
-    "Quelle (Cisco Datasheet)", "Quell-URL", "Verifiziert am", "Notiz",
-]
-HEADERS_QUELLEN = ["Gruppe", "Cisco Datasheet", "URL", "Status", "Notiz"]
+def _datasheet_label(brand: str | None) -> str:
+    """German 'Datasheet' column label, prefixed with the brand when known."""
+    return f"{brand} Datasheet" if brand else "Datasheet"
+
+
+def _headers_neue(brand: str | None) -> list[str]:
+    return [
+        "Artikelnummer (Part Number)", "Hauptkategorie", "Unterkategorie",
+        f"Quelle ({_datasheet_label(brand)})", "Quell-URL", "Verifiziert am", "Notiz",
+    ]
+
+
+def _headers_quellen(brand: str | None) -> list[str]:
+    return ["Gruppe", _datasheet_label(brand), "URL", "Status", "Notiz"]
+
+
 HEADERS_KORR = [
     "In Daten vorhanden", "Korrekte Cisco-PN", "Tab (Daten)",
     "Problem", "bestätigt via Datasheet",
@@ -36,7 +47,8 @@ def _bold_header(ws, ncols: int, row: int = 1) -> None:
         ws.cell(row=row, column=c).font = Font(bold=True)
 
 
-def build_workbook(results: list[SourceResult], *, run_date: str | None = None):
+def build_workbook(results: list[SourceResult], *, run_date: str | None = None,
+                   brand: str | None = None):
     import openpyxl
     from openpyxl.styles import Font
 
@@ -51,7 +63,9 @@ def build_workbook(results: list[SourceResult], *, run_date: str | None = None):
     total_flag = sum(len(r.flagged) for r in results)
     new_known = any(r.new_count is not None for r in results)
     total_new = sum((r.new_count or 0) for r in results) if new_known else None
-    ws.append(["Cisco Katalog-Aufbau – Fortschritt (Stage 1)"])
+    titel = f"{brand} Katalog-Aufbau – Fortschritt (Stage 1)" if brand \
+        else "Katalog-Aufbau – Fortschritt (Stage 1)"
+    ws.append([titel])
     ws.append([])
     ws.append(["Quellen verarbeitet", len(results)])
     ws.append(["PNs gemined (gesamt)", total_pns])
@@ -64,8 +78,9 @@ def build_workbook(results: list[SourceResult], *, run_date: str | None = None):
 
     # --- Neue Artikel --------------------------------------------------------
     ws = wb.create_sheet(SHEET_NEUE)
-    ws.append(HEADERS_NEUE)
-    _bold_header(ws, len(HEADERS_NEUE))
+    headers_neue = _headers_neue(brand)
+    ws.append(headers_neue)
+    _bold_header(ws, len(headers_neue))
     for res in results:
         for r in res.rows:
             ws.append([
@@ -75,8 +90,9 @@ def build_workbook(results: list[SourceResult], *, run_date: str | None = None):
 
     # --- Quellen-Tracker -----------------------------------------------------
     ws = wb.create_sheet(SHEET_QUELLEN)
-    ws.append(HEADERS_QUELLEN)
-    _bold_header(ws, len(HEADERS_QUELLEN))
+    headers_quellen = _headers_quellen(brand)
+    ws.append(headers_quellen)
+    _bold_header(ws, len(headers_quellen))
     for res in results:
         notiz = f"Tier: {res.tier}; {len(res.rows)} PNs klassifiziert"
         if res.flagged:
@@ -116,9 +132,9 @@ def build_workbook(results: list[SourceResult], *, run_date: str | None = None):
 
 
 def write_workbook(results: list[SourceResult], out_path: str | Path,
-                   *, run_date: str | None = None) -> Path:
+                   *, run_date: str | None = None, brand: str | None = None) -> Path:
     out = Path(out_path)
     out.parent.mkdir(parents=True, exist_ok=True)
-    wb = build_workbook(results, run_date=run_date)
+    wb = build_workbook(results, run_date=run_date, brand=brand)
     wb.save(out)
     return out

@@ -41,6 +41,12 @@ class PdfMineSpec(BaseModel):
     collapse_bold_doubling: bool = False      # section: undo bold double-render for headings
     chapters: dict[str, str] = {}             # section: chapter-heading substring -> form factor
     context_noun: str | None = None           # section: SKU parenthetical must follow this noun
+    # token: when set, mine the SKU *column* by word x-band rather than scanning whole rows.
+    # This isolates the authoritative SKU column from Description prose (kills description-bleed
+    # phantoms). desc_column captures the row's description for V5 classification.
+    sku_column: str | None = None             # header text of the SKU column (e.g. "SKU")
+    desc_column: str | None = None            # header text of the description column
+    header_top_max: float = 200.0             # only words above this y are header candidates
 
     @property
     def sku_re(self) -> re.Pattern[str]:
@@ -100,6 +106,46 @@ class ClassifySpec(BaseModel):
     default: str
 
 
+# Universal cable classification (V5) — ONE rule, identical across every brand. Derived from
+# the manufacturer's own description text, not the PN substring (a PN like FG-CABLE-SR10-SFP+
+# contains "CABLE" and "SFP+" but the description proves it is an OM3 MPO breakout, not a DAC).
+# The three returned tokens are locked-22 categories; None means "not a cable — use form factor".
+UNIVERSAL_CABLE_CATEGORIES = ("DAC Kabel", "AOC Kabel", "MPO Kabel")
+
+
+def classify_cable_from_description(description: str | None) -> str | None:
+    """Map a manufacturer optic/cable description to its locked-22 cable category, or None.
+
+    Order matters — the classes are disjoint in practice but we check the most specific
+    phrasing first:
+      * 'active optical cable'            -> AOC Kabel  (fibre, powered)
+      * 'breakout MPO to <n>xLC' / parallel breakout MPO -> MPO Kabel (optical fan-out;
+                                            often 'transceivers not included')
+      * 'direct attach cable' (passive OR active copper, incl. 'active direct attach') -> DAC Kabel
+    A transceiver module ('... transceiver module, MPO-12 connector ...') has an MPO *connector*
+    but is NOT a breakout cable, so it falls through to form-factor classification (returns None).
+    """
+    d = (description or "").lower()
+    if not d:
+        return None
+    # Explicit manufacturer label as the SKU's own noun (e.g. HPE/Aruba's '<noun> (SKU)'
+    # callout where the noun IS 'DAC' or 'AOC'). The whole-string check keeps 'transceiver'
+    # and prose descriptions from matching here.
+    if d.strip() == "dac":
+        return "DAC Kabel"
+    if d.strip() == "aoc":
+        return "AOC Kabel"
+    if "active optical cable" in d:
+        return "AOC Kabel"
+    # Optical MPO fan-out cable: the discriminator is "breakout MPO to" (vs a transceiver's
+    # bare "MPO-12 connector"). A copper DAC breakout says "direct attach cable", not "MPO".
+    if "breakout mpo" in d or ("parallel breakout" in d and "mpo" in d):
+        return "MPO Kabel"
+    if "direct attach cable" in d:
+        return "DAC Kabel"
+    return None
+
+
 class LedgerSpec(BaseModel):
     brand: str
     hauptkategorie: str
@@ -115,6 +161,23 @@ class LedgerSpec(BaseModel):
             if rule.matches(pn):
                 return rule.unterkategorie
         return self.classify.default
+
+    def resolve_unterkategorie(self, pn: str, description: str | None = None,
+                               hint: str | None = None) -> str:
+        """Resolve the Unterkategorie for one mined PN, applying the universal V5 rule.
+
+        Precedence: a cable category proven by the manufacturer's DESCRIPTION wins over every
+        other signal (it is the only thing that can tell an OM3 MPO breakout apart from a DAC,
+        or a copper DAC apart from its host form factor). Only when the description does not
+        prove a cable type do we fall back to the section-mode chapter `hint`, then to the
+        per-brand PN-substring rules. This keeps DAC/AOC/MPO identical across all brands.
+        """
+        cable = classify_cable_from_description(description)
+        if cable is not None:
+            return cable
+        if hint is not None:
+            return hint
+        return self.classify_pn(pn)
 
     def to_locked22(self, unterkategorie: str) -> str:
         """Map an operator Unterkategorie to its locked-22 token (identity if unlisted)."""
@@ -157,6 +220,7 @@ def verify_ledger_spec(path: str | None = None) -> LedgerSpec:
     # PDFs emit the form factor straight from the chapter heading (bypassing classify), so
     # those chapter tags are emittable too and must be checked here.
     emittable = {r.unterkategorie for r in spec.classify.rules} | {spec.classify.default}
+    emittable |= set(UNIVERSAL_CABLE_CATEGORIES)  # V5 can emit these from any brand
     if spec.mine.pdf is not None:
         emittable |= set(spec.mine.pdf.chapters.values())
     for uk in emittable:

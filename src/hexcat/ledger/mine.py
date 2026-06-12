@@ -137,6 +137,84 @@ def _mine_pdf_token(pages: list[str], pdf_cfg) -> list[MinedPN]:
     return mined
 
 
+def _mine_pdf_token_columns(data: bytes, pdf_cfg) -> list[MinedPN]:
+    """Column-aware token mining: read the SKU *column* by word x-band, not the whole row.
+
+    pdfplumber's table extractor returns empty cells on borderless ordering tables, and a flat
+    text scan cannot tell an authoritative SKU-column token (FN-TRAN-SFP-1BU40, x0≈179) from a
+    SKU-shaped string bleeding through Description prose (FN-TRAN-1BU40, x0≈480). So we bucket
+    every word into rows by its rounded `top`, split each row at the Description x-band, and keep
+    a SKU only when the SKU-column text is *exactly* one SKU token. The Description-column text is
+    carried along to drive the universal V5 cable classifier. Distinct tokens that differ only by
+    a trailing '+' (FN-TRAN-QSFPDD-DR4 vs …-DR4+) stay distinct — no silent collision.
+    """
+    import io
+    from collections import defaultdict
+
+    import pdfplumber
+
+    trans = {0x2010: "-", 0x2011: "-", 0x2012: "-", 0x2013: "-", 0x00AD: "-", 0x00A0: " "}
+
+    def tr(s: str) -> str:
+        return (s or "").translate(trans)
+
+    sku_re = pdf_cfg.sku_re
+    sku_hdr, desc_hdr = pdf_cfg.sku_column, pdf_cfg.desc_column
+    top_max = pdf_cfg.header_top_max
+    mined: list[MinedPN] = []
+    seen: set[str] = set()
+    found_scope = False
+
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        for page in pdf.pages:
+            text = tr(page.extract_text() or "")
+            if pdf_cfg.scope_heading and pdf_cfg.scope_heading not in text:
+                continue
+            found_scope = True
+            words = page.extract_words()
+            hdr = {
+                tr(w["text"]): w["x0"]
+                for w in words
+                if tr(w["text"]) in (sku_hdr, desc_hdr) and w["top"] < top_max
+            }
+            if sku_hdr not in hdr:
+                continue
+            sku_x = hdr[sku_hdr]
+            desc_x = hdr.get(desc_hdr, sku_x + 1e9)
+            bytop: dict[int, list[dict]] = defaultdict(list)
+            for w in words:
+                bytop[round(w["top"])].append(w)
+            for top in sorted(bytop):
+                row = sorted(bytop[top], key=lambda w: w["x0"])
+                sku_txt = " ".join(
+                    tr(w["text"]) for w in row if sku_x - 8 <= w["x0"] < desc_x - 8
+                ).strip()
+                desc_txt = re.sub(
+                    r"\s+", " ",
+                    " ".join(tr(w["text"]) for w in row if w["x0"] >= desc_x - 8),
+                ).strip()
+                m = sku_re.fullmatch(sku_txt)
+                if not m:
+                    continue
+                pn = m.group(0)
+                if pn in seen:
+                    continue
+                seen.add(pn)
+                mined.append(MinedPN(pn=pn, description=desc_txt))
+
+    if not found_scope:
+        raise MineError(
+            f"PDF column scan found no pages containing scope_heading "
+            f"{pdf_cfg.scope_heading!r}. The datasheet layout may have changed."
+        )
+    if not mined:
+        raise MineError(
+            f"PDF column scan found no SKU-column tokens under header {sku_hdr!r}. "
+            "The datasheet layout may have changed."
+        )
+    return mined
+
+
 def _mine_pdf_section(pages: list[str], pdf_cfg, spec: "LedgerSpec") -> list[MinedPN]:
     """Walk form-factor CHAPTERS in document order; within each, take transceiver SKUs from
     their model entries and tag them with the chapter's form factor. A SKU is only kept where
@@ -192,7 +270,12 @@ def _mine_pdf_section(pages: list[str], pdf_cfg, spec: "LedgerSpec") -> list[Min
                 if pn in seen:
                     continue
                 seen.add(pn)
-                mined.append(MinedPN(pn=pn, description="", unterkategorie=current))
+                # The matched noun (the text before the '(SKU)') is the manufacturer's own
+                # label for this SKU. Carrying it as the description lets the universal V5 rule
+                # reclassify 'DAC (sku)'/'AOC (sku)' callouts to DAC/AOC Kabel uniformly with
+                # every other brand, while 'Transceiver (sku)' keeps the chapter form factor.
+                noun = m.group(0)[: m.start(1) - m.start(0)].rstrip(" (")
+                mined.append(MinedPN(pn=pn, description=noun, unterkategorie=current))
     if not mined:
         raise MineError(
             "PDF section scan found no transceiver SKUs (no chapter heading + "
@@ -209,10 +292,14 @@ def mine_pdf(data: bytes, spec: LedgerSpec) -> list[MinedPN]:
             f"No PDF mining config for brand {spec.brand!r} (mine.pdf is unset). "
             "Add a mine.pdf block to the ledger spec to enable PDF extraction."
         )
-    pages = _pdf_pages_text(data)
     if pdf_cfg.mode == "section":
-        return _mine_pdf_section(pages, pdf_cfg, spec)
-    return _mine_pdf_token(pages, pdf_cfg)
+        return _mine_pdf_section(_pdf_pages_text(data), pdf_cfg, spec)
+    # token mode: column-aware when a SKU column is configured (isolates the authoritative SKU
+    # column from Description prose — kills description-bleed phantoms at the root), else the
+    # legacy flat text scan.
+    if pdf_cfg.sku_column:
+        return _mine_pdf_token_columns(data, pdf_cfg)
+    return _mine_pdf_token(_pdf_pages_text(data), pdf_cfg)
 
 
 def mine_source(fetched: FetchResult, spec: LedgerSpec) -> list[MinedPN]:

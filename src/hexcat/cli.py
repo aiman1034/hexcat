@@ -322,6 +322,11 @@ def ledger(
         Path("output/Cisco_Transceivers_Ledger.xlsx"), "--out", "-o",
         help="Path to write the 5-sheet ledger workbook.",
     ),
+    spec_path: Path = typer.Option(
+        None, "--spec",
+        help="Path to the brand mining spec (config/ledger/<brand>_transceivers.yaml). "
+             "Default: the Cisco pilot spec.",
+    ),
     live: Path = typer.Option(
         None, "--live",
         help="Optional CSV of existing PNs (default: inputs/live_pns_cisco.csv if present). "
@@ -359,7 +364,8 @@ def ledger(
         raise typer.Exit(code=2)
 
     try:
-        spec = verify_ledger_spec()  # fail loud if classification drifts from locked-22
+        # fail loud if classification drifts from locked-22 (per-brand spec or Cisco pilot default)
+        spec = verify_ledger_spec(str(spec_path) if spec_path else None)
     except Exception as e:  # noqa: BLE001
         err_console.print(f"[bold red]Ledger spec error:[/] {e}")
         raise typer.Exit(code=2)
@@ -375,6 +381,7 @@ def ledger(
     live_pns = load_live_pns(live_path)
 
     results = []
+    fetched_by_src = []
     for src in sources:
         try:
             fetched = fetch_datasheet(src.url, src.source_id, allow_network=not no_network)
@@ -383,13 +390,40 @@ def ledger(
             err_console.print(f"[bold red]{src.source_id}:[/] {e}")
             raise typer.Exit(code=1)
         results.append(res)
+        fetched_by_src.append(fetched)
         console.print(
             f"[green]{src.source_id}[/] — tier=[cyan]{res.tier}[/], "
             f"mined [bold]{res.mined_count}[/] PNs, "
             f"corrections [bold]{len(res.corrections)}[/], flagged [bold]{len(res.flagged)}[/]"
         )
 
-    out_path = write_workbook(results, out)
+    # --- Verifier gate: independently re-derive + audit before accepting the ledger ----------
+    from .verify import verify_ledger
+    from .verify.verifier import verify_source_result, write_audit_report
+
+    audit_dir = out.parent
+    any_failed = False
+    for res, fetched in zip(results, fetched_by_src):
+        try:
+            vres = verify_source_result(res, spec, fetched)
+        except Exception as e:  # noqa: BLE001 — a verifier crash must not silently pass a ledger
+            err_console.print(f"[bold red]Verifier error ({res.source.source_id}):[/] {e}")
+            raise typer.Exit(code=1)
+        md_path, _ = write_audit_report(vres, audit_dir)
+        if vres.passed:
+            console.print(f"[green]✓ Audit PASS[/] ({res.source.source_id}) — "
+                          f"{vres.authoritative_count} SKUs verified → {md_path.name}")
+        else:
+            any_failed = True
+            failed = ", ".join(c.name for c in vres.failed_checks())
+            err_console.print(f"[bold red]✗ Audit FAIL[/] ({res.source.source_id}) — "
+                              f"checks {failed} → {md_path.name}")
+    if any_failed:
+        err_console.print("[bold red]Ledger NOT written:[/] one or more sources failed "
+                          "verification. See the Audit_Report_*.md for offending SKUs.")
+        raise typer.Exit(code=1)
+
+    out_path = write_workbook(results, out, brand=spec.brand)
     console.print(f"[bold green]Wrote ledger workbook:[/] {out_path}")
 
     # Coverage summary.
