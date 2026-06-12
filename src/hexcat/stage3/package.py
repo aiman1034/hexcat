@@ -62,8 +62,26 @@ TECH_HEADING = "Technische Daten:"
 KOMPAT_HEADING = "Kompatibilität:"
 FAQ_HEADING = "Häufig gestellte Fragen:"
 VERWANDT_HEADING = "Verwandte Produkte:"
+# The Cisco note is locked verbatim to the proof slice (byte-exact). Other brands must NOT
+# inherit Cisco's "Optics Compatibility Matrix (TMG)" wording — each gets a brand-correct note.
 MATRIX_NOTE = ("Aktuelle Kompatibilität bitte über die Cisco Optics Compatibility Matrix "
                "(TMG) für die jeweilige Plattform und Software-Version prüfen.")
+# Per-brand override of the compatibility-matrix note (brand display name -> note). Brands not
+# listed fall back to a generic, brand-templated note via `matrix_note()`.
+_MATRIX_NOTE_BY_BRAND = {
+    "Cisco": MATRIX_NOTE,
+    "Arista": ("Aktuelle Kompatibilität bitte über den Arista Transceiver and Cable Guide "
+               "für die jeweilige Plattform und EOS-Version prüfen."),
+}
+
+
+def matrix_note(brand: str) -> str:
+    """The compatibility-matrix note for a brand. Cisco keeps its exact proof-slice wording;
+    every other brand gets a brand-correct note (explicit override or generic template)."""
+    if brand in _MATRIX_NOTE_BY_BRAND:
+        return _MATRIX_NOTE_BY_BRAND[brand]
+    return (f"Aktuelle Kompatibilität bitte über die {brand}-Kompatibilitätsmatrix für die "
+            f"jeweilige Plattform und Software-Version prüfen.")
 # Condition is a commerce flag, not a datasheet spec — it stays in Attributes.csv but is
 # excluded from the embedded Technische-Daten list (matching the proof slice).
 _TECH_EXCLUDE = {"Zustand"}
@@ -193,7 +211,7 @@ def compose_beschreibung(
     if kompatibilitaet:
         lis = "".join(f"<li>{k}</li>" for k in kompatibilitaet)
         parts.append(f"<p><strong>{KOMPAT_HEADING}</strong></p><ul>{lis}</ul>")
-        parts.append(f"<p>{MATRIX_NOTE}</p>")
+        parts.append(f"<p>{matrix_note(brand)}</p>")
 
     if faq:
         parts.append(f"<p><strong>{FAQ_HEADING}</strong></p>")

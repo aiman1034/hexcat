@@ -19,10 +19,11 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | **PRICES-PENDING (87/87 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (datasheet-sourced facts; only operator Netto-VK outstanding) |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | **PRICES-PENDING (147/147 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (name-encoded specs + verified wl/temp; only operator Netto-VK outstanding) |
 | MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | **PRICES-PENDING (24/24 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (card-grid mode; per-SKU product-page facts; only operator Netto-VK outstanding) |
+| Arista   | **347** (1 datasheet) | full Eth line, ordering pp.12-26 | GREEN | **PASS 11/11** | **PRICES-PENDING (347/347 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (token mode + footnote repair; claims round-tripped vs ordering descriptions; only operator Netto-VK outstanding) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
-| 13 others| 0 | not enumerated | — | — | — | NOT-STARTED |
+| 12 others| 0 | not enumerated | — | — | — | NOT-STARTED |
 
-**DONE-VERIFIED count: 4** (Cisco, Fortinet, HPE, MikroTik pass the full V1–V9 gate). Fortinet/HPE V9
+**DONE-VERIFIED count: 5** (Cisco, Fortinet, HPE, MikroTik, Arista pass the full V1–V9 gate). Fortinet/HPE V9
 calibrated 2026-06-12: Fortinet expected=12 families (its own whole-line ordering datasheet is
 self-complete → calibrated-COMPLETE); HPE expected=9 families (one per AOS-S/CX guide chapter +
 DAC/AOC). HPE's FlexFabric/Comware line is a SKU-BREADTH gap *within* these same form factors
@@ -111,6 +112,35 @@ passes for all 147; package written to `output/stage3/HPE_Transceivers_*` (5 CSV
 Netto-VK outstanding. To regenerate: `python _scratch/hpe_facts_build.py` + `python
 _scratch/hpe_author.py` + `cp output/stage3/HPE_content.json stage3_content/` + `hexcat stage3
 --brand HPE --content stage3_content/HPE_content.json`.
+
+### Arista content authoring (COMPLETE 2026-06-12) — State = PRICES-PENDING (347/347)
+Authored all 347 Arista SKUs in-session ($0) into `stage3_content/Arista_content.json` (TRACKED).
+Token-mode mining leaves ledger descriptions EMPTY, so the grounding corpus is
+`_scratch/arista_desc.json` — one authoritative English Ordering-Information description per PN,
+harvested by `_scratch/arista_harvest.py` from the cached `transceiver-data-sheet.pdf` ordering
+region (pp.12-26). The harvester stitches bare-PN-on-own-line optics (prev+next), strips footnote
+digits (SFP-10G-T family / ADPT), applies the same 9 `sku_rewrites` superscript repairs as the
+ledger YAML, and HARDCODEs 5 multi-row E-Series/MR entries the line-stitcher can't reassemble →
+347/347 clean, 0 missing. Authoring generator = `_scratch/arista_author.py` (gitignored): parses
+structured facts (speed incl. NxM aggregates, IEEE standard, connector MPO-16/12/SN/CS/RJ45/LC,
+media MMF/SMF/Cat6a, max reach, cable length/endpoints/breakout, tunable/BiDi/dual-rate) from the
+harvested description — **flag-or-omit: a fact is emitted only if parseable**. Two paths: cables
+(DAC / active-copper / AOC, breakout-aware) and optic/copper modules. Truthful brand-safe
+expansion sentences (`pad_intro`/`pad_kurz` pools) lift under-budget intros/Kurz into the 90-175 /
+40-80 word gates without adding unverifiable claims. `content_issues` passes for all 347; package
+written to `output/stage3/Arista_Transceivers_*` (5 CSVs). Only operator Netto-VK outstanding. To
+regenerate: `python _scratch/arista_harvest.py` + `python _scratch/arista_author.py` + `cp
+output/stage3/Arista_content.json stage3_content/` + `hexcat stage3 --ledger
+output/Arista_Transceivers_Ledger.xlsx --brand Arista --content stage3_content/Arista_content.json`.
+
+### Engine fix: brand-aware compatibility-matrix note (package.py)
+Latent cross-brand leak — the Cisco-specific `MATRIX_NOTE` was hardcoded into the composed
+Beschreibung of EVERY brand (258 non-Cisco SKUs wrongly cited the Cisco matrix). Fixed surgically +
+backward-compatibly: `matrix_note(brand)` returns the Cisco note for Cisco, an Arista
+Transceiver-and-Cable-Guide note for Arista, and a generic `{brand}-Kompatibilitätsmatrix` note
+otherwise; `compose_beschreibung` now calls it. `matrix_note("Cisco") == MATRIX_NOTE` so all
+test_stage3.py assertions still pass (137/137). HPE/MikroTik/Fortinet packages regenerated — 0
+Cisco leak confirmed across all 3.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
