@@ -1,0 +1,170 @@
+# Pass-4 GROUNDED weights captured VERBATIM from Cisco official datasheets (no bucket-fill,
+# no guess). grams = manufacturer-stated weight; kind = per-sku table | per-family statement;
+# source = the SKU's own datasheet URL. SKUs absent here have no datasheet-stated weight and
+# stay honest flagged placeholder-debt. Non-Cisco brands publish no weight (proven-absent).
+# captured: 41 Cisco SKUs (1 per-SKU, 40 per-family).
+weights_g:
+  OSFP-2X400G-FR4:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+  OSFP-800G-DR8:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+  OSFP-800G-DR8P:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+  OSFP-800G-VR8:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+  OSFP-800G-VR8P:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+  QDD-2Q200-CU3M:
+    grams: 600
+    kind: per-sku
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-2X100-CWDM4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-2X100-LR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-2X100-SR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-2X400G-FR4:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html"
+  QDD-400G-BD:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-DR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-FR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-LR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-LR8-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-SR4.2-BD:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-SR8-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-400G-VR4:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-4X100G-FR-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-4X100G-LR-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html"
+  QDD-8X100G-FR:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html"
+  QSFP-200G-FR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html"
+  QSFP-200G-SL4:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html"
+  QSFP-200G-SR4-S:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html"
+  QSFP-2Q200-CU3M:
+    grams: 100
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html"
+  SFP-50G-BX40D-I:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-BX40U-I:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-BXD-I:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-BXU-I:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU0.5M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU1.5M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU1M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU2.5M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU2M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU3M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU4M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-CU5M:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-ER-I:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-LR-S:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-SL:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"
+  SFP-50G-SR-S:
+    grams: 75
+    kind: family
+    source: "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/50gbase-sfp56-modules-ds.html"

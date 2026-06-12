@@ -1,0 +1,86 @@
+# §Pass-4 — Weight grounding determination (per brand: published-and-captured vs proven-absent).
+#
+# Mandate: "read datasheet weight per SKU; fill or prove-absent; replace placeholders, never
+# bucket-fill." This file records the per-brand verdict with the datasheet evidence, and states
+# the two STRUCTURAL limits that bound what "fill" can honestly mean here.
+#
+# Companion files:
+#   * config/grounded_weights.yaml          — the 41 Cisco weights captured VERBATIM (the data).
+#   * config/weight_disposition.yaml         — AUTO-GENERATED placeholder tracker (the bucket-debt).
+#   * config/weights.yaml                    — the per-form-factor PLACEHOLDER buckets (flagged debt).
+#
+# TWO STRUCTURAL LIMITS (why this pass captures-and-defers rather than rewrites the output):
+#   L1  DATASHEETS PUBLISH PRODUCT WEIGHT, NOT SHIPPING WEIGHT. A manufacturer datasheet states the
+#       module/cable weight (-> Artikelgewicht). It NEVER states Versandgewicht (packaged shipping
+#       weight): that depends on the reseller's box/padding/label policy, which is a business decision,
+#       not a datasheet fact. The engine emits BOTH (config.WeightEntry: artikel + versand, invariant
+#       versand > artikel). Replacing a placeholder pair from datasheet data alone would force me to
+#       INVENT Versandgewicht -> forbidden by the 1000% rule. So build-integration is DEFERRED until
+#       the operator supplies a packaging policy (e.g. "versand = artikel + N g, or a flat min").
+#   L2  THE ENGINE HAS NO PER-SKU WEIGHT SEAM. reconcile.build_record derives weight ONLY from the
+#       Formfaktor bucket (config.Weights.lookup(form_factor)); there is no per-SKU override path.
+#       Wiring grounded_weights.yaml into the output therefore needs a NEW loader seam in
+#       reconcile/config. That is engine surgery and is held behind operator approval (parallel to
+#       Pass-6 collision-keying), NOT done silently in this pass. Until then the buckets stay honest
+#       flagged placeholder-debt and the grounded values sit captured-and-ready in grounded_weights.yaml.
+#
+# GROUNDING METHOD (the 1000% rule): a weight is written ONLY when the SKU's own official datasheet
+# states it verbatim — either a per-SKU "<PN> <NNN> g" table row (length-varying DAC/AOC) or a
+# per-family "Weight: Typically <N> grams" statement. A per-FAMILY datasheet figure is the
+# manufacturer's OWN published typical weight for that product line read verbatim; it is NOT a
+# form-factor bucket-fill. CSS 'font-weight' is excluded; nothing is guessed. SKUs whose datasheet
+# is silent stay honest flagged placeholder-debt (never asserted from absence).
+
+source_of_truth: "config/grounded_weights.yaml (verbatim datasheet weights) + datasheets/cache/"
+captured_total: 41           # Cisco SKUs with a verbatim datasheet weight (1 per-SKU, 40 per-family)
+emitted_into_output: 0       # held: needs the deferred per-SKU weight seam + a Versandgewicht policy
+value_form: "grams, verbatim; kind = per-sku table | per-family statement; source = the SKU's own datasheet URL"
+
+brands:
+  Cisco:
+    verdict: PUBLISHED_CAPTURED
+    captured: 41
+    evidence: >-
+      Cisco HTML datasheets publish weight two ways, both captured verbatim into
+      config/grounded_weights.yaml: (a) a per-SKU table "<PN> <NNN> g" for length-varying DAC/AOC
+      (e.g. QDD-2Q200-CU3M -> 600 g, datasheet-c78-743172.html) and (b) a per-family statement
+      "Weight: Typically <N> grams" (e.g. OSFP-800G-* -> 100 g; SFP-50G-* -> 75 g). 40 family + 1
+      per-SKU = 41 grounded. The remaining Cisco SKUs whose cached datasheet states no weight stay
+      flagged placeholder-debt (proven-pending, never guessed).
+  Arista:
+    verdict: SOURCE_SILENT
+    captured: 0
+    evidence: >-
+      The authoritative Arista transceiver datasheet (datasheets/cache/transceiver-data-sheet.pdf,
+      29pp) contains ZERO 'weight'/'gewicht' lines. Weight is proven-absent at source; cannot be
+      grounded and must not be asserted from a bucket. All Arista weights stay flagged placeholder-debt.
+  HPE:
+    verdict: SOURCE_SILENT
+    captured: 0
+    evidence: >-
+      The HPE/Aruba transceiver datasheet (datasheets/cache/hpe-aruba-transceivers.pdf, 220pp)
+      publishes no per-SKU weight spec (0 'weight'/'gewicht' value rows). Proven-absent at source ->
+      flagged placeholder-debt, same honest outcome as Arista.
+  Fortinet:
+    verdict: SOURCE_SILENT
+    captured: 0
+    evidence: >-
+      The Fortinet transceiver datasheet (datasheets/cache/fortinet-transceivers.pdf, 16pp) publishes
+      DOM and Protocol-Standard rows but NO weight. Proven-absent at source -> flagged placeholder-debt.
+  MikroTik:
+    verdict: SOURCE_NOT_CACHED
+    captured: 0
+    evidence: >-
+      No MikroTik weight datasheet is in datasheets/cache/. MikroTik product pages sometimes list a
+      product weight per SKU, but it is not yet fetched. Left honest flagged placeholder-debt; re-open
+      as a fetch candidate. Not asserted from absence.
+
+deferred_followups:
+  - "Per-SKU weight loader seam: add a grounded-weight override in reconcile/config so the 41 captured
+     Cisco Artikelgewicht values replace their Formfaktor-bucket placeholders. Engine surgery -> held
+     behind operator approval (parallel to Pass-6 collision-keying)."
+  - "Versandgewicht policy: the operator must define packaged shipping weight (datasheets never state
+     it). Until then a grounded Artikelgewicht cannot be paired with a non-fabricated Versandgewicht,
+     so the bucket pair stays in the output as honest flagged-debt."
+  - "MikroTik weight fetch: pull MikroTik product-page weights into datasheets/cache/ and re-run the
+     extractor if a per-SKU source is confirmed."

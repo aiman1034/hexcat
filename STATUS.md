@@ -56,6 +56,39 @@ extract", never leave merely tracked):
   cannot be safely column-aligned → extracting risks misalignment = fabrication, so the remaining
   Standard gaps stay honest GAP. NEXT: Pass 3 (Transceiver-Typ reconciliation).
 
+**§Pass-3 TRANSCEIVER-TYP RECONCILIATION — DONE (commit 361f40b). 311 tests pass.** Reconciled the
+field (previously Cisco 19 vs Arista 243, with THREE incompatible meanings) to the engine's OWN
+contract `attribute_depth.py:73` — **Transceiver Typ = the manufacturer reach/PMD code (SR/LR/ER/
+SR4/LR4/DR4…) on optical MODULES; cables carry none**. `_scratch/ground_transceiver_typ.py` mines the
+code VERBATIM from each manufacturer PN under a STRICT exactly-one-PMD-match gate (split PN on
+delimiters, accept only when EXACTLY ONE segment is in a curated PMD allowlist; 0 or ≥2 → honest GAP,
+never guessed — e.g. "FR-TRAN-SX" matches FR+SX → skipped). **Grounded 194** (Cisco +104, Arista +54,
+Fortinet +36, MikroTik 0 — its PNs encode no PMD segment). Transceiver-Typ debt 363→169. HPE (70)
+left untouched as the conforming datasheet-mined exemplar. `config/transceiver_typ_disposition.yaml`
+documents the rule + per-brand conformance; `residual_gaps.yaml` regenerated. Cables intentionally
+carry no Typ (form lives in Kabeltyp). NEXT: Pass 4 (weights).
+
+**§Pass-4 WEIGHTS — CAPTURED + PROVEN-ABSENT (uncommitted at write; 311 tests pass).** Mandate: read
+datasheet weight per SKU, fill or prove-absent, never bucket-fill. Determination in
+`config/weight_grounding_disposition.yaml` with the data in `config/grounded_weights.yaml`:
+- **Cisco PUBLISHED_CAPTURED — 41 grounded** verbatim via `_scratch/extract_grounded_weights.py`
+  (maps each SKU's `_facts.quell_url` → cached HTML): 1 per-SKU table row (QDD-2Q200-CU3M → 600 g) +
+  40 per-family "Weight: Typically N grams" statements (OSFP-800G-* → 100 g, SFP-50G-* → 75 g). A
+  per-family datasheet figure is the manufacturer's own published typical weight read verbatim — NOT
+  a form-factor bucket. CSS `font-weight` excluded; sanity band 1–3000 g.
+- **Arista / HPE / Fortinet SOURCE_SILENT** — their authoritative datasheets publish ZERO weight
+  rows (proven-absent at source) → stay honest flagged placeholder-debt, never asserted from a bucket.
+- **MikroTik SOURCE_NOT_CACHED** — no weight datasheet fetched yet; left flagged-debt, re-open as a
+  fetch candidate.
+- **TWO STRUCTURAL LIMITS bound "fill"** (so this pass CAPTURES + DEFERS rather than rewrites output):
+  L1 datasheets give PRODUCT weight (Artikelgewicht) but NEVER shipping weight (Versandgewicht) — that
+  is a reseller packaging policy, not a datasheet fact; pairing a grounded Artikelgewicht with a
+  fabricated Versandgewicht would break the 1000% rule. L2 the engine has NO per-SKU weight seam
+  (`reconcile.build_record` derives weight ONLY from the Formfaktor bucket). So output-integration is
+  DEFERRED behind operator approval (parallel to Pass-6): a per-SKU weight loader seam + a
+  Versandgewicht policy. The 41 grounded values sit captured-and-ready; buckets stay flagged-debt.
+  `config/weight_disposition.yaml` (auto-generated bucket tracker) left untouched. NEXT: Pass 5 (GTIN).
+
 **§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit 44b2570). 300 tests pass.** The engine is
 category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
 named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`
