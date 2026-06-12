@@ -17,7 +17,7 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
 | Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | **PRICES-PENDING (87/87 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (datasheet-sourced facts; only operator Netto-VK outstanding) |
-| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated to sourced line; FlexFabric/Comware = SKU-breadth gap, tracked) |
+| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | **PRICES-PENDING (147/147 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (name-encoded specs + verified wl/temp; only operator Netto-VK outstanding) |
 | MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | **PRICES-PENDING (24/24 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (card-grid mode; per-SKU product-page facts; only operator Netto-VK outstanding) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
 | 13 others| 0 | not enumerated | — | — | — | NOT-STARTED |
@@ -91,6 +91,26 @@ MMF 220 m primary + dedicated FAQ for SMF 300 m reach (honest, both stated). `co
 passes for all 87; package written to `output/stage3/Fortinet_Transceivers_*` (5 CSVs). Only
 operator Netto-VK outstanding. To regenerate: rebuild facts spine from the cached PDF, then run
 `python _scratch/ft_author.py` + `hexcat stage3 --brand Fortinet --content stage3_content/Fortinet_content.json`.
+
+### HPE/Aruba content authoring (COMPLETE 2026-06-12) — State = PRICES-PENDING (147/147)
+Authored all 147 HPE/Aruba SKUs in-session ($0) into `stage3_content/HPE_content.json` (TRACKED).
+Facts spine = `output/stage3/hpe_facts.json` (gitignored): one `{uk,name}` per PN, where `name` is
+the **verified canonical product name** — 105 recovered by the NAME_RE grammar from the cached
+guide `datasheets/cache/aos-s and aos-cx transceiver guide.pdf` (text dump `_scratch/hpe_pdf.txt`),
++ 42 read by hand from the authoritative "Product name (SKU)" optical spec tables (the regex missed
+borderless-table rows), + 3 garbled-name fixes (OCR letter-doubling / marketing-text catches). The
+Aruba/HPE name fully encodes speed/form-factor/connector/optical-type/reach/fiber, so it is the
+parse source. Build = `_scratch/hpe_facts_build.py` (merges `_scratch/hpe_names.json` + OVERRIDE +
+FIX dicts). Authoring generator = `_scratch/hpe_author.py` (gitignored): parses each name → kind
+(mod / modcu copper-T / dac / dacbrk / aoc / aocbrk), composes German prose + attributes +
+provenance. **Wavelength + temperature are flag-or-omit bonus attributes**, emitted only from the
+verified `SPECS` override (BiDi wl pairs + industrial/I-Temp ranges read from the guide tables) or
+the definitional single-wavelength of the optical type (`STD_WL`: SX/SR=850, LX/LR/DR/FR/LRM=1310,
+LH/ER/ZR=1550). Multi-lane types (SR4/LR4/ER4L/CWDM4/FR4) emit no numeric wl. `content_issues`
+passes for all 147; package written to `output/stage3/HPE_Transceivers_*` (5 CSVs). Only operator
+Netto-VK outstanding. To regenerate: `python _scratch/hpe_facts_build.py` + `python
+_scratch/hpe_author.py` + `cp output/stage3/HPE_content.json stage3_content/` + `hexcat stage3
+--brand HPE --content stage3_content/HPE_content.json`.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
