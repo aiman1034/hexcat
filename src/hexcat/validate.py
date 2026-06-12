@@ -47,6 +47,35 @@ _ALLOWED_BESCH_TAGS = {"p"}
 # Modules keep the full rules floor; cables get this lower floor.
 CABLE_BESCHREIBUNG_MIN_WORDS = 60
 
+# --- cross-SKU sentence reuse (FAIL) ---------------------------------------------------
+# A non-closer body sentence shared by more than this fraction of a brand's SKUs is
+# boilerplate padding (a genuine shared spec belongs in the Attributes CSV, not the prose).
+# It promotes to a hard FAIL; below it we still WARN so near-misses stay visible.
+SENTENCE_REUSE_FAIL_FRACTION = 0.25
+# Only escalate to FAIL once the brand bundle is big enough that a fraction is meaningful
+# (a 3-SKU slice trivially shares sentences; that is a WARN, not a ship-blocker).
+SENTENCE_REUSE_MIN_SKUS = 8
+# Authenticity / condition signals: these sentences are identical BY DESIGN (the sealed,
+# new-goods, Quality-ID statement is the legitimate analog of the closer) and are EXEMPT
+# from the reuse check — exactly like the "Original…" closer. This is what keeps a clean
+# brand (e.g. Cisco's "Als Cisco-Neuware versiegelt und mit Cisco Quality-ID") green.
+_AUTHENTICITY_RE = re.compile(r"versiegelt|neuware|quality-id|quality\s*id", re.IGNORECASE)
+
+# --- optical-module completeness (FAIL) ------------------------------------------------
+# Any module whose Kategorie Ebene 3 is a transceiver form factor (NOT a DAC/AOC/MPO cable)
+# must carry a Wellenlänge attribute — a missing one is shallow extraction. Two grounded
+# exceptions, detected from the SKU's own attribute values, legitimately have NO published
+# wavelength and are EXEMPT:
+#   * copper/coax media (RJ-45/Twinax/CX4/…BASE-T/coax) — no optical carrier at all;
+#   * Smart SFP framer/mapper modules (TDM-over-Packet) — the official datasheet states only
+#     SMF + reach and publishes no wavelength, so flag-or-omit forbids inventing one.
+_WAVELENGTH_EXEMPT_RE = re.compile(
+    r"kupfer|rj-?45|twinax|\bcx4\b|base-t\b|base-cr|base-cx|\bdac\b|cat\s?-?\d|koax|coax|"
+    r"smart\s*sfp",
+    re.IGNORECASE,
+)
+_WELLENLAENGE_NAME = "Wellenlänge"
+
 ROLE_SPEC = {
     "main": (C.MAIN_COLUMNS, C.MAIN_DELIMITER, C.MAIN_BOM),
     "attributes": (C.ATTRIBUTES_COLUMNS, C.ATTRIBUTES_DELIMITER, C.ATTRIBUTES_BOM),
@@ -201,10 +230,12 @@ class Validator:
         i_k2 = self._col(t, "Kategorie Ebene 2")
         i_k3 = self._col(t, "Kategorie Ebene 3")
 
-        # sentence -> set of SKUs whose Beschreibung contains it (cross-SKU reuse warn)
+        # sentence -> set of SKUs whose Beschreibung contains it (cross-SKU reuse check)
         besch_sentences: dict[str, set[str]] = {}
+        all_skus: set[str] = set()
         for row in t.rows:
             sku = row[i_sku]
+            all_skus.add(sku)
             # 7. Kurzbeschreibung
             kurz = row[i_kurz]
             self._check_paragraphs(fname, sku, "Kurzbeschreibung", kurz,
@@ -233,10 +264,14 @@ class Validator:
             if "?" in besch_plain:
                 self._warn(fname, sku, "Beschreibung",
                            "contains '?' — possible inline Q&A (FAQ belongs in the FAQ file)")
-            # Collect substantive sentences (exempt the authenticity closer) for reuse warn.
+            # Collect substantive sentences for the reuse check. Exempt: the authenticity
+            # closer ("Original…"), any authenticity/condition statement (sealed/new-goods/
+            # Quality-ID — identical by design), and trivial (<6-word) fragments.
             for sent in re.split(r"(?<=[.!?])\s+", besch_plain):
                 s = " ".join(sent.split()).lower()
                 if not s or s.startswith("original") or len(s.split()) < 6:
+                    continue
+                if _AUTHENTICITY_RE.search(s):
                     continue
                 besch_sentences.setdefault(s, set()).add(sku)
             hersteller = row[i_herst]
@@ -311,14 +346,28 @@ class Validator:
                               "Titel-Tag (SEO)", "Meta-Description (SEO)"):
                 self._scan_banned(fname, sku, fieldname, row[self._col(t, fieldname)])
 
-        # Cross-SKU sentence reuse (WARN): identical body sentences across SKUs signal
-        # boilerplate padding. The authenticity closer is exempt (it is identical by design).
+        # Cross-SKU sentence reuse: identical (non-authenticity) body sentences across many
+        # SKUs are boilerplate padding — a genuine shared spec belongs in the Attributes CSV.
+        # FAIL when a sentence is shared by more than SENTENCE_REUSE_FAIL_FRACTION of a brand's
+        # SKUs (only once the bundle is large enough for a fraction to be meaningful); below
+        # that threshold it stays a WARN so near-misses remain visible.
+        n_skus = len(all_skus)
         for sent, skus in besch_sentences.items():
-            if len(skus) > 1:
-                sample = ", ".join(sorted(skus)[:5])
-                more = "…" if len(skus) > 5 else ""
+            n = len(skus)
+            if n <= 1:
+                continue
+            sample = ", ".join(sorted(skus)[:5])
+            more = "…" if n > 5 else ""
+            frac = n / n_skus if n_skus else 0
+            if n_skus >= SENTENCE_REUSE_MIN_SKUS and frac > SENTENCE_REUSE_FAIL_FRACTION:
+                self._fail(fname, "", "Beschreibung",
+                           f"no non-closer sentence in >{SENTENCE_REUSE_FAIL_FRACTION:.0%} of SKUs",
+                           f"reused across {n}/{n_skus} SKUs ({frac:.0%}: {sample}{more})",
+                           "boilerplate: shared sentence over the reuse threshold "
+                           "(move genuine shared specs to the Attributes CSV)")
+            else:
                 self._warn(fname, "", "Beschreibung",
-                           f"sentence reused across {len(skus)} SKUs ({sample}{more}): "
+                           f"sentence reused across {n} SKUs ({sample}{more}): "
                            "possible boilerplate padding")
 
     def _num(self, fname, sku, fieldname, value):
@@ -364,9 +413,14 @@ class Validator:
         i_art = self._col(t, "Attributart")
 
         per_sku_order: dict[str, list[int]] = {}
+        per_sku_names: dict[str, set[str]] = {}
+        per_sku_wl_exempt: dict[str, bool] = {}
         for row in t.rows:
             sku = row[i_sku]
             name = row[i_name]
+            per_sku_names.setdefault(sku, set()).add(name)
+            if _WAVELENGTH_EXEMPT_RE.search(row[i_val]):
+                per_sku_wl_exempt[sku] = True
             if row[i_grp] != grp_expected:
                 self._fail(fname, sku, "Attributgruppe", grp_expected, row[i_grp],
                            "Attributgruppe must be 'Transceivers & SFP Modul' (NO final e)")
@@ -401,6 +455,26 @@ class Validator:
             if order != sorted(order):
                 self._fail(fname, sku, "Sortiernummer order", "ascending by fixed 14",
                            order, "attribute rows out of canonical order")
+
+        # Optical-module completeness: a transceiver form factor (non-cable) must carry a
+        # Wellenlänge — a missing one signals shallow datasheet extraction. Copper-media
+        # modules (RJ-45/Twinax/CX4/…BASE-T) legitimately have no wavelength and are exempt.
+        main_t = self.tables.get("main")
+        if main_t is not None:
+            mi_sku = self._col(main_t, "Artikelnummer")
+            mi_k3 = self._col(main_t, "Kategorie Ebene 3")
+            sku_k3 = {r[mi_sku]: r[mi_k3] for r in main_t.rows}
+            for sku, names in per_sku_names.items():
+                k3 = sku_k3.get(sku, "")
+                if k3 in C.CABLE_CATEGORIES:
+                    continue
+                if per_sku_wl_exempt.get(sku):
+                    continue
+                if _WELLENLAENGE_NAME not in names:
+                    self._fail(fname, sku, "Attributwert (Wellenlänge)",
+                               "a Wellenlänge attribute (optical module)", "(missing)",
+                               "optical-module completeness: a non-cable transceiver form "
+                               "factor must carry a Wellenlänge attribute (shallow extraction)")
 
     def _check_prices(self):
         t = self.tables.get("prices")

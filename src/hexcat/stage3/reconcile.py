@@ -55,6 +55,8 @@ ATTR_ALIAS: dict[str, str] = {
     "Fasertyp": "Fasertyp",
     "Medientyp": "Fasertyp",
     "Medium": "Fasertyp",
+    # fibre count (canonical schema field; self-alias so authored depth is not dropped)
+    "Faseranzahl": "Faseranzahl",
     # connector / interface
     "Anschluss": "Anschlusstyp",
     "Anschlusstyp": "Anschlusstyp",
