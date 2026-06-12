@@ -463,6 +463,36 @@ def ledger(
                       "[dim](Artikelnummer/Vendor/KategorieEbene3/SourceURLs seeded; specs blank)[/]")
 
 
+@app.command("stage3-template")
+def stage3_template(
+    ledger: Path = typer.Option(
+        Path("output/Cisco_Transceivers_Ledger.xlsx"), "--ledger", "-l",
+        help="DONE-VERIFIED Stage-1 ledger workbook (its 'Neue Artikel' sheet is the spine).",
+    ),
+    out: Path = typer.Option(
+        Path("output/stage3/content.json"), "--out", "-o",
+        help="Path to write the content sidecar template.",
+    ),
+):
+    """Emit the $0 in-session content template: one JSON entry per SKU (facts + source URL,
+    blank prose, derivable attributes pre-seeded). Claude fills it IN-SESSION, then pass it to
+    `hexcat stage3 --content …` to lift the package to PRICES-PENDING / IMPORT-READY."""
+    from .stage3 import read_ledger_facts, write_content_template
+
+    if not ledger.exists():
+        err_console.print(f"[bold red]Ledger not found:[/] {ledger} (run `hexcat ledger … ` first).")
+        raise typer.Exit(code=2)
+    facts = read_ledger_facts(ledger)
+    if not facts:
+        err_console.print(f"[bold red]No SKUs[/] in {ledger} 'Neue Artikel' sheet.")
+        raise typer.Exit(code=2)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    p = write_content_template(facts, out)
+    console.print(f"[green]Wrote content template:[/] {p}   [dim]({len(facts)} SKU(s))[/]")
+    console.print("[dim]Fill each SKU's prose + verified attributes IN-SESSION ($0), record "
+                  "provenance, then run `hexcat stage3 --content …`.[/]")
+
+
 @app.command("stage3")
 def stage3(
     ledger: Path = typer.Option(
@@ -474,14 +504,20 @@ def stage3(
         Path("output/stage3"), "--out", "-o", help="Directory for the v5.0 package files."
     ),
     stem: str = typer.Option(None, "--stem", help="Filename stem (default: <Brand>_Transceivers)."),
+    content: Path = typer.Option(
+        None, "--content", "-c",
+        help="Authored content sidecar JSON (from `hexcat stage3-template`, filled in-session). "
+             "Supplies prose + verified attributes; absent SKUs stay content-pending.",
+    ),
 ):
     """Stage 3: generate the byte-exact v5.0 JTL-Ameise import package from a verified ledger.
 
     Deterministic scaffold — fills every ledger-derivable field (Artikelnummer, HAN, Hersteller,
     URL-Pfad, Kategorie Ebene 1/2/3, flags, weights), placeholder prices (PRICES-PENDING), and a
-    Verification_Log. German prose + verified spec values are authored IN-SESSION ($0) on top.
+    Verification_Log. German prose + verified spec values are authored IN-SESSION ($0) on top,
+    supplied via `--content` (see `hexcat stage3-template`).
     """
-    from .stage3 import read_ledger_facts, write_package
+    from .stage3 import read_content, read_ledger_facts, write_package
 
     if not ledger.exists():
         err_console.print(f"[bold red]Ledger not found:[/] {ledger} (run `hexcat ledger … ` first).")
@@ -492,7 +528,16 @@ def stage3(
         err_console.print(f"[bold red]No SKUs[/] in {ledger} 'Neue Artikel' sheet.")
         raise typer.Exit(code=2)
 
-    result = write_package(facts, out, brand=brand, stem=stem)
+    authored = None
+    if content is not None:
+        if not content.exists():
+            err_console.print(f"[bold red]Content sidecar not found:[/] {content} "
+                              "(run `hexcat stage3-template` first, then fill it in-session).")
+            raise typer.Exit(code=2)
+        authored = read_content(content)
+        console.print(f"[dim]Loaded authored content for {len(authored)} SKU(s) from {content.name}.[/]")
+
+    result = write_package(facts, out, brand=brand, stem=stem, content=authored)
     console.print(f"[bold green]Stage-3 package written:[/] {result.out_dir}  "
                   f"[dim]({result.sku_count} SKUs)[/]")
     for k, p in result.paths.items():

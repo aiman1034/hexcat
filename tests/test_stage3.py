@@ -18,7 +18,9 @@ from hexcat.stage3 import (
     SkuContent,
     SkuFacts,
     build_package,
+    read_content,
     url_slug,
+    write_content_template,
     write_package,
 )
 from hexcat.stage3.package import VERIFICATION_COLUMNS
@@ -123,3 +125,48 @@ def test_csv_minimal_quoting_doubles_embedded_quotes(tmp_path):
     text = res.paths["main"].read_bytes().decode("utf-8-sig")
     rows = list(csv.DictReader(io.StringIO(text)))
     assert rows[0]["Beschreibung"] == desc                          # exact round-trip
+
+
+def test_content_template_seeds_facts_and_derivable_attrs(tmp_path):
+    facts = [SkuFacts(pn="QSFP-100G-SL", unterkategorie="QSFP28", quell_url="https://ds")]
+    p = write_content_template(facts, tmp_path / "content.json")
+    import json
+    data = json.loads(p.read_text(encoding="utf-8"))
+    entry = data["QSFP-100G-SL"]
+    assert entry["_facts"]["unterkategorie"] == "QSFP28"            # spine carried for the author
+    assert entry["_facts"]["quell_url"] == "https://ds"            # datasheet to round-trip against
+    assert entry["artikelname"] == "" and entry["netto_vk"] is None # blank prose, no price
+    assert entry["attributes"] == [["Formfaktor", "QSFP28"], ["Zustand", "Neu, versiegelt"]]
+
+
+def test_blank_template_reads_as_no_content_then_lifts_when_filled(tmp_path):
+    facts = [SkuFacts(pn="SFP-10G-SR", unterkategorie="SFP+", quell_url="https://x")]
+    p = write_content_template(facts, tmp_path / "content.json")
+    # Untouched template: all prose blank -> read_content yields nothing -> still GENERATED.
+    assert read_content(p) == {}
+    *_, res0 = build_package(facts, brand="Cisco", content=read_content(p))
+    assert res0.state == "GENERATED"
+    # Author it in-session (prose + a verified attr + provenance), leave price null.
+    import json
+    data = json.loads(p.read_text(encoding="utf-8"))
+    data["SFP-10G-SR"].update({
+        "artikelname": "Cisco SFP-10G-SR 10GBASE-SR SFP+ — 300 m OM3",
+        "titel_tag": "Cisco SFP-10G-SR 10G SR | Hexwaren",
+        "meta_description": "Original Cisco SFP-10G-SR — 10GBASE-SR, 850 nm, 300 m OM3.",
+        "kurzbeschreibung": "<p>k</p><p>k2</p>",
+        "beschreibung": "<p>b</p><p>b2</p><p>Originaler Cisco-Transceiver.</p>",
+        "attributes": [["Formfaktor", "SFP+"], ["Geschwindigkeit", "10 Gbit/s"],
+                       ["Zustand", "Neu, versiegelt"]],
+        "provenance": {"Geschwindigkeit": ["https://x", "datasheet"]},
+    })
+    p.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    authored = read_content(p)
+    assert set(authored) == {"SFP-10G-SR"}
+    assert authored["SFP-10G-SR"].provenance["Geschwindigkeit"] == ("https://x", "datasheet")
+    main, attrs, plat, prices, verif, res = build_package(
+        facts, brand="Cisco", content=authored)
+    assert res.state == "PRICES-PENDING"                            # prose complete, price null
+    assert {a["Attributname"] for a in attrs} == {"Formfaktor", "Geschwindigkeit", "Zustand"}
+    # Provenance flows into the Verification_Log.
+    geo = [v for v in verif if v["Attributname"] == "Geschwindigkeit"][0]
+    assert geo["Source_URL"] == "https://x" and geo["Confidence"] == "datasheet"

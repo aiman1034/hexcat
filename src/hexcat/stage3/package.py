@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import io
+import json
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -264,6 +265,76 @@ def read_ledger_facts(xlsx_path: str | Path) -> list[SkuFacts]:
             notiz=str(notiz or ""),
         ))
     return facts
+
+
+# --- in-session content sidecar (the $0 authoring bridge) --------------------------------
+# A JSON file keyed by Part Number carries the authored, datasheet-verified prose + verified
+# spec attributes back into the package. JSON (not Markdown blocks) because the prose embeds
+# HTML and an FAQ — any text delimiter would collide. The tool EMITS a template (facts +
+# source URL per SKU, content fields blank, the two derivable attributes pre-seeded); Claude
+# FILLS it in-session ($0, never an API); the tool READS it into dict[str, SkuContent].
+CONTENT_FIELDS = ("artikelname", "titel_tag", "meta_description", "kurzbeschreibung",
+                  "beschreibung")
+
+
+def write_content_template(facts: list[SkuFacts], path: str | Path) -> Path:
+    """Emit a JSON content template — one entry per SKU, content blank, facts as `_facts`.
+
+    `_facts` (PN, Unterkategorie, Quell-URL) is the author's spine: every claim is
+    round-tripped against that datasheet URL. `attributes` is pre-seeded with the two
+    derivable values (Formfaktor, Zustand); the author appends verified spec rows and
+    records each in `provenance` (Attributname -> [Source_URL, Confidence]). `netto_vk`
+    stays null (operator-supplied). Keys with a leading underscore are hints, ignored on read.
+    """
+    out = Path(path)
+    template: dict[str, dict] = {}
+    for f in facts:
+        template[f.pn] = {
+            "_facts": {"unterkategorie": f.unterkategorie, "quell_url": f.quell_url,
+                       "verifiziert_am": f.verifiziert_am},
+            "artikelname": "",
+            "titel_tag": "",
+            "meta_description": "",
+            "kurzbeschreibung": "",
+            "beschreibung": "",
+            "attributes": [list(pair) for pair in _derive_attributes(f)],
+            "netto_vk": None,
+            "provenance": {},
+        }
+    out.write_text(json.dumps(template, ensure_ascii=False, indent=2), encoding="utf-8")
+    return out
+
+
+def read_content(path: str | Path) -> dict[str, SkuContent]:
+    """Read an authored content sidecar JSON into dict[PN -> SkuContent].
+
+    Entries whose prose fields are all blank are skipped (still GENERATED/pending), so a
+    partially-authored sidecar yields content only for the SKUs actually filled in.
+    """
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    content: dict[str, SkuContent] = {}
+    for pn, entry in data.items():
+        if not isinstance(entry, dict):
+            continue
+        attrs = [(str(a[0]), str(a[1])) for a in entry.get("attributes", [])
+                 if isinstance(a, (list, tuple)) and len(a) >= 2]
+        prov = {str(k): (str(v[0]), str(v[1]))
+                for k, v in (entry.get("provenance") or {}).items()
+                if isinstance(v, (list, tuple)) and len(v) >= 2}
+        c = SkuContent(
+            artikelname=entry.get("artikelname") or "",
+            titel_tag=entry.get("titel_tag") or "",
+            meta_description=entry.get("meta_description") or "",
+            kurzbeschreibung=entry.get("kurzbeschreibung") or "",
+            beschreibung=entry.get("beschreibung") or "",
+            attributes=attrs,
+            netto_vk=(entry.get("netto_vk") or None),
+            provenance=prov,
+        )
+        # Skip wholly-blank scaffold entries so they remain content-pending, not half-emitted.
+        if any(getattr(c, fld) for fld in CONTENT_FIELDS):
+            content[pn] = c
+    return content
 
 
 def _write_csv(path: Path, columns: list[str], rows: list[dict], *, delimiter: str = ",") -> None:
