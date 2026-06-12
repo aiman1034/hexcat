@@ -130,7 +130,9 @@ def run_source(
 
     rows: list[LedgerRow] = []
     for m in mined:
-        uk = spec.classify_pn(m.pn)
+        # Section-mode PDFs decide the form factor at mine time (from the chapter heading,
+        # where the PN is opaque); prefer that hint, else classify from the PN via spec rules.
+        uk = m.unterkategorie or spec.classify_pn(m.pn)
         rows.append(
             LedgerRow(
                 pn=m.pn,

@@ -1,0 +1,53 @@
+# Fortinet Transceivers — Stage 1 ledger spec (Phase 4, PDF token mode).
+#
+# Source: Fortinet_Transceivers.pdf (official, Tier-1 honest-GET). The datasheet's tables
+# are TRANSPOSED (SKUs run across header rows, not down a Product-Number column), so the
+# Cisco-style HTML column-targeting does not apply. Instead we scan the manufacturer's own
+# "Ordering Information" section — a flat, authoritative SKU enumeration — for SKU-shaped
+# tokens. Onboarding this brand was a sibling spec file, NOT engine code.
+
+brand: Fortinet
+hauptkategorie: Transceivers
+
+# --- Mining -----------------------------------------------------------------------
+mine:
+  # HTML fields kept for schema completeness (this brand mines via PDF, below).
+  pn_header_patterns: ["sku", "product number", "bestellnummer"]
+  pn_token: '^(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+$'
+  pdf:
+    mode: token
+    # Scope to Fortinet's authoritative orderable list (the pages headed "Ordering
+    # Information"), not the whole datasheet — the spec/comparison tables elsewhere repeat
+    # base SKUs and packaging variants that are not in the official ordering enumeration.
+    scope_heading: "Ordering Information"
+    sku_token: '(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+'
+
+# --- Normalization ----------------------------------------------------------------
+# No Fortinet feed-variant convention is in scope this session; kept structurally valid.
+normalize:
+  feed_id_suffix: '-P-[0-9]+$'
+  problem_feed_id: "Feed-ID-Anhang"
+  spelling_fixes: {}
+  problem_spelling: ""
+
+# --- Classification ---------------------------------------------------------------
+# First matching rule wins. Cables are matched FIRST (a cable SKU also contains its host
+# form-factor token, e.g. FN-CABLE-SFP28-1). Among transceivers, QSFP* is checked before
+# SFP* because the substring "SFP+"/"SFP28"/"SFP56" is contained inside "QSFP+"/"QSFP28"/
+# "QSFP56". Targets are already locked-22 tokens, so the map below is identity.
+classify:
+  rules:
+    - { pn_contains: "AOC",     unterkategorie: "AOC Kabel" }
+    - { pn_contains: "CABLE",   unterkategorie: "DAC Kabel" }
+    - { pn_contains: "CFP2",    unterkategorie: "CFP2" }
+    - { pn_contains: "QSFPDD",  unterkategorie: "QSFP-DD" }
+    - { pn_contains: "QSFP56",  unterkategorie: "QSFP56" }
+    - { pn_contains: "QSFP28",  unterkategorie: "QSFP28" }
+    - { pn_contains: "QSFP",    unterkategorie: "QSFP+" }
+    - { pn_contains: "SFP56",   unterkategorie: "SFP56" }
+    - { pn_contains: "SFP28",   unterkategorie: "SFP28" }
+    - { pn_contains: "SFP+",    unterkategorie: "SFP+" }
+  default: "SFP"
+
+# Unterkategorie values above are already canonical locked-22 tokens -> identity map.
+locked22_map: {}

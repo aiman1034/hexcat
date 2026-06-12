@@ -217,6 +217,110 @@ def test_export_skeleton_maps_to_locked22(tmp_path):
     assert by_pn["SFP-10G-SR"]["SourceURLs"].endswith("c78-455693.html")
 
 
+# --- PDF mining (Phase 4): committed fixture, no network -------------------------
+FIXTURES = Path(__file__).resolve().parent / "fixtures"
+SAMPLE_PDF = FIXTURES / "sample_datasheet.pdf"
+
+
+def _pdf_spec(pdf_cfg: dict):
+    """A minimal but valid LedgerSpec carrying just a mine.pdf block for the fixture."""
+    from hexcat.ledger.spec import LedgerSpec
+
+    return LedgerSpec.model_validate({
+        "brand": "Fixture",
+        "hauptkategorie": "Transceivers",
+        "mine": {"pn_header_patterns": ["sku"], "pn_token": r"^.+$", "pdf": pdf_cfg},
+        "normalize": {"feed_id_suffix": r"-P-[0-9]+$", "problem_feed_id": "x",
+                      "spelling_fixes": {}, "problem_spelling": ""},
+        "classify": {"rules": [], "default": "SFP"},
+        "locked22_map": {},
+    })
+
+
+def test_mine_pdf_token_scopes_and_scans():
+    """Token mode: scope to the 'Ordering Information' page and keep SKU-shaped tokens.
+    The section-only page 2 carries no scope heading, so its SKUs must not leak in."""
+    from hexcat.ledger.mine import mine_pdf
+
+    spec = _pdf_spec({
+        "mode": "token",
+        "scope_heading": "Ordering Information",
+        "sku_token": r"(?:FN|FG|FR|SP)-[A-Z0-9]+(?:[-+][A-Z0-9]+)+",
+    })
+    pns = [m.pn for m in mine_pdf(SAMPLE_PDF.read_bytes(), spec)]
+    assert pns == ["FN-TRAN-SFP+LR", "FN-TRAN-QSFP28-SR4", "FG-CABLE-SR10-SFP"]
+
+
+def test_mine_pdf_section_heading_guard_adjacency_and_module_exclusion():
+    """Section mode in one shot proves the four hard parts:
+      * the bold double-rendered heading switches the chapter (form factor = SFP+),
+      * the non-doubled contents line 'SFP+ Modules listed on page 2' does NOT,
+      * an adjacent '<noun> (SKU)' optic callout is kept and tagged from the heading,
+      * a 'Module (SKU)' callout is dropped (Module = switch line card, not an optic)."""
+    from hexcat.ledger.mine import mine_pdf
+
+    spec = _pdf_spec({
+        "mode": "section",
+        "sku_token": r"(?:[A-Z][0-9][A-Z][0-9]{2}[A-Z]|J[A-Z][0-9]{3}[A-Z])",
+        "context_noun": r"(?:[Tt]ransceiver|AOC|DAC)",
+        "collapse_bold_doubling": True,
+        "chapters": {"SFP+ Modules": "SFP+"},
+    })
+    mined = mine_pdf(SAMPLE_PDF.read_bytes(), spec)
+    assert [(m.pn, m.unterkategorie) for m in mined] == [("R0Z21A", "SFP+")]
+    assert "JL999A" not in {m.pn for m in mined}  # switch-line-card 'Module (SKU)' excluded
+
+
+def test_mine_pdf_section_emits_locked22_through_engine():
+    """The section-mode chapter tag must flow through run_source as the Unterkategorie
+    (engine prefers the mine-time form factor over from-PN classification)."""
+    spec = _pdf_spec({
+        "mode": "section",
+        "sku_token": r"(?:[A-Z][0-9][A-Z][0-9]{2}[A-Z]|J[A-Z][0-9]{3}[A-Z])",
+        "context_noun": r"(?:[Tt]ransceiver|AOC|DAC)",
+        "collapse_bold_doubling": True,
+        "chapters": {"SFP+ Modules": "SFP+"},
+    })
+    src = Source(gruppe="Fixture", datasheet="Fixture Guide", url="https://x/sample.pdf")
+    fetched = type("F", (), {"tier": "fixture", "content_type": "pdf",
+                             "read_bytes": lambda self: SAMPLE_PDF.read_bytes()})()
+    res = run_source(src, spec, verified_date="2026-06-12", fetched=fetched)
+    assert res.mined_count == 1
+    assert res.rows[0].unterkategorie == "SFP+"
+
+
+def test_hpe_section_spec_verifies_against_locked22():
+    """The shipped HPE/Aruba section spec must pass the locked-22 honesty check — including
+    its chapter form-factor tags, which are emitted directly (bypassing classify)."""
+    from hexcat.config import load_taxonomy
+    from hexcat.ledger.spec import LEDGER_CONFIG_DIR, verify_ledger_spec
+
+    spec = verify_ledger_spec(str(LEDGER_CONFIG_DIR / "hpe_aruba_transceivers.yaml"))
+    assert spec.mine.pdf is not None and spec.mine.pdf.mode == "section"
+    locked22 = set(load_taxonomy().subcategories)
+    assert set(spec.mine.pdf.chapters.values()) <= locked22
+
+
+def test_verify_rejects_section_chapter_outside_locked22(tmp_path):
+    """A section-mode chapter tag that is not a locked-22 token must fail loudly — otherwise
+    a section PDF could emit an Unterkategorie invalid for the Stage-3 hand-off."""
+    from hexcat.ledger.spec import LedgerSpecError, verify_ledger_spec
+
+    bad = tmp_path / "bad_section.yaml"
+    bad.write_text(
+        "brand: X\nhauptkategorie: Transceivers\n"
+        "mine:\n  pn_header_patterns: ['sku']\n  pn_token: '^.+$'\n"
+        "  pdf:\n    mode: section\n    sku_token: 'J[A-Z][0-9]{3}[A-Z]'\n"
+        "    context_noun: 'Transceiver'\n    chapters: {'Bogus Modules': 'NOT-A-FORMFACTOR'}\n"
+        "normalize:\n  feed_id_suffix: '-P-[0-9]+$'\n  problem_feed_id: x\n"
+        "  spelling_fixes: {}\n  problem_spelling: ''\n"
+        "classify:\n  rules: []\n  default: 'SFP'\nlocked22_map: {}\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(LedgerSpecError):
+        verify_ledger_spec(str(bad))
+
+
 # --- optional integration: real cached datasheet, if present ---------------------
 def test_real_datasheet_yields_35_if_cached():
     cached = Path(__file__).resolve().parents[1] / "datasheets" / "cache" / "c78-455693.html"
