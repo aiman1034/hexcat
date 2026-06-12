@@ -137,8 +137,8 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | NVIDIA       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | Palo Alto    | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | MikroTik     | **DONE-VERIFIED 2026-06-12** — card-grid mode, `sfp-qsfp` page, 24 SKUs, V1–V9 PASS | — (done) |
-| Supermicro   | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
-| Ruijie       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
+| Supermicro   | **WAF 403** on eStore listing (honest-GET 403, 443B) — bot-blocked | §6b NEEDS-HEADED (Tier-2; eStore WAF may still gate headed). Alt: AOC compat-matrix (a matrix, not an ordering list) |
+| Ruijie       | **JS-shell / no listing page** — overview is a category landing (Tier-1 200 & Tier-2 headed both 0 SKUs, 0 tables, 6 hrefs); each SKU is its own /accessories/{slug} page | §6b NEEDS-HEADED + needs a real enumerable listing/datasheet source |
 | Avaya/Extreme| Tier-1 fetch failed (JS-grid per notes)                            | §6b NEEDS-HEADED |
 
 ## Extraction-mode boundary (learned 2026-06-12, Arista)
@@ -182,6 +182,13 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
   (untried — may be more table-structured).
 - Palo Alto datasheet landing (not a direct PDF):
   `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
+- Supermicro eStore transceiver listings (WAF-403 on honest-GET — need headed/Tier-2):
+  `https://store.supermicro.com/us_en/server-accessories/transceiver/sfp.html`,
+  `.../transceiver/qsfp.html`; AOC compat matrix (not an ordering list):
+  `https://www.supermicro.com/en/support/resources/aoc/cables-transceivers`.
+- Ruijie optics overview (category landing only — full SKU list is JS/per-product, NOT one page):
+  `https://www.ruijienetworks.com/products/switches/optics-transceivers/` (redirects to
+  ruijie.com/en-global SPA). Needs a real enumerable listing or a per-series datasheet.
 
 ## Next steps
 - **Source acquisition is the gate**, not spec authoring. Next autonomous pass: for the
