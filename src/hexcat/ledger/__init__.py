@@ -37,7 +37,13 @@ from .engine import (
     run_source,
 )
 from .export import export_skeleton
-from .fetch import FetchError, FetchResult, fetch_datasheet, source_id_from_url
+from .fetch import (
+    FetchError,
+    FetchResult,
+    fetch_datasheet,
+    fetch_via_browser,
+    source_id_from_url,
+)
 from .mine import MinedPN, mine_source
 from .normalize import NormalizeResult, normalize_pn
 from .spec import LedgerSpec, load_ledger_spec, verify_ledger_spec
@@ -46,7 +52,7 @@ from .workbook import build_workbook, write_workbook
 __all__ = [
     "Source", "SourceResult", "LedgerRow", "CorrectionRow",
     "run_source", "read_sources_from_workbook", "load_live_pns",
-    "fetch_datasheet", "FetchResult", "FetchError", "source_id_from_url",
+    "fetch_datasheet", "fetch_via_browser", "FetchResult", "FetchError", "source_id_from_url",
     "mine_source", "MinedPN",
     "normalize_pn", "NormalizeResult",
     "LedgerSpec", "load_ledger_spec", "verify_ledger_spec",
