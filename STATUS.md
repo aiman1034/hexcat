@@ -5,7 +5,37 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
 
 ## Current state (2026-06-12) — autonomous directive in force
 
-**§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit pending). 300 tests pass.** The engine is
+**MISSION: "run the deferred grounded passes" (6 passes) — IN PROGRESS.** Take the 5 brands
+(902 SKUs) from tracked-debt to ideal grounded data. These are Claude's OWN in-session web/datasheet
+passes ($0), NOT operator feeds — correcting the earlier "needs operator feed" labeling. The only
+genuine operator decision is Pass-6 collision keying, which Claude *proposes*. Standing rules: $0,
+1000% rule (every value traces verbatim to an official source — never invent), flag-don't-emit, gate
+stays GREEN, commit each pass, update STATUS+ruflo.
+
+**§5 PASS-1 (PRICE FETCH / UNSTUB) — FOUNDATION DONE, anchor grind ONGOING (commits e1bea07, 12ef8ae).
+311 tests pass.** Operator chose GPL/list grounding (AskUserQuestion) after Claude surfaced the $0
+web-fetch reality: WebFetch is 403-blocked on cisco.com/itprice.com, aggregators are parked/503, and
+public listings are dominated by COMPATIBLES + gray-market noise (same module ranges €38–€134 across
+sellers). The one traceable signal = official manufacturer **GPL list price** (Cisco Global Price
+List = the UVP) → engine **T2**. New seam `src/hexcat/price_inputs.py` reads
+`config/market_prices/list_prices.yaml` (GPL anchors gathered in-session via WebSearch, $0,
+FX-converted USD→EUR @ 0.863 dated 2026-06-11), feeds `pricing.resolve_price`; a SKU absent there is
+honest flagged-debt, never invented. `_scratch/apply_grounded_prices.py` writes grounded Netto-VK
+into the bundle Prices CSVs (byte contract preserved: no BOM, CRLF, `;`, German decimal). **6/902
+grounded** (all Cisco 1G/10G/25G/100G short-reach: GLC-TE, GLC-SX-MMD, GLC-LH-SMD, SFP-10G-SR-S,
+SFP-25G-SR-S, QSFP-100G-SR4-S); `config/price_disposition.yaml` regenerated (6 T2, 896 flagged);
+readiness PRICES block moved 902→898→896. 11 new loader tests (`tests/test_price_inputs.py`).
+HONEST LIMITS: (a) GPL search yield ~40%; many reseller/gray-market hits MUST be rejected (1000%
+rule) — full coverage is a long multi-turn grind. (b) **Feature-model fallback (T3-FEATURE,
+LOW-confidence interpolation) is DESIGNED-but-DEFERRED**: with only short-reach anchors it could not
+interpolate high-speed/coherent SKUs without *extrapolating across media classes* = inventing, which
+the rules forbid; it becomes valid once anchors densely bracket each media/speed band. (c) A
+predictive **back-test needs an independent held-out true-price set, which does not exist at $0**
+(street prices are the excluded gray-market noise); the `list_to_net` factor stays the operator
+policy knob, validated when a real sold-price set lands. NEXT: continue GPL anchor grind; Pass 2
+(attribute re-mining from datasheet cache).
+
+**§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit 44b2570). 300 tests pass.** The engine is
 category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
 named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`
 is the authoritative inventory: "What is already generic" (the byte-exact Ameise contract + the
