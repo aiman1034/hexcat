@@ -74,6 +74,30 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | Ruijie       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | Avaya/Extreme| Tier-1 fetch failed (JS-grid per notes)                            | §6b NEEDS-HEADED |
 
+## Extraction-mode boundary (learned 2026-06-12, Arista)
+
+The deterministic miner needs an **authoritative SKU locus** to mine + verify against. It
+currently supports exactly two source shapes:
+- **token+column** — a two-column SKU/Description "Ordering Information" table (Cisco HTML,
+  Fortinet PDF).
+- **section** — form-factor chapters with `<noun> (SKU)` callouts (HPE PDF).
+
+It does **NOT** support **prose / spec-sheet** datasheets where orderable PNs are scattered
+through descriptive text and the only tables are spec-attribute matrices (wavelength, reach,
+power) keyed by form factor. Confirmed on Arista's official `Transceiver-Data-Sheet.pdf`
+(29 pp, 24 tables, ~6 PN tokens in any table; PNs live in prose). Force-mining such a source
+would manufacture the exact phantom class V2 (authoritative-locus) is built to reject — so the
+verifier would (correctly) refuse the ledger. These brands need EITHER a different official
+document with a real ordering table/part-number appendix, OR a new extraction mode with a
+defensible locus. **Do not lower V2 to admit prose.**
+
+Probable bucket for the remaining brands (to confirm per-brand next pass):
+- prose spec-sheet → needs ordering-guide source or new mode: Arista (confirmed), likely
+  NVIDIA, Dell, Palo Alto, Huawei.
+- HTML product-listing (mineable IF a static table exists): MikroTik, Supermicro, Ruijie —
+  need fresh URLs + static-table check (else NEEDS-HEADED).
+- NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme.
+
 ## Next steps
 - **Source acquisition is the gate**, not spec authoring. Next autonomous pass: for the
   stale-URL brands (Arista, Huawei, Lenovo, Dell, NVIDIA, Palo Alto, MikroTik, Supermicro,
