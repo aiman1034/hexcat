@@ -5,6 +5,24 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
 
 ## Current state (2026-06-12) — autonomous directive in force
 
+**§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit pending). 300 tests pass.** The engine is
+category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
+named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`
+is the authoritative inventory: "What is already generic" (the byte-exact Ameise contract + the
+read→build→assemble→validate→gate→price pipeline, do NOT touch), the **9 category seams** (taxonomy
+file, attribute schema, INTAKE_COLUMNS, category vocabulary, applicability+derivers, completeness
+gate, weights, prose policy, content prompt — each marked CONFIG or CODE), an 8-step procedure, and
+an honest-gaps note: seams 2/3/5/6 are *code* edits today (the attribute tuple is the byte-exact
+Sortiernummer contract and the physics derivers are real logic — both belong in tested code, not a
+YAML the operator could silently break); a `CategoryProfile` refactor is DEFERRED as speculative
+until a real 2nd category exists. `tests/test_category_framework.py` (14 tests) LOCKS the inventory
+so it cannot drift: verify_taxonomy passes; taxonomy attribute_pairs == constants.TRANSCEIVER_ATTRIBUTES;
+every intake_field ∈ models.INTAKE_COLUMNS; PHYSICAL_FORMFAKTOR == set(_ORDERED); subcategories ==
+rules.kategorie_ebene_3_allowed; PHYSICAL_FORMFAKTOR & CABLE_CATEGORIES ⊆ that set and don't overlap;
+prose-policy seams + content prompt + runbook present. **§1-§5 of the mission directive now all have
+their deterministic scope complete.** The only remaining go-live BLOCKs (PRICES, CROSS-BRAND
+collisions) are intentionally deferred operator passes, each named in `hexcat readiness`.
+
 **§2 G3/G4/G5 DONE (commits 1b73e89 G3, 2e1d0fe G4, 872a122 G5). 251 tests pass.**
 - **G3 weights** `config/weight_disposition.yaml` (tracked) + `tests/test_weight_disposition.py` —
   makes the 902/902 PLACEHOLDER-weight debt AUDITABLE rather than silently passing. Every emitted
