@@ -5,6 +5,22 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
 
 ## Current state (2026-06-12) — autonomous directive in force
 
+**§2 G3/G4/G5 DONE (commits 1b73e89 G3, 2e1d0fe G4, 872a122 G5). 251 tests pass.**
+- **G3 weights** `config/weight_disposition.yaml` (tracked) + `tests/test_weight_disposition.py` —
+  makes the 902/902 PLACEHOLDER-weight debt AUDITABLE rather than silently passing. Every emitted
+  Artikelgewicht/Versandgewicht is GROUNDED (operator per-SKU) or a form-factor PLACEHOLDER from
+  `config/weights.yaml`; transceiver weight is NOT physics-derivable, so grounding is DEFERRED to a
+  datasheet/measurement pass (same as pricing). Artifact reconciles per brand: grounded+placeholder
+  ==sku_count, by-Formfaktor sums match, every flagged FF is a real PHYSICAL_FORMFAKTOR. Regen via
+  `_scratch/gen_weight_disposition.py`.
+- **G4 GTIN/EAN** `validate.valid_gtin` (GS1 mod-10 check digit, lengths 8/12/13/14) + `_check_attributes`
+  row check: GTIN is populate-or-prove-absent — empty is OK ("absent"), present MUST pass the check
+  digit (no fabricated barcodes). Self-audit fixture A10 + unit tests for accept/reject/empty.
+- **G5 FAQ uniqueness** `_check_faq` substantive-block dedup — strips the authenticity Q&A pair
+  (`_FAQ_AUTHENTICITY_RE`), keys remaining pairs; identical substantive block across ≥4 SKUs FAILs
+  (boilerplate), 2-3 WARNs. Calibrated to data (max legit dup=2). Self-audit fixture added.
+NEXT: §2 G6 merged-catalog sweep → G7 import-readiness validator.
+
 **§2 G2 ATTRIBUTE DEPTH DONE (commits d51af66 G2a, 6b5685b G2b, 78f62f3 flag artifact).**
 Populate-or-prove-absent for the locked 14 attributes is now real and auditable:
 - **G2a** `src/hexcat/attribute_depth.py` — pure, deterministic applicability model. `MediaClass`
