@@ -21,7 +21,20 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
   (boilerplate), 2-3 WARNs. Calibrated to data (max legit dup=2). Self-audit fixture added.
 NEXT: §2 G6 merged-catalog sweep → G7 import-readiness validator.
 
-**§2 G6 MERGED-CATALOG SWEEP DONE (commit pending). 261 tests pass.** The per-bundle gate is
+**§2 G7 IMPORT-READINESS DONE (commit pending). 271 tests pass. §2 GATES G1-G7 ALL COMPLETE.**
+`src/hexcat/import_readiness.py` + `hexcat readiness <dirs…>` is the catalog-level GO/NO-GO
+capstone: it composes the per-bundle build gate (STRUCTURE), the cross-brand sweep (CROSS-BRAND),
+price grounding (PRICES), and the tracked deferred-debt artifacts (GTIN, WEIGHTS, ATTR-GAPS) into
+one honest verdict. BLOCK = not importable yet; WARN = importable with an accepted tracked
+deferred-grounding debt. **Current real verdict over all 5 bundles = NO-GO**, itemized: STRUCTURE
+GO (all 5 well-formed); BLOCK CROSS-BRAND (9 Cisco↔Arista collisions, G6); BLOCK PRICES (902/902 at
+the 0,00 placeholder, awaiting §5); WARN GTIN (0/902, barcode pass deferred); WARN WEIGHTS (902/902
+placeholder, G3); WARN ATTR-GAPS (1139 residual, deferred datasheet pass). This is "provably
+gap-proof": the catalog cannot silently ship — every blocker is named and tied to its clearing pass.
+10 readiness tests. NEXT: §5 pricing engine (clears the PRICES blocker; web-fetch STUBBED), then §4
+framework/runbook. The two BLOCKs are the only go-live gates left; both are known deferred passes.
+
+**§2 G6 MERGED-CATALOG SWEEP DONE (commit 029dfd7). 261 tests pass.** The per-bundle gate is
 blind to clashes BETWEEN brands; `src/hexcat/merged_sweep.py` + `hexcat sweep <dirs…>` CLI close
 that. Reads all 5 bundles, FAILs on any cross-brand identity collision (Artikelnummer, URL-Pfad,
 GTIN, Titel-Tag) and on a body sentence reused across ≥3 brands; WARNs at 2 brands. **Real finding:

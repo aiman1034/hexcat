@@ -199,6 +199,37 @@ def sweep(
     raise typer.Exit(code=1)
 
 
+@app.command()
+def readiness(
+    dirs: list[Path] = typer.Argument(
+        ..., help="The produced bundle directories (one per brand) to assess for go-live."
+    ),
+):
+    """Import-readiness validator — catalog-level GO / NO-GO (§2 G7).
+
+    Composes every signal into one honest verdict: per-bundle build gate (STRUCTURE), the
+    cross-brand merged sweep (CROSS-BRAND), price grounding (PRICES), plus the tracked
+    deferred-debt artifacts (GTIN, WEIGHTS, ATTR-GAPS). A BLOCK means "not importable yet";
+    a WARN means "importable with an accepted, tracked deferred-grounding debt". Exit 0 only on
+    GO (zero blockers). The brand label is the directory's trailing name component.
+    """
+    from .import_readiness import assess_readiness
+
+    bundles: dict[str, Path] = {}
+    for d in dirs:
+        brand = d.name.split("stage3_", 1)[1] if "stage3_" in d.name else d.name
+        bundles[brand] = d
+
+    report = assess_readiness(bundles, load_rules())
+    head = f"{report.n_brands} brands, {report.n_skus} SKUs"
+    colour = "bold green" if report.go else "bold red"
+    console.print(f"[{colour}]{report.verdict}[/] — import readiness ({head})")
+    for c in report.checks:
+        style = {"GO": "green", "BLOCK": "bold red", "WARN": "yellow"}[c.status]
+        console.print(f"  [{style}]{c.status}[/] {c.name}: {c.detail}")
+    raise typer.Exit(code=0 if report.go else 1)
+
+
 @app.command("new-intake")
 def new_intake(
     out: Path = typer.Option(..., "--out", "-o", help="Path to write the blank template."),
