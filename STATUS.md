@@ -35,6 +35,27 @@ predictive **back-test needs an independent held-out true-price set, which does 
 policy knob, validated when a real sold-price set lands. NEXT: continue GPL anchor grind; Pass 2
 (attribute re-mining from datasheet cache).
 
+**§Pass-2 DOM/Standard/Betriebstemperatur RE-MINING — DONE (commits 6b7625a, dee8989).** Evidence-
+backed per-brand DOM determination in `config/dom_disposition.yaml` (the mandate: "prove-absent vs
+extract", never leave merely tracked):
+- **Fortinet:** PUBLISHED_EXTRACTED — re-mined the per-SKU "Digital Monitoring: Yes/No" spec row with
+  STRICT column alignment (used only when SKU-header count == Yes/No-token count, else skipped),
+  grounded **32 SKUs** (Yes→"Ja (Digital Monitoring)", No→"Nein"); 50 expected-optical SKUs that
+  failed the alignment gate stay honest GAP. Fortinet DOM debt 82→50.
+- **Arista:** SOURCE_SILENT — the 29pp authoritative datasheet has ZERO DOM/DDM/Digital-Monitoring
+  mentions; cannot ground "Ja", must not assert "Nein" from silence → 100 stay flagged GAP.
+- **HPE:** SOURCE_SILENT (corrected from an earlier optimistic "pending" after a page-by-page re-read):
+  the 220pp datasheet only DEFINES DOM in a glossary (p35) + has 4x4-part *identification* tables
+  (p127+); no per-SKU DOM-support boolean → deriving Ja/Nein would be inference (forbidden) → 77 GAP.
+- **Cisco** 282 grounded / 12 PENDING; **MikroTik** 7 / 14.
+- **Betriebstemperatur:** ZERO expected-but-missing gaps across all brands — already clean (populated
+  or PROVABLY_ABSENT). No work needed.
+- **Standard:** Fortinet datasheet publishes the standard verbatim only in (a) per-SKU descriptive
+  lines (all explicit tokens already grounded — 0 new safely-extractable) and (b) comma-bearing
+  multi-protocol "Protocol Standard" spec rows (e.g. "25GBase-SR, 10GBase-SR") whose flattened text
+  cannot be safely column-aligned → extracting risks misalignment = fabrication, so the remaining
+  Standard gaps stay honest GAP. NEXT: Pass 3 (Transceiver-Typ reconciliation).
+
 **§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit 44b2570). 300 tests pass.** The engine is
 category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
 named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`
