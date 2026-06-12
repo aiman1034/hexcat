@@ -15,7 +15,7 @@ takes the list of per-source results; each source independently V1–V8 gated).
 
 | Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Stage-3 | Status |
 | -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
-| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | NOT-STARTED | **DONE-VERIFIED** (V1–V9 green) |
+| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | GENERATED (8/297 authored) | **DONE-VERIFIED** (V1–V9 green) |
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V1–V8 green; V9 coverage spec pending |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V9 spec pending; FlexFabric/Comware gap unchecked |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
@@ -28,6 +28,30 @@ blocked. `verify_ledger_spec` guards every coverage family is locked-22 AND reac
 A spec with no coverage set → V9 FAILs as UNCALIBRATED (never silently certifies). Stage-3 state:
 NOT-STARTED / GENERATED / PRICES-PENDING / IMPORT-READY (IMPORT-READY only when generated +
 content-verified + prices filled).
+
+### Stage-3 v5.0 package generator (BUILT) + Cisco content authoring (IN PROGRESS)
+The byte-exact JTL-Ameise package generator is built and matches the authoritative proof slice
+(`Corrected 7 Part Numbers/Cisco_Audit_7SKUs_*.csv`): 5 CSVs (Main `_v5_0`, Attributes, Platform,
+Prices [semicolon], Verification_Log), UTF-8 BOM + CRLF, csv-minimal quoting. Key facts learned
+from the slice: the **Beschreibung is a composed HTML document**, not free prose — 3 intro `<p>`,
+a `Technische Daten` `<ul>` (rendered FROM the verified attributes → single source of truth, never
+drifts from Attributes.csv, Zustand excluded, empty GTIN li), an optional `Kompatibilität` `<ul>`
++ fixed TMG matrix note, the FAQ as `<p><strong>Q?</strong><br>A</p>` blocks, and a `Verwandte
+Produkte` `<ul>` of slugged in-catalog links. `compose_beschreibung` builds this deterministically;
+`content_issues` gates each SKU (kurz 2p/40-80w, intro 3p/90-175w, titel ≤60 ending `| Hexwaren`,
+meta 140-200, FAQ 3-10 — NO Phase-2 closer; the slice carries authenticity in FAQ/meta).
+
+**Workflow:** `hexcat stage3-template` emits the JSON content sidecar (one entry/SKU: `_facts` with
+source URL = the author's spine, blank prose, derivable attrs pre-seeded). Author fills it IN-SESSION
+($0, datasheet round-tripped, every spec → provenance, flag-or-omit unverifiable). `hexcat stage3
+--content <sidecar>` ingests it → composes Beschreibung, lifts state. **Canonical authored sidecar =
+`stage3_content/Cisco_content.json` (TRACKED; `output/` is gitignored runtime).** Datasheets cached
+locally in `datasheets/cache/` → authoring is fully offline/$0. 297 SKUs map to 29 cached datasheets.
+
+**Progress: 8/297 authored** — X2 family complete (LR, ER, ZR, SR, LRM, LX4, CX4, T) from the cached
+X2 datasheet, all gate-passing. Overall state stays GENERATED until all 297 done (then PRICES-PENDING,
+since prices are operator-supplied). Next batches by datasheet: CPAK (12), SFP c78-366584 (26),
+SFP+ c78-455693 (35→20 SFP+), QSFP/DAC/AOC c78-736282 (46), etc.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
