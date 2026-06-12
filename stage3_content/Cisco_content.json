@@ -33096,14 +33096,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco DWDM-XFP-C 10GBASE-DWDM XFP — abstimmbar, 80 Kanäle ITU 50-GHz-Raster, C-Band, DOM",
+    "titel_tag": "Cisco DWDM-XFP-C 10G DWDM Tunable XFP | Hexwaren",
+    "meta_description": "Original Cisco DWDM-XFP-C abstimmbares 10GBASE-DWDM XFP-Modul kaufen — 80 ITU-50-GHz-Kanäle im C-Band, Duplex LC, LAN/WAN/OTU2, mit DOM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-XFP-C ist ein originales, abstimmbares 10GBASE-DWDM XFP-Modul für 80 ITU-Kanäle im 50-GHz-Raster des C-Bands (1530,33–1561,83 nm) mit Duplex-LC-Anschluss.</p><p>Es überträgt 10G für LAN/WAN sowie OTU2/OTU2e, unterstützt DOM und nimmt maximal 3,5 Watt auf; der Betrieb erfolgt von 0 bis 70 °C. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-XFP-C ist ein abstimmbares 10GBASE-DWDM XFP-Modul, das über 80 ITU-Kanäle im 50-GHz-Raster des C-Bands (1530,33 bis 1561,83 nm) auf Singlemode-Faser mit Duplex-LC-Anschluss abgestimmt werden kann.",
+      "Es unterstützt 10-Gigabit-Datenraten von 9,9 bis 11,1 Gbit/s für LAN, WAN sowie OTU2/OTU2e, liefert eine Sendeleistung von 0,0 bis 3,0 dBm und nimmt maximal 3,5 Watt auf; der Betrieb erfolgt von 0 bis 70 °C (Laser-Klasse 1).",
+      "Das Modul unterstützt Digital Optical Monitoring (DOM) und die Cisco Quality-ID zur Echtheitserkennung, ist im laufenden Betrieb steckbar und für skalierbare DWDM-Transportnetze ausgelegt. Es fügt sich in XFP-Ports von Cisco-Switches, -Routern und optischen Transportgeräten ein (ITU-T G.709, IEEE 802.3)."
+    ],
+    "kompatibilitaet": [
+      "Cisco XFP-Ports an Switches, Routern und optischen Transportgeräten",
+      "Abstimmbar über 80 Kanäle des ITU-50-GHz-DWDM-Rasters (C-Band); 10GbE LAN/WAN sowie OTU2/OTU2e",
+      "Maßgeblich ist die Cisco 10-Gigabit Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (1 Jahr)."
+      ],
+      [
+        "Auf wie viele Wellenlängen lässt sich das DWDM-XFP-C abstimmen?",
+        "Auf 80 Kanäle des ITU-50-GHz-Rasters im C-Band, von 1530,33 nm bis 1561,83 nm."
+      ],
+      [
+        "Welche Datenraten unterstützt das Modul?",
+        "10-Gigabit-Raten von 9,9 bis 11,1 Gbit/s — 10GbE LAN und WAN sowie OTU2/OTU2e."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DWDM-SFP-6141",
+        "Cisco DWDM-SFP-6141 — 1000BASE-DWDM SFP, feste Wellenlänge 1561,42 nm"
+      ],
+      [
+        "CFP2-100G-ER4",
+        "Cisco CFP2-100G-ER4 — 100GBASE-ER4 CFP2 über Singlemode, 40 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -33111,12 +33141,97 @@
         "XFP"
       ],
       [
+        "Typ",
+        "DWDM, abstimmbar (tunable)"
+      ],
+      [
+        "Geschwindigkeit",
+        "10 Gbit/s (9,9–11,1 Gbit/s; LAN/WAN/OTU2/OTU2e)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3 10GbE, ITU-T G.709/G.975/G.975.1/G.694.1"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band, 80 Kanäle ITU 50-GHz-Raster (1530,33–1561,83 nm)"
+      ],
+      [
+        "Sendeleistung",
+        "0,0 bis 3,0 dBm"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (PC/UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 3,5 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-458530.html",
+        "datasheet"
+      ]
+    }
   },
   "CFP2-100G-ER4": {
     "_facts": {
@@ -33124,14 +33239,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CFP2-100G-ER4 100GBASE-ER4 CFP2 — LAN-WDM Singlemode, Duplex LC, bis 40 km, DOM",
+    "titel_tag": "Cisco CFP2-100G-ER4 100GBASE-ER4 40km | Hexwaren",
+    "meta_description": "Original Cisco CFP2-100G-ER4 100GBASE-ER4 CFP2-Modul kaufen — LAN-WDM Singlemode (1295–1309 nm), Duplex LC, bis 40 km, mit DOM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CFP2-100G-ER4 ist ein originales 100GBASE-ER4 CFP2-Modul, das 100GE über vier LAN-WDM-Wellenlängen auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt.</p><p>Es erreicht bis zu 40 Kilometer, unterstützt DOM und nimmt bis zu 8 Watt auf; Multiplexing erfolgt im Modul. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CFP2-100G-ER4 ist ein 100GBASE-ER4 CFP2-Modul, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen (1295,6/1300,1/1304,6/1309,1 nm) auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt; Multiplexing und Demultiplexing erfolgen im Modul.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 40 Kilometer (Strecken über 30 km gelten als Engineered Links); das Modul erfüllt IEEE 802.3ba für 100GBASE-ER4, unterstützt zusätzlich OTU3-Raten, nimmt bis zu 8 Watt auf und arbeitet von 0 bis 70 °C (Laser-Klasse 1).",
+      "Das Modul unterstützt Digital Optical Monitoring (DOM) der Sende- und Empfangspegel sowie die Cisco Quality-ID zur Echtheitserkennung, ist im laufenden Betrieb steckbar und für den „pay-as-you-populate“-Ansatz ausgelegt. Im CFP2-Formfaktor fügt es sich in die CFP2-Ports von Cisco-Switches und -Routern ein."
+    ],
+    "kompatibilitaet": [
+      "Cisco CFP2-Ports an Switches und Routern (Rechenzentrum, Core-Aggregation, Service-Provider-Transport)",
+      "Interoperabel mit IEEE-802.3ba-100GBASE-ER4-konformen Schnittstellen",
+      "Maßgeblich ist die Cisco 100 Gigabit Ethernet Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (90 Tage)."
+      ],
+      [
+        "Wie weit reicht das CFP2-100G-ER4?",
+        "Bis zu 40 Kilometer über Singlemode-Faser (G.652); Strecken über 30 km gelten als Engineered Links."
+      ],
+      [
+        "Wie werden die vier Wellenlängen verarbeitet?",
+        "Multiplexing und Demultiplexing der vier LAN-WDM-Wellenlängen erfolgen vollständig im Modul."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CFP-100G-ER4",
+        "Cisco CFP-100G-ER4 — 100GBASE-ER4 CFP über Singlemode, 40 km"
+      ],
+      [
+        "CFP-100G-LR4",
+        "Cisco CFP-100G-LR4 — 100GBASE-LR4 CFP über Singlemode, 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -33139,12 +33284,89 @@
         "CFP2"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4× 25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-ER4 (+ OTU3-Raten)"
+      ],
+      [
+        "Wellenlänge",
+        "1295,6–1309,1 nm (LAN-WDM, 4 Lanes)"
+      ],
+      [
+        "Reichweite",
+        "40 km"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (PC/UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 8 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-737525.html",
+        "datasheet"
+      ]
+    }
   },
   "DP01QSDD-ZF1": {
     "_facts": {
@@ -33152,14 +33374,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco DP01QSDD-ZF1 100G ZR QSFP-DD — kohärentes DWDM (DCO), C-Band, bis 80 km",
+    "titel_tag": "Cisco DP01QSDD-ZF1 100G ZR QSFP-DD 80km | Hexwaren",
+    "meta_description": "Original Cisco DP01QSDD-ZF1 kohärentes 100G-ZR QSFP-DD-Modul (DCO) kaufen — 100GBASE-R, C-Band, oFEC, Duplex LC, bis 80 km über Singlemode. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DP01QSDD-ZF1 ist ein originales kohärentes 100G-ZR QSFP-DD-Modul (DCO), das 100GBASE-R über eine kohärente C-Band-Wellenlänge mit Duplex-LC-Anschluss überträgt.</p><p>Es erreicht bis zu 80 km (mit externer Verstärkung auch darüber), arbeitet mit oFEC und QPSK. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DP01QSDD-ZF1 ist ein kohärentes 100G-ZR QSFP-DD-Modul (Digital Coherent Optics), das eine 100GBASE-R-Client-Schnittstelle über eine einzelne kohärente Wellenlänge im C-Band auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt.",
+      "Über ein Standard-Singlemode-Faserpaar (G.652) erreicht es bis zu 80 Kilometer und darüber hinaus mit externer Verstärkung, solange die Dispersionstoleranz von ±2400 ps/nm eingehalten wird; das Modul arbeitet mit oFEC, einer Sendeleistung von −5 dBm und einer Empfängerempfindlichkeit von −32 dBm.",
+      "Als kompaktes kohärentes Modul ermöglicht es 100G-ZR-Transport direkt aus dem QSFP-DD-Port von Routern und Switches und ist über die Cisco Quality-ID als geprüftes Original erkennbar. Die feste Linienfrequenz beträgt 193,7 THz; die Modulation entspricht dem Line-Mode 100G-100ZR-OFEC-QPSK."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD-Ports an Routern und Switches mit Unterstützung für kohärente DCO-Pluggables (IPoDWDM)",
+      "100GBASE-R-Client; kohärenter 100G-ZR-Linientransport im C-Band, bis 80 km (mit Verstärkung darüber)",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung."
+      ],
+      [
+        "Wie weit reicht das DP01QSDD-ZF1?",
+        "Bis zu 80 Kilometer über Singlemode-Faser; mit externer Verstärkung sind größere Distanzen möglich, solange die Dispersionstoleranz von ±2400 ps/nm nicht überschritten wird."
+      ],
+      [
+        "Welche Modulation nutzt das Modul?",
+        "Den Line-Mode 100G-100ZR-OFEC-QPSK (QPSK mit oFEC) bei rund 30 Gbaud auf einer festen C-Band-Frequenz von 193,7 THz."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-400G-ZR-S",
+        "Cisco QDD-400G-ZR-S — kohärentes 400G-ZR QSFP-DD, bis 120 km"
+      ],
+      [
+        "QDD-400G-ZRP-S",
+        "Cisco QDD-400G-ZRP-S — kohärentes 400G-ZR+ QSFP-DD, Long-Haul"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -33167,12 +33419,113 @@
         "QSFP-DD"
       ],
       [
+        "Typ",
+        "Kohärentes DWDM-Modul (Digital Coherent Optics, DCO)"
+      ],
+      [
+        "Geschwindigkeit",
+        "100 Gbit/s (100GBASE-R)"
+      ],
+      [
+        "Standard",
+        "100G ZR (kohärent, oFEC)"
+      ],
+      [
+        "Modulation",
+        "QPSK (Line-Mode 100G-100ZR-OFEC-QPSK)"
+      ],
+      [
+        "FEC",
+        "oFEC"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band, fest (193,7 THz)"
+      ],
+      [
+        "Reichweite",
+        "bis 80 km (mit externer Verstärkung darüber)"
+      ],
+      [
+        "Sendeleistung",
+        "−5 dBm"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "−32 dBm"
+      ],
+      [
+        "Dispersionstoleranz",
+        "±2400 ps/nm"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Modulation": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "FEC": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Dispersionstoleranz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbase-qsfp-dd-100g-zr-module-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "DP04QSDD-HE0": {
     "_facts": {
@@ -33180,19 +33533,93 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco DP04QSDD-HE0 400G ZR+ QSFP-DD High-Power — kohärentes DWDM (DCO), +1 dBm Tx, multiraten",
+    "titel_tag": "Cisco DP04QSDD-HE0 400G ZR+ High-Power | Hexwaren",
+    "meta_description": "Original Cisco DP04QSDD-HE0 kohärentes 400G-ZR+ QSFP-DD High-Power-Modul (DCO) kaufen — +1 dBm Tx, OpenZR+, oFEC, C-Band volltunbar, multiraten 100–400G, Duplex LC. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DP04QSDD-HE0 ist ein originales kohärentes 400G-ZR+ QSFP-DD High-Power-Modul (DCO) mit integriertem Mini-EDFA und +1 dBm Sendeleistung, C-Band volltunbar, mit oFEC und Duplex-LC-Anschluss.</p><p>Es ist multiratenfähig (100–400G über QPSK, 8-QAM und 16-QAM) und für Brownfield-WDM und Dark-Fiber-Strecken ausgelegt. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DP04QSDD-HE0 ist ein kohärentes 400G-ZR+ QSFP-DD High-Power-Modul (Digital Coherent Optics) der „Bright“-Reihe mit integriertem Mini-EDFA, das eine volltunbare DWDM-Wellenlänge im C-Band (1550 nm) mit oFEC über Singlemode-Faser mit Duplex-LC-Anschluss überträgt.",
+      "Es ist multiratenfähig und transportiert 100, 200, 300 oder 400 Gbit/s je Wellenlänge (QPSK, 8-QAM, 16-QAM); die hohe Sendeleistung von +1 dBm (abregelbar bis −9 dBm) macht es mit nahezu jeder Add/Drop-Struktur bestehender WDM-Systeme kompatibel und verlängert die Reichweite über Dark Fiber.",
+      "Mechanisch entspricht es der QSFP-DD-Type-2A-Spezifikation; die Dispersionstoleranz ist bis ±160.000 ps/nm konfigurierbar, die maximale Empfangsleistung beträgt 13 dBm. Das Modul ermöglicht Routed Optical Networking direkt aus dem 400G-QSFP-DD-Port und ist über die Cisco Quality-ID als Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD 400G-Ports an Routern/Switches für Routed Optical Networking (IPoDWDM)",
+      "OpenZR+-Betriebsmodi mit erhöhter Sendeleistung (+1 dBm); kompatibel mit Brownfield-WDM-Add/Drop-Strukturen",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung."
+      ],
+      [
+        "Wozu dient die hohe Sendeleistung von +1 dBm?",
+        "Sie macht das Modul mit nahezu jeder Add/Drop-Struktur bestehender WDM-Systeme kompatibel und verlängert über Dark Fiber die erreichbare Distanz gegenüber Standard-OIF-Optik (max. −10 dBm)."
+      ],
+      [
+        "Welche Datenraten unterstützt das DP04QSDD-HE0?",
+        "Multiraten 100, 200, 300 oder 400 Gbit/s je Wellenlänge über QPSK, 8-QAM oder 16-QAM."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-400G-ZRP-S",
+        "Cisco QDD-400G-ZRP-S — kohärentes 400G-ZR+ QSFP-DD, Long-Haul"
+      ],
+      [
+        "DP04CFP2-D15",
+        "Cisco DP04CFP2-D15 — kohärentes 400G BiDi CFP2 (Einzelfaser)"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
         "Formfaktor",
-        "QSFP-DD"
+        "QSFP-DD (Type 2A)"
+      ],
+      [
+        "Typ",
+        "Kohärentes DWDM-Modul, hohe Sendeleistung (DCO „Bright“, integrierter Mini-EDFA)"
+      ],
+      [
+        "Geschwindigkeit",
+        "100–400 Gbit/s (multiraten)"
+      ],
+      [
+        "Standard",
+        "OpenZR+ (High-Tx-Power-Variante)"
+      ],
+      [
+        "Modulation",
+        "QPSK / 8-QAM / 16-QAM (200G/300G/400G)"
+      ],
+      [
+        "FEC",
+        "oFEC"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band (1550 nm, volltunbar)"
+      ],
+      [
+        "Max. Sendeleistung",
+        "+1 dBm (abregelbar bis −9 dBm)"
+      ],
+      [
+        "Max. Empfangsleistung",
+        "13 dBm"
+      ],
+      [
+        "Dispersionstoleranz",
+        "konfigurierbar bis ±160.000 ps/nm"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
       ],
       [
         "Zustand",
@@ -33200,7 +33627,56 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Modulation": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "FEC": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Max. Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Max. Empfangsleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Dispersionstoleranz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "DP04CFP2-D15": {
     "_facts": {
@@ -33208,14 +33684,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco DP04CFP2-D15 400G BiDi CFP2 — kohärentes DWDM (DCO), Einzelfaser-bidirektional, C-Band",
+    "titel_tag": "Cisco DP04CFP2-D15 400G BiDi CFP2 DCO | Hexwaren",
+    "meta_description": "Original Cisco DP04CFP2-D15 kohärentes 400G BiDi CFP2-Modul (DCO) kaufen — Einzelfaser-bidirektional, C-Band volltunbar, oFEC, multiraten 100–400G, Duplex LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DP04CFP2-D15 ist ein originales kohärentes 400G CFP2-Modul (DCO), das dank Dual-Laser-Ansatz eine Einzelfaser-bidirektionale Übertragung im C-Band über einen Duplex-LC-Anschluss ermöglicht.</p><p>Es ist multiratenfähig (100G/200G mit QPSK, 400G mit 16-QAM) bei oFEC und volltunbar über das gesamte C-Band. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DP04CFP2-D15 ist ein kohärentes 400G CFP2-Modul (Digital Coherent Optics), das dank Dual-Laser-Ansatz zwischen Sender und Empfänger eine bidirektionale Übertragung über eine einzelne Faser ermöglicht und die WDM-Signale im C-Band über einen Duplex-LC-Anschluss führt.",
+      "Es ist multiratenfähig und überträgt 100 Gbit/s und 200 Gbit/s mit QPSK sowie 400 Gbit/s mit 16-QAM, jeweils mit oFEC; bei 400G liegt die typische Sendeleistung bei −12 dBm, die Empfängerempfindlichkeit bei −18 dBm und die Dispersionstoleranz bei ±9600 ps/nm.",
+      "Mechanisch entspricht es der CFP2-MSA-Hardware mit 104-poliger Kartenrand-Schnittstelle; durch die Einzelfaser-Übertragung spart es Faserressourcen gegenüber Faserpaar-Lösungen. Das Modul ist über die Cisco Quality-ID als geprüftes Original erkennbar und volltunbar über das C-Band."
+    ],
+    "kompatibilitaet": [
+      "Cisco CFP2-DCO-Ports an Routern und Switches für kohärenten DWDM-Transport (IPoDWDM)",
+      "Einzelfaser-bidirektionale Übertragung (Tx/Rx über externe Kombination); C-Band volltunbar",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung."
+      ],
+      [
+        "Was unterscheidet das DP04CFP2-D15 von anderen kohärenten CFP2-Modulen?",
+        "Es überträgt Sende- und Empfangssignal bidirektional über eine einzelne Faser (Dual-Laser-Ansatz) und spart so gegenüber Faserpaar-Lösungen Faserressourcen."
+      ],
+      [
+        "Welche Datenraten unterstützt das Modul?",
+        "100 Gbit/s und 200 Gbit/s mit QPSK sowie 400 Gbit/s mit 16-QAM, jeweils mit oFEC."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DP04QSDD-HE0",
+        "Cisco DP04QSDD-HE0 — kohärentes 400G-ZR+ QSFP-DD High-Power"
+      ],
+      [
+        "QDD-400G-ZRP-S",
+        "Cisco QDD-400G-ZRP-S — kohärentes 400G-ZR+ QSFP-DD, Long-Haul"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -33223,12 +33729,105 @@
         "CFP2"
       ],
       [
+        "Typ",
+        "Kohärentes DWDM-Modul, Einzelfaser-bidirektional (BiDi DCO)"
+      ],
+      [
+        "Geschwindigkeit",
+        "100–400 Gbit/s (multiraten)"
+      ],
+      [
+        "Standard",
+        "kohärent (400ZR / OpenZR+ Line-Modes, oFEC)"
+      ],
+      [
+        "Modulation",
+        "QPSK (100G/200G) / 16-QAM (400G)"
+      ],
+      [
+        "FEC",
+        "oFEC"
+      ],
+      [
+        "Wellenlänge",
+        "C-Band (volltunbar)"
+      ],
+      [
+        "Sendeleistung",
+        "−12 dBm (typ., 400G)"
+      ],
+      [
+        "Empfängerempfindlichkeit",
+        "−18 dBm (400G)"
+      ],
+      [
+        "Dispersionstoleranz",
+        "±9600 ps/nm (400G)"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (Einzelfaser-bidirektional über externe Kombination)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Modulation": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "FEC": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Empfängerempfindlichkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Dispersionstoleranz": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-digital-coherent-bidi-cfp2-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "DWDM-SFP-6141": {
     "_facts": {
@@ -33236,14 +33835,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco DWDM-SFP-6141 1000BASE-DWDM SFP — feste Wellenlänge 1561,42 nm (ITU-Kanal 20), Duplex LC",
+    "titel_tag": "Cisco DWDM-SFP-6141 1G DWDM 1561,42 nm | Hexwaren",
+    "meta_description": "Original Cisco DWDM-SFP-6141 1000BASE-DWDM SFP-Modul kaufen — feste Wellenlänge 1561,42 nm (ITU-Kanal 20, 100-GHz-Raster), Duplex LC, GbE und FC, 28 dB Budget. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-SFP-6141 ist ein originales 1000BASE-DWDM SFP-Modul mit fester Wellenlänge 1561,42 nm (ITU-Kanal 20 im 100-GHz-Raster) und Duplex-LC-Anschluss.</p><p>Es überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s bei 28 dB Streckenbudget und ist auf den Cisco-100-GHz-ONS-Plan abgestimmt. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-SFP-6141 ist ein 1000BASE-DWDM SFP-Modul mit fester Wellenlänge 1561,42 nm (ITU-Kanal 20 im 100-GHz-Raster), das Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s auf Singlemode-Faser mit Duplex-LC-Anschluss überträgt.",
+      "Das Modul bietet ein optisches Streckenbudget von 28 dB bei einer Sendeleistung von 0 bis 4,0 dBm und ist auf den Wellenlängenplan der Cisco-100-GHz-ONS-Produktfamilie abgestimmt; der Betrieb erfolgt im Temperaturbereich von 0 bis 70 °C (Laser-Klasse 1).",
+      "Als hot-swap-fähiges Modul fügt es sich in die Gigabit-Ethernet-SFP-Ports von Cisco-Switches, -Routern und optischen Transportgeräten ein und ist Teil einer Reihe von 40 fest abgestimmten DWDM-SFP-Modellen, mit denen sich benachbarte ITU-Kanäle abdecken lassen (IEEE 802.3z 1000BASE-X)."
+    ],
+    "kompatibilitaet": [
+      "Cisco Gigabit-Ethernet-SFP-Ports an Switches, Routern und optischen Transportgeräten",
+      "Feste DWDM-Wellenlänge 1561,42 nm (ITU-Kanal 20, 100-GHz-Raster); Gigabit Ethernet sowie FC 1G/2G",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (1 Jahr)."
+      ],
+      [
+        "Welche Wellenlänge nutzt das DWDM-SFP-6141?",
+        "Eine feste Wellenlänge von 1561,42 nm — ITU-Kanal 20 im 100-GHz-DWDM-Raster."
+      ],
+      [
+        "Welche Protokolle unterstützt das Modul?",
+        "Gigabit Ethernet (1000BASE-DWDM) sowie Fibre Channel mit 1 und 2 Gbit/s, bei einem optischen Streckenbudget von 28 dB."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DWDM-XFP-C",
+        "Cisco DWDM-XFP-C — abstimmbares 10GBASE-DWDM XFP (50-GHz-Raster)"
+      ],
+      [
+        "DWDM-SFP-6061=",
+        "Cisco DWDM-SFP-6061 — 1000BASE-DWDM SFP, 1560,61 nm (ITU-Kanal 21)"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -33251,32 +33880,40 @@
         "SFP"
       ],
       [
-        "Zustand",
-        "Neu, versiegelt"
-      ]
-    ],
-    "netto_vk": null,
-    "provenance": {}
-  },
-  "SFP-10G-OLT20-X": {
-    "_facts": {
-      "unterkategorie": "SFP+",
-      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
-      "verifiziert_am": "2026-06-12"
-    },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
-    "beschreibung": "",
-    "attributes": [
+        "Typ",
+        "DWDM, feste Wellenlänge"
+      ],
       [
-        "Formfaktor",
-        "SFP+"
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-DWDM; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X"
+      ],
+      [
+        "Wellenlänge",
+        "1561,42 nm (ITU-Kanal 20, 100-GHz-Raster)"
+      ],
+      [
+        "Streckenbudget",
+        "28 dB"
+      ],
+      [
+        "Sendeleistung",
+        "0 bis 4,0 dBm"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC (PC/UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
       ],
       [
         "Zustand",
@@ -33284,6 +33921,222 @@
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Streckenbudget": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-382891.html",
+        "datasheet"
+      ]
+    }
+  },
+  "SFP-10G-OLT20-X": {
+    "_facts": {
+      "unterkategorie": "SFP+",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "Cisco SFP-10G-OLT20-X XGS-PON OLT SFP+ — 10G symmetrisch, SC/UPC, bis 20 km, Split 1:128",
+    "titel_tag": "Cisco SFP-10G-OLT20-X XGS-PON OLT SFP+ | Hexwaren",
+    "meta_description": "Original Cisco SFP-10G-OLT20-X XGS-PON OLT SFP+-Modul kaufen — 10G symmetrisch, Tx 1577 / Rx 1270 nm, SC/UPC, bis 20 km, Split bis 1:128, mit DOM. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-10G-OLT20-X ist ein originales XGS-PON-OLT-Modul (10G symmetrisch) im SFP+-Formfaktor mit integriertem OLT-MAC-Bridge-IC und SC/UPC-Anschluss.</p><p>Es erreicht bis zu 20 km bei Split 1:128 (ODN-Klasse N2), sendet bei 1577 nm, empfängt bei 1270 nm und ist DOM-fähig. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco SFP-10G-OLT20-X ist ein XGS-PON-OLT-Modul (10 Gbit/s symmetrisch) im hot-pluggable SFP+-Formfaktor, das einen integrierten 10G-Ethernet-zu-XGS-PON-OLT-MAC-Bridge-IC samt optischem Transceiver enthält und so eine vollständige OLT-Funktion auf einem SFP+ vereint.",
+      "Über Einzelfaser-Singlemode (G.652) mit SC/UPC-Anschluss erreicht es bis zu 20 Kilometer bei einem maximalen Splitverhältnis von 1:128 (ODN-Klasse N2); es sendet bei 1577 nm und empfängt bei 1270 nm, verbraucht typisch 2,475 Watt und arbeitet von −20 bis 75 °C.",
+      "Das Modul ist Teil der Cisco-Routed-PON-Lösung und ersetzt dedizierte OLT-Chassis durch SFP+-Ports der Cisco NCS 540, NCS 5500 und NCS 5700; es ist DOM-fähig, mit den meisten ONTs/ONUs von Drittanbietern kompatibel und über die Cisco Quality-ID als geprüftes Original erkennbar."
+    ],
+    "kompatibilitaet": [
+      "Cisco NCS 540, NCS 5500 und NCS 5700 mit universellen SFP+-Ports (Cisco Routed PON Solution)",
+      "Kompatibel mit den meisten XGS-PON-ONTs/ONUs von Drittanbietern (offenes Ökosystem, ITU-T G.9807.1)",
+      "Maßgeblich ist die Cisco Gigabit Ethernet Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (3 Jahre)."
+      ],
+      [
+        "Welches Splitverhältnis und welche Reichweite bietet das SFP-10G-OLT20-X?",
+        "Ein maximales Splitverhältnis von 1:128 und bis zu 20 Kilometer über Einzelfaser-Singlemode (G.652)."
+      ],
+      [
+        "Was leistet das Modul innerhalb der Cisco Routed PON Solution?",
+        "Es vereint OLT-MAC und optischen Transceiver in einem SFP+ und ersetzt dedizierte OLT-Chassis durch SFP+-Ports der Cisco NCS 540/5500/5700."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-GPON-B",
+        "Cisco SFP-GPON-B — GPON Klasse B+ OLT-SFP (1490Tx/1310Rx)"
+      ],
+      [
+        "SFP-GPON-C",
+        "Cisco SFP-GPON-C — GPON Klasse C+ OLT-SFP (1490Tx/1310Rx)"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP+"
+      ],
+      [
+        "Typ",
+        "XGS-PON OLT (10G symmetrisch, integrierter OLT-MAC-Bridge-IC)"
+      ],
+      [
+        "Geschwindigkeit",
+        "10 Gbit/s symmetrisch"
+      ],
+      [
+        "Standard",
+        "ITU-T G.9807.1 / G.988 (XGS-PON)"
+      ],
+      [
+        "Wellenlänge",
+        "Tx 1577 nm / Rx 1270 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 20 km"
+      ],
+      [
+        "Splitverhältnis",
+        "bis 1:128"
+      ],
+      [
+        "ODN-Klasse",
+        "N2"
+      ],
+      [
+        "Sendeleistung",
+        "4 bis 7 dBm"
+      ],
+      [
+        "Empfangsleistung",
+        "−7 bis −28 dBm"
+      ],
+      [
+        "Anschluss",
+        "SC/UPC (Einzelfaser)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja"
+      ],
+      [
+        "Leistungsaufnahme",
+        "2,475 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "−20 bis 75 °C"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Splitverhältnis": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "ODN-Klasse": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Sendeleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Empfangsleistung": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/pon-sfp-modules-ds.html",
+        "datasheet"
+      ]
+    }
   }
 }
