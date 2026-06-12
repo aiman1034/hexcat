@@ -94,9 +94,20 @@ defensible locus. **Do not lower V2 to admit prose.**
 Probable bucket for the remaining brands (to confirm per-brand next pass):
 - prose spec-sheet → needs ordering-guide source or new mode: Arista (confirmed), likely
   NVIDIA, Dell, Palo Alto, Huawei.
-- HTML product-listing (mineable IF a static table exists): MikroTik, Supermicro, Ruijie —
-  need fresh URLs + static-table check (else NEEDS-HEADED).
+- HTML **product-card grid** (no <table>, PNs in card markup) → needs a card-extraction mode:
+  MikroTik (confirmed), likely Supermicro, Ruijie.
 - NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme.
+
+### Fresh official URLs found 2026-06-12 (so next pass skips the search)
+- MikroTik (current group page; old /group/optical-modules now 404):
+  `https://mikrotik.com/products/group/sfp-qsfp` — server-rendered card grid, ~10 SFP PNs
+  visible (S+RJ10, S-31DLC20D, S+31DLC10D, S+85DLC03D, S-3553LC20D, …), 0 tables.
+- Arista data sheet (fetched OK, but prose — see boundary above):
+  `https://www.arista.com/assets/data/pdf/Datasheets/Transceiver-Data-Sheet.pdf`;
+  also the compatibility guide `https://www.arista.com/assets/data/pdf/Transceiver-Guide.pdf`
+  (untried — may be more table-structured).
+- Palo Alto datasheet landing (not a direct PDF):
+  `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
 
 ## Next steps
 - **Source acquisition is the gate**, not spec authoring. Next autonomous pass: for the
