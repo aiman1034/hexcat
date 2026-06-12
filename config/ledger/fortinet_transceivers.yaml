@@ -57,5 +57,31 @@ classify:
     - { pn_contains: "SFP+",    unterkategorie: "SFP+" }
   default: "SFP"
 
+# --- Catalog coverage (V9) --------------------------------------------------------
+# The Fortinet transceiver line as enumerated by Fortinet's OWN official transceiver
+# datasheet ("Ordering Information" section) — a single authoritative whole-line ordering
+# list, so this source IS the catalog (unlike Cisco's 29 fragmented sheets). The expected
+# set is therefore exactly the families that authoritative list spans; V9 asserts each has
+# >=1 emitted SKU on the merged ledger. Every token is a locked-22 category AND emittable
+# (classify rule, default, or the universal V5 cable classifier — MPO/DAC/AOC). There is no
+# documented Fortinet transceiver form factor absent from its own ordering list, so a PASS
+# here is a true CALIBRATED-COMPLETE, not a vacuous one. (Fortinet has no XFP/X2/CFP/CPAK/CXP/
+# QSFP112/QSFP-DD800/OSFP optics in its catalog — deliberately NOT listed, so V9 cannot
+# falsely flag families the brand does not make.)
+coverage:
+  expected_families:
+    - SFP
+    - SFP+
+    - SFP28
+    - SFP56
+    - QSFP+
+    - QSFP28
+    - QSFP56
+    - QSFP-DD
+    - CFP2
+    - DAC Kabel
+    - AOC Kabel
+    - MPO Kabel
+
 # Unterkategorie values above are already canonical locked-22 tokens -> identity map.
 locked22_map: {}

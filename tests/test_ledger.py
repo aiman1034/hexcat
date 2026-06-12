@@ -611,3 +611,52 @@ def test_cisco_spec_coverage_19_families_all_locked22_and_reachable():
     from hexcat.config import load_taxonomy
     locked22 = set(load_taxonomy().subcategories)
     assert all(f in locked22 for f in spec.coverage.expected_families)
+
+
+def _spec_emittable(spec):
+    """The set of Unterkategorien a spec can ever emit (classify rules + default + universal
+    V5 cable categories + any PDF chapter tags) — mirrors verify_ledger_spec's reachability set."""
+    from hexcat.ledger.spec import UNIVERSAL_CABLE_CATEGORIES
+    em = {r.unterkategorie for r in spec.classify.rules} | {spec.classify.default}
+    em |= set(UNIVERSAL_CABLE_CATEGORIES)
+    if spec.mine.pdf is not None:
+        em |= set(spec.mine.pdf.chapters.values())
+    return em
+
+
+def test_fortinet_spec_coverage_calibrated_locked22_and_reachable():
+    """Fortinet's V9 contract = the families its own whole-line ordering datasheet spans; a clean
+    verify_ledger_spec load already proves each is locked-22 AND emittable. Lock the contract."""
+    from hexcat.config import load_taxonomy
+    from hexcat.ledger.spec import LEDGER_CONFIG_DIR
+
+    spec = verify_ledger_spec(str(LEDGER_CONFIG_DIR / "fortinet_transceivers.yaml"))
+    assert spec.coverage is not None
+    fams = spec.coverage.expected_families
+    assert set(fams) == {"SFP", "SFP+", "SFP28", "SFP56", "QSFP+", "QSFP28", "QSFP56",
+                         "QSFP-DD", "CFP2", "DAC Kabel", "AOC Kabel", "MPO Kabel"}
+    locked22 = set(load_taxonomy().subcategories)
+    assert all(f in locked22 for f in fams)
+    assert all(f in _spec_emittable(spec) for f in fams)
+    # Fortinet makes no XFP/X2/CFP/CPAK/CXP/OSFP/QSFP112/QSFP-DD800 optics -> not over-claimed.
+    assert not ({"XFP", "X2", "CFP", "CPAK", "CXP", "OSFP", "QSFP112", "QSFP-DD800"} & set(fams))
+
+
+def test_hpe_spec_coverage_calibrated_to_sourced_line():
+    """HPE's V9 contract = the families the AOS-S/CX guide is authoritative for (one per chapter
+    + universal cable cats). FlexFabric/Comware is a SKU-breadth gap within these same form
+    factors, NOT a missing V9 family, so it is deliberately not over-claimed here."""
+    from hexcat.config import load_taxonomy
+    from hexcat.ledger.spec import LEDGER_CONFIG_DIR
+
+    spec = verify_ledger_spec(str(LEDGER_CONFIG_DIR / "hpe_aruba_transceivers.yaml"))
+    assert spec.coverage is not None
+    fams = spec.coverage.expected_families
+    assert set(fams) == {"SFP", "SFP+", "SFP28", "SFP56", "QSFP+", "QSFP28", "QSFP-DD",
+                         "DAC Kabel", "AOC Kabel"}
+    locked22 = set(load_taxonomy().subcategories)
+    assert all(f in locked22 for f in fams)
+    assert all(f in _spec_emittable(spec) for f in fams)
+    # Every listed family is a guide chapter tag or a universal cable category (nothing guessed).
+    chapter_tags = set(spec.mine.pdf.chapters.values())
+    assert set(fams) <= chapter_tags | {"DAC Kabel", "AOC Kabel"}

@@ -16,12 +16,18 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Stage-3 | Status |
 | -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
 | Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
-| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V1–V8 green; V9 coverage spec pending |
-| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V9 spec pending; FlexFabric/Comware gap unchecked |
+| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated-complete; whole-line datasheet) |
+| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated to sourced line; FlexFabric/Comware = SKU-breadth gap, tracked) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
 | 14 others| 0 | not enumerated | — | — | — | NOT-STARTED |
 
-**DONE-VERIFIED count: 1** (Cisco passes the full V1–V9 gate). V9 (catalog-coverage) is BUILT:
+**DONE-VERIFIED count: 3** (Cisco, Fortinet, HPE pass the full V1–V9 gate). Fortinet/HPE V9
+calibrated 2026-06-12: Fortinet expected=12 families (its own whole-line ordering datasheet is
+self-complete → calibrated-COMPLETE); HPE expected=9 families (one per AOS-S/CX guide chapter +
+DAC/AOC). HPE's FlexFabric/Comware line is a SKU-BREADTH gap *within* these same form factors
+(V9 keys on form factor, not product line), so it is tracked in STATUS, not asserted as a missing
+V9 family — closing it = mine the FlexFabric source as an ADDITIONAL merged source, not a coverage
+edit. Coverage_Report_{Fortinet,HPE}.md written. V9 (catalog-coverage) is BUILT:
 config-driven per-brand `coverage.expected_families`; runs on the MERGED ledger; each expected
 locked-22 family must have ≥1 SKU else KNOWN-INCOMPLETE (names the gap) and DONE-VERIFIED is
 blocked. `verify_ledger_spec` guards every coverage family is locked-22 AND reachable by a rule.

@@ -65,5 +65,34 @@ classify:
   rules: []
   default: "SFP"
 
+# --- Catalog coverage (V9) --------------------------------------------------------
+# The form-factor families the SOURCED document — the AOS-S/AOS-CX Transceiver Guide — is
+# authoritative for. These are the families the Aruba campus/CX switching line spans, one per
+# guide chapter (+ the universal DAC/AOC cable categories). V9 asserts each has >=1 emitted SKU
+# on the merged ledger; all are present, so V9 PASSES for the sourced line. Every token is a
+# locked-22 category AND emittable (a guide chapter tag or the universal V5 cable classifier).
+#
+# DELIBERATELY NOT listed — and why (flag-don't-emit, do not guess a family into KNOWN-INCOMPLETE):
+#   * QSFP56 / OSFP / QSFP-DD800 / QSFP112 / CFP / CFP2 / XFP / X2 / CPAK / CXP / MPO Kabel —
+#     no chapter in this guide emits them and no current source confirms HPE/Aruba ships them,
+#     so listing them would make V9 fail on an unverifiable guess rather than a sourced gap.
+#   * HPE FlexFabric / Comware (data-center) transceiver line — a genuine KNOWN PRODUCT-LINE
+#     gap, but it reuses the SAME form factors already covered here (SFP/SFP+/SFP28/QSFP+/
+#     QSFP28/QSFP-DD). It is a SKU-BREADTH gap WITHIN existing families, which V9's form-factor
+#     model cannot express; it is tracked in STATUS.md, NOT asserted as a missing V9 family.
+#     Closing it = mine the FlexFabric/Comware transceiver source as an ADDITIONAL source and
+#     merge (V1-V8 per source), not a coverage edit here.
+coverage:
+  expected_families:
+    - SFP
+    - SFP+
+    - SFP28
+    - SFP56
+    - QSFP+
+    - QSFP28
+    - QSFP-DD
+    - DAC Kabel
+    - AOC Kabel
+
 # Chapter form-factor tags are already canonical locked-22 tokens -> identity map.
 locked22_map: {}
