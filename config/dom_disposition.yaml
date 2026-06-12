@@ -43,15 +43,18 @@ brands:
       optical SKUs stay flagged GAP — honest debt, not fabricated. Re-open only if Arista publishes
       a per-SKU DOM source.
   HPE:
-    verdict: PUBLISHED_PENDING
+    verdict: SOURCE_SILENT
     grounded: 0
     expected_gap: 77
     evidence: >-
-      The HPE/Aruba datasheet (datasheets/cache/hpe-aruba-transceivers.pdf, 220pp) DOES state DOM
-      per SKU inside the spec matrices from p38 onward (~48 DOM mentions located), but the extracted
-      text mangles the matrix column alignment, so a strict-aligned mine has not yet succeeded.
-      Held as PENDING: the 77 expected SKUs stay GAP until a column-safe extraction lands. No value
-      is guessed from the misaligned text.
+      Re-examined the HPE/Aruba datasheet (datasheets/cache/hpe-aruba-transceivers.pdf, 220pp)
+      page by page. It does NOT publish a per-SKU "DOM: Yes/No" spec value: the DOM hits are (a) a
+      per-page sidebar nav token "DOM " linking to (b) a glossary that merely DEFINES DOM/DDM (p35),
+      and (c) "Identification of 4x4 Part ... digital optical monitoring (4x4 part #)" tables (p127+)
+      that map a part to its firmware 4x4 number, not a DOM-support boolean. Deriving "Ja"/"Nein"
+      from the 4x4 tables would be inference, not verbatim grounding -> forbidden by the 1000% rule.
+      The 77 expected optical SKUs stay flagged GAP (same honest outcome as Arista). Re-open only if
+      HPE publishes a per-SKU DOM-support source.
   Fortinet:
     verdict: PUBLISHED_EXTRACTED
     grounded: 32
