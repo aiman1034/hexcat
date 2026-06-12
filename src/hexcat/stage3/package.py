@@ -51,6 +51,33 @@ ATTRIBUTART = "Attribut"
 ZUSTAND_NEU = "Neu, versiegelt"
 PRICE_PLACEHOLDER = "0.00"                           # operator-supplied; PRICES-PENDING flag
 
+# --- Beschreibung composition (verbatim section markers from the proof slice) ------------
+# The proof-slice Beschreibung is a composed HTML document, NOT free prose: 3 intro <p>,
+# then a "Technische Daten" <ul> (rendered from the verified attributes — single source of
+# truth, so it can never drift from Attributes.csv), an optional "Kompatibilität" <ul> + the
+# fixed matrix note, the FAQ as <p><strong>Q?</strong><br>A</p> blocks, and an optional
+# "Verwandte Produkte" <ul> of in-catalog links. The tool composes; the author supplies only
+# verified facts (intro text, compatibility lines, FAQ pairs, related PNs).
+TECH_HEADING = "Technische Daten:"
+KOMPAT_HEADING = "Kompatibilität:"
+FAQ_HEADING = "Häufig gestellte Fragen:"
+VERWANDT_HEADING = "Verwandte Produkte:"
+MATRIX_NOTE = ("Aktuelle Kompatibilität bitte über die Cisco Optics Compatibility Matrix "
+               "(TMG) für die jeweilige Plattform und Software-Version prüfen.")
+# Condition is a commerce flag, not a datasheet spec — it stays in Attributes.csv but is
+# excluded from the embedded Technische-Daten list (matching the proof slice).
+_TECH_EXCLUDE = {"Zustand"}
+
+# --- Stage-3 content budgets (from the authoritative proof slice; NO Phase-2 closer) ------
+KURZ_P_COUNT = 2
+KURZ_MIN_WORDS, KURZ_MAX_WORDS = 40, 80
+INTRO_P_COUNT = 3
+INTRO_MIN_WORDS, INTRO_MAX_WORDS = 90, 175
+TITEL_MAX_CHARS = 60
+TITEL_SUFFIX = "| Hexwaren"
+META_MIN_CHARS, META_MAX_CHARS = 140, 200
+FAQ_MIN_PAIRS, FAQ_MAX_PAIRS = 3, 10
+
 # --- form-factor weight defaults (kg) — used only when the datasheet states none ---------
 # (Artikelgewicht, Versandgewicht). Grounded in the proof slice (SFP+ 0.025/0.08, QSFP28
 # 0.05/0.15, DAC ~0.15-0.30, XFP 0.03/0.10). Cable lengths refine these in-session.
@@ -101,22 +128,84 @@ class SkuContent:
     """In-session-authored, datasheet-verified content + verified spec attributes.
 
     `attributes` is an ordered list of (Attributname, Attributwert) the author has
-    round-tripped against the datasheet. `netto_vk` is operator-supplied (None -> pending).
-    Empty/None prose fields keep the SKU in the GENERATED (not IMPORT-READY) state.
+    round-tripped against the datasheet — it feeds BOTH Attributes.csv and the embedded
+    Technische-Daten list. The Beschreibung is either supplied verbatim (`beschreibung`) or
+    composed from the structured pieces (`intro` 3×, `kompatibilitaet`, `faq`, `verwandte`)
+    via `rendered_beschreibung`. `netto_vk` is operator-supplied (None -> pending). Empty
+    prose keeps the SKU in the GENERATED (not IMPORT-READY) state.
     """
     artikelname: str = ""
     titel_tag: str = ""
     meta_description: str = ""
     kurzbeschreibung: str = ""
-    beschreibung: str = ""
+    beschreibung: str = ""                              # verbatim override; else composed
+    intro: list[str] = field(default_factory=list)      # 3 plain-text intro paragraphs
+    kompatibilitaet: list[str] = field(default_factory=list)
+    faq: list[tuple[str, str]] = field(default_factory=list)
+    verwandte: list[tuple[str, str]] = field(default_factory=list)  # (PN, link text)
     attributes: list[tuple[str, str]] = field(default_factory=list)
     netto_vk: str | None = None
     # verification provenance for authored spec values (Attributname -> (Source_URL, Confidence))
     provenance: dict[str, tuple[str, str]] = field(default_factory=dict)
 
+    def rendered_beschreibung(self, brand: str) -> str:
+        """The final Beschreibung HTML — the verbatim override if set, else composed."""
+        if self.beschreibung:
+            return self.beschreibung
+        if self.intro:
+            return compose_beschreibung(
+                intro=self.intro, attributes=self.attributes,
+                kompatibilitaet=self.kompatibilitaet, faq=self.faq,
+                verwandte=self.verwandte, brand=brand)
+        return ""
+
     def is_complete(self) -> bool:
+        has_beschr = bool(self.beschreibung or self.intro)
         return all([self.artikelname, self.titel_tag, self.meta_description,
-                    self.kurzbeschreibung, self.beschreibung]) and bool(self.attributes)
+                    self.kurzbeschreibung, has_beschr]) and bool(self.attributes)
+
+
+def compose_beschreibung(
+    *,
+    intro: list[str],
+    attributes: list[tuple[str, str]],
+    kompatibilitaet: list[str],
+    faq: list[tuple[str, str]],
+    verwandte: list[tuple[str, str]],
+    brand: str,
+) -> str:
+    """Compose the proof-slice Beschreibung HTML from structured, verified pieces.
+
+    Section order is fixed: intro <p>×N, Technische Daten <ul> (from `attributes`, minus
+    Zustand, + empty GTIN), Kompatibilität <ul> + matrix note (omitted if empty), FAQ
+    <p><strong>Q?</strong><br>A</p> blocks, Verwandte Produkte <ul> (omitted if empty).
+    Related-product hrefs are slugged exactly like Main-file URL-Pfad (`/<brand>/<pn>`).
+    """
+    brand_slug = url_slug(brand)
+    parts: list[str] = [f"<p>{p}</p>" for p in intro]
+
+    tech = [(n, v) for n, v in attributes if n not in _TECH_EXCLUDE]
+    if tech:
+        lis = "".join(f"<li><strong>{n}:</strong> {v}</li>" for n, v in tech)
+        lis += "<li><strong>GTIN:</strong> </li>"
+        parts.append(f"<p><strong>{TECH_HEADING}</strong></p><ul>{lis}</ul>")
+
+    if kompatibilitaet:
+        lis = "".join(f"<li>{k}</li>" for k in kompatibilitaet)
+        parts.append(f"<p><strong>{KOMPAT_HEADING}</strong></p><ul>{lis}</ul>")
+        parts.append(f"<p>{MATRIX_NOTE}</p>")
+
+    if faq:
+        parts.append(f"<p><strong>{FAQ_HEADING}</strong></p>")
+        parts.extend(f"<p><strong>{q}</strong><br>{a}</p>" for q, a in faq)
+
+    if verwandte:
+        lis = "".join(
+            f'<li><a href="/{brand_slug}/{url_slug(pn)}">{text}</a></li>'
+            for pn, text in verwandte)
+        parts.append(f"<p><strong>{VERWANDT_HEADING}</strong></p><ul>{lis}</ul>")
+
+    return "".join(parts)
 
 
 @dataclass
@@ -128,6 +217,60 @@ class PackageResult:
     pending_content: list[str] = field(default_factory=list)
     pending_prices: list[str] = field(default_factory=list)
     paths: dict[str, Path] = field(default_factory=dict)
+
+
+def _words(html: str) -> int:
+    import re
+    return len(re.sub(r"<[^>]+>", "", html).split())
+
+
+def content_issues(pn: str, c: SkuContent, *, brand: str) -> list[str]:
+    """Stage-3 content gate — verify one authored SKU against the proof-slice budgets.
+
+    Returns human-readable problems ([] == passes). Mirrors the authoritative slice:
+    Kurzbeschreibung 2×<p>/40-80 words, intro 3×<p>/90-175 words, Titel-Tag <=60 chars
+    ending '| Hexwaren', Meta 140-200 chars, FAQ 3-10 pairs. (No Phase-2 authenticity
+    closer — the slice carries authenticity in the FAQ/Meta, not a forced tail.)
+    """
+    issues: list[str] = []
+    ko = c.kurzbeschreibung.count("<p>")
+    kc = c.kurzbeschreibung.count("</p>")
+    if ko != KURZ_P_COUNT or kc != KURZ_P_COUNT:
+        issues.append(f"{pn}: Kurzbeschreibung needs exactly {KURZ_P_COUNT} <p>…</p> "
+                      f"(found {ko}/{kc}).")
+    kw = _words(c.kurzbeschreibung)
+    if not (KURZ_MIN_WORDS <= kw <= KURZ_MAX_WORDS):
+        issues.append(f"{pn}: Kurzbeschreibung {KURZ_MIN_WORDS}-{KURZ_MAX_WORDS} words "
+                      f"(found {kw}).")
+
+    # Intro: validate the structured paragraphs (or the override's leading prose).
+    if c.intro:
+        if len(c.intro) != INTRO_P_COUNT:
+            issues.append(f"{pn}: Beschreibung intro needs exactly {INTRO_P_COUNT} "
+                          f"paragraphs (found {len(c.intro)}).")
+        iw = sum(_words(p) for p in c.intro)
+        if not (INTRO_MIN_WORDS <= iw <= INTRO_MAX_WORDS):
+            issues.append(f"{pn}: Beschreibung intro {INTRO_MIN_WORDS}-{INTRO_MAX_WORDS} "
+                          f"words (found {iw}).")
+    elif not c.beschreibung:
+        issues.append(f"{pn}: Beschreibung missing (no intro paragraphs, no override).")
+
+    if len(c.titel_tag) > TITEL_MAX_CHARS:
+        issues.append(f"{pn}: Titel-Tag <= {TITEL_MAX_CHARS} chars (found {len(c.titel_tag)}).")
+    if not c.titel_tag.endswith(TITEL_SUFFIX):
+        issues.append(f"{pn}: Titel-Tag must end with '{TITEL_SUFFIX}'.")
+
+    ml = len(c.meta_description)
+    if not (META_MIN_CHARS <= ml <= META_MAX_CHARS):
+        issues.append(f"{pn}: Meta-Description {META_MIN_CHARS}-{META_MAX_CHARS} chars "
+                      f"(found {ml}).")
+
+    if c.intro and not (FAQ_MIN_PAIRS <= len(c.faq) <= FAQ_MAX_PAIRS):
+        issues.append(f"{pn}: FAQ {FAQ_MIN_PAIRS}-{FAQ_MAX_PAIRS} pairs (found {len(c.faq)}).")
+
+    if not c.attributes:
+        issues.append(f"{pn}: no verified attributes.")
+    return issues
 
 
 def _derive_attributes(facts: SkuFacts) -> list[tuple[str, str]]:
@@ -178,7 +321,7 @@ def build_package(
             "Kategorie Ebene 2": KAT_EBENE_2,
             "Kategorie Ebene 3": f.unterkategorie,
             "Kurzbeschreibung": (c.kurzbeschreibung if c else ""),
-            "Beschreibung": (c.beschreibung if c else ""),
+            "Beschreibung": (c.rendered_beschreibung(brand) if c else ""),
             "Artikelgewicht": art_w,
             "Versandgewicht": ship_w,
             "Versandklasse": VERSANDKLASSE,
@@ -295,8 +438,12 @@ def write_content_template(facts: list[SkuFacts], path: str | Path) -> Path:
             "artikelname": "",
             "titel_tag": "",
             "meta_description": "",
-            "kurzbeschreibung": "",
-            "beschreibung": "",
+            "kurzbeschreibung": "",          # 2× <p>, 40-80 words
+            "intro": [],                      # 3 plain-text paragraphs (composed into <p>)
+            "kompatibilitaet": [],            # platform support lines (optional)
+            "faq": [],                        # [["Frage?","Antwort"], …] 3-10 pairs
+            "verwandte": [],                  # [["PN","Linktext"], …] related products (optional)
+            "beschreibung": "",              # leave blank — composed from intro/faq/etc.
             "attributes": [list(pair) for pair in _derive_attributes(f)],
             "netto_vk": None,
             "provenance": {},
@@ -316,8 +463,11 @@ def read_content(path: str | Path) -> dict[str, SkuContent]:
     for pn, entry in data.items():
         if not isinstance(entry, dict):
             continue
-        attrs = [(str(a[0]), str(a[1])) for a in entry.get("attributes", [])
-                 if isinstance(a, (list, tuple)) and len(a) >= 2]
+        def _pairs(key: str) -> list[tuple[str, str]]:
+            return [(str(a[0]), str(a[1])) for a in (entry.get(key) or [])
+                    if isinstance(a, (list, tuple)) and len(a) >= 2]
+
+        attrs = _pairs("attributes")
         prov = {str(k): (str(v[0]), str(v[1]))
                 for k, v in (entry.get("provenance") or {}).items()
                 if isinstance(v, (list, tuple)) and len(v) >= 2}
@@ -327,12 +477,17 @@ def read_content(path: str | Path) -> dict[str, SkuContent]:
             meta_description=entry.get("meta_description") or "",
             kurzbeschreibung=entry.get("kurzbeschreibung") or "",
             beschreibung=entry.get("beschreibung") or "",
+            intro=[str(p) for p in (entry.get("intro") or [])],
+            kompatibilitaet=[str(k) for k in (entry.get("kompatibilitaet") or [])],
+            faq=_pairs("faq"),
+            verwandte=_pairs("verwandte"),
             attributes=attrs,
             netto_vk=(entry.get("netto_vk") or None),
             provenance=prov,
         )
         # Skip wholly-blank scaffold entries so they remain content-pending, not half-emitted.
-        if any(getattr(c, fld) for fld in CONTENT_FIELDS):
+        if c.kurzbeschreibung or c.beschreibung or c.intro or any(
+                getattr(c, fld) for fld in CONTENT_FIELDS):
             content[pn] = c
     return content
 

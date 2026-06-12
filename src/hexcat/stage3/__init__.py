@@ -26,6 +26,8 @@ from .package import (
     SkuContent,
     SkuFacts,
     build_package,
+    compose_beschreibung,
+    content_issues,
     read_content,
     read_ledger_facts,
     url_slug,
@@ -46,5 +48,7 @@ __all__ = [
     "read_ledger_facts",
     "read_content",
     "write_content_template",
+    "compose_beschreibung",
+    "content_issues",
     "url_slug",
 ]

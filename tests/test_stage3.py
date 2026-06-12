@@ -18,12 +18,14 @@ from hexcat.stage3 import (
     SkuContent,
     SkuFacts,
     build_package,
+    compose_beschreibung,
+    content_issues,
     read_content,
     url_slug,
     write_content_template,
     write_package,
 )
-from hexcat.stage3.package import VERIFICATION_COLUMNS
+from hexcat.stage3.package import MATRIX_NOTE, VERIFICATION_COLUMNS
 
 
 def test_url_slug_matches_proof_slice():
@@ -170,3 +172,117 @@ def test_blank_template_reads_as_no_content_then_lifts_when_filled(tmp_path):
     # Provenance flows into the Verification_Log.
     geo = [v for v in verif if v["Attributname"] == "Geschwindigkeit"][0]
     assert geo["Source_URL"] == "https://x" and geo["Confidence"] == "datasheet"
+
+
+def test_compose_beschreibung_matches_proof_section_order():
+    """Composed Beschreibung reproduces the proof-slice section structure & markers, and the
+    Technische-Daten list is rendered from attributes (single source of truth, no Zustand)."""
+    html = compose_beschreibung(
+        intro=["Erster Absatz.", "Zweiter Absatz.", "Dritter Absatz."],
+        attributes=[("Formfaktor", "QSFP28"), ("Geschwindigkeit", "100 Gbit/s"),
+                    ("Zustand", "Neu, versiegelt")],
+        kompatibilitaet=["Cisco Nexus 9300 — NX-OS 7.0(3)I7(1) und höher"],
+        faq=[("Frage eins?", "Antwort eins."), ("Frage zwei?", "Antwort zwei."),
+             ("Frage drei?", "Antwort drei.")],
+        verwandte=[("QSFP-100G-SR4-S", "Cisco QSFP-100G-SR4-S — 100G SR4")],
+        brand="Cisco",
+    )
+    # intro paragraphs first, in order
+    assert html.startswith("<p>Erster Absatz.</p><p>Zweiter Absatz.</p><p>Dritter Absatz.</p>")
+    # Technische Daten rendered from attributes, Zustand excluded, empty GTIN appended
+    assert "<p><strong>Technische Daten:</strong></p><ul>" in html
+    assert "<li><strong>Formfaktor:</strong> QSFP28</li>" in html
+    assert "<li><strong>Geschwindigkeit:</strong> 100 Gbit/s</li>" in html
+    assert "Zustand" not in html.split("Kompatibilität")[0]        # not in the tech list
+    assert "<li><strong>GTIN:</strong> </li>" in html
+    # Kompatibilität + the fixed matrix note
+    assert f"<p><strong>Kompatibilität:</strong></p>" in html
+    assert MATRIX_NOTE in html
+    # FAQ block markup
+    assert "<p><strong>Häufig gestellte Fragen:</strong></p>" in html
+    assert "<p><strong>Frage eins?</strong><br>Antwort eins.</p>" in html
+    # Verwandte Produkte with slugged in-catalog href
+    assert ('<li><a href="/cisco/qsfp-100g-sr4-s">Cisco QSFP-100G-SR4-S — 100G SR4</a></li>'
+            in html)
+    # section order: intro < tech < kompat < faq < verwandte
+    assert (html.index("Technische Daten") < html.index("Kompatibilität")
+            < html.index("Häufig gestellte Fragen") < html.index("Verwandte Produkte"))
+
+
+def test_compose_omits_optional_empty_sections():
+    html = compose_beschreibung(
+        intro=["Nur Intro."], attributes=[("Formfaktor", "SFP+")],
+        kompatibilitaet=[], faq=[], verwandte=[], brand="Cisco")
+    assert "Kompatibilität" not in html and MATRIX_NOTE not in html
+    assert "Häufig gestellte Fragen" not in html
+    assert "Verwandte Produkte" not in html
+    assert "Technische Daten" in html                              # attrs present -> rendered
+
+
+def test_structured_content_round_trips_and_composes_in_package(tmp_path):
+    facts = [SkuFacts(pn="X2-10GB-LR", unterkategorie="X2", quell_url="https://ds")]
+    content = {"X2-10GB-LR": SkuContent(
+        artikelname="Cisco X2-10GB-LR 10GBASE-LR X2 Modul — 10 km SMF, 1310 nm",
+        titel_tag="Cisco X2-10GB-LR 10G LR 10 km | Hexwaren",
+        meta_description=("Original Cisco X2-10GB-LR 10GBASE-LR X2 Modul kaufen — 1310 nm "
+                          "Singlemode, 10 km, Dual-SC. Neu, versiegelt. Für Cisco Catalyst "
+                          "und Router mit X2-Steckplatz."),
+        kurzbeschreibung=("<p>Das Cisco X2-10GB-LR ist ein originales 10GBASE-LR X2 Modul "
+                          "mit Dual-SC-Anschluss und überträgt 10 Gigabit Ethernet über "
+                          "1310 nm bis zehn Kilometer auf Singlemode-Faser nach IEEE "
+                          "802.3ae im Campus und Rechenzentrum.</p><p>Voll hot-swappable "
+                          "und mit Cisco Quality-ID ausgestattet, fügt es sich nahtlos in "
+                          "Catalyst Switches und Router mit X2-Steckplatz ein und bietet "
+                          "ausreichend Leistungsreserve für lange Backbone-Strecken.</p>"),
+        intro=["Das Cisco X2-10GB-LR ist ein 10GBASE-LR X2 Modul mit Dual-SC-Anschluss für "
+               "Singlemode-Faser, das 10 Gigabit Ethernet über 1310 nm bis zehn Kilometer "
+               "überträgt und sich in Cisco Catalyst Switches und Router mit X2-Steckplatz "
+               "einfügt für klassische Backbone- und Campus-Verbindungen im Rechenzentrum.",
+               "Mit einer Sendeleistung von 0,5 dBm und einer Empfangsempfindlichkeit bis "
+               "-14,4 dBm bietet das Modul ausreichend Reserve für lange Singlemode-Strecken "
+               "nach IEEE 802.3ae und bleibt dabei voll hot-swappable im laufenden Betrieb.",
+               "Die Leistungsaufnahme liegt unter vier Watt je Modul, der Betrieb erfolgt im "
+               "kommerziellen Temperaturbereich von null bis siebzig Grad Celsius, und die "
+               "Cisco Quality-ID stellt die Erkennung als geprüftes Original-Modul sicher."],
+        kompatibilitaet=["Cisco Catalyst und Router mit X2-Steckplatz — siehe Xenpak/X2 "
+                         "Compatibility Matrix"],
+        faq=[("Ist dies ein originales Cisco-Modul?",
+              "Ja, Original Cisco-Neuware aus autorisiertem Kanal, versiegelt."),
+             ("Welche Faser wird benötigt?",
+              "Singlemode-Faser (SMF, G.652) mit Dual-SC-Anschluss, bis 10 km."),
+             ("Welche Wellenlänge nutzt das Modul?", "1310 nm nach IEEE 802.3ae 10GBASE-LR.")],
+        verwandte=[("X2-10GB-ER", "Cisco X2-10GB-ER — 10GBASE-ER 40 km SMF")],
+        attributes=[("Formfaktor", "X2"), ("Geschwindigkeit", "10 Gbit/s"),
+                    ("Standard", "IEEE 802.3ae 10GBASE-LR"), ("Wellenlänge", "1310 nm"),
+                    ("Reichweite", "10 km"), ("Anschluss", "Dual SC/PC"),
+                    ("Fasertyp", "Singlemode (SMF, G.652)"), ("Zustand", "Neu, versiegelt")],
+        provenance={"Reichweite": ("https://ds", "datasheet")},
+    )}
+    assert content_issues("X2-10GB-LR", content["X2-10GB-LR"], brand="Cisco") == []
+    res = write_package(facts, tmp_path, brand="Cisco", content=content)
+    assert res.state == "PRICES-PENDING"                            # complete prose, no price
+    text = res.paths["main"].read_bytes().decode("utf-8-sig")
+    rows = list(csv.DictReader(io.StringIO(text)))
+    b = rows[0]["Beschreibung"]
+    assert b.startswith("<p>Das Cisco X2-10GB-LR")
+    assert "<li><strong>Reichweite:</strong> 10 km</li>" in b
+    assert MATRIX_NOTE in b
+    assert '<li><a href="/cisco/x2-10gb-er">' in b                  # slugged related link
+
+
+def test_content_gate_flags_budget_violations():
+    bad = SkuContent(
+        artikelname="x", titel_tag="Way too long a title tag that definitely exceeds sixty chars | Hexwaren",
+        meta_description="too short",
+        kurzbeschreibung="<p>only one paragraph here</p>",
+        intro=["one", "two"],                                       # 2 not 3 paragraphs
+        faq=[("q?", "a")],                                          # 1 < 3 pairs
+        attributes=[("Formfaktor", "SFP+")],
+    )
+    issues = content_issues("BAD", bad, brand="Cisco")
+    joined = " ".join(issues)
+    assert "Kurzbeschreibung needs exactly 2" in joined
+    assert "intro needs exactly 3" in joined
+    assert "Titel-Tag <= 60" in joined
+    assert "Meta-Description 140-200" in joined
+    assert "FAQ 3-10 pairs" in joined
