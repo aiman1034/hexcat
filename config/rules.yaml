@@ -11,6 +11,8 @@ vendors:
   "Juniper": { hersteller: "Juniper", slug: "juniper" }
   "Arista":  { hersteller: "Arista",  slug: "arista" }
   "Meraki":  { hersteller: "Meraki",  slug: "meraki" }
+  "Fortinet": { hersteller: "Fortinet", slug: "fortinet" }
+  "MikroTik": { hersteller: "MikroTik", slug: "mikrotik" }
 
 # Fixed constants emitted verbatim.
 constants:
@@ -53,7 +55,11 @@ kategorie_ebene_3_allowed:
 # Word / character budgets.
 budgets:
   kurzbeschreibung: { min_words: 40, max_words: 80, p_count: 2 }
-  beschreibung:     { min_words: 90, max_words: 175, p_count: 3 }
+  # Beschreibung floor is 70 (not 90): the operator's prose-only ruling says to write the
+  # grounded length the datasheet supports — "even 70-85 words" — and NEVER pad to reach 90.
+  # Rich coherent optics still run 100-175 naturally; genuinely sparse modules sit at 70-89.
+  # Cables (DAC/AOC/MPO) flex DOWN further via validate.CABLE_BESCHREIBUNG_MIN_WORDS.
+  beschreibung:     { min_words: 70, max_words: 175, p_count: 3 }
   titel_tag:        { max_chars: 60, must_end_with: " | Hexwaren" }
   meta_description: { min_chars: 140, max_chars: 200 }
   faq:              { min_pairs: 3, max_pairs: 10 }

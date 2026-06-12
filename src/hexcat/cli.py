@@ -495,60 +495,89 @@ def stage3_template(
 
 @app.command("stage3")
 def stage3(
-    ledger: Path = typer.Option(
-        Path("output/Cisco_Transceivers_Ledger.xlsx"), "--ledger", "-l",
-        help="DONE-VERIFIED Stage-1 ledger workbook (its 'Neue Artikel' sheet is the spine).",
+    content: Path = typer.Option(
+        ..., "--content", "-c",
+        help="Authored content sidecar JSON (from `hexcat stage3-template`, filled in-session). "
+             "Carries facts + prose + verified attributes; reconciled onto the canonical contract.",
     ),
-    brand: str = typer.Option("Cisco", "--brand", "-b", help="Brand (Hersteller / URL prefix)."),
+    brand: str = typer.Option(..., "--brand", "-b", help="Brand / vendor key (e.g. Cisco, MikroTik)."),
     out: Path = typer.Option(
         Path("output/stage3"), "--out", "-o", help="Directory for the v5.0 package files."
     ),
-    stem: str = typer.Option(None, "--stem", help="Filename stem (default: <Brand>_Transceivers)."),
-    content: Path = typer.Option(
-        None, "--content", "-c",
-        help="Authored content sidecar JSON (from `hexcat stage3-template`, filled in-session). "
-             "Supplies prose + verified attributes; absent SKUs stay content-pending.",
+    category: str = typer.Option(
+        None, "--category", help="Category slug for Main/Attr/Flag/Prices filenames "
+                                 "(default: <Brand>_Transceivers)."
+    ),
+    batch: str = typer.Option(
+        None, "--batch", help="Batch name for Condition/FAQ/Verification filenames (default: <Brand>)."
     ),
 ):
-    """Stage 3: generate the byte-exact v5.0 JTL-Ameise import package from a verified ledger.
+    """Stage 3: generate the byte-exact v5.0 JTL-Ameise import package from an authored sidecar.
 
-    Deterministic scaffold — fills every ledger-derivable field (Artikelnummer, HAN, Hersteller,
-    URL-Pfad, Kategorie Ebene 1/2/3, flags, weights), placeholder prices (PRICES-PENDING), and a
-    Verification_Log. German prose + verified spec values are authored IN-SESSION ($0) on top,
-    supplied via `--content` (see `hexcat stage3-template`).
+    CONVERGED path — each authored SKU is reconciled onto a canonical SkuRecord and assembled by
+    the SAME `assemble_bundle` / `constants` / `writers` the proof slice used, then gated by the
+    full-spec `validate_dir`. There is exactly ONE output contract (the divergent package.py
+    writer is retired). Prices stay PRICES-PENDING; German prose + verified specs are authored
+    IN-SESSION ($0). Non-compliant bundles are quarantined, never emitted.
     """
-    from .stage3 import read_content, read_ledger_facts, write_package
+    from .stage3 import reconcile_content
+    from .stage3.reconcile import ReconcileError
 
-    if not ledger.exists():
-        err_console.print(f"[bold red]Ledger not found:[/] {ledger} (run `hexcat ledger … ` first).")
+    rules = load_rules()
+    weights = load_weights()
+    verify_taxonomy()
+
+    if not content.exists():
+        err_console.print(f"[bold red]Content sidecar not found:[/] {content} "
+                          "(run `hexcat stage3-template` first, then fill it in-session).")
         raise typer.Exit(code=2)
 
-    facts = read_ledger_facts(ledger)
-    if not facts:
-        err_console.print(f"[bold red]No SKUs[/] in {ledger} 'Neue Artikel' sheet.")
+    try:
+        records = reconcile_content(content, brand=brand, rules=rules, weights=weights)
+    except ReconcileError as e:
+        err_console.print(f"[bold red]Reconcile error:[/] {e}")
         raise typer.Exit(code=2)
 
-    authored = None
-    if content is not None:
-        if not content.exists():
-            err_console.print(f"[bold red]Content sidecar not found:[/] {content} "
-                              "(run `hexcat stage3-template` first, then fill it in-session).")
-            raise typer.Exit(code=2)
-        authored = read_content(content)
-        console.print(f"[dim]Loaded authored content for {len(authored)} SKU(s) from {content.name}.[/]")
+    category = category or f"{brand}_Transceivers"
+    batch = batch or brand
 
-    result = write_package(facts, out, brand=brand, stem=stem, content=authored)
-    console.print(f"[bold green]Stage-3 package written:[/] {result.out_dir}  "
-                  f"[dim]({result.sku_count} SKUs)[/]")
-    for k, p in result.paths.items():
-        console.print(f"  [cyan]{k:13s}[/] {p.name}")
-    console.print(f"[bold]State:[/] {result.state}")
-    if result.pending_content:
-        console.print(f"[yellow]CONTENT-PENDING ({len(result.pending_content)}):[/] prose + "
-                      "verified spec attributes authored in-session ($0).")
-    if result.pending_prices:
-        console.print(f"[yellow]PRICES-PENDING ({len(result.pending_prices)}):[/] "
-                      "operator supplies Netto-VK (only operator-supplied field).")
+    out.mkdir(parents=True, exist_ok=True)
+    staging = out / _STAGING
+    if staging.exists():
+        shutil.rmtree(staging)
+
+    manifest = assemble_bundle(
+        records, rules, batch=batch, category=category, out_dir=staging,
+    )
+    validation = validate_dir(rules, staging)
+
+    quarantined = not validation.ok
+    if validation.ok:
+        for f in manifest.files:
+            dest = out / f.path.name
+            if dest.exists():
+                dest.unlink()
+            shutil.move(str(f.path), str(dest))
+            f.path = dest
+        manifest.out_dir = out
+        shutil.rmtree(staging, ignore_errors=True)
+    else:
+        quarantine = out / _QUARANTINE
+        if quarantine.exists():
+            shutil.rmtree(quarantine)
+        shutil.move(str(staging), str(quarantine))
+        manifest.out_dir = quarantine
+        for f in manifest.files:
+            f.path = quarantine / f.path.name
+
+    render_report(
+        console,
+        manifest=manifest,
+        records=records,
+        validation=validation,
+        quarantined=quarantined,
+    )
+    raise typer.Exit(code=0 if validation.ok else 1)
 
 
 if __name__ == "__main__":

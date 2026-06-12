@@ -17,38 +17,30 @@ Division of labour (HexCat hard rule — ZERO-DOLLAR, deterministic core, flag-d
 """
 from __future__ import annotations
 
+# Template flow (still live): read the verified ledger + emit the $0 in-session content
+# sidecar. The package.py *writer* (build_package/write_package/compose_beschreibung) is
+# RETIRED from the live path — Stage-3 packages are now assembled by the canonical
+# `assemble_bundle` via `reconcile_content` so there is exactly ONE output contract.
 from .package import (
-    ATTR_COLUMNS,
-    MAIN_COLUMNS,
-    PLATFORM_COLUMNS,
-    PRICES_COLUMNS,
-    PackageResult,
-    SkuContent,
     SkuFacts,
-    build_package,
-    compose_beschreibung,
-    content_issues,
-    read_content,
     read_ledger_facts,
-    url_slug,
     write_content_template,
-    write_package,
+)
+from .reconcile import (
+    ReconcileError,
+    entry_to_intake,
+    physical_formfaktor,
+    reconcile_content,
 )
 
 __all__ = [
-    "MAIN_COLUMNS",
-    "ATTR_COLUMNS",
-    "PLATFORM_COLUMNS",
-    "PRICES_COLUMNS",
+    # template flow
     "SkuFacts",
-    "SkuContent",
-    "PackageResult",
-    "build_package",
-    "write_package",
     "read_ledger_facts",
-    "read_content",
     "write_content_template",
-    "compose_beschreibung",
-    "content_issues",
-    "url_slug",
+    # converged build flow
+    "reconcile_content",
+    "entry_to_intake",
+    "physical_formfaktor",
+    "ReconcileError",
 ]

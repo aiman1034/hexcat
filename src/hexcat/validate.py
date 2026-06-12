@@ -37,6 +37,16 @@ ROLE_GLOBS = {
 }
 SIX_FILES = ("main", "attributes", "platformflag", "prices", "condition", "faq")
 
+# Beschreibung must be PROSE-ONLY (item 6): the only markup allowed is <p>/</p>. A spec
+# <ul>, an emphasis <strong>, a <br> or an <a> anchor is a divergent-writer composition
+# artifact and a hard fail — specs live in the Attributes file, FAQ in the FAQ file.
+_ANY_TAG_RE = re.compile(r"</?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>")
+_ALLOWED_BESCH_TAGS = {"p"}
+# The Beschreibung word-floor flexes DOWN for sparse cable/DAC assemblies (item 6): a passive
+# DAC needs less grounded prose than a coherent transceiver, and we NEVER pad to a floor.
+# Modules keep the full rules floor; cables get this lower floor.
+CABLE_BESCHREIBUNG_MIN_WORDS = 60
+
 ROLE_SPEC = {
     "main": (C.MAIN_COLUMNS, C.MAIN_DELIMITER, C.MAIN_BOM),
     "attributes": (C.ATTRIBUTES_COLUMNS, C.ATTRIBUTES_DELIMITER, C.ATTRIBUTES_BOM),
@@ -191,6 +201,8 @@ class Validator:
         i_k2 = self._col(t, "Kategorie Ebene 2")
         i_k3 = self._col(t, "Kategorie Ebene 3")
 
+        # sentence -> set of SKUs whose Beschreibung contains it (cross-SKU reuse warn)
+        besch_sentences: dict[str, set[str]] = {}
         for row in t.rows:
             sku = row[i_sku]
             # 7. Kurzbeschreibung
@@ -200,9 +212,33 @@ class Validator:
                                    b.kurzbeschreibung.min_words, b.kurzbeschreibung.max_words)
             # 8. Beschreibung + closer
             besch = row[i_besch]
+            # Category-aware floor: cables flex DOWN (item 6), modules keep the full floor.
+            besch_k3 = row[i_k3]
+            besch_min = (CABLE_BESCHREIBUNG_MIN_WORDS
+                         if besch_k3 in C.CABLE_CATEGORIES else b.beschreibung.min_words)
             self._check_paragraphs(fname, sku, "Beschreibung", besch,
                                    b.beschreibung.p_count,
-                                   b.beschreibung.min_words, b.beschreibung.max_words)
+                                   besch_min, b.beschreibung.max_words)
+            # Prose-only: the only allowed markup is <p>/</p>.
+            for m in _ANY_TAG_RE.finditer(besch):
+                tag = m.group(1).lower()
+                if tag not in _ALLOWED_BESCH_TAGS:
+                    self._fail(fname, sku, "Beschreibung", "prose-only <p> blocks",
+                               f"<{tag}>",
+                               "Beschreibung must be prose-only — no spec list or "
+                               "markup besides <p> (specs belong in the Attributes file)")
+                    break
+            besch_plain = plain_text(besch)
+            # Inline-Q&A leak: a question mark suggests FAQ prose leaked into the body.
+            if "?" in besch_plain:
+                self._warn(fname, sku, "Beschreibung",
+                           "contains '?' — possible inline Q&A (FAQ belongs in the FAQ file)")
+            # Collect substantive sentences (exempt the authenticity closer) for reuse warn.
+            for sent in re.split(r"(?<=[.!?])\s+", besch_plain):
+                s = " ".join(sent.split()).lower()
+                if not s or s.startswith("original") or len(s.split()) < 6:
+                    continue
+                besch_sentences.setdefault(s, set()).add(sku)
             hersteller = row[i_herst]
             if not closer_present(self.rules, hersteller, plain_text(besch)):
                 tail = closer_brand_tail(self.rules, hersteller)
@@ -275,6 +311,16 @@ class Validator:
                               "Titel-Tag (SEO)", "Meta-Description (SEO)"):
                 self._scan_banned(fname, sku, fieldname, row[self._col(t, fieldname)])
 
+        # Cross-SKU sentence reuse (WARN): identical body sentences across SKUs signal
+        # boilerplate padding. The authenticity closer is exempt (it is identical by design).
+        for sent, skus in besch_sentences.items():
+            if len(skus) > 1:
+                sample = ", ".join(sorted(skus)[:5])
+                more = "…" if len(skus) > 5 else ""
+                self._warn(fname, "", "Beschreibung",
+                           f"sentence reused across {len(skus)} SKUs ({sample}{more}): "
+                           "possible boilerplate padding")
+
     def _num(self, fname, sku, fieldname, value):
         """Validate German-decimal weight, return float or None (and record fail)."""
         if not re.match(r"^\d+,\d+$", value):
@@ -333,6 +379,13 @@ class Validator:
                     self._fail(fname, sku, "Sortiernummer", str(want_sort), row[i_sort],
                                f"wrong Sortiernummer for attribute {name!r}")
                 per_sku_order.setdefault(sku, []).append(want_sort)
+                # 8. Formfaktor VALUE must be a physical connector, never a commerce
+                # category (e.g. "DAC Kabel" stays in Kategorie Ebene 3).
+                if name == "Formfaktor" and row[i_val].strip() not in C.PHYSICAL_FORMFAKTOR:
+                    self._fail(fname, sku, "Attributwert (Formfaktor)",
+                               "a physical connector (e.g. QSFP-DD, SFP+, OSFP)",
+                               row[i_val],
+                               "Formfaktor must be a physical connector, not a category")
             if row[i_dt] != C.ATTRIBUTES_DATENTYP:
                 self._fail(fname, sku, "Datentyp", C.ATTRIBUTES_DATENTYP, row[i_dt],
                            "attribute Datentyp must be Wertliste")

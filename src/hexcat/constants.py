@@ -71,6 +71,23 @@ TRANSCEIVER_ATTRIBUTES: tuple[tuple[str, str], ...] = (
 )
 ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in TRANSCEIVER_ATTRIBUTES)
 
+# The physical connector form-factors (the connector subset of the locked Kategorie-Ebene-3
+# set). The `Formfaktor` attribute VALUE must be one of these — never a commerce category like
+# "DAC Kabel" (the category stays in Kategorie Ebene 3, the connector goes in Formfaktor).
+# Ordered most-specific-first so prefix extraction never captures a shorter token by mistake
+# (e.g. "QSFP-DD800" before "QSFP-DD", "SFP28" before "SFP").
+PHYSICAL_FORMFAKTOR_ORDERED: tuple[str, ...] = (
+    "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28", "QSFP+",
+    "OSFP", "SFP56", "SFP28", "SFP+", "SFP",
+    "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC",
+)
+PHYSICAL_FORMFAKTOR: frozenset[str] = frozenset(PHYSICAL_FORMFAKTOR_ORDERED)
+
+# Cable categories (Kategorie Ebene 3) — these are direct-attach/fibre assemblies, not optical
+# modules. Their Beschreibung word-floor flexes DOWN (a passive DAC needs less prose than a
+# coherent transceiver) and they are exempt from optics-only attribute expectations.
+CABLE_CATEGORIES: frozenset[str] = frozenset({"DAC Kabel", "AOC Kabel", "MPO Kabel"})
+
 # ---- File 3: PLATFORM FLAG --------------------------------------------------
 # UTF-8 WITH BOM. Columns: Artikelnummer + Überverkauf Plattform Hexwaren (= TRUE).
 PLATFORMFLAG_DELIMITER = ";"
