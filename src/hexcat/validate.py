@@ -17,6 +17,8 @@ from .config import Rules
 from .content_checks import (
     banned_hard_hits,
     banned_warn_hits,
+    closer_brand_tail,
+    closer_present,
     count_paragraphs,
     plain_text,
     word_count,
@@ -202,9 +204,9 @@ class Validator:
                                    b.beschreibung.p_count,
                                    b.beschreibung.min_words, b.beschreibung.max_words)
             hersteller = row[i_herst]
-            closer = self.rules.beschreibung_closer_prefix.format(brand=hersteller)
-            if closer not in plain_text(besch):
-                self._fail(fname, sku, "Beschreibung", f"ends with '{closer}…'",
+            if not closer_present(self.rules, hersteller, plain_text(besch)):
+                tail = closer_brand_tail(self.rules, hersteller)
+                self._fail(fname, sku, "Beschreibung", f"contains 'Original(er|es|e) {tail}…'",
                            plain_text(besch)[-60:],
                            "Beschreibung missing the authenticity closer")
             # 9. Titel-Tag

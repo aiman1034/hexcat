@@ -17,7 +17,7 @@ import re
 from pathlib import Path
 
 from ..config import Rules
-from ..content_checks import required_closer
+from ..content_checks import closer_brand_tail
 from .engine import CONTENT_COLUMNS, GenerateError, SkuFacts
 from .prompt import GUIDE_VERSION, build_voice_guide, facts_block
 
@@ -44,7 +44,7 @@ def _end(field: str, sku: str) -> str:
 
 def _field_rules(rules: Rules, hersteller: str) -> dict[str, str]:
     b = rules.budgets
-    closer = required_closer(rules, hersteller)
+    tail = closer_brand_tail(rules, hersteller)
     return {
         "Kurzbeschreibung": (
             f"HTML, genau {b.kurzbeschreibung.p_count} <p>…</p>-Absätze, insgesamt "
@@ -53,8 +53,9 @@ def _field_rules(rules: Rules, hersteller: str) -> dict[str, str]:
         "Beschreibung": (
             f"HTML, genau {b.beschreibung.p_count} <p>…</p>-Absätze, insgesamt "
             f"{b.beschreibung.min_words}–{b.beschreibung.max_words} Wörter. Der letzte "
-            f"Absatz MUSS exakt '{closer}' enthalten, gefolgt von einem Substantiv "
-            f"(z. B. '{closer}Transceiver')."
+            f"Absatz MUSS den Echtheits-Abschluss 'Original(er|es|e) {tail}' enthalten – "
+            f"die Adjektivendung richtet sich nach dem Geschlecht des folgenden Substantivs "
+            f"(z. B. 'Originaler {tail}Transceiver', 'Originales {tail}Direktanschlusskabel')."
         ),
         "TitelTag": (
             f"Reiner Text, höchstens {b.titel_tag.max_chars} Zeichen inkl. Suffix; MUSS "

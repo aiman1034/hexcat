@@ -41,9 +41,28 @@ def banned_warn_hits(rules: Rules, text: str) -> list[str]:
     return [p for p in rules.banned_warn if p.lower() in low]
 
 
-def required_closer(rules: Rules, hersteller: str) -> str:
-    """The exact authenticity-closer substring the Beschreibung must contain."""
-    return rules.beschreibung_closer_prefix.format(brand=hersteller)
+# The closer adjective "Original" carries a German article ending that must agree with the
+# gender of the product noun that follows: "Originaler Transceiver" (m.), "Originales
+# Direktanschlusskabel" (n.), "Originale Optik" (f.). The gate accepts all three so that a
+# grammatically-correct closer never fails over the ending alone.
+_CLOSER_ADJ_RE = r"Original(?:er|es|e)"
+
+
+def closer_brand_tail(rules: Rules, hersteller: str) -> str:
+    """The brand portion of the closer prefix, e.g. 'Cisco-' from 'Originaler Cisco-'."""
+    prefix = rules.beschreibung_closer_prefix.format(brand=hersteller)
+    # Strip the leading "Originaler " (canonical adjective + space), leaving "Cisco-".
+    return re.sub(rf"^{_CLOSER_ADJ_RE}\s+", "", prefix, count=1)
+
+
+def closer_present(rules: Rules, hersteller: str, plain: str) -> bool:
+    """True if `plain` contains a grammatically-valid authenticity closer.
+
+    Matches "Original(er|es|e) <brand>-<noun>" so the article ending agrees with the
+    product noun's gender. `plain` must already be HTML-stripped (see `plain_text`).
+    """
+    tail = closer_brand_tail(rules, hersteller)
+    return re.search(rf"{_CLOSER_ADJ_RE} {re.escape(tail)}\w", plain) is not None
 
 
 def content_issues(
@@ -91,11 +110,12 @@ def content_issues(
             f"Beschreibung must be {b.beschreibung.min_words}-"
             f"{b.beschreibung.max_words} words (found {w})."
         )
-    closer = required_closer(rules, hersteller)
-    if closer not in plain_text(beschreibung):
+    if not closer_present(rules, hersteller, plain_text(beschreibung)):
+        tail = closer_brand_tail(rules, hersteller)
         issues.append(
-            f"Beschreibung must contain the exact authenticity closer text "
-            f"'{closer}' (immediately followed by a German noun, e.g. '{closer}Transceiver')."
+            f"Beschreibung must contain the authenticity closer 'Original(er|es|e) {tail}' "
+            f"with an article ending that agrees with the following German noun "
+            f"(e.g. 'Originaler {tail}Transceiver', 'Originales {tail}Direktanschlusskabel')."
         )
 
     # Titel-Tag — length cap and mandatory suffix.

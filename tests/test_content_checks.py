@@ -74,7 +74,19 @@ def test_kurz_word_budget(rules):
 def test_beschreibung_missing_closer(rules):
     no_closer = GOOD_BESCH.replace("Originaler Cisco-", "Echter Cisco-")
     issues = _issues(rules, beschreibung=no_closer)
-    assert any("closer" in i.lower() or "Originaler Cisco-" in i for i in issues)
+    assert any("closer" in i.lower() or "Original(er|es|e) Cisco-" in i for i in issues)
+
+
+def test_closer_accepts_all_three_article_endings(rules):
+    # The article ending must agree with the gender of the product noun. All three forms
+    # are valid closers: masculine (-er), neuter (-es), feminine (-e).
+    for closer in (
+        "Originaler Cisco-Transceiver",        # der Transceiver (m.)
+        "Originales Cisco-Direktanschlusskabel",  # das Kabel (n.)
+        "Originale Cisco-Optik",               # die Optik (f.)
+    ):
+        besch = GOOD_BESCH.replace("Originaler Cisco-Transceiver", closer)
+        assert _issues(rules, beschreibung=besch) == [], f"{closer!r} should pass"
 
 
 def test_titel_too_long(rules):
