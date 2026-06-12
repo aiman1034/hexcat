@@ -60,7 +60,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 
 | Brand        | Source status from cached/probed fetch                            | Action needed |
 | ------------ | ----------------------------------------------------------------- | ------------- |
-| Brocade      | VALID PDF but **Fibre-Channel** "Transceiver Support Matrix" — wide multi-col Gen5/6/7/8, XBR-*/57-* PNs | §6c taxonomy decision: does the catalog carry FC optics, under which Unterkategorie? + bespoke wide-matrix extractor |
+| Brocade      | VALID PDF but **Fibre-Channel** "Transceiver Support Matrix" — wide multi-col Gen5/6/7/8, XBR-*/57-* PNs | **PARKED — OUT OF SCOPE this pass** (operator decision 2026-06-12). FC ≠ Ethernet protocol/domain; do NOT map XBR-/57- onto Ethernet form-factor buckets (an FC SFP+ is not a 10GBASE-SR SFP+ → wrong specs) and do NOT alter locked-22. If FC is later confirmed in-scope, build as a SEPARATE batch with dedicated FC Unterkategorien + FC-specific spec/voice templates. Not deleted; revisit on explicit go-ahead. |
 | Ubiquiti     | JS-shell (accessories.html: 1.6KB rendered text, 107 UACC-* only in script JSON) | §6b NEEDS-HEADED (Tier-2 render) |
 | Juniper      | hCaptcha-gated Next.js SPA                                          | §6b NEEDS-HEADED |
 | Arista       | fetched 3KB stub — corrupt, "No /Root object" (error page as .pdf) | fresh official QRG URL |
@@ -81,5 +81,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
   "official manufacturer source"), re-fetch (Tier-2 render where JS-gated), then author a
   per-brand spec → mine → verify-gate PASS → ledger+audit → full suite green.
 - **Escalated to human (§6):** (b) NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme;
-  (c) irreducible taxonomy decision: Brocade Fibre-Channel optics.
+  (c) Brocade Fibre-Channel optics — RESOLVED 2026-06-12: PARKED out-of-scope, do not map
+  onto Ethernet taxonomy, revisit only on explicit go-ahead with dedicated FC categories.
+- Loop now targets the other 17 brands (Brocade parked).
 - Invariant for every new brand: a fix for brand N must not regress 1…N-1 (full suite green).
