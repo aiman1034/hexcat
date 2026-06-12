@@ -1,0 +1,74 @@
+# Datasheet sources for the TRANSCEIVERS category — the per-category SEAM.
+#
+# This file is pure CONFIG consumed by the universal lib/harvest.py. It carries ALL
+# transceiver-specific knowledge; the harvester code carries none. Adding a new category
+# (switches, servers, ...) is a sibling file here — zero code changes. Adding a new BRAND
+# to this category is a new entry under `brands` — also zero code changes.
+#
+# The $0 discovery split:
+#   * Deterministic Python (lib/harvest.py) does the HTTP fetch + bounded same-domain crawl
+#     from the `seeds`, restricted to `allowed_domains`, collecting every link that matches
+#     `datasheet_patterns` and crawling every link that matches `follow_patterns`.
+#   * Claude, in-session under Max, runs WebSearch using each brand's `search_terms`
+#     ("{brand} {family} transceiver datasheet") and appends any NEW datasheet URLs it finds
+#     to that brand's `discovered` frontier file. The harvester folds the frontier in on the
+#     next run. No paid API, ever.
+
+category: transceivers
+
+# Discovery never leaves the manufacturers' own domains.
+allowed_domains:
+  - cisco.com
+
+# A link matching any of these is a terminal datasheet to FETCH (not crawled into).
+datasheet_patterns:
+  - 'data[-_]?sheet'          # .../data_sheet_c78-455693.html, datasheet-c78-...
+  - 'c\d{2}-\d+'              # Cisco collateral doc ids (c78-..., c67-...)
+  - '\.pdf($|\?)'            # any PDF asset
+
+# A link matching any of these is an index/landing/listing page worth CRAWLING for more
+# links (bounded by crawl.max_depth / max_pages).
+follow_patterns:
+  - 'interfaces-modules/transceiver-modules'
+  - '/collateral/.*transceiver'
+  - 'product-listing'
+  - 'series.html'
+  - 'datasheet-listing'
+
+crawl:
+  max_depth: 3
+  max_pages: 400
+
+brands:
+  Cisco:
+    # Canonical enumeration entry points (the manufacturer's own index of the line).
+    seeds:
+      - https://www.cisco.com/c/en/us/products/interfaces-modules/transceiver-modules/index.html
+      - https://www.cisco.com/c/en/us/products/interfaces-modules/transceiver-modules/datasheet-listing.html
+      # TMG optics-to-device compatibility matrix — a JS single-page app; the fetcher's
+      # Tier-2 browser render materializes its part-number grid.
+      - https://tmgmatrix.cisco.com/
+    # Frontier file Claude tops up from in-session WebSearch (one URL per line, # comments).
+    discovered: config/sources/discovered/cisco_transceivers.txt
+    # The WebSearch script — one term per transceiver family Cisco's Ethernet line spans
+    # (grounded in config/ledger/cisco_transceivers.yaml -> coverage.expected_families).
+    search_terms:
+      - "Cisco SFP transceiver module datasheet site:cisco.com"
+      - "Cisco SFP+ 10G transceiver datasheet site:cisco.com"
+      - "Cisco SFP28 25G transceiver datasheet site:cisco.com"
+      - "Cisco SFP56 50G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP+ 40G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP28 100G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP56 200G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP112 400G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP-DD 400G transceiver datasheet site:cisco.com"
+      - "Cisco QSFP-DD800 800G transceiver datasheet site:cisco.com"
+      - "Cisco OSFP 800G transceiver datasheet site:cisco.com"
+      - "Cisco XFP 10G transceiver datasheet site:cisco.com"
+      - "Cisco X2 10GBASE transceiver datasheet site:cisco.com"
+      - "Cisco CFP 100G transceiver datasheet site:cisco.com"
+      - "Cisco CFP2 100G transceiver datasheet site:cisco.com"
+      - "Cisco CPAK 100G transceiver datasheet site:cisco.com"
+      - "Cisco CXP 100G transceiver datasheet site:cisco.com"
+      - "Cisco direct attach copper DAC cable datasheet site:cisco.com"
+      - "Cisco active optical AOC cable datasheet site:cisco.com"
