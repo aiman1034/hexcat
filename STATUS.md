@@ -16,7 +16,7 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Stage-3 | Status |
 | -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
 | Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
-| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated-complete; whole-line datasheet) |
+| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | **PRICES-PENDING (87/87 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (datasheet-sourced facts; only operator Netto-VK outstanding) |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated to sourced line; FlexFabric/Comware = SKU-breadth gap, tracked) |
 | MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | **PRICES-PENDING (24/24 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (card-grid mode; per-SKU product-page facts; only operator Netto-VK outstanding) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
@@ -75,6 +75,22 @@ file). Families: SFP 6, SFP+ 3, SFP28 3, QSFP28 3, QSFP-DD 1, DAC 7, AOC 1. Ever
 provenance to its product page; flag-or-omit on unstated specs (e.g. DDQ+85MP01D reichweite not
 asserted; S+31DLC10D reichweite "laut Hersteller"). `content_issues` passes for all 24; package
 written to `output/stage3/MikroTik_Transceivers_*` (5 CSVs). Only operator Netto-VK outstanding.
+
+### Fortinet content authoring (COMPLETE 2026-06-12) — State = PRICES-PENDING (87/87)
+Authored all 87 Fortinet SKUs in-session ($0) into `stage3_content/Fortinet_content.json` (TRACKED).
+Facts spine = `output/stage3/fortinet_facts.json` (gitignored): one `{desc,url}` per PN, where
+`desc` = the per-SKU "Ordering Information" line lifted from the cached datasheet
+`datasheets/cache/fortinet_transceivers.pdf` (pages 12–14; text dump in `_scratch/ft_pdf.txt`).
+Authoring generator = `_scratch/ft_author.py` (gitignored): `parse()` regex-extracts
+speed/media/range|length/connector/wavelength/temp/slots/standard/bidi/breakout from each desc;
+composes German prose per **kind** (mod / modcu copper / dac / dacbrk breakout / adac active-DAC /
+aoc) and builds attributes + provenance (every attr → the datasheet URL). FIX dict supplies clean
+facts for the 2 truncated ordering lines (FN-TRAN-SFP+BD27 TX1271/RX1331, BD33 TX1331/RX1271; both
+30 km single-LC SMF BiDi, -5 °C–85 °C). FN-TRAN-SFP+LRM special-cased: 10GBASE-LRM dual-media →
+MMF 220 m primary + dedicated FAQ for SMF 300 m reach (honest, both stated). `content_issues`
+passes for all 87; package written to `output/stage3/Fortinet_Transceivers_*` (5 CSVs). Only
+operator Netto-VK outstanding. To regenerate: rebuild facts spine from the cached PDF, then run
+`python _scratch/ft_author.py` + `hexcat stage3 --brand Fortinet --content stage3_content/Fortinet_content.json`.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
