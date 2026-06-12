@@ -20,6 +20,7 @@ from hexcat.writers import BOM
 
 REPO = Path(__file__).resolve().parents[1]
 ARTIFACT = REPO / "config" / "merged_catalog_collisions.yaml"
+REKEY_PROPOSAL = REPO / "config" / "collision_rekey_proposal.yaml"
 BRANDS = {"Cisco", "Arista", "HPE", "Fortinet", "MikroTik"}
 
 
@@ -176,3 +177,28 @@ def test_thresholds_are_sane():
     # physics sentences (same DAC length / wavelength fact) out of the hard-fail set.
     assert merged_sweep.SENTENCE_CROSS_BRAND_WARN_BRANDS < merged_sweep.SENTENCE_CROSS_BRAND_FAIL_BRANDS
     assert merged_sweep.SENTENCE_CROSS_BRAND_FAIL_BRANDS >= 3
+
+
+# ---- the Pass-6 re-key proposal (operator-approval gated) -----------------------------
+
+def test_rekey_proposal_reconciles_with_collisions():
+    """Every flagged Artikelnummer collision has a symmetric, brand-prefixed, gated proposal."""
+    prop = yaml.safe_load(REKEY_PROPOSAL.read_text(encoding="utf-8"))
+    col = _load()
+    # default-safe: nothing is applied until the operator flips this
+    assert prop["approved"] is False
+    proposals = prop["proposals"]
+    assert prop["collision_count"] == len(proposals) == col["artikelnummer_collisions"]["count"]
+    flagged = {e["sku"] for e in col["artikelnummer_collisions"]["shared"]}
+    proposed = {p["true_pn"] for p in proposals}
+    assert proposed == flagged                       # exact coverage, no extras, no gaps
+    affects = 0
+    for p in proposals:
+        assert len(p["rekey"]) == len(p["brands"]) >= 2  # symmetric: every side re-keyed
+        for rk in p["rekey"]:
+            assert rk["han_unchanged"] == p["true_pn"]   # HAN stays the true PN
+            assert rk["new_artikelnummer"].endswith(p["true_pn"])
+            assert rk["new_artikelnummer"] != p["true_pn"]   # actually disambiguated
+            assert rk["new_artikelnummer"].startswith(rk["brand"].upper())
+            affects += 1
+    assert prop["affects_skus"] == affects

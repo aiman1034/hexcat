@@ -133,3 +133,42 @@ def test_default_artifacts_are_readable():
     # The real tracked artifacts must parse and yield a definite (non-crashing) check.
     assert _check_weights(IR.WEIGHT_ARTIFACT).status in {GO, WARN, BLOCK}
     assert _check_attribute_gaps(IR.GAPS_ARTIFACT).status in {GO, WARN, BLOCK}
+
+
+# ---- Pass-6: the cross-brand check surfaces the re-key proposal ------------------------
+
+class _F:  # tiny stand-in for a sweep Finding (kind + value is all the note reads)
+    def __init__(self, kind, value):
+        self.kind, self.value = kind, value
+
+
+def test_rekey_note_points_to_proposal_when_collisions_present(tmp_path):
+    p = tmp_path / "prop.yaml"
+    p.write_text(yaml.safe_dump(
+        {"approved": False, "proposals": [{"true_pn": "SFP-10G-SR"}, {"true_pn": "SFP-10G-LR"}]}),
+        encoding="utf-8")
+    findings = [_F("Artikelnummer", "SFP-10G-SR"), _F("Artikelnummer", "SFP-10G-LR")]
+    orig = IR.REKEY_PROPOSAL
+    try:
+        IR.REKEY_PROPOSAL = p
+        note = IR._rekey_proposal_note(findings)
+    finally:
+        IR.REKEY_PROPOSAL = orig
+    assert "re-key proposal covers all" in note
+    assert "approved: False" in note
+
+
+def test_rekey_note_empty_without_artikelnummer_collisions(tmp_path):
+    p = tmp_path / "prop.yaml"
+    p.write_text(yaml.safe_dump({"approved": False, "proposals": [{"true_pn": "X"}]}),
+                 encoding="utf-8")
+    orig = IR.REKEY_PROPOSAL
+    try:
+        IR.REKEY_PROPOSAL = p
+        # only a Beschreibung finding -> no identity collision -> no note
+        assert IR._rekey_proposal_note([_F("Beschreibung", "boilerplate")]) == ""
+        # missing artifact -> no note even with a collision
+        IR.REKEY_PROPOSAL = tmp_path / "nope.yaml"
+        assert IR._rekey_proposal_note([_F("Artikelnummer", "SFP-10G-SR")]) == ""
+    finally:
+        IR.REKEY_PROPOSAL = orig

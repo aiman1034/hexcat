@@ -108,6 +108,31 @@ official GTINs via GS1; capture or prove-absent. Determination in `config/gtin_d
   per-SKU source (manufacturer packaging/GS1 license or a licensed distributor feed). NEXT: Pass 6
   (collision keying — propose for approval).
 
+**§Pass-6 COLLISION KEYING — PROPOSED (operator-approval gated; 314 tests pass).** The merged sweep
+finds exactly **9 cross-brand Artikelnummer collisions**, all Arista↔Cisco MSA-standard names
+(SFP-10G-SR/-LR/-ER/-ZR, SFP-1G-SX, QSFP-40G-SR4/-LR4/-ER4, QSFP-100G-SR1.2) — REAL distinct products
+that would overwrite each other on one JTL import. URL-Pfad (`<slug>/<pn>`) and GTIN show 0 collisions
+(already brand-scoped). Per the mandate I PROPOSE, never silently re-key:
+- **`config/collision_rekey_proposal.yaml`** (tracked, `approved: false`): each colliding side gets a
+  brand-prefixed Artikelnummer `<HERSTELLER_UPPER>-<PN>` (CISCO-SFP-10G-SR / ARISTA-SFP-10G-SR),
+  symmetric (no arbitrary winner), 9 collisions → 18 SKUs. **HAN stays the true PN**; URL-Pfad
+  untouched. Generated deterministically by `_scratch/propose_collision_rekey.py` from the existing
+  `merged_catalog_collisions.yaml`.
+- **`_scratch/apply_collision_rekey.py`** is the gated applier: DRY-RUN by default, and REFUSES to
+  write unless the proposal `approved: true` AND `--write` are both set. It re-keys ONLY the
+  Artikelnummer column of Main/Attributes/Prices (HAN/URL-Pfad preserved), byte contract intact;
+  post-build step like `apply_grounded_prices.py`. Nothing changes until the operator approves.
+- **Surfaced in readiness:** `import_readiness._check_cross_brand` now appends "re-key proposal covers
+  all (approved: False); approve + apply_collision_rekey.py to clear" to the CROSS-BRAND BLOCK, so the
+  GO/NO-GO report names the path to GREEN. Locked by `test_rekey_proposal_reconciles_with_collisions`
+  (+2 surfacing tests). CROSS-BRAND stays the only deterministic BLOCK awaiting an operator decision.
+
+**§CAPSTONE READINESS (current, 5 brands / 902 SKUs):** STRUCTURE **GO**; CROSS-BRAND **BLOCK** (9
+collisions, proposal ready — operator approval); PRICES **BLOCK** (896/902 at the 0,00 placeholder —
+the long $0 GPL grind); GTIN **WARN** (proven-absent, Pass-5); WEIGHTS **WARN** (buckets, Pass-4
+deferred); ATTR-GAPS **WARN** (925 residual, deferred datasheet grind). The two BLOCKs are the two
+intentionally-deferred operator passes; every WARN is honest flagged-debt, never fabricated.
+
 **§4 CATEGORY FRAMEWORK + RUNBOOK DONE (commit 44b2570). 300 tests pass.** The engine is
 category-agnostic: everything that makes the catalog *about transceivers* lives in a small set of
 named **seams** (config files + a few code constants), not the pipeline. `docs/ADD_A_CATEGORY.md`

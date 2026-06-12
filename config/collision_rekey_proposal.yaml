@@ -1,0 +1,113 @@
+# Pass-6 PROPOSAL (operator-approval gated) — brand-prefixed Artikelnummer to resolve the
+# cross-brand collisions in merged_catalog_collisions.yaml. approved=false -> NOTHING is
+# re-keyed. The catalog ships with the true PN as Artikelnummer until the operator approves.
+# Regenerate with _scratch/propose_collision_rekey.py; apply with apply_collision_rekey.py.
+approved: false
+scheme: <HERSTELLER_UPPER>-<true_pn>
+policy: 'Brand-prefix ONLY the Artikelnummer to make cross-brand identity globally unique for one JTL
+  import. HAN keeps the true manufacturer PN; URL-Pfad (<slug>/<pn>) is already brand-scoped and unchanged.
+  NEVER applied silently: requires approved=true + _scratch/apply_collision_rekey.py --write. Symmetric
+  (both colliding sides are prefixed) so there is no arbitrary winner.'
+affects_skus: 18
+collision_count: 9
+source: config/merged_catalog_collisions.yaml
+proposals:
+- true_pn: QSFP-100G-SR1.2
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-QSFP-100G-SR1.2
+    han_unchanged: QSFP-100G-SR1.2
+  - brand: Cisco
+    new_artikelnummer: CISCO-QSFP-100G-SR1.2
+    han_unchanged: QSFP-100G-SR1.2
+- true_pn: QSFP-40G-ER4
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-QSFP-40G-ER4
+    han_unchanged: QSFP-40G-ER4
+  - brand: Cisco
+    new_artikelnummer: CISCO-QSFP-40G-ER4
+    han_unchanged: QSFP-40G-ER4
+- true_pn: QSFP-40G-LR4
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-QSFP-40G-LR4
+    han_unchanged: QSFP-40G-LR4
+  - brand: Cisco
+    new_artikelnummer: CISCO-QSFP-40G-LR4
+    han_unchanged: QSFP-40G-LR4
+- true_pn: QSFP-40G-SR4
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-QSFP-40G-SR4
+    han_unchanged: QSFP-40G-SR4
+  - brand: Cisco
+    new_artikelnummer: CISCO-QSFP-40G-SR4
+    han_unchanged: QSFP-40G-SR4
+- true_pn: SFP-10G-ER
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-SFP-10G-ER
+    han_unchanged: SFP-10G-ER
+  - brand: Cisco
+    new_artikelnummer: CISCO-SFP-10G-ER
+    han_unchanged: SFP-10G-ER
+- true_pn: SFP-10G-LR
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-SFP-10G-LR
+    han_unchanged: SFP-10G-LR
+  - brand: Cisco
+    new_artikelnummer: CISCO-SFP-10G-LR
+    han_unchanged: SFP-10G-LR
+- true_pn: SFP-10G-SR
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-SFP-10G-SR
+    han_unchanged: SFP-10G-SR
+  - brand: Cisco
+    new_artikelnummer: CISCO-SFP-10G-SR
+    han_unchanged: SFP-10G-SR
+- true_pn: SFP-10G-ZR
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-SFP-10G-ZR
+    han_unchanged: SFP-10G-ZR
+  - brand: Cisco
+    new_artikelnummer: CISCO-SFP-10G-ZR
+    han_unchanged: SFP-10G-ZR
+- true_pn: SFP-1G-SX
+  brands:
+  - Arista
+  - Cisco
+  rekey:
+  - brand: Arista
+    new_artikelnummer: ARISTA-SFP-1G-SX
+    han_unchanged: SFP-1G-SX
+  - brand: Cisco
+    new_artikelnummer: CISCO-SFP-1G-SX
+    han_unchanged: SFP-1G-SX

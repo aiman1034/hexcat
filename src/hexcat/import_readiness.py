@@ -34,6 +34,7 @@ from .validate import valid_gtin, validate_dir
 REPO = Path(__file__).resolve().parents[2]
 WEIGHT_ARTIFACT = REPO / "config" / "weight_disposition.yaml"
 GAPS_ARTIFACT = REPO / "config" / "attribute_gaps" / "residual_gaps.yaml"
+REKEY_PROPOSAL = REPO / "config" / "collision_rekey_proposal.yaml"
 
 # A Netto-VK that parses to <= 0 is the not-yet-priced placeholder (emitted as "0,00").
 PRICE_PLACEHOLDER = "0,00"
@@ -109,6 +110,24 @@ def _check_structure(bundles: dict[str, Path], rules: Rules) -> Check:
     return Check("STRUCTURE", GO, f"all {len(bundles)} bundles pass the build gate")
 
 
+def _rekey_proposal_note(findings) -> str:
+    """If a Pass-6 re-key proposal covers the Artikelnummer collisions, point the operator to it."""
+    if not REKEY_PROPOSAL.exists():
+        return ""
+    try:
+        doc = yaml.safe_load(REKEY_PROPOSAL.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError:
+        return ""
+    proposed = {p.get("true_pn") for p in (doc.get("proposals") or [])}
+    colliding = {f.value for f in findings if f.kind == "Artikelnummer"}
+    if not colliding:
+        return ""
+    approved = bool(doc.get("approved"))
+    covered = "all" if colliding <= proposed else f"{len(colliding & proposed)}/{len(colliding)}"
+    return (f" — re-key proposal covers {covered} (approved: {approved}); "
+            f"approve + apply_collision_rekey.py to clear")
+
+
 def _check_cross_brand(bundles: dict[str, Path]) -> Check:
     r = sweep_catalog(bundles)
     if r.findings:
@@ -116,7 +135,9 @@ def _check_cross_brand(bundles: dict[str, Path]) -> Check:
         for f in r.findings:
             kinds[f.kind] = kinds.get(f.kind, 0) + 1
         items = ", ".join(f"{k}×{n}" for k, n in sorted(kinds.items()))
-        return Check("CROSS-BRAND", BLOCK, f"{len(r.findings)} merged-catalog collision(s): {items}")
+        note = _rekey_proposal_note(r.findings)
+        return Check("CROSS-BRAND", BLOCK,
+                     f"{len(r.findings)} merged-catalog collision(s): {items}{note}")
     extra = f" ({len(r.warnings)} warn)" if r.warnings else ""
     return Check("CROSS-BRAND", GO, f"no merged-catalog collisions{extra}")
 
