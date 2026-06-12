@@ -21,7 +21,21 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
   (boilerplate), 2-3 WARNs. Calibrated to data (max legit dup=2). Self-audit fixture added.
 NEXT: §2 G6 merged-catalog sweep → G7 import-readiness validator.
 
-**§2 G7 IMPORT-READINESS DONE (commit pending). 271 tests pass. §2 GATES G1-G7 ALL COMPLETE.**
+**§5 PRICING ENGINE DONE (commit pending). 286 tests pass.** `src/hexcat/pricing.py` is a
+deterministic, $0, fabrication-free pricing engine. A price is a commercial estimate, never a
+physics fact, so the engine derives one ONLY from a grounded input and FLAGs otherwise (flag-don't-
+invent). Tier hierarchy: T1-MARKET (observed comp prices — ingestion `fetch_market_observations`
+is STUBBED per operator: no network, returns []), T2-LIST (manufacturer UVP × `list_to_net`),
+T3-COST (operator cost × `1+cost_markup`); else FLAG. `resolve_price` picks the best grounded tier
+with provenance; guards block an implausible margin-vs-cost and WARN on cross-tier disagreement;
+`back_test` validates the policy factors (MAPE vs tolerance) against known-priced SKUs BEFORE they
+are trusted. Operator policy in tracked `config/pricing_policy.yaml` (knobs, not market claims).
+Pricing debt is auditable in tracked `config/price_disposition.yaml` — **currently 0/902 grounded,
+902 flagged** (no market feed, no list/cost inputs in intake yet), regen `_scratch/gen_price_disposition.py`.
+15 tests. The engine is ready; the data feed is the deferred operator pass that clears the readiness
+PRICES blocker. NEXT: §4 category-agnostic framework + "add a category" runbook.
+
+**§2 G7 IMPORT-READINESS DONE (commit a44335f). 271 tests pass. §2 GATES G1-G7 ALL COMPLETE.**
 `src/hexcat/import_readiness.py` + `hexcat readiness <dirs…>` is the catalog-level GO/NO-GO
 capstone: it composes the per-bundle build gate (STRUCTURE), the cross-brand sweep (CROSS-BRAND),
 price grounding (PRICES), and the tracked deferred-debt artifacts (GTIN, WEIGHTS, ATTR-GAPS) into

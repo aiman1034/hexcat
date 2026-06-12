@@ -1,0 +1,17 @@
+# §5 pricing POLICY — operator knobs for the deterministic pricing engine (src/hexcat/pricing.py).
+# These are POLICY defaults, NOT claims about real market prices. They must be CONFIRMED by the
+# operator (and validated by `pricing.back_test` against known-priced SKUs) before any auto-price
+# is trusted for a live import. The engine never fabricates a price: it derives one only from a
+# grounded input (T1 market / T2 list / T3 cost) and flags everything else.
+policy:
+  # T2: net sell price = manufacturer list price (UVP/MSRP) * list_to_net.
+  list_to_net: 0.55
+  # T3: net sell price = operator cost basis * (1 + cost_markup).
+  cost_markup: 0.35
+  # Guard: acceptable gross margin band (sell - cost)/sell vs a known cost. Outside -> price blocked.
+  margin_min: 0.10
+  margin_max: 0.80
+  # Guard: relative cross-tier disagreement above which a chosen tier is flagged for review (WARN).
+  tier_tolerance: 0.25
+  # Back-test passes when MAPE over known-priced samples is at or below this.
+  backtest_max_mape: 0.20
