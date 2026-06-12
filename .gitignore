@@ -25,6 +25,9 @@ datasheets/*.htm
 datasheets/*.pdf
 output/
 inputs/live_pns_cisco.csv
+# Operator's local reference ledger — proprietary catalog data (7k+ PNs), binary.
+# The tool writes the workbook structure from code; it does not read this at runtime.
+Cisco_BUILD_LEDGER.xlsx
 
 # ruflo cross-session memory store (local SQLite + embeddings; never commit)
 .swarm/
