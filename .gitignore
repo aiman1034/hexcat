@@ -28,6 +28,9 @@ inputs/live_pns_cisco.csv
 # Operator's local reference ledger — proprietary catalog data (7k+ PNs), binary.
 # The tool writes the workbook structure from code; it does not read this at runtime.
 Cisco_BUILD_LEDGER.xlsx
+# Curated transceiver seed — derived (Quellen-Tracker of mineable Cisco optic datasheets)
+# from the gitignored BUILD ledger; reproducible, binary. Source list documented in STATUS.md.
+Cisco_Transceivers_SEED.xlsx
 
 # Tier-2 headless-browser store — local Chromium for Playwright (~150MB+), never commit.
 .playwright-browsers/

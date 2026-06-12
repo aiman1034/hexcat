@@ -134,7 +134,18 @@ def run_source(
     vdate = verified_date or date.today().isoformat()
     fetched = fetched or fetch_datasheet(source.url, source.source_id)
 
-    mined = mine_source(fetched, spec)
+    mined_all = mine_source(fetched, spec)
+    # Flag-don't-emit: drop non-transceiver tokens (licenses, RTUs, converter adapters) that do
+    # not fit the locked-22 taxonomy. Symmetric with the verifier (see verify_ledger), so the
+    # emitted set still equals the independently re-derived authoritative set (V7/V8 honest).
+    excluded_pns: list[str] = []
+    mined = []
+    for m in mined_all:
+        reason = spec.is_excluded(m.pn, m.description)
+        if reason:
+            excluded_pns.append(m.pn)
+        else:
+            mined.append(m)
     canonical_set = {m.pn for m in mined}
 
     rows: list[LedgerRow] = []
@@ -156,7 +167,7 @@ def run_source(
         )
 
     corrections: list[CorrectionRow] = []
-    flagged: list[str] = []
+    flagged: list[str] = list(excluded_pns)  # non-transceivers flagged, not emitted
     new_count: int | None = None
     live_matched = 0
 

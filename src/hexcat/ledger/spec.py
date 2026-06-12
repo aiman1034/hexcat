@@ -106,6 +106,29 @@ class ClassifySpec(BaseModel):
     default: str
 
 
+class ExcludeRule(BaseModel):
+    """A 'flag, don't emit' rule. A mined token matching this is NOT a transceiver/optic that
+    fits the locked-22 taxonomy (e.g. a software license, an RTU, a QSFP-to-SFP converter
+    adapter) — forcing it into a form-factor bucket would violate the 1000% rule. It is
+    dropped from the emitted ledger AND from the verifier's independently re-derived
+    authoritative set (symmetric, so V7/V8 stay honest), and reported on the flagged list.
+    Matched against the canonical PN (pn_prefix/pn_contains) and/or the manufacturer
+    description (description_contains, case-insensitive)."""
+    pn_prefix: str | None = None
+    pn_contains: str | None = None
+    description_contains: str | None = None
+    reason: str = "non-transceiver (flagged, not emitted)"
+
+    def matches(self, pn: str, description: str | None = None) -> bool:
+        if self.pn_prefix is not None and pn.startswith(self.pn_prefix):
+            return True
+        if self.pn_contains is not None and self.pn_contains in pn:
+            return True
+        if self.description_contains is not None:
+            return self.description_contains.lower() in (description or "").lower()
+        return False
+
+
 # Universal cable classification (V5) — ONE rule, identical across every brand. Derived from
 # the manufacturer's own description text, not the PN substring (a PN like FG-CABLE-SR10-SFP+
 # contains "CABLE" and "SFP+" but the description proves it is an OM3 MPO breakout, not a DAC).
@@ -152,7 +175,18 @@ class LedgerSpec(BaseModel):
     mine: MineSpec
     normalize: NormalizeSpec
     classify: ClassifySpec
+    exclude: list[ExcludeRule] = []
     locked22_map: dict[str, str] = {}
+
+    # --- exclusion ------------------------------------------------------------
+    def is_excluded(self, pn: str, description: str | None = None) -> str | None:
+        """Return the exclusion reason if this mined token is a non-transceiver to flag
+        (not emit), else None. Applied identically by the engine and the verifier so the
+        emitted set and the independently re-derived authoritative set stay equal."""
+        for rule in self.exclude:
+            if rule.matches(pn, description):
+                return rule.reason
+        return None
 
     # --- classification -------------------------------------------------------
     def classify_pn(self, pn: str) -> str:

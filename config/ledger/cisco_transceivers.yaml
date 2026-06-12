@@ -32,21 +32,71 @@ normalize:
     SFP-10G-TX: SFP-10G-T-X
   problem_spelling: "Schreibweise (fehlender Bindestrich)"
 
+# --- Exclusion (flag, don't emit) -------------------------------------------------
+# Tokens that appear in a transceiver datasheet's ordering table but are NOT optics that fit
+# the locked-22 taxonomy. Forcing them into a form-factor bucket would violate the 1000% rule,
+# so they are dropped from the ledger AND from the verifier's authoritative set (symmetric) and
+# reported on the flagged list. Each is traceable to the manufacturer's own description bytes.
+exclude:
+  - { pn_prefix: "CVR-",            reason: "QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)" }
+  - { description_contains: "license", reason: "software license / RTU (not hardware optics)" }
+
 # --- Classification ---------------------------------------------------------------
-# First matching rule wins; tested against the canonical PN. `default` catches the rest.
-# Operator convention (matches the existing Cisco_BUILD_LEDGER.xlsx Unterkategorie values).
+# First matching rule wins; tested against the canonical PN. Multi-family: the full Cisco
+# transceiver line spans SFP..OSFP + DAC/AOC. Cable categories (DAC/AOC/MPO) are also resolved
+# by the universal description rule (V5) first; these PN rules catch the cases whose description
+# is terse (e.g. "10GBASE-CU SFP+ Cable" never says "direct attach cable"). Form-factor target
+# is grounded in the PN family + the datasheet description (verified vs the 297-PN corpus).
 classify:
   rules:
-    - { pn_contains: "AOC",          unterkategorie: "AOC Kabel" }
-    - { pn_prefix:   "SFP-H10GB-",   unterkategorie: "DAC Kabel" }
-  default: "SFP+ (10G)"
+    # cables first (most specific)
+    - { pn_contains: "AOC",          unterkategorie: "AOC Kabel" }   # all active optical cables
+    - { pn_prefix:   "QSFP-4X10G-AC", unterkategorie: "DAC Kabel" }  # 40G active copper breakout
+    - { pn_contains: "CU",           unterkategorie: "DAC Kabel" }   # every -CU/-ACU copper DAC
+    # form factor: specific -> general
+    - { pn_contains: "CFP2",         unterkategorie: "CFP2" }        # CFP2-*, DP04CFP2-*
+    - { pn_prefix:   "CFP-",         unterkategorie: "CFP" }
+    - { pn_prefix:   "CPAK",         unterkategorie: "CPAK" }
+    - { pn_prefix:   "CXP",          unterkategorie: "CXP" }
+    - { pn_prefix:   "X2-",          unterkategorie: "X2" }
+    - { pn_contains: "XFP",          unterkategorie: "XFP" }         # XFP-*, XFP10G*, DWDM-XFP-C
+    - { pn_prefix:   "OSFP",         unterkategorie: "OSFP" }
+    - { pn_prefix:   "QSFP-400G",    unterkategorie: "QSFP112" }     # 400G single-lambda QSFP112
+    - { pn_prefix:   "QDD-2X400G",   unterkategorie: "QSFP-DD800" }  # 800G
+    - { pn_prefix:   "QDD-8X100G",   unterkategorie: "QSFP-DD800" }  # 800G
+    - { pn_prefix:   "QDD-",         unterkategorie: "QSFP-DD" }     # 200G/400G QSFP-DD
+    - { pn_prefix:   "DP01QSDD",     unterkategorie: "QSFP-DD" }
+    - { pn_prefix:   "DP04QSDD",     unterkategorie: "QSFP-DD" }
+    - { pn_prefix:   "QSFP-200G",    unterkategorie: "QSFP56" }
+    - { pn_prefix:   "QSFP-100G",    unterkategorie: "QSFP28" }
+    - { pn_prefix:   "QSFP-40/100",  unterkategorie: "QSFP28" }      # 40/100 dual-rate BiDi
+    - { pn_prefix:   "QSFP-40G",     unterkategorie: "QSFP+" }
+    - { pn_prefix:   "QSFP-4SFP10",  unterkategorie: "QSFP+" }
+    - { pn_prefix:   "QSFP-4X10G",   unterkategorie: "QSFP+" }
+    - { pn_prefix:   "QSFP-H40G",    unterkategorie: "QSFP+" }
+    - { pn_prefix:   "WSP-Q40G",     unterkategorie: "QSFP+" }
+    - { pn_prefix:   "FET-40G",      unterkategorie: "QSFP+" }       # 40G fabric extender transceiver
+    - { pn_prefix:   "SFP-10/25G",   unterkategorie: "SFP28" }       # 10/25G dual-rate SFP28
+    - { pn_prefix:   "SFP-25G",      unterkategorie: "SFP28" }
+    - { pn_prefix:   "SFP-50G",      unterkategorie: "SFP56" }
+    - { pn_prefix:   "SFP-10G",      unterkategorie: "SFP+" }
+    - { pn_prefix:   "DWDM-SFP",     unterkategorie: "SFP" }         # 1G DWDM SFP
+    - { pn_prefix:   "GLC-",         unterkategorie: "SFP" }         # 1G Gigabit SFP
+    - { pn_prefix:   "SFP-1G",       unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-GE",       unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-GPON",     unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-OC",       unterkategorie: "SFP" }         # SONET/SDH SFP
+    - { pn_prefix:   "SFP-CH",       unterkategorie: "SFP" }         # channelized smart SFP
+    - { pn_prefix:   "SFP-E1F",      unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-T1F",      unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-T3F",      unterkategorie: "SFP" }
+    - { pn_prefix:   "SFP-TS",       unterkategorie: "SFP" }
+  # Verified zero fall-throughs across the 297-PN curated corpus; default kept as a safe SFP
+  # (a future unseen family would land here -> V9 catalog-coverage will surface it).
+  default: "SFP"
 
 # --- Unterkategorie -> locked-22 canonical token ----------------------------------
-# Operator's ledger convention (left) mapped to the locked-22 Kategorie-Ebene-3 token
-# (right) used by Stage-3 / JTL. Identity is assumed for any label not listed here
-# (XFP -> XFP, QSFP28 -> QSFP28, ...). The engine asserts every target is in the
-# locked-22 set (config/taxonomy/transceivers.yaml), so a typo fails loud.
-locked22_map:
-  "SFP+ (10G)": "SFP+"
-  "DAC Kabel": "DAC Kabel"
-  "AOC Kabel": "AOC Kabel"
+# The classifier now emits locked-22 tokens directly (QSFP28, SFP+, DAC Kabel, ...), so the
+# map is identity. verify_ledger_spec still asserts every emittable Unterkategorie is a real
+# locked-22 token (config/taxonomy/transceivers.yaml), so a typo fails loud.
+locked22_map: {}

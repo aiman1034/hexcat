@@ -3,19 +3,43 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
-## Current state (2026-06-12)
+## Current state (2026-06-12) — autonomous directive in force
 
 **Verifier-gated pipeline live.** Every mine is independently re-derived and audited (V1–V8)
 before the ledger is accepted; a non-passing ledger is NOT written (CLI exits 1). Audit
 reports (`Audit_Report_{Brand}.md` + `.json`) are written per source to the `--out` dir.
+**Multi-source merge works via `--source all`** (one ledger from N datasheets; `write_workbook`
+takes the list of per-source results; each source independently V1–V8 gated).
 
-### Production ledgers — all GREEN (8/8 checks PASS)
+### §7 Dashboard (computed from files 2026-06-12)
 
-| Brand    | Source (cache key)                         | Distinct SKUs | Notable taxonomy |
-| -------- | ------------------------------------------ | ------------- | ---------------- |
-| Cisco    | `c78-455693` (HTML)                         | 35            | DAC 9, AOC 6, SFP+ 20 |
-| Fortinet | `fortinet_transceivers` (PDF, token+column) | 87            | DAC 28, MPO 4, AOC 1, 4× pack-of-four flagged |
-| HPE/Aruba| `aos-s%20…transceiver%20guide` (PDF, section)| 147          | AOC 36, DAC 9 |
+| Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Status |
+| -------- | ----------- | ---------- | ----- | ----------- | ------ |
+| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | NOT BUILT | V1–V8 green; V9 pending |
+| Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | NOT BUILT | V9 pending (likely 1-source pass) |
+| HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | NOT BUILT | V9 pending; FlexFabric/Comware gap unchecked |
+| Brocade  | — | FC (out of scope) | — | — | PARKED (operator decision) |
+| 14 others| 0 | not enumerated | — | — | NOT-STARTED |
+
+**DONE-VERIFIED count: 0** (V9 not yet built; nothing passes the full V1–V9 gate.)
+
+### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
+The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
+sources from the seed; **29** mine cleanly into **297 distinct SKUs** spanning 19 locked-22
+families: SFP 60, DAC 59, AOC 39, SFP+ 21, QSFP28 19, QSFP-DD 17, CPAK 12, QSFP+ 12, SFP28 10,
+XFP 9, SFP56 8, X2 8, CFP 6, OSFP 5, QSFP56 3, QSFP112 3, CFP2 2, CXP 2, QSFP-DD800 2.
+Curated seed = `Cisco_Transceivers_SEED.xlsx` (drops 2 non-transceiver datasheets: the M12
+fibre-patch-cable sheet and the PON-ONT sheet). Build: `--seed Cisco_Transceivers_SEED.xlsx
+--source all --spec config/ledger/cisco_transceivers.yaml`.
+
+### NEW bug class fixed → regression test
+7. **Single-datasheet undercount + form-factor misclassification** — the Cisco spec defaulted
+   every PN to "SFP+ (10G)". Now multi-family classify rules (PN-prefix, grounded in the 297-PN
+   corpus) map each family to its locked-22 token; `test_classify_multi_family` freezes 27 cases.
+8. **Flag-don't-emit `exclude`** — new spec block (`exclude:` list, `spec.is_excluded()`) drops
+   non-transceiver tokens (CVR converter adapters, licenses/RTUs) from BOTH the emitted ledger
+   AND the verifier's authoritative set (symmetric → V7/V8 stay honest). `test_exclude_flags_
+   non_transceivers`. Applied in engine.run_source (→ flagged) + verify_ledger (token filter).
 
 Fortinet true count is **87** (not the old mis-mined 90). DR4 and DR4+ both present (distinct).
 

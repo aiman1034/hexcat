@@ -55,15 +55,48 @@ def test_verify_ledger_spec_passes():
 
 
 def test_classify_buckets():
-    assert SPEC.classify_pn("SFP-10G-SR") == "SFP+ (10G)"
-    assert SPEC.classify_pn("SFP-10G-T-X") == "SFP+ (10G)"     # 10GBASE-T module, NOT a cable
+    assert SPEC.classify_pn("SFP-10G-SR") == "SFP+"
+    assert SPEC.classify_pn("SFP-10G-T-X") == "SFP+"          # 10GBASE-T module, NOT a cable
     assert SPEC.classify_pn("SFP-H10GB-CU3M") == "DAC Kabel"
     assert SPEC.classify_pn("SFP-H10GB-ACU7M") == "DAC Kabel"  # active copper -> DAC
     assert SPEC.classify_pn("SFP-10G-AOC3M") == "AOC Kabel"
 
 
+def test_classify_multi_family():
+    """The full Cisco line spans SFP..OSFP — not just the 10G SFP+ pilot. Each form factor
+    must land in its own locked-22 bucket (regression for the 35-SKU single-family undercount)."""
+    cases = {
+        "GLC-T": "SFP", "SFP-1G-SX": "SFP", "SFP-OC3-SR": "SFP",      # 1G / SONET SFP
+        "SFP-10G-LR": "SFP+", "SFP-25G-SR-S": "SFP28", "SFP-10/25G-LR-S": "SFP28",
+        "SFP-50G-SR-S": "SFP56", "QSFP-40G-SR4": "QSFP+", "WSP-Q40GLR4L": "QSFP+",
+        "QSFP-100G-LR4-S": "QSFP28", "QSFP-200G-FR4-S": "QSFP56", "QSFP-400G-DR4": "QSFP112",
+        "QDD-400G-DR4-S": "QSFP-DD", "QDD-2X400G-FR4": "QSFP-DD800", "QDD-8X100G-FR": "QSFP-DD800",
+        "OSFP-800G-DR8": "OSFP", "CPAK-100G-SR10": "CPAK", "CXP-100G-SR10": "CXP",
+        "CFP-100G-LR4": "CFP", "CFP2-100G-ER4": "CFP2", "X2-10GB-SR": "X2",
+        "XFP-10G-MM-SR": "XFP", "DWDM-XFP-C": "XFP",
+        "QSFP-100G-CU3M": "DAC Kabel", "QSFP-H40G-CU5M": "DAC Kabel",  # copper -> DAC by -CU rule
+        "QSFP-4X10G-AC10M": "DAC Kabel", "QSFP-100G-AOC10M": "AOC Kabel",
+    }
+    from hexcat.config import load_taxonomy
+    locked22 = set(load_taxonomy().subcategories)
+    for pn, expected in cases.items():
+        assert SPEC.classify_pn(pn) == expected, f"{pn} -> {SPEC.classify_pn(pn)} != {expected}"
+        # every emitted bucket must be a real locked-22 token (identity map)
+        assert SPEC.to_locked22(expected) in locked22
+
+
+def test_exclude_flags_non_transceivers():
+    """Licenses / RTUs / converter adapters are flagged, not emitted (1000% rule)."""
+    assert SPEC.is_excluded("CVR-QSFP-SFP10G", "QSFP 40G to SFP+ 10G Adapter Module")
+    assert SPEC.is_excluded("R-PON-10G-RTU", "XGS-PON RTU License")
+    assert SPEC.is_excluded("CFP2-LIC-UPG-200G", "License for WDM Digital CFP2 enabling 200G")
+    # a real transceiver whose description merely mentions an adapter is NOT excluded
+    assert not SPEC.is_excluded("CPAK-100G-LR4", "Cisco CPAK Module ... includes LC-SC adapter")
+    assert not SPEC.is_excluded("SFP-10G-SR", "10GBASE-SR SFP+ Module for MMF")
+
+
 def test_locked22_mapping():
-    assert SPEC.to_locked22("SFP+ (10G)") == "SFP+"
+    assert SPEC.to_locked22("SFP+") == "SFP+"
     assert SPEC.to_locked22("DAC Kabel") == "DAC Kabel"
     assert SPEC.to_locked22("AOC Kabel") == "AOC Kabel"
     assert SPEC.to_locked22("XFP") == "XFP"  # identity for unlisted
@@ -163,7 +196,7 @@ def _fixture_result():
 def test_run_source_classifies_and_counts():
     res = _fixture_result()
     assert res.mined_count == 4
-    assert res.coverage() == {"SFP+ (10G)": 2, "DAC Kabel": 1, "AOC Kabel": 1}
+    assert res.coverage() == {"SFP+": 2, "DAC Kabel": 1, "AOC Kabel": 1}
     assert res.new_count is None  # no live list
 
 
@@ -179,7 +212,7 @@ def test_run_source_with_live_list_tags_and_corrects():
     corr = {c.raw: c for c in res.corrections}
     assert "SFP-10G-SR-P-4683" in corr
     assert corr["SFP-10G-SR-P-4683"].canonical == "SFP-10G-SR"
-    assert corr["SFP-10G-SR-P-4683"].tab == "SFP+ (10G)"
+    assert corr["SFP-10G-SR-P-4683"].tab == "SFP+"
     assert "C78-455693" in corr["SFP-10G-SR-P-4683"].confirmed_via
 
 

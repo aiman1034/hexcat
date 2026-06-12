@@ -83,6 +83,10 @@ def verify_ledger(
     else:
         raise ValueError("verify_ledger needs either pdf_bytes or html.")
 
+    # Symmetric flag-don't-emit: drop the same non-transceiver tokens the engine excludes, so the
+    # independently re-derived authoritative set still equals the emitted set (V7/V8 stay honest).
+    tokens = [t for t in tokens if not spec.is_excluded(t.pn, t.description)]
+
     source_skus = sorted({t.pn for t in tokens})
 
     v1 = C.v1_verbatim(emitted, raw_text, source_skus)
