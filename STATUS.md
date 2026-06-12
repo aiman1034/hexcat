@@ -15,7 +15,7 @@ takes the list of per-source results; each source independently V1–V8 gated).
 
 | Brand    | Ledger SKUs | True scope | V1–V8 | V9 coverage | Stage-3 | Status |
 | -------- | ----------- | ---------- | ----- | ----------- | ------- | ------ |
-| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | GENERATED (8/297 authored) | **DONE-VERIFIED** (V1–V9 green) |
+| Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V1–V8 green; V9 coverage spec pending |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | UNCALIBRATED (no coverage spec) | NOT-STARTED | V9 spec pending; FlexFabric/Comware gap unchecked |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
@@ -29,7 +29,7 @@ A spec with no coverage set → V9 FAILs as UNCALIBRATED (never silently certifi
 NOT-STARTED / GENERATED / PRICES-PENDING / IMPORT-READY (IMPORT-READY only when generated +
 content-verified + prices filled).
 
-### Stage-3 v5.0 package generator (BUILT) + Cisco content authoring (IN PROGRESS)
+### Stage-3 v5.0 package generator (BUILT) + Cisco content authoring (COMPLETE 2026-06-12)
 The byte-exact JTL-Ameise package generator is built and matches the authoritative proof slice
 (`Corrected 7 Part Numbers/Cisco_Audit_7SKUs_*.csv`): 5 CSVs (Main `_v5_0`, Attributes, Platform,
 Prices [semicolon], Verification_Log), UTF-8 BOM + CRLF, csv-minimal quoting. Key facts learned
@@ -48,10 +48,14 @@ source URL = the author's spine, blank prose, derivable attrs pre-seeded). Autho
 `stage3_content/Cisco_content.json` (TRACKED; `output/` is gitignored runtime).** Datasheets cached
 locally in `datasheets/cache/` → authoring is fully offline/$0. 297 SKUs map to 29 cached datasheets.
 
-**Progress: 8/297 authored** — X2 family complete (LR, ER, ZR, SR, LRM, LX4, CX4, T) from the cached
-X2 datasheet, all gate-passing. Overall state stays GENERATED until all 297 done (then PRICES-PENDING,
-since prices are operator-supplied). Next batches by datasheet: CPAK (12), SFP c78-366584 (26),
-SFP+ c78-455693 (35→20 SFP+), QSFP/DAC/AOC c78-736282 (46), etc.
+**Progress: 297/297 authored — COMPLETE (commit 156b944). State = PRICES-PENDING.** All 19 families
+authored in-session ($0, datasheet round-tripped, flag-or-omit): X2 (8), CPAK, SFP, SFP+, SFP28,
+SFP56, QSFP+, QSFP28, QSFP56, QSFP112, QSFP-DD, QSFP-DD800, OSFP, XFP, CFP, CFP2, CXP, DAC, AOC, plus
+7 singletons (DWDM-XFP-C, CFP2-100G-ER4, DP01QSDD-ZF1, DP04QSDD-HE0, DP04CFP2-D15, DWDM-SFP-6141,
+SFP-10G-OLT20-X). Content gate (`content_issues`) passes for all 297. Only operator-supplied Netto-VK
+remains before IMPORT-READY. Notable flag-don't-emit calls: CFP-100G-SR10 DOM "Nein (laut Datenblatt)";
+DP01QSDD-ZF1 modulation QPSK per line-mode (datasheet "16QAM" column treated as typo); DWDM-SFP-6141
+DOM not asserted; coherent DCOs assert only datasheet-stated power/temp/connector.
 
 ### Cisco corrected: 35 → 297 (root cause = single-datasheet trust)
 The old 35 was ONLY the 10G SFP+ datasheet (`c78-455693`). Enumerated **48** Cisco transceiver
