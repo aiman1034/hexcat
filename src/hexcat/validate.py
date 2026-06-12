@@ -262,10 +262,14 @@ class Validator:
                                "markup besides <p> (specs belong in the Attributes file)")
                     break
             besch_plain = plain_text(besch)
-            # Inline-Q&A leak: a question mark suggests FAQ prose leaked into the body.
+            # Inline-Q&A leak (FAIL): the Beschreibung is prose-only; a question mark means FAQ
+            # prose leaked into the body (FAQ belongs in its own file). House style is strictly
+            # declarative — all 902 authored Beschreibungen are '?'-free — so this is a hard stop,
+            # not a warning. (Promoted from WARN by the §3 gate self-audit: a listed defect class
+            # the gate must FAIL, not merely flag.)
             if "?" in besch_plain:
-                self._warn(fname, sku, "Beschreibung",
-                           "contains '?' — possible inline Q&A (FAQ belongs in the FAQ file)")
+                self._fail(fname, sku, "Beschreibung", "no '?' (prose-only body)", "contains '?'",
+                           "inline Q&A leaked into the Beschreibung (FAQ belongs in the FAQ file)")
             # Collect substantive sentences for the reuse check (see reuse_candidate_sentences:
             # tag->space tokenization so sentences don't fuse across "</p><p>"; only the
             # "Original…" closer and <6-word fragments are exempt — condition statements
