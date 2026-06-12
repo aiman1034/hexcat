@@ -6109,14 +6109,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-LR4 100GBASE-LR4 CPAK Modul — 10 km SMF, 1310 nm",
+    "titel_tag": "Cisco CPAK-100G-LR4 100G LR4 10 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-LR4 100GBASE-LR4 CPAK Modul kaufen — 1310 nm 4-Lane WDM, SMF, 10 km, SC-Anschluss, IEEE 802.3ba und OTU4. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-LR4 ist ein originales 100GBASE-LR4 CPAK Modul und überträgt 100 Gigabit Ethernet über vier WDM-Wellenlängen um 1310 nm auf Singlemode-Faser bis zehn Kilometer.</p><p>Mit SC-Anschluss, IEEE-802.3ba-Konformität und zusätzlicher OTU4-Unterstützung eignet es sich für dichte 100G-Verbindungen in Cisco-Routern und -Switches mit deutlich geringerer Leistungsaufnahme als CFP2.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-LR4 ist ein 100GBASE-LR4 Modul im kompakten CPAK-Formfaktor, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen um 1310 nm mit je 25 Gbit/s pro Lane überträgt und bis zehn Kilometer Standard-Singlemode-Faser nach G.652 überbrückt.",
+      "Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul; der Standard-Anschluss ist Dual-SC, ab Version 09 ist über einen abnehmbaren LC-SC-Adapter auch LC möglich, wobei SC der offiziell unterstützte Steckertyp bleibt. Das Modul ist IEEE-802.3ba-konform und unterstützt zusätzlich ITU OTU4.",
+      "Der CPAK-Formfaktor ist 20 Prozent kleiner und verbraucht 40 Prozent weniger Strom als CFP2; Digital Optical Monitoring und die Cisco Quality-ID sind integriert, und das Modul ist im laufenden Betrieb hot-swappable in unterstützten Cisco-Plattformen."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Standardmäßig Dual-SC auf Singlemode-Faser. Ab Modulversion 09 ist über einen abnehmbaren LC-SC-Adapter auch LC möglich; SC bleibt der offiziell unterstützte Typ."
+      ],
+      [
+        "Unterstützt das Modul OTU4?",
+        "Ja. Neben IEEE 802.3ba 100GBASE-LR4 unterstützt das CPAK-100G-LR4 auch ITU OTU4 im 1x100G-Modus."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100GE-LR4",
+        "Cisco CPAK-100GE-LR4 — 100GBASE-LR4 mit LC, Ethernet"
+      ],
+      [
+        "CPAK-100G-ER4L",
+        "Cisco CPAK-100G-ER4L — 100GBASE-ER4 Lite 25 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6124,12 +6155,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-LR4 / ITU OTU4"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4-Lane LAN-WDM)"
+      ],
+      [
+        "Reichweite",
+        "10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual SC/PC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-LR4-2K": {
     "_facts": {
@@ -6137,14 +6221,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-LR4-2K 100GBASE-LR4 CPAK Modul — SMF, 1310 nm, SC",
+    "titel_tag": "Cisco CPAK-100G-LR4-2K 100G LR4 SMF | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-LR4-2K 100GBASE-LR4 CPAK Modul kaufen — 1310 nm 4-Lane WDM, Singlemode, SC-Anschluss, IEEE 802.3ba und OTU4. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-LR4-2K ist ein originales 100GBASE-LR4 CPAK Modul der LR4-Familie und überträgt 100 Gigabit Ethernet über vier WDM-Wellenlängen um 1310 nm auf Singlemode-Faser.</p><p>Mit fest verbautem Dual-SC-Anschluss, IEEE-802.3ba-Konformität und OTU4-Unterstützung fügt es sich in Cisco-Router und -Switches mit CPAK-Steckplatz ein und arbeitet sparsamer als CFP2-Module.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-LR4-2K ist ein 100GBASE-LR4 Modul im CPAK-Formfaktor, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen um 1310 nm mit je 25 Gbit/s pro Lane überträgt und in der LR4-Familie auf Standard-Singlemode-Faser nach G.652 läuft.",
+      "Das Modul verwendet einen fest verbauten Dual-SC-Anschluss; Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul. Es ist IEEE-802.3ba-konform und unterstützt zusätzlich ITU OTU4 für den Transporteinsatz in Cisco-Netzen.",
+      "Im kompakten CPAK-Formfaktor verbraucht das Modul rund 40 Prozent weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Ein fest verbauter Dual-SC-Anschluss für Standard-Singlemode-Faser. Patchkabel mit PC- oder UPC-Steckern werden unterstützt."
+      ],
+      [
+        "Worin liegt der Unterschied zum CPAK-100G-LR4?",
+        "Beide gehören zur LR4-Familie über vier WDM-Wellenlängen um 1310 nm; das LR4-2K nutzt fest den SC-Anschluss, während das LR4 ab Version 09 einen abnehmbaren LC-SC-Adapter bietet."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 10 km"
+      ],
+      [
+        "CPAK-100GE-LR4",
+        "Cisco CPAK-100GE-LR4 — 100GBASE-LR4 LC"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6152,12 +6267,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-LR4 / ITU OTU4"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4-Lane LAN-WDM)"
+      ],
+      [
+        "Reichweite",
+        "10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual SC/PC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100GE-LR4": {
     "_facts": {
@@ -6165,14 +6333,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100GE-LR4 100GBASE-LR4 CPAK Modul — 10 km SMF, LC",
+    "titel_tag": "Cisco CPAK-100GE-LR4 100G LR4 LC 10 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100GE-LR4 100GBASE-LR4 CPAK Modul kaufen — 1310 nm 4-Lane WDM, Singlemode, 10 km, LC-Anschluss, IEEE 802.3ba (Ethernet). Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100GE-LR4 ist ein originales 100GBASE-LR4 CPAK Modul mit LC-Anschluss und überträgt 100 Gigabit Ethernet über vier WDM-Wellenlängen um 1310 nm auf Singlemode-Faser bis zehn Kilometer.</p><p>Als reine Ethernet-Variante nach IEEE 802.3ba eignet es sich für dichte 100G-Verbindungen in Cisco-Routern und -Switches und verbraucht deutlich weniger Strom als vergleichbare CFP2-Module.</p>",
+    "intro": [
+      "Das Cisco CPAK-100GE-LR4 ist ein 100GBASE-LR4 Modul im CPAK-Formfaktor, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen um 1310 nm mit je 25 Gbit/s pro Lane überträgt und bis zehn Kilometer Standard-Singlemode-Faser nach G.652 überbrückt.",
+      "Im Unterschied zu den Transport-Varianten ist das CPAK-100GE-LR4 eine reine Ethernet-Ausführung nach IEEE 802.3ba und nutzt einen Dual-LC-Anschluss. Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul.",
+      "Der CPAK-Formfaktor ist 20 Prozent kleiner und verbraucht 40 Prozent weniger Strom als CFP2; Digital Optical Monitoring und die Cisco Quality-ID sind integriert, und das Modul ist im laufenden Betrieb hot-swappable in unterstützten Cisco-Plattformen."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Ein Dual-LC-Anschluss für Standard-Singlemode-Faser. Patchkabel mit PC- oder UPC-Steckern werden unterstützt."
+      ],
+      [
+        "Unterstützt das Modul OTU4?",
+        "Nein. Das CPAK-100GE-LR4 ist eine reine Ethernet-Variante nach IEEE 802.3ba; für OTU4-Transport ist das CPAK-100G-LR4 vorgesehen."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 SC, OTU4"
+      ],
+      [
+        "CPAK-100G-CWDM4",
+        "Cisco CPAK-100G-CWDM4 — 100G CWDM4 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6180,12 +6379,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-LR4 (Ethernet)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4-Lane LAN-WDM)"
+      ],
+      [
+        "Reichweite",
+        "10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-ER4L": {
     "_facts": {
@@ -6193,14 +6445,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-ER4L 100GBASE-ER4 Lite CPAK Modul — 25 km SMF, SC",
+    "titel_tag": "Cisco CPAK-100G-ER4L 100G ER4 25 km SMF | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-ER4L 100GBASE-ER4 Lite CPAK Modul kaufen — 1310 nm 4-Lane WDM, Singlemode, bis 25 km, SC-Anschluss, IEEE 802.3ba und OTU4. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-ER4L ist ein originales 100GBASE-ER4-Lite CPAK Modul und überträgt 100 Gigabit Ethernet über vier WDM-Wellenlängen um 1310 nm auf Singlemode-Faser bis etwa 25 Kilometer.</p><p>Mit SC-Anschluss, IEEE-802.3ba-Kompatibilität und OTU4-Unterstützung überbrückt es größere Distanzen als LR4 und fügt sich sparsam in Cisco-Router und -Switches mit CPAK-Steckplatz ein.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-ER4L ist ein 100GBASE-ER4-Lite Modul im CPAK-Formfaktor, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen um 1310 nm mit je 25 Gbit/s pro Lane überträgt und bis etwa 25 Kilometer Standard-Singlemode-Faser nach G.652 erreicht.",
+      "Das Modul ist mit dem 100GBASE-ER4-Standard kompatibel, arbeitet ohne FEC und nutzt einen Dual-SC-Anschluss. Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul; zusätzlich wird ITU OTU4 unterstützt.",
+      "Der kompakte CPAK-Formfaktor verbraucht rund 40 Prozent weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-ER4L?",
+        "Bis etwa 25 km über Standard-Singlemode-Faser (G.652) bei 1310 nm, ohne FEC."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Ein Dual-SC-Anschluss für Singlemode-Faser. Patchkabel mit PC- oder UPC-Steckern werden unterstützt."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-ER4F",
+        "Cisco CPAK-100G-ER4F — 100GBASE-ER4 bis 40 km mit FEC"
+      ],
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6208,12 +6491,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-ER4 Lite / ITU OTU4"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4-Lane LAN-WDM)"
+      ],
+      [
+        "Reichweite",
+        "ca. 25 km"
+      ],
+      [
+        "Anschluss",
+        "Dual SC/PC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-ER4F": {
     "_facts": {
@@ -6221,14 +6557,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-ER4F 100GBASE-ER4 Lite CPAK Modul — 40 km SMF (FEC), LC",
+    "titel_tag": "Cisco CPAK-100G-ER4F 100G ER4 40 km FEC | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-ER4F 100GBASE-ER4 Lite CPAK Modul kaufen — 1310 nm 4-Lane WDM, Singlemode, 30 km ohne / 40 km mit FEC, LC-Anschluss, IEEE 802.3ba. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-ER4F ist ein originales 100GBASE-ER4-Lite CPAK Modul mit LC-Anschluss und überträgt 100 Gigabit Ethernet über vier WDM-Wellenlängen um 1310 nm auf Singlemode-Faser.</p><p>Ohne FEC erreicht es rund 30 Kilometer, mit aktivierter FEC bis 40 Kilometer; damit überbrückt es die größten ER4-Distanzen und fügt sich sparsam in Cisco-Router und -Switches mit CPAK-Steckplatz ein.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-ER4F ist ein 100GBASE-ER4-Lite Modul im CPAK-Formfaktor, das 100 Gigabit Ethernet über vier LAN-WDM-Wellenlängen um 1310 nm mit je 25 Gbit/s pro Lane überträgt und für lange Singlemode-Strecken nach G.652 ausgelegt ist.",
+      "Mit deaktivierter FEC erreicht das Modul rund 30 Kilometer, mit aktivierter FEC bis 40 Kilometer. Es nutzt einen Dual-LC-Anschluss; Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul.",
+      "Der kompakte CPAK-Formfaktor verbraucht rund 40 Prozent weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-ER4F?",
+        "Etwa 30 km ohne FEC und bis 40 km mit aktivierter Forward Error Correction über Standard-Singlemode-Faser (G.652) bei 1310 nm."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Ein Dual-LC-Anschluss für Singlemode-Faser. Patchkabel mit PC- oder UPC-Steckern werden unterstützt."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-ER4L",
+        "Cisco CPAK-100G-ER4L — 100GBASE-ER4 Lite 25 km SC"
+      ],
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6236,12 +6603,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-ER4 Lite"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (4-Lane LAN-WDM)"
+      ],
+      [
+        "Reichweite",
+        "30 km (ohne FEC) / 40 km (mit FEC)"
+      ],
+      [
+        "Anschluss",
+        "Dual LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-10X10G-LR": {
     "_facts": {
@@ -6249,14 +6669,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-10X10G-LR CPAK Modul — 10×10GBASE-LR, 10 km SMF, MPO-24",
+    "titel_tag": "Cisco CPAK-10X10G-LR 10x10G LR 10 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-10X10G-LR CPAK Modul kaufen — 10×10GBASE-LR, 1310 nm Singlemode, 10 km, MPO/MTP-24-APC, IEEE 802.3ae. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-10X10G-LR ist ein originales CPAK Modul im 10×10-Gbit/s-Modus und liefert über ein 24-Faser-MPO/MTP-Ribbon und Breakout-Kabel zehn 10GBASE-LR-Schnittstellen.</p><p>Es überträgt 1310 nm über Singlemode-Faser bis zehn Kilometer nach IEEE 802.3ae und eignet sich für flexible 10G-Aufteilung aus einem dichten 100G-CPAK-Port in Cisco-Routern und -Switches.</p>",
+    "intro": [
+      "Das Cisco CPAK-10X10G-LR ist ein CPAK Modul, das im 10×10-Gbit/s-Modus zusammen mit Ribbon-zu-Duplex-Singlemode-Breakout-Kabeln zehn einzelne 10GBASE-LR-Schnittstellen bereitstellt und so 100 Gbit/s flexibel auf zehn 10G-Verbindungen aufteilt.",
+      "Das Modul liefert die Links über 24-Faser-Ribbon-Kabel mit MPO/MTP-24-APC-Anschluss und überbrückt bis zehn Kilometer Standard-Singlemode-Faser nach G.652 bei 1310 nm. Es ist IEEE-802.3ae-konform und unterstützt zusätzlich FC sowie ITU OTU2/OTU1e/OTU2e.",
+      "Beim MPO-24-SMF-APC-Anschluss ist eine Federkraft von 10 N vorgesehen (nicht 22 N); Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie liefert das Modul zehn 10G-Schnittstellen?",
+        "Im 10×10-Gbit/s-Modus über ein 24-Faser-MPO/MTP-Ribbon und Ribbon-zu-Duplex-SMF-Breakout-Kabel, die den CPAK-Port in zehn 10GBASE-LR-Verbindungen aufteilen."
+      ],
+      [
+        "Was ist beim MPO-24-Anschluss zu beachten?",
+        "Der MPO-24-SMF-APC-Anschluss ist für eine Federkraft von 10 N ausgelegt. Stecker mit 22 N Federkraft sollten nicht verwendet werden, da die Leistung sonst nicht gewährleistet ist."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-10X10G-ERL",
+        "Cisco CPAK-10X10G-ERL — 10×10GBASE-ER 25 km"
+      ],
+      [
+        "CPAK-100G-SR10",
+        "Cisco CPAK-100G-SR10 — 100GBASE-SR10 MMF"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6264,12 +6715,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "10×10 Gbit/s"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ae 10GBASE-LR / FC / ITU OTU2"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (10 Lanes)"
+      ],
+      [
+        "Reichweite",
+        "10 km"
+      ],
+      [
+        "Anschluss",
+        "MPO/MTP-24 APC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652, 24 Fasern)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-SR10": {
     "_facts": {
@@ -6277,14 +6781,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-SR10 100GBASE-SR10 CPAK Modul — 850 nm MMF, MPO-24",
+    "titel_tag": "Cisco CPAK-100G-SR10 100G SR10 MMF | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-SR10 100GBASE-SR10 CPAK Modul kaufen — 850 nm Multimode, 100 m OM3 / 150 m OM4, MPO/MTP-24, IEEE 802.3ba. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-SR10 ist ein originales 100GBASE-SR10 CPAK Modul und liefert 100 Gigabit über ein 24-Faser-MPO/MTP-Ribbon auf 850 nm Multimode-Faser.</p><p>Es erreicht 100 m über OM3 und 150 m über OM4 und lässt sich auch im 10×10-Gbit/s-Modus für zehn 10GBASE-SR-Schnittstellen nutzen — flexibel für dichte 100G- und 10G-Anbindungen in Cisco-Routern und -Switches.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-SR10 ist ein 100GBASE-SR10 Modul im CPAK-Formfaktor, das 100 Gigabit über 850 nm Multimode-Faser liefert und dafür ein 24-Faser-Ribbon mit MPO/MTP-24-Anschluss nutzt — ausgelegt für kurze, kostengünstige 100G-Strecken.",
+      "Über laseroptimierte Multimode-Faser erreicht das Modul 100 m auf OM3 und 150 m auf OM4. Es lässt sich zudem im 10×10-Gbit/s-Modus mit Breakout-Kabeln für zehn 10GBASE-SR-Schnittstellen betreiben und ist IEEE-802.3ba-konform inklusive OTU4.",
+      "Der MPO/MTP-24-Anschluss erfordert eine Federkraft von 20 N; Digital Optical Monitoring und die Cisco Quality-ID sind integriert, und das Modul ist im laufenden Betrieb hot-swappable auf unterstützten Cisco-Plattformen."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-SR10?",
+        "100 m über OM3- und 150 m über OM4-Multimode-Faser; die 150-m-Strecke gilt als Engineered Link mit maximal 1 dB für Stecker- und Spleißverluste."
+      ],
+      [
+        "Kann das Modul zehn 10G-Schnittstellen liefern?",
+        "Ja. Im 10×10-Gbit/s-Modus stellt es zusammen mit Breakout-Kabeln zehn 10GBASE-SR-Verbindungen bereit."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-SR4",
+        "Cisco CPAK-100G-SR4 — 100GBASE-SR4 12-Faser MPO"
+      ],
+      [
+        "CPAK-10X10G-LR",
+        "Cisco CPAK-10X10G-LR — 10×10GBASE-LR 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6292,12 +6827,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (10×10G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ba 100GBASE-SR10 / ITU OTU4"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "100 m OM3 / 150 m OM4"
+      ],
+      [
+        "Anschluss",
+        "MPO/MTP-24"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4, 24 Fasern)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-10X10G-ERL": {
     "_facts": {
@@ -6305,14 +6893,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-10X10G-ERL CPAK Modul — 10×10GBASE-ER, 25 km SMF, MPO-24",
+    "titel_tag": "Cisco CPAK-10X10G-ERL 10x10G ER 25 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-10X10G-ERL CPAK Modul kaufen — 10×10GBASE-ER, 1550 nm Singlemode, 25 km, MPO/MTP-24-APC, IEEE 802.3ae. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-10X10G-ERL ist ein originales CPAK Modul im 10×10-Gbit/s-Modus und liefert über ein 24-Faser-MPO/MTP-Ribbon und Breakout-Kabel zehn 10GBASE-ER-Schnittstellen.</p><p>Es überträgt 1550 nm über Singlemode-Faser bis 25 Kilometer nach IEEE 802.3ae und eignet sich für reichweitenstarke 10G-Aufteilung aus einem dichten 100G-CPAK-Port in Cisco-Routern und -Switches.</p>",
+    "intro": [
+      "Das Cisco CPAK-10X10G-ERL ist ein CPAK Modul, das im 10×10-Gbit/s-Modus zusammen mit Ribbon-zu-Duplex-Singlemode-Breakout-Kabeln zehn einzelne 10GBASE-ER-Schnittstellen bereitstellt und so reichweitenstarke 10G-Verbindungen aus einem CPAK-Port aufteilt.",
+      "Das Modul liefert die Links über 24-Faser-Ribbon-Kabel mit MPO/MTP-24-APC-Anschluss und überbrückt bis 25 Kilometer Standard-Singlemode-Faser nach G.652 bei 1550 nm. Es ist IEEE-802.3ae-konform und unterstützt zusätzlich FC sowie ITU OTU2/OTU1e/OTU2e.",
+      "Beim MPO-24-SMF-APC-Anschluss ist eine Federkraft von 10 N vorgesehen (nicht 22 N); Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-10X10G-ERL?",
+        "Bis 25 km über Standard-Singlemode-Faser (G.652) bei 1550 nm, im 10×10-Gbit/s-Modus."
+      ],
+      [
+        "Was ist beim MPO-24-Anschluss zu beachten?",
+        "Der MPO-24-SMF-APC-Anschluss ist für eine Federkraft von 10 N ausgelegt; Stecker mit 22 N sollten nicht verwendet werden."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-10X10G-LR",
+        "Cisco CPAK-10X10G-LR — 10×10GBASE-LR 10 km"
+      ],
+      [
+        "CPAK-100G-ER4L",
+        "Cisco CPAK-100G-ER4L — 100GBASE-ER4 Lite 25 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6320,12 +6939,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "10×10 Gbit/s"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3ae 10GBASE-ER / FC / ITU OTU2"
+      ],
+      [
+        "Wellenlänge",
+        "1550 nm (10 Lanes)"
+      ],
+      [
+        "Reichweite",
+        "25 km"
+      ],
+      [
+        "Anschluss",
+        "MPO/MTP-24 APC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652, 24 Fasern)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-SR4": {
     "_facts": {
@@ -6333,14 +7005,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-SR4 100GBASE-SR4 CPAK Modul — 850 nm MMF, MPO-12",
+    "titel_tag": "Cisco CPAK-100G-SR4 100G SR4 MMF | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-SR4 100GBASE-SR4 CPAK Modul kaufen — 850 nm Multimode, 70 m OM3 / 100 m OM4, 12-Faser MPO, IEEE 802.3bm. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-SR4 ist ein originales 100GBASE-SR4 CPAK Modul und überträgt 100 Gigabit Ethernet über vier parallele 25G-Lanes auf 850 nm Multimode-Faser mit 12-Faser-MPO-Anschluss.</p><p>Es erreicht 70 m über OM3 und 100 m über OM4 nach IEEE 802.3bm und eignet sich für kurze, kostengünstige 100G-Verbindungen in Cisco-Routern und -Switches mit CPAK-Steckplatz.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-SR4 ist ein 100GBASE-SR4 Modul im CPAK-Formfaktor, das 100 Gigabit Ethernet über vier parallele 25-Gbit/s-Lanes auf 850 nm Multimode-Faser überträgt und dafür einen 12-Faser-MPO-Anschluss nutzt — ideal für kurze Strecken.",
+      "Über laseroptimierte Multimode-Faser erreicht das Modul 70 m auf OM3 und 100 m auf OM4. Es ist IEEE-802.3bm-konform; die 100-m-Strecke gilt als Engineered Link mit maximal 1 dB für Stecker- und Spleißverluste.",
+      "Der kompakte CPAK-Formfaktor verbraucht deutlich weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt und die Verfügbarkeit der Verbindung erhöht."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-SR4?",
+        "70 m über OM3- und 100 m über OM4-Multimode-Faser; die 100-m-Strecke gilt als Engineered Link mit maximal 1 dB Stecker- und Spleißverlust."
+      ],
+      [
+        "Welcher Anschluss wird verwendet?",
+        "Ein 12-Faser-MPO-Anschluss für parallele Multimode-Faser bei 850 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-SR10",
+        "Cisco CPAK-100G-SR10 — 100GBASE-SR10 MPO-24"
+      ],
+      [
+        "CPAK-100G-PSM4",
+        "Cisco CPAK-100G-PSM4 — 100G PSM4 500 m SMF"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6348,12 +7051,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3bm 100GBASE-SR4"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "70 m OM3 / 100 m OM4"
+      ],
+      [
+        "Anschluss",
+        "MPO-12"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (OM3/OM4, 12 Fasern)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-CWDM4": {
     "_facts": {
@@ -6361,14 +7117,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-CWDM4 CPAK Modul — 100G CWDM4, 2 km SMF, LC",
+    "titel_tag": "Cisco CPAK-100G-CWDM4 100G CWDM4 2 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-CWDM4 CPAK Modul kaufen — 100G CWDM4 MSA, 1271–1331 nm, Singlemode, 2 km, Dual-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-CWDM4 ist ein originales CPAK Modul nach 100G-CWDM4-MSA und überträgt 100 Gigabit Ethernet über vier CWDM-Wellenlängen von 1271 bis 1331 nm auf Singlemode-Faser.</p><p>Mit Dual-LC-Anschluss überbrückt es bis zwei Kilometer Duplex-SMF und schließt die Lücke zwischen kurzen SR4- und langen LR4-Strecken in Cisco-Routern und -Switches mit CPAK-Steckplatz.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-CWDM4 ist ein 100-Gigabit-Modul im CPAK-Formfaktor nach 100G-CWDM4-MSA, das das Signal über vier CWDM-Wellenlängen von 1271, 1291, 1311 und 1331 nm überträgt und so 100 Gbit/s über ein einzelnes Duplex-Singlemode-Faserpaar führt.",
+      "Mit Dual-LC-Anschluss überbrückt das Modul bis zwei Kilometer Standard-Singlemode-Faser nach G.652. Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul, sodass keine externen Komponenten erforderlich sind.",
+      "Der kompakte CPAK-Formfaktor verbraucht deutlich weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt und die Verfügbarkeit der Verbindung erhöht."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-CWDM4?",
+        "Bis 2 km über ein Duplex-Singlemode-Faserpaar (G.652) mit Dual-LC-Anschluss."
+      ],
+      [
+        "Welche Wellenlängen nutzt das Modul?",
+        "Vier CWDM-Wellenlängen: 1271, 1291, 1311 und 1331 nm, im Modul gemultiplext."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-FR",
+        "Cisco CPAK-100G-FR — 100G FR PAM4 2 km"
+      ],
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6376,12 +7163,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "100G CWDM4 MSA"
+      ],
+      [
+        "Wellenlänge",
+        "1271 / 1291 / 1311 / 1331 nm"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-PSM4": {
     "_facts": {
@@ -6389,14 +7229,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-PSM4 CPAK Modul — 100G PSM4, 500 m SMF, MPO-12",
+    "titel_tag": "Cisco CPAK-100G-PSM4 100G PSM4 500 m | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-PSM4 CPAK Modul kaufen — 100G PSM4 MSA, 1295–1325 nm, Singlemode, 500 m, 12-Faser MPO. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-PSM4 ist ein originales CPAK Modul nach 100G-PSM4-MSA und überträgt 100 Gigabit Ethernet über vier parallele Singlemode-Fasern um 1310 nm mit 12-Faser-MPO-Anschluss.</p><p>Es überbrückt bis 500 Meter Singlemode-Faser und bietet eine kosteneffiziente Mitteldistanz-Lösung zwischen MMF-SR4 und Duplex-CWDM4 in Cisco-Routern und -Switches mit CPAK-Steckplatz.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-PSM4 ist ein 100-Gigabit-Modul im CPAK-Formfaktor nach 100G-PSM4-MSA, das 100 Gbit/s über vier parallele Singlemode-Fasern im Bereich 1295 bis 1325 nm überträgt und dafür einen 12-Faser-MPO-Anschluss nutzt.",
+      "Das Modul überbrückt bis 500 Meter Standard-Singlemode-Faser nach G.652 und positioniert sich als kosteneffiziente Mitteldistanz-Lösung zwischen parallelem Multimode-SR4 und Duplex-Singlemode-CWDM4.",
+      "Der kompakte CPAK-Formfaktor verbraucht deutlich weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt und die Verfügbarkeit der Verbindung erhöht."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie weit reicht das CPAK-100G-PSM4?",
+        "Bis 500 m über parallele Standard-Singlemode-Faser (G.652) mit 12-Faser-MPO-Anschluss."
+      ],
+      [
+        "Welcher Anschluss wird verwendet?",
+        "Ein 12-Faser-MPO-Anschluss für parallele Singlemode-Faser im Bereich 1295–1325 nm."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-SR4",
+        "Cisco CPAK-100G-SR4 — 100GBASE-SR4 MMF"
+      ],
+      [
+        "CPAK-100G-CWDM4",
+        "Cisco CPAK-100G-CWDM4 — 100G CWDM4 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6404,12 +7275,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (4×25G)"
+      ],
+      [
+        "Standard",
+        "100G PSM4 MSA"
+      ],
+      [
+        "Wellenlänge",
+        "1295–1325 nm"
+      ],
+      [
+        "Reichweite",
+        "500 m"
+      ],
+      [
+        "Anschluss",
+        "MPO-12"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652, 12 Fasern)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "CPAK-100G-FR": {
     "_facts": {
@@ -6417,14 +7341,45 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco CPAK-100G-FR CPAK Modul — 100G FR PAM4, 2 km SMF, LC",
+    "titel_tag": "Cisco CPAK-100G-FR 100G FR PAM4 2 km | Hexwaren",
+    "meta_description": "Original Cisco CPAK-100G-FR CPAK Modul kaufen — 100G Lambda MSA, 1310 nm PAM4, Singlemode, 2 km, Dual-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CPAK-100G-FR ist ein originales CPAK Modul nach 100G-Lambda-MSA und überträgt 100 Gigabit Ethernet über eine einzige Wellenlänge bei 1310 nm im PAM4-Verfahren.</p><p>Mit Dual-LC-Anschluss überbrückt es bis zwei Kilometer Singlemode-Faser und bietet eine moderne Single-Wavelength-Alternative zu 4-Lane-Optiken in Cisco-Routern und -Switches mit CPAK-Steckplatz.</p>",
+    "intro": [
+      "Das Cisco CPAK-100G-FR ist ein 100-Gigabit-Modul im CPAK-Formfaktor nach 100G-Lambda-MSA, das 100 Gbit/s über eine einzige Wellenlänge bei 1310 nm überträgt und dafür das moderne PAM4-Modulationsverfahren (Pulse-Amplitude-Modulation, 4 Stufen) nutzt.",
+      "Mit Dual-LC-Anschluss überbrückt das Modul bis zwei Kilometer Standard-Singlemode-Faser nach G.652. Die Single-Wavelength-Auslegung vereinfacht die Optik gegenüber 4-Lane-WDM-Lösungen und folgt dem 100G-Lambda-MSA-Ökosystem.",
+      "Der kompakte CPAK-Formfaktor verbraucht deutlich weniger Strom als CFP2; Digital Optical Monitoring und Cisco Quality-ID sind integriert, und der Tausch im laufenden Betrieb ist auf unterstützten Cisco-Plattformen möglich, was Wartung und Austausch einzelner Module ohne Unterbrechung des Datenverkehrs erlaubt und die Verfügbarkeit der Verbindung erhöht."
+    ],
+    "kompatibilitaet": [
+      "Cisco ASR 1000 und ASR 9000 Series Router",
+      "Cisco CRS-X Carrier Routing System",
+      "Cisco NCS 2000, 4000 und 6000 Series Router",
+      "Cisco Nexus 7000 und 7700 Series Switches sowie Cisco ONS Transport-Plattform"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt und mit Cisco Quality-ID zur Echtheitserkennung durch die Cisco-Plattform."
+      ],
+      [
+        "Wie überträgt das CPAK-100G-FR 100 Gigabit?",
+        "Über eine einzige Wellenlänge bei 1310 nm im PAM4-Verfahren nach 100G-Lambda-MSA, bis 2 km über Duplex-Singlemode-Faser."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Ein Dual-LC-Anschluss für ein Duplex-Singlemode-Faserpaar (G.652)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "CPAK-100G-CWDM4",
+        "Cisco CPAK-100G-CWDM4 — 100G CWDM4 2 km"
+      ],
+      [
+        "CPAK-100G-LR4",
+        "Cisco CPAK-100G-LR4 — 100GBASE-LR4 10 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -6432,12 +7387,65 @@
         "CPAK"
       ],
       [
+        "Geschwindigkeit",
+        "100 Gbit/s (PAM4, 1λ)"
+      ],
+      [
+        "Standard",
+        "100G Lambda MSA (PAM4)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SMF, G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-728110.html",
+        "datasheet"
+      ]
+    }
   },
   "GLC-FE-100FX": {
     "_facts": {
