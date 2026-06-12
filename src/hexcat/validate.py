@@ -63,6 +63,18 @@ SENTENCE_REUSE_MIN_SKUS = 8
 # "versiegelt/Neuware" wording: a broad keyword exemption would silently mask unvaried
 # boilerplate (it previously hid Arista's 243/347 cable + 104/347 module condition sentences).
 
+# --- cross-SKU FAQ uniqueness (G5) -----------------------------------------------------
+# Each SKU's FAQ must add per-SKU value. Individual pairs may legitimately recur — the
+# universal authenticity question ("Ist dies ein originales <Brand>-Produkt?") and category
+# questions (cable power, host compatibility) — but the SUBSTANTIVE remainder (everything
+# except the by-design authenticity pair) must NOT be byte-identical across many SKUs, which
+# would be copy-pasted boilerplate with zero per-SKU value. Calibrated to the shipped data
+# (max legitimate duplication is a 2-SKU BiDi -D/-U pair): WARN at 2, FAIL at 4.
+FAQ_CELL_REUSE_WARN_SKUS = 2
+FAQ_CELL_REUSE_FAIL_SKUS = 4
+_FAQ_AUTHENTICITY_RE = re.compile(r"^\s*ist dies ein original", re.IGNORECASE)
+
+
 # --- optical-module completeness (FAIL) ------------------------------------------------
 # Any module whose Kategorie Ebene 3 is a transceiver form factor (NOT a DAC/AOC/MPO cable)
 # must carry a Wellenlänge attribute — a missing one is shallow extraction. Two grounded
@@ -553,6 +565,7 @@ class Validator:
         i_sku = self._col(t, "Artikelnummer")
         i_faq = self._col(t, "FAQ")
         b = self.rules.budgets.faq
+        substantive_skus: dict[str, list[str]] = {}  # G5: dedup key -> SKUs
         for idx, row in enumerate(t.rows):
             sku = row[i_sku]
             cell = row[i_faq]
@@ -575,6 +588,26 @@ class Validator:
             if not (b.min_pairs <= n <= b.max_pairs):
                 self._fail(fname, sku, "FAQ", f"{b.min_pairs}-{b.max_pairs} pairs",
                            f"{n} pairs", "FAQ pair count out of range")
+            # G5: dedup on the substantive remainder (authenticity pair stripped).
+            substantive = [p for p in pairs if not _FAQ_AUTHENTICITY_RE.match(p)]
+            key = C.FAQ_PAIR_SEP.join(substantive)
+            if key.strip():
+                substantive_skus.setdefault(key, []).append(sku)
+
+        # G5: a substantive FAQ block byte-identical across many SKUs is boilerplate.
+        for key, skus in substantive_skus.items():
+            cnt = len(skus)
+            if cnt < FAQ_CELL_REUSE_WARN_SKUS:
+                continue
+            sample = ", ".join(sorted(skus)[:5])
+            if cnt >= FAQ_CELL_REUSE_FAIL_SKUS:
+                self._fail(fname, sorted(skus)[0], "FAQ", "distinctive per-SKU FAQ",
+                           f"identical across {cnt} SKUs ({sample})",
+                           "boilerplate: same substantive FAQ block reused across too many SKUs")
+            else:
+                self._warn(fname, sorted(skus)[0], "FAQ",
+                           f"substantive FAQ identical across {cnt} SKUs ({sample}): "
+                           "review for boilerplate")
 
     def _check_cross_file(self):
         if "main" not in self.tables:

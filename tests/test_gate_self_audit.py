@@ -313,3 +313,35 @@ def test_reuse_fail_with_shared_sentence(good_bundle, rules, monkeypatch):
     assert not r.ok
     assert _has(r, field="Beschreibung", msg="boilerplate"), \
         "\n".join(str(v) for v in r.violations)
+
+
+def test_faq_boilerplate_fail_with_identical_block(good_bundle, rules, monkeypatch):
+    """§2 G5 FAQ uniqueness: a substantive FAQ block byte-identical across SKUs is boilerplate.
+
+    The reference bundle has 2 SKUs, below FAQ_CELL_REUSE_FAIL_SKUS, so lower the floor and
+    overwrite BOTH FAQ cells with one identical 3-pair block (no authenticity pair, so the
+    whole block is substantive) -> 2/2 identical -> hard FAIL."""
+    monkeypatch.setattr(V, "FAQ_CELL_REUSE_FAIL_SKUS", 2)
+    d, _ = good_bundle
+    shared = ("Frage eins ohne jeden Mehrwert?||Antwort eins.##"
+              "Frage zwei ohne jeden Mehrwert?||Antwort zwei.##"
+              "Frage drei ohne jeden Mehrwert?||Antwort drei.")
+
+    def fn(t: str) -> str:
+        lines = t.split("\n")
+        out = [lines[0]]  # header (may carry BOM)
+        for ln in lines[1:]:
+            cr = ln.endswith("\r")
+            core = ln[:-1] if cr else ln
+            if not core.strip():
+                out.append(ln)
+                continue
+            sku = core.split(",", 1)[0]
+            out.append(f'{sku},"{shared}"' + ("\r" if cr else ""))
+        return "\n".join(out)
+
+    _mutate(_file(d, "Hexwaren_FAQ_*.csv"), fn)
+    r = validate_dir(rules, d)
+    assert not r.ok
+    assert _has(r, field="FAQ", msg="boilerplate"), \
+        "\n".join(str(v) for v in r.violations)
