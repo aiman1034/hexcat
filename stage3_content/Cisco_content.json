@@ -32826,14 +32826,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QDD-8X100G-FR 8×100GBASE-FR1 QSFP-DD800 — 1310 nm Singlemode, Dual MPO-12, 2 km, Breakout",
+    "titel_tag": "Cisco QDD-8X100G-FR 8x100G-FR1 2km | Hexwaren",
+    "meta_description": "Original Cisco QDD-8X100G-FR QSFP-DD800-Modul kaufen — 8×100GBASE-FR1, 1310 nm Singlemode, Dual MPO-12 (APC), 2 km, 8×100G-Breakout. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QDD-8X100G-FR ist ein originales QSFP-DD800-Modul, das 800GE über acht parallele Singlemode-Faserpaare bei 1310 nm mit zwei MPO-12-Anschlüssen (APC) überträgt.</p><p>Es erreicht bis zu 2 Kilometer, dient als 8×100G-Breakout (100G-DR/FR/LR) oder als 2× 400GBASE-DR4 und nimmt bis zu 17 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QDD-8X100G-FR ist ein QSFP-DD800-Modul, das 800 Gigabit Ethernet über acht parallele Singlemode-Faserpaare bei 1310 nm mit zwei MPO-12-Anschlüssen (APC) überträgt — eine Wellenlänge je Lane, konform zu IEEE 802.3cu für 100GBASE-FR1.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 2 Kilometer und lässt sich als 8×100G-Breakout zu QSFP28 100G-DR (bis 500 m), 100G-FR (bis 2 km) und 100G-LR (bis 2 km) oder als zwei unabhängige 400GBASE-DR4-Transceiver in einem Port nutzen; das Modul nimmt bis zu 17 Watt auf und arbeitet von 0 bis 75 °C.",
+      "Die Vorwärtsfehlerkorrektur (FEC) wird auf der Host-Plattform ausgeführt; das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und im QSFP-DD-Port abwärtskompatibel zu QSFP+, QSFP28, QSFP56 und QSFP-DD-400G-Modulen. Es arbeitet im Temperaturbereich von 0 bis 75 °C (QSFP-DD MSA, CMIS Rev 5.0, Laser-Klasse 1)."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD 2×400G-Ports an Switches und Routern (Rechenzentrum, HPC, Core/Distribution, Service-Provider)",
+      "Interoperabel mit IEEE-konformen 400GBASE- und 100GBASE-Schnittstellen; abwärtskompatibel zu QSFP+/QSFP28/QSFP56/QSFP-DD 400G",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (5 Jahre)."
+      ],
+      [
+        "Welche Breakout-Optionen bietet das QDD-8X100G-FR?",
+        "Es lässt sich als acht 100G-Verbindungen zu QSFP28 100G-DR (bis 500 m), 100G-FR (bis 2 km) und 100G-LR (bis 2 km) oder als zwei unabhängige 400GBASE-DR4-Transceiver nutzen."
+      ],
+      [
+        "Welcher Steckertyp wird benötigt?",
+        "Das QDD-8X100G-FR erfordert Patchkabel mit Angled-Physical-Contact-MPO-Steckern (APC)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-2X400G-FR4",
+        "Cisco QDD-2X400G-FR4 — 2×400GBASE-FR4 QSFP-DD800 über Singlemode, 2 km"
+      ],
+      [
+        "QSFP-400G-DR4",
+        "Cisco QSFP-400G-DR4 — 400GBASE-DR4 QSFP112 über Singlemode, 500 m"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32841,12 +32871,89 @@
         "QSFP-DD800"
       ],
       [
+        "Geschwindigkeit",
+        "800 Gbit/s (8× 100G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3cu 8× 100GBASE-FR1"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm (8 Lanes parallel)"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual MPO-12 (APC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS Rev 5.0)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 17 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 75 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "QDD-2X400G-FR4": {
     "_facts": {
@@ -32854,14 +32961,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco QDD-2X400G-FR4 2×400GBASE-FR4 QSFP-DD800 — 1310-nm-Band CWDM, Dual Duplex LC, 2 km",
+    "titel_tag": "Cisco QDD-2X400G-FR4 2x400G-FR4 2km | Hexwaren",
+    "meta_description": "Original Cisco QDD-2X400G-FR4 QSFP-DD800-Modul kaufen — 2×400GBASE-FR4, CWDM 1270–1330 nm, Dual Duplex LC, 2 km über Singlemode. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco QDD-2X400G-FR4 ist ein originales QSFP-DD800-Modul, das 800GE als zwei 400GBASE-FR4-Kanäle über vier CWDM-Wellenlängen auf zwei Duplex-LC-Faserpaaren überträgt.</p><p>Es erreicht bis zu 2 Kilometer über G.652, Multiplexing erfolgt im Modul, und es nimmt bis zu 17 Watt auf. Als Cisco-Neuware versiegelt, mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco QDD-2X400G-FR4 ist ein QSFP-DD800-Modul, das 800 Gigabit Ethernet als zwei unabhängige 400GBASE-FR4-Kanäle über vier CWDM-Wellenlängen (1270/1290/1310/1330 nm) auf zwei Duplex-Singlemode-Faserpaaren mit LC-Anschlüssen überträgt.",
+      "Über Singlemode-Faser (G.652) erreicht es bis zu 2 Kilometer; Multiplexing und Demultiplexing der vier Wellenlängen erfolgen im Modul, das konform zu IEEE 802.3cu und der 100G-Lambda-MSA ist, bis zu 17 Watt aufnimmt und von 0 bis 75 °C arbeitet.",
+      "Die Vorwärtsfehlerkorrektur (FEC) wird auf der Host-Plattform ausgeführt; das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und im QSFP-DD-Port abwärtskompatibel zu QSFP+, QSFP28, QSFP56 und QSFP-DD-400G-Modulen. Es arbeitet im Temperaturbereich von 0 bis 75 °C (QSFP-DD MSA, CMIS Rev 5.0, Laser-Klasse 1)."
+    ],
+    "kompatibilitaet": [
+      "Cisco QSFP-DD 2×400G-Ports an Switches und Routern (Rechenzentrum, HPC, Core/Distribution, Service-Provider)",
+      "Interoperabel mit IEEE-konformen 400GBASE- und 100GBASE-Schnittstellen; abwärtskompatibel zu QSFP+/QSFP28/QSFP56/QSFP-DD 400G",
+      "Maßgeblich ist die Cisco Transceiver Modules Compatibility Matrix"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und Cisco-Standardgarantie (5 Jahre)."
+      ],
+      [
+        "Wie überträgt das QDD-2X400G-FR4 die 800 Gigabit?",
+        "Als zwei unabhängige 400GBASE-FR4-Kanäle; jeder Kanal multiplext vier CWDM-Wellenlängen auf ein Duplex-Singlemode-Faserpaar."
+      ],
+      [
+        "Wie weit reicht das Modul?",
+        "Bis zu 2 Kilometer über Duplex-Singlemode-Faser (G.652) mit LC-Anschlüssen."
+      ]
+    ],
+    "verwandte": [
+      [
+        "QDD-8X100G-FR",
+        "Cisco QDD-8X100G-FR — 8×100GBASE-FR1 QSFP-DD800 über Singlemode, 2 km"
+      ],
+      [
+        "QSFP-400G-FR4",
+        "Cisco QSFP-400G-FR4 — 400GBASE-FR4 QSFP112 über Singlemode, 2 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -32869,12 +33006,89 @@
         "QSFP-DD800"
       ],
       [
+        "Geschwindigkeit",
+        "800 Gbit/s (2× 400G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3cu 2× 400GBASE-FR4 + 100G Lambda MSA"
+      ],
+      [
+        "Wellenlänge",
+        "1270 / 1290 / 1310 / 1330 nm (CWDM)"
+      ],
+      [
+        "Reichweite",
+        "2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual Duplex LC (UPC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652)"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (CMIS Rev 5.0)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "bis 17 W"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 75 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "DWDM-XFP-C": {
     "_facts": {
