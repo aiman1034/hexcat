@@ -28454,14 +28454,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-T1F-SATOP-I TPoP Smart SFP — T1 über SAToP (RFC 4553), RJ-45 Kupfer, bis 200 m",
+    "titel_tag": "Cisco SFP-T1F-SATOP-I T1 Smart SFP TPoP | Hexwaren",
+    "meta_description": "Original Cisco SFP-T1F-SATOP-I TPoP Smart SFP kaufen — wandelt T1 per SAToP (RFC 4553) in Gigabit-Ethernet, RJ-45 Cat5e/6A bis 200 m, -40 bis 85 °C. Neu, versiegelt, Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-T1F-SATOP-I ist ein originales TPoP-Smart-SFP, das T1-Signale per SAToP (RFC 4553) in Gigabit-Ethernet umsetzt und TDM-Strecken in Paketnetze integriert.</p><p>Der Anschluss erfolgt über RJ-45 auf Cat5e/6A bis 200 Meter, bei typisch 1,2 Watt und -40 bis 85 °C. Für Cisco HD-CEM auf NCS4200/NCS540/ASR900. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-T1F-SATOP-I ist ein Smart SFP der TPoP-Familie (Transparent PDH over Packet), das eingehende T1-Signale auf Basis des SAToP-Protokolls (RFC 4553) in Gigabit-Ethernet-Verkehr umsetzt und so synchrone TDM-Schnittstellen in Ethernet-Netze integriert.",
+      "Der Anschluss erfolgt über RJ-45 auf Cat5e/6A-Kupferkabel mit einer Reichweite bis 200 Meter; das Modul nimmt typisch 1,2 Watt auf, ist ITU-T-G.703-konform und arbeitet im industriellen Temperaturbereich von -40 bis 85 °C (Bail-Latch-Farbe Gold).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Wie weit reicht das SFP-T1F-SATOP-I?",
+        "Bis zu 200 Meter über Cat5e/6A-Kupferkabel mit RJ-45-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-E1F-SATOP-I",
+        "Cisco SFP-E1F-SATOP-I — E1-SAToP-Variante, bis 100 m"
+      ],
+      [
+        "SFP-T3F-SATOP-I",
+        "Cisco SFP-T3F-SATOP-I — T3/DS3-SAToP über Mini-Koax"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28469,12 +28499,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (TPoP — Transparent PDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "T1 (1,544 Mbit/s) over Packet → Gigabit Ethernet, SAToP (RFC 4553)"
+      ],
+      [
+        "Anschluss",
+        "RJ-45"
+      ],
+      [
+        "Medium",
+        "Kupfer (Cat5e/6A)"
+      ],
+      [
+        "Reichweite",
+        "bis 200 m"
+      ],
+      [
+        "DOM/DDM",
+        "Nicht anwendbar"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,2 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Medium": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-E1F-SATOP-I": {
     "_facts": {
@@ -28482,14 +28581,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-E1F-SATOP-I TPoP Smart SFP — E1 über SAToP (RFC 4553), RJ-45 Kupfer, bis 100 m",
+    "titel_tag": "Cisco SFP-E1F-SATOP-I E1 Smart SFP TPoP | Hexwaren",
+    "meta_description": "Original Cisco SFP-E1F-SATOP-I TPoP Smart SFP kaufen — wandelt E1 per SAToP (RFC 4553) in Gigabit-Ethernet, RJ-45 Cat5e/6A bis 100 m, -40 bis 85 °C. Neu, versiegelt, Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-E1F-SATOP-I ist ein originales TPoP-Smart-SFP, das E1-Signale per SAToP (RFC 4553) in Gigabit-Ethernet umsetzt und TDM-Strecken in Paketnetze integriert.</p><p>Der Anschluss erfolgt über RJ-45 auf Cat5e/6A bis 100 Meter, bei typisch 1,05 Watt und -40 bis 85 °C. Für Cisco HD-CEM auf NCS4200/NCS540/ASR900. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-E1F-SATOP-I ist ein Smart SFP der TPoP-Familie (Transparent PDH over Packet), das eingehende E1-Signale auf Basis des SAToP-Protokolls (RFC 4553) in Gigabit-Ethernet-Verkehr umsetzt und synchrone TDM-Schnittstellen in Ethernet-Netze integriert.",
+      "Der Anschluss erfolgt über RJ-45 auf Cat5e/6A-Kupferkabel mit einer Reichweite bis 100 Meter; das Modul nimmt typisch 1,05 Watt auf, ist ITU-T-G.703-konform und arbeitet im industriellen Temperaturbereich von -40 bis 85 °C (Bail-Latch-Farbe Gold).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Wie weit reicht das SFP-E1F-SATOP-I?",
+        "Bis zu 100 Meter über Cat5e/6A-Kupferkabel mit RJ-45-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-T1F-SATOP-I",
+        "Cisco SFP-T1F-SATOP-I — T1-SAToP-Variante, bis 200 m"
+      ],
+      [
+        "SFP-T3F-SATOP-I",
+        "Cisco SFP-T3F-SATOP-I — T3/DS3-SAToP über Mini-Koax"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28497,12 +28626,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (TPoP — Transparent PDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "E1 (2,048 Mbit/s) over Packet → Gigabit Ethernet, SAToP (RFC 4553)"
+      ],
+      [
+        "Anschluss",
+        "RJ-45"
+      ],
+      [
+        "Medium",
+        "Kupfer (Cat5e/6A)"
+      ],
+      [
+        "Reichweite",
+        "bis 100 m"
+      ],
+      [
+        "DOM/DDM",
+        "Nicht anwendbar"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,05 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Medium": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-T3F-SATOP-I": {
     "_facts": {
@@ -28510,14 +28708,44 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-T3F-SATOP-I TPoP Smart SFP — T3/DS3 über SAToP (RFC 4553), Mini-Koax, bis 137 m",
+    "titel_tag": "Cisco SFP-T3F-SATOP-I T3 Smart SFP TPoP | Hexwaren",
+    "meta_description": "Original Cisco SFP-T3F-SATOP-I TPoP Smart SFP kaufen — wandelt T3/DS3 per SAToP (RFC 4553) in Gigabit-Ethernet, Mini-Koax bis 137 m, -40 bis 85 °C. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-T3F-SATOP-I ist ein originales TPoP-Smart-SFP, das T3/DS3-Signale per SAToP (RFC 4553) in Gigabit-Ethernet umsetzt und TDM-Strecken in Paketnetze integriert.</p><p>Der Anschluss erfolgt über Mini-Koax bis 137 Meter, bei typisch 1,25 Watt und -40 bis 85 °C. Für Cisco HD-CEM auf NCS4200/NCS540/ASR900. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-T3F-SATOP-I ist ein Smart SFP der TPoP-Familie (Transparent PDH over Packet), das eingehende T3/DS3-Signale auf Basis des SAToP-Protokolls (RFC 4553) in Gigabit-Ethernet-Verkehr umsetzt und synchrone TDM-Schnittstellen in Ethernet-Netze integriert.",
+      "Der Anschluss erfolgt über Mini-Koax auf Mini-Koaxialkabel mit einer Reichweite bis 137 Meter; das Modul nimmt typisch 1,25 Watt auf, ist ITU-T-G.703-konform und arbeitet im industriellen Temperaturbereich von -40 bis 85 °C (Bail-Latch-Farbe Gelb).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Wie weit reicht das SFP-T3F-SATOP-I?",
+        "Bis zu 137 Meter über Mini-Koaxialkabel mit Mini-Koax-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-T1F-SATOP-I",
+        "Cisco SFP-T1F-SATOP-I — T1-SAToP über RJ-45-Kupfer"
+      ],
+      [
+        "SFP-E1F-SATOP-I",
+        "Cisco SFP-E1F-SATOP-I — E1-SAToP über RJ-45-Kupfer"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28525,12 +28753,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (TPoP — Transparent PDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "T3/DS3 (44,736 Mbit/s) over Packet → Gigabit Ethernet, SAToP (RFC 4553)"
+      ],
+      [
+        "Anschluss",
+        "Mini-Koax"
+      ],
+      [
+        "Medium",
+        "Mini-Koaxialkabel"
+      ],
+      [
+        "Reichweite",
+        "bis 137 m"
+      ],
+      [
+        "DOM/DDM",
+        "Nicht anwendbar"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,25 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Medium": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-CH-OC3STM1-I": {
     "_facts": {
@@ -28538,14 +28835,48 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-CH-OC3STM1-I CSoP Smart SFP — kanalisiert OC-3/STM-1, Duplex LC SMF, bis 15 km",
+    "titel_tag": "Cisco SFP-CH-OC3STM1-I OC-3 CSoP Smart SFP | Hexwaren",
+    "meta_description": "Original Cisco SFP-CH-OC3STM1-I CSoP Smart SFP kaufen — kanalisiert OC-3/STM-1 in 84 DS1 / 63 E1 CES, Duplex-LC SMF bis 15 km, DOM, -40 bis 85 °C. Neu, versiegelt, mit Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-CH-OC3STM1-I ist ein originales CSoP-Smart-SFP, das OC-3/STM-1-Signale in Gigabit-Ethernet umsetzt und in 84 DS1 bzw. 63 E1 Circuit-Emulated-Services kanalisiert.</p><p>Die Übertragung erfolgt über Duplex-LC auf Singlemode-Faser bis 15 Kilometer, DOM-fähig, typisch 1,28 Watt, -40 bis 85 °C. Für Cisco HD-CEM. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-CH-OC3STM1-I ist ein Smart SFP der CSoP-Familie (Channelized SONET/SDH over Packet), das eingehende OC-3/STM-1-Signale in Gigabit-Ethernet-Verkehr umsetzt und ein STM-1-Signal in 63 E1- bzw. ein OC-3-Signal in 84 DS1-Circuit-Emulated-Services (CES) kanalisiert.",
+      "Die optische Übertragung erfolgt über Duplex-LC auf Singlemode-Faser (G.652) mit einer Reichweite bis 15 Kilometer; das Modul ist DOM-fähig, nimmt typisch 1,28 Watt auf, erfüllt GR-253-CORE und ITU-T G.957 (Laser-Klasse 1) und arbeitet von -40 bis 85 °C (Bail-Latch-Farbe Gelb).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Wie kanalisiert das SFP-CH-OC3STM1-I das Signal?",
+        "Es kanalisiert ein STM-1-Signal in 63 E1 bzw. ein OC-3-Signal in 84 DS1 unabhängige Circuit-Emulated-Services (CES) — und umgekehrt."
+      ],
+      [
+        "Wie weit reicht das Modul optisch?",
+        "Bis zu 15 Kilometer über Singlemode-Faser (G.652) mit Duplex-LC-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-TS-OC3STM1-I",
+        "Cisco SFP-TS-OC3STM1-I — transparentes OC-3/STM-1, bis 40 km"
+      ],
+      [
+        "SFP-TS-OC12STM4-I",
+        "Cisco SFP-TS-OC12STM4-I — transparentes OC-12/STM-4, bis 40 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28553,12 +28884,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (CSoP — Channelized SONET/SDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "OC-3/STM-1 (155 Mbit/s), kanalisiert in 84 DS1 / 63 E1 CES"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652, 9 µm)"
+      ],
+      [
+        "Reichweite",
+        "bis 15 km"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,28 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-TS-OC3STM1-I": {
     "_facts": {
@@ -28566,14 +28966,48 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-TS-OC3STM1-I TSoP Smart SFP — transparent OC-3/STM-1, Duplex LC SMF, bis 40 km",
+    "titel_tag": "Cisco SFP-TS-OC3STM1-I OC-3 TSoP Smart SFP | Hexwaren",
+    "meta_description": "Original Cisco SFP-TS-OC3STM1-I TSoP Smart SFP kaufen — transparenter OC-3/STM-1-Pseudowire, Duplex-LC SMF bis 40 km, DOM, -40 bis 85 °C. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-TS-OC3STM1-I ist ein originales TSoP-Smart-SFP, das OC-3/STM-1-Bitströme vollständig transparent als Pseudowire über ein paketvermitteltes Netz transportiert.</p><p>Die Übertragung erfolgt über Duplex-LC auf Singlemode-Faser bis 40 Kilometer, DOM-fähig, typisch 1,3 Watt, -40 bis 85 °C. Für Cisco HD-CEM. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-TS-OC3STM1-I ist ein Smart SFP der TSoP-Familie (Transparent SONET/SDH over Packet), das OC-3/STM-1-Bitströme vollständig transparent als Pseudowire über ein paketvermitteltes Netz transportiert.",
+      "Es empfängt und sendet das optische OC-3/STM-1-Signal über Duplex-LC auf Singlemode-Faser (G.652) mit einer Reichweite bis 40 Kilometer und tauscht die Pakete über die elektrische Gigabit-Ethernet-Schnittstelle mit dem Hostsystem aus; DOM-fähig, typisch 1,3 Watt, GR-253-CORE/ITU-T G.957 (Laser-Klasse 1), -40 bis 85 °C (Bail-Latch-Farbe Rot).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Was bedeutet ‚transparent‘ bei diesem Smart SFP?",
+        "Es kapselt den gesamten SONET/SDH-Bitstrom unverändert als Pseudowire und überträgt ihn ohne Kanalisierung über das Paketnetz."
+      ],
+      [
+        "Wie weit reicht das Modul optisch?",
+        "Bis zu 40 Kilometer über Singlemode-Faser (G.652) mit Duplex-LC-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-TS-OC12STM4-I",
+        "Cisco SFP-TS-OC12STM4-I — transparentes OC-12/STM-4, bis 40 km"
+      ],
+      [
+        "SFP-CH-OC3STM1-I",
+        "Cisco SFP-CH-OC3STM1-I — kanalisiertes OC-3/STM-1, bis 15 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28581,12 +29015,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (TSoP — Transparent SONET/SDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "OC-3/STM-1 (155 Mbit/s), transparente Pseudowire"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652, 9 µm)"
+      ],
+      [
+        "Reichweite",
+        "bis 40 km"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,3 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "SFP-TS-OC12STM4-I": {
     "_facts": {
@@ -28594,14 +29097,48 @@
       "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
       "verifiziert_am": "2026-06-12"
     },
-    "artikelname": "",
-    "titel_tag": "",
-    "meta_description": "",
-    "kurzbeschreibung": "",
-    "intro": [],
-    "kompatibilitaet": [],
-    "faq": [],
-    "verwandte": [],
+    "artikelname": "Cisco SFP-TS-OC12STM4-I TSoP Smart SFP — transparent OC-12/STM-4, Duplex LC SMF, bis 40 km",
+    "titel_tag": "Cisco SFP-TS-OC12STM4-I OC-12 TSoP SFP | Hexwaren",
+    "meta_description": "Original Cisco SFP-TS-OC12STM4-I TSoP Smart SFP kaufen — transparenter OC-12/STM-4-Pseudowire, Duplex-LC SMF bis 40 km, DOM, -40 bis 85 °C. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco SFP-TS-OC12STM4-I ist ein originales TSoP-Smart-SFP, das OC-12/STM-4-Bitströme vollständig transparent als Pseudowire über ein paketvermitteltes Netz transportiert.</p><p>Die Übertragung erfolgt über Duplex-LC auf Singlemode-Faser bis 40 Kilometer, DOM-fähig, typisch 1,3 Watt, -40 bis 85 °C. Für Cisco HD-CEM. Als Cisco-Neuware versiegelt.</p>",
+    "intro": [
+      "Das Cisco SFP-TS-OC12STM4-I ist ein Smart SFP der TSoP-Familie (Transparent SONET/SDH over Packet), das OC-12/STM-4-Bitströme vollständig transparent als Pseudowire über ein paketvermitteltes Netz transportiert.",
+      "Es empfängt und sendet das optische OC-12/STM-4-Signal über Duplex-LC auf Singlemode-Faser (G.652) mit einer Reichweite bis 40 Kilometer und tauscht die Pakete über die elektrische Gigabit-Ethernet-Schnittstelle mit dem Hostsystem aus; DOM-fähig, typisch 1,3 Watt, GR-253-CORE/ITU-T G.957 (Laser-Klasse 1), -40 bis 85 °C (Bail-Latch-Farbe Rot).",
+      "Cisco Smart SFPs ermöglichen die Migration und Integration von TDM-Transportnetzen in paketvermittelte Netze und arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900. Das Modul ist im laufenden Betrieb steckbar, über die Cisco Quality-ID als geprüftes Original erkennbar und für den industriellen Temperaturbereich von -40 bis 85 °C ausgelegt."
+    ],
+    "kompatibilitaet": [
+      "Cisco-Plattformen mit HD-CEM-Unterstützung — NCS4200, NCS540 und ASR900 — in SFP-Steckplätzen",
+      "Interoperabel mit standardkonformer SAToP-Ausrüstung (RFC 4553) bzw. GR-253-CORE/ITU-T-G.957-konformen SONET/SDH-Strecken",
+      "Maßgeblich ist die Cisco TMG Compatibility Matrix (tmgmatrix.cisco.com)"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales Cisco-Modul?",
+        "Ja. Es handelt sich um Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt, mit Cisco Quality-ID zur Echtheitserkennung und fünf Jahren Cisco-Standardgarantie."
+      ],
+      [
+        "Auf welchen Hostsystemen läuft dieses Smart SFP?",
+        "Cisco Smart SFPs arbeiten mit der Cisco HD-CEM-Lösung auf den Plattformen NCS4200, NCS540 und ASR900."
+      ],
+      [
+        "Was bedeutet ‚transparent‘ bei diesem Smart SFP?",
+        "Es kapselt den gesamten SONET/SDH-Bitstrom unverändert als Pseudowire und überträgt ihn ohne Kanalisierung über das Paketnetz."
+      ],
+      [
+        "Wie weit reicht das Modul optisch?",
+        "Bis zu 40 Kilometer über Singlemode-Faser (G.652) mit Duplex-LC-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "SFP-TS-OC3STM1-I",
+        "Cisco SFP-TS-OC3STM1-I — transparentes OC-3/STM-1, bis 40 km"
+      ],
+      [
+        "SFP-CH-OC3STM1-I",
+        "Cisco SFP-CH-OC3STM1-I — kanalisiertes OC-3/STM-1, bis 15 km"
+      ]
+    ],
     "beschreibung": "",
     "attributes": [
       [
@@ -28609,12 +29146,81 @@
         "SFP"
       ],
       [
+        "Typ",
+        "Smart SFP (TSoP — Transparent SONET/SDH over Packet)"
+      ],
+      [
+        "Schnittstelle",
+        "OC-12/STM-4 (622 Mbit/s), transparente Pseudowire"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (G.652, 9 µm)"
+      ],
+      [
+        "Reichweite",
+        "bis 40 km"
+      ],
+      [
+        "DOM/DDM",
+        "Ja (DOM)"
+      ],
+      [
+        "Leistungsaufnahme",
+        "1,3 W (typisch)"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis 85 °C"
+      ],
+      [
         "Zustand",
         "Neu, versiegelt"
       ]
     ],
     "netto_vk": null,
-    "provenance": {}
+    "provenance": {
+      "Formfaktor": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Schnittstelle": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "DOM/DDM": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Leistungsaufnahme": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/smart-sfp-ds.html",
+        "datasheet"
+      ]
+    }
   },
   "OSFP-800G-VR8": {
     "_facts": {
