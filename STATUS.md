@@ -5,6 +5,15 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
 
 ## Current state (2026-06-12) — autonomous directive in force
 
+**§3 GATE SELF-AUDIT DONE (commit 9db4789).** `tests/test_gate_self_audit.py` is a data-driven
+suite: one minimal FAILING fixture per known build-gate defect class (S* structural, M* Main,
+A* Attributes, P* Prices, C* Condition, F* FAQ, X* cross-file, V* verification) — each mutates
+the clean 2-SKU reference bundle and asserts `validate_dir` FAILS on the *named* violation —
+plus a green-reference test and a monkeypatched cross-SKU reuse FAIL. The Beschreibung inline-Q&A
+`?` check was promoted WARN→FAIL (body is prose-only; all 902 Beschreibungen are `?`-free).
+**Standing rule:** any future gate-missed defect becomes a permanent fixture here before it is
+fixed. 190 tests pass; all 5 brands still GREEN. NEXT: §2 G1 source-disposition accounting.
+
 **Verifier-gated pipeline live.** Every mine is independently re-derived and audited (V1–V8)
 before the ledger is accepted; a non-passing ledger is NOT written (CLI exits 1). Audit
 reports (`Audit_Report_{Brand}.md` + `.json`) are written per source to the `--out` dir.
