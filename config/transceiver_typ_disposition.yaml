@@ -1,0 +1,56 @@
+# §Pass-3 — "Transceiver Typ" reconciliation: ONE datasheet-grounded rule across all brands.
+#
+# The problem (operator-flagged): the field was populated wildly unevenly — Cisco 19 SKUs vs
+# Arista 243 — and with THREE incompatible meanings: (a) reach/PMD codes (HPE: SR, LR, LR4, ...),
+# (b) a cable-integration note ("fest konfektioniert (im Kabel enthalten)" on DAC/AOC), and
+# (c) special functional classes (Cisco: coherent DCO, Smart SFP, GPON/XGS-PON OLT, tunable DWDM).
+#
+# The reconciled rule is the engine's OWN contract, already encoded in
+# src/hexcat/attribute_depth.py:73 — "Transceiver Typ": _non_cable  # SR/LR/ER… reach code, modules
+# only. So:
+#
+#   Transceiver Typ = the manufacturer's reach / PMD VARIANT CODE (SR, LR, ER, SR4, LR4, DR4, SR8,
+#   SX, LX, ZR, ...) for a pluggable optical MODULE. It is EXPECTED on modules and NOT on cables
+#   (DAC/AOC are described by Kabeltyp). A special functional class (coherent DCO, Smart SFP, OLT,
+#   tunable DWDM) is a legitimate Typ where the datasheet names one.
+#
+# GROUNDING METHOD (the 1000% rule): the reach code is read VERBATIM from the manufacturer part
+# number — the manufacturer's own authoritative naming — by _scratch/ground_transceiver_typ.py with
+# a STRICT safety gate: split the PN on its delimiters and accept a code ONLY when EXACTLY ONE
+# segment is an exact match in a curated PMD allowlist. Zero or multiple matches -> left honest GAP,
+# never guessed. (This gate is what makes "FR-TRAN-SX" safe: it matches both FR and SX -> ambiguous
+# -> skipped, never mislabeled "FR".) HPE was already grounded from its datasheet descriptions and
+# is the conforming exemplar; it was left untouched.
+
+rule_ref: "src/hexcat/attribute_depth.py:73 (Transceiver Typ = reach code, modules only)"
+grounding_method: "verbatim reach/PMD code from the manufacturer part number; exactly-one-match gate"
+value_form: "the manufacturer's PMD code as written in its PN (e.g. SR4, LR, eSR, SRI); cables carry none"
+
+brands:
+  Cisco:
+    grounded_before: 19     # special functional classes (DCO, Smart SFP, OLT, tunable DWDM) — kept
+    grounded_added: 104     # reach codes mined verbatim from PNs (SFP-10G-SR-S->SR, QDD-400G-DR4-S->DR4, ...)
+    expected_gap: 77        # modules whose PN has no unambiguous PMD segment (e.g. AOC/uncoded SKUs)
+  Arista:
+    grounded_added: 54      # OSFP-400G-SR8->SR8, QDD-400G-DR4->DR4, SFP-10G-LR->LR, ...
+    expected_gap: 50        # the 243 cable "fest konfektioniert" notes are on CABLES (Typ not expected);
+                            # remaining 50 are modules with no unambiguous PN reach segment
+  HPE:
+    grounded_existing: 70   # reach codes already mined from the HPE datasheet — the conforming exemplar
+    expected_gap: 8
+  Fortinet:
+    grounded_added: 36      # FN-TRAN-SFP+SR->SR, FN-TRAN-QSFPDD-DR4->DR4, ... ; FR-TRAN-* skipped (ambiguous)
+    expected_gap: 18
+  MikroTik:
+    grounded_added: 0       # MikroTik PNs do not encode a PMD reach segment -> nothing safely groundable
+    expected_gap: 16
+
+notes:
+  - "Cisco encodes industrial temp as a separate PN segment (SFP-10G-SR-I -> 'SR'); Fortinet fuses it
+     (FN-TRAN-SFP+SRI -> 'SRI'). Each value is verbatim-faithful to its own manufacturer's PN, so the
+     minor SR-vs-SRI difference is honest manufacturer-naming variance, not an inconsistency to erase."
+  - "Cable assemblies (DAC/AOC) intentionally carry no reach-code Typ; their form lives in Kabeltyp.
+     Legacy 'fest konfektioniert (im Kabel enthalten)' notes on cables are left as-is (true, non-
+     destructive) but are OUTSIDE the module reach-code rule."
+  - "Remaining module GAPs stay honest flagged-debt: their PN has no unambiguous PMD segment and no
+     per-SKU datasheet reach token was safely extractable -> never guessed."

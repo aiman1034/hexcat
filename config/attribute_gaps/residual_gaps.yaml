@@ -6,10 +6,10 @@ policy: "populate-or-prove-absent; derive-only-when-physics-pins-it; flag the re
 brands:
   Cisco:
     sku_count: 297
-    total_gaps: 306
+    total_gaps: 202
     gaps:
       'Geschwindigkeit': 7
-      'Transceiver Typ': 181
+      'Transceiver Typ': 77
       'Faseranzahl': 86
       'Fasertyp': 2
       'Anschlusstyp': 2
@@ -19,10 +19,10 @@ brands:
       'Standard': 7
   Arista:
     sku_count: 347
-    total_gaps: 284
+    total_gaps: 230
     gaps:
       'Geschwindigkeit': 18
-      'Transceiver Typ': 104
+      'Transceiver Typ': 50
       'Faseranzahl': 25
       'Anschlusstyp': 26
       'Reichweite': 7
@@ -41,14 +41,14 @@ brands:
       'Standard': 67
   Fortinet:
     sku_count: 87
-    total_gaps: 191
+    total_gaps: 135
     gaps:
       'Geschwindigkeit': 2
-      'Transceiver Typ': 54
+      'Transceiver Typ': 18
       'Faseranzahl': 13
       'Anschlusstyp': 33
       'Länge': 2
-      'DOM Unterstützung': 50
+      'DOM Unterstützung': 30
       'Standard': 37
   MikroTik:
     sku_count: 24
