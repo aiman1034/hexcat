@@ -1,0 +1,91 @@
+# MikroTik Transceivers & Cables — Stage 1 ledger spec (Phase 4, HTML card-grid mode).
+#
+# Source: https://mikrotik.com/products/group/sfp-qsfp (official, Tier-1 honest-GET). Unlike
+# Cisco's ordering TABLE, this page has NO <table> at all: it is a product-card GRID. Each
+# product is a card <div wire:key="product-{CODE}"> whose authoritative SKU is printed only as
+# the deep-link title <a title="Product page for {CODE}">, with the manufacturer blurb in a
+# line-clamped <p>. A table miner finds zero tables here; the flat token scan would scrape the
+# nav/compare widgets. Card mode walks the cards, taking the SKU from the link title (the
+# manufacturer's own product identity) and the description from the card blurb — the same
+# normalize -> classify -> dedup -> workbook flow, a third structural FRONT-END (alongside the
+# HTML table and the two PDF modes), config not engine code.
+#
+# Full enumeration: this single group page IS MikroTik's whole SFP/QSFP optic+cable line, so
+# it is the catalog (like Fortinet's one ordering datasheet, unlike Cisco's 29 sheets).
+
+brand: MikroTik
+hauptkategorie: Transceivers
+
+# --- Mining -----------------------------------------------------------------------
+mine:
+  # MikroTik optic/cable SKU shapes (all printed in the card link title):
+  #   S-31DLC20D / S-RJ01          -> SFP   modules ('S-' prefix)
+  #   S+85DLC03D / S+RJ10 / S+AO0005 -> SFP+ modules & AOC ('S+' prefix)
+  #   XS+85LC01D / XS+DA0001       -> SFP28 modules & DAC ('XS+' prefix)
+  #   XQ+31LC10D / XQ+DA0001       -> QSFP28 modules & DAC ('XQ+' prefix)
+  #   DDQ+85MP01D / DDQ+DA0001     -> QSFP-DD module & DAC ('DDQ+' prefix)
+  #   DQ+BC0003-DS+                -> QSFP56 break-out cable ('DQ+' prefix; classified DAC)
+  #   XQ+CM0000-XS+                -> QSFP28->SFP28 CONVERTER (excluded, not a transceiver)
+  pn_header_patterns: ["sku", "product number", "bestellnummer"]
+  pn_token: '^[A-Z]{1,3}[+-][A-Z0-9+-]+$'
+  html:
+    mode: card
+    # The card's deep-link <a title="Product page for {CODE}"> carries the authoritative SKU.
+    card_title_prefix: "Product page for "
+    # The line-clamped <p> blurb's class substring (feeds the universal V5 cable classifier).
+    desc_class_contains: "line-clamp"
+
+# --- Normalization ----------------------------------------------------------------
+# No MikroTik feed-variant convention is in scope this session; kept structurally valid.
+normalize:
+  feed_id_suffix: '-P-[0-9]+$'
+  problem_feed_id: "Feed-ID-Anhang"
+  spelling_fixes: {}
+  problem_spelling: ""
+
+# --- Classification ---------------------------------------------------------------
+# First matching rule wins, then the universal V5 description-cable rule OVERRIDES it (a DA/AO
+# card says 'direct attach cable'/'Active Optics' in its blurb and resolves to DAC/AOC Kabel via
+# resolve_unterkategorie BEFORE these PN rules). The PN rules below are the form-factor fallback
+# for the optic modules, whose blurb proves no cable type:
+#   * BC0 first: the QSFP56 'break-out cable' (DQ+BC0003-DS+) is a DAC, but its blurb says
+#     'break-out cable' which V5 does not key on — so the PN rule names it DAC Kabel directly.
+#   * Then the form-factor prefixes (an 'XS+...' never matches 'S+', so order is unambiguous).
+classify:
+  rules:
+    - { pn_contains: "BC0",  unterkategorie: "DAC Kabel" }
+    - { pn_prefix: "DDQ+",   unterkategorie: "QSFP-DD" }
+    - { pn_prefix: "XQ+",    unterkategorie: "QSFP28" }
+    - { pn_prefix: "XS+",    unterkategorie: "SFP28" }
+    - { pn_prefix: "S+",     unterkategorie: "SFP+" }
+    - { pn_prefix: "S-",     unterkategorie: "SFP" }
+  default: "SFP"
+
+# --- Exclusion (flag, don't emit) -------------------------------------------------
+# XQ+CM0000-XS+ is a QSFP28->SFP28 form-factor CONVERTER adapter, not an optic that fits the
+# locked-22 taxonomy. Forcing it into a form-factor bucket would violate the 1000% rule, so it
+# is flagged and dropped from BOTH the emitted ledger and the verifier's re-derived set (V7/V8
+# stay symmetric).
+exclude:
+  - { description_contains: "converter", reason: "QSFP28->SFP28 converter adapter (flagged, not a transceiver)" }
+
+# --- Catalog coverage (V9) --------------------------------------------------------
+# The MikroTik SFP/QSFP optic+cable line as enumerated by MikroTik's OWN official group page —
+# a single authoritative whole-line grid, so this source IS the catalog. The expected set is
+# exactly the families that grid spans; V9 asserts each has >=1 emitted SKU on the merged
+# ledger. Every token is a locked-22 category AND emittable (a classify prefix rule, the BC0
+# DAC rule, or the universal V5 cable classifier). MikroTik ships no QSFP+/SFP56/QSFP56-optic
+# (DQ+ exists only as a DAC) / CFP / XFP / OSFP optic in this line — deliberately NOT listed,
+# so V9 cannot falsely flag families the brand does not make.
+coverage:
+  expected_families:
+    - SFP
+    - SFP+
+    - SFP28
+    - QSFP28
+    - QSFP-DD
+    - DAC Kabel
+    - AOC Kabel
+
+# Unterkategorie values above are already canonical locked-22 tokens -> identity map.
+locked22_map: {}

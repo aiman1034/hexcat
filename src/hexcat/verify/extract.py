@@ -91,6 +91,39 @@ def extract_authoritative_html(html: str, spec) -> list[SourceToken]:
     return tokens
 
 
+def extract_authoritative_html_cards(html: str, spec) -> list[SourceToken]:
+    """HTML card-grid second path (locus 'card', authoritative).
+
+    Deliberately re-derives the SKU set by RAW-STRING geometry — split the document into card
+    chunks at each `wire:key="product-"` marker, then regex the card's `<a title="{prefix}{CODE}">`
+    deep link and its line-clamped `<p>` description out of the chunk. This shares no DOM-tree /
+    dedup code with mine.mine_html_cards (which walks the parsed BeautifulSoup tree), so a
+    disagreement (V7) is a genuine cross-check rather than a tautology.
+    """
+    hspec = getattr(spec.mine, "html", None)
+    if hspec is None or hspec.mode != "card":
+        return []
+    token_re = spec.mine.pn_token_re
+    title_re = re.compile(r'title="' + re.escape(hspec.card_title_prefix) + r'([^"]+)"')
+    desc_re = re.compile(
+        r'<p[^>]*class="[^"]*' + re.escape(hspec.desc_class_contains) + r'[^"]*"[^>]*>(.*?)</p>',
+        re.S,
+    )
+    tokens: list[SourceToken] = []
+    chunks = re.split(r'wire:key="product-', html)[1:]
+    for chunk in chunks:
+        tm = title_re.search(chunk)
+        if not tm:
+            continue
+        pn = tm.group(1).strip()
+        if not token_re.match(pn):
+            continue
+        dm = desc_re.search(chunk)
+        desc = ws_normalize(re.sub(r"<[^>]+>", " ", dm.group(1))) if dm else ""
+        tokens.append(SourceToken(pn, desc, "card", 1))
+    return tokens
+
+
 def _collapse_runs(text: str) -> str:
     return re.sub(r"(.)\1+", r"\1", text)
 

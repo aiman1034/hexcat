@@ -63,10 +63,29 @@ class PdfMineSpec(BaseModel):
         return re.compile(self.context_noun + r"\s*\((" + self.sku_token + r")\)")
 
 
+class HtmlMineSpec(BaseModel):
+    """Per-brand HTML extraction config — the same 'config, not code' seam as the PDF adapter.
+    Two structural modes (the engine supports both; config picks one):
+
+      table — locate the ordering TABLE by its Product-Number header column and read the PN
+              column (the pilot path, e.g. Cisco C78 datasheet). For classic HTML tables.
+      card  — a product-card GRID with NO <table>: each product is a card
+              `div[wire:key^="product-"]` whose `<a title="{card_title_prefix}{CODE}">`
+              carries the authoritative SKU and a `<p>` whose class contains
+              `desc_class_contains` carries the manufacturer description (e.g. MikroTik's
+              /products/group/sfp-qsfp grid). The SKU lives in a link title, not a cell, so
+              the table miner finds zero tables — card mode is the structural answer.
+    """
+    mode: str = "table"                  # "table" | "card"
+    card_title_prefix: str = ""          # card: the <a title> text preceding the SKU
+    desc_class_contains: str = ""        # card: a substring of the description <p>'s class attr
+
+
 class MineSpec(BaseModel):
     pn_header_patterns: list[str]
     pn_token: str
     pdf: PdfMineSpec | None = None
+    html: HtmlMineSpec | None = None
 
     @property
     def pn_token_re(self) -> re.Pattern[str]:
@@ -168,7 +187,12 @@ def classify_cable_from_description(description: str | None) -> str | None:
         return "DAC Kabel"
     if d.strip() == "aoc":
         return "AOC Kabel"
-    if "active optical cable" in d:
+    # An ACTIVE OPTICAL / ACTIVE OPTICS cable is fibre+powered = AOC, even when the vendor's
+    # prose also says 'direct attach cable' (MikroTik's S+AO0005 reads 'SFP+ Active Optics
+    # direct attach cable, 5m' — it is an AOC, not a copper DAC). Checking the 'active optic*'
+    # phrasing BEFORE the 'direct attach cable' line below is what keeps that distinction; it
+    # subsumes the older exact 'active optical cable' match.
+    if "active optical" in d or "active optics" in d:
         return "AOC Kabel"
     # Optical MPO fan-out cable: the discriminator is "breakout MPO to" (vs a transceiver's
     # bare "MPO-12 connector"). A copper DAC breakout says "direct attach cable", not "MPO".

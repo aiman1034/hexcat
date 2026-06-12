@@ -86,6 +86,55 @@ def mine_html(html: str, spec: LedgerSpec) -> list[MinedPN]:
     return mined
 
 
+def mine_html_cards(html: str, spec: LedgerSpec) -> list[MinedPN]:
+    """Extract (pn, description) from a product-card GRID (no <table>).
+
+    Each product is a card `div[wire:key^="product-"]`. The authoritative SKU is the only
+    place it is printed as the manufacturer's own product identity: the card's
+    `<a title="{card_title_prefix}{CODE}">` deep link. The description is the card's `<p>`
+    whose class contains `desc_class_contains` (the line-clamped blurb). We walk cards in
+    document order, dedup, and guard every code with the brand's pn_token so a stray link
+    cannot leak a non-SKU into the ledger.
+    """
+    from bs4 import BeautifulSoup
+
+    hspec = spec.mine.html
+    if hspec is None or hspec.mode != "card":
+        raise MineError("mine_html_cards called without mine.html.mode == 'card'.")
+    soup = BeautifulSoup(html, "html.parser")
+    token_re = spec.mine.pn_token_re
+    prefix = hspec.card_title_prefix
+
+    mined: list[MinedPN] = []
+    seen: set[str] = set()
+    found_card = False
+    for card in soup.find_all("div", attrs={"wire:key": True}):
+        if not str(card.get("wire:key", "")).startswith("product-"):
+            continue
+        found_card = True
+        a = card.find("a", title=lambda t: bool(t) and t.startswith(prefix))
+        if not a:
+            continue
+        pn = a["title"][len(prefix):].strip()
+        if not token_re.match(pn) or pn in seen:
+            continue
+        desc = ""
+        for cand in card.find_all("p"):
+            cls = " ".join(cand.get("class", []))
+            if hspec.desc_class_contains and hspec.desc_class_contains in cls:
+                desc = _clean(cand.get_text(" ", strip=True))
+                break
+        seen.add(pn)
+        mined.append(MinedPN(pn=pn, description=desc))
+
+    if not found_card:
+        raise MineError(
+            "No product cards found (no div[wire:key^='product-']). "
+            "The card-grid layout may have changed."
+        )
+    return mined
+
+
 def _pdf_pages_text(data: bytes) -> list[str]:
     """Per-page text via pdfplumber. Normalizes the unicode hyphen/non-breaking variants
     that manufacturer PDFs sprinkle into SKUs (U+2010/2011/00AD) to a plain ASCII '-' so a
@@ -305,5 +354,8 @@ def mine_pdf(data: bytes, spec: LedgerSpec) -> list[MinedPN]:
 def mine_source(fetched: FetchResult, spec: LedgerSpec) -> list[MinedPN]:
     """Dispatch on content type and return the mined PN set for one source."""
     if fetched.content_type == "html":
-        return mine_html(fetched.read_text(), spec)
+        html = fetched.read_text()
+        if spec.mine.html is not None and spec.mine.html.mode == "card":
+            return mine_html_cards(html, spec)
+        return mine_html(html, spec)
     return mine_pdf(fetched.read_bytes(), spec)

@@ -18,10 +18,11 @@ takes the list of per-source results; each source independently V1–V8 gated).
 | Cisco    | **297** (29 sources) | full Eth line | GREEN (all 29 src) | **PASS 19/19** | **PRICES-PENDING (297/297 authored)** | **DONE-VERIFIED + CONTENT-COMPLETE** (only operator Netto-VK outstanding) |
 | Fortinet | 87 (1 datasheet) | whole line, 1 sheet | GREEN | **PASS 12/12** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated-complete; whole-line datasheet) |
 | HPE/Aruba| 147 (AOS-S/CX guide) | AOS-S/CX only | GREEN | **PASS 9/9** | NOT-STARTED | **DONE-VERIFIED** (V9 calibrated to sourced line; FlexFabric/Comware = SKU-breadth gap, tracked) |
+| MikroTik | **24** (1 card-grid page) | whole SFP/QSFP line | GREEN | **PASS 7/7** | NOT-STARTED | **DONE-VERIFIED** (HTML card-grid mode; 1 converter flagged-not-emitted; whole-line page) |
 | Brocade  | — | FC (out of scope) | — | — | — | PARKED (operator decision) |
-| 14 others| 0 | not enumerated | — | — | — | NOT-STARTED |
+| 13 others| 0 | not enumerated | — | — | — | NOT-STARTED |
 
-**DONE-VERIFIED count: 3** (Cisco, Fortinet, HPE pass the full V1–V9 gate). Fortinet/HPE V9
+**DONE-VERIFIED count: 4** (Cisco, Fortinet, HPE, MikroTik pass the full V1–V9 gate). Fortinet/HPE V9
 calibrated 2026-06-12: Fortinet expected=12 families (its own whole-line ordering datasheet is
 self-complete → calibrated-COMPLETE); HPE expected=9 families (one per AOS-S/CX guide chapter +
 DAC/AOC). HPE's FlexFabric/Comware line is a SKU-BREADTH gap *within* these same form factors
@@ -107,9 +108,11 @@ Fortinet true count is **87** (not the old mis-mined 90). DR4 and DR4+ both pres
 - **Calibrated:** all-green on clean Cisco (true negative) AND flags exactly the listed
   Fortinet defects on the pre-fix mine (true positive). Does not cry wolf.
 
-### Tests: **111 passing** (99 prior + 12 new regression tests covering every bug class +
-V1–V8, frozen on synthetic tokens + a committed column-layout fixture
-`tests/fixtures/sample_ordering_columns.pdf`).
+### Tests: **137 passing** (incl. V9 calibration for Cisco/Fortinet/HPE/MikroTik + 5 new
+card-grid tests: V5 active-optics→AOC, `mine_html_cards` full 25-card enumeration, engine
+classify+converter-exclude (24, exact family split), card 2nd-path V1–V8 all-green with locus
+`card` authoritative, MikroTik spec coverage calibrated). Frozen on synthetic tokens + committed
+fixtures (`sample_ordering_columns.pdf`, cached `datasheets/cache/sfp-qsfp.html`).
 
 ### CLI
 `python -m hexcat.cli ledger --seed <seed.xlsx> --source <id|all> --spec
@@ -133,7 +136,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | Dell         | Tier-1 fetch failed (stale/blocked)                                | fresh URL / Tier-2 |
 | NVIDIA       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | Palo Alto    | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
-| MikroTik     | Tier-1 HTTP 404 (URL path changed)                                 | fresh URL |
+| MikroTik     | **DONE-VERIFIED 2026-06-12** — card-grid mode, `sfp-qsfp` page, 24 SKUs, V1–V9 PASS | — (done) |
 | Supermicro   | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | Ruijie       | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | Avaya/Extreme| Tier-1 fetch failed (JS-grid per notes)                            | §6b NEEDS-HEADED |
@@ -141,10 +144,17 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 ## Extraction-mode boundary (learned 2026-06-12, Arista)
 
 The deterministic miner needs an **authoritative SKU locus** to mine + verify against. It
-currently supports exactly two source shapes:
+currently supports exactly **three** source shapes:
 - **token+column** — a two-column SKU/Description "Ordering Information" table (Cisco HTML,
   Fortinet PDF).
 - **section** — form-factor chapters with `<noun> (SKU)` callouts (HPE PDF).
+- **card** (BUILT 2026-06-12) — an HTML product-card GRID with no `<table>`: each product is a
+  `div[wire:key^="product-"]` card whose authoritative SKU is the deep-link title
+  `<a title="{prefix}{CODE}">` and whose blurb is a line-clamped `<p>` (feeds V5). Config:
+  `mine.html.mode: card` + `card_title_prefix` + `desc_class_contains`. Miner `mine_html_cards`
+  (DOM walk); independent 2nd path `extract_authoritative_html_cards` (regex over `wire:key`
+  chunks → locus **`card`**, added to the shared `AUTHORITATIVE_LOCI`). Proven on MikroTik
+  `sfp-qsfp` (24 emitted + 1 converter flagged; V1–V9 PASS).
 
 It does **NOT** support **prose / spec-sheet** datasheets where orderable PNs are scattered
 through descriptive text and the only tables are spec-attribute matrices (wavelength, reach,
@@ -158,8 +168,8 @@ defensible locus. **Do not lower V2 to admit prose.**
 Probable bucket for the remaining brands (to confirm per-brand next pass):
 - prose spec-sheet → needs ordering-guide source or new mode: Arista (confirmed), likely
   NVIDIA, Dell, Palo Alto, Huawei.
-- HTML **product-card grid** (no <table>, PNs in card markup) → needs a card-extraction mode:
-  MikroTik (confirmed), likely Supermicro, Ruijie.
+- HTML **product-card grid** (no <table>, PNs in card markup) → card-extraction mode now BUILT:
+  MikroTik **DONE** (24 SKUs); apply same mode to Supermicro, Ruijie (likely same shape).
 - NEEDS-HEADED: Ubiquiti, Juniper, Avaya/Extreme.
 
 ### Fresh official URLs found 2026-06-12 (so next pass skips the search)

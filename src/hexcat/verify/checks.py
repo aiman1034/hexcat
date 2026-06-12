@@ -30,6 +30,13 @@ class CheckResult:
     details: dict = field(default_factory=dict)
 
 
+# The loci that count as AUTHORITATIVE provenance — a SKU physically printed in the
+# manufacturer's own SKU/PN column ('sku_column'/'pn_column'), flat ordering list ('flat'),
+# '<noun> (SKU)' optic callout ('callout'), or product-card deep link ('card'). A SKU found
+# only in 'description' prose is NOT authoritative (V2 flags it). Single source of truth so
+# every check agrees on what "authoritative" means.
+AUTHORITATIVE_LOCI = ("sku_column", "pn_column", "flat", "callout", "card")
+
 # --- helpers -----------------------------------------------------------------------------
 _SKU_CHAR = "A-Za-z0-9+"
 
@@ -73,8 +80,7 @@ def v1_verbatim(emitted: list[EmittedRow], raw_text: str,
 
 # --- V2: authoritative-locus provenance --------------------------------------------------
 def v2_provenance(emitted: list[EmittedRow], tokens: list[SourceToken]) -> CheckResult:
-    authoritative = {t.pn for t in tokens if t.locus in ("sku_column", "pn_column", "flat",
-                                                          "callout")}
+    authoritative = {t.pn for t in tokens if t.locus in AUTHORITATIVE_LOCI}
     desc_only = {t.pn for t in tokens if t.locus == "description"} - authoritative
     offenders, detail = [], {}
     for r in emitted:
@@ -101,8 +107,7 @@ def v3_no_silent_collision(emitted: list[EmittedRow], tokens: list[SourceToken],
     to if a trailing separator were stripped (the historical bug). Any group with >1 distinct
     source token but <2 emitted survivors lost a SKU to a silent collision.
     """
-    authoritative = sorted({t.pn for t in tokens
-                            if t.locus in ("sku_column", "pn_column", "flat", "callout")})
+    authoritative = sorted({t.pn for t in tokens if t.locus in AUTHORITATIVE_LOCI})
     emitted_set = {r.pn for r in emitted}
     collide: dict[str, set[str]] = {}
     for pn in authoritative:
@@ -185,7 +190,7 @@ def v6_switch_exclusion(emitted: list[EmittedRow], tokens: list[SourceToken]) ->
     desc_by_pn: dict[str, str] = {}
     authoritative = set()
     for t in tokens:
-        if t.locus in ("sku_column", "pn_column", "flat", "callout"):
+        if t.locus in AUTHORITATIVE_LOCI:
             authoritative.add(t.pn)
         if t.description and t.pn not in desc_by_pn:
             desc_by_pn[t.pn] = t.description.lower()
@@ -207,8 +212,7 @@ def v7_completeness(emitted: list[EmittedRow], tokens: list[SourceToken],
                     v2: CheckResult, v4: CheckResult) -> CheckResult:
     """Symmetric difference between the emitted set and the independently re-derived
     authoritative set. Every difference must be EXPLAINED by another check, else FAIL."""
-    authoritative = {t.pn for t in tokens
-                     if t.locus in ("sku_column", "pn_column", "flat", "callout")}
+    authoritative = {t.pn for t in tokens if t.locus in AUTHORITATIVE_LOCI}
     emitted_set = {r.pn for r in emitted}
     emitted_not_source = sorted(emitted_set - authoritative)
     source_not_emitted = sorted(authoritative - emitted_set)
@@ -234,8 +238,7 @@ def v7_completeness(emitted: list[EmittedRow], tokens: list[SourceToken],
 
 # --- V8: count honesty -------------------------------------------------------------------
 def v8_count_honesty(emitted: list[EmittedRow], tokens: list[SourceToken]) -> CheckResult:
-    authoritative = {t.pn for t in tokens
-                     if t.locus in ("sku_column", "pn_column", "flat", "callout")}
+    authoritative = {t.pn for t in tokens if t.locus in AUTHORITATIVE_LOCI}
     emitted_distinct = len({r.pn for r in emitted})
     passed = emitted_distinct == len(authoritative)
     return CheckResult(

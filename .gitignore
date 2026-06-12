@@ -31,6 +31,9 @@ Cisco_BUILD_LEDGER.xlsx
 # Curated transceiver seed — derived (Quellen-Tracker of mineable Cisco optic datasheets)
 # from the gitignored BUILD ledger; reproducible, binary. Source list documented in STATUS.md.
 Cisco_Transceivers_SEED.xlsx
+# Per-brand BUILD seed workbooks — one-row Quellen-Tracker, reproducible from the brand spec +
+# its source URL (documented in the spec header); binary, not committed.
+MikroTik_BUILD_LEDGER.xlsx
 
 # Tier-2 headless-browser store — local Chromium for Playwright (~150MB+), never commit.
 .playwright-browsers/

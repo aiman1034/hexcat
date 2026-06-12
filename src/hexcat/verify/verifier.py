@@ -12,10 +12,12 @@ from pathlib import Path
 
 from . import checks as C
 from .checks import CheckResult, EmittedRow
+from .checks import AUTHORITATIVE_LOCI
 from .extract import (
     SourceToken,
     extract_authoritative,
     extract_authoritative_html,
+    extract_authoritative_html_cards,
     extract_authoritative_section,
     raw_source_text,
     ws_normalize,
@@ -77,7 +79,10 @@ def verify_ledger(
             tokens = extract_authoritative(pdf_bytes, pdf_cfg)
         raw_text = raw_source_text(pdf_bytes)
     elif html is not None:
-        tokens = extract_authoritative_html(html, spec)
+        if spec.mine.html is not None and spec.mine.html.mode == "card":
+            tokens = extract_authoritative_html_cards(html, spec)
+        else:
+            tokens = extract_authoritative_html(html, spec)
         from bs4 import BeautifulSoup
         raw_text = ws_normalize(BeautifulSoup(html, "html.parser").get_text(" "))
     else:
@@ -99,8 +104,7 @@ def verify_ledger(
     v8 = C.v8_count_honesty(emitted, tokens)
     checks = [v1, v2, v3, v4, v5, v6, v7, v8]
 
-    authoritative_count = len({t.pn for t in tokens
-                               if t.locus in ("sku_column", "pn_column", "flat", "callout")})
+    authoritative_count = len({t.pn for t in tokens if t.locus in AUTHORITATIVE_LOCI})
     return VerifyResult(
         brand=brand,
         passed=all(c.passed for c in checks),

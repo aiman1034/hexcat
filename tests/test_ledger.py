@@ -21,6 +21,7 @@ from hexcat.ledger import (
 )
 from hexcat.ledger import fetch as fetch_mod
 from hexcat.ledger.engine import Source
+from hexcat.ledger.fetch import FetchResult
 from hexcat.ledger.mine import MinedPN, mine_html
 from hexcat.models import INTAKE_COLUMNS
 
@@ -660,3 +661,112 @@ def test_hpe_spec_coverage_calibrated_to_sourced_line():
     # Every listed family is a guide chapter tag or a universal cable category (nothing guessed).
     chapter_tags = set(spec.mine.pdf.chapters.values())
     assert set(fams) <= chapter_tags | {"DAC Kabel", "AOC Kabel"}
+
+
+# =====================================================================================
+# MikroTik card-grid mode — a third structural front-end (HTML product cards, no <table>).
+# Frozen against the committed cached group page (datasheets/cache/sfp-qsfp.html).
+# =====================================================================================
+def _mikrotik_spec():
+    from hexcat.ledger.spec import LEDGER_CONFIG_DIR
+    return verify_ledger_spec(str(LEDGER_CONFIG_DIR / "mikrotik_transceivers.yaml"))
+
+
+MIKROTIK_CACHE = (Path(__file__).resolve().parents[1] / "datasheets" / "cache" / "sfp-qsfp.html")
+
+
+def test_v5_active_optics_is_aoc_not_dac():
+    """MikroTik's S+AO0005 reads 'SFP+ Active Optics direct attach cable' — an AOC, not a copper
+    DAC. The broadened V5 rule keys on 'active optic*' BEFORE 'direct attach cable'. The older
+    'active direct attach cable' (active COPPER) must still resolve to DAC, not AOC."""
+    from hexcat.ledger.spec import classify_cable_from_description as cc
+
+    assert cc("SFP+ Active Optics direct attach cable, 5m") == "AOC Kabel"
+    assert cc("400 GE QSFPDD active optical cable, 3m") == "AOC Kabel"
+    assert cc("10 GE SFP+ active direct attach cable, 10m") == "DAC Kabel"  # active copper -> DAC
+
+
+def test_mine_html_cards_enumerates_full_mikrotik_grid():
+    """Card mode walks div[wire:key^='product-'] cards, taking the SKU from the <a> link title
+    and the blurb from the line-clamped <p>. The cached group page has 25 cards (24 optics/cables
+    + 1 converter); mining yields all 25 SKUs verbatim (exclusion happens later, in the engine)."""
+    if not MIKROTIK_CACHE.exists():
+        pytest.skip("cached MikroTik group page not present")
+    from hexcat.ledger.mine import mine_html_cards
+
+    mined = mine_html_cards(MIKROTIK_CACHE.read_text(encoding="utf-8"), _mikrotik_spec())
+    pns = {m.pn for m in mined}
+    assert len(mined) == 25                       # every distinct card, deduped
+    for expected in ["S-31DLC20D", "S+AO0005", "XS+DA0001", "XQ+85MP01D",
+                     "DDQ+85MP01D", "DQ+BC0003-DS+", "XQ+CM0000-XS+"]:
+        assert expected in pns
+    # The blurb rides along for the V5 classifier.
+    ao = next(m for m in mined if m.pn == "S+AO0005")
+    assert "active optics" in ao.description.lower()
+
+
+def test_mikrotik_card_run_source_classifies_and_excludes_converter():
+    """End-to-end through the engine: 24 emitted (converter flagged out), and the family split
+    matches the cached grid (DAC=7 incl. the break-out cable, AOC=1 via V5 active-optics)."""
+    if not MIKROTIK_CACHE.exists():
+        pytest.skip("cached MikroTik group page not present")
+    from hexcat.ledger.fetch import FetchResult
+
+    spec = _mikrotik_spec()
+    fetched = FetchResult(source_id="sfp-qsfp",
+                          url="https://mikrotik.com/products/group/sfp-qsfp",
+                          path=MIKROTIK_CACHE, tier="cache", content_type="html",
+                          bytes=MIKROTIK_CACHE.stat().st_size)
+    src = Source(gruppe="SFP/QSFP", datasheet="MikroTik SFP/QSFP",
+                 url="https://mikrotik.com/products/group/sfp-qsfp")
+    res = run_source(src, spec, live_pns=None, fetched=fetched)
+    by_fam: dict[str, int] = {}
+    for r in res.rows:
+        by_fam[r.unterkategorie] = by_fam.get(r.unterkategorie, 0) + 1
+    assert sum(by_fam.values()) == 24             # converter excluded
+    assert by_fam == {"SFP": 6, "SFP+": 3, "SFP28": 3, "QSFP28": 3,
+                      "QSFP-DD": 1, "DAC Kabel": 7, "AOC Kabel": 1}
+    assert "XQ+CM0000-XS+" not in {r.pn for r in res.rows}   # flagged, not emitted
+
+
+def test_mikrotik_card_verifier_all_green_and_card_locus_authoritative():
+    """The card-grid second path (regex over wire:key chunks, locus 'card') re-derives the same
+    24 authoritative SKUs and V1-V8 pass — proving 'card' is counted as an authoritative locus."""
+    if not MIKROTIK_CACHE.exists():
+        pytest.skip("cached MikroTik group page not present")
+    from hexcat.verify import verify_ledger
+    from hexcat.verify.checks import EmittedRow
+    from hexcat.verify.extract import extract_authoritative_html_cards
+
+    spec = _mikrotik_spec()
+    html = MIKROTIK_CACHE.read_text(encoding="utf-8")
+    tokens = extract_authoritative_html_cards(html, spec)
+    assert all(t.locus == "card" for t in tokens)
+    assert "XQ+CM0000-XS+" in {t.pn for t in tokens}   # pre-exclusion; verifier drops it next
+
+    from hexcat.ledger.mine import mine_html_cards
+    emitted = [EmittedRow(pn=m.pn, unterkategorie=spec.resolve_unterkategorie(
+                   m.pn, description=m.description))
+               for m in mine_html_cards(html, spec)
+               if not spec.is_excluded(m.pn, m.description)]
+    vres = verify_ledger(emitted, spec, html=html)
+    assert vres.passed, [c.name for c in vres.failed_checks()]
+    assert vres.authoritative_count == 24
+    assert vres.emitted_count == 24
+
+
+def test_mikrotik_spec_coverage_calibrated_locked22_and_reachable():
+    """MikroTik's V9 contract = the families its own group page spans; a clean verify_ledger_spec
+    load proves each is locked-22 AND emittable. Lock the exact 7-family set; not over-claimed."""
+    from hexcat.config import load_taxonomy
+
+    spec = _mikrotik_spec()
+    assert spec.coverage is not None
+    fams = spec.coverage.expected_families
+    assert set(fams) == {"SFP", "SFP+", "SFP28", "QSFP28", "QSFP-DD",
+                         "DAC Kabel", "AOC Kabel"}
+    locked22 = set(load_taxonomy().subcategories)
+    assert all(f in locked22 for f in fams)
+    assert all(f in _spec_emittable(spec) for f in fams)
+    # MikroTik ships no QSFP+/SFP56/CFP/XFP/OSFP optic in this line -> not over-claimed.
+    assert not ({"QSFP+", "SFP56", "QSFP56", "CFP", "XFP", "OSFP"} & set(fams))
