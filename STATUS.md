@@ -5,6 +5,31 @@ memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to r
 
 ## Current state (2026-06-12) — autonomous directive in force
 
+**§2 G2 ATTRIBUTE DEPTH DONE (commits d51af66 G2a, 6b5685b G2b, 78f62f3 flag artifact).**
+Populate-or-prove-absent for the locked 14 attributes is now real and auditable:
+- **G2a** `src/hexcat/attribute_depth.py` — pure, deterministic applicability model. `MediaClass`
+  (cable/copper/smart-SFP) + `EXPECTED_WHEN` table classify each empty cell as PROVABLY_ABSENT
+  (category-gated: no wavelength on copper, no cable length on a module, no reach/DOM on a cable)
+  or a real GAP. Plus physics-grounded derivers that NEVER guess: Fasertyp from Wellenlänge
+  (8xx→Multimode, 1270-1610→Singlemode), Faseranzahl from a duplex/dual-LC connector→2 (excludes
+  single/BiDi/MPO). 33 tests. `_scratch/g2_depth_audit.py` prints per-brand POP/ABSENT/GAP.
+- **G2b** wired `derive_all` into `intake._build_attributes`: fills only physics-pinned slots,
+  inherits the SKU's grounding Source_URL, stamps the rule label as Verification_Log Confidence
+  (new `AttributeValue.confidence`). Emits in canonical order. Regen closed **156 GAPs, zero
+  invention** (Cisco Faseranzahl −101, Fortinet −37, MikroTik −9, Arista/HPE Fasertyp −9); all 5
+  brands GREEN. 4 wiring tests.
+- **Flag artifact** `config/attribute_gaps/residual_gaps.yaml` (tracked) — the DEFERRED grounded
+  datasheet pass's scope: Transceiver Typ, DOM Unterstützung, Standard, residual Faseranzahl/
+  Anschlusstyp/Geschwindigkeit, flagged per brand. Schema test locks structure, not the volatile
+  counts. **236 tests pass.** NEXT: §2 G3 weights → G4 GTIN/EAN → G5 FAQ uniqueness → G6 merged
+  sweep → G7 import-readiness validator.
+
+**§2 G1 SOURCE-DISPOSITION DONE (commit 8237fb6).** `config/source_disposition/<brand>.yaml`
+accounts for every datasheet considered (MINED + per-source SKU count, or NON_TRANSCEIVER/
+SUPERSEDED/FAILED + reason). Cisco = 29 MINED (== curated SEED, tracked-to-tracked) + 2
+NON_TRANSCEIVER, FLAGGED_INCOMPLETE (full ~48 candidate enumeration deferred to a web pass).
+4 single-datasheet brands = GROUNDED_COMPLETE. `tests/test_source_disposition.py` reconciles.
+
 **§3 GATE SELF-AUDIT DONE (commit 9db4789).** `tests/test_gate_self_audit.py` is a data-driven
 suite: one minimal FAILING fixture per known build-gate defect class (S* structural, M* Main,
 A* Attributes, P* Prices, C* Condition, F* FAQ, X* cross-file, V* verification) — each mutates
@@ -12,7 +37,7 @@ the clean 2-SKU reference bundle and asserts `validate_dir` FAILS on the *named*
 plus a green-reference test and a monkeypatched cross-SKU reuse FAIL. The Beschreibung inline-Q&A
 `?` check was promoted WARN→FAIL (body is prose-only; all 902 Beschreibungen are `?`-free).
 **Standing rule:** any future gate-missed defect becomes a permanent fixture here before it is
-fixed. 190 tests pass; all 5 brands still GREEN. NEXT: §2 G1 source-disposition accounting.
+fixed.
 
 **Verifier-gated pipeline live.** Every mine is independently re-derived and audited (V1–V8)
 before the ledger is accepted; a non-passing ledger is NOT written (CLI exits 1). Audit
