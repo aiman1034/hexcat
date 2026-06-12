@@ -212,7 +212,7 @@ No remaining brand can be cleanly auto-mined into the locked-22 Ethernet taxonom
 | Huawei       | fetched HTML is a **404** page                                     | fresh official URL |
 | Lenovo/IBM   | lp1042.pdf is the **wrong doc** (ThinkSystem SD650 server guide)   | correct transceiver-reference URL |
 | Dell         | Tier-1 fetch failed (stale/blocked)                                | fresh URL / Tier-2 |
-| NVIDIA       | **SOURCE CONFIRMED 2026-06-12** — official LinkX "Parts List" PDFs on docs.nvidia.com have clean PN columns (MCP*/MMA*/MMS*/C-DQ*/T-DQ*/MAM*), BUT interleave InfiniBand + Ethernet via subsection headers ("Straight Ethernet Only" / "InfiniBand Only" / "Ethernet and InfiniBand") and use irregular merged-cell multi-row tables | **NEW EXTRACTION MODE** — subsection-gated token scan (emit only under Ethernet / Ethernet-and-IB headers; skip IB-Only). Multi-PDF: see fresh-URLs below |
+| NVIDIA       | **SOURCE MAPPED 2026-06-12** — LinkX is a valid brand; standalone "Parts List" PDFs are now DEPRECATED (100G-PAM4 + 800G XDR confirmed deprecated/empty; 2023 50G/25G PDF still has a table but is superseded). CURRENT source = Interconnect Product Specifications hub (per-product index by speed tier; each title = "{PN} {desc} Product Specifications"). Extraction algorithm + Ethernet/IB gating VALIDATED on the 2023 PDF (85 clean Ethernet PNs) | **BUILD from hub index** — enumerate per-speed-tier index pages, parse titles → (PN, desc), Ethernet-filter. See fresh-URLs/notes below |
 | Palo Alto    | Tier-1 fetch failed                                                | fresh URL / Tier-2 |
 | MikroTik     | **DONE-VERIFIED 2026-06-12** — card-grid mode, `sfp-qsfp` page, 24 SKUs, V1–V9 PASS | — (done) |
 | Supermicro   | **WAF 403** on eStore listing (honest-GET 403, 443B) — bot-blocked | §6b NEEDS-HEADED (Tier-2; eStore WAF may still gate headed). Alt: AOC compat-matrix (a matrix, not an ordering list) |
@@ -304,6 +304,37 @@ Probable bucket for the remaining brands (to confirm per-brand next pass):
     fetch the other 3 parts-list PDFs, run the same harvester to get the full Ethernet PN universe,
     build the per-PN grounding-description corpus, then wire as an engine mining mode + YAML +
     V1-V9 (still prefer word-bbox column extraction for robust descriptions).
+  - **SOURCE-CURRENCY PIVOT (2026-06-12) — the clean parts-list PDFs are DEPRECATED.** Fetched the
+    other two: `400gbps-100g-pam4-…-parts-list.pdf` and `800gbps-xdr-200g-pam4-…-parts-list.pdf`
+    BOTH carry a page-2 "This document has been deprecated, refer to Interconnect Product
+    Specifications" note and NO parts table (legal boilerplate only). The cached
+    `nvidia-400g-200g-parts-list.pdf` (50G-PAM4/25G-NRZ, exported Nov/2023) is the only one with a
+    real table, but it too is superseded. **Current authoritative source = the Interconnect
+    Product Specifications hub** `https://networking-docs.nvidia.com/interconnect` — a per-product
+    spec index organized by speed tier (1600G/800G/400G/200G/100G/25G). NO consolidated parts list,
+    BUT each product link's TITLE is `"{PN} {desc} Product Specifications"` (e.g. "MMS1V00-WM 400GbE
+    QSFP-DD DR4 Transceiver…", "MCP1600-E0xxEyy 100Gb/s QSFP28 DAC Cable…") — i.e. the index itself
+    carries PN + a clean human description in one line. **RECOMMENDED current-source build:**
+    enumerate each speed-tier index page on the hub, parse product-spec titles → (PN, description),
+    Ethernet-filter by the title text (keep "…GbE"/"Ethernet"; drop InfiniBand "HDR/NDR/EDR/XDR"
+    unless dual-labelled). This is CLEANER and CURRENT vs the deprecated PDF tables, and the
+    title-description doubles as the grounding corpus for $0 authoring. Hub is a JS docs site
+    (302 → networking-docs.nvidia.com) — confirm WebFetch can enumerate each tier index, else
+    NEEDS-HEADED. The validated PN-family regex + Ethernet/IB gating from the prototype carry over.
+  - **HUB ENUMERABLE (2026-06-12) — confirmed WebFetch reads it.** `https://networking-docs.nvidia.com/interconnect`
+    is a single page grouping products by tier (1600G/800G/400G/200G/100G/25G/Accessories); each
+    item = title `{PN} {desc}` + href to its product-spec page. It is CURRENT (adds today's 800G/1600G
+    OSFP parts absent from the 2023 PDF: MMA4Z00-NS(-T), MMS4X00-NM/NS(-T), MMS4X50-NM, MMS4X90-NR,
+    MCP7Y00-Nxxx, MCP4Y10-Nxxx, MCA4J80-Nxxx, MCA4K00/MCA4K50/MCA7K10 1600G, MMS4A20, MMS4C1X). **Two
+    wrinkles for the real build:** (1) hub PNs are FAMILY PLACEHOLDERS with length variables
+    (`MCP1600-E0xxEyy`, `MFS1S00-HxxxV`, `MCA4J80-Nxxx`) — concrete orderable per-length SKUs need a
+    follow-through fetch of each family's product-spec page (href captured in the WebFetch result).
+    (2) MAM*-QSA + MFP7E* are Accessories (port adaptors / MPO fiber harnesses) → out of scope like ADPT.
+    **RECOMMENDED build = hub crawl:** (a) WebFetch the hub, parse the tier groups → family list with
+    titles, Ethernet-filter; (b) for each Ethernet family, WebFetch its product-spec page → concrete
+    per-length PNs + verified specs (reach/connector/wavelength/media); (c) the title+spec text is the
+    grounding corpus for $0 German authoring. This is current + official + grounded — preferred over a
+    deprecated-PDF ledger. NEXT PASS STARTS HERE (no more source discovery needed for NVIDIA).
 - Palo Alto datasheet landing (not a direct PDF):
   `https://www.paloaltonetworks.com/resources/datasheets/key-specs-for-paloalto-interface-transceivers`
 - Supermicro eStore transceiver listings (WAF-403 on honest-GET — need headed/Tier-2):
