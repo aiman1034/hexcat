@@ -1,11 +1,11 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 297
+catalog_skus: 305
 files_mined: 86
-files_skipped: 94
+files_skipped: 95
 mined_total: 450
-in_catalog: 297
-missing_count: 153
+in_catalog: 305
+missing_count: 145
 orphan_count: 0
 excluded_count: 11
 missing_by_family:
@@ -530,38 +530,6 @@ missing_by_family:
     source: pluggable-optical-modules-ds
     description: SFP - OC48/STM16, SR, 1310 nm, ITEMP, LC
     eol: false
-  - pn: POM-OC3-MM
-    source: c51-729209
-    description: 1-port OC3/STM1 Pluggable Optic Module, MM
-    eol: true
-  - pn: POM-OC3-SMIR
-    source: c51-729209
-    description: 1-port OC3/STM1 Pluggable Optic Module, SM-IR
-    eol: true
-  - pn: POM-OC3-SMLR
-    source: c51-729209
-    description: 1-port OC3/STM1 Pluggable Optic Module, SM-LR
-    eol: true
-  - pn: POM-OC48-IR1-LC
-    source: eol_c51_604226
-    description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-IR1 LC
-    eol: true
-  - pn: POM-OC48-LR2-LC
-    source: eol_c51_604226
-    description: 1-port OC-48/STM-16 Pluggable Optic Module, 1550nm SM-LR2 LC
-    eol: true
-  - pn: POM-OC48-LR2-LC-C
-    source: eol_c51_604226
-    description: 1-port OC-48/STM-16 Pluggable, 1550nm SM-LR2-LC for CRS
-    eol: true
-  - pn: POM-OC48-SR-LC
-    source: eol_c51_604226
-    description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-SR LC
-    eol: true
-  - pn: POM-OC48-SR-LC-C
-    source: eol_c51_604226
-    description: 1-port OC-48/STM-16 Pluggable, 1310nm SM-SR LC
-    eol: true
   - pn: QSFP-40-SR-BD
     source: pluggable-optical-modules-ds
     description: '-'

@@ -79,7 +79,7 @@ ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in TRANSCEIVER_ATTRI
 PHYSICAL_FORMFAKTOR_ORDERED: tuple[str, ...] = (
     "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28", "QSFP+",
     "OSFP", "SFP56", "SFP28", "SFP+", "SFP",
-    "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC",
+    "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC", "POM",
 )
 PHYSICAL_FORMFAKTOR: frozenset[str] = frozenset(PHYSICAL_FORMFAKTOR_ORDERED)
 

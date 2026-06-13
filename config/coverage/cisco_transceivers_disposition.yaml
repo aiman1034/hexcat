@@ -4,16 +4,15 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 153
+surfaced_total: 145
 counts:
-  ADD: 138
+  ADD: 130
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 107
+add_eol_flagged: 99
 add_families:
 - CFP2
 - GBIC
 - OSFP
-- POM
 - QSFP+
 - SFP
 - SFP+
@@ -659,54 +658,6 @@ add:
   description: SFP - OC48/STM16, SR, 1310 nm, ITEMP, LC
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP
-- pn: POM-OC3-MM
-  source: c51-729209
-  description: 1-port OC3/STM1 Pluggable Optic Module, MM
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC3-SMIR
-  source: c51-729209
-  description: 1-port OC3/STM1 Pluggable Optic Module, SM-IR
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC3-SMLR
-  source: c51-729209
-  description: 1-port OC3/STM1 Pluggable Optic Module, SM-LR
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC48-IR1-LC
-  source: eol_c51_604226
-  description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-IR1 LC
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC48-LR2-LC
-  source: eol_c51_604226
-  description: 1-port OC-48/STM-16 Pluggable Optic Module, 1550nm SM-LR2 LC
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC48-LR2-LC-C
-  source: eol_c51_604226
-  description: 1-port OC-48/STM-16 Pluggable, 1550nm SM-LR2-LC for CRS
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC48-SR-LC
-  source: eol_c51_604226
-  description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-SR LC
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
-- pn: POM-OC48-SR-LC-C
-  source: eol_c51_604226
-  description: 1-port OC-48/STM-16 Pluggable, 1310nm SM-SR LC
-  reason: Real transceiver confirmed by mined datasheet description
-  family: POM
-  lifecycle: EOL
 - pn: QSFP-100G-AOC
   source: pluggable-optical-modules-ds
   description: 7.0.1
