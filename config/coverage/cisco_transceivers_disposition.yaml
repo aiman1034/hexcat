@@ -4,13 +4,12 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 145
+surfaced_total: 140
 counts:
-  ADD: 130
+  ADD: 125
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 99
+add_eol_flagged: 94
 add_families:
-- CFP2
 - GBIC
 - OSFP
 - QSFP+
@@ -19,6 +18,14 @@ add_families:
 - XENPAK
 - XFP
 grounded_orphans:
+- pn: CFP2-WDM-D-1HL
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: CFP2-WDM-DET-1HL
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: CIM8-C-K9
   reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
     not auto-mined.
@@ -27,38 +34,24 @@ grounded_orphans:
   reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
     not auto-mined.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: DP04CFP2-M25-K9
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: ONS-CFP2-WDM
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: ONS-CFP2-WDM2
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: ONS-CFP2D-400G-C
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 orphan_catalog_skus: 0
 add:
-- pn: CFP2-WDM-D-SK
-  source: optical-modules-cfp2-wdm-eol
-  description: 200G, 100G, WDM Digital CFP2 pluggable, Non-TOF
-  reason: Real transceiver confirmed by mined datasheet description
-  family: CFP2
-  lifecycle: EOL
-- pn: CFP2-WDM-DET-SK
-  source: optical-modules-cfp2-wdm-eol
-  description: 200G, 100G, WDM Digital CFP2 pluggable
-  reason: Real transceiver confirmed by mined datasheet description
-  family: CFP2
-  lifecycle: EOL
-- pn: CFP2-WDM-DETS-1HL
-  source: 200gbps-cfp2-dco-module-eol
-  description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
-  reason: Real transceiver confirmed by mined datasheet description
-  family: CFP2
-  lifecycle: EOL
-- pn: CFP2-WDM-DS-1HL
-  source: 200gbps-cfp2-dco-module-eol
-  description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
-  reason: Real transceiver confirmed by mined datasheet description
-  family: CFP2
-  lifecycle: EOL
-- pn: CFP2-WDM-DS100-HL
-  source: 200gbps-cfp2-dco-module-eol
-  description: 100G, WDM CFP2 pluggable, w/ SC-FEC, Non-TOF
-  reason: Real transceiver confirmed by mined datasheet description
-  family: CFP2
-  lifecycle: EOL
 - pn: CIM8-LE-K9
   source: ncs-1014c-band-transponder-line-card-ds
   description: Coherent Interface Module 8 enhanced L-Band

@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 307
+catalog_skus: 318
 files_mined: 86
-files_skipped: 95
+files_skipped: 117
 mined_total: 450
-in_catalog: 305
-missing_count: 145
-orphan_count: 2
+in_catalog: 310
+missing_count: 140
+orphan_count: 8
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -14,27 +14,6 @@ missing_by_family:
     source: pluggable-optical-modules-ds
     description: 7.0.1
     eol: false
-  CFP2:
-  - pn: CFP2-WDM-D-SK
-    source: optical-modules-cfp2-wdm-eol
-    description: 200G, 100G, WDM Digital CFP2 pluggable, Non-TOF
-    eol: true
-  - pn: CFP2-WDM-DET-SK
-    source: optical-modules-cfp2-wdm-eol
-    description: 200G, 100G, WDM Digital CFP2 pluggable
-    eol: true
-  - pn: CFP2-WDM-DETS-1HL
-    source: 200gbps-cfp2-dco-module-eol
-    description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
-    eol: true
-  - pn: CFP2-WDM-DS-1HL
-    source: 200gbps-cfp2-dco-module-eol
-    description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
-    eol: true
-  - pn: CFP2-WDM-DS100-HL
-    source: 200gbps-cfp2-dco-module-eol
-    description: 100G, WDM CFP2 pluggable, w/ SC-FEC, Non-TOF
-    eol: true
   QSFP+:
   - pn: QSFP-40GE-LR4
     source: c51-734200
@@ -596,8 +575,14 @@ missing_by_family:
     description: 10GBASE-ER and OC192 IR2 XFP Module
     eol: true
 orphan:
+- CFP2-WDM-D-1HL
+- CFP2-WDM-DET-1HL
 - CIM8-C-K9
 - CIM8-CE-K9
+- DP04CFP2-M25-K9
+- ONS-CFP2-WDM
+- ONS-CFP2-WDM2
+- ONS-CFP2D-400G-C
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CVR-4SFP10G-QSFP: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)

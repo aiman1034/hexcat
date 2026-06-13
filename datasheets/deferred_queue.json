@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-06-13T05:15:03Z",
+  "updated": "2026-06-13T06:00:51Z",
   "counts": {
     "pending": 2,
     "done": 0,
@@ -12,18 +12,19 @@
       "source_id": "monocisco",
       "category": "prices",
       "state": "pending",
-      "attempts": 5,
+      "attempts": 6,
       "first_seen": "2026-06-13T03:59:26Z",
-      "last_attempt": "2026-06-13T05:14:40Z",
-      "retry_after": "2026-06-13T07:14:40Z",
+      "last_attempt": "2026-06-13T05:59:05Z",
+      "retry_after": "2026-06-13T11:59:05Z",
       "last_status": 403,
-      "last_detail": "tier2-browser HTTP 403",
+      "last_detail": "tier2-browser raised: Page.wait_for_timeout: Target page, context or browser has been closed",
       "history": [
         "2026-06-13T03:59:26Z attempt#1 HTTP 403 tier2-browser HTTP 403",
         "2026-06-13T04:07:06Z attempt#2 HTTP 403 tier2-browser HTTP 403",
         "2026-06-13T04:18:22Z attempt#3 HTTP 403 tier2-browser HTTP 403",
         "2026-06-13T04:55:35Z attempt#4 HTTP 403 tier2-browser HTTP 403",
-        "2026-06-13T05:14:40Z attempt#5 HTTP 403 tier2-browser HTTP 403"
+        "2026-06-13T05:14:40Z attempt#5 HTTP 403 tier2-browser HTTP 403",
+        "2026-06-13T05:59:05Z attempt#6 HTTP 403 tier2-browser raised: Page.wait_for_timeout: Target page, context or browser has been closed"
       ]
     },
     "https://www.tech-america.com/item/400g-cfp2-dco-multi-rate-wdm-c-band-tuneable-w-encryption/dp04cfp2-m25-k9-": {
@@ -31,15 +32,16 @@
       "source_id": "tech-america",
       "category": "prices",
       "state": "pending",
-      "attempts": 2,
+      "attempts": 3,
       "first_seen": "2026-06-13T05:01:33Z",
-      "last_attempt": "2026-06-13T05:15:03Z",
-      "retry_after": "2026-06-13T05:20:03Z",
+      "last_attempt": "2026-06-13T05:59:29Z",
+      "retry_after": "2026-06-13T06:14:29Z",
       "last_status": 403,
       "last_detail": "tier2-browser HTTP 403",
       "history": [
         "2026-06-13T05:01:33Z attempt#1 HTTP 403 tier2-browser HTTP 403",
-        "2026-06-13T05:15:03Z attempt#2 HTTP 403 tier2-browser HTTP 403"
+        "2026-06-13T05:15:03Z attempt#2 HTTP 403 tier2-browser HTTP 403",
+        "2026-06-13T05:59:29Z attempt#3 HTTP 403 tier2-browser HTTP 403"
       ]
     }
   }
