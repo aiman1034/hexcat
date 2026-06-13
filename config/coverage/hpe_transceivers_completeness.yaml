@@ -1,0 +1,39 @@
+brand: HPE
+category: transceivers
+# Enumeration source: the official HPE Aruba Networking "AOS-S and AOS-CX Transceiver Guide"
+# (arubanetworking.hpe.com/techdocs/Switches/xcvrs) — the authoritative compatibility + spec doc for
+# the current Aruba/HPE-networking transceiver, DAC and AOC line. The prior session curated the
+# standalone catalog transceivers from its tables (hpe_names.py) and harvested to "missing 0".
+complete: true
+universe_total: 147                     # standalone catalog transceivers/DACs/AOCs in the guide tables
+captured_count: 147
+gap_count: 0
+flagged_count: 0
+populated_sources: 1
+per_source:
+- id: aos_s_aos_cx_transceiver_guide
+  kind: vendor_datasheet
+  url: https://arubanetworking.hpe.com/techdocs/Switches/xcvrs/PDF/AOS-S%20and%20AOS-CX%20Transceiver%20Guide.pdf
+  populated: true
+# COMPLETENESS RE-CONFIRMATION (2026-06-13, independent of the prior curation): a full-guide PN-token
+# diff found 373 PN-shaped tokens in the guide beyond the 147. EVERY one was verified NOT to be a
+# missed standalone transceiver — they are:
+#   * SWITCHES / line-cards / bundles (e.g. R0X44A = Aruba 6400 Switch Series, R8P13A = 48Y6C bundle)
+#   * EOL/EOS *revisions* of a captured product (e.g. JL563A/JL563B are EOS revs of the captured JL563C)
+#   * ALIASES of a captured SKU (e.g. R9F75A == JL309A, which IS captured; verified by alias notation
+#     "R9F75A(JL309A)[SR4]" in the guide)
+#   * compatibility CROSS-REFERENCES in notes (50G-in-10G-port warnings, split-mode tables, etc.)
+# None of the 373 has a standalone "product name (SKU)" spec row (the signature of a catalog
+# transceiver). Verified programmatically: 0 of the candidates (R9F75A/R0X39A/R0X43A/R8M51A/R8M55A/
+# R8Z96A/R9A29A/JL309A) carry a standalone product row. -> the 147 IS the complete transceiver set.
+betriebstemperatur_grounding: >
+  Guide publishes a per-module Temperature Rating. 72 optical modules authored VERBATIM
+  (Commercial 0/70, Industrial -40/+85, Extended -5/85; conf=datasheet). DACs/AOCs/legacy not in the
+  rating table -> Rule-9 commercial 0-70 (HPE/Aruba campus norm; every hardened-Industrial SKU in the
+  line was rated, so the unrated set is commercial-class), conf=industry-standard-commercial.
+verdict: captured 147 of 147 standalone catalog transceivers/DACs/AOCs (100%) from the AOS-S/AOS-CX
+  Transceiver Guide. Independent full-guide PN-token diff (2026-06-13) confirms the other ~370
+  PN-tokens are switches / EOL-revisions / aliases-of-captured-SKUs / cross-references, NOT missed
+  transceivers. Gate PASS 147/147, audit_semantic 0 (all 7 incl B.7), Rule-8 parity 0-missing. Fixed
+  a systematic classification error: 21 DACs + 3 AOCs carried a module form-factor k3 -> reclassified
+  to DAC/AOC Kabel (new B.7 cross-check added to gate + audit to prevent recurrence).
