@@ -119,8 +119,11 @@ _FIBRE_CONN_GATE_RE = re.compile(r"MPO|MTP|\bLC\b|\bCS\b", re.IGNORECASE)    # o
 # (Catches the inverse of B.3: a grey fixed-wavelength optic, e.g. 10GBASE-ZR, wrongly given a
 #  C-band-tunable wavelength — which a single-value multi-λ check would NOT flag.)
 _TUNABLE_WL_RE = re.compile(r"durchstimmbar|tunable", re.IGNORECASE)
-_COHERENT_TYPE_RE = re.compile(r"kohär|coheren|\bDCO\b|\bACO\b|400ZR|800ZR|DWDM|tunable|durchstimmbar",
-                               re.IGNORECASE)
+# \d{3}G…ZR matches the COHERENT ZR standards (100/400/800GBASE-ZR(P)) but NOT grey direct-detect
+# 10GBASE-ZR / 40GBASE-ZR (2-digit G) — preserving the grey-ZR fix while passing genuine 400ZR.
+_COHERENT_TYPE_RE = re.compile(
+    r"kohär|coheren|\bDCO\b|\bACO\b|400ZR|800ZR|DWDM|tunable|durchstimmbar|\d{3}G(?:BASE)?[- ]?ZR",
+    re.IGNORECASE)
 _COPPER_GATE_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|base-t", re.IGNORECASE)
 # B.7 — a DAC/AOC cable (identified by its Kabeltyp) must be classified under a CABLE Kat-Ebene-3
 # token (DAC/AOC Kabel), never under a module form-factor token (QSFP28/SFP+/…). Catches the class
