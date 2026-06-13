@@ -4,14 +4,13 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 138
+surfaced_total: 137
 counts:
-  ADD: 123
+  ADD: 122
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 93
+add_eol_flagged: 92
 add_families:
 - GBIC
-- OSFP
 - SFP
 - SFP+
 - XENPAK
@@ -47,6 +46,9 @@ grounded_orphans:
 - pn: ONS-QSFP-4X10-MLR
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: OSFPR-800G-DR8
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html
 - pn: QDD-2Q200-CU1M
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
@@ -161,12 +163,6 @@ add:
   description: CWDM 1610 nm SFP+ 10 Gigabit Ethernet Transceiver Module
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP+
-  lifecycle: EOL
-- pn: DP04SFP8-E20
-  source: 400zr-osfp-digital-coherent-optic-module-eol
-  description: 400GBPS COHERENT OSFP, DWDM C-BAND TUNABLE 400ZR MODULE
-  reason: Real transceiver confirmed by mined datasheet description
-  family: OSFP
   lifecycle: EOL
 - pn: DS-SFP-4X32G-SW
   source: product_data_sheet09186a00801bc698

@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 342
+catalog_skus: 344
 files_mined: 87
 files_skipped: 118
 mined_total: 450
-in_catalog: 312
-missing_count: 138
-orphan_count: 30
+in_catalog: 313
+missing_count: 137
+orphan_count: 31
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -99,10 +99,6 @@ missing_by_family:
   - pn: CWDM-SFP10G-1610
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1610 nm SFP+ 10 Gigabit Ethernet Transceiver Module
-    eol: true
-  - pn: DP04SFP8-E20
-    source: 400zr-osfp-digital-coherent-optic-module-eol
-    description: 400GBPS COHERENT OSFP, DWDM C-BAND TUNABLE 400ZR MODULE
     eol: true
   - pn: DS-SFP-4X32G-SW
     source: product_data_sheet09186a00801bc698
@@ -576,6 +572,7 @@ orphan:
 - ONS-CFP2D-400G-C
 - ONS-QSFP-4X10-MER
 - ONS-QSFP-4X10-MLR
+- OSFPR-800G-DR8
 - QDD-2Q200-CU1M
 - QDD-2Q200-CU2M
 - QDD-400-AOC10M
