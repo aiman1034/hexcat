@@ -180,13 +180,32 @@ def test_derive_faseranzahl_duplex_lc_forms(conn):
 
 
 @pytest.mark.parametrize("conn", [
-    "LC",                                  # bare LC: simplex-or-duplex ambiguous
-    "Single LC",                           # simplex -> 1 fibre, not 2
-    "Single LC/PC (Single-Fiber BiDi)",    # BiDi single strand -> 1 fibre
-    "MPO-12",                              # position count != active fibre count
-    "MPO",
+    "Single LC",
+    "Single LC/PC (Single-Fiber BiDi)",
+    "LC (Simplex, Einzelfaser)",
 ])
-def test_derive_faseranzahl_ambiguous_connectors_not_derived(conn):
+def test_derive_faseranzahl_single_fibre_bidi_is_one(conn):
+    # A single-fibre / simplex / single-fibre-BiDi connector pins exactly 1 strand.
+    res = D.derive_faseranzahl({"Anschlusstyp": conn})
+    assert res is not None and res[0] == "1"
+
+
+def test_derive_faseranzahl_bare_lc_defaults_duplex():
+    # An LC/CS optical connector with no simplex/BiDi hint is duplex by convention -> 2 fibres.
+    assert D.derive_faseranzahl({"Anschlusstyp": "LC"})[0] == "2"
+    assert D.derive_faseranzahl({"Anschlusstyp": "Dual Duplex CS"})[0] == "2"
+
+
+@pytest.mark.parametrize("typ,exp", [("SR4", "8"), ("SR8", "16"), ("SR10", "20"), ("VR8", "16")])
+def test_derive_faseranzahl_mpo_parallel_from_lanes(typ, exp):
+    # MPO ribbon: fibre count = 2 × parallel lanes (SR4->8, SR8/VR8->16, SR10->20).
+    res = D.derive_faseranzahl({"Anschlusstyp": "MPO-12", "Transceiver Typ": typ})
+    assert res is not None and res[0] == exp
+
+
+@pytest.mark.parametrize("conn", ["MPO-12", "MPO"])
+def test_derive_faseranzahl_mpo_without_lane_context_not_derived(conn):
+    # A bare MPO with no lane class / N×rate / N×100GBASE pattern stays ambiguous (not guessed).
     assert D.derive_faseranzahl({"Anschlusstyp": conn}) is None
 
 

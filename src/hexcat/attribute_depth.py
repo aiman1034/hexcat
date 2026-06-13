@@ -145,23 +145,61 @@ _DUPLEX_WORD_RE = re.compile(r"duplex|dual", re.IGNORECASE)
 _SIMPLEX_WORD_RE = re.compile(r"single|simplex|bidi", re.IGNORECASE)
 
 
-def derive_faseranzahl(present: dict[str, str]) -> tuple[str, str] | None:
-    """Faseranzahl from an unambiguous connector: a duplex/dual LC pins 2 fibres.
+_MPO_RE = re.compile(r"mpo|mtp", re.IGNORECASE)
+# PARALLEL lane count from the optical class, for MPO ribbons only: SR4->4, CSR4->4, VR8->8,
+# SR10->10, DR4->4, PSM4->4 (no leading \b so the C in CSR4 doesn't block the match). LR4/ER4/FR4
+# are WDM-over-ONE-duplex-pair, NOT parallel — they are deliberately excluded here and handled by
+# the duplex (LC/CS) branch as 2 fibres (× any N×100G breakout).
+_LANES_RE = re.compile(r"(?:SR|DR|VR|PSM|SL)-?(\d+)", re.IGNORECASE)  # attached digit only: "SR4"/"SR10"/"VR8"/"CSR4" — NOT "SR 10 Gigabit"
+_FIBRE_CONN_RE = re.compile(r"\blc\b|\bcs\b", re.IGNORECASE)   # LC or CS duplex fibre connectors
+_FORTYG_RE = re.compile(r"\b40\s?G(?:bit| Gigabit|BASE|E)?", re.IGNORECASE)
+# explicit lane structure "N × <rate>G" where N is the parallel lane count: 12×25G, 10×10G, 4×32G
+_NX_LANE_RE = re.compile(r"(\d+)\s*[×xX]\s*\d+\s*G", re.IGNORECASE)
+# A TRUE multi-module breakout writes the per-module standard ("2× 100GBASE-SR4"); the bare
+# "8×100G" inside an 800G part's speed is just its lane description (VR8 already = 8 lanes) and must
+# NOT multiply. Requiring "100GBASE" after the × distinguishes the two.
+_BREAKOUT_RE = re.compile(r"\b(\d+)\s*[×xX]\s*100GBASE", re.IGNORECASE)        # 2X/4X 100GBASE-* mega-modules
 
-    Fires only when the connector names LC *and* duplex/dual *and* does not say single/
-    simplex/BiDi. Everything ambiguous (bare LC, single-fibre BiDi, MPO) returns None.
+
+def derive_faseranzahl(present: dict[str, str]) -> tuple[str, str] | None:
+    """Faseranzahl from the connector + optical lane structure (physics-grounded, never invented):
+
+      * single / simplex / single-fibre-BiDi LC      -> 1 fibre
+      * duplex / dual LC                              -> 2 fibres (× any N×100G breakout, e.g. 2×100 -> 4)
+      * MPO/MTP parallel                              -> 2 × lanes (SR4 -> 8, SR8/VR8 -> 16, SR10 -> 20),
+                                                         × any N×100G breakout (2×SR4 -> 16)
+
+    Bare "LC" with no duplex/simplex hint, or an MPO with no resolvable lane count, stays ambiguous
+    (returns None) — never guessed. Copper/DAC have no LC/MPO connector, so the slot is left empty.
     """
     if present.get("Faseranzahl", "").strip():
         return None
     conn = present.get("Anschlusstyp", "").strip()
     if not conn:
         return None
-    if (
-        _LC_DUPLEX_RE.search(conn)
-        and _DUPLEX_WORD_RE.search(conn)
-        and not _SIMPLEX_WORD_RE.search(conn)
-    ):
-        return "2", "derived:duplex-lc-connector->2-fibres"
+    blob = " ".join((present.get("Transceiver Typ", ""), present.get("Standard", ""),
+                     present.get("Geschwindigkeit", ""))).upper()
+    bk_m = _BREAKOUT_RE.search(blob)
+    bk = int(bk_m.group(1)) if bk_m else 1
+    bidi = bool(re.search(r"\bbidi\b|\bbx\b|bidirektional|single-?fiber|einzelfaser|simplex|\bsingle\b",
+                          conn + " " + blob, re.IGNORECASE))
+    if _MPO_RE.search(conn):
+        lane_m = _LANES_RE.search(blob)
+        if lane_m and 2 <= int(lane_m.group(1)) <= 12:   # SR4/SR8/SR10/DR4/VR8 — n IS the lane count
+            return str(2 * bk * int(lane_m.group(1))), "derived:mpo-parallel->2x-lanes"
+        nx = _NX_LANE_RE.search(blob)                     # 12×25G / 10×10G / 4×32G — N IS the lane count
+        if nx and 2 <= int(nx.group(1)) <= 16:
+            return str(2 * int(nx.group(1))), "derived:mpo-parallel->2x-Nlanes"
+        if bk_m:                                          # 2×/4×/8× 100GBASE-* mega-module breakout
+            return str(2 * bk), "derived:mpo-parallel->2x-breakout"
+        if _FORTYG_RE.search(blob):                       # 40G over MPO is reliably 4×10G parallel -> 8
+            return "8", "derived:40g-mpo-parallel->8-fibres"
+        return None
+    if _FIBRE_CONN_RE.search(conn):
+        if bidi:                                          # single-fibre BiDi / BX / simplex -> 1 strand
+            return "1", "derived:single-fibre-bidi->1-fibre"
+        # LC/CS optical connectors are DUPLEX by default (one Tx + one Rx fibre), × any N×100G breakout
+        return (str(2 * bk), "derived:duplex->2-fibres" if bk == 1 else "derived:duplex-Nx100->fibres")
     return None
 
 
