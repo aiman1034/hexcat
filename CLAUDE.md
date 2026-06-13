@@ -1,5 +1,13 @@
 # HexCat — session instructions for Claude Code
 
+## PROJECT_AUDIT.md — read-before-update (NON-NEGOTIABLE, every session)
+`PROJECT_AUDIT.md` (repo root) is the deep project audit + rolling context — the single source of
+truth so context is never lost across sessions. **Standing rule (until the operator explicitly
+revokes it):**
+1. **READ `PROJECT_AUDIT.md` first** at session start and **before editing anything** in the project.
+2. **UPDATE it as work proceeds and after every change** (data, code, config, brand completion, decisions) — especially the §9 changelog and §5 brand-status table.
+3. **Always tell the operator** when you have **read** it and when you have **edited** it.
+
 ## Cross-session memory (ruflo)
 
 This project uses **ruflo** as a local, cross-session memory layer so context survives
