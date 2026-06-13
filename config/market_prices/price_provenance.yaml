@@ -1,0 +1,119 @@
+brand: Cisco
+fx_usd_eur: 0.863
+tiers:
+  FLAG: 298
+  T2-LIST: 6
+  T1-MARKET: 3
+skus:
+  GLC-LH-SMD:
+    netto_vk: 557,24
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  GLC-SX-MMD:
+    netto_vk: 290,78
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  GLC-TE:
+    netto_vk: 251,40
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  QSFP-100G-SR4-S:
+    netto_vk: 1114,54
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  QSFP-40G-SR4:
+    netto_vk: 1862,18
+    tier: T1-MARKET
+    confidence: low
+    n_sources: 1
+    low: 1862.18
+    median: 1862.18
+    high: 1862.18
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    sources:
+    - https://www.bechtle.com/de-en/shop/cisco-qsfp-40g-sr4-transceiver--882013--p
+  SFP-10G-SR:
+    netto_vk: 450,57
+    tier: T1-MARKET
+    confidence: medium
+    n_sources: 2
+    low: 399.99
+    median: 450.57
+    high: 501.15
+    cohort: ''
+    flags: []
+    sources:
+    - https://www.bechtle.com/shop/cisco-sfp-10g-sr-sfp-modul--582500--p
+    - https://shop.jacob.de/produkte/Cisco-SFP-Transceiver-Modul-SFP-10G-SR%3D-artnr-291762.html
+  SFP-10G-SR-S:
+    netto_vk: 308,52
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  SFP-25G-SR-S:
+    netto_vk: 555,87
+    tier: T2-LIST
+    confidence: medium
+    n_sources: 0
+    low: null
+    median: null
+    high: null
+    cohort: ''
+    flags:
+    - FLAG:single-source
+    sources: []
+  SFP-H10GB-CU3M:
+    netto_vk: 45,24
+    tier: T1-MARKET
+    confidence: medium
+    n_sources: 2
+    low: 37.81
+    median: 45.24
+    high: 52.66
+    cohort: ''
+    flags: []
+    sources:
+    - https://www.bechtle.com/shop/cisco-10gbase-cu-sfp-plus-kabel-3m--614706--p
+    - https://www.jacob.de/produkte/Cisco-SFP-Copper-SFP-H10GB-CU3M%3D-artnr-232166.html

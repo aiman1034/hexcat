@@ -1,0 +1,40 @@
+as_of: '2026-06-13'
+fx_usd_eur: 0.863
+method: Authorized new-sealed reseller comp via local bridge; net EUR per unit; median positioning; outliers rejected at resolve time.
+skus:
+  SFP-10G-SR:
+    observations:
+    - net_eur: 399.99
+      currency_seen: EUR
+      basis: unknown
+      seller: bechtle
+      url: https://www.bechtle.com/shop/cisco-sfp-10g-sr-sfp-modul--582500--p
+      where: jsonld
+    - net_eur: 501.15
+      currency_seen: EUR
+      basis: unknown
+      seller: shop
+      url: https://shop.jacob.de/produkte/Cisco-SFP-Transceiver-Modul-SFP-10G-SR%3D-artnr-291762.html
+      where: jsonld
+  QSFP-40G-SR4:
+    observations:
+    - net_eur: 1862.18
+      currency_seen: EUR
+      basis: unknown
+      seller: bechtle
+      url: https://www.bechtle.com/de-en/shop/cisco-qsfp-40g-sr4-transceiver--882013--p
+      where: jsonld
+  SFP-H10GB-CU3M:
+    observations:
+    - net_eur: 37.81
+      currency_seen: EUR
+      basis: unknown
+      seller: bechtle
+      url: https://www.bechtle.com/shop/cisco-10gbase-cu-sfp-plus-kabel-3m--614706--p
+      where: jsonld
+    - net_eur: 52.66
+      currency_seen: EUR
+      basis: unknown
+      seller: jacob
+      url: https://www.jacob.de/produkte/Cisco-SFP-Copper-SFP-H10GB-CU3M%3D-artnr-232166.html
+      where: jsonld

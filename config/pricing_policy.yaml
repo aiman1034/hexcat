@@ -15,3 +15,45 @@ policy:
   tier_tolerance: 0.25
   # Back-test passes when MAPE over known-priced samples is at or below this.
   backtest_max_mape: 0.20
+  # A resolved price above this is FLAGGED for optional operator review (recorded, not blocking).
+  high_value_eur: 1500
+  # Relative [low,high]/median spread above which the comp is FLAGGED as wide (review).
+  max_spread: 0.6
+
+# §5 T1-MARKET — bridge-based new-sealed reseller comp. Position at the MEDIAN of authorized
+# new-sealed-original dealers (real street price -> no list->net factor). Refurb/compatible/gray
+# sellers are excluded (see lib/market_comp.AUTHORIZED/EXCLUDED). Each observation traces to its URL.
+market:
+  position: median          # median of the authorized new-sealed competitors
+  min_sources: 1            # >=1 grounds a price; a single source is FLAGGED, never dropped
+  assume_unknown_is_gross: true   # conservative: unmarked B2C prices treated as incl. MwSt -> /1,19
+
+# Per-category (Kategorie Ebene 3) plausibility band in EUR net. A resolved price OUTSIDE the band
+# is BLOCKED (absurd -> stays honest flagged-debt, never shipped). Bands are deliberately WIDE —
+# they reject nonsense (a €2 100G optic, a €90.000 SFP), not normal price variation. Operator-tunable.
+category_bands:
+  "DAC Kabel":   {floor: 10,  ceiling: 3000}
+  "AOC Kabel":   {floor: 20,  ceiling: 4000}
+  "MPO Kabel":   {floor: 10,  ceiling: 3000}
+  "SFP":         {floor: 5,   ceiling: 1500}
+  "SFP+":        {floor: 8,   ceiling: 2000}
+  "SFP28":       {floor: 10,  ceiling: 2500}
+  "SFP56":       {floor: 20,  ceiling: 3500}
+  "QSFP+":       {floor: 20,  ceiling: 3500}
+  "QSFP28":      {floor: 30,  ceiling: 6000}
+  "QSFP56":      {floor: 50,  ceiling: 8000}
+  "QSFP-DD":     {floor: 80,  ceiling: 20000}
+  "QSFP-DD800":  {floor: 150, ceiling: 30000}
+  "QSFP112":     {floor: 80,  ceiling: 20000}
+  "OSFP":        {floor: 100, ceiling: 30000}
+  "X2":          {floor: 30,  ceiling: 4000}
+  "XENPAK":      {floor: 50,  ceiling: 5000}
+  "XFP":         {floor: 20,  ceiling: 4000}
+  "CFP":         {floor: 200, ceiling: 25000}
+  "CFP2":        {floor: 200, ceiling: 30000}
+  "CPAK":        {floor: 200, ceiling: 25000}
+  "CXP":         {floor: 100, ceiling: 15000}
+  "GBIC":        {floor: 10,  ceiling: 2500}
+  "POM":         {floor: 30,  ceiling: 6000}
+  "CIM8":        {floor: 1000, ceiling: 80000}
+  "_default":    {floor: 5,   ceiling: 80000}
