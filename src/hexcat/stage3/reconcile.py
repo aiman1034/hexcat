@@ -121,6 +121,9 @@ def physical_formfaktor(*candidates: str) -> str | None:
             after = text[idx + len(tok): idx + len(tok) + 1]
             if after in ("+",) and not tok.endswith("+"):
                 continue  # this "SFP" is really "SFP+"; let the SFP+ pass catch it
+            before = text[idx - 1: idx] if idx > 0 else ""
+            if tok.startswith("SFP") and before.upper() == "Q":
+                continue  # this "SFP" is really "QSFP…" — never collapse QSFP-200 to SFP
             return tok
     # Cisco PN abbreviation: "QDD" == QSFP-DD (e.g. QDD-400-CU1M, QDD-4ZQ100-CU2M); the 800G
     # variants (QDD-800…) are QSFP-DD800. Only consulted when no explicit token matched above.
@@ -224,7 +227,7 @@ def entry_to_intake(pn: str, entry: dict, *, brand: str, rules: Rules) -> SkuInt
     # Physical connector: authored Formfaktor value -> connector/speed text -> PN.
     authored_ff = next((v for n, v in authored_attrs if n == "Formfaktor"), "")
     anschluss = next((v for n, v in authored_attrs
-                      if n in ("Anschluss", "Anschlussenden", "Schnittstelle")), "")
+                      if n in ("Anschluss", "Anschlusstyp", "Anschlussenden", "Schnittstelle")), "")
     datenrate = next((v for n, v in authored_attrs
                       if n in ("Datenrate", "Geschwindigkeit")), "")
     ff = physical_formfaktor(authored_ff, anschluss, datenrate, pn)

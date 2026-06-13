@@ -132,10 +132,14 @@ def _build_attributes(intake: SkuIntake, source_url: str,
     Everything still empty is reported as skipped (a real GAP) — never invented.
     """
     attr_provenance = attr_provenance or {}
+    # A genuinely-N/A attribute is OMITTED, never emitted as a "—" placeholder (semantic cross-check
+    # B.4): copper has no Wellenlänge, a DAC no Fasertyp, etc. Treat dash/N-A placeholders as empty.
+    _PLACEHOLDER = {"—", "-", "–", "--", "n/a", "n.a.", "na", "k.a.", "keine", "none"}
     present = {
         attr_name: getattr(intake, field, "").strip()
         for attr_name, field in C.TRANSCEIVER_ATTRIBUTES
         if getattr(intake, field, "").strip()
+        and getattr(intake, field, "").strip().lower() not in _PLACEHOLDER
     }
     derived = attribute_depth.derive_all(present)  # {name: (value, rule_label)}
 

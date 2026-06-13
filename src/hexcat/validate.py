@@ -105,6 +105,19 @@ _GESCHWINDIGKEIT_NAME = "Geschwindigkeit"
 _BETRIEBSTEMP_NAME = "Betriebstemperatur"
 _BETRIEBSTEMP_EXEMPT_K3 = frozenset({"MPO Kabel"})  # passive fibre patch/breakout only
 
+# --- permanent SEMANTIC cross-checks (structurally-valid-but-WRONG; FAIL) ----------------
+# These catch the class of error the byte/format gate and even adversarial-verify let through.
+_SFP_FAMILY_FF = frozenset({"SFP", "SFP+", "SFP28", "SFP56"})
+_QSFP_CONN_RE = re.compile(r"QSFP|MPO|MTP|CXP|CPAK", re.IGNORECASE)         # a QSFP/MPO connector...
+_MULTI_WL_RE = re.compile(r"LR4|ER4|FR4|CWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
+_SINGLE_WL_RE = re.compile(r"^\s*[~≈]?\s*\d{3,4}(?:[.,]\d+)?\s*nm")          # exactly one wavelength
+_FIBRE_CONN_GATE_RE = re.compile(r"MPO|MTP|\bLC\b|\bCS\b", re.IGNORECASE)    # optical fibre connector
+_COPPER_GATE_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|base-t", re.IGNORECASE)
+_PLACEHOLDER_VALS = frozenset({"—", "-", "–", "--", "N/A", "n/a", "k.A.", "keine", "none"})
+# B.5 known product-line guard: a PN family that belongs to a specific Hersteller, used ONLY to
+# CATCH a misassignment (never as the assignment rule). MGB*/MFE* mini-GBICs are Cisco Small Business.
+_HERSTELLER_LINE_GUARD = ((re.compile(r"^(MGB|MFE)", re.IGNORECASE), "Cisco"),)
+
 
 def valid_gtin(s: str) -> bool:
     """True if `s` is a structurally valid GTIN-8/12/13/14 (correct GS1 check digit).
@@ -376,6 +389,12 @@ class Validator:
             if hersteller not in self.rules.allowed_hersteller:
                 self._fail(fname, sku, "Hersteller", sorted(self.rules.allowed_hersteller),
                            hersteller, "Hersteller token not in allowed set")
+            # B.5 product-line guard: a PN family that belongs to a known Hersteller must be assigned
+            # to it (verified against the real product line, never a naive PN-prefix split rule).
+            for pat, exp_line in _HERSTELLER_LINE_GUARD:
+                if pat.search(sku) and hersteller != exp_line:
+                    self._fail(fname, sku, "Hersteller", exp_line, hersteller,
+                               f"semantic: {sku} is a {exp_line} product line, mis-assigned to {hersteller}")
             # HAN == Artikelnummer
             if row[i_han] != sku:
                 self._fail(fname, sku, "HAN", sku, row[i_han], "HAN must equal Artikelnummer")
@@ -459,11 +478,13 @@ class Validator:
 
         per_sku_order: dict[str, list[int]] = {}
         per_sku_names: dict[str, set[str]] = {}
+        per_sku_vals: dict[str, dict[str, str]] = {}
         per_sku_wl_exempt: dict[str, bool] = {}
         for row in t.rows:
             sku = row[i_sku]
             name = row[i_name]
             per_sku_names.setdefault(sku, set()).add(name)
+            per_sku_vals.setdefault(sku, {})[name] = row[i_val]
             if _WAVELENGTH_EXEMPT_RE.search(row[i_val]):
                 per_sku_wl_exempt[sku] = True
             if row[i_grp] != grp_expected:
@@ -494,6 +515,10 @@ class Validator:
             if row[i_val].strip() == "":
                 self._fail(fname, sku, "Attributwert", "non-empty", "(empty)",
                            "empty Wertliste row must not be emitted")
+            # B.4 semantic: a genuinely-N/A attribute is OMITTED, never emitted as a "—" placeholder.
+            if row[i_val].strip() in _PLACEHOLDER_VALS:
+                self._fail(fname, sku, f"Attributwert ({name})", "omit the attribute (N/A)",
+                           row[i_val], "semantic: never emit a '—'/N-A placeholder — omit the attribute")
             # GTIN is populate-or-prove-absent: empty is allowed (grounding deferred), but a
             # PRESENT GTIN must pass the GS1 check digit — no fabricated/typo'd barcodes.
             gtin = row[i_gtin].strip()
@@ -518,6 +543,30 @@ class Validator:
             sku_k3 = {r[mi_sku]: r[mi_k3] for r in main_t.rows}
             for sku, names in per_sku_names.items():
                 k3 = sku_k3.get(sku, "")
+                vals = per_sku_vals.get(sku, {})
+                ff_v = vals.get("Formfaktor", "")
+                ans_v = vals.get("Anschlusstyp", "")
+                # B.1 Formfaktor <-> Anschlusstyp: an SFP-family module can't have a QSFP/MPO/CXP connector.
+                if ff_v in _SFP_FAMILY_FF and _QSFP_CONN_RE.search(ans_v):
+                    self._fail(fname, sku, "Formfaktor↔Anschlusstyp", f"a connector matching {ff_v}",
+                               f"{ff_v} / {ans_v}",
+                               "semantic: an SFP-family Formfaktor cannot carry a QSFP/MPO/CXP connector")
+                # B.2 Faseranzahl present for any optical fibre-connector module (deriver fills it).
+                copper_v = bool(_COPPER_GATE_RE.search(vals.get("Fasertyp", "") + " " + ans_v))
+                if (not copper_v and _FIBRE_CONN_GATE_RE.search(ans_v)
+                        and "Faseranzahl" not in names and k3 not in C.CABLE_CATEGORIES):
+                    self._fail(fname, sku, "Attributwert (Faseranzahl)",
+                               "a fibre count for the connector (duplex 2 / MPO parallel 8/16/…)",
+                               "(missing)",
+                               "semantic: an optical fibre-connector module must carry Faseranzahl")
+                # B.3 multi-wavelength: LR4/ER4/FR4/coherent must carry the full set, not one centre value.
+                wl_v = vals.get(_WELLENLAENGE_NAME, "")
+                if (wl_v and _MULTI_WL_RE.search(vals.get("Standard", "") + " " + vals.get("Transceiver Typ", ""))
+                        and _SINGLE_WL_RE.match(wl_v) and "/" not in wl_v and "–" not in wl_v
+                        and "bis" not in wl_v.lower() and "durchstimmbar" not in wl_v.lower()):
+                    self._fail(fname, sku, "Attributwert (Wellenlänge)",
+                               "the full multi-lane wavelength set (e.g. 1271/1291/1311/1331 nm)", wl_v,
+                               "semantic: LR4/ER4/FR4/coherent carries a wavelength SET, never one centre value")
                 # Gold-slice schema: Anwendung + Geschwindigkeit are required on EVERY SKU.
                 if _ANWENDUNG_NAME not in names:
                     self._fail(fname, sku, "Attributwert (Anwendung)",

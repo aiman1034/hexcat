@@ -4,9 +4,9 @@ provenance: completeness union (TMG matrix + EOL bulletins + ordering guide) min
 policy: ADD = real transceiver (queued for Stage-3 authoring). EXCLUDE_NOT_TRANSCEIVER = genuine non-transceiver, grounded by the part's own Cisco description (passive cable / converter / mux-demux / OADM
   / amplifier). Nothing guessed or silently dropped; an ungrounded PN is FLAGGED, never excluded.
 counts:
-  ADD: 160
+  ADD: 158
   EXCLUDE_NOT_TRANSCEIVER: 14
-  FLAG_UNGROUNDED: 2
+  FLAG_UNGROUNDED: 4
   total: 176
 add:
 - pn: CFP2-WDM-D-1HL
@@ -657,20 +657,6 @@ add:
   reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
   family: QSFP28
   datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
-- pn: ONS-QSFP-4X10-MER
-  source: tmg_matrix
-  disposition: ADD
-  description: QSFP+
-  reason: Listed in Cisco's optics-to-device matrix as a QSFP+ transceiver
-  family: QSFP+
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
-- pn: ONS-QSFP-4X10-MLR
-  source: tmg_matrix
-  disposition: ADD
-  description: QSFP+
-  reason: Listed in Cisco's optics-to-device matrix as a QSFP+ transceiver
-  family: QSFP+
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-QSFP28-LR4
   source: tmg_matrix
   disposition: ADD
@@ -1132,6 +1118,24 @@ exclude_not_transceiver:
   description: 4-channels EWDM OADM Module
   reason: 'Passive optical add/drop multiplexer (not a pluggable optic) — per Cisco bulletin description: "4-channels EWDM OADM Module"'
 flag_ungrounded:
+- pn: ONS-QSFP-4X10-MER
+  source: tmg_matrix
+  disposition: FLAG_UNGROUNDED
+  description: NCS 2000 4×10G Multi-Rate QSFP+ (Extended Reach)
+  reason: 'Real NCS 2000 4×10G multi-rate QSFP+ client module, but its WAVELENGTH is not in the
+    cached Cisco NCS-2000 pluggable datasheet (the sheet lists only the PN). A "—" placeholder had
+    been hiding the gap. Per Rule 9 the wavelength is part-specific and must stay datasheet-verbatim,
+    never derived — held (flag-don''t-emit) pending a Cisco source that states the per-lane wavelength.'
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP-4X10-MLR
+  source: tmg_matrix
+  disposition: FLAG_UNGROUNDED
+  description: NCS 2000 4×10G Multi-Rate QSFP+ (Long Reach)
+  reason: 'Real NCS 2000 4×10G multi-rate QSFP+ client module, but its WAVELENGTH is not in the
+    cached Cisco NCS-2000 pluggable datasheet (PN-only listing). The prior "—" placeholder hid the
+    gap. Wavelength is part-specific (Rule 9 = temp only) and must stay datasheet-verbatim, never
+    derived — held (flag-don''t-emit) pending a Cisco source for the per-lane wavelength.'
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: QDD-800G-VR8
   source: tmg_matrix
   disposition: FLAG_UNGROUNDED
