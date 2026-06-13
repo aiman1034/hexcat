@@ -4,8 +4,11 @@
 # CATEGORY (Phase 3+) means adding a sibling file (e.g. taxonomy/switches.yaml), not
 # editing engine code.
 #
-# `subcategories` are the 22 Kategorie-Ebene-3 form factors. Anything not in this list
-# is rejected on build; "Sonstige" is never allowed.
+# `subcategories` are the 23 Kategorie-Ebene-3 form factors. Anything not in this list
+# is rejected on build; "Sonstige" is never allowed. (Was 22; POM — Cisco's proprietary
+# SONET/SDH Pluggable Optic Module — was added so real OC-3/OC-48 transceivers are catalogued,
+# never dropped for lacking a form factor. The mission rule: every physical transceiver PN is
+# included; a missing form factor is a taxonomy gap to fix, not a reason to exclude the part.)
 #
 # `attributes` are the fixed 14, IN ORDER. Their order IS the Sortiernummer (1..14) and
 # is part of the byte-exact Ameise output contract — so the same 14, in the same order,
@@ -19,7 +22,7 @@ category: transceivers
 kategorie_ebene_2: "Transceivers & SFP Module"     # WITH final "e"
 attributgruppe: "Transceivers & SFP Modul"         # NO final "e" — one char different, intentional
 
-# Kategorie Ebene 3 — the 22 locked form factors.
+# Kategorie Ebene 3 — the 23 locked form factors.
 subcategories:
   - "DAC Kabel"
   - "AOC Kabel"
@@ -43,6 +46,7 @@ subcategories:
   - "CPAK"
   - "CXP"
   - "GBIC"
+  - "POM"
 
 # The 14 fixed attributes, in Sortiernummer order. `name` is the emitted Attributname;
 # `intake_field` is the wide-intake column it is read from.

@@ -8,10 +8,15 @@ from hexcat import constants as C
 from hexcat.config import ConfigError, load_taxonomy, verify_taxonomy
 
 
-def test_taxonomy_loads_with_22_subcategories_and_14_attributes():
+def test_taxonomy_loads_with_23_subcategories_and_14_attributes():
     tax = load_taxonomy()
     assert tax.category == "transceivers"
-    assert len(tax.subcategories) == 22
+    # 23 form factors: the original 22 + POM (Cisco SONET/SDH Pluggable Optic Module),
+    # added so real OC-3/OC-48 transceivers are catalogued rather than dropped for lacking
+    # a form factor. Every real transceiver PN is included — a taxonomy gap is fixed, not used
+    # as an exclusion reason.
+    assert len(tax.subcategories) == 23
+    assert "POM" in tax.subcategories
     assert "Sonstige" not in tax.subcategories
     assert len(tax.attributes) == 14
 

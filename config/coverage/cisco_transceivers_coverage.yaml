@@ -13,366 +13,486 @@ missing_by_family:
   - pn: CFP2-WDM-DETS-1HL
     source: 200gbps-cfp2-dco-module-eol
     description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
+    eol: true
   - pn: CFP2-WDM-DS-1HL
     source: 200gbps-cfp2-dco-module-eol
     description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
+    eol: true
   - pn: CFP2-WDM-DS100-HL
     source: 200gbps-cfp2-dco-module-eol
     description: 100G, WDM CFP2 pluggable, w/ SC-FEC, Non-TOF
+    eol: true
   QSFP+:
   - pn: QSFP-40GE-LR4
     source: c51-734200
     description: QSFP 40GBASE-LR4 Transceiver Module, LC, 10KM
+    eol: true
   SFP:
   - pn: CB-M12-4LC-MMF1.5
     source: high-density-fiber-patch-mpo-ds
     description: 0.5M
+    eol: false
   - pn: CB-M12-4LC-MMF10M
     source: high-density-fiber-patch-mpo-ds
     description: 9.0M
+    eol: false
   - pn: CB-M12-4LC-MMF15M
     source: high-density-fiber-patch-mpo-ds
     description: 14.0M
+    eol: false
   - pn: CB-M12-4LC-MMF20M
     source: high-density-fiber-patch-mpo-ds
     description: 19.0M
+    eol: false
   - pn: CB-M12-4LC-MMF25M
     source: high-density-fiber-patch-mpo-ds
     description: 24.0M
+    eol: false
   - pn: CB-M12-4LC-MMF2M
     source: high-density-fiber-patch-mpo-ds
     description: 1.0M
+    eol: false
   - pn: CB-M12-4LC-MMF30M
     source: high-density-fiber-patch-mpo-ds
     description: 29.0M
+    eol: false
   - pn: CB-M12-4LC-MMF3M
     source: high-density-fiber-patch-mpo-ds
     description: 2.0M
+    eol: false
   - pn: CB-M12-4LC-MMF4M
     source: high-density-fiber-patch-mpo-ds
     description: 3.0M
+    eol: false
   - pn: CB-M12-4LC-MMF5M
     source: high-density-fiber-patch-mpo-ds
     description: 4.0M
+    eol: false
   - pn: CB-M12-4LC-MMF7M
     source: high-density-fiber-patch-mpo-ds
     description: 6.0m
+    eol: false
   - pn: CWDM-SFP10G-1470
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1470 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1490
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1490 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1510
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1510 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1530
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1530 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1550
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1550 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1570
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1570 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1590
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1590 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: CWDM-SFP10G-1610
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1610 nm SFP+ 10 Gigabit Ethernet Transceiver Module
+    eol: true
   - pn: DP04SFP8-E20
     source: 400zr-osfp-digital-coherent-optic-module-eol
     description: 400GBPS COHERENT OSFP, DWDM C-BAND TUNABLE 400ZR MODULE
+    eol: true
   - pn: DWDM-GBIC-30.33
     source: eol_c51_624008
     description: 1000BASE-DWDM 1530.33nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-31.12
     source: eol_c51_624008
     description: 1000BASE-DWDM 1531.12nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-31.90
     source: eol_c51_624008
     description: 1000BASE-DWDM 1531.90nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-32.68
     source: eol_c51_624008
     description: 1000BASE-DWDM 1532.68nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-34.25
     source: eol_c51_624008
     description: 1000BASE-DWDM 1534.25nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-35.04
     source: eol_c51_624008
     description: 1000BASE-DWDM 1535.04nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-35.82
     source: eol_c51_624008
     description: 1000BASE-DWDM 1535.82nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-36.61
     source: eol_c51_624008
     description: 1000BASE-DWDM 1536.61nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-38.19
     source: eol_c51_624008
     description: 1000BASE-DWDM 1538.19nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-38.98
     source: eol_c51_624008
     description: 1000BASE-DWDM 1538.98nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-39.77
     source: eol_c51_624008
     description: 1000BASE-DWDM 1539.77nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-40.56
     source: eol_c51_624008
     description: 1000BASE-DWDM 1540.56nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-42.14
     source: eol_c51_624008
     description: 1000BASE-DWDM 1542.14nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-42.94
     source: eol_c51_624008
     description: 1000BASE-DWDM 1542.94nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-43.73
     source: eol_c51_624008
     description: 1000BASE-DWDM 1543.73nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-44.53
     source: eol_c51_624008
     description: 1000BASE-DWDM 1544.53nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-46.12
     source: eol_c51_624008
     description: 1000BASE-DWDM 1546.12nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-46.92
     source: eol_c51_624008
     description: 1000BASE-DWDM 1546.92nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-47.72
     source: eol_c51_624008
     description: 1000BASE-DWDM 1547.72nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-48.51
     source: eol_c51_624008
     description: 1000BASE-DWDM 1548.51nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-50.12
     source: eol_c51_624008
     description: 1000BASE-DWDM 1550.12nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-50.92
     source: eol_c51_624008
     description: 1000BASE-DWDM 1550.92nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-51.72
     source: eol_c51_624008
     description: 1000BASE-DWDM 1551.72nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-52.52
     source: eol_c51_624008
     description: 1000BASE-DWDM 1552.52nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-54.13
     source: eol_c51_624008
     description: 1000BASE-DWDM 1554.13nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-54.94
     source: eol_c51_624008
     description: 1000BASE-DWDM 1554.94nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-55.75
     source: eol_c51_624008
     description: 1000BASE-DWDM 1555.75nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-56.55
     source: eol_c51_624008
     description: 1000BASE-DWDM 1556.55nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-58.17
     source: eol_c51_624008
     description: 1000BASE-DWDM 1558.17nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-58.98
     source: eol_c51_624008
     description: 1000BASE-DWDM 1558.98nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-59.79
     source: eol_c51_624008
     description: 1000BASE-DWDM 1559.79nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-GBIC-60.61
     source: eol_c51_624008
     description: 1000BASE-DWDM 1560.61nm GBIC (100GHz ITU grid)
+    eol: true
   - pn: DWDM-XENPAK-30.33
     source: c51-733695
     description: 10GBase-DWDM 1530.33nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-31.12
     source: c51-733695
     description: 10GBase-DWDM 1531.12nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-31.90
     source: c51-733695
     description: 10GBase-DWDM 1531.90nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-32.68
     source: c51-733695
     description: 10GBase-DWDM 1532.68nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-34.25
     source: c51-733695
     description: 10GBase-DWDM 1534.25nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-35.04
     source: c51-733695
     description: 10GBase-DWDM 1535.04nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-35.82
     source: c51-733695
     description: 10GBase-DWDM 1535.82nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-36.61
     source: c51-733695
     description: 10GBase-DWDM 1536.61nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-38.19
     source: c51-733695
     description: 10GBase-DWDM 1538.19nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-38.98
     source: c51-733695
     description: 10GBase-DWDM 1538.98nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-39.77
     source: c51-733695
     description: 10GBase-DWDM 1539.77nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-40.56
     source: c51-733695
     description: 10GBase-DWDM 1540.56nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-42.14
     source: c51-733695
     description: 10GBase-DWDM 1542.14nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-42.94
     source: c51-733695
     description: 10GBase-DWDM 1542.94nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-43.73
     source: c51-733695
     description: 10GBase-DWDM 1543.73nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-44.53
     source: c51-733695
     description: 10GBase-DWDM 1544.53nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-46.12
     source: c51-733695
     description: 10GBase-DWDM 1546.12nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-46.92
     source: c51-733695
     description: 10GBase-DWDM 1546.92nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-47.72
     source: c51-733695
     description: 10GBase-DWDM 1547.72nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-48.51
     source: c51-733695
     description: 10GBase-DWDM 1548.51nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-50.12
     source: c51-733695
     description: 10GBase-DWDM 1550.12nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-50.92
     source: c51-733695
     description: 10GBase-DWDM 1550.92nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-51.72
     source: c51-733695
     description: 10GBase-DWDM 1551.72nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-52.52
     source: c51-733695
     description: 10GBase-DWDM 1552.52nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-54.13
     source: c51-733695
     description: 10GBase-DWDM 1554.12nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-54.94
     source: c51-733695
     description: 10GBase-DWDM 1554.94nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-55.75
     source: c51-733695
     description: 10GBase-DWDM 1555.75nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-56.55
     source: c51-733695
     description: 10GBase-DWDM 1556.55nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-58.17
     source: c51-733695
     description: 10GBase-DWDM 1558.17nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-58.98
     source: c51-733695
     description: 10GBase-DWDM 1558.98nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-59.79
     source: c51-733695
     description: 10GBase-DWDM 1559.79nm XENPAK
+    eol: true
   - pn: DWDM-XENPAK-60.61
     source: c51-733695
     description: 10GBase-DWDM 1560.61nm XENPAK
+    eol: true
   - pn: ENC-10G-ONT-01PR
     source: 10g-routed-pon-ont-ds
     description: ''
+    eol: false
   - pn: ENC-10G-ONT-10
     source: 10g-routed-pon-ont-ds
     description: SC/APC
+    eol: false
   - pn: ENC-10G-ONT-14A
     source: 10g-routed-pon-ont-ds
     description: ''
+    eol: false
   - pn: GLC-LH-LMM-TI
     source: c51-736655
     description: 1000BASE-LX/LH SFP trn mod, M/SMF, 1310nm, DOM, smrt LMM, TI
+    eol: true
   - pn: GLC-LH-SM
     source: c51-698060
     description: GE SFP, LC connector LX/LH transceiver
+    eol: true
   - pn: GLC-SX-MM
     source: c51-698060
     description: GE SFP, LC connector SX transceiver
+    eol: true
   - pn: GLC-ZX-LMM-TI
     source: c51-736655
     description: 1000BASE-ZX SFP trn mod, SMF, 1550nm, DOM, smrt LMM TI
+    eol: true
   - pn: GLC-ZX-SM
     source: c51-727832
     description: 1000BASE-ZX SFP
+    eol: true
   - pn: NCS-FAB-OPT
     source: c51-2369770
     description: Bundle of 96 CXP-100G-SR12
+    eol: true
   - pn: POM-OC3-MM
     source: c51-729209
     description: 1-port OC3/STM1 Pluggable Optic Module, MM
+    eol: true
   - pn: POM-OC3-SMIR
     source: c51-729209
     description: 1-port OC3/STM1 Pluggable Optic Module, SM-IR
+    eol: true
   - pn: POM-OC3-SMLR
     source: c51-729209
     description: 1-port OC3/STM1 Pluggable Optic Module, SM-LR
+    eol: true
   - pn: POM-OC48-IR1-LC
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-IR1 LC
+    eol: true
   - pn: POM-OC48-LR2-LC
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable Optic Module, 1550nm SM-LR2 LC
+    eol: true
   - pn: POM-OC48-LR2-LC-C
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable, 1550nm SM-LR2-LC for CRS
+    eol: true
   - pn: POM-OC48-SR-LC
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable Optic Module, 1310nm SM-SR LC
+    eol: true
   - pn: POM-OC48-SR-LC-C
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable, 1310nm SM-SR LC
+    eol: true
   - pn: SFP-GE-L
     source: c51-698060
     description: 1000BASE-LX/LH SFP (DOM)
+    eol: true
   - pn: SFP-GE-S
     source: c51-698060
     description: 1000BASE-SX SFP (DOM)
+    eol: true
   - pn: SFP-GE-Z
     source: c51-727832
     description: 1000BASE-ZX Gigabit Ethernet SFP (DOM)
+    eol: true
   - pn: WDM-XENPAK-REC
     source: eol_c51_509261
     description: Receive-Only WDM XENPAK
+    eol: true
   - pn: WS-G5483
     source: c51-726566
     description: 1000BT GBIC
+    eol: true
   - pn: WS-G5484
     source: c51-726566
     description: 1000BASE-SX Short Wavelength GBIC (Multimode only)
+    eol: true
   - pn: WS-G5486
     source: c51-726566
     description: 1000BASE-LX/LH long haul GBIC (singlemode or multimode)
+    eol: true
   - pn: WS-G5487
     source: c51-726566
     description: 1000Base-ZX extended reach GBIC (singlemode)
+    eol: true
   - pn: XENPAK-10GB-CX4
     source: c51-726868
     description: Cisco 10GBASE-CX4 XENPAK Module
+    eol: true
   - pn: XENPAK-10GB-LRM
     source: c51-734289
     description: 10G Base LRM Xenpak
+    eol: true
   - pn: XENPAK-10GB-LW
     source: eol_c51_561505
     description: 10GBASE-LW XENPAK Module
+    eol: true
   - pn: XENPAK-10GB-LX4
     source: eol_c51_599855
     description: 10GBASE-LX4 XENPAK Module
+    eol: true
   - pn: XENPAK-10GB-SR
     source: c51-734289
     description: 10GBASE-SR XENPAK Module
+    eol: true
   - pn: XENPAK-10GB-ZR
     source: c51-734289
     description: 10GBASE-ZR XENPAK Module
+    eol: true
   XFP:
   - pn: XFP-10GER-OC192IR
     source: c51-566178
     description: 10GBASE-ER and OC192 IR2 XFP Module
+    eol: true
 orphan: []
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)

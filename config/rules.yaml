@@ -27,7 +27,9 @@ constants:
   # "Modul" (no final "e"). This distinction is real and must be preserved.
   attributgruppe_transceiver: "Transceivers & SFP Modul"   # NO final "e"
 
-# Locked Kategorie Ebene 3 set (22). Anything else is rejected; "Sonstige" never allowed.
+# Locked Kategorie Ebene 3 set (23). Anything else is rejected; "Sonstige" never allowed.
+# (POM = Cisco SONET/SDH Pluggable Optic Module; added so real OC-3/OC-48 transceivers are
+# catalogued. Must stay in lock-step with config/taxonomy/transceivers.yaml subcategories.)
 kategorie_ebene_3_allowed:
   - "DAC Kabel"
   - "AOC Kabel"
@@ -51,6 +53,7 @@ kategorie_ebene_3_allowed:
   - "CPAK"
   - "CXP"
   - "GBIC"
+  - "POM"
 
 # Word / character budgets.
 budgets:
