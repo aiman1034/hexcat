@@ -114,7 +114,8 @@ def _derive_weights(
     )
 
 
-def _build_attributes(intake: SkuIntake, source_url: str) -> tuple[list[AttributeValue], list[str]]:
+def _build_attributes(intake: SkuIntake, source_url: str,
+                      attr_provenance: dict | None = None) -> tuple[list[AttributeValue], list[str]]:
     """Transpose the fixed 14 attribute columns -> long rows; skip empty cells.
 
     After collecting the populated cells, fire the physics-grounded derivers (§2 G2b):
@@ -122,8 +123,15 @@ def _build_attributes(intake: SkuIntake, source_url: str) -> tuple[list[Attribut
     it unambiguously (Fasertyp from Wellenlänge, Faseranzahl from a duplex-LC connector).
     Derived values inherit the SKU's grounding Source_URL and are stamped with the rule
     label as their Confidence, so the Verification_Log shows exactly how each was obtained.
+
+    When ``attr_provenance`` (canonical-attr -> (source_url, confidence)) is supplied — as the
+    Stage-3 reconcile does from each entry's authored per-attribute provenance — a PRESENT
+    attribute carries its OWN grounding source + confidence (datasheet / derivation /
+    standard-derived / official-cisco-appnote / ...), so the Verification_Log reflects how each
+    value was really obtained instead of a blanket 'operator-provided'.
     Everything still empty is reported as skipped (a real GAP) — never invented.
     """
+    attr_provenance = attr_provenance or {}
     present = {
         attr_name: getattr(intake, field, "").strip()
         for attr_name, field in C.TRANSCEIVER_ATTRIBUTES
@@ -135,9 +143,11 @@ def _build_attributes(intake: SkuIntake, source_url: str) -> tuple[list[Attribut
     skipped: list[str] = []
     for idx, (attr_name, _field) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1):
         if attr_name in present:
+            pv = attr_provenance.get(attr_name)
             attrs.append(AttributeValue(
-                name=attr_name, value=present[attr_name],
-                sortiernummer=idx, source_url=source_url,
+                name=attr_name, value=present[attr_name], sortiernummer=idx,
+                source_url=(pv[0] if pv and pv[0] else source_url),
+                confidence=(pv[1] if pv and pv[1] else ""),
             ))
         elif attr_name in derived:
             value, rule_label = derived[attr_name]
@@ -150,7 +160,8 @@ def _build_attributes(intake: SkuIntake, source_url: str) -> tuple[list[Attribut
     return attrs, skipped
 
 
-def build_record(intake: SkuIntake, rules: Rules, weights: Weights) -> SkuRecord:
+def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
+                 attr_provenance: dict | None = None) -> SkuRecord:
     sku = intake.Artikelnummer.strip()
     if not sku:
         raise IntakeError("intake row missing Artikelnummer (required).")
@@ -185,7 +196,7 @@ def build_record(intake: SkuIntake, rules: Rules, weights: Weights) -> SkuRecord
     # Verification source (Phase 1: human is the source unless URLs supplied).
     source_url = intake.SourceURLs.strip() or C.VERIFICATION_SOURCE_OPERATOR
 
-    attributes, skipped = _build_attributes(intake, source_url)
+    attributes, skipped = _build_attributes(intake, source_url, attr_provenance)
     faq_pairs, faq_cell = normalize_faq(intake.FAQ, sku)
 
     return SkuRecord(

@@ -278,7 +278,14 @@ def reconcile_content(
         if not isinstance(entry, dict):
             continue
         intake = entry_to_intake(str(pn), entry, brand=brand, rules=rules)
-        records.append(build_record(intake, rules, weights))
+        # Carry each authored per-attribute provenance onto the canonical attribute name (via the
+        # same ATTR_ALIAS the values flow through) so the Verification_Log records the real source +
+        # confidence (datasheet / derivation / standard-derived / ...), not a blanket operator label.
+        canon_prov: dict[str, tuple[str, str]] = {}
+        for k, v in (entry.get("provenance") or {}).items():
+            if isinstance(v, (list, tuple)) and len(v) >= 2:
+                canon_prov[ATTR_ALIAS.get(k, k)] = (str(v[0]), str(v[1]))
+        records.append(build_record(intake, rules, weights, attr_provenance=canon_prov))
     if not records:
         raise ReconcileError(f"{Path(path).name} contained no usable SKU entries")
     return records
