@@ -1,0 +1,33 @@
+brand: Cisco
+category: transceivers
+templated: 299
+flagged_no_token: 2
+templated_by_token:
+  CFP2: 11
+  SFP: 45
+  SFP+: 43
+  QSFP28: 9
+  QSFP-DD: 10
+  OSFP: 2
+  GBIC: 36
+  X2: 35
+  XENPAK: 41
+  XFP: 34
+  QSFP+: 4
+  POM: 8
+  DAC Kabel: 10
+  AOC Kabel: 10
+  QSFP-DD800: 1
+missing_quell_url:
+- QSFP-100G-B40D-I
+- QSFP-100G-B40U-I
+- QSFP-100G-ZR4-I
+flags:
+- pn: CIM8-C-K9
+  family: CIM8
+  description: CIM8
+  reason: no locked unterkategorie token for this form factor — taxonomy decision needed; NOT emitted (flag-don't-guess)
+- pn: CIM8-CE-K9
+  family: CIM8
+  description: CIM8
+  reason: no locked unterkategorie token for this form factor — taxonomy decision needed; NOT emitted (flag-don't-guess)
