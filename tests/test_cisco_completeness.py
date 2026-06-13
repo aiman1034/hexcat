@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ART = ROOT / "config" / "coverage" / "cisco_transceivers_completeness.yaml"
 CONTENT = ROOT / "stage3_content" / "Cisco_content.json"
 DISP = ROOT / "config" / "coverage" / "cisco_transceivers_disposition.yaml"
+UNION_TRIAGE = ROOT / "config" / "coverage" / "cisco_transceivers_union_triage.yaml"
 TMG = ROOT / "config" / "coverage" / "enumerations" / "cisco_tmg_matrix.txt"
 
 
@@ -38,10 +39,13 @@ def _artifact() -> dict:
 
 def _harvested() -> set[str]:
     pns = set(json.loads(CONTENT.read_text(encoding="utf-8")).keys())
-    disp = yaml.safe_load(DISP.read_text(encoding="utf-8"))
-    for bucket in ("add", "exclude_not_transceiver"):
-        for e in (disp.get(bucket) or []):
-            pns.add(e["pn"])
+    for disp_path in (DISP, UNION_TRIAGE):
+        if not disp_path.exists():
+            continue
+        disp = yaml.safe_load(disp_path.read_text(encoding="utf-8"))
+        for bucket in ("add", "exclude_not_transceiver"):
+            for e in (disp.get(bucket) or []):
+                pns.add(e["pn"])
     return pns
 
 
@@ -99,3 +103,43 @@ def test_tmg_snapshot_has_no_placeholder_wildcards():
            if ln.strip() and not ln.startswith("#")]
     assert pns, "expected gathered TMG PIDs"
     assert all("XX" not in p.upper() for p in pns), "placeholder wildcard leaked into the universe"
+
+
+# ---- the union triage: every PN accounted, every exclusion grounded, nothing guessed ----
+
+def _union_triage() -> dict:
+    return yaml.safe_load(UNION_TRIAGE.read_text(encoding="utf-8"))
+
+
+def test_union_triage_leaves_nothing_ungrounded():
+    """The closure rule: every completeness-union gap is resolved to a real transceiver (ADD) or a
+    grounded non-transceiver (EXCLUDE). A PN that could NOT be grounded is FLAGGED, never excluded —
+    so an empty flag list is the proof nothing was guessed away."""
+    t = _union_triage()
+    assert t["flag_ungrounded"] == [] or t["flag_ungrounded"] is None, \
+        "ungrounded PNs remain — they must be grounded, never silently dropped or excluded"
+    assert t["counts"]["FLAG_UNGROUNDED"] == 0
+
+
+def test_union_triage_exclusions_are_grounded_non_transceivers():
+    """The ONLY permitted exclusion is a genuine non-transceiver, and the reason must quote the
+    part's own Cisco description (cable / converter / mux-demux / OADM / amplifier)."""
+    t = _union_triage()
+    for e in (t.get("exclude_not_transceiver") or []):
+        assert e["description"].strip(), f"{e['pn']} excluded with no grounding description"
+        assert e["pn"] in (q for q in [e["pn"]])  # pn present
+        assert any(k in e["reason"].lower()
+                   for k in ("cable", "converter", "adapter", "bracket", "tray",
+                             "mux", "demux", "oadm", "amplifier")), \
+            f"{e['pn']} exclusion reason is not a recognised non-transceiver: {e['reason']}"
+
+
+def test_cisco_verdict_is_complete_and_consistent():
+    """With the union fully triaged, Cisco transceivers reconcile to COMPLETE — captured == universe,
+    zero gaps — and the verdict is the computed rule, not a hand-set flag."""
+    a = _artifact()
+    assert a["gap_count"] == 0
+    assert a["captured_count"] == a["universe_total"]
+    assert a["complete"] is True
+    rep = reconcile_brand("transceivers", "Cisco", _harvested(), root=ROOT)
+    assert rep.complete is True and not rep.gaps

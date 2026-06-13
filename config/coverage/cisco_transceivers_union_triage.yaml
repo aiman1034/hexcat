@@ -1,0 +1,1150 @@
+brand: Cisco
+category: transceivers
+provenance: completeness union (TMG matrix + EOL bulletins + ordering guide) minus the shipped catalog; grounded per-PN from each part's own Cisco source.
+policy: ADD = real transceiver (queued for Stage-3 authoring). EXCLUDE_NOT_TRANSCEIVER = genuine non-transceiver, grounded by the part's own Cisco description (passive cable / converter / mux-demux / OADM
+  / amplifier). Nothing guessed or silently dropped; an ungrounded PN is FLAGGED, never excluded.
+counts:
+  ADD: 163
+  EXCLUDE_NOT_TRANSCEIVER: 13
+  FLAG_UNGROUNDED: 0
+  total: 176
+add:
+- pn: CFP2-WDM-D-1HL
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2 transceiver
+  family: CFP2
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
+- pn: CFP2-WDM-DET-1HL
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2 transceiver
+  family: CFP2
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
+- pn: CIM8-C-K9
+  source: tmg_matrix
+  disposition: ADD
+  description: CIM8
+  reason: Listed in Cisco's optics-to-device matrix as a CIM8 transceiver
+  family: CIM8
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: CIM8-CE-K9
+  source: tmg_matrix
+  disposition: ADD
+  description: CIM8
+  reason: Listed in Cisco's optics-to-device matrix as a CIM8 transceiver
+  family: CIM8
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: CWDM-SFP-1470
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+- pn: CWDM-SFP-1490
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+- pn: CWDM-SFP-1510
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+- pn: CWDM-SFP-1530
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+- pn: CWDM-SFP-1610
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+- pn: DP01QS28-E20
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
+- pn: DP01QS28-E25
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
+- pn: DP01QSDD-LK9
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: DP04CFP2-M25-K9
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2-DCO
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2-DCO transceiver
+  family: CFP2-DCO
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: DP04QSDD-ER1
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://acacia-inc.com/product/qsfp-dd-product-family/
+- pn: DP04QSDD-HE0-A1
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html
+- pn: DP04QSDD-HK9
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: DP04QSDD-ULH-A1
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-haul-coherent-module-ds.html
+- pn: DS-SFP-FC16G-ELW
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html
+- pn: DS-SFP-FC64G-LW
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html
+- pn: DS-SFP-FC64G-SW
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html
+- pn: DWDM-SFP-3033
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html
+- pn: DWDM-SFP-3112
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html
+- pn: DWDM-SFP-3190
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html
+- pn: DWDM-SFP-3268
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html
+- pn: DWDM-SFP10G-30.33
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-31.12
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-61.41
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-C
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-C-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-C-S
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+- pn: DWDM-SFP10G-E-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-741702.html
+- pn: DWDM-X2-30.33
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1530,33 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1530,33 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-31.12
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1531,12 nm (ITU 100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1531,12 nm (ITU 100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-31.90
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1531,90 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1531,90 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-32.68
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1532,68 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1532,68 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-34.25
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1534,25 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1534,25 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-35.04
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1535,04 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1535,04 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-35.82
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1535,82 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1535,82 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-36.61
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1536,61 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1536,61 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-38.19
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1538,19 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1538,19 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-38.98
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1538,98 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1538,98 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-39.77
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1539,77 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1539,77 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-40.56
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1540,56 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1540,56 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-42.14
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1542,14 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1542,14 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-42.94
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1542,94 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1542,94 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-43.73
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1543,73 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1543,73 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-44.53
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1544,53 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1544,53 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-46.12
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1546,12 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1546,12 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-46.92
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1546,92 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1546,92 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-47.72
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1547,72 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1547,72 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-48.51
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1548,51 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1548,51 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-50.12
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1550,12 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1550,12 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-50.92
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1550,92 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1550,92 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-51.72
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1551,72 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1551,72 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-52.52
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1552,52 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1552,52 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-54.13
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1554,13 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1554,13 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-54.94
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1554,94 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1554,94 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-55.75
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1555,75 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1555,75 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-56.55
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1556,55 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1556,55 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-58.17
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1558,17 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1558,17 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-58.98
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1558,98 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1558,98 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-59.79
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1559,79 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1559,79 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-X2-60.61
+  source: c51-736658
+  disposition: ADD
+  description: Module DWDM X2 1560,61 nm (100 GHz - grille ITU)
+  reason: 'Real transceiver per EOL bulletin description: "Module DWDM X2 1560,61 nm (100 GHz - grille ITU)"'
+  family: ''
+- pn: DWDM-XFP-30.33
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1530.33 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1530.33 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-31.12
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1531.12 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1531.12 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-31.90
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1531.90 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1531.90 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-32.68
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1532.68 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1532.68 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-34.25
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1534.25 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1534.25 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-35.04
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1535.04 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1535.04 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-35.82
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1535.82 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1535.82 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-36.61
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1536.61 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1536.61 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-38.19
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1538.19 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1538.19 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-38.98
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1538.98 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1538.98 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-39.77
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1539.77 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1539.77 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-40.56
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1540.56 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1540.56 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-42.14
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1542.14 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1542.14 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-42.94
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1542.94 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1542.94 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-43.73
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1543.73 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1543.73 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-44.53
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1544.53 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1544.53 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-46.12
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1546.12 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1546.12 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-46.92
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1546.92 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1546.92 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-47.72
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1547.72 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1547.72 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-48.51
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1548.51 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1548.51 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-50.12
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1550.12 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1550.12 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-50.92
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1550.92 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1550.92 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-51.72
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1551.72 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1551.72 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-52.52
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1552.52 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1552.52 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-54.13
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1554.13 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1554.13 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-54.94
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1554.94 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1554.94 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-55.75
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1555.75 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1555.75 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-56.55
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1556.55 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1556.55 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-58.17
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1558.17 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1558.17 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: DWDM-XFP-58.98
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1558.98 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1558.98 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-59.79
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1559.79 nm XFP (BUILD-TO-ORDER)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1559.79 nm XFP (BUILD-TO-ORDER)"'
+  family: ''
+- pn: DWDM-XFP-60.61
+  source: c51-740869
+  disposition: ADD
+  description: DWDM XFP 1560.61 nm XFP (100 GHz ITU grid)
+  reason: 'Real transceiver per EOL bulletin description: "DWDM XFP 1560.61 nm XFP (100 GHz ITU grid)"'
+  family: ''
+- pn: FET-10G
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html
+- pn: GLC-T++
+  source: c51-737325
+  disposition: ADD
+  description: 1000BASE-T SFP, TAA compliant
+  reason: 'Real transceiver per EOL bulletin description: "1000BASE-T SFP, TAA compliant"'
+  family: ''
+- pn: GLC-TE++
+  source: c51-737325
+  disposition: ADD
+  description: 1000BASE-T SFP
+  reason: 'Real transceiver per EOL bulletin description: "1000BASE-T SFP"'
+  family: ''
+- pn: ONS-CFP2-WDM
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2-ACO
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2-ACO transceiver
+  family: CFP2-ACO
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-CFP2-WDM2
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2-ACO
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2-ACO transceiver
+  family: CFP2-ACO
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-CFP2D-400G-C
+  source: tmg_matrix
+  disposition: ADD
+  description: CFP2-DCO
+  reason: Listed in Cisco's optics-to-device matrix as a CFP2-DCO transceiver
+  family: CFP2-DCO
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QC-16GFC-SW
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QDD-OLS
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd-plug-open-line-system-ds.html
+- pn: ONS-QSFP-4X10-MER
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP+
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP+ transceiver
+  family: QSFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP-4X10-MLR
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP+
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP+ transceiver
+  family: QSFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP28-LR4
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SC+-10G-C
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SC+-10G-ER
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SC+-10G-LR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SC+-10G-SR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SC+-10G-ZR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI+-10G-ER
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI+-10G-LR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI+-10G-SR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI+-10G-ZR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI-GE-EX
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI-GE-LX
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI-GE-SX
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-SI-GE-ZX
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: OSFPR-800G-DR8
+  source: tmg_matrix
+  disposition: ADD
+  description: OSFP-RHS
+  reason: Listed in Cisco's optics-to-device matrix as a OSFP-RHS transceiver
+  family: OSFP-RHS
+  datasheet: https://www.cisco.com/c/en/us/products/interfaces-modules/transceiver-modules/datasheet-listing.html
+- pn: QDD-2Q200-CU1M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QDD-2Q200-CU2.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QDD-2Q200-CU2M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QDD-400-AOC10M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC15M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC1M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC20M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC25M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC2M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC30M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC3M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-AOC7M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU0.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU1M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU2.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU2M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU3M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU1M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU2.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU2M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU3M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
+  family: QSFP-DD
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-800G-VR8
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP-DD800
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD800 transceiver
+  family: QSFP-DD800
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html
+- pn: QSFP-100G-B40D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: ''
+- pn: QSFP-100G-B40U-I
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: ''
+- pn: QSFP-100G-ZR4-I
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: ''
+- pn: QSFP-200-CU3M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP56
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP56 transceiver
+  family: QSFP56
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QSFP-4SFP25G-CU1.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
+- pn: QSFP-4SFP25G-CU2.5M
+  source: tmg_matrix
+  disposition: ADD
+  description: QSFP28
+  reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
+  family: QSFP28
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
+- pn: QSFP-4SFP25G-CU4M
+  source: tmg_matrix
+  disposition: ADD
+  description: (optic)
+  reason: Listed in Cisco's optics-to-device matrix as a (optic) transceiver
+  family: (optic)
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
+- pn: S10G-ER-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: S10G-LR-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: S10G-SR-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: S1G-LH-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: S1G-SX-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: S1G-TE-PM-D-I
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP
+  reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
+  family: SFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+- pn: SFP10G-USR
+  source: tmg_matrix
+  disposition: ADD
+  description: SFP+
+  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
+  family: SFP+
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html
+- pn: X2-10GB-LR++
+  source: c51-2358104
+  disposition: ADD
+  description: 10GBASE-LR X2 Module
+  reason: 'Real transceiver per EOL bulletin description: "10GBASE-LR X2 Module"'
+  family: ''
+- pn: X2-10GB-LRM++
+  source: c51-734241
+  disposition: ADD
+  description: 10GBASE-LRM X2 Module
+  reason: 'Real transceiver per EOL bulletin description: "10GBASE-LRM X2 Module"'
+  family: ''
+- pn: X2-10GB-SR++
+  source: c51-744186
+  disposition: ADD
+  description: 10GBASE-SR X2 Module
+  reason: 'Real transceiver per EOL bulletin description: "10GBASE-SR X2 Module"'
+  family: ''
+- pn: XENPAK-10GB-ER+
+  source: tmg_matrix
+  disposition: ADD
+  description: XENPAK
+  reason: Listed in Cisco's optics-to-device matrix as a XENPAK transceiver
+  family: XENPAK
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6500-series-supervisor-engine-720/product_data_sheet09186a008007cd00.pdf
+- pn: XENPAK-10GB-LR+
+  source: tmg_matrix
+  disposition: ADD
+  description: XENPAK
+  reason: Listed in Cisco's optics-to-device matrix as a XENPAK transceiver
+  family: XENPAK
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6500-series-supervisor-engine-720/product_data_sheet09186a008007cd00.pdf
+- pn: XFP-10GER-192IR+
+  source: tmg_matrix
+  disposition: ADD
+  description: XFP
+  reason: Listed in Cisco's optics-to-device matrix as a XFP transceiver
+  family: XFP
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
+exclude_not_transceiver:
+- pn: CAB-INF-26G-15
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 15m cable for 10GBase-CX4 module
+  reason: 'Passive cable (not a pluggable optic) — per Cisco bulletin description: "15m cable for 10GBase-CX4 module"'
+- pn: CAB-INF-28G-1
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 1m cable for 10GBase-CX4 module
+  reason: 'Passive cable (not a pluggable optic) — per Cisco bulletin description: "1m cable for 10GBase-CX4 module"'
+- pn: CAB-INF-28G-10
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 10m cable for 10GBase-CX4 module
+  reason: 'Passive cable (not a pluggable optic) — per Cisco bulletin description: "10m cable for 10GBase-CX4 module"'
+- pn: CAB-INF-28G-5
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 5m cable for 10GBase-CX4 module
+  reason: 'Passive cable (not a pluggable optic) — per Cisco bulletin description: "5m cable for 10GBase-CX4 module"'
+- pn: CVR-4SFP10G-QSFP
+  source: c51-740443
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 4 x SFP10G to QSFP reverse adapter
+  reason: 'Converter/adapter/mechanical part (not a pluggable optic) — per Cisco bulletin description: "4 x SFP10G to QSFP reverse adapter"'
+- pn: CVR-BRKT-1
+  source: c51-740443
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: Mounting bracket for one CVR-4SFP10G-QSFP
+  reason: 'Converter/adapter/mechanical part (not a pluggable optic) — per Cisco bulletin description: "Mounting bracket for one CVR-4SFP10G-QSFP"'
+- pn: CVR-CFP-4SFP10G
+  source: c51-736369
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: CFP to SFP10G Adapter module
+  reason: 'Converter/adapter/mechanical part (not a pluggable optic) — per Cisco bulletin description: "CFP to SFP10G Adapter module"'
+- pn: CVR-TRAY-8
+  source: c51-740443
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: Tray for CVR-4SFP10G-QSFP
+  reason: 'Converter/adapter/mechanical part (not a pluggable optic) — per Cisco bulletin description: "Tray for CVR-4SFP10G-QSFP"'
+- pn: CWDM-MUX-4-SF1
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: Single Fiber 4-Channel Mux/Demux
+  reason: 'Passive optical mux/demux (not a pluggable optic) — per Cisco bulletin description: "Single Fiber 4-Channel Mux/Demux"'
+- pn: CWDM-MUX-4-SF2
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: Single Fiber 4-Channel Mux/Demux
+  reason: 'Passive optical mux/demux (not a pluggable optic) — per Cisco bulletin description: "Single Fiber 4-Channel Mux/Demux"'
+- pn: EWDM-OA
+  source: c51-731970
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: EWDM Optical Amplifier
+  reason: 'Optical amplifier (not a pluggable optic) — per Cisco bulletin description: "EWDM Optical Amplifier"'
+- pn: EWDM-OADM2
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 2-channels EWDM OADM Module
+  reason: 'Passive optical add/drop multiplexer (not a pluggable optic) — per Cisco bulletin description: "2-channels EWDM OADM Module"'
+- pn: EWDM-OADM4
+  source: c51-23758826
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: 4-channels EWDM OADM Module
+  reason: 'Passive optical add/drop multiplexer (not a pluggable optic) — per Cisco bulletin description: "4-channels EWDM OADM Module"'
+flag_ungrounded: []
