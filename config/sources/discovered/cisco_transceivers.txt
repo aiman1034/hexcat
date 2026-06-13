@@ -2,3 +2,30 @@
 # in-session WebSearch ("Cisco <family> transceiver datasheet"). One URL per line.
 # lib/harvest.py folds these in as additional discovery seeds on the next run.
 # Lines starting with '#' and blank lines are ignored. $0: no paid API produces this.
+
+# --- gap-chase 2026-06-13: official datasheet URLs from the TMG matrix
+#     for 130 of 134 completeness gaps (one PID may share a URL).
+https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
+https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
+https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-high-power-optical-module-ds.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/400g-qsfp-dd-haul-coherent-module-ds.html
+https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html#Cisco128GbpsFibreChannelQSFPTransceivers
+https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9000-series-multilayer-switches/product_data_sheet09186a00801bc698.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/data_sheet_c78-711186.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/datasheet-c78-741702.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html
+https://meraki.cisco.com/product-collateral/sfp-datasheet/
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/small-business-network-accessories/datasheet-c78-741408.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd-plug-open-line-system-ds.html
+https://www.cisco.com/c/en/us/products/interfaces-modules/transceiver-modules/datasheet-listing.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/catalyst-6500-series-supervisor-engine-720/product_data_sheet09186a008007cd00.pdf
+https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
