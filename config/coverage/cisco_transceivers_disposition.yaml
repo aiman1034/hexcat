@@ -18,6 +18,15 @@ add_families:
 - SFP+
 - XENPAK
 - XFP
+grounded_orphans:
+- pn: CIM8-C-K9
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: CIM8-CE-K9
+  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
+    not auto-mined.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 orphan_catalog_skus: 0
 add:
 - pn: CFP2-WDM-D-SK

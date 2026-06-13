@@ -1,7 +1,7 @@
 brand: Cisco
 category: transceivers
 templated: 299
-flagged_no_token: 2
+flagged_no_token: 0
 templated_by_token:
   CFP2: 11
   SFP: 45
@@ -22,12 +22,9 @@ missing_quell_url:
 - QSFP-100G-B40D-I
 - QSFP-100G-B40U-I
 - QSFP-100G-ZR4-I
-flags:
+flags: []
+resolved:
 - pn: CIM8-C-K9
-  family: CIM8
-  description: CIM8
-  reason: no locked unterkategorie token for this form factor — taxonomy decision needed; NOT emitted (flag-don't-guess)
+  resolution: taxonomy token CIM8 added (24th); authored from NCS-1014 datasheet
 - pn: CIM8-CE-K9
-  family: CIM8
-  description: CIM8
-  reason: no locked unterkategorie token for this form factor — taxonomy decision needed; NOT emitted (flag-don't-guess)
+  resolution: taxonomy token CIM8 added (24th); authored from NCS-1014 datasheet

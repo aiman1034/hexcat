@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 305
+catalog_skus: 307
 files_mined: 86
 files_skipped: 95
 mined_total: 450
 in_catalog: 305
 missing_count: 145
-orphan_count: 0
+orphan_count: 2
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -595,7 +595,9 @@ missing_by_family:
     source: c51-566178
     description: 10GBASE-ER and OC192 IR2 XFP Module
     eol: true
-orphan: []
+orphan:
+- CIM8-C-K9
+- CIM8-CE-K9
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CVR-4SFP10G-QSFP: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)

@@ -4,7 +4,7 @@
 # CATEGORY (Phase 3+) means adding a sibling file (e.g. taxonomy/switches.yaml), not
 # editing engine code.
 #
-# `subcategories` are the 23 Kategorie-Ebene-3 form factors. Anything not in this list
+# `subcategories` are the 24 Kategorie-Ebene-3 form factors. Anything not in this list
 # is rejected on build; "Sonstige" is never allowed. (Was 22; POM — Cisco's proprietary
 # SONET/SDH Pluggable Optic Module — was added so real OC-3/OC-48 transceivers are catalogued,
 # never dropped for lacking a form factor. The mission rule: every physical transceiver PN is
@@ -47,6 +47,7 @@ subcategories:
   - "CXP"
   - "GBIC"
   - "POM"
+  - "CIM8"
 
 # The 14 fixed attributes, in Sortiernummer order. `name` is the emitted Attributname;
 # `intake_field` is the wide-intake column it is read from.
