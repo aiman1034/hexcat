@@ -3,6 +3,57 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-13 night) — Cisco authoring STARTED: POM family done (305 SKUs)
+
+**Six standing completeness rules are now PERMANENT** (apply to every brand/category): verify
+against the UNION of ALL independent enumerations (current-matrix + EOL/EOS + ordering + price
+list + harvest-mined datasheet PNs); EOL/EOS bulletins are MANDATORY; mine each to its backend;
+union in the harvest's own datasheet PNs (universe = enumerations ∪ harvest); verdict is
+"captured X of Y" computed never asserted; every real PN included, only grounded non-transceivers
+excluded; inaccessible source flagged unpopulated never fabricated. When we reach Arista/HPE/
+Fortinet/MikroTik, re-run completeness against their full union (they predate this system).
+
+**Directive: take Cisco to TRUE ideal data — (A) author all ~598, (B) price all ~598 — then
+Meraki, then the rest. Autonomous, $0.**
+
+**(A) Authoring — foundation built + first family done:**
+- Scaffolded the 301 ADD PNs into `stage3_content/Cisco_content_ADD.json` (commit d59d1f5):
+  299 templated by token; **2 FLAGGED needing a taxonomy decision — CIM8-C-K9 / CIM8-CE-K9**
+  (coherent interface modules; no locked token; real transceiver class — NOT guessed into a wrong
+  bucket). DAC/AOC copper cables detected by PN and filed as DAC/AOC Kabel.
+- **POM family authored (8 SKUs, commit efcaa18):** catalog 297->305, `hexcat stage3` gate PASS,
+  grounded verbatim in EOL bulletins + ONS data sheet. Tool fix: added locked token POM to
+  `constants.PHYSICAL_FORMFAKTOR_ORDERED` (was in taxonomy but not the resolver).
+
+**THE PER-BATCH AUTHORING LOOP (proven, repeat for each remaining family — 291 ADD left):**
+1. Read the family's cached datasheet(s); author grounded entries INTO `stage3_content/Cisco_content.json`
+   (kurz 2p/40-80w; intro 3 paras → besch, closer auto-appended by reconcile; titel ≤60 incl
+   " | Hexwaren"; meta 140-200; faq 3-10; attributes use canonical names + "—" for proved-absent;
+   per-attr provenance [url,"datasheet"]). Author script pattern: `_scratch/author_pom.py`.
+2. `python -c "...sys.argv=['hexcat','stage3','--content','stage3_content/Cisco_content.json',
+   '--brand','Cisco','--out','output/stage3_Cisco','--category','Cisco_Transceivers','--batch','Cisco']; from hexcat.cli import app; app()"` → gate must PASS.
+3. Regenerate coverage + disposition: `python _scratch/reconcile_cisco_coverage.py` then
+   `_scratch/triage_cisco_coverage.py` (authored PNs auto-graduate out of the ADD bucket).
+4. `python _scratch/apply_grounded_prices.py`; `python _scratch/reconcile_cisco_completeness.py`.
+5. Remove authored PNs from `Cisco_content_ADD.json`; `pytest -q`; commit the batch.
+Remaining families (by token, ~291): GBIC 36, SFP 45, SFP+ 43, XENPAK 41, X2 35, XFP 34, CFP2 11,
+DAC 10, AOC 10, QSFP28 9, QSFP-DD 10, QSFP+ 4, OSFP 2 (+QSFP-DD800/QSFP56). Channel families
+(DWDM/CWDM wavelength variants) need genuinely-varied prose per channel (uniqueness gate <25%).
+
+**(B) Pricing — engine spec received, NOT yet built (task #3):** wire `pricing.py`'s stubbed T1
+hook to real market data via the local_fetch bridge — per SKU, WebSearch + bridge-fetch authorized
+NEW-SEALED resellers (Bechtle/Senetic/Computacenter/ALSO/router-switch), exclude refurb/compatible
+(FS.com/IT-Planet/gray), PN-exact EUR, position at the MEDIAN (no operator factor). Feature-model
+fallback (speed×reach×optics×form×brand) back-tested within bound for unlisted. Guards: per-category
+floor/ceiling, outlier rejection, flag >€1.500 / low-confidence in provenance. Blocked source →
+deferred queue + backoff, never fabricated. Output Prices CSV with real medians; PRICES-PENDING → PRICES-SET.
+
+**ONE DECISION PENDING (flagged, not blocking): CIM8** — add a taxonomy token (e.g. "CIM8" /
+"Coherent Module") to admit CIM8-C-K9/CIM8-CE-K9, or confirm out-of-catalog. Until decided, the 2
+SKUs stay flagged, not authored. Everything else (299) proceeds.
+
+---
+
 ## Current state (2026-06-13 late PM) — Cisco transceivers PROVABLY COMPLETE (550/550)
 
 **VERDICT: Cisco transceivers = COMPLETE.** Harvest ⊇ the union of three independent official
