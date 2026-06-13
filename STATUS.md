@@ -3,6 +3,63 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-13 PM) — completeness-verification system + Cisco re-triage
+
+**TWO NON-NEGOTIABLE RULES landed this block.**
+
+**RULE 1 — every real transceiver PN is in the catalog; the ONLY exclusion is a genuine
+non-transceiver.** EOL/legacy/obsolete/out-of-scope are NEVER exclusion reasons. The prior
+triage wrongly dropped 75 real XENPAK+GBIC optics as "out of scope" — FIXED (commit 5ba3c8e):
+- Re-triaged the 120 surfaced PNs to two buckets only — **ADD 105 / EXCLUDE_NOT_TRANSCEIVER 15**
+  (the 15 = CB-M12 passive patch cables, ENC-10G-ONT CPE boxes, NCS-FAB-OPT bundle wrapper).
+- Added **POM** to the taxonomy (22→23) so OC-3/OC-48 Pluggable Optic Modules are catalogued
+  rather than dropped — lock-step in `config/taxonomy/transceivers.yaml` + `config/rules.yaml`.
+- EOL is an informational `lifecycle: EOL` flag read verbatim from datasheet `<title>` (106/120).
+- `tests/test_cisco_coverage.py` rewritten; `test_legacy_transceivers_are_added_not_excluded`
+  pins the regression. `tests/test_taxonomy.py` → 23 subcategories incl. POM.
+
+**RULE 2 — never claim "complete" without a VERIFIED reconcile against an INDEPENDENT yardstick.**
+Completeness is computed, never asserted, never measured against the harvest itself (circular).
+- **Universal reconciler `lib/completeness.py` (commit 571b2c6).** Unions several INDEPENDENT
+  official enumerations into a ground-truth universe; reports `captured X of Y`; lists every PN
+  in the universe but not the harvest (the gaps); a hard-gone PN (404/410) is excused but
+  recorded; an empty universe is NEVER vacuously complete. Category-agnostic like `lib/harvest`:
+  per-category/brand sources live in `config/enumerations/<category>.yaml` (sibling of
+  `config/sources/`), each pointing at a tracked verbatim snapshot under
+  `config/coverage/enumerations/`. 13 offline tests incl. the two-category reuse proof.
+- **Applied to Cisco (commit 866d5a1).** Gathered the 1st of 4 yardsticks — the **TMG
+  optics-to-device compatibility matrix** — via its discovered JSON backend
+  (`POST tmgmatrix.cisco.com/public/api/networkdevice/search`, empty-filter full-matrix query,
+  `totalPages==1` verified: all 214 devices / 64602 rows). → **438 verbatim PIDs** after dropping
+  13 family-template wildcards (`…XX.XX` non-PNs). Reconcile of the 417-PN harvest:
+  **captured 304 of 438, 134 gaps, INCOMPLETE.** Tracked artifact
+  `config/coverage/cisco_transceivers_completeness.yaml`; gate `tests/test_cisco_completeness.py`
+  (6 tests) locks the anti-circularity contract.
+- **Chased the gaps (commit 163fddd).** Pulled each gap PID's official `transceiverModelDataSheet`
+  URL straight from the matrix → appended **24 unique cisco.com URLs covering 130/134 gaps** to
+  the harvest frontier `config/sources/discovered/cisco_transceivers.txt` (third-party
+  acacia-inc.com filtered out). 4 gaps have no Cisco-domain datasheet URL (DP04QSDD-ER1,
+  QSFP-100G-B40D-I, -B40U-I, -ZR4-I) → need the next enumeration.
+
+**Test suite: 368 pass.** Scratch gatherers/reconcilers live in `_scratch/` (gitignored):
+`gather_cisco_tmg_matrix.py`, `reconcile_cisco_completeness.py`, `chase_cisco_gaps.py`.
+
+**NEXT (Cisco completeness, in order):**
+1. Run the harvest so the 24 queued frontier URLs are fetched (Tier-1→Tier-2; blocked→deferred
+   queue, only 404/410 terminal). Re-mine the new datasheets.
+2. Re-run reconcile → fold newly-mined PNs into the harvest; the 130 gaps should collapse.
+3. Gather the remaining 3 independent enumerations into snapshots so the universe is a true
+   UNION (each covers the others' blind spots): EOL/EOS bulletins, transceiver ordering /
+   product-family guide, GPL price list. (TMG endOfSale already flags EOL inline but the EOL
+   *bulletins* enumerate legacy XENPAK/GBIC/POM the current matrix omits.) Re-reconcile.
+4. The 4 no-URL gaps + any Meraki-branded matrix PIDs (MA-*/MGB*) route to their correct
+   brand/enumeration — they are real transceivers, not dropped.
+5. Author the 105 ADD (and newly-captured) SKUs as grounded German Stage-3 content; only when
+   harvest ⊇ authoritative union (modulo confirmed-gone) AND every real PN is catalogued is
+   Cisco "complete".
+
+---
+
 ## Current state (2026-06-13) — universal datasheet fetcher + Cisco coverage closure
 
 **MISSION: "build the universal local datasheet fetcher (the foundation) + prove it by
