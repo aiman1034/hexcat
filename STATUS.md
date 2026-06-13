@@ -55,7 +55,26 @@ Remaining families (by token, ~291): GBIC 36, SFP 45, SFP+ 43, XENPAK 41, X2 35,
 DAC 10, AOC 10, QSFP28 9, QSFP-DD 10, QSFP+ 4, OSFP 2 (+QSFP-DD800/QSFP56). Channel families
 (DWDM/CWDM wavelength variants) need genuinely-varied prose per channel (uniqueness gate <25%).
 
-**(B) Pricing — ENGINE BUILT + PROVEN (commit d477968).** Bridge comp pass unstubs T1-MARKET:
+**(B) Pricing — HARD-SAMPLE VALIDATED, 3 fixes needed before scaling (commit 192c51e).**
+Fixes 1-3 done: tiered sellers (authorized | secondary | excluded-compatible) with LISTING-level
+refurb/used/compatible filtering (not whole-seller bans); family-base pricing (family_key pools
+DWDM/CWDM channel variants -> one anchor prices the family); model is backstop only; JSON-LD
+extraction now PN-anchored (no related-product leakage). Run gather `_scratch/gather_market_prices.py`,
+price `_scratch/price_cisco.py [--include-add] [--only PFX] [--no-write]`.
+HARD SAMPLE (XENPAK/GBIC/X2/XFP + CWDM family, via the bridge) — coverage WORKS (family-base priced
+all 41 DWDM-XENPAK channels from one secondary anchor @ €1.626, flagged low-conf), but surfaced
+THREE real pre-scaling issues:
+  1. CATEGORY BANDS too tight for premium DWDM/CWDM channel optics — X2 (€1.986-8.177), XFP (€8.177),
+     CWDM-SFP (€1.574-1.956) all BLOCKED above their SFP/X2/XFP ceilings. These legitimately cost
+     €1.500-9.000. FIX: add DWDM/CWDM-channel bands (higher ceilings) in pricing_policy.yaml.
+  2. EXTRACTION PRECISION / source count on heterogeneous secondary pages still noisy (an €8.177
+     value recurs on two products — likely list-price/mis-extract). FIX: ≥3 clean sources/family +
+     per-seller hardening; median+IQR+wide-spread guards then firm it up.
+  3. DWDM-GBIC sources were blocked/gone (0 anchor). FIX: more reseller URLs for that family.
+VERDICT: approach sound for COVERAGE; legacy prices are LOW-CONFIDENCE + FLAGGED. HELD: not scaling
+to 307 or authoring the 291 until bands+extraction+sources are firmed (operator decision pending).
+
+**(B-engine) ENGINE BUILT + PROVEN (commit d477968).** Bridge comp pass unstubs T1-MARKET:
 `lib/market_comp.py` (authorized new-sealed filter, JSON-LD/microdata/meta + EUR-regex extraction,
 net-EUR-per-unit via USD-FX & gross/1,19, median + IQR outlier rejection, category-band guards),
 `lib/price_model.py` (feature-model fallback, ships ONLY if leave-one-out back-test ≤ bound),
