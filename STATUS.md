@@ -3,6 +3,19 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-14) — author+price grind: 4 families landed (catalog 342)
+
+Autonomous per-family grind (workflow in auto-memory `hexcat-grind-workflow`): **CFP2(11) + DAC(10)
++ AOC(10) + QSFP+(4) = 35 SKUs authored, gate PASS, committed** (921b040/7e8791d/67eabb4/a86d68a).
+Catalog 307→**342**; completeness COMPLETE 550/550; 405 tests. All AUTHORED; **pricing PENDING** for
+the new families (anchors not yet gathered; CFP2 thin/flagged). Tool fixes: `physical_formfaktor`
+resolves Cisco "QDD"→QSFP-DD(/800); `grounded_orphans` now **derived** from authored provenance
+(quell_url+provenance) → scales to every family, `orphan_catalog_skus` stays 0.
+**NEXT** (ruflo `hexcat/next-step` has detail): QSFP28(9) — fix mis-categorisations first
+(QSFP-4SFP25G-CU1.5M/CU2.5M → DAC Kabel; ONS-QC-16GFC-SW → QSFP+; B40D/U-I need quell_url) — then
+OSFP(2), then the big DWDM-channel families (SFP/SFP+/XENPAK/X2/XFP/GBIC) in context-sized batches.
+Pricing debt: batch-gather anchors for the current families later.
+
 ## Current state (2026-06-13 night) — Cisco authoring STARTED: POM + CIM8 done (307 SKUs)
 
 > UPDATE: CIM8 decision RESOLVED — operator chose to admit it; taxonomy extended 23->24
