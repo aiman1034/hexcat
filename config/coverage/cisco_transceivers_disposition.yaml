@@ -6,8 +6,8 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   $0, deterministic.'
 surfaced_total: 61
 counts:
-  ADD: 46
-  EXCLUDE_NOT_TRANSCEIVER: 15
+  ADD: 45
+  EXCLUDE_NOT_TRANSCEIVER: 16
 add_eol_flagged: 16
 add_families:
 - SFP
@@ -401,8 +401,8 @@ add:
 - pn: DS-SFP-4X32G-SW
   source: product_data_sheet09186a00801bc698
   description: 128 Gbps Fibre Channel QSFP28 Optical Transceiver
-  reason: Real transceiver confirmed by mined datasheet description
-  family: SFP
+  reason: 'Real transceiver — datasheet states verbatim "128 Gbps Fibre Channel QSFP28 Optical Transceiver" / "QSFP28 MSA, 128GFC": physical form factor is QSFP28 (4x32G, 850nm MMF, MPO-12), not SFP. Re-tokened to QSFP28.'
+  family: QSFP28
 - pn: DS-SFP-FC-2G-LW
   source: product_data_sheet09186a00801bc698
   description: 1/2-Gbps Fibre Channel-Longwave, SFP, LC
@@ -518,11 +518,6 @@ add:
   description: 10-Gbps Fibre Channel-Short-reach, X2, SC
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP
-- pn: E1000-2-G
-  source: pluggable-optical-modules-ds
-  description: FC-MR-4
-  reason: Real transceiver confirmed by mined datasheet description
-  family: SFP
 - pn: GLC-LH-LMM-TI
   source: c51-736655
   description: 1000BASE-LX/LH SFP trn mod, M/SMF, 1310nm, DOM, smrt LMM, TI
@@ -592,6 +587,10 @@ add:
   family: SFP
   lifecycle: EOL
 exclude_not_transceiver:
+- pn: E1000-2-G
+  source: pluggable-optical-modules-ds
+  description: Cisco ONS 15454 MSPP line card (Table 66 compatibility matrix)
+  reason: 'Not a pluggable optic — E1000-2-G is a Cisco ONS 15454 MSPP LINE CARD (host device), listed in the SFP compatibility matrix (Table 66) alongside the FC-MR-4 / G1K-4 / CE1000-4 / ML1000-2 line cards as a platform that ACCEPTS pluggables. The miner mis-read the adjacent "FC-MR-4" cell as a transceiver description.'
 - pn: CB-M12-4LC-MMF1.5
   source: high-density-fiber-patch-mpo-ds
   description: 0.5M

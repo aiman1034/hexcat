@@ -94,14 +94,17 @@ def test_add_families_are_valid_taxonomy_tokens():
 
 def test_only_genuine_non_transceivers_are_excluded():
     """Every excluded PN must be a recognised non-transceiver class: a passive M12 patch cable,
-    a Routed-PON ONT (CPE box), or the NCS-FAB-OPT bundle wrapper. Nothing else may be dropped."""
+    a Routed-PON ONT (CPE box), the NCS-FAB-OPT bundle wrapper, an ONS 15454 MSPP line card
+    (host device, not a pluggable), or a pluggable C-band EDFA optical amplifier (a different
+    device class with no bit rate). Nothing else may be dropped."""
     d = _disp()
+    is_line_card = {"E1000-2-G"}            # ONS 15454 MSPP line card (host device)
+    is_amplifier = {"ONS-QDD-OLS"}          # C-band EDFA / Open Line System amplifier (no bit rate)
     for e in (d.get("exclude_not_transceiver") or []):
         pn = e["pn"]
-        is_patch_cable = pn.startswith("CB-M12")
-        is_ont = pn.startswith("ENC-10G-ONT")
-        is_bundle = pn == "NCS-FAB-OPT"
-        assert is_patch_cable or is_ont or is_bundle, f"excluded PN is not a known non-transceiver: {pn}"
+        ok = (pn.startswith("CB-M12") or pn.startswith("ENC-10G-ONT") or pn == "NCS-FAB-OPT"
+              or pn in is_line_card or pn in is_amplifier)
+        assert ok, f"excluded PN is not a known non-transceiver: {pn}"
 
 
 def test_legacy_transceivers_are_added_not_excluded():

@@ -4,9 +4,9 @@ provenance: completeness union (TMG matrix + EOL bulletins + ordering guide) min
 policy: ADD = real transceiver (queued for Stage-3 authoring). EXCLUDE_NOT_TRANSCEIVER = genuine non-transceiver, grounded by the part's own Cisco description (passive cable / converter / mux-demux / OADM
   / amplifier). Nothing guessed or silently dropped; an ungrounded PN is FLAGGED, never excluded.
 counts:
-  ADD: 163
-  EXCLUDE_NOT_TRANSCEIVER: 13
-  FLAG_UNGROUNDED: 0
+  ADD: 160
+  EXCLUDE_NOT_TRANSCEIVER: 14
+  FLAG_UNGROUNDED: 2
   total: 176
 add:
 - pn: CFP2-WDM-D-1HL
@@ -657,13 +657,6 @@ add:
   reason: Listed in Cisco's optics-to-device matrix as a QSFP28 transceiver
   family: QSFP28
   datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
-- pn: ONS-QDD-OLS
-  source: tmg_matrix
-  disposition: ADD
-  description: QSFP-DD
-  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
-  family: QSFP-DD
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd-plug-open-line-system-ds.html
 - pn: ONS-QSFP-4X10-MER
   source: tmg_matrix
   disposition: ADD
@@ -937,13 +930,6 @@ add:
   reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD transceiver
   family: QSFP-DD
   datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
-- pn: QDD-800G-VR8
-  source: tmg_matrix
-  disposition: ADD
-  description: QSFP-DD800
-  reason: Listed in Cisco's optics-to-device matrix as a QSFP-DD800 transceiver
-  family: QSFP-DD800
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html
 - pn: QSFP-100G-B40D-I
   source: tmg_matrix
   disposition: ADD
@@ -1035,13 +1021,6 @@ add:
   reason: Listed in Cisco's optics-to-device matrix as a SFP transceiver
   family: SFP
   datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/accedian-sfp-compute-sensor-ds.html
-- pn: SFP10G-USR
-  source: tmg_matrix
-  disposition: ADD
-  description: SFP+
-  reason: Listed in Cisco's optics-to-device matrix as a SFP+ transceiver
-  family: SFP+
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html
 - pn: X2-10GB-LR++
   source: c51-2358104
   disposition: ADD
@@ -1082,6 +1061,11 @@ add:
   family: XFP
   datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
 exclude_not_transceiver:
+- pn: ONS-QDD-OLS
+  source: qsfp-dd-plug-open-line-system-ds
+  disposition: EXCLUDE_NOT_TRANSCEIVER
+  description: QSFP-DD-pluggable C-Band EDFA (Open Line System Pre/Boost amplifier)
+  reason: 'Not a data transceiver — ONS-QDD-OLS is a C-Band ERBIUM-DOPED FIBRE AMPLIFIER (EDFA) for the Open Line System (pre- and boost-amplification across 192.375-194.775 THz / 2.4 THz C-band per its datasheet). It carries NO bit rate and is a different device class (optical amplifier), not a pluggable optic that transmits/receives a data signal. If pluggable amplifiers are ever sold, that is a separate category, not a transceiver.'
 - pn: CAB-INF-26G-15
   source: c51-23758826
   disposition: EXCLUDE_NOT_TRANSCEIVER
@@ -1147,4 +1131,16 @@ exclude_not_transceiver:
   disposition: EXCLUDE_NOT_TRANSCEIVER
   description: 4-channels EWDM OADM Module
   reason: 'Passive optical add/drop multiplexer (not a pluggable optic) — per Cisco bulletin description: "4-channels EWDM OADM Module"'
-flag_ungrounded: []
+flag_ungrounded:
+- pn: QDD-800G-VR8
+  source: tmg_matrix
+  disposition: FLAG_UNGROUNDED
+  description: 800GBASE-VR8 QSFP-DD800 (8x100G VSR, MMF)
+  reason: 'Fetched the authoritative Cisco QSFP-DD800 datasheet fresh (HTTP 200, 2026) — it lists ONLY QDD-8X100G-FR and QDD-2X400G-FR4; no QDD-800G-VR8. Cisco ships 800GBASE-VR8 only in the OSFP form factor (OSFP-800G-VR8, per osfp-800g-transceiver-modules-ds). 800GBASE-VR8 QSFP-DD is a real MSA standard with third-party compatibles, but no Cisco datasheet confirms a QDD-800G-VR8 SKU. Held (flag-don''t-emit) pending a confirming Cisco source rather than authored from a non-Cisco spec.'
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd800-transceiver-modules-ds.html
+- pn: SFP10G-USR
+  source: tmg_matrix
+  disposition: FLAG_UNGROUNDED
+  description: 10GBASE-USR SFP+ (ultra short reach, MMF)
+  reason: 'Fetched the authoritative Cisco 10GBASE SFP+ datasheet (c78-455693) fresh (HTTP 200, 2026) — SFP10G-USR appears only in a related-parts list, with NO specification row (rate/wavelength/reach/fiber/connector/temperature). The part is EOL and dropped from the current datasheet revision. USR reach is vendor-specific ultra-short (shorter than SR), so it must not be authored as generic 10GBASE-SR. Held (flag-don''t-emit) pending a Cisco source that states the real USR reach.'
+  datasheet: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/data_sheet_c78-455693.html
