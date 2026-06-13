@@ -90,7 +90,13 @@ def resolve(sku: str, *, unterkat: str, attrs: dict[str, str],
     high_value = Decimal(str(pol.get("high_value_eur", 1500)))
     max_spread = Decimal(str(pol.get("max_spread", 0.6)))
     min_sources = int(market.get("min_sources", 1))
-    floor, ceiling = _band(bands, unterkat)
+    # Family-band override (premium DWDM/CWDM channel optics) takes precedence over the category band.
+    fk = MC.family_key(sku)
+    fbands = policy_doc.get("family_bands", {})
+    if fk and fk in fbands:
+        floor, ceiling = _band(fbands, fk)
+    else:
+        floor, ceiling = _band(bands, unterkat)
     engine = PricePolicy.load(POLICY)
 
     def vals(obs: list[tuple[str, Decimal]], tier: str) -> list[Decimal]:

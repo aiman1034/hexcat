@@ -105,3 +105,23 @@ def test_throttle_bump_raises_floor_and_caps():
 def test_block_statuses_disjoint_from_gone():
     assert LF.BLOCK_STATUSES.isdisjoint(LF.GONE_STATUSES)
     assert 403 in LF.BLOCK_STATUSES and 404 in LF.GONE_STATUSES
+
+
+# ---- Cloudflare/CAPTCHA challenge detection + per-host session persistence ----------------
+
+def test_is_challenge_detects_cloudflare_interstitial():
+    assert LF._is_challenge("<title>Just a moment...</title><div class='cf-challenge'>")
+    assert LF._is_challenge("Verify you are human — checking your browser before accessing")
+    assert LF._is_challenge("Please enable JavaScript and cookies to continue")
+
+
+def test_is_challenge_false_on_real_product_page():
+    assert not LF._is_challenge("<h1>Cisco SFP-10G-SR</h1><span>129,00 EUR</span> in den Warenkorb")
+
+
+def test_host_state_path_is_per_host():
+    a = LF._host_state_path("https://www.monocisco.com/cisco-gbic/dwdm-gbic-3033")
+    b = LF._host_state_path("https://monocisco.com/other-page")
+    c = LF._host_state_path("https://www.router-switch.com/x")
+    assert a.name == b.name == "monocisco.com.json"   # same host -> one shared cleared session
+    assert c.name == "router-switch.com.json" and a != c

@@ -57,3 +57,17 @@ category_bands:
   "POM":         {floor: 30,  ceiling: 6000}
   "CIM8":        {floor: 1000, ceiling: 80000}
   "_default":    {floor: 5,   ceiling: 80000}
+
+# Family-band OVERRIDES (keyed by lib.market_comp.family_key). DWDM/CWDM channel optics are premium
+# and far pricier than the vanilla form factor they share a token with (a DWDM-XFP costs many times
+# a generic XFP), so they need their own wider bands — otherwise the category ceiling wrongly BLOCKS
+# a legitimate legacy price. Grounded by observed genuine-new street prices (X2/XFP list ~$9-11k).
+family_bands:
+  "DWDM-XENPAK":  {floor: 150, ceiling: 6000}
+  "DWDM-X2":      {floor: 150, ceiling: 12000}
+  "DWDM-XFP":     {floor: 150, ceiling: 12000}
+  "DWDM-GBIC":    {floor: 100, ceiling: 8000}
+  "DWDM-SFP10G":  {floor: 100, ceiling: 8000}
+  "DWDM-SFP":     {floor: 100, ceiling: 8000}
+  "CWDM-SFP":     {floor: 50,  ceiling: 4000}
+  "CWDM-SFP10G":  {floor: 80,  ceiling: 6000}

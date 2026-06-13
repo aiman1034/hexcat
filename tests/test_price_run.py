@@ -74,3 +74,15 @@ def test_band_block_downgrades_to_flag():
     out = PR.resolve("SFP-WEIRD", unterkat="SFP+", attrs={}, direct=_d("secondary", 4),
                      sources=["x"], policy_doc=POLICY_DOC, fx=FX)
     assert out.tier == "FLAG" and out.value is None and out.netto_vk == "0,00"
+
+
+def test_family_band_override_admits_premium_channel_optic():
+    # a DWDM-XFP channel priced at €8000 must pass (family band ceiling 12000), though its generic
+    # "XFP" category band (ceiling 4000) would have blocked it
+    pol = dict(POLICY_DOC)
+    pol = {**POLICY_DOC, "category_bands": {**POLICY_DOC["category_bands"], "XFP": {"floor": 20, "ceiling": 4000}},
+           "family_bands": {"DWDM-XFP": {"floor": 150, "ceiling": 12000}}}
+    out = PR.resolve("DWDM-XFP-30.33", unterkat="XFP", attrs={}, direct=_d("secondary", 8000),
+                     sources=["x"], policy_doc=pol, fx=FX)
+    assert out.value == Decimal("8000.00") and out.tier == "T1-MARKET"
+    assert not any(f.startswith("BLOCK") for f in out.flags)
