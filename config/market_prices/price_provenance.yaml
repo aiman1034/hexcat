@@ -1,11 +1,82 @@
 brand: Cisco
 fx_usd_eur: 0.863
 tiers:
-  FLAG: 393
+  FLAG: 483
   T2-LIST: 6
-  T1-MARKET: 6
-  FAMILY: 94
+  T1-MARKET: 7
+  FAMILY: 98
 skus:
+  CWDM-SFP-1470:
+    netto_vk: 1765,16
+    tier: T1-MARKET
+    confidence: medium
+    n_sources: 2
+    low: 1574.43
+    median: 1765.16
+    high: 1955.89
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:secondary-anchored (no authorized listing)
+    sources:
+    - https://www.router-switch.com/cwdm-sfp-1470-p-1774.html
+    - https://ormsystems.com/cwdm-sfp-1470-1-price.html
+  CWDM-SFP-1490:
+    netto_vk: 1765,16
+    tier: FAMILY
+    confidence: medium
+    n_sources: 2
+    low: 1574.43
+    median: 1765.16
+    high: 1955.89
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  CWDM-SFP-1510:
+    netto_vk: 1765,16
+    tier: FAMILY
+    confidence: medium
+    n_sources: 2
+    low: 1574.43
+    median: 1765.16
+    high: 1955.89
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  CWDM-SFP-1530:
+    netto_vk: 1765,16
+    tier: FAMILY
+    confidence: medium
+    n_sources: 2
+    low: 1574.43
+    median: 1765.16
+    high: 1955.89
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  CWDM-SFP-1610:
+    netto_vk: 1765,16
+    tier: FAMILY
+    confidence: medium
+    n_sources: 2
+    low: 1574.43
+    median: 1765.16
+    high: 1955.89
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
   DWDM-X2-30.33:
     netto_vk: 6135,28
     tier: T1-MARKET
