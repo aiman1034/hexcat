@@ -1720,7 +1720,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -1854,7 +1854,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -24769,7 +24769,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -24911,7 +24911,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -25337,7 +25337,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -28487,7 +28487,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Betriebstemperatur",
@@ -33741,7 +33741,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -34311,7 +34311,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -37233,7 +37233,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Zustand",
@@ -43332,7 +43332,7 @@
       ],
       [
         "Anwendung",
-        "Campus-/Metro-Netz (Langstrecke)"
+        "Metro-/Zugangsnetz (CWDM)"
       ],
       [
         "Betriebstemperatur",
@@ -63072,6 +63072,1018 @@
       "Betriebstemperatur": [
         "c25-530836.html:1587 (Cisco application note, verbatim)",
         "official-cisco-appnote"
+      ]
+    }
+  },
+  "DWDM-SFP-3033": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco DWDM-SFP-3033 1000BASE-DWDM SFP — ITU-Kanal 59, 1530,33 nm, Singlemode",
+    "titel_tag": "Cisco DWDM-SFP-3033 1G DWDM 1530,33 nm | Hexwaren",
+    "meta_description": "Original Cisco DWDM-SFP-3033 1000BASE-DWDM-SFP — ITU-Kanal 59, 1530,33 nm (≈195,90 THz), Gigabit Ethernet über Singlemode, Duplex-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-SFP-3033 ist ein originales 1000BASE-DWDM-SFP-Modul für den festen ITU-Kanal 59 bei 1530,33 nm (rund 195,90 THz im 100-GHz-Raster) und überträgt Gigabit Ethernet über Singlemode-Glasfaser mit Duplex-LC-Anschluss.</p><p>Über diese feste DWDM-Wellenlänge lässt es sich mit weiteren Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-SFP-3033 ist ein 1000BASE-DWDM-SFP-Modul, das Gigabit Ethernet auf dem festen ITU-Kanal 59 — 1530,33 nm, rund 195,90 THz im 100-GHz-Raster — über Singlemode-Glasfaser mit Duplex-LC-Anschluss überträgt.",
+      "Als wellenlängenspezifisches DWDM-Modul lässt es sich gemeinsam mit weiteren Kanälen über einen passiven DWDM-Multiplexer auf einer einzigen Faser führen und vervielfacht so die Transportkapazität langer Strecken im kompakten SFP-Formfaktor.",
+      "Das DWDM-SFP-3033 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert. Laut Datenblatt die Datenrate beträgt 1 Gbit/s (1000BASE-DWDM), der Transceiver-Typ DWDM-Festkanal, die Betriebswellenlänge 1530,33 nm (ITU-Kanal 59, ≈195,90 THz, 100-GHz-Raster), der Standard IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster); der Betriebstemperaturbereich liegt bei 0 bis 70 °C."
+    ],
+    "faq": [
+      [
+        "Auf welchem Kanal sendet das DWDM-SFP-3033?",
+        "Auf dem festen ITU-Kanal 59 bei 1530,33 nm (≈195,90 THz) im 100-GHz-DWDM-Raster."
+      ],
+      [
+        "Welche Faser und welcher Anschluss?",
+        "Singlemode-Glasfaser mit Duplex-LC-Anschluss, 1000BASE-DWDM."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-DWDM)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster)"
+      ],
+      [
+        "Transceiver Typ",
+        "DWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1530,33 nm (ITU-Kanal 59, ≈195,90 THz, 100-GHz-Raster)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Carrier-/Transportnetz (DWDM / kohärent)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "DWDM-SFP-3112": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco DWDM-SFP-3112 1000BASE-DWDM SFP — ITU-Kanal 58, 1531,12 nm, Singlemode",
+    "titel_tag": "Cisco DWDM-SFP-3112 1G DWDM 1531,12 nm | Hexwaren",
+    "meta_description": "Original Cisco DWDM-SFP-3112 1000BASE-DWDM-SFP — ITU-Kanal 58, 1531,12 nm (≈195,80 THz), Gigabit Ethernet über Singlemode, Duplex-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-SFP-3112 ist ein originales 1000BASE-DWDM-SFP-Modul für den festen ITU-Kanal 58 bei 1531,12 nm (rund 195,80 THz im 100-GHz-Raster) und überträgt Gigabit Ethernet über Singlemode-Glasfaser mit Duplex-LC-Anschluss.</p><p>Über diese feste DWDM-Wellenlänge lässt es sich mit weiteren Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-SFP-3112 ist ein 1000BASE-DWDM-SFP-Modul, das Gigabit Ethernet auf dem festen ITU-Kanal 58 — 1531,12 nm, rund 195,80 THz im 100-GHz-Raster — über Singlemode-Glasfaser mit Duplex-LC-Anschluss überträgt.",
+      "Als wellenlängenspezifisches DWDM-Modul lässt es sich gemeinsam mit weiteren Kanälen über einen passiven DWDM-Multiplexer auf einer einzigen Faser führen und vervielfacht so die Transportkapazität langer Strecken im kompakten SFP-Formfaktor.",
+      "Das DWDM-SFP-3112 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert. Laut Datenblatt die Datenrate beträgt 1 Gbit/s (1000BASE-DWDM), der Transceiver-Typ DWDM-Festkanal, die Betriebswellenlänge 1531,12 nm (ITU-Kanal 58, ≈195,80 THz, 100-GHz-Raster), der Standard IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster); der Betriebstemperaturbereich liegt bei 0 bis 70 °C."
+    ],
+    "faq": [
+      [
+        "Auf welchem Kanal sendet das DWDM-SFP-3112?",
+        "Auf dem festen ITU-Kanal 58 bei 1531,12 nm (≈195,80 THz) im 100-GHz-DWDM-Raster."
+      ],
+      [
+        "Welche Faser und welcher Anschluss?",
+        "Singlemode-Glasfaser mit Duplex-LC-Anschluss, 1000BASE-DWDM."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-DWDM)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster)"
+      ],
+      [
+        "Transceiver Typ",
+        "DWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1531,12 nm (ITU-Kanal 58, ≈195,80 THz, 100-GHz-Raster)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Carrier-/Transportnetz (DWDM / kohärent)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "DWDM-SFP-3190": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco DWDM-SFP-3190 1000BASE-DWDM SFP — ITU-Kanal 57, 1531,90 nm, Singlemode",
+    "titel_tag": "Cisco DWDM-SFP-3190 1G DWDM 1531,90 nm | Hexwaren",
+    "meta_description": "Original Cisco DWDM-SFP-3190 1000BASE-DWDM-SFP — ITU-Kanal 57, 1531,90 nm (≈195,70 THz), Gigabit Ethernet über Singlemode, Duplex-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-SFP-3190 ist ein originales 1000BASE-DWDM-SFP-Modul für den festen ITU-Kanal 57 bei 1531,90 nm (rund 195,70 THz im 100-GHz-Raster) und überträgt Gigabit Ethernet über Singlemode-Glasfaser mit Duplex-LC-Anschluss.</p><p>Über diese feste DWDM-Wellenlänge lässt es sich mit weiteren Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-SFP-3190 ist ein 1000BASE-DWDM-SFP-Modul, das Gigabit Ethernet auf dem festen ITU-Kanal 57 — 1531,90 nm, rund 195,70 THz im 100-GHz-Raster — über Singlemode-Glasfaser mit Duplex-LC-Anschluss überträgt.",
+      "Als wellenlängenspezifisches DWDM-Modul lässt es sich gemeinsam mit weiteren Kanälen über einen passiven DWDM-Multiplexer auf einer einzigen Faser führen und vervielfacht so die Transportkapazität langer Strecken im kompakten SFP-Formfaktor.",
+      "Das DWDM-SFP-3190 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert. Laut Datenblatt die Datenrate beträgt 1 Gbit/s (1000BASE-DWDM), der Transceiver-Typ DWDM-Festkanal, die Betriebswellenlänge 1531,90 nm (ITU-Kanal 57, ≈195,70 THz, 100-GHz-Raster), der Standard IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster); der Betriebstemperaturbereich liegt bei 0 bis 70 °C."
+    ],
+    "faq": [
+      [
+        "Auf welchem Kanal sendet das DWDM-SFP-3190?",
+        "Auf dem festen ITU-Kanal 57 bei 1531,90 nm (≈195,70 THz) im 100-GHz-DWDM-Raster."
+      ],
+      [
+        "Welche Faser und welcher Anschluss?",
+        "Singlemode-Glasfaser mit Duplex-LC-Anschluss, 1000BASE-DWDM."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-DWDM)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster)"
+      ],
+      [
+        "Transceiver Typ",
+        "DWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1531,90 nm (ITU-Kanal 57, ≈195,70 THz, 100-GHz-Raster)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Carrier-/Transportnetz (DWDM / kohärent)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "DWDM-SFP-3268": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco DWDM-SFP-3268 1000BASE-DWDM SFP — ITU-Kanal 56, 1532,68 nm, Singlemode",
+    "titel_tag": "Cisco DWDM-SFP-3268 1G DWDM 1532,68 nm | Hexwaren",
+    "meta_description": "Original Cisco DWDM-SFP-3268 1000BASE-DWDM-SFP — ITU-Kanal 56, 1532,68 nm (≈195,60 THz), Gigabit Ethernet über Singlemode, Duplex-LC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco DWDM-SFP-3268 ist ein originales 1000BASE-DWDM-SFP-Modul für den festen ITU-Kanal 56 bei 1532,68 nm (rund 195,60 THz im 100-GHz-Raster) und überträgt Gigabit Ethernet über Singlemode-Glasfaser mit Duplex-LC-Anschluss.</p><p>Über diese feste DWDM-Wellenlänge lässt es sich mit weiteren Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco DWDM-SFP-3268 ist ein 1000BASE-DWDM-SFP-Modul, das Gigabit Ethernet auf dem festen ITU-Kanal 56 — 1532,68 nm, rund 195,60 THz im 100-GHz-Raster — über Singlemode-Glasfaser mit Duplex-LC-Anschluss überträgt.",
+      "Als wellenlängenspezifisches DWDM-Modul lässt es sich gemeinsam mit weiteren Kanälen über einen passiven DWDM-Multiplexer auf einer einzigen Faser führen und vervielfacht so die Transportkapazität langer Strecken im kompakten SFP-Formfaktor.",
+      "Das DWDM-SFP-3268 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert. Laut Datenblatt die Datenrate beträgt 1 Gbit/s (1000BASE-DWDM), der Transceiver-Typ DWDM-Festkanal, die Betriebswellenlänge 1532,68 nm (ITU-Kanal 56, ≈195,60 THz, 100-GHz-Raster), der Standard IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster); der Betriebstemperaturbereich liegt bei 0 bis 70 °C."
+    ],
+    "faq": [
+      [
+        "Auf welchem Kanal sendet das DWDM-SFP-3268?",
+        "Auf dem festen ITU-Kanal 56 bei 1532,68 nm (≈195,60 THz) im 100-GHz-DWDM-Raster."
+      ],
+      [
+        "Welche Faser und welcher Anschluss?",
+        "Singlemode-Glasfaser mit Duplex-LC-Anschluss, 1000BASE-DWDM."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-DWDM)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (DWDM, 100-GHz-Raster)"
+      ],
+      [
+        "Transceiver Typ",
+        "DWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1532,68 nm (ITU-Kanal 56, ≈195,60 THz, 100-GHz-Raster)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Carrier-/Transportnetz (DWDM / kohärent)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/dwdm-transceiver-modules/product_data_sheet0900aecd80582763.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "CWDM-SFP-1470": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco CWDM-SFP-1470 1000BASE-CWDM SFP — 1470 nm, Singlemode, Gigabit Ethernet & 1/2G FC",
+    "titel_tag": "Cisco CWDM-SFP-1470 1G CWDM 1470 nm | Hexwaren",
+    "meta_description": "Original Cisco CWDM-SFP-1470 1000BASE-CWDM-SFP — feste Wellenlänge 1470 nm, Gigabit Ethernet & 1/2G Fibre Channel über Singlemode, Duplex-LC/PC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CWDM-SFP-1470 ist ein originales 1000BASE-CWDM-SFP-Modul für die feste CWDM-Wellenlänge 1470 nm und überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss.</p><p>Über diese feste CWDM-Wellenlänge lässt es sich mit weiteren CWDM-Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CWDM-SFP-1470 ist ein 1000BASE-CWDM-SFP-Modul, das Gigabit Ethernet auf der festen CWDM-Wellenlänge 1470 nm über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss überträgt und zusätzlich Fibre Channel mit 1 und 2 Gbit/s unterstützt.",
+      "Laut Datenblatt arbeitet der Gigabit-Ethernet-Betrieb mit einem optischen Streckenbudget von 29 dB (1,25 Gbit/s) und der Fibre-Channel-Betrieb mit 28 dB (1,06 und 2,12 Gbit/s); über einen passiven CWDM-Multiplexer lassen sich mehrere 1470-nm-Nachbarkanäle auf einer einzigen Faser bündeln.",
+      "Das CWDM-SFP-1470 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert."
+    ],
+    "faq": [
+      [
+        "Auf welcher Wellenlänge sendet das CWDM-SFP-1470?",
+        "Auf der festen CWDM-Wellenlänge 1470 nm über Singlemode-Glasfaser."
+      ],
+      [
+        "Welche Reichweite?",
+        "Das Datenblatt nennt ein optisches Streckenbudget von 29 dB (Gigabit Ethernet) bzw. 28 dB (Fibre Channel); die erreichbare Distanz hängt von der Faserdämpfung ab."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-X; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (CWDM)"
+      ],
+      [
+        "Transceiver Typ",
+        "CWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1470 nm (CWDM-Raster)"
+      ],
+      [
+        "Reichweite",
+        "Linkbudget 29 dB (GbE) / 28 dB (FC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC/PC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-5 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Metro-/Zugangsnetz (CWDM)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "CWDM-SFP-1490": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco CWDM-SFP-1490 1000BASE-CWDM SFP — 1490 nm, Singlemode, Gigabit Ethernet & 1/2G FC",
+    "titel_tag": "Cisco CWDM-SFP-1490 1G CWDM 1490 nm | Hexwaren",
+    "meta_description": "Original Cisco CWDM-SFP-1490 1000BASE-CWDM-SFP — feste Wellenlänge 1490 nm, Gigabit Ethernet & 1/2G Fibre Channel über Singlemode, Duplex-LC/PC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CWDM-SFP-1490 ist ein originales 1000BASE-CWDM-SFP-Modul für die feste CWDM-Wellenlänge 1490 nm und überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss.</p><p>Über diese feste CWDM-Wellenlänge lässt es sich mit weiteren CWDM-Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CWDM-SFP-1490 ist ein 1000BASE-CWDM-SFP-Modul, das Gigabit Ethernet auf der festen CWDM-Wellenlänge 1490 nm über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss überträgt und zusätzlich Fibre Channel mit 1 und 2 Gbit/s unterstützt.",
+      "Laut Datenblatt arbeitet der Gigabit-Ethernet-Betrieb mit einem optischen Streckenbudget von 29 dB (1,25 Gbit/s) und der Fibre-Channel-Betrieb mit 28 dB (1,06 und 2,12 Gbit/s); über einen passiven CWDM-Multiplexer lassen sich mehrere 1490-nm-Nachbarkanäle auf einer einzigen Faser bündeln.",
+      "Das CWDM-SFP-1490 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert."
+    ],
+    "faq": [
+      [
+        "Auf welcher Wellenlänge sendet das CWDM-SFP-1490?",
+        "Auf der festen CWDM-Wellenlänge 1490 nm über Singlemode-Glasfaser."
+      ],
+      [
+        "Welche Reichweite?",
+        "Das Datenblatt nennt ein optisches Streckenbudget von 29 dB (Gigabit Ethernet) bzw. 28 dB (Fibre Channel); die erreichbare Distanz hängt von der Faserdämpfung ab."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-X; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (CWDM)"
+      ],
+      [
+        "Transceiver Typ",
+        "CWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1490 nm (CWDM-Raster)"
+      ],
+      [
+        "Reichweite",
+        "Linkbudget 29 dB (GbE) / 28 dB (FC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC/PC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-5 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Metro-/Zugangsnetz (CWDM)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "CWDM-SFP-1510": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco CWDM-SFP-1510 1000BASE-CWDM SFP — 1510 nm, Singlemode, Gigabit Ethernet & 1/2G FC",
+    "titel_tag": "Cisco CWDM-SFP-1510 1G CWDM 1510 nm | Hexwaren",
+    "meta_description": "Original Cisco CWDM-SFP-1510 1000BASE-CWDM-SFP — feste Wellenlänge 1510 nm, Gigabit Ethernet & 1/2G Fibre Channel über Singlemode, Duplex-LC/PC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CWDM-SFP-1510 ist ein originales 1000BASE-CWDM-SFP-Modul für die feste CWDM-Wellenlänge 1510 nm und überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss.</p><p>Über diese feste CWDM-Wellenlänge lässt es sich mit weiteren CWDM-Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CWDM-SFP-1510 ist ein 1000BASE-CWDM-SFP-Modul, das Gigabit Ethernet auf der festen CWDM-Wellenlänge 1510 nm über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss überträgt und zusätzlich Fibre Channel mit 1 und 2 Gbit/s unterstützt.",
+      "Laut Datenblatt arbeitet der Gigabit-Ethernet-Betrieb mit einem optischen Streckenbudget von 29 dB (1,25 Gbit/s) und der Fibre-Channel-Betrieb mit 28 dB (1,06 und 2,12 Gbit/s); über einen passiven CWDM-Multiplexer lassen sich mehrere 1510-nm-Nachbarkanäle auf einer einzigen Faser bündeln.",
+      "Das CWDM-SFP-1510 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert."
+    ],
+    "faq": [
+      [
+        "Auf welcher Wellenlänge sendet das CWDM-SFP-1510?",
+        "Auf der festen CWDM-Wellenlänge 1510 nm über Singlemode-Glasfaser."
+      ],
+      [
+        "Welche Reichweite?",
+        "Das Datenblatt nennt ein optisches Streckenbudget von 29 dB (Gigabit Ethernet) bzw. 28 dB (Fibre Channel); die erreichbare Distanz hängt von der Faserdämpfung ab."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-X; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (CWDM)"
+      ],
+      [
+        "Transceiver Typ",
+        "CWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1510 nm (CWDM-Raster)"
+      ],
+      [
+        "Reichweite",
+        "Linkbudget 29 dB (GbE) / 28 dB (FC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC/PC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-5 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Metro-/Zugangsnetz (CWDM)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "CWDM-SFP-1530": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco CWDM-SFP-1530 1000BASE-CWDM SFP — 1530 nm, Singlemode, Gigabit Ethernet & 1/2G FC",
+    "titel_tag": "Cisco CWDM-SFP-1530 1G CWDM 1530 nm | Hexwaren",
+    "meta_description": "Original Cisco CWDM-SFP-1530 1000BASE-CWDM-SFP — feste Wellenlänge 1530 nm, Gigabit Ethernet & 1/2G Fibre Channel über Singlemode, Duplex-LC/PC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CWDM-SFP-1530 ist ein originales 1000BASE-CWDM-SFP-Modul für die feste CWDM-Wellenlänge 1530 nm und überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss.</p><p>Über diese feste CWDM-Wellenlänge lässt es sich mit weiteren CWDM-Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CWDM-SFP-1530 ist ein 1000BASE-CWDM-SFP-Modul, das Gigabit Ethernet auf der festen CWDM-Wellenlänge 1530 nm über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss überträgt und zusätzlich Fibre Channel mit 1 und 2 Gbit/s unterstützt.",
+      "Laut Datenblatt arbeitet der Gigabit-Ethernet-Betrieb mit einem optischen Streckenbudget von 29 dB (1,25 Gbit/s) und der Fibre-Channel-Betrieb mit 28 dB (1,06 und 2,12 Gbit/s); über einen passiven CWDM-Multiplexer lassen sich mehrere 1530-nm-Nachbarkanäle auf einer einzigen Faser bündeln.",
+      "Das CWDM-SFP-1530 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert."
+    ],
+    "faq": [
+      [
+        "Auf welcher Wellenlänge sendet das CWDM-SFP-1530?",
+        "Auf der festen CWDM-Wellenlänge 1530 nm über Singlemode-Glasfaser."
+      ],
+      [
+        "Welche Reichweite?",
+        "Das Datenblatt nennt ein optisches Streckenbudget von 29 dB (Gigabit Ethernet) bzw. 28 dB (Fibre Channel); die erreichbare Distanz hängt von der Faserdämpfung ab."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-X; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (CWDM)"
+      ],
+      [
+        "Transceiver Typ",
+        "CWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1530 nm (CWDM-Raster)"
+      ],
+      [
+        "Reichweite",
+        "Linkbudget 29 dB (GbE) / 28 dB (FC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC/PC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-5 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Metro-/Zugangsnetz (CWDM)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
+  },
+  "CWDM-SFP-1610": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+      "verifiziert_am": "2026-06-13"
+    },
+    "artikelname": "Cisco CWDM-SFP-1610 1000BASE-CWDM SFP — 1610 nm, Singlemode, Gigabit Ethernet & 1/2G FC",
+    "titel_tag": "Cisco CWDM-SFP-1610 1G CWDM 1610 nm | Hexwaren",
+    "meta_description": "Original Cisco CWDM-SFP-1610 1000BASE-CWDM-SFP — feste Wellenlänge 1610 nm, Gigabit Ethernet & 1/2G Fibre Channel über Singlemode, Duplex-LC/PC. Neu, versiegelt, mit Cisco Quality-ID.",
+    "kurzbeschreibung": "<p>Das Cisco CWDM-SFP-1610 ist ein originales 1000BASE-CWDM-SFP-Modul für die feste CWDM-Wellenlänge 1610 nm und überträgt Gigabit Ethernet sowie Fibre Channel mit 1 und 2 Gbit/s über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss.</p><p>Über diese feste CWDM-Wellenlänge lässt es sich mit weiteren CWDM-Kanälen über einen passiven Multiplexer auf einer Faser bündeln. Als Cisco-Neuware versiegelt und mit Cisco Quality-ID.</p>",
+    "intro": [
+      "Das Cisco CWDM-SFP-1610 ist ein 1000BASE-CWDM-SFP-Modul, das Gigabit Ethernet auf der festen CWDM-Wellenlänge 1610 nm über Singlemode-Glasfaser mit Duplex-LC/PC-Anschluss überträgt und zusätzlich Fibre Channel mit 1 und 2 Gbit/s unterstützt.",
+      "Laut Datenblatt arbeitet der Gigabit-Ethernet-Betrieb mit einem optischen Streckenbudget von 29 dB (1,25 Gbit/s) und der Fibre-Channel-Betrieb mit 28 dB (1,06 und 2,12 Gbit/s); über einen passiven CWDM-Multiplexer lassen sich mehrere 1610-nm-Nachbarkanäle auf einer einzigen Faser bündeln.",
+      "Das CWDM-SFP-1610 ist über die Cisco Quality-ID als Original prüfbar und wird fabrikneu versiegelt aus dem autorisierten Distributionskanal geliefert."
+    ],
+    "faq": [
+      [
+        "Auf welcher Wellenlänge sendet das CWDM-SFP-1610?",
+        "Auf der festen CWDM-Wellenlänge 1610 nm über Singlemode-Glasfaser."
+      ],
+      [
+        "Welche Reichweite?",
+        "Das Datenblatt nennt ein optisches Streckenbudget von 29 dB (Gigabit Ethernet) bzw. 28 dB (Fibre Channel); die erreichbare Distanz hängt von der Faserdämpfung ab."
+      ],
+      [
+        "Cisco-Original?",
+        "Ja, versiegelte Cisco-Neuware mit Cisco Quality-ID."
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Geschwindigkeit",
+        "1 Gbit/s (1000BASE-X; auch FC 1G/2G)"
+      ],
+      [
+        "Standard",
+        "IEEE 802.3z 1000BASE-X (CWDM)"
+      ],
+      [
+        "Transceiver Typ",
+        "CWDM-Festkanal"
+      ],
+      [
+        "Wellenlänge",
+        "1610 nm (CWDM-Raster)"
+      ],
+      [
+        "Reichweite",
+        "Linkbudget 29 dB (GbE) / 28 dB (FC)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode"
+      ],
+      [
+        "Anschluss",
+        "Duplex LC/PC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-5 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Metro-/Zugangsnetz (CWDM)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Geschwindigkeit": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Standard": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Transceiver Typ": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/cwdm-transceiver-modules/product_data_sheet09186a00801a557c.html",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
       ]
     }
   }
