@@ -77,19 +77,26 @@ Audit tool: **`_scratch/audit_semantic.py`** — run catalog-wide per brand to e
 
 ## 5. Brand status
 
-| Brand | Content SKUs | Gate | Pricing | Notes |
-|---|---|---|---|---|
-| **Cisco** | 596 | **PASS 596/596** | 111/596 priced; rest 0,00 debt (comp-limited) | DONE. Flagged: QDD-800G-VR8, SFP10G-USR, MGBBX1, ONS-QSFP-4X10-MER/MLR (need a Cisco source; never derive part-specific specs). 4 MGB* are Cisco SB. |
-| **Meraki** | 25 (MA-* only) | **PASS 25/25** | 0/25 (PENDING, no comp yet) | DONE. MGB* reassigned to Cisco SB. 2 MA-CBL-SPWR excluded (power cables). Rule-9 temp. |
-| **Arista** | 347 | **ReconcileError** (`C-Q200-Q200-1M` no Formfaktor) | — | PENDING re-verification (predates gold bar + cross-checks). |
-| **HPE/Aruba** | 147 | **FAIL (398)** | — | PENDING re-verification. Heavy attribute-depth regression. |
-| **Fortinet** | 87 | **ReconcileError** (`FG-TRAN-QSFP-4XSFP`) | — | PENDING re-verification. |
-| **MikroTik** | 24 | **FAIL (61)** | — | PENDING re-verification. |
+> **Verified-state-only:** this table records MEASURED facts (actual gate output, `audit_semantic.py`
+> per-check counts, Rule-8 parity tallies) — never "done" assertions. If it isn't measured, it isn't
+> stated as fact. Re-run to confirm: `python -m hexcat.cli stage3 …` (gate), `python _scratch/audit_semantic.py`
+> (cross-checks), the §6 pricing run, and `python -m pytest -q`.
+
+| Brand | Content SKUs | Measured gate | audit_semantic (ff/faser/multiwl/dash/herst) | Pricing | Notes |
+|---|---|---|---|---|---|
+| **Cisco** | 596 | **PASS 596/596, 0 violations** (2026-06-13, commit `4467dd5`) | **0 / 0 / 0 / 0 / 0** | 111/596 priced (T1 7, FAMILY 98, T2-LIST 6; rest 0,00 debt) | Rule-8 parity: Anwendung/Geschwindigkeit/Betriebstemperatur(non-MPO) **0-missing**. Flagged (held, need a Cisco source): QDD-800G-VR8, SFP10G-USR, MGBBX1, ONS-QSFP-4X10-MER/MLR. 4 MGB* are Cisco SB. ZIP `output/Hexwaren_Cisco_stage3_4467dd5.zip`. |
+| **Meraki** | 25 (MA-* only) | **PASS 25/25, 0 violations** (2026-06-13, commit `4467dd5`) | **0 / 0 / 0 / 0 / 0** | 0/25 (PENDING, no comp yet) | Rule-8 parity: required attrs **0-missing**. MGB* reassigned to Cisco SB. 2 MA-CBL-SPWR excluded (power cables). Rule-9 temp. ZIP `output/Hexwaren_Meraki_stage3_4467dd5.zip`. |
+| **Arista** | 347 | **ReconcileError** (42 PNs, e.g. `C-Q200-Q200-1M`; 305 reconcile-OK) — measured 2026-06-13 | not yet clean | — | PENDING re-verification. Predates gold bar + cross-checks. |
+| **HPE/Aruba** | 147 | **FAIL 398** (0 reconcile errors) — measured 2026-06-13 | not yet clean | — | PENDING. Breakdown: Beschreibung 138, Betriebstemperatur 134, Anwendung 121, Geschwindigkeit 5. |
+| **Fortinet** | 87 | **ReconcileError** (5 PNs, e.g. `FG-TRAN-QSFP-4XSFP`; 82 reconcile-OK) — measured 2026-06-13 | not yet clean | — | PENDING re-verification. |
+| **MikroTik** | 24 | **FAIL 61** (0 reconcile errors) — measured 2026-06-13 | not yet clean | — | PENDING. Breakdown: Beschreibung 23, Anwendung 21, Betriebstemperatur 16, Faseranzahl 1. Smallest → first. |
 
 **Fresh brands not started:** Avaya/Extreme, Dell, Huawei, Juniper, Lenovo/IBM, NVIDIA/Mellanox, Palo Alto, Ruijie, Supermicro, Ubiquiti, ZTE. (Brocade parked; Polycom = no transceivers.)
 **Switch category:** not started — needs its OWN gold-slice schema + taxonomy (Rule-7 approval before authoring); everything else (completeness, gate, Rule 8/9, byte contract, cross-checks, per-brand process) carries over.
 
-**Test suite:** 413 tests (28 files), all green at commit `2caf78a`. Run: `PYTHONIOENCODING=utf-8 python -m pytest -q`.
+**Test suite (measured):** 413 tests (28 files), all green — last run 2026-06-13 (commit `4467dd5`). Run: `PYTHONIOENCODING=utf-8 python -m pytest -q`.
+
+**Tooling-validation gate (before scaling the back-fill across 4+11 brands):** Cisco + Meraki ZIPs + `audit_semantic.py` dump (`_out/audit_semantic_dump.txt`) submitted for INDEPENDENT audit. audit_semantic.py = 0/0/0/0/0 on both; QSFP/SFP-substring trap verified handled (0 SFP-family-ff-with-QSFP-connector catalog-wide; `physical_formfaktor('QSFP-200-CU3M')`→None not SFP). **Awaiting independent-audit confirmation; if it disagrees with audit_semantic.py, fix the tool's blind spot before trusting it across 15 brands.** 4-brand commits HELD until confirmed.
 
 ---
 
@@ -127,4 +134,6 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
 
 ## 9. Session changelog (rolling — append every session)
 
-- **2026-06-13** — Cisco taken to 596 transceivers (gate PASS, priced 111). Meraki authored (25 MA-*, PASS). Rules 8 & 9 locked. Parts 4–6 (pricing, Verification_Log real per-attr confidence, _quarantine rejected-rows-only) done. **Semantic-error correction A/B/C** (commit `2caf78a`): MGB→Cisco SB, Formfaktor↔connector, lane-aware Faseranzahl (137→0), multi-wavelength sets (25), "—" omitted (79→0), ONS-QSFP-4X10-MER/MLR flagged; 5 permanent gate cross-checks added; both brands re-gated PASS, 413 tests. **This PROJECT_AUDIT.md created** (commit `887932e`) + standing read-before-update rule wired into CLAUDE.md + ruflo/auto-memory. **Directive-D diagnosis run** on the 4 early brands (see §8 for per-brand scope: MikroTik 61 / HPE 398 / Fortinet 5 reconcile+ / Arista 42 reconcile+). Next: generalize `backfill_499.py` to `--content/--brand`, then re-verify MikroTik first (smallest), then HPE, Fortinet, Arista.
+- **2026-06-13** — Cisco taken to 596 transceivers (gate PASS, priced 111). Meraki authored (25 MA-*, PASS). Rules 8 & 9 locked. Parts 4–6 (pricing, Verification_Log real per-attr confidence, _quarantine rejected-rows-only) done. **Semantic-error correction A/B/C** (commit `2caf78a`): MGB→Cisco SB, Formfaktor↔connector, lane-aware Faseranzahl (137→0), multi-wavelength sets (25), "—" omitted (79→0), ONS-QSFP-4X10-MER/MLR flagged; 5 permanent gate cross-checks added; both brands re-gated PASS, 413 tests. **This PROJECT_AUDIT.md created** (commit `887932e`) + standing read-before-update rule wired into CLAUDE.md + ruflo/auto-memory. **Directive-D diagnosis run** on the 4 early brands (see §8 for per-brand scope: MikroTik 61 / HPE 398 / Fortinet 5 reconcile+ / Arista 42 reconcile+).
+- **Tooling-validation proof (measured, commit `4467dd5`):** re-emitted Cisco + Meraki fresh → both gate **PASS** (596/596, 25/25, 0 violations); re-priced Cisco 111/596; `audit_semantic.py` = **0/0/0/0/0** on both; QSFP/SFP-substring trap verified handled; built fresh ZIPs (`output/Hexwaren_{Cisco,Meraki}_stage3_4467dd5.zip`) + dump (`_out/audit_semantic_dump.txt`) for INDEPENDENT audit. **4-brand commits HELD** until that audit confirms the tooling. §5 converted to verified-state-only.
+- Next: generalize `backfill_499.py` to `--content/--brand` (Rule-9 class-derived temp) [in progress, no 4-brand commit]; on independent-audit OK → re-verify MikroTik first, then HPE, Fortinet, Arista.
