@@ -1,0 +1,59 @@
+# Independent COMPLETENESS enumerations for the TRANSCEIVERS category — the per-category SEAM
+# for lib/completeness.py, a sibling of config/sources/<category>.yaml (the harvest seam).
+#
+# This file carries ALL category/brand knowledge about WHERE the authoritative yardstick lives;
+# the reconciler code carries none. Completeness is verified against the UNION of several
+# INDEPENDENT official enumerations — never one list, never the harvest itself (that is
+# circular). Each source points at a tracked plain-text SNAPSHOT (one PN per line, '#' comments)
+# under config/coverage/enumerations/ — a VERBATIM capture of an official Cisco list. A snapshot
+# is NEVER fabricated or pattern-generated; an un-gathered source is simply an empty/absent file
+# and does not count toward the completeness verdict until populated.
+#
+# Why several sources: each covers the others' blind spots.
+#   * compatibility_matrix — the optics-to-device matrix = the canonical CURRENT-product list,
+#     but it drops EOL parts.
+#   * eol_eos_bulletins    — captures the legacy XENPAK / GBIC / POM optics a current list omits.
+#   * ordering_guide       — the transceiver ordering / product-family guide.
+#   * price_list           — the GPL: every orderable PN, the broadest single net.
+# Their UNION is the ground-truth universe the harvest must cover (modulo confirmed-gone).
+
+category: transceivers
+
+brands:
+  Cisco:
+    # PNs proven permanently gone (hard 404/410 recorded by the deferred queue). Excused from
+    # the gap list but still tracked — never silently dropped. Empty until something is proven
+    # gone; "blocked" or "not-yet-fetched" is NEVER recorded here.
+    confirmed_gone: []
+
+    sources:
+      - id: tmg_matrix
+        kind: compatibility_matrix
+        note: >-
+          Cisco TMG optics-to-device compatibility matrix (tmgmatrix.cisco.com) — canonical
+          enumeration of currently-shipping transceivers. A JS single-page app: the snapshot is
+          captured by fully rendering, scrolling, paginating and expanding every filter state
+          until the row count matches the matrix's stated total.
+        snapshot: config/coverage/enumerations/cisco_tmg_matrix.txt
+
+      - id: eol_eos_bulletins
+        kind: eol_eos_bulletins
+        note: >-
+          Cisco End-of-Sale / End-of-Life bulletins for transceiver modules — enumerates the
+          legacy XENPAK / GBIC / POM and other EOL optics that a current-product list drops. EOL
+          is an informational flag here, never an exclusion reason.
+        snapshot: config/coverage/enumerations/cisco_eol_bulletins.txt
+
+      - id: ordering_guide
+        kind: ordering_guide
+        note: >-
+          Cisco transceiver ordering / product-family guide(s) — the manufacturer's own
+          part-number ordering tables across the SFP/SFP+/QSFP/CFP families.
+        snapshot: config/coverage/enumerations/cisco_ordering_guide.txt
+
+      - id: gpl_price_list
+        kind: price_list
+        note: >-
+          Cisco Global Price List (GPL) transceiver lines — every orderable PN; the broadest
+          single enumeration and the backstop net for parts the other lists miss.
+        snapshot: config/coverage/enumerations/cisco_gpl.txt
