@@ -69,11 +69,16 @@ def test_surfaced_total_matches_coverage_and_orphan_zero():
     assert set(cov.get("orphan", [])) <= documented, "undocumented orphan catalog SKU"
 
 
-def test_no_surfaced_pn_already_in_catalog():
+def test_excluded_nontransceiver_pn_never_in_catalog():
+    """A part classified `exclude_not_transceiver` must never be shipped in the catalog. ADD parts,
+    by contrast, GRADUATE into the catalog as they are authored (that is the mission's goal), so an
+    ADD PN legitimately appears in both the disposition's add bucket and the catalog — that is not a
+    double-listing defect. The invariant that still matters: nothing we deemed 'not a transceiver'
+    ever leaks into the shipped set."""
     d = _disp()
     catalog = set(json.loads(CONTENT.read_text(encoding="utf-8")).keys())
-    for e in _all_entries(d):
-        assert e["pn"] not in catalog, f"surfaced PN already in catalog: {e['pn']}"
+    for e in (d.get("exclude_not_transceiver") or []):
+        assert e["pn"] not in catalog, f"excluded non-transceiver PN is in catalog: {e['pn']}"
 
 
 # ---- the core rule: every real transceiver is ADD; only non-transceivers excluded -----
