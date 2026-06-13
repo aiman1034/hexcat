@@ -118,6 +118,16 @@ families:
     source: "c78-455693.html:2776 / c78-660083.html:3014"
     source_quote: "Commercial temperature range: 0 to 70°C (32 to 158°F); Industrial: -40 to 85°C"
     confirmed: true
+  "DAC Kabel":
+    # Passive Twinax-copper DACs carry an OPERATING temperature in every DAC datasheet (the gold
+    # proof-slice DACs SFP-H10GB-CU* show 0..70C even with DOM=Nein). The datasheets state a
+    # dedicated "Copper cable operation temperature: 0 to 70C" line; the -40..85 alongside it is
+    # STORAGE, not operating (same distinction as the X2 catch). All 71 Cisco DACs are commercial
+    # (no -I/-RGD DAC exists).
+    commercial_range: "0 bis 70 °C"
+    source: "c78-743172.html:2757 / nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html:2047 (Copper cable operation temperature); c78-736282/c78-660083/c78-455693/c78-736950/50gbase-sfp56-modules-ds (0 to 70C)"
+    source_quote: "Copper cable operation temperature: 0 to 70°C"
+    confirmed: true
   XFP:
     commercial_range: "0 bis 70 °C"
     extended_range: "-40 bis 85 °C"

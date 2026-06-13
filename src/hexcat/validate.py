@@ -95,13 +95,15 @@ _WELLENLAENGE_NAME = "Wellenlänge"
 # (a missing applicable attribute = shallow extraction, FAIL):
 #   * Anwendung           — on EVERY SKU (the datasheet-grounded use case);
 #   * Geschwindigkeit     — on EVERY SKU (line/data rate);
-#   * Betriebstemperatur  — on every optical / ACTIVE module. Passive copper/fibre assemblies
-#     with no powered optics (DAC, MPO patch) have no module operating range and are EXEMPT;
-#     active optical cables (AOC) and all transceiver modules must carry it.
+#   * Betriebstemperatur  — on every optical/active module AND on passive Twinax DAC cables. The
+#     gold proof-slice DACs (SFP-H10GB-CU*) carry an operating temperature even with DOM=Nein, and
+#     every DAC datasheet states a "Copper cable operation temperature: 0 to 70C" line, so DAC is
+#     NOT exempt (gate bar == gold-slice schema). Only MPO fibre patch/breakout assemblies — purely
+#     passive glass with no per-cable operating-temperature spec — remain exempt.
 _ANWENDUNG_NAME = "Anwendung"
 _GESCHWINDIGKEIT_NAME = "Geschwindigkeit"
 _BETRIEBSTEMP_NAME = "Betriebstemperatur"
-_BETRIEBSTEMP_EXEMPT_K3 = frozenset({"DAC Kabel", "MPO Kabel"})  # passive, unpowered
+_BETRIEBSTEMP_EXEMPT_K3 = frozenset({"MPO Kabel"})  # passive fibre patch/breakout only
 
 
 def valid_gtin(s: str) -> bool:

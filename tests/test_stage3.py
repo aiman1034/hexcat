@@ -136,6 +136,7 @@ def _cisco_dac() -> tuple[str, dict]:
             ["Kabeltyp", "Passives Twinax-Kupferkabel"],
             ["Reichweite", "3 m"],
             ["Anwendung", "Rechenzentrum (Top-of-Rack-Verkabelung)"],
+            ["Betriebstemperatur", "0 bis 70 °C"],
             ["Zustand", "Neu, versiegelt"],
         ],
         "netto_vk": None,
