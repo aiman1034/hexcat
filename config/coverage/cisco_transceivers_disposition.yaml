@@ -19,37 +19,59 @@ add_families:
 - XFP
 grounded_orphans:
 - pn: CFP2-WDM-D-1HL
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
 - pn: CFP2-WDM-DET-1HL
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
 - pn: CIM8-C-K9
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: CIM8-CE-K9
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: DP04CFP2-M25-K9
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: ONS-CFP2-WDM
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-CFP2-WDM2
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-CFP2D-400G-C
-  reason: Grounded verbatim from the Cisco NCS-1014 line-card data sheet (coherent CIM8 trunk module); the generic optic ordering-table miner cannot parse that datasheet format, so the SKU is grounded but
-    not auto-mined.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: QDD-2Q200-CU1M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QDD-2Q200-CU2M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QDD-400-CU1M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU2M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-400-CU3M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU1M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU2M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QDD-4ZQ100-CU3M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QSFP-200-CU3M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QSFP-4SFP25G-CU4M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
 orphan_catalog_skus: 0
 add:
 - pn: CIM8-LE-K9

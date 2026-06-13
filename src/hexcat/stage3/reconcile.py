@@ -122,6 +122,13 @@ def physical_formfaktor(*candidates: str) -> str | None:
             if after in ("+",) and not tok.endswith("+"):
                 continue  # this "SFP" is really "SFP+"; let the SFP+ pass catch it
             return tok
+    # Cisco PN abbreviation: "QDD" == QSFP-DD (e.g. QDD-400-CU1M, QDD-4ZQ100-CU2M); the 800G
+    # variants (QDD-800…) are QSFP-DD800. Only consulted when no explicit token matched above.
+    for text in candidates:
+        if text and re.search(r"\bQDD-?8", text):
+            return "QSFP-DD800"
+        if text and re.search(r"\bQDD\b|\bQDD-", text):
+            return "QSFP-DD"
     return None
 
 
