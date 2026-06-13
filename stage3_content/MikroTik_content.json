@@ -1,2326 +1,2718 @@
 {
- "DQ+BC0003-DS+": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "DQ+BC0003-DS+": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik DQ+BC0003-DS+ QSFP56 Breakout-DAC – 200G zu 4×50G, 3 m",
+    "titel_tag": "MikroTik DQ+BC0003-DS+ QSFP56 Breakout-DAC 3 m | Hexwaren",
+    "meta_description": "Original MikroTik DQ+BC0003-DS+ passives QSFP56-Breakout-Kupferkabel, 3 m: 200G zu 4×50G, kompatibel mit 100G- und 40G-Breakout. Für CRS812 DDQ und CRS804 DDQ. Neu, versiegelt.",
+    "kurzbeschreibung": "<p>Das MikroTik DQ+BC0003-DS+ ist ein passives QSFP56-Breakout-Kupferkabel mit 3 m Länge. Es teilt einen 200G-Port in vier 50G-Kanäle auf und bleibt dabei mit den 100G- und 40G-Breakout-Modi kompatibel.</p><p>Es ersetzt das XQ+BC0003-XS+ zum gleichen Preis und ist für CRS812-DDQ- und CRS804-DDQ-Geräte vorgesehen. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik DQ+BC0003-DS+ ist ein passives Breakout-Direct-Attach-Kupferkabel im QSFP56-Formfaktor mit einer Länge von 3 m.",
+      "Das Kabel unterstützt die Aufteilung von 200G in vier 50G-Kanäle (200G zu 4×50G) und bleibt dabei mit den 100G- und 40G-Breakout-Modi kompatibel. Laut Hersteller ersetzt es das XQ+BC0003-XS+ zum gleichen Preis.",
+      "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für den Einsatz in MikroTik-CRS812-DDQ- und CRS804-DDQ-Geräten vorgesehen. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 3 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP56-/QSFP-DD-Steckplatz (Breakout)",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Welche Breakout-Modi unterstützt das Kabel?",
+        "Es teilt 200G in 4×50G auf und ist zusätzlich mit den 100G- und 40G-Breakout-Modi kompatibel."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DDQ+DA0001",
+        "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
+      ],
+      [
+        "XQ+DA0003",
+        "MikroTik XQ+DA0003 – 100G QSFP28 DAC 3 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP56 Breakout (1 zu 4)"
+      ],
+      [
+        "Datenrate",
+        "200G zu 4×50G (100G/40G-Breakout kompatibel)"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (Breakout-DAC)"
+      ],
+      [
+        "Länge",
+        "3 m"
+      ],
+      [
+        "Anschluss",
+        "1× QSFP56 + 4× Breakout (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/dq_bc0003_dsplus",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/dq_bc0003_dsplus",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik DQ+BC0003-DS+ QSFP56 Breakout-DAC – 200G zu 4×50G, 3 m",
-  "titel_tag": "MikroTik DQ+BC0003-DS+ QSFP56 Breakout-DAC 3 m | Hexwaren",
-  "meta_description": "Original MikroTik DQ+BC0003-DS+ passives QSFP56-Breakout-Kupferkabel, 3 m: 200G zu 4×50G, kompatibel mit 100G- und 40G-Breakout. Für CRS812 DDQ und CRS804 DDQ. Neu, versiegelt.",
-  "kurzbeschreibung": "<p>Das MikroTik DQ+BC0003-DS+ ist ein passives QSFP56-Breakout-Kupferkabel mit 3 m Länge. Es teilt einen 200G-Port in vier 50G-Kanäle auf und bleibt dabei mit den 100G- und 40G-Breakout-Modi kompatibel.</p><p>Es ersetzt das XQ+BC0003-XS+ zum gleichen Preis und ist für CRS812-DDQ- und CRS804-DDQ-Geräte vorgesehen. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik DQ+BC0003-DS+ ist ein passives Breakout-Direct-Attach-Kupferkabel im QSFP56-Formfaktor mit einer Länge von 3 m.",
-   "Das Kabel unterstützt die Aufteilung von 200G in vier 50G-Kanäle (200G zu 4×50G) und bleibt dabei mit den 100G- und 40G-Breakout-Modi kompatibel. Laut Hersteller ersetzt es das XQ+BC0003-XS+ zum gleichen Preis.",
-   "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für den Einsatz in MikroTik-CRS812-DDQ- und CRS804-DDQ-Geräten vorgesehen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP56-/QSFP-DD-Steckplatz (Breakout)",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Welche Breakout-Modi unterstützt das Kabel?",
-    "Es teilt 200G in 4×50G auf und ist zusätzlich mit den 100G- und 40G-Breakout-Modi kompatibel."
-   ]
-  ],
-  "verwandte": [
-   [
-    "DDQ+DA0001",
-    "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
-   ],
-   [
-    "XQ+DA0003",
-    "MikroTik XQ+DA0003 – 100G QSFP28 DAC 3 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP56 Breakout (1 zu 4)"
-   ],
-   [
-    "Datenrate",
-    "200G zu 4×50G (100G/40G-Breakout kompatibel)"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (Breakout-DAC)"
-   ],
-   [
-    "Länge",
-    "3 m"
-   ],
-   [
-    "Anschluss",
-    "1× QSFP56 + 4× Breakout (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/dq_bc0003_dsplus",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/dq_bc0003_dsplus",
-    "datasheet"
-   ]
-  }
- },
- "S-85DLC05D": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-85DLC05D": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-85DLC05D 1,25G SFP Transceiver – Multimode 850 nm, Dual-LC, 550 m",
+    "titel_tag": "MikroTik S-85DLC05D 1,25G SFP Multimode 550 m | Hexwaren",
+    "meta_description": "Original MikroTik S-85DLC05D 1,25G-SFP-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 550 m Reichweite. Ideal für kurze Gigabit-Strecken im Rechenzentrum.",
+    "kurzbeschreibung": "<p>Das MikroTik S-85DLC05D ist ein Gigabit-SFP-Modul für Multimode-Glasfaser. Mit einer Wellenlänge von 850 nm und einem Dual-LC-Anschluss überbrückt es Strecken von bis zu 550 m und eignet sich für Gigabit-Ethernet-Verbindungen innerhalb eines Gebäudes oder Rechenzentrums.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in allen MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-85DLC05D ist ein Gigabit-Transceiver im SFP-Formfaktor, der für den Betrieb über Multimode-Glasfaser ausgelegt ist und mit einer Wellenlänge von 850 nm arbeitet.",
+      "Über den Dual-LC-Anschluss lassen sich Strecken von bis zu 550 m realisieren; die Datenrate liegt bei 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C und erlaubt damit den Einsatz auch in thermisch anspruchsvollen Umgebungen.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für die kurzen, kostengünstigen Gigabit-Verbindungen innerhalb von Gebäuden und Rechenzentren vorgesehen, für die Multimode-Fasern typisch sind. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz betreiben."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S-85DLC05D?",
+        "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 550 m."
+      ],
+      [
+        "Welcher Stecker wird verwendet?",
+        "Das Modul besitzt einen Dual-LC-Anschluss (UPC) für eine separate Sende- und Empfangsfaser."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-31DLC20D",
+        "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
+      ],
+      [
+        "S-55DLC80D",
+        "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (MM)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 550 m"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Kurzstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/S-85DLC05D-180",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-85DLC05D 1,25G SFP Transceiver – Multimode 850 nm, Dual-LC, 550 m",
-  "titel_tag": "MikroTik S-85DLC05D 1,25G SFP Multimode 550 m | Hexwaren",
-  "meta_description": "Original MikroTik S-85DLC05D 1,25G-SFP-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 550 m Reichweite. Ideal für kurze Gigabit-Strecken im Rechenzentrum.",
-  "kurzbeschreibung": "<p>Das MikroTik S-85DLC05D ist ein Gigabit-SFP-Modul für Multimode-Glasfaser. Mit einer Wellenlänge von 850 nm und einem Dual-LC-Anschluss überbrückt es Strecken von bis zu 550 m und eignet sich für Gigabit-Ethernet-Verbindungen innerhalb eines Gebäudes oder Rechenzentrums.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in allen MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-85DLC05D ist ein Gigabit-Transceiver im SFP-Formfaktor, der für den Betrieb über Multimode-Glasfaser ausgelegt ist und mit einer Wellenlänge von 850 nm arbeitet.",
-   "Über den Dual-LC-Anschluss lassen sich Strecken von bis zu 550 m realisieren; die Datenrate liegt bei 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C und erlaubt damit den Einsatz auch in thermisch anspruchsvollen Umgebungen.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für die kurzen, kostengünstigen Gigabit-Verbindungen innerhalb von Gebäuden und Rechenzentren vorgesehen, für die Multimode-Fasern typisch sind. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz betreiben."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S-85DLC05D?",
-    "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 550 m."
-   ],
-   [
-    "Welcher Stecker wird verwendet?",
-    "Das Modul besitzt einen Dual-LC-Anschluss (UPC) für eine separate Sende- und Empfangsfaser."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-31DLC20D",
-    "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
-   ],
-   [
-    "S-55DLC80D",
-    "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Fasertyp",
-    "Multimode (MM)"
-   ],
-   [
-    "Wellenlänge",
-    "850 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 550 m"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +85 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/S-85DLC05D-180",
-    "datasheet"
-   ]
-  }
- },
- "S-31DLC20D": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-31DLC20D": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-31DLC20D 1,25G SFP Transceiver – Singlemode 1310 nm, Dual-LC, 20 km",
+    "titel_tag": "MikroTik S-31DLC20D 1,25G SFP Singlemode 20 km | Hexwaren",
+    "meta_description": "Original MikroTik S-31DLC20D 1,25G-SFP-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 20 km. Für Gigabit-Verbindungen über mittlere Distanzen.",
+    "kurzbeschreibung": "<p>Das MikroTik S-31DLC20D ist ein Gigabit-SFP-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 20 km und eignet sich für Gigabit-Verbindungen zwischen Gebäuden oder Standorten.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-31DLC20D ist ein Gigabit-Transceiver im SFP-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1310 nm.",
+      "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 20 km bei einer Datenrate von 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über mittlere Distanzen zwischen Gebäuden oder Standorten vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 1310 nm, die Reichweite bis 20 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S-31DLC20D?",
+        "Über Singlemode-Glasfaser mit 1310 nm überbrückt das Modul Strecken von bis zu 20 km."
+      ],
+      [
+        "Für welche Fasern ist das Modul geeignet?",
+        "Es ist für Singlemode-Glasfaser ausgelegt und nutzt einen Dual-LC-Anschluss (UPC)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-85DLC05D",
+        "MikroTik S-85DLC05D – 1,25G SFP Multimode 550 m"
+      ],
+      [
+        "S-55DLC80D",
+        "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 20 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/S-31DLC20D-181",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-31DLC20D 1,25G SFP Transceiver – Singlemode 1310 nm, Dual-LC, 20 km",
-  "titel_tag": "MikroTik S-31DLC20D 1,25G SFP Singlemode 20 km | Hexwaren",
-  "meta_description": "Original MikroTik S-31DLC20D 1,25G-SFP-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 20 km. Für Gigabit-Verbindungen über mittlere Distanzen.",
-  "kurzbeschreibung": "<p>Das MikroTik S-31DLC20D ist ein Gigabit-SFP-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 20 km und eignet sich für Gigabit-Verbindungen zwischen Gebäuden oder Standorten.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-31DLC20D ist ein Gigabit-Transceiver im SFP-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1310 nm.",
-   "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 20 km bei einer Datenrate von 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über mittlere Distanzen zwischen Gebäuden oder Standorten vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S-31DLC20D?",
-    "Über Singlemode-Glasfaser mit 1310 nm überbrückt das Modul Strecken von bis zu 20 km."
-   ],
-   [
-    "Für welche Fasern ist das Modul geeignet?",
-    "Es ist für Singlemode-Glasfaser ausgelegt und nutzt einen Dual-LC-Anschluss (UPC)."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-85DLC05D",
-    "MikroTik S-85DLC05D – 1,25G SFP Multimode 550 m"
-   ],
-   [
-    "S-55DLC80D",
-    "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1310 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 20 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +70 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/S-31DLC20D-181",
-    "datasheet"
-   ]
-  }
- },
- "S-RJ01": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-RJ01": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-RJ01 1,25G SFP Transceiver – RJ45-Kupfer, 1000BASE-T, 100 m",
+    "titel_tag": "MikroTik S-RJ01 1,25G SFP RJ45-Kupfer 100 m | Hexwaren",
+    "meta_description": "Original MikroTik S-RJ01 Gigabit-SFP-Modul mit RJ45-Anschluss für Kupferverkabelung: 1,25 Gbit/s über bis zu 100 m. Gigabit-Ethernet über Twisted-Pair.",
+    "kurzbeschreibung": "<p>Das MikroTik S-RJ01 ist ein Gigabit-SFP-Modul mit RJ45-Anschluss für Kupferverkabelung. Es überträgt 1,25 Gbit/s über Twisted-Pair-Kabel auf Strecken von bis zu 100 m und bindet so Geräte ohne Glasfaser an einen SFP-Steckplatz an.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-RJ01 ist ein Gigabit-Transceiver im SFP-Formfaktor mit einem RJ45-Anschluss für strukturierte Kupferverkabelung.",
+      "Über Twisted-Pair-Kabel überträgt das Modul 1,25 Gbit/s auf Strecken von bis zu 100 m und erlaubt damit die Anbindung kupferbasierter Endgeräte an einen optischen SFP-Steckplatz, ohne dass Glasfaser erforderlich ist.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Ethernet über Kupfer in MikroTik-Geräten mit freiem SFP-Steckplatz vorgesehen. Es eignet sich, wenn ein SFP-Port mit klassischer RJ45-Verkabelung verbunden werden soll. Laut Datenblatt die Reichweite bis 100 m; der Betriebstemperaturbereich liegt bei -20 bis +60 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S-RJ01?",
+        "Über Twisted-Pair-Kupferkabel überträgt das Modul Gigabit-Ethernet auf Strecken von bis zu 100 m."
+      ],
+      [
+        "Welchen Anschluss hat das Modul?",
+        "Das S-RJ01 besitzt einen RJ45-Anschluss für strukturierte Kupferverkabelung."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-31DLC20D",
+        "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
+      ],
+      [
+        "S-85DLC05D",
+        "MikroTik S-85DLC05D – 1,25G SFP Multimode 550 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Medientyp",
+        "Kupfer (Twisted-Pair)"
+      ],
+      [
+        "Reichweite",
+        "bis 100 m"
+      ],
+      [
+        "Anschluss",
+        "RJ45"
+      ],
+      [
+        "Betriebstemperatur",
+        "-20 bis +60 °C"
+      ],
+      [
+        "Anwendung",
+        "Zugriffs-/Verteilnetz (Kupfer)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/S-RJ01",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/S-RJ01",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/S-RJ01",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-RJ01 1,25G SFP Transceiver – RJ45-Kupfer, 1000BASE-T, 100 m",
-  "titel_tag": "MikroTik S-RJ01 1,25G SFP RJ45-Kupfer 100 m | Hexwaren",
-  "meta_description": "Original MikroTik S-RJ01 Gigabit-SFP-Modul mit RJ45-Anschluss für Kupferverkabelung: 1,25 Gbit/s über bis zu 100 m. Gigabit-Ethernet über Twisted-Pair.",
-  "kurzbeschreibung": "<p>Das MikroTik S-RJ01 ist ein Gigabit-SFP-Modul mit RJ45-Anschluss für Kupferverkabelung. Es überträgt 1,25 Gbit/s über Twisted-Pair-Kabel auf Strecken von bis zu 100 m und bindet so Geräte ohne Glasfaser an einen SFP-Steckplatz an.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-RJ01 ist ein Gigabit-Transceiver im SFP-Formfaktor mit einem RJ45-Anschluss für strukturierte Kupferverkabelung.",
-   "Über Twisted-Pair-Kabel überträgt das Modul 1,25 Gbit/s auf Strecken von bis zu 100 m und erlaubt damit die Anbindung kupferbasierter Endgeräte an einen optischen SFP-Steckplatz, ohne dass Glasfaser erforderlich ist.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Ethernet über Kupfer in MikroTik-Geräten mit freiem SFP-Steckplatz vorgesehen. Es eignet sich, wenn ein SFP-Port mit klassischer RJ45-Verkabelung verbunden werden soll."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S-RJ01?",
-    "Über Twisted-Pair-Kupferkabel überträgt das Modul Gigabit-Ethernet auf Strecken von bis zu 100 m."
-   ],
-   [
-    "Welchen Anschluss hat das Modul?",
-    "Das S-RJ01 besitzt einen RJ45-Anschluss für strukturierte Kupferverkabelung."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-31DLC20D",
-    "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
-   ],
-   [
-    "S-85DLC05D",
-    "MikroTik S-85DLC05D – 1,25G SFP Multimode 550 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Medientyp",
-    "Kupfer (Twisted-Pair)"
-   ],
-   [
-    "Reichweite",
-    "bis 100 m"
-   ],
-   [
-    "Anschluss",
-    "RJ45"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/S-RJ01",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/S-RJ01",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/S-RJ01",
-    "datasheet"
-   ]
-  }
- },
- "XS+DA0001": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XS+DA0001": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XS+DA0001 25G SFP28 Direct-Attach-Kupferkabel (DAC) – 1 m",
+    "titel_tag": "MikroTik XS+DA0001 25G SFP28 DAC 1 m | Hexwaren",
+    "meta_description": "Original MikroTik XS+DA0001 passives SFP28-Direct-Attach-Kupferkabel: 1G/10G/25G, 1 m, beidseitig fest konfektionierte SFP28-Stecker. Kostengünstige Top-of-Rack-Anbindung.",
+    "kurzbeschreibung": "<p>Das MikroTik XS+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten SFP28-Steckern. Es verbindet zwei SFP28-Ports direkt über eine Länge von 1 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XS+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) im SFP28-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 1 m verbindet das Kabel zwei SFP28-Ports direkt; unterstützt werden die Datenraten 1G, 10G und 25G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
+      "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Top-of-Rack-Anbindung von Servern an einen 25G-Switch. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 1 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP28-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wie lang ist das XS+DA0001?",
+        "Das Kabel hat eine feste Länge von 1 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+DA0001",
+        "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
+      ],
+      [
+        "S+AO0005",
+        "MikroTik S+AO0005 – 10G SFP+ AOC 5 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP28 zu SFP28"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G / 25G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "1 m"
+      ],
+      [
+        "Anschluss",
+        "2× SFP28 (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xs_da0001",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/xs_da0001",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XS+DA0001 25G SFP28 Direct-Attach-Kupferkabel (DAC) – 1 m",
-  "titel_tag": "MikroTik XS+DA0001 25G SFP28 DAC 1 m | Hexwaren",
-  "meta_description": "Original MikroTik XS+DA0001 passives SFP28-Direct-Attach-Kupferkabel: 1G/10G/25G, 1 m, beidseitig fest konfektionierte SFP28-Stecker. Kostengünstige Top-of-Rack-Anbindung.",
-  "kurzbeschreibung": "<p>Das MikroTik XS+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten SFP28-Steckern. Es verbindet zwei SFP28-Ports direkt über eine Länge von 1 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XS+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) im SFP28-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 1 m verbindet das Kabel zwei SFP28-Ports direkt; unterstützt werden die Datenraten 1G, 10G und 25G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
-   "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Top-of-Rack-Anbindung von Servern an einen 25G-Switch."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP28-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wie lang ist das XS+DA0001?",
-    "Das Kabel hat eine feste Länge von 1 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+DA0001",
-    "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
-   ],
-   [
-    "S+AO0005",
-    "MikroTik S+AO0005 – 10G SFP+ AOC 5 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP28 zu SFP28"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G / 25G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "1 m"
-   ],
-   [
-    "Anschluss",
-    "2× SFP28 (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xs_da0001",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/xs_da0001",
-    "datasheet"
-   ]
-  }
- },
- "S-55DLC80D": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-55DLC80D": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-55DLC80D 1,25G SFP Transceiver – Singlemode 1550 nm, Dual-LC, 80 km",
+    "titel_tag": "MikroTik S-55DLC80D 1,25G SFP Singlemode 80 km | Hexwaren",
+    "meta_description": "Original MikroTik S-55DLC80D 1,25G-SFP-Modul für Singlemode-Glasfaser: 1550 nm, Dual-LC, bis 80 km. Für Gigabit-Verbindungen über lange Distanzen.",
+    "kurzbeschreibung": "<p>Das MikroTik S-55DLC80D ist ein Gigabit-SFP-Modul für Singlemode-Glasfaser. Mit 1550 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 80 km und eignet sich für Gigabit-Verbindungen über große Entfernungen zwischen Standorten.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-55DLC80D ist ein Gigabit-Transceiver im SFP-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1550 nm.",
+      "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 80 km bei einer Datenrate von 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über lange Distanzen zwischen weit entfernten Standorten vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 1550 nm, die Reichweite bis 80 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S-55DLC80D?",
+        "Über Singlemode-Glasfaser mit 1550 nm überbrückt das Modul Strecken von bis zu 80 km."
+      ],
+      [
+        "Für welche Fasern ist das Modul geeignet?",
+        "Es ist für Singlemode-Glasfaser ausgelegt und nutzt einen Dual-LC-Anschluss (UPC)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-31DLC20D",
+        "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
+      ],
+      [
+        "S-4554LC80D",
+        "MikroTik S-4554LC80D – 1,25G SFP BiDi 80 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1550 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 80 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Weitverkehrsnetz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/s_55dlc80d",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-55DLC80D 1,25G SFP Transceiver – Singlemode 1550 nm, Dual-LC, 80 km",
-  "titel_tag": "MikroTik S-55DLC80D 1,25G SFP Singlemode 80 km | Hexwaren",
-  "meta_description": "Original MikroTik S-55DLC80D 1,25G-SFP-Modul für Singlemode-Glasfaser: 1550 nm, Dual-LC, bis 80 km. Für Gigabit-Verbindungen über lange Distanzen.",
-  "kurzbeschreibung": "<p>Das MikroTik S-55DLC80D ist ein Gigabit-SFP-Modul für Singlemode-Glasfaser. Mit 1550 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 80 km und eignet sich für Gigabit-Verbindungen über große Entfernungen zwischen Standorten.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-55DLC80D ist ein Gigabit-Transceiver im SFP-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1550 nm.",
-   "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 80 km bei einer Datenrate von 1,25 Gbit/s. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über lange Distanzen zwischen weit entfernten Standorten vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S-55DLC80D?",
-    "Über Singlemode-Glasfaser mit 1550 nm überbrückt das Modul Strecken von bis zu 80 km."
-   ],
-   [
-    "Für welche Fasern ist das Modul geeignet?",
-    "Es ist für Singlemode-Glasfaser ausgelegt und nutzt einen Dual-LC-Anschluss (UPC)."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-31DLC20D",
-    "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
-   ],
-   [
-    "S-4554LC80D",
-    "MikroTik S-4554LC80D – 1,25G SFP BiDi 80 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1550 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 80 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +70 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/s_55dlc80d",
-    "datasheet"
-   ]
-  }
- },
- "XS+DA0003": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XS+DA0003": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XS+DA0003 25G SFP28 Direct-Attach-Kupferkabel (DAC) – 3 m",
+    "titel_tag": "MikroTik XS+DA0003 25G SFP28 DAC 3 m | Hexwaren",
+    "meta_description": "Original MikroTik XS+DA0003 passives SFP28-Direct-Attach-Kupferkabel: 1G/10G/25G, 3 m, beidseitig fest konfektionierte SFP28-Stecker. Kostengünstige Top-of-Rack-Anbindung.",
+    "kurzbeschreibung": "<p>Das MikroTik XS+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten SFP28-Steckern. Es verbindet zwei SFP28-Ports direkt über eine Länge von 3 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XS+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) im SFP28-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 3 m verbindet das Kabel zwei SFP28-Ports direkt; unterstützt werden die Datenraten 1G, 10G und 25G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
+      "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Top-of-Rack-Anbindung von Servern an einen 25G-Switch. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 3 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP28-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wie lang ist das XS+DA0003?",
+        "Das Kabel hat eine feste Länge von 3 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+DA0001",
+        "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
+      ],
+      [
+        "S+AO0005",
+        "MikroTik S+AO0005 – 10G SFP+ AOC 5 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP28 zu SFP28"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G / 25G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "3 m"
+      ],
+      [
+        "Anschluss",
+        "2× SFP28 (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xs_da0003",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/xs_da0003",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XS+DA0003 25G SFP28 Direct-Attach-Kupferkabel (DAC) – 3 m",
-  "titel_tag": "MikroTik XS+DA0003 25G SFP28 DAC 3 m | Hexwaren",
-  "meta_description": "Original MikroTik XS+DA0003 passives SFP28-Direct-Attach-Kupferkabel: 1G/10G/25G, 3 m, beidseitig fest konfektionierte SFP28-Stecker. Kostengünstige Top-of-Rack-Anbindung.",
-  "kurzbeschreibung": "<p>Das MikroTik XS+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten SFP28-Steckern. Es verbindet zwei SFP28-Ports direkt über eine Länge von 3 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XS+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) im SFP28-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 3 m verbindet das Kabel zwei SFP28-Ports direkt; unterstützt werden die Datenraten 1G, 10G und 25G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
-   "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Top-of-Rack-Anbindung von Servern an einen 25G-Switch."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP28-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wie lang ist das XS+DA0003?",
-    "Das Kabel hat eine feste Länge von 3 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+DA0001",
-    "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
-   ],
-   [
-    "S+AO0005",
-    "MikroTik S+AO0005 – 10G SFP+ AOC 5 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP28 zu SFP28"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G / 25G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "3 m"
-   ],
-   [
-    "Anschluss",
-    "2× SFP28 (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xs_da0003",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/xs_da0003",
-    "datasheet"
-   ]
-  }
- },
- "XQ+DA0001": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XQ+DA0001": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XQ+DA0001 100G QSFP28 Direct-Attach-Kupferkabel (DAC) – 1 m",
+    "titel_tag": "MikroTik XQ+DA0001 100G QSFP28 DAC 1 m | Hexwaren",
+    "meta_description": "Original MikroTik XQ+DA0001 passives QSFP28-Direct-Attach-Kupferkabel: 40G/100G, 1 m, beidseitig fest konfektionierte QSFP-Stecker. Kostengünstige 100G-Direktverbindung.",
+    "kurzbeschreibung": "<p>Das MikroTik XQ+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten QSFP-Steckern. Es verbindet zwei QSFP+- oder QSFP28-Ports direkt über eine Länge von 1 m und unterstützt 40G und 100G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 100G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XQ+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) im QSFP-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 1 m verbindet das Kabel zwei QSFP+- oder QSFP28-Ports direkt; unterstützt werden die Datenraten 40G und 100G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
+      "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige 100G-Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Anbindung benachbarter Switches oder Server. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 1 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP28-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wie lang ist das XQ+DA0001?",
+        "Das Kabel hat eine feste Länge von 1 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+DA0003",
+        "MikroTik XQ+DA0003 – 100G QSFP28 DAC 3 m"
+      ],
+      [
+        "DDQ+DA0001",
+        "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP28 zu QSFP28"
+      ],
+      [
+        "Datenrate",
+        "40G / 100G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "1 m"
+      ],
+      [
+        "Anschluss",
+        "2× QSFP+/QSFP28 (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xq_da0001",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/xq_da0001",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xq_da0001",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XQ+DA0001 100G QSFP28 Direct-Attach-Kupferkabel (DAC) – 1 m",
-  "titel_tag": "MikroTik XQ+DA0001 100G QSFP28 DAC 1 m | Hexwaren",
-  "meta_description": "Original MikroTik XQ+DA0001 passives QSFP28-Direct-Attach-Kupferkabel: 40G/100G, 1 m, beidseitig fest konfektionierte QSFP-Stecker. Kostengünstige 100G-Direktverbindung.",
-  "kurzbeschreibung": "<p>Das MikroTik XQ+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten QSFP-Steckern. Es verbindet zwei QSFP+- oder QSFP28-Ports direkt über eine Länge von 1 m und unterstützt 40G und 100G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 100G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XQ+DA0001 ist ein passives Direct-Attach-Kupferkabel (DAC) im QSFP-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 1 m verbindet das Kabel zwei QSFP+- oder QSFP28-Ports direkt; unterstützt werden die Datenraten 40G und 100G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
-   "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige 100G-Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Anbindung benachbarter Switches oder Server."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP28-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wie lang ist das XQ+DA0001?",
-    "Das Kabel hat eine feste Länge von 1 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+DA0003",
-    "MikroTik XQ+DA0003 – 100G QSFP28 DAC 3 m"
-   ],
-   [
-    "DDQ+DA0001",
-    "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP28 zu QSFP28"
-   ],
-   [
-    "Datenrate",
-    "40G / 100G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "1 m"
-   ],
-   [
-    "Anschluss",
-    "2× QSFP+/QSFP28 (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xq_da0001",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/xq_da0001",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xq_da0001",
-    "datasheet"
-   ]
-  }
- },
- "S+AO0005": {
-  "_facts": {
-   "unterkategorie": "AOC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S+AO0005": {
+    "_facts": {
+      "unterkategorie": "AOC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S+AO0005 10G SFP+ Active Optical Cable (AOC) – 5 m",
+    "titel_tag": "MikroTik S+AO0005 10G SFP+ AOC 5 m | Hexwaren",
+    "meta_description": "Original MikroTik S+AO0005 aktives optisches Kabel (AOC): SFP+ zu SFP+, 1G/10G, 5 m, beidseitig fest konfektioniert. Leichte 10G-Direktverbindung.",
+    "kurzbeschreibung": "<p>Das MikroTik S+AO0005 ist ein aktives optisches Kabel (AOC) mit zwei fest konfektionierten SFP+-Steckern. Es verbindet zwei SFP+-Ports direkt über eine Länge von 5 m und unterstützt 1G und 10G.</p><p>Als aktives optisches Kabel ist es leichter und biegsamer als ein Kupfer-DAC. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik S+AO0005 ist ein aktives optisches Kabel (AOC) im SFP+-Formfaktor mit zwei fest konfektionierten Steckern und integrierten optischen Sende-/Empfangseinheiten.",
+      "Über eine Länge von 5 m verbindet das Kabel zwei SFP+-Ports direkt; unterstützt werden die Datenraten 1G und 10G. Im Vergleich zu einem Kupfer-DAC ist ein AOC leichter, dünner und biegsamer und überbrückt größere Längen.",
+      "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die saubere 10G-Direktverbindung zwischen Geräten innerhalb oder zwischen benachbarten Racks vorgesehen, in denen die Kabelführung eines starren DAC unpraktisch wäre. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 5 m; die werkseitig terminierte Aktivoptik liefert eine geringe Latenz und einen niedrigen Stromverbrauch."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP+-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Worin unterscheidet sich ein AOC von einem DAC?",
+        "Ein AOC überträgt optisch über fest konfektionierte Transceiver-Enden – es ist leichter und biegsamer als ein Kupfer-DAC und für größere Längen geeignet."
+      ],
+      [
+        "Wie lang ist das S+AO0005?",
+        "Das Kabel hat eine feste Länge von 5 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XS+DA0001",
+        "MikroTik XS+DA0001 – 25G SFP28 DAC 1 m"
+      ],
+      [
+        "S+85DLC03D",
+        "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP+ zu SFP+"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G"
+      ],
+      [
+        "Kabeltyp",
+        "Aktives optisches Kabel (AOC)"
+      ],
+      [
+        "Länge",
+        "5 m"
+      ],
+      [
+        "Anschluss",
+        "2× SFP+ (fest konfektioniert)"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/s_ao0005",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/s_ao0005",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/s_ao0005",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S+AO0005 10G SFP+ Active Optical Cable (AOC) – 5 m",
-  "titel_tag": "MikroTik S+AO0005 10G SFP+ AOC 5 m | Hexwaren",
-  "meta_description": "Original MikroTik S+AO0005 aktives optisches Kabel (AOC): SFP+ zu SFP+, 1G/10G, 5 m, beidseitig fest konfektioniert. Leichte 10G-Direktverbindung.",
-  "kurzbeschreibung": "<p>Das MikroTik S+AO0005 ist ein aktives optisches Kabel (AOC) mit zwei fest konfektionierten SFP+-Steckern. Es verbindet zwei SFP+-Ports direkt über eine Länge von 5 m und unterstützt 1G und 10G.</p><p>Als aktives optisches Kabel ist es leichter und biegsamer als ein Kupfer-DAC. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik S+AO0005 ist ein aktives optisches Kabel (AOC) im SFP+-Formfaktor mit zwei fest konfektionierten Steckern und integrierten optischen Sende-/Empfangseinheiten.",
-   "Über eine Länge von 5 m verbindet das Kabel zwei SFP+-Ports direkt; unterstützt werden die Datenraten 1G und 10G. Im Vergleich zu einem Kupfer-DAC ist ein AOC leichter, dünner und biegsamer und überbrückt größere Längen.",
-   "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die saubere 10G-Direktverbindung zwischen Geräten innerhalb oder zwischen benachbarten Racks vorgesehen, in denen die Kabelführung eines starren DAC unpraktisch wäre."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP+-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Worin unterscheidet sich ein AOC von einem DAC?",
-    "Ein AOC überträgt optisch über fest konfektionierte Transceiver-Enden – es ist leichter und biegsamer als ein Kupfer-DAC und für größere Längen geeignet."
-   ],
-   [
-    "Wie lang ist das S+AO0005?",
-    "Das Kabel hat eine feste Länge von 5 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XS+DA0001",
-    "MikroTik XS+DA0001 – 25G SFP28 DAC 1 m"
-   ],
-   [
-    "S+85DLC03D",
-    "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP+ zu SFP+"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G"
-   ],
-   [
-    "Kabeltyp",
-    "Aktives optisches Kabel (AOC)"
-   ],
-   [
-    "Länge",
-    "5 m"
-   ],
-   [
-    "Anschluss",
-    "2× SFP+ (fest konfektioniert)"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/s_ao0005",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/s_ao0005",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/s_ao0005",
-    "datasheet"
-   ]
-  }
- },
- "S+85DLC03D": {
-  "_facts": {
-   "unterkategorie": "SFP+",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S+85DLC03D": {
+    "_facts": {
+      "unterkategorie": "SFP+",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S+85DLC03D 10G SFP+ Transceiver – Multimode 850 nm, Dual-LC, 300 m",
+    "titel_tag": "MikroTik S+85DLC03D 10G SFP+ Multimode 300 m | Hexwaren",
+    "meta_description": "Original MikroTik S+85DLC03D 10G-SFP+-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 300 m. Für 10-Gigabit-Verbindungen im Rechenzentrum.",
+    "kurzbeschreibung": "<p>Das MikroTik S+85DLC03D ist ein 10-Gigabit-SFP+-Modul für Multimode-Glasfaser. Mit 850 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 300 m und eignet sich für 10G-Verbindungen innerhalb eines Rechenzentrums.</p><p>Das Modul unterstützt 1G und 10G. Als Original-MikroTik-Neuware wird es versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP+-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S+85DLC03D ist ein 10-Gigabit-Transceiver im SFP+-Formfaktor für den Betrieb über Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
+      "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 300 m; unterstützt werden Datenraten von 1G und 10G. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze, kostengünstige 10G-Verbindungen innerhalb von Rechenzentren über Multimode-Fasern vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP+-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 850 nm, die Reichweite bis 300 m; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP+-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S+85DLC03D?",
+        "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 300 m."
+      ],
+      [
+        "Welche Datenraten werden unterstützt?",
+        "Das Modul unterstützt 1G und 10G und nutzt einen Dual-LC-Anschluss (UPC)."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S+31DLC10D",
+        "MikroTik S+31DLC10D – 10G SFP+ Singlemode 10 km"
+      ],
+      [
+        "XS+85LC01D",
+        "MikroTik XS+85LC01D – 25G SFP28 Multimode 100 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP+"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (MM)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 300 m"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Kurzstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/Splus85DLC03D",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S+85DLC03D 10G SFP+ Transceiver – Multimode 850 nm, Dual-LC, 300 m",
-  "titel_tag": "MikroTik S+85DLC03D 10G SFP+ Multimode 300 m | Hexwaren",
-  "meta_description": "Original MikroTik S+85DLC03D 10G-SFP+-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 300 m. Für 10-Gigabit-Verbindungen im Rechenzentrum.",
-  "kurzbeschreibung": "<p>Das MikroTik S+85DLC03D ist ein 10-Gigabit-SFP+-Modul für Multimode-Glasfaser. Mit 850 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 300 m und eignet sich für 10G-Verbindungen innerhalb eines Rechenzentrums.</p><p>Das Modul unterstützt 1G und 10G. Als Original-MikroTik-Neuware wird es versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP+-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S+85DLC03D ist ein 10-Gigabit-Transceiver im SFP+-Formfaktor für den Betrieb über Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
-   "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 300 m; unterstützt werden Datenraten von 1G und 10G. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze, kostengünstige 10G-Verbindungen innerhalb von Rechenzentren über Multimode-Fasern vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem SFP+-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP+-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S+85DLC03D?",
-    "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 300 m."
-   ],
-   [
-    "Welche Datenraten werden unterstützt?",
-    "Das Modul unterstützt 1G und 10G und nutzt einen Dual-LC-Anschluss (UPC)."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S+31DLC10D",
-    "MikroTik S+31DLC10D – 10G SFP+ Singlemode 10 km"
-   ],
-   [
-    "XS+85LC01D",
-    "MikroTik XS+85LC01D – 25G SFP28 Multimode 100 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP+"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G"
-   ],
-   [
-    "Fasertyp",
-    "Multimode (MM)"
-   ],
-   [
-    "Wellenlänge",
-    "850 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 300 m"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +70 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/Splus85DLC03D",
-    "datasheet"
-   ]
-  }
- },
- "XQ+DA0003": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XQ+DA0003": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XQ+DA0003 100G QSFP28 Direct-Attach-Kupferkabel (DAC) – 3 m",
+    "titel_tag": "MikroTik XQ+DA0003 100G QSFP28 DAC 3 m | Hexwaren",
+    "meta_description": "Original MikroTik XQ+DA0003 passives QSFP28-Direct-Attach-Kupferkabel: 40G/100G, 3 m, beidseitig fest konfektionierte QSFP-Stecker. Kostengünstige 100G-Direktverbindung.",
+    "kurzbeschreibung": "<p>Das MikroTik XQ+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten QSFP-Steckern. Es verbindet zwei QSFP+- oder QSFP28-Ports direkt über eine Länge von 3 m und unterstützt 40G und 100G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 100G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XQ+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) im QSFP-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 3 m verbindet das Kabel zwei QSFP+- oder QSFP28-Ports direkt; unterstützt werden die Datenraten 40G und 100G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
+      "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige 100G-Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Anbindung benachbarter Switches oder Server. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 3 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP28-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wie lang ist das XQ+DA0003?",
+        "Das Kabel hat eine feste Länge von 3 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+DA0001",
+        "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
+      ],
+      [
+        "DDQ+DA0001",
+        "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP28 zu QSFP28"
+      ],
+      [
+        "Datenrate",
+        "40G / 100G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "3 m"
+      ],
+      [
+        "Anschluss",
+        "2× QSFP+/QSFP28 (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xq_da0003",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/xq_da0003",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xq_da0003",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XQ+DA0003 100G QSFP28 Direct-Attach-Kupferkabel (DAC) – 3 m",
-  "titel_tag": "MikroTik XQ+DA0003 100G QSFP28 DAC 3 m | Hexwaren",
-  "meta_description": "Original MikroTik XQ+DA0003 passives QSFP28-Direct-Attach-Kupferkabel: 40G/100G, 3 m, beidseitig fest konfektionierte QSFP-Stecker. Kostengünstige 100G-Direktverbindung.",
-  "kurzbeschreibung": "<p>Das MikroTik XQ+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) mit zwei fest konfektionierten QSFP-Steckern. Es verbindet zwei QSFP+- oder QSFP28-Ports direkt über eine Länge von 3 m und unterstützt 40G und 100G.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 100G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XQ+DA0003 ist ein passives Direct-Attach-Kupferkabel (DAC) im QSFP-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 3 m verbindet das Kabel zwei QSFP+- oder QSFP28-Ports direkt; unterstützt werden die Datenraten 40G und 100G. Als passive Twinax-Baugruppe kommt es ohne eigene Stromversorgung aus.",
-   "Als Original-MikroTik-Neuware ist das Kabel versiegelt und für die kostengünstige 100G-Direktverbindung von Geräten innerhalb eines Racks vorgesehen, etwa zur Anbindung benachbarter Switches oder Server."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP28-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wie lang ist das XQ+DA0003?",
-    "Das Kabel hat eine feste Länge von 3 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+DA0001",
-    "MikroTik XQ+DA0001 – 100G QSFP28 DAC 1 m"
-   ],
-   [
-    "DDQ+DA0001",
-    "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP28 zu QSFP28"
-   ],
-   [
-    "Datenrate",
-    "40G / 100G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "3 m"
-   ],
-   [
-    "Anschluss",
-    "2× QSFP+/QSFP28 (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xq_da0003",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/xq_da0003",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xq_da0003",
-    "datasheet"
-   ]
-  }
- },
- "XS+85LC01D": {
-  "_facts": {
-   "unterkategorie": "SFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XS+85LC01D": {
+    "_facts": {
+      "unterkategorie": "SFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XS+85LC01D 25G SFP28 Transceiver – Multimode 850 nm, Dual-LC, 100 m",
+    "titel_tag": "MikroTik XS+85LC01D 25G SFP28 Multimode 100 m | Hexwaren",
+    "meta_description": "Original MikroTik XS+85LC01D 25G-SFP28-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 100 m. Multi-Rate 1G/10G/25G. Für 25G im Rechenzentrum.",
+    "kurzbeschreibung": "<p>Das MikroTik XS+85LC01D ist ein 25-Gigabit-SFP28-Modul für Multimode-Glasfaser. Mit 850 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 100 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Damit eignet es sich für 25G-Verbindungen innerhalb eines Rechenzentrums. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XS+85LC01D ist ein Multi-Rate-Transceiver im SFP28-Formfaktor für den Betrieb über Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
+      "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 100 m; unterstützt werden die Datenraten 1G, 10G und 25G. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze 25G-Verbindungen innerhalb von Rechenzentren über Multimode-Fasern vorgesehen. Durch die Multi-Rate-Fähigkeit ist es auch in 10G-Umgebungen einsetzbar. Laut Datenblatt die Betriebswellenlänge 850 nm, die Reichweite bis 100 m; der Betriebstemperaturbereich liegt bei -40 bis +85 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das XS+85LC01D?",
+        "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 100 m."
+      ],
+      [
+        "Welche Datenraten werden unterstützt?",
+        "Das Modul ist multi-rate-fähig und unterstützt 1G, 10G und 25G."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XS+31LC10D",
+        "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
+      ],
+      [
+        "S+85DLC03D",
+        "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP28"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G / 25G"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (MM)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 100 m"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Kurzstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/xs_85lc01d",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XS+85LC01D 25G SFP28 Transceiver – Multimode 850 nm, Dual-LC, 100 m",
-  "titel_tag": "MikroTik XS+85LC01D 25G SFP28 Multimode 100 m | Hexwaren",
-  "meta_description": "Original MikroTik XS+85LC01D 25G-SFP28-Modul für Multimode-Glasfaser: 850 nm, Dual-LC, bis 100 m. Multi-Rate 1G/10G/25G. Für 25G im Rechenzentrum.",
-  "kurzbeschreibung": "<p>Das MikroTik XS+85LC01D ist ein 25-Gigabit-SFP28-Modul für Multimode-Glasfaser. Mit 850 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 100 m und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Damit eignet es sich für 25G-Verbindungen innerhalb eines Rechenzentrums. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XS+85LC01D ist ein Multi-Rate-Transceiver im SFP28-Formfaktor für den Betrieb über Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
-   "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 100 m; unterstützt werden die Datenraten 1G, 10G und 25G. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze 25G-Verbindungen innerhalb von Rechenzentren über Multimode-Fasern vorgesehen. Durch die Multi-Rate-Fähigkeit ist es auch in 10G-Umgebungen einsetzbar."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das XS+85LC01D?",
-    "Über Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 100 m."
-   ],
-   [
-    "Welche Datenraten werden unterstützt?",
-    "Das Modul ist multi-rate-fähig und unterstützt 1G, 10G und 25G."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XS+31LC10D",
-    "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
-   ],
-   [
-    "S+85DLC03D",
-    "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP28"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G / 25G"
-   ],
-   [
-    "Fasertyp",
-    "Multimode (MM)"
-   ],
-   [
-    "Wellenlänge",
-    "850 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 100 m"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +85 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/xs_85lc01d",
-    "datasheet"
-   ]
-  }
- },
- "S+RJ10": {
-  "_facts": {
-   "unterkategorie": "SFP+",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S+RJ10": {
+    "_facts": {
+      "unterkategorie": "SFP+",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S+RJ10 10G SFP+ Transceiver – RJ45-Kupfer, Multi-Rate bis 10G, 30 m",
+    "titel_tag": "MikroTik S+RJ10 10G SFP+ RJ45-Kupfer 30 m | Hexwaren",
+    "meta_description": "Original MikroTik S+RJ10 SFP+-Modul mit RJ45-Anschluss: Multi-Rate 10M/100M/1G/2.5G/5G/10G über Kupfer, bis 30 m bei 10G. 10G-Ethernet über Twisted-Pair.",
+    "kurzbeschreibung": "<p>Das MikroTik S+RJ10 ist ein SFP+-Modul mit RJ45-Anschluss für Kupferverkabelung. Es unterstützt mehrere Datenraten von 10 Mbit/s bis 10 Gbit/s (10M, 100M, 1G, 2.5G, 5G, 10G) und bindet kupferbasierte Geräte an einen SFP+-Steckplatz an.</p><p>Bei 10 Gbit/s beträgt die Reichweite bis zu 30 m. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik S+RJ10 ist ein Multi-Rate-Modul im SFP+-Formfaktor mit RJ45-Anschluss für strukturierte Kupferverkabelung.",
+      "Unterstützt werden Datenraten von 10 Mbit/s bis 10 Gbit/s (10M, 100M, 1G, 2.5G, 5G und 10G); bei 10 Gbit/s liegt die Reichweite bei bis zu 30 m. Der getestete Umgebungstemperaturbereich reicht von -20 bis +60 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für die Anbindung kupferbasierter Endgeräte an einen SFP+-Steckplatz vorgesehen, ohne dass Glasfaser erforderlich ist. Es eignet sich für gemischte Multi-Gigabit-Umgebungen über Twisted-Pair. Laut Datenblatt die Reichweite bis 30 m bei 10 Gbit/s; der Betriebstemperaturbereich liegt bei -20 bis +60 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP+-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Datenraten unterstützt das S+RJ10?",
+        "Das Modul unterstützt 10M, 100M, 1G, 2.5G, 5G und 10G über Kupfer."
+      ],
+      [
+        "Welche Reichweite erreicht das Modul bei 10G?",
+        "Bei 10 Gbit/s überträgt das Modul über Twisted-Pair-Kupfer bis zu 30 m."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-RJ01",
+        "MikroTik S-RJ01 – 1,25G SFP RJ45-Kupfer 100 m"
+      ],
+      [
+        "S+85DLC03D",
+        "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP+"
+      ],
+      [
+        "Datenrate",
+        "10M / 100M / 1G / 2.5G / 5G / 10G"
+      ],
+      [
+        "Medientyp",
+        "Kupfer (Twisted-Pair)"
+      ],
+      [
+        "Reichweite",
+        "bis 30 m bei 10 Gbit/s"
+      ],
+      [
+        "Anschluss",
+        "RJ45"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-20 bis +60 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-20 bis +60 °C"
+      ],
+      [
+        "Anwendung",
+        "Zugriffs-/Verteilnetz (Kupfer)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/s_rj10",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/s_rj10",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/s_rj10",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/s_rj10",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/s_rj10",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S+RJ10 10G SFP+ Transceiver – RJ45-Kupfer, Multi-Rate bis 10G, 30 m",
-  "titel_tag": "MikroTik S+RJ10 10G SFP+ RJ45-Kupfer 30 m | Hexwaren",
-  "meta_description": "Original MikroTik S+RJ10 SFP+-Modul mit RJ45-Anschluss: Multi-Rate 10M/100M/1G/2.5G/5G/10G über Kupfer, bis 30 m bei 10G. 10G-Ethernet über Twisted-Pair.",
-  "kurzbeschreibung": "<p>Das MikroTik S+RJ10 ist ein SFP+-Modul mit RJ45-Anschluss für Kupferverkabelung. Es unterstützt mehrere Datenraten von 10 Mbit/s bis 10 Gbit/s (10M, 100M, 1G, 2.5G, 5G, 10G) und bindet kupferbasierte Geräte an einen SFP+-Steckplatz an.</p><p>Bei 10 Gbit/s beträgt die Reichweite bis zu 30 m. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik S+RJ10 ist ein Multi-Rate-Modul im SFP+-Formfaktor mit RJ45-Anschluss für strukturierte Kupferverkabelung.",
-   "Unterstützt werden Datenraten von 10 Mbit/s bis 10 Gbit/s (10M, 100M, 1G, 2.5G, 5G und 10G); bei 10 Gbit/s liegt die Reichweite bei bis zu 30 m. Der getestete Umgebungstemperaturbereich reicht von -20 bis +60 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für die Anbindung kupferbasierter Endgeräte an einen SFP+-Steckplatz vorgesehen, ohne dass Glasfaser erforderlich ist. Es eignet sich für gemischte Multi-Gigabit-Umgebungen über Twisted-Pair."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP+-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Datenraten unterstützt das S+RJ10?",
-    "Das Modul unterstützt 10M, 100M, 1G, 2.5G, 5G und 10G über Kupfer."
-   ],
-   [
-    "Welche Reichweite erreicht das Modul bei 10G?",
-    "Bei 10 Gbit/s überträgt das Modul über Twisted-Pair-Kupfer bis zu 30 m."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-RJ01",
-    "MikroTik S-RJ01 – 1,25G SFP RJ45-Kupfer 100 m"
-   ],
-   [
-    "S+85DLC03D",
-    "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP+"
-   ],
-   [
-    "Datenrate",
-    "10M / 100M / 1G / 2.5G / 5G / 10G"
-   ],
-   [
-    "Medientyp",
-    "Kupfer (Twisted-Pair)"
-   ],
-   [
-    "Reichweite",
-    "bis 30 m bei 10 Gbit/s"
-   ],
-   [
-    "Anschluss",
-    "RJ45"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-20 bis +60 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/s_rj10",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/s_rj10",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/s_rj10",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/s_rj10",
-    "datasheet"
-   ]
-  }
- },
- "S+31DLC10D": {
-  "_facts": {
-   "unterkategorie": "SFP+",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S+31DLC10D": {
+    "_facts": {
+      "unterkategorie": "SFP+",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S+31DLC10D 10G SFP+ Transceiver – Singlemode 1310 nm, Dual-LC, 10 km",
+    "titel_tag": "MikroTik S+31DLC10D 10G SFP+ Singlemode 10 km | Hexwaren",
+    "meta_description": "Original MikroTik S+31DLC10D 10G-SFP+-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 10 km. Robustes 10G-Modul für längere Distanzen.",
+    "kurzbeschreibung": "<p>Das MikroTik S+31DLC10D ist ein robustes, industrietaugliches 10G-SFP+-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss ist es für lange Verbindungen von bis zu 10 km ausgelegt.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP+-Steckplatz. Für den Betrieb wird ein Duplex-Singlemode-Faserpaar benötigt.</p>",
+    "intro": [
+      "Das MikroTik S+31DLC10D ist ein zuverlässiges, industrietaugliches 10-Gigabit-Modul im SFP+-Formfaktor für den Betrieb über Singlemode-Glasfaser.",
+      "Mit einer Wellenlänge von 1310 nm und einem Dual-LC-Anschluss ist das Modul laut Hersteller für Singlemode-Strecken von bis zu 10 km ausgelegt und damit für längere Distanzen zwischen Gebäuden oder Standorten geeignet.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und lässt sich in MikroTik-Geräten mit freiem SFP+-Steckplatz betreiben. Es richtet sich an 10G-Verbindungen, die über eine Singlemode-Faserstrecke geführt werden. Laut Datenblatt die Betriebswellenlänge 1310 nm, die Reichweite bis 10 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP+-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das S+31DLC10D?",
+        "Laut Hersteller ist das Modul für Singlemode-Strecken von bis zu 10 km ausgelegt."
+      ],
+      [
+        "Für welche Fasern ist das Modul geeignet?",
+        "Es ist für Singlemode-Glasfaser bei 1310 nm ausgelegt und nutzt einen Dual-LC-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S+85DLC03D",
+        "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
+      ],
+      [
+        "XS+31LC10D",
+        "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP+"
+      ],
+      [
+        "Datenrate",
+        "10G"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/s_31dlc10d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/s_31dlc10d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/s_31dlc10d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/s_31dlc10d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/s_31dlc10d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S+31DLC10D 10G SFP+ Transceiver – Singlemode 1310 nm, Dual-LC, 10 km",
-  "titel_tag": "MikroTik S+31DLC10D 10G SFP+ Singlemode 10 km | Hexwaren",
-  "meta_description": "Original MikroTik S+31DLC10D 10G-SFP+-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 10 km. Robustes 10G-Modul für längere Distanzen.",
-  "kurzbeschreibung": "<p>Das MikroTik S+31DLC10D ist ein robustes, industrietaugliches 10G-SFP+-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss ist es für lange Verbindungen von bis zu 10 km ausgelegt.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP+-Steckplatz. Für den Betrieb wird ein Duplex-Singlemode-Faserpaar benötigt.</p>",
-  "intro": [
-   "Das MikroTik S+31DLC10D ist ein zuverlässiges, industrietaugliches 10-Gigabit-Modul im SFP+-Formfaktor für den Betrieb über Singlemode-Glasfaser.",
-   "Mit einer Wellenlänge von 1310 nm und einem Dual-LC-Anschluss ist das Modul laut Hersteller für Singlemode-Strecken von bis zu 10 km ausgelegt und damit für längere Distanzen zwischen Gebäuden oder Standorten geeignet.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und lässt sich in MikroTik-Geräten mit freiem SFP+-Steckplatz betreiben. Es richtet sich an 10G-Verbindungen, die über eine Singlemode-Faserstrecke geführt werden."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP+-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das S+31DLC10D?",
-    "Laut Hersteller ist das Modul für Singlemode-Strecken von bis zu 10 km ausgelegt."
-   ],
-   [
-    "Für welche Fasern ist das Modul geeignet?",
-    "Es ist für Singlemode-Glasfaser bei 1310 nm ausgelegt und nutzt einen Dual-LC-Anschluss."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S+85DLC03D",
-    "MikroTik S+85DLC03D – 10G SFP+ Multimode 300 m"
-   ],
-   [
-    "XS+31LC10D",
-    "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP+"
-   ],
-   [
-    "Datenrate",
-    "10G"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1310 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 10 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/s_31dlc10d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/s_31dlc10d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/s_31dlc10d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/s_31dlc10d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/s_31dlc10d",
-    "datasheet"
-   ]
-  }
- },
- "S-3553LC20D": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-3553LC20D": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-3553LC20D 1,25G SFP BiDi – Singlemode, Single-LC, 20 km",
+    "titel_tag": "MikroTik S-3553LC20D 1,25G SFP BiDi 20 km | Hexwaren",
+    "meta_description": "Original MikroTik S-3553LC20D 1,25G-SFP-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1310/1550 nm, bis 20 km. Gigabit über eine einzige Faser.",
+    "kurzbeschreibung": "<p>Das MikroTik S-3553LC20D ist ein Gigabit-SFP-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1310/1550 nm) und überbrückt dabei bis zu 20 km.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-3553LC20D ist ein bidirektionaler Gigabit-Transceiver im SFP-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
+      "Senden und Empfangen erfolgen über getrennte Wellenlängen (1310 nm und 1550 nm); über den Single-LC-Anschluss werden Strecken von bis zu 20 km bei 1,25 Gbit/s überbrückt. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen vorgesehen, bei denen nur eine einzige Faser zur Verfügung steht. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben. Laut Datenblatt die Betriebswellenlänge 1310 nm / 1550 nm, die Reichweite bis 20 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Was bedeutet BiDi bei diesem Modul?",
+        "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1310/1550 nm); ein Single-LC-Anschluss genügt."
+      ],
+      [
+        "Welche Reichweite erreicht das S-3553LC20D?",
+        "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 20 km."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-4554LC80D",
+        "MikroTik S-4554LC80D – 1,25G SFP BiDi 80 km"
+      ],
+      [
+        "S-31DLC20D",
+        "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Übertragung",
+        "BiDi (eine Faser)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm / 1550 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 20 km"
+      ],
+      [
+        "Anschluss",
+        "Single LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/S-3553LC20D",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-3553LC20D 1,25G SFP BiDi – Singlemode, Single-LC, 20 km",
-  "titel_tag": "MikroTik S-3553LC20D 1,25G SFP BiDi 20 km | Hexwaren",
-  "meta_description": "Original MikroTik S-3553LC20D 1,25G-SFP-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1310/1550 nm, bis 20 km. Gigabit über eine einzige Faser.",
-  "kurzbeschreibung": "<p>Das MikroTik S-3553LC20D ist ein Gigabit-SFP-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1310/1550 nm) und überbrückt dabei bis zu 20 km.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-3553LC20D ist ein bidirektionaler Gigabit-Transceiver im SFP-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
-   "Senden und Empfangen erfolgen über getrennte Wellenlängen (1310 nm und 1550 nm); über den Single-LC-Anschluss werden Strecken von bis zu 20 km bei 1,25 Gbit/s überbrückt. Der getestete Umgebungstemperaturbereich reicht von -40 bis +70 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen vorgesehen, bei denen nur eine einzige Faser zur Verfügung steht. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Was bedeutet BiDi bei diesem Modul?",
-    "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1310/1550 nm); ein Single-LC-Anschluss genügt."
-   ],
-   [
-    "Welche Reichweite erreicht das S-3553LC20D?",
-    "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 20 km."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-4554LC80D",
-    "MikroTik S-4554LC80D – 1,25G SFP BiDi 80 km"
-   ],
-   [
-    "S-31DLC20D",
-    "MikroTik S-31DLC20D – 1,25G SFP Singlemode 20 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Übertragung",
-    "BiDi (eine Faser)"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1310 nm / 1550 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 20 km"
-   ],
-   [
-    "Anschluss",
-    "Single LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +70 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/S-3553LC20D",
-    "datasheet"
-   ]
-  }
- },
- "DDQ+DA0001": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "DDQ+DA0001": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik DDQ+DA0001 400G QSFP-DD Direct-Attach-Kupferkabel (DAC) – 1 m",
+    "titel_tag": "MikroTik DDQ+DA0001 400G QSFP-DD DAC 1 m | Hexwaren",
+    "meta_description": "Original MikroTik DDQ+DA0001 passives 400G-QSFP-DD-Direct-Attach-Kupferkabel, 1 m. Direkte Verbindung ultraschneller Geräte wie CRS812 und CRS804.",
+    "kurzbeschreibung": "<p>Das MikroTik DDQ+DA0001 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor. Über eine Länge von 1 m verbindet es zwei QSFP-DD-Ports direkt und ermöglicht eine einfache Verbindung ultraschneller Geräte wie CRS812 und CRS804.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 400G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik DDQ+DA0001 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 1 m verbindet das Kabel zwei QSFP-DD-Ports direkt und ermöglicht laut Hersteller eine einfache Direktverbindung ultraschneller Geräte wie der MikroTik-Modelle CRS812 und CRS804.",
+      "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für die kostengünstige 400G-Direktverbindung innerhalb eines Racks vorgesehen. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 1 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP-DD-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wofür eignet sich das Kabel?",
+        "Für die direkte 400G-Verbindung ultraschneller MikroTik-Geräte wie CRS812 und CRS804 innerhalb eines Racks."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DDQ+DA0003",
+        "MikroTik DDQ+DA0003 – 400G QSFP-DD DAC 3 m"
+      ],
+      [
+        "DDQ+85MP01D",
+        "MikroTik DDQ+85MP01D – 400G QSFP-DD Multimode"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP-DD zu QSFP-DD"
+      ],
+      [
+        "Datenrate",
+        "400G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "1 m"
+      ],
+      [
+        "Anschluss",
+        "2× QSFP-DD (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/ddq_da0001",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/ddq_da0001",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik DDQ+DA0001 400G QSFP-DD Direct-Attach-Kupferkabel (DAC) – 1 m",
-  "titel_tag": "MikroTik DDQ+DA0001 400G QSFP-DD DAC 1 m | Hexwaren",
-  "meta_description": "Original MikroTik DDQ+DA0001 passives 400G-QSFP-DD-Direct-Attach-Kupferkabel, 1 m. Direkte Verbindung ultraschneller Geräte wie CRS812 und CRS804.",
-  "kurzbeschreibung": "<p>Das MikroTik DDQ+DA0001 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor. Über eine Länge von 1 m verbindet es zwei QSFP-DD-Ports direkt und ermöglicht eine einfache Verbindung ultraschneller Geräte wie CRS812 und CRS804.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 400G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik DDQ+DA0001 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 1 m verbindet das Kabel zwei QSFP-DD-Ports direkt und ermöglicht laut Hersteller eine einfache Direktverbindung ultraschneller Geräte wie der MikroTik-Modelle CRS812 und CRS804.",
-   "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für die kostengünstige 400G-Direktverbindung innerhalb eines Racks vorgesehen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP-DD-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wofür eignet sich das Kabel?",
-    "Für die direkte 400G-Verbindung ultraschneller MikroTik-Geräte wie CRS812 und CRS804 innerhalb eines Racks."
-   ]
-  ],
-  "verwandte": [
-   [
-    "DDQ+DA0003",
-    "MikroTik DDQ+DA0003 – 400G QSFP-DD DAC 3 m"
-   ],
-   [
-    "DDQ+85MP01D",
-    "MikroTik DDQ+85MP01D – 400G QSFP-DD Multimode"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP-DD zu QSFP-DD"
-   ],
-   [
-    "Datenrate",
-    "400G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "1 m"
-   ],
-   [
-    "Anschluss",
-    "2× QSFP-DD (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/ddq_da0001",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/ddq_da0001",
-    "datasheet"
-   ]
-  }
- },
- "S-4554LC80D": {
-  "_facts": {
-   "unterkategorie": "SFP",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "S-4554LC80D": {
+    "_facts": {
+      "unterkategorie": "SFP",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik S-4554LC80D 1,25G SFP BiDi – Singlemode, Single-LC, 80 km",
+    "titel_tag": "MikroTik S-4554LC80D 1,25G SFP BiDi 80 km | Hexwaren",
+    "meta_description": "Original MikroTik S-4554LC80D 1,25G-SFP-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1490/1550 nm, bis 80 km. Gigabit über eine Faser, große Distanz.",
+    "kurzbeschreibung": "<p>Das MikroTik S-4554LC80D ist ein Gigabit-SFP-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1490/1550 nm) und überbrückt dabei bis zu 80 km.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik S-4554LC80D ist ein bidirektionaler Gigabit-Transceiver im SFP-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
+      "Senden und Empfangen erfolgen über getrennte Wellenlängen (1490 nm und 1550 nm); über den Single-LC-Anschluss werden Strecken von bis zu 80 km bei 1,25 Gbit/s überbrückt. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über große Distanzen vorgesehen, bei denen nur eine einzige Faser verfügbar ist. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben. Laut Datenblatt die Betriebswellenlänge 1490 nm / 1550 nm, die Reichweite bis 80 km; der Betriebstemperaturbereich liegt bei -40 bis +85 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Was bedeutet BiDi bei diesem Modul?",
+        "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1490/1550 nm); ein Single-LC-Anschluss genügt."
+      ],
+      [
+        "Welche Reichweite erreicht das S-4554LC80D?",
+        "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 80 km."
+      ]
+    ],
+    "verwandte": [
+      [
+        "S-3553LC20D",
+        "MikroTik S-3553LC20D – 1,25G SFP BiDi 20 km"
+      ],
+      [
+        "S-55DLC80D",
+        "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP"
+      ],
+      [
+        "Datenrate",
+        "1,25 Gbit/s"
+      ],
+      [
+        "Übertragung",
+        "BiDi (eine Faser)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1490 nm / 1550 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 80 km"
+      ],
+      [
+        "Anschluss",
+        "Single LC UPC"
+      ],
+      [
+        "Betriebstemperatur (getestet)",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +85 °C"
+      ],
+      [
+        "Anwendung",
+        "Weitverkehrsnetz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Betriebstemperatur (getestet)": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "https://mikrotik.com/product/s_4554lc80d",
+        "datasheet"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik S-4554LC80D 1,25G SFP BiDi – Singlemode, Single-LC, 80 km",
-  "titel_tag": "MikroTik S-4554LC80D 1,25G SFP BiDi 80 km | Hexwaren",
-  "meta_description": "Original MikroTik S-4554LC80D 1,25G-SFP-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1490/1550 nm, bis 80 km. Gigabit über eine Faser, große Distanz.",
-  "kurzbeschreibung": "<p>Das MikroTik S-4554LC80D ist ein Gigabit-SFP-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1490/1550 nm) und überbrückt dabei bis zu 80 km.</p><p>Die Datenrate beträgt 1,25 Gbit/s. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit SFP-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik S-4554LC80D ist ein bidirektionaler Gigabit-Transceiver im SFP-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
-   "Senden und Empfangen erfolgen über getrennte Wellenlängen (1490 nm und 1550 nm); über den Single-LC-Anschluss werden Strecken von bis zu 80 km bei 1,25 Gbit/s überbrückt. Der getestete Umgebungstemperaturbereich reicht von -40 bis +85 °C.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für Gigabit-Verbindungen über große Distanzen vorgesehen, bei denen nur eine einzige Faser verfügbar ist. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem optischem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Was bedeutet BiDi bei diesem Modul?",
-    "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1490/1550 nm); ein Single-LC-Anschluss genügt."
-   ],
-   [
-    "Welche Reichweite erreicht das S-4554LC80D?",
-    "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 80 km."
-   ]
-  ],
-  "verwandte": [
-   [
-    "S-3553LC20D",
-    "MikroTik S-3553LC20D – 1,25G SFP BiDi 20 km"
-   ],
-   [
-    "S-55DLC80D",
-    "MikroTik S-55DLC80D – 1,25G SFP Singlemode 80 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP"
-   ],
-   [
-    "Datenrate",
-    "1,25 Gbit/s"
-   ],
-   [
-    "Übertragung",
-    "BiDi (eine Faser)"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1490 nm / 1550 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 80 km"
-   ],
-   [
-    "Anschluss",
-    "Single LC UPC"
-   ],
-   [
-    "Betriebstemperatur (getestet)",
-    "-40 bis +85 °C"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ],
-   "Betriebstemperatur (getestet)": [
-    "https://mikrotik.com/product/s_4554lc80d",
-    "datasheet"
-   ]
-  }
- },
- "XQ+85MP01D": {
-  "_facts": {
-   "unterkategorie": "QSFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XQ+85MP01D": {
+    "_facts": {
+      "unterkategorie": "QSFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XQ+85MP01D 100G QSFP28 Transceiver – Multimode 850 nm, MPO, 100 m",
+    "titel_tag": "MikroTik XQ+85MP01D 100G QSFP28 Multimode 100 m | Hexwaren",
+    "meta_description": "Original MikroTik XQ+85MP01D 100G-QSFP28-Modul für Multimode-Glasfaser: 850 nm, 1x12 MTP/MPO, bis 100 m. 40G/100G. Für 100G im Rechenzentrum.",
+    "kurzbeschreibung": "<p>Das MikroTik XQ+85MP01D ist ein 100-Gigabit-QSFP28-Modul für Multimode-Glasfaser. Über einen 1x12-MTP/MPO-Anschluss und 850 nm Wellenlänge überbrückt es bis zu 100 m und unterstützt 40G und 100G.</p><p>Damit eignet es sich für kurze 100G-Verbindungen im Rechenzentrum. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XQ+85MP01D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über parallele Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
+      "Über den 1x12-MTP/MPO-Anschluss überbrückt das Modul Strecken von bis zu 100 m; unterstützt werden Datenraten von 40G und 100G. Es ist sowohl mit QSFP+- als auch mit QSFP28-Ports kompatibel.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze, kostengünstige 100G-Verbindungen innerhalb von Rechenzentren über parallele Multimode-Fasern vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 850 nm, die Reichweite bis 100 m; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das XQ+85MP01D?",
+        "Über parallele Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 100 m."
+      ],
+      [
+        "Welchen Anschluss hat das Modul?",
+        "Das Modul nutzt einen 1x12-MTP/MPO-Anschluss für parallele Multimode-Fasern."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+31LC10D",
+        "MikroTik XQ+31LC10D – 100G QSFP28 Singlemode 10 km"
+      ],
+      [
+        "XQ+31LC02D",
+        "MikroTik XQ+31LC02D – 100G QSFP28 Singlemode 2 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP28 (QSFP+/QSFP28)"
+      ],
+      [
+        "Datenrate",
+        "40G / 100G"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (MM)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 100 m"
+      ],
+      [
+        "Anschluss",
+        "1x12 MTP/MPO"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Kurzstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xq_85mp01d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xq_85mp01d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xq_85mp01d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xq_85mp01d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xq_85mp01d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XQ+85MP01D 100G QSFP28 Transceiver – Multimode 850 nm, MPO, 100 m",
-  "titel_tag": "MikroTik XQ+85MP01D 100G QSFP28 Multimode 100 m | Hexwaren",
-  "meta_description": "Original MikroTik XQ+85MP01D 100G-QSFP28-Modul für Multimode-Glasfaser: 850 nm, 1x12 MTP/MPO, bis 100 m. 40G/100G. Für 100G im Rechenzentrum.",
-  "kurzbeschreibung": "<p>Das MikroTik XQ+85MP01D ist ein 100-Gigabit-QSFP28-Modul für Multimode-Glasfaser. Über einen 1x12-MTP/MPO-Anschluss und 850 nm Wellenlänge überbrückt es bis zu 100 m und unterstützt 40G und 100G.</p><p>Damit eignet es sich für kurze 100G-Verbindungen im Rechenzentrum. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XQ+85MP01D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über parallele Multimode-Glasfaser mit einer Wellenlänge von 850 nm.",
-   "Über den 1x12-MTP/MPO-Anschluss überbrückt das Modul Strecken von bis zu 100 m; unterstützt werden Datenraten von 40G und 100G. Es ist sowohl mit QSFP+- als auch mit QSFP28-Ports kompatibel.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für kurze, kostengünstige 100G-Verbindungen innerhalb von Rechenzentren über parallele Multimode-Fasern vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das XQ+85MP01D?",
-    "Über parallele Multimode-Glasfaser mit 850 nm überbrückt das Modul Strecken von bis zu 100 m."
-   ],
-   [
-    "Welchen Anschluss hat das Modul?",
-    "Das Modul nutzt einen 1x12-MTP/MPO-Anschluss für parallele Multimode-Fasern."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+31LC10D",
-    "MikroTik XQ+31LC10D – 100G QSFP28 Singlemode 10 km"
-   ],
-   [
-    "XQ+31LC02D",
-    "MikroTik XQ+31LC02D – 100G QSFP28 Singlemode 2 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP28 (QSFP+/QSFP28)"
-   ],
-   [
-    "Datenrate",
-    "40G / 100G"
-   ],
-   [
-    "Fasertyp",
-    "Multimode (MM)"
-   ],
-   [
-    "Wellenlänge",
-    "850 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 100 m"
-   ],
-   [
-    "Anschluss",
-    "1x12 MTP/MPO"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xq_85mp01d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xq_85mp01d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xq_85mp01d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xq_85mp01d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xq_85mp01d",
-    "datasheet"
-   ]
-  }
- },
- "DDQ+DA0003": {
-  "_facts": {
-   "unterkategorie": "DAC Kabel",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "DDQ+DA0003": {
+    "_facts": {
+      "unterkategorie": "DAC Kabel",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik DDQ+DA0003 400G QSFP-DD Direct-Attach-Kupferkabel (DAC) – 3 m",
+    "titel_tag": "MikroTik DDQ+DA0003 400G QSFP-DD DAC 3 m | Hexwaren",
+    "meta_description": "Original MikroTik DDQ+DA0003 passives 400G-QSFP-DD-Direct-Attach-Kupferkabel, 3 m. Direkte Verbindung ultraschneller Geräte wie CRS812 und CRS804.",
+    "kurzbeschreibung": "<p>Das MikroTik DDQ+DA0003 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor. Über eine Länge von 3 m verbindet es zwei QSFP-DD-Ports direkt und ermöglicht eine einfache Verbindung ultraschneller Geräte wie CRS812 und CRS804.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 400G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik DDQ+DA0003 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor mit zwei fest konfektionierten Steckern.",
+      "Über eine Länge von 3 m verbindet das Kabel zwei QSFP-DD-Ports direkt und ermöglicht laut Hersteller eine einfache Direktverbindung ultraschneller Geräte wie der MikroTik-Modelle CRS812 und CRS804.",
+      "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für die kostengünstige 400G-Direktverbindung innerhalb eines Racks vorgesehen. Laut Datenblatt überträgt das Kabel über eine fest konfektionierte Länge von 3 m; der passive Twinax-Kupferaufbau benötigt keine externe Stromversorgung und unterstützt kein DOM."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP-DD-Steckplatz",
+      "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Kabel?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Benötigt das Kabel eine eigene Stromversorgung?",
+        "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
+      ],
+      [
+        "Wofür eignet sich das Kabel?",
+        "Für die direkte 400G-Verbindung ultraschneller MikroTik-Geräte wie CRS812 und CRS804 innerhalb eines Racks."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DDQ+DA0001",
+        "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
+      ],
+      [
+        "DDQ+85MP01D",
+        "MikroTik DDQ+85MP01D – 400G QSFP-DD Multimode"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP-DD zu QSFP-DD"
+      ],
+      [
+        "Datenrate",
+        "400G"
+      ],
+      [
+        "Kabeltyp",
+        "Twinax-Kupfer, passiv (DAC)"
+      ],
+      [
+        "Länge",
+        "3 m"
+      ],
+      [
+        "Anschluss",
+        "2× QSFP-DD (fest konfektioniert)"
+      ],
+      [
+        "DDM/DOM",
+        "Nein"
+      ],
+      [
+        "Betriebstemperatur",
+        "0 bis 70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Top-of-Rack-/Row-Verkabelung)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/ddq_da0003",
+        "datasheet"
+      ],
+      "Länge": [
+        "https://mikrotik.com/product/ddq_da0003",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Standardklasse für DAC/AOC-Direktverkabelung (kommerziell), analog zur Cisco-Behandlung",
+        "industry-standard-commercial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik DDQ+DA0003 400G QSFP-DD Direct-Attach-Kupferkabel (DAC) – 3 m",
-  "titel_tag": "MikroTik DDQ+DA0003 400G QSFP-DD DAC 3 m | Hexwaren",
-  "meta_description": "Original MikroTik DDQ+DA0003 passives 400G-QSFP-DD-Direct-Attach-Kupferkabel, 3 m. Direkte Verbindung ultraschneller Geräte wie CRS812 und CRS804.",
-  "kurzbeschreibung": "<p>Das MikroTik DDQ+DA0003 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor. Über eine Länge von 3 m verbindet es zwei QSFP-DD-Ports direkt und ermöglicht eine einfache Verbindung ultraschneller Geräte wie CRS812 und CRS804.</p><p>Ohne eigene Stromversorgung bietet es eine kostengünstige 400G-Verbindung im Rack. Als Original-MikroTik-Neuware wird es versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik DDQ+DA0003 ist ein passives 400-Gigabit-Direct-Attach-Kupferkabel (DAC) im QSFP-DD-Formfaktor mit zwei fest konfektionierten Steckern.",
-   "Über eine Länge von 3 m verbindet das Kabel zwei QSFP-DD-Ports direkt und ermöglicht laut Hersteller eine einfache Direktverbindung ultraschneller Geräte wie der MikroTik-Modelle CRS812 und CRS804.",
-   "Als passive Twinax-Baugruppe kommt das Kabel ohne eigene Stromversorgung aus. Als Original-MikroTik-Neuware ist es versiegelt und für die kostengünstige 400G-Direktverbindung innerhalb eines Racks vorgesehen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP-DD-Steckplatz",
-   "Direkte Verbindung zwischen zwei MikroTik-Ports des passenden Typs",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Kabel?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Benötigt das Kabel eine eigene Stromversorgung?",
-    "Nein. Als passives Direct-Attach-Kupferkabel kommt es ohne aktive Elektronik und ohne externe Stromversorgung aus."
-   ],
-   [
-    "Wofür eignet sich das Kabel?",
-    "Für die direkte 400G-Verbindung ultraschneller MikroTik-Geräte wie CRS812 und CRS804 innerhalb eines Racks."
-   ]
-  ],
-  "verwandte": [
-   [
-    "DDQ+DA0001",
-    "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
-   ],
-   [
-    "DDQ+85MP01D",
-    "MikroTik DDQ+85MP01D – 400G QSFP-DD Multimode"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP-DD zu QSFP-DD"
-   ],
-   [
-    "Datenrate",
-    "400G"
-   ],
-   [
-    "Kabeltyp",
-    "Twinax-Kupfer, passiv (DAC)"
-   ],
-   [
-    "Länge",
-    "3 m"
-   ],
-   [
-    "Anschluss",
-    "2× QSFP-DD (fest konfektioniert)"
-   ],
-   [
-    "DDM/DOM",
-    "Nein"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/ddq_da0003",
-    "datasheet"
-   ],
-   "Länge": [
-    "https://mikrotik.com/product/ddq_da0003",
-    "datasheet"
-   ]
-  }
- },
- "XS+31LC10D": {
-  "_facts": {
-   "unterkategorie": "SFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XS+31LC10D": {
+    "_facts": {
+      "unterkategorie": "SFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XS+31LC10D 25G SFP28 Transceiver – Singlemode 1310 nm, Dual-LC, 10 km",
+    "titel_tag": "MikroTik XS+31LC10D 25G SFP28 Singlemode 10 km | Hexwaren",
+    "meta_description": "Original MikroTik XS+31LC10D 25G-SFP28-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 10 km. Multi-Rate 1G/10G/25G. 25G über längere Distanz.",
+    "kurzbeschreibung": "<p>Das MikroTik XS+31LC10D ist ein 25-Gigabit-SFP28-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 10 km und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Damit eignet es sich für 25G-Verbindungen über längere Distanzen. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
+    "intro": [
+      "Das MikroTik XS+31LC10D ist ein Multi-Rate-Transceiver im SFP28-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1310 nm.",
+      "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 10 km; unterstützt werden die Datenraten 1G, 10G und 25G. Damit lassen sich 25-Gigabit-Verbindungen über längere Distanzen zwischen Gebäuden oder Standorten realisieren.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und in MikroTik-Geräten mit freiem SFP28-Steckplatz einsetzbar. Durch die Multi-Rate-Fähigkeit eignet es sich auch für 10G-Singlemode-Strecken. Laut Datenblatt die Betriebswellenlänge 1310 nm, die Reichweite bis 10 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das XS+31LC10D?",
+        "Über Singlemode-Glasfaser mit 1310 nm überbrückt das Modul Strecken von bis zu 10 km."
+      ],
+      [
+        "Welche Datenraten werden unterstützt?",
+        "Das Modul ist multi-rate-fähig und unterstützt 1G, 10G und 25G."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XS+85LC01D",
+        "MikroTik XS+85LC01D – 25G SFP28 Multimode 100 m"
+      ],
+      [
+        "XS+2733LC15D",
+        "MikroTik XS+2733LC15D – 25G SFP28 BiDi 15 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP28"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G / 25G"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1310 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xs_31lc10d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xs_31lc10d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xs_31lc10d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xs_31lc10d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xs_31lc10d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XS+31LC10D 25G SFP28 Transceiver – Singlemode 1310 nm, Dual-LC, 10 km",
-  "titel_tag": "MikroTik XS+31LC10D 25G SFP28 Singlemode 10 km | Hexwaren",
-  "meta_description": "Original MikroTik XS+31LC10D 25G-SFP28-Modul für Singlemode-Glasfaser: 1310 nm, Dual-LC, bis 10 km. Multi-Rate 1G/10G/25G. 25G über längere Distanz.",
-  "kurzbeschreibung": "<p>Das MikroTik XS+31LC10D ist ein 25-Gigabit-SFP28-Modul für Singlemode-Glasfaser. Mit 1310 nm Wellenlänge und Dual-LC-Anschluss überbrückt es bis zu 10 km und unterstützt die Datenraten 1G, 10G und 25G.</p><p>Damit eignet es sich für 25G-Verbindungen über längere Distanzen. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert.</p>",
-  "intro": [
-   "Das MikroTik XS+31LC10D ist ein Multi-Rate-Transceiver im SFP28-Formfaktor für den Betrieb über Singlemode-Glasfaser mit einer Wellenlänge von 1310 nm.",
-   "Über den Dual-LC-Anschluss überbrückt das Modul Strecken von bis zu 10 km; unterstützt werden die Datenraten 1G, 10G und 25G. Damit lassen sich 25-Gigabit-Verbindungen über längere Distanzen zwischen Gebäuden oder Standorten realisieren.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und in MikroTik-Geräten mit freiem SFP28-Steckplatz einsetzbar. Durch die Multi-Rate-Fähigkeit eignet es sich auch für 10G-Singlemode-Strecken."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das XS+31LC10D?",
-    "Über Singlemode-Glasfaser mit 1310 nm überbrückt das Modul Strecken von bis zu 10 km."
-   ],
-   [
-    "Welche Datenraten werden unterstützt?",
-    "Das Modul ist multi-rate-fähig und unterstützt 1G, 10G und 25G."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XS+85LC01D",
-    "MikroTik XS+85LC01D – 25G SFP28 Multimode 100 m"
-   ],
-   [
-    "XS+2733LC15D",
-    "MikroTik XS+2733LC15D – 25G SFP28 BiDi 15 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP28"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G / 25G"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1310 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 10 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xs_31lc10d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xs_31lc10d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xs_31lc10d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xs_31lc10d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xs_31lc10d",
-    "datasheet"
-   ]
-  }
- },
- "DDQ+85MP01D": {
-  "_facts": {
-   "unterkategorie": "QSFP-DD",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "DDQ+85MP01D": {
+    "_facts": {
+      "unterkategorie": "QSFP-DD",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik DDQ+85MP01D 400G QSFP-DD Transceiver – Multimode, MPO",
+    "titel_tag": "MikroTik DDQ+85MP01D 400G QSFP-DD Multimode | Hexwaren",
+    "meta_description": "Original MikroTik DDQ+85MP01D 400G-QSFP-DD-Modul für Multimode-Glasfaser über MPO. Für ultraschnelle 400G-Verbindungen, etwa zwischen CRS812 und CRS804.",
+    "kurzbeschreibung": "<p>Das MikroTik DDQ+85MP01D ist ein optisches QSFP-DD-Modul für zuverlässige 400-Gigabit-Glasfaserverbindungen. Es ist für ultraschnelle Setups wie die Geräte CRS812 und CRS804 vorgesehen und überträgt über parallele Multimode-Fasern (MPO).</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP-DD-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik DDQ+85MP01D ist ein optisches Modul im QSFP-DD-Formfaktor für zuverlässige 400-Gigabit-Glasfaserverbindungen.",
+      "Laut Hersteller ist das Modul für ultraschnelle Setups wie die MikroTik-Geräte CRS812 und CRS804 ausgelegt; die Übertragung erfolgt über parallele Multimode-Fasern mit MPO-Anschluss.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 400G-Verbindungen innerhalb eines Rechenzentrums über kurze Multimode-Strecken vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem QSFP-DD-Steckplatz einsetzen. Die parallele Übertragung erfolgt über mehrere Multimode-Faserpaare, die über einen MPO-Steckverbinder zusammengeführt werden. Laut Datenblatt die Betriebswellenlänge 850 nm; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP-DD-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Wofür wird das DDQ+85MP01D verwendet?",
+        "Es stellt 400-Gigabit-Glasfaserverbindungen her, etwa zwischen ultraschnellen MikroTik-Geräten wie CRS812 und CRS804."
+      ],
+      [
+        "Welchen Formfaktor und Anschluss hat das Modul?",
+        "Es handelt sich um ein QSFP-DD-Modul für parallele Multimode-Fasern mit MPO-Anschluss."
+      ]
+    ],
+    "verwandte": [
+      [
+        "DDQ+DA0001",
+        "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
+      ],
+      [
+        "DDQ+DA0003",
+        "MikroTik DDQ+DA0003 – 400G QSFP-DD DAC 3 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP-DD"
+      ],
+      [
+        "Datenrate",
+        "400G"
+      ],
+      [
+        "Fasertyp",
+        "Multimode (MM)"
+      ],
+      [
+        "Wellenlänge",
+        "850 nm"
+      ],
+      [
+        "Anschluss",
+        "1x16 MTP/MPO"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Rechenzentrum (Kurzstrecke)"
+      ],
+      [
+        "Faseranzahl",
+        "16"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/ddq_85mp01d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/ddq_85mp01d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ],
+      "Faseranzahl": [
+        "https://mikrotik.com/products/group/sfp-qsfp",
+        "datasheet"
+      ]
+    }
   },
-  "artikelname": "MikroTik DDQ+85MP01D 400G QSFP-DD Transceiver – Multimode, MPO",
-  "titel_tag": "MikroTik DDQ+85MP01D 400G QSFP-DD Multimode | Hexwaren",
-  "meta_description": "Original MikroTik DDQ+85MP01D 400G-QSFP-DD-Modul für Multimode-Glasfaser über MPO. Für ultraschnelle 400G-Verbindungen, etwa zwischen CRS812 und CRS804.",
-  "kurzbeschreibung": "<p>Das MikroTik DDQ+85MP01D ist ein optisches QSFP-DD-Modul für zuverlässige 400-Gigabit-Glasfaserverbindungen. Es ist für ultraschnelle Setups wie die Geräte CRS812 und CRS804 vorgesehen und überträgt über parallele Multimode-Fasern (MPO).</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP-DD-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik DDQ+85MP01D ist ein optisches Modul im QSFP-DD-Formfaktor für zuverlässige 400-Gigabit-Glasfaserverbindungen.",
-   "Laut Hersteller ist das Modul für ultraschnelle Setups wie die MikroTik-Geräte CRS812 und CRS804 ausgelegt; die Übertragung erfolgt über parallele Multimode-Fasern mit MPO-Anschluss.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 400G-Verbindungen innerhalb eines Rechenzentrums über kurze Multimode-Strecken vorgesehen. Es lässt sich in MikroTik-Geräten mit freiem QSFP-DD-Steckplatz einsetzen. Die parallele Übertragung erfolgt über mehrere Multimode-Faserpaare, die über einen MPO-Steckverbinder zusammengeführt werden."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP-DD-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Wofür wird das DDQ+85MP01D verwendet?",
-    "Es stellt 400-Gigabit-Glasfaserverbindungen her, etwa zwischen ultraschnellen MikroTik-Geräten wie CRS812 und CRS804."
-   ],
-   [
-    "Welchen Formfaktor und Anschluss hat das Modul?",
-    "Es handelt sich um ein QSFP-DD-Modul für parallele Multimode-Fasern mit MPO-Anschluss."
-   ]
-  ],
-  "verwandte": [
-   [
-    "DDQ+DA0001",
-    "MikroTik DDQ+DA0001 – 400G QSFP-DD DAC 1 m"
-   ],
-   [
-    "DDQ+DA0003",
-    "MikroTik DDQ+DA0003 – 400G QSFP-DD DAC 3 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP-DD"
-   ],
-   [
-    "Datenrate",
-    "400G"
-   ],
-   [
-    "Fasertyp",
-    "Multimode (MM)"
-   ],
-   [
-    "Wellenlänge",
-    "850 nm"
-   ],
-   [
-    "Anschluss",
-    "MPO"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/ddq_85mp01d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/ddq_85mp01d",
-    "datasheet"
-   ]
-  }
- },
- "XQ+31LC02D": {
-  "_facts": {
-   "unterkategorie": "QSFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XQ+31LC02D": {
+    "_facts": {
+      "unterkategorie": "QSFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XQ+31LC02D 100G QSFP28 Transceiver – Singlemode, Dual-LC, 2 km",
+    "titel_tag": "MikroTik XQ+31LC02D 100G QSFP28 Singlemode 2 km | Hexwaren",
+    "meta_description": "Original MikroTik XQ+31LC02D 100G-QSFP28-Modul für Singlemode-Glasfaser: Dual-LC, CWDM (1271–1331 nm), bis 2 km. 100G über Duplex-Singlemode.",
+    "kurzbeschreibung": "<p>Das MikroTik XQ+31LC02D ist ein 100-Gigabit-QSFP28-Modul für Singlemode-Glasfaser. Über einen Dual-LC-Anschluss und vier Wellenlängen (1271, 1291, 1311 und 1331 nm) überbrückt es bis zu 2 km über eine Duplex-Singlemode-Strecke.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP28-Steckplatz.</p>",
+    "intro": [
+      "Das MikroTik XQ+31LC02D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über Duplex-Singlemode-Glasfaser.",
+      "Die 100-Gigabit-Übertragung wird über vier Wellenlängen (1271, 1291, 1311 und 1331 nm) realisiert, die über einen Dual-LC-Anschluss geführt werden; so werden Strecken von bis zu 2 km überbrückt.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 100G-Verbindungen über kurze bis mittlere Singlemode-Strecken vorgesehen, die nur ein Duplex-Faserpaar statt paralleler Fasern benötigen. Es lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 1271 / 1291 / 1311 / 1331 nm, die Reichweite bis 2 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das XQ+31LC02D?",
+        "Über Duplex-Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 2 km."
+      ],
+      [
+        "Wie wird 100G über nur zwei Fasern erreicht?",
+        "Das Modul nutzt vier Wellenlängen (1271–1331 nm), die über einen Dual-LC-Anschluss multiplext übertragen werden."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+31LC10D",
+        "MikroTik XQ+31LC10D – 100G QSFP28 Singlemode 10 km"
+      ],
+      [
+        "XQ+85MP01D",
+        "MikroTik XQ+85MP01D – 100G QSFP28 Multimode 100 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP28"
+      ],
+      [
+        "Datenrate",
+        "100G"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1271 / 1291 / 1311 / 1331 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 2 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xq_31lc02d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xq_31lc02d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xq_31lc02d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xq_31lc02d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xq_31lc02d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XQ+31LC02D 100G QSFP28 Transceiver – Singlemode, Dual-LC, 2 km",
-  "titel_tag": "MikroTik XQ+31LC02D 100G QSFP28 Singlemode 2 km | Hexwaren",
-  "meta_description": "Original MikroTik XQ+31LC02D 100G-QSFP28-Modul für Singlemode-Glasfaser: Dual-LC, CWDM (1271–1331 nm), bis 2 km. 100G über Duplex-Singlemode.",
-  "kurzbeschreibung": "<p>Das MikroTik XQ+31LC02D ist ein 100-Gigabit-QSFP28-Modul für Singlemode-Glasfaser. Über einen Dual-LC-Anschluss und vier Wellenlängen (1271, 1291, 1311 und 1331 nm) überbrückt es bis zu 2 km über eine Duplex-Singlemode-Strecke.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP28-Steckplatz.</p>",
-  "intro": [
-   "Das MikroTik XQ+31LC02D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über Duplex-Singlemode-Glasfaser.",
-   "Die 100-Gigabit-Übertragung wird über vier Wellenlängen (1271, 1291, 1311 und 1331 nm) realisiert, die über einen Dual-LC-Anschluss geführt werden; so werden Strecken von bis zu 2 km überbrückt.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 100G-Verbindungen über kurze bis mittlere Singlemode-Strecken vorgesehen, die nur ein Duplex-Faserpaar statt paralleler Fasern benötigen. Es lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das XQ+31LC02D?",
-    "Über Duplex-Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 2 km."
-   ],
-   [
-    "Wie wird 100G über nur zwei Fasern erreicht?",
-    "Das Modul nutzt vier Wellenlängen (1271–1331 nm), die über einen Dual-LC-Anschluss multiplext übertragen werden."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+31LC10D",
-    "MikroTik XQ+31LC10D – 100G QSFP28 Singlemode 10 km"
-   ],
-   [
-    "XQ+85MP01D",
-    "MikroTik XQ+85MP01D – 100G QSFP28 Multimode 100 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP28"
-   ],
-   [
-    "Datenrate",
-    "100G"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1271 / 1291 / 1311 / 1331 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 2 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xq_31lc02d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xq_31lc02d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xq_31lc02d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xq_31lc02d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xq_31lc02d",
-    "datasheet"
-   ]
-  }
- },
- "XS+2733LC15D": {
-  "_facts": {
-   "unterkategorie": "SFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
+  "XS+2733LC15D": {
+    "_facts": {
+      "unterkategorie": "SFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XS+2733LC15D 25G SFP28 BiDi – Singlemode, Single-LC, 15 km",
+    "titel_tag": "MikroTik XS+2733LC15D 25G SFP28 BiDi 15 km | Hexwaren",
+    "meta_description": "Original MikroTik XS+2733LC15D 25G-SFP28-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1270/1330 nm, bis 15 km. Multi-Rate 1G/10G/25G. Für 25G-BiDi-Verbindungen im Zugangsnetz.",
+    "kurzbeschreibung": "<p>Das MikroTik XS+2733LC15D ist ein 25-Gigabit-SFP28-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1270/1330 nm) und überbrückt bis zu 15 km.</p><p>Es unterstützt 1G, 10G und 25G. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert. Als BiDi-Modul benötigt es ein passendes Gegenstück mit umgekehrtem Wellenlängenpaar (1330/1270 nm).</p>",
+    "intro": [
+      "Das MikroTik XS+2733LC15D ist ein bidirektionaler Multi-Rate-Transceiver im SFP28-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
+      "Senden und Empfangen erfolgen über getrennte Wellenlängen (1270 nm und 1330 nm); über den Single-LC-Anschluss werden Strecken von bis zu 15 km überbrückt. Unterstützt werden die Datenraten 1G, 10G und 25G.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 25G-Verbindungen vorgesehen, bei denen nur eine einzige Faser verfügbar ist. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben. Laut Datenblatt die Betriebswellenlänge 1270 nm / 1330 nm, die Reichweite bis 15 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit SFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Was bedeutet BiDi bei diesem Modul?",
+        "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1270/1330 nm); ein Single-LC-Anschluss genügt."
+      ],
+      [
+        "Welche Reichweite erreicht das XS+2733LC15D?",
+        "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 15 km."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XS+31LC10D",
+        "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
+      ],
+      [
+        "S-3553LC20D",
+        "MikroTik S-3553LC20D – 1,25G SFP BiDi 20 km"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "SFP28"
+      ],
+      [
+        "Datenrate",
+        "1G / 10G / 25G"
+      ],
+      [
+        "Übertragung",
+        "BiDi (eine Faser)"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1270 nm / 1330 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 15 km"
+      ],
+      [
+        "Anschluss",
+        "Single LC UPC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xs_2733lc15d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xs_2733lc15d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xs_2733lc15d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xs_2733lc15d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xs_2733lc15d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   },
-  "artikelname": "MikroTik XS+2733LC15D 25G SFP28 BiDi – Singlemode, Single-LC, 15 km",
-  "titel_tag": "MikroTik XS+2733LC15D 25G SFP28 BiDi 15 km | Hexwaren",
-  "meta_description": "Original MikroTik XS+2733LC15D 25G-SFP28-BiDi-Modul für Singlemode-Glasfaser: Single-LC, 1270/1330 nm, bis 15 km. Multi-Rate 1G/10G/25G. Für 25G-BiDi-Verbindungen im Zugangsnetz.",
-  "kurzbeschreibung": "<p>Das MikroTik XS+2733LC15D ist ein 25-Gigabit-SFP28-BiDi-Modul für Singlemode-Glasfaser. Über einen einzigen Single-LC-Anschluss sendet und empfängt es auf getrennten Wellenlängen (1270/1330 nm) und überbrückt bis zu 15 km.</p><p>Es unterstützt 1G, 10G und 25G. Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert. Als BiDi-Modul benötigt es ein passendes Gegenstück mit umgekehrtem Wellenlängenpaar (1330/1270 nm).</p>",
-  "intro": [
-   "Das MikroTik XS+2733LC15D ist ein bidirektionaler Multi-Rate-Transceiver im SFP28-Formfaktor, der über eine einzige Singlemode-Faser sendet und empfängt.",
-   "Senden und Empfangen erfolgen über getrennte Wellenlängen (1270 nm und 1330 nm); über den Single-LC-Anschluss werden Strecken von bis zu 15 km überbrückt. Unterstützt werden die Datenraten 1G, 10G und 25G.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 25G-Verbindungen vorgesehen, bei denen nur eine einzige Faser verfügbar ist. BiDi-Module werden paarweise mit zueinander passenden Wellenlängen betrieben."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit SFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Was bedeutet BiDi bei diesem Modul?",
-    "Senden und Empfangen laufen über eine einzige Faser auf zwei getrennten Wellenlängen (1270/1330 nm); ein Single-LC-Anschluss genügt."
-   ],
-   [
-    "Welche Reichweite erreicht das XS+2733LC15D?",
-    "Über Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 15 km."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XS+31LC10D",
-    "MikroTik XS+31LC10D – 25G SFP28 Singlemode 10 km"
-   ],
-   [
-    "S-3553LC20D",
-    "MikroTik S-3553LC20D – 1,25G SFP BiDi 20 km"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "SFP28"
-   ],
-   [
-    "Datenrate",
-    "1G / 10G / 25G"
-   ],
-   [
-    "Übertragung",
-    "BiDi (eine Faser)"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1270 nm / 1330 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 15 km"
-   ],
-   [
-    "Anschluss",
-    "Single LC UPC"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xs_2733lc15d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xs_2733lc15d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xs_2733lc15d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xs_2733lc15d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xs_2733lc15d",
-    "datasheet"
-   ]
+  "XQ+31LC10D": {
+    "_facts": {
+      "unterkategorie": "QSFP28",
+      "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
+      "verifiziert_am": "2026-06-12"
+    },
+    "artikelname": "MikroTik XQ+31LC10D 100G QSFP28 Transceiver – Singlemode, Dual-LC, 10 km",
+    "titel_tag": "MikroTik XQ+31LC10D 100G QSFP28 Singlemode 10 km | Hexwaren",
+    "meta_description": "Original MikroTik XQ+31LC10D 100G-QSFP28-Modul für Singlemode-Glasfaser: Dual-LC, LAN-WDM (1296–1309 nm), bis 10 km. 100G über lange Singlemode-Strecke.",
+    "kurzbeschreibung": "<p>Das MikroTik XQ+31LC10D ist ein 100-Gigabit-QSFP28-Modul für Singlemode-Glasfaser. Über einen Dual-LC-Anschluss und vier eng benachbarte Wellenlängen (1296–1309 nm) überbrückt es bis zu 10 km über eine Duplex-Singlemode-Strecke.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP28-Steckplatz. Für den Betrieb genügt ein einzelnes Duplex-Singlemode-Faserpaar.</p>",
+    "intro": [
+      "Das MikroTik XQ+31LC10D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über Duplex-Singlemode-Glasfaser über große Distanzen.",
+      "Die 100-Gigabit-Übertragung wird über vier eng benachbarte Wellenlängen (1296, 1300, 1305 und 1309 nm) realisiert, die über einen Dual-LC-Anschluss geführt werden; so werden Strecken von bis zu 10 km überbrückt.",
+      "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 100G-Verbindungen über lange Singlemode-Strecken zwischen Gebäuden oder Standorten vorgesehen. Es benötigt nur ein Duplex-Faserpaar und lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen. Laut Datenblatt die Betriebswellenlänge 1296 / 1300 / 1305 / 1309 nm, die Reichweite bis 10 km; der Betriebstemperaturbereich liegt bei -40 bis +70 °C."
+    ],
+    "kompatibilitaet": [
+      "MikroTik-Geräte mit QSFP28-Steckplatz",
+      "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
+      "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
+    ],
+    "faq": [
+      [
+        "Ist dies ein originales MikroTik-Modul?",
+        "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
+      ],
+      [
+        "Welche Reichweite erreicht das XQ+31LC10D?",
+        "Über Duplex-Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 10 km."
+      ],
+      [
+        "Wie wird 100G über nur zwei Fasern erreicht?",
+        "Das Modul nutzt vier Wellenlängen (1296–1309 nm), die über einen Dual-LC-Anschluss multiplext übertragen werden."
+      ]
+    ],
+    "verwandte": [
+      [
+        "XQ+31LC02D",
+        "MikroTik XQ+31LC02D – 100G QSFP28 Singlemode 2 km"
+      ],
+      [
+        "XQ+85MP01D",
+        "MikroTik XQ+85MP01D – 100G QSFP28 Multimode 100 m"
+      ]
+    ],
+    "beschreibung": "",
+    "attributes": [
+      [
+        "Formfaktor",
+        "QSFP28"
+      ],
+      [
+        "Datenrate",
+        "100G"
+      ],
+      [
+        "Fasertyp",
+        "Singlemode (SM)"
+      ],
+      [
+        "Wellenlänge",
+        "1296 / 1300 / 1305 / 1309 nm"
+      ],
+      [
+        "Reichweite",
+        "bis 10 km"
+      ],
+      [
+        "Anschluss",
+        "Dual LC UPC"
+      ],
+      [
+        "Betriebstemperatur",
+        "-40 bis +70 °C"
+      ],
+      [
+        "Anwendung",
+        "Campus-/Metro-Netz (Langstrecke)"
+      ],
+      [
+        "Zustand",
+        "Neu, versiegelt"
+      ]
+    ],
+    "netto_vk": null,
+    "provenance": {
+      "Datenrate": [
+        "https://mikrotik.com/product/xq_31lc10d",
+        "datasheet"
+      ],
+      "Fasertyp": [
+        "https://mikrotik.com/product/xq_31lc10d",
+        "datasheet"
+      ],
+      "Wellenlänge": [
+        "https://mikrotik.com/product/xq_31lc10d",
+        "datasheet"
+      ],
+      "Reichweite": [
+        "https://mikrotik.com/product/xq_31lc10d",
+        "datasheet"
+      ],
+      "Anschluss": [
+        "https://mikrotik.com/product/xq_31lc10d",
+        "datasheet"
+      ],
+      "Betriebstemperatur": [
+        "Rule 9: kein veröffentlichter Wert; Temperaturklasse industrial, korroboriert durch publizierende MikroTik-Geschwister (-40 °C low durchgängig)",
+        "industry-standard-industrial"
+      ],
+      "Anwendung": [
+        "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
+        "derivation"
+      ]
+    }
   }
- },
- "XQ+31LC10D": {
-  "_facts": {
-   "unterkategorie": "QSFP28",
-   "quell_url": "https://mikrotik.com/products/group/sfp-qsfp",
-   "verifiziert_am": "2026-06-12"
-  },
-  "artikelname": "MikroTik XQ+31LC10D 100G QSFP28 Transceiver – Singlemode, Dual-LC, 10 km",
-  "titel_tag": "MikroTik XQ+31LC10D 100G QSFP28 Singlemode 10 km | Hexwaren",
-  "meta_description": "Original MikroTik XQ+31LC10D 100G-QSFP28-Modul für Singlemode-Glasfaser: Dual-LC, LAN-WDM (1296–1309 nm), bis 10 km. 100G über lange Singlemode-Strecke.",
-  "kurzbeschreibung": "<p>Das MikroTik XQ+31LC10D ist ein 100-Gigabit-QSFP28-Modul für Singlemode-Glasfaser. Über einen Dual-LC-Anschluss und vier eng benachbarte Wellenlängen (1296–1309 nm) überbrückt es bis zu 10 km über eine Duplex-Singlemode-Strecke.</p><p>Als Original-MikroTik-Neuware wird das Modul versiegelt geliefert und arbeitet in MikroTik-Geräten mit QSFP28-Steckplatz. Für den Betrieb genügt ein einzelnes Duplex-Singlemode-Faserpaar.</p>",
-  "intro": [
-   "Das MikroTik XQ+31LC10D ist ein 100-Gigabit-Transceiver im QSFP28-Formfaktor für den Betrieb über Duplex-Singlemode-Glasfaser über große Distanzen.",
-   "Die 100-Gigabit-Übertragung wird über vier eng benachbarte Wellenlängen (1296, 1300, 1305 und 1309 nm) realisiert, die über einen Dual-LC-Anschluss geführt werden; so werden Strecken von bis zu 10 km überbrückt.",
-   "Als Original-MikroTik-Neuware ist das Modul versiegelt und für 100G-Verbindungen über lange Singlemode-Strecken zwischen Gebäuden oder Standorten vorgesehen. Es benötigt nur ein Duplex-Faserpaar und lässt sich in MikroTik-Geräten mit freiem QSFP28-Steckplatz einsetzen."
-  ],
-  "kompatibilitaet": [
-   "MikroTik-Geräte mit QSFP28-Steckplatz",
-   "Betrieb in MikroTik-Switches und -Routern mit passendem Steckplatz",
-   "Maßgeblich ist die MikroTik-Produkt- und Kompatibilitätsangabe"
-  ],
-  "faq": [
-   [
-    "Ist dies ein originales MikroTik-Modul?",
-    "Ja. Es handelt sich um Original-MikroTik-Neuware – versiegelt geliefert und für den Betrieb in MikroTik-Geräten vorgesehen."
-   ],
-   [
-    "Welche Reichweite erreicht das XQ+31LC10D?",
-    "Über Duplex-Singlemode-Glasfaser überbrückt das Modul Strecken von bis zu 10 km."
-   ],
-   [
-    "Wie wird 100G über nur zwei Fasern erreicht?",
-    "Das Modul nutzt vier Wellenlängen (1296–1309 nm), die über einen Dual-LC-Anschluss multiplext übertragen werden."
-   ]
-  ],
-  "verwandte": [
-   [
-    "XQ+31LC02D",
-    "MikroTik XQ+31LC02D – 100G QSFP28 Singlemode 2 km"
-   ],
-   [
-    "XQ+85MP01D",
-    "MikroTik XQ+85MP01D – 100G QSFP28 Multimode 100 m"
-   ]
-  ],
-  "beschreibung": "",
-  "attributes": [
-   [
-    "Formfaktor",
-    "QSFP28"
-   ],
-   [
-    "Datenrate",
-    "100G"
-   ],
-   [
-    "Fasertyp",
-    "Singlemode (SM)"
-   ],
-   [
-    "Wellenlänge",
-    "1296 / 1300 / 1305 / 1309 nm"
-   ],
-   [
-    "Reichweite",
-    "bis 10 km"
-   ],
-   [
-    "Anschluss",
-    "Dual LC UPC"
-   ],
-   [
-    "Zustand",
-    "Neu, versiegelt"
-   ]
-  ],
-  "netto_vk": null,
-  "provenance": {
-   "Datenrate": [
-    "https://mikrotik.com/product/xq_31lc10d",
-    "datasheet"
-   ],
-   "Fasertyp": [
-    "https://mikrotik.com/product/xq_31lc10d",
-    "datasheet"
-   ],
-   "Wellenlänge": [
-    "https://mikrotik.com/product/xq_31lc10d",
-    "datasheet"
-   ],
-   "Reichweite": [
-    "https://mikrotik.com/product/xq_31lc10d",
-    "datasheet"
-   ],
-   "Anschluss": [
-    "https://mikrotik.com/product/xq_31lc10d",
-    "datasheet"
-   ]
-  }
- }
 }

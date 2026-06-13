@@ -1,0 +1,55 @@
+brand: MikroTik
+category: transceivers
+# Enumeration source: the official MikroTik product group page "SFP/QSFP"
+# (mikrotik.com/products/group/sfp-qsfp) — MikroTik publishes its ENTIRE optical-module line on
+# this one grid, so it is the authoritative union. Re-fetched 2026-06-13 ($0 honest-GET); the grid
+# lists 25 distinct /product/ slugs. 24 are transceivers/DACs/AOC -> authored to the gold-slice bar.
+# 1 (XQ+CM0000-XS+) is a QSFP28->SFP28 port ADAPTER (cage converter), not a transceiver -> excluded.
+complete: true
+universe_total: 25                      # distinct products on the official sfp-qsfp group grid
+captured_count: 24
+gap_count: 0
+flagged_count: 0
+excluded_not_transceiver_count: 1
+populated_sources: 1
+per_source:
+- id: mikrotik_sfp_qsfp_group
+  kind: vendor_product_grid
+  url: https://mikrotik.com/products/group/sfp-qsfp
+  populated: true
+captured:                               # 24 authored to the gold-slice bar, gate PASS 24/24
+- S-RJ01
+- S-85DLC05D
+- S-31DLC20D
+- S-3553LC20D
+- S-4554LC80D
+- S-55DLC80D
+- S+RJ10
+- S+85DLC03D
+- S+31DLC10D
+- S+AO0005
+- XS+85LC01D
+- XS+31LC10D
+- XS+2733LC15D
+- XS+DA0001
+- XS+DA0003
+- XQ+31LC02D
+- XQ+31LC10D
+- XQ+85MP01D
+- XQ+DA0001
+- XQ+DA0003
+- DQ+BC0003-DS+
+- DDQ+85MP01D
+- DDQ+DA0001
+- DDQ+DA0003
+exclude_not_transceiver:
+- pn: XQ+CM0000-XS+
+  reason: 'QSFP28->SFP28 port ADAPTER / cage converter (Data Rate 1G/10G/25G, Format SFP/SFP+/SFP28;
+    blurb "utilizing modules you have at hand" on CRS504/518/510). It performs no opto-electrical
+    conversion itself — it accepts a separate SFP-family transceiver that provides the optical
+    interface. Not a transceiver; no taxonomy token exists for adapters (would need Rule-7 approval).'
+verdict: captured 24 of 25 enumerated MikroTik optical products (96%); the 25th (XQ+CM0000-XS+) is a
+  QSFP28->SFP28 port adapter, excluded as a non-transceiver with verbatim reason. All 24 authored to
+  the gold-slice bar (gate PASS 24/24, audit_semantic 0/0/0/0/0/0, Rule-8 parity 0-missing). 8
+  Betriebstemperatur values are MikroTik-PUBLISHED verbatim; the 16 unpublished are Rule-9
+  class-derived from MikroTik's own publishing siblings (industrial -40 low, never commercial).

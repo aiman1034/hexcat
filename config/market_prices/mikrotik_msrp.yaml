@@ -1,0 +1,128 @@
+# MikroTik MSRP — official 'Suggested price' (USD) captured verbatim from each mikrotik.com
+# product page (the $0 harvest). GROUNDED, high-confidence, sourced. NOT wired into the pricing
+# engine's list_prices reader on purpose: the engine's list_to_net=0.55 is Cisco-GPL-calibrated
+# (Cisco GPL carries deep reseller discounts), whereas MikroTik MSRP sits near street price, so
+# 0.55 would systematically under-price MikroTik. These anchors await the operator's supplier
+# price-feed / a MikroTik-specific net policy. Until then MikroTik netto_vk stays flagged 0,00.
+fx_note: "USD->EUR 0.863 as of 2026-06-11 (see list_prices.yaml)"
+skus:
+  DDQ+85MP01D:
+    msrp_usd: 159.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/ddq_85mp01d"
+  DDQ+DA0001:
+    msrp_usd: 79.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/ddq_da0001"
+  DDQ+DA0003:
+    msrp_usd: 109.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/ddq_da0003"
+  DQ+BC0003-DS+:
+    msrp_usd: 79.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/dq_bc0003_dsplus"
+  S+31DLC10D:
+    msrp_usd: 69.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/s_31dlc10d"
+  S+85DLC03D:
+    msrp_usd: 59.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/Splus85DLC03D"
+  S+AO0005:
+    msrp_usd: 49.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/s_ao0005"
+  S+RJ10:
+    msrp_usd: 65.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/s_rj10"
+  S-31DLC20D:
+    msrp_usd: 29.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/S-31DLC20D-181"
+  S-3553LC20D:
+    msrp_usd: 79.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/S-3553LC20D"
+  S-4554LC80D:
+    msrp_usd: 89.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/s_4554lc80d"
+  S-55DLC80D:
+    msrp_usd: 39.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/s_55dlc80d"
+  S-85DLC05D:
+    msrp_usd: 22.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/S-85DLC05D-180"
+  S-RJ01:
+    msrp_usd: 29.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/S-RJ01"
+  XQ+31LC02D:
+    msrp_usd: 229.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xq_31lc02d"
+  XQ+31LC10D:
+    msrp_usd: 349.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xq_31lc10d"
+  XQ+85MP01D:
+    msrp_usd: 89.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xq_85mp01d"
+  XQ+DA0001:
+    msrp_usd: 39.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xq_da0001"
+  XQ+DA0003:
+    msrp_usd: 59.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xq_da0003"
+  XS+2733LC15D:
+    msrp_usd: 349.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xs_2733lc15d"
+  XS+31LC10D:
+    msrp_usd: 149.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xs_31lc10d"
+  XS+85LC01D:
+    msrp_usd: 59.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xs_85lc01d"
+  XS+DA0001:
+    msrp_usd: 29.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xs_da0001"
+  XS+DA0003:
+    msrp_usd: 39.00
+    kind: list-msrp
+    confidence: high
+    source: "https://mikrotik.com/product/xs_da0003"
