@@ -2,18 +2,18 @@ brand: Cisco
 category: transceivers
 complete: false
 universe_total: 438
-captured_count: 304
-gap_count: 134
+captured_count: 314
+gap_count: 124
 confirmed_gone_count: 0
-extra_count: 113
+extra_count: 136
 populated_sources: 1
 per_source:
 - id: tmg_matrix
   kind: compatibility_matrix
   total: 438
   populated: true
-  captured: 304
-  gaps: 134
+  captured: 314
+  gaps: 124
 - id: eol_eos_bulletins
   kind: eol_eos_bulletins
   total: 0
@@ -37,7 +37,6 @@ gaps:
 - CFP2-WDM-DET-1HL
 - CIM8-C-K9
 - CIM8-CE-K9
-- CIM8-LE-K9
 - CWDM-SFP-1470
 - CWDM-SFP-1490
 - CWDM-SFP-1510
@@ -51,18 +50,9 @@ gaps:
 - DP04QSDD-HE0-A1
 - DP04QSDD-HK9
 - DP04QSDD-ULH-A1
-- DS-SFP-4X32G-SW
 - DS-SFP-FC16G-ELW
-- DS-SFP-FC16G-LW
-- DS-SFP-FC16G-SW
-- DS-SFP-FC32G-ELW
-- DS-SFP-FC32G-LW
-- DS-SFP-FC32G-SW
-- DS-SFP-FC4G-SW
 - DS-SFP-FC64G-LW
 - DS-SFP-FC64G-SW
-- DS-SFP-FC8G-LW
-- DS-SFP-FC8G-SW
 - DWDM-SFP-3033
 - DWDM-SFP-3112
 - DWDM-SFP-3190
@@ -180,6 +170,8 @@ extra:
 - CB-M12-4LC-MMF4M
 - CB-M12-4LC-MMF5M
 - CB-M12-4LC-MMF7M
+- CFP2-WDM-D-SK
+- CFP2-WDM-DET-SK
 - CWDM-SFP10G-1490
 - CWDM-SFP10G-1510
 - CWDM-SFP10G-1550
@@ -187,6 +179,21 @@ extra:
 - CWDM-SFP10G-1590
 - CWDM-SFP10G-1610
 - DP04SFP8-E20
+- DS-SFP-FC-2G-LW
+- DS-SFP-FC-2G-SW
+- DS-SFP-FC10G-LW
+- DS-SFP-FC10G-SW
+- DS-SFP-FC16GELW
+- DS-SFP-FC4G-LW
+- DS-SFP-FC4G-MR
+- DS-SFP-FC8G-ER
+- DS-SFP-FCGE-LW
+- DS-SFP-FCGE-SW
+- DS-SFP-GE-T
+- DS-X2-FC10G-CX4
+- DS-X2-FC10G-ER
+- DS-X2-FC10G-LR
+- DS-X2-FC10G-SR
 - DWDM-GBIC-30.33
 - DWDM-GBIC-31.12
 - DWDM-GBIC-31.90
@@ -252,12 +259,15 @@ extra:
 - DWDM-XENPAK-58.98
 - DWDM-XENPAK-59.79
 - DWDM-XENPAK-60.61
+- E1000-2-G
 - ENC-10G-ONT-01PR
 - ENC-10G-ONT-10
 - ENC-10G-ONT-14A
 - GLC-LH-LMM-TI
 - GLC-ZX-LMM-TI
 - NCS-FAB-OPT
+- ONS-CXP2-SR25
+- ONS-SI-2G-S1
 - POM-OC3-MM
 - POM-OC3-SMIR
 - POM-OC3-SMLR
@@ -268,8 +278,11 @@ extra:
 - POM-OC48-SR-LC-C
 - Q-4SFP25G-CU1.5M
 - Q-4SFP25G-CU2.5M
+- QSFP-100G-AOC
+- QSFP-100G-ER4
 - QSFP-100G-SR-S
 - QSFP-2Q200-CU3M
+- QSFP-40-SR-BD
 - QSFP-400G-FR4
 - QSFP-4SFP25-CU1M
 - QSFP-4SFP25-CU2M

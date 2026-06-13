@@ -1,15 +1,28 @@
 brand: Cisco
 category: transceivers
 catalog_skus: 297
-files_mined: 81
-files_skipped: 90
-mined_total: 417
+files_mined: 86
+files_skipped: 94
+mined_total: 450
 in_catalog: 297
-missing_count: 120
+missing_count: 153
 orphan_count: 0
-excluded_count: 9
+excluded_count: 11
 missing_by_family:
+  AOC Kabel:
+  - pn: QSFP-100G-AOC
+    source: pluggable-optical-modules-ds
+    description: 7.0.1
+    eol: false
   CFP2:
+  - pn: CFP2-WDM-D-SK
+    source: optical-modules-cfp2-wdm-eol
+    description: 200G, 100G, WDM Digital CFP2 pluggable, Non-TOF
+    eol: true
+  - pn: CFP2-WDM-DET-SK
+    source: optical-modules-cfp2-wdm-eol
+    description: 200G, 100G, WDM Digital CFP2 pluggable
+    eol: true
   - pn: CFP2-WDM-DETS-1HL
     source: 200gbps-cfp2-dco-module-eol
     description: 200G/100G, WDM CFP2 pluggable, w/ 100G SC-FEC, Lic.100G only
@@ -27,6 +40,11 @@ missing_by_family:
     source: c51-734200
     description: QSFP 40GBASE-LR4 Transceiver Module, LC, 10KM
     eol: true
+  QSFP28:
+  - pn: QSFP-100G-ER4
+    source: pluggable-optical-modules-ds
+    description: 7.3.1
+    eol: false
   SFP:
   - pn: CB-M12-4LC-MMF1.5
     source: high-density-fiber-patch-mpo-ds
@@ -72,6 +90,10 @@ missing_by_family:
     source: high-density-fiber-patch-mpo-ds
     description: 6.0m
     eol: false
+  - pn: CIM8-LE-K9
+    source: ncs-1014c-band-transponder-line-card-ds
+    description: Coherent Interface Module 8 enhanced L-Band
+    eol: false
   - pn: CWDM-SFP10G-1470
     source: 10g-cwdm-transceiver-module-eol
     description: CWDM 1470 nm SFP+ 10 Gigabit Ethernet Transceiver Module
@@ -108,6 +130,102 @@ missing_by_family:
     source: 400zr-osfp-digital-coherent-optic-module-eol
     description: 400GBPS COHERENT OSFP, DWDM C-BAND TUNABLE 400ZR MODULE
     eol: true
+  - pn: DS-SFP-4X32G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 128 Gbps Fibre Channel QSFP28 Optical Transceiver
+    eol: false
+  - pn: DS-SFP-FC-2G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2-Gbps Fibre Channel-Longwave, SFP, LC
+    eol: false
+  - pn: DS-SFP-FC-2G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2-Gbps Fibre Channel-Shortwave, SFP, LC
+    eol: false
+  - pn: DS-SFP-FC10G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Longwave, SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC10G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Shortwave, SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC16G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 16 Gbps Fibre Channel LW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC16G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 16 Gbps Fibre Channel SW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC16GELW
+    source: product_data_sheet09186a00801bc698
+    description: 16 Gbps Fibre Channel ELW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC32G-ELW
+    source: product_data_sheet09186a00801bc698
+    description: 32 Gbps Fibre Channel ELW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC32G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 32 Gbps Fibre Channel LW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC32G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 32 Gbps Fibre Channel SW SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC4G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2/4-Gbps Fibre Channel-Longwave 10-km, SFP, LC
+    eol: false
+  - pn: DS-SFP-FC4G-MR
+    source: product_data_sheet09186a00801bc698
+    description: 1/2/4-Gbps Fibre Channel-Longwave 4-km, SFP, LC
+    eol: false
+  - pn: DS-SFP-FC4G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2/4-Gbps Fibre Channel-Shortwave, SFP, LC
+    eol: false
+  - pn: DS-SFP-FC8G-ER
+    source: product_data_sheet09186a00801bc698
+    description: 2/4/8-Gbps Fibre Channel Extended Reach SFP+, LC (40 km Reach)
+    eol: false
+  - pn: DS-SFP-FC8G-LW
+    source: product_data_sheet09186a00801bc698
+    description: 2/4/8-Gbps Fibre Channel-Longwave, SFP+, LC
+    eol: false
+  - pn: DS-SFP-FC8G-SW
+    source: product_data_sheet09186a00801bc698
+    description: 2/4/8-Gbps Fibre Channel-Shortwave, SFP+, LC
+    eol: false
+  - pn: DS-SFP-FCGE-LW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2-Gbps Fibre Channel and Gigabit Ethernet-Longwave, SFP, LC
+    eol: false
+  - pn: DS-SFP-FCGE-SW
+    source: product_data_sheet09186a00801bc698
+    description: 1/2-Gbps Fibre Channel and Gigabit Ethernet-Shortwave, SFP, LC
+    eol: false
+  - pn: DS-SFP-GE-T
+    source: product_data_sheet09186a00801bc698
+    description: 1-Gbps Copper Gigabit Ethernet SFP, 1000Base-T, RJ-45
+    eol: false
+  - pn: DS-X2-FC10G-CX4
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Copper Transceiver, X2, CX4
+    eol: false
+  - pn: DS-X2-FC10G-ER
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Extended-reach, X2, SC
+    eol: false
+  - pn: DS-X2-FC10G-LR
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Long-reach, X2, SC
+    eol: false
+  - pn: DS-X2-FC10G-SR
+    source: product_data_sheet09186a00801bc698
+    description: 10-Gbps Fibre Channel-Short-reach, X2, SC
+    eol: false
   - pn: DWDM-GBIC-30.33
     source: eol_c51_624008
     description: 1000BASE-DWDM 1530.33nm GBIC (100GHz ITU grid)
@@ -364,6 +482,10 @@ missing_by_family:
     source: c51-733695
     description: 10GBase-DWDM 1560.61nm XENPAK
     eol: true
+  - pn: E1000-2-G
+    source: pluggable-optical-modules-ds
+    description: FC-MR-4
+    eol: false
   - pn: ENC-10G-ONT-01PR
     source: 10g-routed-pon-ont-ds
     description: ''
@@ -400,6 +522,14 @@ missing_by_family:
     source: c51-2369770
     description: Bundle of 96 CXP-100G-SR12
     eol: true
+  - pn: ONS-CXP2-SR25
+    source: pluggable-optical-modules-ds
+    description: CXP2 Transceiver module - 12x25G - Fabric Interconnect
+    eol: false
+  - pn: ONS-SI-2G-S1
+    source: pluggable-optical-modules-ds
+    description: SFP - OC48/STM16, SR, 1310 nm, ITEMP, LC
+    eol: false
   - pn: POM-OC3-MM
     source: c51-729209
     description: 1-port OC3/STM1 Pluggable Optic Module, MM
@@ -432,6 +562,10 @@ missing_by_family:
     source: eol_c51_604226
     description: 1-port OC-48/STM-16 Pluggable, 1310nm SM-SR LC
     eol: true
+  - pn: QSFP-40-SR-BD
+    source: pluggable-optical-modules-ds
+    description: '-'
+    eol: false
   - pn: SFP-GE-L
     source: c51-698060
     description: 1000BASE-LX/LH SFP (DOM)
@@ -502,5 +636,7 @@ excluded:
   CVR-QSFP-SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CVR-QSFP28-SFP25G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CFP2-LIC-UPG-200G: software license / RTU (not hardware optics)
+  CFP2-WDM-D-1HL: software license / RTU (not hardware optics)
+  ONS-C2-WDM-DE-1HL: software license / RTU (not hardware optics)
   R-PON-10G-RTU: software license / RTU (not hardware optics)
   CVR-CPAK-QSFP40: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
