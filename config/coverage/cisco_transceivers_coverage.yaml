@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 424
+catalog_skus: 458
 files_mined: 87
 files_skipped: 118
 mined_total: 450
-in_catalog: 349
-missing_count: 101
-orphan_count: 75
+in_catalog: 350
+missing_count: 100
+orphan_count: 108
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -412,11 +412,6 @@ missing_by_family:
     source: c51-734289
     description: 10GBASE-ZR XENPAK Module
     eol: true
-  XFP:
-  - pn: XFP-10GER-OC192IR
-    source: c51-566178
-    description: 10GBASE-ER and OC192 IR2 XFP Module
-    eol: true
 orphan:
 - CFP2-WDM-D-1HL
 - CFP2-WDM-DET-1HL
@@ -457,6 +452,38 @@ orphan:
 - DWDM-X2-58.98
 - DWDM-X2-59.79
 - DWDM-X2-60.61
+- DWDM-XFP-30.33
+- DWDM-XFP-31.12
+- DWDM-XFP-31.90
+- DWDM-XFP-32.68
+- DWDM-XFP-34.25
+- DWDM-XFP-35.04
+- DWDM-XFP-35.82
+- DWDM-XFP-36.61
+- DWDM-XFP-38.19
+- DWDM-XFP-38.98
+- DWDM-XFP-39.77
+- DWDM-XFP-40.56
+- DWDM-XFP-42.14
+- DWDM-XFP-42.94
+- DWDM-XFP-43.73
+- DWDM-XFP-44.53
+- DWDM-XFP-46.12
+- DWDM-XFP-46.92
+- DWDM-XFP-47.72
+- DWDM-XFP-48.51
+- DWDM-XFP-50.12
+- DWDM-XFP-50.92
+- DWDM-XFP-51.72
+- DWDM-XFP-52.52
+- DWDM-XFP-54.13
+- DWDM-XFP-54.94
+- DWDM-XFP-55.75
+- DWDM-XFP-56.55
+- DWDM-XFP-58.17
+- DWDM-XFP-58.98
+- DWDM-XFP-59.79
+- DWDM-XFP-60.61
 - ONS-CFP2-WDM
 - ONS-CFP2-WDM2
 - ONS-CFP2D-400G-C
@@ -493,6 +520,7 @@ orphan:
 - X2-10GB-LR++
 - X2-10GB-LRM++
 - X2-10GB-SR++
+- XFP-10GER-192IR+
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CVR-4SFP10G-QSFP: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)

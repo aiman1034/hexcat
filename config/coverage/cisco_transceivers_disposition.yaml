@@ -4,16 +4,15 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 101
+surfaced_total: 100
 counts:
-  ADD: 86
+  ADD: 85
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 56
+add_eol_flagged: 55
 add_families:
 - SFP
 - SFP+
 - XENPAK
-- XFP
 grounded_orphans:
 - pn: CFP2-WDM-D-1HL
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
@@ -132,6 +131,102 @@ grounded_orphans:
 - pn: DWDM-X2-60.61
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-736658.html
+- pn: DWDM-XFP-30.33
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-31.12
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-31.90
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-32.68
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-34.25
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-35.04
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-35.82
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-36.61
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-38.19
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-38.98
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-39.77
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-40.56
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-42.14
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-42.94
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-43.73
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-44.53
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-46.12
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-46.92
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-47.72
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-48.51
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-50.12
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-50.92
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-51.72
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-52.52
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-54.13
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-54.94
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-55.75
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-56.55
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-58.17
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-58.98
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-59.79
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
+- pn: DWDM-XFP-60.61
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-740869.html
 - pn: ONS-CFP2-WDM
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
@@ -240,6 +335,9 @@ grounded_orphans:
 - pn: X2-10GB-SR++
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-744186.html
+- pn: XFP-10GER-192IR+
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
 orphan_catalog_skus: 0
 add:
 - pn: CIM8-LE-K9
@@ -721,12 +819,6 @@ add:
   description: 10GBASE-ZR XENPAK Module
   reason: Real transceiver confirmed by mined datasheet description
   family: XENPAK
-  lifecycle: EOL
-- pn: XFP-10GER-OC192IR
-  source: c51-566178
-  description: 10GBASE-ER and OC192 IR2 XFP Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XFP
   lifecycle: EOL
 exclude_not_transceiver:
 - pn: CB-M12-4LC-MMF1.5
