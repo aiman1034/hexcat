@@ -112,6 +112,12 @@ _QSFP_CONN_RE = re.compile(r"QSFP|MPO|MTP|CXP|CPAK", re.IGNORECASE)         # a 
 _MULTI_WL_RE = re.compile(r"LR4|ER4|FR4|CWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
 _SINGLE_WL_RE = re.compile(r"^\s*[~≈]?\s*\d{3,4}(?:[.,]\d+)?\s*nm")          # exactly one wavelength
 _FIBRE_CONN_GATE_RE = re.compile(r"MPO|MTP|\bLC\b|\bCS\b", re.IGNORECASE)    # optical fibre connector
+# B.6 — a TUNABLE / "durchstimmbar" wavelength is only valid on a genuinely coherent/tunable part.
+# (Catches the inverse of B.3: a grey fixed-wavelength optic, e.g. 10GBASE-ZR, wrongly given a
+#  C-band-tunable wavelength — which a single-value multi-λ check would NOT flag.)
+_TUNABLE_WL_RE = re.compile(r"durchstimmbar|tunable", re.IGNORECASE)
+_COHERENT_TYPE_RE = re.compile(r"kohär|coheren|\bDCO\b|\bACO\b|400ZR|800ZR|DWDM|tunable|durchstimmbar",
+                               re.IGNORECASE)
 _COPPER_GATE_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|base-t", re.IGNORECASE)
 _PLACEHOLDER_VALS = frozenset({"—", "-", "–", "--", "N/A", "n/a", "k.A.", "keine", "none"})
 # B.5 known product-line guard: a PN family that belongs to a specific Hersteller, used ONLY to
@@ -567,6 +573,12 @@ class Validator:
                     self._fail(fname, sku, "Attributwert (Wellenlänge)",
                                "the full multi-lane wavelength set (e.g. 1271/1291/1311/1331 nm)", wl_v,
                                "semantic: LR4/ER4/FR4/coherent carries a wavelength SET, never one centre value")
+                # B.6 tunable wavelength only on a coherent/tunable part (grey fixed optics must not).
+                if (wl_v and _TUNABLE_WL_RE.search(wl_v)
+                        and not _COHERENT_TYPE_RE.search(vals.get("Standard", "") + " " + vals.get("Transceiver Typ", ""))):
+                    self._fail(fname, sku, "Attributwert (Wellenlänge)",
+                               "a fixed wavelength (this is not a coherent/tunable part)", wl_v,
+                               "semantic: a tunable/'durchstimmbar' wavelength is only valid on a coherent/tunable part")
                 # Gold-slice schema: Anwendung + Geschwindigkeit are required on EVERY SKU.
                 if _ANWENDUNG_NAME not in names:
                     self._fail(fname, sku, "Attributwert (Anwendung)",
