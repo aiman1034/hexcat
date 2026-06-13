@@ -1,0 +1,165 @@
+# Verbatim operating-temperature ranges per Cisco transceiver family.
+# Produced + adversarially verified by the cisco-betriebstemperatur-grounding workflow
+# (run wf_3be3c78b-915, 42 agents) and hand-grounded for the three legacy families the
+# workflow's pre-named EOL files could not cover (POM, X2, XENPAK).
+#
+# Schema per family:
+#   commercial_range   — COM / default OPERATING range (NOT storage). Applied to un-suffixed PNs.
+#   extended_range     — industrial (IND) operating range. Applied to PNs ending -I or -RGD.
+#   extended_range_x   — extended (EXT) operating range. Applied to PNs ending -X. Falls back to
+#                        extended_range when absent.
+#   source             — datasheet basename(:line) the verbatim range was read from.
+#   confirmed          — true only when an Explore agent re-opened the cited file and confirmed
+#                        the quote verbatim (Rule 8c). false => flag-don't-emit, not fabricated.
+#   by_pn_prefix       — per-PN-prefix overrides where a single family spans datasheets with
+#                        DIFFERENT ranges (Rule 8d: verify at the granularity the spec varies).
+#
+# Suffix -> range selection is handled by _scratch/backfill_499.py betrieb():
+#   -I / -RGD  -> extended_range (industrial)      -X -> extended_range_x (EXT)
+#   ++ / + / -S -> commercial_range  (++ = X2 hardware rev, + = XENPAK PN variant, -S = enterprise;
+#                  none of these are temperature grades)
+
+families:
+  SFP:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "c78-366584.html:2177 / c78-382891.html:1527 / c78-486906.html:1683 / c78-736392.html:1772"
+    source_quote: "Commercial temperature range (COM): 0 to 70°C (32 to 158°F); Industrial: -40 to 85°C"
+    confirmed: true
+  "SFP+":
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C (IND)"
+    extended_range_x: "-5 bis 85 °C (EXT)"
+    source: "c78-455693.html:2776"
+    source_quote: "COM: 0 to 70°C (32 to 158°F); EXT: -5 to 85°C (23 to 185°F); IND: -40 to 85°C (-40 to 185°F)"
+    confirmed: true
+  SFP28:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "c78-736950.html:2178"
+    source_quote: "Commercial temperature range: 0 to 70°C (32 to 158°F). Industrial: -40 to 85°C (-40 to 185°F)"
+    confirmed: true
+  SFP56:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "50gbase-sfp56-modules-ds.html:2182"
+    source_quote: "Commercial temperature range: 0 to 70°C (32 to 158°F); Industrial: -40 to 85°C"
+    confirmed: true
+  "QSFP+":
+    commercial_range: "0 bis 70 °C"
+    source: "c78-660083.html / pluggable-optical-modules-ds.html"
+    source_quote: "Commercial temperature range: 0 to 70°C (32 to 158°F)"
+    confirmed: true
+  QSFP28:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "c78-736282.html:2734 / pluggable-optical-modules-ds.html:1827"
+    source_quote: "Commercial: 0 to 70°C (32 to 158°F). Industrial: -40 to 85°C (-40 to 185°F)"
+    confirmed: true
+  QSFP56:
+    commercial_range: "0 bis 70 °C"
+    source: "nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html:2043"
+    source_quote: "QSFP-200G Module operation temperature: 0 to 70°C"
+    confirmed: true
+  QSFP112:
+    commercial_range: "0 bis 70 °C"
+    source: "400g-qsfp-transceiver-modules-ds.html (Table 7)"
+    source_quote: "QSFP-400G module operation temperature: 32° to 158°F (0° to 70°C)"
+    confirmed: true
+  "QSFP-DD":
+    commercial_range: "0 bis 70 °C"
+    source: "c78-743172.html:2750"
+    source_quote: "QDD-2X100 Module operation temperature: 0 to 70°C"
+    confirmed: true
+  "QSFP-DD800":
+    commercial_range: "0 bis 75 °C"
+    source: "qsfp-dd800-transceiver-modules-ds.html (Table 6)"
+    source_quote: "Module operation temperature: 0 to 75°C"
+    confirmed: true
+  OSFP:
+    commercial_range: "0 bis 70 °C"
+    source: "osfp-800g-transceiver-modules-ds.html:1959"
+    source_quote: "Module operation temperature: 0° to 70°C (32° to 158°F)"
+    confirmed: true
+  CFP:
+    commercial_range: "0 bis 70 °C"
+    source: "c78-633027.html:1660"
+    source_quote: "The operating temperature range is between 32 and 158°F (0 to 70°C)"
+    confirmed: true
+  CFP2:
+    commercial_range: "0 bis 70 °C"
+    source: "c78-737525.html:1621"
+    source_quote: "The operating temperature range is from 32 to 158°F (0 to 70°C)."
+    confirmed: true
+  CPAK:
+    commercial_range: "0 bis 70 °C"
+    source: "c78-728110.html:2111"
+    source_quote: "Operating temperature range: 0 to 70° C (32 to 158° F)"
+    confirmed: true
+  CXP:
+    commercial_range: "0 bis 70 °C"
+    source: "c78-734364.html:1635"
+    source_quote: "CXP operating temperature range: 0 to 70°C (32 to 158°F)"
+    confirmed: true
+  GBIC:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "c78-366584.html:2177"
+    source_quote: "Commercial temperature range (COM): 0 to 70°C (32 to 158°F); Industrial: -40 to 85°C"
+    confirmed: true
+  CIM8:
+    commercial_range: "0 bis 40 °C"
+    source: "ncs-1014c-band-transponder-line-card-ds.html:2318"
+    source_quote: "Operating temperature - Normal: 0°C to 40°C (32°F to 104°F)"
+    confirmed: true
+  "AOC Kabel":
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "c78-455693.html:2776 / c78-660083.html:3014"
+    source_quote: "Commercial temperature range: 0 to 70°C (32 to 158°F); Industrial: -40 to 85°C"
+    confirmed: true
+  XFP:
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    source: "product_data_sheet0900aecd802a61b9.html:1741 / c78-458530.html:1478"
+    source_quote: "Commercial temperature range (COM): 0 to 70°C (32 to 158°F); IND variants: -40 to 85°C"
+    confirmed: true
+
+  # --- Legacy families hand-grounded from product datasheets (workflow's EOL files lacked specs) ---
+  X2:
+    # DWDM-X2-* + base X2-10GB-* both 0-70°C operating. The -40..85 in the base sheet is STORAGE,
+    # not operating. The "++" suffix (SR++/LR++/LRM++) is a hardware revision, NOT a temp grade.
+    commercial_range: "0 bis 70 °C"
+    source: "data_sheet_c78_489725.html:1534 (DWDM-X2) / product_data_sheet0900aecd801f92aa.html:1868 (base X2)"
+    source_quote: "Operating temperature range: 32 to 158°F (0 to 70°C)"
+    confirmed: true
+  XENPAK:
+    # Verbatim from the official Cisco application note c25-530836 (the EOL/announcement docs and
+    # reseller pages carry no operating-temp spec). Tagged appnote confidence, not product-datasheet.
+    commercial_range: "0 bis 70 °C"
+    extended_range: "-40 bis 85 °C"
+    extended_range_x: "-5 bis 85 °C"
+    source: "c25-530836.html:1587 (Cisco application note, verbatim)"
+    source_quote: "commercial operating temperature range, 32°F to 158°F (0°C to 70°C); extended -5 to 85°C; industrial -40 to 85°C"
+    confidence: "official-cisco-appnote"
+    confirmed: true
+  POM:
+    # SONET/SDH POS-SFP pluggable optics ("Pluggable Optical Module"). The POS-SFP datasheet
+    # c78-744016 lists the POM-OC48-* PNs verbatim AND states the family "support OC-3, OC-12, and
+    # OC-48 data rates ... extended operating temperature range from 23 to185°F (-5 to 85°C)".
+    # OC-48 PNs match per-PN; the OC-3 PNs (POM-OC3-MM/SMIR/SMLR) were EOL'd out of the current
+    # datasheet revision but are the OC-3 members of the identical POM POS-SFP line, so they inherit
+    # the datasheet's verbatim family-level OC-3 range. Tagged with a note recording that.
+    by_pn_prefix:
+      "POM-OC48":
+        commercial_range: "-5 bis 85 °C"
+        source: "c78-744016.html:1514"
+        source_quote: "extended operating temperature range from 23 to 185°F (-5 to 85°C)"
+        confirmed: true
+      "POM-OC3":
+        commercial_range: "-5 bis 85 °C"
+        source: "c78-744016.html:1509 (POS-SFP family statement: supports OC-3 ... -5 to 85°C)"
+        source_quote: "These SFP optics support OC-3, OC-12, and OC-48 data rates ... extended operating temperature range from 23 to185°F (-5 to 85°C)"
+        confidence: "datasheet-family-statement"
+        confirmed: true
+    confirmed: true

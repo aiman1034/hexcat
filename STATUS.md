@@ -63,6 +63,20 @@ Rule 6 ("expand the taxonomy rather than drop a real part" still holds, but the 
 ONLY with approval). POM and CIM8 were both retroactively APPROVED (they stay); from now on every
 such case waits for the operator. (POM/CIM8 would each have surfaced for a decision under Rule 7.)
 
+**Rule 8 (PERMANENT) — gold-standard parity / re-verification.** The gold proof-slice is the quality
+bar; the stage3 gate is a fallible instrument that can drift below it, and "gate-PASS" is NEVER proof
+of correctness on its own. (a) The gate's bar must always EQUAL the gold-slice schema — full
+applicable attribute set + content floors (Beschreibung 90–175, Kurz 40–80, Titel ≤60). The moment an
+audit finds the gate passing something below the gold slice, FIX THE GATE FIRST, before more
+authoring. (b) Before any brand/category is declared complete, run a parity re-verification vs the
+gold slice and report a before→after tally: attribute coverage (no silent drops), spec accuracy
+(every value datasheet-traceable), content (all word floors). Any miss is a FAIL regardless of the
+gate verdict. (c) Specs are verbatim-verified (read → adversarial-verify, the temp pattern), never
+asserted with only a URL; the Verification_Log confidence must reflect real extraction, and DERIVED
+values (Faseranzahl, Anwendung) are explicitly tagged as derivations. (d) Verify at the granularity
+the spec VARIES — per-SKU where it differs (operating temp by -I/-X suffix: industrial ≈ -40..+85 °C
+vs commercial 0..+70 °C); never stamp a family-wide value over per-SKU differences.
+
 **Directive: take Cisco to TRUE ideal data — (A) author all ~598, (B) price all ~598 — then
 Meraki, then the rest. Autonomous, $0.**
 
