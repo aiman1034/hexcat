@@ -3,6 +3,18 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-14) — grind: 10 families landed (catalog 499)
+
+**4 big DWDM-channel families added this turn:** GBIC(36) X2(35) XFP(34) XENPAK(41) = 146 SKUs;
+session total **192 of the 301 ADD authored**. Catalog 353→**499**; COMPLETE 550/550; 405 tests;
+ADD worklist **99 left**. Channel families used a per-channel helper (lead each with its λ + derived
+ITU frequency THz; substantive shared body; 32 channels « 25%-reuse threshold → passes). The
+orphan invariant is now derived from authored provenance (scales). Byte-contract re-confirmed on the
+499-SKU bundle at `output/stage3_Cisco/` (audit path).
+**REMAINING (99, DIVERSE — per-SKU grounding):** SFP(45) + SFP+(43) [DS-SFP Fibre-Channel, GLC, ONS,
+CWDM/DWDM channels, FET], QSFP-DD(10 optical) + QSFP-DD800(1). Fix `CIM8-LE-K9` (mis-tokened as SFP →
+CIM8). **Pricing family-base sweep now DUE** for the authored channel families. Detail in ruflo.
+
 ## Current state (2026-06-14) — grind: 6 small families landed (catalog 353)
 
 **Small non-channel group COMPLETE.** CFP2(11) DAC(10) AOC(10) QSFP+(4) OSFP(2) QSFP28(9) = **46
