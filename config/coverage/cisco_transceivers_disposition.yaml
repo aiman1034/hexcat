@@ -4,15 +4,14 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 140
+surfaced_total: 138
 counts:
-  ADD: 125
+  ADD: 123
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 94
+add_eol_flagged: 93
 add_families:
 - GBIC
 - OSFP
-- QSFP+
 - SFP
 - SFP+
 - XENPAK
@@ -40,6 +39,12 @@ grounded_orphans:
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-CFP2D-400G-C
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP-4X10-MER
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP-4X10-MLR
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: QDD-2Q200-CU1M
@@ -722,17 +727,6 @@ add:
   description: 7.3.1
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP
-- pn: QSFP-40-SR-BD
-  source: pluggable-optical-modules-ds
-  description: '-'
-  reason: Real transceiver confirmed by mined datasheet description
-  family: QSFP+
-- pn: QSFP-40GE-LR4
-  source: c51-734200
-  description: QSFP 40GBASE-LR4 Transceiver Module, LC, 10KM
-  reason: Real transceiver confirmed by mined datasheet description
-  family: QSFP+
-  lifecycle: EOL
 - pn: SFP-GE-L
   source: c51-698060
   description: 1000BASE-LX/LH SFP (DOM)

@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 338
+catalog_skus: 342
 files_mined: 87
 files_skipped: 118
 mined_total: 450
-in_catalog: 310
-missing_count: 140
-orphan_count: 28
+in_catalog: 312
+missing_count: 138
+orphan_count: 30
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -14,11 +14,6 @@ missing_by_family:
     source: pluggable-optical-modules-ds
     description: 7.0.1
     eol: false
-  QSFP+:
-  - pn: QSFP-40GE-LR4
-    source: c51-734200
-    description: QSFP 40GBASE-LR4 Transceiver Module, LC, 10KM
-    eol: true
   QSFP28:
   - pn: QSFP-100G-ER4
     source: pluggable-optical-modules-ds
@@ -509,10 +504,6 @@ missing_by_family:
     source: pluggable-optical-modules-ds
     description: SFP - OC48/STM16, SR, 1310 nm, ITEMP, LC
     eol: false
-  - pn: QSFP-40-SR-BD
-    source: pluggable-optical-modules-ds
-    description: '-'
-    eol: false
   - pn: SFP-GE-L
     source: c51-698060
     description: 1000BASE-LX/LH SFP (DOM)
@@ -583,6 +574,8 @@ orphan:
 - ONS-CFP2-WDM
 - ONS-CFP2-WDM2
 - ONS-CFP2D-400G-C
+- ONS-QSFP-4X10-MER
+- ONS-QSFP-4X10-MLR
 - QDD-2Q200-CU1M
 - QDD-2Q200-CU2M
 - QDD-400-AOC10M
