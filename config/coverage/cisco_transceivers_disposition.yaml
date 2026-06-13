@@ -28,6 +28,12 @@ grounded_orphans:
 - pn: CIM8-CE-K9
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
+- pn: DP01QS28-E20
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
+- pn: DP01QS28-E25
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
 - pn: DP04CFP2-M25-K9
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
@@ -40,10 +46,16 @@ grounded_orphans:
 - pn: ONS-CFP2D-400G-C
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QC-16GFC-SW
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-QSFP-4X10-MER
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: ONS-QSFP-4X10-MLR
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
+- pn: ONS-QSFP28-LR4
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-2000-series/pluggable-optical-modules-ds.html
 - pn: OSFPR-800G-DR8
@@ -103,9 +115,24 @@ grounded_orphans:
 - pn: QDD-4ZQ100-CU3M
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-743172.html
+- pn: QSFP-100G-B40D-I
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbps-bidi-plug-transceiver-aag.html
+- pn: QSFP-100G-B40U-I
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/100gbps-bidi-plug-transceiver-aag.html
+- pn: QSFP-100G-ZR4-I
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/cisco-100gbase-q100-zr4-s-ea-module-ds.html
 - pn: QSFP-200-CU3M
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/nb-06-200g-qsfp56-cables-trans-mod-ds-cte-en.html
+- pn: QSFP-4SFP25G-CU1.5M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
+- pn: QSFP-4SFP25G-CU2.5M
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html
 - pn: QSFP-4SFP25G-CU4M
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/datasheet-c78-736282.html

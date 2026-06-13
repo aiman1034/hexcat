@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 344
+catalog_skus: 353
 files_mined: 87
 files_skipped: 118
 mined_total: 450
 in_catalog: 313
 missing_count: 137
-orphan_count: 31
+orphan_count: 40
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -566,12 +566,16 @@ orphan:
 - CFP2-WDM-DET-1HL
 - CIM8-C-K9
 - CIM8-CE-K9
+- DP01QS28-E20
+- DP01QS28-E25
 - DP04CFP2-M25-K9
 - ONS-CFP2-WDM
 - ONS-CFP2-WDM2
 - ONS-CFP2D-400G-C
+- ONS-QC-16GFC-SW
 - ONS-QSFP-4X10-MER
 - ONS-QSFP-4X10-MLR
+- ONS-QSFP28-LR4
 - OSFPR-800G-DR8
 - QDD-2Q200-CU1M
 - QDD-2Q200-CU2M
@@ -591,7 +595,12 @@ orphan:
 - QDD-4ZQ100-CU1M
 - QDD-4ZQ100-CU2M
 - QDD-4ZQ100-CU3M
+- QSFP-100G-B40D-I
+- QSFP-100G-B40U-I
+- QSFP-100G-ZR4-I
 - QSFP-200-CU3M
+- QSFP-4SFP25G-CU1.5M
+- QSFP-4SFP25G-CU2.5M
 - QSFP-4SFP25G-CU4M
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
