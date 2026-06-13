@@ -1,0 +1,193 @@
+# Cisco transceiver End-of-Life / End-of-Sale bulletin enumeration.
+# SOURCE: official transceiver EOS/EOL notice listing ->
+#   https://www.cisco.com/c/en/us/products/interfaces-modules/transceiver-modules/eos-eol-notice-listing.html
+# CAPTURED: 2026-06-13 via the local bridge. PNs read VERBATIM from each
+#   bulletin's affected-product table; doc-ids/dates/boilerplate denylisted; XX+ wildcards dropped.
+# BULLETINS MINED: 29 of 29 linked (English).  UNION PNs: 156
+#
+#   eos-eol-notice-c51-2454312.html               1 PNs
+#   eos-eol-notice-c51-23758826.html              8 PNs
+#   eos-eol-notice-c51-2369770.html               2 PNs
+#   eos-eol-notice-c51-2357758.html               1 PNs
+#   eos-eol-notice-c51-2358104.html               3 PNs
+#   eos-eol-notice-c51-744589.html                1 PNs
+#   eos-eol-notice-c51-744427.html                1 PNs
+#   eos-eol-notice-c51-744186.html                1 PNs
+#   eos-eol-notice-c51-742774.html                1 PNs
+#   eos-eol-notice-c51-742174.html                3 PNs
+#   eos-eol-notice-c51-740869.html               33 PNs
+#   eos-eol-notice-c51-740443.html                3 PNs
+#   eos-eol-notice-c51-738451.html                2 PNs
+#   eos-eol-notice-c51-738205.html                4 PNs
+#   eos-eol-notice-c51-737969.html                1 PNs
+#   eos-eol-notice-c51-737526.html                2 PNs
+#   eos-eol-notice-c51-737325.html                5 PNs
+#   eos-eol-notice-c51-736657.html                1 PNs
+#   eos-eol-notice-c51-736656.html                4 PNs
+#   eos-eol-notice-c51-736655.html                2 PNs
+#   eos-eol-notice-c51-736658.html               32 PNs
+#   eos-eol-notice-c51-736508.html                1 PNs
+#   eos-eol-notice-c51-736369.html                1 PNs
+#   eos-eol-notice-c51-734241.html                3 PNs
+#   eos-eol-notice-c51-734289.html                5 PNs
+#   eos-eol-notice-c51-734200.html                2 PNs
+#   eos-eol-notice-c51-733695.html               32 PNs
+#   eos-eol-notice-c51-732419.html                1 PNs
+#   eos-eol-notice-c51-731970.html                1 PNs
+#
+CAB-INF-26G-15
+CAB-INF-28G-1
+CAB-INF-28G-10
+CAB-INF-28G-5
+CFP-100G-ER4
+CFP-100G-LR4
+CFP-100G-SR10
+CFP-40G-FR
+CFP-40G-LR4
+CFP-40G-SR4
+CVR-4SFP10G-QSFP
+CVR-BRKT-1
+CVR-CFP-4SFP10G
+CVR-TRAY-8
+CWDM-MUX-4-SF1
+CWDM-MUX-4-SF2
+CXP-100G-SR10
+CXP-100G-SR12
+DWDM-X2-30.33
+DWDM-X2-31.12
+DWDM-X2-31.90
+DWDM-X2-32.68
+DWDM-X2-34.25
+DWDM-X2-35.04
+DWDM-X2-35.82
+DWDM-X2-36.61
+DWDM-X2-38.19
+DWDM-X2-38.98
+DWDM-X2-39.77
+DWDM-X2-40.56
+DWDM-X2-42.14
+DWDM-X2-42.94
+DWDM-X2-43.73
+DWDM-X2-44.53
+DWDM-X2-46.12
+DWDM-X2-46.92
+DWDM-X2-47.72
+DWDM-X2-48.51
+DWDM-X2-50.12
+DWDM-X2-50.92
+DWDM-X2-51.72
+DWDM-X2-52.52
+DWDM-X2-54.13
+DWDM-X2-54.94
+DWDM-X2-55.75
+DWDM-X2-56.55
+DWDM-X2-58.17
+DWDM-X2-58.98
+DWDM-X2-59.79
+DWDM-X2-60.61
+DWDM-XENPAK-30.33
+DWDM-XENPAK-31.12
+DWDM-XENPAK-31.90
+DWDM-XENPAK-32.68
+DWDM-XENPAK-34.25
+DWDM-XENPAK-35.04
+DWDM-XENPAK-35.82
+DWDM-XENPAK-36.61
+DWDM-XENPAK-38.19
+DWDM-XENPAK-38.98
+DWDM-XENPAK-39.77
+DWDM-XENPAK-40.56
+DWDM-XENPAK-42.14
+DWDM-XENPAK-42.94
+DWDM-XENPAK-43.73
+DWDM-XENPAK-44.53
+DWDM-XENPAK-46.12
+DWDM-XENPAK-46.92
+DWDM-XENPAK-47.72
+DWDM-XENPAK-48.51
+DWDM-XENPAK-50.12
+DWDM-XENPAK-50.92
+DWDM-XENPAK-51.72
+DWDM-XENPAK-52.52
+DWDM-XENPAK-54.13
+DWDM-XENPAK-54.94
+DWDM-XENPAK-55.75
+DWDM-XENPAK-56.55
+DWDM-XENPAK-58.17
+DWDM-XENPAK-58.98
+DWDM-XENPAK-59.79
+DWDM-XENPAK-60.61
+DWDM-XFP-30.33
+DWDM-XFP-31.12
+DWDM-XFP-31.90
+DWDM-XFP-32.68
+DWDM-XFP-34.25
+DWDM-XFP-35.04
+DWDM-XFP-35.82
+DWDM-XFP-36.61
+DWDM-XFP-38.19
+DWDM-XFP-38.98
+DWDM-XFP-39.77
+DWDM-XFP-40.56
+DWDM-XFP-42.14
+DWDM-XFP-42.94
+DWDM-XFP-43.73
+DWDM-XFP-44.53
+DWDM-XFP-46.12
+DWDM-XFP-46.92
+DWDM-XFP-47.72
+DWDM-XFP-48.51
+DWDM-XFP-50.12
+DWDM-XFP-50.92
+DWDM-XFP-51.72
+DWDM-XFP-52.52
+DWDM-XFP-54.13
+DWDM-XFP-54.94
+DWDM-XFP-55.75
+DWDM-XFP-56.55
+DWDM-XFP-58.17
+DWDM-XFP-58.98
+DWDM-XFP-59.79
+DWDM-XFP-60.61
+DWDM-XFP-C
+EWDM-OA
+EWDM-OADM2
+EWDM-OADM4
+GLC-LH-LMM-TI
+GLC-T
+GLC-T++
+GLC-TE
+GLC-TE++
+GLC-ZX-LMM-TI
+NCS-FAB-OPT
+QSFP-40G-LR4-S
+QSFP-40GE-LR4
+SFP-10G-LRM
+SFP-GE-T
+SFP-GPON-B
+SFP-GPON-B-I
+SFP-GPON-C
+SFP-GPON-C-I
+SFP-OC12-LR1
+SFP-OC12-LR2
+SFP-OC48-LR2
+X2-10GB-CX4
+X2-10GB-ER
+X2-10GB-LR
+X2-10GB-LR++
+X2-10GB-LRM
+X2-10GB-LRM++
+X2-10GB-SR
+X2-10GB-SR++
+X2-10GB-T
+X2-10GB-ZR
+XENPAK-10GB-ER+
+XENPAK-10GB-LR+
+XENPAK-10GB-LRM
+XENPAK-10GB-SR
+XENPAK-10GB-ZR
+XFP-10GER-192IR+
+XFP-10GLR-OC192SR
+XFP10GER-192IR-L
+XFP10GER192IR-RGD
+XFP10GLR-192SR-L
