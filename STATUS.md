@@ -3,6 +3,16 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-14) — grind: 6 small families landed (catalog 353)
+
+**Small non-channel group COMPLETE.** CFP2(11) DAC(10) AOC(10) QSFP+(4) OSFP(2) QSFP28(9) = **46
+SKUs** authored, gate PASS, committed (…/85bb573). Catalog 307→**353**; COMPLETE 550/550; 405 tests;
+ADD worklist 245 left. QSFP28 batch included 3 datasheet-grounded re-assignments into existing
+tokens (CU1.5M/CU2.5M→DAC, ONS-QC-16GFC-SW→QSFP+). **Pricing decoupled** into periodic family-base
+sweeps (operator decision; tracked in ruflo) — pricing debt outstanding for the 46 new SKUs.
+**NEXT** = big DWDM-channel families (GBIC/X2/XFP/XENPAK/SFP/SFP+) in **context-sized batches**,
+each entry led by its channel wavelength for uniqueness; then cheap family-base price sweeps.
+
 ## Current state (2026-06-14) — author+price grind: 4 families landed (catalog 342)
 
 Autonomous per-family grind (workflow in auto-memory `hexcat-grind-workflow`): **CFP2(11) + DAC(10)
