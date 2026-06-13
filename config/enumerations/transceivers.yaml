@@ -47,13 +47,25 @@ brands:
       - id: ordering_guide
         kind: ordering_guide
         note: >-
-          Cisco transceiver ordering / product-family guide(s) — the manufacturer's own
-          part-number ordering tables across the SFP/SFP+/QSFP/CFP families.
+          Cisco transceiver ordering / product-family guide — derived from the official MASTER
+          transceiver datasheet listing (datasheet-listing.html), which indexes every current
+          product-family datasheet. The snapshot is the UNION of PNs mined (by the tool's
+          deterministic miner) from exactly those master-listed datasheets — Cisco's own catalog
+          of current sellable optics, independent of the compatibility matrix and EOL bulletins.
         snapshot: config/coverage/enumerations/cisco_ordering_guide.txt
 
       - id: gpl_price_list
         kind: price_list
+        # INACCESSIBLE AT $0 (flag-don't-fabricate): the Cisco Global Price List is gated behind
+        # CCO / Cisco Commerce (CCW) authentication with a service-contract entitlement. Probed
+        # 2026-06-13 via the local bridge — apps.cisco.com/ccw/.../pricing returns an SSO login
+        # wall (title "Cisco", no price data), not a bulk list. There is no public per-category
+        # GPL page (price-list.html -> 404). We therefore CANNOT mine it at $0 without credentials
+        # and will NOT fabricate it. Source stays empty/unpopulated (does not count toward the
+        # verdict). The universe rests on the three accessible independent enumerations above;
+        # the ordering-guide reconcile (gaps=0) shows the harvest already covers Cisco's current
+        # catalog, so the GPL's marginal coverage over matrix+EOL+ordering is expected to be nil.
         note: >-
-          Cisco Global Price List (GPL) transceiver lines — every orderable PN; the broadest
-          single enumeration and the backstop net for parts the other lists miss.
+          Cisco Global Price List (GPL) — every orderable PN. INACCESSIBLE at $0 (auth-gated);
+          left unpopulated and honestly flagged rather than fabricated. See comment above.
         snapshot: config/coverage/enumerations/cisco_gpl.txt

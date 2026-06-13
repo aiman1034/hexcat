@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
 complete: false
-universe_total: 555
-captured_count: 349
+universe_total: 580
+captured_count: 374
 gap_count: 206
 confirmed_gone_count: 0
-extra_count: 101
-populated_sources: 2
+extra_count: 76
+populated_sources: 3
 per_source:
 - id: tmg_matrix
   kind: compatibility_matrix
@@ -22,9 +22,9 @@ per_source:
   gaps: 85
 - id: ordering_guide
   kind: ordering_guide
-  total: 0
-  populated: false
-  captured: 0
+  total: 311
+  populated: true
+  captured: 311
   gaps: 0
 - id: gpl_price_list
   kind: price_list
@@ -241,17 +241,6 @@ gaps:
 - XFP-10GER-192IR+
 confirmed_gone: []
 extra:
-- CB-M12-4LC-MMF1.5
-- CB-M12-4LC-MMF10M
-- CB-M12-4LC-MMF15M
-- CB-M12-4LC-MMF20M
-- CB-M12-4LC-MMF25M
-- CB-M12-4LC-MMF2M
-- CB-M12-4LC-MMF30M
-- CB-M12-4LC-MMF3M
-- CB-M12-4LC-MMF4M
-- CB-M12-4LC-MMF5M
-- CB-M12-4LC-MMF7M
 - CFP2-WDM-D-SK
 - CFP2-WDM-DET-SK
 - CWDM-SFP10G-1490
@@ -308,11 +297,7 @@ extra:
 - DWDM-GBIC-58.98
 - DWDM-GBIC-59.79
 - DWDM-GBIC-60.61
-- DWDM-SFP-6141
 - E1000-2-G
-- ENC-10G-ONT-01PR
-- ENC-10G-ONT-10
-- ENC-10G-ONT-14A
 - ONS-CXP2-SR25
 - ONS-SI-2G-S1
 - POM-OC3-MM
@@ -323,19 +308,9 @@ extra:
 - POM-OC48-LR2-LC-C
 - POM-OC48-SR-LC
 - POM-OC48-SR-LC-C
-- Q-4SFP25G-CU1.5M
-- Q-4SFP25G-CU2.5M
 - QSFP-100G-AOC
 - QSFP-100G-ER4
-- QSFP-100G-SR-S
-- QSFP-2Q200-CU3M
 - QSFP-40-SR-BD
-- QSFP-400G-FR4
-- QSFP-4SFP25-CU1M
-- QSFP-4SFP25-CU2M
-- QSFP-4SFP25-CU3M
-- QSFP-4SFP25-CU4M
-- QSFP-4SFP25-CU5M
 - WDM-XENPAK-REC
 - WS-G5483
 - WS-G5484
