@@ -1,19 +1,20 @@
 brand: Cisco
 category: transceivers
 complete: false
-universe_total: 580
+universe_total: 550
 captured_count: 374
-gap_count: 206
+gap_count: 176
 confirmed_gone_count: 0
 extra_count: 76
 populated_sources: 3
+routed_out_count: 30
 per_source:
 - id: tmg_matrix
   kind: compatibility_matrix
-  total: 438
+  total: 408
   populated: true
   captured: 314
-  gaps: 124
+  gaps: 94
 - id: eol_eos_bulletins
   kind: eol_eos_bulletins
   total: 156
@@ -144,36 +145,6 @@ gaps:
 - FET-10G
 - GLC-T++
 - GLC-TE++
-- MA-CBL-100G-1M
-- MA-CBL-100G-3M
-- MA-CBL-100G-50CM
-- MA-CBL-120G-1M
-- MA-CBL-120G-3M
-- MA-CBL-120G-50CM
-- MA-CBL-40G-1M
-- MA-CBL-40G-3M
-- MA-CBL-40G-50CM
-- MA-CBL-TA-1M
-- MA-CBL-TA-3M
-- MA-QSFP-100G-LR4
-- MA-QSFP-100G-SR4
-- MA-QSFP-40G-CSR4
-- MA-QSFP-40G-LR4
-- MA-QSFP-40G-SR-BD
-- MA-QSFP-40G-SR4
-- MA-SFP-10GB-ER
-- MA-SFP-10GB-LR
-- MA-SFP-10GB-LRM
-- MA-SFP-10GB-SR
-- MA-SFP-10GB-ZR
-- MA-SFP-1GB-LX10
-- MA-SFP-1GB-SX
-- MA-SFP-1GB-TX
-- MGBBX1
-- MGBLH1
-- MGBLX1
-- MGBSX1
-- MGBT1
 - ONS-CFP2-WDM
 - ONS-CFP2-WDM2
 - ONS-CFP2D-400G-C
@@ -317,3 +288,34 @@ extra:
 - WS-G5486
 - WS-G5487
 - XENPAK-10GB-LW
+routed_out:
+- MA-CBL-100G-1M
+- MA-CBL-100G-3M
+- MA-CBL-100G-50CM
+- MA-CBL-120G-1M
+- MA-CBL-120G-3M
+- MA-CBL-120G-50CM
+- MA-CBL-40G-1M
+- MA-CBL-40G-3M
+- MA-CBL-40G-50CM
+- MA-CBL-TA-1M
+- MA-CBL-TA-3M
+- MA-QSFP-100G-LR4
+- MA-QSFP-100G-SR4
+- MA-QSFP-40G-CSR4
+- MA-QSFP-40G-LR4
+- MA-QSFP-40G-SR-BD
+- MA-QSFP-40G-SR4
+- MA-SFP-10GB-ER
+- MA-SFP-10GB-LR
+- MA-SFP-10GB-LRM
+- MA-SFP-10GB-SR
+- MA-SFP-10GB-ZR
+- MA-SFP-1GB-LX10
+- MA-SFP-1GB-SX
+- MA-SFP-1GB-TX
+- MGBBX1
+- MGBLH1
+- MGBLX1
+- MGBSX1
+- MGBT1

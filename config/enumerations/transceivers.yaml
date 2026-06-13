@@ -26,6 +26,14 @@ brands:
     # gone; "blocked" or "not-yet-fetched" is NEVER recorded here.
     confirmed_gone: []
 
+    # Cisco's compatibility matrix lists Meraki MA-*/MGB* optics (Cisco owns Meraki). Those PIDs
+    # are a SEPARATE catalog brand (own Hersteller token) — routed out of the Cisco universe and
+    # reconciled under the Meraki brand below. Verbatim snapshots stay intact; routing is at
+    # reconcile time so nothing is silently dropped.
+    route_out:
+      - '^MA-'
+      - '^MGB'
+
     sources:
       - id: tmg_matrix
         kind: compatibility_matrix
@@ -69,3 +77,15 @@ brands:
           Cisco Global Price List (GPL) — every orderable PN. INACCESSIBLE at $0 (auth-gated);
           left unpopulated and honestly flagged rather than fabricated. See comment above.
         snapshot: config/coverage/enumerations/cisco_gpl.txt
+
+  # Meraki — Cisco's cloud-managed line. Cisco publishes its MA-*/MGB* optics in the TMG matrix;
+  # the Meraki-branded subset is captured verbatim here and reconciled as its own brand.
+  Meraki:
+    confirmed_gone: []
+    sources:
+      - id: tmg_matrix_meraki
+        kind: compatibility_matrix
+        note: >-
+          Meraki MA-*/MGB* optics as published in the Cisco TMG optics-to-device compatibility
+          matrix — the verbatim Meraki-branded subset of that matrix capture.
+        snapshot: config/coverage/enumerations/meraki_tmg_matrix.txt

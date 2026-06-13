@@ -90,6 +90,20 @@ def test_complete_only_when_harvest_covers_whole_union():
     assert not reconcile("X", "c", ["A-1"], sources).complete
 
 
+def test_route_out_pulls_other_brand_pns_out_of_universe():
+    # Cisco's matrix lists Meraki MA-*/MGB* optics; route_out attributes them elsewhere so they
+    # are neither Cisco gaps nor Cisco universe — but they are recorded, never silently dropped.
+    sources = [_src("matrix", ["SFP-10G-LR", "MA-SFP-10GB-SR", "MGBSX1"])]
+    rep = reconcile("Cisco", "transceivers", ["SFP-10G-LR"], sources,
+                    route_out=[r"^MA-", r"^MGB"])
+    assert rep.universe == {"SFP-10G-LR"}                  # Meraki PIDs removed from the universe
+    assert rep.routed_out == {"MA-SFP-10GB-SR", "MGBSX1"}  # ...but explicitly recorded
+    assert rep.gaps == frozenset()                         # routed-out PNs are not Cisco gaps
+    assert rep.complete                                    # Cisco's own share is fully covered
+    # the source's per-brand total excludes the routed-out PNs
+    assert rep.per_source[0]["total"] == 1
+
+
 def test_empty_universe_is_never_vacuously_complete():
     # no populated source -> universe empty -> verdict must be INCOMPLETE, not a free pass
     empty = EnumerationSource(id="ungatherd", kind="list", note="", snapshot="p", pns=frozenset())

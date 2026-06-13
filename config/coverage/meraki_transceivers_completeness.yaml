@@ -1,0 +1,51 @@
+brand: Meraki
+category: transceivers
+complete: false
+universe_total: 30
+captured_count: 0
+gap_count: 30
+confirmed_gone_count: 0
+extra_count: 0
+populated_sources: 1
+routed_out_count: 0
+per_source:
+- id: tmg_matrix_meraki
+  kind: compatibility_matrix
+  total: 30
+  populated: true
+  captured: 0
+  gaps: 30
+gaps:
+- MA-CBL-100G-1M
+- MA-CBL-100G-3M
+- MA-CBL-100G-50CM
+- MA-CBL-120G-1M
+- MA-CBL-120G-3M
+- MA-CBL-120G-50CM
+- MA-CBL-40G-1M
+- MA-CBL-40G-3M
+- MA-CBL-40G-50CM
+- MA-CBL-TA-1M
+- MA-CBL-TA-3M
+- MA-QSFP-100G-LR4
+- MA-QSFP-100G-SR4
+- MA-QSFP-40G-CSR4
+- MA-QSFP-40G-LR4
+- MA-QSFP-40G-SR-BD
+- MA-QSFP-40G-SR4
+- MA-SFP-10GB-ER
+- MA-SFP-10GB-LR
+- MA-SFP-10GB-LRM
+- MA-SFP-10GB-SR
+- MA-SFP-10GB-ZR
+- MA-SFP-1GB-LX10
+- MA-SFP-1GB-SX
+- MA-SFP-1GB-TX
+- MGBBX1
+- MGBLH1
+- MGBLX1
+- MGBSX1
+- MGBT1
+confirmed_gone: []
+extra: []
+routed_out: []

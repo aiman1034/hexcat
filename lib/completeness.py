@@ -80,6 +80,10 @@ class BrandEnumerations:
     brand: str
     sources: tuple[EnumerationSource, ...] = ()
     confirmed_gone: frozenset[str] = field(default_factory=frozenset)
+    # PNs matching these regexes belong to a DIFFERENT brand and are removed from THIS brand's
+    # universe (e.g. Cisco's matrix lists Meraki MA-*/MGB* optics, which are attributed to the
+    # Meraki brand). Verbatim snapshots stay intact; routing happens at reconcile time.
+    route_out: tuple[str, ...] = ()
 
 
 def _resolve(path_str: str, root: Path) -> Path:
@@ -131,6 +135,7 @@ def load_enumerations(category: str, *, root: Path | None = None) -> dict[str, B
             brand=bname,
             sources=tuple(sources),
             confirmed_gone=normalize_set(b.get("confirmed_gone") or []),
+            route_out=tuple(b.get("route_out") or []),
         )
     return brands
 
@@ -160,6 +165,7 @@ class CompletenessReport:
     extra: frozenset[str]           # harvested but not in universe (informational)
     per_source: tuple[dict, ...]    # id/kind/total/populated/captured/gaps per source
     populated_sources: int
+    routed_out: frozenset[str] = field(default_factory=frozenset)  # belong to another brand
 
     @property
     def complete(self) -> bool:
@@ -187,10 +193,12 @@ class CompletenessReport:
             "confirmed_gone_count": len(self.gone),
             "extra_count": len(self.extra),
             "populated_sources": self.populated_sources,
+            "routed_out_count": len(self.routed_out),
             "per_source": [dict(s) for s in self.per_source],
             "gaps": sorted(self.gaps),
             "confirmed_gone": sorted(self.gone),
             "extra": sorted(self.extra),
+            "routed_out": sorted(self.routed_out),
         }
 
 
@@ -201,17 +209,23 @@ def reconcile(
     sources: Iterable[EnumerationSource],
     *,
     confirmed_gone: Iterable[str] = (),
+    route_out: Iterable[str] = (),
 ) -> CompletenessReport:
     """Reconcile a harvested PN set against the union of independent official enumerations.
 
     Everything is normalized through :func:`normalize_pn` so the comparison is apples-to-apples.
     ``confirmed_gone`` are PNs proven permanently gone (hard 404/410): they are excused from the
-    gap list but still reported, never silently dropped.
+    gap list but still reported, never silently dropped. ``route_out`` regexes pull PNs that
+    belong to a different brand out of this brand's universe (e.g. Meraki PIDs in Cisco's matrix).
     """
     sources = tuple(sources)
-    universe = build_universe(sources)
+    universe_all = build_universe(sources)
     harv = normalize_set(harvested)
     gone_all = normalize_set(confirmed_gone)
+
+    routers = [re.compile(p, re.I) for p in route_out]
+    routed_out = frozenset(p for p in universe_all if any(r.match(p) for r in routers))
+    universe = frozenset(universe_all - routed_out)
 
     captured = frozenset(universe & harv)
     missing = frozenset(universe - harv)
@@ -221,13 +235,14 @@ def reconcile(
 
     per_source: list[dict] = []
     for s in sources:
+        own = s.pns - routed_out   # this brand's share of the source (routed-out PNs excluded)
         per_source.append({
             "id": s.id,
             "kind": s.kind,
-            "total": len(s.pns),
+            "total": len(own),
             "populated": s.populated,
-            "captured": len(s.pns & harv),
-            "gaps": len(s.pns - harv - gone_all),
+            "captured": len(own & harv),
+            "gaps": len(own - harv - gone_all),
         })
 
     return CompletenessReport(
@@ -241,6 +256,7 @@ def reconcile(
         extra=extra,
         per_source=tuple(per_source),
         populated_sources=sum(1 for s in sources if s.populated),
+        routed_out=routed_out,
     )
 
 
@@ -254,7 +270,8 @@ def reconcile_brand(
     """Convenience: load the brand's configured enumerations and reconcile a harvested set."""
     brands = load_enumerations(category, root=root)
     be = brands.get(brand) or BrandEnumerations(brand=brand)
-    return reconcile(brand, category, harvested, be.sources, confirmed_gone=be.confirmed_gone)
+    return reconcile(brand, category, harvested, be.sources,
+                     confirmed_gone=be.confirmed_gone, route_out=be.route_out)
 
 
 def write_report(report: CompletenessReport, path: Path) -> None:
