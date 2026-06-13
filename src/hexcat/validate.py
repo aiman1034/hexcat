@@ -109,7 +109,10 @@ _BETRIEBSTEMP_EXEMPT_K3 = frozenset({"MPO Kabel"})  # passive fibre patch/breako
 # These catch the class of error the byte/format gate and even adversarial-verify let through.
 _SFP_FAMILY_FF = frozenset({"SFP", "SFP+", "SFP28", "SFP56"})
 _QSFP_CONN_RE = re.compile(r"QSFP|MPO|MTP|CXP|CPAK", re.IGNORECASE)         # a QSFP/MPO connector...
-_MULTI_WL_RE = re.compile(r"LR4|ER4|FR4|CWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
+# \b guards stop a PARALLEL single-mode type (PLR4/PLR8 — one 1310 nm wavelength over parallel
+# fibres) from matching its WDM cousin (LR4/LR8 — a true multi-wavelength SET): "PLR8" has no word
+# boundary before "LR8", so \bLR8 won't match it, while "400GBASE-LR8" (boundary after "-") does.
+_MULTI_WL_RE = re.compile(r"\bLR4|\bER4|\bFR4|\bLR8|\bCWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
 _SINGLE_WL_RE = re.compile(r"^\s*[~≈]?\s*\d{3,4}(?:[.,]\d+)?\s*nm")          # exactly one wavelength
 _FIBRE_CONN_GATE_RE = re.compile(r"MPO|MTP|\bLC\b|\bCS\b", re.IGNORECASE)    # optical fibre connector
 # B.6 — a TUNABLE / "durchstimmbar" wavelength is only valid on a genuinely coherent/tunable part.
@@ -119,6 +122,11 @@ _TUNABLE_WL_RE = re.compile(r"durchstimmbar|tunable", re.IGNORECASE)
 _COHERENT_TYPE_RE = re.compile(r"kohär|coheren|\bDCO\b|\bACO\b|400ZR|800ZR|DWDM|tunable|durchstimmbar",
                                re.IGNORECASE)
 _COPPER_GATE_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|base-t", re.IGNORECASE)
+# B.7 — a DAC/AOC cable (identified by its Kabeltyp) must be classified under a CABLE Kat-Ebene-3
+# token (DAC/AOC Kabel), never under a module form-factor token (QSFP28/SFP+/…). Catches the class
+# where a direct-attach/active cable wears a transceiver-module k3 (found in HPE: 21 DACs + 3 AOCs
+# carried QSFP28/SFP+/… k3 instead of DAC/AOC Kabel). Modules carry no Kabeltyp, so FP-risk is low.
+_CABLE_KABELTYP_RE = re.compile(r"twinax|\bdac\b|\baoc\b|active optical|aktiv.{0,4}optisch|direct attach", re.IGNORECASE)
 _PLACEHOLDER_VALS = frozenset({"—", "-", "–", "--", "N/A", "n/a", "k.A.", "keine", "none"})
 # B.5 known product-line guard: a PN family that belongs to a specific Hersteller, used ONLY to
 # CATCH a misassignment (never as the assignment rule). MGB*/MFE* mini-GBICs are Cisco Small Business.
@@ -579,6 +587,13 @@ class Validator:
                     self._fail(fname, sku, "Attributwert (Wellenlänge)",
                                "a fixed wavelength (this is not a coherent/tunable part)", wl_v,
                                "semantic: a tunable/'durchstimmbar' wavelength is only valid on a coherent/tunable part")
+                # B.7 a DAC/AOC cable (by Kabeltyp) must carry a CABLE k3, not a module form factor.
+                kab_v = vals.get("Kabeltyp", "")
+                if kab_v and _CABLE_KABELTYP_RE.search(kab_v) and k3 not in C.CABLE_CATEGORIES:
+                    self._fail(fname, sku, "Kategorie Ebene 3",
+                               "a cable Kat-3 token (DAC Kabel / AOC Kabel)", f"{k3} / Kabeltyp={kab_v}",
+                               "semantic: a DAC/AOC cable must be classified under a cable Kat-Ebene-3 "
+                               "token (DAC/AOC Kabel), not a transceiver-module form factor")
                 # Gold-slice schema: Anwendung + Geschwindigkeit are required on EVERY SKU.
                 if _ANWENDUNG_NAME not in names:
                     self._fail(fname, sku, "Attributwert (Anwendung)",
