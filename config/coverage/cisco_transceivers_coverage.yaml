@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 389
+catalog_skus: 424
 files_mined: 87
 files_skipped: 118
 mined_total: 450
 in_catalog: 349
 missing_count: 101
-orphan_count: 40
+orphan_count: 75
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -425,6 +425,38 @@ orphan:
 - DP01QS28-E20
 - DP01QS28-E25
 - DP04CFP2-M25-K9
+- DWDM-X2-30.33
+- DWDM-X2-31.12
+- DWDM-X2-31.90
+- DWDM-X2-32.68
+- DWDM-X2-34.25
+- DWDM-X2-35.04
+- DWDM-X2-35.82
+- DWDM-X2-36.61
+- DWDM-X2-38.19
+- DWDM-X2-38.98
+- DWDM-X2-39.77
+- DWDM-X2-40.56
+- DWDM-X2-42.14
+- DWDM-X2-42.94
+- DWDM-X2-43.73
+- DWDM-X2-44.53
+- DWDM-X2-46.12
+- DWDM-X2-46.92
+- DWDM-X2-47.72
+- DWDM-X2-48.51
+- DWDM-X2-50.12
+- DWDM-X2-50.92
+- DWDM-X2-51.72
+- DWDM-X2-52.52
+- DWDM-X2-54.13
+- DWDM-X2-54.94
+- DWDM-X2-55.75
+- DWDM-X2-56.55
+- DWDM-X2-58.17
+- DWDM-X2-58.98
+- DWDM-X2-59.79
+- DWDM-X2-60.61
 - ONS-CFP2-WDM
 - ONS-CFP2-WDM2
 - ONS-CFP2D-400G-C
@@ -458,6 +490,9 @@ orphan:
 - QSFP-4SFP25G-CU1.5M
 - QSFP-4SFP25G-CU2.5M
 - QSFP-4SFP25G-CU4M
+- X2-10GB-LR++
+- X2-10GB-LRM++
+- X2-10GB-SR++
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
   CVR-4SFP10G-QSFP: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)
