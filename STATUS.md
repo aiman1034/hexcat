@@ -55,7 +55,23 @@ Remaining families (by token, ~291): GBIC 36, SFP 45, SFP+ 43, XENPAK 41, X2 35,
 DAC 10, AOC 10, QSFP28 9, QSFP-DD 10, QSFP+ 4, OSFP 2 (+QSFP-DD800/QSFP56). Channel families
 (DWDM/CWDM wavelength variants) need genuinely-varied prose per channel (uniqueness gate <25%).
 
-**(B) Pricing — engine spec received, NOT yet built (task #3):** wire `pricing.py`'s stubbed T1
+**(B) Pricing — ENGINE BUILT + PROVEN (commit d477968).** Bridge comp pass unstubs T1-MARKET:
+`lib/market_comp.py` (authorized new-sealed filter, JSON-LD/microdata/meta + EUR-regex extraction,
+net-EUR-per-unit via USD-FX & gross/1,19, median + IQR outlier rejection, category-band guards),
+`lib/price_model.py` (feature-model fallback, ships ONLY if leave-one-out back-test ≤ bound),
+`lib/price_run.py` (T1-MARKET > T2-LIST > MODEL > FLAG glue). 25 tests; 397 pass.
+- LIVE PROOF via the bridge: SFP-10G-SR €450,57 (2 src), SFP-H10GB-CU3M €45,24 (2 src),
+  QSFP-40G-SR4 €1862,18 (1 src; flagged high-value+single-source). 9 priced (3 market + 6 GPL),
+  298 honest flagged-debt; feature-model AUTO-DISABLED (back-test 163% >> 20% — withheld). Prices
+  CSV byte-contract preserved. Provenance -> config/market_prices/price_provenance.yaml.
+- router-switch.com EXCLUDED (evidence + rule): advertises "new AND refurbished", prices gray-low
+  ($102 vs €450 new-sealed) — fails the exclude-refurb/gray rule.
+- TO SCALE: gather authorized-reseller URLs per SKU via WebSearch (multi-pass, like the GPL grind),
+  re-run `_scratch/gather_market_prices.py` (curated SKU->URL map) + `_scratch/price_cisco.py`.
+  Need ≥3 German authorized sources/SKU for a confident median; ≥~30 anchors to pass the model
+  back-test and unlock interpolation for the long tail. PRICES-PENDING -> PRICES-SET as coverage grows.
+
+**ORIGINAL pricing spec (for reference):** wire `pricing.py`'s stubbed T1
 hook to real market data via the local_fetch bridge — per SKU, WebSearch + bridge-fetch authorized
 NEW-SEALED resellers (Bechtle/Senetic/Computacenter/ALSO/router-switch), exclude refurb/compatible
 (FS.com/IT-Planet/gray), PN-exact EUR, position at the MEDIAN (no operator factor). Feature-model
