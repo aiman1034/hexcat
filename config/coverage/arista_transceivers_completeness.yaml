@@ -1,0 +1,36 @@
+brand: Arista
+category: transceivers
+# Enumeration source: the official "Arista Transceivers and Cables Data Sheet" — Arista's single
+# authoritative matrix for the SFP/SFP28/QSFP+/QSFP28/QSFP56/QSFP-DD/QSFP-DD800/OSFP transceiver,
+# DAC and AOC line. The prior session harvested its table to 347 SKUs.
+complete: true
+universe_total: 347
+captured_count: 347
+gap_count: 0
+flagged_count: 0
+populated_sources: 1
+per_source:
+- id: arista_transceivers_datasheet
+  kind: vendor_datasheet
+  url: https://www.arista.com/assets/data/pdf/Datasheets/transceiver-data-sheet.pdf
+  populated: true
+# COMPLETENESS RE-CONFIRMATION (2026-06-14, independent token diff): a datasheet PN scan surfaced 13
+# "extra" tokens, EVERY one an artifact — NOT a missed transceiver:
+#   * footnote superscripts glued onto captured PNs by PDF extraction: OSFP-400G-ZR2→OSFP-400G-ZR,
+#     QSFP-100G-ZR42→QSFP-100G-ZR4, QDD-400G-ZRP2→QDD-400G-ZRP, OSFP-200G-2LR43→OSFP-200G-2LR4, … (9)
+#   * truncation: "QSFP-100G-SR1" = the head of captured QSFP-100G-SR1.2
+#   * bare form-factor words / fragment: "QSFP-DD" (×166), "SFP-DD" (×23), "OSFP-QSFP-DD"
+betriebstemperatur_grounding: >
+  Arista does not publish per-SKU operating temperature in the datasheet (DC optics). 104 optical
+  modules carried the commercial 0–70 °C value; the 243 DAC/AOC cables were Rule-9 class-derived to
+  commercial 0–70 °C (conf=industry-standard-commercial, corroborated by the 104 published siblings).
+reconcile_fixes: >
+  42 cables failed physical_formfaktor (Anschlussenden="QSFP auf QSFP", bare QSFP). Grounded each to
+  its precise variant by standard: 200GBASE-CR4→QSFP56, 100GBASE-CR4→QSFP28, with breakout ends from
+  the PN (Q200-2Q100→2× QSFP28, Q200-4S50→4× SFP56, Q-4S→4× SFP28).
+verdict: captured 347 of 347 Arista transceivers/DACs/AOCs (100%) from the Arista Transceivers and
+  Cables Data Sheet. Independent token diff confirms no missed SKU (13 extra tokens are footnote /
+  truncation / bare-form-factor artifacts). Gate PASS 347/347, audit_semantic 0×7, Rule-8 parity
+  0-missing (SFP-1G-T is 1000BASE-T copper, correctly wavelength-exempt). Fixed 42 reconcile
+  connectors; the 3 coherent 400GBASE-ZR modules surfaced a B.6 refinement (speed-gated ZR). Pricing
+  deferred (datasheet carries no prices).
