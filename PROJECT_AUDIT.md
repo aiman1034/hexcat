@@ -114,12 +114,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
 
 ## 8. Pending work (roadmap — directive D)
 
-1. **Re-verify the 4 early brands** (Arista, HPE/Aruba, Fortinet, MikroTik): re-harvest for completeness → gold-parity back-fill (Anwendung, Betriebstemperatur per Rule 9, Faseranzahl auto, descriptions ≥90, fix Formfaktor/connector, multi-wavelength sets, drop "—") → strict gate PASS → Rule-8 parity → run `audit_semantic.py` (all 5 = 0) → price best-effort → commit per family.
-2. **Fresh brands** (11): full per-brand process each.
+1. **Re-verify the 4 early brands** — re-harvest for completeness → gold-parity back-fill (Anwendung, Betriebstemperatur per Rule 9, Faseranzahl auto, descriptions ≥90, fix Formfaktor/connector, multi-wavelength sets, drop "—") → strict gate PASS → Rule-8 parity → `audit_semantic.py` (all 5 = 0) → price best-effort → commit per family. **Diagnosed scope (2026-06-13):**
+   - **MikroTik (24)** — no reconcile errors; gate FAIL 61: Beschreibung 23 (<90), Anwendung 21, Betriebstemperatur 16, Faseranzahl 1. Smallest/most tractable → do FIRST.
+   - **HPE/Aruba (147)** — no reconcile errors; gate FAIL 398: Beschreibung 138, Betriebstemperatur 134, Anwendung 121, Geschwindigkeit 5. Pure attribute-depth regression.
+   - **Fortinet (87)** — 5 reconcile failures (DAC/breakout `FG-TRAN-QSFP-4XSFP/4SFP`, `FN-CABLE-QSFPDD-DAC`: Formfaktor unresolved) + 82 OK then back-fill.
+   - **Arista (347)** — 42 reconcile failures (`C-Q200-Q200-*` 200G DAC + similar: Formfaktor unresolved) + 305 OK then back-fill. Largest.
+   - **PREREQUISITE — generalize `backfill_499.py`** to a `--content <path> --brand <B>` tool: Anwendung derive+tag (brand-agnostic `anwendung()`), **Betriebstemperatur via Rule 9 class-derivation** (commercial 0–70 °C / industrial-suffix -40..85 °C, tagged `industry-standard-<class>`) — NOT the Cisco grounded yaml — and the generic desc-extension. The reconcile-failure PNs (DAC/breakout) need their connector grounded so `physical_formfaktor` resolves (author the real `Anschluss`, e.g. QSFP56↔QSFP56 / QSFP↔4×SFP).
+2. **Fresh brands** (11): Avaya/Extreme, Dell, Huawei, Juniper, Lenovo/IBM, NVIDIA/Mellanox, Palo Alto, Ruijie, Supermicro, Ubiquiti, ZTE — full per-brand process each.
 3. **Switches:** propose switch gold-slice schema + taxonomy for Rule-7 approval, then author with the same machinery.
 
 ---
 
 ## 9. Session changelog (rolling — append every session)
 
-- **2026-06-13** — Cisco taken to 596 transceivers (gate PASS, priced 111). Meraki authored (25 MA-*, PASS). Rules 8 & 9 locked. Parts 4–6 (pricing, Verification_Log real per-attr confidence, _quarantine rejected-rows-only) done. **Semantic-error correction A/B/C** (commit `2caf78a`): MGB→Cisco SB, Formfaktor↔connector, lane-aware Faseranzahl (137→0), multi-wavelength sets (25), "—" omitted (79→0), ONS-QSFP-4X10-MER/MLR flagged; 5 permanent gate cross-checks added; both brands re-gated PASS, 413 tests. **This PROJECT_AUDIT.md created** + standing read-before-update rule established. Next: re-verify the 4 early brands.
+- **2026-06-13** — Cisco taken to 596 transceivers (gate PASS, priced 111). Meraki authored (25 MA-*, PASS). Rules 8 & 9 locked. Parts 4–6 (pricing, Verification_Log real per-attr confidence, _quarantine rejected-rows-only) done. **Semantic-error correction A/B/C** (commit `2caf78a`): MGB→Cisco SB, Formfaktor↔connector, lane-aware Faseranzahl (137→0), multi-wavelength sets (25), "—" omitted (79→0), ONS-QSFP-4X10-MER/MLR flagged; 5 permanent gate cross-checks added; both brands re-gated PASS, 413 tests. **This PROJECT_AUDIT.md created** (commit `887932e`) + standing read-before-update rule wired into CLAUDE.md + ruflo/auto-memory. **Directive-D diagnosis run** on the 4 early brands (see §8 for per-brand scope: MikroTik 61 / HPE 398 / Fortinet 5 reconcile+ / Arista 42 reconcile+). Next: generalize `backfill_499.py` to `--content/--brand`, then re-verify MikroTik first (smallest), then HPE, Fortinet, Arista.
