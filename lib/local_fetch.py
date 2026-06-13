@@ -345,12 +345,21 @@ def fetch(
 # loads clean (or after the human clears a challenge) and reused for every later request to that
 # host, so each protected reseller is solved at most ONCE, not once per page.
 CF_STATE_DIR = BROWSER_DIR / "cf_state"
-_CHALLENGE_MARKERS = (
-    "just a moment", "verify you are human", "checking your browser", "checking if the site",
-    "cf-challenge", "challenge-platform", "__cf_chl", "cf-turnstile", "turnstile",
-    "hcaptcha", "g-recaptcha", "enable javascript and cookies to continue",
-    "review the security of your connection", "ddos protection by",
-)
+# Stealth: hide the headless/automation fingerprint so Cloudflare doesn't re-challenge a solved
+# page in a loop. Applied to every browser launch + an init script that clears navigator.webdriver.
+_STEALTH_ARGS = ["--disable-http2", "--disable-blink-features=AutomationControlled",
+                 "--no-sandbox", "--disable-infobars"]
+_STEALTH_JS = "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+# Challenge detection keyed on the INTERSTITIAL's title / visible text only — NOT on cloudflare
+# script names (cf-challenge/turnstile/__cf_chl appear on the CLEARED real page too, which made
+# detection never register a solve). Title is the reliable signal.
+_CHALLENGE_TITLES = ("just a moment", "attention required", "access denied",
+                     "verifying you are human", "ein moment")
+_CHALLENGE_TEXT = ("verify you are human", "checking your browser",
+                   "checking if the site connection is secure",
+                   "enable javascript and cookies to continue",
+                   "needs to review the security of your connection",
+                   "please complete the security check")
 
 
 def _host_state_path(url: str) -> Path:
@@ -358,10 +367,23 @@ def _host_state_path(url: str) -> Path:
     return CF_STATE_DIR / f"{re.sub(r'[^a-z0-9.-]', '_', host)}.json"
 
 
-def _is_challenge(html: str) -> bool:
-    """True if the rendered HTML is a Cloudflare/CAPTCHA interstitial rather than the real page."""
-    low = html[:30000].lower()
-    return any(m in low for m in _CHALLENGE_MARKERS)
+def _host_profile_dir(url: str) -> Path:
+    host = urlsplit(url).netloc.lower().lstrip("www.") or "unknown"
+    return CF_STATE_DIR / "profiles" / re.sub(r"[^a-z0-9.-]", "_", host)
+
+
+def _is_challenge(html: str, title: str = "") -> bool:
+    """True iff this looks like a Cloudflare/CAPTCHA INTERSTITIAL (not the real page). Uses the
+    page title plus a few visible-text phrases; deliberately ignores cloudflare script names,
+    which also appear on the cleared page and otherwise made a solve never register."""
+    t = title.lower()
+    if not t:
+        m = re.search(r"<title[^>]*>(.*?)</title>", html[:4000], re.I | re.S)
+        t = (m.group(1) if m else "").lower()
+    if any(m in t for m in _CHALLENGE_TITLES):
+        return True
+    low = html[:8000].lower()
+    return any(m in low for m in _CHALLENGE_TEXT)
 
 
 def _browser_get(
@@ -379,18 +401,19 @@ def _browser_get(
     never written as a real body.
     """
     interactive = os.environ.get("HEXCAT_SOLVE_CAPTCHA") == "1"
+    # Interactive solving goes straight to a stealthed HEADED browser (no headless pre-pass that
+    # would double-hit Cloudflare). Automated runs keep the headless->headed escalation.
+    passes = [False] if interactive else [True, False]
     last_exc: Exception | None = None
-    for headless in (True, False):
+    for headless in passes:
         try:
-            status, body, ctype, final = _browser_get_once(
+            status, body, ctype, final, challenged = _browser_get_once(
                 url, headless=headless, interactive=(interactive and not headless),
                 timeout_ms=timeout_ms, settle_ms=settle_ms,
             )
         except Exception as e:  # noqa: BLE001 — retry headed, then give up
             last_exc = e
             continue
-        challenged = bool(body) and ctype.startswith("text/html") and _is_challenge(
-            body.decode("utf-8", "ignore"))
         if status == 200 and body and not challenged:
             return status, body, ctype, final
         if not headless:
@@ -409,36 +432,54 @@ def _browser_get_once(
     timeout_ms: int = 45000,
     settle_ms: int = 3000,
     solve_timeout_ms: int = 300000,
-) -> tuple[int, bytes, str, str]:
-    """One browser fetch: a context HTTP GET (best for PDFs/WAF assets) then a full JS render.
+) -> tuple[int, bytes, str, str, bool]:
+    """One browser fetch -> (status, body, ctype, final, challenged).
 
-    Reuses any saved per-host clearance session; on a challenge in interactive+headed mode, prints
-    the URL and POLLS the DOM (every 2 s, up to solve_timeout_ms) for the human to clear it —
-    WITHOUT ever reloading or re-navigating — then persists the cleared session for the host."""
+    INTERACTIVE: a stealthed, PERSISTENT real-profile browser per host (cf_clearance is kept in the
+    profile on disk, so each host is solved ONCE and reused across pages + runs). On a challenge it
+    prints the URL and polls the title/DOM every 2 s (up to solve_timeout_ms) for the human to clear
+    it — never re-navigating. AUTOMATED: a lighter ephemeral context (headless->headed), reusing any
+    saved storage_state. Both launches are stealthed so a solved page is not re-challenged in a loop.
+    """
     os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", str(BROWSER_DIR))
     from playwright.sync_api import sync_playwright
 
     state_path = _host_state_path(url)
-    ctx_kwargs = {"locale": "en-US", "user_agent": BROWSER_HEADERS["User-Agent"]}
-    if state_path.exists():
-        ctx_kwargs["storage_state"] = str(state_path)   # reuse the host's cleared session
-
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=headless, args=["--disable-http2"])
-        try:
-            context = browser.new_context(**ctx_kwargs)
-            status, ctype, body = 0, "", b""
+        browser = None
+        if interactive:
+            profile = _host_profile_dir(url)
+            profile.mkdir(parents=True, exist_ok=True)
+            # Drive the REAL system Chrome (channel="chrome") — its genuine fingerprint clears
+            # Cloudflare managed challenges that loop forever on bundled Chromium. Fall back to the
+            # bundled browser only if Chrome isn't installed. No custom UA (use Chrome's own).
+            pc_kwargs = dict(headless=False, args=_STEALTH_ARGS,
+                             ignore_default_args=["--enable-automation"], locale="en-US")
             try:
-                resp = context.request.get(url, timeout=timeout_ms)
-                status = resp.status
-                ctype = resp.headers.get("content-type", "")
-                body = resp.body()
-            except Exception:  # noqa: BLE001 — fall through to a full render
-                pass
-            if status == 200 and (body[:4] == b"%PDF" or "pdf" in ctype.lower()):
-                return status, body, ctype or "application/pdf", url
-            if status in GONE_STATUSES:
-                return status, b"", ctype, url
+                context = p.chromium.launch_persistent_context(str(profile), channel="chrome", **pc_kwargs)
+            except Exception:  # noqa: BLE001 — Chrome not installed -> bundled Chromium
+                context = p.chromium.launch_persistent_context(
+                    str(profile), user_agent=BROWSER_HEADERS["User-Agent"], **pc_kwargs)
+        else:
+            browser = p.chromium.launch(headless=headless, args=_STEALTH_ARGS,
+                                        ignore_default_args=["--enable-automation"])
+            ctx_kwargs = {"locale": "en-US", "user_agent": BROWSER_HEADERS["User-Agent"]}
+            if state_path.exists():
+                ctx_kwargs["storage_state"] = str(state_path)
+            context = browser.new_context(**ctx_kwargs)
+        try:
+            context.add_init_script(_STEALTH_JS)
+            status, ctype, body = 0, "", b""
+            if not interactive:   # PDF/WAF-asset shortcut (skipped when solving — avoids double-hit)
+                try:
+                    resp = context.request.get(url, timeout=timeout_ms)
+                    status, ctype, body = resp.status, resp.headers.get("content-type", ""), resp.body()
+                except Exception:  # noqa: BLE001 — fall through to a full render
+                    pass
+                if status == 200 and (body[:4] == b"%PDF" or "pdf" in ctype.lower()):
+                    return status, body, ctype or "application/pdf", url, False
+                if status in GONE_STATUSES:
+                    return status, b"", ctype, url, False
 
             page = context.new_page()
             r = page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
@@ -447,30 +488,34 @@ def _browser_get_once(
             except Exception:  # noqa: BLE001 — networkidle is best-effort
                 pass
             page.wait_for_timeout(settle_ms)
-            html = page.content()
+            title, html = page.title(), page.content()
 
-            if _is_challenge(html) and interactive:
+            if _is_challenge(html, title) and interactive:
                 print(f"\n*** CAPTCHA/Cloudflare challenge — please SOLVE IT in the open browser:\n"
-                      f"    {url}\n    (waiting up to {solve_timeout_ms // 1000}s, polling every 2s; "
-                      f"will NOT reload while you solve)\n", flush=True)
+                      f"    {url}\n    (waiting up to {solve_timeout_ms // 1000}s; polling every 2s; "
+                      f"NOT reloading — the cleared session is saved & reused for this host)\n", flush=True)
                 waited = 0
                 while waited < solve_timeout_ms:
                     page.wait_for_timeout(2000)          # poll the SAME page — no goto/reload
                     waited += 2000
-                    html = page.content()
-                    if not _is_challenge(html):
-                        print(f"    cleared: {url}  (persisting session for the host)", flush=True)
+                    try:
+                        title, html = page.title(), page.content()
+                    except Exception:  # noqa: BLE001 — page mid-navigation (CF's own redirect); keep waiting
+                        continue
+                    if not _is_challenge(html, title):
+                        print(f"    cleared: {url}", flush=True)
                         break
-            # Persist the session whenever the page is clean (cleared challenge OR normal load),
-            # so the host's clearance cookie is reused and not re-solved per page.
-            if not _is_challenge(html):
+
+            challenged = _is_challenge(html, title)
+            if not challenged and not interactive:
                 try:
                     CF_STATE_DIR.mkdir(parents=True, exist_ok=True)
                     context.storage_state(path=str(state_path))
                 except Exception:  # noqa: BLE001 — persistence is best-effort
                     pass
-
             pstatus = (r.status if r is not None else 0) or (status or 200)
-            return pstatus, html.encode("utf-8", "replace"), "text/html", page.url
+            return pstatus, html.encode("utf-8", "replace"), "text/html", page.url, challenged
         finally:
-            browser.close()
+            context.close()
+            if browser is not None:
+                browser.close()
