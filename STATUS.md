@@ -3,6 +3,49 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
+## Current state (2026-06-13 late PM) — Cisco transceivers PROVABLY COMPLETE (550/550)
+
+**VERDICT: Cisco transceivers = COMPLETE.** Harvest ⊇ the union of three independent official
+enumerations, every PN grounded, zero gaps, zero ungrounded. The PN list is **LOCKED** — Stage-3
+authoring can now run once over the complete set (held until now per the directive).
+
+**The TRUE union (built this block, in the directive's order):**
+- **TMG matrix** — current products (routed: 408 Cisco after Meraki split). [prior block]
+- **EOL/EOS bulletins** (commit b0519c0) — 2nd source. From the official transceiver EOS/EOL
+  notice listing (29 English bulletins), mined verbatim affected-product tables → **156 PNs**,
+  catching the legacy XENPAK/GBIC/XFP/DWDM-GBIC channels the matrix drops. `gather_cisco_eol_bulletins.py`.
+- **Ordering / product-family guide** (commit 17a87d1) — 3rd source. From Cisco's MASTER datasheet
+  listing (`datasheet-listing.html`, 47 product-family datasheets) mined by the tool's own miner →
+  **311 PNs**. Reconcile gaps=0 → the harvest already covers Cisco's entire current catalog.
+- **GPL** — 4th source, **INACCESSIBLE at $0** (CCW/CCO auth wall; probed via the bridge → SSO login
+  page, not data; no public per-category list). Honestly flagged unpopulated, NOT fabricated.
+- **Union = 550** (matrix 408 + EOL 156 + ordering 311, deduped, Meraki routed out).
+
+**Meraki split (commit 71d46bb).** Added a config-driven `route_out` to the reconciler: Cisco's
+matrix lists 30 MA-*/MGB* Meraki optics → routed out of the Cisco universe into a new **Meraki**
+brand (verbatim `meraki_tmg_matrix.txt`). Meraki reconcile: **0 of 30** (new brand, all to author).
+
+**Closure (commit 4e919fa).** Triaged all 176 union gaps from each PN's OWN Cisco source
+(`triage_cisco_union_gaps.py` → `cisco_transceivers_union_triage.yaml`):
+- **163 ADD** real transceivers (matrix form factors + EOL channels), queued for Stage-3.
+- **13 EXCLUDE_NOT_TRANSCEIVER** — grounded by verbatim description: CAB-INF (CX4 cables), CVR
+  (adapters/bracket/tray), CWDM-MUX (mux/demux), EWDM-OA (amplifier), EWDM-OADM (passive add/drop).
+- **0 ungrounded** — nothing guessed; an unlocatable PN would be FLAGGED, never excluded.
+- Reconcile folds both dispositions → **captured 550 of 550, gaps=0, COMPLETE=True.**
+
+**Honest final tally (Cisco):** universe 550 fully captured; **297 already authored**, **301 real
+transceivers queued as grounded ADD** (the EOL/union surfaced far more legacy optics than the prior
+105 — e.g. full DWDM-GBIC/DWDM-SFP channel plans), **28 grounded non-transceiver exclusions**, plus
+**76 extra** real optics captured from datasheets beyond the three enumerations. 372 tests pass.
+
+**NEXT (now unblocked):** author the complete Stage-3 set — **301 Cisco ADD + 30 Meraki** — once,
+not in batches. Then prices (needs user decision), then replicate the completeness pipeline across
+the remaining transceiver brands (re-verify Arista/HPE/Fortinet/MikroTik against this system), then
+switches → servers, then go live (JTL import). Standing rules unchanged: $0, 1000%, every-real-PN,
+completeness-verified-never-asserted, flag-don't-emit.
+
+---
+
 ## Current state (2026-06-13 PM) — completeness-verification system + Cisco re-triage
 
 **TWO NON-NEGOTIABLE RULES landed this block.**
