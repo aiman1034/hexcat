@@ -641,7 +641,19 @@ def stage3(
         quarantine = out / _QUARANTINE
         if quarantine.exists():
             shutil.rmtree(quarantine)
-        shutil.move(str(staging), str(quarantine))
+        # Quarantine ONLY the rejected rows, never a full catalog copy. Re-assemble a focused bundle
+        # from just the SKUs that drew a violation (reuses the writers, so the quarantine files keep
+        # the exact byte contract). File-level violations (BOM/header/delimiter) can't be isolated to
+        # rows, so those fall back to moving the whole staging bundle.
+        failed_skus = {v.sku for v in validation.violations if v.sku}
+        has_file_level = any(not v.sku for v in validation.violations)
+        rejected = [r for r in records if r.artikelnummer in failed_skus]
+        if rejected and not has_file_level:
+            assemble_bundle(rejected, rules, batch=batch, category=category,
+                            out_dir=quarantine, build_time=manifest.build_time)
+            shutil.rmtree(staging, ignore_errors=True)
+        else:
+            shutil.move(str(staging), str(quarantine))
         manifest.out_dir = quarantine
         for f in manifest.files:
             f.path = quarantine / f.path.name

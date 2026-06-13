@@ -12,6 +12,10 @@ separate Q||A cell) and assert the full bundle passes the build gate GREEN.
 from __future__ import annotations
 
 import json
+import os
+import subprocess
+import sys
+from pathlib import Path
 
 from hexcat.assemble import assemble_bundle
 from hexcat.stage3 import (
@@ -282,6 +286,34 @@ def test_end_to_end_assemble_then_validate_is_green(tmp_path, rules, weights):
     result = validate_dir(rules, out)
     assert result.ok, "expected GREEN bundle, got violations:\n" + "\n".join(
         str(v) for v in result.violations)
+
+
+# --- Part 6: a failed gate quarantines ONLY the rejected rows, never a full catalog copy ----
+def test_quarantine_holds_only_rejected_rows(tmp_path):
+    """When the gate fails, `_quarantine` must contain a focused bundle of just the SKUs that drew
+    a violation — not a copy of every row. One good optic + one deliberately-broken DAC (gutted
+    Beschreibung): the good SKU must NOT appear in the quarantine, the broken one must."""
+    good_pn, good = _cisco_optic()
+    bad_pn, bad = _cisco_dac()
+    bad = json.loads(json.dumps(bad))
+    bad["intro"] = ["Viel zu kurz.", "Immer noch zu kurz.", "Ende."]  # forces a Beschreibung FAIL
+    content = tmp_path / "Cisco_content.json"
+    content.write_text(json.dumps({good_pn: good, bad_pn: bad}, ensure_ascii=False), encoding="utf-8")
+
+    root = Path(__file__).resolve().parents[1]
+    out = tmp_path / "out"
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONPATH": str(root / "src")}
+    r = subprocess.run(
+        [sys.executable, "-m", "hexcat.cli", "stage3", "--content", str(content),
+         "--brand", "Cisco", "--out", str(out)],
+        cwd=str(root), env=env, capture_output=True, text=True,
+    )
+    assert r.returncode == 1, f"expected gate FAIL exit 1; stdout:\n{r.stdout}\nstderr:\n{r.stderr}"
+    main = out / "_quarantine" / "Hexwaren_Cisco_Transceivers_Main.csv"
+    assert main.exists(), "quarantine Main.csv missing"
+    rows = [ln for ln in main.read_text(encoding="utf-8-sig").splitlines() if ln]
+    skus = [ln.split(";", 1)[0] for ln in rows[1:]]
+    assert skus == [bad_pn], f"quarantine must hold ONLY the rejected SKU, got {skus}"
 
 
 def test_end_to_end_seven_files_emitted(tmp_path, rules, weights):
