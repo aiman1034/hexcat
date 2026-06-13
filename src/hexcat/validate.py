@@ -46,7 +46,7 @@ _ALLOWED_BESCH_TAGS = {"p"}
 # The Beschreibung word-floor flexes DOWN for sparse cable/DAC assemblies (item 6): a passive
 # DAC needs less grounded prose than a coherent transceiver, and we NEVER pad to a floor.
 # Modules keep the full rules floor; cables get this lower floor.
-CABLE_BESCHREIBUNG_MIN_WORDS = 60
+CABLE_BESCHREIBUNG_MIN_WORDS = 90   # gold-slice bar: every Beschreibung >= 90 words, cables included
 
 # --- cross-SKU sentence reuse (FAIL) ---------------------------------------------------
 # A non-closer body sentence shared by more than this fraction of a brand's SKUs is
@@ -89,6 +89,19 @@ _WAVELENGTH_EXEMPT_RE = re.compile(
     re.IGNORECASE,
 )
 _WELLENLAENGE_NAME = "Wellenlänge"
+
+# --- gold-slice applicable-attribute completeness (FAIL) -------------------------------
+# Beyond Wellenlänge, the gold proof-slice schema requires these attributes to be present
+# (a missing applicable attribute = shallow extraction, FAIL):
+#   * Anwendung           — on EVERY SKU (the datasheet-grounded use case);
+#   * Geschwindigkeit     — on EVERY SKU (line/data rate);
+#   * Betriebstemperatur  — on every optical / ACTIVE module. Passive copper/fibre assemblies
+#     with no powered optics (DAC, MPO patch) have no module operating range and are EXEMPT;
+#     active optical cables (AOC) and all transceiver modules must carry it.
+_ANWENDUNG_NAME = "Anwendung"
+_GESCHWINDIGKEIT_NAME = "Geschwindigkeit"
+_BETRIEBSTEMP_NAME = "Betriebstemperatur"
+_BETRIEBSTEMP_EXEMPT_K3 = frozenset({"DAC Kabel", "MPO Kabel"})  # passive, unpowered
 
 
 def valid_gtin(s: str) -> bool:
@@ -503,6 +516,24 @@ class Validator:
             sku_k3 = {r[mi_sku]: r[mi_k3] for r in main_t.rows}
             for sku, names in per_sku_names.items():
                 k3 = sku_k3.get(sku, "")
+                # Gold-slice schema: Anwendung + Geschwindigkeit are required on EVERY SKU.
+                if _ANWENDUNG_NAME not in names:
+                    self._fail(fname, sku, "Attributwert (Anwendung)",
+                               "an Anwendung attribute (every SKU)", "(missing)",
+                               "gold-slice completeness: every SKU must carry a datasheet-grounded "
+                               "Anwendung (use-case) attribute")
+                if _GESCHWINDIGKEIT_NAME not in names:
+                    self._fail(fname, sku, "Attributwert (Geschwindigkeit)",
+                               "a Geschwindigkeit attribute (every SKU)", "(missing)",
+                               "gold-slice completeness: every SKU must carry a Geschwindigkeit "
+                               "(line/data rate) attribute")
+                # Betriebstemperatur: required on optical/active modules; passive DAC/MPO exempt.
+                if k3 not in _BETRIEBSTEMP_EXEMPT_K3 and _BETRIEBSTEMP_NAME not in names:
+                    self._fail(fname, sku, "Attributwert (Betriebstemperatur)",
+                               "a Betriebstemperatur attribute (optical/active module)", "(missing)",
+                               "gold-slice completeness: every optical/active module must carry a "
+                               "datasheet-grounded Betriebstemperatur attribute")
+                # Wellenlänge: optical modules only (cables + copper/Smart-SFP exempt).
                 if k3 in C.CABLE_CATEGORIES:
                     continue
                 if per_sku_wl_exempt.get(sku):

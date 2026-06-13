@@ -64,7 +64,7 @@ budgets:
   # grounded length the datasheet supports — "even 70-85 words" — and NEVER pad to reach 90.
   # Rich coherent optics still run 100-175 naturally; genuinely sparse modules sit at 70-89.
   # Cables (DAC/AOC/MPO) flex DOWN further via validate.CABLE_BESCHREIBUNG_MIN_WORDS.
-  beschreibung:     { min_words: 70, max_words: 175, p_count: 3 }
+  beschreibung:     { min_words: 90, max_words: 175, p_count: 3 }
   titel_tag:        { max_chars: 60, must_end_with: " | Hexwaren" }
   meta_description: { min_chars: 140, max_chars: 200 }
   faq:              { min_pairs: 3, max_pairs: 10 }

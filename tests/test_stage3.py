@@ -57,9 +57,12 @@ def _cisco_optic() -> tuple[str, dict]:
             "Nanometer in Rechenzentren und Campus-Netzwerken überträgt.",
             "Über OM3-Multimode-Faser erreicht das Modul eine Reichweite von bis zu 300 Metern "
             "und arbeitet vollständig konform zum Standard IEEE 802.3ae für zuverlässige "
-            "Verbindungen im Aggregations- und Zugriffsbereich.",
+            "Verbindungen im Aggregations- und Zugriffsbereich; auf OM4-Faser sind entsprechend "
+            "größere Distanzen möglich, auf älterer OM2-Faser dagegen kürzere.",
             "Das Modul unterstützt Digital Optical Monitoring zur kontinuierlichen Überwachung "
-            "von Temperatur, Spannung und Sendeleistung im laufenden Betrieb.",
+            "von Temperatur, Spannung sowie Sende- und Empfangsleistung im laufenden Betrieb und "
+            "arbeitet im kommerziellen Temperaturbereich von null bis siebzig Grad Celsius bei "
+            "voller Hot-Swap-Fähigkeit.",
         ],
         "faq": [
             ["Ist dies ein originales Cisco-Modul?",
@@ -76,6 +79,9 @@ def _cisco_optic() -> tuple[str, dict]:
             ["Reichweite", "300 m"],
             ["Fasertyp", "Multimode (OM3)"],
             ["Standard", "IEEE 802.3ae 10GBASE-SR"],
+            ["Anwendung", "Rechenzentrum und Campus (Kurzstrecke, Aggregation/Zugriff)"],
+            ["Betriebstemperatur", "0 bis 70 °C (kommerziell)"],
+            ["DOM Unterstützung", "Ja"],
             ["Zustand", "Neu, versiegelt"],
         ],
         "netto_vk": None,
@@ -110,9 +116,11 @@ def _cisco_dac() -> tuple[str, dict]:
             "kurze Verbindungen im Rack.",
             "Das Twinax-Kupferkabel verbindet zwei SFP+-Ports direkt ohne zusätzliche "
             "Transceiver und eignet sich besonders für die Top-of-Rack-Verkabelung zwischen "
-            "Servern und Switches im selben oder benachbarten Rack.",
-            "Es benötigt keine externe Stromversorgung und unterstützt die volle Bandbreite "
-            "von zehn Gigabit Ethernet über die gesamte Kabellänge.",
+            "Servern und Switches im selben oder benachbarten Rack des Rechenzentrums.",
+            "Es benötigt keine externe Stromversorgung, erzeugt keine nennenswerte Verlustleistung "
+            "und unterstützt die volle Bandbreite von zehn Gigabit Ethernet über die gesamte "
+            "Kabellänge, womit es eine kostengünstige und stromsparende Alternative zu optischen "
+            "Transceivern auf kurzen Distanzen bildet.",
         ],
         "faq": [
             ["Benötigt das Kabel eine Stromversorgung?",
@@ -123,9 +131,11 @@ def _cisco_dac() -> tuple[str, dict]:
         ],
         "attributes": [
             ["Formfaktor", "SFP+"],
+            ["Geschwindigkeit", "10 Gbit/s"],
             ["Länge", "3 m"],
             ["Kabeltyp", "Passives Twinax-Kupferkabel"],
             ["Reichweite", "3 m"],
+            ["Anwendung", "Rechenzentrum (Top-of-Rack-Verkabelung)"],
             ["Zustand", "Neu, versiegelt"],
         ],
         "netto_vk": None,
@@ -297,3 +307,33 @@ def test_write_content_template_seeds_facts_and_derivable_attrs(tmp_path):
     assert entry["_facts"]["quell_url"] == "https://cisco.example/ds"
     assert entry["artikelname"] == "" and entry["netto_vk"] is None
     assert entry["attributes"] == [["Formfaktor", "QSFP28"], ["Zustand", "Neu, versiegelt"]]
+
+
+# --- gold-slice gate: the tightened completeness bar must FAIL on a missing applicable attr ---
+def test_gate_fails_missing_anwendung_geschwindigkeit_betriebstemperatur(tmp_path, rules, weights):
+    import copy
+    from hexcat.validate import validate_dir
+    pn, base = _cisco_optic()
+    for drop, label in (("Anwendung", "Anwendung"), ("Geschwindigkeit", "Geschwindigkeit"),
+                        ("Betriebstemperatur", "Betriebstemperatur")):
+        e = copy.deepcopy(base)
+        # rebuild attributes without the canonical attr under test (Datenrate aliases Geschwindigkeit)
+        e["attributes"] = [a for a in e["attributes"]
+                           if a[0] != drop and not (drop == "Geschwindigkeit" and a[0] == "Datenrate")]
+        content = tmp_path / f"c_{drop}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False, indent=2), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"b_{drop}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        res = validate_dir(rules, out)
+        assert not res.ok, f"gate must FAIL when {label} is missing"
+        assert any(label in (v.field or "") or label.lower() in (v.message or "").lower()
+                   for v in res.violations), f"expected a {label} completeness violation"
+
+
+def test_gate_beschreibung_floor_is_90():
+    import yaml
+    from pathlib import Path
+    r = yaml.safe_load((Path(__file__).resolve().parents[1] / "config" / "rules.yaml").read_text(encoding="utf-8"))
+    assert r["budgets"]["beschreibung"]["min_words"] == 90
