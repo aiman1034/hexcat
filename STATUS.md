@@ -77,6 +77,15 @@ values (Faseranzahl, Anwendung) are explicitly tagged as derivations. (d) Verify
 the spec VARIES — per-SKU where it differs (operating temp by -I/-X suffix: industrial ≈ -40..+85 °C
 vs commercial 0..+70 °C); never stamp a family-wide value over per-SKU differences.
 
+**Rule 9 (PERMANENT, all brands) — class-derived Betriebstemperatur when unpublished.** When a
+manufacturer does NOT publish an operating-temperature spec for a transceiver, DERIVE it from the
+optic's temperature CLASS — commercial optics → 0–70 °C; industrial-suffix optics (-I / -RGD / etc.)
+→ their industrial range (≈ -40..+85 °C) — corroborated by sibling/equivalent optics that DO publish.
+Tag the confidence `industry-standard-<class>` (a DERIVATION, never "datasheet"). This bounded
+class-derivation applies ONLY to Betriebstemperatur; every part-specific spec (wavelength, reach,
+channel, datarate, connector, …) stays datasheet-verbatim and is NEVER derived. (Established on the
+Meraki MA-* optics, which publish everything but operating temp.)
+
 **Directive: take Cisco to TRUE ideal data — (A) author all ~598, (B) price all ~598 — then
 Meraki, then the rest. Autonomous, $0.**
 

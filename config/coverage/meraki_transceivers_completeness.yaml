@@ -1,51 +1,82 @@
 brand: Meraki
 category: transceivers
-complete: false
-universe_total: 30
-captured_count: 0
-gap_count: 30
-confirmed_gone_count: 0
-extra_count: 0
-populated_sources: 1
-routed_out_count: 0
+# Union of INDEPENDENT official sources (never one source): the Cisco TMG optics-to-device matrix
+# (Meraki MA-*/MGB* split-out) + Cisco-Meraki SFP & Stacking Accessories datasheet
+# (documentation.meraki.com) + Cisco MGE Small-Business SFP datasheet (c78-741408). Mined to backend.
+complete: false                         # 1 documented flag remains (MGBBX1, uncached source)
+universe_total: 30                      # real transceivers (the 2 MA-CBL-SPWR power cables are NOT transceivers)
+captured_count: 29
+gap_count: 0
+flagged_count: 1
+excluded_not_transceiver_count: 2
+populated_sources: 3
 per_source:
 - id: tmg_matrix_meraki
   kind: compatibility_matrix
   total: 30
   populated: true
-  captured: 0
-  gaps: 30
-gaps:
-- MA-CBL-100G-1M
-- MA-CBL-100G-3M
-- MA-CBL-100G-50CM
-- MA-CBL-120G-1M
-- MA-CBL-120G-3M
-- MA-CBL-120G-50CM
-- MA-CBL-40G-1M
-- MA-CBL-40G-3M
-- MA-CBL-40G-50CM
-- MA-CBL-TA-1M
-- MA-CBL-TA-3M
-- MA-QSFP-100G-LR4
-- MA-QSFP-100G-SR4
-- MA-QSFP-40G-CSR4
-- MA-QSFP-40G-LR4
-- MA-QSFP-40G-SR-BD
-- MA-QSFP-40G-SR4
-- MA-SFP-10GB-ER
+- id: meraki_sfp_stacking_datasheet
+  kind: vendor_datasheet
+  url: https://documentation.meraki.com/Platform_Management/Product_Information/Overviews_and_Datasheets/Small-Form_Factor_Pluggable_(SFP)_and_Stacking_Accessories
+  total: 27
+  populated: true
+- id: cisco_mge_sb_datasheet
+  kind: vendor_datasheet
+  url: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/small-business-network-accessories/datasheet-c78-741408.html
+  total: 4
+  populated: true
+captured:                               # 29 authored to the gold-slice bar, gate PASS 29/29
+- MA-SFP-1GB-SX
+- MA-SFP-1GB-LX10
+- MA-SFP-1GB-TX
+- MA-SFP-10GB-SR
 - MA-SFP-10GB-LR
 - MA-SFP-10GB-LRM
-- MA-SFP-10GB-SR
+- MA-SFP-10GB-ER
 - MA-SFP-10GB-ZR
-- MA-SFP-1GB-LX10
-- MA-SFP-1GB-SX
-- MA-SFP-1GB-TX
-- MGBBX1
-- MGBLH1
-- MGBLX1
+- MA-QSFP-40G-SR4
+- MA-QSFP-40G-LR4
+- MA-QSFP-40G-CSR4
+- MA-QSFP-40G-SR-BD
+- MA-QSFP-100G-SR4
+- MA-QSFP-100G-LR4
+- MA-CBL-TA-1M
+- MA-CBL-TA-3M
+- MA-CBL-40G-50CM
+- MA-CBL-40G-1M
+- MA-CBL-40G-3M
+- MA-CBL-100G-50CM
+- MA-CBL-100G-1M
+- MA-CBL-100G-3M
+- MA-CBL-120G-50CM
+- MA-CBL-120G-1M
+- MA-CBL-120G-3M
 - MGBSX1
+- MGBLX1
+- MGBLH1
 - MGBT1
-confirmed_gone: []
-extra: []
-routed_out: []
+flag_ungrounded:
+- pn: MGBBX1
+  source: tmg_matrix_meraki
+  description: 1000BASE-BX-20U BiDi single-fibre SFP (Cisco Small Business / Meraki)
+  reason: 'Real legacy BiDi transceiver, but DROPPED from the current Cisco MGE SB datasheet
+    (c78-741408 lists only SX/LX/LH/T) and no clean official Cisco datasheet is cached for its
+    verbatim wavelength/reach (Tx 1310 / Rx 1490 nm, ~20 km, single LC). Held (flag-don''t-emit) —
+    its part-specific optical specs must stay datasheet-verbatim (Rule 9 covers temp only). Author
+    once a verbatim Cisco source is available.'
+  datasheet: https://www.cisco.com/c/en/us/support/interfaces-modules/mgbbx1-gigabit-ethernet-bx-mini-gbc-sfp-transceiver/model.html
+exclude_not_transceiver:
+- pn: MA-CBL-SPWR-30CM
+  source: meraki_sfp_stacking_datasheet
+  description: Meraki stacking POWER cable (CAB-SPWR family)
+  reason: 'Not a pluggable optic — a stacking POWER cable (CAB-SPWR-30CM-M family) that carries
+    power between stacked Meraki switches, not a data transceiver or data cable.'
+- pn: MA-CBL-SPWR-150CM
+  source: meraki_sfp_stacking_datasheet
+  description: Meraki stacking POWER cable (CAB-SPWR family)
+  reason: 'Not a pluggable optic — a 150 cm stacking POWER cable (CAB-SPWR-150CM-M family), not a
+    data transceiver or data cable.'
+verdict: captured 29 of 30 real transceivers (96.7%); 1 documented flag (MGBBX1, uncached source);
+  2 non-transceivers excluded (stacking power cables). All 29 authored to the gold-slice bar
+  (gate PASS 29/29) with Rule-9 class-derived Betriebstemperatur for the MA-* (commercial 0-70C,
+  tagged) and verbatim 0-70C for the MGB* (Cisco MGE datasheet).
