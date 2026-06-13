@@ -3,7 +3,12 @@
 _Cross-session continuity ledger. Updated at end of each working block. Pairs with ruflo
 memory (`hexcat/*`). The autonomous audit→fix→re-verify loop reads this to resume._
 
-## Current state (2026-06-13 night) — Cisco authoring STARTED: POM family done (305 SKUs)
+## Current state (2026-06-13 night) — Cisco authoring STARTED: POM + CIM8 done (307 SKUs)
+
+> UPDATE: CIM8 decision RESOLVED — operator chose to admit it; taxonomy extended 23->24
+> (CIM8 token), both CIM8 SKUs authored from the NCS-1014 data sheet (commit b74ad02).
+> Authored so far: 10/301 ADD (POM 8 + CIM8 2). Catalog 297->307. 291 ADD families remain.
+> All template flags cleared (0). 372 tests pass. Completeness COMPLETE 550/550.
 
 **Six standing completeness rules are now PERMANENT** (apply to every brand/category): verify
 against the UNION of ALL independent enumerations (current-matrix + EOL/EOS + ordering + price
