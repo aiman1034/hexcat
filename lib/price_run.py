@@ -70,9 +70,20 @@ def _confidence(n: int, spread: Decimal | None, max_spread: Decimal) -> str:
     return "low"
 
 
-def resolve(sku: str, *, unterkat: str, attrs: dict[str, str], net_values: list[Decimal],
-            sources: list[str], model: PriceModel | None, policy_doc: dict,
-            fx: Decimal, brand: str = "Cisco", list_eur: Decimal | None = None) -> PriceOutcome:
+def resolve(sku: str, *, unterkat: str, attrs: dict[str, str],
+            direct: list[tuple[str, Decimal]] | None = None,
+            family: list[tuple[str, Decimal]] | None = None,
+            sources: list[str] | None = None, model: PriceModel | None = None,
+            policy_doc: dict, fx: Decimal, brand: str = "Cisco",
+            list_eur: Decimal | None = None) -> PriceOutcome:
+    """Resolve a Netto-VK, best-grounded tier first (nothing invented):
+      MARKET(authorized) > MARKET(secondary) > FAMILY(authorized) > FAMILY(secondary)
+      > T2-LIST > MODEL(backstop) > FLAG.
+    `direct`/`family` are (seller_tier, net_eur) pairs — direct = this SKU's own observations,
+    family = the pooled observations of its channel-family siblings (Fix 2)."""
+    direct = direct or []
+    family = family or []
+    sources = sources or []
     pol = policy_doc.get("policy", {})
     market = policy_doc.get("market", {})
     bands = policy_doc.get("category_bands", {})
@@ -82,35 +93,61 @@ def resolve(sku: str, *, unterkat: str, attrs: dict[str, str], net_values: list[
     floor, ceiling = _band(bands, unterkat)
     engine = PricePolicy.load(POLICY)
 
-    comp = MC.aggregate(sku, net_values)
+    def vals(obs: list[tuple[str, Decimal]], tier: str) -> list[Decimal]:
+        return [v for t, v in obs if t == tier]
+
     value: Decimal | None = None
     tier = "FLAG"
     confidence = "none"
     cohort = ""
+    extra_flags: list[str] = []
+    comp = MC.aggregate(sku, [])
 
-    # Engine resolves the best grounded tier natively: T1-MARKET (median of observations) wins, else
-    # T2-LIST (manufacturer list * list_to_net) if a list anchor is present.
-    obs = list(comp.net_eur_values) if (comp.grounded and comp.n_sources >= min_sources) else []
-    if obs or list_eur is not None:
-        res = resolve_price(PriceInputs(sku=sku, market_observations=obs, list_price=list_eur), engine)
+    # (label, values, is_secondary, is_family) in resolution order
+    ladder = [
+        ("T1-MARKET", vals(direct, "authorized"), False, False),
+        ("T1-MARKET", vals(direct, "secondary"), True, False),
+        ("FAMILY", vals(family, "authorized"), False, True),
+        ("FAMILY", vals(family, "secondary"), True, True),
+    ]
+    for label, vs, is_sec, is_fam in ladder:
+        if len(vs) < min_sources:
+            continue
+        comp = MC.aggregate(sku, vs)
+        if not comp.grounded:
+            continue
+        # route the chosen observations through the engine's T1 (it medians them)
+        res = resolve_price(PriceInputs(sku=sku, market_observations=list(comp.net_eur_values)), engine)
+        if res.value is None:
+            continue
+        value, tier = res.value, label
+        confidence = "medium" if comp.n_sources < 3 else "high"
+        if is_sec or is_fam:
+            confidence = "medium" if comp.n_sources >= 2 else "low"
+        if is_sec:
+            extra_flags.append("FLAG:secondary-anchored (no authorized listing)")
+        if is_fam:
+            extra_flags.append("FLAG:family-anchored (priced from channel-family siblings)")
+        break
+
+    if value is None and list_eur is not None:
+        res = resolve_price(PriceInputs(sku=sku, list_price=list_eur), engine)
         if res.value is not None:
-            value, tier = res.value, res.tier
-            confidence = (_confidence(comp.n_sources, comp.spread, max_spread)
-                          if res.tier == "T1-MARKET" else "medium")
+            value, tier, confidence = res.value, "T2-LIST", "medium"
+
     if value is None and model is not None:
         pred: ModelPrediction = model.predict(extract_features(attrs, sku, brand))
         if pred.value is not None:
             value, tier, cohort = pred.value, "MODEL", pred.cohort
             confidence = "medium" if pred.n >= 4 else "low"
+            extra_flags.append("FLAG:modeled (backstop — no direct/family/list anchor)")
 
-    flags: list[str] = []
+    flags = list(extra_flags)
     if value is not None:
         flags = MC.band_flags(value, floor=floor, ceiling=ceiling, n_sources=comp.n_sources,
-                              spread=comp.spread, high_value_eur=high_value, max_spread=max_spread)
+                              spread=comp.spread, high_value_eur=high_value, max_spread=max_spread) + extra_flags
         if any(f.startswith("BLOCK:") for f in flags):
             value, tier, confidence = None, "FLAG", "none"   # guarded out -> honest flagged-debt
-    if tier == "MODEL":
-        flags = list(flags) + ["FLAG:modeled (no direct market observation)"]
 
     return PriceOutcome(
         sku=sku, value=value, tier=tier, confidence=confidence,
@@ -120,18 +157,18 @@ def resolve(sku: str, *, unterkat: str, attrs: dict[str, str], net_values: list[
 
 
 def load_observations(path: Path | None = None) -> dict[str, dict]:
-    """Read the gathered market_observations.yaml -> {sku: {net_values:[Decimal], sources:[url]}}.
-    Missing file -> {} (no observations gathered yet)."""
+    """Read market_observations.yaml -> {sku: {direct:[(tier, Decimal)], sources:[url]}}.
+    Each observation carries its seller tier (authorized|secondary). Missing file -> {}."""
     p = path or OBSERVATIONS
     if not p.exists():
         return {}
     doc = yaml.safe_load(p.read_text(encoding="utf-8")) or {}
     out: dict[str, dict] = {}
     for sku, raw in (doc.get("skus") or {}).items():
-        vals, srcs = [], []
+        direct, srcs = [], []
         for o in (raw.get("observations") or []):
             if o.get("net_eur") is not None:
-                vals.append(Decimal(str(o["net_eur"])))
+                direct.append((str(o.get("tier", "secondary")), Decimal(str(o["net_eur"]))))
                 srcs.append(str(o.get("url", o.get("seller", "?"))))
-        out[sku] = {"net_values": vals, "sources": srcs}
+        out[sku] = {"direct": direct, "sources": srcs}
     return out

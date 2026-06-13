@@ -1,10 +1,28 @@
 {
   "schema": 1,
-  "updated": "2026-06-13T03:33:25Z",
+  "updated": "2026-06-13T04:18:22Z",
   "counts": {
-    "pending": 0,
+    "pending": 1,
     "done": 0,
     "gone": 0
   },
-  "entries": {}
+  "entries": {
+    "https://www.monocisco.com/cisco-gbic/dwdm-gbic-3033": {
+      "url": "https://www.monocisco.com/cisco-gbic/dwdm-gbic-3033",
+      "source_id": "monocisco",
+      "category": "prices",
+      "state": "pending",
+      "attempts": 3,
+      "first_seen": "2026-06-13T03:59:26Z",
+      "last_attempt": "2026-06-13T04:18:22Z",
+      "retry_after": "2026-06-13T04:33:22Z",
+      "last_status": 403,
+      "last_detail": "tier2-browser HTTP 403",
+      "history": [
+        "2026-06-13T03:59:26Z attempt#1 HTTP 403 tier2-browser HTTP 403",
+        "2026-06-13T04:07:06Z attempt#2 HTTP 403 tier2-browser HTTP 403",
+        "2026-06-13T04:18:22Z attempt#3 HTTP 403 tier2-browser HTTP 403"
+      ]
+    }
+  }
 }

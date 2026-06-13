@@ -27,24 +27,24 @@ from dataclasses import dataclass, field
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 from urllib.parse import urlsplit
 
-# Authorized NEW-SEALED-ORIGINAL resellers (operator-named set + clearly-legitimate B2B dealers).
-# Match is on the registrable host (suffix), so country variants (senetic.de/.com, …) all count.
+# TIER 1 — German AUTHORIZED resellers (preferred anchor for current parts). Match on host suffix.
 AUTHORIZED_SELLERS: tuple[str, ...] = (
     "bechtle.com", "bechtle.de", "senetic.com", "senetic.de", "senetic.eu",
     "computacenter.com", "computacenter.de", "als.com", "also.com", "also.de",
     "cdw.com", "insight.com", "comms-express.com",
     "span.com", "misco.de", "jacob.de", "wiredzone.com",
 )
-# Refurbished / "compatible" (third-party optic) / gray-market — NOT valid new-sealed anchors.
-# router-switch.com is here BY EVIDENCE + RULE: it advertises "new AND refurbished" Cisco optics and
-# its USD listings price systematically gray-low (e.g. $102 for an SFP-10G-SR a German distributor
-# sells new-sealed at ~€450) — so it fails the operator's "exclude refurbished/gray" rule and is a
-# misleading anchor. Excluded; surfaced to the operator. Re-include only if a new-sealed-only feed exists.
-EXCLUDED_SELLERS: tuple[str, ...] = (
-    "fs.com", "it-planet.com", "itinstock.com", "ebay.", "amazon.", "refurbished",
-    "flexoptix.net", "approved-networks.com", " proline", "compatible", "alibaba.",
-    "aliexpress.", "serverschmiede", "used", "broker", "router-switch.com",
+# COMPATIBLE / third-party-optic VENDORS — never a Cisco-genuine anchor at the SELLER level (their
+# whole catalogue is non-OEM). Excluded outright. (Refurb/used are filtered at the LISTING level
+# instead — a legit seller of genuine new-sealed parts stays valid even if it also lists refurb.)
+COMPATIBLE_VENDORS: tuple[str, ...] = (
+    "fs.com", "flexoptix.net", "approved-networks.com", "addonnetworks.com", "addon-networks.com",
+    "prolabs.com", "proline", "compufox.com", "hpcoptics.com", "cablesplususa.com",
+    "macroreer", "fluxlight.com", "champ-tech", "cozlink", "10gtek", "veloso", "amnetglobal.com",
 )
+# Everything else legitimate is TIER 2 — the genuine-new-sealed SECONDARY/specialist market
+# (router-switch, eBay Business new, optic specialists). For LEGACY/EOL parts the authorized
+# channel is empty and this IS the real market. Anchored only on NEW listings (see listing_condition).
 
 _VAT = Decimal("1.19")           # German MwSt; gross -> net = gross / 1.19
 _CENT = Decimal("0.01")
@@ -54,18 +54,71 @@ def _host(url: str) -> str:
     return urlsplit(url).netloc.lower().lstrip("www.")
 
 
-def seller_ok(url: str) -> bool:
-    """True iff the URL is an authorized NEW-SEALED reseller and not on the exclusion list."""
+def seller_tier(url: str) -> str | None:
+    """Classify a seller: 'authorized' (German authorized) | 'secondary' (legit genuine-new market)
+    | None (a compatible/third-party-optic vendor — excluded at the seller level)."""
     host = _host(url)
-    full = url.lower()
-    if any(bad in host or bad.strip() in full for bad in EXCLUDED_SELLERS):
-        return False
-    return any(host == d or host.endswith("." + d) or host == d.lstrip(".") for d in AUTHORIZED_SELLERS)
+    if any(v in host for v in COMPATIBLE_VENDORS):
+        return None
+    if any(host == d or host.endswith("." + d) for d in AUTHORIZED_SELLERS):
+        return "authorized"
+    return "secondary"
+
+
+def seller_ok(url: str) -> bool:
+    """Backwards-compatible: True iff the seller is an anchor-eligible tier (not a compatible vendor)."""
+    return seller_tier(url) is not None
 
 
 def seller_name(url: str) -> str:
     h = _host(url)
     return h.split(".")[0] if h else "?"
+
+
+# --- listing-level condition (Fix 1: reject refurb/used/compatible LISTINGS, keep NEW) -------
+
+_REFURB = re.compile(r"refurbish|generalüberholt|generalueberholt|gebraucht|\bused\b|pre-?owned|"
+                     r"renewed|aufbereitet|b-?ware|open-?box", re.I)
+_COMPAT = re.compile(r"compatible|kompatibel|third-?party|equivalent|addon|nicht von cisco|"
+                     r"no-?name|generic", re.I)
+_NEW = re.compile(r"\bnew\b|\bneu\b|versiegelt|factory sealed|brand[- ]new|fabrikneu|ovp", re.I)
+
+
+def listing_condition(html: str, pn: str) -> str:
+    """new | refurbished | used | compatible | unknown — read from JSON-LD itemCondition first,
+    then near-PN/title text. A refurbished/used/compatible LISTING is rejected by the gatherer."""
+    m = re.search(r'"itemCondition"\s*:\s*"[^"]*?(New|Refurbished|Used|Damaged)Condition"', html, re.I)
+    if m:
+        return {"new": "new", "refurbished": "refurbished", "used": "used",
+                "damaged": "used"}[m.group(1).lower()]
+    # window around the PN occurrence (or the page head) for textual condition markers
+    norm = html
+    idx = norm.upper().find(re.sub(r"\s+", "", pn).upper())
+    win = norm[max(0, idx - 400): idx + 400] if idx != -1 else norm[:2000]
+    if _COMPAT.search(win):
+        return "compatible"
+    if _REFURB.search(win):
+        return "refurbished"
+    if _NEW.search(win):
+        return "new"
+    return "unknown"
+
+
+# --- family key (Fix 2: channel variants are one product priced once) -----------------------
+
+_CHANNEL_TAIL = re.compile(r"-(?:\d{2,4}(?:\.\d{1,2})?|C)\b=?$", re.I)
+
+
+def family_key(pn: str) -> str | None:
+    """For a DWDM/CWDM channel-variant PN, the family base shared by all wavelengths
+    (DWDM-GBIC-30.33 -> 'DWDM-GBIC', CWDM-SFP-1470 -> 'CWDM-SFP'). Returns None for a
+    non-channel PN (priced individually). Wavelength does not drive price, so the family
+    is priced once and applied to every channel member (grounded: identical product, different λ)."""
+    p = pn.strip().upper().rstrip("=")
+    if not (p.startswith("DWDM-") or p.startswith("CWDM-")):
+        return None
+    base = _CHANNEL_TAIL.sub("", p)
+    return base if (base != p and "-" in base) else None
 
 
 # --- money parsing ---------------------------------------------------------------------
@@ -114,6 +167,7 @@ class Offer:
     currency: str          # "EUR" | "USD"
     basis: str             # "net" | "gross" | "unknown"
     where: str             # which extractor found it (jsonld|meta|microdata|regex)
+    condition: str = "unknown"  # new | refurbished | used | compatible | unknown (listing-level)
 
 
 def _gross_or_net(context: str) -> str:
@@ -139,17 +193,21 @@ def extract_offers(html: str, pn: str) -> list[Offer]:
     """
     if not _pn_present(html, pn):
         return []
+    page_cond = listing_condition(html, pn)
     offers: list[Offer] = []
 
-    # 1) JSON-LD Offer blocks
+    # 1) JSON-LD Offer blocks — ONLY from the Product node whose identity matches this PN (so a
+    # related-products carousel on the same page can't poison the price). Per-offer itemCondition
+    # kept; else fall back to the page condition.
     for blk in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', html, re.S | re.I):
         try:
             data = json.loads(blk.strip())
         except (ValueError, json.JSONDecodeError):
             continue
         for node in data if isinstance(data, list) else [data]:
-            for off in _jsonld_offers(node):
-                offers.append(off)
+            for off in _jsonld_offers(node, pn):
+                offers.append(off if off.condition != "unknown" else
+                              Offer(off.amount, off.currency, off.basis, off.where, page_cond))
 
     # 2) meta price tags (og:price:amount / product:price:amount + currency)
     amt = re.search(r'<meta[^>]+(?:og:price:amount|product:price:amount)["\'][^>]*content=["\']([\d.,]+)', html, re.I)
@@ -157,13 +215,13 @@ def extract_offers(html: str, pn: str) -> list[Offer]:
     if amt:
         pm = parse_money(amt.group(1))
         if pm:
-            offers.append(Offer(pm[0], (curm.group(1) if curm else pm[1]), "unknown", "meta"))
+            offers.append(Offer(pm[0], (curm.group(1) if curm else pm[1]), "unknown", "meta", page_cond))
 
     # 3) microdata itemprop=price
     for m in re.finditer(r'itemprop=["\']price["\'][^>]*content=["\']([\d.,]+)', html, re.I):
         pm = parse_money(m.group(1))
         if pm:
-            offers.append(Offer(pm[0], pm[1], "unknown", "microdata"))
+            offers.append(Offer(pm[0], pm[1], "unknown", "microdata", page_cond))
 
     # 4) EUR-near-PN regex fallback (only if nothing structured was found)
     if not offers:
@@ -171,19 +229,37 @@ def extract_offers(html: str, pn: str) -> list[Offer]:
             pm = parse_money(m.group(1) + " EUR")
             if pm:
                 ctx = html[max(0, m.start() - 60): m.end() + 20]
-                offers.append(Offer(pm[0], "EUR", _gross_or_net(ctx), "regex"))
+                offers.append(Offer(pm[0], "EUR", _gross_or_net(ctx), "regex", page_cond))
     return offers
 
 
-def _jsonld_offers(node: object) -> list[Offer]:
+def _node_matches_pn(node: dict, pn: str) -> bool:
+    """True iff this Product node's identity (sku/mpn/productID/name) contains the PN — so we only
+    price the listing's MAIN product, never a related-products carousel entry on the same page."""
+    npn = re.sub(r"[^A-Z0-9]", "", pn.upper())
+    for key in ("sku", "mpn", "productID", "productId", "name", "@id"):
+        val = re.sub(r"[^A-Z0-9]", "", str(node.get(key, "")).upper())
+        if npn and npn in val:
+            return True
+    return False
+
+
+def _jsonld_offers(node: object, pn: str) -> list[Offer]:
     out: list[Offer] = []
     if not isinstance(node, dict):
         return out
-    # recurse into @graph / nested
+    # recurse into @graph / nested (a related-products list never PN-matches, so it self-filters)
     for v in node.values():
         if isinstance(v, (list, dict)):
-            out += _jsonld_offers(v) if isinstance(v, dict) else [o for x in v for o in _jsonld_offers(x)]
-    offer = node.get("offers") or (node if str(node.get("@type", "")).endswith("Offer") else None)
+            out += _jsonld_offers(v, pn) if isinstance(v, dict) else [o for x in v for o in _jsonld_offers(x, pn)]
+    # Price ONLY from a Product node whose identity matches the PN. Bare/related Offers (carousels,
+    # "customers also bought") are NOT accepted — that is exactly how a neighbouring part's price
+    # (e.g. an XFP listed on an X2 page) leaks in. Single-product pages without a PN-matching Product
+    # node fall through to the meta/microdata/regex extractors below.
+    ntype = str(node.get("@type", ""))
+    if "Product" not in ntype or not _node_matches_pn(node, pn):
+        return out
+    offer = node.get("offers")
     for off in (offer if isinstance(offer, list) else [offer] if offer else []):
         if not isinstance(off, dict):
             continue
@@ -197,7 +273,10 @@ def _jsonld_offers(node: object) -> list[Offer]:
         spec = off.get("priceSpecification") or {}
         basis = "net" if (isinstance(spec, dict) and spec.get("valueAddedTaxIncluded") is False) else \
                 ("gross" if (isinstance(spec, dict) and spec.get("valueAddedTaxIncluded") is True) else "unknown")
-        out.append(Offer(pm[0], cur, basis, "jsonld"))
+        ic = str(off.get("itemCondition") or "")
+        cond = ("refurbished" if "Refurb" in ic else "used" if ("Used" in ic or "Damaged" in ic)
+                else "new" if "New" in ic else "unknown")
+        out.append(Offer(pm[0], cur, basis, "jsonld", cond))
     return out
 
 

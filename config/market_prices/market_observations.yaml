@@ -5,12 +5,16 @@ skus:
   SFP-10G-SR:
     observations:
     - net_eur: 399.99
+      tier: authorized
+      condition: new
       currency_seen: EUR
       basis: unknown
       seller: bechtle
       url: https://www.bechtle.com/shop/cisco-sfp-10g-sr-sfp-modul--582500--p
       where: jsonld
     - net_eur: 501.15
+      tier: authorized
+      condition: new
       currency_seen: EUR
       basis: unknown
       seller: shop
@@ -19,6 +23,8 @@ skus:
   QSFP-40G-SR4:
     observations:
     - net_eur: 1862.18
+      tier: authorized
+      condition: new
       currency_seen: EUR
       basis: unknown
       seller: bechtle
@@ -27,14 +33,82 @@ skus:
   SFP-H10GB-CU3M:
     observations:
     - net_eur: 37.81
+      tier: authorized
+      condition: new
       currency_seen: EUR
       basis: unknown
       seller: bechtle
       url: https://www.bechtle.com/shop/cisco-10gbase-cu-sfp-plus-kabel-3m--614706--p
       where: jsonld
     - net_eur: 52.66
+      tier: authorized
+      condition: new
       currency_seen: EUR
       basis: unknown
       seller: jacob
       url: https://www.jacob.de/produkte/Cisco-SFP-Copper-SFP-H10GB-CU3M%3D-artnr-232166.html
+      where: jsonld
+  DWDM-XENPAK-30.33:
+    observations:
+    - net_eur: 1625.81
+      tier: secondary
+      condition: unknown
+      currency_seen: EUR
+      basis: unknown
+      seller: memory4less
+      url: https://www.memory4less.com/cisco-network-transceiver-dwdm-xenpak-30-33
+      where: microdata
+  DWDM-X2-30.33:
+    observations:
+    - net_eur: 8177.47
+      tier: secondary
+      condition: new
+      currency_seen: USD
+      basis: unknown
+      seller: router-switch
+      url: https://www.router-switch.com/dwdm-x2-30-33-p-1857.html
+      where: jsonld
+    - net_eur: 6135.28
+      tier: secondary
+      condition: unknown
+      currency_seen: USD
+      basis: unknown
+      seller: northlandsystems
+      url: https://northlandsystems.com/product/dwdm-x2-30-33-dwdm-x2-1530-33-nm-x2-100-ghz-itu-grid/
+      where: jsonld
+    - net_eur: 1986.35
+      tier: secondary
+      condition: new
+      currency_seen: USD
+      basis: unknown
+      seller: servertechsupply
+      url: https://www.servertechsupply.com/dwdm-x2-30-33/
+      where: jsonld
+  DWDM-XFP-30.33:
+    observations:
+    - net_eur: 8177.47
+      tier: secondary
+      condition: new
+      currency_seen: USD
+      basis: unknown
+      seller: router-switch
+      url: https://www.router-switch.com/dwdm-xfp-30-33-p-1812.html
+      where: jsonld
+  CWDM-SFP-1470:
+    observations:
+    - net_eur: 1955.89
+      tier: secondary
+      condition: new
+      currency_seen: USD
+      basis: unknown
+      seller: router-switch
+      url: https://www.router-switch.com/cwdm-sfp-1470-p-1774.html
+      where: jsonld
+    - net_eur: 1574.43
+      tier: secondary
+      condition: new
+      currency_seen: USD
+      basis: unknown
+      seller: ormsystems
+      url: https://ormsystems.com/cwdm-sfp-1470-1-price.html
       where: jsonld

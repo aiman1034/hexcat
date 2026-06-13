@@ -17,19 +17,50 @@ FX = Decimal("0.863")  # USD->EUR, matches the dated rate in config/market_price
 
 # ---- seller allow / deny --------------------------------------------------------------
 
-def test_authorized_new_sealed_sellers_pass():
-    assert M.seller_ok("https://www.bechtle.com/de/shop/cisco-sfp-10g-sr-123")
-    assert M.seller_ok("https://www.senetic.de/product/SFP-10G-SR")
-    assert M.seller_ok("https://shop.jacob.de/produkte/cisco-sfp-10g-sr")
+def test_seller_tiers_authorized_vs_secondary_vs_excluded():
+    # Tier 1: German authorized
+    assert M.seller_tier("https://www.bechtle.com/de/shop/cisco-sfp-10g-sr-123") == "authorized"
+    assert M.seller_tier("https://shop.jacob.de/produkte/cisco-sfp-10g-sr") == "authorized"
+    # Tier 2: legit genuine-new SECONDARY market (anchors legacy/EOL parts the authorized channel lacks)
+    assert M.seller_tier("https://www.router-switch.com/xenpak-10gb-lr.html") == "secondary"
+    assert M.seller_tier("https://www.ebay.de/itm/cisco-dwdm-gbic-30-33") == "secondary"
+    # Excluded at the seller level: compatible / third-party-optic vendors
+    assert M.seller_tier("https://www.fs.com/products/sfp-10g-sr.html") is None
+    assert M.seller_tier("https://flexoptix.net/en/sfp-10g-sr") is None
 
 
-def test_refurb_compatible_graymarket_sellers_excluded():
-    assert not M.seller_ok("https://www.fs.com/products/sfp-10g-sr.html")        # compatible optics
-    assert not M.seller_ok("https://www.it-planet.com/sfp-10g-sr")               # gray/used
-    assert not M.seller_ok("https://www.ebay.de/itm/cisco-sfp-10g-sr")           # marketplace
-    assert not M.seller_ok("https://flexoptix.net/en/sfp-10g-sr")                # compatible
-    assert not M.seller_ok("https://www.router-switch.com/sfp-10g-sr-p-123.html")  # new+refurb gray
-    assert not M.seller_ok("https://some-random-shop.xyz/sfp-10g-sr")            # not authorized
+def test_listing_condition_filters_refurb_used_compatible_keeps_new():
+    assert M.listing_condition("<h1>Cisco SFP-10G-SR brandneu, versiegelt</h1>", "SFP-10G-SR") == "new"
+    assert M.listing_condition("<h1>Cisco XENPAK-10GB-LR refurbished</h1>", "XENPAK-10GB-LR") == "refurbished"
+    assert M.listing_condition("<h1>SFP-10G-SR compatible transceiver</h1>", "SFP-10G-SR") == "compatible"
+    assert M.listing_condition('{"itemCondition":"https://schema.org/UsedCondition"} GLC-SX-MM', "GLC-SX-MM") == "used"
+
+
+def test_jsonld_per_offer_item_condition():
+    html = ('XENPAK-10GB-LR <script type="application/ld+json">{"@type":"Product","sku":"XENPAK-10GB-LR",'
+            '"offers":{"@type":"Offer","price":"450.00","priceCurrency":"EUR",'
+            '"itemCondition":"https://schema.org/RefurbishedCondition"}}</script>')
+    offers = M.extract_offers(html, "XENPAK-10GB-LR")
+    assert offers and offers[0].condition == "refurbished"
+
+
+def test_related_product_offer_does_not_leak():
+    # an X2 page whose carousel lists a neighbouring XFP as a bare Offer must NOT price the X2
+    html = ('DWDM-X2-30.33 <script type="application/ld+json">'
+            '[{"@type":"Product","sku":"DWDM-X2-30.33","offers":{"@type":"Offer","price":"3200","priceCurrency":"USD"}},'
+            '{"@type":"Offer","price":"9476","priceCurrency":"USD"}]</script>')
+    offers = M.extract_offers(html, "DWDM-X2-30.33")
+    amounts = {str(o.amount) for o in offers}
+    assert "3200" in amounts and "9476" not in amounts   # only the X2's own offer
+
+
+def test_family_key_groups_channel_variants():
+    assert M.family_key("DWDM-GBIC-30.33") == "DWDM-GBIC"
+    assert M.family_key("DWDM-XENPAK-60.61") == "DWDM-XENPAK"
+    assert M.family_key("CWDM-SFP-1470") == "CWDM-SFP"
+    assert M.family_key("DWDM-SFP10G-C") == "DWDM-SFP10G"        # tunable channel member
+    assert M.family_key("SFP-10G-SR") is None                    # not a channel family
+    assert M.family_key("QSFP-40G-SR4") is None
 
 
 # ---- money parsing --------------------------------------------------------------------
