@@ -1,0 +1,37 @@
+brand: Fortinet
+category: transceivers
+# Enumeration source: the official "Fortinet Transceivers Data Sheet" — Fortinet's single
+# authoritative matrix for the FortiGate/FortiSwitch transceiver, DAC, AOC and breakout line
+# (FG-/FN-/FS-/FR-/SP- families). The prior session harvested its table to 87 SKUs.
+complete: true
+universe_total: 87
+captured_count: 87
+gap_count: 0
+flagged_count: 0
+populated_sources: 1
+per_source:
+- id: fortinet_transceivers_datasheet
+  kind: vendor_datasheet
+  url: https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Transceivers.pdf
+  populated: true
+# COMPLETENESS RE-CONFIRMATION (2026-06-14, independent token diff): a datasheet PN-token scan
+# surfaced 11 "extra" tokens, EVERY one of which resolves to a captured SKU — they are datasheet
+# SHORTHAND or packaging variants, not missed transceivers:
+#   * canonical-PN shorthand: "FN-TRAN-1BD10/1BU10/1BD40/1BU40" -> captured as FN-TRAN-SFP-1BD10/…
+#   * 4-pack packaging: "FN-TRAN-EX/FE/SXI" -> captured as FN-TRAN-EX-4PACK / FE-4PACK / SXI-4PACK;
+#     "FN-CABLE-QSFP+7" -> FN-CABLE-QSFP+7-4PACK
+#   * "+"-boundary truncations: FG-CABLE-SR10-SFP(+), SP-CABLE-ADASFP(+); FG-TRAN-QSFP (prefix, x0)
+# FR-TRAN-SX / FR-TRAN-ZX are LEGITIMATE Fortinet PNs (verified in the datasheet), not typos.
+betriebstemperatur_grounding: >
+  Fortinet PUBLISHES per-module operating temperature; 85 SKUs carry the datasheet value verbatim
+  (-40/85, -20/85, -40/70, 0/70, -5/85, -5/70). FN-TRAN-QSFP+BIDI authored verbatim 0/70; the
+  QSFP+ SR-BiDi sibling Rule-9 commercial 0/70 (corroborated). 4 MPO Kabel are temp-exempt.
+reconcile_fixes: >
+  5 cables failed physical_formfaktor (empty connector): grounded the 3 QSFP-DD 400GE cables
+  (FN-CABLE-QSFPDD-DAC-01/B5, -AOC-03) to "2× QSFP-DD" and the 2 MPO breakouts
+  (FG-TRAN-QSFP-4XSFP 1m, FG-TRAN-QSFP-4SFP-5 5m) to "MPO-12 (QSFP+/QSFP28) zu 4× LC", 40G/100G.
+verdict: captured 87 of 87 Fortinet transceivers/DACs/AOCs/breakouts (100%) from the Fortinet
+  Transceivers Data Sheet. Independent token diff confirms no missed SKU (the 11 extra tokens are
+  shorthand/4-pack/“+”-truncation artifacts of captured SKUs). Gate PASS 87/87, audit_semantic 0×7,
+  Rule-8 parity 0-missing. Fixed FG-TRAN-CFP2-LR4 wavelength SET, FN-TRAN-QSFP28 SR→SR4 (Faseranzahl
+  8), and 5 reconcile-blocking connectors. Pricing deferred (datasheet carries no prices).
