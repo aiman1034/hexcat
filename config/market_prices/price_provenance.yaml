@@ -1,10 +1,26 @@
 brand: Cisco
 fx_usd_eur: 0.863
 tiers:
-  FLAG: 298
+  FLAG: 297
   T2-LIST: 6
   T1-MARKET: 3
+  FAMILY: 1
 skus:
+  DWDM-XFP-C:
+    netto_vk: 8177,47
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 8177.47
+    median: 8177.47
+    high: 8177.47
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
   GLC-LH-SMD:
     netto_vk: 557,24
     tier: T2-LIST
@@ -56,7 +72,7 @@ skus:
   QSFP-40G-SR4:
     netto_vk: 1862,18
     tier: T1-MARKET
-    confidence: low
+    confidence: medium
     n_sources: 1
     low: 1862.18
     median: 1862.18
