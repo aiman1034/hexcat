@@ -100,18 +100,29 @@ def test_only_genuine_non_transceivers_are_excluded():
 
 
 def test_legacy_transceivers_are_added_not_excluded():
-    """THE regression: XENPAK / GBIC / POM are real transceivers (and EOL). They MUST be ADD.
-    Excluding any of them — for being legacy, EOL, or 'out of scope' — violates the mission."""
+    """THE regression: XENPAK / GBIC / POM are real transceivers (and EOL). They MUST be ADD or
+    already AUTHORED — never excluded for being legacy/EOL/'out of scope'. As the grind authors a
+    legacy family it graduates from the disposition's ADD bucket into the shipped catalog; the
+    invariant is that it is NEVER in exclude_not_transceiver, and is present in catalog ∪ add."""
     d = _disp()
+    catalog = set(json.loads(CONTENT.read_text(encoding="utf-8")).keys())
     add_pns = {e["pn"] for e in d["add"]}
     excluded_pns = {e["pn"] for e in (d.get("exclude_not_transceiver") or [])}
-    legacy = [e["pn"] for e in _all_entries(d)
-              if "XENPAK" in e["pn"].upper()
-              or e["pn"].startswith(("DWDM-GBIC", "WS-G548", "POM-"))]
-    assert legacy, "expected legacy XENPAK/GBIC/POM parts in the surfaced set"
-    for pn in legacy:
-        assert pn in add_pns, f"legacy real transceiver must be ADD, not dropped: {pn}"
-        assert pn not in excluded_pns
+
+    def is_legacy(pn: str) -> bool:
+        return "XENPAK" in pn.upper() or pn.startswith(("DWDM-GBIC", "WS-G548", "POM-"))
+
+    # 1) no legacy real transceiver is ever excluded
+    for pn in excluded_pns:
+        assert not is_legacy(pn), f"legacy real transceiver wrongly excluded: {pn}"
+    # 2) the legacy families are present in the AUTHORED catalog — proof they were added, not dropped
+    assert any("XENPAK" in p.upper() for p in catalog), "no XENPAK authored"
+    assert any(p.startswith("DWDM-GBIC") for p in catalog), "no DWDM-GBIC authored"
+    assert any(p.startswith("POM-") for p in catalog), "no POM authored"
+    # 3) any legacy part still surfaced (not yet authored) is ADD, never dropped
+    for e in _all_entries(d):
+        if is_legacy(e["pn"]):
+            assert e["pn"] in add_pns and e["pn"] not in excluded_pns
 
     # and their form factors must be present in the taxonomy (POM was added for exactly this)
     tax = _taxonomy()

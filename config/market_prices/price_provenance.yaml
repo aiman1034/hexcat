@@ -1,10 +1,10 @@
 brand: Cisco
 fx_usd_eur: 0.863
 tiers:
-  FLAG: 384
+  FLAG: 393
   T2-LIST: 6
-  T1-MARKET: 5
-  FAMILY: 63
+  T1-MARKET: 6
+  FAMILY: 94
 skus:
   DWDM-X2-30.33:
     netto_vk: 6135,28
@@ -485,6 +485,486 @@ skus:
     flags:
     - FLAG:high-value (>€1500)
     - FLAG:wide-spread (101%)
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-30.33:
+    netto_vk: 1625,81
+    tier: T1-MARKET
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    sources:
+    - https://www.memory4less.com/cisco-network-transceiver-dwdm-xenpak-30-33
+  DWDM-XENPAK-31.12:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-31.90:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-32.68:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-34.25:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-35.04:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-35.82:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-36.61:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-38.19:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-38.98:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-39.77:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-40.56:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-42.14:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-42.94:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-43.73:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-44.53:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-46.12:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-46.92:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-47.72:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-48.51:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-50.12:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-50.92:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-51.72:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-52.52:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-54.13:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-54.94:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-55.75:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-56.55:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-58.17:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-58.98:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-59.79:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
+    - FLAG:secondary-anchored (no authorized listing)
+    - FLAG:family-anchored (priced from channel-family siblings)
+    sources: []
+  DWDM-XENPAK-60.61:
+    netto_vk: 1625,81
+    tier: FAMILY
+    confidence: low
+    n_sources: 1
+    low: 1625.81
+    median: 1625.81
+    high: 1625.81
+    cohort: ''
+    flags:
+    - FLAG:high-value (>€1500)
+    - FLAG:single-source
     - FLAG:secondary-anchored (no authorized listing)
     - FLAG:family-anchored (priced from channel-family siblings)
     sources: []

@@ -1,12 +1,12 @@
 brand: Cisco
 category: transceivers
-catalog_skus: 458
+catalog_skus: 499
 files_mined: 87
 files_skipped: 118
 mined_total: 450
-in_catalog: 350
-missing_count: 100
-orphan_count: 108
+in_catalog: 389
+missing_count: 61
+orphan_count: 110
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -196,134 +196,6 @@ missing_by_family:
     source: product_data_sheet09186a00801bc698
     description: 10-Gbps Fibre Channel-Short-reach, X2, SC
     eol: false
-  - pn: DWDM-XENPAK-30.33
-    source: c51-733695
-    description: 10GBase-DWDM 1530.33nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-31.12
-    source: c51-733695
-    description: 10GBase-DWDM 1531.12nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-31.90
-    source: c51-733695
-    description: 10GBase-DWDM 1531.90nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-32.68
-    source: c51-733695
-    description: 10GBase-DWDM 1532.68nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-34.25
-    source: c51-733695
-    description: 10GBase-DWDM 1534.25nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-35.04
-    source: c51-733695
-    description: 10GBase-DWDM 1535.04nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-35.82
-    source: c51-733695
-    description: 10GBase-DWDM 1535.82nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-36.61
-    source: c51-733695
-    description: 10GBase-DWDM 1536.61nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-38.19
-    source: c51-733695
-    description: 10GBase-DWDM 1538.19nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-38.98
-    source: c51-733695
-    description: 10GBase-DWDM 1538.98nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-39.77
-    source: c51-733695
-    description: 10GBase-DWDM 1539.77nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-40.56
-    source: c51-733695
-    description: 10GBase-DWDM 1540.56nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-42.14
-    source: c51-733695
-    description: 10GBase-DWDM 1542.14nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-42.94
-    source: c51-733695
-    description: 10GBase-DWDM 1542.94nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-43.73
-    source: c51-733695
-    description: 10GBase-DWDM 1543.73nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-44.53
-    source: c51-733695
-    description: 10GBase-DWDM 1544.53nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-46.12
-    source: c51-733695
-    description: 10GBase-DWDM 1546.12nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-46.92
-    source: c51-733695
-    description: 10GBase-DWDM 1546.92nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-47.72
-    source: c51-733695
-    description: 10GBase-DWDM 1547.72nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-48.51
-    source: c51-733695
-    description: 10GBase-DWDM 1548.51nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-50.12
-    source: c51-733695
-    description: 10GBase-DWDM 1550.12nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-50.92
-    source: c51-733695
-    description: 10GBase-DWDM 1550.92nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-51.72
-    source: c51-733695
-    description: 10GBase-DWDM 1551.72nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-52.52
-    source: c51-733695
-    description: 10GBase-DWDM 1552.52nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-54.13
-    source: c51-733695
-    description: 10GBase-DWDM 1554.12nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-54.94
-    source: c51-733695
-    description: 10GBase-DWDM 1554.94nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-55.75
-    source: c51-733695
-    description: 10GBase-DWDM 1555.75nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-56.55
-    source: c51-733695
-    description: 10GBase-DWDM 1556.55nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-58.17
-    source: c51-733695
-    description: 10GBase-DWDM 1558.17nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-58.98
-    source: c51-733695
-    description: 10GBase-DWDM 1558.98nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-59.79
-    source: c51-733695
-    description: 10GBase-DWDM 1559.79nm XENPAK
-    eol: true
-  - pn: DWDM-XENPAK-60.61
-    source: c51-733695
-    description: 10GBase-DWDM 1560.61nm XENPAK
-    eol: true
   - pn: E1000-2-G
     source: pluggable-optical-modules-ds
     description: FC-MR-4
@@ -383,34 +255,6 @@ missing_by_family:
   - pn: SFP-GE-Z
     source: c51-727832
     description: 1000BASE-ZX Gigabit Ethernet SFP (DOM)
-    eol: true
-  - pn: WDM-XENPAK-REC
-    source: eol_c51_509261
-    description: Receive-Only WDM XENPAK
-    eol: true
-  - pn: XENPAK-10GB-CX4
-    source: c51-726868
-    description: Cisco 10GBASE-CX4 XENPAK Module
-    eol: true
-  - pn: XENPAK-10GB-LRM
-    source: c51-734289
-    description: 10G Base LRM Xenpak
-    eol: true
-  - pn: XENPAK-10GB-LW
-    source: eol_c51_561505
-    description: 10GBASE-LW XENPAK Module
-    eol: true
-  - pn: XENPAK-10GB-LX4
-    source: eol_c51_599855
-    description: 10GBASE-LX4 XENPAK Module
-    eol: true
-  - pn: XENPAK-10GB-SR
-    source: c51-734289
-    description: 10GBASE-SR XENPAK Module
-    eol: true
-  - pn: XENPAK-10GB-ZR
-    source: c51-734289
-    description: 10GBASE-ZR XENPAK Module
     eol: true
 orphan:
 - CFP2-WDM-D-1HL
@@ -520,6 +364,8 @@ orphan:
 - X2-10GB-LR++
 - X2-10GB-LRM++
 - X2-10GB-SR++
+- XENPAK-10GB-ER+
+- XENPAK-10GB-LR+
 - XFP-10GER-192IR+
 excluded:
   CVR-CFP-4SFP10G: QSFP/CFP-to-SFP converter adapter (not a transceiver form factor)

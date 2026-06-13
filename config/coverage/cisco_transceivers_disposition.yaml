@@ -4,15 +4,14 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 100
+surfaced_total: 61
 counts:
-  ADD: 85
+  ADD: 46
   EXCLUDE_NOT_TRANSCEIVER: 15
-add_eol_flagged: 55
+add_eol_flagged: 16
 add_families:
 - SFP
 - SFP+
-- XENPAK
 grounded_orphans:
 - pn: CFP2-WDM-D-1HL
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
@@ -335,6 +334,12 @@ grounded_orphans:
 - pn: X2-10GB-SR++
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/eos-eol-notice-c51-744186.html
+- pn: XENPAK-10GB-ER+
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet09186a008007cd00.pdf
+- pn: XENPAK-10GB-LR+
+  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
+  source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet09186a008007cd00.pdf
 - pn: XFP-10GER-192IR+
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
@@ -513,198 +518,6 @@ add:
   description: 10-Gbps Fibre Channel-Short-reach, X2, SC
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP
-- pn: DWDM-XENPAK-30.33
-  source: c51-733695
-  description: 10GBase-DWDM 1530.33nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-31.12
-  source: c51-733695
-  description: 10GBase-DWDM 1531.12nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-31.90
-  source: c51-733695
-  description: 10GBase-DWDM 1531.90nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-32.68
-  source: c51-733695
-  description: 10GBase-DWDM 1532.68nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-34.25
-  source: c51-733695
-  description: 10GBase-DWDM 1534.25nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-35.04
-  source: c51-733695
-  description: 10GBase-DWDM 1535.04nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-35.82
-  source: c51-733695
-  description: 10GBase-DWDM 1535.82nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-36.61
-  source: c51-733695
-  description: 10GBase-DWDM 1536.61nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-38.19
-  source: c51-733695
-  description: 10GBase-DWDM 1538.19nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-38.98
-  source: c51-733695
-  description: 10GBase-DWDM 1538.98nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-39.77
-  source: c51-733695
-  description: 10GBase-DWDM 1539.77nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-40.56
-  source: c51-733695
-  description: 10GBase-DWDM 1540.56nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-42.14
-  source: c51-733695
-  description: 10GBase-DWDM 1542.14nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-42.94
-  source: c51-733695
-  description: 10GBase-DWDM 1542.94nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-43.73
-  source: c51-733695
-  description: 10GBase-DWDM 1543.73nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-44.53
-  source: c51-733695
-  description: 10GBase-DWDM 1544.53nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-46.12
-  source: c51-733695
-  description: 10GBase-DWDM 1546.12nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-46.92
-  source: c51-733695
-  description: 10GBase-DWDM 1546.92nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-47.72
-  source: c51-733695
-  description: 10GBase-DWDM 1547.72nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-48.51
-  source: c51-733695
-  description: 10GBase-DWDM 1548.51nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-50.12
-  source: c51-733695
-  description: 10GBase-DWDM 1550.12nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-50.92
-  source: c51-733695
-  description: 10GBase-DWDM 1550.92nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-51.72
-  source: c51-733695
-  description: 10GBase-DWDM 1551.72nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-52.52
-  source: c51-733695
-  description: 10GBase-DWDM 1552.52nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-54.13
-  source: c51-733695
-  description: 10GBase-DWDM 1554.12nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-54.94
-  source: c51-733695
-  description: 10GBase-DWDM 1554.94nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-55.75
-  source: c51-733695
-  description: 10GBase-DWDM 1555.75nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-56.55
-  source: c51-733695
-  description: 10GBase-DWDM 1556.55nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-58.17
-  source: c51-733695
-  description: 10GBase-DWDM 1558.17nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-58.98
-  source: c51-733695
-  description: 10GBase-DWDM 1558.98nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-59.79
-  source: c51-733695
-  description: 10GBase-DWDM 1559.79nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: DWDM-XENPAK-60.61
-  source: c51-733695
-  description: 10GBase-DWDM 1560.61nm XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
 - pn: E1000-2-G
   source: pluggable-optical-modules-ds
   description: FC-MR-4
@@ -777,48 +590,6 @@ add:
   description: 1000BASE-ZX Gigabit Ethernet SFP (DOM)
   reason: Real transceiver confirmed by mined datasheet description
   family: SFP
-  lifecycle: EOL
-- pn: WDM-XENPAK-REC
-  source: eol_c51_509261
-  description: Receive-Only WDM XENPAK
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-CX4
-  source: c51-726868
-  description: Cisco 10GBASE-CX4 XENPAK Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-LRM
-  source: c51-734289
-  description: 10G Base LRM Xenpak
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-LW
-  source: eol_c51_561505
-  description: 10GBASE-LW XENPAK Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-LX4
-  source: eol_c51_599855
-  description: 10GBASE-LX4 XENPAK Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-SR
-  source: c51-734289
-  description: 10GBASE-SR XENPAK Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
-  lifecycle: EOL
-- pn: XENPAK-10GB-ZR
-  source: c51-734289
-  description: 10GBASE-ZR XENPAK Module
-  reason: Real transceiver confirmed by mined datasheet description
-  family: XENPAK
   lifecycle: EOL
 exclude_not_transceiver:
 - pn: CB-M12-4LC-MMF1.5
