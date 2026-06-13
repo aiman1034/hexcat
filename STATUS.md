@@ -18,6 +18,16 @@ union in the harvest's own datasheet PNs (universe = enumerations ∪ harvest); 
 excluded; inaccessible source flagged unpopulated never fabricated. When we reach Arista/HPE/
 Fortinet/MikroTik, re-run completeness against their full union (they predate this system).
 
+**Rule 7 (PERMANENT) — taxonomy changes require explicit operator approval; NEVER add or remove a
+taxonomy token autonomously.** When a real part doesn't fit the current locked taxonomy, do NOT
+silently add a token and do NOT silently exclude the part. STOP, surface the part with its grounded
+facts and the proposed change (add token X, or exclude with the verbatim reason), and WAIT for the
+operator's explicit yes/no. Park the affected parts as PENDING until decided. The taxonomy is the
+catalog's backbone — its structure is the operator's call, never an autonomous one. This refines
+Rule 6 ("expand the taxonomy rather than drop a real part" still holds, but the expansion happens
+ONLY with approval). POM and CIM8 were both retroactively APPROVED (they stay); from now on every
+such case waits for the operator. (POM/CIM8 would each have surfaced for a decision under Rule 7.)
+
 **Directive: take Cisco to TRUE ideal data — (A) author all ~598, (B) price all ~598 — then
 Meraki, then the rest. Autonomous, $0.**
 
