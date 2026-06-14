@@ -27,6 +27,10 @@ constants:
   # Attributgruppe is intentionally ONE character different from kategorie_ebene_2:
   # "Modul" (no final "e"). This distinction is real and must be preserved.
   attributgruppe_transceiver: "Transceivers & SFP Modul"   # NO final "e"
+  # SWITCHES (Rule-7 signed off 2026-06-14). L2 "Switches"; Attributgruppe "Switch" (the singular —
+  # a real word, the "singular of the last noun" convention, still ≠ the L2). See SWITCHES_SCHEMA_PROPOSAL.md.
+  kategorie_ebene_2_switch: "Switches"
+  attributgruppe_switch: "Switch"
 
 # Locked Kategorie Ebene 3 set (24). Anything else is rejected; "Sonstige" never allowed.
 # (POM = Cisco SONET/SDH Pluggable Optic Module; CIM8 = Cisco NCS 1014 Coherent Interface Module
@@ -57,6 +61,17 @@ kategorie_ebene_3_allowed:
   - "GBIC"
   - "POM"
   - "CIM8"
+
+# Locked SWITCH Kategorie Ebene 3 set (6) — Rule-7 signed off. Single token per SKU by ENVIRONMENT-FIRST
+# precedence (S.5): Industrie → Data-Center → Managed (L3) → Managed (L2) → Smart-Managed → Unmanaged.
+# "Sonstige" never allowed. Must stay in lock-step with config/taxonomy/switches.yaml.
+kategorie_ebene_3_switch_allowed:
+  - "Industrie-Switch"
+  - "Data-Center-Switch"
+  - "Managed Switch (L3)"
+  - "Managed Switch (L2)"
+  - "Smart-Managed Switch"
+  - "Unmanaged Switch"
 
 # Word / character budgets.
 budgets:

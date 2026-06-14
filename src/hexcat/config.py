@@ -33,6 +33,9 @@ class Constants(BaseModel):
     ueberverkaeufe_moeglich: str
     ueberverkauf_plattform_hexwaren: str
     attributgruppe_transceiver: str
+    # Switches (Rule-7) — optional so older rules.yaml still loads; default to the locked values.
+    kategorie_ebene_2_switch: str = "Switches"
+    attributgruppe_switch: str = "Switch"
 
 
 class WordRange(BaseModel):
@@ -82,6 +85,11 @@ class Rules(BaseModel):
     vendors: dict[str, VendorEntry]
     constants: Constants
     kategorie_ebene_3_allowed: list[str]
+    # Switch L3 token set (Rule-7); optional so older rules.yaml still loads.
+    kategorie_ebene_3_switch_allowed: list[str] = [
+        "Industrie-Switch", "Data-Center-Switch", "Managed Switch (L3)",
+        "Managed Switch (L2)", "Smart-Managed Switch", "Unmanaged Switch",
+    ]
     budgets: Budgets
     beschreibung_closer_prefix: str
     banned_hard_fail: list[str]

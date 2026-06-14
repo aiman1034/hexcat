@@ -71,6 +71,39 @@ TRANSCEIVER_ATTRIBUTES: tuple[tuple[str, str], ...] = (
 )
 ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in TRANSCEIVER_ATTRIBUTES)
 
+# Fixed 15 SWITCH attribute order (Rule-7 signed off 2026-06-14; SWITCHES_SCHEMA_PROPOSAL.md).
+# Tuple of (Attributname, intake_field); Sortiernummer = 1-based index. Distinct Merkmal names from
+# the transceiver set on purpose (amendments 2 & 4: Port-Geschwindigkeit ≠ transceiver Geschwindigkeit;
+# Bauform ≠ transceiver Formfaktor) so the two categories never share a JTL Wertliste.
+SWITCH_ATTRIBUTES: tuple[tuple[str, str], ...] = (
+    ("Switch-Typ", "SwitchTyp"),
+    ("Layer", "Layer"),
+    ("Portanzahl", "Portanzahl"),
+    ("Port-Konfiguration", "PortKonfiguration"),
+    ("Port-Geschwindigkeit", "PortGeschwindigkeit"),
+    ("Uplink-Ports", "UplinkPorts"),
+    ("PoE", "PoE"),
+    ("Switching-Kapazität", "SwitchingKapazitaet"),
+    ("Durchsatz", "Durchsatz"),
+    ("Bauform", "Bauform"),
+    ("Stromversorgung", "Stromversorgung"),
+    ("Kühlung", "Kuehlung"),
+    ("Stacking", "Stacking"),
+    ("Betriebstemperatur", "Betriebstemperatur"),
+    ("Anwendung", "Anwendung"),
+)
+SWITCH_ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in SWITCH_ATTRIBUTES)
+
+# Category dispatch — the pipeline (intake/reconcile/assemble/validate) selects the attribute set,
+# Attributgruppe and semantic-check family by the SKU's Kategorie Ebene 2. "Switches" → switch set,
+# everything else → the transceiver set (the original, default category).
+CATEGORY_SWITCH_L2 = "Switches"
+
+
+def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
+    """Return the fixed (Attributname, intake_field) tuple for a SKU's Kategorie Ebene 2."""
+    return SWITCH_ATTRIBUTES if kat_ebene_2 == CATEGORY_SWITCH_L2 else TRANSCEIVER_ATTRIBUTES
+
 # The physical connector form-factors (the connector subset of the locked Kategorie-Ebene-3
 # set). The `Formfaktor` attribute VALUE must be one of these — never a commerce category like
 # "DAC Kabel" (the category stays in Kategorie Ebene 3, the connector goes in Formfaktor).
