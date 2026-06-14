@@ -14,12 +14,15 @@ L7 fixture suite are stubbed with TODOs — gate() returns layer='?' for them so
 green. The gate is NOT certified until selftest() shows known-good all-PASS AND every fixture FAILs.
 """
 from __future__ import annotations
-import re, unicodedata
+import re, csv, yaml
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from .config import load_rules
 from .validate import validate_dir, Violation
+
+_REPO = Path(__file__).resolve().parents[2]
+REASON_CODES = {"out-of-scope", "un-groundable-after-ladder", "eol", "harvest-gap", "source-blocked"}
 
 
 # ---- layer mapping for validate_dir's violations -------------------------------------------------
@@ -138,6 +141,151 @@ def check_html_wellformed(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- bundle helpers ------------------------------------------------------------------------------
+def _read_csv(path: Path, delim: str) -> tuple[list[str], list[list[str]]]:
+    with path.open(encoding="utf-8-sig", newline="") as fh:
+        rows = list(csv.reader(fh, delimiter=delim))
+    return (rows[0], rows[1:]) if rows else ([], [])
+
+
+def _main(bundle: Path):
+    f = next(bundle.glob("*_Main*.csv"), None)
+    return _read_csv(f, ";") if f else ([], [])
+
+
+def _attrs(bundle: Path):
+    f = next(bundle.glob("*_Attributes*.csv"), None)
+    return _read_csv(f, ",") if f else ([], [])
+
+
+def _bundle_category(bundle: Path) -> str:
+    hdr, rows = _main(bundle)
+    if "Kategorie Ebene 2" in hdr:
+        i = hdr.index("Kategorie Ebene 2")
+        if any(r[i].strip() == "Switches" for r in rows if len(r) > i):
+            return "switch"
+    return "transceiver"
+
+
+def _brand_category(bundle: Path) -> tuple[str, str]:
+    """('Cisco','transceivers') / ('MikroTik','switches') from the bundle dir name."""
+    name = bundle.name.replace("stage3_", "")
+    if name.endswith("_Switches"):
+        return name[:-9], "switches"
+    return name, "transceivers"
+
+
+# ---- L5 PLAUSIBILITY (NEW) -----------------------------------------------------------------------
+_REACH_KM_MAX = 130.0     # ZR/coherent tops ~120 km
+_LAMBDA_MIN, _LAMBDA_MAX = 800, 1650    # nm (850 MMF .. 1610 CWDM/DWDM)
+
+
+def check_plausibility(bundle: Path) -> list[Violation]:
+    out = []
+    cat = _bundle_category(bundle)
+    hdr, rows = _main(bundle)
+    if "Artikelnummer" in hdr and "Artikelgewicht" in hdr:
+        i_sku, i_w = hdr.index("Artikelnummer"), hdr.index("Artikelgewicht")
+        for r in rows:
+            if len(r) <= max(i_sku, i_w):
+                continue
+            try:
+                w = float(r[i_w].replace(",", "."))
+            except ValueError:
+                continue
+            if cat == "switch":
+                if w < 0.15:
+                    out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "switch >= 0,15 kg",
+                                         r[i_w], "L5: switch weight below floor (optic-placeholder on a switch?)"))
+                elif w > 50:
+                    out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "switch <= 50 kg", r[i_w],
+                                         "L5: implausible switch weight (>50 kg)"))
+            else:  # transceiver/optic module: small
+                if w > 1.0:
+                    out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "optic <= ~1 kg", r[i_w],
+                                         "L5: implausible optic-module weight (>1 kg — switch weight on a transceiver?)"))
+    # reach / wavelength band from Attributes
+    ahdr, arows = _attrs(bundle)
+    if ahdr and "Attributname" in ahdr and "Attributwert" in ahdr:
+        i_sku, i_n, i_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
+        for r in arows:
+            if len(r) <= max(i_sku, i_n, i_v):
+                continue
+            name, val = r[i_n], r[i_v]
+            # coherent/amplified/ULH/DWDM optics legitimately exceed the grey-optic band (amplified spans
+            # span thousands of km) — exempt them from the reach band (not an error).
+            coherent = re.search(r"amplifizier|kohär|coheren|\bDWDM\b|\bULH\b|durchstimmbar|\bZR\b", val, re.I)
+            if name in ("Reichweite", "Länge") and "km" in val.lower() and not coherent:
+                m = re.search(r"(\d+(?:[.,]\d+)?)\s*km", val, re.I)
+                if m and float(m.group(1).replace(",", ".")) > _REACH_KM_MAX:
+                    out.append(Violation(bundle.name, r[i_sku], name, f"reach <= {_REACH_KM_MAX} km", val,
+                                         "L5: reach out of band (non-coherent)"))
+            if name in ("Wellenlänge",):
+                for nm in re.findall(r"(\d{3,4})\s*nm", val):
+                    if not (_LAMBDA_MIN <= int(nm) <= _LAMBDA_MAX):
+                        out.append(Violation(bundle.name, r[i_sku], name, f"{_LAMBDA_MIN}-{_LAMBDA_MAX} nm", val,
+                                             "L5: wavelength out of band"))
+                        break
+    return out
+
+
+# ---- L6 COMPLETENESS (NEW) -----------------------------------------------------------------------
+# Clean machine-readable record (the prose per-brand *_completeness.yaml docs aren't valid YAML in
+# places). Keyed "{Brand}_{category}": {enumerated, captured, flagged:[{family/pn, reason_code}]}.
+_GATE_COMPLETENESS = _REPO / "config" / "coverage" / "gate_completeness.yaml"
+
+
+def check_completeness(bundle: Path) -> list[Violation]:
+    """L6 (operator-confirmed): PASS when every enumerated PN is grounded OR flagged WITH a valid
+    reason-code, counts reconcile (captured == emitted), no silent shortfall. REFUSE on: no record,
+    count mismatch, or a flagged gap with no/invalid reason-code (blocks 'flag everything to pass')."""
+    out = []
+    brand, category = _brand_category(bundle)
+    key = f"{brand}_{category}"
+    allrec = yaml.safe_load(_GATE_COMPLETENESS.read_text(encoding="utf-8")) if _GATE_COMPLETENESS.exists() else {}
+    rec = (allrec or {}).get(key)
+    emitted = len(_main(bundle)[1])
+    if rec is None:
+        out.append(Violation(bundle.name, "", "completeness", f"a gate_completeness record for {key}", "(none)",
+                             f"L6: no machine-readable completeness record for {key} in gate_completeness.yaml"))
+        return out
+    captured = rec.get("captured")
+    enumerated = rec.get("enumerated", captured)
+    flagged = rec.get("flagged") or []
+    if captured != emitted:
+        out.append(Violation(bundle.name, "", "completeness", f"captured == emitted ({emitted})", str(captured),
+                             "L6: count mismatch — captured != emitted SKUs (silent shortfall)"))
+    for fl in flagged:
+        rc = fl.get("reason_code") if isinstance(fl, dict) else None
+        if not rc or str(rc).lower() not in REASON_CODES:
+            out.append(Violation(bundle.name, str(fl)[:30], "completeness",
+                                 f"reason_code in {sorted(REASON_CODES)}", str(rc),
+                                 "L6: flagged gap without a valid reason-code (blocks flag-to-pass)"))
+    if enumerated is not None and captured is not None and (captured + len(flagged)) < enumerated:
+        out.append(Violation(bundle.name, "", "completeness",
+                             f"captured+flagged ({captured}+{len(flagged)}) >= enumerated ({enumerated})", "",
+                             "L6: silent shortfall — enumerated PNs neither grounded nor flagged"))
+    return out
+
+
+# ---- L4 GROUNDING (checkable part) ---------------------------------------------------------------
+def check_grounding(bundle: Path) -> list[Violation]:
+    """L4: an EMITTED bundle must carry no unresolved grounding placeholder — any literal '[VERIFY]'
+    (or a bare '[FLAG]') in a cell means a value was shipped ungrounded; it must be grounded, or the
+    SKU flagged out of the batch, before emit."""
+    out = []
+    for p in _files(bundle):
+        delim = ";" if "_main" in p.name.lower() or "platformflag" in p.name.lower() or "prices" in p.name.lower() else ","
+        hdr, rows = _read_csv(p, delim)
+        for r in rows:
+            for c in r:
+                if "[VERIFY]" in c or "[FLAG]" in c:
+                    out.append(Violation(p.name, r[0] if r else "", "", "no [VERIFY]/[FLAG] placeholder",
+                                         c[:40], "L4: ungrounded placeholder shipped in an emitted bundle"))
+                    break
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -154,7 +302,7 @@ class GateResult:
 
     @property
     def ok(self) -> bool:
-        return all(L.passed for L in self.layers if L.layer not in ("L5", "L6", "L7"))  # only LIVE layers gate today
+        return all(L.passed for L in self.layers if L.layer != "L7")  # L1-L6 all gate; L7 = the harness proof
 
 
 def gate(bundle_dir, rules=None) -> GateResult:
@@ -170,18 +318,20 @@ def gate(bundle_dir, rules=None) -> GateResult:
     # L1 also includes the two NEW silent-corruption guards
     by["L1"] += check_utf8_umlaut(bundle)
     by["L1"] += check_html_wellformed(bundle)
+    by["L4"] += check_grounding(bundle)
 
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
-    # L5/L6/L7 not yet implemented — surfaced explicitly so they're never silently green
-    res.layers.append(LayerResult("L5", True, note="TODO plausibility — NOT YET IMPLEMENTED (not trusted)"))
-    res.layers.append(LayerResult("L6", True, note="TODO completeness-vs-record — NOT YET IMPLEMENTED (not trusted)"))
-    res.layers.append(LayerResult("L7", True, note="TODO full fixture suite — NOT YET IMPLEMENTED (not trusted)"))
+    l5 = check_plausibility(bundle)
+    res.layers.append(LayerResult("L5", not l5, l5))
+    l6 = check_completeness(bundle)
+    res.layers.append(LayerResult("L6", not l6, l6))
+    res.layers.append(LayerResult("L7", True, note="anti-blind-spot proof = _scratch/gate_selftest.py (not a per-bundle layer)"))
     return res
 
 
 def print_report(res: GateResult) -> None:
-    print(f"=== GATE {res.bundle} : {'PASS' if res.ok else 'FAIL'} (LIVE layers L1-L4) ===")
+    print(f"=== GATE {res.bundle} : {'PASS' if res.ok else 'FAIL'} (L1-L6) ===")
     for L in res.layers:
         tag = "PASS" if L.passed else "FAIL"
         extra = f"  [{L.note}]" if L.note else (f"  ({len(L.violations)} violations)" if L.violations else "")
