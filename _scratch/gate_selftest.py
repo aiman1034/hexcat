@@ -14,7 +14,7 @@ from hexcat.config import load_rules
 from hexcat.gate import gate
 
 RULES = load_rules()
-KNOWN = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "MikroTik_Switches"]
+KNOWN = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "MikroTik_Switches", "Juniper"]
 LIVE = ("L1", "L2", "L3", "L4", "L5", "L6")
 
 
@@ -23,18 +23,23 @@ def fails(d):
 
 
 def known_good():
-    print("=== KNOWN-GOOD (L1-L6 must PASS) ===")
-    ok = True
+    """After the DOM tightening: a brand PASSES, is an expected DOM-GAP (fails ONLY on the new DOM
+    requirement — other-brand backfill deferred per operator), or is a REGRESSION (fails on something
+    else). Certify = no REGRESSIONS (DOM-gaps are the enumerated, deferred follow-up)."""
+    print("=== KNOWN-GOOD (L1-L6; DOM tightening — other-brand backfill deferred) ===")
+    regressions = []
     for b in KNOWN:
-        f = fails(ROOT / f"output/stage3_{b}")
-        ok &= not f
-        print(f"  {b:20s} {'PASS' if not f else 'FAIL ' + str(f)}")
-        if f:
-            for L in gate(ROOT / f"output/stage3_{b}", RULES).layers:
-                if L.layer in f:
-                    for v in L.violations[:3]:
-                        print(f"        {L.layer}: {v.message[:80]} [{v.sku} {v.got[:20]}]")
-    return ok
+        r = gate(ROOT / f"output/stage3_{b}", RULES)
+        viol = [v for L in r.layers if L.layer in LIVE and not L.passed for v in L.violations]
+        if not viol:
+            status = "PASS"
+        elif all("DOM" in v.message for v in viol):
+            status = f"DOM-GAP ({len(viol)}) — expected, deferred"
+        else:
+            other = [v.message[:50] for v in viol if "DOM" not in v.message][:2]
+            status = f"REGRESSION {other}"; regressions.append(b)
+        print(f"  {b:20s} {status}")
+    return not regressions
 
 
 # ---- CSV mutation helpers ------------------------------------------------------------------------
@@ -98,6 +103,9 @@ def fixtures():
         ("F10 [VERIFY]-shipped",  sw, lambda d: set_attr_value(d, "Anwendung", "[VERIFY]", n=1), "L4"),
         ("F11 optic-wt-on-switch", sw, lambda d: set_main_value(d, "Artikelgewicht", "0,05", n=1), "L5"),
         ("F12 reach-out-of-band", tx, lambda d: set_attr_value(d, "Reichweite", "500 km", n=1), "L5"),
+        ("F15 missing-DOM",       ROOT / "output/stage3_Juniper",
+         lambda d: _rw(attrs_of(d), ",", lambda rows: [rows[0]] + [r for r in rows[1:]
+                   if not (len(r) > rows[0].index("Attributname") and r[rows[0].index("Attributname")] == "DOM Unterstützung")]), "L3"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

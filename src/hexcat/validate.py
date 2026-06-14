@@ -108,6 +108,7 @@ _ANWENDUNG_NAME = "Anwendung"
 _GESCHWINDIGKEIT_NAME = "Geschwindigkeit"
 _BETRIEBSTEMP_NAME = "Betriebstemperatur"
 _BETRIEBSTEMP_EXEMPT_K3 = frozenset({"MPO Kabel"})  # passive fibre patch/breakout only
+_DOM_NAME = "DOM Unterstützung"   # required on every non-cable transceiver (L8 finding)
 
 # --- permanent SEMANTIC cross-checks (structurally-valid-but-WRONG; FAIL) ----------------
 # These catch the class of error the byte/format gate and even adversarial-verify let through.
@@ -682,6 +683,14 @@ class Validator:
                                "a Betriebstemperatur attribute (optical/active module)", "(missing)",
                                "gold-slice completeness: every optical/active module must carry a "
                                "datasheet-grounded Betriebstemperatur attribute")
+                # DOM Unterstützung: required on every NON-CABLE transceiver (L8 finding — it is an
+                # applicable attr, not cable-only). Optical modules carry Ja/unterstützt; copper
+                # modules carry it as Nein. DAC/AOC/MPO cables are exempt. Value grounded at author.
+                if k3 not in C.CABLE_CATEGORIES and _DOM_NAME not in names:
+                    self._fail(fname, sku, "Attributwert (DOM Unterstützung)",
+                               "a DOM Unterstützung attribute (non-cable transceiver)", "(missing)",
+                               "gold-slice completeness: every non-cable transceiver must carry a "
+                               "DOM Unterstützung attribute (L8 finding)")
                 # Wellenlänge: optical modules only (cables + copper/Smart-SFP exempt).
                 if k3 in C.CABLE_CATEGORIES:
                     continue

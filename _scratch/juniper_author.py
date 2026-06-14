@@ -113,10 +113,17 @@ for pn, f in FACTS.items():
     _m = f.get("media"); media_s = (_m[0] if isinstance(_m, list) and _m else (_m or ""))
     mlong = media_de(media_s)
     conn = None if "connector" in omit else f.get("connector")
+    if "XENPAK" in pn.upper():
+        conn = "SC (Duplex)"   # L8 fix: XENPAK 10GbE uses SC duplex connectors, not LC
     reach = None if "reach" in omit else f.get("reach")
     if reach and "[VERIFY]" in str(reach): reach = None
     wl = bx_lambda(pn, f.get("wavelengths_nm"))
     wl = None if ("wavelengths_nm" in omit or any("[VERIFY]" in str(x) for x in (wl or []))) else wl
+    if wl:  # L8 fix: bare numeric λ must carry the nm unit
+        wl = [(x + " nm") if re.fullmatch(r"\d{3,4}(?:\.\d+)?", str(x).strip()) else x for x in wl]
+    # DOM Unterstützung (L8: required attr). Optical pluggables support DDM/DOM=Ja; copper + legacy
+    # XENPAK (pre-DDM) = Nein. Grounded by media/form-factor.
+    dom = "Nein" if (media_s == "Kupfer" or "XENPAK" in pn.upper()) else "Ja"
     fz = faser(conn, f.get("lanes"), media_s)
     coh = f.get("coherent"); bidi = f.get("bidi")
     rtxt = ("bis %s" % reach) if reach else ""
@@ -155,6 +162,7 @@ for pn, f in FACTS.items():
     if wl: attrs.append(["Wellenlänge", " / ".join(wl)]); prov.append("Wellenlänge")
     if reach: attrs.append(["Reichweite", rtxt]); prov.append("Reichweite")
     if std: attrs.append(["Standard", std])
+    attrs.append(["DOM Unterstützung", dom]); prov.append("DOM Unterstützung")
     attrs.append(["Zustand", "Neu, versiegelt"])
     faq = [["Ist dies ein originales Juniper-Produkt?",
             "Ja. Es handelt sich um Juniper-Original-Neuware – versiegelt geliefert und für Juniper-Switches "
