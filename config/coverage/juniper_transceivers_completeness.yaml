@@ -84,9 +84,24 @@ enumerated_universe_2026-06-14:    # ENUMERATION ONLY (no grounding/authoring ye
     - "2-source union; HPC=403 (anti-bot), FS/QSFPTEK not yet added. addon_only=99 => a 3rd source likely adds more -> NOT a locked universe."
     - "19 modules unclassified-tier (BiDi/CWDM/breakout naming) — refine on grounding."
     - "Distributor-enumerated PNs = the LIST. Specs NOT yet grounded; Workflow-B not yet empty."
+locked_universe_FINAL_2026-06-14:   # ENUMERATION LOCKED (no grounding yet — awaiting operator confirm)
+  sources_unioned:
+    - "distributors: edgeoptic.com + addonnetworks.com (genuine Juniper PNs, house codes stripped) -> 172 modules"
+    - "Juniper OWN guides (authoritative newest tier): juniper-{100g,400g,800g}-optics-guide.pdf, targeted extraction -> +24 modules (fixes the distributor lag: 800G 1->6, 400G 10->16)"
+    - "legacy optic-modules.pdf (M/T-series + EOL XENPAK/XFP/RX/CTP long tail) -> +38"
+  LOCKED_MODULE_COUNT: 205          # Ethernet transceiver modules, genuine Juniper PNs, deduped, variants preserved
+  per_tier: {1G: 39, 10G: 48, 25G: 26, 40G: 22, 100G: 35, "200G(2x100G)": 2, 400G: 16, 800G: 6, 100M: 11}
+  per_family: {EX-SFP: 44, JNP-SFP: 36, QDD: 22, JNP-QSFP: 21, QSFP-100G: 16, XFP: 9, SFPP-10GE: 9, QSFP-40G: 7, SFP-1GE: 6, SFP-GE: 5, RX: 5, QFX-QSFP: 4, CFP: 4, XENPAK: 4, CTP: 3, JCO400: 3, CFP2: 2, SFP-FE: 2, SFP-1FE: 1, JNP-100G: 1}
+  tracked_separately:
+    cables_AOC_DAC: 24              # different category, NOT in the module count
+    fibre_channel: 1               # QFX-SFP-16GFC-SW — non-Ethernet (scope decision, like SONET); excluded
+    dropped_fragments: 5           # wrapped legacy XFP-10G-{E,L,Z,CBAND}-OC192 + 1 SFP- token — recoverable on grounding
+  data: output/stage3/juniper_locked_universe.json
+  status: "LOCKED pending operator confirmation. NO grounding/authoring until confirmed."
 verdict: >
-  ENUMERATION built (172 modules, 2 independent distributors) — confirms the universe is ~170+ (not the
-  91 edgeoptic-only). Juniper still NOT authorable: this is the PN LIST only. NEXT (after operator picks
-  the ship-path): (a) add a 3rd source (FS/QSFPTEK) to close the union; (b) GROUND each module from a
-  Juniper datasheet (per-SKU 740-pages / the guides) flag-don't-fabricate; (c) Workflow-B until the diff
-  is empty; (d) finalize + reconcile to manifest; THEN author. complete:false.
+  LOCKED at 205 Ethernet transceiver modules (was 172 distributor-only; the cached Juniper guides fixed
+  the newest-tier undercount — 800G 1->6, 400G 10->16). Sources: 2 distributors + 3 Juniper guides +
+  legacy PDF, deduped, genuine PNs, variants preserved. Cables (24)/FC (1) tracked separately. Juniper
+  NOT authorable yet — this is the ENUMERATION only. AWAITING operator confirmation of the locked count;
+  THEN: ground each module from a Juniper datasheet (flag-don't-fabricate) -> Workflow-B to empty ->
+  author one complete batch. complete:false.
