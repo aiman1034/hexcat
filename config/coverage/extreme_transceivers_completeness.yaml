@@ -1,0 +1,60 @@
+brand: Extreme
+category: transceivers
+# Enumeration source: the cached Extreme Networks "Optics Solution Guide" PDF
+# (datasheets/cache/extreme-optics-solution-guide.pdf, 15 pp). 3-column tables
+# (Standard/Type | Description | Extreme SKUs) parsed by _scratch/extreme_facts.py via
+# pdfplumber extract_tables() -> output/stage3/extreme_facts.json + extreme_flags.txt.
+#
+# CORRECTION (2026-06-14): the §10 SOURCE-MANIFEST note that called this PDF "marketing-bled /
+# not groundable" was based on extract_TEXT (which mangles the column layout). extract_TABLES
+# recovers 72 clean PN-leading rows -> Extreme is GROUNDABLE and therefore UNBLOCKED. Facts built
+# + verified this session; AUTHORING is the only remaining step.
+#
+# MODELING DECISIONS (documented for operator audit):
+#  - ONE SKU per physical optic; artikelnummer = first descriptive Extreme PN as listed. The
+#    numeric ordering codes + legacy Avaya/Enterasys AA-/MGBIC-codes + alternate Extreme PNs are
+#    captured in each SKU's `alt_pns` (35 SKUs carry a legacy AA/MGBIC alternate) — to surface in
+#    a "kompatible Bestellnummern" line so a customer searching any code still finds the product.
+#  - Cable rows are LENGTH-FAMILIES -> split into one SKU per descriptive length-PN; length from
+#    the PN suffix (Z5M=0,5 m, <n>M=<n> m). Cable TYPE is taken from the PN (DACP=passiv, DACA=aktiv,
+#    AOC) — authoritative over a shifted row label.
+#  - Wavelengths are NOT in this guide -> derived lane-aware from the IEEE standard each row names
+#    (the standard pins the λ set -> still grounded): SR/MMF=850 nm; 100G-LR4=1295–1309 LAN-WDM;
+#    40G-LR4=1271–1331 CWDM4; LR/DR/FR/PSM4/LX/FX=1310; ER/ZR/ELX=1550. 9 of 46 transceivers
+#    (BiDi pairs, 4WDM ladders, SWDM4) are left BLANK for the EXOS-DB follow-up / Rule-9 backfill —
+#    flag-don't-fabricate.
+complete: false                          # facts grounded; CONTENT AUTHORING pending (not yet gated GREEN)
+universe_total: 99                       # 72 guide rows, cables expanded to length-SKUs, minus dups
+captured_count: 91                       # grounded SKUs emitted to extreme_facts.json
+gap_count: 0
+flagged_count: 8                         # see output/stage3/extreme_flags.txt — ALL legitimate:
+# - 3× "-1001" alternate-naming AOC codes with no clean length (real SKUs captured under their
+#   length-PN; these are duplicate order codes) -> excluded
+# - 1× 100G-AOC Breakout: only numeric codes 10443/10444 for 10m/20m, no descriptive length-PN
+#   -> length<->code mapping unprovable -> excluded (numeric-only ambiguity)
+# - 3× 40G-DACA rows duplicated in the source (plain-DAC row repeats the breakout PNs) -> deduped
+# - 1× 25G-DACP CORRUPT/SHIFTED cell (held the 25GBASE-ER transceiver PN); the real 25G-DACP-*
+#   length-PNs were recovered from the (also-shifted) 25G-AOC row and correctly re-typed DAC.
+#   The 25G-AOC lengths (numeric 10530/10531) remain numeric-only -> not grounded -> excluded.
+populated_sources: 1
+per_source:
+- id: extreme_optics_solution_guide_pdf
+  kind: vendor_solution_guide
+  note: "extreme-optics-solution-guide.pdf (15 pp); pdfplumber extract_tables(); rows in _out/extreme_rows.txt"
+  populated: true
+breakdown:
+  by_class: {transceiver: 46, cable: 45}
+  cable_by_type: {DAC: 36, AOC: 9}
+  breakouts: 14
+  by_speed: {100G: 26, 40G: 24, 10G: 15, 20G: 10, 25G: 9, 1G: 7}
+  by_form_factor: {QSFP+: 24, QSFP28: 23, SFP+: 16, SFP-DD: 10, SFP28: 9, SFP: 6, CFP2: 3}
+  legacy_avaya_codes: 35                  # SKUs with an AA-/MGBIC- legacy alternate in alt_pns
+  wavelength_derived: 37                  # of 46 transceivers (9 BiDi/4WDM/SWDM4 left blank)
+# FOLLOW-UP (optional, not blocking): the Extreme EXOS Optics DB (optics.extremenetworks.com/EXOS)
+# carries per-SKU reach/wavelength for the 9 blank-λ parts + DDM data; JS-rendered (needs a clean
+# CSV export or browser fetch) — the same gating class as the other fresh-brand JS sources.
+verdict: Extreme optics guide is GROUNDABLE via table extraction (corrects the stale "not
+  groundable" note) -> 91 grounded SKUs (46 transceivers, 45 cables) in extreme_facts.json, 8
+  legitimate flagged exclusions, source corruption (shifted 25G cells) handled by flag-don't-fabricate.
+  CONTENT AUTHORING is the only remaining step (adapt _scratch/nvidia_author.py: Extreme switching
+  theme, Faseranzahl derivation, alt_pns -> "kompatible Bestellnummern", lane-aware λ already in facts).
