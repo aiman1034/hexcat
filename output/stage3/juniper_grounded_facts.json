@@ -1,0 +1,769 @@
+{
+ "CTP-SFP-1GE-LX": {
+  "sku": "CTP-SFP-1GE-LX",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-LX",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF",
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "1000BASE-LX Gigabit Ethernet optic module.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "CTP-SFP-1GE-SX": {
+  "sku": "CTP-SFP-1GE-SX",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-SX",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "550 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "module.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "CTP-SFP-1GE-T": {
+  "sku": "CTP-SFP-1GE-T",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-T",
+  "wavelengths_nm": [],
+  "media": [
+   "Kupfer"
+  ],
+  "connector": "RJ45",
+  "reach": "100 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "(uses Cat 5 cable). CTP2056 pair, Category 5 shielded",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "RX-10KM-SFP": {
+  "sku": "RX-10KM-SFP",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-LX",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "(1) SFP Gigabit Ethernet single-mode (10 ERX705, ERX710, ERX1410, km) physical port with an LC full duplex ERX1440 connection. Works with ERX-GIGESFP-IOA.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "RX-550M-SFP": {
+  "sku": "RX-550M-SFP",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-SX",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "550 m",
+  "legacy_eol_candidate": true,
+  "desc_seed": "(1) SFP Gigabit Ethernet multimode (550 ERX705, ERX710, ERX1410, M) physical port with an LC full duplex ERX1440 connection. Works with ERX-GIGESFP-IOA. 62.5/12",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "RX-70KM-SFP": {
+  "sku": "RX-70KM-SFP",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-ZX",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "70 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "(1) SFP Gigabit Ethernet single-mode (70 ERX705, ERX710, ERX1410, km) physical port with an LC full duplex ERX1440 connection. Works with ERX-GIGESFP-IOA.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "RX-FXSM-SFP": {
+  "sku": "RX-FXSM-SFP",
+  "form_factor": "SFP",
+  "speed": "100 Mbit/s",
+  "standard": "100BASE-LX10",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "RX-GET-SFP": {
+  "sku": "RX-GET-SFP",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-T",
+  "wavelengths_nm": [],
+  "media": [
+   "Kupfer"
+  ],
+  "connector": "RJ45",
+  "reach": "100 m",
+  "legacy_eol_candidate": true,
+  "desc_seed": "input/output adapter",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1FE-FX": {
+  "sku": "SFP-1FE-FX",
+  "form_factor": "SFP",
+  "speed": "100 Mbit/s",
+  "standard": "100BASE-FX",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "2 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1GE-FE-E-T": {
+  "sku": "SFP-1GE-FE-E-T",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "10BASE-T",
+  "wavelengths_nm": [],
+  "media": [
+   "Kupfer"
+  ],
+  "connector": "RJ45",
+  "reach": "100 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "100BASE-T; pair, Category 1000BASE-T 5 shielded",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1GE-LH": {
+  "sku": "SFP-1GE-LH",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-LH",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "70 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "optic module.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1GE-LX": {
+  "sku": "SFP-1GE-LX",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-LX",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF",
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "optic module.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1GE-SX": {
+  "sku": "SFP-1GE-SX",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-SX",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "550 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "optic module.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-1GE-T": {
+  "sku": "SFP-1GE-T",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-T",
+  "wavelengths_nm": [],
+  "media": [
+   "Kupfer"
+  ],
+  "connector": "RJ45",
+  "reach": "100 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "optic module",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-FE20KT13R15": {
+  "sku": "SFP-FE20KT13R15",
+  "form_factor": "SFP",
+  "speed": "100 Mbit/s",
+  "standard": "100BASE-BX",
+  "wavelengths_nm": [
+   "1310",
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "nm / Rx 1550 nm for 10 km transmission. (single strand fiber) 2 Type Factor (nm) (nm) Reach",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-FE20KT15R13": {
+  "sku": "SFP-FE20KT15R13",
+  "form_factor": "SFP",
+  "speed": "100 Mbit/s",
+  "standard": "100BASE-BX",
+  "wavelengths_nm": [
+   "1550",
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "1550 nm / Rx 1310 nm for 10 km transmission. (single strand fiber)",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-GE10KT13R14": {
+  "sku": "SFP-GE10KT13R14",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-BX10",
+  "wavelengths_nm": [
+   "1310",
+   "1490"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "UPLINK, at 10 km (Tx1310 nm / Rx1490). A ERX705, ERX710, ERX1410, (single single fiber is used for both transmit and ERX1440, M7i, M10i, M40e, strand receive. U",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-GE10KT13R15": {
+  "sku": "SFP-GE10KT13R15",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-BX10",
+  "wavelengths_nm": [
+   "1310",
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "UPLINK, at 10 km (Tx1310 nm / Rx1550). A ERX705, ERX710, ERX1410, (single single fiber is used for both transmit and ERX1440, M7i, M10i, M40e, strand receive. U",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-GE10KT14R13": {
+  "sku": "SFP-GE10KT14R13",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-BX10",
+  "wavelengths_nm": [
+   "1490",
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "at 10 km (Tx1490 nm / Rx1310 nm). A ERX705, ERX710, ERX1410, (single single fiber is used for both transmit and ERX1440, M7i, M10i, M40e, strand receive. UPLINK",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-GE10KT15R13": {
+  "sku": "SFP-GE10KT15R13",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-BX10",
+  "wavelengths_nm": [
+   "1550",
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC (Single-Strand)",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "DOWNLINK, at 10 km (Tx1550 nm / Rx1310 ERX705, ERX710, ERX1410, (single nm). A single fiber is used for both transmit ERX1440, M7i, M10i, M40e, strand and recei",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-GE40KM": {
+  "sku": "SFP-GE40KM",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-EX",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "Ethernet optic module",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFP-": {
+  "sku": "SFP-",
+  "form_factor": "SFP",
+  "speed": "1 Gbit/s",
+  "standard": "1000BASE-BX",
+  "wavelengths_nm": [
+   "1550",
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "GE40KT15R13 DOWNLINK, at 40 km. (Tx1550 nm / Rx1310 ERX705, ERX710, ERX1410, (single nm). A single fiber is used for both transmit ERX1440, M7i, M10i, M40e, str",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFPP-10GE-ER": {
+  "sku": "SFPP-10GE-ER",
+  "form_factor": "SFP+",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ER",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "nm for 40 km transmission.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFPP-10GE-LR": {
+  "sku": "SFPP-10GE-LR",
+  "form_factor": "SFP+",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-LR",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": false,
+  "desc_seed": "nm for 10 km transmission. T640, T1600",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFPP-10GE-LRM": {
+  "sku": "SFPP-10GE-LRM",
+  "form_factor": "SFP+",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-LRM",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "220 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "nm for 220 m transmission. 62.5/125 220 m",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "SFPP-10GE-SR": {
+  "sku": "SFPP-10GE-SR",
+  "form_factor": "SFP+",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-SR",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "300 m",
+  "legacy_eol_candidate": false,
+  "desc_seed": "nm for 300 m transmission. T640, T1600 62.5/125 33 m",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XENPAK-1XGE-ER": {
+  "sku": "XENPAK-1XGE-ER",
+  "form_factor": "XENPAK",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ER",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "10GBASE-ER, 40 km reach.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XENPAK-1XGE-LR": {
+  "sku": "XENPAK-1XGE-LR",
+  "form_factor": "XENPAK",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-LR",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "10GBASE-LR, 10 km reach.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XENPAK-1XGE-SR": {
+  "sku": "XENPAK-1XGE-SR",
+  "form_factor": "XENPAK",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-SR",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "300 m",
+  "legacy_eol_candidate": true,
+  "desc_seed": "10GBASE-SR, MMF, 26-300 m reach. 62.5/125 33 m",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XENPAK-1XGE-ZR": {
+  "sku": "XENPAK-1XGE-ZR",
+  "form_factor": "XENPAK",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ZR",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "80 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "10GBASE-ZR, SMF, 80 km reach.",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10G-CBAND-": {
+  "sku": "XFP-10G-CBAND-",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ZR",
+  "wavelengths_nm": [],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "80 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "T50-ZR across C-Band 50 GHz channel spacing, T640, T1600 Tunable compliant with ITU-T G.698.1. C-BAND ITU Grid",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10GE-ER": {
+  "sku": "XFP-10GE-ER",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ER",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "interface. SRX3600, SRX5600, SRX5800 4 Type Factor (nm) (nm) Reach",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10GE-LR": {
+  "sku": "XFP-10GE-LR",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-LR",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "1310 nm 10 km reach. SRX3600, SRX5600, SRX5800",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10G-E-": {
+  "sku": "XFP-10G-E-",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ER",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "40 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "OC192-IR2 for 10GbE and OC192, 1550 nm for 40 km MX480, MX960, T320, OC192/ transmission. T640 STM64",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10GE-SR": {
+  "sku": "XFP-10GE-SR",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-SR",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "300 m",
+  "legacy_eol_candidate": true,
+  "desc_seed": "interface. SRX3600, SRX5600, SRX5800 62.5/125 33 m",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10G-L-": {
+  "sku": "XFP-10G-L-",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-LR",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "10 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "OC192-SR1 for 10GbE and OC192, 1310 nm for 10 km MX240, MX480, MX960 OC192/ transmission. STM64",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10G-S": {
+  "sku": "XFP-10G-S",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-SR",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "media": [
+   "MMF"
+  ],
+  "connector": "LC",
+  "reach": "300 m",
+  "legacy_eol_candidate": true,
+  "desc_seed": "m transmission. MX480, MX960, T320, T640 62.5/125 33 m",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "XFP-10G-Z-": {
+  "sku": "XFP-10G-Z-",
+  "form_factor": "XFP",
+  "speed": "10 Gbit/s",
+  "standard": "10GBASE-ZR",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "media": [
+   "SMF"
+  ],
+  "connector": "LC",
+  "reach": "80 km",
+  "legacy_eol_candidate": true,
+  "desc_seed": "OC192-LR2 for 10GbE and OC192, 1550 nm for 80 km MX240, MX480, MX960, OC192/ transmission. E120, E320 STM64 transform the experience and economics of networking",
+  "source": "juniper-optic-modules.pdf"
+ },
+ "QDD-2X400G-DR4-P": {
+  "sku": "QDD-2X400G-DR4-P",
+  "form_factor": "QSFP-DD",
+  "speed": "800G",
+  "standard": "2x 400GBASE-DR4",
+  "type": "400GBASE-DR4",
+  "media": "SMF",
+  "connector": "[VERIFY]",
+  "reach": "500 m",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 8,
+  "breakout": "2x 400G",
+  "legacy_eol_candidate": false,
+  "grounded": true,
+  "source": "juniper-800g-optics-guide.pdf",
+  "flags": [
+   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  ],
+  "note": "DR8-2: 1λ parallel SMF, 8 lanes; breakout 2x400G-DR4"
+ },
+ "QDD-2X400G-FR4": {
+  "sku": "QDD-2X400G-FR4",
+  "form_factor": "QSFP-DD",
+  "speed": "800G",
+  "standard": "2x 400GBASE-FR4",
+  "type": "400GBASE-FR4",
+  "media": "SMF",
+  "connector": "[VERIFY]",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 8,
+  "breakout": "2x 400G",
+  "legacy_eol_candidate": false,
+  "grounded": true,
+  "source": "juniper-800g-optics-guide.pdf",
+  "flags": [
+   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  ],
+  "note": "4λ duplex SMF (CWDM4 grid)"
+ },
+ "QDD-2X400G-FR4-P": {
+  "sku": "QDD-2X400G-FR4-P",
+  "form_factor": "QSFP-DD",
+  "speed": "800G",
+  "standard": "2x 400GBASE-FR4",
+  "type": "400GBASE-FR4",
+  "media": "SMF",
+  "connector": "[VERIFY]",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 8,
+  "breakout": "2x 400G",
+  "legacy_eol_candidate": false,
+  "grounded": true,
+  "source": "juniper-800g-optics-guide.pdf",
+  "flags": [
+   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  ],
+  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-FR4 (possible alias — verify)"
+ },
+ "QDD-2X400G-LR4-10": {
+  "sku": "QDD-2X400G-LR4-10",
+  "form_factor": "QSFP-DD",
+  "speed": "800G",
+  "standard": "2x 400GBASE-LR4",
+  "type": "400GBASE-LR4",
+  "media": "SMF",
+  "connector": "[VERIFY]",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 8,
+  "breakout": "2x 400G",
+  "legacy_eol_candidate": false,
+  "grounded": true,
+  "source": "juniper-800g-optics-guide.pdf",
+  "flags": [
+   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  ],
+  "note": "4λ duplex SMF, long reach (-10 = 10 km)"
+ },
+ "QDD-2X400G-LR4-P": {
+  "sku": "QDD-2X400G-LR4-P",
+  "form_factor": "QSFP-DD",
+  "speed": "800G",
+  "standard": "2x 400GBASE-LR4",
+  "type": "400GBASE-LR4",
+  "media": "SMF",
+  "connector": "[VERIFY]",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 8,
+  "breakout": "2x 400G",
+  "legacy_eol_candidate": false,
+  "grounded": true,
+  "source": "juniper-800g-optics-guide.pdf",
+  "flags": [
+   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  ],
+  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-LR4-10 (possible alias — verify)"
+ }
+}

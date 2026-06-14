@@ -97,7 +97,19 @@ locked_universe_FINAL_2026-06-14:   # ENUMERATION LOCKED (no grounding yet — a
     fibre_channel: 1               # QFX-SFP-16GFC-SW — non-Ethernet (scope decision, like SONET); excluded
     dropped_fragments: 5           # wrapped legacy XFP-10G-{E,L,Z,CBAND}-OC192 + 1 SFP- token — recoverable on grounding
   data: output/stage3/juniper_locked_universe.json
-  status: "LOCKED pending operator confirmation. NO grounding/authoring until confirmed."
+  status: "LOCKED + CONFIRMED by operator (205). Grounding IN PROGRESS, chunked newest-first."
+grounding_progress:               # specs from JUNIPER ONLY (guides/datasheets); flag-don't-fabricate
+  master_grounded_file: output/stage3/juniper_grounded_facts.json
+  aliases_file: output/stage3/juniper_aliases.json
+  chunks_done:
+    - {tier: legacy_1G_10G_100M, grounded: 38, source: "optic-modules.pdf (reused, commit 7827444)"}
+    - {tier: 800G, grounded: 5, source: "juniper-800g-optics-guide.pdf",
+       note: "QDD-2X400G-{DR4-P,FR4,FR4-P,LR4-10,LR4-P}; standard/media/reach/λ grounded; CONNECTOR [VERIFY] on all 5 (guide gives duplex/parallel SMF, not exact connector); FR4-P/LR4-P share optical spec with non-P (possible alias)"}
+  running_counts: {grounded: 43, connector_VERIFY_flagged: 5, alias_collapsed: 1}
+  alias_collapsed: {QDD-800GB-2XFR4-J: QDD-2X400G-FR4}   # AddOn '-J'/'GB' house code = genuine 2x400G-FR4
+  chunks_remaining: [400G, 100G, 40G, 25G, 10G_EX-SFP, 1G_EX-SFP, FE]   # newest-first order
+  next_chunk: "400G — 14 modules incl JCO400 coherent (JCO400-QDD-ZR/-M/-M-HP), QDD-400G-DR4/FR4/LR4-10/ER4-30/ZR*/LR8/PLR4. Collapse the 2 AddOn -J codes (QDD-400GB-DCO-ZRP-1DBM-J, QDD-400GB-VSR4-J). Source: juniper-400g-optics-guide.pdf."
+  workflow_b_status: "NOT YET re-run on grounded set (do after grounding chunks complete) — diff vs a FRESH source (FS/QSFPTEK) to close any new genuine PNs, repeat to empty."
 verdict: >
   LOCKED at 205 Ethernet transceiver modules (was 172 distributor-only; the cached Juniper guides fixed
   the newest-tier undercount — 800G 1->6, 400G 10->16). Sources: 2 distributors + 3 Juniper guides +
