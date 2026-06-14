@@ -651,7 +651,7 @@
   "standard": "2x 400GBASE-DR4",
   "type": "400GBASE-DR4",
   "media": "SMF",
-  "connector": "[VERIFY]",
+  "connector": "MPO-16",
   "reach": "500 m",
   "wavelengths_nm": [
    "1310"
@@ -661,10 +661,8 @@
   "legacy_eol_candidate": false,
   "grounded": true,
   "source": "juniper-800g-optics-guide.pdf",
-  "flags": [
-   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
-  ],
-  "note": "DR8-2: 1λ parallel SMF, 8 lanes; breakout 2x400G-DR4"
+  "flags": [],
+  "note": "DR8-2: 1λ parallel SMF, 8 lanes; breakout 2x400G-DR4 | connector closed: MPO-16 (800G guide MSA)"
  },
  "QDD-2X400G-FR4": {
   "sku": "QDD-2X400G-FR4",
@@ -673,7 +671,7 @@
   "standard": "2x 400GBASE-FR4",
   "type": "400GBASE-FR4",
   "media": "SMF",
-  "connector": "[VERIFY]",
+  "connector": "Dual Duplex LC",
   "reach": "2 km",
   "wavelengths_nm": [
    "1271",
@@ -686,10 +684,8 @@
   "legacy_eol_candidate": false,
   "grounded": true,
   "source": "juniper-800g-optics-guide.pdf",
-  "flags": [
-   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
-  ],
-  "note": "4λ duplex SMF (CWDM4 grid)"
+  "flags": [],
+  "note": "4λ duplex SMF (CWDM4 grid) | connector closed: Dual Duplex LC (800G guide MSA)"
  },
  "QDD-2X400G-FR4-P": {
   "sku": "QDD-2X400G-FR4-P",
@@ -698,7 +694,7 @@
   "standard": "2x 400GBASE-FR4",
   "type": "400GBASE-FR4",
   "media": "SMF",
-  "connector": "[VERIFY]",
+  "connector": "Dual Duplex LC",
   "reach": "2 km",
   "wavelengths_nm": [
    "1271",
@@ -711,10 +707,8 @@
   "legacy_eol_candidate": false,
   "grounded": true,
   "source": "juniper-800g-optics-guide.pdf",
-  "flags": [
-   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
-  ],
-  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-FR4 (possible alias — verify)"
+  "flags": [],
+  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-FR4 (possible alias — verify) | connector closed: Dual Duplex LC (800G guide MSA)"
  },
  "QDD-2X400G-LR4-10": {
   "sku": "QDD-2X400G-LR4-10",
@@ -723,7 +717,7 @@
   "standard": "2x 400GBASE-LR4",
   "type": "400GBASE-LR4",
   "media": "SMF",
-  "connector": "[VERIFY]",
+  "connector": "Dual Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
    "1271",
@@ -736,10 +730,8 @@
   "legacy_eol_candidate": false,
   "grounded": true,
   "source": "juniper-800g-optics-guide.pdf",
-  "flags": [
-   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
-  ],
-  "note": "4λ duplex SMF, long reach (-10 = 10 km)"
+  "flags": [],
+  "note": "4λ duplex SMF, long reach (-10 = 10 km) | connector closed: Dual Duplex LC (800G guide MSA)"
  },
  "QDD-2X400G-LR4-P": {
   "sku": "QDD-2X400G-LR4-P",
@@ -748,7 +740,7 @@
   "standard": "2x 400GBASE-LR4",
   "type": "400GBASE-LR4",
   "media": "SMF",
-  "connector": "[VERIFY]",
+  "connector": "Dual Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
    "1271",
@@ -761,9 +753,252 @@
   "legacy_eol_candidate": false,
   "grounded": true,
   "source": "juniper-800g-optics-guide.pdf",
-  "flags": [
-   "connector [VERIFY] — guide names duplex/parallel SMF but not the exact connector"
+  "flags": [],
+  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-LR4-10 (possible alias — verify) | connector closed: Dual Duplex LC (800G guide MSA)"
+ },
+ "QDD-400G-DR4": {
+  "sku": "QDD-400G-DR4",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400GBASE-DR4",
+  "type": "400GBASE-DR4",
+  "media": "SMF (parallel)",
+  "connector": "MPO-12",
+  "reach": "500 m",
+  "wavelengths_nm": [
+   "1310"
   ],
-  "note": "4λ duplex SMF; -P variant, shares optical spec with QDD-2X400G-LR4-10 (possible alias — verify)"
+  "lanes": 4,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "8 fibers, DC reach"
+ },
+ "QDD-400G-FR4": {
+  "sku": "QDD-400G-FR4",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400GBASE-FR4",
+  "type": "400GBASE-FR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "4λ WDM"
+ },
+ "QDD-400G-LR4-10": {
+  "sku": "QDD-400G-LR4-10",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400GBASE-LR4",
+  "type": "400GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "4λ WDM"
+ },
+ "QDD-400G-ER4-30": {
+  "sku": "QDD-400G-ER4-30",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G ER4-30",
+  "type": "ER4-30",
+  "media": "SMF",
+  "connector": "Duplex LC/UPC",
+  "reach": "30 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "guide: duplex LC/UPC"
+ },
+ "QDD-400G-LR8": {
+  "sku": "QDD-400G-LR8",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400GBASE-LR8",
+  "type": "400GBASE-LR8",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "LWDM 8λ (~1273–1309 nm)"
+  ],
+  "lanes": 8,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "8-lane LWDM; legacy"
+ },
+ "QDD-400G-PLR4": {
+  "sku": "QDD-400G-PLR4",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G PLR4",
+  "type": "PLR4",
+  "media": "SMF (parallel)",
+  "connector": "MPO-12",
+  "reach": "[VERIFY]",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "coherent": false,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [
+   "reach [VERIFY] — guide doesn't pin PLR4 reach; per-SKU datasheet needed"
+  ],
+  "note": "parallel single-mode"
+ },
+ "QDD-400G-ZR": {
+  "sku": "QDD-400G-ZR",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G-ZR (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "~80 km",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "coherent tunable DWDM"
+ },
+ "QDD-400G-ZR-M": {
+  "sku": "QDD-400G-ZR-M",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G ZR+ (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "ZR+ extended",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "ZR+ dispersion-mitigation, longer reach than ZR"
+ },
+ "QDD-400G-ZR-M-HP": {
+  "sku": "QDD-400G-ZR-M-HP",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G ZR+ HP (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "ZR+ extended (high power)",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [],
+  "note": "ZR+ high-power"
+ },
+ "JCO400-QDD-ZR": {
+  "sku": "JCO400-QDD-ZR",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G-ZR (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "~80 km",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [
+   "possible alias of QDD-400G-ZR — verify per-SKU datasheet"
+  ],
+  "note": "Juniper Coherent Optics line"
+ },
+ "JCO400-QDD-ZR-M": {
+  "sku": "JCO400-QDD-ZR-M",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G ZR+ (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "ZR+ extended",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [
+   "possible alias of QDD-400G-ZR-M — verify"
+  ],
+  "note": "Juniper Coherent Optics line"
+ },
+ "JCO400-QDD-ZR-M-HP": {
+  "sku": "JCO400-QDD-ZR-M-HP",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G ZR+ HP (coherent)",
+  "type": "(coherent)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "ZR+ extended (high power)",
+  "wavelengths_nm": [
+   "C-Band durchstimmbar (~1528–1568 nm, tunable)"
+  ],
+  "lanes": 1,
+  "coherent": true,
+  "grounded": true,
+  "source": "juniper-400g-optics-guide.pdf",
+  "flags": [
+   "possible alias of QDD-400G-ZR-M-HP — verify"
+  ],
+  "note": "Juniper Coherent Optics line"
  }
 }
