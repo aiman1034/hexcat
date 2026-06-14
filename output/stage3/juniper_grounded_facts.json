@@ -1000,5 +1000,2844 @@
    "possible alias of QDD-400G-ZR-M-HP — verify"
   ],
   "note": "Juniper Coherent Optics line"
+ },
+ "CFP-100GBASE-ER4": {
+  "sku": "CFP-100GBASE-ER4",
+  "form_factor": "CFP",
+  "speed": "100G",
+  "standard": "100GBASE-ER4",
+  "type": "100GBASE-ER4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "CFP-100GBASE-LR4": {
+  "sku": "CFP-100GBASE-LR4",
+  "form_factor": "CFP",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "CFP-100GBASE-SR10": {
+  "sku": "CFP-100GBASE-SR10",
+  "form_factor": "CFP",
+  "speed": "100G",
+  "standard": "100GBASE-SR10",
+  "type": "100GBASE-SR10",
+  "media": "MMF",
+  "connector": "MPO-24",
+  "reach": "100 m",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 10,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "legacy CFP"
+ },
+ "CFP-GEN2-100GBASE-LR4": {
+  "sku": "CFP-GEN2-100GBASE-LR4",
+  "form_factor": "CFP",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "CFP2-100GBASE-ER4": {
+  "sku": "CFP2-100GBASE-ER4",
+  "form_factor": "CFP2",
+  "speed": "100G",
+  "standard": "100GBASE-ER4",
+  "type": "100GBASE-ER4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "CFP2-100GBASE-LR4": {
+  "sku": "CFP2-100GBASE-LR4",
+  "form_factor": "CFP2",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-100G-BXSR": {
+  "sku": "JNP-QSFP-100G-BXSR",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G SR BiDi",
+  "type": "BiDi",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850",
+   "910"
+  ],
+  "lanes": 2,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "SWDM BiDi (4:2 gearbox)"
+ },
+ "JNP-QSFP-100G-CWDM": {
+  "sku": "JNP-QSFP-100G-CWDM",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G-CWDM4",
+  "type": "100G-CWDM4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-100G-LR-CW27": {
+  "sku": "JNP-QSFP-100G-LR-CW27",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G LR (CW27)",
+  "type": "(CW27)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single-CWDM-λ LR"
+ },
+ "JNP-QSFP-100G-LR-CW29": {
+  "sku": "JNP-QSFP-100G-LR-CW29",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G LR (CW29)",
+  "type": "(CW29)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1291"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single-CWDM-λ LR"
+ },
+ "JNP-QSFP-100G-LR-CW31": {
+  "sku": "JNP-QSFP-100G-LR-CW31",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G LR (CW31)",
+  "type": "(CW31)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1311"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single-CWDM-λ LR"
+ },
+ "JNP-QSFP-100G-LR-CW33": {
+  "sku": "JNP-QSFP-100G-LR-CW33",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G LR (CW33)",
+  "type": "(CW33)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1331"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single-CWDM-λ LR"
+ },
+ "JNP-QSFP-100G-LR4": {
+  "sku": "JNP-QSFP-100G-LR4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-100G-LR4-4WDM-20-I": {
+  "sku": "JNP-QSFP-100G-LR4-4WDM-20-I",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G 4WDM",
+  "type": "4WDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "LWDM 4λ"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "4WDM 20 km"
+ },
+ "JNP-QSFP-100G-LR4-4WDM-40-I": {
+  "sku": "JNP-QSFP-100G-LR4-4WDM-40-I",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G 4WDM",
+  "type": "4WDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "LWDM 4λ"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "4WDM 40 km"
+ },
+ "JNP-QSFP-100G-PSM4": {
+  "sku": "JNP-QSFP-100G-PSM4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G-PSM4",
+  "type": "100G-PSM4",
+  "media": "SMF (parallel)",
+  "connector": "MPO-12",
+  "reach": "500 m",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-100G-SR4": {
+  "sku": "JNP-QSFP-100G-SR4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-SR4",
+  "type": "100GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QDD-4X100G-FR": {
+  "sku": "QDD-4X100G-FR",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G FR (4x100G)",
+  "type": "(4x100G)",
+  "media": "SMF",
+  "connector": "MPO-12 / breakout",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "breakout 4x100G"
+ },
+ "QDD-4X100G-LR": {
+  "sku": "QDD-4X100G-LR",
+  "form_factor": "QSFP-DD",
+  "speed": "400G",
+  "standard": "400G LR (4x100G)",
+  "type": "(4x100G)",
+  "media": "SMF",
+  "connector": "MPO-12 / breakout",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "breakout 4x100G"
+ },
+ "QSFP-100G-4WDM40": {
+  "sku": "QSFP-100G-4WDM40",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G 4WDM",
+  "type": "4WDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "LWDM 4λ"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "4WDM 40 km"
+ },
+ "QSFP-100G-CWDM": {
+  "sku": "QSFP-100G-CWDM",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G-CWDM4",
+  "type": "100G-CWDM4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-CWDM4": {
+  "sku": "QSFP-100G-CWDM4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G-CWDM4",
+  "type": "100G-CWDM4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-DR": {
+  "sku": "QSFP-100G-DR",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-DR",
+  "type": "100GBASE-DR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "500 m",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single λ PAM4"
+ },
+ "QSFP-100G-ER4L": {
+  "sku": "QSFP-100G-ER4L",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G ER4 Lite",
+  "type": "Lite",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "25 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "ER4 Lite"
+ },
+ "QSFP-100G-ERBD-D": {
+  "sku": "QSFP-100G-ERBD-D",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G ER BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [
+   "BiDi λ-pair [VERIFY] per-SKU"
+  ],
+  "note": "simplex single-mode BiDi"
+ },
+ "QSFP-100G-FR": {
+  "sku": "QSFP-100G-FR",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-FR",
+  "type": "100GBASE-FR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single λ PAM4"
+ },
+ "QSFP-100G-LR": {
+  "sku": "QSFP-100G-LR",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-LR",
+  "type": "100GBASE-LR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "single λ PAM4"
+ },
+ "QSFP-100G-LR4": {
+  "sku": "QSFP-100G-LR4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-LR4-D": {
+  "sku": "QSFP-100G-LR4-D",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-LR4",
+  "type": "100GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-LRBD-D": {
+  "sku": "QSFP-100G-LRBD-D",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [
+   "BiDi λ-pair [VERIFY] per-SKU"
+  ],
+  "note": "simplex single-mode BiDi"
+ },
+ "QSFP-100G-PSM4": {
+  "sku": "QSFP-100G-PSM4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G-PSM4",
+  "type": "100G-PSM4",
+  "media": "SMF (parallel)",
+  "connector": "MPO-12",
+  "reach": "500 m",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-SR1P2": {
+  "sku": "QSFP-100G-SR1P2",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100G SR BiDi",
+  "type": "BiDi",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850",
+   "910"
+  ],
+  "lanes": 2,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": "SWDM BiDi (4:2 gearbox)"
+ },
+ "QSFP-100G-SR4": {
+  "sku": "QSFP-100G-SR4",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-SR4",
+  "type": "100GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-100G-SR4-C": {
+  "sku": "QSFP-100G-SR4-C",
+  "form_factor": "QSFP28",
+  "speed": "100G",
+  "standard": "100GBASE-SR4",
+  "type": "100GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper-100g-optics-guide.pdf",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10G-BX-D": {
+  "sku": "EX-SFP-10G-BX-D",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10G-BX-D-40": {
+  "sku": "EX-SFP-10G-BX-D-40",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10G-BX-D-80": {
+  "sku": "EX-SFP-10G-BX-D-80",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10G-BX-U": {
+  "sku": "EX-SFP-10G-BX-U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10G-BX-U-40": {
+  "sku": "EX-SFP-10G-BX-U-40",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10G-BX-U-80": {
+  "sku": "EX-SFP-10G-BX-U-80",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10GE-BX23": {
+  "sku": "EX-SFP-10GE-BX23",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "23 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10GE-BX23-60": {
+  "sku": "EX-SFP-10GE-BX23-60",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "23 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10GE-BX32": {
+  "sku": "EX-SFP-10GE-BX32",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "32 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10GE-BX32-60": {
+  "sku": "EX-SFP-10GE-BX32-60",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "32 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-10GE-ER": {
+  "sku": "EX-SFP-10GE-ER",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10GBASE-ER",
+  "type": "10GBASE-ER",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10GE-LR": {
+  "sku": "EX-SFP-10GE-LR",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10GBASE-LR",
+  "type": "10GBASE-LR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10GE-LRM": {
+  "sku": "EX-SFP-10GE-LRM",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10GBASE-LRM",
+  "type": "10GBASE-LRM",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "220 m (OM3)",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10GE-SR": {
+  "sku": "EX-SFP-10GE-SR",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10GBASE-SR",
+  "type": "10GBASE-SR",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "300 m (OM3)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10GE-USR": {
+  "sku": "EX-SFP-10GE-USR",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-USR",
+  "type": "10G-USR",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-10GE-ZR": {
+  "sku": "EX-SFP-10GE-ZR",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-ZR",
+  "type": "10G-ZR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1FE-FX": {
+  "sku": "EX-SFP-1FE-FX",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-FX",
+  "type": "100BASE-FX",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1FE-FX-ET": {
+  "sku": "EX-SFP-1FE-FX-ET",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-FX",
+  "type": "100BASE-FX",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1FE-LH": {
+  "sku": "EX-SFP-1FE-LH",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-LX",
+  "type": "100BASE-LX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1FE-LX": {
+  "sku": "EX-SFP-1FE-LX",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-LX",
+  "type": "100BASE-LX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1FE-LX40K": {
+  "sku": "EX-SFP-1FE-LX40K",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-LX",
+  "type": "100BASE-LX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1GE-LH": {
+  "sku": "EX-SFP-1GE-LH",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-ZX/LH",
+  "type": "1000BASE-ZX/LH",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "70 km",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1GE-LX": {
+  "sku": "EX-SFP-1GE-LX",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-LX",
+  "type": "1000BASE-LX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1GE-LX40K": {
+  "sku": "EX-SFP-1GE-LX40K",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-EX",
+  "type": "1000BASE-EX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "LX 40km"
+ },
+ "EX-SFP-1GE-LX40K-I": {
+  "sku": "EX-SFP-1GE-LX40K-I",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-EX",
+  "type": "1000BASE-EX",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "LX 40km (ind.)"
+ },
+ "EX-SFP-1GE-SX": {
+  "sku": "EX-SFP-1GE-SX",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-SX",
+  "type": "1000BASE-SX",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "550 m (OM3)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1GE-SX-ET": {
+  "sku": "EX-SFP-1GE-SX-ET",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-SX",
+  "type": "1000BASE-SX",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "550 m (OM3)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-1GE-T": {
+  "sku": "EX-SFP-1GE-T",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-T",
+  "type": "1000BASE-T",
+  "media": "Kupfer",
+  "connector": "RJ45",
+  "reach": "100 m (Cat5e)",
+  "wavelengths_nm": [],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-FE20KT13R15": {
+  "sku": "EX-SFP-FE20KT13R15",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-BX",
+  "type": "100BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1550"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-FE20KT15R13": {
+  "sku": "EX-SFP-FE20KT15R13",
+  "form_factor": "SFP",
+  "speed": "100M",
+  "standard": "100BASE-BX",
+  "type": "100BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "TX 1550",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE10KT13R14": {
+  "sku": "EX-SFP-GE10KT13R14",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1490"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE10KT13R14-I": {
+  "sku": "EX-SFP-GE10KT13R14-I",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1490"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "EX-SFP-GE10KT13R15": {
+  "sku": "EX-SFP-GE10KT13R15",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1550"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE10KT14R13": {
+  "sku": "EX-SFP-GE10KT14R13",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1490",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE10KT14R13-I": {
+  "sku": "EX-SFP-GE10KT14R13-I",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1490",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "EX-SFP-GE10KT15R13": {
+  "sku": "EX-SFP-GE10KT15R13",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "TX 1550",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE20KT13R15": {
+  "sku": "EX-SFP-GE20KT13R15",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1550"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE20KT14R13": {
+  "sku": "EX-SFP-GE20KT14R13",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "TX 1490",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE40KT13R15": {
+  "sku": "EX-SFP-GE40KT13R15",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "TX 1310",
+   "RX 1550"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE40KT15R13": {
+  "sku": "EX-SFP-GE40KT15R13",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000BASE-BX",
+  "type": "1000BASE-BX",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "TX 1550",
+   "RX 1310"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "single-fiber BiDi"
+ },
+ "EX-SFP-GE80KCW1470": {
+  "sku": "EX-SFP-GE80KCW1470",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1G-CWDM",
+  "type": "1G-CWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1470"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-GE80KCW1510": {
+  "sku": "EX-SFP-GE80KCW1510",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1G-CWDM",
+  "type": "1G-CWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1510"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-GE80KCW1550": {
+  "sku": "EX-SFP-GE80KCW1550",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1G-CWDM",
+  "type": "1G-CWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "EX-SFP-GE80KCW1590": {
+  "sku": "EX-SFP-GE80KCW1590",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1G-CWDM",
+  "type": "1G-CWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1590"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40G-ESR4": {
+  "sku": "JNP-QSFP-40G-ESR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-SR4",
+  "type": "40GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "150 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40G-LR4": {
+  "sku": "JNP-QSFP-40G-LR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-LR4",
+  "type": "40GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40G-LR4-20": {
+  "sku": "JNP-QSFP-40G-LR4-20",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-LR4",
+  "type": "40GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40G-LX4": {
+  "sku": "JNP-QSFP-40G-LX4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G-LX4",
+  "type": "40G-LX4",
+  "media": "SMF/MMF",
+  "connector": "Duplex LC",
+  "reach": "2 km (SMF) / 150 m (OM4)",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40G-SWDM4": {
+  "sku": "JNP-QSFP-40G-SWDM4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G-SWDM4",
+  "type": "40G-SWDM4",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "350 m (OM4)",
+  "wavelengths_nm": [
+   "850",
+   "880",
+   "910",
+   "940"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "SWDM 4λ"
+ },
+ "JNP-QSFP-40GE-ER4": {
+  "sku": "JNP-QSFP-40GE-ER4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-ER4",
+  "type": "40GBASE-ER4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-40GE-IR4": {
+  "sku": "JNP-QSFP-40GE-IR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G-IR4",
+  "type": "40G-IR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-QSFP-4X10GE-IR": {
+  "sku": "JNP-QSFP-4X10GE-IR",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G 4x10GE",
+  "type": "4x10GE",
+  "media": "SMF",
+  "connector": "MPO-12 / breakout",
+  "reach": "1.4 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "QSFP+ breakout 4x10G"
+ },
+ "JNP-QSFP-4X10GE-LR": {
+  "sku": "JNP-QSFP-4X10GE-LR",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G 4x10GE",
+  "type": "4x10GE",
+  "media": "SMF",
+  "connector": "MPO-12 / breakout",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "QSFP+ breakout 4x10G"
+ },
+ "JNP-QSFPP-40G-BXSR": {
+  "sku": "JNP-QSFPP-40G-BXSR",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G SR BiDi",
+  "type": "BiDi",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "832",
+   "918"
+  ],
+  "lanes": 2,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-SFP-10G-BX10D": {
+  "sku": "JNP-SFP-10G-BX10D",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX10U": {
+  "sku": "JNP-SFP-10G-BX10U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX20D": {
+  "sku": "JNP-SFP-10G-BX20D",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX20U": {
+  "sku": "JNP-SFP-10G-BX20U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "20 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX40D": {
+  "sku": "JNP-SFP-10G-BX40D",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX40U": {
+  "sku": "JNP-SFP-10G-BX40U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX60D": {
+  "sku": "JNP-SFP-10G-BX60D",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "60 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX60U": {
+  "sku": "JNP-SFP-10G-BX60U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "60 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-10G-BX80U": {
+  "sku": "JNP-SFP-10G-BX80U",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-25G-LR": {
+  "sku": "JNP-SFP-25G-LR",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25GBASE-LR",
+  "type": "25GBASE-LR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-SFP-25G-LR-BX-D": {
+  "sku": "JNP-SFP-25G-LR-BX-D",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-25G-LR-BX-U": {
+  "sku": "JNP-SFP-25G-LR-BX-U",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi"
+ },
+ "JNP-SFP-25G-LR-BXD-I": {
+  "sku": "JNP-SFP-25G-LR-BXD-I",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "JNP-SFP-25G-LR-BXU-I": {
+  "sku": "JNP-SFP-25G-LR-BXU-I",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "JNP-SFP-25G-LR-CW-47": {
+  "sku": "JNP-SFP-25G-LR-CW-47",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch47)",
+  "type": "CWDM(ch47)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW-49": {
+  "sku": "JNP-SFP-25G-LR-CW-49",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch49)",
+  "type": "CWDM(ch49)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW-51": {
+  "sku": "JNP-SFP-25G-LR-CW-51",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch51)",
+  "type": "CWDM(ch51)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW-53": {
+  "sku": "JNP-SFP-25G-LR-CW-53",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch53)",
+  "type": "CWDM(ch53)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW-55": {
+  "sku": "JNP-SFP-25G-LR-CW-55",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch55)",
+  "type": "CWDM(ch55)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW27-40": {
+  "sku": "JNP-SFP-25G-LR-CW27-40",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch27)",
+  "type": "CWDM(ch27)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW29-40": {
+  "sku": "JNP-SFP-25G-LR-CW29-40",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch29)",
+  "type": "CWDM(ch29)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-CW31-40": {
+  "sku": "JNP-SFP-25G-LR-CW31-40",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR CWDM(ch31)",
+  "type": "CWDM(ch31)",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "CWDM channel λ [VERIFY] per-SKU"
+  ],
+  "note": "single CWDM λ"
+ },
+ "JNP-SFP-25G-LR-I-DW3033": {
+  "sku": "JNP-SFP-25G-LR-I-DW3033",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1530.33 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW3661": {
+  "sku": "JNP-SFP-25G-LR-I-DW3661",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1536.61 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW3740": {
+  "sku": "JNP-SFP-25G-LR-I-DW3740",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1537.40 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW4214": {
+  "sku": "JNP-SFP-25G-LR-I-DW4214",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1542.14 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW4532": {
+  "sku": "JNP-SFP-25G-LR-I-DW4532",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1545.32 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW4772": {
+  "sku": "JNP-SFP-25G-LR-I-DW4772",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1547.72 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW5012": {
+  "sku": "JNP-SFP-25G-LR-I-DW5012",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1550.12 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW5413": {
+  "sku": "JNP-SFP-25G-LR-I-DW5413",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1554.13 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW5494": {
+  "sku": "JNP-SFP-25G-LR-I-DW5494",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1554.94 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR-I-DW5575": {
+  "sku": "JNP-SFP-25G-LR-I-DW5575",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR DWDM",
+  "type": "DWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1555.75 nm"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "fixed DWDM channel (ind.)"
+ },
+ "JNP-SFP-25G-LR40-BXD-I": {
+  "sku": "JNP-SFP-25G-LR40-BXD-I",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "JNP-SFP-25G-LR40-BXU-I": {
+  "sku": "JNP-SFP-25G-LR40-BXU-I",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25G-LR BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind.)"
+ },
+ "JNP-SFP-25G-SR": {
+  "sku": "JNP-SFP-25G-SR",
+  "form_factor": "SFP28",
+  "speed": "25G",
+  "standard": "25GBASE-SR",
+  "type": "25GBASE-SR",
+  "media": "MMF",
+  "connector": "Duplex LC",
+  "reach": "100 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "JNP-SFPP-10GE-T": {
+  "sku": "JNP-SFPP-10GE-T",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10GBASE-T",
+  "type": "10GBASE-T",
+  "media": "Kupfer",
+  "connector": "RJ45",
+  "reach": "30 m (Cat6a)",
+  "wavelengths_nm": [],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QDD-2X100G-CWDM4": {
+  "sku": "QDD-2X100G-CWDM4",
+  "form_factor": "QSFP28-DD",
+  "speed": "200G",
+  "standard": "2x 100G CWDM4",
+  "type": "CWDM4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "2 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 8,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "2x100G aggregate"
+ },
+ "QDD-2X100G-LR4": {
+  "sku": "QDD-2X100G-LR4",
+  "form_factor": "QSFP28-DD",
+  "speed": "200G",
+  "standard": "2x 100G LR4",
+  "type": "LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1295",
+   "1300",
+   "1305",
+   "1309"
+  ],
+  "lanes": 8,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "2x100G aggregate"
+ },
+ "QFX-QSFP-40G-ER4": {
+  "sku": "QFX-QSFP-40G-ER4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-ER4",
+  "type": "40GBASE-ER4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QFX-QSFP-40G-ESR4": {
+  "sku": "QFX-QSFP-40G-ESR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-SR4",
+  "type": "40GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "150 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QFX-QSFP-40G-LR4": {
+  "sku": "QFX-QSFP-40G-LR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-LR4",
+  "type": "40GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QFX-QSFP-40G-SR4": {
+  "sku": "QFX-QSFP-40G-SR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-SR4",
+  "type": "40GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "150 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-40G-ESR4": {
+  "sku": "QSFP-40G-ESR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-SR4",
+  "type": "40GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "150 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-40G-LR4": {
+  "sku": "QSFP-40G-LR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-LR4",
+  "type": "40GBASE-LR4",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1271",
+   "1291",
+   "1311",
+   "1331"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-40G-SR4": {
+  "sku": "QSFP-40G-SR4",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40GBASE-SR4",
+  "type": "40GBASE-SR4",
+  "media": "MMF",
+  "connector": "MPO-12",
+  "reach": "150 m (OM4)",
+  "wavelengths_nm": [
+   "850"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "QSFP-4X10GE-LR-25": {
+  "sku": "QSFP-4X10GE-LR-25",
+  "form_factor": "QSFP+",
+  "speed": "40G",
+  "standard": "40G 4x10GE",
+  "type": "4x10GE",
+  "media": "SMF",
+  "connector": "MPO-12 / breakout",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "1310"
+  ],
+  "lanes": 4,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": "QSFP+ breakout 4x10G"
+ },
+ "SFP-1GE-FE": {
+  "sku": "SFP-1GE-FE",
+  "form_factor": "SFP",
+  "speed": "1G",
+  "standard": "1000/100 dual",
+  "type": "dual",
+  "media": "[VERIFY]",
+  "connector": "[VERIFY]",
+  "reach": "",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "type [VERIFY] per-SKU"
+  ],
+  "note": ""
+ },
+ "SFPP-10GE-BX10D-IT": {
+  "sku": "SFPP-10GE-BX10D-IT",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind. temp)"
+ },
+ "SFPP-10GE-BX10U-IT": {
+  "sku": "SFPP-10GE-BX10U-IT",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "10 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind. temp)"
+ },
+ "SFPP-10GE-BX40D-IT": {
+  "sku": "SFPP-10GE-BX40D-IT",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind. temp)"
+ },
+ "SFPP-10GE-BX40U-IT": {
+  "sku": "SFPP-10GE-BX40U-IT",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-BX BiDi",
+  "type": "BiDi",
+  "media": "SMF",
+  "connector": "Simplex LC",
+  "reach": "40 km",
+  "wavelengths_nm": [
+   "[VERIFY]"
+  ],
+  "lanes": 1,
+  "bidi": true,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [
+   "BiDi λ-pair [VERIFY]"
+  ],
+  "note": "single-fiber BiDi (ind. temp)"
+ },
+ "SFPP-10GE-ZR": {
+  "sku": "SFPP-10GE-ZR",
+  "form_factor": "SFP+",
+  "speed": "10G",
+  "standard": "10G-ZR",
+  "type": "10G-ZR",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1550"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
+ },
+ "XFP-10G-CWDM1471": {
+  "sku": "XFP-10G-CWDM1471",
+  "form_factor": "XFP",
+  "speed": "10G",
+  "standard": "10G-CWDM",
+  "type": "10G-CWDM",
+  "media": "SMF",
+  "connector": "Duplex LC",
+  "reach": "80 km",
+  "wavelengths_nm": [
+   "1471"
+  ],
+  "lanes": 1,
+  "bidi": false,
+  "grounded": true,
+  "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
+  "flags": [],
+  "note": ""
  }
 }
