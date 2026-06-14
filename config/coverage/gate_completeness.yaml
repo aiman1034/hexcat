@@ -32,7 +32,7 @@ MikroTik_switches:
   flagged: []
 Juniper_transceivers:
   enumerated: 201
-  captured: 191
+  captured: 188
   flagged:
   - pn: JNP-100G-4X25G-3M
     reason_code: out-of-scope
@@ -54,5 +54,11 @@ Juniper_transceivers:
     reason_code: un-groundable-after-ladder
   - pn: XFP-10GB-BX-U-60-J
     reason_code: un-groundable-after-ladder
-_Juniper_note: enumerated 205 raw - 4 alias-collapsed = 201 distinct; captured 191
-  grounded (==emitted); flagged-out 10 reason-coded; 191+4+10=205.
+  - pn: QSFP-100G-ERBD-D
+    reason_code: un-groundable-after-ladder
+  - pn: QSFP-100G-LRBD-D
+    reason_code: un-groundable-after-ladder
+  - pn: SFP-1GE-FE
+    reason_code: un-groundable-after-ladder
+_Juniper_note: enumerated 205 raw - 4 alias = 201 distinct; captured 188 (==emitted);
+  flagged 13 reason-coded; 188+13+4=205.
