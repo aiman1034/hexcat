@@ -190,3 +190,21 @@ file) → author via the `nvidia_author.py` scaffold (cable/XCVR branch, per-SKU
 lane-aware wavelengths, comma-form meta, **fill every slot — widened B.8 hard-fails empty slots in any
 field**) → add the brand to `config/rules.yaml` vendors → `backfill_brand` (Rule-9 commercial temp) →
 gate PASS → Rule-8 parity → `audit_semantic.py <Brand>` 0×8 (all fields) → price 0,00 → commit → ZIP.
+
+---
+
+## 11. Switches — gold-slice schema PROPOSAL (PENDING Rule-7 sign-off — HALT)
+
+Full proposal in **`SWITCHES_SCHEMA_PROPOSAL.md`** (repo root). Surfaced 2026-06-14 per Rule 7;
+**no switch authoring / no taxonomy or code edits until the operator signs off.** Summary of the
+decisions awaiting yes/no:
+- **L2** `Switches` + **Attributgruppe** `Switche` (one-char-diff convention).
+- **L3 locked set (6):** Unmanaged / Smart-Managed / Managed (L2) / Managed (L3) / Data-Center / Industrie.
+- **15 switch attributes** (fixed order = Sortiernummer): Switch-Typ, Layer, Portanzahl,
+  Port-Konfiguration, Geschwindigkeit, Uplink-Ports, PoE, Switching-Kapazität, Durchsatz,
+  Formfaktor, Stromversorgung, Kühlung, Stacking, Betriebstemperatur (Rule 9), Anwendung.
+- **4 new cross-checks S.1–S.4** (PoE↔PoE-port, L3↔Managed, Portanzahl↔Port-Konfiguration sum,
+  Stacking↔class). Byte contract + 7 files + floors + B.1–B.8 + Rule 8/9 all carry over unchanged
+  (no new Main columns). Worked example: MikroTik CRS328-24P-4S+RM.
+- **Fresh brands** (Extreme + 9 others + NVIDIA 800G-Eth) remain HELD on the §10 SOURCE MANIFEST
+  (operator drops sources into `datasheets/cache/`).
