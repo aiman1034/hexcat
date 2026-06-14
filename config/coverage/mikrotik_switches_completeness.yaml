@@ -1,0 +1,26 @@
+brand: MikroTik
+category: switches
+# First switch brand on the Rule-7 switch gold-slice. Enumeration source: the official MikroTik
+# product group page "Switches" (mikrotik.com/products/group/switches), re-fetched 2026-06-14 ($0).
+complete: true
+universe_total: 40            # distinct products on the switches group grid
+captured_count: 36            # authored to the switch gold-slice, gate PASS 36/36
+gap_count: 0
+excluded_not_switch_count: 4
+populated_sources: 1
+per_source:
+- id: mikrotik_switches_group
+  kind: vendor_product_grid
+  url: https://mikrotik.com/products/group/switches
+  populated: true
+exclude_not_switch:
+- {pn: fiberbox+,  reason: "FiberBox+ media converter / passive fibre enclosure — not a switch."}
+- {pn: gperx6,     reason: "GPeR media converter — not a switch."}
+- {pn: netfiber-9, reason: "netFiber-9 media converter — not a switch."}
+- {pn: netpower-lite-ups, reason: "netPower Lite UPS / power device — not a switch."}
+verdict: captured 36 of 40 enumerated MikroTik switch-group products (90%); the 4 excluded are media
+  converters + a UPS (not switches), each with a verbatim reason. All 36 authored to the switch
+  gold-slice (gate PASS 36/36 incl S.1-S.5, audit_semantic 0×8 all-fields, Rule-8 parity 0-missing).
+  L3 by env-first precedence: Managed (L3) 20, Smart-Managed 7, Industrie 3, Data-Center 6.
+  Betriebstemperatur datasheet-verbatim (MikroTik publishes "Tested ambient temperature").
+  MSRP captured (config/market_prices/mikrotik_switch_msrp.yaml); EUR net deferred.
