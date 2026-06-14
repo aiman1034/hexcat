@@ -87,10 +87,26 @@ ATTR_ALIAS: dict[str, str] = {
     "Standard": "Standard",
     "Schnittstellenstandard": "Standard",
     "Konformität": "Standard",
+    # --- SWITCH attributes (Rule-7): canonical names, identity-mapped (Anwendung/Betriebstemperatur
+    # are shared with the transceiver block above) ---
+    "Switch-Typ": "Switch-Typ",
+    "Layer": "Layer",
+    "Portanzahl": "Portanzahl",
+    "Port-Konfiguration": "Port-Konfiguration",
+    "Port-Geschwindigkeit": "Port-Geschwindigkeit",
+    "Uplink-Ports": "Uplink-Ports",
+    "PoE": "PoE",
+    "Switching-Kapazität": "Switching-Kapazität",
+    "Durchsatz": "Durchsatz",
+    "Bauform": "Bauform",
+    "Stromversorgung": "Stromversorgung",
+    "Kühlung": "Kühlung",
+    "Stacking": "Stacking",
 }
 
-# Canonical name -> the SkuIntake field that carries it (from the locked schema).
-_CANON_TO_FIELD: dict[str, str] = {name: field for name, field in C.TRANSCEIVER_ATTRIBUTES}
+# Canonical name -> the SkuIntake field that carries it (from BOTH locked schemas: transceiver +
+# switch). Switch Attributnamen (Switch-Typ, Layer, …) are themselves canonical (no free-vocab alias).
+_CANON_TO_FIELD: dict[str, str] = {name: field for name, field in (*C.TRANSCEIVER_ATTRIBUTES, *C.SWITCH_ATTRIBUTES)}
 
 _CABLE_CATEGORIES = C.CABLE_CATEGORIES
 
@@ -135,12 +151,13 @@ def physical_formfaktor(*candidates: str) -> str | None:
     return None
 
 
-def map_attributes(authored: list[tuple[str, str]], formfaktor: str) -> dict[str, str]:
-    """Fold authored (name, value) pairs onto the canonical 14-schema intake fields.
+def map_attributes(authored: list[tuple[str, str]], formfaktor: str | None) -> dict[str, str]:
+    """Fold authored (name, value) pairs onto the canonical intake fields (transceiver OR switch).
 
-    Returns {intake_field: value}. The Formfaktor field is forced to the physical connector
-    token. Unmappable names are dropped; on collision the first authored value wins. The
-    "Zustand" attribute is intentionally NOT mapped here (it becomes the Condition file).
+    Returns {intake_field: value}. For transceivers the Formfaktor field is forced to the physical
+    connector token; for switches `formfaktor` is None (switches carry no Formfaktor — their physical
+    build lives in `Bauform`). Unmappable names are dropped; first authored value wins. "Zustand" is
+    intentionally NOT mapped here (it becomes the Condition file).
     """
     out: dict[str, str] = {}
     canon_seen: set[str] = set()
@@ -155,7 +172,8 @@ def map_attributes(authored: list[tuple[str, str]], formfaktor: str) -> dict[str
             continue
         canon_seen.add(canon)
         out[_CANON_TO_FIELD[canon]] = value
-    out["Formfaktor"] = formfaktor
+    if formfaktor:                       # transceiver only; switches pass None
+        out["Formfaktor"] = formfaktor
     return out
 
 
@@ -174,6 +192,8 @@ def _closer(hersteller: str, kategorie3: str) -> str:
         return f"Originales {hersteller}-AOC-Kabel für {tail}."
     if kategorie3 == "MPO Kabel":
         return f"Originales {hersteller}-MPO-Kabel für {tail}."
+    if "Switch" in kategorie3:          # any switch L3 token (Rule-7) — masculine "Switch"
+        return f"Originaler {hersteller}-Switch für {tail}."
     return f"Originaler {hersteller}-Transceiver für {tail}."
 
 
@@ -224,18 +244,23 @@ def entry_to_intake(pn: str, entry: dict, *, brand: str, rules: Rules) -> SkuInt
         if isinstance(a, (list, tuple)) and len(a) >= 2
     ]
 
-    # Physical connector: authored Formfaktor value -> connector/speed text -> PN.
-    authored_ff = next((v for n, v in authored_attrs if n == "Formfaktor"), "")
-    anschluss = next((v for n, v in authored_attrs
-                      if n in ("Anschluss", "Anschlusstyp", "Anschlussenden", "Schnittstelle")), "")
-    datenrate = next((v for n, v in authored_attrs
-                      if n in ("Datenrate", "Geschwindigkeit")), "")
-    ff = physical_formfaktor(authored_ff, anschluss, datenrate, pn)
-    if ff is None:
-        raise ReconcileError(
-            f"[{pn}] could not derive a physical Formfaktor from "
-            f"{authored_ff!r}/{anschluss!r}/{datenrate!r}/{pn!r}"
-        )
+    # SWITCHES carry no physical-connector Formfaktor (their build is `Bauform`); skip the derive.
+    is_switch = kategorie3 in rules.kategorie_ebene_3_switch_allowed
+    if is_switch:
+        ff = None
+    else:
+        # Physical connector: authored Formfaktor value -> connector/speed text -> PN.
+        authored_ff = next((v for n, v in authored_attrs if n == "Formfaktor"), "")
+        anschluss = next((v for n, v in authored_attrs
+                          if n in ("Anschluss", "Anschlusstyp", "Anschlussenden", "Schnittstelle")), "")
+        datenrate = next((v for n, v in authored_attrs
+                          if n in ("Datenrate", "Geschwindigkeit")), "")
+        ff = physical_formfaktor(authored_ff, anschluss, datenrate, pn)
+        if ff is None:
+            raise ReconcileError(
+                f"[{pn}] could not derive a physical Formfaktor from "
+                f"{authored_ff!r}/{anschluss!r}/{datenrate!r}/{pn!r}"
+            )
 
     attr_fields = map_attributes(authored_attrs, ff)
 

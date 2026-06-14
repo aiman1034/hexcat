@@ -73,9 +73,11 @@ def _main_rows(records: list[SkuRecord], rules: Rules) -> list[list[str]]:
 
 
 def _attribute_rows(records: list[SkuRecord], rules: Rules) -> list[list[str]]:
-    grp = rules.constants.attributgruppe_transceiver  # "Transceivers & SFP Modul"
+    grp_tx = rules.constants.attributgruppe_transceiver  # "Transceivers & SFP Modul"
+    grp_sw = rules.constants.attributgruppe_switch        # "Switch"
     rows = []
     for r in records:
+        grp = grp_sw if r.kategorie_ebene_2 == rules.constants.kategorie_ebene_2_switch else grp_tx
         for a in r.attributes:
             rows.append([
                 r.artikelnummer,

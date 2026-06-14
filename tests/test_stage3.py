@@ -186,7 +186,9 @@ def test_map_attributes_folds_aliases_first_wins_and_drops_unknown():
 
 
 def test_attr_alias_only_targets_canonical_names():
-    canonical = {n for n, _ in __import__("hexcat.constants", fromlist=["x"]).TRANSCEIVER_ATTRIBUTES}
+    C = __import__("hexcat.constants", fromlist=["x"])
+    # Canonical names of BOTH locked schemas (transceiver 14 + switch 15, Rule-7).
+    canonical = {n for n, _ in C.TRANSCEIVER_ATTRIBUTES} | {n for n, _ in C.SWITCH_ATTRIBUTES}
     assert set(ATTR_ALIAS.values()) <= canonical
 
 

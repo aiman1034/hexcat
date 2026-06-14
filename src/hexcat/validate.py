@@ -410,15 +410,20 @@ class Validator:
             if row[i_k1] != c.kategorie_ebene_1:
                 self._fail(fname, sku, "Kategorie Ebene 1", c.kategorie_ebene_1, row[i_k1],
                            "Kategorie Ebene 1 constant mismatch")
-            if row[i_k2] != c.kategorie_ebene_2:
-                self._fail(fname, sku, "Kategorie Ebene 2", c.kategorie_ebene_2, row[i_k2],
-                           "Kategorie Ebene 2 mismatch (must be '…Module' WITH final e)")
+            # Category-aware (Rule-7): a SKU is a switch iff its Kat-L3 is a switch token; then its
+            # Kat-L2 must be "Switches". Otherwise the transceiver L2 + L3 set applies.
             k3 = row[i_k3]
+            is_switch = k3 in set(self.rules.kategorie_ebene_3_switch_allowed)
+            exp_k2 = c.kategorie_ebene_2_switch if is_switch else c.kategorie_ebene_2
+            if row[i_k2] != exp_k2:
+                self._fail(fname, sku, "Kategorie Ebene 2", exp_k2, row[i_k2],
+                           "Kategorie Ebene 2 mismatch (Switches / Transceivers & SFP Module)")
+            allowed_k3 = set(self.rules.kategorie_ebene_3_allowed) | set(self.rules.kategorie_ebene_3_switch_allowed)
             if k3 == "Sonstige":
                 self._fail(fname, sku, "Kategorie Ebene 3", "a locked category", "Sonstige",
                            "'Sonstige' is never allowed")
-            elif k3 not in set(self.rules.kategorie_ebene_3_allowed):
-                self._fail(fname, sku, "Kategorie Ebene 3", "one of the locked 22", k3,
+            elif k3 not in allowed_k3:
+                self._fail(fname, sku, "Kategorie Ebene 3", "one of the locked transceiver/switch tokens", k3,
                            "Kategorie Ebene 3 not in the locked set")
             # 15. URL-Pfad / Hersteller / vendor consistency
             url = row[i_url]
@@ -519,8 +524,10 @@ class Validator:
         if not t:
             return
         fname = t.path.name
-        grp_expected = self.rules.constants.attributgruppe_transceiver
-        name_to_sort = {n: i for i, (n, _) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1)}
+        grp_tx = self.rules.constants.attributgruppe_transceiver
+        grp_sw = self.rules.constants.attributgruppe_switch
+        sort_tx = {n: i for i, (n, _) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1)}
+        sort_sw = {n: i for i, (n, _) in enumerate(C.SWITCH_ATTRIBUTES, start=1)}
         i_sku = self._col(t, "Artikelnummer")
         i_gtin = self._col(t, "GTIN")
         i_grp = self._col(t, "Attributgruppe")
@@ -541,11 +548,15 @@ class Validator:
             per_sku_vals.setdefault(sku, {})[name] = row[i_val]
             if _WAVELENGTH_EXEMPT_RE.search(row[i_val]):
                 per_sku_wl_exempt[sku] = True
-            if row[i_grp] != grp_expected:
-                self._fail(fname, sku, "Attributgruppe", grp_expected, row[i_grp],
-                           "Attributgruppe must be 'Transceivers & SFP Modul' (NO final e)")
+            # Category from the row's Attributgruppe: "Switch" -> switch set, else transceiver set.
+            is_switch = row[i_grp] == grp_sw
+            name_to_sort = sort_sw if is_switch else sort_tx
+            if row[i_grp] not in (grp_tx, grp_sw):
+                self._fail(fname, sku, "Attributgruppe", f"{grp_tx!r} or {grp_sw!r}", row[i_grp],
+                           "Attributgruppe must be the transceiver or switch group")
             if name not in name_to_sort:
-                self._fail(fname, sku, "Attributname", "one of the fixed 14", name,
+                self._fail(fname, sku, "Attributname",
+                           "a fixed attribute of its category (transceiver 14 / switch 15)", name,
                            "unknown attribute name (wide-vs-long or typo)")
             else:
                 want_sort = name_to_sort[name]
@@ -598,6 +609,11 @@ class Validator:
             for sku, names in per_sku_names.items():
                 k3 = sku_k3.get(sku, "")
                 vals = per_sku_vals.get(sku, {})
+                # --- SWITCH SKUs (Rule-7): switch required-attr set + S.1-S.5; the transceiver
+                # optical checks (B.1-B.3/B.6, Wellenlänge, Geschwindigkeit) do not apply. ---
+                if k3 in self.rules.kategorie_ebene_3_switch_allowed:
+                    self._check_switch_sku(fname, sku, k3, names, vals)
+                    continue
                 ff_v = vals.get("Formfaktor", "")
                 ans_v = vals.get("Anschlusstyp", "")
                 # B.1 Formfaktor <-> Anschlusstyp: an SFP-family module can't have a QSFP/MPO/CXP connector.
@@ -661,6 +677,40 @@ class Validator:
                                "a Wellenlänge attribute (optical module)", "(missing)",
                                "optical-module completeness: a non-cable transceiver form "
                                "factor must carry a Wellenlänge attribute (shallow extraction)")
+
+    def _check_switch_sku(self, fname, sku, k3, names, vals):
+        """Rule-7 switch gold-slice: required-attr completeness + S.1-S.5. (B.4/B.8 run elsewhere.)"""
+        for req in ("Switch-Typ", "Layer", "Portanzahl", "Port-Konfiguration",
+                    "Port-Geschwindigkeit", "PoE", "Bauform", "Anwendung", "Betriebstemperatur"):
+            if req not in names:
+                self._fail(fname, sku, f"Attributwert ({req})", f"a {req} attribute (every switch)",
+                           "(missing)", f"gold-slice completeness: every switch must carry {req}")
+        poe = vals.get("PoE", ""); portcfg = vals.get("Port-Konfiguration", "")
+        layer = vals.get("Layer", ""); styp = vals.get("Switch-Typ", "")
+        bauform = vals.get("Bauform", ""); stacking = vals.get("Stacking", "")
+        # S.1 PoE budget present -> at least one PoE port in Port-Konfiguration.
+        if re.search(r"\d+\s*W|Budget", poe) and not re.search(r"PoE|802\.3(?:af|at|bt)", portcfg, re.I):
+            self._fail(fname, sku, "PoE", "a PoE port in Port-Konfiguration", poe,
+                       "semantic S.1: a PoE budget requires at least one PoE port in Port-Konfiguration")
+        # S.2 Layer L3 -> Switch-Typ Managed.
+        if "L3" in layer and "Managed" not in styp:
+            self._fail(fname, sku, "Layer↔Switch-Typ", "Switch-Typ=Managed for L3", f"{layer} / {styp}",
+                       "semantic S.2: Layer-3 routing requires a Managed switch")
+        # S.3 Portanzahl == sum of the port counts parsed from Port-Konfiguration.
+        counts = [int(m) for m in re.findall(r"(\d+)\s*[×xX]", portcfg)]
+        pa = vals.get("Portanzahl", "").strip()
+        if counts and pa.isdigit() and sum(counts) != int(pa):
+            self._fail(fname, sku, "Portanzahl", f"sum of Port-Konfiguration ({sum(counts)})", pa,
+                       "semantic S.3: Portanzahl must equal the port count in Port-Konfiguration")
+        # S.4 Stacking=Ja only on Managed / Data-Center.
+        if stacking.strip().lower().startswith("ja") and k3 not in (
+                "Managed Switch (L2)", "Managed Switch (L3)", "Data-Center-Switch"):
+            self._fail(fname, sku, "Stacking", "Stacking only on Managed/Data-Center switches", k3,
+                       "semantic S.4: Stacking is valid only on managed/data-center switches")
+        # S.5 env-first single-token determinism (key case): a DIN-rail/Hutschiene switch must be Industrie.
+        if re.search(r"Hutschiene|DIN", bauform, re.I) and k3 != "Industrie-Switch":
+            self._fail(fname, sku, "Kategorie Ebene 3", "Industrie-Switch (DIN-rail, env-first)", k3,
+                       "semantic S.5: a DIN-rail/Hutschiene switch must take the Industrie-Switch token")
 
     def _check_prices(self):
         t = self.tables.get("prices")

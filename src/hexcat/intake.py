@@ -115,7 +115,9 @@ def _derive_weights(
 
 
 def _build_attributes(intake: SkuIntake, source_url: str,
-                      attr_provenance: dict | None = None) -> tuple[list[AttributeValue], list[str]]:
+                      attr_provenance: dict | None = None,
+                      attr_set: tuple[tuple[str, str], ...] | None = None,
+                      ) -> tuple[list[AttributeValue], list[str]]:
     """Transpose the fixed 14 attribute columns -> long rows; skip empty cells.
 
     After collecting the populated cells, fire the physics-grounded derivers (§2 G2b):
@@ -132,20 +134,22 @@ def _build_attributes(intake: SkuIntake, source_url: str,
     Everything still empty is reported as skipped (a real GAP) — never invented.
     """
     attr_provenance = attr_provenance or {}
+    attr_set = attr_set or C.TRANSCEIVER_ATTRIBUTES
     # A genuinely-N/A attribute is OMITTED, never emitted as a "—" placeholder (semantic cross-check
     # B.4): copper has no Wellenlänge, a DAC no Fasertyp, etc. Treat dash/N-A placeholders as empty.
     _PLACEHOLDER = {"—", "-", "–", "--", "n/a", "n.a.", "na", "k.a.", "keine", "none"}
     present = {
         attr_name: getattr(intake, field, "").strip()
-        for attr_name, field in C.TRANSCEIVER_ATTRIBUTES
+        for attr_name, field in attr_set
         if getattr(intake, field, "").strip()
         and getattr(intake, field, "").strip().lower() not in _PLACEHOLDER
     }
-    derived = attribute_depth.derive_all(present)  # {name: (value, rule_label)}
+    # Physics-grounded derivers (Fasertyp/Faseranzahl) apply ONLY to transceivers; switches have none.
+    derived = attribute_depth.derive_all(present) if attr_set is C.TRANSCEIVER_ATTRIBUTES else {}
 
     attrs: list[AttributeValue] = []
     skipped: list[str] = []
-    for idx, (attr_name, _field) in enumerate(C.TRANSCEIVER_ATTRIBUTES, start=1):
+    for idx, (attr_name, _field) in enumerate(attr_set, start=1):
         if attr_name in present:
             pv = attr_provenance.get(attr_name)
             attrs.append(AttributeValue(
@@ -200,7 +204,12 @@ def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
     # Verification source (Phase 1: human is the source unless URLs supplied).
     source_url = intake.SourceURLs.strip() or C.VERIFICATION_SOURCE_OPERATOR
 
-    attributes, skipped = _build_attributes(intake, source_url, attr_provenance)
+    # Category dispatch (Rule-7): a switch L3 token routes to the switch attribute set + L2 "Switches".
+    is_switch = intake.KategorieEbene3.strip() in rules.kategorie_ebene_3_switch_allowed
+    attr_set = C.SWITCH_ATTRIBUTES if is_switch else C.TRANSCEIVER_ATTRIBUTES
+    kat_l2 = rules.constants.kategorie_ebene_2_switch if is_switch else rules.constants.kategorie_ebene_2
+
+    attributes, skipped = _build_attributes(intake, source_url, attr_provenance, attr_set)
     faq_pairs, faq_cell = normalize_faq(intake.FAQ, sku)
 
     return SkuRecord(
@@ -215,7 +224,7 @@ def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
         titel_tag=intake.TitelTag.strip(),
         meta_description=intake.MetaDescription.strip(),
         kategorie_ebene_1=rules.constants.kategorie_ebene_1,
-        kategorie_ebene_2=rules.constants.kategorie_ebene_2,
+        kategorie_ebene_2=kat_l2,
         kategorie_ebene_3=intake.KategorieEbene3.strip(),
         netto_vk_de=netto_vk_de,
         artikelgewicht_de=art_de,
