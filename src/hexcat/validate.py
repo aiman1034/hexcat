@@ -130,6 +130,22 @@ _COPPER_GATE_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|base-t", re.I
 # where a direct-attach/active cable wears a transceiver-module k3 (found in HPE: 21 DACs + 3 AOCs
 # carried QSFP28/SFP+/… k3 instead of DAC/AOC Kabel). Modules carry no Kabeltyp, so FP-risk is low.
 _CABLE_KABELTYP_RE = re.compile(r"twinax|\bdac\b|\baoc\b|active optical|aktiv.{0,4}optisch|direct attach", re.IGNORECASE)
+# B.8 — inline-template artifacts (FAIL): the author scaffolds emitted an UNFILLED slot, an ADJACENT
+# DUPLICATE token, or a DOUBLED separator. Same philosophy as B.3/B.6/B.7 — structurally valid text
+# that is visibly broken. (Found in Fortinet inline Kurzbeschreibung slots + Arista/Fortinet names.)
+# High-precision only: bare nouns (Länge/Reichweite/Wellenlänge) and separable verbs (…teilt auf.)
+# legitimately end clauses, so those are NOT flagged. "von" always needs an object → "von ." is
+# always a dropped value; a double-space gap after a value-preposition is a dropped variable; an
+# article followed by a hyphen-word ("ein -MPO") is a dropped leading token.
+_EMPTY_SLOT_RE = re.compile(
+    r"\bvon\s*[.;,)]"                                       # dropped value: "Länge von ."
+    r"|\b(?:von|auf|mit|über|zu|nach)\s{2,}\S"              # double-space gap: "auf  und"
+    r"|\b(?:ein|eine|einen|das|der|die)\s+-[A-Za-zÄÖÜ]"     # leading empty token: "ein -MPO"
+    r"|:\s*[.;,]"                                           # empty after colon: ": ."
+    r"|\(\s*\)",                                            # empty parens
+    re.IGNORECASE)
+_DUP_TOKEN_RE = re.compile(r"\b([A-Za-zÄÖÜäöü0-9][\w+/.\-]*)\s+\1\b")     # adjacent dup: "DAC DAC" / "SFP SFP"
+_DBL_SEP_RE = re.compile(r",\s*[–—-]\s|[–—]\s*,")                        # doubled separator: ", –" / "– ,"
 _PLACEHOLDER_VALS = frozenset({"—", "-", "–", "--", "N/A", "n/a", "k.A.", "keine", "none"})
 # B.5 known product-line guard: a PN family that belongs to a specific Hersteller, used ONLY to
 # CATCH a misassignment (never as the assignment rule). MGB*/MFE* mini-GBICs are Cisco Small Business.
@@ -292,6 +308,7 @@ class Validator:
         b = self.rules.budgets
         c = self.rules.constants
         i_sku = self._col(t, "Artikelnummer")
+        i_name = self._col(t, "Artikelname")
         i_kurz = self._col(t, "Kurzbeschreibung")
         i_besch = self._col(t, "Beschreibung")
         i_titel = self._col(t, "Titel-Tag (SEO)")
@@ -316,6 +333,22 @@ class Validator:
             self._check_paragraphs(fname, sku, "Kurzbeschreibung", kurz,
                                    b.kurzbeschreibung.p_count,
                                    b.kurzbeschreibung.min_words, b.kurzbeschreibung.max_words)
+            # B.8 inline-template artifacts: unfilled slots (kurz/name), adjacent dup token & doubled
+            # separator (name). Hard-fail — visibly-broken templated text the byte gate would pass.
+            name = row[i_name]
+            for fld, txt in (("Kurzbeschreibung", kurz), ("Artikelname", name)):
+                m = _EMPTY_SLOT_RE.search(txt)
+                if m:
+                    self._fail(fname, sku, fld, "a filled value", f"empty/unfilled slot near {m.group(0)!r}",
+                               "semantic: unfilled inline-template slot (dangling preposition/colon/empty token)")
+            m = _DUP_TOKEN_RE.search(name)
+            if m:
+                self._fail(fname, sku, "Artikelname", "no repeated token", f"adjacent duplicate {m.group(0)!r}",
+                           "semantic: adjacent duplicate token in Artikelname (template emitted it twice)")
+            m = _DBL_SEP_RE.search(name)
+            if m:
+                self._fail(fname, sku, "Artikelname", "a single separator", f"doubled separator {m.group(0)!r}",
+                           "semantic: doubled separator in Artikelname (comma + dash both emitted)")
             # 8. Beschreibung + closer
             besch = row[i_besch]
             # Category-aware floor: cables flex DOWN (item 6), modules keep the full floor.
