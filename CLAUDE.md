@@ -1,5 +1,13 @@
 # HexCat — session instructions for Claude Code
 
+## Read MISSION.md first (NON-NEGOTIABLE)
+**`MISSION.md` (repo root) is the supreme charter — the mission, methods & verification regime.**
+1. **READ `MISSION.md` first**, before `PROJECT_AUDIT.md` and before any action.
+2. **At the START OF EVERY RESPONSE** (not just every session): re-read MISSION.md **§0** (plus
+   §1/§10/§11), run the §0 checklist, and confirm the next action maps to the mission BEFORE acting.
+   This is the anchor against scope-narrowing/drift. The mission is the WHOLE catalog (ALL categories
+   × ALL brands × ALL SKUs) imported LIVE on hexwaren.de via JTL — not whatever's already built.
+
 ## PROJECT_AUDIT.md — read-before-update (NON-NEGOTIABLE, every session)
 `PROJECT_AUDIT.md` (repo root) is the deep project audit + rolling context — the single source of
 truth so context is never lost across sessions. **Standing rule (until the operator explicitly

@@ -6,6 +6,57 @@
 > 3. **Always tell the operator** when you have **read** this file and when you have **edited** it.
 >
 > Last updated: 2026-06-14 · Maintained by Claude (Opus) under the Max subscription, $0.
+>
+> **READ [MISSION.md](MISSION.md) FIRST** (supreme charter). Run its §0 checklist at the start of
+> every response. Mission = the WHOLE catalog (ALL categories × ALL brands × ALL SKUs) imported LIVE
+> on hexwaren.de via JTL — never narrow it to what's already built.
+
+---
+
+## 0. MASTER CATALOG MANIFEST — the scoreboard (MISSION.md §3 Step 0)
+
+Status legend: `not-started` → `facts` (grounded facts JSON) → `authored` (content) → `emitted`
+(ZIP, passed the *legacy* gate L1–L4 + B.1–B.8 + semantic; **NOT yet** the consolidated 8-layer gate
+of MISSION.md §8 — L5/L6 partial, **L7 anti-blind-spot fixtures + the consolidated gate.py do NOT yet
+exist**) → `audited` (operator L8 independent re-audit passed) → `imported` (live in JTL — operator-side).
+**Nothing here is "done" until `imported`.** Counts are grounded SKU counts, gaps flagged in each
+`config/coverage/*_completeness.yaml` (most `complete:false`).
+
+### Transceivers / Optics
+| Brand | Count | Status | Note |
+|---|---|---|---|
+| Cisco | 596 | **audited** (op. audit 2026-06-13) + emitted `…_63bbcc2.zip` | core; priced 111 |
+| Arista | 347 | **audited** (parallel audit) + emitted `…_f8fd859.zip` | core |
+| HPE/Aruba | 147 | **audited** + emitted `…_38ab528.zip` | core |
+| Fortinet | 87 | **audited** + emitted `…_38ab528.zip` | |
+| NVIDIA | 85 | emitted `…_38ab528.zip` (≤400G Eth) | 800G-Eth = flagged harvest gap |
+| Meraki | 25 | **audited** + emitted `…_63bbcc2.zip` | |
+| MikroTik | 24 | emitted `…_f538381.zip` | |
+| **Juniper** | — | **not-started** — ❗CORE BRAND PARKED (failure #5) | source confirmed (juniper.net optic-modules PDF); **NEXT** |
+| Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
+| Dell/Lenovo/Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
+
+### Switches (Rule-7 schema)
+| Brand | Count | Status | Note |
+|---|---|---|---|
+| MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
+| HPE/Aruba/Cisco/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
+
+### Server Memory (DDR4/DDR5)
+| — | — | ⚠ **DISCREPANCY** | MISSION.md §3/§10 asserts a "25-SKU HPE/Cisco-UCS memory batch", but **the repo has ZERO memory evidence** (no content JSON, no completeness YAML, no DDR/DIMM reference). **NOT assuming it exists** (flag-don't-fabricate). **Needs operator clarification:** built elsewhere? planned? misremembered? If real → locate/import it + formalize `MEMORY_SCHEMA.md`. |
+
+### Other categories (MISSION.md §3 / §6 "TO BUILD")
+Routers · Firewalls/Security · Wireless (APs/controllers/antennas) · NICs/Adapters · PSUs ·
+Modules/Line cards · Servers/Compute · Cables & accessories · Mounting/rack kits → **all not-started**;
+each needs `{CATEGORY}_SCHEMA.md` + semantic checks + anti-blind-spot fixtures → operator sign-off → batches.
+
+### ❗ SCOPE STILL UNKNOWN (blocks a TRUE manifest)
+The **actual stocked PN universe** (which categories × brands × PNs Hexwaren stocks/plans) is **not
+yet inventoried** — I have no JTL-Wawi or live-hexwaren.de access. The grid above is the *built* state,
+NOT the *target* universe. **Operator input needed for Step 0 to be real:** a JTL-Wawi export (or
+hexwaren.de category dump, or the sourcing scope) of stocked categories × brands × PNs. Until then,
+"complete" cannot be measured against the true denominator — the work order proceeds core-brand-first
+(Juniper → Extreme → expansion) on confirmed scope.
 
 ---
 
