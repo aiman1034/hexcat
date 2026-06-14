@@ -119,6 +119,11 @@ def fixtures():
         ("F16 optical-DOM=Nein",  tx, lambda d: set_attr_value(d, "DOM Unterstützung", "Nein", n=300), "L3"),
         ("F17 Formfaktor-unlocked", tx, lambda d: set_attr_value(d, "Formfaktor", "BOGUSFF", n=20), "L3"),
         ("F18 price-cluster",     tx, lambda d: set_price_cluster(d, "1234,56", n=8), "L5"),
+        # F19 (L8 ER4LT miss): a WDM multi-lane standard (LR4/ER4/ERLT/CWDM4/LAN-WDM) must carry the 4-λ
+        # SET — force every Wellenlänge to a single C-band 1550 nm; the ERLT/LR4/ER4 modules MUST fail B.3.
+        # (Positive direction = the known-good bundles, whose real WDM modules carry the set and PASS.)
+        ("F19 R4-single-wl",      ROOT / "output/stage3_Extreme",
+         lambda d: set_attr_value(d, "Wellenlänge", "1550 nm", n=300), "L3"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

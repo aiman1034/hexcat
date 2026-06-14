@@ -124,22 +124,28 @@ def fasertyp(f):
     return "Singlemode"
 
 
+# WDM multi-lane family, keyed off the STANDARD (lane-aware §7.4): LR4/ER4/ER4-Lite(ERLT)/FR4/CWDM4/
+# SWDM4 multiplex λ over a duplex pair -> the 4-λ SET. PARALLEL single-λ siblings (SR4/ESR4/PSM4/DR4)
+# do NOT match (no LR4/ER4/... token) and keep their one λ. (ERLT added after the L8 ER4LT 1550 nm miss.)
+_WDM_FAMILY = re.compile(r"\bLR4|\bER4|\bERLT|\bFR4|\bCWDM4|\bSWDM4|LAN-?WDM", re.I)
+
+
 def wavelength_of(pn, f):
-    typ, sp = (f.get("type") or "").upper(), f.get("speed")
-    # WDM multi-λ types: emit the IEEE-pinned 4-λ SET (B.3) — overrides the facts' range/centre value
-    # (the parser put a wrong single 1550 nm on ER4; LR4/ER4 share the LR4 grid, ER4 just runs hotter).
-    if "ER4" in typ or "LR4" in typ:
-        return SET_LANWDM_100G if sp == "100G" else SET_CWDM4
-    if "CWDM4" in typ:
-        return SET_CWDM4
-    if "SWDM4" in typ:
-        return SET_SWDM4
+    sp = f.get("speed")
+    blob = ((f.get("standard") or "") + " " + (f.get("type") or "")).upper()
+    if _WDM_FAMILY.search(blob):                      # WDM multi-λ family -> the IEEE-pinned 4-λ SET
+        if "SWDM4" in blob:
+            return SET_SWDM4
+        if "CWDM4" in blob:
+            return SET_CWDM4
+        return SET_LANWDM_100G if sp == "100G" else SET_CWDM4   # LR4/ER4/ERLT/FR4: LAN-WDM @100G, CWDM4 grid @40G
     if f.get("connector") == "RJ45" or f.get("media") == "Kupfer":
         return ""                                    # copper has no optical wavelength
+    typ = (f.get("type") or "").upper()
     if typ.startswith("BX") or "BIDI" in typ:        # single-strand BiDi by the BX convention (datasheet-verified)
         return "1270 / 1330 nm (BiDi)" if sp == "10G" else "1490 / 1310 nm (BiDi)"
     wl = f.get("wavelength")
-    return ws(wl) if wl else ""                       # serial single-λ (SR/LR/ER/ZR/DR/FR/SX/LX/FX/ELX)
+    return ws(wl) if wl else ""                       # serial single-λ (SR/LR/ER/ZR/DR/FR/SX/LX/FX/ELX/LRM)
 
 
 def dom_of(f):
@@ -150,9 +156,15 @@ def reach_of(f):
     return f.get("reach") or ""
 
 
-def kompat_line(f):
-    alt = [a for a in (f.get("alt_pns") or []) if a]
-    return ("Kompatible/alternative Bestellnummern: %s" % ", ".join(alt)) if alt else ""
+def alt_codes(pn, f):
+    """Genuine alternate ORDER codes for THIS physical optic, woven into the Beschreibung (an emitted,
+    searchable field) so a customer searching an old Avaya AA-/Enterasys numeric code still finds it.
+    MODULES are 1:1 -> their alt_pns are clean cross-refs. CABLES are length-FAMILIES whose numeric/AA
+    codes interleave across the lengths and cannot be attributed to one length -> DESCOPED (flag-don't-
+    fabricate; presenting a sibling-length's code as 'alternative' would be wrong)."""
+    if is_cable(f):
+        return []
+    return [a for a in (f.get("alt_pns") or []) if a]
 
 
 PAD_INTRO_CABLE = [
@@ -215,7 +227,7 @@ for pn, f in FACTS.items():
     sp = f["speed"]
     spde, rate = SPEED_DE.get(sp, sp), datarate(sp)
     length = ("%s m" % f["length"]).replace(".0 m", " m").replace("0.5", "0,5") if f.get("length") else ""
-    kline = kompat_line(f)
+    acodes = alt_codes(pn, f)
     prov = []
 
     if uk in CABLE_FF:
@@ -268,8 +280,7 @@ for pn, f in FACTS.items():
                   ["Zustand", "Neu, versiegelt"]]
         prov.append("Länge")
         kompat = ["ExtremeSwitching-/ExtremeRouting-Ports mit passender Portklasse", KOMPAT_NOTE]
-        if kline:
-            kompat.insert(0, kline)
+        # cables: alt order codes DESCOPED (length-family interleaving — see alt_codes()); none woven.
         faq = [ORIG_FAQ, ["Wie lang ist das %s?" % pn, "Das Kabel hat eine feste Länge von %s." % length]]
         faq.append(["Benötigt das Kabel ein Netzteil?", "Nein. %s%s." % (power_lc[0].upper(), power_lc[1:])]
                    if (aoc or "Aktives Twinax" in ktyp) else
@@ -342,8 +353,13 @@ for pn, f in FACTS.items():
         attrs.append(["Zustand", "Neu, versiegelt"])
         prov.append("Datenrate")
         kompat = ["ExtremeSwitching-/ExtremeRouting-Systeme mit %s-Steckplätzen" % uk, KOMPAT_NOTE]
-        if kline:
-            kompat.insert(0, kline)
+        # MODULE alt order codes -> woven into the Beschreibung (emitted, searchable) + a FAQ pair, so a
+        # customer searching an Avaya AA-/Enterasys legacy code finds the product (the kompatibilitaet
+        # field is NOT emitted — never put load-bearing data there).
+        if acodes:
+            _ref = ("der Bestellnummer %s" % acodes[0]) if len(acodes) == 1 \
+                else ("den Bestellnummern %s" % ", ".join(acodes))
+            i3 = i3.rstrip(".") + "; das Modul wird zudem unter %s geführt." % _ref
         faq = [ORIG_FAQ]
         faq.append(["Welche Reichweite erreicht der %s?" % pn,
                     "Er überbrückt Strecken von bis zu %s." % reach] if reach else

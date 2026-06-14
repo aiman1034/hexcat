@@ -114,10 +114,13 @@ _DOM_NAME = "DOM Unterstützung"   # required on every non-cable transceiver (L8
 # These catch the class of error the byte/format gate and even adversarial-verify let through.
 _SFP_FAMILY_FF = frozenset({"SFP", "SFP+", "SFP28", "SFP56"})
 _QSFP_CONN_RE = re.compile(r"QSFP|MPO|MTP|CXP|CPAK", re.IGNORECASE)         # a QSFP/MPO connector...
-# \b guards stop a PARALLEL single-mode type (PLR4/PLR8 — one 1310 nm wavelength over parallel
-# fibres) from matching its WDM cousin (LR4/LR8 — a true multi-wavelength SET): "PLR8" has no word
-# boundary before "LR8", so \bLR8 won't match it, while "400GBASE-LR8" (boundary after "-") does.
-_MULTI_WL_RE = re.compile(r"\bLR4|\bER4|\bFR4|\bLR8|\bCWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
+# B.3 keys off the STANDARD (lane-aware): a WDM multi-lane family (LR4/ER4/ER4-Lite=ERLT/FR4/CWDM4/
+# SWDM4/LAN-WDM/coherent — λ multiplexed over a DUPLEX pair) MUST carry the 4-λ SET, never one centre
+# value. The \b guards keep PARALLEL single-λ siblings OUT: PLR4/PLR8 (one 1310 nm over parallel fibres),
+# and SR4/ESR4/PSM4/DR4 (parallel, one λ across N fibres) never match — those legitimately carry one λ.
+# (ERLT added after the operator's L8 caught 100GBASE-ERLT shipped at a single 1550 nm; SWDM4 added so a
+# 4-λ short-WDM part can't ship as a single 850 nm either. \bER4 already covers ER4LT.)
+_MULTI_WL_RE = re.compile(r"\bLR4|\bER4|\bERLT|\bFR4|\bLR8|\bCWDM4|\bSWDM4|LAN-?WDM|kohär|coheren", re.IGNORECASE)
 _SINGLE_WL_RE = re.compile(r"^\s*[~≈]?\s*\d{3,4}(?:[.,]\d+)?\s*nm")          # exactly one wavelength
 _FIBRE_CONN_GATE_RE = re.compile(r"MPO|MTP|\bLC\b|\bCS\b", re.IGNORECASE)    # optical fibre connector
 # B.6 — a TUNABLE / "durchstimmbar" wavelength is only valid on a genuinely coherent/tunable part.
