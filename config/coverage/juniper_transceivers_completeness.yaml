@@ -1,0 +1,39 @@
+brand: Juniper
+category: transceivers
+# Source ladder (MISSION.md §7.1) run 2026-06-14 — corrects the stale "JS-gated/blocked" label:
+#  a) httpx static: juniper.net doc transceiver pages = prose (no PN table); qualified-optics/*.html
+#     = JS-rendered (0 static PNs).
+#  b) PDF: datasheets/cache/juniper-optic-modules.pdf — the LEGACY "Optic Modules Matrix"
+#     (CTP/E/M/T/MX-era SFP/SFP+/XFP/XENPAK). extract_tables()=0 rows (text-positioned) -> parsed
+#     the TEXT via _scratch/juniper_facts.py -> output/stage3/juniper_transceivers_facts.json.
+#  c) browser (Chromium, scoped-approved): the qualified-optics JS pages TIME OUT headless even on
+#     domcontentloaded (goto never completes — consent/redirect/heavy sync load). -> blocked via
+#     these pages.
+complete: false
+# --- what IS grounded (this PDF) ---
+captured_count: 38          # Ethernet SFP/SFP+/XFP/XENPAK optics, grounded + in facts JSON
+breakdown:
+  by_form_factor: {SFP: 22, SFP+: 4, XFP: 8, XENPAK: 4}
+  by_speed: {1G: 18, 100M: 4, 10G: 16}
+  eol_candidates: 23        # XENPAK/XFP/E-Series-era — KEPT + flagged informational (§7.2), never dropped
+excluded_count: 10          # SONET-only optics (OC-3/OC-12/OC-48) in the PDF — NO Ethernet BASE- standard
+excluded_note: >
+  SFP-1OC48-{IR,LR,SR}, SFP-OC12-{IR,LR,SR}, SFP-OC3-{IR,LR,SR} + 1 wrapped row are SONET/SDH optics,
+  not Ethernet transceivers. Excluded flag-don't-fabricate (no Ethernet standard to ground). DECISION
+  NEEDED: is SONET in Hexwaren's scope? If yes -> a separate SONET sub-type/schema, not Ethernet.
+# --- the GAP (the catalog bulk) ---
+harvest_gap:
+  what: Modern Juniper optics — QSFP+ / QSFP28 / QSFP-DD / 100G / 400G / JCO coherent + current
+        QFX/EX/ACX/PTX/MX SFP28/SFP56. The optic-modules.pdf is a LEGACY matrix and omits all of these.
+  why_blocked: qualified-optics/*.html (100g/40g/400g/10g-1g) are JS-rendered and time out headless;
+               static HTML has 0 PNs.
+  alternate_sources_to_try_next:
+    - apps.juniper.net/hct backend JSON API (the HCT widget's data endpoint — often a plain XHR)
+    - per-platform doc transceiver-spec pages that DO render tables (QFX10000 one was prose; others may not be)
+    - a CURRENT Juniper optics datasheet PDF (newer than optic-modules.pdf) or per-optic datasheet pages
+    - scoped browser with a longer/interaction-based wait or the page's print/XHR endpoint
+verdict: >
+  Juniper UNBLOCKED for the legacy Ethernet optic set (38 grounded SKUs in
+  output/stage3/juniper_transceivers_facts.json). Author AFTER the modern QSFP/100G/400G set is
+  harvested via an alternate source (above) so Juniper emits as ONE complete batch, not a partial.
+  complete:false until the modern set lands.
