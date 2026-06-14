@@ -121,9 +121,9 @@ for pn, f in FACTS.items():
     wl = None if ("wavelengths_nm" in omit or any("[VERIFY]" in str(x) for x in (wl or []))) else wl
     if wl:  # L8 fix: bare numeric λ must carry the nm unit
         wl = [(x + " nm") if re.fullmatch(r"\d{3,4}(?:\.\d+)?", str(x).strip()) else x for x in wl]
-    # DOM Unterstützung (L8: required attr). Optical pluggables support DDM/DOM=Ja; copper + legacy
-    # XENPAK (pre-DDM) = Nein. Grounded by media/form-factor.
-    dom = "Nein" if (media_s == "Kupfer" or "XENPAK" in pn.upper()) else "Ja"
+    # DOM Unterstützung (L8): grounded by MEDIA, not form-factor (the XENPAK misfire). Optical pluggables
+    # support DDM (incl XENPAK/XFP optical) = Ja; only copper-T modules (no optical to monitor) = Nein.
+    dom = "Nein" if media_s == "Kupfer" else "Ja"
     fz = faser(conn, f.get("lanes"), media_s)
     coh = f.get("coherent"); bidi = f.get("bidi")
     rtxt = ("bis %s" % reach) if reach else ""

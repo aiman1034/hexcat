@@ -683,9 +683,11 @@ class Validator:
                                "a Betriebstemperatur attribute (optical/active module)", "(missing)",
                                "gold-slice completeness: every optical/active module must carry a "
                                "datasheet-grounded Betriebstemperatur attribute")
-                # DOM Unterstützung: required on every NON-CABLE transceiver (L8 finding — it is an
-                # applicable attr, not cable-only). Optical modules carry Ja/unterstützt; copper
-                # modules carry it as Nein. DAC/AOC/MPO cables are exempt. Value grounded at author.
+                # DOM Unterstützung: required PRESENT on every NON-CABLE transceiver (L8). The value is
+                # grounded per-family (optical=Ja, copper-T=Nein) or a documented flagged-undetermined
+                # string where genuinely unfindable — NEVER a form-factor guess, never a [VERIFY]/[FLAG]
+                # literal (L4 blocks those). The gate checks PRESENCE only; it does not force Ja/Nein.
+                # DAC/AOC/MPO cables are exempt.
                 if k3 not in C.CABLE_CATEGORIES and _DOM_NAME not in names:
                     self._fail(fname, sku, "Attributwert (DOM Unterstützung)",
                                "a DOM Unterstützung attribute (non-cable transceiver)", "(missing)",
