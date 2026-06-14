@@ -93,6 +93,7 @@ Audit tool: **`_scratch/audit_semantic.py [Brand ...]`** — per-brand (defaults
 | **HPE/Aruba** | 147 | **PASS 147/147, 0 violations** (2026-06-13, commit `a34a86b`) | **0×8** (all incl B.7 cable_k3) | deferred (no grounded list; netto_vk 0,00) | ✅ DONE. Completeness: 147 of 147 standalone catalog transceivers (AOS-S/AOS-CX guide); independent full-guide token diff confirms the ~370 other PN-tokens are switches/EOL-revisions/aliases (R9F75A=JL309A)/cross-refs, no gap. Betriebstemperatur: 72 verbatim from the guide's per-module Rating + 61 Rule-9 commercial. **Fixed 21 DAC + 3 AOC mis-classified under module k3 → DAC/AOC Kabel (drove new B.7).** 5 speeds grounded. Rule-8 parity 0-missing. ZIP `output/Hexwaren_HPE_stage3_38ab528.zip`. |
 | **Fortinet** | 87 | **PASS 87/87, 0 violations** (2026-06-14, commit `fb11cb4`) | **0×8** | deferred (datasheet has no prices; 0,00) | ✅ DONE. Completeness 87/87 (Fortinet Transceivers Data Sheet); token diff confirms no gap (11 extra tokens = shorthand/4-pack/"+"-truncations of captured SKUs). Fixed 5 reconcile-blocking connectors (3 QSFP-DD cables + 2 MPO breakouts). Betriebstemperatur 85 datasheet-verbatim (Fortinet publishes). FG-TRAN-CFP2-LR4 wavelength set; QSFP28 SR→SR4. Rule-8 parity 0-missing. ZIP `output/Hexwaren_Fortinet_stage3_38ab528.zip`. |
 | **MikroTik** | 24 | **PASS 24/24, 0 violations** (2026-06-13, commit `f538381`) | **0 / 0 / 0 / 0 / 0 / 0** | 24/24 MSRP captured (grounded); EUR net DEFERRED to supplier feed | ✅ DONE. Completeness: captured 24 of 25 (official sfp-qsfp grid); XQ+CM0000-XS+ excluded (QSFP28→SFP28 port adapter). Betriebstemperatur: 8 published verbatim + 16 Rule-9 sibling-corroborated industrial (NOT commercial — MikroTik publishes -40 lows). DDQ+85MP01D=400G QSFP-DD SR8 (Faseranzahl 16, MPO-16). Rule-8 parity 0-missing. ZIP `output/Hexwaren_MikroTik_stage3_f538381.zip`. 14 non-blocking warnings (length-variant DAC prose reuse). |
+| **MikroTik Switches** | 36 | **PASS 36/36, 0 violations** (2026-06-14, commit `e3b43aa`) | **0×8** + S.1-S.5 | 36/36 MSRP captured; EUR deferred | ✅ DONE — **1st SWITCH brand** (Rule-7 schema). env-first L3: Managed(L3) 20/Smart 7/Industrie 3/DC 6. Temp datasheet-verbatim. Category-tagged files (ZIP `…MikroTik_Switches…_e3b43aa.zip`). Completeness 36 of 40 (4 non-switches excluded). |
 | **NVIDIA** | 85 | **PASS 85/85, 0 violations** (2026-06-14, commit `148ed65`) | **0×8** | deferred (no list; 0,00) | ✅ DONE (1st FRESH brand). LinkX Ethernet ≤400G: DAC 26/DAC-SPLIT 6/AOC 28/AOC-SPLIT 13/XCVR 12. Authored via nvidia_facts.py → nvidia_author.py (adapted arista_author.py) → backfill. Lane-aware XCVR optics (1-lane serial=single λ; 4-lane WDM=LAN-WDM/CWDM4 set; MPO SR8/DR4). Rule-9 commercial 0-70. Rule-8 parity 0-missing. **Completeness `false`: 800G-Ethernet (Spectrum-X) is a flagged HARVEST GAP** (deprecated 800G list was XDR/IB). ZIP `output/Hexwaren_NVIDIA_stage3_38ab528.zip`. |
 
 **Fresh brands not started:** Avaya/Extreme, Dell, Huawei, Juniper, Lenovo/IBM, Palo Alto, Ruijie, Supermicro, Ubiquiti, ZTE. (NVIDIA ≤400G DONE — 800G-Eth follow-up pending; Brocade parked; Polycom = no transceivers.)
@@ -225,9 +226,15 @@ backward-compatible — 413 tests green:**
 304/305/309/310/312/317/318/320/326/328/354/418/504/510/518/520/804/812, CSS318/326/610, RB260GS/GSP,
 netPower-16P / netPower-Lite-7R. Completeness pass must EXCLUDE non-switches: fiberbox+, gperx6,
 netfiber-9 (media converters), netpower-lite-ups (UPS).
-**RESUME POINT — author MikroTik switches (1st switch brand):** fetch the ~35 switch pages ($0) →
-`mikrotik_switch_facts.py` (port-config / PoE / switching-capacity / throughput / Bauform / temp) → a
-switch author scaffold (mirror `nvidia_author.py`: per-SKU-unique sentences, fill EVERY slot for B.8,
-env-first L3 token for S.5, "Originaler MikroTik-Switch" closer) → backfill (Anwendung + Rule-9 temp) →
-gate PASS → audit (S.1-S.5 + B.4/B.8 = 0) → price (MSRP capture, EUR deferred) → commit per family → ZIP.
-Then other brands' switches per the §10 manifest (same $0-source gating).
+**✅ MikroTik Switches DONE (commit `e3b43aa`) — 1st switch brand on the new schema.** Harvested the
+switches grid (40) via `_scratch/harvest_mikrotik_switches.py`, excluded 4 non-switches
+(fiberbox+/gperx6/netfiber-9 media converters, netpower-lite-ups UPS), authored 36 via
+`_scratch/mikrotik_switch_author.py`. **Gate PASS 36/36 (incl S.1-S.5), audit_semantic 0×8 all-fields,
+Rule-8 parity 0-missing, 413 tests.** env-first L3: Managed(L3) 20 / Smart-Managed 7 / Industrie 3 /
+Data-Center 6. Betriebstemperatur datasheet-verbatim; Switching-Kapazität+Durchsatz omitted (not
+published per-page — flag-don't-fabricate). **Naming convention set:** batch=category=`MikroTik_Switches`
+→ every file category-tagged (`Hexwaren_Condition_MikroTik_Switches.csv` etc.), ZIP
+`output/Hexwaren_MikroTik_Switches_stage3_e3b43aa.zip` — no collision with the transceiver bundle.
+**Standing convention for all switch brands.** `audit_semantic.py <Brand>_Switches` strips the suffix
+for vendor resolution. MSRP captured (`config/market_prices/mikrotik_switch_msrp.yaml`); EUR deferred.
+**Next switch brands** await their datasheets in `datasheets/cache/` (same §10 manifest gating).
