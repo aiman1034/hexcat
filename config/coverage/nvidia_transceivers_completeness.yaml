@@ -4,10 +4,10 @@ category: transceivers
 # 25G-NRZ; 400G/200G/100G/25G). NVIDIA interleaves InfiniBand + Ethernet rows; the Ethernet subset
 # is extracted by _scratch/nvidia_harvest.py (section-gated Ethernet/IB filter, edge-case asserts
 # pass) and per-SKU specs by _scratch/nvidia_facts.py -> output/stage3/nvidia_facts.json.
-# STATUS: harvest + completeness done; CONTENT AUTHORING PENDING (see PROJECT_AUDIT §9 resume point).
-complete: false                          # ≤400G Ethernet captured; 800G-Ethernet a flagged gap (below)
+# STATUS: harvest + completeness + AUTHORING done (gate PASS 85/85, audit_semantic 0×8, Rule-8 0-missing).
+complete: false                          # ≤400G Ethernet authored; 800G-Ethernet a flagged gap (below)
 universe_total: 85                       # Ethernet transceivers/DACs/AOCs/splitters at ≤400G
-captured_count: 85                       # facts extracted + grounded; not yet authored to the gold-slice
+captured_count: 85                       # authored to the gold-slice + gated GREEN
 gap_count: 0                             # within the ≤400G LinkX list
 flagged_count: 0
 populated_sources: 1
