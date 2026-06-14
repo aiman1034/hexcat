@@ -140,7 +140,8 @@ _CABLE_KABELTYP_RE = re.compile(r"twinax|\bdac\b|\baoc\b|active optical|aktiv.{0
 _EMPTY_SLOT_RE = re.compile(
     r"\bvon\s*[.;,)]"                                       # dropped value: "Länge von ."
     r"|\b(?:von|auf|mit|über|zu|nach)\s{2,}\S"              # double-space gap: "auf  und"
-    r"|\b(?:ein|eine|einen|das|der|die)\s+-[A-Za-zÄÖÜ]"     # leading empty token: "ein -MPO"
+    r"|\b(?:ein|eine|einen)\s+-[A-Za-zÄÖÜ]"                 # leading empty token: "ein -MPO" (INDEFINITE
+    #   article only — a definite "die -L-Variante" / "das -I" legitimately discusses a PN suffix)
     r"|:\s*[.;,]"                                           # empty after colon: ": ."
     r"|\(\s*\)",                                            # empty parens
     re.IGNORECASE)
@@ -333,22 +334,25 @@ class Validator:
             self._check_paragraphs(fname, sku, "Kurzbeschreibung", kurz,
                                    b.kurzbeschreibung.p_count,
                                    b.kurzbeschreibung.min_words, b.kurzbeschreibung.max_words)
-            # B.8 inline-template artifacts: unfilled slots (kurz/name), adjacent dup token & doubled
-            # separator (name). Hard-fail — visibly-broken templated text the byte gate would pass.
-            name = row[i_name]
-            for fld, txt in (("Kurzbeschreibung", kurz), ("Artikelname", name)):
+            # B.8 inline-template artifacts — scan EVERY content field (empty slot anywhere; adjacent
+            # dup token & doubled separator in the structured Artikelname/Titel). Hard-fail —
+            # visibly-broken templated text the byte gate would pass. (FAQ scanned in _check_faq.)
+            name, titel_v, meta_v = row[i_name], row[i_titel], row[i_meta]
+            for fld, txt in (("Kurzbeschreibung", kurz), ("Artikelname", name), ("Beschreibung", row[i_besch]),
+                             ("Titel-Tag (SEO)", titel_v), ("Meta-Description (SEO)", meta_v)):
                 m = _EMPTY_SLOT_RE.search(txt)
                 if m:
                     self._fail(fname, sku, fld, "a filled value", f"empty/unfilled slot near {m.group(0)!r}",
                                "semantic: unfilled inline-template slot (dangling preposition/colon/empty token)")
-            m = _DUP_TOKEN_RE.search(name)
-            if m:
-                self._fail(fname, sku, "Artikelname", "no repeated token", f"adjacent duplicate {m.group(0)!r}",
-                           "semantic: adjacent duplicate token in Artikelname (template emitted it twice)")
-            m = _DBL_SEP_RE.search(name)
-            if m:
-                self._fail(fname, sku, "Artikelname", "a single separator", f"doubled separator {m.group(0)!r}",
-                           "semantic: doubled separator in Artikelname (comma + dash both emitted)")
+            for fld, txt in (("Artikelname", name), ("Titel-Tag (SEO)", titel_v)):
+                m = _DUP_TOKEN_RE.search(txt)
+                if m:
+                    self._fail(fname, sku, fld, "no repeated token", f"adjacent duplicate {m.group(0)!r}",
+                               "semantic: adjacent duplicate token (template emitted it twice)")
+                m = _DBL_SEP_RE.search(txt)
+                if m:
+                    self._fail(fname, sku, fld, "a single separator", f"doubled separator {m.group(0)!r}",
+                               "semantic: doubled separator (comma + dash both emitted)")
             # 8. Beschreibung + closer
             besch = row[i_besch]
             # Category-aware floor: cables flex DOWN (item 6), modules keep the full floor.
@@ -714,6 +718,11 @@ class Validator:
         for idx, row in enumerate(t.rows):
             sku = row[i_sku]
             cell = row[i_faq]
+            # B.8 inline-template artifacts in FAQ (empty slot — e.g. "Länge von ." with no value).
+            m = _EMPTY_SLOT_RE.search(cell)
+            if m:
+                self._fail(fname, sku, "FAQ", "a filled value", f"empty/unfilled slot near {m.group(0)!r}",
+                           "semantic: unfilled inline-template slot in FAQ (dangling preposition/colon)")
             # raw line: FAQ cell must be double-quoted (always)
             raw = t.raw_lines[idx] if idx < len(t.raw_lines) else ""
             after_first_comma = raw.split(",", 1)[1] if "," in raw else ""
