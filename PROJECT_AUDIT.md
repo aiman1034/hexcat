@@ -15,6 +15,15 @@
 
 ## 0. MASTER CATALOG MANIFEST — the scoreboard (MISSION.md §3 Step 0)
 
+> **DOM follow-up DONE (2026-06-14, L8 round 2):** L3 now REQUIRES `DOM Unterstützung` on non-cable
+> transceivers (+L7 fixture F15). XENPAK DOM misfire fixed (form-factor shortcut → **media-grounded**:
+> optical=Ja incl XENPAK/XFP, copper-T=Nein; legacy-uncertain=flagged-undetermined). Backfilled all 6
+> emitted brands (Arista +104/HPE +78/Cisco +39/Fortinet +32/MikroTik +16/NVIDIA +12; MikroTik
+> reconciled — the "7 with DOM" were DAC cables, the 16 optical were the real gap). **All 8 brands now
+> DOM-complete + gate L1–L6 GREEN; self-test re-CERTIFIED (9/9, 15/15 fixtures); fresh ZIPs `…_918c89c`
+> (6 brands) + Juniper `…_2925d42`.** Commits `2925d42`+`918c89c`. Awaiting operator L8 re-audit.
+
+
 Status legend: `not-started` → `facts` (grounded facts JSON) → `authored` (content) → `emitted`
 (ZIP, passed the *legacy* gate L1–L4 + B.1–B.8 + semantic; **NOT yet** the consolidated 8-layer gate
 of MISSION.md §8 — L5/L6 partial, **L7 anti-blind-spot fixtures + the consolidated gate.py do NOT yet
