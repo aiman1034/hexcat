@@ -23,7 +23,23 @@ category: transceivers
 #    40G-LR4=1271–1331 CWDM4; LR/DR/FR/PSM4/LX/FX=1310; ER/ZR/ELX=1550. 9 of 46 transceivers
 #    (BiDi pairs, 4WDM ladders, SWDM4) are left BLANK for the EXOS-DB follow-up / Rule-9 backfill —
 #    flag-don't-fabricate.
-complete: true                           # AUTHORED + gate L1-L7 GREEN 2026-06-14 (86 SKUs); awaiting operator L8
+complete: false                          # L8 ROUND-2: undercount found vs the CURRENT datasheet (finding B) — re-harvest pending
+# L8 ROUND-2 (operator byte-audit of 277ad7b, 2026-06-15) — round-1 fixes VERIFIED; 2 NEW findings:
+#  A. [FIXED in extreme_facts.json] 40G-QSFP-LR4-INT was mis-grounded 40GBASE-PSM4 (MPO/1310/10km —
+#     impossible: PSM4 <=2km). The cached guide ROW was cell-shifted (labelled PSM4); the PN (LR4-INT)
+#     + 10km => 40GBASE-LR4. Re-grounded: duplex LC, 2 fibre, CWDM4 4-λ 1271/1291/1311/1331, 10km. The
+#     bogus "40GBASE-PSM4" string was ISOLATED to this one part (40G parallel SMF would be PLR4/PLRL4).
+#  B. [PENDING] SINGLE-SOURCE UNDERCOUNT (the Juniper lesson): the cached Optics Solution Guide is NOT
+#     the universe. Cross-checked vs Extreme's CURRENT "Optical Transceivers and Cables" datasheet
+#     (datasheets/cache/extreme-optical-transceivers-cables-current.pdf, 15 pp, sitecorecontenthub) ->
+#     a whole 400G QSFP-DD TIER is missing (400G-DR4-QSFPDD500M / 400G-FR4-QSFPDD2KM / 400G-LR4-QSFPDD10KM
+#     + 400G-AOC-QSFPDD 5/10/20M) plus 100G additions (100G-FR-SFPDD, 100G-PSM4-QSFP10KM [the part the
+#     operator named], 100G-ER4-QSFP40KM QSFP28-not-CFP2) + 10G temp variants. RE-HARVEST REQUIRED:
+#     the current datasheet's tables are MERGED-CELL/multi-line -> the simple index-collapse
+#     (_scratch/extreme_facts_current.py, WIP) yields broken rows; needs a text-row parser (the 400G
+#     parts appear in extract_text but not extract_tables). Then reconcile (current = authoritative
+#     superset; carry the verified 86 + fix A; add the new tiers) -> re-author -> re-gate -> re-emit.
+#  NOT re-emitting until BOTH A+B land (a partial re-emit would be re-rejected). complete:false until then.
 universe_total: 99                       # 72 guide rows, cables expanded to length-SKUs, minus dups
 captured_count: 91                       # grounded SKUs emitted to extreme_facts.json
 authored_count: 86                       # 91 facts - 5 author-stage spec-uncertain flags (below) = 86 emitted
