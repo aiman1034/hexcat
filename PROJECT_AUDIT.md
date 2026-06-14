@@ -42,21 +42,23 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
 | HPE/Aruba/Cisco/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
 
-### Server Memory (DDR4/DDR5)
-| — | — | ⚠ **DISCREPANCY** | MISSION.md §3/§10 asserts a "25-SKU HPE/Cisco-UCS memory batch", but **the repo has ZERO memory evidence** (no content JSON, no completeness YAML, no DDR/DIMM reference). **NOT assuming it exists** (flag-don't-fabricate). **Needs operator clarification:** built elsewhere? planned? misremembered? If real → locate/import it + formalize `MEMORY_SCHEMA.md`. |
+### Server Memory — NOT IN SCOPE (charter error, corrected 2026-06-14)
+The earlier "Server Memory 25-SKU batch" was a charter assertion in error — operator does not
+recognize it and the repo has zero trace. Removed from MISSION.md (§3/§6/§10). If server memory ever
+enters scope it comes from the real catalog, not the charter.
 
 ### Other categories (MISSION.md §3 / §6 "TO BUILD")
 Routers · Firewalls/Security · Wireless (APs/controllers/antennas) · NICs/Adapters · PSUs ·
 Modules/Line cards · Servers/Compute · Cables & accessories · Mounting/rack kits → **all not-started**;
 each needs `{CATEGORY}_SCHEMA.md` + semantic checks + anti-blind-spot fixtures → operator sign-off → batches.
 
-### ❗ SCOPE STILL UNKNOWN (blocks a TRUE manifest)
-The **actual stocked PN universe** (which categories × brands × PNs Hexwaren stocks/plans) is **not
-yet inventoried** — I have no JTL-Wawi or live-hexwaren.de access. The grid above is the *built* state,
-NOT the *target* universe. **Operator input needed for Step 0 to be real:** a JTL-Wawi export (or
-hexwaren.de category dump, or the sourcing scope) of stocked categories × brands × PNs. Until then,
-"complete" cannot be measured against the true denominator — the work order proceeds core-brand-first
-(Juniper → Extreme → expansion) on confirmed scope.
+### Manifest denominator (do NOT stall on scope — operator ruling 2026-06-14)
+The denominator is **the brand list × the categories each brand actually makes** (from each brand's
+own product lines) — built directly, NOT waiting on any external input. A JTL-Wawi export / live-
+hexwaren.de reconciliation is **OPTIONAL** (nice-to-have to avoid re-doing the ~525 already-live SKUs),
+never a blocker. Work order proceeds core-brand-first (Juniper → Extreme → expansion), each brand
+across the categories it makes. The grid above is the *built* state; the *target* = every brand×category
+cell driven to `imported`.
 
 ---
 

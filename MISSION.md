@@ -60,8 +60,8 @@ mission failure. The gate (§8 L1) guarantees clean import.
 §3 — SCOPE: ALL CATEGORIES × ALL BRANDS  (do NOT narrow this)
 ───────────────────────────────────────────────────────────────────────
 CATEGORIES — confirmed worked: Transceivers/Optics (+ DAC/AOC/MPO cables),
-  Switches, Server Memory (DDR4/DDR5 DIMMs). Expected across the catalog
-  (CONFIRM via Step 0, don't assume): Routers, Firewalls/Security, Wireless
+  Switches. Expected across the catalog (CONFIRM via each brand's actual
+  product lines, don't assume): Routers, Firewalls/Security, Wireless
   (APs/WLAN controllers/antennas), NICs/Adapters, Power supplies, Modules/
   Line cards, Servers/Compute, Cables & accessories, Mounting/rack kits.
 BRANDS — core FIRST: HP/HPE/Aruba, Cisco, Juniper, Arista. Then the full
@@ -69,13 +69,15 @@ BRANDS — core FIRST: HP/HPE/Aruba, Cisco, Juniper, Arista. Then the full
   Lenovo, Palo Alto, Ubiquiti, Supermicro; off-core/optional: Huawei, ZTE,
   Ruijie). Brand scope GROWS with stocking — inventory it, don't hard-code.
 
-*** STEP 0 — BUILD THE MASTER CATALOG MANIFEST ***
-Before "complete" means anything, define the universe. Inventory the ACTUAL
-scope of categories × brands × PNs from: JTL-Wawi (stocked/planned), live
-hexwaren.de, each brand's product lines, the operator's sourcing scope.
-Record as the MASTER MANIFEST in PROJECT_AUDIT (category × brand × PN →
-status: not-started/facts/authored/gated/imported). Mission = 100% of the
-manifest reaches "imported". This manifest is the scoreboard.
+*** STEP 0 — BUILD THE MASTER CATALOG MANIFEST (do NOT stall on scope) ***
+The DENOMINATOR = the brand list (HPE/Cisco/Juniper/Arista core + the
+expansion brands) × the categories EACH brand actually makes (from the
+brand's own product lines). Build the manifest from THAT — it does NOT wait on
+any external input. A JTL-Wawi export / live-hexwaren.de reconciliation is
+OPTIONAL (a nice-to-have to avoid re-doing the ~525 already-live SKUs), NEVER
+a blocker. Record as the MASTER MANIFEST in PROJECT_AUDIT (category × brand →
+status: not-started/facts/authored/emitted/audited/imported). Mission = 100%
+of the manifest reaches "imported". This manifest is the scoreboard.
 
 ───────────────────────────────────────────────────────────────────────
 §4 — THE GROUNDING LAW (1000% rule — SUPREME, overrides everything)
@@ -153,13 +155,6 @@ category SEMANTIC checks. Built:
    Port-Konfiguration, Port-Geschwindigkeit, PoE, Bauform, Anwendung.
    Bauform=housing not Formfaktor; Port-Geschwindigkeit from dominant user
    port not mgmt. Checks S.1–S.6.
- ▸ SERVER MEMORY — precedent exists (HPE DDR4/DDR5 + Cisco UCS; grounding
-   caught DDR5-6400 = AMD-only on HPE Gen11, rank mismatches, platform DIMM-
-   per-channel). LOCATE its schema; if undocumented, formalize MEMORY_SCHEMA
-   .md. Likely attrs (CONFIRM vs the batch): Kapazität, Speichertyp (DDR4/
-   DDR5), Geschwindigkeit (MT/s), Modultyp (RDIMM/LRDIMM/UDIMM), Rang,
-   Spannung, ECC, Formfaktor, Plattform-Kompatibilität. HARD platform-compat
-   grounding — wrong DIMM-population data is a real customer error.
  ▸ TO BUILD (each: {CATEGORY}_SCHEMA.md → operator sign-off → first batch):
    Routers, Firewalls/Security, Wireless (APs/controllers/antennas), NICs/
    Adapters, PSUs, Modules/Line cards, Servers/Compute, Cables/Accessories.
@@ -210,8 +205,19 @@ NOT done until it passes EVERY layer. The gate is the ONLY path to a ZIP — NO
 emit unless 0 violations across ALL layers. The gate PRINTS a per-layer PASS/
 FAIL report every run. Multiple INDEPENDENT methods must agree before a value
 is trusted — a single source is a hypothesis, not a fact.
-  L1 CONTRACT — byte-exact schema (files/columns/order/delimiter/BOM/CRLF/
-     Sortiernummer-gaps/cross-file SKU parity). Guarantees Ameise import.
+  L1 CONTRACT — DATA STRUCTURE IS SACRED. Byte-exact schema (files/columns/
+     order/delimiter Main ';' Attributes ','/UTF-8 BOM/CRLF/German decimals/
+     Attributgruppe/category tokens/Sortiernummer-gaps preserved/cross-file SKU
+     parity). HARD-FAIL any deviation — NO ZIP emits unless byte-exact (a
+     structural break costs the operator an eternity to fix). L1 ALSO includes
+     two silent-corruption guards, EACH with its own NEGATIVE fixture it MUST
+     flag + a POSITIVE it passes:
+       • HTML WELL-FORMEDNESS — every Kurz/Beschr/FAQ HTML parses (balanced
+         tags, valid entities); malformed HTML → hard-fail.
+       • UTF-8 / UMLAUT INTEGRITY — file decodes as valid UTF-8 WITH BOM; ZERO
+         mojibake (scan for Ã/Â/ï¿½ and the replacement char); ä/ö/ü/ß intact.
+         Known risk: Mac+Excel corrupts the BOM + umlauts — the gate MUST catch
+         it. These silent modes must be IMPOSSIBLE to emit. Guarantees Ameise import.
   L2 CONTENT — floors; banned-phrase hard-fail; B.1–B.8. B.8 = inline-
      template-artifact linter scanning EVERY content field incl Beschreibung +
      FAQ (a field-coverage gap here caused a false-green; ALL fields,
@@ -256,9 +262,9 @@ when in doubt.
 ───────────────────────────────────────────────────────────────────────
 §10 — CURRENT STATE & WORK ORDER
 ───────────────────────────────────────────────────────────────────────
-DONE (gold-parity): Transceivers — Cisco 596, Arista 347, HPE 147, Fortinet
-  87, NVIDIA 85, Meraki 25, MikroTik 24. Switches — MikroTik 36/36. Memory —
-  25-SKU HPE/Cisco-UCS batch (verify status).
+DONE (emitted; awaiting consolidated-gate + operator L8 audit): Transceivers —
+  Cisco 596, Arista 347, HPE 147, Fortinet 87, NVIDIA 85, Meraki 25, MikroTik
+  24. Switches — MikroTik 36/36.
 EXECUTE IN ORDER:
   0) MASTER MANIFEST — inventory ALL categories × brands × PNs (§3 Step 0).
   1) SOURCE-REVERIFICATION + COMPLETENESS SWEEP across the manifest. Juniper
