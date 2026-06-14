@@ -67,10 +67,26 @@ completeness_check:
                 fragments (QDD-400G, QSFP-100G-DAC) — keep EOL flagged (§7.2), fix the fragments on clean parse."
     caveat: "edgeoptic is ONE distributor (itself possibly incomplete). True universe = UNION of Juniper
              guides + EX-series source + per-SKU datasheets + >=2 distributors, deduped + grounded."
+enumerated_universe_2026-06-14:    # ENUMERATION ONLY (no grounding/authoring yet — operator-scoped)
+  sources_unioned: [edgeoptic.com (87 genuine), addonnetworks.com (116 genuine)]   # 2 INDEPENDENT
+  method: "genuine Juniper PNs only — stripped house codes (AddOn -AO), accept-list filter rejected
+           reseller FF-descriptors (QSFP28-/SFP28-/QSFPPLUS-); modules vs cables(AOC/DAC) vs converters(CVR)
+           separated; deduped by genuine PN; variants preserved (-I/-D/4WDM/BX/PSM4/coherent distinct)."
+  total_union: 186
+  MODULES: 172          # the transceiver-module universe (enumeration)
+  cables_tracked_separately: 14    # AOC/DAC — different category, not in module count
+  converters: 0
+  modules_by_tier: {1G: 12, 10G: 40, 25G: 26, 40G: 22, 100G: 33, "100G(2x)": 2, 400G: 10, 800G: 1, 100M: 7, unclassified: 19}
+  modules_by_family: {EX-SFP: 44, JNP-SFP: 36, JNP-QSFP: 21, QDD: 16, QSFP-100G: 12, SFPP-10GE: 9, QSFP-40G: 7, CFP: 4, SFP-GE: 4, QFX-QSFP: 4, SFP-1GE: 5, XFP: 5, CFP2: 2, QFX-SFP: 1, JNP-100G: 1, misc: 2}
+  source_independence: {overlap: 17, edge_only: 70, addon_only: 99}   # each source adds a lot -> a 3rd likely grows it
+  data: output/stage3/juniper_enumerated_universe.json
+  caveats:
+    - "2-source union; HPC=403 (anti-bot), FS/QSFPTEK not yet added. addon_only=99 => a 3rd source likely adds more -> NOT a locked universe."
+    - "19 modules unclassified-tier (BiDi/CWDM/breakout naming) — refine on grounding."
+    - "Distributor-enumerated PNs = the LIST. Specs NOT yet grounded; Workflow-B not yet empty."
 verdict: >
-  INCOMPLETE — and Workflow-B PROVES it (overlap only 15 of 91 vs 63). My earlier "modern set cached =
-  done" was wrong: a whole EX-SFP-* family + the 25G + 40G tiers were entirely missing. Juniper is NOT
-  authorable. TO COMPLETE: build the UNIONED enumeration (legacy M/T PDF + EX-series optics + 100G/400G/
-  800G guides + 25G/40G per-SKU + >=2 distributor catalogs), dedup, ground EACH PN from a Juniper
-  source (per-SKU 740-datasheets where the guides don't parse), re-run Workflow-B until the diff is
-  empty, finalize this record + reconcile to manifest. THEN author one complete Juniper batch.
+  ENUMERATION built (172 modules, 2 independent distributors) — confirms the universe is ~170+ (not the
+  91 edgeoptic-only). Juniper still NOT authorable: this is the PN LIST only. NEXT (after operator picks
+  the ship-path): (a) add a 3rd source (FS/QSFPTEK) to close the union; (b) GROUND each module from a
+  Juniper datasheet (per-SKU 740-pages / the guides) flag-don't-fabricate; (c) Workflow-B until the diff
+  is empty; (d) finalize + reconcile to manifest; THEN author. complete:false.
