@@ -701,9 +701,11 @@ class Validator:
                 ff_v = vals.get("Formfaktor", "")
                 # MEDIA<->DOM consistency (L8 round-3): optical (MMF/SMF) must not be DOM=Nein; a
                 # copper/twinax module must not be DOM=Ja. Grounded by media, not form-factor — with one
-                # standards-grounded carve-out: the GBIC MSA predates the SFF-8472 DDM interface (DDM
-                # arrived with SFP), so an optical GBIC legitimately carries DOM=Nein. (XENPAK/X2/SFP+
-                # all post-date SFF-8472 and stay enforced.)
+                # carve-out anchored to the datasheet, NOT to form factor: the Cisco DWDM-GBIC datasheet
+                # DOM table lists optical Tx/Rx power as N/A (no optical-power digital monitoring), so an
+                # optical GBIC may legitimately be DOM=Nein. This is LENIENCY, not a force: a DDM-capable
+                # GBIC is still allowed DOM=Ja (GBIC is simply exempted from the optical->Ja requirement).
+                # XENPAK/X2/SFP+ all publish optical DOM and stay enforced.
                 if k3 not in C.CABLE_CATEGORIES:
                     dom_v = vals.get(_DOM_NAME, "").strip()
                     mblob = (vals.get("Fasertyp", "") + " " + vals.get("Medientyp", "") + " " + vals.get("Standard", "")).lower()
