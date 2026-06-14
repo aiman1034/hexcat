@@ -229,6 +229,42 @@ def check_plausibility(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- L5 PRICE SANITY (NEW, L8 round-3) -----------------------------------------------------------
+# The Cisco market-pricing engine emitted templated junk — 4 identical clusters (33/32/32/5 SKUs at
+# one price). This guard refuses that signature: (a) the SAME non-zero price shared by >= N distinct
+# SKUs, and (b) a handful of stray non-zero prices in an otherwise all-zero (Phase-1) bundle. An
+# all-zero bundle and a genuinely varied future price list both pass cleanly.
+_PRICE_CLUSTER_MIN = 5    # Cisco's smallest junk cluster was 5; identical-to-the-cent across >=5 SKUs = templated
+
+
+def _prices(bundle: Path):
+    f = next(bundle.glob("*_Prices*.csv"), None)
+    return _read_csv(f, ";") if f else ([], [])
+
+
+def check_price_sanity(bundle: Path) -> list[Violation]:
+    out = []
+    hdr, rows = _prices(bundle)
+    if not hdr or "Netto-VK" not in hdr:
+        return out
+    from collections import Counter
+    i_sku = hdr.index("Artikelnummer") if "Artikelnummer" in hdr else 0
+    i_p = hdr.index("Netto-VK")
+    nonzero = [(r[i_sku], r[i_p].strip()) for r in rows
+               if len(r) > max(i_sku, i_p) and r[i_p].strip() not in ("", "0,00", "0.00", "0")]
+    total = len([r for r in rows if len(r) > i_p])
+    for val, c in Counter(v for _, v in nonzero).items():
+        if c >= _PRICE_CLUSTER_MIN:
+            out.append(Violation(bundle.name, "", "Netto-VK", f"< {_PRICE_CLUSTER_MIN} SKUs at one price",
+                                 f"{val} x{c}",
+                                 f"L5: identical-price cluster — {c} distinct SKUs at {val} (templated pricing, not grounded)"))
+    if nonzero and len(nonzero) <= 3 and (total - len(nonzero)) >= 10:
+        out.append(Violation(bundle.name, ",".join(s for s, _ in nonzero[:3]), "Netto-VK", "uniform 0,00 (Phase-1)",
+                             f"{len(nonzero)}/{total} non-zero",
+                             "L5: stray non-zero price(s) in an otherwise all-zero (Phase-1 catalog-consistent) bundle"))
+    return out
+
+
 # ---- L6 COMPLETENESS (NEW) -----------------------------------------------------------------------
 # Clean machine-readable record (the prose per-brand *_completeness.yaml docs aren't valid YAML in
 # places). Keyed "{Brand}_{category}": {enumerated, captured, flagged:[{family/pn, reason_code}]}.
@@ -322,7 +358,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
 
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
-    l5 = check_plausibility(bundle)
+    l5 = check_plausibility(bundle) + check_price_sanity(bundle)
     res.layers.append(LayerResult("L5", not l5, l5))
     l6 = check_completeness(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))

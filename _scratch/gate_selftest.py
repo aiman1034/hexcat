@@ -23,21 +23,18 @@ def fails(d):
 
 
 def known_good():
-    """After the DOM tightening: a brand PASSES, is an expected DOM-GAP (fails ONLY on the new DOM
-    requirement — other-brand backfill deferred per operator), or is a REGRESSION (fails on something
-    else). Certify = no REGRESSIONS (DOM-gaps are the enumerated, deferred follow-up)."""
-    print("=== KNOWN-GOOD (L1-L6; DOM tightening — other-brand backfill deferred) ===")
+    """Task #21 DOM backfill is COMPLETE + the L8-round-3 media<->DOM/Formfaktor tightening is live, so
+    the honest bar is now ZERO violations on every emitted bundle. No DOM-GAP escape hatch — a missing
+    DOM attribute OR a media<->DOM inconsistency (e.g. a copper SFP carrying DOM=Ja) is a REGRESSION, not
+    a deferred gap. The old escape hatch masked exactly that (Arista SFP-1G-T). Certify = all PASS."""
+    print("=== KNOWN-GOOD (L1-L6; backfill complete — zero-violation bar) ===")
     regressions = []
     for b in KNOWN:
         r = gate(ROOT / f"output/stage3_{b}", RULES)
         viol = [v for L in r.layers if L.layer in LIVE and not L.passed for v in L.violations]
-        if not viol:
-            status = "PASS"
-        elif all("DOM" in v.message for v in viol):
-            status = f"DOM-GAP ({len(viol)}) — expected, deferred"
-        else:
-            other = [v.message[:50] for v in viol if "DOM" not in v.message][:2]
-            status = f"REGRESSION {other}"; regressions.append(b)
+        status = "PASS" if not viol else f"REGRESSION {[v.message[:50] for v in viol][:2]}"
+        if viol:
+            regressions.append(b)
         print(f"  {b:20s} {status}")
     return not regressions
 
@@ -81,6 +78,18 @@ def set_main_value(d, col, newval, n=1):
     _rw(f, ";", fn)
 
 
+def set_price_cluster(d, val, n):
+    """Force n SKUs to the SAME non-zero price (templated-cluster signature) — L5 price-sanity."""
+    f = next(d.glob("*_Prices*.csv"))
+    def fn(rows):
+        pi = rows[0].index("Netto-VK"); c = 0
+        for r in rows[1:]:
+            if c < n and len(r) > pi:
+                r[pi] = val; c += 1
+        return rows
+    _rw(f, ";", fn)
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -106,6 +115,10 @@ def fixtures():
         ("F15 missing-DOM",       ROOT / "output/stage3_Juniper",
          lambda d: _rw(attrs_of(d), ",", lambda rows: [rows[0]] + [r for r in rows[1:]
                    if not (len(r) > rows[0].index("Attributname") and r[rows[0].index("Attributname")] == "DOM Unterstützung")]), "L3"),
+        # L8 round-3 gate-tightening fixtures (back-applied):
+        ("F16 optical-DOM=Nein",  tx, lambda d: set_attr_value(d, "DOM Unterstützung", "Nein", n=300), "L3"),
+        ("F17 Formfaktor-unlocked", tx, lambda d: set_attr_value(d, "Formfaktor", "BOGUSFF", n=20), "L3"),
+        ("F18 price-cluster",     tx, lambda d: set_price_cluster(d, "1234,56", n=8), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

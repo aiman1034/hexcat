@@ -1,16 +1,20 @@
 """Lock the Cisco transceiver coverage closure under the NON-NEGOTIABLE completeness rule:
 
-  Every physical part number that is a real transceiver is in the catalog. The ONLY permitted
-  exclusion is a part that is genuinely NOT a transceiver (license, bracket, adapter, software,
-  passive cable, or CPE box). "Legacy", "EOL", "obsolete", and "out of scope" are NEVER valid
-  exclusion reasons — EOL is an informational flag; the part still belongs in the catalog. A
-  missing form factor is a taxonomy gap to FIX (POM was added), never a reason to drop a part.
+  Every physical part number that is a real Ethernet/datacom transceiver is in the catalog. Two
+  permitted exclusions only: (1) a part that is genuinely NOT a transceiver (license, bracket,
+  adapter, software, passive cable, or CPE box); (2) a part in a DIFFERENT protocol domain that
+  the operator has explicitly ruled out of scope — SONET/SDH (POM) was ruled out 2026-06-14 (L8
+  round-3), the same call as Juniper SONET. "Legacy", "EOL", and "obsolete" are NEVER valid
+  exclusion reasons for an IN-DOMAIN (Ethernet/datacom) transceiver — EOL is an informational
+  flag; the part still belongs in the catalog. A missing form factor is a taxonomy gap to FIX,
+  never a reason to drop an in-domain part.
 
 These assert config/coverage/cisco_transceivers_disposition.yaml stays consistent with that
 rule. The decisive regression — test_legacy_transceivers_are_added_not_excluded — pins that
-XENPAK / GBIC / POM (all real transceivers, all EOL) are ADD, not dropped: an earlier triage
-wrongly excluded 75 of them as "out of scope", directly violating the mission. That can never
-silently come back.
+XENPAK / GBIC / DWDM-GBIC (all real Ethernet transceivers, all EOL) are ADD/authored, not dropped:
+an earlier triage wrongly excluded 75 of them as "out of scope", directly violating the mission.
+That can never silently come back. The ONE authorized domain exclusion (SONET/SDH POM) is pinned
+explicitly and separately, so it stays a deliberate, traceable, operator-owned decision.
 """
 from __future__ import annotations
 
@@ -117,24 +121,31 @@ def test_legacy_transceivers_are_added_not_excluded():
     add_pns = {e["pn"] for e in d["add"]}
     excluded_pns = {e["pn"] for e in (d.get("exclude_not_transceiver") or [])}
 
+    # In-domain (Ethernet/datacom) legacy families — POM (SONET/SDH) is NOT here; it is the operator's
+    # authorized domain exclusion, pinned separately below.
     def is_legacy(pn: str) -> bool:
-        return "XENPAK" in pn.upper() or pn.startswith(("DWDM-GBIC", "WS-G548", "POM-"))
+        return "XENPAK" in pn.upper() or pn.startswith(("DWDM-GBIC", "WS-G548"))
 
-    # 1) no legacy real transceiver is ever excluded
+    # 1) no in-domain legacy real transceiver is ever excluded
     for pn in excluded_pns:
         assert not is_legacy(pn), f"legacy real transceiver wrongly excluded: {pn}"
-    # 2) the legacy families are present in the AUTHORED catalog — proof they were added, not dropped
+    # 2) the in-domain legacy families are present in the AUTHORED catalog — proof they were added
     assert any("XENPAK" in p.upper() for p in catalog), "no XENPAK authored"
     assert any(p.startswith("DWDM-GBIC") for p in catalog), "no DWDM-GBIC authored"
-    assert any(p.startswith("POM-") for p in catalog), "no POM authored"
-    # 3) any legacy part still surfaced (not yet authored) is ADD, never dropped
+    # 3) any in-domain legacy part still surfaced (not yet authored) is ADD, never dropped
     for e in _all_entries(d):
         if is_legacy(e["pn"]):
             assert e["pn"] in add_pns and e["pn"] not in excluded_pns
 
-    # and their form factors must be present in the taxonomy (POM was added for exactly this)
+    # in-domain legacy form factors must be present in the taxonomy
     tax = _taxonomy()
-    assert {"XENPAK", "GBIC", "POM"} <= tax
+    assert {"XENPAK", "GBIC"} <= tax
+
+    # THE authorized domain exclusion: SONET/SDH POM is out of scope (operator, L8 round-3) — so its
+    # SKUs are NOT authored and its form-factor token is NOT in the taxonomy. This is the deliberate,
+    # documented exception that proves the rule; it is distinct from EOL/legacy, which never exclude.
+    assert not any(p.startswith("POM-") for p in catalog), "POM (SONET/SDH) must be out of scope, not authored"
+    assert "POM" not in tax, "POM form-factor token must be removed (SONET/SDH out of scope)"
 
 
 def test_eol_is_a_flag_not_an_exclusion_reason():

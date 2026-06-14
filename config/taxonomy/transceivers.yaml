@@ -4,11 +4,11 @@
 # CATEGORY (Phase 3+) means adding a sibling file (e.g. taxonomy/switches.yaml), not
 # editing engine code.
 #
-# `subcategories` are the 24 Kategorie-Ebene-3 form factors. Anything not in this list
-# is rejected on build; "Sonstige" is never allowed. (Was 22; POM — Cisco's proprietary
-# SONET/SDH Pluggable Optic Module — was added so real OC-3/OC-48 transceivers are catalogued,
-# never dropped for lacking a form factor. The mission rule: every physical transceiver PN is
-# included; a missing form factor is a taxonomy gap to fix, not a reason to exclude the part.)
+# `subcategories` are the 23 Kategorie-Ebene-3 form factors. Anything not in this list
+# is rejected on build; "Sonstige" is never allowed. (POM — Cisco's proprietary SONET/SDH
+# Pluggable Optic Module — was REMOVED 2026-06-14: SONET/SDH is out-of-scope for the
+# Ethernet/datacom catalog (L8 round-3), and its 8 OC-3/OC-48 SKUs were dropped. CIM8 — the
+# NCS 1014 Coherent Interface Module 8 — stays: a real current coherent form factor.)
 #
 # `attributes` are the fixed 14, IN ORDER. Their order IS the Sortiernummer (1..14) and
 # is part of the byte-exact Ameise output contract — so the same 14, in the same order,
@@ -46,7 +46,6 @@ subcategories:
   - "CPAK"
   - "CXP"
   - "GBIC"
-  - "POM"
   - "CIM8"
 
 # The 14 fixed attributes, in Sortiernummer order. `name` is the emitted Attributname;

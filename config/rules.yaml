@@ -32,9 +32,10 @@ constants:
   kategorie_ebene_2_switch: "Switches"
   attributgruppe_switch: "Switch"
 
-# Locked Kategorie Ebene 3 set (24). Anything else is rejected; "Sonstige" never allowed.
-# (POM = Cisco SONET/SDH Pluggable Optic Module; CIM8 = Cisco NCS 1014 Coherent Interface Module
-# 8 — both added so real Cisco transceivers are catalogued, not dropped for lacking a form factor.
+# Locked Kategorie Ebene 3 set (23). Anything else is rejected; "Sonstige" never allowed.
+# (CIM8 = Cisco NCS 1014 Coherent Interface Module 8 — a real current coherent form factor, kept so
+# those SKUs are catalogued. POM = Cisco SONET/SDH Pluggable Optic Module was REMOVED 2026-06-14:
+# SONET/SDH ruled out-of-scope for the Ethernet/datacom catalog (L8 round-3), its 8 SKUs dropped.
 # Must stay in lock-step with config/taxonomy/transceivers.yaml subcategories.)
 kategorie_ebene_3_allowed:
   - "DAC Kabel"
@@ -59,7 +60,6 @@ kategorie_ebene_3_allowed:
   - "CPAK"
   - "CXP"
   - "GBIC"
-  - "POM"
   - "CIM8"
 
 # Locked SWITCH Kategorie Ebene 3 set (6) — Rule-7 signed off. Single token per SKU by ENVIRONMENT-FIRST

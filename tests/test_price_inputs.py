@@ -114,21 +114,25 @@ def test_empty_skus_map_is_valid(tmp_path):
     assert book.usd_eur == Decimal("0.863")
 
 
-# ---- the live artifact agrees with what is actually written into the bundle ------------
+# ---- the emitted Cisco bundle ships Phase-1 catalog-consistent prices -------------------
 
-def test_grounded_anchors_are_written_into_the_cisco_prices_csv():
+def test_cisco_prices_are_phase1_catalog_consistent_zero():
+    """L8 round-3 decision: the market-pricing engine produced templated junk — 4 identical clusters
+    across 102 of 111 priced SKUs (33x 8177,47 / 32x 6135,28 / 32x 1625,81 / 5x 1765,16) — so Cisco
+    ships catalog-consistent 0,00 prices and grounded pricing is deferred to Phase-2. The Prices CSV
+    must be no-BOM and uniformly 0,00 (the L5 price-sanity gate enforces the same invariant: no
+    identical-price clusters, no stray non-zero in an otherwise-zero bundle). The loader/engine units
+    above stay green — the engine still exists for Phase-2; it is simply not applied to the bundle."""
     import csv
     import io
 
-    book = load_price_inputs()
     prices = REPO / "output" / "stage3_Cisco" / "Hexwaren_Cisco_Transceivers_Prices.csv"
     raw = prices.read_bytes().decode("utf-8")
     assert not raw.startswith("﻿"), "Prices CSV must have NO BOM"
     rows = list(csv.reader(io.StringIO(raw), delimiter=";"))
     header = rows[0]
-    ai, vi = header.index("Artikelnummer"), header.index("Netto-VK")
-    by_sku = {r[ai]: r[vi] for r in rows[1:] if r}
-    for sku, e in book.entries.items():
-        if sku in by_sku:  # the Cisco anchors
-            res = book.resolve(sku, P)
-            assert by_sku[sku] == res.netto_vk, f"{sku}: bundle price must match engine result"
+    vi = header.index("Netto-VK")
+    vals = [r[vi] for r in rows[1:] if r]
+    assert vals, "Cisco Prices CSV must carry rows"
+    assert all(v == "0,00" for v in vals), \
+        f"Phase-1: every Cisco price must be catalog-consistent 0,00 (found {sum(v!='0,00' for v in vals)} non-zero)"

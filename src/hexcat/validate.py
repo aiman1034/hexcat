@@ -693,6 +693,27 @@ class Validator:
                                "a DOM Unterstützung attribute (non-cable transceiver)", "(missing)",
                                "gold-slice completeness: every non-cable transceiver must carry a "
                                "DOM Unterstützung attribute (L8 finding)")
+                ff_v = vals.get("Formfaktor", "")
+                # MEDIA<->DOM consistency (L8 round-3): optical (MMF/SMF) must not be DOM=Nein; a
+                # copper/twinax module must not be DOM=Ja. Grounded by media, not form-factor — with one
+                # standards-grounded carve-out: the GBIC MSA predates the SFF-8472 DDM interface (DDM
+                # arrived with SFP), so an optical GBIC legitimately carries DOM=Nein. (XENPAK/X2/SFP+
+                # all post-date SFF-8472 and stay enforced.)
+                if k3 not in C.CABLE_CATEGORIES:
+                    dom_v = vals.get(_DOM_NAME, "").strip()
+                    mblob = (vals.get("Fasertyp", "") + " " + vals.get("Medientyp", "") + " " + vals.get("Standard", "")).lower()
+                    is_copper = bool(re.search(r"kupfer|twinax|\bcx4\b|cat-?\d|base-?t|twisted", mblob))
+                    is_optical = (not is_copper) and bool(re.search(r"singlemode|multimode|\bsmf\b|\bmmf\b|glasfaser", mblob))
+                    if dom_v.startswith("Ja") and is_copper:
+                        self._fail(fname, sku, "Attributwert (DOM Unterstützung)", "DOM=Nein on copper/twinax", dom_v,
+                                   "semantic: media<->DOM — a copper/twinax module must NOT be DOM=Ja")
+                    if dom_v == "Nein" and is_optical and ff_v != "GBIC":
+                        self._fail(fname, sku, "Attributwert (DOM Unterstützung)", "DOM=Ja on optical media", dom_v,
+                                   "semantic: media<->DOM — an optical (MMF/SMF) module must NOT be DOM=Nein")
+                # Formfaktor must be in the locked form-factor vocabulary (L8 round-3) — non-cable non-switch.
+                if ff_v and k3 not in C.CABLE_CATEGORIES and ff_v not in C.PHYSICAL_FORMFAKTOR:
+                    self._fail(fname, sku, "Attributwert (Formfaktor)", "a locked form-factor token", ff_v,
+                               "semantic: Formfaktor not in the locked form-factor vocabulary (L8 finding)")
                 # Wellenlänge: optical modules only (cables + copper/Smart-SFP exempt).
                 if k3 in C.CABLE_CATEGORIES:
                     continue
