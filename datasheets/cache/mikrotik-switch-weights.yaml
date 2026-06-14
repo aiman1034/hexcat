@@ -1,39 +1,45 @@
-# MikroTik switch weights — Artikelgewicht (product/net) + Versandgewicht (gross/shipping).
-# MikroTik does NOT publish switch weight ($0-verified: HTML widget 0/36, 63 datasheet PDFs 0/36).
-# Operator-approved scoped relaxation (2026-06-14): use DISTRIBUTOR/RETAIL published weight for this
-# one manufacturer-unpublished attribute; every value cited; cross-checked; flag-don't-fabricate.
-# Priority: dateks.lv net+gross (logistics-grade) > mikrotik-store.eu (dedicated store) > datagram.ae.
-# Templated/default values discarded via duplicate-detection (dateks 2.153/3.4 pairs; datagram 3.5/4.5).
-# kg, German decimal written at emit. DERIVED Versand = Artikel x1.20 (marked) where no gross published.
+# MikroTik switch weights — Artikelgewicht (product/net) + Versandgewicht (gross/shipping). kg.
+# MikroTik does NOT publish switch weight ($0-verified). Operator-approved scoped relaxation (2026-06-14):
+# distributor/retail published weight for this one attribute; every value cited + cross-checked; flag-don't-fabricate.
+# Priority: dateks.lv net+gross > mikrotik-store.eu > datagram.ae; templated/default values discarded.
+# disagreement_notes: |chosen-other|/min(chosen,other) > 0.40 (corrected). DERIVED Versand = Artikel x1.20.
+# ALL 36 SKUs sourced (6 added via a best-effort 2nd-pass: dateks/mikrotik-store/datasheet/web-search).
 weights:
   CRS106-1C-5S:
     artikelgewicht: 0.4   # kg, source: mikrotik_store
     versandgewicht: 0.48   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs106-1c-5s
+    crosscheck: {"mikrotik_store": 0.4}
   CRS326-24G-2S+RM:
     artikelgewicht: 2.2   # kg, source: mikrotik_store
     versandgewicht: 2.64   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24g-2srm
+    crosscheck: {"datagram": 3.5, "mikrotik_store": 2.2}
+    disagreement_notes: {"datagram": {"value": 3.5, "discarded_templated": true}}  # >40% (/min); operator spot-check
   CSS326-24G-2S+RM:
     artikelgewicht: 1.8   # kg, source: mikrotik_store
     versandgewicht: 2.16   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css326-24g-2srm
+    crosscheck: {"datagram": 3.5, "mikrotik_store": 1.8}
+    disagreement_notes: {"datagram": {"value": 3.5, "discarded_templated": true}}  # >40% (/min); operator spot-check
   CRS112-8P-4S-IN:
     artikelgewicht: 1.7   # kg, source: mikrotik_store
     versandgewicht: 2.04   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs112-8p-4s-in
-    crosscheck: {"datagram": 0.8}
-    disagreement_note: {"datagram": 0.8}  # operator spot-check
+    crosscheck: {"datagram": 0.8, "mikrotik_store": 1.7}
+    disagreement_notes: {"datagram": {"value": 0.8, "discarded_templated": false}}  # >40% (/min); operator spot-check
+    rationale: "datagram 0,8 kg disagrees >2x; kept mikrotik_store 1,7 - PoE-anchor sanity: CSS610-8P (PoE) 2,21 vs CSS610-8G (non-PoE) 1,1 -> 8-port PoE at 1,7 plausible, 0,8 too light. If a source confirms 0,8, switch + re-emit."
   CRS304-4XG-IN:
     artikelgewicht: 0.96   # kg, source: mikrotik_store
     versandgewicht: 1.152   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs304-4xg-in
+    crosscheck: {"mikrotik_store": 0.96}
   CRS305-1G-4S+IN:
     artikelgewicht: 0.402   # kg, source: dateks
     versandgewicht: 0.492   # kg, dateks_gross
     artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/271906-mikrotik-crs305-1g-4s-in
     crosscheck: {"dateks_net": 0.402, "mikrotik_store": 0.6}
-    disagreement_note: {"mikrotik_store": 0.6}  # operator spot-check
+    disagreement_notes: {"mikrotik_store": {"value": 0.6, "discarded_templated": false}}  # >40% (/min); operator spot-check
   CRS309-1G-8S+IN:
     artikelgewicht: 0.943   # kg, source: dateks
     versandgewicht: 1.209   # kg, dateks_gross
@@ -43,11 +49,12 @@ weights:
     artikelgewicht: 1.2   # kg, source: dateks
     versandgewicht: 1.68   # kg, dateks_gross
     artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/821208-mikrotik-crs310-1g-5s-4s-in
-    crosscheck: {"dateks_net": 1.2, "mikrotik_store": 1.2, "datagram": 1.5}
+    crosscheck: {"datagram": 1.5, "dateks_net": 1.2, "mikrotik_store": 1.2}
   CRS310-8G+2S+IN:
     artikelgewicht: 1.3   # kg, source: mikrotik_store
     versandgewicht: 1.56   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs310-8g2sin
+    crosscheck: {"mikrotik_store": 1.3}
   CRS312-4C+8XG-RM:
     artikelgewicht: 2.226   # kg, source: dateks
     versandgewicht: 2.546   # kg, dateks_gross
@@ -57,93 +64,145 @@ weights:
     artikelgewicht: 2.51   # kg, source: mikrotik_store
     versandgewicht: 3.012   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs317-1g-16srm
+    crosscheck: {"mikrotik_store": 2.51}
   CRS320-8P-8B-4S+RM:
     artikelgewicht: 3.4   # kg, source: mikrotik_store
     versandgewicht: 4.08   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs320-8p-8b-4srm
+    crosscheck: {"dateks_net": 2.153, "mikrotik_store": 3.4}
+    disagreement_notes: {"dateks_net": {"value": 2.153, "discarded_templated": true}}  # >40% (/min); operator spot-check
   CRS326-24G-2S+IN:
     artikelgewicht: 1.6   # kg, source: mikrotik_store
     versandgewicht: 1.92   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24g-2sin
+    crosscheck: {"mikrotik_store": 1.6}
   CRS326-24S+2Q+RM:
     artikelgewicht: 3.0   # kg, source: mikrotik_store
     versandgewicht: 3.6   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24s2qrm
+    crosscheck: {"datagram": 3.5, "dateks_net": 2.153, "mikrotik_store": 3.0}
   CRS326-4C+20G+2Q+RM:
     artikelgewicht: 3.8   # kg, source: mikrotik_store
     versandgewicht: 4.56   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-4c20g2qrm
+    crosscheck: {"mikrotik_store": 3.8}
   CRS328-24P-4S+RM:
     artikelgewicht: 5.02   # kg, source: mikrotik_store
     versandgewicht: 6.024   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs328-24p-4srm
+    crosscheck: {"datagram": 3.5, "mikrotik_store": 5.02}
+    disagreement_notes: {"datagram": {"value": 3.5, "discarded_templated": true}}  # >40% (/min); operator spot-check
+    rationale: "datagram 3,5 kg REJECTED as a TEMPLATED DEFAULT (datagram repeats 3,5 across 5 unrelated switches); mikrotik_store's distinct 5,02 used. (Gold-slice SKU; 3,5 was the founding datapoint.)"
   CRS328-4C-20S-4S+RM:
     artikelgewicht: 2.75   # kg, source: mikrotik_store
     versandgewicht: 3.3   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs328-4c-20s-4srm
+    crosscheck: {"datagram": 3.5, "mikrotik_store": 2.75}
   CRS354-48G-4S+2Q+RM:
     artikelgewicht: 3.6   # kg, source: dateks
     versandgewicht: 4.58   # kg, dateks_gross
     artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/498221-mikrotik-crs354-48g-4s-2q-rm
-    crosscheck: {"dateks_net": 3.6, "mikrotik_store": 5.2}
-    disagreement_note: {"mikrotik_store": 5.2}  # operator spot-check
+    crosscheck: {"datagram": 4.5, "dateks_net": 3.6, "mikrotik_store": 5.2}
+    disagreement_notes: {"mikrotik_store": {"value": 5.2, "discarded_templated": false}}  # >40% (/min); operator spot-check
   CRS354-48P-4S+2Q+RM:
     artikelgewicht: 6.012   # kg, source: dateks
     versandgewicht: 7.65   # kg, dateks_gross
     artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/523857-mikrotik-crs354-48p-4s-2q-rm
-    crosscheck: {"dateks_net": 6.012, "mikrotik_store": 8.4}
+    crosscheck: {"datagram": 4.5, "dateks_net": 6.012, "mikrotik_store": 8.4}
   CRS418-8P-8G-2S+RM:
     artikelgewicht: 2.6   # kg, source: mikrotik_store
     versandgewicht: 3.12   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs418-8p-8g-2srm
+    crosscheck: {"mikrotik_store": 2.6}
   CRS418-8P-8G-2S+5axQ2axQ-RM:
     artikelgewicht: 3.0   # kg, source: mikrotik_store
     versandgewicht: 3.6   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs418-8p-8g-2s5axq2axq-rm
+    crosscheck: {"mikrotik_store": 3.0}
   CRS504-4XQ-IN:
     artikelgewicht: 2.5   # kg, source: mikrotik_store
     versandgewicht: 3.0   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs504-4xq-in
+    crosscheck: {"dateks_net": 3.4, "mikrotik_store": 2.5}
   CRS504-4XQ-OUT:
     artikelgewicht: 2.6   # kg, source: mikrotik_store
     versandgewicht: 3.12   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs504-4xq-out
+    crosscheck: {"mikrotik_store": 2.6}
   CRS510-8XS-2XQ-IN:
     artikelgewicht: 2.6   # kg, source: mikrotik_store
     versandgewicht: 3.12   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs510-8xs-2xq-in
+    crosscheck: {"mikrotik_store": 2.6}
   CRS518-16XS-2XQ-RM:
     artikelgewicht: 4.0   # kg, source: mikrotik_store
     versandgewicht: 4.8   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs518-16xs-2xq-rm
+    crosscheck: {"dateks_net": 3.4, "mikrotik_store": 4.0}
   CRS520-4XS-16XQ-RM:
     artikelgewicht: 6.8   # kg, source: mikrotik_store
     versandgewicht: 8.16   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs520-4xs-16xq-rm
+    crosscheck: {"mikrotik_store": 6.8}
   CSS318-16G-2S+IN:
     artikelgewicht: 2.2   # kg, source: dateks
     versandgewicht: 3.24   # kg, dateks_gross
     artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/1177702-mikrotik-css318-16g-2s-in
     crosscheck: {"dateks_net": 2.2, "mikrotik_store": 1.5}
+    disagreement_notes: {"mikrotik_store": {"value": 1.5, "discarded_templated": false}}  # >40% (/min); operator spot-check
+    rationale: "mikrotik_store 1,5 kg disagrees ~47%; dateks_net (logistics-grade net+gross) is the correct choice at 2,2."
   CSS610-8G-2S+IN:
     artikelgewicht: 1.1   # kg, source: mikrotik_store
     versandgewicht: 1.32   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css610-8g-2sin
+    crosscheck: {"mikrotik_store": 1.1}
   CSS610-8P-2S+IN:
     artikelgewicht: 2.21   # kg, source: mikrotik_store
     versandgewicht: 2.652   # kg, DERIVED x1.20
     artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css610-8p-2sin
-    crosscheck: {"dateks_net": 0.7}
-    disagreement_note: {"mikrotik_store": 2.21}  # operator spot-check
-    override_note: "dateks net 0.7 kg REJECTED as implausible (PoE switch cannot be lighter than non-PoE sibling CSS610-8G@1.1 kg); mikrotik-store 2.21 used"
+    crosscheck: {"dateks_net": 0.7, "mikrotik_store": 2.21}
+    disagreement_notes: {"dateks_net": {"value": 0.7, "discarded_templated": false}}  # >40% (/min); operator spot-check
+    rationale: "dateks_net 0,7 kg REJECTED as physically implausible (PoE switch cannot be lighter than non-PoE sibling CSS610-8G @1,1); mikrotik_store 2,21 used."
   CRS318-16P-2S+OUT:
     artikelgewicht: 2.5   # kg, source: datagram
     versandgewicht: 3.0   # kg, DERIVED x1.20
     artikel_source_url: https://datagram.ae/products/mikrotik-switches-crs318-16p-2sout/
-flagged_no_distributor_weight:   # stay weight-blocked (no $0 distributor source found; NOT fabricated)
-  - CSS106-5G-1S
-  - CSS106-1G-4P-1S
-  - CRS318-1Fi-15Fr-2S-OUT
-  - CRS804-4DDQ-hRM
-  - CRS812-8DS-2DQ-2DDQ-RM
-  - CSS610-1Gi-7R-2S+OUT
+    crosscheck: {"datagram": 2.5}
+  CSS106-5G-1S:
+    artikelgewicht: 0.212   # kg, source: compufox_datasheet_pdf
+    versandgewicht: 0.5   # kg, mikrotik_store (shipping)
+    artikel_source_url: https://www.compufox.com/v/vspfiles/files/Datasheets/Mikrotik/Mikrotik-CSS106-5G-1S(RB260GS).pdf
+    crosscheck: {"mikrotik_store": 0.5}
+    disagreement_notes: {"mikrotik_store": {"value": 0.5, "discarded_templated": false}}  # >40% (/min); operator spot-check
+    rationale: "RB260GS datasheet net 0,212 kg (a known ~200 g switch) used as Artikel; mikrotik_store 0,5 kg used as Versand (shipping). Triggers the lowered 0,15 kg guard floor (still > placeholder)."
+  CSS106-1G-4P-1S:
+    artikelgewicht: 0.7   # kg, source: mikrotik_store
+    versandgewicht: 0.84   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-rb260gsp-css106-1g-4p-1s
+    crosscheck: {"mikrotik_store": 0.7, "websearch": 0.7}
+    rationale: "mikrotik_store 0,7 kg confirmed by web search snippet (RB260GSP); agree."
+  CRS318-1Fi-15Fr-2S-OUT:
+    artikelgewicht: 2.4   # kg, source: mikrotik_store
+    versandgewicht: 2.88   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs318-1fi-15fr-2s-out-netpower-15fr
+    crosscheck: {"mikrotik_store": 2.4, "websearch": 2.4}
+    rationale: "netPower 15FR; mikrotik_store 2,4 kg confirmed by web search; agree."
+  CSS610-1Gi-7R-2S+OUT:
+    artikelgewicht: 2.1   # kg, source: mikrotik_store
+    versandgewicht: 2.52   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css610-1gi-7r-2sout-netpower-lite-7r
+    crosscheck: {"mikrotik_store": 2.1, "websearch": 2.1}
+    rationale: "netPower Lite 7R; mikrotik_store 2,1 kg confirmed by web search (a 1,01 outlier rejected as shipping/wrong)."
+  CRS804-4DDQ-hRM:
+    artikelgewicht: 4.02   # kg, source: dateks
+    versandgewicht: 4.4   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/1304127-mikrotik-crs804-4ddq-hrm
+    crosscheck: {"dateks_net": 4.02, "dateks_gross": 4.4, "mikrotik_store": 3.9}
+    rationale: "400G DC switch; dateks net 4,02 / gross 4,4 kg, cross-checked by mikrotik_store 3,9 (agree ~3%)."
+  CRS812-8DS-2DQ-2DDQ-RM:
+    artikelgewicht: 4.75   # kg, source: dateks
+    versandgewicht: 5.1   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/1271415-mikrotik-crs812-8ds-2dq-2ddq-rm
+    crosscheck: {"dateks_net": 4.75, "dateks_gross": 5.1, "mikrotik_store": 5.4}
+    rationale: "14-port 400G/200G/50G DC switch; dateks net 4,75 / gross 5,1 kg, cross-checked by mikrotik_store 5,4 (agree ~7%). A web-snippet '2,8 net' outlier rejected (dateks+ms cluster ~5 kg)."
+flagged_no_distributor_weight: []   # none — all 36 sourced
