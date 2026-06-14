@@ -32,7 +32,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | NVIDIA | 85 | emitted `…_38ab528.zip` (≤400G Eth) | 800G-Eth = flagged harvest gap |
 | Meraki | 25 | **audited** + emitted `…_63bbcc2.zip` | |
 | MikroTik | 24 | emitted `…_f538381.zip` | |
-| **Juniper** | 38 legacy + modern sources cached | **facts (legacy) + modern sources cached — parse+author next** | core. `juniper_transceivers_facts.json` = 38 grounded legacy Ethernet optics (SFP/SFP+/XFP/XENPAK; 23 EOL-flagged-kept). SONET SKIPPED (operator). **Modern set UNBLOCKED:** cached current `juniper-{100g,400g,800g}-optics-guide.pdf` (~16/13/17 PNs floor) — corrects the JS-blocked diagnosis. RESUME: parse the 3 guides (text-mode) → merge w/ 38 legacy → author ONE Juniper batch → gate → ZIP. |
+| **Juniper** | sourcing **INCOMPLETE** (Workflow-B proven) | **NOT authorable — completeness check FAILED** | core. Completeness check (operator-mandated): 38 legacy (1G/10G) grounded; 100G/400G/800G guides cached but parse only to FLOORS; **25G+40G have no guide**. **Workflow-B (edgeoptic) = 91 PNs vs my 63, overlap only 15** → 76 gaps incl the entire **EX-SFP-* family** (~30) + 25G + 40G. SONET skipped. TO COMPLETE: union (legacy M/T PDF + EX-series + guides + 25G/40G per-SKU + ≥2 distributors) → dedup → ground each → Workflow-B empty → THEN author. See `juniper_transceivers_completeness.yaml`. |
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | Dell/Lenovo/Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 

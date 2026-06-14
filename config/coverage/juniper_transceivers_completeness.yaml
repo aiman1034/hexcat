@@ -28,9 +28,49 @@ modern_optics_sources_cached:   # the JS qualified-optics/HCT pages time out hea
   - datasheets/cache/juniper-800g-optics-guide.pdf   # 800G guide, 69pp, ~17 PNs (QDD-800G-*, QDD-2X400G-*)
   # (regex-floor counts; proper per-guide parse will yield the full set. No separate 10G/25G/40G guide
   #  at the URL pattern — 10G/1G covered by the legacy optic-modules.pdf; 25G/40G to confirm during parse.)
+# --- COMPLETENESS CHECK RUN 2026-06-14 (operator-mandated, BEFORE authoring) — RESULT: INCOMPLETE ---
+completeness_check:
+  status: INCOMPLETE   # do NOT author until this passes (operator rule)
+  tier_coverage:       # MISSION §3: every tier 1G→800G
+    1G:   {source: "optic-modules.pdf (legacy)", grounded: true,  note: "in the 38-SKU facts"}
+    10G:  {source: "optic-modules.pdf (legacy)", grounded: true,  note: "SFPP-10GE-* in the 38"}
+    25G:  {source: "NONE cached", grounded: false, note: "NO guide PDF. JNP-SFP-25G-SR/LR(+ -I) exist as per-SKU datasheets (740-068639/740-071562) + distributor listings — MUST enumerate (Workflow-B)"}
+    40G:  {source: "NONE cached", grounded: false, note: "NO guide PDF. JNP-QSFP-40G-LR4/SR4/ESR4/LX4 + JNP-40G-AOC-* — per-SKU datasheets + distributor — MUST enumerate"}
+    100G: {source: "juniper-100g-optics-guide.pdf", grounded: partial, parsed_floor: 12, note: "guide is human-readable doc; extract_tables/text give FLOORS not a clean list"}
+    400G: {source: "juniper-400g-optics-guide.pdf", grounded: partial, parsed_floor: 8}
+    800G: {source: "juniper-800g-optics-guide.pdf", grounded: partial, parsed_floor: 4}
+  parsed_floor_total: 33   # + 38 legacy; ALL floors/partials, NOT a verified clean enumeration
+  blocking_findings:
+    - "The 100G/400G/800G guides DO NOT parse into a clean PN list ($0): per-optic chapters + diagrams,
+       not a spec matrix. extract_tables: 100g=4 / 400g=0 / 800g=8(AOC-only). Naive text: inconsistent."
+    - "25G + 40G tiers have NO Juniper guide PDF at all — 0 PNs from cached sources."
+  required_to_pass_before_authoring:   # the operator's steps 1-4, still OPEN
+    1: "Enumerate 25G + 40G (per-SKU 740-datasheets + a distributor Juniper-optics catalog)."
+    2: "Produce a CLEAN per-source PN list (not regex floors) — for the modern tiers, ground each
+        optic from its per-SKU Juniper datasheet (the guides are unparseable as a list)."
+    3: "WORKFLOW-B — re-enumerate from a 2nd source (distributor catalog) and DIFF; close every gap."
+    4: "Finalize this record with the full grounded count + per-tier breakdown; reconcile to manifest."
+  workflow_b_diff_2026-06-14:    # 2nd-source enumeration = edgeoptic.com Juniper catalog (genuine Juniper PNs)
+    set_A_my_parsed: 63          # legacy facts (38) + guide-parsed floors
+    set_B_edgeoptic: 91
+    overlap: 15                  # <-- only 15! proves "cached = complete" was WRONG
+    B_only_gaps: 76
+    B_only_by_tier: {10G: 15, "100M/FE": 5, 1G: 6, unknown: 15, 100G: 15, 40G: 14, 25G: 3, 400G: 3}
+    edgeoptic_by_tier: {1G: 11, 10G: 19, 25G: 3, 40G: 14, 100G: 20, 400G: 4, "100M/FE": 5, unknown: 15}
+    biggest_misses:
+      - "ENTIRE EX-SFP-* family (~30): EX-series switch optics — EX-SFP-10GE-SR/LR/ER/ZR/LRM/USR/DAC-*,
+         EX-SFP-1GE-*, EX-SFP-1FE-*, EX-SFP-GE10KT*/GE40KT*/GE80KCW* (CWDM). The legacy PDF only had the
+         M/T-series SFP-1GE-* PNs; the EX-SFP- prefix family is a DISTINCT, entirely-missed PN universe."
+      - "40G tier (JNP-40G-AOC-*, JNP-QSFP-40G-*) and 25G tier (JNP-SFP-25G-*) — zero prior coverage."
+      - "100G beyond the guide floor (JNP-100G-DAC/AOC/4X25G-*)."
+    A_only_48: "EOL families (XENPAK/XFP/CTP-/RX-) the distributor doesn't stock + truncated guide-parse
+                fragments (QDD-400G, QSFP-100G-DAC) — keep EOL flagged (§7.2), fix the fragments on clean parse."
+    caveat: "edgeoptic is ONE distributor (itself possibly incomplete). True universe = UNION of Juniper
+             guides + EX-series source + per-SKU datasheets + >=2 distributors, deduped + grounded."
 verdict: >
-  Juniper UNBLOCKED — 38 legacy Ethernet optics already grounded (output/stage3/
-  juniper_transceivers_facts.json) AND the modern 100G/400G/800G guides are now cached (above),
-  correcting the earlier "JS-blocked" diagnosis. RESUME: parse the 3 modern guides (text-mode, like
-  the legacy PDF — extract PN/speed/type/reach/wavelength/connector) → merge with the 38 legacy →
-  author Juniper as ONE batch → gate → ZIP → operator audit. complete:false until the parse + author land.
+  INCOMPLETE — and Workflow-B PROVES it (overlap only 15 of 91 vs 63). My earlier "modern set cached =
+  done" was wrong: a whole EX-SFP-* family + the 25G + 40G tiers were entirely missing. Juniper is NOT
+  authorable. TO COMPLETE: build the UNIONED enumeration (legacy M/T PDF + EX-series optics + 100G/400G/
+  800G guides + 25G/40G per-SKU + >=2 distributor catalogs), dedup, ground EACH PN from a Juniper
+  source (per-SKU 740-datasheets where the guides don't parse), re-run Workflow-B until the diff is
+  empty, finalize this record + reconcile to manifest. THEN author one complete Juniper batch.
