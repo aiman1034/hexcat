@@ -1,23 +1,58 @@
-# Machine-readable completeness record for gate.py L6 (MISSION §8 L6).
-# Keyed "{Brand}_{category}". Fields: enumerated (locked universe size), captured (grounded+emitted),
-# flagged (gaps NOT grounded, EACH with a reason_code from: out-of-scope | un-groundable-after-ladder |
-# eol | harvest-gap | source-blocked).
-# L6 PASS  <=>  captured == emitted(bundle)  AND  captured + len(flagged) >= enumerated
-#               AND every flagged gap has a valid reason_code.
-# L6 REFUSE on: no record for the key, count mismatch (silent shortfall), or a flag without a reason_code.
-# The 8 brands below grounded their full enumerated set (flagged: []). NVIDIA's 800G-Ethernet is a
-# SEPARATE future universe (not part of the 85 <=400G enumerated set) — tracked in nvidia completeness
-# prose, not a gap in this universe.
-
-Cisco_transceivers:    {enumerated: 596, captured: 596, flagged: []}
-Arista_transceivers:   {enumerated: 347, captured: 347, flagged: []}
-HPE_transceivers:      {enumerated: 147, captured: 147, flagged: []}
-Fortinet_transceivers: {enumerated: 87,  captured: 87,  flagged: []}
-Meraki_transceivers:   {enumerated: 25,  captured: 25,  flagged: []}
-NVIDIA_transceivers:   {enumerated: 85,  captured: 85,  flagged: []}
-MikroTik_transceivers: {enumerated: 24,  captured: 24,  flagged: []}
-MikroTik_switches:     {enumerated: 36,  captured: 36,  flagged: []}
-
-# Juniper_transceivers (in progress): enumerated 205, captured 43 (chunk 1/8). NOT registered here until
-# its bundle emits — when it does, captured=grounded and flagged lists every still-ungrounded PN with a
-# reason_code, so L6 reconciles or REFUSES.
+Cisco_transceivers:
+  enumerated: 596
+  captured: 596
+  flagged: []
+Arista_transceivers:
+  enumerated: 347
+  captured: 347
+  flagged: []
+HPE_transceivers:
+  enumerated: 147
+  captured: 147
+  flagged: []
+Fortinet_transceivers:
+  enumerated: 87
+  captured: 87
+  flagged: []
+Meraki_transceivers:
+  enumerated: 25
+  captured: 25
+  flagged: []
+NVIDIA_transceivers:
+  enumerated: 85
+  captured: 85
+  flagged: []
+MikroTik_transceivers:
+  enumerated: 24
+  captured: 24
+  flagged: []
+MikroTik_switches:
+  enumerated: 36
+  captured: 36
+  flagged: []
+Juniper_transceivers:
+  enumerated: 201
+  captured: 191
+  flagged:
+  - pn: JNP-100G-4X25G-3M
+    reason_code: out-of-scope
+  - pn: QDD-100GB-DCO-ZRP-J
+    reason_code: un-groundable-after-ladder
+  - pn: QDD-400GB-VSR4-J
+    reason_code: un-groundable-after-ladder
+  - pn: QSFP-40GB-ZR4-J
+    reason_code: un-groundable-after-ladder
+  - pn: QSFP-40GBASE-PLR-J
+    reason_code: un-groundable-after-ladder
+  - pn: QSFP-40GBASE-SR4L-J
+    reason_code: un-groundable-after-ladder
+  - pn: XFP-10G-BX-D-20KM-J
+    reason_code: un-groundable-after-ladder
+  - pn: XFP-10G-BX-U-20KM-J
+    reason_code: un-groundable-after-ladder
+  - pn: XFP-10GB-BX-D-60-J
+    reason_code: un-groundable-after-ladder
+  - pn: XFP-10GB-BX-U-60-J
+    reason_code: un-groundable-after-ladder
+_Juniper_note: enumerated 205 raw - 4 alias-collapsed = 201 distinct; captured 191
+  grounded (==emitted); flagged-out 10 reason-coded; 191+4+10=205.

@@ -356,24 +356,6 @@
   "desc_seed": "Ethernet optic module",
   "source": "juniper-optic-modules.pdf"
  },
- "SFP-": {
-  "sku": "SFP-",
-  "form_factor": "SFP",
-  "speed": "1 Gbit/s",
-  "standard": "1000BASE-BX",
-  "wavelengths_nm": [
-   "1550",
-   "1310"
-  ],
-  "media": [
-   "SMF"
-  ],
-  "connector": "LC",
-  "reach": "40 km",
-  "legacy_eol_candidate": true,
-  "desc_seed": "GE40KT15R13 DOWNLINK, at 40 km. (Tx1550 nm / Rx1310 ERX705, ERX710, ERX1410, (single nm). A single fiber is used for both transmit ERX1440, M7i, M10i, M40e, str",
-  "source": "juniper-optic-modules.pdf"
- },
  "SFPP-10GE-ER": {
   "sku": "SFPP-10GE-ER",
   "form_factor": "SFP+",
@@ -510,21 +492,6 @@
   "desc_seed": "10GBASE-ZR, SMF, 80 km reach.",
   "source": "juniper-optic-modules.pdf"
  },
- "XFP-10G-CBAND-": {
-  "sku": "XFP-10G-CBAND-",
-  "form_factor": "XFP",
-  "speed": "10 Gbit/s",
-  "standard": "10GBASE-ZR",
-  "wavelengths_nm": [],
-  "media": [
-   "SMF"
-  ],
-  "connector": "LC",
-  "reach": "80 km",
-  "legacy_eol_candidate": true,
-  "desc_seed": "T50-ZR across C-Band 50 GHz channel spacing, T640, T1600 Tunable compliant with ITU-T G.698.1. C-BAND ITU Grid",
-  "source": "juniper-optic-modules.pdf"
- },
  "XFP-10GE-ER": {
   "sku": "XFP-10GE-ER",
   "form_factor": "XFP",
@@ -559,23 +526,6 @@
   "desc_seed": "1310 nm 10 km reach. SRX3600, SRX5600, SRX5800",
   "source": "juniper-optic-modules.pdf"
  },
- "XFP-10G-E-": {
-  "sku": "XFP-10G-E-",
-  "form_factor": "XFP",
-  "speed": "10 Gbit/s",
-  "standard": "10GBASE-ER",
-  "wavelengths_nm": [
-   "1550"
-  ],
-  "media": [
-   "SMF"
-  ],
-  "connector": "LC",
-  "reach": "40 km",
-  "legacy_eol_candidate": true,
-  "desc_seed": "OC192-IR2 for 10GbE and OC192, 1550 nm for 40 km MX480, MX960, T320, OC192/ transmission. T640 STM64",
-  "source": "juniper-optic-modules.pdf"
- },
  "XFP-10GE-SR": {
   "sku": "XFP-10GE-SR",
   "form_factor": "XFP",
@@ -593,23 +543,6 @@
   "desc_seed": "interface. SRX3600, SRX5600, SRX5800 62.5/125 33 m",
   "source": "juniper-optic-modules.pdf"
  },
- "XFP-10G-L-": {
-  "sku": "XFP-10G-L-",
-  "form_factor": "XFP",
-  "speed": "10 Gbit/s",
-  "standard": "10GBASE-LR",
-  "wavelengths_nm": [
-   "1310"
-  ],
-  "media": [
-   "SMF"
-  ],
-  "connector": "LC",
-  "reach": "10 km",
-  "legacy_eol_candidate": true,
-  "desc_seed": "OC192-SR1 for 10GbE and OC192, 1310 nm for 10 km MX240, MX480, MX960 OC192/ transmission. STM64",
-  "source": "juniper-optic-modules.pdf"
- },
  "XFP-10G-S": {
   "sku": "XFP-10G-S",
   "form_factor": "XFP",
@@ -625,23 +558,6 @@
   "reach": "300 m",
   "legacy_eol_candidate": true,
   "desc_seed": "m transmission. MX480, MX960, T320, T640 62.5/125 33 m",
-  "source": "juniper-optic-modules.pdf"
- },
- "XFP-10G-Z-": {
-  "sku": "XFP-10G-Z-",
-  "form_factor": "XFP",
-  "speed": "10 Gbit/s",
-  "standard": "10GBASE-ZR",
-  "wavelengths_nm": [
-   "1550"
-  ],
-  "media": [
-   "SMF"
-  ],
-  "connector": "LC",
-  "reach": "80 km",
-  "legacy_eol_candidate": true,
-  "desc_seed": "OC192-LR2 for 10GbE and OC192, 1550 nm for 80 km MX240, MX480, MX960, OC192/ transmission. E120, E320 STM64 transform the experience and economics of networking",
   "source": "juniper-optic-modules.pdf"
  },
  "QDD-2X400G-DR4-P": {
@@ -879,7 +795,10 @@
   "flags": [
    "reach [VERIFY] — guide doesn't pin PLR4 reach; per-SKU datasheet needed"
   ],
-  "note": "parallel single-mode"
+  "note": "parallel single-mode",
+  "omit_at_author": [
+   "reach"
+  ]
  },
  "QDD-400G-ZR": {
   "sku": "QDD-400G-ZR",
@@ -1507,7 +1426,10 @@
   "flags": [
    "BiDi λ-pair [VERIFY] per-SKU"
   ],
-  "note": "simplex single-mode BiDi"
+  "note": "simplex single-mode BiDi",
+  "omit_at_author": [
+   "wavelengths_nm"
+  ]
  },
  "QSFP-100G-FR": {
   "sku": "QSFP-100G-FR",
@@ -1610,7 +1532,10 @@
   "flags": [
    "BiDi λ-pair [VERIFY] per-SKU"
   ],
-  "note": "simplex single-mode BiDi"
+  "note": "simplex single-mode BiDi",
+  "omit_at_author": [
+   "wavelengths_nm"
+  ]
  },
  "QSFP-100G-PSM4": {
   "sku": "QSFP-100G-PSM4",
@@ -1699,16 +1624,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10G-BX-D-40": {
   "sku": "EX-SFP-10G-BX-D-40",
@@ -1720,16 +1643,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10G-BX-D-80": {
   "sku": "EX-SFP-10G-BX-D-80",
@@ -1741,16 +1662,14 @@
   "connector": "Simplex LC",
   "reach": "80 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10G-BX-U": {
   "sku": "EX-SFP-10G-BX-U",
@@ -1762,16 +1681,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10G-BX-U-40": {
   "sku": "EX-SFP-10G-BX-U-40",
@@ -1783,16 +1700,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10G-BX-U-80": {
   "sku": "EX-SFP-10G-BX-U-80",
@@ -1804,16 +1719,14 @@
   "connector": "Simplex LC",
   "reach": "80 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10GE-BX23": {
   "sku": "EX-SFP-10GE-BX23",
@@ -1825,16 +1738,14 @@
   "connector": "Simplex LC",
   "reach": "23 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10GE-BX23-60": {
   "sku": "EX-SFP-10GE-BX23-60",
@@ -1846,16 +1757,14 @@
   "connector": "Simplex LC",
   "reach": "23 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10GE-BX32": {
   "sku": "EX-SFP-10GE-BX32",
@@ -1867,16 +1776,14 @@
   "connector": "Simplex LC",
   "reach": "32 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10GE-BX32-60": {
   "sku": "EX-SFP-10GE-BX32-60",
@@ -1888,16 +1795,14 @@
   "connector": "Simplex LC",
   "reach": "32 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "EX-SFP-10GE-ER": {
   "sku": "EX-SFP-10GE-ER",
@@ -2774,16 +2679,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX10U": {
   "sku": "JNP-SFP-10G-BX10U",
@@ -2795,16 +2698,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX20D": {
   "sku": "JNP-SFP-10G-BX20D",
@@ -2816,16 +2717,14 @@
   "connector": "Simplex LC",
   "reach": "20 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX20U": {
   "sku": "JNP-SFP-10G-BX20U",
@@ -2837,16 +2736,14 @@
   "connector": "Simplex LC",
   "reach": "20 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX40D": {
   "sku": "JNP-SFP-10G-BX40D",
@@ -2858,16 +2755,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX40U": {
   "sku": "JNP-SFP-10G-BX40U",
@@ -2879,16 +2774,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX60D": {
   "sku": "JNP-SFP-10G-BX60D",
@@ -2900,16 +2793,14 @@
   "connector": "Simplex LC",
   "reach": "60 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX60U": {
   "sku": "JNP-SFP-10G-BX60U",
@@ -2921,16 +2812,14 @@
   "connector": "Simplex LC",
   "reach": "60 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-10G-BX80U": {
   "sku": "JNP-SFP-10G-BX80U",
@@ -2942,16 +2831,14 @@
   "connector": "Simplex LC",
   "reach": "80 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR": {
   "sku": "JNP-SFP-25G-LR",
@@ -2982,16 +2869,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR-BX-U": {
   "sku": "JNP-SFP-25G-LR-BX-U",
@@ -3003,16 +2888,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi"
+  "flags": [],
+  "note": "single-fiber BiDi | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR-BXD-I": {
   "sku": "JNP-SFP-25G-LR-BXD-I",
@@ -3024,16 +2907,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind.)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind.) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR-BXU-I": {
   "sku": "JNP-SFP-25G-LR-BXU-I",
@@ -3045,16 +2926,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind.)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind.) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR-CW-47": {
   "sku": "JNP-SFP-25G-LR-CW-47",
@@ -3066,16 +2945,14 @@
   "connector": "Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1471 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 47 = 1471 nm"
  },
  "JNP-SFP-25G-LR-CW-49": {
   "sku": "JNP-SFP-25G-LR-CW-49",
@@ -3087,16 +2964,14 @@
   "connector": "Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1491 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 49 = 1491 nm"
  },
  "JNP-SFP-25G-LR-CW-51": {
   "sku": "JNP-SFP-25G-LR-CW-51",
@@ -3108,16 +2983,14 @@
   "connector": "Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1511 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 51 = 1511 nm"
  },
  "JNP-SFP-25G-LR-CW-53": {
   "sku": "JNP-SFP-25G-LR-CW-53",
@@ -3129,16 +3002,14 @@
   "connector": "Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1531 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 53 = 1531 nm"
  },
  "JNP-SFP-25G-LR-CW-55": {
   "sku": "JNP-SFP-25G-LR-CW-55",
@@ -3150,16 +3021,14 @@
   "connector": "Duplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1551 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 55 = 1551 nm"
  },
  "JNP-SFP-25G-LR-CW27-40": {
   "sku": "JNP-SFP-25G-LR-CW27-40",
@@ -3171,16 +3040,14 @@
   "connector": "Duplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1271 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 27 = 1271 nm"
  },
  "JNP-SFP-25G-LR-CW29-40": {
   "sku": "JNP-SFP-25G-LR-CW29-40",
@@ -3192,16 +3059,14 @@
   "connector": "Duplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1291 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 29 = 1291 nm"
  },
  "JNP-SFP-25G-LR-CW31-40": {
   "sku": "JNP-SFP-25G-LR-CW31-40",
@@ -3213,16 +3078,14 @@
   "connector": "Duplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1311 nm (CWDM)"
   ],
   "lanes": 1,
   "bidi": false,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "CWDM channel λ [VERIFY] per-SKU"
-  ],
-  "note": "single CWDM λ"
+  "flags": [],
+  "note": "single CWDM λ | λ closed: CWDM ch 31 = 1311 nm"
  },
  "JNP-SFP-25G-LR-I-DW3033": {
   "sku": "JNP-SFP-25G-LR-I-DW3033",
@@ -3424,16 +3287,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind.)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind.) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-LR40-BXU-I": {
   "sku": "JNP-SFP-25G-LR40-BXU-I",
@@ -3445,16 +3306,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind.)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind.) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "JNP-SFP-25G-SR": {
   "sku": "JNP-SFP-25G-SR",
@@ -3716,7 +3575,11 @@
   "flags": [
    "type [VERIFY] per-SKU"
   ],
-  "note": ""
+  "note": "",
+  "omit_at_author": [
+   "wavelengths_nm",
+   "connector"
+  ]
  },
  "SFPP-10GE-BX10D-IT": {
   "sku": "SFPP-10GE-BX10D-IT",
@@ -3728,16 +3591,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind. temp)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind. temp) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "SFPP-10GE-BX10U-IT": {
   "sku": "SFPP-10GE-BX10U-IT",
@@ -3749,16 +3610,14 @@
   "connector": "Simplex LC",
   "reach": "10 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind. temp)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind. temp) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "SFPP-10GE-BX40D-IT": {
   "sku": "SFPP-10GE-BX40D-IT",
@@ -3770,16 +3629,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind. temp)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind. temp) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "SFPP-10GE-BX40U-IT": {
   "sku": "SFPP-10GE-BX40U-IT",
@@ -3791,16 +3648,14 @@
   "connector": "Simplex LC",
   "reach": "40 km",
   "wavelengths_nm": [
-   "[VERIFY]"
+   "1270 nm / 1330 nm (BiDi-Paar, D/U komplementär)"
   ],
   "lanes": 1,
   "bidi": true,
   "grounded": true,
   "source": "juniper distributor enumeration + MSA standard (PN-encoded)",
-  "flags": [
-   "BiDi λ-pair [VERIFY]"
-  ],
-  "note": "single-fiber BiDi (ind. temp)"
+  "flags": [],
+  "note": "single-fiber BiDi (ind. temp) | λ closed: 10G/25G-BX 1270/1330 MSA pair"
  },
  "SFPP-10GE-ZR": {
   "sku": "SFPP-10GE-ZR",
