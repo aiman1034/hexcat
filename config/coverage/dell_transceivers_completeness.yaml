@@ -1,0 +1,38 @@
+brand: Dell
+category: transceivers
+# Enumeration source: the official Dell "Networking Transceivers and Cables" spec sheet
+# (datasheets/cache/dell-networking-optics-datasheet.pdf, 8 pp). delltechnologies.com 403'd (the stale
+# §10 block) but a reseller mirror (andovercg.com) serves the GENUINE Dell datasheet PDF -> §7.1 rung-b
+# UNBLOCK. Content is Dell's own (source of truth); the mirror is just the transport.
+# Parsed by _scratch/dell_facts.py via pdfplumber extract_tables() -> output/stage3/dell_facts.json.
+#
+# STRUCTURE: pages 2-3 = optic spec grid (Product|Model|Max.distance|IEEE Standard|MSA|Receptacle|Fiber|
+# Mode|Power|Wavelength|Temperature -> every grounded value); page 4 = DAC/AOC + breakout cable grid
+# (real Dell cable PNs DAC-SFP-10G-0.5M ... with length families); page 5 = DWDM (G.709 10G + the ITU
+# SFP-10G-W## channel tables); page 8 = the flat Part-number|Description list (denominator).
+#
+complete: false                  # HARVEST CHECKPOINT — facts foundation banked; refinements below before authoring
+captured_count: 71               # 29 optics + 42 cable length-SKUs in dell_facts.json (clean, no PDF artifacts)
+breakdown:
+  optics_by_speed: {1G: 5, 10G: 6, 40G: 10, 100G: 8}
+  cables: 42                     # DAC/AOC straight + QSFP->4xSFP breakout + 4xRJ45, length-families split per PN
+flagged_facts_stage:
+  - {family: SFP-8GFC-SW / SFP-8GFC-LW, reason_code: out-of-scope, note: "8G FIBRE CHANNEL (non-Ethernet) — OPERATOR SCOPE CALL pending, same class as the SONET-out-of-scope ruling. Default-excluded until confirmed."}
+  - {pn: QSA-QSFP-SFP+, reason_code: out-of-scope, note: "QSFP+->SFP form-factor ADAPTER, not a transceiver (= Cisco QSA)."}
+  - {family: SFP-10G-W17..W61 + SFP-10G-T-DWDM + Tunable-DWDM, reason_code: harvest-gap, note: "fixed-channel/tunable 10G DWDM family — deferred; page-5 ITU tables (W17-W46 visible) give exact per-channel λ. Distinct sub-family to ground + reconcile (channel count vs the W17..W61 range)."}
+# OPEN REFINEMENTS before authoring (RESUME POINT — next pass):
+#  1. QSFP-40G-ER4 (real optic on page 8) MISSED a spec-grid row -> re-parse page 3 / ground from page 8 desc
+#     + the page-7 compat matrix. (LM4-UNIV + SM4 variants WERE captured from the grid; ER4 row glitched.)
+#  2. 100G PN ALIAS reconcile: the spec grid names them QSFP-100G-* ; the page-8 order list names them
+#     Q28-100G-* (Q28-100G-SR4 == QSFP-100G-SR4). Pick the page-8 "Part number" as canonical (Dell's order
+#     code), keep the grid name as alt_pn. Also fix the parse glitch "QSFP-100GPSM-IR" (missing hyphen) and
+#     map Q28-MTP-PSM4-5M.
+#  3. Cross-check captured set vs the page-8 denominator -> reconcile EXACT (every page-8 optic captured or
+#     flagged); cables: page-8 lists the families, page-4 grid has the length PNs (already split).
+#  4. CXP-100G-SR10: CXP form factor (in the locked set) — keep; confirm Faseranzahl (SR10 = 20 fibres).
+#  5. Force10 legacy: this sheet is current PowerSwitch; if older Force10/Dell-EMC optics are in the
+#     assortment, a 2nd source (Force10 optics matrix) may extend the universe — Workflow-B after the core set.
+verdict: Dell UNBLOCKED + groundable (corrects the stale §10 "403/JS-blocked" label). 71-SKU clean facts
+  foundation banked; ~5 refinements (ER4 gap, 100G Q28/QSFP alias, page-8 cross-check, DWDM sub-family,
+  8GFC scope call) before author -> gate -> ZIP for operator L8. Authoring deferred to a fresh-context pass
+  (MISSION §9: bank verified facts as a checkpoint; do not half-build).
