@@ -16,24 +16,21 @@ breakdown:
   by_form_factor: {SFP: 22, SFP+: 4, XFP: 8, XENPAK: 4}
   by_speed: {1G: 18, 100M: 4, 10G: 16}
   eol_candidates: 23        # XENPAK/XFP/E-Series-era — KEPT + flagged informational (§7.2), never dropped
-excluded_count: 10          # SONET-only optics (OC-3/OC-12/OC-48) in the PDF — NO Ethernet BASE- standard
+excluded_count: 10          # SONET-only optics (OC-3/OC-12/OC-48) — SKIPPED (operator decision 2026-06-14)
 excluded_note: >
   SFP-1OC48-{IR,LR,SR}, SFP-OC12-{IR,LR,SR}, SFP-OC3-{IR,LR,SR} + 1 wrapped row are SONET/SDH optics,
-  not Ethernet transceivers. Excluded flag-don't-fabricate (no Ethernet standard to ground). DECISION
-  NEEDED: is SONET in Hexwaren's scope? If yes -> a separate SONET sub-type/schema, not Ethernet.
-# --- the GAP (the catalog bulk) ---
-harvest_gap:
-  what: Modern Juniper optics — QSFP+ / QSFP28 / QSFP-DD / 100G / 400G / JCO coherent + current
-        QFX/EX/ACX/PTX/MX SFP28/SFP56. The optic-modules.pdf is a LEGACY matrix and omits all of these.
-  why_blocked: qualified-optics/*.html (100g/40g/400g/10g-1g) are JS-rendered and time out headless;
-               static HTML has 0 PNs.
-  alternate_sources_to_try_next:
-    - apps.juniper.net/hct backend JSON API (the HCT widget's data endpoint — often a plain XHR)
-    - per-platform doc transceiver-spec pages that DO render tables (QFX10000 one was prose; others may not be)
-    - a CURRENT Juniper optics datasheet PDF (newer than optic-modules.pdf) or per-optic datasheet pages
-    - scoped browser with a longer/interaction-based wait or the page's print/XHR endpoint
+  not Ethernet. Operator ruled: SKIP SONET — out of scope. Permanently excluded (not a gap).
+# --- the modern set: SOURCES NOW CACHED (gap RESOLVED to a parse task) ---
+modern_optics_sources_cached:   # the JS qualified-optics/HCT pages time out headless; these CURRENT
+                                # official guide PDFs are the $0 source instead (ladder rung-b win):
+  - datasheets/cache/juniper-100g-optics-guide.pdf   # 100G guide (pub 2026-03-08), 59pp, ~16 PNs (QSFP-100G-DR/FR/ERBD, CFP2-100GBASE-*, JNP-QSFP-100G-*, QSFP-100G-DAC-*)
+  - datasheets/cache/juniper-400g-optics-guide.pdf   # 400G guide (pub 2025-07-30), 56pp, ~13 PNs (QDD-400G-DR4/ER4/ZR/AOC, JCO400-QDD-ZR coherent)
+  - datasheets/cache/juniper-800g-optics-guide.pdf   # 800G guide, 69pp, ~17 PNs (QDD-800G-*, QDD-2X400G-*)
+  # (regex-floor counts; proper per-guide parse will yield the full set. No separate 10G/25G/40G guide
+  #  at the URL pattern — 10G/1G covered by the legacy optic-modules.pdf; 25G/40G to confirm during parse.)
 verdict: >
-  Juniper UNBLOCKED for the legacy Ethernet optic set (38 grounded SKUs in
-  output/stage3/juniper_transceivers_facts.json). Author AFTER the modern QSFP/100G/400G set is
-  harvested via an alternate source (above) so Juniper emits as ONE complete batch, not a partial.
-  complete:false until the modern set lands.
+  Juniper UNBLOCKED — 38 legacy Ethernet optics already grounded (output/stage3/
+  juniper_transceivers_facts.json) AND the modern 100G/400G/800G guides are now cached (above),
+  correcting the earlier "JS-blocked" diagnosis. RESUME: parse the 3 modern guides (text-mode, like
+  the legacy PDF — extract PN/speed/type/reach/wavelength/connector) → merge with the 38 legacy →
+  author Juniper as ONE batch → gate → ZIP → operator audit. complete:false until the parse + author land.
