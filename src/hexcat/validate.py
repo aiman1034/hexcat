@@ -154,8 +154,13 @@ _DUP_TOKEN_RE = re.compile(r"\b([A-Za-zÄÖÜäöü0-9][\w+/.\-]*)\s+\1\b")     
 _DBL_SEP_RE = re.compile(r",\s*[–—-]\s|[–—]\s*,")                        # doubled separator: ", –" / "– ,"
 _PLACEHOLDER_VALS = frozenset({"—", "-", "–", "--", "N/A", "n/a", "k.A.", "keine", "none"})
 # B.5 known product-line guard: a PN family that belongs to a specific Hersteller, used ONLY to
-# CATCH a misassignment (never as the assignment rule). MGB*/MFE* mini-GBICs are Cisco Small Business.
-_HERSTELLER_LINE_GUARD = ((re.compile(r"^(MGB|MFE)", re.IGNORECASE), "Cisco"),)
+# CATCH a misassignment (never as the assignment rule). MGB*/MFE* mini-GBICs are Cisco Small Business
+# — BUT "MGBIC-" (note the "IC") is the Enterasys mini-GBIC line, now sold by Extreme Networks; it must
+# be matched FIRST and the Cisco MGB rule guarded with a negative look-ahead so it never claims MGBIC.
+_HERSTELLER_LINE_GUARD = (
+    (re.compile(r"^MGBIC", re.IGNORECASE), "Extreme"),
+    (re.compile(r"^(MGB(?!IC)|MFE)", re.IGNORECASE), "Cisco"),
+)
 
 
 def valid_gtin(s: str) -> bool:

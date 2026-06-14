@@ -14,7 +14,7 @@ from hexcat.config import load_rules
 from hexcat.gate import gate
 
 RULES = load_rules()
-KNOWN = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "MikroTik_Switches", "Juniper"]
+KNOWN = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "MikroTik_Switches", "Juniper", "Extreme"]
 LIVE = ("L1", "L2", "L3", "L4", "L5", "L6")
 
 

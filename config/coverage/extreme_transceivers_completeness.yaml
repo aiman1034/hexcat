@@ -23,11 +23,16 @@ category: transceivers
 #    40G-LR4=1271–1331 CWDM4; LR/DR/FR/PSM4/LX/FX=1310; ER/ZR/ELX=1550. 9 of 46 transceivers
 #    (BiDi pairs, 4WDM ladders, SWDM4) are left BLANK for the EXOS-DB follow-up / Rule-9 backfill —
 #    flag-don't-fabricate.
-complete: false                          # facts grounded; CONTENT AUTHORING pending (not yet gated GREEN)
+complete: true                           # AUTHORED + gate L1-L7 GREEN 2026-06-14 (86 SKUs); awaiting operator L8
 universe_total: 99                       # 72 guide rows, cables expanded to length-SKUs, minus dups
 captured_count: 91                       # grounded SKUs emitted to extreme_facts.json
+authored_count: 86                       # 91 facts - 5 author-stage spec-uncertain flags (below) = 86 emitted
 gap_count: 0
-flagged_count: 8                         # see output/stage3/extreme_flags.txt — ALL legitimate:
+# AUTHOR-STAGE FLAGS (5, gate_completeness.yaml: enumerated 91 = captured 86 + flagged 5), flag-don't-fabricate:
+#  - 3x 100G-4WDM-10/20/40: the -10/-20/-40 wavelength PLANS (CWDM4 vs LAN-WDM) are unprovable w/o the EXOS DB
+#  - 10331 (100GBASE-SR10-CFP2): parsed connector MPO-12 contradicts SR10's 20-fibre need; Faseranzahl unprovable
+#  - 40G-LM4-QSFP160KM: facts λ=1310 nm SMF cannot reach 160 km — λ/reach/type internally inconsistent
+flagged_count: 8                         # FACTS-stage exclusions (extreme_flags.txt) — ALL legitimate:
 # - 3× "-1001" alternate-naming AOC codes with no clean length (real SKUs captured under their
 #   length-PN; these are duplicate order codes) -> excluded
 # - 1× 100G-AOC Breakout: only numeric codes 10443/10444 for 10m/20m, no descriptive length-PN

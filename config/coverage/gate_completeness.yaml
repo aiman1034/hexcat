@@ -62,3 +62,18 @@ Juniper_transceivers:
     reason_code: un-groundable-after-ladder
 _Juniper_note: enumerated 205 raw - 4 alias = 201 distinct; captured 188 (==emitted);
   flagged 13 reason-coded; 188+13+4=205.
+
+Extreme_transceivers:
+  enumerated: 91
+  captured: 86
+  flagged:
+    - {pn: 100G-4WDM-QSFP10KM, reason_code: un-groundable-after-ladder}
+    - {pn: 100G-4WDM-QSFP20KM, reason_code: un-groundable-after-ladder}
+    - {pn: 100G-4WDM-QSFM40KM, reason_code: un-groundable-after-ladder}
+    - {pn: 10331, reason_code: source-blocked}
+    - {pn: 40G-LM4-QSFP160KM, reason_code: un-groundable-after-ladder}
+_Extreme_note: enumerated 91 = the distinct grounded SKUs in extreme_facts.json (parsed from the
+  Optics Solution Guide; the guide's raw rows -> 91 after dedup/ambiguity exclusions documented in
+  config/coverage/extreme_transceivers_completeness.yaml). captured 86 (==emitted); flagged 5
+  reason-coded (3x 100G-4WDM λ-plan, 10331 SR10-CFP2 fibre/connector conflict, 40G-LM4 λ/reach
+  inconsistent); 86+5=91.
