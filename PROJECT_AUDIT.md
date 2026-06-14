@@ -160,3 +160,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
 - **CHECKPOINT 2026-06-14 #4 (after NVIDIA + fresh-brand source recon):** NVIDIA done (1st fresh brand, `148ed65`). The other 10 fresh brands have NO cached source — harvesting each needs locating + $0-fetching its enumeration, and **several sources are $0-BLOCKED** (external-dependency blocker like CAPTCHA): Supermicro + Dell support pages → **403**; Juniper transceiver list → **JS-gated HCT app** (apps.juniper.net/hct, no static HTML); Lenovo Press needs the correct doc URL (guessed `lp1380` is the wrong/withdrawn product). **FETCHABLE source FOUND + CACHED:** Extreme Networks Optics Solution Guide → `datasheets/cache/extreme-optics-solution-guide.pdf` (986 KB, 15 pp, has the SFP/SFP+/SFP28/SFP-DD/QSFP+/QSFP28 line + PNs like 100G-QSFP-ESR4) — plus the EXOS optics DB (optics.extremenetworks.com/EXOS) for full specs. **RESUME POINT — next fresh brand = Extreme:** parse the cached PDF (+ EXOS DB for reach/wavelength) → `extreme_facts.json` → author via the `nvidia_author.py` pattern (cable/XCVR branch, per-SKU-unique sentences, lane-aware wavelengths, comma-form meta, add `Extreme` to `config/rules.yaml` vendors) → backfill → gate → ZIP. For the $0-blocked brands (Supermicro/Dell/Juniper/Huawei/ZTE), the operator may need to provide a source PDF or solve the gate (same model as the CAPTCHA / supplier-feed dependencies). **Authoring lessons for all fresh brands are in the NVIDIA entry above.**
 - **B.8 field-coverage blind spot FIXED (operator parallel audit, gate `8f55522` + back-apply `38ab528`):** B.8 had only scanned Kurzbeschreibung + Artikelname → the same `ein -X`/`von .` artifacts persisted UNDETECTED in **Beschreibung (composed from intro) + FAQ** (NVIDIA proved it — authored AFTER B.8 yet a FAQ `von .` slipped). Widened B.8 to **all fields** (Kurz/Artikelname/Beschreibung/Titel/Meta + FAQ cell); `audit_semantic` now scans the raw content JSON (intro→Beschreibung, FAQ). Re-run FAILED on HPE 5 / Fortinet 2 / NVIDIA 1 (proving coverage) → fixed: HPE intro `ein -Transceiver`→`ein Transceiver`; Fortinet intro hyphen + FAQ `Länge von .`→1m/5m; NVIDIA re-authored with PN-length fallback (FNM050→50 m) + FLAG guard. Also **refined the leading-empty pattern to INDEFINITE articles only** — a definite `die -L-Variante`/`das -I` legitimately discusses a PN suffix (caught + cleared 6 Cisco FAQ false-positives, so Cisco needed NO change). **All 7 brands now audit_semantic 0×8 across ALL fields; 413 tests.** Re-emitted HPE/Fortinet/NVIDIA ZIPs `…_38ab528.zip` (Arista/Cisco/Meraki/MikroTik unchanged, verified in-place). **Lesson for all future authoring: fill every slot; the gate now hard-fails empty slots in any field.**
 - Next: resume at **Extreme** (cached PDF) → remaining fresh brands; then switches (Rule-7 STOP).
+
+---
+
+## 10. SOURCE MANIFEST — operator action to unblock fresh brands ($0-harvest blockers)
+
+The 10 remaining fresh brands have **no cached source** and their official transceiver enumerations
+are not $0-fetchable in a cleanly-parseable form (the same external-dependency class as a CAPTCHA /
+the supplier price-feed). Per brand: the source to use · why it's blocked · **exactly what file to
+drop into `datasheets/cache/` to unblock authoring**. A good drop-in is a parts list / datasheet with
+per-SKU: PN · speed · form factor · type/reach (SR/LR/FR4/…) · connector · wavelength · media · (cable) length.
+
+| Brand | Source to use | Blocker (measured) | Drop into `datasheets/cache/` |
+|---|---|---|---|
+| **Extreme** (+Avaya) | EXOS Optics DB `optics.extremenetworks.com/EXOS` (full per-SKU specs) | Cached `extreme-optics-solution-guide.pdf` is marketing-bled (PN↔spec broken across lines → not groundable); EXOS DB is JS-rendered; distributor mirror partial/404 | `extreme-optics-parts.{csv,pdf}` — clean per-SKU table (or the EXOS DB CSV export) |
+| **Dell** | Dell "Networking Optics & Cables" support KB / SFP datasheet | dell.com support → **403** on $0 GET | `dell-optics.{pdf,csv}` |
+| **Supermicro** | supermicro.com networking accessories / transceiver datasheet | **403** on $0 GET | `supermicro-transceivers.{pdf,csv}` |
+| **Juniper** | Juniper HCT `apps.juniper.net/hct` / optics datasheet | **JS-gated** single-page app — no static HTML enumeration | `juniper-optics.{csv,pdf}` (HCT export) |
+| **Lenovo/IBM** | Lenovo Press "ThinkSystem Network Transceivers & Cables" guide | static + fetchable, but the **correct `lpNNNN` URL** wasn't found (guessed `lp1380` = wrong/withdrawn product) | the correct Lenovo Press doc URL, or `lenovo-transceivers.pdf` |
+| **Huawei** | Huawei optical-module datasheets (`support.huawei.com`) | likely login/region-gated (untested $0) | `huawei-optical-modules.{pdf,csv}` |
+| **ZTE** | ZTE optical-module datasheets | untested $0 (likely gated) | `zte-optics.{pdf,csv}` |
+| **Ruijie** | Ruijie optical-transceiver datasheets | untested $0 | `ruijie-optics.{pdf,csv}` |
+| **Palo Alto** | PAN-OS-compatible transceiver list (`docs.paloaltonetworks.com`) | untested $0 | `paloalto-transceivers.{pdf,csv}` |
+| **Ubiquiti** | ui.com store (UF-*, UACC-* optics/DAC) | JS store, specs sparse | `ubiquiti-optics.{csv,pdf}` |
+| **NVIDIA 800G-Eth** | NVIDIA LinkX **800G Ethernet** (Spectrum-X) parts list | no $0 static list located (the cached 800G list is XDR/InfiniBand) | `nvidia-800g-ethernet-parts.pdf` (same shape as the cached 400/200/100/25G list) |
+
+**Process once a source is dropped in:** run the NVIDIA pattern — `<brand>_facts.py` (parse the cached
+file) → author via the `nvidia_author.py` scaffold (cable/XCVR branch, per-SKU-unique sentences,
+lane-aware wavelengths, comma-form meta, **fill every slot — widened B.8 hard-fails empty slots in any
+field**) → add the brand to `config/rules.yaml` vendors → `backfill_brand` (Rule-9 commercial temp) →
+gate PASS → Rule-8 parity → `audit_semantic.py <Brand>` 0×8 (all fields) → price 0,00 → commit → ZIP.
