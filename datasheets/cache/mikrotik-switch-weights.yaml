@@ -1,0 +1,149 @@
+# MikroTik switch weights — Artikelgewicht (product/net) + Versandgewicht (gross/shipping).
+# MikroTik does NOT publish switch weight ($0-verified: HTML widget 0/36, 63 datasheet PDFs 0/36).
+# Operator-approved scoped relaxation (2026-06-14): use DISTRIBUTOR/RETAIL published weight for this
+# one manufacturer-unpublished attribute; every value cited; cross-checked; flag-don't-fabricate.
+# Priority: dateks.lv net+gross (logistics-grade) > mikrotik-store.eu (dedicated store) > datagram.ae.
+# Templated/default values discarded via duplicate-detection (dateks 2.153/3.4 pairs; datagram 3.5/4.5).
+# kg, German decimal written at emit. DERIVED Versand = Artikel x1.20 (marked) where no gross published.
+weights:
+  CRS106-1C-5S:
+    artikelgewicht: 0.4   # kg, source: mikrotik_store
+    versandgewicht: 0.48   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs106-1c-5s
+  CRS326-24G-2S+RM:
+    artikelgewicht: 2.2   # kg, source: mikrotik_store
+    versandgewicht: 2.64   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24g-2srm
+  CSS326-24G-2S+RM:
+    artikelgewicht: 1.8   # kg, source: mikrotik_store
+    versandgewicht: 2.16   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css326-24g-2srm
+  CRS112-8P-4S-IN:
+    artikelgewicht: 1.7   # kg, source: mikrotik_store
+    versandgewicht: 2.04   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs112-8p-4s-in
+    crosscheck: {"datagram": 0.8}
+    disagreement_note: {"datagram": 0.8}  # operator spot-check
+  CRS304-4XG-IN:
+    artikelgewicht: 0.96   # kg, source: mikrotik_store
+    versandgewicht: 1.152   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs304-4xg-in
+  CRS305-1G-4S+IN:
+    artikelgewicht: 0.402   # kg, source: dateks
+    versandgewicht: 0.492   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/271906-mikrotik-crs305-1g-4s-in
+    crosscheck: {"dateks_net": 0.402, "mikrotik_store": 0.6}
+    disagreement_note: {"mikrotik_store": 0.6}  # operator spot-check
+  CRS309-1G-8S+IN:
+    artikelgewicht: 0.943   # kg, source: dateks
+    versandgewicht: 1.209   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/270445-mikrotik-crs309-1g-8s-in
+    crosscheck: {"dateks_net": 0.943, "mikrotik_store": 1.2}
+  CRS310-1G-5S-4S+IN:
+    artikelgewicht: 1.2   # kg, source: dateks
+    versandgewicht: 1.68   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/821208-mikrotik-crs310-1g-5s-4s-in
+    crosscheck: {"dateks_net": 1.2, "mikrotik_store": 1.2, "datagram": 1.5}
+  CRS310-8G+2S+IN:
+    artikelgewicht: 1.3   # kg, source: mikrotik_store
+    versandgewicht: 1.56   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs310-8g2sin
+  CRS312-4C+8XG-RM:
+    artikelgewicht: 2.226   # kg, source: dateks
+    versandgewicht: 2.546   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/333099-mikrotik-crs312-4c-8xg-rm
+    crosscheck: {"dateks_net": 2.226, "mikrotik_store": 2.51}
+  CRS317-1G-16S+RM:
+    artikelgewicht: 2.51   # kg, source: mikrotik_store
+    versandgewicht: 3.012   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs317-1g-16srm
+  CRS320-8P-8B-4S+RM:
+    artikelgewicht: 3.4   # kg, source: mikrotik_store
+    versandgewicht: 4.08   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs320-8p-8b-4srm
+  CRS326-24G-2S+IN:
+    artikelgewicht: 1.6   # kg, source: mikrotik_store
+    versandgewicht: 1.92   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24g-2sin
+  CRS326-24S+2Q+RM:
+    artikelgewicht: 3.0   # kg, source: mikrotik_store
+    versandgewicht: 3.6   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-24s2qrm
+  CRS326-4C+20G+2Q+RM:
+    artikelgewicht: 3.8   # kg, source: mikrotik_store
+    versandgewicht: 4.56   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs326-4c20g2qrm
+  CRS328-24P-4S+RM:
+    artikelgewicht: 5.02   # kg, source: mikrotik_store
+    versandgewicht: 6.024   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs328-24p-4srm
+  CRS328-4C-20S-4S+RM:
+    artikelgewicht: 2.75   # kg, source: mikrotik_store
+    versandgewicht: 3.3   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs328-4c-20s-4srm
+  CRS354-48G-4S+2Q+RM:
+    artikelgewicht: 3.6   # kg, source: dateks
+    versandgewicht: 4.58   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/498221-mikrotik-crs354-48g-4s-2q-rm
+    crosscheck: {"dateks_net": 3.6, "mikrotik_store": 5.2}
+    disagreement_note: {"mikrotik_store": 5.2}  # operator spot-check
+  CRS354-48P-4S+2Q+RM:
+    artikelgewicht: 6.012   # kg, source: dateks
+    versandgewicht: 7.65   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/marsrutetaji/523857-mikrotik-crs354-48p-4s-2q-rm
+    crosscheck: {"dateks_net": 6.012, "mikrotik_store": 8.4}
+  CRS418-8P-8G-2S+RM:
+    artikelgewicht: 2.6   # kg, source: mikrotik_store
+    versandgewicht: 3.12   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs418-8p-8g-2srm
+  CRS418-8P-8G-2S+5axQ2axQ-RM:
+    artikelgewicht: 3.0   # kg, source: mikrotik_store
+    versandgewicht: 3.6   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs418-8p-8g-2s5axq2axq-rm
+  CRS504-4XQ-IN:
+    artikelgewicht: 2.5   # kg, source: mikrotik_store
+    versandgewicht: 3.0   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs504-4xq-in
+  CRS504-4XQ-OUT:
+    artikelgewicht: 2.6   # kg, source: mikrotik_store
+    versandgewicht: 3.12   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs504-4xq-out
+  CRS510-8XS-2XQ-IN:
+    artikelgewicht: 2.6   # kg, source: mikrotik_store
+    versandgewicht: 3.12   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs510-8xs-2xq-in
+  CRS518-16XS-2XQ-RM:
+    artikelgewicht: 4.0   # kg, source: mikrotik_store
+    versandgewicht: 4.8   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs518-16xs-2xq-rm
+  CRS520-4XS-16XQ-RM:
+    artikelgewicht: 6.8   # kg, source: mikrotik_store
+    versandgewicht: 8.16   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-crs520-4xs-16xq-rm
+  CSS318-16G-2S+IN:
+    artikelgewicht: 2.2   # kg, source: dateks
+    versandgewicht: 3.24   # kg, dateks_gross
+    artikel_source_url: https://www.dateks.lv/en/cenas/komutatori/1177702-mikrotik-css318-16g-2s-in
+    crosscheck: {"dateks_net": 2.2, "mikrotik_store": 1.5}
+  CSS610-8G-2S+IN:
+    artikelgewicht: 1.1   # kg, source: mikrotik_store
+    versandgewicht: 1.32   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css610-8g-2sin
+  CSS610-8P-2S+IN:
+    artikelgewicht: 2.21   # kg, source: mikrotik_store
+    versandgewicht: 2.652   # kg, DERIVED x1.20
+    artikel_source_url: https://www.mikrotik-store.eu/en/mikrotik-css610-8p-2sin
+    crosscheck: {"dateks_net": 0.7}
+    disagreement_note: {"mikrotik_store": 2.21}  # operator spot-check
+    override_note: "dateks net 0.7 kg REJECTED as implausible (PoE switch cannot be lighter than non-PoE sibling CSS610-8G@1.1 kg); mikrotik-store 2.21 used"
+  CRS318-16P-2S+OUT:
+    artikelgewicht: 2.5   # kg, source: datagram
+    versandgewicht: 3.0   # kg, DERIVED x1.20
+    artikel_source_url: https://datagram.ae/products/mikrotik-switches-crs318-16p-2sout/
+flagged_no_distributor_weight:   # stay weight-blocked (no $0 distributor source found; NOT fabricated)
+  - CSS106-5G-1S
+  - CSS106-1G-4P-1S
+  - CRS318-1Fi-15Fr-2S-OUT
+  - CRS804-4DDQ-hRM
+  - CRS812-8DS-2DQ-2DDQ-RM
+  - CSS610-1Gi-7R-2S+OUT

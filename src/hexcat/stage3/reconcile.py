@@ -280,8 +280,10 @@ def entry_to_intake(pn: str, entry: dict, *, brand: str, rules: Rules) -> SkuInt
         "TitelTag": str(entry.get("titel_tag") or "").strip(),
         "MetaDescription": str(entry.get("meta_description") or "").strip(),
         "NettoVK": netto_vk,
-        "Artikelgewicht": "",   # derived from weights.yaml by Formfaktor
-        "Versandgewicht": "",
+        # switches carry a real per-SKU distributor weight (entry-provided); transceivers leave
+        # these blank to derive from weights.yaml by Formfaktor (backward-compatible).
+        "Artikelgewicht": str(entry.get("artikelgewicht") or "").strip(),
+        "Versandgewicht": str(entry.get("versandgewicht") or "").strip(),
         "Condition": "new",
         "FAQ": _faq_cell(entry.get("faq") or []),
         "SourceURLs": quell_url,
