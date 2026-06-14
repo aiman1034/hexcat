@@ -47,6 +47,9 @@ _ALLOWED_BESCH_TAGS = {"p"}
 # DAC needs less grounded prose than a coherent transceiver, and we NEVER pad to a floor.
 # Modules keep the full rules floor; cables get this lower floor.
 CABLE_BESCHREIBUNG_MIN_WORDS = 90   # gold-slice bar: every Beschreibung >= 90 words, cables included
+# Rule-7 switch weight floor: even the smallest MikroTik switch is ~0.3 kg; a 1U PoE rackmount is
+# 2-4 kg. A switch at/below the transceiver optics placeholder (~0,05/0,20 kg) is a missing weight.
+_SWITCH_WEIGHT_FLOOR_KG = 0.30
 
 # --- cross-SKU sentence reuse (FAIL) ---------------------------------------------------
 # A non-closer body sentence shared by more than this fraction of a brand's SKUs is
@@ -425,6 +428,17 @@ class Validator:
             elif k3 not in allowed_k3:
                 self._fail(fname, sku, "Kategorie Ebene 3", "one of the locked transceiver/switch tokens", k3,
                            "Kategorie Ebene 3 not in the locked set")
+            # Switch weight guard (Rule-7): a switch must carry a REAL per-datasheet weight, never the
+            # optics placeholder (~0,05 kg) or an implausibly-low value (a 1U switch is kilograms).
+            if is_switch:
+                try:
+                    if float(row[i_art].replace(",", ".")) < _SWITCH_WEIGHT_FLOOR_KG:
+                        self._fail(fname, sku, "Artikelgewicht",
+                                   f">= {_SWITCH_WEIGHT_FLOOR_KG} kg (real switch weight)", row[i_art],
+                                   "switch weight at/below the optics placeholder or under the switch "
+                                   "floor — populate the real per-datasheet Artikel-/Versandgewicht")
+                except ValueError:
+                    pass
             # 15. URL-Pfad / Hersteller / vendor consistency
             url = row[i_url]
             expected_url = None
@@ -711,6 +725,16 @@ class Validator:
         if re.search(r"Hutschiene|DIN", bauform, re.I) and k3 != "Industrie-Switch":
             self._fail(fname, sku, "Kategorie Ebene 3", "Industrie-Switch (DIN-rail, env-first)", k3,
                        "semantic S.5: a DIN-rail/Hutschiene switch must take the Industrie-Switch token")
+        # S.6 PN-encoded port groups (vendors like MikroTik whose PN encodes ports) must appear in
+        # Port-Konfiguration — catches the consistent-omission class S.3's sum can miss (e.g. combo "C").
+        if re.match(r"^(CRS|CSS)\d", sku):
+            portsec = sku.split("-", 1)[1] if "-" in sku else ""
+            pn_combo = sum(int(c) for c in re.findall(r"(\d+)C(?![A-Za-z])", portsec))
+            cfg_combo = sum(int(c) for c in re.findall(r"(\d+)\s*×\s*Combo", portcfg))
+            if pn_combo and cfg_combo < pn_combo:
+                self._fail(fname, sku, "Port-Konfiguration", f"{pn_combo} Combo-Ports (PN-kodiert)",
+                           f"{cfg_combo} Combo", "semantic S.6: the PN encodes combo ports absent from "
+                           "Port-Konfiguration (consistent-omission guard)")
 
     def _check_prices(self):
         t = self.tables.get("prices")

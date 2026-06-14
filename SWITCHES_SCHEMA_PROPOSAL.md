@@ -66,14 +66,19 @@ Rules carried over: closed set, **"Sonstige" never allowed**; "Stackable"/"PoE"/
 **attributes**, not L3 tokens. Must stay in lock-step with a new `config/taxonomy/switches.yaml` ⇄
 `config/rules.yaml`.
 
-**LOCKED — single-token precedence (amendment 3):** the 6 tokens mix two axes (environment vs
-management class), so a managed-L3 DC switch or an industrial managed switch could match two. **Every
-SKU resolves to exactly ONE token by this precedence: ENVIRONMENT/DEPLOYMENT first, then management
-class** → (1) `Industrie-Switch` (DIN-rail/hardened/extended-temp) → (2) `Data-Center-Switch`
-(ToR/spine, ≥25G high-density) → else by management class (3) `Managed Switch (L3)` → (4) `Managed
-Switch (L2)` → (5) `Smart-Managed Switch` → (6) `Unmanaged Switch`. Enforced by **S.5** (single-L3
-determinism). Management class is still stated explicitly on every SKU via the `Switch-Typ` attribute
-(so it isn't lost when the token is an environment one).
+**LOCKED — single-token precedence (amendment 3; wording reconciled to the implemented gate 2026-06-14):**
+the 6 tokens mix two axes (environment vs management class), so a managed-L3 DC switch or an industrial
+managed switch could match two. **Every SKU resolves to exactly ONE token by this precedence:
+ENVIRONMENT/DEPLOYMENT first, then management class** →
+(1) `Industrie-Switch` — **DIN-rail/Hutschiene OR outdoor/hardened** (extended operating-temperature
+ALONE is NOT sufficient: e.g. CRS504-4XQ-IN is −40/+70 °C but a desktop 100 G unit → Data-Center; the
+identical-temp CRS504-4XQ-**OUT** is outdoor → Industrie) →
+(2) `Data-Center-Switch` — high-density **≥25 G** (SFP28/QSFP28/QSFP-DD), ToR/spine →
+else by management class (3) `Managed Switch (L3)` → (4) `Managed Switch (L2)` → (5) `Smart-Managed
+Switch` → (6) `Unmanaged Switch`. Enforced by **S.5** (single-L3 determinism; DIN-rail/Hutschiene ⇒
+Industrie) + **S.6** (PN-encoded port groups must appear in Port-Konfiguration — catches consistent
+omissions like dropped combo "C" groups). Management class is still stated explicitly on every SKU via
+the `Switch-Typ` attribute (so it isn't lost when the token is an environment one).
 
 ---
 
@@ -106,9 +111,13 @@ expected where applicable (attribute-depth model decides GAP vs PROVABLY_ABSENT)
 - **S.2** `Layer = L3` ⇒ `Switch-Typ = Managed` (no L3 routing on an unmanaged/smart switch).
 - **S.3** `Portanzahl` equals the sum of ports parsed from `Port-Konfiguration` (count integrity).
 - **S.4** `Stacking = Ja` only on `Managed`/`Data-Center` tokens.
-- **S.5 (amendment 3)** single-L3-token determinism — the assigned L3 token must equal the one the
-  **environment-first precedence** yields (Industrie → Data-Center → Managed-L3 → Managed-L2 → Smart →
-  Unmanaged) given the SKU's attributes; a SKU may not carry a token a higher-precedence rule overrides.
+- **S.5 (amendment 3)** single-L3-token determinism — DIN-rail/Hutschiene ⇒ `Industrie-Switch`
+  (the implemented env-first key case); a SKU may not carry a token a higher-precedence rule overrides.
+- **S.6 (post-audit)** PN-encoded port groups ⇒ Port-Konfiguration — for vendors whose PN encodes ports
+  (MikroTik), every port group in the PN (esp. combo "C" groups) must appear in Port-Konfiguration.
+  Catches the consistent-omission class S.3's sum check can miss.
+- **Weight guard (post-audit)** — a switch `Artikelgewicht` at/below the transceiver optics placeholder
+  (~0,05 kg) or under the switch floor (0,30 kg) HARD-FAILS; switches carry a real per-datasheet weight.
 - B.4 (no "—" placeholders) and B.8 (inline-template artifacts, all fields) apply unchanged.
 
 **Note on #1 `Switch-Typ` (amendment 5, confirmed distinct):** holds the **management class** (Managed/
