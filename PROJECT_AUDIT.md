@@ -186,6 +186,12 @@ per-SKU: PN · speed · form factor · type/reach (SR/LR/FR4/…) · connector �
 | **Ubiquiti** | ui.com store (UF-*, UACC-* optics/DAC) | JS store, specs sparse | `ubiquiti-optics.{csv,pdf}` |
 | **NVIDIA 800G-Eth** | NVIDIA LinkX **800G Ethernet** (Spectrum-X) parts list | no $0 static list located (the cached 800G list is XDR/InfiniBand) | `nvidia-800g-ethernet-parts.pdf` (same shape as the cached 400/200/100/25G list) |
 
+**SWITCH sources (same gating):** MikroTik switches DONE ($0-fetchable). Every OTHER brand's switches
+are source-gated like its transceivers — drop a switch parts list / datasheet into `datasheets/cache/`
+as `<brand>-switches.{pdf,csv}` (per-SKU: management class · layer · port-config · PoE · Bauform · temp)
+and the switch pipeline (schema + S.1-S.5 + all-fields B.8, all live) runs it via the MikroTik-switch
+pattern (`mikrotik_switch_author.py`). Add a vendor entry to `config/rules.yaml` for any new brand.
+
 **Process once a source is dropped in:** run the NVIDIA pattern — `<brand>_facts.py` (parse the cached
 file) → author via the `nvidia_author.py` scaffold (cable/XCVR branch, per-SKU-unique sentences,
 lane-aware wavelengths, comma-form meta, **fill every slot — widened B.8 hard-fails empty slots in any
