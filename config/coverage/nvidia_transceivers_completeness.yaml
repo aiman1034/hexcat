@@ -1,0 +1,37 @@
+brand: NVIDIA
+category: transceivers
+# Enumeration source: the official NVIDIA LinkX "Cables and Transceivers Parts List" (50G-PAM4 /
+# 25G-NRZ; 400G/200G/100G/25G). NVIDIA interleaves InfiniBand + Ethernet rows; the Ethernet subset
+# is extracted by _scratch/nvidia_harvest.py (section-gated Ethernet/IB filter, edge-case asserts
+# pass) and per-SKU specs by _scratch/nvidia_facts.py -> output/stage3/nvidia_facts.json.
+# STATUS: harvest + completeness done; CONTENT AUTHORING PENDING (see PROJECT_AUDIT §9 resume point).
+complete: false                          # ≤400G Ethernet captured; 800G-Ethernet a flagged gap (below)
+universe_total: 85                       # Ethernet transceivers/DACs/AOCs/splitters at ≤400G
+captured_count: 85                       # facts extracted + grounded; not yet authored to the gold-slice
+gap_count: 0                             # within the ≤400G LinkX list
+flagged_count: 0
+populated_sources: 1
+per_source:
+- id: nvidia_linkx_parts_list_50gpam4_25gnrz
+  kind: vendor_parts_list
+  note: "400/200/100/25G LinkX Parts List (PDF text in _scratch/nvidia_parts.txt)"
+  populated: true
+breakdown:
+  by_type: {DAC: 26, DAC-SPLIT: 6, AOC: 28, AOC-SPLIT: 13, XCVR: 12}
+  by_speed: {400G: 16, 200G: 31, 100G: 30, 25G: 8}
+  by_form_factor: {QSFP-DD: 17, QSFP56: 32, QSFP28: 28, SFP28: 8}
+# 800G DETERMINATION (2026-06-14, operator-requested re-verification of the exclusion):
+#  - The 800G list staged earlier (_scratch/nvidia_parts_800g.txt) is DEPRECATED + XDR (200G-PAM4)
+#    InfiniBand with ZERO Ethernet parts -> correctly OUT OF SCOPE (we catalog Ethernet). Nothing
+#    to fold in from it.
+#  - HOWEVER: NVIDIA Spectrum-X (Spectrum-4 / SN5600) IS an 800G ETHERNET platform (confirmed on
+#    nvidia.com/networking/interconnect + /spectrumx). 800G *Ethernet* LinkX interconnects very
+#    likely exist (OSFP/OSFP-RHS 800G = 2×400G), distinct from Quantum 800G XDR InfiniBand. A
+#    structured $0-fetchable 800G-Ethernet parts list was NOT located in this sweep (the .md is a
+#    stub; deeper doc-crawling risked a CAPTCHA with the operator away).
+#  => VERDICT: 85 is the COMPLETE ≤400G Ethernet set; 800G-Ethernet (Spectrum-X) is a KNOWN HARVEST
+#     GAP flagged for a follow-up pass (needs the current 800G-Ethernet LinkX parts list / a
+#     marketplace.nvidia.com enumeration). Do NOT claim "85 = full NVIDIA Ethernet universe".
+verdict: harvested + grounded 85 ≤400G NVIDIA LinkX Ethernet SKUs (DAC/AOC/transceiver/splitter);
+  InfiniBand filtered out (edge-case asserts pass); 800G XDR list is IB/deprecated → excluded;
+  800G-Ethernet (Spectrum-X) flagged as a follow-up harvest gap. Content authoring PENDING.
