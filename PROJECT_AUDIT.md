@@ -343,8 +343,9 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `["Feature-Code", <fc>, <guide URL>]`; **102 FC rows logged** (the 2 85 °C parts carry no FC → none).
   Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12
   known-good + F22 near-dup + F23 ungrounded-claim), **413 tests**. ZIP
-  `output/Hexwaren_Lenovo_stage3_589ffe4.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows,
-  Prices no-BOM; supersedes & replaces `_3426853.zip`, deleted). **Awaiting operator L8.**
+  `output/Hexwaren_Lenovo_stage3_eb25954.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows,
+  Prices no-BOM, Verification_Log carries 102 Feature-Code citation rows; supersedes & replaces
+  `_3426853.zip` and the intermediate `_589ffe4.zip`, both deleted). **Awaiting operator L8.**
 
 ---
 
