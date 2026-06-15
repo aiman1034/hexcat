@@ -361,8 +361,9 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   L5 ungrounded-claim guard because they are now log-grounded (guard exempts log-matched mentions). Era
   appositive already "IBM-System-Networking-Erbe" alone (no BNT/BladeCenter) since round-4 — operator's
   optional tightening already satisfied. Gate **L1–L6 PASS 104/104**, near-dup **0** (≤0.27), audit_semantic
-  **0×8**, gate_selftest CERTIFIED, **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_<hash>.zip` (104 SKUs;
-  6 OEM-Variante + 102 Feature-Code rows logged — see build entry). Alias-prose backlog stays PARKED.
+  **0×8**, gate_selftest CERTIFIED, **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_b331235.zip` (104 SKUs;
+  byte-verified — Main BOM+CRLF 104 rows, Prices no-BOM, Verification_Log 6 OEM-Variante + 102 Feature-Code
+  rows; supersedes & replaces `_eb25954.zip`, deleted). Alias-prose backlog stays PARKED.
   **Awaiting final operator byte-audit.**
 
 ---
