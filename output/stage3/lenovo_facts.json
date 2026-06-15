@@ -1,4 +1,70 @@
 {
+ "00FE333": {
+  "pn": "00FE333",
+  "speed": "1G",
+  "ff": "SFP",
+  "type": "T",
+  "standard": "1000BASE-T",
+  "connector": "RJ45",
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "100 m",
+  "faseranzahl": null,
+  "cable": false,
+  "feature_code": "A5DL",
+  "desc": "Lenovo 1000BASE-T (RJ-45) SFP Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A5DL"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "81Y1622": {
+  "pn": "81Y1622",
+  "speed": "1G",
+  "ff": "SFP",
+  "type": "SX",
+  "standard": "1000BASE-SX",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "550 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "3269",
+  "desc": "Lenovo 1000BASE-SX SFP Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "3269"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "90Y9424": {
+  "pn": "90Y9424",
+  "speed": "1G",
+  "ff": "SFP",
+  "type": "LX",
+  "standard": "1000BASE-LX",
+  "connector": "LC",
+  "media": "SMF",
+  "wavelength": "1310 nm",
+  "reach": "10 km",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "A1PN",
+  "desc": "Lenovo 1000BASE-LX SFP Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1PN"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
  "4TC7B13092": {
   "pn": "4TC7B13092",
   "speed": "10G",
@@ -14,11 +80,34 @@
   "feature_code": "CFPW",
   "desc": "Lenovo 10GBASE-T SFP+ (Accelink RTXL185-510)",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "CFPW"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "7G17A03130": {
+  "pn": "7G17A03130",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "T",
+  "standard": "10GBASE-T",
+  "connector": "RJ45",
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "30 m",
+  "faseranzahl": null,
+  "cable": false,
+  "feature_code": "AVV1",
+  "desc": "Lenovo 10GBASE-T SFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "AVV1"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
  },
  "4TC7B12410": {
   "pn": "4TC7B12410",
@@ -35,11 +124,12 @@
   "feature_code": "CEHQ",
   "desc": "Lenovo 10GBASE-LR SFP+ (Finisar FTLX1475D3BCL)",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "CEHQ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00FE331": {
   "pn": "00FE331",
@@ -56,74 +146,12 @@
   "feature_code": "B0RJ",
   "desc": "Lenovo 10GBASE-LR SFP+ Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "B0RJ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
- },
- "49Y4216": {
-  "pn": "49Y4216",
-  "speed": "10G",
-  "ff": "SFP+",
-  "type": "SR",
-  "standard": "10GBASE-SR",
-  "connector": "LC",
-  "media": "MMF",
-  "wavelength": "850 nm",
-  "reach": "300 m",
-  "faseranzahl": "2",
-  "cable": false,
-  "feature_code": "0069",
-  "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (Brocade)",
-  "dual_rate": false,
-  "alt_pns": [
-   "0069"
-  ],
-  "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
- },
- "49Y8578": {
-  "pn": "49Y8578",
-  "speed": "10G",
-  "ff": "SFP+",
-  "type": "SR",
-  "standard": "10GBASE-SR",
-  "connector": "LC",
-  "media": "MMF",
-  "wavelength": "850 nm",
-  "reach": "300 m",
-  "faseranzahl": "2",
-  "cable": false,
-  "feature_code": "5721",
-  "desc": "Lenovo 10 GbE SW SFP+ Transceiver",
-  "dual_rate": false,
-  "alt_pns": [
-   "5721"
-  ],
-  "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
- },
- "49Y4218": {
-  "pn": "49Y4218",
-  "speed": "10G",
-  "ff": "SFP+",
-  "type": "SR",
-  "standard": "10GBASE-SR",
-  "connector": "LC",
-  "media": "MMF",
-  "wavelength": "850 nm",
-  "reach": "300 m",
-  "faseranzahl": "2",
-  "cable": false,
-  "feature_code": "0064",
-  "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (QLogic)",
-  "dual_rate": false,
-  "alt_pns": [
-   "0064"
-  ],
-  "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "90Y9412": {
   "pn": "90Y9412",
@@ -140,11 +168,100 @@
   "feature_code": "A1PM",
   "desc": "Lenovo 10GBASE-LR SFP+ Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "A1PM"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "90Y9415": {
+  "pn": "90Y9415",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "ER",
+  "standard": "10GBASE-ER",
+  "connector": "LC",
+  "media": "SMF",
+  "wavelength": "1550 nm",
+  "reach": "40 km",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "A1PP",
+  "desc": "Lenovo 10GBASE-ER SFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1PP"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y4216": {
+  "pn": "49Y4216",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SR",
+  "standard": "10GBASE-SR",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "0069",
+  "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (Brocade-qualified)",
+  "dual_rate": false,
+  "lifecycle": "current",
+  "alt_pns": [
+   "0069"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "49Y8578": {
+  "pn": "49Y8578",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SR",
+  "standard": "10GBASE-SR",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "5721",
+  "desc": "Lenovo 10 GbE SW (SR) SFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "current",
+  "alt_pns": [
+   "5721"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "49Y4218": {
+  "pn": "49Y4218",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SR",
+  "standard": "10GBASE-SR",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "0064",
+  "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (QLogic-qualified)",
+  "dual_rate": false,
+  "lifecycle": "current",
+  "alt_pns": [
+   "0064"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "46C3447": {
   "pn": "46C3447",
@@ -161,11 +278,12 @@
   "feature_code": "5053",
   "desc": "Lenovo 10GBASE-SR SFP+ Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "5053"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "68Y6923": {
   "pn": "68Y6923",
@@ -180,13 +298,14 @@
   "faseranzahl": "2",
   "cable": false,
   "feature_code": "5722",
-  "desc": "Lenovo 10Gb SFP+ SR Transceiver (Juniper)",
+  "desc": "Lenovo 10Gb SFP+ SR Transceiver (Juniper-qualified)",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "5722"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "69Y0389": {
   "pn": "69Y0389",
@@ -203,11 +322,12 @@
   "feature_code": "6416",
   "desc": "Lenovo 10GbE SR SFP+ Transceiver, 300m MMF",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "6416"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4TC7A78615": {
   "pn": "4TC7A78615",
@@ -224,11 +344,34 @@
   "feature_code": "BNDR",
   "desc": "ThinkSystem Accelink 10G SR SFP+ Ethernet Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "BNDR"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "00MY034": {
+  "pn": "00MY034",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SX",
+  "standard": "10GBASE-SR/1000BASE-SX",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "ATTJ",
+  "desc": "Lenovo Dual Rate 1/10Gb SX/SR SFP+ Transceiver",
+  "dual_rate": true,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATTJ"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
  },
  "4M27A67041": {
   "pn": "4M27A67041",
@@ -245,11 +388,12 @@
   "feature_code": "BFH2",
   "desc": "Lenovo 25Gb SR SFP28 Ethernet Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "BFH2"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4TC7A69045": {
   "pn": "4TC7A69045",
@@ -266,11 +410,12 @@
   "feature_code": "BF10",
   "desc": "Lenovo Dual Rate 10G/25G SR SFP28 (85C) Transceiver",
   "dual_rate": true,
+  "lifecycle": "current",
   "alt_pns": [
    "BF10"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7G17A03537": {
   "pn": "7G17A03537",
@@ -287,11 +432,12 @@
   "feature_code": "AV1B",
   "desc": "Lenovo Dual Rate 10G/25G SR SFP28 Transceiver",
   "dual_rate": true,
+  "lifecycle": "current",
   "alt_pns": [
    "AV1B"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4TC7A88638": {
   "pn": "4TC7A88638",
@@ -308,11 +454,144 @@
   "feature_code": "BYBJ",
   "desc": "ThinkSystem Finisar Dual Rate 10G/25G SR SFP28 Transceiver",
   "dual_rate": true,
+  "lifecycle": "current",
   "alt_pns": [
    "BYBJ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "7G17A03538": {
+  "pn": "7G17A03538",
+  "speed": "25G",
+  "ff": "SFP28",
+  "type": "LR",
+  "standard": "25GBASE-LR",
+  "connector": "LC",
+  "media": "SMF",
+  "wavelength": "1310 nm",
+  "reach": "10 km",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "AV1C",
+  "desc": "Lenovo 25GBASE-LR SFP28 Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "AV1C"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL631": {
+  "pn": "00YL631",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "SR-BiDi",
+  "standard": "40GBASE-SR-BiDi",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "832 / 918 nm (BiDi)",
+  "reach": "100 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "ATYW",
+  "desc": "Lenovo 40GBASE-SR-BiDi QSFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATYW"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y7884": {
+  "pn": "49Y7884",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "SR4",
+  "standard": "40GBASE-SR4",
+  "connector": "MPO-12",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "150 m",
+  "faseranzahl": "8",
+  "cable": false,
+  "feature_code": "A1DR",
+  "desc": "Lenovo 40GBASE-SR4 QSFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DR"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00D9865": {
+  "pn": "00D9865",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "SR4",
+  "standard": "40GBASE-SR4",
+  "connector": "MPO-12",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "8",
+  "cable": false,
+  "feature_code": "ASTM",
+  "desc": "Lenovo 40GBASE-iSR4 QSFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ASTM"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00FE325": {
+  "pn": "00FE325",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "SR4",
+  "standard": "40GBASE-SR4",
+  "connector": "MPO-12",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "400 m",
+  "faseranzahl": "8",
+  "cable": false,
+  "feature_code": "A5U9",
+  "desc": "Lenovo 40GBASE-eSR4 QSFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A5U9"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00D6222": {
+  "pn": "00D6222",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "LR4",
+  "standard": "40GBASE-LR4",
+  "connector": "LC",
+  "media": "SMF",
+  "wavelength": "1271 / 1291 / 1311 / 1331 nm (CWDM4, 4 Lanes)",
+  "reach": "10 km",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "A3NY",
+  "desc": "Lenovo 40GBASE-LR4 QSFP+ Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A3NY"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
  },
  "4M27A67042": {
   "pn": "4M27A67042",
@@ -329,11 +608,12 @@
   "feature_code": "BFH1",
   "desc": "Lenovo 100Gb SR4 QSFP28 Ethernet Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "BFH1"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7G17A03539": {
   "pn": "7G17A03539",
@@ -350,11 +630,12 @@
   "feature_code": "AV1D",
   "desc": "Lenovo 100GBASE-SR4 QSFP28 Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "AV1D"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4TC7A86257": {
   "pn": "4TC7A86257",
@@ -371,11 +652,34 @@
   "feature_code": "BVA4",
   "desc": "Lenovo 100GBASE-SR4 QSFP28 Transceiver",
   "dual_rate": false,
+  "lifecycle": "current",
   "alt_pns": [
    "BVA4"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "7G17A03540": {
+  "pn": "7G17A03540",
+  "speed": "100G",
+  "ff": "QSFP28",
+  "type": "LR4",
+  "standard": "100GBASE-LR4",
+  "connector": "LC",
+  "media": "SMF",
+  "wavelength": "1295,56 / 1300,05 / 1304,58 / 1309,14 nm (LAN-WDM, 4 Lanes)",
+  "reach": "10 km",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "AV1E",
+  "desc": "Lenovo 100GBASE-LR4 QSFP28 Transceiver",
+  "dual_rate": false,
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "AV1E"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
  },
  "00YL634": {
   "pn": "00YL634",
@@ -394,11 +698,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATYX",
+  "lifecycle": "current",
   "alt_pns": [
    "ATYX"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00YL637": {
   "pn": "00YL637",
@@ -417,11 +722,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATYY",
+  "lifecycle": "current",
   "alt_pns": [
    "ATYY"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00YL640": {
   "pn": "00YL640",
@@ -440,11 +746,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATYZ",
+  "lifecycle": "current",
   "alt_pns": [
    "ATYZ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00YL643": {
   "pn": "00YL643",
@@ -463,11 +770,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATZ0",
+  "lifecycle": "current",
   "alt_pns": [
    "ATZ0"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00YL646": {
   "pn": "00YL646",
@@ -486,11 +794,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATZ1",
+  "lifecycle": "current",
   "alt_pns": [
    "ATZ1"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00YL649": {
   "pn": "00YL649",
@@ -509,11 +818,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "ATZ2",
+  "lifecycle": "current",
   "alt_pns": [
    "ATZ2"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00D6288": {
   "pn": "00D6288",
@@ -532,11 +842,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A3RG",
+  "lifecycle": "current",
   "alt_pns": [
    "A3RG"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "90Y9427": {
   "pn": "90Y9427",
@@ -555,11 +866,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A1PH",
+  "lifecycle": "current",
   "alt_pns": [
    "A1PH"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00AY764": {
   "pn": "00AY764",
@@ -578,11 +890,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A51N",
+  "lifecycle": "current",
   "alt_pns": [
    "A51N"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00AY765": {
   "pn": "00AY765",
@@ -601,11 +914,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A51P",
+  "lifecycle": "current",
   "alt_pns": [
    "A51P"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "90Y9430": {
   "pn": "90Y9430",
@@ -624,11 +938,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A1PJ",
+  "lifecycle": "current",
   "alt_pns": [
    "A1PJ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "90Y9433": {
   "pn": "90Y9433",
@@ -647,11 +962,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A1PK",
+  "lifecycle": "current",
   "alt_pns": [
    "A1PK"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00D6151": {
   "pn": "00D6151",
@@ -670,11 +986,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "A3RH",
+  "lifecycle": "current",
   "alt_pns": [
    "A3RH"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00VX111": {
   "pn": "00VX111",
@@ -693,11 +1010,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "AT2R",
+  "lifecycle": "current",
   "alt_pns": [
    "AT2R"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00VX114": {
   "pn": "00VX114",
@@ -716,11 +1034,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "AT2S",
+  "lifecycle": "current",
   "alt_pns": [
    "AT2S"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "00VX117": {
   "pn": "00VX117",
@@ -739,11 +1058,12 @@
   "breakout": false,
   "ends_raw": "SFP+ auf SFP+",
   "feature_code": "AT2T",
+  "lifecycle": "current",
   "alt_pns": [
    "AT2T"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94008": {
   "pn": "4X97A94008",
@@ -762,11 +1082,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1F",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1F"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94011": {
   "pn": "4X97A94011",
@@ -785,11 +1106,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1G",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1G"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94012": {
   "pn": "4X97A94012",
@@ -808,11 +1130,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1H",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1H"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94013": {
   "pn": "4X97A94013",
@@ -831,11 +1154,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1J",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1J"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94702": {
   "pn": "4X97A94702",
@@ -854,11 +1178,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1K",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1K"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03541": {
   "pn": "7Z57A03541",
@@ -877,11 +1202,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "C10R",
+  "lifecycle": "current",
   "alt_pns": [
    "C10R"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03542": {
   "pn": "7Z57A03542",
@@ -900,11 +1226,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "C10S",
+  "lifecycle": "current",
   "alt_pns": [
    "C10S"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03543": {
   "pn": "7Z57A03543",
@@ -923,11 +1250,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "C10N",
+  "lifecycle": "current",
   "alt_pns": [
    "C10N"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03544": {
   "pn": "7Z57A03544",
@@ -946,11 +1274,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "C10T",
+  "lifecycle": "current",
   "alt_pns": [
    "C10T"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03545": {
   "pn": "7Z57A03545",
@@ -969,11 +1298,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "C1MB",
+  "lifecycle": "current",
   "alt_pns": [
    "C1MB"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03557": {
   "pn": "7Z57A03557",
@@ -992,11 +1322,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1W",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1W"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03558": {
   "pn": "7Z57A03558",
@@ -1015,11 +1346,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1X",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1X"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03559": {
   "pn": "7Z57A03559",
@@ -1038,11 +1370,12 @@
   "breakout": false,
   "ends_raw": "SFP28 auf SFP28",
   "feature_code": "AV1Y",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1Y"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94703": {
   "pn": "4X97A94703",
@@ -1061,11 +1394,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "B2UZ",
+  "lifecycle": "current",
   "alt_pns": [
    "B2UZ"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94014": {
   "pn": "4X97A94014",
@@ -1084,11 +1418,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1L",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1L"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94015": {
   "pn": "4X97A94015",
@@ -1107,11 +1442,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1M",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1M"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94016": {
   "pn": "4X97A94016",
@@ -1130,11 +1466,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1N",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1N"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94704": {
   "pn": "4X97A94704",
@@ -1153,11 +1490,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1P",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1P"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A94705": {
   "pn": "4X97A94705",
@@ -1176,11 +1514,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1Q",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1Q"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4Z57A10844": {
   "pn": "4Z57A10844",
@@ -1199,11 +1538,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C1MC",
+  "lifecycle": "current",
   "alt_pns": [
    "C1MC"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03546": {
   "pn": "7Z57A03546",
@@ -1222,11 +1562,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C10P",
+  "lifecycle": "current",
   "alt_pns": [
    "C10P"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03547": {
   "pn": "7Z57A03547",
@@ -1245,11 +1586,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C10Q",
+  "lifecycle": "current",
   "alt_pns": [
    "C10Q"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03548": {
   "pn": "7Z57A03548",
@@ -1268,11 +1610,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C10M",
+  "lifecycle": "current",
   "alt_pns": [
    "C10M"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03549": {
   "pn": "7Z57A03549",
@@ -1291,11 +1634,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C1MD",
+  "lifecycle": "current",
   "alt_pns": [
    "C1MD"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03550": {
   "pn": "7Z57A03550",
@@ -1314,11 +1658,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "C1ME",
+  "lifecycle": "current",
   "alt_pns": [
    "C1ME"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03561": {
   "pn": "7Z57A03561",
@@ -1337,11 +1682,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV1Z",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1Z"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03562": {
   "pn": "7Z57A03562",
@@ -1360,11 +1706,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV20",
+  "lifecycle": "current",
   "alt_pns": [
    "AV20"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03563": {
   "pn": "7Z57A03563",
@@ -1383,11 +1730,12 @@
   "breakout": false,
   "ends_raw": "QSFP28 auf QSFP28",
   "feature_code": "AV21",
+  "lifecycle": "current",
   "alt_pns": [
    "AV21"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A11113": {
   "pn": "4X97A11113",
@@ -1406,11 +1754,12 @@
   "breakout": false,
   "ends_raw": "QSFP56 auf QSFP56",
   "feature_code": "BF6W",
+  "lifecycle": "current",
   "alt_pns": [
    "BF6W"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4X97A12613": {
   "pn": "4X97A12613",
@@ -1429,11 +1778,12 @@
   "breakout": false,
   "ends_raw": "QSFP56 auf QSFP56",
   "feature_code": "BF92",
+  "lifecycle": "current",
   "alt_pns": [
    "BF92"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03551": {
   "pn": "7Z57A03551",
@@ -1452,11 +1802,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV1R",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1R"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03552": {
   "pn": "7Z57A03552",
@@ -1475,11 +1826,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV1S",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1S"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03553": {
   "pn": "7Z57A03553",
@@ -1498,11 +1850,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV1T",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1T"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03554": {
   "pn": "7Z57A03554",
@@ -1521,11 +1874,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV1U",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1U"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03555": {
   "pn": "7Z57A03555",
@@ -1544,11 +1898,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV1V",
+  "lifecycle": "current",
   "alt_pns": [
    "AV1V"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03564": {
   "pn": "7Z57A03564",
@@ -1567,11 +1922,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV22",
+  "lifecycle": "current",
   "alt_pns": [
    "AV22"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4Z57A85043": {
   "pn": "4Z57A85043",
@@ -1590,11 +1946,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "BS32",
+  "lifecycle": "current",
   "alt_pns": [
    "BS32"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "4Z57A85044": {
   "pn": "4Z57A85044",
@@ -1613,11 +1970,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "BS33",
+  "lifecycle": "current",
   "alt_pns": [
    "BS33"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03565": {
   "pn": "7Z57A03565",
@@ -1636,11 +1994,12 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV23",
+  "lifecycle": "current",
   "alt_pns": [
    "AV23"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
  },
  "7Z57A03566": {
   "pn": "7Z57A03566",
@@ -1659,10 +2018,371 @@
   "breakout": true,
   "ends_raw": "QSFP28 auf 4x SFP28",
   "feature_code": "AV24",
+  "lifecycle": "current",
   "alt_pns": [
    "AV24"
   ],
   "page": 0,
-  "row": "Lenovo Press lp1652/lp1417 (current)"
+  "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "49Y7890": {
+  "pn": "49Y7890",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "1",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "A1DP",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DP"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y7891": {
+  "pn": "49Y7891",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "3",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "A1DQ",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DQ"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00D5810": {
+  "pn": "00D5810",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "5",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "A2X8",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A2X8"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00D5813": {
+  "pn": "00D5813",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "7",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "A2X9",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A2X9"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL652": {
+  "pn": "00YL652",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "3",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "ATZ3",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ3"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL655": {
+  "pn": "00YL655",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "5",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "ATZ4",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ4"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL658": {
+  "pn": "00YL658",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "7",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "ATZ5",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ5"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL661": {
+  "pn": "00YL661",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "15",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "ATZ6",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ6"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL664": {
+  "pn": "00YL664",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "20",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": false,
+  "ends_raw": "QSFP+ auf QSFP+",
+  "feature_code": "ATZ7",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ7"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y7886": {
+  "pn": "49Y7886",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "1",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "A1DL",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DL"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y7887": {
+  "pn": "49Y7887",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "3",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "A1DM",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DM"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "49Y7888": {
+  "pn": "49Y7888",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "DAC",
+  "standard": "",
+  "connector": null,
+  "media": "Kupfer",
+  "wavelength": null,
+  "reach": "",
+  "length": "5",
+  "cable": true,
+  "k3": "DAC Kabel",
+  "active": false,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "A1DN",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "A1DN"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL667": {
+  "pn": "00YL667",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "1",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "ATZ8",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ8"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL670": {
+  "pn": "00YL670",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "3",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "ATZ9",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZ9"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
+ },
+ "00YL673": {
+  "pn": "00YL673",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "AOC",
+  "standard": "",
+  "connector": null,
+  "media": null,
+  "wavelength": null,
+  "reach": "",
+  "length": "5",
+  "cable": true,
+  "k3": "AOC Kabel",
+  "active": true,
+  "breakout": true,
+  "ends_raw": "QSFP+ auf 4x SFP+",
+  "feature_code": "ATZA",
+  "lifecycle": "legacy",
+  "alt_pns": [
+   "ATZA"
+  ],
+  "page": 0,
+  "row": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"
  }
 }
