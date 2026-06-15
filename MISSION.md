@@ -55,6 +55,16 @@ PlatformFlag→platform TRUE · 4 Prices→Netto-VK · 5 Condition→new · 6 FA
 schema · 7 Verification_Log→INTERNAL (not imported). Any byte that breaks
 Ameise (delimiter/BOM/decimal/column count/order/UTF-8) = failed import =
 mission failure. The gate (§8 L1) guarantees clean import.
+*** FAQ GO-LIVE GUARDRAIL (every brand) — the emitted Hexwaren_FAQ_<brand>.csv is
+a NON-AUTHORITATIVE PLACEHOLDER. It meets the byte-contract (Q||A##Q||A, 3–10
+pairs, BOM) so the bundle is self-consistent, but the v1.3-compliant FAQ (3–10
+data-driven, 50–90-word, harvest-backed, ≥80% sibling-differentiated) is produced
+SEPARATELY in the "Hexwaren FAQ Production" project (FAQ = a separate content
+stream from this v5.0 product CSV). AT IMPORT: populate the live FAQ field from the
+FAQ Production v1.3 output, NEVER from the placeholder — import only the 5 Ameise
+product files (Main/Attributes/PlatformFlag/Prices/Condition), take FAQ from the
+v1.3 stream, skip Verification_Log. Do NOT build v1.3 FAQ depth/harvest into hexcat
+— it would fabricate the harvest signal ($0-deterministic-core violation). ***
 
 ───────────────────────────────────────────────────────────────────────
 §3 — SCOPE: ALL CATEGORIES × ALL BRANDS  (do NOT narrow this)

@@ -150,8 +150,18 @@ Notes:
 | 3 | `Hexwaren_{Category}_PlatformFlag.csv` | UTF-8 **BOM** | `;` | `Überverkauf Plattform Hexwaren = TRUE` |
 | 4 | `Hexwaren_{Category}_Prices.csv` | UTF-8 (no BOM) | `;` | `Artikelnummer;Netto-VK`, German decimals |
 | 5 | `Hexwaren_Condition_{Batch}.csv` | UTF-8 **BOM** | `,` | separate from Attributes; default `new` |
-| 6 | `Hexwaren_FAQ_{Batch}.csv` | UTF-8 **BOM** | `,` | FAQ cell always double-quoted |
-| 7 | `Verification_Log_{Batch}.csv` | UTF-8 BOM | `,` | one row per emitted attribute value |
+| 6 | `Hexwaren_FAQ_{Batch}.csv` | UTF-8 **BOM** | `,` | FAQ cell always double-quoted — **NON-AUTHORITATIVE PLACEHOLDER** (see import guardrail) |
+| 7 | `Verification_Log_{Batch}.csv` | UTF-8 BOM | `,` | one row per emitted attribute value — **INTERNAL, never imported** |
+
+> **⚠ Import guardrail — FAQ go-live (applies to EVERY brand).** The `Hexwaren_FAQ_{Batch}.csv`
+> hexcat emits is a **non-authoritative placeholder**: it satisfies the JTL byte-contract
+> (`Q||A##Q||A`, 3–10 pairs, BOM) so the bundle is self-consistent, but its content is basic
+> (3 short pairs, near-identical for same-spec siblings). The **authoritative, FAQ-Master-Guide-v1.3**
+> FAQ (3–10 data-driven, 50–90-word, harvest-backed, ≥80% sibling-differentiated) is produced
+> **separately in the "Hexwaren FAQ Production" project** — that is a distinct content stream, not
+> hexcat's. **At import: load the live FAQ field from the FAQ Production v1.3 output, NEVER from this
+> placeholder. Import only the 5 Ameise product files (Main, Attributes, PlatformFlag, Prices,
+> Condition); the FAQ comes from the v1.3 stream; skip `Verification_Log` (internal).**
 
 Two category labels differ by exactly one character — both are intentional and preserved:
 `Kategorie Ebene 2 = "Transceivers & SFP Module"` (with "e") vs. the Attributes
