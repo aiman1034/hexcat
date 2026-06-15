@@ -43,6 +43,11 @@ TRANSCEIVERS = [
     ("68Y6923",    "5722", "SR",  "c", "Lenovo 10Gb SFP+ SR Transceiver (Juniper-qualified)"),
     ("69Y0389",    "6416", "SR",  "c", "Lenovo 10GbE SR SFP+ Transceiver, 300m MMF"),
     ("4TC7A78615", "BNDR", "SR",  "c", "ThinkSystem Accelink 10G SR SFP+ Ethernet Transceiver"),
+    # 10G SFP+ SR extended-temperature (85 °C) variants — grounded from the Lenovo/IBM Support
+    # "10GBASE-SR SFP+ (85 Degree C)" overview + ServerProven (L8 round-2 sweep, finding ④). Not in the
+    # current NIC/switch guides -> src "i", lifecycle legacy (current orderability unconfirmed), EOL-flagged.
+    ("00NU537",    "",     "SR",  "i", "Lenovo 10GBASE-SR SFP+ Transceiver (85 °C, erweiterter Temperaturbereich)"),
+    ("00VX183",    "",     "SR",  "i", "Lenovo 10GBASE-SR SFP+ Optical Transceiver (85 °C)"),
     ("00MY034",    "ATTJ", "DR10","s", "Lenovo Dual Rate 1/10Gb SX/SR SFP+ Transceiver"),
     # 25G SFP28 (dual-rate parts run 10G/25G)
     ("4M27A67041", "BFH2", "SR25",   "c", "Lenovo 25Gb SR SFP28 Ethernet Transceiver"),
@@ -159,7 +164,19 @@ STD = {
 
 
 SRC_GUIDE = {"c": "Lenovo Press lp1652/lp1417 (current NIC guides)",
-             "s": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)"}
+             "s": "Lenovo Press lp0609 NE10032 / lp0608 NE2572 (switch guides, withdrawn)",
+             "i": "Lenovo/IBM Support 'Lenovo 10GBASE-SR SFP+ (85 Degree C)' overview + ServerProven"}
+
+# L8 round-2 finding ②: 40GBASE-SR4 ships in three reach grades that the NE10032 guide labels SR4 / iSR4 /
+# eSR4 — the display TYPE must keep that distinction (std stays the IEEE base 40GBASE-SR4; reach already set).
+TYP_DISPLAY = {"40iSR4": "iSR4", "40eSR4": "eSR4"}
+# Finding ④: per-PN grounded overrides (reach + published op-temp). 00NU537 reaches 300 m OM3 / 400 m OM4;
+# 4TC7A69045 is a published "(85C)" part -> its operating temperature is grounded (NOT Rule-9 commercial).
+OPTIC_OVERRIDE = {
+    "00NU537":    {"reach": "400 m", "reach_note": "300 m über OM3, 400 m über OM4", "op_temp": "0 bis 85 °C"},
+    "00VX183":    {"reach": "300 m", "op_temp": "0 bis 85 °C"},
+    "4TC7A69045": {"op_temp": "0 bis 85 °C"},
+}
 
 
 def main():
@@ -167,14 +184,18 @@ def main():
     eol = []
     for pn, fc, kind, src, desc in TRANSCEIVERS:
         std, media, wl, reach, conn, fz, sp, ff = STD[kind]
-        typ = std.split("BASE-")[-1] if "BASE-" in std else std
-        legacy = src == "s"
+        typ = TYP_DISPLAY.get(kind) or (std.split("BASE-")[-1] if "BASE-" in std else std)
+        ov = OPTIC_OVERRIDE.get(pn, {})
+        reach = ov.get("reach", reach)
+        legacy = src in ("s", "i")
         if legacy:
             eol.append(pn)
+        dual_pair = "1G/10G" if kind == "DR10" else ("10G/25G" if kind == "SR25DR" else None)
         facts[pn] = {"pn": pn, "speed": sp, "ff": ff, "type": typ, "standard": std, "connector": conn,
                      "media": media, "wavelength": (wl or None), "reach": reach, "faseranzahl": fz,
                      "cable": False, "feature_code": fc, "desc": desc, "dual_rate": kind in ("SR25DR", "DR10"),
-                     "lifecycle": ("legacy" if legacy else "current"), "alt_pns": [fc], "page": 0,
+                     "dual_rate_pair": dual_pair, "op_temp": ov.get("op_temp"), "reach_note": ov.get("reach_note"),
+                     "lifecycle": ("legacy" if legacy else "current"), "alt_pns": ([fc] if fc else []), "page": 0,
                      "row": SRC_GUIDE[src]}
     for pn, fc, ct, sp, ff, ln, brk in CABLES:
         k3 = "AOC Kabel" if ct == "AOC" else "DAC Kabel"
@@ -197,6 +218,14 @@ def main():
     flags.append("200G: only a QSFP56 DAC (Ethernet) is a Lenovo-branded option; NO 200G Ethernet optical "
                  "MODULE and NO 400G optic in any Lenovo guide (NIC 57508 lists QSFP56 DAC + HDR-IB AOC "
                  "only) -> documented scope boundary. 100G optics = SR4 + LR4 (no Lenovo CWDM4/PSM4/SWDM4).")
+    flags.append("85 °C extended-temperature optics (finding ④): 00NU537 + 00VX183 (10GBASE-SR SFP+, 85 °C; "
+                 "300 m OM3 / 400 m OM4) added from the Lenovo/IBM Support '85 Degree C' overview + ServerProven; "
+                 "4TC7A69045 (Dual Rate 10G/25G SR SFP28) is a published '(85C)' part -> Betriebstemperatur "
+                 "grounded at 0 bis 85 °C (not Rule-9 commercial). op_temp authored verbatim, backfill skips.")
+    flags.append("NOT added (flag-don't-fabricate, ServerProven sweep ④): 4XC1S00743 (ThinkStation Dual Rate "
+                 "10G/25G SR SFP28) — likely a ThinkStation-channel rebadge of 4TC7A69045 (same Finisar optic), "
+                 "held pending authoritative confirmation it is a distinct product; 00MY033 (10GBASE-SR/X) — "
+                 "eBay-only listing, likely the 00MY034 sibling, no Lenovo/IBM datasheet found. Re-check if grounded.")
     OUT.write_text(json.dumps(facts, ensure_ascii=False, indent=1), encoding="utf-8")
     FLAGS.write_text("\n".join(flags), encoding="utf-8")
     import collections

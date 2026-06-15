@@ -386,6 +386,92 @@ def check_breakout_ends(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- L5 NEAR-DUPLICATE PROSE (NEW, L8 Lenovo finding ①) ------------------------------------------
+# §7.7 forbids same-spec SKUs sharing near-identical Beschreibung. Exact-match dup checks miss templated
+# clones (only PN/feature-code differ). This masks PN + feature-code, clusters OPTIC modules by
+# (Standard, Formfaktor, Reichweite, Wellenlänge), and flags any cluster whose pairwise word-3-shingle
+# Jaccard similarity >= _NEAR_DUP_SIM. CABLES are exempt (length-variant prose reuse is the accepted
+# norm — MikroTik precedent). Same-product alias/revision/variant clusters in already-cleared brands are
+# carried in config/near_dup_exempt.yaml (reason-coded baseline, the completeness-flag pattern) so the
+# check enforces "no NEW near-dups" catalog-wide without re-opening operator-cleared prose.
+_NEAR_DUP_SIM = 0.85
+_NEAR_DUP_EXEMPT = _REPO / "config" / "near_dup_exempt.yaml"
+_FC_MASK = re.compile(r"Feature-Code\s+\w+", re.I)
+_CABLE_STD = re.compile(r"\b(CR\d?|Twinax|Direct[ -]?Attach|Active Optical|AOC|DAC)\b", re.I)
+
+
+def _shingles(html: str, k: int = 3) -> set:
+    w = re.sub(r"<[^>]+>", " ", html)
+    w = re.sub(r"[^\wäöüÄÖÜß ]", " ", w).lower().split()
+    return {tuple(w[i:i + k]) for i in range(len(w) - k + 1)} if len(w) >= k else set()
+
+
+def _jaccard(a: set, b: set) -> float:
+    return len(a & b) / len(a | b) if (a or b) else 0.0
+
+
+def _near_dup_exemptions(brand: str) -> set:
+    """frozenset(member-PNs) per exempted (same-product) cluster for this brand."""
+    if not _NEAR_DUP_EXEMPT.exists():
+        return set()
+    rec = yaml.safe_load(_NEAR_DUP_EXEMPT.read_text(encoding="utf-8")) or {}
+    out = set()
+    for grp in (rec.get(brand) or []):
+        members = grp.get("members") if isinstance(grp, dict) else grp
+        if members:
+            out.add(frozenset(members))
+    return out
+
+
+def check_near_dup_prose(bundle: Path) -> list[Violation]:
+    from itertools import combinations
+    out: list = []
+    mhdr, mrows = _main(bundle)
+    if not mhdr or "Beschreibung" not in mhdr or "Artikelnummer" not in mhdr:
+        return out
+    i_sku, i_be = mhdr.index("Artikelnummer"), mhdr.index("Beschreibung")
+    i_k3 = mhdr.index("Kategorie Ebene 3") if "Kategorie Ebene 3" in mhdr else -1
+    desc = {r[i_sku]: r[i_be] for r in mrows if len(r) > max(i_sku, i_be)}
+    k3 = {r[i_sku]: (r[i_k3] if i_k3 >= 0 and len(r) > i_k3 else "") for r in mrows if len(r) > i_sku}
+    ahdr, arows = _attrs(bundle)
+    if not ahdr or "Attributname" not in ahdr:
+        return out
+    a_s, a_n, a_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
+    attr: dict = {}
+    for r in arows:
+        if len(r) > max(a_s, a_n, a_v):
+            attr.setdefault(r[a_s], {})[r[a_n]] = r[a_v]
+    brand, _ = _brand_category(bundle)
+    exempt = _near_dup_exemptions(brand)
+    clusters: dict = {}
+    for sku, be in desc.items():
+        a = attr.get(sku, {})
+        std = a.get("Standard", "")
+        ff = a.get("Formfaktor", "")
+        ends = a.get("Anschlusstyp") or a.get("Anschlussenden") or ""
+        # CABLE exemption (robust across brand conventions): no IEEE optical std, or copper/AOC std, or
+        # a "X auf Y" cable end, or a "… Kabel" form factor / category.
+        if (not std or _CABLE_STD.search(std) or " auf " in ends
+                or ff.endswith("Kabel") or "Kabel" in (k3.get(sku) or "")):
+            continue
+        sig = (std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""))
+        masked = _FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
+        clusters.setdefault(sig, []).append((sku, _shingles(masked)))
+    for sig, members in clusters.items():
+        if len(members) < 2 or frozenset(s for s, _ in members) in exempt:
+            continue
+        for (s1, sh1), (s2, sh2) in combinations(members, 2):
+            sim = _jaccard(sh1, sh2)
+            if sim >= _NEAR_DUP_SIM:
+                out.append(Violation(bundle.name, "%s~%s" % (s1, s2), "Beschreibung",
+                                     "distinct same-spec SKUs need unique prose (<%.2f)" % _NEAR_DUP_SIM,
+                                     "%.2f" % sim,
+                                     "L5: near-duplicate Beschreibung — %s vs %s share %.0f%% of prose "
+                                     "(same %s/%s, only PN/feature-code differ); §7.7 unique-language"
+                                     % (s1, s2, sim * 100, sig[0], sig[1])))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -423,7 +509,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
     l5 = (check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
-          + check_breakout_ends(bundle))
+          + check_breakout_ends(bundle) + check_near_dup_prose(bundle))
     res.layers.append(LayerResult("L5", not l5, l5))
     l6 = check_completeness(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))

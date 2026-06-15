@@ -90,6 +90,21 @@ def set_price_cluster(d, val, n):
     _rw(f, ";", fn)
 
 
+def clone_beschreibung(d, src_sku, dst_sku):
+    """Copy src_sku's Beschreibung onto a same-spec sibling dst_sku (PN-substituted) — a templated clone
+    that, after the detector masks PN+feature-code, MUST trip the L5 near-duplicate-prose check."""
+    f = main_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); bi = h.index("Beschreibung")
+        src = next((r[bi] for r in rows[1:] if len(r) > bi and r[si] == src_sku), None)
+        if src is not None:
+            for r in rows[1:]:
+                if len(r) > bi and r[si] == dst_sku:
+                    r[bi] = src.replace(src_sku, dst_sku)
+        return rows
+    _rw(f, ";", fn)
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -132,6 +147,11 @@ def fixtures():
         # cables (DAC-…2x400G / …4Q28 / 8xSFP56) MUST fail (breakout end dropped); straight PNs are exempt.
         ("F21 breakout-ends",     ROOT / "output/stage3_Dell",
          lambda d: set_attr_value(d, "Anschlusstyp", "OSFP auf OSFP", n=400), "L5"),
+        # F22 (L8 Lenovo finding ①): two distinct same-spec optics (10GBASE-SR/SFP+/300m/850nm) must NOT
+        # share near-identical Beschreibung. Clone one onto its sibling -> after PN/feature-code masking the
+        # near-dup detector MUST fire. (Positive direction = the real Lenovo SR cluster, 8 unique voices, PASSES.)
+        ("F22 near-dup-prose",    ROOT / "output/stage3_Lenovo",
+         lambda d: clone_beschreibung(d, "49Y4216", "49Y8578"), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

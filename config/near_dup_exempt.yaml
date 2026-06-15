@@ -1,0 +1,470 @@
+# Near-duplicate-prose exemption baseline (L8 Lenovo finding ①). Reason-coded record of
+# same-product alias/revision/variant optic clusters in operator-CLEARED brands whose prose
+# was accepted before the L5 near-dup detector existed. The detector enforces NO NEW near-dups
+# catalog-wide; these are the grandfathered baseline (cables are exempt in-code, not listed).
+# Lenovo is intentionally ABSENT — its clusters were de-duplicated, not baselined.
+# Backlog: weave these per dedup rule #4. Re-generate via _scratch/gen_near_dup_exempt.py.
+Arista:
+- ff: OSFP
+  members:
+  - OSFP-400G-XDR4
+  - OSFP-400G-XDR4-S
+  - OSFP-800G-2XDR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-FR
+- ff: OSFP
+  members:
+  - OSFP-400G-PLR4
+  - OSFP-400G-PLR4-S
+  - OSFP-800G-2PLR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-LR
+- ff: OSFP
+  members:
+  - LPO-800G-2FR4
+  - OSFP-400G-FR4
+  - OSFP-800G-2FR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400GBASE-FR4
+- ff: OSFP
+  members:
+  - OSFP-400G-VSR4
+  - OSFP-800G-2VSR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400GBASE-VSR4
+- ff: OSFP
+  members:
+  - OSFP-400G-SR8
+  - OSFP-400G-SR8-C
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 400GBASE-SR8
+- ff: QSFP-DD
+  members:
+  - QDD-400G-SR8
+  - QDD-400G-SR8-C
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 400GBASE-SR8
+- ff: QSFP-DD
+  members:
+  - QDD-400G-PLR4
+  - QDD-400G-PLR4-S
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-LR
+- ff: QSFP28
+  members:
+  - QSFP-100G-SR4
+  - QSFP-100G-SR4-E
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-SR4
+- ff: QSFP+
+  members:
+  - QSFP-40G-SRBD
+  - QSFP-40G-SRBD-R
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40GBASE-BIDI
+- ff: SFP28
+  members:
+  - SFP-25G-SR
+  - SFP-25G-SR-E
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 25GBASE-SR
+- ff: SFP28
+  members:
+  - SFP-25G-MR-SR
+  - SFP-25G-MR-XSR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 25GBASE-MR
+- ff: SFP+
+  members:
+  - SFP-10G-ERLBD-D
+  - SFP-10G-ERLBD-U
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-ERLBD
+- ff: SFP+
+  members:
+  - SFP-10G-ERBD-D
+  - SFP-10G-ERBD-U
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-ERBD
+Cisco:
+- ff: SFP
+  members:
+  - GLC-BX-U
+  - GLC-BX-U-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-BX10-U
+- ff: SFP
+  members:
+  - GLC-BX-D
+  - GLC-BX-D-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-BX10-D
+- ff: SFP
+  members:
+  - GLC-2BX-D
+  - GLC-2BX-D-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 2-Kanal 1000BASE-BX10-D
+- ff: XFP
+  members:
+  - XFP-10GLR-OC192SR
+  - XFP10GLR-192SR-L
+  - XFP10GLR192SR-RGD
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-LR/-LW, OC-192/STM-64 SR-1 (Multirate)
+- ff: OSFP
+  members:
+  - OSFP-800G-VR8
+  - OSFP-800G-VR8P
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: IEEE 802.3 800GBASE-VR8
+- ff: OSFP
+  members:
+  - OSFP-800G-DR8
+  - OSFP-800G-DR8P
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: IEEE 802.3 800GBASE-DR8
+- ff: QSFP28
+  members:
+  - DP01QS28-E20
+  - DP01QS28-E25
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: Kohärentes DWDM (C-Band)
+- ff: SFP+
+  members:
+  - DS-SFP-FC16G-ELW
+  - DS-SFP-FC16GELW
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 16GFC
+- ff: SFP
+  members:
+  - GLC-SX-MM
+  - SFP-GE-S
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-SX
+- ff: SFP
+  members:
+  - GLC-ZX-LMM-TI
+  - GLC-ZX-SM
+  - SFP-GE-Z
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-ZX
+- ff: SFP
+  members:
+  - GLC-T++
+  - GLC-TE++
+  - MGBT1
+  - S1G-TE-PM-D-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-T
+- ff: QSFP-DD
+  members:
+  - DP01QSDD-LK9
+  - DP04QSDD-HE0-A1
+  - DP04QSDD-HK9
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400G Coherent (OIF, ITU-T G.709)
+Dell:
+- ff: SFP+
+  members:
+  - SFP-10G-T
+  - SFP-10G-T-LP
+  - SFP-10G-T-RA
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-T
+- ff: QSFP28
+  members:
+  - Q28-100G-LR4-Gen3
+  - Q28-100G-LR4-Gen4
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 100GBASE-LR4
+- ff: QSFP28
+  members:
+  - Q28-100G-FR
+  - Q28-100G-FR-Gen3-LP
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-FR
+- ff: QSFP28
+  members:
+  - Q28-100G-PSM4-10
+  - Q28-100G-PSM4-IR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-PSM4
+- ff: QSFP-DD
+  members:
+  - 400G-Q56-DD-SR4.2-ON-Gen4
+  - 400G-Q56DD-SR4.2-ON-Gen3
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 400GBASE-SR4.2
+- ff: QSFP-DD
+  members:
+  - 400G-Q56DD-EDR4-Gen2
+  - 400G-Q56DD-EDR4-Gen3
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 400GBASE-EDR4
+Extreme:
+- ff: QSFP+
+  members:
+  - 40G-LR4-QSFP10KM
+  - 40G-QSFP-LR4-INT
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40GBASE-LR4
+HPE:
+- ff: SFP
+  members:
+  - JL746A
+  - S2N63A
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: TAA
+- ff: SFP
+  members:
+  - J8177E
+  - JL747B
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-T
+Juniper:
+- ff: SFP
+  members:
+  - CTP-SFP-1GE-LX
+  - EX-SFP-1GE-LX
+  - RX-10KM-SFP
+  - SFP-1GE-LX
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-LX
+- ff: SFP
+  members:
+  - CTP-SFP-1GE-SX
+  - RX-550M-SFP
+  - SFP-1GE-SX
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-SX
+- ff: SFP
+  members:
+  - CTP-SFP-1GE-T
+  - RX-GET-SFP
+  - SFP-1GE-T
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-T
+- ff: SFP
+  members:
+  - EX-SFP-1FE-FX
+  - EX-SFP-1FE-FX-ET
+  - SFP-1FE-FX
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 100BASE-FX
+- ff: SFP
+  members:
+  - EX-SFP-1GE-LX40K
+  - EX-SFP-1GE-LX40K-I
+  - SFP-GE40KM
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-EX
+- ff: SFP+
+  members:
+  - EX-SFP-10GE-ER
+  - SFPP-10GE-ER
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-ER
+- ff: SFP+
+  members:
+  - EX-SFP-10GE-LR
+  - SFPP-10GE-LR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-LR
+- ff: XFP
+  members:
+  - XFP-10G-S
+  - XFP-10GE-SR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-SR
+- ff: QSFP-DD
+  members:
+  - QDD-2X400G-FR4
+  - QDD-2X400G-FR4-P
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 2x 400GBASE-FR4
+- ff: QSFP-DD
+  members:
+  - QDD-2X400G-LR4-10
+  - QDD-2X400G-LR4-P
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 2x 400GBASE-LR4
+- ff: QSFP-DD
+  members:
+  - JCO400-QDD-ZR
+  - QDD-400G-ZR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400G-ZR (coherent)
+- ff: QSFP-DD
+  members:
+  - JCO400-QDD-ZR-M
+  - QDD-400G-ZR-M
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400G ZR+ (coherent)
+- ff: QSFP-DD
+  members:
+  - JCO400-QDD-ZR-M-HP
+  - QDD-400G-ZR-M-HP
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 400G ZR+ HP (coherent)
+- ff: CFP
+  members:
+  - CFP-100GBASE-LR4
+  - CFP-GEN2-100GBASE-LR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100GBASE-LR4
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-BXSR
+  - QSFP-100G-SR1P2
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100G SR BiDi
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-CWDM
+  - QSFP-100G-CWDM
+  - QSFP-100G-CWDM4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100G-CWDM4
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-LR4
+  - QSFP-100G-LR4
+  - QSFP-100G-LR4-D
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 100GBASE-LR4
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-LR4-4WDM-40-I
+  - QSFP-100G-4WDM40
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100G 4WDM
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-PSM4
+  - QSFP-100G-PSM4
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 100G-PSM4
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-SR4
+  - QSFP-100G-SR4
+  - QSFP-100G-SR4-C
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 100GBASE-SR4
+- ff: SFP+
+  members:
+  - EX-SFP-10G-BX-D
+  - JNP-SFP-10G-BX10D
+  - SFPP-10GE-BX10D-IT
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10G-BX-D-40
+  - JNP-SFP-10G-BX40D
+  - SFPP-10GE-BX40D-IT
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10G-BX-U
+  - JNP-SFP-10G-BX10U
+  - SFPP-10GE-BX10U-IT
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10G-BX-U-40
+  - JNP-SFP-10G-BX40U
+  - SFPP-10GE-BX40U-IT
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10G-BX-U-80
+  - JNP-SFP-10G-BX80U
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10GE-BX23
+  - EX-SFP-10GE-BX23-60
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10GE-BX32
+  - EX-SFP-10GE-BX32-60
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-BX BiDi
+- ff: SFP+
+  members:
+  - EX-SFP-10GE-ZR
+  - SFPP-10GE-ZR
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10G-ZR
+- ff: SFP
+  members:
+  - EX-SFP-1FE-LH
+  - EX-SFP-1FE-LX40K
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 100BASE-LX
+- ff: SFP
+  members:
+  - EX-SFP-1GE-SX
+  - EX-SFP-1GE-SX-ET
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 1000BASE-SX
+- ff: SFP
+  members:
+  - EX-SFP-GE10KT13R14
+  - EX-SFP-GE10KT13R14-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-BX
+- ff: SFP
+  members:
+  - EX-SFP-GE10KT14R13
+  - EX-SFP-GE10KT14R13-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 1000BASE-BX
+- ff: QSFP+
+  members:
+  - JNP-QSFP-40G-ESR4
+  - QFX-QSFP-40G-ESR4
+  - QFX-QSFP-40G-SR4
+  - QSFP-40G-ESR4
+  - QSFP-40G-SR4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40GBASE-SR4
+- ff: QSFP+
+  members:
+  - JNP-QSFP-40G-LR4
+  - QFX-QSFP-40G-LR4
+  - QSFP-40G-LR4
+  reason: revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8
+  std: 40GBASE-LR4
+- ff: QSFP+
+  members:
+  - JNP-QSFP-40GE-ER4
+  - QFX-QSFP-40G-ER4
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40GBASE-ER4
+- ff: QSFP+
+  members:
+  - JNP-QSFP-4X10GE-LR
+  - QSFP-4X10GE-LR-25
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40G 4x10GE
+- ff: SFP28
+  members:
+  - JNP-SFP-25G-LR-BX-D
+  - JNP-SFP-25G-LR-BXD-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 25G-LR BiDi
+- ff: SFP28
+  members:
+  - JNP-SFP-25G-LR-BX-U
+  - JNP-SFP-25G-LR-BXU-I
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 25G-LR BiDi

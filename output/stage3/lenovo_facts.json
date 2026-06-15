@@ -14,6 +14,9 @@
   "feature_code": "A5DL",
   "desc": "Lenovo 1000BASE-T (RJ-45) SFP Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A5DL"
@@ -36,6 +39,9 @@
   "feature_code": "3269",
   "desc": "Lenovo 1000BASE-SX SFP Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "3269"
@@ -58,6 +64,9 @@
   "feature_code": "A1PN",
   "desc": "Lenovo 1000BASE-LX SFP Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A1PN"
@@ -80,6 +89,9 @@
   "feature_code": "CFPW",
   "desc": "Lenovo 10GBASE-T SFP+ (Accelink RTXL185-510)",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "CFPW"
@@ -102,6 +114,9 @@
   "feature_code": "AVV1",
   "desc": "Lenovo 10GBASE-T SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "AVV1"
@@ -124,6 +139,9 @@
   "feature_code": "CEHQ",
   "desc": "Lenovo 10GBASE-LR SFP+ (Finisar FTLX1475D3BCL)",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "CEHQ"
@@ -146,6 +164,9 @@
   "feature_code": "B0RJ",
   "desc": "Lenovo 10GBASE-LR SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "B0RJ"
@@ -168,6 +189,9 @@
   "feature_code": "A1PM",
   "desc": "Lenovo 10GBASE-LR SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "A1PM"
@@ -190,6 +214,9 @@
   "feature_code": "A1PP",
   "desc": "Lenovo 10GBASE-ER SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A1PP"
@@ -212,6 +239,9 @@
   "feature_code": "0069",
   "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (Brocade-qualified)",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "0069"
@@ -234,6 +264,9 @@
   "feature_code": "5721",
   "desc": "Lenovo 10 GbE SW (SR) SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "5721"
@@ -256,6 +289,9 @@
   "feature_code": "0064",
   "desc": "Lenovo 10Gb SFP+ SR Optical Transceiver (QLogic-qualified)",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "0064"
@@ -278,6 +314,9 @@
   "feature_code": "5053",
   "desc": "Lenovo 10GBASE-SR SFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "5053"
@@ -300,6 +339,9 @@
   "feature_code": "5722",
   "desc": "Lenovo 10Gb SFP+ SR Transceiver (Juniper-qualified)",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "5722"
@@ -322,6 +364,9 @@
   "feature_code": "6416",
   "desc": "Lenovo 10GbE SR SFP+ Transceiver, 300m MMF",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "6416"
@@ -344,12 +389,61 @@
   "feature_code": "BNDR",
   "desc": "ThinkSystem Accelink 10G SR SFP+ Ethernet Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BNDR"
   ],
   "page": 0,
   "row": "Lenovo Press lp1652/lp1417 (current NIC guides)"
+ },
+ "00NU537": {
+  "pn": "00NU537",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SR",
+  "standard": "10GBASE-SR",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "400 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "",
+  "desc": "Lenovo 10GBASE-SR SFP+ Transceiver (85 °C, erweiterter Temperaturbereich)",
+  "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": "0 bis 85 °C",
+  "reach_note": "300 m über OM3, 400 m über OM4",
+  "lifecycle": "legacy",
+  "alt_pns": [],
+  "page": 0,
+  "row": "Lenovo/IBM Support 'Lenovo 10GBASE-SR SFP+ (85 Degree C)' overview + ServerProven"
+ },
+ "00VX183": {
+  "pn": "00VX183",
+  "speed": "10G",
+  "ff": "SFP+",
+  "type": "SR",
+  "standard": "10GBASE-SR",
+  "connector": "LC",
+  "media": "MMF",
+  "wavelength": "850 nm",
+  "reach": "300 m",
+  "faseranzahl": "2",
+  "cable": false,
+  "feature_code": "",
+  "desc": "Lenovo 10GBASE-SR SFP+ Optical Transceiver (85 °C)",
+  "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": "0 bis 85 °C",
+  "reach_note": null,
+  "lifecycle": "legacy",
+  "alt_pns": [],
+  "page": 0,
+  "row": "Lenovo/IBM Support 'Lenovo 10GBASE-SR SFP+ (85 Degree C)' overview + ServerProven"
  },
  "00MY034": {
   "pn": "00MY034",
@@ -366,6 +460,9 @@
   "feature_code": "ATTJ",
   "desc": "Lenovo Dual Rate 1/10Gb SX/SR SFP+ Transceiver",
   "dual_rate": true,
+  "dual_rate_pair": "1G/10G",
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "ATTJ"
@@ -388,6 +485,9 @@
   "feature_code": "BFH2",
   "desc": "Lenovo 25Gb SR SFP28 Ethernet Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BFH2"
@@ -410,6 +510,9 @@
   "feature_code": "BF10",
   "desc": "Lenovo Dual Rate 10G/25G SR SFP28 (85C) Transceiver",
   "dual_rate": true,
+  "dual_rate_pair": "10G/25G",
+  "op_temp": "0 bis 85 °C",
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BF10"
@@ -432,6 +535,9 @@
   "feature_code": "AV1B",
   "desc": "Lenovo Dual Rate 10G/25G SR SFP28 Transceiver",
   "dual_rate": true,
+  "dual_rate_pair": "10G/25G",
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "AV1B"
@@ -454,6 +560,9 @@
   "feature_code": "BYBJ",
   "desc": "ThinkSystem Finisar Dual Rate 10G/25G SR SFP28 Transceiver",
   "dual_rate": true,
+  "dual_rate_pair": "10G/25G",
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BYBJ"
@@ -476,6 +585,9 @@
   "feature_code": "AV1C",
   "desc": "Lenovo 25GBASE-LR SFP28 Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "AV1C"
@@ -498,6 +610,9 @@
   "feature_code": "ATYW",
   "desc": "Lenovo 40GBASE-SR-BiDi QSFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "ATYW"
@@ -520,6 +635,9 @@
   "feature_code": "A1DR",
   "desc": "Lenovo 40GBASE-SR4 QSFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A1DR"
@@ -531,7 +649,7 @@
   "pn": "00D9865",
   "speed": "40G",
   "ff": "QSFP+",
-  "type": "SR4",
+  "type": "iSR4",
   "standard": "40GBASE-SR4",
   "connector": "MPO-12",
   "media": "MMF",
@@ -542,6 +660,9 @@
   "feature_code": "ASTM",
   "desc": "Lenovo 40GBASE-iSR4 QSFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "ASTM"
@@ -553,7 +674,7 @@
   "pn": "00FE325",
   "speed": "40G",
   "ff": "QSFP+",
-  "type": "SR4",
+  "type": "eSR4",
   "standard": "40GBASE-SR4",
   "connector": "MPO-12",
   "media": "MMF",
@@ -564,6 +685,9 @@
   "feature_code": "A5U9",
   "desc": "Lenovo 40GBASE-eSR4 QSFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A5U9"
@@ -586,6 +710,9 @@
   "feature_code": "A3NY",
   "desc": "Lenovo 40GBASE-LR4 QSFP+ Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "A3NY"
@@ -608,6 +735,9 @@
   "feature_code": "BFH1",
   "desc": "Lenovo 100Gb SR4 QSFP28 Ethernet Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BFH1"
@@ -630,6 +760,9 @@
   "feature_code": "AV1D",
   "desc": "Lenovo 100GBASE-SR4 QSFP28 Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "AV1D"
@@ -652,6 +785,9 @@
   "feature_code": "BVA4",
   "desc": "Lenovo 100GBASE-SR4 QSFP28 Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "current",
   "alt_pns": [
    "BVA4"
@@ -674,6 +810,9 @@
   "feature_code": "AV1E",
   "desc": "Lenovo 100GBASE-LR4 QSFP28 Transceiver",
   "dual_rate": false,
+  "dual_rate_pair": null,
+  "op_temp": null,
+  "reach_note": null,
   "lifecycle": "legacy",
   "alt_pns": [
    "AV1E"
