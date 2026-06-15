@@ -347,6 +347,8 @@ for pn, f in FACTS.items():
                "COP": copper, "RNOTE": f.get("reach_note"), "FCC": fc_clause}
         vidx = OPTIC_VOICE_IDX.get(pn, 0)
         i1, i2, i3 = _voices(ctx)[vidx % 10]
+        if f.get("oem"):                 # genuine, web-verified OEM/vendor variant (logged via extra_log)
+            i3 = i3 + " " + f["oem"]
         pool = [s % pn for s in VOICE_POOL[vidx % 10]]               # voice-specific padding (no shared tail)
         # Kurzbeschreibung — opening varied by voice so siblings differ here too
         kopen = ["Der %s %s ist ein %s-%s-Transceiver%s%s%s.",
@@ -403,9 +405,11 @@ for pn, f in FACTS.items():
          "kurzbeschreibung": ws(kurz), "intro": intro, "kompatibilitaet": kompat,
          "faq": faq, "verwandte": [], "attributes": attrs,
          "provenance": {lab: [URL, "datasheet"] for lab in prov},
-         # §1000-rule: the feature code is woven into the Beschreibung -> log it (Verification_Log-only,
-         # not an Attributes row) so the prose claim has a cited source. Grounded from the Lenovo Press guide.
-         "extra_log": ([["Feature-Code", fc, URL]] if fc else []),
+         # §1000-rule: every woven prose claim gets a logged source (Verification_Log-only, not an
+         # Attributes row). Feature code -> Lenovo Press guide; OEM/vendor variant -> the specific guide
+         # whose row text I web-verified (lp0781/lp1198/lp1433), Confidence=datasheet.
+         "extra_log": (([["Feature-Code", fc, URL]] if fc else [])
+                       + ([["OEM-Variante", f["oem_log"][0], f["oem_log"][1]]] if f.get("oem_log") else [])),
          "beschreibung": "", "netto_vk": None}
     assert len(e["titel_tag"]) <= 60 and e["titel_tag"].endswith("| Hexwaren"), (pn, e["titel_tag"])
     doc[pn] = e

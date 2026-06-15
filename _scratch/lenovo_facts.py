@@ -177,6 +177,27 @@ OPTIC_OVERRIDE = {
     "00VX183":    {"reach": "300 m", "op_temp": "0 bis 85 °C"},
     "4TC7A69045": {"op_temp": "0 bis 85 °C"},
 }
+# L8 byte-audit PASS + enhancement: GENUINE OEM/vendor variants named in official Lenovo Press product
+# guides (web-verified row text). (prose-sentence, OEM-Variante log value, source guide URL). Framed as
+# the factual variant (NOT inflated into "für X-qualifizierte Fabrics"); copper 4TC7B13092 is BaseT, NOT
+# an Optikmodul. The other SR parts (46C3447/49Y8578/68Y6923/69Y0389) are generic in Lenovo Press -> none.
+_LP0781 = "https://lenovopress.lenovo.com/lp0781"   # ThinkSystem Broadcom 57414 10/25GbE guide
+_LP1198 = "https://lenovopress.lenovo.com/lp1198"   # ThinkSystem Broadcom 57454 10/25GbE guide
+_LP1433 = "https://lenovopress.lenovo.com/lp1433"   # ThinkSystem Intel E810-DA2/DA4 10/25GbE guide
+OEM_VARIANT = {
+    "49Y4216":    ("Lenovo führt dieses Modul laut Produktführer als Brocade-Variante (Brocade 10Gb SFP+ SR Optical Transceiver).",
+                   "Brocade 10Gb SFP+ SR Optical Transceiver", _LP0781),
+    "49Y4218":    ("Lenovo führt dieses Modul laut Produktführer als QLogic-Variante (QLogic 10Gb SFP+ SR Optical Transceiver).",
+                   "QLogic 10Gb SFP+ SR Optical Transceiver", _LP0781),
+    "4TC7A78615": ("Das Modul basiert auf einem Accelink-Optikmodul für die optische SR-Übertragung.",
+                   "ThinkSystem Accelink 10G SR SFP+ (optical SR)", _LP1198),
+    "4TC7A88638": ("Das Modul ist Finisar-basiert und als Dual-Rate-SFP28-Ausführung ausgelegt.",
+                   "ThinkSystem Finisar Dual Rate 10G/25G SR SFP28", _LP1198),
+    "4TC7B12410": ("Das Modul basiert auf dem Finisar-Baustein FTLX1475D3BCL für 10GBASE-LR.",
+                   "Finisar FTLX1475D3BCL 10GBASE-LR SFP+", _LP1433),
+    "4TC7B13092": ("Das Modul basiert auf dem Accelink-BaseT-Modul RTXL185-510 für 10GBASE-T über Kupfer.",
+                   "Accelink RTXL185-510 10G BaseT SFP+ (Kupfer)", _LP1433),
+}
 
 
 def main():
@@ -191,10 +212,12 @@ def main():
         if legacy:
             eol.append(pn)
         dual_pair = "1G/10G" if kind == "DR10" else ("10G/25G" if kind == "SR25DR" else None)
+        oem = OEM_VARIANT.get(pn)
         facts[pn] = {"pn": pn, "speed": sp, "ff": ff, "type": typ, "standard": std, "connector": conn,
                      "media": media, "wavelength": (wl or None), "reach": reach, "faseranzahl": fz,
                      "cable": False, "feature_code": fc, "desc": desc, "dual_rate": kind in ("SR25DR", "DR10"),
                      "dual_rate_pair": dual_pair, "op_temp": ov.get("op_temp"), "reach_note": ov.get("reach_note"),
+                     "oem": (oem[0] if oem else None), "oem_log": ([oem[1], oem[2]] if oem else None),
                      "lifecycle": ("legacy" if legacy else "current"), "alt_pns": ([fc] if fc else []), "page": 0,
                      "row": SRC_GUIDE[src]}
     for pn, fc, ct, sp, ff, ln, brk in CABLES:

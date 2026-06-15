@@ -45,7 +45,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | **Juniper** | **188 emitted** (gate L1–L6 PASS) | ✅ **AUTHORED + GATE-GREEN + L8 fixes applied — ZIP `…_c6d2860.zip`** | core. Locked 205 → EXACT **188 + 13 flagged-out + 4 aliased = 205**. Authored via `juniper_author.py` (per-SKU-unique prose; EX/QFX/MX/PTX/ACX/SRX theme; BX D/U λ 1330/1270 datasheet-verified; 23 industrial → −40/+85). **L8 audit: contract+content+grounding PASS + 1 HIGH/2 low FIXED** — DOM Unterstützung now required (L3) + added (188/188: Ja 178/Nein 10 copper+XENPAK); 4 XENPAK connectors LC→**SC (Duplex)**; λ normalized to carry **nm**. **gate.py L1–L6 = PASS** on the re-emitted bundle. Commit `c6d2860`. EUR pricing deferred (0,00). Optional polish: 3 flagged-out λ, JCO/QDD-ZR alias, PLR4 reach. |
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | **Dell** | 163 (61 optics 1G–800G + 102 DAC/AOC) | **emitted, gate L1–L6 PASS** (L8 round-2 2026-06-15: +3 matrix-only 40G + 5 fixes) | 1st Tier-B; SFP-DD+QSFP28-DD vocab; FC/QSA/passive-CBL out |
-| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | **emitted, gate L1–L6 PASS** (2026-06-15; ThinkSystem, absorbs IBM/BNT; L8 round-4 grounded-prose redo) | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C optics; GROUNDED-only per-SKU prose (L5 near-dup ≤0.27 + ungrounded-claim guard); withdrawn-switch + 85 °C tier EOL-flagged (never dropped) |
+| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | **L8 byte-audit PASS on `eb25954`; logged-OEM enhancement re-emitted (2026-06-15) — awaiting final byte-audit** | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C; GROUNDED prose (L5 near-dup ≤0.27 + ungrounded-claim guard); 6 web-verified OEM variants logged; FC + OEM via extra_log; EOL-flagged tier (never dropped) |
 | Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 
 ### Switches (Rule-7 schema)
@@ -346,6 +346,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `output/Hexwaren_Lenovo_stage3_eb25954.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows,
   Prices no-BOM, Verification_Log carries 102 Feature-Code citation rows; supersedes & replaces
   `_3426853.zip` and the intermediate `_589ffe4.zip`, both deleted). **Awaiting operator L8.**
+- **LENOVO L8 ROUND-5 — byte-audit PASS on `eb25954` + logged-OEM enhancement. Operator: "PASS — clean, no
+  spec drift, FC-logging verified; one enhancement before final."** Context correction from the operator: the
+  vendor/OEM associations stripped in round-4 are **genuinely grounded** in official Lenovo Press product
+  guides — they were not fabrication, just unlogged + embellished + the copper/optical slip. RE-ADDED 6
+  web-verified OEM/vendor variants, framed factually (state the variant, no inflation), each with a logged
+  `extra_log` row (Attributname "OEM-Variante", Source_URL = the guide whose row text I re-verified live,
+  Confidence=datasheet): **49Y4216** Brocade 10Gb SFP+ SR + **49Y4218** QLogic 10Gb SFP+ SR (both lp0781,
+  Broadcom 57414 guide); **4TC7A78615** Accelink optical SR + **4TC7A88638** Finisar Dual-Rate SFP28 (both
+  lp1198, Broadcom 57454 guide); **4TC7B12410** Finisar FTLX1475D3BCL 10GBASE-LR + **4TC7B13092** Accelink
+  RTXL185-510 10G **BaseT/copper** (both lp1433, Intel E810 guide — copper framed as BaseT, NOT "Optikmodul").
+  **Dropped per operator:** "Juniper" on 68Y6923 (no Lenovo source) — 46C3447/49Y8578/68Y6923/69Y0389 are
+  generic "SFP+ SR" in Lenovo Press → keep use-case framing only, no vendor. The new vendor tokens PASS the
+  L5 ungrounded-claim guard because they are now log-grounded (guard exempts log-matched mentions). Era
+  appositive already "IBM-System-Networking-Erbe" alone (no BNT/BladeCenter) since round-4 — operator's
+  optional tightening already satisfied. Gate **L1–L6 PASS 104/104**, near-dup **0** (≤0.27), audit_semantic
+  **0×8**, gate_selftest CERTIFIED, **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_<hash>.zip` (104 SKUs;
+  6 OEM-Variante + 102 Feature-Code rows logged — see build entry). Alias-prose backlog stays PARKED.
+  **Awaiting final operator byte-audit.**
 
 ---
 

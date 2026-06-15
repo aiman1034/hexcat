@@ -428,7 +428,7 @@
     "intro": [
       "Der Lenovo 4TC7B13092 ist ein 10-Gigabit-SFP+-Transceiver vom Typ T und überträgt 10GBASE-T-Ethernet über RJ45-Kupfer; in verdichteten Virtualisierungs-Hosts bindet er ThinkSystem-Server zuverlässig an SFP+-Ports an.",
       "Er stellt die Verbindung über den RJ45-Anschluss her und trägt bis zu 30 m.",
-      "Ausgeliefert wird der 4TC7B13092, Teil der ThinkSystem-Generation, als versiegelte Lenovo-Original-Neuware, freigegeben für ThinkSystem-Plattformen; das Produkt wird bei Lenovo unter dem Feature-Code CFPW geführt. Gerade bei hoher VM-Dichte zahlt sich die werkseitige Freigabe des 4TC7B13092 aus, weil Kompatibilitätsrisiken entfallen. Der 4TC7B13092 lässt sich im laufenden Betrieb tauschen, was Wartungsfenster spürbar verkürzt. In dicht belegten Hypervisor-Clustern hält der 4TC7B13092 die Ost-West-Kommunikation der virtuellen Maschinen stabil."
+      "Ausgeliefert wird der 4TC7B13092, Teil der ThinkSystem-Generation, als versiegelte Lenovo-Original-Neuware, freigegeben für ThinkSystem-Plattformen; das Produkt wird bei Lenovo unter dem Feature-Code CFPW geführt. Das Modul basiert auf dem Accelink-BaseT-Modul RTXL185-510 für 10GBASE-T über Kupfer. Gerade bei hoher VM-Dichte zahlt sich die werkseitige Freigabe des 4TC7B13092 aus, weil Kompatibilitätsrisiken entfallen. Der 4TC7B13092 lässt sich im laufenden Betrieb tauschen, was Wartungsfenster spürbar verkürzt. In dicht belegten Hypervisor-Clustern hält der 4TC7B13092 die Ost-West-Kommunikation der virtuellen Maschinen stabil."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP+-Steckplätzen",
@@ -538,6 +538,11 @@
         "Feature-Code",
         "CFPW",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "Accelink RTXL185-510 10G BaseT SFP+ (Kupfer)",
+        "https://lenovopress.lenovo.com/lp1433"
       ]
     ],
     "beschreibung": "",
@@ -684,7 +689,7 @@
     "intro": [
       "Für HPC- und Cluster-Knoten liefert der Lenovo 4TC7B12410 eine 10-Gigabit-Anbindung: Der SFP+-Transceiver vom Typ LR setzt 10GBASE-LR auf Singlemode-Glasfaser um und passt in die SFP+-Steckplätze der ThinkSystem-Systeme.",
       "Die Reichweite erreicht bis zu 10 km bei 1310 nm über 2 Fasern, kontaktiert über den LC-Anschluss.",
-      "Einzeln verpackt und versiegelt kommt der 4TC7B12410, Teil der ThinkSystem-Generation, als Lenovo-Original-Neuware in den Versand; das Produkt wird bei Lenovo unter dem Feature-Code CEHQ geführt. In Cluster-Fabrics sorgt der 4TC7B12410 für gleichmäßige Latenz über alle Knoten hinweg. Vor dem Rollout des 4TC7B12410 sollten Firmware- und Treiberstand der beteiligten Knoten abgeglichen werden. Über viele Rechenknoten hinweg liefert der 4TC7B12410 reproduzierbare Durchsatzwerte für eng gekoppelte Jobs."
+      "Einzeln verpackt und versiegelt kommt der 4TC7B12410, Teil der ThinkSystem-Generation, als Lenovo-Original-Neuware in den Versand; das Produkt wird bei Lenovo unter dem Feature-Code CEHQ geführt. Das Modul basiert auf dem Finisar-Baustein FTLX1475D3BCL für 10GBASE-LR. In Cluster-Fabrics sorgt der 4TC7B12410 für gleichmäßige Latenz über alle Knoten hinweg. Vor dem Rollout des 4TC7B12410 sollten Firmware- und Treiberstand der beteiligten Knoten abgeglichen werden. Über viele Rechenknoten hinweg liefert der 4TC7B12410 reproduzierbare Durchsatzwerte für eng gekoppelte Jobs."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP+-Steckplätzen",
@@ -810,6 +815,11 @@
         "Feature-Code",
         "CEHQ",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "Finisar FTLX1475D3BCL 10GBASE-LR SFP+",
+        "https://lenovopress.lenovo.com/lp1433"
       ]
     ],
     "beschreibung": "",
@@ -1260,7 +1270,7 @@
     "intro": [
       "Im Storage-Backbone und bei SAN-/NAS-Anbindungen an ThinkSystem-Servern überträgt der Lenovo 49Y4216 10-Gigabit-Ethernet als 10-Gigabit-SFP+-Transceiver vom Typ SR.",
       "Das Modul setzt 10GBASE-SR über Multimode-Glasfaser um und überbrückt bis zu 300 m bei 850 nm über 2 Fasern.",
-      "Der 49Y4216, Teil des von Lenovo übernommenen IBM-System-Networking-Erbes, wird als versiegelte Lenovo-Original-Neuware für SFP+-Steckplätze geliefert; das Produkt wird bei Lenovo unter dem Feature-Code 0069 geführt. Im Storage-Backbone hält der 49Y4216 die Anbindung auch unter Dauerlast stabil. Als hot-plug-fähiges Modul ist der 49Y4216 ohne Systemstopp tauschbar. In Backup- und Replikationsfenstern bleibt der 49Y4216 auch bei anhaltend hohem Volumen belastbar."
+      "Der 49Y4216, Teil des von Lenovo übernommenen IBM-System-Networking-Erbes, wird als versiegelte Lenovo-Original-Neuware für SFP+-Steckplätze geliefert; das Produkt wird bei Lenovo unter dem Feature-Code 0069 geführt. Lenovo führt dieses Modul laut Produktführer als Brocade-Variante (Brocade 10Gb SFP+ SR Optical Transceiver). Im Storage-Backbone hält der 49Y4216 die Anbindung auch unter Dauerlast stabil. Als hot-plug-fähiges Modul ist der 49Y4216 ohne Systemstopp tauschbar. In Backup- und Replikationsfenstern bleibt der 49Y4216 auch bei anhaltend hohem Volumen belastbar."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP+-Steckplätzen",
@@ -1386,6 +1396,11 @@
         "Feature-Code",
         "0069",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "Brocade 10Gb SFP+ SR Optical Transceiver",
+        "https://lenovopress.lenovo.com/lp0781"
       ]
     ],
     "beschreibung": "",
@@ -1548,7 +1563,7 @@
     "intro": [
       "Über den LC-Anschluss führt der Lenovo 49Y4218 als 10-Gigabit-SFP+-Transceiver vom Typ SR 10GBASE-SR-Ethernet an SFP+-Ports im Access- und Aggregations-Layer.",
       "Über Multimode-Glasfaser erreicht das Modul eine Distanz von bis zu 300 m bei 850 nm über 2 Fasern.",
-      "Versiegelt und ThinkSystem-freigegeben wird der 49Y4218, Teil des von Lenovo übernommenen IBM-System-Networking-Erbes, als Lenovo-Original-Neuware ausgeliefert; das Produkt wird bei Lenovo unter dem Feature-Code 0064 geführt. Am Access-Layer vereinfacht der 49Y4218 die Portplanung dicht bestückter Server-Racks. Ein kurzer Abgleich von Plattform und Portklasse sichert den Einsatz des 49Y4218 ab. Beim Verdichten der Zugriffsebene erleichtert der 49Y4218 eine aufgeräumte, strukturierte Verkabelung."
+      "Versiegelt und ThinkSystem-freigegeben wird der 49Y4218, Teil des von Lenovo übernommenen IBM-System-Networking-Erbes, als Lenovo-Original-Neuware ausgeliefert; das Produkt wird bei Lenovo unter dem Feature-Code 0064 geführt. Lenovo führt dieses Modul laut Produktführer als QLogic-Variante (QLogic 10Gb SFP+ SR Optical Transceiver). Am Access-Layer vereinfacht der 49Y4218 die Portplanung dicht bestückter Server-Racks. Ein kurzer Abgleich von Plattform und Portklasse sichert den Einsatz des 49Y4218 ab. Beim Verdichten der Zugriffsebene erleichtert der 49Y4218 eine aufgeräumte, strukturierte Verkabelung."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP+-Steckplätzen",
@@ -1674,6 +1689,11 @@
         "Feature-Code",
         "0064",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "QLogic 10Gb SFP+ SR Optical Transceiver",
+        "https://lenovopress.lenovo.com/lp0781"
       ]
     ],
     "beschreibung": "",
@@ -2124,7 +2144,7 @@
     "intro": [
       "Der Lenovo 4TC7A78615 sichert redundante Server-Anbindungen ab und arbeitet als 10-Gigabit-SFP+-Transceiver vom Typ SR mit 10GBASE-SR über Multimode-Glasfaser.",
       "Die Verbindung wird über den LC-Anschluss aufgebaut und trägt bis zu 300 m bei 850 nm über 2 Fasern.",
-      "Im Betrieb steckbar (Hot-Plug), wird der 4TC7A78615, Teil der ThinkSystem-Generation, als versiegelte Lenovo-Original-Neuware geliefert; das Produkt wird bei Lenovo unter dem Feature-Code BNDR geführt. In redundanten Pfaden trägt der 4TC7A78615 zur unterbrechungsfreien Verfügbarkeit bei. Dank Hot-Plug-Fähigkeit lässt sich der 4TC7A78615 ohne Downtime ersetzen. In doppelt ausgelegten Anbindungen stützt der 4TC7A78615 die Ausfallsicherheit der Serveranbindung."
+      "Im Betrieb steckbar (Hot-Plug), wird der 4TC7A78615, Teil der ThinkSystem-Generation, als versiegelte Lenovo-Original-Neuware geliefert; das Produkt wird bei Lenovo unter dem Feature-Code BNDR geführt. Das Modul basiert auf einem Accelink-Optikmodul für die optische SR-Übertragung. In redundanten Pfaden trägt der 4TC7A78615 zur unterbrechungsfreien Verfügbarkeit bei. Dank Hot-Plug-Fähigkeit lässt sich der 4TC7A78615 ohne Downtime ersetzen. In doppelt ausgelegten Anbindungen stützt der 4TC7A78615 die Ausfallsicherheit der Serveranbindung."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP+-Steckplätzen",
@@ -2250,6 +2270,11 @@
         "Feature-Code",
         "BNDR",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "ThinkSystem Accelink 10G SR SFP+ (optical SR)",
+        "https://lenovopress.lenovo.com/lp1198"
       ]
     ],
     "beschreibung": "",
@@ -3120,7 +3145,7 @@
     "intro": [
       "Im Storage-Backbone und bei SAN-/NAS-Anbindungen an ThinkSystem-Servern überträgt der Lenovo 4TC7A88638 25-Gigabit-Ethernet als 25-Gigabit-SFP28-Transceiver vom Typ SR (Dual-Rate 10G/25G).",
       "Das Modul setzt 25GBASE-SR über Multimode-Glasfaser um und überbrückt bis zu 100 m bei 850 nm über 2 Fasern.",
-      "Der 4TC7A88638, Teil der ThinkSystem-Generation, wird als versiegelte Lenovo-Original-Neuware für SFP28-Steckplätze geliefert; das Produkt wird bei Lenovo unter dem Feature-Code BYBJ geführt. Im Storage-Backbone hält der 4TC7A88638 die Anbindung auch unter Dauerlast stabil. Als hot-plug-fähiges Modul ist der 4TC7A88638 ohne Systemstopp tauschbar. In Backup- und Replikationsfenstern bleibt der 4TC7A88638 auch bei anhaltend hohem Volumen belastbar."
+      "Der 4TC7A88638, Teil der ThinkSystem-Generation, wird als versiegelte Lenovo-Original-Neuware für SFP28-Steckplätze geliefert; das Produkt wird bei Lenovo unter dem Feature-Code BYBJ geführt. Das Modul ist Finisar-basiert und als Dual-Rate-SFP28-Ausführung ausgelegt. Im Storage-Backbone hält der 4TC7A88638 die Anbindung auch unter Dauerlast stabil. Als hot-plug-fähiges Modul ist der 4TC7A88638 ohne Systemstopp tauschbar. In Backup- und Replikationsfenstern bleibt der 4TC7A88638 auch bei anhaltend hohem Volumen belastbar."
     ],
     "kompatibilitaet": [
       "Lenovo-ThinkSystem-Systeme mit SFP28-Steckplätzen",
@@ -3246,6 +3271,11 @@
         "Feature-Code",
         "BYBJ",
         "https://lenovopress.lenovo.com/lp1652-thinksystem-broadcom-57504-25gbe-ethernet-adapters"
+      ],
+      [
+        "OEM-Variante",
+        "ThinkSystem Finisar Dual Rate 10G/25G SR SFP28",
+        "https://lenovopress.lenovo.com/lp1198"
       ]
     ],
     "beschreibung": "",
