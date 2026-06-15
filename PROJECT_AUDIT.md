@@ -46,7 +46,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | **Dell** | 163 (61 optics 1G–800G + 102 DAC/AOC) | **emitted, gate L1–L6 PASS** (L8 round-2 2026-06-15: +3 matrix-only 40G + 5 fixes) | 1st Tier-B; SFP-DD+QSFP28-DD vocab; FC/QSA/passive-CBL out |
 | **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | ✅ **DONE — operator L8 byte-audit PASS `b331235` (2026-06-15), import-ready. 11th transceiver brand cleared.** | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C; GROUNDED prose (L5 near-dup ≤0.27 + ungrounded-claim guard); 6 web-verified OEM variants logged; FC+OEM via extra_log. **FAQ = separate v1.3 stream (placeholder here, see §9 FAQ-scope note)** |
-| **Ubiquiti** | 49 (24 optics + 25 DAC/AOC) | **emitted, gate L1–L6 PASS** (2026-06-15; `688f803`) — awaiting operator L8 | Tier-B #3; denominator = operator-signed-off techspecs SFP&Fiber(29); 1G/10G(+12-ch CWDM)/25G/100G(SR4/LR4/PSM4); Uplink hybrid DAC/AOC-by-length; UF-↔UACC- dedup (6 alt-codes); 9 OUT + PON flagged; near-dup 0, ungrounded-claim 0 |
+| **Ubiquiti** | 49 (24 optics + 25 DAC/AOC) | **emitted, gate L1–L6 PASS** (2026-06-15; `3297703`; L8 round-1 PASS-with-LOW fixed) — awaiting final L8 | Tier-B #3; denominator = operator-signed-off techspecs SFP&Fiber(29); 1G/10G(+12-ch CWDM)/25G/100G(SR4/LR4/PSM4); Uplink hybrid DAC/AOC-by-length; UF-↔UACC- dedup (6 alt-codes); 9 OUT + PON flagged; CWDM 12-distinct framing; near-dup 0 (now incl. L5 λ-channel Pass 2) |
 | Palo Alto/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 
 ### Switches (Rule-7 schema)
@@ -406,6 +406,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   SFP&Fiber(29) + Liberation(6) screen-caps, UFiber DS, UACC-DAC DS, help.ui.com SFP guide. ZIP
   `output/Hexwaren_Ubiquiti_stage3_688f803.zip` (49 SKUs; byte-verified — Main BOM+CRLF 49 rows, Prices
   no-BOM, VLog 6 alt-code rows). **Awaiting operator L8.**
+- **UBIQUITI L8 ROUND-1 PASS-with-LOW → fixed (`3297703`).** Operator byte-audit of `688f803`: PASS on
+  everything substantive (49 = 24 optics + 25 cables, PSM4 distinct, per-PN grounding via 34 source URLs,
+  0 fabrication, dedup exact, Uplink hybrid correct, Titel/Meta unique). One **[LOW]**: CWDM use-case
+  rotation wrapped at 10/12 — `UACC-OM-SFP10-1270`~`-1570` and `-1290`~`-1590` shared a use-case (the
+  near-dup detector's λ-blind-spot: different λ = different Pass-1 signature, so it can't cluster them).
+  **Fixed:** dedicated channel-indexed 12-entry CWDM use-case + pad pools (2 new grounded 10G-CWDM
+  use-cases for the wrapped channels) — all 12 channels now distinct (max λ-masked pairwise sim 0.74); the
+  other 22 optics + cables untouched. **GATE HARDENING (operator-suggested):** `check_near_dup_prose` gained
+  a **Pass 2** — clusters optics by (Std,FF,reach) [λ dropped], requires ≥2 distinct λ, masks PN+FC+λ, flags
+  ≥0.85 — catching wavelength-only-variant near-dups Pass 1 can't. Pre-existing cleared-brand λ-channel
+  families (Cisco/Juniper/HPE/Dell per-channel-templated DWDM/BiDi, accepted at L8) grandfathered into
+  `near_dup_exempt.yaml` (72→100 clusters); Ubiquiti NOT baselined (genuinely distinct). Fixture **F24**
+  (λ-family clone) fires Pass 2; near-dup 0 across all 13 bundles; gate_selftest CERTIFIED; 413 tests. ZIP
+  `output/Hexwaren_Ubiquiti_stage3_3297703.zip` (49 SKUs; byte-verified; supersedes `_688f803.zip`,
+  deleted). **Awaiting final operator L8.**
 
 ---
 
