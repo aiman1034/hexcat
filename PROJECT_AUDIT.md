@@ -45,7 +45,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | **Juniper** | **188 emitted** (gate L1–L6 PASS) | ✅ **AUTHORED + GATE-GREEN + L8 fixes applied — ZIP `…_c6d2860.zip`** | core. Locked 205 → EXACT **188 + 13 flagged-out + 4 aliased = 205**. Authored via `juniper_author.py` (per-SKU-unique prose; EX/QFX/MX/PTX/ACX/SRX theme; BX D/U λ 1330/1270 datasheet-verified; 23 industrial → −40/+85). **L8 audit: contract+content+grounding PASS + 1 HIGH/2 low FIXED** — DOM Unterstützung now required (L3) + added (188/188: Ja 178/Nein 10 copper+XENPAK); 4 XENPAK connectors LC→**SC (Duplex)**; λ normalized to carry **nm**. **gate.py L1–L6 = PASS** on the re-emitted bundle. Commit `c6d2860`. EUR pricing deferred (0,00). Optional polish: 3 flagged-out λ, JCO/QDD-ZR alias, PLR4 reach. |
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | **Dell** | 163 (61 optics 1G–800G + 102 DAC/AOC) | **emitted, gate L1–L6 PASS** (L8 round-2 2026-06-15: +3 matrix-only 40G + 5 fixes) | 1st Tier-B; SFP-DD+QSFP28-DD vocab; FC/QSA/passive-CBL out |
-| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | **emitted, gate L1–L6 PASS** (2026-06-15; ThinkSystem, absorbs IBM/BNT; L8 round-3 grounding/quality) | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C optics; per-SKU-unique prose (new L5 near-dup gate); withdrawn-switch + 85 °C tier EOL-flagged (never dropped) |
+| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | **emitted, gate L1–L6 PASS** (2026-06-15; ThinkSystem, absorbs IBM/BNT; L8 round-4 grounded-prose redo) | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C optics; GROUNDED-only per-SKU prose (L5 near-dup ≤0.27 + ungrounded-claim guard); withdrawn-switch + 85 °C tier EOL-flagged (never dropped) |
 | Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 
 ### Switches (Rule-7 schema)
@@ -312,7 +312,32 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (`lenovo_flags.txt`). Source `datasheets/cache/lenovo-lp1071-transceivers-cables-media.pdf` cached (narrative,
   no PN table — confirms lp1071 is best-practices prose, not an enumeration). `gate_completeness` Lenovo
   102→104. Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12 known-good + F22),
-  **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_3426853.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows, Prices no-BOM; supersedes & replaces `_99259ee.zip`, deleted). **Awaiting operator L8.**
+  **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_3426853.zip` (104 SKUs). **Awaiting operator L8.**
+  **[① SUPERSEDED by L8 round-4 below — the round-3 differentiation FABRICATED facts; ②③④ stand.]**
+- **LENOVO L8 ROUND-4 — ① redo: fabrication stripped, grounded variation only. Operator REJECTED 3426853 (①
+  fabricated facts to differentiate; ②③④ correct, kept).** The round-3 near-dup rewrite mined the source
+  `desc` strings for differentiators and shipped UNLOGGED, sometimes-impossible claims: vendor-qualification
+  ("Brocade-/QLogic-/Juniper-qualifiziert"), OEM-maker ("Accelink", "Finisar"), a fine sub-era ("System x"),
+  and — worst — "Accelink-Optikmodul" on the **10GBASE-T copper** part 4TC7B13092 (physically impossible). No
+  Verification_Log row backed any of them → §1000-rule violation. **FIX:** deleted `distinction_phrase`
+  entirely; coarsened `era_phrase` to the two operator-sanctioned prefix-grounded buckets only
+  (ThinkSystem-Generation / IBM-System-Networking-Erbe; 00-series → none); re-differentiate the 10 voices
+  using ONLY soft class-true use-case framing + the published 85 °C temp grade + the coarse lineage
+  appositive. Also fixed the splice damage (kp1 ". Über" join, voice-2 redundant reach, double-"für" on the
+  85 °C parts, "Optikmoduls Modul") and the two byte-identical tail sentences (the leftover shared author
+  `pool` overwrote the voice-specific one + backfill's `<90`-word spec-recap hit same-spec parts) — voices
+  are now self-sufficient (pad floor 108) so backfill extends 0; the only cross-member-identical sentence
+  left is the **gate-required authenticity closer** (`beschreibung_closer_prefix`, by design). Result: 0
+  fabrication tokens across all 104 SKUs; same-spec optic clusters now **≤0.27** pairwise (was 0.49 with the
+  fabrication). **GATE ADD (paired with near-dup):** L5 **`check_ungrounded_claim`** — fails any Beschreibung
+  naming a third-party OEM/vendor (Brocade/QLogic/Finisar/Accelink/Mellanox/Broadcom) or a
+  "<Vendor>-qualifiziert" claim with no matching Verification_Log row (own/sub-brand + log-grounded mentions
+  exempt; bare "qualifiziert" is NOT a token — it is common German, present in 6 cleared brands). Fixture
+  **F23** (inject "Finisar", no log row) fires L5; 0 false-positives catalog-wide. Backlog task "weave alias
+  prose across cleared brands" remains PARKED per operator (the round-3 method was unproven — must not touch
+  imported brands). Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12
+  known-good + F22 near-dup + F23 ungrounded-claim), **413 tests**. ZIP
+  `output/Hexwaren_Lenovo_stage3_<hash>.zip` (104 SKUs — see build entry). **Awaiting operator L8.**
 
 ---
 

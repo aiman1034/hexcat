@@ -472,6 +472,55 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- L5 UNGROUNDED-CLAIM guard (NEW, L8 Lenovo finding ① — paired with the near-dup detector) --------
+# A low near-dup score is meaningless if the uniqueness came from INVENTED content. This fails any
+# Beschreibung that names a third-party OEM/vendor (Brocade/QLogic/Finisar/Accelink/Mellanox/Broadcom)
+# or makes a "<Vendor>-qualifiziert" claim WITHOUT a matching Verification_Log row for that SKU (the
+# §1000-rule: no prose claim without a logged source). Own brand + known sub-brand mentions are exempt,
+# as are tokens grounded by a Verification_Log Source_URL/value. Bare "qualifiziert" (a common German
+# word) is NOT a token — only the vendor-compound form is.
+_OEM_TOKENS = re.compile(r"\b(Brocade|QLogic|Finisar|Accelink|Mellanox|Broadcom)\b", re.I)
+_QUAL_CLAIM = re.compile(r"\b([A-ZÄÖÜ][A-Za-zÄÖÜäöüß]+)-qualifizier")
+_OEM_SUBBRAND = {"NVIDIA": {"mellanox"}, "Meraki": {"cisco"}}     # legitimate parent/sub-brand mentions
+
+
+def _verif_text(bundle: Path) -> dict:
+    f = next(bundle.glob("*Verification_Log*.csv"), None)
+    out: dict = {}
+    if f:
+        _, rows = _read_csv(f, ",")
+        for r in rows:
+            if r:
+                out.setdefault(r[0], []).append(" ".join(r[1:]))
+    return {k: " ".join(v).lower() for k, v in out.items()}
+
+
+def check_ungrounded_claim(bundle: Path) -> list[Violation]:
+    out: list = []
+    mhdr, mrows = _main(bundle)
+    if not mhdr or "Beschreibung" not in mhdr or "Artikelnummer" not in mhdr:
+        return out
+    i_sku, i_be = mhdr.index("Artikelnummer"), mhdr.index("Beschreibung")
+    brand, _ = _brand_category(bundle)
+    own = {brand.lower()} | {x.lower() for x in _OEM_SUBBRAND.get(brand, set())}
+    vlog = _verif_text(bundle)
+    for r in mrows:
+        if len(r) <= i_be:
+            continue
+        sku, be = r[i_sku], re.sub(r"<[^>]+>", " ", r[i_be])
+        claims = {m.group(1).lower() for m in _OEM_TOKENS.finditer(be)}
+        claims |= {m.group(1).lower() for m in _QUAL_CLAIM.finditer(be)}
+        log = vlog.get(sku, "")
+        for t in sorted(claims):
+            if t in own or t in log:                 # own/sub-brand, or grounded by a Verification_Log row
+                continue
+            out.append(Violation(bundle.name, sku, "Beschreibung",
+                                 "external-vendor/OEM/qualification claim requires a Verification_Log row",
+                                 t, "L5: ungrounded vendor/OEM claim '%s' in Beschreibung with no matching "
+                                 "Verification_Log row for %s (fabrication guard, §1000-rule)" % (t, sku)))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -509,7 +558,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
     l5 = (check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
-          + check_breakout_ends(bundle) + check_near_dup_prose(bundle))
+          + check_breakout_ends(bundle) + check_near_dup_prose(bundle) + check_ungrounded_claim(bundle))
     res.layers.append(LayerResult("L5", not l5, l5))
     l6 = check_completeness(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))

@@ -104,7 +104,10 @@ _Lenovo_note: 'L8 round-2: the 74-SKU universe was a SOURCE artifact (two Broadc
   (phantom-guard). L8 round-3 (102->104): added 2x 10G-SR 85C extended-temp optics (00NU537 + 00VX183,
   grounded from the Lenovo/IBM Support "85 Degree C" overview + ServerProven sweep, finding (4)); 40G SR4
   reach-grades now typed SR4/iSR4/eSR4 (finding (2)); 00MY034 dual-rate corrected to 1G/10G (finding (3));
-  all same-spec optic clusters re-authored to unique per-SKU prose -> 0 near-dup (L5 detector, finding (1)). NEVER-DROP: 28 parts sourced from the withdrawn switch guides carry lifecycle=legacy
+  all same-spec optic clusters re-authored to GROUNDED-only unique prose (L8 round-4: round-3 mined
+  unlogged OEM/qualification claims -> fabrication; stripped. Variation now = soft use-case framing +
+  coarse prefix lineage + published 85C temp only). Pairs L5 near-dup (<=0.27) with the new L5
+  ungrounded-claim guard (no OEM/vendor token without a Verification_Log row). findings (1)-(4) cleared. NEVER-DROP: 28 parts sourced from the withdrawn switch guides carry lifecycle=legacy
   (real Lenovo/IBM-BNT optics, INCLUDED + EOL-flagged informational, current orderability unconfirmed) —
   see lenovo_flags.txt. IBM/BNT feature codes woven into Beschreibung. OUT-of-scope (documented, NOT
   gaps): generic LC-LC patch cords, passive MTP-4xLC fibre breakout (no FF — Dell precedent), Mellanox

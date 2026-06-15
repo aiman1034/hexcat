@@ -105,6 +105,19 @@ def clone_beschreibung(d, src_sku, dst_sku):
     _rw(f, ";", fn)
 
 
+def inject_text(d, sku, text):
+    """Inject a clause into sku's Beschreibung — used to plant an ungrounded vendor/OEM claim that the
+    L5 fabrication guard MUST catch (no matching Verification_Log row)."""
+    f = main_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); bi = h.index("Beschreibung")
+        for r in rows[1:]:
+            if len(r) > bi and r[si] == sku:
+                r[bi] = r[bi].replace("</p>", " " + text + "</p>", 1) if "</p>" in r[bi] else r[bi] + " " + text
+        return rows
+    _rw(f, ";", fn)
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -152,6 +165,11 @@ def fixtures():
         # near-dup detector MUST fire. (Positive direction = the real Lenovo SR cluster, 8 unique voices, PASSES.)
         ("F22 near-dup-prose",    ROOT / "output/stage3_Lenovo",
          lambda d: clone_beschreibung(d, "49Y4216", "49Y8578"), "L5"),
+        # F23 (L8 Lenovo finding ①, fabrication guard): inject an OEM claim ("Finisar") with NO matching
+        # Verification_Log row -> the ungrounded-claim guard MUST fire. (Positive direction = the real
+        # Lenovo bundle, whose grounded prose names no third-party OEM, PASSES.)
+        ("F23 ungrounded-claim",  ROOT / "output/stage3_Lenovo",
+         lambda d: inject_text(d, "46C3447", "Auf Basis eines Finisar-Optikmoduls."), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

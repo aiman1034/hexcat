@@ -95,31 +95,15 @@ def media_phrase(f):
 
 
 def era_phrase(pn):
-    """Grounded product-generation lineage from the Lenovo/IBM PN scheme (Lenovo absorbed IBM System
-    Networking / BNT). Used as a distinguishing framing element, NOT a fabricated spec."""
+    """COARSE product lineage derivable ONLY from the PN prefix + the public Lenovo↔IBM acquisition (L8
+    round-3: no finer sub-era, no OEM/qualification claim — those were fabrications). Two buckets only:
+      - ThinkSystem-era PNs (4T/7G/4M/4X/7Z/4Z) -> ThinkSystem generation
+      - pre-Lenovo IBM PNs (44/46/49/68/69/81/88/90 = System Networking/BladeCenter/System x heritage)
+    Anything else (e.g. 00-series transition parts) -> no lineage claim ('')."""
     if pn[:2] in ("7G", "4T", "4M", "4X", "7Z", "4Z"):
-        return "in der aktuellen ThinkSystem-Generation"
-    if pn.startswith("00"):
-        return "in der Lenovo-System-x-Generation"
-    return "im von Lenovo übernommenen IBM-System-Networking-Portfolio (BNT-/BladeCenter-Erbe)"
-
-
-def distinction_phrase(pn, desc):
-    """A grounded distinguishing note lifted from the source description (qualification/OEM), so two
-    same-spec parts read differently for the reason they ARE different products."""
-    d = desc or ""
-    if "Brocade" in d:
-        return "ursprünglich für Brocade-qualifizierte Fabrics geführt"
-    if "QLogic" in d:
-        return "für QLogic-qualifizierte Umgebungen geführt"
-    if "Juniper" in d:
-        return "für Juniper-qualifizierte Umgebungen geführt"
-    if "Accelink" in d:
-        return "auf Basis eines Accelink-Optikmoduls"
-    if "Finisar" in d:
-        return "auf Basis eines Finisar-Optikmoduls"
-    if "SW (SR)" in d or "GbE SW" in d:
-        return "als Shortwave-(SW-)Ausführung geführt"
+        return "Teil der ThinkSystem-Generation"
+    if pn[:3] in ("44W", "46C", "49Y", "68Y", "69Y", "81Y", "88Y", "90Y"):
+        return "Teil des von Lenovo übernommenen IBM-System-Networking-Erbes"
     return ""
 
 
@@ -128,96 +112,91 @@ def distinction_phrase(pn, desc):
 # LANGUAGE differs, so two same-(Std,FF,reach,λ) products no longer share near-identical prose (§7.7).
 # Selected by the SKU's position within its spec-cluster, so cluster members always draw different voices.
 def _voices(c):
-    P, SP, FF, TYP, STD, MED, MEDLC = c["P"], c["SP"], c["FF"], c["TYP"], c["STD"], c["MED"], c["MEDLC"]
-    CONN, REACH, ERA, DIST, DUAL, TEMP = c["CONN"], c["REACH"], c["ERA"], c["DIST"], c["DUAL"], c["TEMP"]
-    cop, wl, fz = c["COP"], c["WL"], c["FZ"]
-    rn = c["RNOTE"]
+    # ALL content here is grounded: spec facts from the datasheet + the coarse, prefix-derivable lineage
+    # appositive (ERA) + the published 85 C temp clause (TEMP). NO vendor/OEM/qualification claim (L8 ①).
+    P, SP, FF, TYP, STD, MED = c["P"], c["SP"], c["FF"], c["TYP"], c["STD"], c["MED"]
+    CONN, REACH, ERA, DUAL, TEMP = c["CONN"], c["REACH"], c["ERA"], c["DUAL"], c["TEMP"]
+    cop, wl, fz, rn, fcc = c["COP"], c["WL"], c["FZ"], c["RNOTE"], c["FCC"]
     typc = (" vom Typ %s" % TYP) if TYP else ""
-    dist = (", %s" % DIST) if DIST else ""
-    temp = (" für einen erweiterten Betriebstemperaturbereich bis 85 °C" if TEMP else "")
-    fcc = c["FCC"]
+    ap = (", %s," % ERA) if ERA else ""                       # lineage appositive, e.g. "Der X, Teil der …,"
+    apg = (" (%s)" % ERA) if ERA else ""                      # parenthetical variant
+    temp = (" Für thermisch anspruchsvolle Umgebungen ist das %s bis 85 °C spezifiziert." % P) if TEMP else ""
     connphr = ("über den %s-Anschluss" % CONN) if CONN else "über die optische Schnittstelle"
     rphr = (rn if rn else ("bis zu %s" % REACH if REACH else "die geforderte Distanz"))
-    wlp = (" bei %s" % wl) if wl else ""
-    fzp = (" über %s Fasern" % fz) if fz else ""
+    wlfz = ((" bei %s" % wl) if wl else "") + ((" über %s Fasern" % fz) if fz else "")
     media_long = ("RJ45-Kupfer" if cop else MED)
-    # each entry returns (i1, i2, i3)
     V = [
-        (  # 0 — virtualization lead, identity-first
+        (  # 0 — virtualization, identity-first
             "Der %s %s ist ein %s-%s-Transceiver%s%s und überträgt %s-Ethernet über %s; in verdichteten "
-            "Virtualisierungs-Hosts bindet er Lenovo-ThinkSystem-Server zuverlässig an %s-Ports an."
+            "Virtualisierungs-Hosts bindet er ThinkSystem-Server zuverlässig an %s-Ports an."
             % (VEND, P, SP, FF, typc, DUAL, STD, media_long, FF),
-            "Er stellt die Verbindung %s her und trägt %s%s%s."
-            % (connphr, rphr, wlp, fzp),
-            "Geführt %s%s, eignet er sich besonders für hohe VM-Dichte%s; ausgeliefert wird er als "
-            "versiegelte Lenovo-Original-Neuware, freigegeben für ThinkSystem-Plattformen%s." % (ERA, dist, temp, fcc),
+            "Er stellt die Verbindung %s her und trägt%s." % (connphr, (" " + rphr + wlfz)),
+            "Ausgeliefert wird der %s%s als versiegelte Lenovo-Original-Neuware, freigegeben für "
+            "ThinkSystem-Plattformen%s.%s" % (P, ap, fcc, temp),
         ),
-        (  # 1 — HPC/cluster lead, use-case-first
+        (  # 1 — HPC/cluster, use-case-first
             "Für HPC- und Cluster-Knoten liefert der %s %s eine %s-Anbindung: Der %s-Transceiver%s%s setzt "
-            "%s auf %s um und passt in die %s-Steckplätze der Lenovo-ThinkSystem-Systeme."
+            "%s auf %s um und passt in die %s-Steckplätze der ThinkSystem-Systeme."
             % (VEND, P, SP, FF, typc, DUAL, STD, media_long, FF),
-            "Die Reichweite beträgt %s%s%s, kontaktiert %s."
-            % (rphr, wlp, fzp, connphr),
-            "Das Modul ist %s angesiedelt%s und wird%s als einzeln verpackte, versiegelte Neuware geliefert%s."
-            % (ERA, dist, temp, fcc),
+            "Die Reichweite erreicht %s%s, kontaktiert %s." % (rphr, wlfz, connphr),
+            "Einzeln verpackt und versiegelt kommt der %s%s als Lenovo-Original-Neuware in den Versand%s.%s"
+            % (P, ap, fcc, temp),
         ),
-        (  # 2 — storage backbone lead, reach-forward
-            "Über %s erreicht der %s %s %s und bedient damit Storage-Backbones und SAN-/NAS-Anbindungen an "
-            "Lenovo-ThinkSystem-Servern." % (rphr, VEND, P, rphr if False else ("Strecken von %s" % REACH if REACH else "die nötige Distanz")),
-            "Technisch ist es ein %s-%s-Transceiver%s%s, der %s-Ethernet %s%s%s bereitstellt."
-            % (SP, FF, typc, DUAL, STD, "über " + media_long, wlp, fzp),
-            "Der %s ist %s verortet%s%s und kommt als versiegelte Lenovo-Original-Neuware für %s-Steckplätze%s."
-            % (P, ERA, dist, temp, FF, fcc),
+        (  # 2 — storage backbone, reach-forward
+            "Im Storage-Backbone und bei SAN-/NAS-Anbindungen an ThinkSystem-Servern überträgt der %s %s "
+            "%s-Ethernet als %s-%s-Transceiver%s%s." % (VEND, P, SP, SP, FF, typc, DUAL),
+            "Das Modul setzt %s über %s um und überbrückt %s%s." % (STD, media_long, rphr, wlfz),
+            "Der %s%s wird als versiegelte Lenovo-Original-Neuware für %s-Steckplätze geliefert%s.%s"
+            % (P, ap, FF, fcc, temp),
         ),
-        (  # 3 — access/aggregation lead, connector-forward
-            "Der %s %s adressiert den Access- und Aggregations-Layer im Rechenzentrum: %s führt das %s-Modul%s%s "
-            "%s-Ethernet an %s-Ports der Lenovo-ThinkSystem-Server."
-            % (VEND, P, connphr[0].upper() + connphr[1:], FF, typc, DUAL, STD, FF),
-            "Die überbrückbare Distanz liegt bei %s%s%s." % (rphr, wlp, fzp),
-            "Als %s eingeordnetes%s Modul wird der %s%s versiegelt und ThinkSystem-freigegeben ausgeliefert%s."
-            % (ERA, (" " + DIST) if DIST else "", P, temp, fcc),
+        (  # 3 — access/aggregation, connector-forward
+            "%s führt der %s %s als %s-%s-Transceiver%s%s %s-Ethernet an %s-Ports im Access- und "
+            "Aggregations-Layer." % (connphr[0].upper() + connphr[1:], VEND, P, SP, FF, typc, DUAL, STD, FF),
+            "Über %s erreicht das Modul eine Distanz von %s%s." % (media_long, rphr, wlfz),
+            "Versiegelt und ThinkSystem-freigegeben wird der %s%s als Lenovo-Original-Neuware ausgeliefert%s.%s"
+            % (P, ap, fcc, temp),
         ),
-        (  # 4 — uplink/backbone lead, delivery-forward
+        (  # 4 — uplink/backbone, delivery-forward
             "Zwischen Switches und Servern stellt der %s %s %s-Uplinks bereit — ein %s-%s-Transceiver%s%s für "
             "%s über %s." % (VEND, P, SP, SP, FF, typc, DUAL, STD, media_long),
-            "%s deckt er %s ab%s%s." % (connphr[0].upper() + connphr[1:], rphr, wlp, fzp),
-            "Geliefert als versiegelte Lenovo-Original-Neuware, ist das %s verortete%s Modul%s für "
-            "ThinkSystem-%s-Steckplätze freigegeben%s." % (ERA, (" (" + DIST + ")") if DIST else "", temp, FF, fcc),
+            "%s deckt er %s ab%s." % (connphr[0].upper() + connphr[1:], rphr, wlfz),
+            "Der %s%s ist für ThinkSystem-%s-Steckplätze freigegeben und wird versiegelt als Original-Neuware "
+            "geliefert%s.%s" % (P, ap, FF, fcc, temp),
         ),
-        (  # 5 — high availability lead
+        (  # 5 — high availability
             "Der %s %s sichert redundante Server-Anbindungen ab und arbeitet als %s-%s-Transceiver%s%s mit "
-            "%s über %s in Lenovo-ThinkSystem-Umgebungen." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
-            "Die Verbindung wird %s aufgebaut und trägt %s%s%s." % (connphr, rphr, wlp, fzp),
-            "Das %s angesiedelte%s Modul%s ist im Betrieb steckbar (Hot-Plug) und wird als versiegelte "
-            "Original-Neuware geliefert%s." % (ERA, dist, temp, fcc),
+            "%s über %s." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
+            "Die Verbindung wird %s aufgebaut und trägt %s%s." % (connphr, rphr, wlfz),
+            "Im Betrieb steckbar (Hot-Plug), wird der %s%s als versiegelte Lenovo-Original-Neuware geliefert%s.%s"
+            % (P, ap, fcc, temp),
         ),
-        (  # 6 — throughput/database lead
-            "Durchsatzstarke Datenbank- und Analytics-Workloads profitieren vom %s %s: Der %s-Transceiver%s%s "
-            "überträgt %s-Ethernet (%s) über %s." % (VEND, P, FF, typc, DUAL, SP, STD, media_long),
-            "%s reicht das Signal %s%s%s." % (connphr[0].upper() + connphr[1:], rphr, wlp, fzp),
-            "Der %s ist %s einzuordnen%s%s und wird versiegelt sowie ThinkSystem-freigegeben ausgeliefert%s."
-            % (P, ERA, dist, temp, fcc),
+        (  # 6 — throughput/database
+            "Durchsatzstarke Datenbank- und Analytics-Workloads bedient der %s %s als %s-%s-Transceiver%s%s, "
+            "der %s-Ethernet über %s führt." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
+            "%s reicht das Modul das Signal %s%s." % (connphr[0].upper() + connphr[1:], rphr, wlfz),
+            "Geliefert wird der %s%s versiegelt und ThinkSystem-freigegeben als Original-Neuware%s.%s"
+            % (P, ap, fcc, temp),
         ),
-        (  # 7 — edge/remote lead
+        (  # 7 — edge/remote
             "Für Edge- und Außenstandorte bietet der %s %s eine kompakte %s-Anbindung; das %s-Modul%s%s "
-            "realisiert %s auf %s." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
-            "Es verbindet %s und überbrückt %s%s%s." % (connphr, rphr, wlp, fzp),
-            "%s geführt%s, wird der %s%s als einzeln verpackte, versiegelte Lenovo-Neuware für %s-Ports geliefert%s."
-            % (ERA[0].upper() + ERA[1:], dist, P, temp, FF, fcc),
+            "realisiert %s über %s." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
+            "Es verbindet %s und überbrückt %s%s." % (connphr, rphr, wlfz),
+            "Der %s%s wird einzeln verpackt, versiegelt und für %s-Ports freigegeben ausgeliefert%s.%s"
+            % (P, apg, FF, fcc, temp),
         ),
-        (  # 8 — consolidation lead
-            "Der %s %s hilft, Netzwerk- und Storage-Verkehr zu konsolidieren: als %s-%s-Transceiver%s%s setzt er "
+        (  # 8 — consolidation
+            "Um Netzwerk- und Storage-Verkehr zu konsolidieren, setzt der %s %s als %s-%s-Transceiver%s%s "
             "%s über %s um." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
-            "Die Anbindung erfolgt %s mit einer Reichweite von %s%s%s." % (connphr, rphr, wlp, fzp),
-            "Das %s beheimatete%s Modul%s ist für Lenovo-ThinkSystem-%s-Steckplätze freigegeben und wird "
-            "versiegelt geliefert%s." % (ERA, dist, temp, FF, fcc),
+            "Die Anbindung erfolgt %s über eine Distanz von %s%s." % (connphr, rphr, wlfz),
+            "Für ThinkSystem-%s-Steckplätze freigegeben, wird der %s%s versiegelt als Original-Neuware "
+            "geliefert%s.%s" % (FF, P, ap, fcc, temp),
         ),
-        (  # 9 — growth/containers lead
-            "In wachsenden Virtualisierungs- und Container-Umgebungen skaliert der %s %s die Anbindung: ein "
+        (  # 9 — growth/containers
+            "In wachsenden Virtualisierungs- und Container-Umgebungen skaliert der %s %s die Anbindung als "
             "%s-%s-Transceiver%s%s für %s über %s." % (VEND, P, SP, FF, typc, DUAL, STD, media_long),
-            "%s trägt er das Signal %s%s%s." % (connphr[0].upper() + connphr[1:], rphr, wlp, fzp),
-            "Der %s ist %s verankert%s%s; geliefert wird er als versiegelte, ThinkSystem-freigegebene "
-            "Original-Neuware%s." % (P, ERA, dist, temp, fcc),
+            "%s trägt das Modul das Signal %s%s." % (connphr[0].upper() + connphr[1:], rphr, wlfz),
+            "Als versiegelte, ThinkSystem-freigegebene Original-Neuware wird der %s%s ausgeliefert%s.%s"
+            % (P, ap, fcc, temp),
         ),
     ]
     return V
@@ -228,25 +207,35 @@ def _voices(c):
 # with different sentences — padding never re-introduces the near-duplication we just removed.
 VOICE_POOL = [
     ["Gerade bei hoher VM-Dichte zahlt sich die werkseitige Freigabe des %s aus, weil Kompatibilitätsrisiken entfallen.",
-     "Der %s lässt sich im laufenden Betrieb tauschen, was Wartungsfenster spürbar verkürzt."],
+     "Der %s lässt sich im laufenden Betrieb tauschen, was Wartungsfenster spürbar verkürzt.",
+     "In dicht belegten Hypervisor-Clustern hält der %s die Ost-West-Kommunikation der virtuellen Maschinen stabil."],
     ["In Cluster-Fabrics sorgt der %s für gleichmäßige Latenz über alle Knoten hinweg.",
-     "Vor dem Rollout des %s sollten Firmware- und Treiberstand der beteiligten Knoten abgeglichen werden."],
+     "Vor dem Rollout des %s sollten Firmware- und Treiberstand der beteiligten Knoten abgeglichen werden.",
+     "Über viele Rechenknoten hinweg liefert der %s reproduzierbare Durchsatzwerte für eng gekoppelte Jobs."],
     ["Im Storage-Backbone hält der %s die Anbindung auch unter Dauerlast stabil.",
-     "Als hot-plug-fähiges Modul ist der %s ohne Systemstopp tauschbar."],
+     "Als hot-plug-fähiges Modul ist der %s ohne Systemstopp tauschbar.",
+     "In Backup- und Replikationsfenstern bleibt der %s auch bei anhaltend hohem Volumen belastbar."],
     ["Am Access-Layer vereinfacht der %s die Portplanung dicht bestückter Server-Racks.",
-     "Ein kurzer Abgleich von Plattform und Portklasse sichert den Einsatz des %s ab."],
+     "Ein kurzer Abgleich von Plattform und Portklasse sichert den Einsatz des %s ab.",
+     "Beim Verdichten der Zugriffsebene erleichtert der %s eine aufgeräumte, strukturierte Verkabelung."],
     ["Auf Uplink-Strecken bündelt der %s den Verkehr zwischen den Verteilern zuverlässig.",
-     "Der %s wird einzeln verpackt geliefert und ist nach dem Einstecken sofort betriebsbereit."],
+     "Der %s wird einzeln verpackt geliefert und ist nach dem Einstecken sofort betriebsbereit.",
+     "Als Etagen-Uplink verknüpft der %s die Verteilerschränke ohne erkennbaren Engpass."],
     ["In redundanten Pfaden trägt der %s zur unterbrechungsfreien Verfügbarkeit bei.",
-     "Dank Hot-Plug-Fähigkeit lässt sich der %s ohne Downtime ersetzen."],
+     "Dank Hot-Plug-Fähigkeit lässt sich der %s ohne Downtime ersetzen.",
+     "In doppelt ausgelegten Anbindungen stützt der %s die Ausfallsicherheit der Serveranbindung."],
     ["Bei datenintensiven Abfragen hält der %s den Durchsatz konstant hoch.",
-     "Vor dem Produktivbetrieb empfiehlt sich beim %s ein Plattform- und Firmware-Check."],
+     "Vor dem Produktivbetrieb empfiehlt sich beim %s ein Plattform- und Firmware-Check.",
+     "Unter anhaltender Analytics-Last bewahrt der %s gleichmäßige Paketraten."],
     ["An Außenstandorten überzeugt der %s durch robuste, wartungsarme Verbindungen.",
-     "Der %s ist hot-plug-fähig und damit auch im Feld unkompliziert tauschbar."],
+     "Der %s ist hot-plug-fähig und damit auch im Feld unkompliziert tauschbar.",
+     "Auch bei wechselnden Umgebungsbedingungen am Rand des Netzes bleibt der %s zuverlässig."],
     ["Bei konsolidiertem Verkehr trennt der %s Netzwerk- und Storage-Lasten sauber auf Portebene.",
-     "Der %s wird als versiegelte Neuware geliefert und ist für ThinkSystem freigegeben."],
+     "Der %s wird als versiegelte Neuware geliefert und ist für ThinkSystem freigegeben.",
+     "Beim Zusammenführen zuvor getrennter Fabrics entlastet der %s die Portbilanz im Rack."],
     ["In Container-Plattformen wächst die Anbindung mit dem %s flexibel mit.",
-     "Ein Abgleich von Portklasse und Firmware-Stand sichert den Einsatz des %s ab."],
+     "Ein Abgleich von Portklasse und Firmware-Stand sichert den Einsatz des %s ab.",
+     "Mit steigender Knotenzahl lässt sich der %s nahtlos in bestehende Cluster ergänzen."],
 ]
 
 
@@ -352,9 +341,9 @@ for pn, f in FACTS.items():
                             (", bis %s" % reach) if reach else "", temp_tail)),
                         " Verlässliche Lenovo-Optik für ThinkSystem-Server.")
         # ① genuinely unique prose per SKU — voice chosen by within-cluster position (same facts, new language)
-        ctx = {"P": pn, "SP": spde, "FF": uk, "TYP": typ, "STD": std, "MED": med_noun, "MEDLC": med_low,
+        ctx = {"P": pn, "SP": spde, "FF": uk, "TYP": typ, "STD": std, "MED": med_noun,
                "CONN": conn, "REACH": reach, "WL": wl, "FZ": fz, "ERA": era_phrase(pn),
-               "DIST": distinction_phrase(pn, f.get("desc")), "DUAL": dual, "TEMP": op_temp,
+               "DUAL": dual, "TEMP": op_temp,
                "COP": copper, "RNOTE": f.get("reach_note"), "FCC": fc_clause}
         vidx = OPTIC_VOICE_IDX.get(pn, 0)
         i1, i2, i3 = _voices(ctx)[vidx % 10]
@@ -367,10 +356,10 @@ for pn, f in FACTS.items():
         media_k = ("RJ45-Kupfer" if copper else (ftyp + "-Glasfaser"))
         kp1 = ("<p>" + ws(kopen % (VEND, pn, spde, uk, typ_k, dual,
                                    (" für %s (%s)" % (media_k, std)) if std else (" für %s" % media_k)))
-               + ws(" %s überbrückt er %s%s.</p>"
-                    % (("Über den %s-Anschluss" % conn) if conn else "Optisch",
-                       ("bis zu %s" % reach) if reach else "die geforderte Distanz",
-                       " für den erweiterten Temperaturbereich bis 85 °C" if op_temp else "")))
+               + " " + ws("%s überbrückt er %s.%s</p>"
+                          % (("Über den %s-Anschluss" % conn) if conn else "Optisch",
+                             ("bis zu %s" % reach) if reach else "die geforderte Distanz",
+                             " Es ist bis 85 °C spezifiziert." if op_temp else "")))
         kp2 = ("<p>Als Lenovo-Original-Neuware (ThinkSystem) wird das Modul versiegelt geliefert, ist im "
                "laufenden Betrieb tauschbar (Hot-Plug) und für ThinkSystem-Systeme mit %s-Steckplätzen "
                "vorgesehen.</p>" % uk)
@@ -401,13 +390,14 @@ for pn, f in FACTS.items():
                ["In welchen Systemen lässt sich das Modul einsetzen?",
                 "In Lenovo-ThinkSystem-Servern und -Adaptern mit %s-Steckplätzen; maßgeblich ist die "
                 "Lenovo-Kompatibilitätsmatrix." % uk]]
-        pool = ["Das %s ist im laufenden Betrieb steckbar (Hot-Plug) und erlaubt Wartung und Erweiterung "
-                "ohne Unterbrechung des Systems." % pn,
-                "Vor dem produktiven Einsatz des %s empfiehlt sich ein Abgleich von Plattform, "
-                "Portgeschwindigkeit und Firmware-Stand." % pn]
+        # NOTE: optic `pool` is the voice-specific VOICE_POOL set above — do NOT reintroduce a shared pool
+        # here (the old shared Hot-Plug/Abgleich pair caused two byte-identical tail sentences on all SR).
 
     kurz = pad_kurz(kp1, kp2)
-    intro = pad_intro([ws(i1), ws(i2), ws(i3)], pool)
+    # optics: pad to a higher floor with the voice-specific pool so the composed Beschreibung clears
+    # backfill's 90-word floor in the AUTHOR — otherwise backfill appends an identical spec-recap to
+    # same-spec parts (a shared full sentence). Cables keep the standard floor.
+    intro = pad_intro([ws(i1), ws(i2), ws(i3)], pool, lo=(95 if cable else 108))
     e = {"_facts": {"unterkategorie": uk, "quell_url": URL, "verifiziert_am": TODAY},
          "artikelname": ws(artikel), "titel_tag": titel, "meta_description": meta,
          "kurzbeschreibung": ws(kurz), "intro": intro, "kompatibilitaet": kompat,
