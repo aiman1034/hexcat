@@ -45,7 +45,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | **Juniper** | **188 emitted** (gate L1–L6 PASS) | ✅ **AUTHORED + GATE-GREEN + L8 fixes applied — ZIP `…_c6d2860.zip`** | core. Locked 205 → EXACT **188 + 13 flagged-out + 4 aliased = 205**. Authored via `juniper_author.py` (per-SKU-unique prose; EX/QFX/MX/PTX/ACX/SRX theme; BX D/U λ 1330/1270 datasheet-verified; 23 industrial → −40/+85). **L8 audit: contract+content+grounding PASS + 1 HIGH/2 low FIXED** — DOM Unterstützung now required (L3) + added (188/188: Ja 178/Nein 10 copper+XENPAK); 4 XENPAK connectors LC→**SC (Duplex)**; λ normalized to carry **nm**. **gate.py L1–L6 = PASS** on the re-emitted bundle. Commit `c6d2860`. EUR pricing deferred (0,00). Optional polish: 3 flagged-out λ, JCO/QDD-ZR alias, PLR4 reach. |
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | **Dell** | 163 (61 optics 1G–800G + 102 DAC/AOC) | **emitted, gate L1–L6 PASS** (L8 round-2 2026-06-15: +3 matrix-only 40G + 5 fixes) | 1st Tier-B; SFP-DD+QSFP28-DD vocab; FC/QSA/passive-CBL out |
-| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | **L8 byte-audit PASS on `eb25954`; logged-OEM enhancement re-emitted (2026-06-15) — awaiting final byte-audit** | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C; GROUNDED prose (L5 near-dup ≤0.27 + ungrounded-claim guard); 6 web-verified OEM variants logged; FC + OEM via extra_log; EOL-flagged tier (never dropped) |
+| **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | ✅ **DONE — operator L8 byte-audit PASS `b331235` (2026-06-15), import-ready. 11th transceiver brand cleared.** | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C; GROUNDED prose (L5 near-dup ≤0.27 + ungrounded-claim guard); 6 web-verified OEM variants logged; FC+OEM via extra_log. **FAQ = separate v1.3 stream (placeholder here, see §9 FAQ-scope note)** |
 | Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 
 ### Switches (Rule-7 schema)
@@ -364,7 +364,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **0×8**, gate_selftest CERTIFIED, **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_b331235.zip` (104 SKUs;
   byte-verified — Main BOM+CRLF 104 rows, Prices no-BOM, Verification_Log 6 OEM-Variante + 102 Feature-Code
   rows; supersedes & replaces `_eb25954.zip`, deleted). Alias-prose backlog stays PARKED.
-  **Awaiting final operator byte-audit.**
+  **✅ OPERATOR L8 BYTE-AUDIT PASS (`b331235`, 2026-06-15): "transceiver bundle import-ready, 6 OEM variants
+  verified, copper/optical correct, regression surgical (0 drift), guards green. Lenovo = cleared, 11th
+  transceiver brand."**
+- **FAQ SCOPE DETERMINATION (2026-06-15) — stage3 FAQ is a NON-AUTHORITATIVE placeholder; answer = (b).**
+  Operator asked whether hexcat stage3 owns the FAQ-to-Master-Guide-v1.3 standard (a) or the FAQ is produced
+  separately (b). **Decisive evidence from `Hexwaren_FAQ_Data_Entry_Master_Guide_v1.3.md` itself**
+  (Downloads, the authoritative spec): its setup section mandates a dedicated **"Hexwaren FAQ Production"
+  Claude Project**; it states **"FAQ is a separate content stream"** from the product CSV (the product CSV =
+  the **v5.0** guide, which is what hexcat implements); §1 calls the FAQ "a separate content layer." The v1.3
+  workflow is **harvest-driven** (GSC impressions, Google autocomplete, PAA/AlsoAsked, competitor FAQs,
+  Sistrix/SEMrush volume) with per-batch Sidebar Harvest Briefs + its own Source_type audit tags — a live-SEO
+  + human-sidebar process that hexcat's deterministic, $0, offline core structurally must NOT do (building a
+  fake harvest would fabricate the signal). hexcat's MISSION/gate only require the FAQ **byte-contract**
+  (`Q||A##Q||A`, 3–10 pairs, UTF-8 BOM) — `content_checks` enforces pair-count only, not v1.3 depth.
+  **Conclusion:** the stage3 `Hexwaren_FAQ_<brand>.csv` (3 grounded pairs, 8–16-word answers, ~0.99 sibling
+  similarity) is a **format-valid placeholder** that keeps the 7-file bundle self-consistent + importable;
+  the authoritative, v1.3-compliant FAQ (3–10 data-driven, 50–90-word, ≥80% sibling-differentiated) is
+  produced in the **separate FAQ Production project** and is what must populate the live FAQ attribute.
+  Applies to **all 11 cleared brands** (their stage3 FAQs are placeholders by the same logic), not Lenovo
+  alone. **Action:** leave the placeholder as-is (per operator's (b) branch); do NOT implement v1.3 FAQ depth
+  in hexcat. **Go-live caveat:** the operator must ensure the FAQ-Production v1.3 output (not the hexcat
+  placeholder) is what imports/overwrites the FAQ attribute. NEXT: Ubiquiti (Tier-B #3, source-gated §10).
 
 ---
 
