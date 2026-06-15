@@ -312,7 +312,7 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (`lenovo_flags.txt`). Source `datasheets/cache/lenovo-lp1071-transceivers-cables-media.pdf` cached (narrative,
   no PN table — confirms lp1071 is best-practices prose, not an enumeration). `gate_completeness` Lenovo
   102→104. Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12 known-good + F22),
-  **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_<hash>.zip` (104 SKUs — see build entry). **Awaiting operator L8.**
+  **413 tests**. ZIP `output/Hexwaren_Lenovo_stage3_3426853.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows, Prices no-BOM; supersedes & replaces `_99259ee.zip`, deleted). **Awaiting operator L8.**
 
 ---
 
