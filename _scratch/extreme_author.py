@@ -106,8 +106,10 @@ def faseranzahl(f):
     if (f.get("media") == "Kupfer") or (f.get("connector") == "RJ45"):
         return None
     conn, typ = (f.get("connector") or ""), (f.get("type") or "").upper()
+    if "MPO-16" in conn or "MPO16" in conn or "SR8" in typ or "DR8" in typ:
+        return "16"                                  # 8-lane parallel (SR8/DR8) over MPO-16: 16 fibres
     if conn.startswith("MPO"):
-        return "8"                                   # 4-lane parallel (SR4/ESR4/PSM4): 8 fibres
+        return "8"                                   # 4-lane parallel (SR4/ESR4/PSM4/DR4): 8 fibres
     if "BDSR" in typ:
         return "2"                                   # BiDi-SR over an LC duplex pair
     if typ.startswith("BX") or "BIDI" in typ:
