@@ -337,7 +337,8 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   prose across cleared brands" remains PARKED per operator (the round-3 method was unproven — must not touch
   imported brands). Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12
   known-good + F22 near-dup + F23 ungrounded-claim), **413 tests**. ZIP
-  `output/Hexwaren_Lenovo_stage3_<hash>.zip` (104 SKUs — see build entry). **Awaiting operator L8.**
+  `output/Hexwaren_Lenovo_stage3_589ffe4.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows,
+  Prices no-BOM; supersedes & replaces `_3426853.zip`, deleted). **Awaiting operator L8.**
 
 ---
 
