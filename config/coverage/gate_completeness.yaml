@@ -77,3 +77,12 @@ _Extreme_note: enumerated 91 = the distinct grounded SKUs in extreme_facts.json 
   config/coverage/extreme_transceivers_completeness.yaml). captured 86 (==emitted); flagged 5
   reason-coded (3x 100G-4WDM λ-plan, 10331 SR10-CFP2 fibre/connector conflict, 40G-LM4 λ/reach
   inconsistent); 86+5=91.
+
+Dell_transceivers:
+  enumerated: 160
+  captured: 160
+  flagged: []
+_Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercounted). captured 160
+  (==emitted) = 58 optics 1G-800G + 102 DAC/AOC cable length-SKUs. OUT-of-scope (documented in
+  dell_transceivers_completeness.yaml, NOT enumerated gaps) -- Fibre Channel (SFP-16GFC/Q28-128GFC),
+  QSA adapter, generic passive CBL fibre patch/trunk/breakout (no transceiver form factor).'

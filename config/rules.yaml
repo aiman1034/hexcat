@@ -15,6 +15,7 @@ vendors:
   "MikroTik": { hersteller: "MikroTik", slug: "mikrotik" }
   "NVIDIA":  { hersteller: "NVIDIA",  slug: "nvidia" }
   "Extreme": { hersteller: "Extreme", slug: "extreme" }
+  "Dell":    { hersteller: "Dell",    slug: "dell" }
 
 # Fixed constants emitted verbatim.
 constants:
@@ -33,7 +34,7 @@ constants:
   kategorie_ebene_2_switch: "Switches"
   attributgruppe_switch: "Switch"
 
-# Locked Kategorie Ebene 3 set (23). Anything else is rejected; "Sonstige" never allowed.
+# Locked Kategorie Ebene 3 set (25). Anything else is rejected; "Sonstige" never allowed.
 # (CIM8 = Cisco NCS 1014 Coherent Interface Module 8 — a real current coherent form factor, kept so
 # those SKUs are catalogued. POM = Cisco SONET/SDH Pluggable Optic Module was REMOVED 2026-06-14:
 # SONET/SDH ruled out-of-scope for the Ethernet/datacom catalog (L8 round-3), its 8 SKUs dropped.
@@ -46,11 +47,13 @@ kategorie_ebene_3_allowed:
   - "QSFP-DD"
   - "QSFP-DD800"
   - "QSFP28"
+  - "QSFP28-DD"
   - "QSFP56"
   - "QSFP112"
   - "OSFP"
   - "SFP"
   - "SFP+"
+  - "SFP-DD"
   - "SFP28"
   - "SFP56"
   - "X2"

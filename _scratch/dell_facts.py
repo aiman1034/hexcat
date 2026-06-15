@@ -27,6 +27,23 @@ def rep(s):
     return re.sub(r"-\s+", "-", re.sub(r"\s+", " ", (s or "").replace("\n", " "))).strip()
 
 
+def clean_pn(model):
+    """A clean SKU PN from a Model cell that may carry spec-note parentheticals. Gen2/3/4 + low-power +
+    rate-adaptive are GENUINE distinct variants -> kept as a -GenN/-LP/-RA suffix; everything else in
+    parens/brackets is a note -> stripped. Dual-rate '/40G' '/80G' notes dropped; internal spaces removed."""
+    s = model
+    g = re.search(r"\(?\bGen\s*(\d)\)?", s, re.I)
+    lp = bool(re.search(r"low\s*power", s, re.I))
+    ra = bool(re.search(r"rate\s*adaptive", s, re.I))
+    s = re.sub(r"[\[\]]", "", s)                       # bracket chars (cable breakout notation) -> keep content
+    s = re.sub(r"\s*\(.*?\)", "", s)                   # (Gen 3), (Supports FEC …) -> drop
+    s = re.sub(r"\s*-?\s*low\s*power|\s*rate\s*adaptive", "", s, flags=re.I)
+    s = re.sub(r"/\s*\d+G", "", s)                     # dual-rate /40G /80G
+    s = re.sub(r"\s+", "", s).rstrip("-")
+    suf = ("-Gen%s" % g.group(1) if g else "") + ("-LP" if lp else "") + ("-RA" if ra else "")
+    return s + suf
+
+
 def is_fc(m):       return bool(re.search(r"\d+GFC", m, re.I))
 def is_qsa(m):      return m.upper().startswith("QSA")
 
@@ -35,7 +52,8 @@ def ff_of(m):
     u = m.upper().replace("-", "")
     if "O112" in u or "OSFP" in u:        return "OSFP"
     if "Q56DD" in u or "Q56-DD" in u:     return "QSFP-DD"          # QSFP56-DD = 400G
-    if "Q28DD" in u:                       return "QSFP28-DD"        # 200G dual-100G (not in locked set -> flag)
+    if "Q28DD" in u:                       return "QSFP28-DD"        # 200G dual-100G (now a locked token)
+    if "S56DD" in u or "SFPDD" in u:      return "SFP-DD"           # SFP56-DD = 100G (now a locked token)
     if "Q56" in u or "QSFP56" in u:       return "QSFP56"           # 200G
     if "Q28" in u or "QSFP28" in u or m.upper().startswith("100G"): return "QSFP28"
     if "QSFP" in u or m.upper().startswith("40G") or "-40G-" in m.upper(): return "QSFP+"
@@ -52,6 +70,12 @@ def speed_of(m):
             return sp
     if "100M" in u:  return "1G"          # FE catalogued in the 1G group
     if "1G" in u or u.startswith("SFP-1G"): return "1G"
+    # FF-shorthand fallback (cables whose PN names only the form factor): O112=800G, Q56DD=400G,
+    # Q28DD/Q56=200G, S56DD=100G.
+    if "O112" in u:  return "800G"
+    if "Q56DD" in u: return "400G"
+    if "Q28DD" in u or ("Q56" in u and "DD" not in u): return "200G"
+    if "S56DD" in u: return "100G"
     return ""
 
 
@@ -114,19 +138,17 @@ def parse_optics(pdf):
                 conn = rep(r[1]) if len(r) > 1 else ""
                 if not m or not conn:        # section-header row (Model only)
                     continue
+                m = clean_pn(m)
                 if is_fc(m):
                     flags.append("%s | Fibre Channel -> out-of-scope (catalog-wide FC policy)" % m); continue
                 if is_qsa(m):
                     flags.append("%s | QSFP->SFP adapter, not a transceiver -> exclude" % m); continue
                 ff = ff_of(m)
-                if ff == "QSFP28-DD":
-                    flags.append("%s | QSFP28-DD form factor (200G dual-100G) — NOT in locked vocab; flagged pending taxonomy add" % m)
-                    continue
                 wl = rep(r[2]) if len(r) > 2 else ""
                 med = rep(r[3]) if len(r) > 3 else ""
                 dist = rep(r[4]) if len(r) > 4 else ""
                 out[m] = {"pn": m, "speed": speed_of(m), "ff": ff, "type": type_of(m),
-                          "connector": conn_of(conn), "wavelength": wl_of(wl, ff, m),
+                          "connector": conn_of(conn), "connector_raw": conn, "wavelength": wl_of(wl, ff, m),
                           "media": media_of(med), "reach": reach_of(dist), "standard": "",
                           "cable": False, "alt_pns": [], "page": pi + 1}
     return out
@@ -139,25 +161,37 @@ def parse_cables(pdf):
             if not t or not t[0] or "Model" not in (t[0][0] or ""):
                 continue
             for r in t[1:]:
-                fam = rep(r[0]); lengths = rep(r[1]) if len(r) > 1 else ""
+                fam = clean_pn(rep(r[0])); lengths = rep(r[1]) if len(r) > 1 else ""
                 conn = rep(r[2]) if len(r) > 2 else ""; med = rep(r[3]) if len(r) > 3 else ""
-                if not fam or "x" not in fam.lower():
-                    continue                 # need the xM length placeholder
+                if not fam or "M" not in fam.upper():
+                    continue
+                u = fam.upper()
+                # SCOPE (operator): keep TRANSCEIVER-CLASS cables only — active direct-attach DAC/AOC/AEC
+                # (incl. their breakouts) + passive MPO->xLC breakouts (MPO Kabel). DROP generic passive
+                # patch/trunk (plain MPO-MPO, LC-LC, MPO-DD) — commodity structured cabling, no locked token.
+                if u.startswith(("DAC", "AEC")):
+                    k3, ctype = "DAC Kabel", "DAC"
+                elif u.startswith("AOC"):
+                    k3, ctype = "AOC Kabel", "AOC"
+                else:
+                    # CBL-* are PASSIVE optical patch/trunk/breakout — generic structured cabling with no
+                    # inherent transceiver form factor (the active DAC/AOC breakouts, which carry a QSFP/SFP
+                    # form factor, are kept above). Flagged out — operator can re-scope with an assigned FF.
+                    flags.append("%s (%s) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED" % (fam, conn)); continue
                 lens = re.findall(r"\d+(?:\.\d+)?", lengths)
                 if not lens:
                     flags.append("%s | cable family no lengths -> EXCLUDED" % fam); continue
-                u = fam.upper()
-                ctype = "AOC" if "AOC" in u else ("DAC" if ("DAC" in u or "CR" in u) else "MPO")
-                ff = ("OSFP" if "OSFP" in u or "O112" in u else "QSFP-DD" if "DD" in u else
-                      "QSFP28" if ("Q28" in u or "100G" in u) else "QSFP+" if ("QSFP" in u or "40G" in u) else
-                      "SFP28" if ("SFP28" in u or "25G" in u) else "SFP+" if "10G" in u else "SFP")
+                ff = ff_of(fam)
+                brk = bool(re.search(r"\d+\s*[x×]|to \d", conn))
                 for ln in lens:
-                    pn = re.sub(r"xM?", "%sM" % ln, fam, flags=re.I)
+                    pn = re.sub(r"xM?\b", "%sM" % ln, fam, flags=re.I) if re.search(r"xM?\b", fam, re.I) else fam
                     out[pn] = {"pn": pn, "speed": speed_of(fam) or "", "ff": ff, "type": ctype,
                                "connector": conn_of(conn), "wavelength": None, "media": media_of(med),
-                               "reach": "", "length": ln, "standard": "", "cable": True,
-                               "active": (ctype == "AOC"), "breakout": ("4" in conn or "to 4" in conn.lower()),
-                               "alt_pns": [], "page": pi + 1}
+                               "reach": "", "length": ln, "standard": "", "cable": True, "k3": k3,
+                               "active": (ctype in ("AOC", "DAC") and "AEC" not in u and ctype == "AOC"),
+                               "breakout": brk, "ends_raw": conn, "alt_pns": [], "page": pi + 1}
+                    if not re.search(r"xM?\b", fam, re.I):
+                        break                    # single-length family (already has its length)
     return out
 
 

@@ -1,4 +1,11 @@
-SFP-16GFC-SW (EOL) | Fibre Channel -> out-of-scope (catalog-wide FC policy)
+SFP-16GFC-SW | Fibre Channel -> out-of-scope (catalog-wide FC policy)
 Q28-128GFC-SW4 | Fibre Channel -> out-of-scope (catalog-wide FC policy)
 QSA-Q28-S28 | QSFP->SFP adapter, not a transceiver -> exclude
-Q28DD-200G/ 80G-2SR4 | QSFP28-DD form factor (200G dual-100G) — NOT in locked vocab; flagged pending taxonomy add
+CBL-MTP12-OM4-xM (MPO-12 to MPO-12) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-LC-OM4-xM (LC to LC) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MTP12-4LC-OM4-xM (MPO-12 to 4 × LC) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MPO12-4LC-SMF-5M (MPO-12 to 4 × LC) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MPO12DD-2MPO12-OM4-xM (MPO-12DD to 2 × MPO-12) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MPO12DD-OM4-xM (MPO-12DD to MPO-12DD) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MPO12-APC-OM4-xM (MPO-12/APC to MPO12/APC) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED
+CBL-MPO12-APC-SMF-xM (MPO-12/APC to MPO-12/APC) | passive CBL fibre patch/trunk/breakout, no transceiver form factor -> EXCLUDED

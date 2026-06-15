@@ -110,8 +110,8 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
 # Ordered most-specific-first so prefix extraction never captures a shorter token by mistake
 # (e.g. "QSFP-DD800" before "QSFP-DD", "SFP28" before "SFP").
 PHYSICAL_FORMFAKTOR_ORDERED: tuple[str, ...] = (
-    "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28", "QSFP+",
-    "OSFP", "SFP56", "SFP28", "SFP+", "SFP",
+    "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28-DD", "QSFP28", "QSFP+",
+    "OSFP", "SFP-DD", "SFP56", "SFP28", "SFP+", "SFP",
     "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC", "CIM8",
 )
 PHYSICAL_FORMFAKTOR: frozenset[str] = frozenset(PHYSICAL_FORMFAKTOR_ORDERED)

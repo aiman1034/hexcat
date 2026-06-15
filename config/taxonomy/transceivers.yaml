@@ -4,7 +4,7 @@
 # CATEGORY (Phase 3+) means adding a sibling file (e.g. taxonomy/switches.yaml), not
 # editing engine code.
 #
-# `subcategories` are the 23 Kategorie-Ebene-3 form factors. Anything not in this list
+# `subcategories` are the 25 Kategorie-Ebene-3 form factors. Anything not in this list
 # is rejected on build; "Sonstige" is never allowed. (POM — Cisco's proprietary SONET/SDH
 # Pluggable Optic Module — was REMOVED 2026-06-14: SONET/SDH is out-of-scope for the
 # Ethernet/datacom catalog (L8 round-3), and its 8 OC-3/OC-48 SKUs were dropped. CIM8 — the
@@ -22,7 +22,8 @@ category: transceivers
 kategorie_ebene_2: "Transceivers & SFP Module"     # WITH final "e"
 attributgruppe: "Transceivers & SFP Modul"         # NO final "e" — one char different, intentional
 
-# Kategorie Ebene 3 — the 23 locked form factors.
+# Kategorie Ebene 3 — the 25 locked form factors. (SFP-DD + QSFP28-DD added 2026-06-15 for Dell
+# S56DD-100G / Q28DD-200G modules — real current form factors, a taxonomy gap fixed not excluded.)
 subcategories:
   - "DAC Kabel"
   - "AOC Kabel"
@@ -31,11 +32,13 @@ subcategories:
   - "QSFP-DD"
   - "QSFP-DD800"
   - "QSFP28"
+  - "QSFP28-DD"
   - "QSFP56"
   - "QSFP112"
   - "OSFP"
   - "SFP"
   - "SFP+"
+  - "SFP-DD"
   - "SFP28"
   - "SFP56"
   - "X2"

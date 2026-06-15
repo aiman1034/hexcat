@@ -214,7 +214,10 @@ def check_plausibility(bundle: Path) -> list[Violation]:
             name, val = r[i_n], r[i_v]
             # coherent/amplified/ULH/DWDM optics legitimately exceed the grey-optic band (amplified spans
             # span thousands of km) — exempt them from the reach band (not an error).
-            coherent = re.search(r"amplifizier|kohär|coheren|\bDWDM\b|\bULH\b|durchstimmbar|\bZR\b", val, re.I)
+            # the coherent signal may live in the value OR the SKU/type name (e.g. '400G-...-ZR+' whose
+            # Reichweite is just 'bis 1000 km') — search both so a real coherent optic is exempt.
+            coherent = re.search(r"amplifizier|kohär|coheren|\bDWDM\b|\bULH\b|durchstimmbar|\bZR\b",
+                                 val + " " + (r[i_sku] if len(r) > i_sku else ""), re.I)
             if name in ("Reichweite", "Länge") and "km" in val.lower() and not coherent:
                 m = re.search(r"(\d+(?:[.,]\d+)?)\s*km", val, re.I)
                 if m and float(m.group(1).replace(",", ".")) > _REACH_KM_MAX:
