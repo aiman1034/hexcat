@@ -46,7 +46,8 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Extreme | 91 (facts) | **facts** only — `extreme_transceivers_completeness.yaml` | author after Juniper |
 | **Dell** | 163 (61 optics 1G–800G + 102 DAC/AOC) | **emitted, gate L1–L6 PASS** (L8 round-2 2026-06-15: +3 matrix-only 40G + 5 fixes) | 1st Tier-B; SFP-DD+QSFP28-DD vocab; FC/QSA/passive-CBL out |
 | **Lenovo** | 104 (33 optics + 71 DAC/AOC; 30 EOL-flagged) | ✅ **DONE — operator L8 byte-audit PASS `b331235` (2026-06-15), import-ready. 11th transceiver brand cleared.** | Tier-B #2; 1G/10G/25G/40G/100G + 40G→4×10G & 100G→4×25G breakout; +2× 10G-SR 85 °C; GROUNDED prose (L5 near-dup ≤0.27 + ungrounded-claim guard); 6 web-verified OEM variants logged; FC+OEM via extra_log. **FAQ = separate v1.3 stream (placeholder here, see §9 FAQ-scope note)** |
-| Palo Alto/Ubiquiti/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
+| **Ubiquiti** | 49 (24 optics + 25 DAC/AOC) | **emitted, gate L1–L6 PASS** (2026-06-15; `688f803`) — awaiting operator L8 | Tier-B #3; denominator = operator-signed-off techspecs SFP&Fiber(29); 1G/10G(+12-ch CWDM)/25G/100G(SR4/LR4/PSM4); Uplink hybrid DAC/AOC-by-length; UF-↔UACC- dedup (6 alt-codes); 9 OUT + PON flagged; near-dup 0, ungrounded-claim 0 |
+| Palo Alto/Supermicro/Huawei/ZTE/Ruijie | — | **not-started** | §10 source-gated; re-verify per §7.1 ladder |
 
 ### Switches (Rule-7 schema)
 | Brand | Count | Status | Note |
@@ -386,6 +387,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   alone. **Action:** leave the placeholder as-is (per operator's (b) branch); do NOT implement v1.3 FAQ depth
   in hexcat. **Go-live caveat:** the operator must ensure the FAQ-Production v1.3 output (not the hexcat
   placeholder) is what imports/overwrites the FAQ attribute. NEXT: Ubiquiti (Tier-B #3, source-gated §10).
+- **UBIQUITI EMITTED (Tier-B #3) — gate L1–L6 PASS 49/49, near-dup 0, ungrounded-claim 0, audit_semantic 0×8,
+  413 tests (2026-06-15, `688f803`). Awaiting operator L8.** Source hunt resolved over several rounds: ui.com
+  store + techspecs both JS-gated; help.ui.com article was a type-level guide (not a PN list); **denominator
+  LOCKED + operator-signed-off** against the techspecs **"SFP & Fiber (29)"** full-page screen-cap (cached) +
+  "SFP Liberation Day (6)" subset. Read all 29 (exactly accounted): **20 IN families (24 optic SKUs + 25
+  DAC/AOC length-SKUs) + 9 OUT**. The rendered roster caught **UACC-OM-QSFP28-PSM4** (100G PSM4) that neither
+  pre-roster candidate list had — vindicating "enumerate against the rendered roster, not per-PN verification
+  of your own list." Every spec web-verified per-PN (1000-rule): CWDM 12 channels (1270–1590, 20km); BiDi
+  λ-pairs (1G 1310/1550, 10G 1270/1330); PSM4 distinct (parallel SM, 8-fibre MPO-12 APC, 1310nm, 2km OS2 /
+  500m OS1 — NOT cloned from SR4/LR4); Uplink-SFP28 HYBRID by length (0.15/0.3m copper-DAC, 3/30m fibre-AOC →
+  L3 + Kabeltyp set per length-SKU). **Dedup** UF-↔UACC- (6 legacy UF- alt-codes logged via extra_log);
+  **UF-RJ45-10G superseded-not-aliased** by UACC-CM-RJ45-MG (different spec, no alt-code); **UF-SM-1G** (1G SM
+  duplex, not in roster) legacy-flagged, NOT emitted. **OUT flagged (not silent):** 9 roster items (5 OFC/FC
+  fibre patch, 2 CWDM mux, SFP-Wizard, F-POE-G2) + GPON/EPON UFiber-OLT PON line + RJ45&Copper(17) category.
+  CWDM channel prose λ-led + rotated (§7.7). FAQ = byte-contract placeholder (v1.3 = separate FAQ-Production
+  stream). Ubiquiti added to rules.yaml vendors + gate_selftest KNOWN(13). Sources cached: techspecs
+  SFP&Fiber(29) + Liberation(6) screen-caps, UFiber DS, UACC-DAC DS, help.ui.com SFP guide. ZIP
+  `output/Hexwaren_Ubiquiti_stage3_688f803.zip` (49 SKUs; byte-verified — Main BOM+CRLF 49 rows, Prices
+  no-BOM, VLog 6 alt-code rows). **Awaiting operator L8.**
 
 ---
 
