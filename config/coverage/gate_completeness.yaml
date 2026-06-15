@@ -90,3 +90,15 @@ _Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercoun
   40G parts (ESR4/ER4/LM4) in the 2026 support matrix p15, grounded from the 2017 Dell spec sheet (L8
   finding #1). OUT-of-scope (documented in dell_transceivers_completeness.yaml, NOT enumerated gaps) --
   Fibre Channel (SFP-16GFC/Q28-128GFC), QSA adapter, generic passive CBL fibre patch/trunk (no FF).'
+
+Lenovo_transceivers:
+  enumerated: 74
+  captured: 74
+  flagged: []
+_Lenovo_note: 'Lenovo (ThinkSystem; absorbs IBM System Networking/BNT) Ethernet optics from two CURRENT
+  Lenovo Press guides (Workflow-B): lp1652 Broadcom 57504 (2025-12-12) + lp1417 Broadcom 57508 (2026-05-07).
+  captured 74 (==emitted) = 18 optics (11x 10G SFP+ SR/LR/-T + 4x 25G SFP28 SR incl dual-rate + 3x 100G
+  QSFP28-SR4) + 56 DAC/AOC/breakout cables (10G/25G/100G/200G). All product-ROW (phantom-guard); IBM/BNT
+  feature codes woven into Beschreibung. OUT-of-scope (documented, NOT enumerated gaps): generic LC-LC
+  patch cords, passive MTP-4xLC fibre breakout (no transceiver FF — Dell precedent), Mellanox HDR IB AOC
+  (non-Ethernet). No current 40G/100G-LR4 optic in either current guide -> scope boundary, re-checkable.'
