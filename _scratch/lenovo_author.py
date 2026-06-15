@@ -403,6 +403,9 @@ for pn, f in FACTS.items():
          "kurzbeschreibung": ws(kurz), "intro": intro, "kompatibilitaet": kompat,
          "faq": faq, "verwandte": [], "attributes": attrs,
          "provenance": {lab: [URL, "datasheet"] for lab in prov},
+         # §1000-rule: the feature code is woven into the Beschreibung -> log it (Verification_Log-only,
+         # not an Attributes row) so the prose claim has a cited source. Grounded from the Lenovo Press guide.
+         "extra_log": ([["Feature-Code", fc, URL]] if fc else []),
          "beschreibung": "", "netto_vk": None}
     assert len(e["titel_tag"]) <= 60 and e["titel_tag"].endswith("| Hexwaren"), (pn, e["titel_tag"])
     doc[pn] = e

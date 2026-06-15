@@ -129,6 +129,13 @@ def _verification_rows(records: list[SkuRecord], build_time: str) -> list[list[s
                 a.confidence or C.VERIFICATION_CONFIDENCE_OPERATOR,
                 build_time,
             ])
+        # Verification_Log-only rows for grounded prose claims that are not schema attributes
+        # (e.g. a woven feature code) — logs the source WITHOUT an Attributes CSV row (§1000-rule).
+        for e in getattr(r, "extra_log", None) or []:
+            rows.append([
+                r.artikelnummer, str(e[0]), str(e[1]), str(e[2]),
+                (str(e[3]) if len(e) > 3 and e[3] else "datasheet"), build_time,
+            ])
     return rows
 
 

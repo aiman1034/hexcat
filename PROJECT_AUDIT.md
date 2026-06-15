@@ -335,7 +335,13 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   exempt; bare "qualifiziert" is NOT a token — it is common German, present in 6 cleared brands). Fixture
   **F23** (inject "Finisar", no log row) fires L5; 0 false-positives catalog-wide. Backlog task "weave alias
   prose across cleared brands" remains PARKED per operator (the round-3 method was unproven — must not touch
-  imported brands). Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12
+  imported brands). **Feature-code "+logged" gap closed:** the FC woven into the Beschreibung had NO
+  Verification_Log row (only the 14 schema attributes were logged) → §1000-rule gap. Added a general,
+  Verification_Log-ONLY **`extra_log`** channel (SkuRecord field → intake.build_record → reconcile →
+  assemble `_verification_rows`; defaults empty, zero effect on other brands) so a grounded prose claim that
+  is not a schema attribute is logged WITHOUT an Attributes-CSV row — the author now emits
+  `["Feature-Code", <fc>, <guide URL>]`; **102 FC rows logged** (the 2 85 °C parts carry no FC → none).
+  Gate **L1–L6 PASS 104/104**, audit_semantic **0×8**, gate_selftest CERTIFIED (12
   known-good + F22 near-dup + F23 ungrounded-claim), **413 tests**. ZIP
   `output/Hexwaren_Lenovo_stage3_589ffe4.zip` (104 SKUs; byte-verified — Main BOM+CRLF 104 data rows,
   Prices no-BOM; supersedes & replaces `_3426853.zip`, deleted). **Awaiting operator L8.**

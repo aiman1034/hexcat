@@ -318,7 +318,8 @@ def reconcile_content(
         for k, v in (entry.get("provenance") or {}).items():
             if isinstance(v, (list, tuple)) and len(v) >= 2:
                 canon_prov[ATTR_ALIAS.get(k, k)] = (str(v[0]), str(v[1]))
-        records.append(build_record(intake, rules, weights, attr_provenance=canon_prov))
+        records.append(build_record(intake, rules, weights, attr_provenance=canon_prov,
+                                     extra_log=entry.get("extra_log")))
     if not records:
         raise ReconcileError(f"{Path(path).name} contained no usable SKU entries")
     return records

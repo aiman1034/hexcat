@@ -169,7 +169,7 @@ def _build_attributes(intake: SkuIntake, source_url: str,
 
 
 def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
-                 attr_provenance: dict | None = None) -> SkuRecord:
+                 attr_provenance: dict | None = None, extra_log: list | None = None) -> SkuRecord:
     sku = intake.Artikelnummer.strip()
     if not sku:
         raise IntakeError("intake row missing Artikelnummer (required).")
@@ -232,6 +232,7 @@ def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
         weights_are_placeholder=weights_ph,
         attributes=attributes,
         skipped_attributes=skipped,
+        extra_log=[list(e) for e in (extra_log or []) if isinstance(e, (list, tuple)) and len(e) >= 3],
         condition=condition,
         faq_pairs=faq_pairs,
         faq_cell=faq_cell,

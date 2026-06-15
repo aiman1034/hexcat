@@ -124,6 +124,11 @@ class SkuRecord(BaseModel):
 
     attributes: list[AttributeValue] = Field(default_factory=list)
     skipped_attributes: list[str] = Field(default_factory=list)  # empty intake cells
+    # Verification_Log-ONLY rows for grounded prose claims that are not schema attributes (e.g. a woven
+    # manufacturer feature code / alt order code): [name, value, source_url(, confidence)]. Emitted to
+    # the Verification_Log so "no prose claim without a logged source" (§1000-rule) holds WITHOUT
+    # polluting the Attributes CSV. Defaults empty -> zero effect on brands that don't use it.
+    extra_log: list = Field(default_factory=list)
 
     condition: str
     faq_pairs: list[FaqPair] = Field(default_factory=list)
