@@ -109,6 +109,24 @@ VPOOL = [
 ]
 
 
+# CWDM is wavelength-channeled: the near-dup detector can't cluster the 12 (different λ = different
+# signature), so they get a DEDICATED, channel-indexed pool of 12 distinct framings (no idx-wrap). All
+# grounded 10G-CWDM applications. Keeps USECASE/VPOOL (non-CWDM optics) untouched.
+CWDM_WL = ["1270", "1290", "1310", "1330", "1450", "1470", "1490", "1510", "1530", "1550", "1570", "1590"]
+CWDM_USECASE = USECASE + [
+    "zur Verdichtung mehrerer 10-Gigabit-Strecken auf einem Faserpaar per CWDM-Multiplexer",
+    "zur Kapazitätserweiterung bestehender Glasfaserwege ohne das Verlegen zusätzlicher Fasern",
+]
+CWDM_VPOOL = VPOOL + [
+    "Auf gemeinsamer Faser bündelt der %s mehrere Wellenlängen über einen CWDM-Multiplexer.",
+    "So hebt der %s die Kapazität bestehender Glasfaserstrecken, ohne neue Fasern zu verlegen.",
+]
+
+
+def _cwdm_ch(pn):
+    return CWDM_WL.index(pn.rsplit("-", 1)[-1])
+
+
 def alt_clause(f):
     a = f.get("alt_code")
     return ("; in der UFiber-Generation wird das Modul auch unter der Bestellnummer %s geführt" % a) if a else ""
@@ -128,7 +146,7 @@ def optic_entry(pn, f):
     altc = alt_clause(f)
     is_cwdm = typ == "CWDM"
     idx = optic_entry.order.setdefault(pn, len(optic_entry.order))
-    uc = USECASE[idx % len(USECASE)]
+    uc = CWDM_USECASE[_cwdm_ch(pn)] if is_cwdm else USECASE[idx % len(USECASE)]
     connphr = ("über den %s-Anschluss" % conn) if conn else "optisch"
     wlfz = ((" bei %s" % wl) if wl else "") + ((" über %s Fasern" % fz) if fz else "")
     artikel = ws("%s %s %s %s %s-Transceiver%s – %s%s%s" % (VEND, pn, sp, uk, (typ or "Optik"), dual, ftyp,
@@ -188,7 +206,7 @@ def optic_entry(pn, f):
                            "Für %s-Verbindungen an %s-Steckplätzen von UniFi-Geräten." % (spde, uk)]),
            ["In welchen Geräten lässt sich das Modul einsetzen?",
             "In UniFi-Switches und -Gateways mit %s-Steckplätzen; maßgeblich ist die UniFi-Kompatibilitätsliste." % uk]]
-    pool = [VPOOL[idx % len(VPOOL)] % pn]
+    pool = [(CWDM_VPOOL[_cwdm_ch(pn)] if is_cwdm else VPOOL[idx % len(VPOOL)]) % pn]
     extra = ([["Alt-Bestellnummer", f["alt_code"], f.get("alt_src") or URL]] if f.get("alt_code") else [])
     return uk, artikel, titel, meta, kp1, kp2, [i1, i2, i3], pool, attrs, prov, faq, extra
 optic_entry.order = {}

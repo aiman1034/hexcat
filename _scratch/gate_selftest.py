@@ -170,6 +170,12 @@ def fixtures():
         # Lenovo bundle, whose grounded prose names no third-party OEM, PASSES.)
         ("F23 ungrounded-claim",  ROOT / "output/stage3_Lenovo",
          lambda d: inject_text(d, "46C3447", "Auf Basis eines Finisar-Optikmoduls."), "L5"),
+        # F24 (L8 Ubiquiti CWDM blind-spot): two λ-channel siblings share (Std,FF,reach) but differ in λ, so
+        # Pass-1 (Std,FF,reach,λ) can't cluster them. Clone one CWDM channel's prose onto another -> after
+        # λ-masking the framing is identical -> the new Pass-2 λ-family check MUST fire. (Positive direction =
+        # the real Ubiquiti CWDM 12, each channel-distinct, PASSES.)
+        ("F24 lambda-family",     ROOT / "output/stage3_Ubiquiti",
+         lambda d: clone_beschreibung(d, "UACC-OM-SFP10-1290", "UACC-OM-SFP10-1310"), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

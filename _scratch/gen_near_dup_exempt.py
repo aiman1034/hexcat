@@ -42,26 +42,45 @@ def clusters_for(brand):
     for r in ar:
         if len(r) > vi:
             at.setdefault(r[si], {})[r[ni]] = r[vi]
-    cl = {}
+    recs = []
     for sku, be in desc.items():
         a = at.get(sku, {}); std = a.get("Standard", ""); ff = a.get("Formfaktor", "")
         ends = a.get("Anschlusstyp") or a.get("Anschlussenden") or ""
         if (not std or G._CABLE_STD.search(std) or " auf " in ends
                 or ff.endswith("Kabel") or "Kabel" in (k3.get(sku) or "")):
             continue
-        sig = (std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""))
-        masked = G._FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
-        cl.setdefault(sig, []).append((sku, G._shingles(masked)))
-    hits = []
-    for sig, mem in cl.items():
-        if len(mem) < 2:
-            continue
-        if any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, h1), (s2, h2) in combinations(mem, 2)):
-            pns = sorted(s for s, _ in mem)
+        base = G._FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
+        recs.append((sku, std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""),
+                     G._shingles(base), G._shingles(G._LAMBDA_MASK.sub("WL", base))))
+    hits, seen = [], set()
+
+    def _add(mem_pns, std, ff, reason):
+        key = frozenset(mem_pns)
+        if key in seen:
+            return
+        seen.add(key)
+        hits.append({"members": sorted(mem_pns), "std": std, "ff": ff, "reason": reason})
+
+    # PASS 1 — same (Std,FF,reach,λ)
+    p1 = {}
+    for sku, std, ff, reach, wl, sh, _shl in recs:
+        p1.setdefault((std, ff, reach, wl), []).append((sku, sh))
+    for sig, mem in p1.items():
+        if len(mem) >= 2 and any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, h1), (s2, h2) in combinations(mem, 2)):
+            pns = [s for s, _ in mem]
             reason = ("revision/variant family (shared PN stem) — same optic, prose reuse accepted at L8"
                       if len({stem(p) for p in pns}) == 1 else
                       "cross-name alias(es) of one optic — prose reuse accepted at L8")
-            hits.append({"members": pns, "std": sig[0], "ff": sig[1], "reason": reason})
+            _add(pns, sig[0], sig[1], reason)
+    # PASS 2 — λ-channel family (Std,FF,reach), >=2 distinct λ, λ-masked
+    p2 = {}
+    for sku, std, ff, reach, wl, _sh, shl in recs:
+        p2.setdefault((std, ff, reach), []).append((sku, wl, shl))
+    for sig, mem in p2.items():
+        if len(mem) >= 2 and len({w for _, w, _ in mem}) >= 2 and \
+                any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, w1, h1), (s2, w2, h2) in combinations(mem, 2)):
+            _add([s for s, _, _ in mem], sig[0], sig[1],
+                 "wavelength-channel family (CWDM/DWDM/BiDi) — per-channel templated prose accepted at L8")
     return hits
 
 

@@ -398,6 +398,10 @@ _NEAR_DUP_SIM = 0.85
 _NEAR_DUP_EXEMPT = _REPO / "config" / "near_dup_exempt.yaml"
 _FC_MASK = re.compile(r"Feature-Code\s+\w+", re.I)
 _CABLE_STD = re.compile(r"\b(CR\d?|Twinax|Direct[ -]?Attach|Active Optical|AOC|DAC)\b", re.I)
+# λ-channel mask (Pass 2): wavelengths (nm), ITU frequencies (THz/GHz), C-Band, "Kanal …" — so prose that
+# differs ONLY by wavelength collapses and a templated CWDM/DWDM channel family is caught.
+_LAMBDA_MASK = re.compile(r"\b1[0-9]{3}(?:[.,]\d+)?\s*nm|\b1[0-9]{3}(?:[.,]\d+)?\b|"
+                          r"\b\d{2,3}[.,]\d+\s*THz|\bGHz\b|C-Band|Kanal\s*\S+", re.I)
 
 
 def _shingles(html: str, k: int = 3) -> set:
@@ -443,32 +447,55 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
             attr.setdefault(r[a_s], {})[r[a_n]] = r[a_v]
     brand, _ = _brand_category(bundle)
     exempt = _near_dup_exemptions(brand)
-    clusters: dict = {}
+    # per-optic record: (sku, std, ff, reach, wl, shingles_PN+FC-masked, shingles_also-λ-masked)
+    recs = []
     for sku, be in desc.items():
         a = attr.get(sku, {})
-        std = a.get("Standard", "")
-        ff = a.get("Formfaktor", "")
+        std, ff = a.get("Standard", ""), a.get("Formfaktor", "")
         ends = a.get("Anschlusstyp") or a.get("Anschlussenden") or ""
-        # CABLE exemption (robust across brand conventions): no IEEE optical std, or copper/AOC std, or
-        # a "X auf Y" cable end, or a "… Kabel" form factor / category.
         if (not std or _CABLE_STD.search(std) or " auf " in ends
                 or ff.endswith("Kabel") or "Kabel" in (k3.get(sku) or "")):
+            continue                                        # cable exemption
+        base = _FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
+        recs.append((sku, std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""),
+                     _shingles(base), _shingles(_LAMBDA_MASK.sub("WL", base))))
+    seen = set()
+
+    def _emit(s1, s2, sim, std, ff, why):
+        key = frozenset((s1, s2))
+        if key in seen:
+            return
+        seen.add(key)
+        out.append(Violation(bundle.name, "%s~%s" % (s1, s2), "Beschreibung",
+                             "distinct same-spec SKUs need unique prose (<%.2f)" % _NEAR_DUP_SIM, "%.2f" % sim,
+                             "L5: near-duplicate Beschreibung — %s vs %s share %.0f%% of prose (%s); "
+                             "§7.7 unique-language" % (s1, s2, sim * 100, why)))
+
+    # PASS 1 — exact same-spec (Std,FF,reach,λ): PN+FC masked.
+    p1: dict = {}
+    for sku, std, ff, reach, wl, sh, _shl in recs:
+        p1.setdefault((std, ff, reach, wl), []).append((sku, sh))
+    for sig, mem in p1.items():
+        if len(mem) < 2 or frozenset(s for s, _ in mem) in exempt:
             continue
-        sig = (std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""))
-        masked = _FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
-        clusters.setdefault(sig, []).append((sku, _shingles(masked)))
-    for sig, members in clusters.items():
-        if len(members) < 2 or frozenset(s for s, _ in members) in exempt:
-            continue
-        for (s1, sh1), (s2, sh2) in combinations(members, 2):
-            sim = _jaccard(sh1, sh2)
+        for (s1, h1), (s2, h2) in combinations(mem, 2):
+            sim = _jaccard(h1, h2)
             if sim >= _NEAR_DUP_SIM:
-                out.append(Violation(bundle.name, "%s~%s" % (s1, s2), "Beschreibung",
-                                     "distinct same-spec SKUs need unique prose (<%.2f)" % _NEAR_DUP_SIM,
-                                     "%.2f" % sim,
-                                     "L5: near-duplicate Beschreibung — %s vs %s share %.0f%% of prose "
-                                     "(same %s/%s, only PN/feature-code differ); §7.7 unique-language"
-                                     % (s1, s2, sim * 100, sig[0], sig[1])))
+                _emit(s1, s2, sim, sig[0], sig[1], "same %s/%s, only PN/feature-code differ" % (sig[0], sig[1]))
+    # PASS 2 — wavelength-CHANNEL family (Std,FF,reach), >=2 distinct λ: PN+FC+λ masked, so framing that
+    # varies ONLY by wavelength is caught (the CWDM/DWDM blind spot — different λ = different Pass-1 sig).
+    p2: dict = {}
+    for sku, std, ff, reach, wl, _sh, shl in recs:
+        p2.setdefault((std, ff, reach), []).append((sku, wl, shl))
+    for sig, mem in p2.items():
+        if len(mem) < 2 or len({w for _, w, _ in mem}) < 2:       # need a genuine multi-λ family
+            continue
+        if frozenset(s for s, _, _ in mem) in exempt:
+            continue
+        for (s1, _w1, h1), (s2, _w2, h2) in combinations(mem, 2):
+            sim = _jaccard(h1, h2)
+            if sim >= _NEAR_DUP_SIM:
+                _emit(s1, s2, sim, sig[0], sig[1], "%s λ-channel family, framing identical apart from wavelength" % sig[0])
     return out
 
 
