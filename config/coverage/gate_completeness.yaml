@@ -91,6 +91,22 @@ _Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercoun
   finding #1). OUT-of-scope (documented in dell_transceivers_completeness.yaml, NOT enumerated gaps) --
   Fibre Channel (SFP-16GFC/Q28-128GFC), QSA adapter, generic passive CBL fibre patch/trunk (no FF).'
 
+Ubiquiti_transceivers:
+  enumerated: 49
+  captured: 49
+  flagged: []
+_Ubiquiti_note: 'Ubiquiti (UniFi) — denominator LOCKED + operator-signed-off against the techspecs.ui.com
+  "SFP & Fiber (29)" roster (operator full-page screen-cap, cached) + "SFP Liberation Day (6)" (a subset,
+  no additions). captured 49 (==emitted) = 24 optic modules (1G SX/BiDi/copper x3 + 10G SR/LR/BiDi/multigig
+  x4 + 10G CWDM 12-channel 1270-1590 + 25G SR/LR x2 + 100G SR4/LR4/PSM4 x3) + 25 DAC/AOC length-SKUs
+  (DAC-SFP10/SFP28/QSFP28 0.5/1/3m + AOC-SFP10/SFP28/QSFP28 5/10/20/30m + Uplink-SFP28 0.15/0.3/3/30m,
+  hybrid copper-DAC<=0.3m / fibre-AOC>=3m). All specs web-verified per-PN (1000-rule). Dedup: legacy UFiber
+  UF- code woven as alt order number (extra_log); UF-RJ45-10G SUPERSEDED-not-aliased by UACC-CM-RJ45-MG;
+  UF-SM-1G (1G SM duplex) has NO current roster SKU -> legacy-flagged, not emitted. OUT-of-scope (flagged in
+  ubiquiti_flags.txt, NOT silent): 9 roster items (5 OFC/FC fibre patch cords, 2 CWDM mux UACC-CWDM-4/-8,
+  UACC-SFP-Wizard programmer, F-POE-G2 media converter) + the GPON/EPON UFiber-OLT PON line (carrier-PON,
+  out like SONET/FC) + the RJ45 & Copper (17) patch/adapter/converter category. 20 IN families + 9 OUT = 29
+  roster exactly accounted. PSM4 surfaced by the roster (not in either pre-roster candidate list).'
 Lenovo_transceivers:
   enumerated: 104
   captured: 104
