@@ -99,9 +99,10 @@ def conn_of(s):
 
 # cable Anschlussenden from the PN (robust — the connection COLUMN truncates/leaks English in the PDF).
 # Dell shorthand -> locked form-factor tokens; counts from the NxFF breakout pattern.
-_FFTOK = [("O112", "OSFP"), ("OSFP", "OSFP"), ("Q56DD", "QSFP-DD"), ("Q28DD", "QSFP28-DD"), ("S56DD", "SFP-DD"),
-          ("QSFP56", "QSFP56"), ("Q56", "QSFP56"), ("QSFP28", "QSFP28"), ("Q28", "QSFP28"), ("SFP56", "SFP56"),
-          ("S56", "SFP56"), ("SFP28", "SFP28"), ("S28", "SFP28"), ("QSFP", "QSFP+"), ("SFP", "SFP+")]
+_FFTOK = [("O112", "OSFP"), ("OSFP", "OSFP"), ("Q112", "QSFP112"), ("Q56DD", "QSFP-DD"), ("Q28DD", "QSFP28-DD"),
+          ("S56DD", "SFP-DD"), ("QSFP112", "QSFP112"), ("QSFP56", "QSFP56"), ("Q56", "QSFP56"), ("QSFP28", "QSFP28"),
+          ("Q28", "QSFP28"), ("SFP56", "SFP56"), ("S56", "SFP56"), ("SFP28", "SFP28"), ("S28", "SFP28"),
+          ("QSFP", "QSFP+"), ("SFP", "SFP+")]
 
 
 def _resolve_ff(tok):
@@ -120,6 +121,12 @@ def cable_ends_from_pn(pn):
     prim = ffs[0][1]
     if len(ffs) >= 2:
         cnt, sec = ffs[1]
+        # a standalone NxSPEED multiplier (e.g. "800G2x400G") carries the breakout count when the
+        # secondary FF token itself had none (e.g. O112 -> 2x QSFP112 from "...2x400G-Q112").
+        if cnt == 1:
+            mm = re.search(r"(\d+)\s*[xX]\s*\d+G", pn)
+            if mm:
+                cnt = int(mm.group(1))
         return "%s auf %dx %s" % (prim, cnt, sec) if cnt > 1 else "%s auf %s" % (prim, sec)
     return "%s auf %s" % (prim, prim)
 
@@ -238,7 +245,8 @@ def _supplement():
                              connector_raw="duplex LC", wavelength="1271 / 1291 / 1311 / 1331 nm (CWDM4, 4 Lanes)",
                              media="SMF", reach="40 km", standard="40GBASE-ER4"),
         "QSFP-40G-LM4": base(pn="QSFP-40G-LM4", speed="40G", ff="QSFP+", type="LM4", connector="LC",
-                             connector_raw="duplex LC", wavelength="1310 nm", media="MMF", reach="150 m", standard="40GBASE-LM4"),
+                             connector_raw="duplex LC", wavelength="1310 nm", media="MMF", dual_media=True,
+                             reach="150 m (MMF) / 1 km (SMF)", standard="40GBASE-LM4"),
     }
 
 

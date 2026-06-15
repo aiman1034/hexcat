@@ -36,20 +36,23 @@ NEW = {
     "400G-FR4-QSFPDD2KM": opt("400G-FR4-QSFPDD2KM", "400G", "QSFP-DD", "FR4", "400GBASE-FR4", "LC", "SMF", SET_CWDM4, "2 km"),
     "400G-LR4-QSFPDD10KM": opt("400G-LR4-QSFPDD10KM", "400G", "QSFP-DD", "LR4", "400GBASE-LR4", "LC", "SMF", SET_CWDM4, "10 km"),
     "400G-SR8-QSFPDD100M": opt("400G-SR8-QSFPDD100M", "400G", "QSFP-DD", "SR8", "400GBASE-SR8", "MPO-16", "MMF", "850 nm", "100 m", om="OM4"),
-    "400G-DR4X-QSFPDD2KM": opt("400G-DR4X-QSFPDD2KM", "400G", "QSFP-DD", "DR4X", "400GBASE-DR4", "MPO-12", "SMF", "1310 nm", "2 km"),
-    # 100G additions
+    "400G-DR4X-QSFPDD2KM": opt("400G-DR4X-QSFPDD2KM", "400G", "QSFP-DD", "DR4X", "400GBASE-DR4X", "MPO-12", "SMF", "1310 nm", "2 km"),
+    # 100G additions (current-datasheet PRODUCT rows pp4/7 — verified, not compat-notes)
     "100G-DR-SFPDD500M": opt("100G-DR-SFPDD500M", "100G", "SFP-DD", "DR", "100GBASE-DR", "LC", "SMF", "1310 nm", "500 m"),
     "100G-FR-SFPDD": opt("100G-FR-SFPDD", "100G", "SFP-DD", "FR", "100GBASE-FR", "LC", "SMF", "1310 nm", "2 km"),
     "100G-LR-SFPDD": opt("100G-LR-SFPDD", "100G", "SFP-DD", "LR", "100GBASE-LR", "LC", "SMF", "1310 nm", "10 km"),
     "100G-PSM4-QSFP10KM": opt("100G-PSM4-QSFP10KM", "100G", "QSFP28", "PSM4", "100GBASE-PSM4", "MPO-12", "SMF", "1310 nm", "10 km"),
-    "100G-ER4-QSFP40KM": opt("100G-ER4-QSFP40KM", "100G", "QSFP28", "ER4", "100GBASE-ER4", "LC", "SMF", SET_LANWDM, "40 km"),
-    # 10G variants (commercial + industrial-temp + length)
-    "10G-ER-SFP40KM": opt("10G-ER-SFP40KM", "10G", "SFP+", "ER", "10GBASE-ER", "LC", "SMF", "1550 nm", "40 km"),
-    "10G-LR-SFP10KM-IT": opt("10G-LR-SFP10KM-IT", "10G", "SFP+", "LR", "10GBASE-LR", "LC", "SMF", "1310 nm", "10 km"),
-    "10G-SR-SFP100M": opt("10G-SR-SFP100M", "10G", "SFP+", "SR", "10GBASE-SR", "LC", "MMF", "850 nm", "100 m", om="OM3"),
-    "10G-SR-SFP300M": opt("10G-SR-SFP300M", "10G", "SFP+", "SR", "10GBASE-SR", "LC", "MMF", "850 nm", "300 m", om="OM3"),
-    "10G-ZR-SFP80KM": opt("10G-ZR-SFP80KM", "10G", "SFP+", "ZR", "10GBASE-ZR", "LC", "SMF", "1550 nm", "80 km"),
 }
+# L8 round-2 PHANTOM SWEEP (operator finding #4): these were harvested by the line-parser from compat/
+# interop notes or as ABBREVIATED/dual-rate names of parts whose real product PNs carry -ET/-IT (already
+# in the verified 86) — NOT distinct Extreme order codes. Removed from captured AND enumerated (flag-don't-
+# fabricate). 100G-ER4-QSFP40KM = the ER4LT part under an abbreviated name (compat-note "…compatible with…").
+PHANTOMS = ["100G-ER4-QSFP40KM",         # = 100G-ER4LT-QSFP40KM (full ER4 is CFP/CFP2 only); compat-note
+            "10G-ER-SFP40KM",            # real product PN is 10G-ER-SFP40KM-ET (in the 86)
+            "10G-LR-SFP10KM-IT",         # unverified -IT; no clean product row -> don't fabricate
+            "10G-SR-SFP100M",            # the dual-rate 25/10G-SR-SFP100M part (25G-SR-SFP100M in the 86)
+            "10G-SR-SFP300M",            # real product PN is 10G-SR-SFP300M-ET (in the 86)
+            "10G-ZR-SFP80KM"]            # no clean current product row (86 carries the ZR part)
 # 400G QSFP-DD cables (p3): AOC 5/10/20M, passive DAC 1/2/2.5/3M.
 for L in ("5", "10", "20"):
     NEW["400G-AOC-QSFPDD%sM" % L] = cab("400G-AOC-QSFPDD%sM" % L, "400G", "QSFP-DD", "AOC", L)
@@ -64,16 +67,20 @@ FLAG_OUT = {"400G-LR4P-QSFPDD10KM": "un-groundable-after-ladder"}  # 4×100G-LR 
 def main():
     facts = json.loads(FACTS.read_text(encoding="utf-8"))
     flagged = json.loads(FLAGGED.read_text(encoding="utf-8"))
-    added = 0
+    removed = 0
+    for pn in PHANTOMS:                    # authoritative: purge phantoms from captured AND flagged
+        if facts.pop(pn, None) is not None:
+            removed += 1
+        flagged.pop(pn, None)
     for pn, e in NEW.items():
-        if pn not in facts:
-            facts[pn] = e; added += 1
+        facts[pn] = e                      # set (authoritative — also corrects the DR4X standard)
     for pn, rc in FLAG_OUT.items():
         flagged[pn] = {"reason_code": rc, "note": "current-datasheet 400G breakout; λ/standard unprovable"}
     FACTS.write_text(json.dumps(facts, ensure_ascii=False, indent=1), encoding="utf-8")
     FLAGGED.write_text(json.dumps(flagged, ensure_ascii=False, indent=1), encoding="utf-8")
     opt_n = sum(1 for e in NEW.values() if not e["cable"])
-    print("merged %d new parts (%d optics + %d cables); flagged-out +%d (LR4P)" % (added, opt_n, len(NEW) - opt_n, len(FLAG_OUT)))
+    print("phantoms removed: %d | new merged: %d (%d optics + %d cables); flagged-out +%d (LR4P)"
+          % (removed, len(NEW), opt_n, len(NEW) - opt_n, len(FLAG_OUT)))
     print("extreme_facts.json now: %d" % len(facts))
 
 

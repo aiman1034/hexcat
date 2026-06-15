@@ -77,6 +77,8 @@ def dom_of(f):
 def fasertyp(f):
     if f.get("media") == "Kupfer" or f.get("connector") == "RJ45":
         return "Kupfer"
+    if f.get("dual_media"):                # 40G-LM4: 150 m MMF + 1 km SMF
+        return "Multimode/Singlemode"
     return "Multimode" if f.get("media") == "MMF" else "Singlemode"
 
 

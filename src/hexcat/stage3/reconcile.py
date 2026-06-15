@@ -126,21 +126,24 @@ def physical_formfaktor(*candidates: str) -> str | None:
     for text in candidates:
         if not text:
             continue
+        # Pick the EARLIEST-POSITIONED token (the primary end of a cable's "A auf B" — so
+        # "SFP-DD auf QSFP56" -> SFP-DD, not QSFP56 which is higher in the ordered tuple). Ties at the
+        # same position go to the most-specific token (ORDERED is specific-first, scanned first).
+        best_idx, best_tok = None, None
         for tok in C.PHYSICAL_FORMFAKTOR_ORDERED:
             idx = text.find(tok)
             if idx == -1:
                 continue
-            # Guard the right edge: the char after the token must not extend it into a
-            # different (longer) connector we haven't matched — but since we scan
-            # most-specific-first, a longer token would already have matched. We only need
-            # to avoid matching e.g. "SFP" inside "SFP+" when the '+' belongs to the token:
             after = text[idx + len(tok): idx + len(tok) + 1]
             if after in ("+",) and not tok.endswith("+"):
                 continue  # this "SFP" is really "SFP+"; let the SFP+ pass catch it
             before = text[idx - 1: idx] if idx > 0 else ""
             if tok.startswith("SFP") and before.upper() == "Q":
                 continue  # this "SFP" is really "QSFP…" — never collapse QSFP-200 to SFP
-            return tok
+            if best_idx is None or idx < best_idx:
+                best_idx, best_tok = idx, tok
+        if best_tok is not None:
+            return best_tok
     # Cisco PN abbreviation: "QDD" == QSFP-DD (e.g. QDD-400-CU1M, QDD-4ZQ100-CU2M); the 800G
     # variants (QDD-800…) are QSFP-DD800. Only consulted when no explicit token matched above.
     for text in candidates:

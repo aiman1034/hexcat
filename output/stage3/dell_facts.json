@@ -2688,8 +2688,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "OSFP auf OSFP",
+  "breakout": true,
+  "ends_raw": "OSFP auf 2x QSFP112",
   "alt_pns": [],
   "page": 12
  },
@@ -2707,8 +2707,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "OSFP auf OSFP",
+  "breakout": true,
+  "ends_raw": "OSFP auf 2x QSFP112",
   "alt_pns": [],
   "page": 12
  },
@@ -2726,8 +2726,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "OSFP auf OSFP",
+  "breakout": true,
+  "ends_raw": "OSFP auf 2x QSFP112",
   "alt_pns": [],
   "page": 12
  },
@@ -2745,8 +2745,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "OSFP auf OSFP",
+  "breakout": true,
+  "ends_raw": "OSFP auf 2x QSFP112",
   "alt_pns": [],
   "page": 12
  },
@@ -2852,7 +2852,8 @@
   "connector_raw": "duplex LC",
   "wavelength": "1310 nm",
   "media": "MMF",
-  "reach": "150 m",
+  "dual_media": true,
+  "reach": "150 m (MMF) / 1 km (SMF)",
   "standard": "40GBASE-LM4"
  }
 }

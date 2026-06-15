@@ -354,6 +354,38 @@ def check_fibre_connector(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- L5 breakout-ends guard (NEW, L8 Dell finding #1) --------------------------------------------
+_BREAKOUT_PN = re.compile(r"\b\d+\s*[xX]\s*\d+G\b|\b\d+(?:Q28|Q56|Q112|S28|S56|SFP)\b|\b\d+[xX]SFP", re.I)
+
+
+def check_breakout_ends(bundle: Path) -> list[Violation]:
+    """A cable whose PN encodes a BREAKOUT (Nx400G / NxQ28 / NxS28 / NxSFP / 8xSFP56, N>1) must have an
+    'auf Nx …' multiplier in its Anschlusstyp; a same-to-same 'X auf X' means the breakout end was dropped
+    (e.g. O112->OSFP collapsed both ends of DAC-O112-800G2x400G-Q112). Straight cables (no Nx in the PN)
+    are exempt — DAC-O112-800G-xM legitimately reads 'OSFP auf OSFP'."""
+    out = []
+    ahdr, arows = _attrs(bundle)
+    if not ahdr or "Attributname" not in ahdr or "Artikelnummer" not in ahdr:
+        return out
+    i_s, i_n, i_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
+    bysku: dict = {}
+    for r in arows:
+        if len(r) > max(i_s, i_n, i_v):
+            bysku.setdefault(r[i_s], {})[r[i_n]] = r[i_v]
+    for sku, a in bysku.items():
+        ends = a.get("Anschlusstyp") or a.get("Anschlussenden") or ""
+        if "auf" not in ends:                       # not a cable (modules carry a single Anschlusstyp)
+            continue
+        m = _BREAKOUT_PN.search(sku)
+        if not m:
+            continue
+        n = next((int(g) for g in re.findall(r"(\d+)", m.group(0)) if int(g) > 1), 0)
+        if n > 1 and not re.search(r"auf\s+\d+\s*[xX]", ends):
+            out.append(Violation(bundle.name, sku, "Anschlusstyp", "a 'auf Nx …' breakout multiplier", ends,
+                                 "L5: breakout PN but Anschlusstyp has no 'auf Nx' multiplier (breakout end dropped)"))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -390,7 +422,8 @@ def gate(bundle_dir, rules=None) -> GateResult:
 
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
-    l5 = check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
+    l5 = (check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
+          + check_breakout_ends(bundle))
     res.layers.append(LayerResult("L5", not l5, l5))
     l6 = check_completeness(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))

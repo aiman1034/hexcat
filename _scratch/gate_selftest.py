@@ -128,6 +128,10 @@ def fixtures():
         # every Anschlusstyp to MPO-12; the 16-fibre 800G parts (VR8/2×R4) MUST fail the fibre-connector check.
         ("F20 fibre>conn",        ROOT / "output/stage3_Dell",
          lambda d: set_attr_value(d, "Anschlusstyp", "MPO-12", n=400), "L5"),
+        # F21 (L8 Dell #1): force every cable Anschlusstyp to same-to-same "OSFP auf OSFP" — the breakout-PN
+        # cables (DAC-…2x400G / …4Q28 / 8xSFP56) MUST fail (breakout end dropped); straight PNs are exempt.
+        ("F21 breakout-ends",     ROOT / "output/stage3_Dell",
+         lambda d: set_attr_value(d, "Anschlusstyp", "OSFP auf OSFP", n=400), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

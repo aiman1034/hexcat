@@ -64,8 +64,8 @@ _Juniper_note: enumerated 205 raw - 4 alias = 201 distinct; captured 188 (==emit
   flagged 13 reason-coded; 188+13+4=205.
 
 Extreme_transceivers:
-  enumerated: 114
-  captured: 108
+  enumerated: 108
+  captured: 102
   flagged:
     - {pn: 100G-4WDM-QSFP10KM, reason_code: un-groundable-after-ladder}
     - {pn: 100G-4WDM-QSFP20KM, reason_code: un-groundable-after-ladder}
@@ -73,11 +73,13 @@ Extreme_transceivers:
     - {pn: 10331, reason_code: source-blocked}
     - {pn: 40G-LM4-QSFP160KM, reason_code: un-groundable-after-ladder}
     - {pn: 400G-LR4P-QSFPDD10KM, reason_code: un-groundable-after-ladder}
-_Extreme_note: 'L8 round-2 finding B (single-source undercount): re-reconciled vs the CURRENT Extreme
-  datasheet (Workflow-B). captured 108 (==emitted) = the verified 86 (incl. fix A) + 22 NEW from the
-  current sheet (a 400G QSFP-DD tier DR4/FR4/LR4/SR8/DR4X + AOC/DAC cables; 100G SFP-DD DR/FR/LR +
-  100G-PSM4-QSFP10KM + 100G-ER4-QSFP40KM; 10G commercial/industrial/length variants). flagged 6
-  reason-coded (3x 100G-4WDM λ-plan, 10331 SR10-CFP2, 40G-LM4, 400G-LR4P 4x100G-breakout); 108+6=114.'
+_Extreme_note: 'L8 round-2 finding B (single-source undercount) + round-3 phantom sweep (finding #4):
+  re-reconciled vs the CURRENT Extreme datasheet (Workflow-B). captured 102 (==emitted) = the verified 86
+  (incl. fix A) + 16 NEW product-row parts (400G QSFP-DD tier DR4/FR4/LR4/SR8/DR4X + AOC/DACP cables;
+  100G SFP-DD DR/FR/LR + 100G-PSM4-QSFP10KM). The phantom sweep DROPPED 6 line-parser artifacts
+  (100G-ER4-QSFP40KM = ER4LT under a compat-note name; 5x 10G abbreviated/dual-rate names whose real
+  -ET/-IT/dual-rate PNs are already in the 86). flagged 6 reason-coded (3x 100G-4WDM, 10331, 40G-LM4,
+  400G-LR4P); 102+6=108.'
 
 Dell_transceivers:
   enumerated: 163
