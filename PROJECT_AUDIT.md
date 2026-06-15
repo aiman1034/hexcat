@@ -421,6 +421,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (λ-family clone) fires Pass 2; near-dup 0 across all 13 bundles; gate_selftest CERTIFIED; 413 tests. ZIP
   `output/Hexwaren_Ubiquiti_stage3_3297703.zip` (49 SKUs; byte-verified; supersedes `_688f803.zip`,
   deleted). **Awaiting final operator L8.**
+- **λ-FAMILY BASELINE AUDIT (2026-06-15, $0 measurement, no re-emit) — grandfather NOT justified.** Operator
+  asked to verify the 28 Pass-2-grandfathered λ-channel families (Cisco 11, Juniper 15, HPE 1, Dell 1) for the
+  defect class Ubiquiti's CWDM exposed. Measured each family's PN+FC+λ-masked pairwise shingle similarity
+  (the Pass-2 metric). **RESULT: all 28 ≥0.80; 24 of 28 at 1.00.** These ARE live near-dups on shipped
+  brands — channel SKUs differentiated by λ (+derived ITU THz) ONLY, which collapses under λ-masking (same
+  defect as Ubiquiti pre-fix 0.80, but worse). Worst/biggest: **Cisco** 8 DWDM/CWDM families at 1.00 incl.
+  four 32-channel families (GBIC/X2/XFP/XENPAK DWDM ≈128 SKUs) + SFP/SFP10G DWDM+CWDM; 3 BiDi at 0.90–0.96.
+  **Juniper** all 15 at 1.00 (BX BiDi pairs, 1G-CWDM, 25G-DWDM 10-ch). **HPE** 1 at 0.90 (S6H22A/S6H24A,
+  Std="TAA"). **Dell** 1 at 1.00 (400G-SR4.2 Gen3/Gen4 — actually a Gen-revision pair, BiDi dual-λ, more
+  alias than λ-channel — edge case). **NOT FIXED — operator to pull the Cisco + Juniper ZIPs, verify, and
+  decide.** Fix path (if chosen): apply the Ubiquiti CWDM treatment (per-channel use-case/structural variation
+  beyond λ) — a cross-brand re-author + re-L8 per brand. The Pass-2 baseline currently keeps them green; once
+  fixed, remove from near_dup_exempt.yaml.
 
 ---
 
@@ -436,7 +449,7 @@ per-SKU: PN · speed · form factor · type/reach (SR/LR/FR4/…) · connector �
 |---|---|---|---|
 | ~~**Extreme** (+Avaya)~~ **UNBLOCKED** | Cached `extreme-optics-solution-guide.pdf` (15 pp) | **CORRECTED**: the "marketing-bled / not groundable" note used `extract_text` (mangles columns); `extract_tables()` recovers 72 clean rows → **groundable**. Facts BUILT (`extreme_facts.json`, 91 SKUs). No operator action needed to author. | *(optional)* EXOS DB CSV for the 9 blank-λ BiDi/4WDM parts + DDM — not blocking |
 | **Dell** | ✅ **UNBLOCKED 2026-06-15** — Dell "Networking Transceivers and Cables" spec sheet | delltechnologies.com **403**, but a reseller mirror (andovercg.com) serves the GENUINE Dell PDF → §7.1 rung-b. **Cached** `datasheets/cache/dell-networking-optics-datasheet.pdf` (8 pp, full spec grid). 71-SKU facts banked. | (done) |
-| **Supermicro** | supermicro.com networking accessories / transceiver datasheet | **403** on $0 GET | `supermicro-transceivers.{pdf,csv}` |
+| **Supermicro** **SOURCE-HUNT 2026-06-15** | Authoritative denominator = the **store.supermicro.com eStore** — `/server-accessories/transceiver.html` (**AOM-*** optics) + `/server-accessories/cable/networking.html` (**CBL-*** cables). PN schemes: AOM-* transceivers (vendor-coded e.g. `-MLN`/AVAGO/FINISAR/INTEL/Aquantia → dedup like Lenovo/Ubiquiti); CBL-* DAC/AOC/breakout. Range 10G SFP+ / 25G SFP28 / 40G QSFP+ / 100G QSFP28 + DAC/AOC. **BLOCKER: both eStore category pages return HTTP 403 on $0 GET** (matches §10) → can't self-enumerate the denominator. **Scope boundary:** IN = AOM-* Ethernet optics + CBL-* Ethernet DAC/AOC/breakout; OUT = InfiniBand-only cables (IB-QDR/EDR; dual "Ethernet IB-QDR" counts as Ethernet), Supermicro **AOC-*** Add-On Cards (NICs/HBAs — different category, NOT transceivers), **SSE-*** switches. **Reported to operator: need the eStore transceiver + networking-cable category screen-caps (rendered roster, the Ubiquiti method) or a Supermicro transceiver/cable datasheet/CSV to LOCK the denominator. HOLD facts.** | operator: eStore transceiver.html + cable/networking.html rendered screen-caps, OR `supermicro-transceivers.{pdf,csv}` |
 | **Juniper** | Juniper HCT `apps.juniper.net/hct` / optics datasheet | **JS-gated** single-page app — no static HTML enumeration | `juniper-optics.{csv,pdf}` (HCT export) |
 | ~~**Lenovo/IBM**~~ **UNBLOCKED 2026-06-15** | Lenovo Press guides (live WebFetch, no cache needed) — **Workflow-B across 4 docs:** lp1652 + lp1417 (current NIC) **+ lp0609 NE10032 + lp0608 NE2572 (switch guides** = the 40G/1G/100G-LR4 + breakout-cable denominator the NIC guides miss) | none — Lenovo Press serves static fetchable HTML; the round-1 "boundary" was a single-source artifact, fixed by adding the switch guides | (done — 102 SKUs, L8 round-2) |
 | **Huawei** | Huawei optical-module datasheets (`support.huawei.com`) | likely login/region-gated (untested $0) | `huawei-optical-modules.{pdf,csv}` |
