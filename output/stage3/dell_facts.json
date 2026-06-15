@@ -273,7 +273,7 @@
   "pn": "Q28-100G-SR1.2",
   "speed": "100G",
   "ff": "QSFP28",
-  "type": "",
+  "type": "SR1.2",
   "connector": "LC",
   "connector_raw": "duplex LC",
   "wavelength": "850 / 908 nm (BiDi)",
@@ -528,7 +528,7 @@
   "pn": "S56DD-100G-SR1.2",
   "speed": "100G",
   "ff": "SFP-DD",
-  "type": "",
+  "type": "SR1.2",
   "connector": "LC",
   "connector_raw": "duplex LC",
   "wavelength": "850 / 910 nm (BiDi)",
@@ -739,7 +739,7 @@
   "speed": "800G",
   "ff": "OSFP",
   "type": "2VR4",
-  "connector": "MPO-12",
+  "connector": "2x MPO-12",
   "connector_raw": "2xMPO-12 APC",
   "wavelength": "850 nm",
   "media": "MMF",
@@ -754,7 +754,7 @@
   "speed": "800G",
   "ff": "OSFP",
   "type": "2EDR4",
-  "connector": "MPO-12",
+  "connector": "2x MPO-12",
   "connector_raw": "2xMPO-12 APC",
   "wavelength": "1310 nm",
   "media": "SMF",
@@ -799,7 +799,7 @@
   "speed": "800G",
   "ff": "OSFP",
   "type": "2DR4",
-  "connector": "MPO-12",
+  "connector": "2x MPO-12",
   "connector_raw": "2xMPO-12 APC",
   "wavelength": "1310 nm",
   "media": "SMF",
@@ -844,7 +844,7 @@
   "speed": "800G",
   "ff": "OSFP",
   "type": "2DR4",
-  "connector": "MPO-12",
+  "connector": "2x MPO-12",
   "connector_raw": "2xMPO-12 APC",
   "wavelength": "1310 nm",
   "media": "SMF",
@@ -859,7 +859,7 @@
   "speed": "800G",
   "ff": "OSFP",
   "type": "2VR4",
-  "connector": "MPO-12",
+  "connector": "2x MPO-12",
   "connector_raw": "2xMPO-12",
   "wavelength": "850 nm",
   "media": "MMF",
@@ -884,7 +884,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -903,7 +903,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -922,7 +922,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -941,7 +941,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -960,7 +960,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -979,7 +979,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -998,7 +998,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1017,7 +1017,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1036,7 +1036,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1055,7 +1055,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1074,7 +1074,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP+ to SFP+",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1093,7 +1093,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1112,7 +1112,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1131,7 +1131,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1150,7 +1150,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1169,7 +1169,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1188,7 +1188,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1207,7 +1207,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1226,7 +1226,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1245,7 +1245,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "SFP28 to SFP28",
+  "ends_raw": "SFP+ auf SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1264,7 +1264,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1283,7 +1283,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1302,7 +1302,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1321,7 +1321,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1340,7 +1340,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1359,7 +1359,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP+ to QSFP+",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1378,7 +1378,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP+ to 4 × SFP+",
+  "ends_raw": "QSFP+ auf 4x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1397,7 +1397,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP+ to 4 × SFP+",
+  "ends_raw": "QSFP+ auf 4x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1416,7 +1416,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP+ to 4 × SFP+",
+  "ends_raw": "QSFP+ auf 4x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1435,7 +1435,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP+ to 4 × SFP+",
+  "ends_raw": "QSFP+ auf 4x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1454,7 +1454,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP+ to 4 × SFP+",
+  "ends_raw": "QSFP+ auf 4x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1473,7 +1473,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 8 × SFP+",
+  "ends_raw": "QSFP28-DD auf 8x SFP+",
   "alt_pns": [],
   "page": 10
  },
@@ -1492,7 +1492,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1511,7 +1511,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1530,7 +1530,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1549,7 +1549,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1568,7 +1568,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1587,7 +1587,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "S56DD to Q56",
+  "ends_raw": "SFP-DD auf QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -1606,7 +1606,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "S56DD to Q56",
+  "ends_raw": "SFP-DD auf QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -1625,7 +1625,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "S56DD to Q56",
+  "ends_raw": "SFP-DD auf QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -1644,7 +1644,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1663,7 +1663,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1682,7 +1682,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1701,7 +1701,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP28 to QSFP28",
+  "ends_raw": "QSFP+ auf QSFP+",
   "alt_pns": [],
   "page": 11
  },
@@ -1720,7 +1720,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28 to 4 × SFP28",
+  "ends_raw": "QSFP+ auf 4x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1739,7 +1739,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28 to 4 × SFP28",
+  "ends_raw": "QSFP+ auf 4x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1758,7 +1758,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28 to 4 × SFP28",
+  "ends_raw": "QSFP+ auf 4x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1777,7 +1777,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP28 to 4 × SFP28",
+  "ends_raw": "QSFP+ auf 4x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1796,7 +1796,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 2 × QSFP28",
+  "ends_raw": "QSFP28-DD auf 2x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1815,7 +1815,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 2 × QSFP28",
+  "ends_raw": "QSFP28-DD auf 2x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1834,7 +1834,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 2 × QSFP28",
+  "ends_raw": "QSFP28-DD auf 2x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1853,7 +1853,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 2 × QSFP28",
+  "ends_raw": "QSFP28-DD auf 2x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1872,7 +1872,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 8 × SFP28",
+  "ends_raw": "QSFP28-DD auf 8x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1891,7 +1891,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 8 × SFP28",
+  "ends_raw": "QSFP28-DD auf 8x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1910,7 +1910,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "QSFP28-DD to 8 × SFP28",
+  "ends_raw": "QSFP28-DD auf 8x SFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -1929,7 +1929,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -1948,7 +1948,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -1967,7 +1967,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -1986,7 +1986,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2005,7 +2005,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2024,7 +2024,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2043,7 +2043,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "Q28DD to Q28DD",
+  "ends_raw": "QSFP28-DD auf QSFP28-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2062,7 +2062,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2081,7 +2081,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2100,7 +2100,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2118,8 +2118,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2137,8 +2137,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2156,8 +2156,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2175,8 +2175,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2194,8 +2194,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2213,8 +2213,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2232,8 +2232,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2251,8 +2251,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2270,8 +2270,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2289,8 +2289,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2308,8 +2308,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2327,8 +2327,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "Q56DD to S56",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 8x SFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2347,7 +2347,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2366,7 +2366,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2385,7 +2385,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2404,7 +2404,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "Q56DD to 2 x QSFP56",
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2423,7 +2423,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "Q56DD to 2 x QSFP56",
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2442,7 +2442,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "Q56DD to 2 x QSFP56",
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2461,7 +2461,7 @@
   "k3": "AOC Kabel",
   "active": true,
   "breakout": true,
-  "ends_raw": "Q56DD to 2 x QSFP56",
+  "ends_raw": "QSFP-DD auf 2x QSFP56",
   "alt_pns": [],
   "page": 11
  },
@@ -2479,8 +2479,8 @@
   "cable": true,
   "k3": "AOC Kabel",
   "active": true,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q28",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -2498,8 +2498,8 @@
   "cable": true,
   "k3": "AOC Kabel",
   "active": true,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q28",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -2517,8 +2517,8 @@
   "cable": true,
   "k3": "AOC Kabel",
   "active": true,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q28",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -2536,8 +2536,8 @@
   "cable": true,
   "k3": "AOC Kabel",
   "active": true,
-  "breakout": false,
-  "ends_raw": "Q56DD to Q28",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP28",
   "alt_pns": [],
   "page": 11
  },
@@ -2556,7 +2556,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2575,7 +2575,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "QSFP56-DD to QSFP56-DD",
+  "ends_raw": "QSFP-DD auf QSFP-DD",
   "alt_pns": [],
   "page": 11
  },
@@ -2593,8 +2593,8 @@
   "cable": true,
   "k3": "DAC Kabel",
   "active": false,
-  "breakout": false,
-  "ends_raw": "QSFP56-DD to",
+  "breakout": true,
+  "ends_raw": "QSFP-DD auf 4x QSFP28",
   "alt_pns": [],
   "page": 12
  },
@@ -2613,7 +2613,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2632,7 +2632,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2651,7 +2651,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2670,7 +2670,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2689,7 +2689,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to QSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2708,7 +2708,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to QSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2727,7 +2727,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to QSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2746,7 +2746,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to QSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2765,7 +2765,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2784,7 +2784,7 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
  },
@@ -2803,8 +2803,56 @@
   "k3": "DAC Kabel",
   "active": false,
   "breakout": false,
-  "ends_raw": "OSFP112 to OSFP112",
+  "ends_raw": "OSFP auf OSFP",
   "alt_pns": [],
   "page": 12
+ },
+ "QSFP-40G-ESR4": {
+  "cable": false,
+  "alt_pns": [],
+  "page": 15,
+  "_source": "Dell 2017 spec sheet, confirmed current by the 2026 support matrix p15",
+  "pn": "QSFP-40G-ESR4",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "ESR4",
+  "connector": "MPO-12",
+  "connector_raw": "MPO",
+  "wavelength": "850 nm",
+  "media": "MMF",
+  "reach": "400 m",
+  "standard": "40GBASE-ESR4"
+ },
+ "QSFP-40G-ER4": {
+  "cable": false,
+  "alt_pns": [],
+  "page": 15,
+  "_source": "Dell 2017 spec sheet, confirmed current by the 2026 support matrix p15",
+  "pn": "QSFP-40G-ER4",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "ER4",
+  "connector": "LC",
+  "connector_raw": "duplex LC",
+  "wavelength": "1271 / 1291 / 1311 / 1331 nm (CWDM4, 4 Lanes)",
+  "media": "SMF",
+  "reach": "40 km",
+  "standard": "40GBASE-ER4"
+ },
+ "QSFP-40G-LM4": {
+  "cable": false,
+  "alt_pns": [],
+  "page": 15,
+  "_source": "Dell 2017 spec sheet, confirmed current by the 2026 support matrix p15",
+  "pn": "QSFP-40G-LM4",
+  "speed": "40G",
+  "ff": "QSFP+",
+  "type": "LM4",
+  "connector": "LC",
+  "connector_raw": "duplex LC",
+  "wavelength": "1310 nm",
+  "media": "MMF",
+  "reach": "150 m",
+  "standard": "40GBASE-LM4"
  }
 }

@@ -325,6 +325,35 @@ def check_grounding(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- L5 fibre-count vs connector (NEW, L8 Dell finding #2) ---------------------------------------
+def check_fibre_connector(bundle: Path) -> list[Violation]:
+    """A parallel optic's Faseranzahl must physically fit its connector: >=16 fibres need MPO-16 or
+    2×MPO-12 (never a bare MPO-12, which carries 8 fibres / 4 lanes). Catches the 800G 2×R4 mislabel
+    (Faseranzahl 16 on 'MPO-12'). Single-MPO-16 VR8/DR8 and duplex-LC parts pass."""
+    out = []
+    ahdr, arows = _attrs(bundle)
+    if not ahdr or "Attributname" not in ahdr or "Artikelnummer" not in ahdr:
+        return out
+    i_s, i_n, i_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
+    bysku: dict = {}
+    for r in arows:
+        if len(r) > max(i_s, i_n, i_v):
+            bysku.setdefault(r[i_s], {})[r[i_n]] = r[i_v]
+    for sku, a in bysku.items():
+        fz = a.get("Faseranzahl", "")
+        conn = a.get("Anschlusstyp") or a.get("Anschluss") or ""
+        if not fz.isdigit():
+            continue
+        # Flag ONLY the precise impossible case (operator rule): >=16 fibres on a BARE MPO-12. A 16/24-fibre
+        # MPO/MTP (MPO-16, MPO-24, MTP-24, 24-Faser), a Dual/2× MPO-12, or a 1×16 MTP all carry enough fibres.
+        bare_mpo12 = re.search(r"MPO-?12\b", conn, re.I) and not re.search(r"dual|\d\s*[x×]\s*MPO|\b2\s*MPO", conn, re.I)
+        if int(fz) >= 16 and bare_mpo12:
+            out.append(Violation(bundle.name, sku, "Faseranzahl", "MPO-16 or 2×MPO-12 for >=16 fibres",
+                                 "%s fibres / %s" % (fz, conn or "(no connector)"),
+                                 "L5: fibre count vs connector — %s fibres cannot fit a bare '%s' (MPO-12 carries 8)" % (fz, conn)))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -361,7 +390,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
 
     for L in ("L1", "L2", "L3", "L4"):
         res.layers.append(LayerResult(L, not by[L], by[L]))
-    l5 = check_plausibility(bundle) + check_price_sanity(bundle)
+    l5 = check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
     res.layers.append(LayerResult("L5", not l5, l5))
     l6 = check_completeness(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))

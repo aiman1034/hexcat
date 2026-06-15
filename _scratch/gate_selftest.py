@@ -124,6 +124,10 @@ def fixtures():
         # (Positive direction = the known-good bundles, whose real WDM modules carry the set and PASS.)
         ("F19 R4-single-wl",      ROOT / "output/stage3_Extreme",
          lambda d: set_attr_value(d, "Wellenlänge", "1550 nm", n=300), "L3"),
+        # F20 (L8 Dell #2): a >=16-fibre parallel optic on a bare MPO-12 is impossible (carries 8) — force
+        # every Anschlusstyp to MPO-12; the 16-fibre 800G parts (VR8/2×R4) MUST fail the fibre-connector check.
+        ("F20 fibre>conn",        ROOT / "output/stage3_Dell",
+         lambda d: set_attr_value(d, "Anschlusstyp", "MPO-12", n=400), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")

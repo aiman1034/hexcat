@@ -79,10 +79,11 @@ _Extreme_note: enumerated 91 = the distinct grounded SKUs in extreme_facts.json 
   inconsistent); 86+5=91.
 
 Dell_transceivers:
-  enumerated: 160
-  captured: 160
+  enumerated: 163
+  captured: 163
   flagged: []
-_Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercounted). captured 160
-  (==emitted) = 58 optics 1G-800G + 102 DAC/AOC cable length-SKUs. OUT-of-scope (documented in
-  dell_transceivers_completeness.yaml, NOT enumerated gaps) -- Fibre Channel (SFP-16GFC/Q28-128GFC),
-  QSA adapter, generic passive CBL fibre patch/trunk/breakout (no transceiver form factor).'
+_Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercounted). captured 163
+  (==emitted) = 61 optics 1G-800G + 102 DAC/AOC cable length-SKUs. The 61 optics include 3 matrix-only
+  40G parts (ESR4/ER4/LM4) in the 2026 support matrix p15, grounded from the 2017 Dell spec sheet (L8
+  finding #1). OUT-of-scope (documented in dell_transceivers_completeness.yaml, NOT enumerated gaps) --
+  Fibre Channel (SFP-16GFC/Q28-128GFC), QSA adapter, generic passive CBL fibre patch/trunk (no FF).'

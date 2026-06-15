@@ -89,11 +89,39 @@ def media_of(s):
 
 def conn_of(s):
     u = (s or "").upper()
+    if re.search(r"2\s*[X×]\s*MPO", u): return "2x MPO-12"   # 800G 2×R4 (16 fibres over two MPO-12)
     if "MPO-16" in u: return "MPO-16"
     if "MPO" in u:    return "MPO-12" if "12" in u else "MPO"
     if "LC" in u:     return "LC"
     if "RJ" in u:     return "RJ45"
     return rep(s)
+
+
+# cable Anschlussenden from the PN (robust — the connection COLUMN truncates/leaks English in the PDF).
+# Dell shorthand -> locked form-factor tokens; counts from the NxFF breakout pattern.
+_FFTOK = [("O112", "OSFP"), ("OSFP", "OSFP"), ("Q56DD", "QSFP-DD"), ("Q28DD", "QSFP28-DD"), ("S56DD", "SFP-DD"),
+          ("QSFP56", "QSFP56"), ("Q56", "QSFP56"), ("QSFP28", "QSFP28"), ("Q28", "QSFP28"), ("SFP56", "SFP56"),
+          ("S56", "SFP56"), ("SFP28", "SFP28"), ("S28", "SFP28"), ("QSFP", "QSFP+"), ("SFP", "SFP+")]
+
+
+def _resolve_ff(tok):
+    for k, v in _FFTOK:
+        m = re.match(r"(\d+)?[xX]?(%s)\b" % re.escape(k), tok, re.I)
+        if m:
+            return (int(m.group(1)) if m.group(1) else 1), v
+    return None
+
+
+def cable_ends_from_pn(pn):
+    body = re.sub(r"^(DAC|AOC|AEC)-", "", pn, flags=re.I)
+    ffs = [r for r in (_resolve_ff(t) for t in body.split("-")) if r]
+    if not ffs:
+        return ""
+    prim = ffs[0][1]
+    if len(ffs) >= 2:
+        cnt, sec = ffs[1]
+        return "%s auf %dx %s" % (prim, cnt, sec) if cnt > 1 else "%s auf %s" % (prim, sec)
+    return "%s auf %s" % (prim, prim)
 
 
 def reach_of(dist):
@@ -123,7 +151,7 @@ def wl_of(wlcell, ff, m):
 
 def type_of(m):
     u = m.upper()
-    mt = re.search(r"(SR4\.2|SR10|SR8|SR4|SR-?12|ESR4|ESR|VR8|VR4|EDR8|EDR4|LDR4|DR8|DR4|DR|LR4|LR|ER4-?LITE|ER4|ER|ZR\+|ZR|FR4|FR|PSM4|CWDM4|SWDM4|SM4|BIDI|USR|SX|LX|FX|ELX|2SR|2FR4|2EDR4|2VR4|2DR4|T)\b", u)
+    mt = re.search(r"(SR4\.2|SR1\.2|SR10|SR8|SR4|SR-?12|ESR4|ESR|VR8|VR4|EDR8|EDR4|LDR4|DR8|DR4|DR|LR4|LR|ER4-?LITE|ER4|ER|ZR\+|ZR|FR4|FR|PSM4|CWDM4|SWDM4|SM4|BIDI|USR|SX|LX|FX|ELX|2SR|2FR4|2EDR4|2VR4|2DR4|T)\b", u)
     return mt.group(1) if mt else ""
 
 
@@ -182,23 +210,44 @@ def parse_cables(pdf):
                 if not lens:
                     flags.append("%s | cable family no lengths -> EXCLUDED" % fam); continue
                 ff = ff_of(fam)
-                brk = bool(re.search(r"\d+\s*[x×]|to \d", conn))
+                ends = cable_ends_from_pn(fam)                # from the PN, not the truncatable column
+                brk = bool(re.search(r"\bauf \d", ends))
                 for ln in lens:
                     pn = re.sub(r"xM?\b", "%sM" % ln, fam, flags=re.I) if re.search(r"xM?\b", fam, re.I) else fam
                     out[pn] = {"pn": pn, "speed": speed_of(fam) or "", "ff": ff, "type": ctype,
                                "connector": conn_of(conn), "wavelength": None, "media": media_of(med),
                                "reach": "", "length": ln, "standard": "", "cable": True, "k3": k3,
-                               "active": (ctype in ("AOC", "DAC") and "AEC" not in u and ctype == "AOC"),
-                               "breakout": brk, "ends_raw": conn, "alt_pns": [], "page": pi + 1}
+                               "active": (ctype == "AOC"),
+                               "breakout": brk, "ends_raw": ends, "alt_pns": [], "page": pi + 1}
                     if not re.search(r"xM?\b", fam, re.I):
                         break                    # single-length family (already has its length)
     return out
+
+
+# Matrix-only 40G optics: in the 2026 SUPPORT MATRIX (p15: "40GbE SR4 ESR4 LM4 SM4 BIDI PSM4 LR4 ER4")
+# but with NO 2026 spec-table/PN-list row (Dell streamlined the detail tables) -> grounded from the 2017
+# Dell sheet's spec rows (cross-source; both Dell-official, parts matrix-confirmed current, not EOL).
+# (operator L8 finding #1; all other tiers cross-checked against the matrix — 40G was the only gap.)
+def _supplement():
+    base = lambda **k: {"cable": False, "alt_pns": [], "page": 15,
+                        "_source": "Dell 2017 spec sheet, confirmed current by the 2026 support matrix p15", **k}
+    return {
+        "QSFP-40G-ESR4": base(pn="QSFP-40G-ESR4", speed="40G", ff="QSFP+", type="ESR4", connector="MPO-12",
+                              connector_raw="MPO", wavelength="850 nm", media="MMF", reach="400 m", standard="40GBASE-ESR4"),
+        "QSFP-40G-ER4": base(pn="QSFP-40G-ER4", speed="40G", ff="QSFP+", type="ER4", connector="LC",
+                             connector_raw="duplex LC", wavelength="1271 / 1291 / 1311 / 1331 nm (CWDM4, 4 Lanes)",
+                             media="SMF", reach="40 km", standard="40GBASE-ER4"),
+        "QSFP-40G-LM4": base(pn="QSFP-40G-LM4", speed="40G", ff="QSFP+", type="LM4", connector="LC",
+                             connector_raw="duplex LC", wavelength="1310 nm", media="MMF", reach="150 m", standard="40GBASE-LM4"),
+    }
 
 
 def main():
     pdf = pdfplumber.open(PDF)
     facts = parse_optics(pdf)
     facts.update(parse_cables(pdf))
+    for pn, e in _supplement().items():
+        facts.setdefault(pn, e)
     OUT.write_text(json.dumps(facts, ensure_ascii=False, indent=1), encoding="utf-8")
     FLAGS.write_text("\n".join(flags), encoding="utf-8")
     import collections
