@@ -1,38 +1,37 @@
 brand: Dell
 category: transceivers
-# Enumeration source: the official Dell "Networking Transceivers and Cables" spec sheet
-# (datasheets/cache/dell-networking-optics-datasheet.pdf, 8 pp). delltechnologies.com 403'd (the stale
-# §10 block) but a reseller mirror (andovercg.com) serves the GENUINE Dell datasheet PDF -> §7.1 rung-b
-# UNBLOCK. Content is Dell's own (source of truth); the mirror is just the transport.
-# Parsed by _scratch/dell_facts.py via pdfplumber extract_tables() -> output/stage3/dell_facts.json.
+# WORKFLOW-B CORRECTION (operator L8, 2026-06-15): the andovercg mirror was Dell's © 2017 v1.2 sheet
+# (1G-100G only) — a ~3x UNDERCOUNT (the operator's "mirrors go stale" warning, the Juniper/Extreme
+# single-source lesson). The CURRENT sheet (© 2026, 19 pp) was fetched via WebFetch past the
+# delltechnologies.com 403 -> datasheets/cache/dell-networking-optics-CURRENT.pdf. It spans 1G -> 800G.
+# (The 2017 mirror is kept as dell-networking-optics-datasheet.pdf for the undercount audit trail.)
 #
-# STRUCTURE: pages 2-3 = optic spec grid (Product|Model|Max.distance|IEEE Standard|MSA|Receptacle|Fiber|
-# Mode|Power|Wavelength|Temperature -> every grounded value); page 4 = DAC/AOC + breakout cable grid
-# (real Dell cable PNs DAC-SFP-10G-0.5M ... with length families); page 5 = DWDM (G.709 10G + the ITU
-# SFP-10G-W## channel tables); page 8 = the flat Part-number|Description list (denominator).
+# Source structure: optic spec tables pp3-9 (Model | Connector | Wavelength(s) | Media | Distance —
+# wavelengths EXPLICIT, no derivation); cable spec tables pp10-12; flat Model|Description denominator
+# pp18-19. Parser: _scratch/dell_facts.py (v2, current sheet).
 #
-complete: false                  # HARVEST CHECKPOINT — facts foundation banked; refinements below before authoring
-captured_count: 71               # 29 optics + 42 cable length-SKUs in dell_facts.json (clean, no PDF artifacts)
+complete: false                  # HARVEST CHECKPOINT (current source) — vocab + scope + author pending
+captured_count: 182              # 57 optics (1G/10G/25G/40G/100G/200G/400G/800G) + 125 cable length-SKUs
 breakdown:
-  optics_by_speed: {1G: 5, 10G: 6, 40G: 10, 100G: 8}
-  cables: 42                     # DAC/AOC straight + QSFP->4xSFP breakout + 4xRJ45, length-families split per PN
-flagged_facts_stage:
-  - {family: SFP-8GFC-SW / SFP-8GFC-LW, reason_code: out-of-scope, note: "8G FIBRE CHANNEL (non-Ethernet) — OPERATOR SCOPE CALL pending, same class as the SONET-out-of-scope ruling. Default-excluded until confirmed."}
-  - {pn: QSA-QSFP-SFP+, reason_code: out-of-scope, note: "QSFP+->SFP form-factor ADAPTER, not a transceiver (= Cisco QSA)."}
-  - {family: SFP-10G-W17..W61 + SFP-10G-T-DWDM + Tunable-DWDM, reason_code: harvest-gap, note: "fixed-channel/tunable 10G DWDM family — deferred; page-5 ITU tables (W17-W46 visible) give exact per-channel λ. Distinct sub-family to ground + reconcile (channel count vs the W17..W61 range)."}
-# OPEN REFINEMENTS before authoring (RESUME POINT — next pass):
-#  1. QSFP-40G-ER4 (real optic on page 8) MISSED a spec-grid row -> re-parse page 3 / ground from page 8 desc
-#     + the page-7 compat matrix. (LM4-UNIV + SM4 variants WERE captured from the grid; ER4 row glitched.)
-#  2. 100G PN ALIAS reconcile: the spec grid names them QSFP-100G-* ; the page-8 order list names them
-#     Q28-100G-* (Q28-100G-SR4 == QSFP-100G-SR4). Pick the page-8 "Part number" as canonical (Dell's order
-#     code), keep the grid name as alt_pn. Also fix the parse glitch "QSFP-100GPSM-IR" (missing hyphen) and
-#     map Q28-MTP-PSM4-5M.
-#  3. Cross-check captured set vs the page-8 denominator -> reconcile EXACT (every page-8 optic captured or
-#     flagged); cables: page-8 lists the families, page-4 grid has the length PNs (already split).
-#  4. CXP-100G-SR10: CXP form factor (in the locked set) — keep; confirm Faseranzahl (SR10 = 20 fibres).
-#  5. Force10 legacy: this sheet is current PowerSwitch; if older Force10/Dell-EMC optics are in the
-#     assortment, a 2nd source (Force10 optics matrix) may extend the universe — Workflow-B after the core set.
-verdict: Dell UNBLOCKED + groundable (corrects the stale §10 "403/JS-blocked" label). 71-SKU clean facts
-  foundation banked; ~5 refinements (ER4 gap, 100G Q28/QSFP alias, page-8 cross-check, DWDM sub-family,
-  8GFC scope call) before author -> gate -> ZIP for operator L8. Authoring deferred to a fresh-context pass
-  (MISSION §9: bank verified facts as a checkpoint; do not half-build).
+  optics_by_speed: {1G: 4, 10G: 7, 25G: 3, 40G: 4, 100G: 18, 200G: 1, 400G: 11, 800G: 9}
+  optics_by_ff: {SFP: 4, SFP+: 7, SFP28: 3, QSFP+: 4, QSFP28: 15, QSFP56: 1, QSFP-DD: 11, OSFP: 9}
+scope_flags:
+  - {family: SFP-16GFC-SW / Q28-128GFC-SW4, reason_code: out-of-scope, note: "Fibre Channel — catalog-wide FC-OUT policy (operator, SONET-class). Excluded."}
+  - {pn: QSA-Q28-S28, reason_code: out-of-scope, note: "QSFP28->SFP28 adapter, not a transceiver. Excluded."}
+# OPEN before authoring (RESUME — next focused pass; explicit, flag-don't-fabricate):
+#  1. FORM-FACTOR VOCAB GAPS (taxonomy gaps to FIX, lock-step rules.yaml+taxonomy+constants.py + count test):
+#     - SFP-DD : S56DD-100G-FR/LR/SR1.2 are 100G SFP-DD MODULES (3 parts; currently mis-mapped to SFP/flagged).
+#     - QSFP28-DD : Q28DD-200G/80G-2SR4 (1 part; flagged out pending the token).
+#  2. CABLE SCOPE: 125 cable SKUs include generic MPO/LC PASSIVE PATCH cords (CBL-MTP12-OM4-xM, CBL-LC-OM4-xM)
+#     + DAC/AOC. MISSION includes DAC/AOC/MPO cables; generic LC-LC fibre jumpers are borderline structured-
+#     cabling -> confirm scope (include as MPO/LC Kabel, or flag the LC-LC jumpers). Verify the 125 count.
+#  3. MINOR facts cleanup: type-parse gaps (SR1.2/LR1 -> empty type); space-wrapped dual-rate PNs
+#     (Q28-100G/40G-PSM4-IR); Gen3/Gen4/FEC variant suffixes kept as distinct SKUs (verify intended).
+#  4. THEN: dell_author.py (adapt extreme_author.py — facts-direct optics, DOM media-grounded, Faseranzahl
+#     for OSFP/QSFP-DD parallel + duplex, ZR+ tunable=coherent so B.6 passes, Dell PowerSwitch theme,
+#     add Dell to rules.yaml vendors) -> backfill -> gate L1-L7 -> ZIP + gate_completeness.yaml -> operator L8.
+verdict: Dell re-grounded on the CURRENT 2026 datasheet (corrects a ~3x undercount from the stale 2017
+  mirror). 182-SKU full-universe (1G-800G) facts banked with EXPLICIT-grounded wavelengths/connectors;
+  2 vocab tokens + cable scope + minor cleanup before author -> gate -> ZIP. Authoring deferred to a
+  focused pass (MISSION §9: scope tripled mid-task via Workflow-B; bank verified facts, don't half-build
+  a 7-tier brand on depleted context).
