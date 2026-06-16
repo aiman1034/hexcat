@@ -434,6 +434,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   decide.** Fix path (if chosen): apply the Ubiquiti CWDM treatment (per-channel use-case/structural variation
   beyond λ) — a cross-brand re-author + re-L8 per brand. The Pass-2 baseline currently keeps them green; once
   fixed, remove from near_dup_exempt.yaml.
+- **λ-GRID POLICY DECIDED + Pass-2 made STRUCTURAL (2026-06-16, `480cf9d`; detector/fixtures/registry only,
+  zero product bytes).** Operator byte-audited the Cisco DWDM pages: well-formed grids are CORRECT (λ + THz +
+  ITU-Kanal in Titel/Name/attr/prose; 141 distinct titles) — the 1.00 λ-masked similarity is the honest
+  grid signature (λ = the per-SKU distinction, like cable lengths), NOT thin content. Do NOT re-author
+  channel families. **Refined Pass-2** from the blanket grandfather into a structural **channel-identity
+  gate**: EXEMPT a λ-family when every member surfaces its wavelength in Titel + Wellenlänge attr + PN-masked
+  prose; EXEMPT BiDi matched-pairs (Tx/Rx swap in attr + D/U in PN — complementary halves); FLAG only
+  families where a member's λ is in the PN/attr ONLY (templated body) — thin near-dup. **Removed the 26
+  blanket λ-family registry entries** (Cisco DWDM/CWDM grids + all BiDi now exempt STRUCTURALLY);
+  near_dup_exempt 100→74 (72 aliases kept). **Real finding (grandfather had hidden it):** Juniper's
+  **1G-CWDM (4-ch) + 25G-LR DWDM (10-ch)** grids are GENUINELY THIN — generic platform prose, λ only in
+  PN/attr, unlike Cisco's per-channel λ-in-prose → recorded as **2 HONEST reason-coded `THIN…fix-pending`
+  baseline entries** (explicitly NOT certified-correct), pending operator decision to re-author or accept.
+  Fixtures: **F24** thin λ-clone (λ-free body) FIRES Pass-2; **F25** well-formed grid (λ in Titel+attr+prose,
+  ~1.0 λ-masked) stays EXEMPT — both on the registry-free Ubiquiti base. Cisco DWDM/CWDM + Ubiquiti pass via
+  channel identity (not the hardcoded list). All 13 bundles green; gate_selftest CERTIFIED (12 known-good +
+  F24 fires + F25 exempt); 413 tests. **NEXT: Supermicro (awaiting the complete Show-All eStore rosters).**
 
 ---
 
