@@ -173,6 +173,46 @@ def set_chan_in_std(d, sku_chan):
     _rw(mf, ";", mfn)
 
 
+def set_std_for(d, sku, val):
+    """Set ONE named SKU's Standard attribute — used by the scope-exclusion fixtures (F27-F29)."""
+    f = attrs_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); ni = h.index("Attributname"); vi = h.index("Attributwert")
+        for r in rows[1:]:
+            if len(r) > vi and r[si] == sku and r[ni] == "Standard":
+                r[vi] = val
+        return rows
+    _rw(f, ",", fn)
+
+
+def scope_fixtures():
+    """L7 proof for check_scope_exclusion (the Cisco scope-leak classifier; report-only, not wired into
+    gate() pass/fail — so these call the check DIRECTLY). Pure SONET/SDH + pure FC MUST fire; a multirate
+    Ethernet optic that also lists OC-192/STM-64 (the 'BASE' in-scope signal) MUST NOT fire."""
+    base = ROOT / "output/stage3_Cisco"
+    tmp = Path(tempfile.mkdtemp())
+    # pick a real, currently in-scope Ethernet SKU to overwrite (first SKU whose Standard contains BASE)
+    arows = list(csv.reader(attrs_of(base).open(encoding="utf-8-sig", newline=""), delimiter=","))
+    h = arows[0]; si, ni, vi = h.index("Artikelnummer"), h.index("Attributname"), h.index("Attributwert")
+    SUB = next(r[si] for r in arows[1:] if len(r) > vi and r[ni] == "Standard" and "BASE" in r[vi].upper())
+    cases = [
+        ("F27 pure-SONET-fires", lambda d: set_std_for(d, SUB, "SONET/SDH OC-3/STM-1 (Short Reach)"), True),
+        ("F28 pure-FC-fires",    lambda d: set_std_for(d, SUB, "8GFC"), True),
+        ("F29 multirate-OC192-passes",
+         lambda d: set_std_for(d, SUB, "10GBASE-ER/-EW, OC-192/STM-64 IR-2 (Multirate)"), False),
+    ]
+    print("\n=== SCOPE-EXCLUSION FIXTURES (check_scope_exclusion — report-only classifier) ===")
+    ok = True
+    for name, mut, must_fire in cases:
+        d = tmp / name.split()[0]; shutil.rmtree(d, ignore_errors=True); shutil.copytree(base, d); mut(d)
+        fired = SUB in {v.sku for v in G.check_scope_exclusion(d)}
+        good = (fired == must_fire); ok &= good
+        verdict = ("OK" if good else "BLIND!") if must_fire else ("OK" if good else "FALSE-FLAG!")
+        print(f"  {name:30s} fired={fired} expect={must_fire} {verdict}")
+    shutil.rmtree(tmp, ignore_errors=True)
+    return ok
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -268,7 +308,7 @@ def fixtures():
 
 
 if __name__ == "__main__":
-    kg, fx = known_good(), fixtures()
-    print(f"\nKNOWN-GOOD all-pass: {kg} | FIXTURES all-caught: {fx}")
-    print("FULL GATE L1-L6 CERTIFIED" if (kg and fx) else "GATE NOT CERTIFIED — fix + re-run")
-    sys.exit(0 if (kg and fx) else 1)
+    kg, fx, sx = known_good(), fixtures(), scope_fixtures()
+    print(f"\nKNOWN-GOOD all-pass: {kg} | FIXTURES all-caught: {fx} | SCOPE-fixtures: {sx}")
+    print("FULL GATE L1-L6 CERTIFIED" if (kg and fx and sx) else "GATE NOT CERTIFIED — fix + re-run")
+    sys.exit(0 if (kg and fx and sx) else 1)

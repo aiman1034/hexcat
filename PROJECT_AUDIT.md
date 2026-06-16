@@ -494,6 +494,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     `near_dup_exempt.yaml` as `[HELD]` (scope-held reason, NOT "re-author-pending"). **Operator decision
     needed:** out-scope the 4 (reason `out-of-scope`/`source-blocked`) — and check whether the real 4-lane
     `JNP-QSFP-100G-CWDM`/`-CWDM4` module is itself in the roster (possible coverage gap).
+- **SCOPE-EXCLUSION gate check + cross-brand scope-leak scan (2026-06-16; REPORT-ONLY, nothing dropped).**
+  Operator found a scope leak in CERTIFIED Cisco c006e74 (out-of-scope SONET/SDH + Fibre Channel optics).
+  Added `gate.check_scope_exclusion(bundle)` — keyed on the **Standard** attribute: flags SONET/SDH
+  (`SONET|SDH|OC-\d|STM-\d`) and Fibre Channel (`\d+G?FC|Fibre Channel`), **exempting any optic whose
+  Standard also contains `BASE`** (a multirate Ethernet optic that merely also lists an OC-192/STM-64 or FC
+  rate is sold as an Ethernet transceiver → in scope). Fixtures **F27** (pure SONET fires), **F28** (pure FC
+  fires), **F29** (multirate `10GBASE-ER/OC-192` passes) — all green. **Deliberately NOT wired into gate()
+  pass/fail** (report-only) so cleared brands stay green and no scope is presumed before the operator
+  decides; wiring (reason-coded removal of the confirmed set + scope-pending exemption for the rest) is the
+  post-confirmation step. **Cross-brand scan (`_scratch/scope_scan.py`) across all 12 cleared brands:**
+  **Cisco = 14 SONET/SDH + 24 FC (exactly matches the operator's manual counts) + 6 TDM/CE**
+  (`SFP-E1F/T1F/T3F-SATOP-I` = 3 SAToP + `SFP-CH-OC3STM1-I`,`SFP-TS-OC3STM1-I`,`SFP-TS-OC12STM4-I` = 3
+  channelized/Smart-SFP framers — surfaced beyond the operator's enumeration; these 3 have an EMPTY Standard
+  attr so the Standard-keyed check can't see them, caught only by the PN-pattern TDM extension). **All 11
+  other brands CLEAN — including Arista (operator's prime suspect) and Juniper. The scope leak is Cisco-only.**
+  The 13 GRAY multirate optics (9× 10GBASE+OC-192 XFP, 2× CPAK-100G, 2× DS-SFP-FCGE `2GFC / 1000BASE-X`) are
+  correctly NOT flagged (BASE-exempt) — consistent with the operator's "likely keep." TDM/CE is a separate
+  out-of-scope class beyond the SONET/FC spec (report-only) — extend the check to TDM? **HOLD all drops +
+  gray/TDM decisions for operator confirmation.** All 13 green, CERTIFIED, 413 tests.
 
 ---
 

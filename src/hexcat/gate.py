@@ -588,6 +588,40 @@ def check_ungrounded_claim(bundle: Path) -> list[Violation]:
     return out
 
 
+# ---- SCOPE-EXCLUSION classifier (Cisco scope-leak finding, 2026-06-16) ---------------------------
+# Keyed on the Standard attribute. Flags product CLASSES outside Hexwaren's transceiver scope:
+# SONET/SDH framing optics and Fibre Channel optics. CRITICAL exemption: a *multirate* Ethernet optic
+# that ALSO lists an OC-192/STM-64 or FC rate is IN scope (sold as an Ethernet transceiver) — the
+# "BASE" token (10GBASE/1000BASE/40GBASE/100GBASE…) is the in-scope signal and exempts it. This is why
+# e.g. "10GBASE-ER/-EW, OC-192/STM-64 IR-2 (Multirate)" and "2GFC / 1000BASE-X" do NOT fire.
+# REPORT-ONLY: deliberately NOT wired into gate()'s L1-L6 pass/fail — the operator confirms the removal
+# scope + gray-area calls BEFORE any SKU is dropped; wiring (with reason-coded removal of the confirmed
+# set + a scope-pending exemption for the rest) is the post-confirmation step. Does NOT cover TDM/
+# circuit-emulation (SAToP/E1/T1/T3) — that is a separate class surfaced in the report, not this spec.
+_SCOPE_SONET = re.compile(r"\bSONET\b|\bSDH\b|\bOC-?\d{1,3}\b|\bSTM-?\d{1,3}\b", re.I)
+_SCOPE_FC = re.compile(r"\b\d{1,3}G?FC\b|\bFibre[\s-]?Channel\b", re.I)
+
+
+def check_scope_exclusion(bundle: Path) -> list[Violation]:
+    out = []
+    ahdr, arows = _attrs(bundle)
+    if not ahdr or "Attributname" not in ahdr or "Artikelnummer" not in ahdr:
+        return out
+    i_s, i_n, i_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
+    std = {r[i_s]: r[i_v] for r in arows
+           if len(r) > max(i_s, i_n, i_v) and r[i_n] == "Standard"}
+    for sku, v in std.items():
+        if "BASE" in v.upper():                  # multirate/dual Ethernet optic -> IN scope, exempt
+            continue
+        if _SCOPE_SONET.search(v):
+            out.append(Violation(bundle.name, sku, "Standard", "Ethernet transceiver (in scope)", v,
+                                 "SCOPE: out-of-scope SONET/SDH framing optic — reason-code out-of-scope"))
+        elif _SCOPE_FC.search(v):
+            out.append(Violation(bundle.name, sku, "Standard", "Ethernet transceiver (in scope)", v,
+                                 "SCOPE: out-of-scope Fibre Channel optic — reason-code out-of-scope"))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
