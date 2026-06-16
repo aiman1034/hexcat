@@ -401,7 +401,17 @@ _CABLE_STD = re.compile(r"\b(CR\d?|Twinax|Direct[ -]?Attach|Active Optical|AOC|D
 # λ-channel mask (Pass 2): wavelengths (nm), ITU frequencies (THz/GHz), C-Band, "Kanal …" — so prose that
 # differs ONLY by wavelength collapses and a templated CWDM/DWDM channel family is caught.
 _LAMBDA_MASK = re.compile(r"\b1[0-9]{3}(?:[.,]\d+)?\s*nm|\b1[0-9]{3}(?:[.,]\d+)?\b|"
-                          r"\b\d{2,3}[.,]\d+\s*THz|\bGHz\b|C-Band|Kanal\s*\S+", re.I)
+                          r"\b\d{2,3}[.,]\d+\s*THz|\bGHz\b|C-Band|Kanal\s*\S+|"
+                          r"CWDM\s*\(\s*ch\s*\d+\s*\)|\(\s*(?:CW|DW)\s*\d+\s*\)|\b(?:CW|DW)\d+\b|\bch\s?\d+\b", re.I)
+# Channel-code stripper for the Pass-2 CLUSTERING KEY: some brands bake the channel into the Standard
+# attribute (e.g. "25G-LR CWDM(ch47)", "100G LR (CW27)"), so each channel reads as a different Std and the
+# family never clusters -> never flags. Strip parentheticals + CW/DW/CH+digits so all channels of a family
+# collapse regardless of WHERE the channel identity is recorded. ("CWDM"/"DWDM" type tokens are preserved.)
+_CHAN_CODE = re.compile(r"\([^)]*\)|\b(?:CW|DW|CH)\s*\d+\b|\bch\d+\b", re.I)
+
+
+def _norm_key(s: str) -> str:
+    return re.sub(r"\s+", " ", _CHAN_CODE.sub("", s or "")).strip()
 # integer wavelength tokens from a Wellenlänge attribute value (e.g. "1530,33 nm" -> "1530",
 # "1270 nm (Tx) / 1330 nm (Rx)" -> 1270,1330). Used for the Pass-2 channel-identity test.
 _LAMBDA_NM = re.compile(r"(\d{3,4})(?:[.,]\d+)?\s*nm")
@@ -508,7 +518,7 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
     # (λ in the PN only, templated body) whose λ-masked framing collapses >= the threshold — thin near-dup.
     p2: dict = {}
     for sku, std, ff, reach, wl, _sh, shl, ident in recs:
-        p2.setdefault((std, ff, reach), []).append((sku, wl, shl, ident))
+        p2.setdefault((_norm_key(std), _norm_key(ff), _norm_key(reach)), []).append((sku, wl, shl, ident))
     for sig, mem in p2.items():
         if len(mem) < 2 or len({w for _, w, _, _ in mem}) < 2:        # need a genuine multi-λ family
             continue
@@ -518,7 +528,9 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
             continue   # BiDi matched-pair (D/U complementary halves; identity = swapped Tx/Rx λ in PN + attr)
         if frozenset(s for s, _, _, _ in mem) in exempt:              # reason-coded thin-grid baseline (fix-pending)
             continue
-        for (s1, _w1, h1, _i1), (s2, _w2, h2, _i2) in combinations(mem, 2):
+        for (s1, _w1, h1, i1), (s2, _w2, h2, i2) in combinations(mem, 2):
+            if i1 and i2:                  # both carry channel identity -> legit grid pair (don't flag a
+                continue                   # well-formed channel just because a thin sibling polluted the family)
             sim = _jaccard(h1, h2)
             if sim >= _NEAR_DUP_SIM:
                 _emit(s1, s2, sim, sig[0], sig[1],

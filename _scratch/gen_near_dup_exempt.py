@@ -84,14 +84,19 @@ def clusters_for(brand):
     # members lacking channel identity in prose — with an HONEST fix-pending reason (NOT "correct").
     p2 = {}
     for sku, std, ff, reach, wl, _sh, shl, ident in recs:
-        p2.setdefault((std, ff, reach), []).append((sku, wl, shl, ident))
+        p2.setdefault((G._norm_key(std), G._norm_key(ff), G._norm_key(reach)), []).append((sku, wl, shl, ident))
     for sig, mem in p2.items():
         if len(mem) < 2 or len({w for _, w, _, _ in mem}) < 2 or all(i for _, _, _, i in mem):
             continue
         if any(re.search(r"BiDi|\bT[xX]\b|\bR[xX]\b", w) for _, w, _, _ in mem) or "BX" in sig[0] or "BiDi" in sig[0]:
             continue   # BiDi matched-pair -> gate exempts structurally, no entry
-        if any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, w1, h1, i1), (s2, w2, h2, i2) in combinations(mem, 2)):
-            _add([s for s, _, _, _ in mem], sig[0], sig[1],
+        # only the members in flagged (>=0.85, at-least-one-thin) pairs are the genuinely-thin grid SKUs
+        thin = set()
+        for (s1, w1, h1, i1), (s2, w2, h2, i2) in combinations(mem, 2):
+            if not (i1 and i2) and G._jaccard(h1, h2) >= G._NEAR_DUP_SIM:
+                thin.add(s1); thin.add(s2)
+        if thin:
+            _add(sorted(thin), sig[0], sig[1],
                  "THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco "
                  "λ-in-prose standard). KNOWN DEFECT, fix-pending (re-author per-channel); NOT certified-correct")
     return hits

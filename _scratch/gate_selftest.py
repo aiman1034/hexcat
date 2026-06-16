@@ -149,6 +149,30 @@ def set_grid_lambda(d, sku_wl):
     _rw(f, ";", fn)
 
 
+def set_chan_in_std(d, sku_chan):
+    """Bake the channel code into the Standard attribute (e.g. '10G CWDM (ch27)') + give a wavelength-FREE
+    generic body. Without Pass-2 key-normalization each channel reads as a different Std and never clusters;
+    WITH it they collapse -> thin -> MUST FIRE. Proves the clustering-key normalization fix."""
+    body = ("<p>Dieser Transceiver verbindet Netzwerkgeräte über Glasfaser und ist für den professionellen "
+            "Einsatz vorgesehen; er wird als versiegelte Neuware geliefert und ist im Betrieb steckbar.</p>")
+    af = attrs_of(d)
+    def afn(rows):
+        hh = rows[0]; si = hh.index("Artikelnummer"); ni = hh.index("Attributname"); vi = hh.index("Attributwert")
+        for r in rows[1:]:
+            if len(r) > vi and r[si] in sku_chan and r[ni] == "Standard":
+                r[vi] = "10G CWDM (ch%s)" % sku_chan[r[si]]
+        return rows
+    _rw(af, ",", afn)
+    mf = main_of(d)
+    def mfn(rows):
+        hh = rows[0]; si = hh.index("Artikelnummer"); bi = hh.index("Beschreibung")
+        for r in rows[1:]:
+            if len(r) > bi and r[si] in sku_chan:
+                r[bi] = body
+        return rows
+    _rw(mf, ";", mfn)
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -213,6 +237,12 @@ def fixtures():
         ("F25 lambda-grid-ok",    ROOT / "output/stage3_Ubiquiti",
          lambda d: set_grid_lambda(d, {"UACC-OM-SFP10-1310": "1310", "UACC-OM-SFP10-1330": "1330",
                                        "UACC-OM-SFP10-1470": "1470"}), "noL5"),
+        # F26 (L8 clustering blind-spot): channel code baked into the Standard attr (10G CWDM (ch27/29/31))
+        # so each channel reads as a different Std. Pass-2 key-normalization must collapse them; thin λ-free
+        # body -> MUST FIRE. (Pre-fix this never clustered -> never flagged.)
+        ("F26 chan-in-std",       ROOT / "output/stage3_Ubiquiti",
+         lambda d: set_chan_in_std(d, {"UACC-OM-SFP10-1270": "27", "UACC-OM-SFP10-1290": "29",
+                                       "UACC-OM-SFP10-1310": "31"}), "L5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
     print("\n=== NEGATIVE/POSITIVE FIXTURES (each MUST behave as expected) ===")

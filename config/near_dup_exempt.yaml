@@ -164,6 +164,13 @@ Cisco:
   - DP04QSDD-HK9
   reason: cross-name alias(es) of one optic — prose reuse accepted at L8
   std: 400G Coherent (OIF, ITU-T G.709)
+- ff: SFP
+  members:
+  - SFP-OC3-MM
+  - SFP-OC3-SR
+  reason: THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco λ-in-prose standard). KNOWN DEFECT,
+    fix-pending (re-author per-channel); NOT certified-correct
+  std: SONET/SDH OC-3/STM-1
 Dell:
 - ff: SFP+
   members:
@@ -468,6 +475,15 @@ Juniper:
   - JNP-SFP-25G-LR-BXU-I
   reason: cross-name alias(es) of one optic — prose reuse accepted at L8
   std: 25G-LR BiDi
+- ff: QSFP28
+  members:
+  - JNP-QSFP-100G-LR-CW27
+  - JNP-QSFP-100G-LR-CW29
+  - JNP-QSFP-100G-LR-CW31
+  - JNP-QSFP-100G-LR-CW33
+  reason: THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco λ-in-prose standard). KNOWN DEFECT,
+    fix-pending (re-author per-channel); NOT certified-correct
+  std: 100G LR
 - ff: SFP
   members:
   - EX-SFP-GE80KCW1470
@@ -477,6 +493,24 @@ Juniper:
   reason: THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco λ-in-prose standard). KNOWN DEFECT,
     fix-pending (re-author per-channel); NOT certified-correct
   std: 1G-CWDM
+- ff: SFP28
+  members:
+  - JNP-SFP-25G-LR-CW-47
+  - JNP-SFP-25G-LR-CW-49
+  - JNP-SFP-25G-LR-CW-51
+  - JNP-SFP-25G-LR-CW-53
+  - JNP-SFP-25G-LR-CW-55
+  reason: THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco λ-in-prose standard). KNOWN DEFECT,
+    fix-pending (re-author per-channel); NOT certified-correct
+  std: 25G-LR CWDM
+- ff: SFP28
+  members:
+  - JNP-SFP-25G-LR-CW27-40
+  - JNP-SFP-25G-LR-CW29-40
+  - JNP-SFP-25G-LR-CW31-40
+  reason: THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco λ-in-prose standard). KNOWN DEFECT,
+    fix-pending (re-author per-channel); NOT certified-correct
+  std: 25G-LR CWDM
 - ff: SFP28
   members:
   - JNP-SFP-25G-LR-I-DW3033
