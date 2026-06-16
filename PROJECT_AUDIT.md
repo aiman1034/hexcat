@@ -451,6 +451,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ~1.0 λ-masked) stays EXEMPT — both on the registry-free Ubiquiti base. Cisco DWDM/CWDM + Ubiquiti pass via
   channel identity (not the hardcoded list). All 13 bundles green; gate_selftest CERTIFIED (12 known-good +
   F24 fires + F25 exempt); 413 tests. **NEXT: Supermicro (awaiting the complete Show-All eStore rosters).**
+- **Pass-2 CLUSTERING BLIND SPOT fixed (2026-06-16, `019767d`; detector/fixtures/registry only, zero product
+  bytes).** Operator's normalized scan found Pass-2 had MISSED 12 thin Juniper SKUs (2 whole families): the
+  channel code was baked into the **Standard** attr (`25G-LR CWDM(ch47)`, `100G LR (CW27)`), so each channel
+  read as a different Std → the family never clustered → never flagged. **Fix:** `_norm_key` strips
+  parentheticals + CW/DW/CH+digits from the Pass-2 clustering key (Std/FF/reach) so a family collapses
+  regardless of WHERE the channel identity sits; hardened `_LAMBDA_MASK` (CW/DW\d, lowercase ch\d,
+  CWDM(chNN)); and refined to a **per-pair** flag (flag a pair only if ≥1 member lacks channel identity) —
+  which also fixed a latent false-positive (a thin sibling no longer false-flags the well-formed Cisco DWDM
+  channels in a merged family). Fixture **F26** (channel-in-Std thin grid) MUST fire — proves the
+  normalization. **Full cross-brand thin-λ-grid scan under the fixed gate:** **Juniper 26 / 5 families**
+  (100G-CWDM ×4 `JNP-QSFP-100G-LR-CW27/29/31/33`; 1G-CWDM ×4 `EX-SFP-GE80KCW1470/1510/1550/1590`; 25G-CWDM
+  ×8 = `JNP-SFP-25G-LR-CW-47/49/51/53/55` @10km + `…-CW27-40/29-40/31-40` @40km; 25G-DWDM ×10
+  `JNP-SFP-25G-LR-I-DW*`) + **Cisco 2** (`SFP-OC3-MM`/`-SR`, SONET OC-3 — also a scope question: SONET is
+  out-of-scope elsewhere) + **all 10 other brands CLEAN** (blind spot was Juniper+Cisco only). Recorded as
+  honest `THIN…fix-pending` baseline (74→78). All 13 green, CERTIFIED, 413 tests. **HOLD re-author until the
+  operator confirms the full cross-brand scope** (expected: 26 Juniper → Cisco per-channel standard; Cisco's
+  2 SONET pending scope decision).
 
 ---
 
