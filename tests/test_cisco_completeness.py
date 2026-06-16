@@ -55,11 +55,15 @@ def _harvested() -> set[str]:
 
 def test_artifact_counts_account_for_whole_universe():
     a = _artifact()
-    # captured + gaps + confirmed_gone == universe  (nothing unaccounted, nothing double-counted)
-    assert a["captured_count"] + a["gap_count"] + a["confirmed_gone_count"] == a["universe_total"]
+    # captured + gaps + confirmed_gone + out_of_scope == universe (nothing unaccounted/double-counted).
+    # out_of_scope = universe PNs deliberately not carried (wrong protocol — SONET/SDH, FC, TDM),
+    # reason-coded out-of-scope; an explicit disposition, never a silent drop.
+    assert (a["captured_count"] + a["gap_count"] + a["confirmed_gone_count"]
+            + a.get("out_of_scope_count", 0)) == a["universe_total"]
     assert a["gap_count"] == len(a["gaps"])
     assert a["confirmed_gone_count"] == len(a["confirmed_gone"])
     assert a["extra_count"] == len(a["extra"])
+    assert a.get("out_of_scope_count", 0) == len(a.get("out_of_scope", []))
 
 
 def test_universe_is_nonempty_and_from_a_populated_source():
@@ -140,11 +144,13 @@ def test_union_triage_exclusions_are_grounded_non_transceivers():
 
 
 def test_cisco_verdict_is_complete_and_consistent():
-    """With the union fully triaged, Cisco transceivers reconcile to COMPLETE — captured == universe,
-    zero gaps — and the verdict is the computed rule, not a hand-set flag."""
+    """With the union fully triaged, Cisco transceivers reconcile to COMPLETE — every in-scope universe
+    PN captured, zero gaps — and the verdict is the computed rule, not a hand-set flag. Out-of-scope PNs
+    (SONET/SDH, FC, TDM — reason-coded, deliberately not carried) are excused from gaps, so the identity
+    is captured + out_of_scope == universe (not captured == universe)."""
     a = _artifact()
     assert a["gap_count"] == 0
-    assert a["captured_count"] == a["universe_total"]
+    assert a["captured_count"] + a.get("out_of_scope_count", 0) == a["universe_total"]
     assert a["complete"] is True
     rep = reconcile_brand("transceivers", "Cisco", _harvested(), root=ROOT)
     assert rep.complete is True and not rep.gaps

@@ -1,38 +1,130 @@
-Cisco_transceivers:
-  enumerated: 588
-  captured: 588
-  flagged: []
 Arista_transceivers:
-  enumerated: 347
   captured: 347
+  enumerated: 347
+  flagged: []
+Cisco_transceivers:
+  captured: 544
+  enumerated: 588
+  flagged:
+  - pn: DS-SFP-4X32G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC-2G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC-2G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC10G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC10G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC16G-ELW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC16G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC16G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC16GELW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC32G-ELW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC32G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC32G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC4G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC4G-MR
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC4G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC64G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC64G-SW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC8G-ER
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC8G-LW
+    reason_code: out-of-scope
+  - pn: DS-SFP-FC8G-SW
+    reason_code: out-of-scope
+  - pn: DS-X2-FC10G-CX4
+    reason_code: out-of-scope
+  - pn: DS-X2-FC10G-ER
+    reason_code: out-of-scope
+  - pn: DS-X2-FC10G-LR
+    reason_code: out-of-scope
+  - pn: DS-X2-FC10G-SR
+    reason_code: out-of-scope
+  - pn: ONS-SI-2G-S1
+    reason_code: out-of-scope
+  - pn: SFP-CH-OC3STM1-I
+    reason_code: out-of-scope
+  - pn: SFP-E1F-SATOP-I
+    reason_code: out-of-scope
+  - pn: SFP-OC12-IR1
+    reason_code: out-of-scope
+  - pn: SFP-OC12-LR1
+    reason_code: out-of-scope
+  - pn: SFP-OC12-LR2
+    reason_code: out-of-scope
+  - pn: SFP-OC12-MM
+    reason_code: out-of-scope
+  - pn: SFP-OC12-SR
+    reason_code: out-of-scope
+  - pn: SFP-OC3-IR1
+    reason_code: out-of-scope
+  - pn: SFP-OC3-LR1
+    reason_code: out-of-scope
+  - pn: SFP-OC3-LR2
+    reason_code: out-of-scope
+  - pn: SFP-OC3-MM
+    reason_code: out-of-scope
+  - pn: SFP-OC3-SR
+    reason_code: out-of-scope
+  - pn: SFP-OC48-IR1
+    reason_code: out-of-scope
+  - pn: SFP-OC48-LR2
+    reason_code: out-of-scope
+  - pn: SFP-OC48-SR
+    reason_code: out-of-scope
+  - pn: SFP-T1F-SATOP-I
+    reason_code: out-of-scope
+  - pn: SFP-T3F-SATOP-I
+    reason_code: out-of-scope
+  - pn: SFP-TS-OC12STM4-I
+    reason_code: out-of-scope
+  - pn: SFP-TS-OC3STM1-I
+    reason_code: out-of-scope
+Dell_transceivers:
+  captured: 163
+  enumerated: 163
+  flagged: []
+Extreme_transceivers:
+  captured: 102
+  enumerated: 108
+  flagged:
+  - pn: 100G-4WDM-QSFP10KM
+    reason_code: un-groundable-after-ladder
+  - pn: 100G-4WDM-QSFP20KM
+    reason_code: un-groundable-after-ladder
+  - pn: 100G-4WDM-QSFM40KM
+    reason_code: un-groundable-after-ladder
+  - pn: 10331
+    reason_code: source-blocked
+  - pn: 40G-LM4-QSFP160KM
+    reason_code: un-groundable-after-ladder
+  - pn: 400G-LR4P-QSFPDD10KM
+    reason_code: un-groundable-after-ladder
+Fortinet_transceivers:
+  captured: 87
+  enumerated: 87
   flagged: []
 HPE_transceivers:
-  enumerated: 147
   captured: 147
-  flagged: []
-Fortinet_transceivers:
-  enumerated: 87
-  captured: 87
-  flagged: []
-Meraki_transceivers:
-  enumerated: 25
-  captured: 25
-  flagged: []
-NVIDIA_transceivers:
-  enumerated: 85
-  captured: 85
-  flagged: []
-MikroTik_transceivers:
-  enumerated: 24
-  captured: 24
-  flagged: []
-MikroTik_switches:
-  enumerated: 36
-  captured: 36
+  enumerated: 147
   flagged: []
 Juniper_transceivers:
+  captured: 184
   enumerated: 201
-  captured: 188
   flagged:
   - pn: JNP-100G-4X25G-3M
     reason_code: out-of-scope
@@ -60,72 +152,78 @@ Juniper_transceivers:
     reason_code: un-groundable-after-ladder
   - pn: SFP-1GE-FE
     reason_code: un-groundable-after-ladder
-_Juniper_note: enumerated 205 raw - 4 alias = 201 distinct; captured 188 (==emitted);
-  flagged 13 reason-coded; 188+13+4=205.
-
-Extreme_transceivers:
-  enumerated: 108
-  captured: 102
-  flagged:
-    - {pn: 100G-4WDM-QSFP10KM, reason_code: un-groundable-after-ladder}
-    - {pn: 100G-4WDM-QSFP20KM, reason_code: un-groundable-after-ladder}
-    - {pn: 100G-4WDM-QSFM40KM, reason_code: un-groundable-after-ladder}
-    - {pn: 10331, reason_code: source-blocked}
-    - {pn: 40G-LM4-QSFP160KM, reason_code: un-groundable-after-ladder}
-    - {pn: 400G-LR4P-QSFPDD10KM, reason_code: un-groundable-after-ladder}
-_Extreme_note: 'L8 round-2 finding B (single-source undercount) + round-3 phantom sweep (finding #4):
-  re-reconciled vs the CURRENT Extreme datasheet (Workflow-B). captured 102 (==emitted) = the verified 86
-  (incl. fix A) + 16 NEW product-row parts (400G QSFP-DD tier DR4/FR4/LR4/SR8/DR4X + AOC/DACP cables;
-  100G SFP-DD DR/FR/LR + 100G-PSM4-QSFP10KM). The phantom sweep DROPPED 6 line-parser artifacts
-  (100G-ER4-QSFP40KM = ER4LT under a compat-note name; 5x 10G abbreviated/dual-rate names whose real
-  -ET/-IT/dual-rate PNs are already in the 86). flagged 6 reason-coded (3x 100G-4WDM, 10331, 40G-LM4,
-  400G-LR4P); 102+6=108.'
-
-Dell_transceivers:
-  enumerated: 163
-  captured: 163
+  - pn: JNP-QSFP-100G-LR-CW27
+    reason_code: out-of-scope
+  - pn: JNP-QSFP-100G-LR-CW29
+    reason_code: out-of-scope
+  - pn: JNP-QSFP-100G-LR-CW31
+    reason_code: out-of-scope
+  - pn: JNP-QSFP-100G-LR-CW33
+    reason_code: out-of-scope
+Lenovo_transceivers:
+  captured: 104
+  enumerated: 104
   flagged: []
-_Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercounted). captured 163
-  (==emitted) = 61 optics 1G-800G + 102 DAC/AOC cable length-SKUs. The 61 optics include 3 matrix-only
-  40G parts (ESR4/ER4/LM4) in the 2026 support matrix p15, grounded from the 2017 Dell spec sheet (L8
-  finding #1). OUT-of-scope (documented in dell_transceivers_completeness.yaml, NOT enumerated gaps) --
-  Fibre Channel (SFP-16GFC/Q28-128GFC), QSA adapter, generic passive CBL fibre patch/trunk (no FF).'
-
+Meraki_transceivers:
+  captured: 25
+  enumerated: 25
+  flagged: []
+MikroTik_switches:
+  captured: 36
+  enumerated: 36
+  flagged: []
+MikroTik_transceivers:
+  captured: 24
+  enumerated: 24
+  flagged: []
+NVIDIA_transceivers:
+  captured: 85
+  enumerated: 85
+  flagged: []
 Ubiquiti_transceivers:
-  enumerated: 49
   captured: 49
+  enumerated: 49
   flagged: []
+_Dell_note: 'current 2026 Dell spec sheet (Workflow-B; the 2017 mirror undercounted). captured 163 (==emitted)
+  = 61 optics 1G-800G + 102 DAC/AOC cable length-SKUs. The 61 optics include 3 matrix-only 40G parts (ESR4/ER4/LM4)
+  in the 2026 support matrix p15, grounded from the 2017 Dell spec sheet (L8 finding #1). OUT-of-scope
+  (documented in dell_transceivers_completeness.yaml, NOT enumerated gaps) -- Fibre Channel (SFP-16GFC/Q28-128GFC),
+  QSA adapter, generic passive CBL fibre patch/trunk (no FF).'
+_Extreme_note: 'L8 round-2 finding B (single-source undercount) + round-3 phantom sweep (finding #4):
+  re-reconciled vs the CURRENT Extreme datasheet (Workflow-B). captured 102 (==emitted) = the verified
+  86 (incl. fix A) + 16 NEW product-row parts (400G QSFP-DD tier DR4/FR4/LR4/SR8/DR4X + AOC/DACP cables;
+  100G SFP-DD DR/FR/LR + 100G-PSM4-QSFP10KM). The phantom sweep DROPPED 6 line-parser artifacts (100G-ER4-QSFP40KM
+  = ER4LT under a compat-note name; 5x 10G abbreviated/dual-rate names whose real -ET/-IT/dual-rate PNs
+  are already in the 86). flagged 6 reason-coded (3x 100G-4WDM, 10331, 40G-LM4, 400G-LR4P); 102+6=108.'
+_Juniper_note: enumerated 205 raw - 4 alias = 201 distinct; captured 188 (==emitted); flagged 13 reason-coded;
+  188+13+4=205.
+_Lenovo_note: 'L8 round-2: the 74-SKU universe was a SOURCE artifact (two Broadcom NIC guides only list
+  optics those NICs use -> 40G/1G/100G-LR4 absent). BROADENED via Workflow-B across FOUR Lenovo Press
+  guides: lp1652 57504 + lp1417 57508 (current NIC) + lp0609 NE10032 + lp0608 NE2572 (switch guides, WITHDRAWN).
+  captured 104 (==emitted) = 33 optics (1G SFP SX/LX/T x3 + 10G SFP+ SR/LR/ER/-T/dual-rate x16 + 25G SFP28
+  SR/LR incl dual-rate x5 + 40G QSFP+ SR4/iSR4/eSR4/BiDi/LR4 x5 + 100G QSFP28 SR4+LR4 x4) + 71 DAC/AOC/breakout
+  cables (1/10/25/40/100/200G + 40G->4x10G + 100G->4x25G). All product-ROW (phantom-guard). L8 round-3
+  (102->104): added 2x 10G-SR 85C extended-temp optics (00NU537 + 00VX183, grounded from the Lenovo/IBM
+  Support "85 Degree C" overview + ServerProven sweep, finding (4)); 40G SR4 reach-grades now typed SR4/iSR4/eSR4
+  (finding (2)); 00MY034 dual-rate corrected to 1G/10G (finding (3)); all same-spec optic clusters re-authored
+  to GROUNDED-only unique prose (L8 round-4: round-3 mined unlogged OEM/qualification claims -> fabrication;
+  stripped. Variation now = soft use-case framing + coarse prefix lineage + published 85C temp only).
+  Pairs L5 near-dup (<=0.27) with the new L5 ungrounded-claim guard (no OEM/vendor token without a Verification_Log
+  row). findings (1)-(4) cleared. NEVER-DROP: 28 parts sourced from the withdrawn switch guides carry
+  lifecycle=legacy (real Lenovo/IBM-BNT optics, INCLUDED + EOL-flagged informational, current orderability
+  unconfirmed) — see lenovo_flags.txt. IBM/BNT feature codes woven into Beschreibung. OUT-of-scope (documented,
+  NOT gaps): generic LC-LC patch cords, passive MTP-4xLC fibre breakout (no FF — Dell precedent), Mellanox
+  HDR InfiniBand AOC. 100G optics = SR4+LR4 (no Lenovo CWDM4/PSM4/SWDM4); NO 200G/400G Ethernet optical
+  MODULE (only a 200G QSFP56 DAC) -> documented boundary.'
 _Ubiquiti_note: 'Ubiquiti (UniFi) — denominator LOCKED + operator-signed-off against the techspecs.ui.com
   "SFP & Fiber (29)" roster (operator full-page screen-cap, cached) + "SFP Liberation Day (6)" (a subset,
   no additions). captured 49 (==emitted) = 24 optic modules (1G SX/BiDi/copper x3 + 10G SR/LR/BiDi/multigig
-  x4 + 10G CWDM 12-channel 1270-1590 + 25G SR/LR x2 + 100G SR4/LR4/PSM4 x3) + 25 DAC/AOC length-SKUs
-  (DAC-SFP10/SFP28/QSFP28 0.5/1/3m + AOC-SFP10/SFP28/QSFP28 5/10/20/30m + Uplink-SFP28 0.15/0.3/3/30m,
-  hybrid copper-DAC<=0.3m / fibre-AOC>=3m). All specs web-verified per-PN (1000-rule). Dedup: legacy UFiber
-  UF- code woven as alt order number (extra_log); UF-RJ45-10G SUPERSEDED-not-aliased by UACC-CM-RJ45-MG;
-  UF-SM-1G (1G SM duplex) has NO current roster SKU -> legacy-flagged, not emitted. OUT-of-scope (flagged in
-  ubiquiti_flags.txt, NOT silent): 9 roster items (5 OFC/FC fibre patch cords, 2 CWDM mux UACC-CWDM-4/-8,
-  UACC-SFP-Wizard programmer, F-POE-G2 media converter) + the GPON/EPON UFiber-OLT PON line (carrier-PON,
-  out like SONET/FC) + the RJ45 & Copper (17) patch/adapter/converter category. 20 IN families + 9 OUT = 29
-  roster exactly accounted. PSM4 surfaced by the roster (not in either pre-roster candidate list).'
-Lenovo_transceivers:
-  enumerated: 104
-  captured: 104
-  flagged: []
-_Lenovo_note: 'L8 round-2: the 74-SKU universe was a SOURCE artifact (two Broadcom NIC guides only list
-  optics those NICs use -> 40G/1G/100G-LR4 absent). BROADENED via Workflow-B across FOUR Lenovo Press
-  guides: lp1652 57504 + lp1417 57508 (current NIC) + lp0609 NE10032 + lp0608 NE2572 (switch guides,
-  WITHDRAWN). captured 104 (==emitted) = 33 optics (1G SFP SX/LX/T x3 + 10G SFP+ SR/LR/ER/-T/dual-rate
-  x16 + 25G SFP28 SR/LR incl dual-rate x5 + 40G QSFP+ SR4/iSR4/eSR4/BiDi/LR4 x5 + 100G QSFP28 SR4+LR4 x4)
-  + 71 DAC/AOC/breakout cables (1/10/25/40/100/200G + 40G->4x10G + 100G->4x25G). All product-ROW
-  (phantom-guard). L8 round-3 (102->104): added 2x 10G-SR 85C extended-temp optics (00NU537 + 00VX183,
-  grounded from the Lenovo/IBM Support "85 Degree C" overview + ServerProven sweep, finding (4)); 40G SR4
-  reach-grades now typed SR4/iSR4/eSR4 (finding (2)); 00MY034 dual-rate corrected to 1G/10G (finding (3));
-  all same-spec optic clusters re-authored to GROUNDED-only unique prose (L8 round-4: round-3 mined
-  unlogged OEM/qualification claims -> fabrication; stripped. Variation now = soft use-case framing +
-  coarse prefix lineage + published 85C temp only). Pairs L5 near-dup (<=0.27) with the new L5
-  ungrounded-claim guard (no OEM/vendor token without a Verification_Log row). findings (1)-(4) cleared. NEVER-DROP: 28 parts sourced from the withdrawn switch guides carry lifecycle=legacy
-  (real Lenovo/IBM-BNT optics, INCLUDED + EOL-flagged informational, current orderability unconfirmed) —
-  see lenovo_flags.txt. IBM/BNT feature codes woven into Beschreibung. OUT-of-scope (documented, NOT
-  gaps): generic LC-LC patch cords, passive MTP-4xLC fibre breakout (no FF — Dell precedent), Mellanox
-  HDR InfiniBand AOC. 100G optics = SR4+LR4 (no Lenovo CWDM4/PSM4/SWDM4); NO 200G/400G Ethernet optical
-  MODULE (only a 200G QSFP56 DAC) -> documented boundary.'
+  x4 + 10G CWDM 12-channel 1270-1590 + 25G SR/LR x2 + 100G SR4/LR4/PSM4 x3) + 25 DAC/AOC length-SKUs (DAC-SFP10/SFP28/QSFP28
+  0.5/1/3m + AOC-SFP10/SFP28/QSFP28 5/10/20/30m + Uplink-SFP28 0.15/0.3/3/30m, hybrid copper-DAC<=0.3m
+  / fibre-AOC>=3m). All specs web-verified per-PN (1000-rule). Dedup: legacy UFiber UF- code woven as
+  alt order number (extra_log); UF-RJ45-10G SUPERSEDED-not-aliased by UACC-CM-RJ45-MG; UF-SM-1G (1G SM
+  duplex) has NO current roster SKU -> legacy-flagged, not emitted. OUT-of-scope (flagged in ubiquiti_flags.txt,
+  NOT silent): 9 roster items (5 OFC/FC fibre patch cords, 2 CWDM mux UACC-CWDM-4/-8, UACC-SFP-Wizard
+  programmer, F-POE-G2 media converter) + the GPON/EPON UFiber-OLT PON line (carrier-PON, out like SONET/FC)
+  + the RJ45 & Copper (17) patch/adapter/converter category. 20 IN families + 9 OUT = 29 roster exactly
+  accounted. PSM4 surfaced by the roster (not in either pre-roster candidate list).'

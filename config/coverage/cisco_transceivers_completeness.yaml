@@ -2,30 +2,31 @@ brand: Cisco
 category: transceivers
 complete: true
 universe_total: 550
-captured_count: 550
+captured_count: 531
 gap_count: 0
 confirmed_gone_count: 0
-extra_count: 76
+extra_count: 72
 populated_sources: 3
 routed_out_count: 30
+out_of_scope_count: 19
 per_source:
 - id: tmg_matrix
   kind: compatibility_matrix
   total: 408
   populated: true
-  captured: 408
+  captured: 389
   gaps: 0
 - id: eol_eos_bulletins
   kind: eol_eos_bulletins
   total: 156
   populated: true
-  captured: 156
+  captured: 153
   gaps: 0
 - id: ordering_guide
   kind: ordering_guide
   total: 311
   populated: true
-  captured: 311
+  captured: 292
   gaps: 0
 - id: gpl_price_list
   kind: price_list
@@ -93,16 +94,12 @@ extra:
 - DWDM-GBIC-59.79
 - DWDM-GBIC-60.61
 - E1000-2-G
+- MGBLH1
+- MGBLX1
+- MGBSX1
+- MGBT1
 - ONS-CXP2-SR25
 - ONS-SI-2G-S1
-- POM-OC3-MM
-- POM-OC3-SMIR
-- POM-OC3-SMLR
-- POM-OC48-IR1-LC
-- POM-OC48-LR2-LC
-- POM-OC48-LR2-LC-C
-- POM-OC48-SR-LC
-- POM-OC48-SR-LC-C
 - QSFP-100G-AOC
 - QSFP-100G-ER4
 - QSFP-40-SR-BD
@@ -143,3 +140,23 @@ routed_out:
 - MGBLX1
 - MGBSX1
 - MGBT1
+out_of_scope:
+- SFP-CH-OC3STM1-I
+- SFP-E1F-SATOP-I
+- SFP-OC12-IR1
+- SFP-OC12-LR1
+- SFP-OC12-LR2
+- SFP-OC12-MM
+- SFP-OC12-SR
+- SFP-OC3-IR1
+- SFP-OC3-LR1
+- SFP-OC3-LR2
+- SFP-OC3-MM
+- SFP-OC3-SR
+- SFP-OC48-IR1
+- SFP-OC48-LR2
+- SFP-OC48-SR
+- SFP-T1F-SATOP-I
+- SFP-T3F-SATOP-I
+- SFP-TS-OC12STM4-I
+- SFP-TS-OC3STM1-I

@@ -34,6 +34,61 @@ brands:
       - '^MA-'
       - '^MGB'
 
+    # Universe PNs deliberately NOT carried — out of Hexwaren's transceiver scope by PROTOCOL, not a
+    # gap: SONET/SDH framing optics, Fibre Channel optics, and TDM/circuit-emulation framers. These
+    # appear in the TMG matrix (they are Cisco optics) but Hexwaren sells Ethernet transceivers, so
+    # they are excused from the gap list and reported. Operator-confirmed drop 2026-06-16; reason-coded
+    # (reason_code out-of-scope) in config/coverage/gate_completeness.yaml and dropped from the bundle.
+    # Detected + fixture-proven by gate.check_scope_exclusion (SONET/SDH + FC by Standard; TDM by PN).
+    out_of_scope:
+      # SONET/SDH (14)
+      - ONS-SI-2G-S1
+      - SFP-OC3-MM
+      - SFP-OC3-SR
+      - SFP-OC3-IR1
+      - SFP-OC3-LR1
+      - SFP-OC3-LR2
+      - SFP-OC12-MM
+      - SFP-OC12-SR
+      - SFP-OC12-IR1
+      - SFP-OC12-LR1
+      - SFP-OC12-LR2
+      - SFP-OC48-SR
+      - SFP-OC48-IR1
+      - SFP-OC48-LR2
+      # Fibre Channel (24)
+      - DS-SFP-FC-2G-SW
+      - DS-SFP-FC-2G-LW
+      - DS-SFP-FC4G-SW
+      - DS-SFP-FC4G-LW
+      - DS-SFP-FC4G-MR
+      - DS-SFP-FC8G-SW
+      - DS-SFP-FC8G-LW
+      - DS-SFP-FC8G-ER
+      - DS-SFP-FC10G-SW
+      - DS-SFP-FC10G-LW
+      - DS-SFP-FC16G-SW
+      - DS-SFP-FC16G-LW
+      - DS-SFP-FC16G-ELW
+      - DS-SFP-FC16GELW
+      - DS-SFP-FC32G-SW
+      - DS-SFP-FC32G-LW
+      - DS-SFP-FC32G-ELW
+      - DS-SFP-FC64G-SW
+      - DS-SFP-FC64G-LW
+      - DS-SFP-4X32G-SW
+      - DS-X2-FC10G-SR
+      - DS-X2-FC10G-LR
+      - DS-X2-FC10G-ER
+      - DS-X2-FC10G-CX4
+      # TDM / circuit-emulation (6): SAToP pseudowire + channelized/transparent OC-x Smart-SFP framers
+      - SFP-E1F-SATOP-I
+      - SFP-T1F-SATOP-I
+      - SFP-T3F-SATOP-I
+      - SFP-CH-OC3STM1-I
+      - SFP-TS-OC3STM1-I
+      - SFP-TS-OC12STM4-I
+
     sources:
       - id: tmg_matrix
         kind: compatibility_matrix

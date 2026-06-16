@@ -185,27 +185,55 @@ def set_std_for(d, sku, val):
     _rw(f, ",", fn)
 
 
+def scope_inject(d, src_sku, new_pn, new_std):
+    """Rename src_sku -> new_pn in the Attributes file and set its Standard (=''  clears it, mimicking the
+    empty-Standard TDM framers). check_scope_exclusion reads only the Attributes file, so this suffices."""
+    f = attrs_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); ni = h.index("Attributname"); vi = h.index("Attributwert")
+        for r in rows[1:]:
+            if r[si] == src_sku:
+                r[si] = new_pn
+                if r[ni] == "Standard":
+                    r[vi] = new_std
+        return rows
+    _rw(f, ",", fn)
+
+
 def scope_fixtures():
-    """L7 proof for check_scope_exclusion (the Cisco scope-leak classifier; report-only, not wired into
-    gate() pass/fail — so these call the check DIRECTLY). Pure SONET/SDH + pure FC MUST fire; a multirate
-    Ethernet optic that also lists OC-192/STM-64 (the 'BASE' in-scope signal) MUST NOT fire."""
+    """L7 proof for check_scope_exclusion (the Cisco scope-leak check, now wired into gate() L6). Calls the
+    check DIRECTLY (a fixture mutating a single SKU is cleaner than a whole-bundle layer run). MUST fire:
+    pure SONET/SDH, pure FC, a SAToP PN, a channelized OC-x framer PN (empty Standard). MUST NOT fire:
+    a multirate optic carrying the 'BASE' in-scope signal, and an operator-confirmed gray keeper."""
     base = ROOT / "output/stage3_Cisco"
     tmp = Path(tempfile.mkdtemp())
-    # pick a real, currently in-scope Ethernet SKU to overwrite (first SKU whose Standard contains BASE)
     arows = list(csv.reader(attrs_of(base).open(encoding="utf-8-sig", newline=""), delimiter=","))
     h = arows[0]; si, ni, vi = h.index("Artikelnummer"), h.index("Attributname"), h.index("Attributwert")
-    SUB = next(r[si] for r in arows[1:] if len(r) > vi and r[ni] == "Standard" and "BASE" in r[vi].upper())
+    # 4 distinct, currently in-scope Ethernet SKUs (Standard contains BASE) to overwrite
+    subs = []
+    for r in arows[1:]:
+        if len(r) > vi and r[ni] == "Standard" and "BASE" in r[vi].upper() and r[si] not in subs:
+            subs.append(r[si])
+        if len(subs) >= 4:
+            break
+    S0, S1, S2, S3 = subs[:4]
     cases = [
-        ("F27 pure-SONET-fires", lambda d: set_std_for(d, SUB, "SONET/SDH OC-3/STM-1 (Short Reach)"), True),
-        ("F28 pure-FC-fires",    lambda d: set_std_for(d, SUB, "8GFC"), True),
-        ("F29 multirate-OC192-passes",
-         lambda d: set_std_for(d, SUB, "10GBASE-ER/-EW, OC-192/STM-64 IR-2 (Multirate)"), False),
+        ("F27 pure-SONET-fires", S0, lambda d: set_std_for(d, S0, "SONET/SDH OC-3/STM-1 (Short Reach)"), True),
+        ("F28 pure-FC-fires",    S0, lambda d: set_std_for(d, S0, "8GFC"), True),
+        ("F29 multirate-OC192-passes", S0,
+         lambda d: set_std_for(d, S0, "10GBASE-ER/-EW, OC-192/STM-64 IR-2 (Multirate)"), False),
+        ("F30 SAToP-PN-fires", "SFP-E1F-SATOP-I",
+         lambda d: scope_inject(d, S1, "SFP-E1F-SATOP-I", ""), True),
+        ("F31 OCx-framer-fires", "SFP-TS-OC3STM1-I",
+         lambda d: scope_inject(d, S2, "SFP-TS-OC3STM1-I", ""), True),
+        ("F32 gray-keeper-exempt", "DS-SFP-FCGE-SW",
+         lambda d: scope_inject(d, S3, "DS-SFP-FCGE-SW", "8GFC"), False),
     ]
-    print("\n=== SCOPE-EXCLUSION FIXTURES (check_scope_exclusion — report-only classifier) ===")
+    print("\n=== SCOPE-EXCLUSION FIXTURES (check_scope_exclusion — wired into L6) ===")
     ok = True
-    for name, mut, must_fire in cases:
+    for name, target, mut, must_fire in cases:
         d = tmp / name.split()[0]; shutil.rmtree(d, ignore_errors=True); shutil.copytree(base, d); mut(d)
-        fired = SUB in {v.sku for v in G.check_scope_exclusion(d)}
+        fired = target in {v.sku for v in G.check_scope_exclusion(d)}
         good = (fired == must_fire); ok &= good
         verdict = ("OK" if good else "BLIND!") if must_fire else ("OK" if good else "FALSE-FLAG!")
         print(f"  {name:30s} fired={fired} expect={must_fire} {verdict}")

@@ -588,18 +588,27 @@ def check_ungrounded_claim(bundle: Path) -> list[Violation]:
     return out
 
 
-# ---- SCOPE-EXCLUSION classifier (Cisco scope-leak finding, 2026-06-16) ---------------------------
-# Keyed on the Standard attribute. Flags product CLASSES outside Hexwaren's transceiver scope:
-# SONET/SDH framing optics and Fibre Channel optics. CRITICAL exemption: a *multirate* Ethernet optic
-# that ALSO lists an OC-192/STM-64 or FC rate is IN scope (sold as an Ethernet transceiver) — the
-# "BASE" token (10GBASE/1000BASE/40GBASE/100GBASE…) is the in-scope signal and exempts it. This is why
-# e.g. "10GBASE-ER/-EW, OC-192/STM-64 IR-2 (Multirate)" and "2GFC / 1000BASE-X" do NOT fire.
-# REPORT-ONLY: deliberately NOT wired into gate()'s L1-L6 pass/fail — the operator confirms the removal
-# scope + gray-area calls BEFORE any SKU is dropped; wiring (with reason-coded removal of the confirmed
-# set + a scope-pending exemption for the rest) is the post-confirmation step. Does NOT cover TDM/
-# circuit-emulation (SAToP/E1/T1/T3) — that is a separate class surfaced in the report, not this spec.
+# ---- SCOPE-EXCLUSION check (Cisco scope-leak finding, 2026-06-16; wired into L6 after the drop) ---
+# Flags product CLASSES outside Hexwaren's transceiver scope:
+#   • SONET/SDH framing optics      (Standard: SONET|SDH|OC-\d|STM-\d)
+#   • Fibre Channel optics          (Standard: \d+G?FC|Fibre Channel)
+#   • TDM / circuit-emulation       (SAToP + channelized/transparent OC-x framers — their Standard attr
+#                                    is EMPTY, so detection is by PN/name pattern, not Standard)
+# CRITICAL exemption: a *multirate* Ethernet optic that ALSO lists an OC-192/STM-64 or FC rate is IN
+# scope (sold as an Ethernet transceiver) — the "BASE" token (10GBASE/1000BASE/40GBASE/100GBASE…) is the
+# in-scope signal and exempts it (e.g. "10GBASE-ER/-EW, OC-192/STM-64 (Multirate)", "2GFC / 1000BASE-X").
+# _SCOPE_KEEP = the operator-confirmed GRAY keepers (2026-06-16) — explicit allowlist on top of the BASE
+# rule (defense-in-depth against the fuzzier PN patterns). Wired into gate() L6 once the 44 Cisco
+# out-of-scope SKUs were dropped + the 4 Juniper phantoms removed, so every emitted bundle is now clean.
 _SCOPE_SONET = re.compile(r"\bSONET\b|\bSDH\b|\bOC-?\d{1,3}\b|\bSTM-?\d{1,3}\b", re.I)
 _SCOPE_FC = re.compile(r"\b\d{1,3}G?FC\b|\bFibre[\s-]?Channel\b", re.I)
+_SCOPE_TDM_PN = re.compile(r"SATOP|^SFP-CH-.*STM|^SFP-TS-.*STM|-E1F-|-T1F-|-T3F-", re.I)
+_SCOPE_TDM_STD = re.compile(r"\bSAToP\b|circuit[\s-]?emulation|Schaltkreisemulation|\bG\.?703\b|"
+                            r"pseudowire|\bTDM\b|\bPDH\b|\bCESoP\b", re.I)
+_SCOPE_KEEP = frozenset({   # operator-confirmed gray keepers — multirate/dual optics sold as Ethernet
+    "XFP-10GER-192IR+", "XFP-10GER-OC192IR", "XFP-10GLR-OC192SR", "XFP-10GZR-OC192LR",
+    "XFP10GER-192IR-L", "XFP10GER192IR-RGD", "XFP10GLR-192SR-L", "XFP10GLR192SR-RGD", "XFP10GZR192LR-RGD",
+    "CPAK-10X10G-ERL", "CPAK-10X10G-LR", "DS-SFP-FCGE-LW", "DS-SFP-FCGE-SW"})
 
 
 def check_scope_exclusion(bundle: Path) -> list[Violation]:
@@ -608,17 +617,29 @@ def check_scope_exclusion(bundle: Path) -> list[Violation]:
     if not ahdr or "Attributname" not in ahdr or "Artikelnummer" not in ahdr:
         return out
     i_s, i_n, i_v = ahdr.index("Artikelnummer"), ahdr.index("Attributname"), ahdr.index("Attributwert")
-    std = {r[i_s]: r[i_v] for r in arows
-           if len(r) > max(i_s, i_n, i_v) and r[i_n] == "Standard"}
-    for sku, v in std.items():
-        if "BASE" in v.upper():                  # multirate/dual Ethernet optic -> IN scope, exempt
+    skus, std = [], {}
+    for r in arows:
+        if len(r) > max(i_s, i_n, i_v):
+            if r[i_s] not in std and r[i_s] not in skus:
+                skus.append(r[i_s])
+            if r[i_n] == "Standard":
+                std[r[i_s]] = r[i_v]
+    def V(sku, cls):
+        return Violation(bundle.name, sku, "Standard", "Ethernet transceiver (in scope)",
+                         std.get(sku, "(empty Standard)"),
+                         "SCOPE: out-of-scope %s optic — reason-code out-of-scope" % cls)
+    for sku in skus:
+        if sku in _SCOPE_KEEP:                       # operator-confirmed gray keeper -> in scope
             continue
-        if _SCOPE_SONET.search(v):
-            out.append(Violation(bundle.name, sku, "Standard", "Ethernet transceiver (in scope)", v,
-                                 "SCOPE: out-of-scope SONET/SDH framing optic — reason-code out-of-scope"))
-        elif _SCOPE_FC.search(v):
-            out.append(Violation(bundle.name, sku, "Standard", "Ethernet transceiver (in scope)", v,
-                                 "SCOPE: out-of-scope Fibre Channel optic — reason-code out-of-scope"))
+        v = std.get(sku, "")
+        if "BASE" in v.upper():                      # multirate/dual Ethernet optic -> in scope, exempt
+            continue
+        if v and _SCOPE_SONET.search(v):
+            out.append(V(sku, "SONET/SDH"))
+        elif v and _SCOPE_FC.search(v):
+            out.append(V(sku, "Fibre Channel"))
+        elif _SCOPE_TDM_PN.search(sku) or (v and _SCOPE_TDM_STD.search(v)):
+            out.append(V(sku, "TDM/circuit-emulation"))
     return out
 
 
@@ -661,7 +682,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     l5 = (check_plausibility(bundle) + check_price_sanity(bundle) + check_fibre_connector(bundle)
           + check_breakout_ends(bundle) + check_near_dup_prose(bundle) + check_ungrounded_claim(bundle))
     res.layers.append(LayerResult("L5", not l5, l5))
-    l6 = check_completeness(bundle)
+    l6 = check_completeness(bundle) + check_scope_exclusion(bundle)
     res.layers.append(LayerResult("L6", not l6, l6))
     res.layers.append(LayerResult("L7", True, note="anti-blind-spot proof = _scratch/gate_selftest.py (not a per-bundle layer)"))
     return res

@@ -513,6 +513,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   correctly NOT flagged (BASE-exempt) — consistent with the operator's "likely keep." TDM/CE is a separate
   out-of-scope class beyond the SONET/FC spec (report-only) — extend the check to TDM? **HOLD all drops +
   gray/TDM decisions for operator confirmation.** All 13 green, CERTIFIED, 413 tests.
+- **DROPS EXECUTED + scope check hardened + lane-split scan (2026-06-16, operator-confirmed).**
+  • **Juniper phantom drop → 184 SKUs.** Reason-coded + dropped the 4 `JNP-QSFP-100G-LR-CW27/29/31/33`
+    (gate_completeness Juniper captured 188→184, +4 flagged `out-of-scope`; 184+17=201 reconciles). Removed
+    their `near_dup_exempt` HELD entry (auto-dropped on regen). Pinned regen: surgical, 184 surviving rows
+    byte-identical, 4 removed. New ZIP `Hexwaren_Juniper_stage3_ba18bca.zip`.
+  • **Cisco scope drop → 544 SKUs.** Reason-coded + dropped 44 (14 SONET/SDH + 24 FC + 6 TDM/CE: 3 SAToP +
+    3 OC-x framers). Kept the 13 gray (BASE-exempt + explicit `_SCOPE_KEEP` allowlist). gate_completeness
+    Cisco captured 588→544, +44 flagged `out-of-scope` (544+44=588). Pinned regen: 544 surviving rows
+    byte-identical, 44 removed. New ZIP `Hexwaren_Cisco_stage3_bdd3e11.zip`.
+  • **`check_scope_exclusion` extended + WIRED into hard gate L6.** Added TDM/circuit-emulation detection by
+    PN pattern (SAToP + channelized/transparent OC-x framers — their Standard attr is empty) + `_SCOPE_KEEP`
+    (13 operator-confirmed gray keepers). Fixtures **F30** (SAToP fires), **F31** (OC-x framer fires),
+    **F32** (gray keeper exempt) added to F27-F29. Now wired into gate() L6 — every emitted bundle clean.
+  • **Completeness-model extension (`lib/completeness.py`): new `out_of_scope` disposition.** The 44-drop
+    broke the Cisco completeness ARTIFACT (19 of the 44 are in the TMG universe → would be gaps). Added an
+    explicit, reason-coded `out_of_scope` disposition (parallel to `confirmed_gone`): universe PNs
+    deliberately not carried (wrong protocol) are excused from gaps but kept in the universe and reported —
+    never a silent drop. **Anti-circularity guard intact** (`complete` still requires gaps==0). Also fixed a
+    latent generator↔test misalignment (the artifact generator omitted the `flag_ungrounded` bucket that the
+    contract test counts) — aligned. Cisco artifact now: universe=550, captured=531, out_of_scope=19,
+    gaps=0, COMPLETE (531+19+0=550). Tests updated to the `captured+out_of_scope==universe` identity.
+  • **Lane-split phantom scan (`_scratch/lane_split_scan.py`, report-only) across all 12 brands: 0 true
+    phantoms.** The Juniper 100G-CW set (now dropped) was the ONLY instance. Speed-aware + single-channel-
+    label signature (60 broad matches → 9 real 4-lane modules w/ empty/SM4 Standard → 0 after requiring the
+    `CW\d`/`(ch\d)` single-channel marker). No other brand mis-explodes lanes.
+  near_dup baseline 74→71 (now alias-only — all THIN/HELD cleared). All 13 green, CERTIFIED, **413 tests**.
+  Bundles re-emitted for operator L8 byte-audit; no self-green.
 
 ---
 

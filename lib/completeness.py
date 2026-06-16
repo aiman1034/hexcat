@@ -84,6 +84,10 @@ class BrandEnumerations:
     # universe (e.g. Cisco's matrix lists Meraki MA-*/MGB* optics, which are attributed to the
     # Meraki brand). Verbatim snapshots stay intact; routing happens at reconcile time.
     route_out: tuple[str, ...] = ()
+    # universe PNs deliberately NOT carried (wrong protocol — SONET/SDH, Fibre Channel, TDM): excused
+    # from gaps but kept in the universe and reported, never a silent drop. Reason-coded in
+    # gate_completeness.yaml (flagged: reason_code out-of-scope).
+    out_of_scope: frozenset[str] = field(default_factory=frozenset)
 
 
 def _resolve(path_str: str, root: Path) -> Path:
@@ -136,6 +140,7 @@ def load_enumerations(category: str, *, root: Path | None = None) -> dict[str, B
             sources=tuple(sources),
             confirmed_gone=normalize_set(b.get("confirmed_gone") or []),
             route_out=tuple(b.get("route_out") or []),
+            out_of_scope=normalize_set(b.get("out_of_scope") or []),
         )
     return brands
 
@@ -166,13 +171,17 @@ class CompletenessReport:
     per_source: tuple[dict, ...]    # id/kind/total/populated/captured/gaps per source
     populated_sources: int
     routed_out: frozenset[str] = field(default_factory=frozenset)  # belong to another brand
+    out_of_scope: frozenset[str] = field(default_factory=frozenset)  # in universe but not in catalog scope
 
     @property
     def complete(self) -> bool:
-        """Complete iff the harvest covers the whole authoritative union (modulo confirmed-gone)
-        AND that union was actually built from at least one populated independent source. An
-        empty universe is NEVER complete — that would be a vacuous, circular verdict."""
-        return self.populated_sources > 0 and not self.universe ^ (self.captured | self.gone) \
+        """Complete iff the harvest covers the whole authoritative union (modulo confirmed-gone and
+        explicitly out-of-scope dispositions) AND that union was actually built from at least one
+        populated independent source. An empty universe is NEVER complete — that would be a vacuous,
+        circular verdict. out_of_scope = a universe PN deliberately NOT carried (wrong protocol, e.g.
+        SONET/SDH, Fibre Channel, TDM) — reason-coded, never a silent drop, but excused from gaps."""
+        return self.populated_sources > 0 \
+            and not self.universe ^ (self.captured | self.gone | self.out_of_scope) \
             and not self.gaps
 
     def summary(self) -> str:
@@ -194,11 +203,13 @@ class CompletenessReport:
             "extra_count": len(self.extra),
             "populated_sources": self.populated_sources,
             "routed_out_count": len(self.routed_out),
+            "out_of_scope_count": len(self.out_of_scope),
             "per_source": [dict(s) for s in self.per_source],
             "gaps": sorted(self.gaps),
             "confirmed_gone": sorted(self.gone),
             "extra": sorted(self.extra),
             "routed_out": sorted(self.routed_out),
+            "out_of_scope": sorted(self.out_of_scope),
         }
 
 
@@ -210,6 +221,7 @@ def reconcile(
     *,
     confirmed_gone: Iterable[str] = (),
     route_out: Iterable[str] = (),
+    out_of_scope: Iterable[str] = (),
 ) -> CompletenessReport:
     """Reconcile a harvested PN set against the union of independent official enumerations.
 
@@ -217,11 +229,14 @@ def reconcile(
     ``confirmed_gone`` are PNs proven permanently gone (hard 404/410): they are excused from the
     gap list but still reported, never silently dropped. ``route_out`` regexes pull PNs that
     belong to a different brand out of this brand's universe (e.g. Meraki PIDs in Cisco's matrix).
+    ``out_of_scope`` are universe PNs deliberately NOT carried (wrong protocol — SONET/SDH, Fibre
+    Channel, TDM): they stay in the universe and are reported, but excused from gaps (reason-coded).
     """
     sources = tuple(sources)
     universe_all = build_universe(sources)
     harv = normalize_set(harvested)
     gone_all = normalize_set(confirmed_gone)
+    oos_all = normalize_set(out_of_scope)
 
     routers = [re.compile(p, re.I) for p in route_out]
     routed_out = frozenset(p for p in universe_all if any(r.match(p) for r in routers))
@@ -230,7 +245,8 @@ def reconcile(
     captured = frozenset(universe & harv)
     missing = frozenset(universe - harv)
     gone = frozenset(missing & gone_all)
-    gaps = frozenset(missing - gone)
+    oos = frozenset(missing & oos_all)
+    gaps = frozenset(missing - gone - oos)
     extra = frozenset(harv - universe)
 
     per_source: list[dict] = []
@@ -242,7 +258,7 @@ def reconcile(
             "total": len(own),
             "populated": s.populated,
             "captured": len(own & harv),
-            "gaps": len(own - harv - gone_all),
+            "gaps": len(own - harv - gone_all - oos_all),
         })
 
     return CompletenessReport(
@@ -257,6 +273,7 @@ def reconcile(
         per_source=tuple(per_source),
         populated_sources=sum(1 for s in sources if s.populated),
         routed_out=routed_out,
+        out_of_scope=oos,
     )
 
 
@@ -271,7 +288,8 @@ def reconcile_brand(
     brands = load_enumerations(category, root=root)
     be = brands.get(brand) or BrandEnumerations(brand=brand)
     return reconcile(brand, category, harvested, be.sources,
-                     confirmed_gone=be.confirmed_gone, route_out=be.route_out)
+                     confirmed_gone=be.confirmed_gone, route_out=be.route_out,
+                     out_of_scope=be.out_of_scope)
 
 
 def write_report(report: CompletenessReport, path: Path) -> None:

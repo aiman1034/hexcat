@@ -14,11 +14,11 @@ ROOT = Path(__file__).resolve().parents[1]
 # every cleared brand EXCEPT Lenovo (Lenovo is fixed, not baselined)
 BRANDS = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "Juniper", "Extreme", "Dell"]
 
-# Thin clusters HELD for an operator scope decision (NOT re-author candidates). The Juniper
-# JNP-QSFP-100G-LR-CW27/29/31/33 are absent from Juniper's official optics guide, physically impossible
-# as single-λ 100G (single-λ 100G exists only at 1311 nm / 100G-LR1), and sourced from a compatible-optics
-# catalog — the four lanes of ONE JNP-QSFP-100G-CWDM4 module mis-exploded into single-λ SKUs. Likely
-# OUT-OF-SCOPE. See PROJECT_AUDIT. (The other 22 Juniper thin SKUs were re-authored per-channel, 2026-06-16.)
+# Thin clusters HELD for an operator scope decision (NOT re-author candidates). NOTE: as of 2026-06-16 the
+# Juniper JNP-QSFP-100G-LR-CW27/29/31/33 phantoms were DROPPED (operator-confirmed out-of-scope; reason-code
+# out-of-scope in gate_completeness.yaml), so this set is now INERT — kept as a tripwire: if those PNs ever
+# re-enter a bundle via harvest they will again be flagged HELD rather than silently re-admitted. (The other
+# 22 Juniper thin SKUs were re-authored per-channel, 2026-06-16.)
 SCOPE_HELD = {"JNP-QSFP-100G-LR-CW27", "JNP-QSFP-100G-LR-CW29",
               "JNP-QSFP-100G-LR-CW31", "JNP-QSFP-100G-LR-CW33"}
 SCOPE_HELD_REASON = ("HELD pending operator scope decision — phantom single-λ 100G (the four CWDM lanes of "
