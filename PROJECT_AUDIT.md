@@ -540,6 +540,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     `CW\d`/`(ch\d)` single-channel marker). No other brand mis-explodes lanes.
   near_dup baseline 74→71 (now alias-only — all THIN/HELD cleared). All 13 green, CERTIFIED, **413 tests**.
   Bundles re-emitted for operator L8 byte-audit; no self-green.
+- **L8 CLEARED both re-emitted bundles + TDM promoted to first-class hard-gate (2026-06-16).** Operator
+  byte-audited Juniper `ba18bca` (184) and Cisco `bdd3e11` (544): both PASS — exact drops, zero collateral,
+  byte-identical survivors, 13 gray keepers present, zero residual scope leak, DWDM/CWDM grids intact,
+  prices 0,00. **TDM promoted to a first-class, hard-gate-ENFORCED scope class** co-equal with SONET/FC
+  (was already in `check_scope_exclusion` + wired into L6; framing made explicit). Added fixture **F33** —
+  proves gate() L6 hard-fails with a SCOPE violation on an injected scope SKU, so `check_scope_exclusion`
+  can never be silently un-wired from the gate (closed a real anti-blind-spot gap: F27-F32 are direct
+  calls and wouldn't catch an unwiring). F30/F31 retained. CERTIFIED, 413 tests.
+- **STANDING WATCH-ITEMS (operator-flagged 2026-06-16; DEFERRED — address in a later pass, NOT now):**
+  1. **Juniper Verification_Log is generically stamped** — `juniper.net/documentation` root + `operator-provided`
+     on all 188(→184) rows. Needs a real PER-SKU provenance pass before Juniper is considered fully grounded.
+  2. **The 71-cluster alias-exemption baseline (`near_dup_exempt.yaml`) is CC-asserted, NOT operator-verified.**
+     Re-examine + operator-verify before ANY cleared brand re-emits.
+  3. **`out_of_scope` disposition discipline (operator directive):** keep it STRICTLY reason-coded and
+     PERIODICALLY REVIEWED so it can never silently absorb a real gap. Review cadence: before any Cisco
+     re-emit, and whenever the universe/TMG snapshot is refreshed.
 
 ---
 

@@ -588,8 +588,10 @@ def check_ungrounded_claim(bundle: Path) -> list[Violation]:
     return out
 
 
-# ---- SCOPE-EXCLUSION check (Cisco scope-leak finding, 2026-06-16; wired into L6 after the drop) ---
-# Flags product CLASSES outside Hexwaren's transceiver scope:
+# ---- SCOPE-EXCLUSION check (Cisco scope-leak finding, 2026-06-16; wired into the hard gate at L6) ---
+# Three CO-EQUAL, hard-gate-ENFORCED out-of-scope classes (any hit fails L6 -> bundle RED). TDM is
+# first-class alongside SONET/FC (operator decision 2026-06-16). The L6 wiring itself is proven by
+# fixture F33 (an injected scope SKU must make gate() L6 fail), so the check can never be silently unwired.
 #   • SONET/SDH framing optics      (Standard: SONET|SDH|OC-\d|STM-\d)
 #   • Fibre Channel optics          (Standard: \d+G?FC|Fibre Channel)
 #   • TDM / circuit-emulation       (SAToP + channelized/transparent OC-x framers — their Standard attr

@@ -237,6 +237,15 @@ def scope_fixtures():
         good = (fired == must_fire); ok &= good
         verdict = ("OK" if good else "BLIND!") if must_fire else ("OK" if good else "FALSE-FLAG!")
         print(f"  {name:30s} fired={fired} expect={must_fire} {verdict}")
+    # F33 — prove scope is WIRED INTO the hard gate (not merely callable): an injected scope SKU must make
+    # gate() L6 FAIL with a SCOPE violation. Guards against silently un-wiring check_scope_exclusion from
+    # gate() — without this, F27-F32 (direct calls) would still pass while enforcement was dead.
+    d = tmp / "F33"; shutil.rmtree(d, ignore_errors=True); shutil.copytree(base, d)
+    scope_inject(d, S0, "SFP-E1F-SATOP-I", "")   # TDM framer PN, empty Standard
+    l6 = next((L for L in gate(d, RULES).layers if L.layer == "L6"), None)
+    wired = bool(l6) and not l6.passed and any("SCOPE" in v.message for v in l6.violations)
+    ok &= wired
+    print(f"  {'F33 scope-wired-into-L6':30s} L6-scope-fail={wired} expect=True {'OK' if wired else 'BLIND!'}")
     shutil.rmtree(tmp, ignore_errors=True)
     return ok
 
