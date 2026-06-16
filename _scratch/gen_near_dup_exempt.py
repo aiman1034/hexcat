@@ -14,6 +14,18 @@ ROOT = Path(__file__).resolve().parents[1]
 # every cleared brand EXCEPT Lenovo (Lenovo is fixed, not baselined)
 BRANDS = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "Juniper", "Extreme", "Dell"]
 
+# Thin clusters HELD for an operator scope decision (NOT re-author candidates). The Juniper
+# JNP-QSFP-100G-LR-CW27/29/31/33 are absent from Juniper's official optics guide, physically impossible
+# as single-λ 100G (single-λ 100G exists only at 1311 nm / 100G-LR1), and sourced from a compatible-optics
+# catalog — the four lanes of ONE JNP-QSFP-100G-CWDM4 module mis-exploded into single-λ SKUs. Likely
+# OUT-OF-SCOPE. See PROJECT_AUDIT. (The other 22 Juniper thin SKUs were re-authored per-channel, 2026-06-16.)
+SCOPE_HELD = {"JNP-QSFP-100G-LR-CW27", "JNP-QSFP-100G-LR-CW29",
+              "JNP-QSFP-100G-LR-CW31", "JNP-QSFP-100G-LR-CW33"}
+SCOPE_HELD_REASON = ("HELD pending operator scope decision — phantom single-λ 100G (the four CWDM lanes of "
+                     "one JNP-QSFP-100G-CWDM4 mis-exploded into single-λ SKUs); absent from Juniper's official "
+                     "optics guide, sourced from a compatible-optics catalog. Likely OUT-OF-SCOPE; NOT a "
+                     "per-channel re-author candidate. See PROJECT_AUDIT.")
+
 
 def _rd(p, d):
     rows = list(csv.reader(p.open(encoding="utf-8-sig", newline=""), delimiter=d))
@@ -96,9 +108,10 @@ def clusters_for(brand):
             if not (i1 and i2) and G._jaccard(h1, h2) >= G._NEAR_DUP_SIM:
                 thin.add(s1); thin.add(s2)
         if thin:
-            _add(sorted(thin), sig[0], sig[1],
-                 "THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco "
-                 "λ-in-prose standard). KNOWN DEFECT, fix-pending (re-author per-channel); NOT certified-correct")
+            reason = (SCOPE_HELD_REASON if set(thin) <= SCOPE_HELD else
+                      "THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco "
+                      "λ-in-prose standard). KNOWN DEFECT, fix-pending (re-author per-channel); NOT certified-correct")
+            _add(sorted(thin), sig[0], sig[1], reason)
     return hits
 
 

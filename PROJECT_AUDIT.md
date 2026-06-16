@@ -468,6 +468,32 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   honest `THIN…fix-pending` baseline (74→78). All 13 green, CERTIFIED, 413 tests. **HOLD re-author until the
   operator confirms the full cross-brand scope** (expected: 26 Juniper → Cisco per-channel standard; Cisco's
   2 SONET pending scope decision).
+- **Juniper thin λ-grid RE-AUTHOR — 22 of 26 done; 4 HELD (2026-06-16, operator-confirmed).** Operator
+  confirmed the Juniper re-author. Brought **22** thin SKUs to the Cisco per-channel standard: grounded
+  wavelength (+ ITU frequency for the 10× 25G-DWDM) woven into Artikelname / Titel-Tag / Kurzbeschreibung /
+  Beschreibung so each channel carries its own identity → gate `ident=True` (well-formed grid, structurally
+  exempt). Families: 1G-CWDM ×4 (1470/1510/1550/1590 nm), 25G-CWDM ×8 (ch47-55 @10km + ch27/29/31 @40km),
+  25G-DWDM ×10 (1530,33–1555,75 nm, each with its ITU-T G.694.1 100-GHz-grid frequency f=c/λ: 195,90…192,70
+  THz). GROUNDING: λ unchanged (already-certified, only surfaced into prose); DWDM frequency = the exact ITU
+  grid partner of the grounded λ (deterministic standards-math, not a new sourced claim). **Surgical, proven
+  byte-diff:** Main 22 rows, Attributes 10 rows (DWDM Wellenlänge enrichment), Verification_Log 10 rows
+  (value change; build_time PINNED to the original 2026-06-14T20:20:46Z so untouched log rows stay
+  byte-identical); Condition/FAQ/PlatformFlag/Prices byte-identical; **other 166 SKUs byte-identical across
+  every file.** Method: edit certified `stage3_content/Juniper_content.json` (preserves all post-author
+  backfill) → pinned regen → row-diff == intended 22. New bundle ZIP `Hexwaren_Juniper_stage3_396ae59.zip`
+  (content-sha256 396ae59…; old `2925d42` kept as the pre-re-author 'before'). All 13 green, CERTIFIED, 413
+  tests; near_dup baseline 78→74 (the 22 dropped out as well-formed). Reproducible authoring script:
+  `_scratch/juniper_reauthor_thin.py`.
+  • **4× JNP-QSFP-100G-LR-CW27/29/31/33 — HELD, NOT re-authored (flag-don't-fabricate).** Grounding check
+    (MISSION §1/§4) found these are **phantom**: literally absent (0 occurrences) from the cited source
+    `juniper-100g-optics-guide.pdf` (and every cached official Juniper PDF); they entered only via the
+    `enumerated_universe` **addon** (AddOn — a *compatible-optics* vendor) list — never a source of truth.
+    Physically impossible as single-λ 100G (single-λ 100G exists only at 1311 nm / 100G-LR1; the guide's only
+    single-λ 100G is `QSFP-100G-LR`). They are the four CWDM lanes (1271/1291/1311/1331) of ONE
+    `JNP-QSFP-100G-CWDM4` module mis-exploded into single-λ SKUs with a FALSE source attribution. Recorded in
+    `near_dup_exempt.yaml` as `[HELD]` (scope-held reason, NOT "re-author-pending"). **Operator decision
+    needed:** out-scope the 4 (reason `out-of-scope`/`source-blocked`) — and check whether the real 4-lane
+    `JNP-QSFP-100G-CWDM`/`-CWDM4` module is itself in the roster (possible coverage gap).
 
 ---
 
