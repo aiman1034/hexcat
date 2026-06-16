@@ -12,7 +12,7 @@ import hexcat.gate as G
 
 ROOT = Path(__file__).resolve().parents[1]
 # every cleared brand EXCEPT Lenovo (Lenovo is fixed, not baselined)
-BRANDS = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "Juniper", "Extreme", "Dell"]
+BRANDS = ["Cisco", "Arista", "HPE", "Fortinet", "Meraki", "NVIDIA", "MikroTik", "Juniper", "Extreme", "Dell", "Supermicro"]
 
 # Thin clusters HELD for an operator scope decision (NOT re-author candidates). NOTE: as of 2026-06-16 the
 # Juniper JNP-QSFP-100G-LR-CW27/29/31/33 phantoms were DROPPED (operator-confirmed out-of-scope; reason-code

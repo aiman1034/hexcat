@@ -180,6 +180,14 @@ NVIDIA_transceivers:
   captured: 85
   enumerated: 85
   flagged: []
+Supermicro_transceivers:
+  captured: 26
+  enumerated: 27
+  flagged:
+  - pn: AOM-GBIC-FSR2
+    reason_code: source-blocked
+  note: 'eStore standalone catalog: 10 transceivers (1 HELD: GBIC-FSR2 AOC-/AOM- prefix unconfirmed under
+    WebFetch-403) + 17 cables. captured 26 + flagged 1 = enumerated 27.'
 Ubiquiti_transceivers:
   captured: 49
   enumerated: 49

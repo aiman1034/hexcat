@@ -556,6 +556,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3. **`out_of_scope` disposition discipline (operator directive):** keep it STRICTLY reason-coded and
      PERIODICALLY REVIEWED so it can never silently absorb a real gap. Review cadence: before any Cisco
      re-emit, and whenever the universe/TMG snapshot is refreshed.
+- **SUPERMICRO built — Tier-B #4 (2026-06-16), 26 SKUs emitted for L8 (1 held).** Scope = eStore
+  standalone-resale catalog ONLY (store.supermicro.com Transceivers + Networking Cables), Hersteller
+  "Supermicro" / slug "supermicro" (added to `config/rules.yaml` vendor map). Built **9 transceivers + 17
+  cables = 26**; bundle `Hexwaren_Supermicro_stage3_f0f230c.zip` (content-sha256 f0f230c…), gate **L1-L6
+  CERTIFIED**, scope-exclusion clean (pure Ethernet/IB), 413 tests. Grounding via Supermicro compat matrix
+  (authoritative) + eStore product titles (surfaced via search — store/matrix are **403 to WebFetch**) +
+  SFP+/QSFP+ MSA; compatible-vendor sites used for identification only. Resolutions:
+  • **AOM-AQS-107-B0C2-CX corrected to 10GBASE-T COPPER** (SFP+→RJ45, 30 m Cat 6a, NBASE-T multi-rate) —
+    the live eStore page confirms copper, NOT 850 nm MMF; the roster's "all 850 nm MMF" note has this one
+    exception. Authored as copper (in scope; has BASE → scope-check clean).
+  • **AOC/AOM-GBIC-FSR2 HELD** (the 1 not emitted) — eStore prefix unconfirmable under WebFetch-403; every
+    GENUINE-part reseller (Amazon/eBay/Wiredzone/govgroup) lists **AOC-GBIC-FSR2** (matches Supermicro's
+    older AOC- SFP+ naming), vs the roster's AOM-. Spec ready (10GBASE-SR/SW 850 nm 300/400 m LC). Recorded
+    flagged `source-blocked` in gate_completeness (captured 26 + flagged 1 = enumerated 27). Operator to
+    confirm prefix from eStore → 1-line add.
+  • **CBL-NTWK-0347** ✓ live eStore page (1 m SFP+ push DAC) — kept. 25G/100G closed (no extra lengths added).
+  • **3 same-spec variant pairs** (AOC-E10GSFPSR~AOM-TSFP-709DMZ-AVG; AOC-TSR-FS~AOM-TSR-FS;
+    AOM-TQSFP-79EQPZ~EQDZ) web-verified to have NO distinguishing spec attribute → baselined PN-masked-exempt
+    in `near_dup_exempt.yaml` (Supermicro added to the generator; 71→74 clusters); NO fabricated difference
+    (per operator rule). EQPZ/EQDZ both = "40GbE IB-QDR SR4 100/150" on the eStore. **Flagged for operator
+    differentiation review.** AOC-5M~5M-1 are cables → near-dup detector skips cables (no entry needed).
+  Awaiting operator L8 byte-audit; no self-green.
 
 ---
 

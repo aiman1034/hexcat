@@ -462,3 +462,22 @@ Juniper:
   - JNP-SFP-25G-LR-BXU-I
   reason: cross-name alias(es) of one optic — prose reuse accepted at L8
   std: 25G-LR BiDi
+Supermicro:
+- ff: SFP+
+  members:
+  - AOC-E10GSFPSR
+  - AOM-TSFP-709DMZ-AVG
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-SR
+- ff: SFP+
+  members:
+  - AOC-TSR-FS
+  - AOM-TSR-FS
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 10GBASE-SR/SW, 1000BASE-SX
+- ff: QSFP+
+  members:
+  - AOM-TQSFP-79EQDZ-AVG
+  - AOM-TQSFP-79EQPZ-AVG
+  reason: cross-name alias(es) of one optic — prose reuse accepted at L8
+  std: 40GBASE-SR4
