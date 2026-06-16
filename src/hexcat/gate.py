@@ -402,6 +402,13 @@ _CABLE_STD = re.compile(r"\b(CR\d?|Twinax|Direct[ -]?Attach|Active Optical|AOC|D
 # differs ONLY by wavelength collapses and a templated CWDM/DWDM channel family is caught.
 _LAMBDA_MASK = re.compile(r"\b1[0-9]{3}(?:[.,]\d+)?\s*nm|\b1[0-9]{3}(?:[.,]\d+)?\b|"
                           r"\b\d{2,3}[.,]\d+\s*THz|\bGHz\b|C-Band|Kanal\s*\S+", re.I)
+# integer wavelength tokens from a Wellenlänge attribute value (e.g. "1530,33 nm" -> "1530",
+# "1270 nm (Tx) / 1330 nm (Rx)" -> 1270,1330). Used for the Pass-2 channel-identity test.
+_LAMBDA_NM = re.compile(r"(\d{3,4})(?:[.,]\d+)?\s*nm")
+# BiDi matched-pair signal in a Wellenlänge attr (Tx/Rx pair / "BiDi"). A D/U BiDi pair is two
+# complementary halves of ONE link — near-identical prose is expected; the identity is the swapped
+# Tx/Rx wavelength (in the attr) + the direction (in the PN), not per-channel prose.
+_BIDI = re.compile(r"BiDi|\bT[xX]\b|\bR[xX]\b")
 
 
 def _shingles(html: str, k: int = 3) -> set:
@@ -435,8 +442,10 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
         return out
     i_sku, i_be = mhdr.index("Artikelnummer"), mhdr.index("Beschreibung")
     i_k3 = mhdr.index("Kategorie Ebene 3") if "Kategorie Ebene 3" in mhdr else -1
+    i_ti = next((i for i, c in enumerate(mhdr) if c.startswith("Titel-Tag")), -1)
     desc = {r[i_sku]: r[i_be] for r in mrows if len(r) > max(i_sku, i_be)}
     k3 = {r[i_sku]: (r[i_k3] if i_k3 >= 0 and len(r) > i_k3 else "") for r in mrows if len(r) > i_sku}
+    titel = {r[i_sku]: (r[i_ti] if i_ti >= 0 and len(r) > i_ti else "") for r in mrows if len(r) > i_sku}
     ahdr, arows = _attrs(bundle)
     if not ahdr or "Attributname" not in ahdr:
         return out
@@ -447,7 +456,11 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
             attr.setdefault(r[a_s], {})[r[a_n]] = r[a_v]
     brand, _ = _brand_category(bundle)
     exempt = _near_dup_exemptions(brand)
-    # per-optic record: (sku, std, ff, reach, wl, shingles_PN+FC-masked, shingles_also-λ-masked)
+    # per-optic record. `ident` = channel-identity present: the member's wavelength (from its Wellenlänge
+    # attr) appears BOTH in its Titel-Tag (λ via descriptive text or the PN both count) AND in its
+    # PN-masked Beschreibung (λ surfaced as prose, not merely embedded in the PN). A well-formed λ-grid
+    # has ident on every member; a "thin near-dup wearing a wavelength" (λ only in the PN, templated body)
+    # does not -> that is what Pass 2 flags.
     recs = []
     for sku, be in desc.items():
         a = attr.get(sku, {})
@@ -456,9 +469,14 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
         if (not std or _CABLE_STD.search(std) or " auf " in ends
                 or ff.endswith("Kabel") or "Kabel" in (k3.get(sku) or "")):
             continue                                        # cable exemption
+        be_text = re.sub(r"<[^>]+>", " ", be)
         base = _FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
+        base_text = re.sub(re.escape(sku), "", be_text, flags=re.I)   # PN-stripped prose text
+        wl_nums = set(_LAMBDA_NM.findall(a.get("Wellenlänge", "") or ""))
+        ident = bool(wl_nums) and any(n in (titel.get(sku) or "") for n in wl_nums) \
+            and any(n in base_text for n in wl_nums)
         recs.append((sku, std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""),
-                     _shingles(base), _shingles(_LAMBDA_MASK.sub("WL", base))))
+                     _shingles(base), _shingles(_LAMBDA_MASK.sub("WL", base)), ident))
     seen = set()
 
     def _emit(s1, s2, sim, std, ff, why):
@@ -471,9 +489,10 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
                              "L5: near-duplicate Beschreibung — %s vs %s share %.0f%% of prose (%s); "
                              "§7.7 unique-language" % (s1, s2, sim * 100, why)))
 
-    # PASS 1 — exact same-spec (Std,FF,reach,λ): PN+FC masked.
+    # PASS 1 — exact same-spec (Std,FF,reach,λ): PN+FC masked. Same-product alias/revision clusters stay
+    # grandfathered via the reason-coded registry (these are NOT λ-grids — they share one wavelength).
     p1: dict = {}
-    for sku, std, ff, reach, wl, sh, _shl in recs:
+    for sku, std, ff, reach, wl, sh, _shl, _id in recs:
         p1.setdefault((std, ff, reach, wl), []).append((sku, sh))
     for sig, mem in p1.items():
         if len(mem) < 2 or frozenset(s for s, _ in mem) in exempt:
@@ -482,20 +501,29 @@ def check_near_dup_prose(bundle: Path) -> list[Violation]:
             sim = _jaccard(h1, h2)
             if sim >= _NEAR_DUP_SIM:
                 _emit(s1, s2, sim, sig[0], sig[1], "same %s/%s, only PN/feature-code differ" % (sig[0], sig[1]))
-    # PASS 2 — wavelength-CHANNEL family (Std,FF,reach), >=2 distinct λ: PN+FC+λ masked, so framing that
-    # varies ONLY by wavelength is caught (the CWDM/DWDM blind spot — different λ = different Pass-1 sig).
+    # PASS 2 — wavelength-CHANNEL family (Std,FF,reach, >=2 distinct λ). STRUCTURAL channel-identity gate
+    # (replaces the blanket λ-family grandfather): a grid where EVERY member surfaces its wavelength in
+    # Titel + Wellenlänge attr + prose is a well-formed grid (λ IS the per-SKU distinction, like cable
+    # lengths) -> EXEMPT, no registry needed. Flag ONLY families with a member missing that identity
+    # (λ in the PN only, templated body) whose λ-masked framing collapses >= the threshold — thin near-dup.
     p2: dict = {}
-    for sku, std, ff, reach, wl, _sh, shl in recs:
-        p2.setdefault((std, ff, reach), []).append((sku, wl, shl))
+    for sku, std, ff, reach, wl, _sh, shl, ident in recs:
+        p2.setdefault((std, ff, reach), []).append((sku, wl, shl, ident))
     for sig, mem in p2.items():
-        if len(mem) < 2 or len({w for _, w, _ in mem}) < 2:       # need a genuine multi-λ family
+        if len(mem) < 2 or len({w for _, w, _, _ in mem}) < 2:        # need a genuine multi-λ family
             continue
-        if frozenset(s for s, _, _ in mem) in exempt:
+        if all(ident for _, _, _, ident in mem):                      # well-formed grid (λ in Titel+prose) -> exempt
             continue
-        for (s1, _w1, h1), (s2, _w2, h2) in combinations(mem, 2):
+        if any(_BIDI.search(w) for _, w, _, _ in mem) or "BX" in sig[0] or "BiDi" in sig[0]:
+            continue   # BiDi matched-pair (D/U complementary halves; identity = swapped Tx/Rx λ in PN + attr)
+        if frozenset(s for s, _, _, _ in mem) in exempt:              # reason-coded thin-grid baseline (fix-pending)
+            continue
+        for (s1, _w1, h1, _i1), (s2, _w2, h2, _i2) in combinations(mem, 2):
             sim = _jaccard(h1, h2)
             if sim >= _NEAR_DUP_SIM:
-                _emit(s1, s2, sim, sig[0], sig[1], "%s λ-channel family, framing identical apart from wavelength" % sig[0])
+                _emit(s1, s2, sim, sig[0], sig[1],
+                      "%s λ-channel family but a member lacks channel identity (wavelength in PN only, "
+                      "templated body) — thin near-dup, not a grounded grid" % sig[0])
     return out
 
 

@@ -118,6 +118,37 @@ def inject_text(d, sku, text):
     _rw(f, ";", fn)
 
 
+def set_thin_lambda(d, skus):
+    """Make a λ-channel family THIN: overwrite each member's Beschreibung with the SAME wavelength-FREE
+    templated body (λ survives only in the PN). The structural Pass-2 must then FIRE (no channel identity
+    in Titel/prose, λ-masked framing identical)."""
+    body = ("<p>Dieser Transceiver verbindet Netzwerkgeräte über Glasfaser und ist für den professionellen "
+            "Einsatz vorgesehen. Er wird als versiegelte Neuware geliefert und ist im Betrieb steckbar.</p>")
+    f = main_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); bi = h.index("Beschreibung")
+        for r in rows[1:]:
+            if len(r) > bi and r[si] in skus:
+                r[bi] = body
+        return rows
+    _rw(f, ";", fn)
+
+
+def set_grid_lambda(d, sku_wl):
+    """Make a well-formed λ-grid: same body on every member EXCEPT each carries ITS OWN wavelength in the
+    prose (sku_wl maps sku->'1470'). λ-masked similarity is then ~1.0 BUT every member has channel identity
+    (λ in Titel via PN + λ in prose) -> Pass-2 must EXEMPT it (must NOT fire)."""
+    f = main_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); bi = h.index("Beschreibung")
+        for r in rows[1:]:
+            if len(r) > bi and r[si] in sku_wl:
+                r[bi] = ("<p>Optisches Modul auf der festen Wellenlänge %s nm für Singlemode-Glasfaser; "
+                         "als wellenlängenspezifisches Modul im professionellen Einsatz.</p>" % sku_wl[r[si]])
+        return rows
+    _rw(f, ";", fn)
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -170,21 +201,28 @@ def fixtures():
         # Lenovo bundle, whose grounded prose names no third-party OEM, PASSES.)
         ("F23 ungrounded-claim",  ROOT / "output/stage3_Lenovo",
          lambda d: inject_text(d, "46C3447", "Auf Basis eines Finisar-Optikmoduls."), "L5"),
-        # F24 (L8 Ubiquiti CWDM blind-spot): two λ-channel siblings share (Std,FF,reach) but differ in λ, so
-        # Pass-1 (Std,FF,reach,λ) can't cluster them. Clone one CWDM channel's prose onto another -> after
-        # λ-masking the framing is identical -> the new Pass-2 λ-family check MUST fire. (Positive direction =
-        # the real Ubiquiti CWDM 12, each channel-distinct, PASSES.)
-        ("F24 lambda-family",     ROOT / "output/stage3_Ubiquiti",
-         lambda d: clone_beschreibung(d, "UACC-OM-SFP10-1290", "UACC-OM-SFP10-1310"), "L5"),
+        # F24/F25 use the Ubiquiti base — it has ZERO near_dup_exempt entries (its CWDM passes structurally),
+        # so the renamed-fixture-dir doesn't lose any registry exemption and the test isolates Pass-2.
+        # F24 (L8 λ-grid policy, THIN negative): make λ-channels thin — wavelength only in the PN, identical
+        # wavelength-FREE templated body. Pass-2 (no channel identity in Titel/prose) MUST FIRE.
+        ("F24 lambda-thin",       ROOT / "output/stage3_Ubiquiti",
+         lambda d: set_thin_lambda(d, {"UACC-OM-SFP10-1270", "UACC-OM-SFP10-1290"}), "L5"),
+        # F25 (L8 λ-grid policy, WELL-FORMED positive): every member carries ITS OWN wavelength in Titel +
+        # Wellenlänge attr + prose. λ-masked similarity ~1.0 (honest grid signature) BUT Pass-2 must EXEMPT
+        # via channel identity — must NOT fire L5.
+        ("F25 lambda-grid-ok",    ROOT / "output/stage3_Ubiquiti",
+         lambda d: set_grid_lambda(d, {"UACC-OM-SFP10-1310": "1310", "UACC-OM-SFP10-1330": "1330",
+                                       "UACC-OM-SFP10-1470": "1470"}), "noL5"),
         ("F13 count-mismatch-L6", sw, lambda d: _rw(main_of(d), ";", lambda rows: rows[:-1]), "L6"),
     ]
-    print("\n=== NEGATIVE FIXTURES (each MUST FAIL at the expected layer) ===")
+    print("\n=== NEGATIVE/POSITIVE FIXTURES (each MUST behave as expected) ===")
     ok = True
     for name, base, mut, exp in FX:
         f = fails(mk(name.split()[0], base, mut))
-        caught = exp in f
+        caught = ("L5" not in f) if exp == "noL5" else (exp in f)
         ok &= caught
-        print(f"  {name:24s} failed={f or 'NONE!'} expect {exp} {'OK' if caught else 'BLIND!'}")
+        verdict = ("PASS-exempt OK" if caught else "FALSE-FLAG!") if exp == "noL5" else ("OK" if caught else "BLIND!")
+        print(f"  {name:24s} failed={f or 'NONE'} expect {exp} {verdict}")
 
     # F14 flag-without-reason-code (L6) — monkeypatch the completeness record to a bad temp one
     badrec = tmp / "bad_completeness.yaml"

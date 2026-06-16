@@ -35,8 +35,10 @@ def clusters_for(brand):
         return []
     isku, ibe = mh.index("Artikelnummer"), mh.index("Beschreibung")
     ik3 = mh.index("Kategorie Ebene 3") if "Kategorie Ebene 3" in mh else -1
+    iti = next((i for i, c in enumerate(mh) if c.startswith("Titel-Tag")), -1)
     desc = {r[isku]: r[ibe] for r in mr if len(r) > max(isku, ibe)}
     k3 = {r[isku]: (r[ik3] if ik3 >= 0 and len(r) > ik3 else "") for r in mr if len(r) > isku}
+    titel = {r[isku]: (r[iti] if iti >= 0 and len(r) > iti else "") for r in mr if len(r) > isku}
     si, ni, vi = ah.index("Artikelnummer"), ah.index("Attributname"), ah.index("Attributwert")
     at = {}
     for r in ar:
@@ -49,9 +51,14 @@ def clusters_for(brand):
         if (not std or G._CABLE_STD.search(std) or " auf " in ends
                 or ff.endswith("Kabel") or "Kabel" in (k3.get(sku) or "")):
             continue
+        be_text = re.sub(r"<[^>]+>", " ", be)
         base = G._FC_MASK.sub("Feature-Code X", re.sub(re.escape(sku), "PN", be, flags=re.I))
-        recs.append((sku, std, ff, a.get("Reichweite", ""), a.get("Wellenlänge", ""),
-                     G._shingles(base), G._shingles(G._LAMBDA_MASK.sub("WL", base))))
+        base_text = re.sub(re.escape(sku), "", be_text, flags=re.I)
+        wl = a.get("Wellenlänge", "")
+        nums = set(G._LAMBDA_NM.findall(wl or ""))
+        ident = bool(nums) and any(n in (titel.get(sku) or "") for n in nums) and any(n in base_text for n in nums)
+        recs.append((sku, std, ff, a.get("Reichweite", ""), wl,
+                     G._shingles(base), G._shingles(G._LAMBDA_MASK.sub("WL", base)), ident))
     hits, seen = [], set()
 
     def _add(mem_pns, std, ff, reason):
@@ -61,9 +68,9 @@ def clusters_for(brand):
         seen.add(key)
         hits.append({"members": sorted(mem_pns), "std": std, "ff": ff, "reason": reason})
 
-    # PASS 1 — same (Std,FF,reach,λ)
+    # PASS 1 — same (Std,FF,reach,λ) same-product alias/revision clusters (kept).
     p1 = {}
-    for sku, std, ff, reach, wl, sh, _shl in recs:
+    for sku, std, ff, reach, wl, sh, _shl, _id in recs:
         p1.setdefault((std, ff, reach, wl), []).append((sku, sh))
     for sig, mem in p1.items():
         if len(mem) >= 2 and any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, h1), (s2, h2) in combinations(mem, 2)):
@@ -72,15 +79,21 @@ def clusters_for(brand):
                       if len({stem(p) for p in pns}) == 1 else
                       "cross-name alias(es) of one optic — prose reuse accepted at L8")
             _add(pns, sig[0], sig[1], reason)
-    # PASS 2 — λ-channel family (Std,FF,reach), >=2 distinct λ, λ-masked
+    # PASS 2 — λ-channel families. The gate exempts well-formed grids (λ in Titel+prose) + BiDi matched-pairs
+    # STRUCTURALLY (no entry). We baseline ONLY the genuinely-THIN grids the gate would flag — non-BiDi,
+    # members lacking channel identity in prose — with an HONEST fix-pending reason (NOT "correct").
     p2 = {}
-    for sku, std, ff, reach, wl, _sh, shl in recs:
-        p2.setdefault((std, ff, reach), []).append((sku, wl, shl))
+    for sku, std, ff, reach, wl, _sh, shl, ident in recs:
+        p2.setdefault((std, ff, reach), []).append((sku, wl, shl, ident))
     for sig, mem in p2.items():
-        if len(mem) >= 2 and len({w for _, w, _ in mem}) >= 2 and \
-                any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, w1, h1), (s2, w2, h2) in combinations(mem, 2)):
-            _add([s for s, _, _ in mem], sig[0], sig[1],
-                 "wavelength-channel family (CWDM/DWDM/BiDi) — per-channel templated prose accepted at L8")
+        if len(mem) < 2 or len({w for _, w, _, _ in mem}) < 2 or all(i for _, _, _, i in mem):
+            continue
+        if any(re.search(r"BiDi|\bT[xX]\b|\bR[xX]\b", w) for _, w, _, _ in mem) or "BX" in sig[0] or "BiDi" in sig[0]:
+            continue   # BiDi matched-pair -> gate exempts structurally, no entry
+        if any(G._jaccard(h1, h2) >= G._NEAR_DUP_SIM for (s1, w1, h1, i1), (s2, w2, h2, i2) in combinations(mem, 2)):
+            _add([s for s, _, _, _ in mem], sig[0], sig[1],
+                 "THIN λ-grid — wavelength in PN/attr only, generic templated prose (below the Cisco "
+                 "λ-in-prose standard). KNOWN DEFECT, fix-pending (re-author per-channel); NOT certified-correct")
     return hits
 
 
