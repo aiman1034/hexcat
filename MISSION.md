@@ -78,6 +78,15 @@ BRANDS — core FIRST: HP/HPE/Aruba, Cisco, Juniper, Arista. Then the full
   stocked set (touched: Meraki, Fortinet, NVIDIA, MikroTik; expansion: Dell,
   Lenovo, Palo Alto, Ubiquiti, Supermicro; off-core/optional: Huawei, ZTE,
   Ruijie). Brand scope GROWS with stocking — inventory it, don't hard-code.
+*** TRANSCEIVER CATEGORY — SCOPE LOCKED (operator, 2026-06-17): BOUNDED = 15 brands. ***
+  CLEARED (13): Cisco 544, Arista 347, Juniper 184, Dell 163, HPE 147, Lenovo 104,
+  Extreme 102, Fortinet 87, NVIDIA 85, Ubiquiti 49, Supermicro 27, Meraki 25, MikroTik 24.
+  REMAINING (2): Palo Alto + Huawei ONLY — both SOURCE-GATED (do NOT enumerate until the
+  operator confirms sourcing per brand; Huawei also pending a compliance/sourcing-path check;
+  Palo Alto first when greenlit).
+  DROPPED PERMANENTLY — do NOT enumerate or build: ZTE, Ruijie, and ALL Tier-C (H3C, Netgear,
+  D-Link, Zyxel, TP-Link, Allied Telesis, Brocade/Ruckus, Edge-Core, SonicWall, Check Point).
+  (This LOCK overrides the "scope GROWS" note above for the transceiver category specifically.)
 
 *** STEP 0 — BUILD THE MASTER CATALOG MANIFEST (do NOT stall on scope) ***
 The DENOMINATOR = the brand list (HPE/Cisco/Juniper/Arista core + the

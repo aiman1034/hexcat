@@ -287,17 +287,22 @@ def harden_fixtures():
                     if sk is not None: r[ki] = sk.replace(src, dst)
             return rows
         _rw(f, ";", fn)
-    d = mk("G1a", lambda d: clone_be_kurz(d, "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG"))
-    hm = G.check_dup_matrix(d)
-    g1a = any({"AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG"} == {a, b} for a, b, _ in hm["hard"])
+    pair = lambda lst, x, y: any({x, y} == {a, b} for a, b, _ in lst)
+    # G1a: WITHIN-signature word-identical (clone SR4 body onto its SR4 twin) -> HARD fires
+    d = mk("G1a", lambda d: clone_be_kurz(d, "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EQDZ-AVG"))
+    g1a = pair(G.check_dup_matrix(d)["hard"], "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EQDZ-AVG")
     # G1b: AOC 1m-vs-3m (length-variant family) -> EXEMPT from BOTH tiers (clean base)
     clean = G.check_dup_matrix(mk("G1b", None))
-    pair = lambda lst, x, y: any({x, y} == {a, b} for a, b, _ in lst)
     g1b = not pair(clean["hard"], "CBL-SFP+AOC-1M", "CBL-SFP+AOC-3M") and not pair(clean["warn"], "CBL-SFP+AOC-1M", "CBL-SFP+AOC-3M")
-    # G1c: WARN tier works — at least one genuine 0.60-0.80 pair surfaces (SR-class / cross-rate cables)
-    g1c = len(clean["warn"]) >= 1
-    for tag, good in (("G1a x-family≡ HARD-fires", g1a), ("G1b AOC-1m/3m EXEMPT", g1b), ("G1c WARN-tier ≥1", g1c)):
-        ok &= good; print("  %-30s %s" % (tag, "OK" if good else "BLIND!"))
+    # G1c: CROSS-signature word-identical (SR4 body onto iSR4 — different Standard) -> WARN, NEVER hard
+    d = mk("G1c", lambda d: clone_be_kurz(d, "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG"))
+    cm = G.check_dup_matrix(d)
+    g1c = pair(cm["warn"], "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG") and not pair(cm["hard"], "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG")
+    # G1d: clean Supermicro -> 0 HARD (the CBL-0347L~CBL-NTWK-0347 latch pair is a legit build-variant)
+    g1d = len(clean["hard"]) == 0 and not pair(clean["hard"], "CBL-0347L", "CBL-NTWK-0347")
+    for tag, good in (("G1a within-sig HARD-fires", g1a), ("G1b AOC-1m/3m EXEMPT", g1b),
+                      ("G1c cross-sig→WARN not hard", g1c), ("G1d Supermicro 0 HARD (latch exempt)", g1d)):
+        ok &= good; print("  %-32s %s" % (tag, "OK" if good else "BLIND!"))
     # G3: condition-claim stem in Meta -> fires
     d = mk("G3", lambda d: set_main_for(d, "AOC-E10GSFPSR", "Meta-Description (SEO)", "Original Supermicro AOC-E10GSFPSR. Neu, versiegelt und werkseitig geprüft."))
     g3 = any(v.sku == "AOC-E10GSFPSR" for v in G.check_banned_stem(d))

@@ -719,21 +719,46 @@ def _variant_exempt(a_attrs: dict, b_attrs: dict, pn_a: str = "", pn_b: str = ""
     return False
 
 
+def _sig(a: dict) -> tuple:
+    """Spec-SIGNATURE: (Formfaktor, Geschwindigkeit, Standard). Only WITHIN-signature pairs can HARD-fail;
+    cross-signature pairs (different speed/FF/standard) are real product differences -> WARN at most."""
+    return (a.get("Formfaktor", ""), a.get("Geschwindigkeit", ""), a.get("Standard", ""))
+
+
+# legit PHYSICAL build-variant markers that distinguish two otherwise-identical-spec SKUs in prose
+# (latch type, jacket) — analogous to length/λ, so a pair carrying DIFFERENT markers is NOT thin content.
+_BUILD_MARK = re.compile(r"pull-?tab|push-?type|pull-?lasche|\bLSZH\b", re.I)
+
+
+def _build_variant(a_html: str, b_html: str) -> bool:
+    """True iff the two prose bodies carry DIFFERENT physical build markers (Pull-Tab vs Push-Type, LSZH …)
+    — a legit physical variant, not insufficient differentiation."""
+    ma = {m.group(0).lower().replace("-", "") for m in _BUILD_MARK.finditer(re.sub(r"<[^>]+>", " ", a_html))}
+    mb = {m.group(0).lower().replace("-", "") for m in _BUILD_MARK.finditer(re.sub(r"<[^>]+>", " ", b_html))}
+    return (ma or mb) and ma != mb
+
+
 def check_dup_matrix(bundle: Path) -> dict:
-    """G1: FULL N×N PN+number-masked 3-shingle Jaccard over Beschreibung+Kurzbeschreibung (incl. cables).
-    HARD = pair >= 0.80 that is NOT a length/λ variant family; WARN = pair 0.60-0.80 (or any >=0.80 that
-    IS a variant family is exempted entirely). Returns {'hard':[(a,b,j)], 'warn':[(a,b,j)]}."""
+    """G1 (refined 2026-06-17): FULL N×N PN-masked 3-shingle Jaccard over Beschreibung+Kurzbeschreibung
+    (incl. cables). Speed/FF/Standard/Reichweite are PRESERVED as tokens (NOT number-masked) — they are real
+    differentiators. HARD-fail ONLY WITHIN-spec-signature pairs (same Formfaktor+Geschwindigkeit+Standard)
+    at >=0.80 that are NOT a legit physical-variant family (length/λ/reach attrs, or a latch/jacket build
+    marker). CROSS-signature pairs -> WARN, never HARD. Returns {'hard':[(a,b,j)], 'warn':[(a,b,j)]}."""
     from itertools import combinations
     rows = _sku_content(bundle)
     skus = sorted(rows)
-    sig = {s: _dup_sig(rows[s]["be"] + " " + rows[s]["kurz"], s) for s in skus}
+    sig = {s: _shingles(re.sub(re.escape(s), " ", rows[s]["be"] + " " + rows[s]["kurz"], flags=re.I)) for s in skus}
     hard, warn = [], []
     for a, b in combinations(skus, 2):
         j = _jaccard(sig[a], sig[b])
         if j < _DUP_WARN:
             continue
-        if _variant_exempt(rows[a]["attrs"], rows[b]["attrs"], a, b):
-            continue   # legit length-variant / λ-grid — exempt from BOTH tiers
+        Aa, Ab = rows[a]["attrs"], rows[b]["attrs"]
+        if _sig(Aa) != _sig(Ab):
+            warn.append((a, b, round(j, 2)))                  # cross-signature -> WARN, never HARD
+            continue
+        if _variant_exempt(Aa, Ab, a, b) or _build_variant(rows[a]["be"] + rows[a]["kurz"], rows[b]["be"] + rows[b]["kurz"]):
+            continue                                          # legit length/λ/reach/latch/jacket variant
         (hard if j >= _DUP_HARD else warn).append((a, b, round(j, 2)))
     return {"hard": sorted(hard, key=lambda t: -t[2]), "warn": sorted(warn, key=lambda t: -t[2])}
 

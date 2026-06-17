@@ -643,6 +643,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (byte-contract clean) — SEO/quality backlog. **HOLD for operator triage**: G1's raw count conflates genuine
   thin-differentiation (EQPZ~EIPZ-class) with inherent numbered-family templates → needs an operator
   threshold/scope decision before any cleared brand re-opens. NO auto-fix of cleared brands.
+- **TRANSCEIVER SCOPE LOCKED + G1 REFINED (2026-06-17).**
+  • **SCOPE LOCK (operator):** transceiver category BOUNDED = **15 brands**. CLEARED 13 (Cisco 544, Arista
+    347, Juniper 184, Dell 163, HPE 147, Lenovo 104, Extreme 102, Fortinet 87, NVIDIA 85, Ubiquiti 49,
+    Supermicro 27, Meraki 25, MikroTik 24). REMAINING 2 = **Palo Alto + Huawei ONLY**, source-gated (do NOT
+    enumerate until operator confirms sourcing per brand; Huawei also pending compliance/sourcing-path; Palo
+    Alto first when greenlit). DROPPED PERMANENTLY: ZTE, Ruijie + all Tier-C (H3C, Netgear, D-Link, Zyxel,
+    TP-Link, Allied Telesis, Brocade/Ruckus, Edge-Core, SonicWall, Check Point). Recorded in MISSION §3.
+  • **G1 REFINED** (the 20K HARD was a masking artifact — number-masking collapsed speed/standard, real
+    differentiators). `check_dup_matrix` now: PN-mask only (preserve speed/FF/Standard/Reichweite tokens);
+    **HARD only WITHIN spec-signature** (same Formfaktor+Geschwindigkeit+Standard); **cross-signature → WARN,
+    never HARD**; allowlist extended to latch/jacket build markers (`_build_variant`: Pull-Tab/Push-Type/LSZH)
+    + reach (Reichweite already in the length/λ set). **HARD collapsed 20,163 → 841** (−96%). Fixtures
+    updated: G1a within-sig clone HARD-fires; G1b length-variant exempt; G1c cross-sig clone → WARN-not-hard;
+    **G1d Supermicro = 0 HARD** (latch pair `CBL-0347L~CBL-NTWK-0347` now correctly exempt). CERTIFIED, 413.
+  • **Refined cross-brand HARD (triage, REPORT-ONLY):** Juniper 286, Arista 261, NVIDIA 125, HPE 50,
+    Lenovo 45, Cisco 28, Dell 18, Fortinet 13, MikroTik-Sw 11, Extreme 3, Ubiquiti 1, **Supermicro 0,
+    Meraki 0, MikroTik 0**. Samples show the residual is mostly legit aliases/revisions/PN-encoded
+    length-variants (GLC-SX-MM~SFP-GE-S, HPE 487655-B21~J9283B, CFP~CFP-GEN2, MCP1600-C001~C003) — the
+    operator's 71-registry-type set — plus a smaller genuine-thin subset. G3 banned-claims (4923) + G1-841
+    + back-catalogue re-author all **HOLD for operator triage**; NO auto-fix.
 
 ---
 
