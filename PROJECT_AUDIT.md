@@ -614,6 +614,35 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Operator-ruled DO-NOT-CHANGE respected: cable length-variant families + the operational scaffold left as-is.
   Gate L1-L6 CERTIFIED, scope clean, warnings 0, 413 tests, live near-dup 0 (Supermicro still 0 baseline
   entries). Awaiting operator L8 re-audit of `70767b8`; no self-green.
+- **SUPERMICRO CLEARED — 13th transceiver brand (2026-06-17, `70767b8`).** Import set: Cisco 544/`bdd3e11`
+  + Juniper 184/`ba18bca` + Supermicro 27/`70767b8`.
+- **GATE HARDENING G1-G7 (2026-06-17) — encode the L8 analyses so the gate self-catches before emit.**
+  Added to `src/hexcat/gate.py` + fixtures in `_scratch/gate_selftest.py` (positive FIRES, legit EXEMPT):
+  • **G1 `check_dup_matrix`** — FULL N×N PN+number-masked 3-shingle Jaccard over Beschreibung+Kurz (incl.
+    cables). HARD ≥0.80 (not a variant family), WARN 0.60-0.80. Allowlist = attribute-keyed (same Formfaktor/
+    Geschwindigkeit/Standard, differing only in Länge/Reichweite/Wellenlänge) PLUS a PN-number-stem fallback
+    for brands that encode length/λ in the PN, not an attribute. Fixtures: x-family clone HARD-fires;
+    AOC-1m/3m EXEMPT; WARN-tier ≥1.
+  • **G2 `check_boilerplate_freq`** — WARN any non-closer sentence in >40% of a brand's SKUs.
+  • **G3 `check_banned_stem`** — HARD stem-match `versiegel\w*|neuware|fabrikneu|sealed|originalverp\w*|…`
+    (the "neu und versiegelt" matched but "Neu, versiegelt" evaded). Fixture fires.
+  • **G4 `check_orphan_text`** — HARD text outside <p>…</p>; **WIRED into gate() L1** (cleared brands clean).
+  • **G5** word-bounds — already enforced by validate (L2); fixture (87-word Kurz fires) added.
+  • **G6** respin spec-drift — re-emit-time attribute-value diff (WARN); run on re-emit.
+  • **G7** denominator — `check_completeness` extended with an operator-confirmed `confirmed` count: HARD if
+    captured+flagged ≠ confirmed (catches facet mis-tags; operator supplies the count, we're eStore-403).
+  CERTIFIED, 413 tests. **Cross-brand triage scan (`_scratch/gate_harden_scan.py`, REPORT-ONLY, no auto-fix)
+  across all 14 bundles:** **G4 orphan=0** (clean); **G3 banned condition-claims = 4,923 across all 13 prior
+  brands** (only Supermicro clean — every earlier author left versiegelt/neuware in prose; clean re-open
+  backlog = strip per brand like Supermicro C1); **G2 = 34** sentences (operational scaffold, already
+  accepted, + condition padding); **G1 = 20,163 HARD / 22,829 WARN** — reflects pervasive per-family prose
+  TEMPLATING (distinct products read near-identically modulo PN/number; the old cluster-based detector never
+  compared across spec-signatures). Per-brand HARD heat-map: Arista 10918, Juniper 3315, Dell 1479, Cisco
+  1131, NVIDIA 991, HPE 781, Lenovo 619, Extreme 407, Fortinet 360, Ubiquiti 88, MikroTik-Sw 46, Meraki 27,
+  Supermicro 1 (`CBL-0347L~CBL-NTWK-0347` 1m pull/push latch — thin), MikroTik 0. **None import-blocking**
+  (byte-contract clean) — SEO/quality backlog. **HOLD for operator triage**: G1's raw count conflates genuine
+  thin-differentiation (EQPZ~EIPZ-class) with inherent numbered-family templates → needs an operator
+  threshold/scope decision before any cleared brand re-opens. NO auto-fix of cleared brands.
 
 ---
 

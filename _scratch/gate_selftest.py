@@ -250,6 +250,70 @@ def scope_fixtures():
     return ok
 
 
+def set_main_for(d, sku, col, val):
+    f = main_of(d)
+    def fn(rows):
+        h = rows[0]; si = h.index("Artikelnummer"); ci = h.index(col)
+        for r in rows[1:]:
+            if len(r) > ci and r[si] == sku:
+                r[ci] = val
+        return rows
+    _rw(f, ";", fn)
+
+
+def harden_fixtures():
+    """L7 proof for the G1-G5 hardening checks (the Supermicro-cycle misses). Positive cases FIRE,
+    legit-variant cases stay silent. Direct-call (like the scope fixtures)."""
+    base = ROOT / "output/stage3_Supermicro"
+    tmp = Path(tempfile.mkdtemp())
+
+    def mk(name, mut):
+        d = tmp / name; shutil.rmtree(d, ignore_errors=True); shutil.copytree(base, d)
+        if mut: mut(d)
+        return d
+    ok = True
+    print("\n=== HARDENING FIXTURES (G1-G5) ===")
+
+    # G1a: word-identical CROSS-family pair (SR4 body cloned onto iSR4 — different Standard) -> HARD fires
+    def clone_be_kurz(dd, src, dst):
+        f = main_of(dd)
+        def fn(rows):
+            h = rows[0]; si = h.index("Artikelnummer"); bi = h.index("Beschreibung"); ki = h.index("Kurzbeschreibung")
+            sb = next((r[bi] for r in rows[1:] if r[si] == src), None)
+            sk = next((r[ki] for r in rows[1:] if r[si] == src), None)
+            for r in rows[1:]:
+                if r[si] == dst:
+                    if sb is not None: r[bi] = sb.replace(src, dst)
+                    if sk is not None: r[ki] = sk.replace(src, dst)
+            return rows
+        _rw(f, ";", fn)
+    d = mk("G1a", lambda d: clone_be_kurz(d, "AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG"))
+    hm = G.check_dup_matrix(d)
+    g1a = any({"AOM-TQSFP-79EQPZ-AVG", "AOM-TQSFP-79EIPZ-AVG"} == {a, b} for a, b, _ in hm["hard"])
+    # G1b: AOC 1m-vs-3m (length-variant family) -> EXEMPT from BOTH tiers (clean base)
+    clean = G.check_dup_matrix(mk("G1b", None))
+    pair = lambda lst, x, y: any({x, y} == {a, b} for a, b, _ in lst)
+    g1b = not pair(clean["hard"], "CBL-SFP+AOC-1M", "CBL-SFP+AOC-3M") and not pair(clean["warn"], "CBL-SFP+AOC-1M", "CBL-SFP+AOC-3M")
+    # G1c: WARN tier works — at least one genuine 0.60-0.80 pair surfaces (SR-class / cross-rate cables)
+    g1c = len(clean["warn"]) >= 1
+    for tag, good in (("G1a x-family≡ HARD-fires", g1a), ("G1b AOC-1m/3m EXEMPT", g1b), ("G1c WARN-tier ≥1", g1c)):
+        ok &= good; print("  %-30s %s" % (tag, "OK" if good else "BLIND!"))
+    # G3: condition-claim stem in Meta -> fires
+    d = mk("G3", lambda d: set_main_for(d, "AOC-E10GSFPSR", "Meta-Description (SEO)", "Original Supermicro AOC-E10GSFPSR. Neu, versiegelt und werkseitig geprüft."))
+    g3 = any(v.sku == "AOC-E10GSFPSR" for v in G.check_banned_stem(d))
+    # G4: orphan text after </p> in Kurz -> fires
+    d = mk("G4", lambda d: set_main_for(d, "AOC-E10GSFPSR", "Kurzbeschreibung", "<p>A B C D E F.</p><p>G H I J K L.</p> Orphan-Satz hinter dem Block."))
+    g4 = any(v.sku == "AOC-E10GSFPSR" for v in G.check_orphan_text(d))
+    # G5: 87-word Kurz -> gate L2 word-count fires
+    blob = "<p>" + " ".join(["Wort"] * 45) + ".</p><p>" + " ".join(["Wort"] * 42) + ".</p>"
+    d = mk("G5", lambda d: set_main_for(d, "AOC-E10GSFPSR", "Kurzbeschreibung", blob))
+    g5 = "L2" in fails(d)
+    for tag, good in (("G3 versiegel-stem fires", g3), ("G4 orphan-text fires", g4), ("G5 87-word Kurz fires", g5)):
+        ok &= good; print("  %-30s %s" % (tag, "OK" if good else "BLIND!"))
+    shutil.rmtree(tmp, ignore_errors=True)
+    return ok
+
+
 def fixtures():
     tx = ROOT / "output/stage3_Cisco"           # transceiver base (14-attr, reach)
     sw = ROOT / "output/stage3_MikroTik_Switches"  # switch base (S.1-S.6)
@@ -346,6 +410,7 @@ def fixtures():
 
 if __name__ == "__main__":
     kg, fx, sx = known_good(), fixtures(), scope_fixtures()
-    print(f"\nKNOWN-GOOD all-pass: {kg} | FIXTURES all-caught: {fx} | SCOPE-fixtures: {sx}")
-    print("FULL GATE L1-L6 CERTIFIED" if (kg and fx and sx) else "GATE NOT CERTIFIED — fix + re-run")
-    sys.exit(0 if (kg and fx and sx) else 1)
+    hx = harden_fixtures()
+    print(f"\nKNOWN-GOOD all-pass: {kg} | FIXTURES all-caught: {fx} | SCOPE-fixtures: {sx} | HARDENING-fixtures: {hx}")
+    print("FULL GATE L1-L6 CERTIFIED" if (kg and fx and sx and hx) else "GATE NOT CERTIFIED — fix + re-run")
+    sys.exit(0 if (kg and fx and sx and hx) else 1)

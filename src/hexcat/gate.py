@@ -304,6 +304,15 @@ def check_completeness(bundle: Path) -> list[Violation]:
         out.append(Violation(bundle.name, "", "completeness",
                              f"captured+flagged ({captured}+{len(flagged)}) >= enumerated ({enumerated})", "",
                              "L6: silent shortfall — enumerated PNs neither grounded nor flagged"))
+    # G7 denominator reconciliation: when the operator has supplied an authoritative `confirmed` count
+    # (we are 403-blocked from the eStore), captured + reason-coded dispositions MUST equal it — else a
+    # facet mis-tag silently dropped/added SKUs (the missing 25G-SFP28 + AQS-copper miss this cycle).
+    confirmed = rec.get("confirmed")
+    if confirmed is not None and captured is not None and (captured + len(flagged)) != confirmed:
+        out.append(Violation(bundle.name, "", "completeness",
+                             f"captured+flagged ({captured}+{len(flagged)}) == operator-confirmed ({confirmed})", "",
+                             "G7: denominator mismatch vs operator-confirmed count (facet mis-tag?) — "
+                             "reconcile or add a reason-coded disposition"))
     return out
 
 
@@ -645,6 +654,162 @@ def check_scope_exclusion(bundle: Path) -> list[Violation]:
     return out
 
 
+# ===== L8-DERIVED HARDENING (G1-G7) — encode the operator's L8 analyses so the gate self-catches =====
+# Each maps to a real miss from the Supermicro cycle. Two tiers where applicable: HARD (re-open / block)
+# vs WARN (SEO-polish backlog). Detection lives here; the cross-brand triage scan = _scratch/gate_harden_scan.py.
+
+_DUP_HARD, _DUP_WARN = 0.80, 0.60
+_DUP_NUM = re.compile(r"\d+(?:[.,]\d+)?")
+# attrs a length/λ variant family is allowed to differ in (still the SAME product family otherwise):
+_VARIANT_DIFF_OK = {"Länge", "Reichweite", "Wellenlänge"}
+
+
+def _dup_sig(text_html: str, pn: str) -> set:
+    """PN- and number-masked 3-shingle signature (numbers -> 'num' so length/reach/λ differences
+    collapse, surfacing pure prose-template similarity)."""
+    t = re.sub(re.escape(pn), " ", text_html or "", flags=re.I)
+    t = _DUP_NUM.sub(" num ", t)
+    return _shingles(t)
+
+
+def _sku_content(bundle: Path) -> dict:
+    """{sku: {'be':Beschreibung, 'kurz':Kurzbeschreibung, 'attrs':{name:val}}} from Main + Attributes."""
+    mh, mr = _main(bundle)
+    if not mh or "Artikelnummer" not in mh or "Beschreibung" not in mh:
+        return {}
+    iA, iB = mh.index("Artikelnummer"), mh.index("Beschreibung")
+    iK = mh.index("Kurzbeschreibung") if "Kurzbeschreibung" in mh else -1
+    ah, ar = _attrs(bundle)
+    at: dict = {}
+    if ah and "Attributname" in ah and "Artikelnummer" in ah:
+        si, ni, vi = ah.index("Artikelnummer"), ah.index("Attributname"), ah.index("Attributwert")
+        for r in ar:
+            if len(r) > vi:
+                at.setdefault(r[si], {})[r[ni]] = r[vi]
+    out = {}
+    for r in mr:
+        if len(r) > iB:
+            out[r[iA]] = {"be": r[iB], "kurz": (r[iK] if iK >= 0 and len(r) > iK else ""), "attrs": at.get(r[iA], {})}
+    return out
+
+
+def _allow_key(a: dict) -> tuple:
+    """The product-FAMILY key (attribute-derived): same key = same product line."""
+    return (a.get("Formfaktor", ""), a.get("Geschwindigkeit", ""),
+            a.get("Standard", "") or a.get("Transceiver Typ", ""))
+
+
+def _pn_stem(pn: str) -> str:
+    """PN with every number collapsed -> the product-line stem (length/λ variants share a stem)."""
+    return _DUP_NUM.sub("#", pn or "")
+
+
+def _variant_exempt(a_attrs: dict, b_attrs: dict, pn_a: str = "", pn_b: str = "") -> bool:
+    """True iff two SKUs are a legit length-variant or λ-grid family member. Primary signal = ATTRIBUTE-keyed
+    (identical in every attribute except a non-empty subset of Länge/Reichweite/Wellenlänge). FALLBACK (for
+    brands that encode length/λ in the PN/name, not an attribute) = the two PNs share a number-collapsed stem
+    AND they sit in the same (Formfaktor, Geschwindigkeit, Standard/Typ) family. Without the fallback the
+    matrix over-flags every length-variant of a brand that lacks a Länge attribute."""
+    keys = set(a_attrs) | set(b_attrs)
+    diff = {k for k in keys if a_attrs.get(k) != b_attrs.get(k)}
+    if diff and diff <= _VARIANT_DIFF_OK:
+        return True
+    if pn_a and _pn_stem(pn_a) == _pn_stem(pn_b) and pn_a != pn_b and _allow_key(a_attrs) == _allow_key(b_attrs):
+        return True
+    return False
+
+
+def check_dup_matrix(bundle: Path) -> dict:
+    """G1: FULL N×N PN+number-masked 3-shingle Jaccard over Beschreibung+Kurzbeschreibung (incl. cables).
+    HARD = pair >= 0.80 that is NOT a length/λ variant family; WARN = pair 0.60-0.80 (or any >=0.80 that
+    IS a variant family is exempted entirely). Returns {'hard':[(a,b,j)], 'warn':[(a,b,j)]}."""
+    from itertools import combinations
+    rows = _sku_content(bundle)
+    skus = sorted(rows)
+    sig = {s: _dup_sig(rows[s]["be"] + " " + rows[s]["kurz"], s) for s in skus}
+    hard, warn = [], []
+    for a, b in combinations(skus, 2):
+        j = _jaccard(sig[a], sig[b])
+        if j < _DUP_WARN:
+            continue
+        if _variant_exempt(rows[a]["attrs"], rows[b]["attrs"], a, b):
+            continue   # legit length-variant / λ-grid — exempt from BOTH tiers
+        (hard if j >= _DUP_HARD else warn).append((a, b, round(j, 2)))
+    return {"hard": sorted(hard, key=lambda t: -t[2]), "warn": sorted(warn, key=lambda t: -t[2])}
+
+
+_SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+
+def check_boilerplate_freq(bundle: Path, thresh: float = 0.40) -> list:
+    """G2: PN+number-masked sentence frequency. WARN any NON-closer sentence appearing in > thresh of the
+    brand's SKUs (Beschreibung+Kurzbeschreibung). Returns [(masked_sentence, count, pct)] sorted desc."""
+    rows = _sku_content(bundle)
+    n = len(rows) or 1
+    from collections import Counter
+    seen = Counter()
+    for s, r in rows.items():
+        txt = re.sub(r"<[^>]+>", " ", r["be"] + " " + r["kurz"])
+        txt = re.sub(re.escape(s), " ", txt, flags=re.I)
+        txt = _DUP_NUM.sub(" num ", txt)
+        uniq = set()
+        for sent in _SENT_SPLIT.split(txt):
+            sent = re.sub(r"\s+", " ", sent).strip().lower()
+            if len(sent.split()) >= 6 and "professionellen einsatz" not in sent:  # closer exempt
+                uniq.add(sent)
+        for sent in uniq:
+            seen[sent] += 1
+    out = [(s, c, round(c / n, 2)) for s, c in seen.items() if c / n > thresh]
+    return sorted(out, key=lambda t: -t[1])
+
+
+# G3: banned-phrase STEM match (the "neu und versiegelt" matched but "Neu, versiegelt" evaded).
+_BANNED_STEM = re.compile(
+    r"versiegel\w*|\bneuware\b|fabrikneu\w*|ungeöffn\w*|ungeoeffn\w*|\bneu[,\s]+versiegel|"
+    r"\bsealed\b|originalverp\w*|\bbrandneu\w*", re.I)
+
+
+def check_banned_stem(bundle: Path) -> list:
+    """G3: HARD-fail any condition-claim stem (versiegel*, neuware, fabrikneu, sealed, originalverp*, …)
+    in Meta/Kurz/Beschreibung/Titel — itemCondition=new lives in the Condition file, not the prose."""
+    out = []
+    mh, mr = _main(bundle)
+    if not mh or "Artikelnummer" not in mh:
+        return out
+    iA = mh.index("Artikelnummer")
+    fields = [(c, mh.index(c)) for c in ("Beschreibung", "Kurzbeschreibung", "Meta-Description (SEO)", "Titel-Tag (SEO)") if c in mh]
+    for r in mr:
+        for fname, fi in fields:
+            if len(r) > fi:
+                m = _BANNED_STEM.search(re.sub(r"<[^>]+>", " ", r[fi]))
+                if m:
+                    out.append(Violation(bundle.name, r[iA] if len(r) > iA else "", fname,
+                                         "no new-sealed/condition claim in prose (Condition file carries it)",
+                                         m.group(0), "G3: banned condition-claim stem '%s' in %s" % (m.group(0), fname)))
+    return out
+
+
+def check_orphan_text(bundle: Path) -> list:
+    """G4: HARD-fail text outside <p>…</p> in Kurzbeschreibung/Beschreibung (the 2×<p> count passed while
+    a padding sentence sat AFTER </p>). Strip all <p>…</p>; any non-whitespace residue fires."""
+    out = []
+    mh, mr = _main(bundle)
+    if not mh or "Artikelnummer" not in mh:
+        return out
+    iA = mh.index("Artikelnummer")
+    fields = [(c, mh.index(c)) for c in ("Kurzbeschreibung", "Beschreibung") if c in mh]
+    pblock = re.compile(r"<p>.*?</p>", re.S | re.I)
+    for r in mr:
+        for fname, fi in fields:
+            if len(r) > fi and r[fi].strip():
+                residue = pblock.sub("", r[fi])
+                if re.sub(r"\s+", "", re.sub(r"<[^>]+>", "", residue)):
+                    out.append(Violation(bundle.name, r[iA] if len(r) > iA else "", fname,
+                                         "no text outside <p>…</p>", residue.strip()[:40],
+                                         "G4: orphan text outside <p> in %s" % fname))
+    return out
+
+
 # ---- gate orchestration + per-layer report -------------------------------------------------------
 @dataclass
 class LayerResult:
@@ -677,6 +842,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     # L1 also includes the two NEW silent-corruption guards
     by["L1"] += check_utf8_umlaut(bundle)
     by["L1"] += check_html_wellformed(bundle)
+    by["L1"] += check_orphan_text(bundle)   # G4: text outside <p>…</p> (byte-contract; cleared brands clean)
     by["L4"] += check_grounding(bundle)
 
     for L in ("L1", "L2", "L3", "L4"):
