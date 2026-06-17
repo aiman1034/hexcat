@@ -663,6 +663,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     length-variants (GLC-SX-MM~SFP-GE-S, HPE 487655-B21~J9283B, CFP~CFP-GEN2, MCP1600-C001~C003) — the
     operator's 71-registry-type set — plus a smaller genuine-thin subset. G3 banned-claims (4923) + G1-841
     + back-catalogue re-author all **HOLD for operator triage**; NO auto-fix.
+- **G1 ATTRIBUTE-DIFF TRIAGE of the 841 HARD pairs (2026-06-17, REPORT-ONLY).** Per the operator: for each
+  HARD pair, diff the structured attribute VALUES ignoring the allowlisted within-family axes (Länge,
+  Wellenlänge, Kabeltyp/latch, Reichweite) + the soft/derived Anwendung. Result over the 13 transceiver
+  brands (830 of the 841; +11 MikroTik-switches): **RE-AUTHOR-CANDIDATE 409** (a hard-spec attr differs →
+  prose must surface it) / **ACCEPT 421** (no hard-spec attr differs; 114 of these differ only in Anwendung).
+  Re-author hard-spec-diff histogram: **Anschlusstyp 244, Betriebstemperatur 126, Transceiver Typ 46,
+  Faseranzahl 8, Fasertyp 3, DOM 3.** Per brand RE-AUTHOR/ACCEPT: Juniper 124/162, Arista 134/127, NVIDIA
+  55/70, HPE 31/19, Lenovo 34/11, Cisco 15/13, Fortinet 9/4, Dell 5/13, Extreme 2/1, Ubiquiti 0/1,
+  Supermicro/Meraki/MikroTik 0/0.
+  **ACCEPT-bucket spot-check (vs official datasheet) — it is a genuine MIX, NOT all aliases:**
+  • CONFIRMED ATTRIBUTE-COMPLETENESS GAPS (real diff the attrs failed to capture): **Cisco GLC-SX-MM vs
+    SFP-GE-S** — my attrs byte-identical (DOM=Ja both, temp 0-70 both, no FC attr) but the datasheet differs
+    (GLC-SX-MM = no DOM; SFP-GE-S = DOM + extended temp + 1G Fibre-Channel). **Arista A-D400-2Q200 vs
+    A-D400-Q400** — both attr'd "QSFP-DD auf QSFP-DD" but 2Q200 is a 2×QSFP56 BREAKOUT vs Q400 straight
+    (topology not captured). • CONFIRMED TRUE-ALIAS (ACCEPT correct): **HPE 487655-B21 vs J9283B** — both
+    3 m SFP+ DAC (BladeSystem vs Aruba PN).
+  **=> ATTRIBUTE-SCHEMA / GROUNDING GAPS to flag (watch-item-2):** (a) no Fibre-Channel-capability attribute
+  exists; (b) DOM Unterstützung + Betriebstemperatur not always datasheet-grounded (Cisco 1G); (c) breakout
+  topology not captured in Anschlusstyp (Arista AOC/DAC). The ACCEPT bucket therefore needs per-pair
+  datasheet re-verification — it cannot be blanket-passed. **HOLD all re-author + the G3 strip + Palo Alto/
+  Huawei enumeration for operator triage; NO auto-fix.**
 
 ---
 
