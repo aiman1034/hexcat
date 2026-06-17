@@ -705,6 +705,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   of Cisco's non-D GLC family + cross-brand 1G optics, mixed — modern 1G often HAS DDM) and per-SKU temp.
   cisco.com + store.supermicro.com are 403 to WebFetch → grounding is WebSearch-snippet-based, slower. HOLD
   Phase 2 (apply delta + prose re-author + re-emit), import, Palo Alto/Huawei.
+- **PHASE-1 CISCO DOM/temp DELTA (2026-06-17; convention-grounded, datasheet c78-366584; operator byte-review
+  pending before next brand).** Applied the operator's Cisco 1G convention (non-D GLC → DOM Nein/0-70; GLC
+  D-suffix + SFP-GE/SFP-1G → DOM Ja/-5..85 EXT; *-RGD/-I → -40..85 IND) to all 51 Cisco 1G optics.
+  **CORRECTED DELTA = 7** (the confirmed wrong-attribute count for Cisco 1G):
+    DOM Ja→Nein (no DDM, only -MMD/-SMD has it): **GLC-LH-SM, GLC-SX-MM, GLC-ZX-SM**.
+    Betriebstemperatur 0-70→-5..85 °C (EXT): **SFP-GE-S, SFP-GE-Z, SFP-1G-SX, SFP-1G-LH**.
+  **VERIFIED-CORRECT (no change):** GLC-BX-/2BX-D/U(-I) (9) — DOM=Ja confirmed (Cisco BX datasheet: SFF-8472
+  DDM; -I = -40..85); the GLC-*-MMD/SMD/EXD + *-RGD already match the convention.
+  **[VERIFY] = 27 non-conformers (flag-don't-fabricate; NOT assumed wrong):** MGBSX1/LX1/LH1 (SMB — datasheets
+  don't confirm DDM, lean no-DDM → possible DOM Ja→Nein); DWDM-SFP-* 1G ×5 (temp/DOM unverified);
+  CWDM-SFP-* 1G ×5 (temp "-5..70" unusual); ONS-SI-GE-* ×4; S1G-*-PM-D-I ×2; GLC-LH/ZX-LMM-TI ×2; GLC-GE-DR-LX;
+  DS-SFP-FCGE-LW/SW ×2 (the gray FC/GbE keepers); DWDM-XFP-C (a 10G tunable XFP mis-tagged 1G — speed-class
+  data issue). Operator to resolve from datasheet access. **Recorded as the corrected source-of-truth; NOT
+  applied to content/bundles (Phase 2 applies + re-emits + writes Verification_Log rows).** HOLD for byte-
+  review before the next brand (Juniper 33 next).
 
 ---
 
