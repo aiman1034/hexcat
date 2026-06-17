@@ -684,6 +684,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   topology not captured in Anschlusstyp (Arista AOC/DAC). The ACCEPT bucket therefore needs per-pair
   datasheet re-verification — it cannot be blanket-passed. **HOLD all re-author + the G3 strip + Palo Alto/
   Huawei enumeration for operator triage; NO auto-fix.**
+- **PHASE-1 ATTRIBUTE RE-VERIFICATION — started (2026-06-17; correctness BEFORE prose; re-author NOTHING).**
+  Operator decisions: G3 strip confirmed (held for Phase 2); SCHEMA LOCKED (value corrections + prose only,
+  no new attributes — FC-capability goes in Beschreibung); attribute errors = PRE-IMPORT BLOCKER, outrank
+  the 409 prose-thin + G3. Suspect detector `_scratch/attr_reverify.py` over the 13 cleared bundles.
+  **SUSPECT SCOPE:** (A) breakout-Anschlusstyp-straight = **32 (all Arista)**; (D) 1G-optical-DOM=Ja = **97**
+  suspects (DOM may be defaulted — many 1G optics genuinely lack DDM); (T) Betriebstemperatur — PN-marker
+  detection unreliable (false-positives on "-40" = 40 km reach, misses unmarked extended parts like
+  SFP-GE-S) → needs per-SKU datasheet.
+  **VERIFIED DELTA so far (recorded source-of-truth for Phase 2; NOT yet applied to content/bundles):**
+  • **Anschlusstyp — 32 Arista breakout cables** wrongly "X auf X" → correct far-end (MSA/PN-grounded, Arista
+    Cables&Transceivers matrix): A-/H-D400/O400-2Q200 → "… auf 2× QSFP56"; -4Q100 → "… auf 4× QSFP28";
+    C-Y100/Z100-2S50 → "… auf 2× SFP56". HIGH confidence (the PN breakout designation IS the far-end).
+  • **DOM — Cisco GLC-SX-MM**: DOM Ja → **Nein** (Cisco GE-SFP datasheet c78-366584: GLC-SX-MM has NO DDM;
+    only the -MMD variant does). • **Betriebstemperatur — Cisco SFP-GE-S**: "0 bis 70 °C" → **extended**
+    (datasheet: SFP-GE-S is extended-temp; exact bound −5…85 °C pending official-PDF confirm — cisco.com is
+    403 to WebFetch, grounded via datasheet-citing search). SFP-GE-S DOM=Ja stays correct; its 1G-FC support
+    → Beschreibung in Phase 2 (schema locked).
+  **STILL PENDING (the bulk — large systematic per-SKU datasheet pass):** the 97 DOM suspects (incl. the rest
+  of Cisco's non-D GLC family + cross-brand 1G optics, mixed — modern 1G often HAS DDM) and per-SKU temp.
+  cisco.com + store.supermicro.com are 403 to WebFetch → grounding is WebSearch-snippet-based, slower. HOLD
+  Phase 2 (apply delta + prose re-author + re-emit), import, Palo Alto/Huawei.
 
 ---
 
