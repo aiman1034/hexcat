@@ -578,6 +578,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     (per operator rule). EQPZ/EQDZ both = "40GbE IB-QDR SR4 100/150" on the eStore. **Flagged for operator
     differentiation review.** AOC-5M~5M-1 are cables → near-dup detector skips cables (no entry needed).
   Awaiting operator L8 byte-audit; no self-green.
+- **SUPERMICRO respin after L8 round-1 (2026-06-17) — 27 SKUs, `Hexwaren_Supermicro_stage3_8e6fc41.zip`.**
+  L8 round-1 (f0f230c) NOT cleared (foundation clean); fixes applied + re-emitted:
+  • **[R1] ADDED `AOM-SFP28-25GBE-SR-1-MLN`** — the missing 6th SFP-family item. Web-grounded: 25GBASE-SR,
+    SFP28, 850 nm VCSEL, MMF, Duplex LC, **70 m OM3 / 100 m OM4-OM5**, DOM, **IEEE 802.3by** (RS-FEC Clause 91
+    on negotiation), MLN = Mellanox-coded (xref MMA2P00-AS). L3 SFP28, fiber SR optic. → roster 26→**27**.
+  • **[R2] DROPPED GBIC-FSR2 permanently** + confirmed `AOM-SFP28-25GBE-SR-INT` (Intel-coded) also OUT: the
+    eStore `sfp.html` facet has exactly 6 items (now all built); GBIC-FSR2 (older Finisar) + the -INT variant
+    are NOT in those 6 → outside the standalone-resale catalog (MISSION §1). Recorded as OUT-OF-CATALOG in
+    coverage (enum 27 / captured 27 / flagged 0 — they are not gaps, they are outside the denominator).
+  • **[P1] Kurz orphan text removed** — the canned pad sentence after the 2nd </p> on 18 SKUs is gone; short
+    Kurz now expanded INSIDE the <p> with a grounded, PN-woven spec clause (DOM / NBASE-T / passive / integrated
+    optics). Kurz = exactly 2×<p>. **[P2]** Kurz bounded 44-76 (reconciled to the gate's word_count).
+  • **[C1] All new-sealed/versiegelt condition claims stripped from MAIN prose** (Meta/Kurz/Beschr) —
+    itemCondition=new lives in the Condition file. Meta re-padded to 140-200 with spec clauses; intro pads are
+    now grounded operational facts (Hot-Plug/Abgleich, PN-woven), not condition claims.
+  • **[C2] The 3 same-spec transceiver pairs differentiated by LANGUAGE** (two prose voices A/B + grounded
+    hooks: AOC-TSR-FS = adapter-card-bundled / AOM-TSR-FS = bare-module spare), specs unchanged; live near-dup
+    now **0**, the 3 pairs **removed from `near_dup_exempt` (74→71)**. Cable pairs also differentiated:
+    0943-SQ28 = 30 AWG pull-tab twinax vs 0942-MQ28 = alternate 1-m build (web-grounded sub-type difference);
+    AOC-5M vs -5M-1 = standard vs alternate 5-m revision. No fabricated specs.
+  Gate **L1-L6 CERTIFIED**, scope-exclusion clean, warnings 0, 413 tests; Supermicro in gate_selftest
+  KNOWN-GOOD. Awaiting operator L8 re-audit of `8e6fc41`; no self-green.
 
 ---
 

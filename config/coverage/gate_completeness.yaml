@@ -181,13 +181,13 @@ NVIDIA_transceivers:
   enumerated: 85
   flagged: []
 Supermicro_transceivers:
-  captured: 26
+  captured: 27
   enumerated: 27
-  flagged:
-  - pn: AOM-GBIC-FSR2
-    reason_code: source-blocked
-  note: 'eStore standalone catalog: 10 transceivers (1 HELD: GBIC-FSR2 AOC-/AOM- prefix unconfirmed under
-    WebFetch-403) + 17 cables. captured 26 + flagged 1 = enumerated 27.'
+  flagged: []
+  note: 'eStore standalone-resale catalog: 6 SFP-family (incl AOM-SFP28-25GBE-SR-1-MLN) + 4 QSFP+ + 17
+    cables = 27, all captured. OUT-OF-CATALOG (not in the 6-item eStore sfp.html facet, not gaps): AOC/AOM-GBIC-FSR2
+    (older Finisar SR) + AOM-SFP28-25GBE-SR-INT (Intel-coded 25G) — outside the standalone-resale denominator
+    per MISSION §1.'
 Ubiquiti_transceivers:
   captured: 49
   enumerated: 49
