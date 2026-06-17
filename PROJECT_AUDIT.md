@@ -600,6 +600,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     AOC-5M vs -5M-1 = standard vs alternate 5-m revision. No fabricated specs.
   Gate **L1-L6 CERTIFIED**, scope-exclusion clean, warnings 0, 413 tests; Supermicro in gate_selftest
   KNOWN-GOOD. Awaiting operator L8 re-audit of `8e6fc41`; no self-green.
+- **SUPERMICRO L8 round-2 residuals fixed → `Hexwaren_Supermicro_stage3_70767b8.zip` (2026-06-17).** 8e6fc41
+  was one fix from clear. Two residuals closed:
+  • **[D1] QSFP+ cross-pair near-dup** (the two-voice fix had created EQPZ~EIPZ=0.95, EQDZ~EEPZ=0.84).
+    Re-authored all 4 QSFP+ on their REAL grounded sub-type identity (eStore titles), not generic "4× lanes":
+    EQPZ/EQDZ = aggregated 40GBASE-SR4 + IB-QDR (true twins, voice A/B); **EIPZ = iSR4** ("40GbE / 4× 10GbE"
+    breakout — four independent 10 GbE channels, IB-QDR); **EEPZ = eSR4** (4× 10GbE + Extended Reach
+    300/400 m, **no** IB-QDR). All QSFP+ pairwise PN-masked Jaccard now **≤0.47** (target ≤0.6).
+  • **[D2] 0943~0942 (0.82→0.55)** — replaced the filler "alternative Bauform" with the grounded build
+    difference: **0943-SQ28 = 30-AWG-Twinax, Pull-Tab**; **0942-MQ28 = flammwidriger LSZH-Mantel (Low Smoke
+    Zero Halogen)** — confirmed on the eStore title + Supermicro tested-cables doc. Build-specific use sentence
+    each (pull-tab handling vs LSZH/plenum brandschutz).
+  Operator-ruled DO-NOT-CHANGE respected: cable length-variant families + the operational scaffold left as-is.
+  Gate L1-L6 CERTIFIED, scope clean, warnings 0, 413 tests, live near-dup 0 (Supermicro still 0 baseline
+  entries). Awaiting operator L8 re-audit of `70767b8`; no self-green.
 
 ---
 
