@@ -108,7 +108,62 @@ _ANWENDUNG_NAME = "Anwendung"
 _GESCHWINDIGKEIT_NAME = "Geschwindigkeit"
 _BETRIEBSTEMP_NAME = "Betriebstemperatur"
 _BETRIEBSTEMP_EXEMPT_K3 = frozenset({"MPO Kabel"})  # passive fibre patch/breakout only
+# Operator-authorized [VERIFY]-temp-omit carve-out (Phase-2 2026-06-17): a SHORT, explicit allowlist of
+# extended-temp "-ET" optical modules whose vendor publishes only that they are extended-range (→ +85°C
+# confirmed) but NOT the exact lower bound — so flag-don't-fabricate forbids shipping a guessed band and
+# the operator approved OMITTING the Betriebstemperatur attribute (qualitative range stays in the prose).
+# Parallels the GBIC DOM carve-out: a narrow, datasheet-rationale leniency, NOT a blanket relaxation —
+# any optical module NOT on this list still fails the completeness rule. Mirrors the content-JSON
+# `_facts.betriebstemp_verify_omit` source-marker on these parts. (L7 fixture guards the non-generalization.)
+_BETRIEBSTEMP_VERIFY_OMIT = frozenset({
+    "10G-LR-SFP10KM-ET", "10G-ER-SFP40KM-ET",   # Extreme -ET (10GBASE-LR/ER extended-temp)
+    "EX-SFP-1GE-SX-ET", "EX-SFP-1FE-FX-ET",     # Juniper -ET (1000BASE-SX / 100BASE-FX extended-temp)
+})
 _DOM_NAME = "DOM Unterstützung"   # required on every non-cable transceiver (L8 finding)
+# Operator-authorized GROUNDED-DOM=Nein carve-out (Phase-2 2026-06-17, extended to 22 on 2026-06-18): a SHORT,
+# explicit allowlist of OPTICAL modules for which the operator GROUNDED a conservative, reversible DOM=Nein —
+# either (A) the OEM datasheet is SILENT on DDM (no published per-part digital-monitoring line), or (B) the OEM
+# datasheet is EXPLICIT that DDM is absent ("Digital Monitoring: No"). Both are stronger-or-equal to the existing
+# GBIC media↔DOM leniency below (Cisco DWDM-GBIC DS lists optical Tx/Rx N/A → optical-Nein legitimate). Setting
+# these to the gate's optical→Ja default would assert a DENIED feature. NARROW + auditable, NOT a blanket
+# relaxation: any optical module NOT on this list still fails optical→Ja. (L7 fixture guards non-generalization.)
+_DOM_NEIN_OEM_SILENT = frozenset({
+    # (A) OEM DS silent on DDM:
+    "RX-10KM-SFP", "RX-550M-SFP", "RX-70KM-SFP",                         # Juniper legacy E-series
+    "MGBSX1", "MGBLX1", "MGBLH1",                                        # Cisco SB mini-GBIC line (1W, DS has no DOM)
+    "CWDM-SFP-1470", "CWDM-SFP-1490", "CWDM-SFP-1510", "CWDM-SFP-1530", "CWDM-SFP-1610",   # Cisco 1G CWDM
+    "DWDM-SFP-3033", "DWDM-SFP-3112", "DWDM-SFP-3190", "DWDM-SFP-3268", "DWDM-SFP-6141",   # Cisco 1G DWDM
+    # (B) OEM DS EXPLICIT "No DDM" (datasheet-grounded; surfaced at the Fortinet/Cisco re-emits):
+    "GLC-LH-SM", "GLC-SX-MM",                                           # Cisco GE-SFP non-D bases — c78-366584 Table 3: DOM No
+    "GLC-SX-MM-RGD",                                                    # Cisco c78-366584 Table 3: rugged variant graded "IND No" (L8 2026-06-19)
+    "CXP-100G-SR10", "QSFP-40G-BD-RX",                                  # Cisco DDM NOT $0-affirmable (no Cisco DS line; only non-Cisco source) → conservative reversible Nein = the safe under-claim (L8 2026-06-19)
+    # GLC-ZX-SM REMOVED 2026-06-19 (L8 ruling): c78-366584 Table 3 grades GLC-ZX-SM DOM=Yes — it was a stale Nein-exempt entry; corrected to Ja in the build.
+    "FG-TRAN-QSFP+SR-BIDI",                                              # Fortinet 40G BiDi (DS BiDi table: Digital Monitoring No)
+    # REMOVED 2026-06-18: J9142B/J9143B (HPE X122 1G SFP BX BiDi) — 1000%-rule web-verify found DOM=Nein
+    # CONTESTED (HPE legacy guide=No, but current guide + 3rd-party compatibles=DDM-capable). flag-don't-fabricate:
+    # not safely grounded as No-DDM → DOM stays Ja (cleared), parts NOT exempt. Re-add only on a definitive HPE QuickSpecs read.
+})
+# Symmetric to _DOM_NEIN_OEM_SILENT but the OTHER direction (MISSION §8, 2026-06-19): copper/twinax
+# parts whose OEM datasheet EXPLICITLY affirms DDM/DOM (rare). EMPTY today — kept so a future logged
+# exception has a home without weakening the rule. Any copper part NOT here with DOM=Ja still FAILS.
+_DOM_JA_OEM_AFFIRMED: frozenset = frozenset()
+# OEM commercial-temperature-grade allowlist — TRANSCRIBED EXACTLY from Cisco c78-366584 Table 3 (the COM
+# column ONLY), corrected 2026-06-19 after an L8 REJECT: the FIRST cut INVERTED the table — the −SMD/−D
+# (DOM) variants are EXT (−5/85), and only the non-D bases (+ GLC-T, GLC-ZX-SM, GLC-BX-*) are COM (0/70).
+# A part HERE carrying an extended/industrial range (low<0 or high>70) is an ungrounded over-claim. Parts
+# NOT listed are legitimately EXT/IND (GLC-SX-MMD/LH-SMD/EX-SMD/ZX-SMD/TE + SFP-GE-S/L/Z/T = EXT −5/85;
+# QDD-400G = 0/75 per c78-743172). META-RULE: an OEM grade table must be transcribed verbatim AND
+# cross-checked against a second representation before it is encoded here — a misread allowlist makes the
+# gate bless the wrong fix (test_temp_oem_commercial_allowlist_matches_datasheet guards membership).
+_TEMP_OEM_COMMERCIAL = frozenset({
+    "GLC-T", "GLC-ZX-SM", "GLC-BX-D", "GLC-BX-U", "GLC-2BX-D",   # COM column, Table 3
+    "GLC-SX-MM", "GLC-LH-SM",                                    # non-D bases = COM
+})
+
+
+def _temp_bounds(s):
+    n = [int(x) for x in re.findall(r"-?\d+", s)]
+    return (n[0], n[1]) if len(n) >= 2 else (None, None)
 
 # --- permanent SEMANTIC cross-checks (structurally-valid-but-WRONG; FAIL) ----------------
 # These catch the class of error the byte/format gate and even adversarial-verify let through.
@@ -685,8 +740,10 @@ class Validator:
                                "a Geschwindigkeit attribute (every SKU)", "(missing)",
                                "gold-slice completeness: every SKU must carry a Geschwindigkeit "
                                "(line/data rate) attribute")
-                # Betriebstemperatur: required on optical/active modules; passive DAC/MPO exempt.
-                if k3 not in _BETRIEBSTEMP_EXEMPT_K3 and _BETRIEBSTEMP_NAME not in names:
+                # Betriebstemperatur: required on optical/active modules; passive DAC/MPO exempt, plus the
+                # operator-authorized [VERIFY]-temp-omit -ET allowlist (extended-range, exact band unpublished).
+                if (k3 not in _BETRIEBSTEMP_EXEMPT_K3 and sku not in _BETRIEBSTEMP_VERIFY_OMIT
+                        and _BETRIEBSTEMP_NAME not in names):
                     self._fail(fname, sku, "Attributwert (Betriebstemperatur)",
                                "a Betriebstemperatur attribute (optical/active module)", "(missing)",
                                "gold-slice completeness: every optical/active module must carry a "
@@ -702,24 +759,35 @@ class Validator:
                                "gold-slice completeness: every non-cable transceiver must carry a "
                                "DOM Unterstützung attribute (L8 finding)")
                 ff_v = vals.get("Formfaktor", "")
-                # MEDIA<->DOM consistency (L8 round-3): optical (MMF/SMF) must not be DOM=Nein; a
-                # copper/twinax module must not be DOM=Ja. Grounded by media, not form-factor — with one
-                # carve-out anchored to the datasheet, NOT to form factor: the Cisco DWDM-GBIC datasheet
-                # DOM table lists optical Tx/Rx power as N/A (no optical-power digital monitoring), so an
-                # optical GBIC may legitimately be DOM=Nein. This is LENIENCY, not a force: a DDM-capable
-                # GBIC is still allowed DOM=Ja (GBIC is simply exempted from the optical->Ja requirement).
-                # XENPAK/X2/SFP+ all publish optical DOM and stay enforced.
-                if k3 not in C.CABLE_CATEGORIES:
-                    dom_v = vals.get(_DOM_NAME, "").strip()
-                    mblob = (vals.get("Fasertyp", "") + " " + vals.get("Medientyp", "") + " " + vals.get("Standard", "")).lower()
-                    is_copper = bool(re.search(r"kupfer|twinax|\bcx4\b|cat-?\d|base-?t|twisted", mblob))
-                    is_optical = (not is_copper) and bool(re.search(r"singlemode|multimode|\bsmf\b|\bmmf\b|glasfaser", mblob))
-                    if dom_v.startswith("Ja") and is_copper:
-                        self._fail(fname, sku, "Attributwert (DOM Unterstützung)", "DOM=Nein on copper/twinax", dom_v,
-                                   "semantic: media<->DOM — a copper/twinax module must NOT be DOM=Ja")
-                    if dom_v == "Nein" and is_optical and ff_v != "GBIC":
-                        self._fail(fname, sku, "Attributwert (DOM Unterstützung)", "DOM=Ja on optical media", dom_v,
-                                   "semantic: media<->DOM — an optical (MMF/SMF) module must NOT be DOM=Nein")
+                # MEDIA<->DOM consistency — GENERALIZED 2026-06-19 (MISSION §8, L8 hardening directive).
+                # Now runs on CABLES TOO: the old `k3 not in CABLE_CATEGORIES` wrap + a copper test that
+                # ignored Kabeltyp/PN let ACTIVE-copper twinax DACs (ACU*/AC*) bypass it -> DOM=Ja shipped.
+                # Medium comes from the category-agnostic classifier (Kabeltyp + Artikelnummer tokens +
+                # Fasertyp + Standard); active AND passive copper both -> copper, so this inherits unchanged
+                # into every future category. Carve-outs anchored to the OEM datasheet, NOT form factor:
+                #   * copper (passive or active) MUST be DOM=Nein, unless on _DOM_JA_OEM_AFFIRMED (logged);
+                #   * optical MODULE must not be DOM=Nein, unless GBIC (DWDM-GBIC DS lists Tx/Rx N/A) or on
+                #     _DOM_NEIN_OEM_SILENT. An optical AOC *cable* carries part-specific [VERIFY] DOM and is
+                #     NOT forced to Ja (it is a cable, exempted from the optical->Ja requirement).
+                dom_v = vals.get(_DOM_NAME, "").strip()
+                medium = C.classify_medium(sku, vals.get("Kabeltyp", ""), vals.get("Fasertyp", ""),
+                                           vals.get("Standard", ""), vals.get("Medientyp", ""))
+                if dom_v.startswith("Ja") and medium == "copper" and sku not in _DOM_JA_OEM_AFFIRMED:
+                    self._fail(fname, sku, "Attributwert (DOM Unterstützung)",
+                               "DOM=Nein on copper/twinax (passive or active)", dom_v,
+                               "semantic: media<->DOM — copper/twinax (passive OR active) must NOT be DOM=Ja")
+                if (dom_v == "Nein" and medium == "optical" and k3 not in C.CABLE_CATEGORIES
+                        and ff_v != "GBIC" and sku not in _DOM_NEIN_OEM_SILENT):
+                    self._fail(fname, sku, "Attributwert (DOM Unterstützung)", "DOM=Ja on optical media", dom_v,
+                               "semantic: media<->DOM — an optical (MMF/SMF) module must NOT be DOM=Nein")
+                # TEMP-vs-OEM-grade (MISSION §8, 2026-06-19): a part on the OEM commercial-grade allowlist
+                # must carry 0–70 °C; an extended/industrial range on it is an ungrounded over-claim.
+                bt_v = vals.get(_BETRIEBSTEMP_NAME, "").strip()
+                if sku in _TEMP_OEM_COMMERCIAL and bt_v:
+                    lo, hi = _temp_bounds(bt_v)
+                    if lo is not None and (lo < 0 or hi > 70):
+                        self._fail(fname, sku, "Attributwert (Betriebstemperatur)", "0 bis 70 °C (OEM commercial grade)", bt_v,
+                                   "semantic: temp-vs-OEM-grade — Cisco grades this part commercial (0–70 °C); an extended/industrial range is an over-claim")
                 # Formfaktor must be in the locked form-factor vocabulary (L8 round-3) — non-cable non-switch.
                 if ff_v and k3 not in C.CABLE_CATEGORIES and ff_v not in C.PHYSICAL_FORMFAKTOR:
                     self._fail(fname, sku, "Attributwert (Formfaktor)", "a locked form-factor token", ff_v,

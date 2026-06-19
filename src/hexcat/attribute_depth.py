@@ -151,7 +151,7 @@ _MPO_RE = re.compile(r"mpo|mtp", re.IGNORECASE)
 # are WDM-over-ONE-duplex-pair, NOT parallel — they are deliberately excluded here and handled by
 # the duplex (LC/CS) branch as 2 fibres (× any N×100G breakout).
 _LANES_RE = re.compile(r"(?:SR|DR|VR|PSM|SL)-?(\d+)", re.IGNORECASE)  # attached digit only: "SR4"/"SR10"/"VR8"/"CSR4" — NOT "SR 10 Gigabit"
-_FIBRE_CONN_RE = re.compile(r"\blc\b|\bcs\b", re.IGNORECASE)   # LC or CS duplex fibre connectors
+_FIBRE_CONN_RE = re.compile(r"\blc\b|\bcs\b|\bsc\b", re.IGNORECASE)   # LC/CS/SC duplex fibre connectors (SC: CFP, DWDM-GBIC, Catalyst GBIC)
 _FORTYG_RE = re.compile(r"\b40\s?G(?:bit| Gigabit|BASE|E)?", re.IGNORECASE)
 # explicit lane structure "N × <rate>G" where N is the parallel lane count: 12×25G, 10×10G, 4×32G
 _NX_LANE_RE = re.compile(r"(\d+)\s*[×xX]\s*\d+\s*G", re.IGNORECASE)
@@ -181,8 +181,13 @@ def derive_faseranzahl(present: dict[str, str]) -> tuple[str, str] | None:
                      present.get("Geschwindigkeit", ""))).upper()
     bk_m = _BREAKOUT_RE.search(blob)
     bk = int(bk_m.group(1)) if bk_m else 1
-    bidi = bool(re.search(r"\bbidi\b|\bbx\b|bidirektional|single-?fiber|einzelfaser|simplex|\bsingle\b",
-                          conn + " " + blob, re.IGNORECASE))
+    # Single-fibre is decided by the CONNECTOR (its physical truth), not the "BiDi" marketing label:
+    # an explicit "Duplex"/"Dual" connector is 2-fibre even when BiDi (40G/100G-SR-BD), while a single/
+    # simplex/single-fibre-bidirektional connector — or a bare "LC" on a BiDi/BX part — is 1 fibre.
+    conn_single = re.search(r"bidirektional|single-?fiber|einzelfaser|simplex|\bsingle\b", conn, re.IGNORECASE)
+    conn_duplex = re.search(r"duplex|dual", conn, re.IGNORECASE)
+    blob_bidi = re.search(r"\bbidi\b|\bbx\b", blob, re.IGNORECASE)
+    bidi = bool(conn_single or (blob_bidi and not conn_duplex))
     if _MPO_RE.search(conn):
         lane_m = _LANES_RE.search(blob)
         if lane_m and 2 <= int(lane_m.group(1)) <= 12:   # SR4/SR8/SR10/DR4/VR8 — n IS the lane count

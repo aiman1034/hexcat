@@ -22,8 +22,9 @@ category: transceivers
 kategorie_ebene_2: "Transceivers & SFP Module"     # WITH final "e"
 attributgruppe: "Transceivers & SFP Modul"         # NO final "e" — one char different, intentional
 
-# Kategorie Ebene 3 — the 25 locked form factors. (SFP-DD + QSFP28-DD added 2026-06-15 for Dell
-# S56DD-100G / Q28DD-200G modules — real current form factors, a taxonomy gap fixed not excluded.)
+# Kategorie Ebene 3 — the 26 locked form factors. (SFP-DD + QSFP28-DD added 2026-06-15 for Dell
+# S56DD-100G / Q28DD-200G modules; DSFP added 2026-06-17 for Arista C-Y100-* 100G DACs — real current
+# form factors, a taxonomy gap fixed not excluded.)
 subcategories:
   - "DAC Kabel"
   - "AOC Kabel"
@@ -39,6 +40,7 @@ subcategories:
   - "SFP"
   - "SFP+"
   - "SFP-DD"
+  - "DSFP"
   - "SFP28"
   - "SFP56"
   - "X2"
@@ -57,14 +59,16 @@ attributes:
   - { name: "Formfaktor",         intake_field: "Formfaktor" }
   - { name: "Geschwindigkeit",    intake_field: "Geschwindigkeit" }
   - { name: "Transceiver Typ",    intake_field: "TransceiverTyp" }
-  - { name: "Faseranzahl",        intake_field: "Faseranzahl" }
   - { name: "Fasertyp",           intake_field: "Fasertyp" }
+  - { name: "Faseranzahl",        intake_field: "Faseranzahl" }
   - { name: "Anschlusstyp",       intake_field: "Anschlusstyp" }
   - { name: "Länge",              intake_field: "Laenge" }
-  - { name: "Kabeltyp",           intake_field: "Kabeltyp" }
   - { name: "Wellenlänge",        intake_field: "Wellenlaenge" }
-  - { name: "Anwendung",          intake_field: "Anwendung" }
+  - { name: "Kabeltyp",           intake_field: "Kabeltyp" }
   - { name: "Reichweite",         intake_field: "Reichweite" }
+  - { name: "Anwendung",          intake_field: "Anwendung" }
   - { name: "DOM Unterstützung",  intake_field: "DOMUnterstuetzung" }
   - { name: "Betriebstemperatur", intake_field: "Betriebstemperatur" }
   - { name: "Standard",           intake_field: "Standard" }
+  # Phase-2 2026-06-17: Sortiernummer aligned to live-JTL — Fasertyp↔Faseranzahl, Wellenlänge↔Kabeltyp,
+  # Reichweite↔Anwendung transposed vs the prior order; kept in lock-step with constants.TRANSCEIVER_ATTRIBUTES.

@@ -8,16 +8,17 @@ from hexcat import constants as C
 from hexcat.config import ConfigError, load_taxonomy, verify_taxonomy
 
 
-def test_taxonomy_loads_with_25_subcategories_and_14_attributes():
+def test_taxonomy_loads_with_26_subcategories_and_14_attributes():
     tax = load_taxonomy()
     assert tax.category == "transceivers"
-    # 25 form factors. CIM8 (Cisco NCS 1014 coherent module) stays. POM (Cisco SONET/SDH) was REMOVED
+    # 26 form factors. CIM8 (Cisco NCS 1014 coherent module) stays. POM (Cisco SONET/SDH) was REMOVED
     # 2026-06-14 (out of scope, the one operator-authorized domain exclusion). SFP-DD + QSFP28-DD were
-    # ADDED 2026-06-15 — real current Dell module form factors (S56DD-100G, Q28DD-200G): a missing form
-    # factor is a taxonomy gap to FIX, never an exclusion. Every in-domain transceiver PN is included.
-    assert len(tax.subcategories) == 25
+    # ADDED 2026-06-15 — real current Dell module form factors (S56DD-100G, Q28DD-200G); DSFP ADDED
+    # 2026-06-17 — Arista C-Y100-* 100G DACs (Dual SFP, distinct from SFP-DD). A missing form factor is
+    # a taxonomy gap to FIX, never an exclusion. Every in-domain transceiver PN is included.
+    assert len(tax.subcategories) == 26
     assert "CIM8" in tax.subcategories
-    assert {"SFP-DD", "QSFP28-DD"} <= set(tax.subcategories)
+    assert {"SFP-DD", "QSFP28-DD", "DSFP"} <= set(tax.subcategories)
     assert "POM" not in tax.subcategories
     assert "Sonstige" not in tax.subcategories
     assert len(tax.attributes) == 14

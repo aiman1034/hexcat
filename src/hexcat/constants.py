@@ -8,6 +8,8 @@ If any tuple/header below changes, the output is no longer Ameise-importable.
 """
 from __future__ import annotations
 
+import re
+
 # ---- File 1: MAIN -----------------------------------------------------------
 # UTF-8 WITH BOM, delimiter ";", one row per SKU, exactly these 19 columns in order.
 MAIN_DELIMITER = ";"
@@ -57,18 +59,23 @@ TRANSCEIVER_ATTRIBUTES: tuple[tuple[str, str], ...] = (
     ("Formfaktor", "Formfaktor"),
     ("Geschwindigkeit", "Geschwindigkeit"),
     ("Transceiver Typ", "TransceiverTyp"),
-    ("Faseranzahl", "Faseranzahl"),
     ("Fasertyp", "Fasertyp"),
+    ("Faseranzahl", "Faseranzahl"),
     ("Anschlusstyp", "Anschlusstyp"),
     ("Länge", "Laenge"),
-    ("Kabeltyp", "Kabeltyp"),
     ("Wellenlänge", "Wellenlaenge"),
-    ("Anwendung", "Anwendung"),
+    ("Kabeltyp", "Kabeltyp"),
     ("Reichweite", "Reichweite"),
+    ("Anwendung", "Anwendung"),
     ("DOM Unterstützung", "DOMUnterstuetzung"),
     ("Betriebstemperatur", "Betriebstemperatur"),
     ("Standard", "Standard"),
 )
+# Sortiernummer order aligned to the live-JTL 14-sequence (Phase-2, 2026-06-17): the 3 deterministic
+# transpositions vs the prior order — Fasertyp↔Faseranzahl, Wellenlänge↔Kabeltyp, Reichweite↔Anwendung.
+# The other 8 positions are unchanged (a Sortiernummer shift on any of them = drift). Both the emitter
+# (intake._build_attributes) and the gate (validate sort_tx) derive Sortiernummer from this tuple, so
+# they stay in lock-step; the change is visible only against a pre-Phase-2 (cleared) bundle.
 ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in TRANSCEIVER_ATTRIBUTES)
 
 # Fixed 15 SWITCH attribute order (Rule-7 signed off 2026-06-14; SWITCHES_SCHEMA_PROPOSAL.md).
@@ -111,15 +118,64 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
 # (e.g. "QSFP-DD800" before "QSFP-DD", "SFP28" before "SFP").
 PHYSICAL_FORMFAKTOR_ORDERED: tuple[str, ...] = (
     "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28-DD", "QSFP28", "QSFP+",
-    "OSFP", "SFP-DD", "SFP56", "SFP28", "SFP+", "SFP",
+    "OSFP", "SFP-DD", "DSFP", "SFP56", "SFP28", "SFP+", "SFP",
     "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC", "CIM8",
 )
+# DSFP (Dual SFP, an SFP-sized 2-lane MSA, distinct from SFP-DD) added Phase-2 (2026-06-17) for the
+# Arista C-Y100-* 100G DACs — physically DSFP per Arista's DS, not SFP-DD. Placed after SFP-DD; the
+# earliest-position match in physical_formfaktor() returns "DSFP" for a "DSFP…" string (the internal
+# "SFP" substring sits at a later index, so it never wins).
 PHYSICAL_FORMFAKTOR: frozenset[str] = frozenset(PHYSICAL_FORMFAKTOR_ORDERED)
 
 # Cable categories (Kategorie Ebene 3) — these are direct-attach/fibre assemblies, not optical
 # modules. Their Beschreibung word-floor flexes DOWN (a passive DAC needs less prose than a
 # coherent transceiver) and they are exempt from optics-only attribute expectations.
 CABLE_CATEGORIES: frozenset[str] = frozenset({"DAC Kabel", "AOC Kabel", "MPO Kabel"})
+
+# ---- Category-agnostic MEDIUM classifier (MISSION §8 hardening, 2026-06-19) ------------------
+# Decides copper vs optical from GENERIC fields (Artikelnummer tokens + Kabeltyp + Fasertyp +
+# Standard), NOT from form-factor — so EVERY category (transceivers / routers / NICs / PSUs / …)
+# inherits the media<->DOM gate unchanged (no per-category re-solve). Both PASSIVE and ACTIVE copper
+# classify as copper: the active-copper twinax DAC (ACU*/AC* tokens, Kabeltyp "Twinax-Kupfer, aktiv")
+# was misread as optical and shipped DOM=Ja (L8 2026-06-19) — this is the permanent fix. An AOC is an
+# active *optical* cable -> optical. Used by validate.py media<->DOM AND any DOM (re-)ground path.
+_COPPER_PN_TOKEN_RE = re.compile(r"(?:^|[-_])(?:ACU|AC|CU)\d|(?:^|[-_])DAC(?:$|[-_\d])|TWINAX", re.IGNORECASE)
+_COPPER_FIELD_RE = re.compile(r"kupfer|copper|twinax|rj-?45|\bcx4\b|cat-?\d|base-?t|twisted", re.IGNORECASE)
+_COPPER_STD_RE = re.compile(r"\bCR\d?\b|direct.?attach|twinax|sff-?8431|\bdac\b", re.IGNORECASE)
+_OPTICAL_FIELD_RE = re.compile(r"singlemode|multimode|single-?mode|multi-?mode|\bsmf\b|\bmmf\b|glasfaser", re.IGNORECASE)
+_AOC_FIELD_RE = re.compile(r"\baoc\b|active optical|aktiv.{0,6}optisch", re.IGNORECASE)
+
+
+def classify_medium(artikelnummer: str = "", kabeltyp: str = "", fasertyp: str = "",
+                    standard: str = "", medientyp: str = "") -> str:
+    """Return 'copper' | 'optical' | 'unknown'. Category-agnostic (MISSION §8): keyed off generic
+    fields, never form-factor. Copper (passive OR active) is decided FIRST — an active-copper twinax
+    DAC must never be read as optical. AOC (active *optical* cable) classifies as optical."""
+    if (_COPPER_PN_TOKEN_RE.search(artikelnummer or "")
+            or _COPPER_FIELD_RE.search(f"{kabeltyp or ''} {fasertyp or ''} {medientyp or ''}")
+            or _COPPER_STD_RE.search(standard or "")):
+        return "copper"
+    if _OPTICAL_FIELD_RE.search(f"{fasertyp or ''} {medientyp or ''}") or _AOC_FIELD_RE.search(kabeltyp or ""):
+        return "optical"
+    return "unknown"
+
+# ---- Betriebstemperatur grounding guard (MISSION §8, L8 2026-06-19) --------------------------
+# A temperature value that deviates from the commercial default MUST be datasheet-verified PER PART.
+# A per-part exception must NEVER propagate to a family sibling by symmetry: QSFP-100G-SM-SR is
+# +10..+60 °C (DS c78-736282), but its sibling QSFP-100G-SR1.2 is 0..70 °C — giving SR1.2 the SM-SR
+# value "by analogy" was a real error. Category-agnostic: inherited by every category that grounds a
+# temperature field.
+TEMP_COMMERCIAL_DEFAULT = "0 bis 70 °C"
+
+
+def ungrounded_temp_exceptions(corrections: dict, verified_pns) -> list:
+    """`corrections` = {PN: temp_value}. Return PNs whose temp DEVIATES from the commercial default yet
+    are NOT in `verified_pns` (the per-part datasheet-verified allowlist) — i.e. an exception applied
+    without that part's own datasheet line (the sibling-symmetry propagation bug). MUST be empty before
+    any temperature correction is imported/emitted."""
+    vp = set(verified_pns)
+    return [pn for pn, val in corrections.items()
+            if (val or "").strip() and (val or "").strip() != TEMP_COMMERCIAL_DEFAULT and pn not in vp]
 
 # ---- File 3: PLATFORM FLAG --------------------------------------------------
 # UTF-8 WITH BOM. Columns: Artikelnummer + Überverkauf Plattform Hexwaren (= TRUE).
@@ -183,6 +239,12 @@ VERIFICATION_LOG_COLUMNS: tuple[str, ...] = (
 # Phase-1 source sentinel when the operator supplied no SourceURLs.
 VERIFICATION_SOURCE_OPERATOR = "operator-provided"
 VERIFICATION_CONFIDENCE_OPERATOR = "operator-provided"
+
+# Optical DOM/DDM=Ja provenance (operator L8 2026-06-17 standing policy). Vendor spec sheets / techspecs
+# pages seldom carry a per-part DDM field; a "Ja" rests on SFF-8472 family-standard compliance, so it is
+# logged UNIFORMLY as an INFERENCE — never as a datasheet/page ground the source does not actually contain.
+DOM_INFERENCE_SOURCE = "SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis)"
+DOM_INFERENCE_CONFIDENCE = "inference: SFF-8472 family-standard"
 
 # ---- Output filename patterns ----------------------------------------------
 # {category} = category slug/name; {batch} = batch name. Names follow the prompt's exact

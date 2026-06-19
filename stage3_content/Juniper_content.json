@@ -459,7 +459,7 @@
    ],
    [
     "DOM Unterstützung",
-    "Ja"
+    "Nein"
    ],
    [
     "Anwendung",
@@ -510,6 +510,10 @@
    "Betriebstemperatur": [
     "abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich",
     "industry-standard-commercial"
+   ],
+   "DOM/DDM": [
+    "Juniper E-series optic-modules DS (DDM nicht spezifiziert)",
+    "OEM-DS schweigt zu DDM; Legacy E-Serie; konservativ Nein, reversibel falls OEM-Beleg"
    ]
   },
   "beschreibung": "",
@@ -592,7 +596,7 @@
    ],
    [
     "DOM Unterstützung",
-    "Ja"
+    "Nein"
    ],
    [
     "Anwendung",
@@ -643,6 +647,10 @@
    "Betriebstemperatur": [
     "abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich",
     "industry-standard-commercial"
+   ],
+   "DOM/DDM": [
+    "Juniper E-series optic-modules DS (DDM nicht spezifiziert)",
+    "OEM-DS schweigt zu DDM; Legacy E-Serie; konservativ Nein, reversibel falls OEM-Beleg"
    ]
   },
   "beschreibung": "",
@@ -725,7 +733,7 @@
    ],
    [
     "DOM Unterstützung",
-    "Ja"
+    "Nein"
    ],
    [
     "Anwendung",
@@ -776,6 +784,10 @@
    "Betriebstemperatur": [
     "abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich",
     "industry-standard-commercial"
+   ],
+   "DOM/DDM": [
+    "Juniper E-series optic-modules DS (DDM nicht spezifiziert)",
+    "OEM-DS schweigt zu DDM; Legacy E-Serie; konservativ Nein, reversibel falls OEM-Beleg"
    ]
   },
   "beschreibung": "",
@@ -12566,7 +12578,13 @@
   "_facts": {
    "unterkategorie": "SFP",
    "quell_url": "https://www.juniper.net/documentation/us/en/hardware/",
-   "verifiziert_am": "2026-06-14"
+   "verifiziert_am": "2026-06-14",
+   "betriebstemp_verify_omit": true,
+   "betriebstemp_omit_log": {
+    "value": "[VERIFY] – Attribut ausgelassen (Band nicht $0-verifizierbar)",
+    "source_url": "https://apps.juniper.net/hct/ (100Base-FX -ET)",
+    "confidence": "OMITTED: -ET Extended-Temperature (Juniper HCT 'Extended Temperature Range Optics', → +85 °C); exakte OEM-Band nicht $0-verifizierbar; auflösbar via Juniper HCT Per-Part"
+   }
   },
   "artikelname": "Juniper EX-SFP-1FE-FX-ET 100 Mbit/s 100BASE-FX-Transceiver – Multimode-Glasfaser (MMF), Duplex LC, bis 2 km",
   "titel_tag": "Juniper EX-SFP-1FE-FX-ET 100 Mbit/s 100BASE-FX | Hexwaren",
@@ -12644,10 +12662,6 @@
    [
     "Anwendung",
     "Campus-/Metro-Netz (Langstrecke)"
-   ],
-   [
-    "Betriebstemperatur",
-    "0 bis 70 °C"
    ],
    [
     "Zustand",
@@ -13763,7 +13777,13 @@
   "_facts": {
    "unterkategorie": "SFP",
    "quell_url": "https://www.juniper.net/documentation/us/en/hardware/",
-   "verifiziert_am": "2026-06-14"
+   "verifiziert_am": "2026-06-14",
+   "betriebstemp_verify_omit": true,
+   "betriebstemp_omit_log": {
+    "value": "[VERIFY] – Attribut ausgelassen (Band nicht $0-verifizierbar)",
+    "source_url": "https://apps.juniper.net/hct/ (1000Base-SX -ET)",
+    "confidence": "OMITTED: -ET Extended-Temperature (Juniper HCT 'Extended Temperature Range Optics', → +85 °C); exakte OEM-Band nicht $0-verifizierbar; auflösbar via Juniper HCT Per-Part"
+   }
   },
   "artikelname": "Juniper EX-SFP-1GE-SX-ET 1 Gbit/s 1000BASE-SX-Transceiver – Multimode-Glasfaser (MMF), Duplex LC, bis 550 m (OM3)",
   "titel_tag": "Juniper EX-SFP-1GE-SX-ET 1 Gbit/s 1000BASE-SX | Hexwaren",
@@ -13841,10 +13861,6 @@
    [
     "Anwendung",
     "Rechenzentrum (Kurzstrecke)"
-   ],
-   [
-    "Betriebstemperatur",
-    "0 bis 70 °C"
    ],
    [
     "Zustand",

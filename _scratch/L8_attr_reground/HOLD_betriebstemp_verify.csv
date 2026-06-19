@@ -1,0 +1,54 @@
+﻿Artikelnummer;verdikt;live_alt;wert;quelle/grund
+CWDM-SFP-1470;HOLD;Standard (0°C bis 70°C);-5 bis 70 °C;not OEM-confirmable $0
+CWDM-SFP-1490;HOLD;Standard (0°C bis 70°C);-5 bis 70 °C;not OEM-confirmable $0
+CWDM-SFP-1510;HOLD;Standard (0°C bis 70°C);-5 bis 70 °C;not OEM-confirmable $0
+CWDM-SFP-1530;HOLD;Standard (0°C bis 70°C);-5 bis 70 °C;not OEM-confirmable $0
+CWDM-SFP-1610;HOLD;Standard (0°C bis 70°C);-5 bis 70 °C;not OEM-confirmable $0
+DP04QSDD-ER1;HOLD;Standard (0°C bis 70°C);-5 bis 75 °C;not OEM-confirmable $0
+GLC-EX-SMD;IMPORT;Erweitert (-40°C bis 85°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+GLC-FE-100EX;HOLD;Standard (0°C bis 70°C);-5 bis 85 °C;"HELD: Cisco FE DS c78-486906 403s; no per-part temp grade in saved Cisco docs"
+GLC-FE-100FX;HOLD;Standard (0°C bis 70°C);-5 bis 85 °C;"HELD: Cisco FE DS c78-486906 403s; no per-part temp grade in saved Cisco docs"
+GLC-FE-100LX;HOLD;Standard (0°C bis 70°C);-5 bis 85 °C;"HELD: Cisco FE DS c78-486906 403s; no per-part temp grade in saved Cisco docs"
+GLC-LH-SMD;KEEP-LIVE (under-claim, safe);Standard (0°C bis 70°C);-5 bis 85 °C;"Table3 EXT but live 0/70 under-claims; conservative — FLAG to L8"
+GLC-SX-MMD;KEEP-LIVE (under-claim, safe);Standard (0°C bis 70°C);-5 bis 85 °C;"Table3 EXT but live 0/70 under-claims; conservative — FLAG to L8"
+GLC-TE;HOLD;Standard (0°C bis 70°C);-5 bis 85 °C (EXT);not OEM-confirmable $0
+GLC-ZX-SMD;IMPORT;Extended (-40°C bis 85°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+QDD-400G-DR4-S;IMPORT;Standard (0°C bis 70°C);0 bis 75 °C;Cisco c78-743172
+QDD-400G-FR4-S;IMPORT;Standard (0°C bis 70°C);0 bis 75 °C;Cisco c78-743172
+QDD-400G-LR4-S;IMPORT;Standard (0°C bis 70°C);0 bis 75 °C;Cisco c78-743172
+QDD-400G-LR8-S;IMPORT;Standard (0°C bis 70°C);0 bis 75 °C;Cisco c78-743172
+QDD-400G-ZR-S;HOLD;Standard (0°C bis 70°C);15 bis 75 °C (kurzzeitig bis 80 °C);"HELD: only saved coherent DS is Arista's (wrong OEM for Cisco -S); Cisco c78-744377 not $0-fetchable"
+QDD-400G-ZRP-S;HOLD;Standard (0°C bis 70°C);15 bis 75 °C (kurzzeitig bis 80 °C);"HELD: only saved coherent DS is Arista's (wrong OEM for Cisco -S); Cisco c78-744377 not $0-fetchable"
+QDD-4X100G-LR-S;HOLD;Standard (0°C bis 70°C);0 bis 75 °C;not OEM-confirmable $0
+QSFP-100G-SM-SR;IMPORT;Standard (0°C bis 70°C);+10 bis 60 °C;Cisco c78-736282
+QSFP-100G-SR1.2;HOLD;Standard (0°C bis 70°C);+10 bis 60 °C;not OEM-confirmable $0
+QSFP-100G-ZR4-S;IMPORT;Extended (-40°C bis 85°C);0 bis 70 °C;Cisco FAQ
+QSFP-40/100-SRBD;HOLD;Standard (0°C bis 70°C);100G: +10 bis 60 °C / 40G: +10 bis 70 °C;"HELD: no Cisco per-part temp $0; dual-rate string never range-parsed"
+QSFP-40G-BD-RX;HOLD;Standard (0°C bis 70°C);+10 bis 70 °C;"HELD: no Cisco per-part temp $0; dual-rate string never range-parsed"
+QSFP-40G-SR-BD;HOLD;Standard (0°C bis 70°C);+10 bis 70 °C;"HELD: no Cisco per-part temp $0; dual-rate string never range-parsed"
+SFP-10G-AOC10M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-AOC1M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-AOC2M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-AOC3M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-AOC5M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-AOC7M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-10G-SR-X;HOLD;Erweitert (-40°C bis 85°C);-5 bis 85 °C (EXT);not OEM-confirmable $0
+SFP-GE-L;IMPORT;Standard (0°C bis 70°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+SFP-GE-S;IMPORT;Standard (0°C bis 70°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+SFP-GE-T;IMPORT;Standard (0°C bis 70°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+SFP-GE-Z;IMPORT;Standard (0°C bis 70°C);-5 bis 85 °C;Cisco c78-366584 Table 3 EXT
+SFP-H10GB-ACU10M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-H10GB-ACU7M;HOLD-blank(AOC);;;AOC temp not stated in Cisco DS
+SFP-H10GB-CU1-5M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU1M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU2-5M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU2M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU3M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU4M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H10GB-CU5M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H25G-CU1M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H25G-CU2M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H25G-CU3M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H25G-CU4M;IMPORT;;0 bis 70 °C;copper DAC
+SFP-H25G-CU5M;IMPORT;;0 bis 70 °C;copper DAC
+WSP-Q40GLR4L;HOLD;Standard (0°C bis 70°C);+10 bis 60 °C;"HELD: no Cisco per-part temp $0; dual-rate string never range-parsed"

@@ -114,7 +114,7 @@ def test_derives_fasertyp_from_wavelength(rules, weights):
     ft = next(a for a in r.attributes if a.name == "Fasertyp")
     assert ft.value == "Singlemode"
     assert ft.confidence.startswith("derived:")
-    assert ft.sortiernummer == 5            # canonical position in the fixed 14
+    assert ft.sortiernummer == 4            # canonical position in the fixed 14 (live-JTL: Fasertyp→4, Phase-2)
     assert "Fasertyp" not in r.skipped_attributes
 
 

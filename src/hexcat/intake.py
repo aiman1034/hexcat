@@ -152,10 +152,16 @@ def _build_attributes(intake: SkuIntake, source_url: str,
     for idx, (attr_name, _field) in enumerate(attr_set, start=1):
         if attr_name in present:
             pv = attr_provenance.get(attr_name)
+            su = (pv[0] if pv and pv[0] else source_url)
+            cf = (pv[1] if pv and pv[1] else "")
+            # Standing policy (operator L8 2026-06-17): optical DOM/DDM=Ja is an SFF-8472 family-standard
+            # INFERENCE — vendor spec pages/datasheets rarely carry a per-part DDM field, so never log it
+            # as a datasheet/page ground the source does not actually contain. Uniform across all brands.
+            if attr_name == "DOM Unterstützung" and present[attr_name].strip().startswith("Ja"):
+                su, cf = C.DOM_INFERENCE_SOURCE, C.DOM_INFERENCE_CONFIDENCE
             attrs.append(AttributeValue(
                 name=attr_name, value=present[attr_name], sortiernummer=idx,
-                source_url=(pv[0] if pv and pv[0] else source_url),
-                confidence=(pv[1] if pv and pv[1] else ""),
+                source_url=su, confidence=cf,
             ))
         elif attr_name in derived:
             value, rule_label = derived[attr_name]

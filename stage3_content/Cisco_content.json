@@ -2496,10 +2496,6 @@
     "20 km"
    ],
    [
-    "Anschluss",
-    "Duplex LC (bidirektional)"
-   ],
-   [
     "Fasertyp",
     "Singlemode (G.652), Single-Strand"
    ],
@@ -2518,6 +2514,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Anschlusstyp",
+    "Single LC/PC (Single-Fiber BiDi)"
    ]
   ],
   "netto_vk": null,
@@ -2623,10 +2623,6 @@
     "20 km"
    ],
    [
-    "Anschluss",
-    "Duplex LC (bidirektional)"
-   ],
-   [
     "Fasertyp",
     "Singlemode (G.652), Single-Strand"
    ],
@@ -2645,6 +2641,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Anschlusstyp",
+    "Single LC/PC (Single-Fiber BiDi)"
    ]
   ],
   "netto_vk": null,
@@ -6086,7 +6086,7 @@
    ],
    [
     "DOM/DDM",
-    "Ja (Empfangsüberwachung)"
+    "Nein"
    ],
    [
     "Betriebstemperatur",
@@ -6134,6 +6134,9 @@
    "Anwendung": [
     "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
     "derivation"
+   ],
+   "DOM Unterstützung": [
+    "Cisco DDM not affirmed (c78-366584: GLC-SX-MM-RGD=No; CXP/BD-RX no Cisco DS line) → conservative Nein (L8 2026-06-19); no sibling inference"
    ]
   }
  },
@@ -15997,7 +16000,7 @@
    ],
    [
     "DOM/DDM",
-    "Ja (DOM, SFF-8472)"
+    "Nein"
    ],
    [
     "Betriebstemperatur",
@@ -16049,6 +16052,9 @@
    "Anwendung": [
     "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
     "derivation"
+   ],
+   "DOM Unterstützung": [
+    "Cisco DDM not affirmed (c78-366584: GLC-SX-MM-RGD=No; CXP/BD-RX no Cisco DS line) → conservative Nein (L8 2026-06-19); no sibling inference"
    ]
   },
   "_prov": [
@@ -25342,6 +25348,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Faseranzahl",
+    "4"
    ]
   ],
   "netto_vk": null,
@@ -25484,6 +25494,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Faseranzahl",
+    "4"
    ]
   ],
   "netto_vk": null,
@@ -31268,6 +31282,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Faseranzahl",
+    "4"
    ]
   ],
   "netto_vk": null,
@@ -31405,11 +31423,15 @@
    ],
    [
     "DOM/DDM",
-    "Ja"
+    "Nein"
    ],
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Kabeltyp",
+    "Twinax-Kupfer, passiv"
    ]
   ],
   "netto_vk": null,
@@ -31451,8 +31473,7 @@
     "derivation"
    ],
    "DOM Unterstützung": [
-    "SFF-8472/CMIS (optical DDM) / media-grounded",
-    "standard"
+    "media↔DOM: passive copper twinax → kein DDM → Nein"
    ]
   }
  },
@@ -33954,7 +33975,7 @@
    ],
    [
     "DOM/DDM",
-    "Ja (DOM)"
+    "Nein"
    ],
    [
     "Leistungsaufnahme",
@@ -34022,6 +34043,9 @@
    "Anwendung": [
     "abgeleitet aus Reichweite / Transceiver Typ / Fasertyp",
     "derivation"
+   ],
+   "DOM Unterstützung": [
+    "Cisco DDM not affirmed (c78-366584: GLC-SX-MM-RGD=No; CXP/BD-RX no Cisco DS line) → conservative Nein (L8 2026-06-19); no sibling inference"
    ]
   },
   "_prov": [
@@ -34784,6 +34808,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Faseranzahl",
+    "4"
    ]
   ],
   "netto_vk": null,
@@ -35762,12 +35790,12 @@
     "Carrier-/Transportnetz (DWDM / kohärent)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -59617,12 +59645,12 @@
     "Carrier-/Transportnetz (DWDM / kohärent)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -59733,12 +59761,12 @@
     "Carrier-/Transportnetz (DWDM / kohärent)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -59849,12 +59877,12 @@
     "Carrier-/Transportnetz (DWDM / kohärent)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -59965,12 +59993,12 @@
     "Carrier-/Transportnetz (DWDM / kohärent)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -60085,12 +60113,12 @@
     "Metro-/Zugangsnetz (CWDM)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -60209,12 +60237,12 @@
     "Metro-/Zugangsnetz (CWDM)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -60333,12 +60361,12 @@
     "Metro-/Zugangsnetz (CWDM)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -60457,12 +60485,12 @@
     "Metro-/Zugangsnetz (CWDM)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -60581,12 +60609,12 @@
     "Metro-/Zugangsnetz (CWDM)"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -64665,10 +64693,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Betriebstemperatur",
     "0 bis 70 °C"
    ],
@@ -64679,6 +64703,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -64789,10 +64817,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Betriebstemperatur",
     "0 bis 70 °C"
    ],
@@ -64803,6 +64827,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -64913,10 +64941,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Anwendung",
     "Weitverkehrsnetz (Langstrecke)"
    ],
@@ -64927,6 +64951,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Ja (DOM, SFF-8472)"
    ]
   ],
   "netto_vk": null,
@@ -64970,6 +64998,9 @@
    "Betriebstemperatur": [
     "c78-366584.html:2177 / c78-382891.html:1527 / c78-486906.html:1683 / c78-736392.html:1772",
     "datasheet"
+   ],
+   "DOM Unterstützung": [
+    "Cisco c78-366584 Table 3: GLC-ZX-SM DOM=Yes (L8 2026-06-19; corrected from stale Nein)"
    ]
   }
  },
@@ -65661,16 +65692,16 @@
     "Ja"
    ],
    [
-    "Betriebstemperatur",
-    "0 bis 70 °C"
-   ],
-   [
     "Anwendung",
     "Rechenzentrum (Kurzstrecke)"
    ],
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 85 °C"
    ]
   ],
   "netto_vk": null,
@@ -65789,12 +65820,12 @@
     "Weitverkehrsnetz (Langstrecke)"
    ],
    [
-    "Betriebstemperatur",
-    "0 bis 70 °C"
-   ],
-   [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 85 °C"
    ]
   ],
   "netto_vk": null,
@@ -68241,10 +68272,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Anwendung",
     "Rechenzentrum (Kurzstrecke)"
    ],
@@ -68255,6 +68282,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -68365,10 +68396,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Anwendung",
     "Campus-/Metro-Netz (Langstrecke)"
    ],
@@ -68379,6 +68406,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,
@@ -68489,10 +68520,6 @@
     "Duplex LC"
    ],
    [
-    "DOM/DDM",
-    "Ja"
-   ],
-   [
     "Anwendung",
     "Metro-/Weitverkehrsnetz"
    ],
@@ -68503,6 +68530,10 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "DOM Unterstützung",
+    "Nein"
    ]
   ],
   "netto_vk": null,

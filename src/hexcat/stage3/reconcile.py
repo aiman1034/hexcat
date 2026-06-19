@@ -251,6 +251,11 @@ def entry_to_intake(pn: str, entry: dict, *, brand: str, rules: Rules) -> SkuInt
     is_switch = kategorie3 in rules.kategorie_ebene_3_switch_allowed
     if is_switch:
         ff = None
+    elif facts.get("formfaktor_na"):
+        # Passive MPO-fibre fan-out cable (e.g. FG-CABLE-SR10): the MPO end mates a SEPARATE module,
+        # so the assembly has no module form-factor of its own -> omit the Formfaktor row entirely
+        # (B.11 exempts cable categories; a 0-row Formfaktor passes the byte-contract). Phase-2 2026-06-17.
+        ff = None
     else:
         # Physical connector: authored Formfaktor value -> connector/speed text -> PN.
         authored_ff = next((v for n, v in authored_attrs if n == "Formfaktor"), "")
@@ -318,8 +323,23 @@ def reconcile_content(
         for k, v in (entry.get("provenance") or {}).items():
             if isinstance(v, (list, tuple)) and len(v) >= 2:
                 canon_prov[ATTR_ALIAS.get(k, k)] = (str(v[0]), str(v[1]))
+        extra_log = list(entry.get("extra_log") or [])
+        # [VERIFY]-temp-omit (Phase-2 2026-06-17): the Betriebstemperatur attribute is intentionally OMITTED
+        # (extended-range -ET, exact band unpublished), but its omit-provenance — the [VERIFY] reason, OEM doc
+        # URLs and resolution path — MUST regenerate as a Verification_Log-only row on EVERY re-emit, or the
+        # audit trail is silently lost (L8 finding F1). Tie it to the flag and FAIL LOUD if the note is missing.
+        facts = entry.get("_facts") or {}
+        if facts.get("betriebstemp_verify_omit"):
+            ol = facts.get("betriebstemp_omit_log")
+            if not (isinstance(ol, dict) and ol.get("value") and ol.get("source_url") and ol.get("confidence")):
+                raise ReconcileError(
+                    f"[{pn}] _facts.betriebstemp_verify_omit set but _facts.betriebstemp_omit_log "
+                    "{value, source_url, confidence} is missing/incomplete — the omit-provenance would be "
+                    "dropped on re-emit (F1). Author it before re-emitting."
+                )
+            extra_log.append(("Betriebstemperatur", ol["value"], ol["source_url"], ol["confidence"]))
         records.append(build_record(intake, rules, weights, attr_provenance=canon_prov,
-                                     extra_log=entry.get("extra_log")))
+                                     extra_log=extra_log))
     if not records:
         raise ReconcileError(f"{Path(path).name} contained no usable SKU entries")
     return records

@@ -367,6 +367,198 @@ def test_gate_fails_missing_anwendung_geschwindigkeit_betriebstemperatur(tmp_pat
                    for v in res.violations), f"expected a {label} completeness violation"
 
 
+def test_betriebstemp_verify_omit_carveout_is_narrow(tmp_path, rules, weights):
+    """L7 anti-blind-spot (Phase-2): the [VERIFY]-temp-omit carve-out MUST NOT generalize. A
+    non-allowlisted optical module missing Betriebstemperatur still FAILS the completeness rule;
+    only the explicit -ET allowlist (validate._BETRIEBSTEMP_VERIFY_OMIT) is exempt. Red-then-green."""
+    import copy
+    from hexcat.validate import validate_dir
+
+    _, base = _cisco_optic()
+
+    def temp_violations(pn, *, omit_flag=False):
+        e = copy.deepcopy(base)
+        e["attributes"] = [a for a in e["attributes"] if a[0] != "Betriebstemperatur"]
+        if omit_flag:  # allowlisted parts carry the flag + omit-provenance (F1) in practice
+            f = e.setdefault("_facts", {})
+            f["betriebstemp_verify_omit"] = True
+            f["betriebstemp_omit_log"] = {"value": "[VERIFY] omit", "source_url": "https://x",
+                                          "confidence": "OMITTED: -ET test"}
+        content = tmp_path / f"c_{pn}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False, indent=2), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"b_{pn}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        res = validate_dir(rules, out)
+        return [v for v in res.violations
+                if "Betriebstemperatur" in (v.field or "") and "completeness" in (v.message or "").lower()]
+
+    # RED: a non-allowlisted optical module missing Betriebstemperatur MUST fail (rule still bites).
+    assert temp_violations("QSFP-100G-NOTLISTED"), \
+        "carve-out generalized! a non-allowlisted optical module missing Betriebstemperatur must FAIL"
+    # GREEN: an allowlisted -ET part missing Betriebstemperatur is exempt (no completeness violation).
+    assert not temp_violations("10G-LR-SFP10KM-ET", omit_flag=True), \
+        "allowlisted -ET part must be exempt from the Betriebstemperatur completeness rule"
+    # AIRTIGHT (anti flag-injection): the content-JSON flag must NOT exempt a non-allowlisted part —
+    # the hardcoded PN allowlist is the SOLE gate; setting the flag on a non-listed PN still FAILS.
+    assert temp_violations("QSFP-100G-NOTLISTED", omit_flag=True), \
+        "a content-JSON flag must NOT exempt a non-allowlisted part — allowlist is the sole gate"
+
+
+def test_dom_nein_oem_silent_carveout_is_narrow(tmp_path, rules, weights):
+    """L7 anti-blind-spot (Phase-2): the conservative-DOM=Nein carve-out MUST NOT generalize. A
+    non-allowlisted optical module with DOM=Nein still FAILS media↔DOM; only the explicit OEM-DS-silent
+    allowlist (validate._DOM_NEIN_OEM_SILENT) is exempt. Red-then-green."""
+    import copy
+    from hexcat.validate import validate_dir
+
+    _, base = _cisco_optic()
+
+    def dom_violations(pn):
+        e = copy.deepcopy(base)
+        # force an optical part with DOM=Nein
+        e["attributes"] = [(["Fasertyp", "Singlemode"] if a[0] == "Fasertyp" else a) for a in e["attributes"]]
+        e["attributes"] = [a for a in e["attributes"] if a[0] not in ("DOM/DDM", "DOM Unterstützung")]
+        e["attributes"].append(["DOM/DDM", "Nein"])
+        if not any(a[0] == "Fasertyp" for a in e["attributes"]):
+            e["attributes"].append(["Fasertyp", "Singlemode"])
+        content = tmp_path / f"d_{pn}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False, indent=2), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"o_{pn}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        res = validate_dir(rules, out)
+        return [v for v in res.violations
+                if "DOM" in (v.field or "") and "media" in (v.message or "").lower()]
+
+    # RED: a non-allowlisted optical module with DOM=Nein MUST fail media↔DOM.
+    assert dom_violations("QSFP-100G-OPTICAL-NOTLISTED"), \
+        "carve-out generalized! a non-allowlisted optical module with DOM=Nein must FAIL media↔DOM"
+    # GREEN: allowlisted optical parts with DOM=Nein are exempt — both rationales:
+    assert not dom_violations("RX-10KM-SFP"), \
+        "allowlisted OEM-DS-silent optical part must be exempt from the optical→Ja rule"
+    assert not dom_violations("FG-TRAN-QSFP+SR-BIDI"), \
+        "allowlisted DS-explicit-No-DDM optical part (datasheet-grounded) must be exempt too"
+
+
+def test_media_dom_generalized_active_copper(tmp_path, rules, weights):
+    """L7 anti-blind-spot (MISSION §8, 2026-06-19 L8 directive): the media↔DOM check is GENERALIZED —
+    it runs on CABLES too, and copper is classified incl. ACTIVE-copper twinax (ACU*/AC* tokens +
+    Kabeltyp), via the category-agnostic constants.classify_medium. An active-copper DAC with DOM=Ja
+    must FAIL — that exact class shipped past the DOM re-ground because the old check exempted cables
+    and read a blob that ignored Kabeltyp. Both directions + the OEM allowlists are exercised."""
+    import copy
+    from hexcat.validate import validate_dir
+
+    def mediadom_violations(pn, base_factory, attr_overrides):
+        _, e = base_factory()
+        e = copy.deepcopy(e)
+        drop = set(attr_overrides) | {"DOM Unterstützung", "DOM/DDM"}
+        e["attributes"] = [a for a in e["attributes"] if a[0] not in drop]
+        for k, v in attr_overrides.items():
+            e["attributes"].append([k, v])
+        content = tmp_path / f"md_{pn}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False, indent=2), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"mo_{pn}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        res = validate_dir(rules, out)
+        return [v for v in res.violations
+                if "DOM" in (v.field or "") and "media" in (v.message or "").lower()]
+
+    # FAIL — active-copper DAC (ACU token) with DOM=Ja: the exact defect class.
+    assert mediadom_violations("SFP-H10GB-ACU10M", _cisco_dac,
+                               {"Kabeltyp": "Aktives Twinax-Kupferkabel", "DOM Unterstützung": "Ja"}), \
+        "active-copper DAC (ACU) with DOM=Ja must FAIL media↔DOM"
+    # FAIL — passive-copper DAC with DOM=Ja.
+    assert mediadom_violations("QSFP-100G-CU3M", _cisco_dac,
+                               {"Kabeltyp": "Passives Twinax-Kupferkabel", "DOM Unterstützung": "Ja"}), \
+        "passive-copper DAC with DOM=Ja must FAIL media↔DOM"
+    # FAIL — optical SR module with DOM=Nein.
+    assert mediadom_violations("SFP-10G-SR", _cisco_optic,
+                               {"Fasertyp": "Multimode (OM3)", "DOM Unterstützung": "Nein"}), \
+        "optical SR module with DOM=Nein must FAIL media↔DOM"
+    # PASS — active-copper DAC with DOM=Nein (correct).
+    assert not mediadom_violations("SFP-H10GB-ACU10M", _cisco_dac,
+                                   {"Kabeltyp": "Aktives Twinax-Kupferkabel", "DOM Unterstützung": "Nein"}), \
+        "active-copper DAC with DOM=Nein is correct — must PASS"
+    # PASS — 1G CWDM optical with DOM=Nein, on the OEM-DS-silent allowlist.
+    assert not mediadom_violations("CWDM-SFP-1470", _cisco_optic,
+                                   {"Fasertyp": "Singlemode", "DOM Unterstützung": "Nein"}), \
+        "allowlisted 1G CWDM optical with DOM=Nein must PASS"
+    # PASS — 10G optical with DOM=Ja.
+    assert not mediadom_violations("X2-10GB-SR", _cisco_optic,
+                                   {"Fasertyp": "Multimode (OM3)", "DOM Unterstützung": "Ja"}), \
+        "10G optical module with DOM=Ja must PASS"
+
+
+def test_temp_exception_no_sibling_propagation():
+    """L7 anti-blind-spot (MISSION §8, L8 2026-06-19): a per-part Betriebstemperatur EXCEPTION must NOT
+    propagate to a family sibling without that sibling's OWN datasheet line. QSFP-100G-SM-SR is
+    +10..60 °C (DS c78-736282); its sibling QSFP-100G-SR1.2 is 0..70 °C and must NOT inherit +10/60 by
+    symmetry. Any non-commercial-default temp on a PN not in the per-part verified set is flagged."""
+    from hexcat.constants import ungrounded_temp_exceptions, TEMP_COMMERCIAL_DEFAULT
+    verified = {"QSFP-100G-SM-SR"}  # the only part with its OWN datasheet line for an exception
+    # RED: sibling given the exception value by symmetry, not independently verified -> flagged.
+    bad = {"QSFP-100G-SM-SR": "+10 bis 60 °C", "QSFP-100G-SR1.2": "+10 bis 60 °C"}
+    assert ungrounded_temp_exceptions(bad, verified) == ["QSFP-100G-SR1.2"], \
+        "a sibling-propagated temp exception (SR1.2 := SM-SR's +10/60) must be flagged"
+    # GREEN: sibling at the commercial default needs no per-part source.
+    ok = {"QSFP-100G-SM-SR": "+10 bis 60 °C", "QSFP-100G-SR1.2": TEMP_COMMERCIAL_DEFAULT}
+    assert ungrounded_temp_exceptions(ok, verified) == [], \
+        "commercial-default sibling must not be flagged"
+
+
+def test_temp_oem_grade_commercial_overclaim(tmp_path, rules, weights):
+    """L7 anti-blind-spot (MISSION §8, 2026-06-19): a part Cisco grades COMMERCIAL (0–70 °C) must NOT carry
+    an extended/industrial range — the over-claim CC shipped (GLC-SX-MMD/LH-SMD/ZX-SMD at −5/85). A part
+    Cisco grades EXT (SFP-GE-S) may legitimately be −5/85 and must NOT be flagged (narrow allowlist)."""
+    import copy
+    from hexcat.validate import validate_dir
+
+    def temp_violations(pn, temp):
+        _, e = _cisco_optic()
+        e = copy.deepcopy(e)
+        e["attributes"] = [a for a in e["attributes"] if a[0] != "Betriebstemperatur"]
+        e["attributes"].append(["Betriebstemperatur", temp])
+        content = tmp_path / f"t_{pn}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"to_{pn}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        return [v for v in validate_dir(rules, out).violations if "temp-vs-OEM-grade" in (v.message or "")]
+
+    # GLC-ZX-SM (non-D) is COM per Table 3 → extended temp on it is an over-claim.
+    assert temp_violations("GLC-ZX-SM", "-5 bis 85 °C"), \
+        "COM-grade GLC-ZX-SM at −5/85 must FAIL temp-vs-OEM-grade"
+    assert not temp_violations("GLC-ZX-SM", "0 bis 70 °C"), \
+        "COM-grade GLC-ZX-SM at 0/70 must PASS"
+    # GLC-SX-MMD (−D) is EXT per Table 3 → −5/85 is correct and must NOT fire (the inversion-corrected case).
+    assert not temp_violations("GLC-SX-MMD", "-5 bis 85 °C"), \
+        "EXT-grade GLC-SX-MMD at −5/85 must PASS (it is NOT on the COM allowlist)"
+    assert not temp_violations("SFP-GE-S", "-5 bis 85 °C"), \
+        "EXT-grade SFP-GE-S at −5/85 must PASS (not on the COM allowlist)"
+
+
+def test_temp_oem_commercial_allowlist_matches_datasheet():
+    """L8 meta-rule (2026-06-19 REJECT): the _TEMP_OEM_COMMERCIAL allowlist must MATCH Cisco c78-366584
+    Table 3's COM column EXACTLY — this guards the inversion that shipped (the −SMD/−D DOM variants are
+    EXT, NOT COM). The bug was bad DATA passing a good check; this asserts the data. RED if a known-EXT
+    part (GLC-SX-MMD) is in COM or a known-COM part is missing."""
+    from hexcat.validate import _TEMP_OEM_COMMERCIAL
+    DATASHEET_COM = {"GLC-T", "GLC-ZX-SM", "GLC-BX-D", "GLC-BX-U", "GLC-2BX-D", "GLC-SX-MM", "GLC-LH-SM"}
+    DATASHEET_EXT = {"GLC-SX-MMD", "GLC-LH-SMD", "GLC-EX-SMD", "GLC-ZX-SMD", "GLC-TE",
+                     "SFP-GE-S", "SFP-GE-L", "SFP-GE-Z", "SFP-GE-T"}
+    assert _TEMP_OEM_COMMERCIAL == DATASHEET_COM, \
+        f"allowlist != datasheet COM column; symmetric diff = {_TEMP_OEM_COMMERCIAL ^ DATASHEET_COM}"
+    assert not (_TEMP_OEM_COMMERCIAL & DATASHEET_EXT), \
+        "an EXT-grade part leaked into the COM allowlist — the Table 3 inversion"
+
+
 def test_gate_beschreibung_floor_is_90():
     import yaml
     from pathlib import Path

@@ -11,7 +11,14 @@ dist/
 
 # HexCat runtime artifacts
 *.sqlite3
-_scratch/
+# _scratch ignored EXCEPT the L8 audit CSV artifacts — the GitHub auditor needs line-level
+# diffs of the staged deliverables (standing instruction 2026-06-19). Zips/PDFs/tmp stay out.
+_scratch/**
+!_scratch/L8_attr_reground/
+!_scratch/L8_attr_reground/*.csv
+!_scratch/hardening/
+!_scratch/hardening/**/
+!_scratch/hardening/**/*.csv
 out/
 _out/
 out_demo*/

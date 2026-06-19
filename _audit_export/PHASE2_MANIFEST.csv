@@ -1,0 +1,173 @@
+﻿PN,Brand,Attribute,old_value,new_value,source_delta,state,grounding
+GLC-LH-SM,Cisco,DOM Unterstützung,Ja,Nein,DOM-temp,PENDING,c78-366584: non-D GLC has no DDM
+GLC-SX-MM,Cisco,DOM Unterstützung,Ja,Nein,DOM-temp,PENDING,c78-366584: non-D GLC has no DDM
+GLC-ZX-SM,Cisco,DOM Unterstützung,Ja,Nein,DOM-temp,PENDING,c78-366584: non-D GLC has no DDM
+SFP-GE-S,Cisco,Betriebstemperatur,0 bis 70 °C,-5 bis 85 °C,DOM-temp,PENDING,c78-366584: SFP-GE-* extended-temp
+SFP-GE-Z,Cisco,Betriebstemperatur,0 bis 70 °C,-5 bis 85 °C,DOM-temp,PENDING,c78-366584: SFP-GE-* extended-temp
+SFP-1G-SX,Cisco,Betriebstemperatur,0 bis 70 °C (COM),-5 bis 85 °C (EXT),DOM-temp,PENDING,c78-366584 extended; (COM)->(EXT) tag confirm
+SFP-1G-LH,Cisco,Betriebstemperatur,0 bis 70 °C (COM),-5 bis 85 °C (EXT),DOM-temp,PENDING,c78-366584 extended; (COM)->(EXT) tag confirm
+J9142B,HPE,DOM Unterstützung,Ja,Nein,DOM-temp,HELD-CONTESTED,AOS guide p.182 BiDi: DDM=No
+J9143B,HPE,DOM Unterstützung,Ja,Nein,DOM-temp,HELD-CONTESTED,AOS guide p.182 BiDi: DDM=No
+JL745A,HPE,Betriebstemperatur,-40 bis +85 °C,0 bis 70 °C,DOM-temp,PENDING,AOS guide p.164 Commercial 0-70; +sign confirm
+JL746A,HPE,Betriebstemperatur,-40 bis +85 °C,0 bis 70 °C,DOM-temp,PENDING,AOS guide p.164 Commercial 0-70; +sign confirm
+EX-SFP-1GE-SX-ET,Juniper,Betriebstemperatur,0 bis 70 °C,(Attribut entfernt/omitted),DOM-temp,PENDING,Juniper HCT Extended-Temp; 0-70 known-wrong; exact band [VERIFY] -> omit (=Extreme -ET)
+EX-SFP-1FE-FX-ET,Juniper,Betriebstemperatur,0 bis 70 °C,(Attribut entfernt/omitted),DOM-temp,PENDING,Juniper HCT Extended-Temp; 0-70 known-wrong; exact band [VERIFY] -> omit (=Extreme -ET)
+10G-SR-SFP300M-ET,Extreme,Betriebstemperatur,0 bis 70 °C,0 bis 85 °C,DOM-temp,APPLIED-GUARD,Extreme High-Temp GUID-E30872B1
+10G-LR-SFP10KM-ET,Extreme,Betriebstemperatur,0 bis 70 °C,(Attribut entfernt/omitted),DOM-temp,APPLIED-GUARD,-ET high-temp; exact band [VERIFY]; qualit. prose
+10G-ER-SFP40KM-ET,Extreme,Betriebstemperatur,0 bis 70 °C,(Attribut entfernt/omitted),DOM-temp,APPLIED-GUARD,-ET high-temp; exact band [VERIFY]; qualit. prose
+FN-TRAN-SFP+SR,Fortinet,Betriebstemperatur,-40 °C bis 85 °C,0 °C bis 70 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FN-TRAN-SFP+ER,Fortinet,Betriebstemperatur,-40 °C bis 85 °C,-5 °C bis 70 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FN-TRAN-SFP+LR,Fortinet,Betriebstemperatur,0 °C bis 70 °C,0 °C bis 85 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FN-TRAN-SFP2-SX,Fortinet,Betriebstemperatur,-40 °C bis 70 °C,-40 °C bis 85 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FN-TRAN-SFP2-LX,Fortinet,Betriebstemperatur,-40 °C bis 70 °C,-40 °C bis 85 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FN-TRAN-QSFP28-BIDI,Fortinet,Betriebstemperatur,0 °C bis 70 °C,10 °C bis 70 °C,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+FG-TRAN-QSFP+SR-BIDI,Fortinet,DOM Unterstützung,Ja,Nein,DOM-temp,APPLIED-GUARD,Fortinet DS spec table p.4-7
+SFP-100M-FX,Dell,Betriebstemperatur,0 bis 70 °C,0 bis 85 °C,DOM-temp,APPLIED-GUARD,Dell © 2026 Optics Spec Sheet
+SFP-1G-SX,Dell,Betriebstemperatur,0 bis 70 °C,0 bis 85 °C,DOM-temp,APPLIED-GUARD,Dell © 2026 Optics Spec Sheet
+SFP-1G-LX,Dell,Betriebstemperatur,0 bis 70 °C,0 bis 85 °C,DOM-temp,APPLIED-GUARD,Dell © 2026 Optics Spec Sheet
+SFP-1G-T,Dell,Betriebstemperatur,0 bis 70 °C,0 bis 85 °C,DOM-temp,APPLIED-GUARD,Dell © 2026 Optics Spec Sheet
+QSFP-40G-BIDI,Dell,Betriebstemperatur,0 bis 70 °C,10 bis 70 °C,DOM-temp,APPLIED-GUARD,Dell © 2026: +10°C min
+QSFP-100G-SR1.2,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+QSFP-40/100-SRBD,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+QSFP-40G-SR-BD,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+QSFP-40G-BD-RX,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+QDD-400G-BD,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+QSFP-40-SR-BD,Cisco,Faseranzahl,1,2,other-11,PENDING,Duplex-LC SR-BiDi=2 strands (Cisco DS c78-660083)
+MA-QSFP-40G-SR-BD,Meraki,Faseranzahl,1,2,other-11,PENDING,Cisco SR-BiDi rebrand; 2 strands
+C-Z100-Z100-3M,Arista,Länge,2 m,3 m,other-11,PENDING,"PN -3M + all sibling -3M = 3 m | Verification_Log: WEICHT AB vom Arista-DS (DS-Tippfehler: druckt 2m für -3M, kollidiert mit -2M-Zeile); korrigiert auf 3m per PN + Kollision — NICHT auf DS-2m zurücksetzen"
+C-Y100-Y100-3M,Arista,Länge,2 m,3 m,other-11,PENDING,"PN -3M + all sibling -3M = 3 m | Verification_Log: WEICHT AB vom Arista-DS (DS-Tippfehler: druckt 2m für -3M, kollidiert mit -2M-Zeile); korrigiert auf 3m per PN + Kollision — NICHT auf DS-2m zurücksetzen"
+C-S50-S50-3M,Arista,Länge,2 m,3 m,other-11,PENDING,"PN -3M + all sibling -3M = 3 m | Verification_Log: WEICHT AB vom Arista-DS (DS-Tippfehler: druckt 2m für -3M, kollidiert mit -2M-Zeile); korrigiert auf 3m per PN + Kollision — NICHT auf DS-2m zurücksetzen"
+QSFP-2Q200-CU3M,Cisco,Kabeltyp,(none),"Twinax-Kupfer, passiv, Breakout",other-11,PENDING,only DAC-Kabel part w/ empty Kabeltyp
+S4B43A,HPE,Formfaktor,QSFP-DD,QSFP56,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+S2N63A,HPE,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+10303,Extreme,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+MGBIC-BX40-D,Extreme,Formfaktor,SFP+,SFP,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+10053H,Extreme,Formfaktor,SFP+,SFP,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-SFP-25G-1M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-SFP-25G-2M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-SFP-25G-2.5M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-SFP-25G-3M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-SFP-25G-5M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-SFP-25G-2M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-SFP-25G-7M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-SFP-25G-10M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-SFP-25G-20M,Dell,Formfaktor,SFP+,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-QSFP-100G-0.5M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-QSFP-100G-1M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-QSFP-100G-2M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-QSFP-100G-3M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+DAC-QSFP-100G-5M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-QSFP-100G-3M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-QSFP-100G-7M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-QSFP-100G-10M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-QSFP-100G-30M,Dell,Formfaktor,QSFP+,QSFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-D800-D800-1M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-D800-D800-2M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-1M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-3M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-5M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-7M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-10M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-15M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-20M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-25M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+A-D800-D800-30M,Arista,Formfaktor,QSFP-DD,QSFP-DD800,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Z100-1M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Z100-2M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Z100-3M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Q100-1M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Q100-2M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-Q100-3M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-2S50-1M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-2S50-2M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-Z100-2S50-3M,Arista,Formfaktor,SFP,SFP-DD,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-S50-S50-1M,Arista,Formfaktor,SFP,SFP56,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-S50-S50-2M,Arista,Formfaktor,SFP,SFP56,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+C-S50-S50-3M,Arista,Formfaktor,SFP,SFP56,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-0.5M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-1M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-1.5M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-2M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-2.5M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-3M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-S-S-25G-5M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-3M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-5M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-7M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-10M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-15M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-20M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-25M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-S-S-25G-30M,Arista,Formfaktor,SFP,SFP28,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-0.5M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-1M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-1.5M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-2M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-2.5M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-3M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+CAB-SFP-SFP-5M,Arista,Formfaktor,SFP,SFP+,FF-withinfamily,PENDING,within-family speed->FF (MSA)
+AOC-TSR-FS,Supermicro,Formfaktor,SFP+,SFP,FF-withinfamily,HELD-WRONG,1000%-verify: dual-rate 10G/1G SFP+ (Supermicro store) — FF=SFP+ is CORRECT; SFP+->SFP misread (1000BASE-SX dual-rate ≠ 1G SFP). DROPPED.
+AOM-TSR-FS,Supermicro,Formfaktor,SFP+,SFP,FF-withinfamily,HELD-WRONG,1000%-verify: dual-rate 10G/1G SFP+ (Supermicro store) — FF=SFP+ is CORRECT; SFP+->SFP misread (1000BASE-SX dual-rate ≠ 1G SFP). DROPPED.
+FN-CABLE-QSFPDD-2QSFP56-L1,Fortinet,Formfaktor,QSFP56,QSFP-DD,FF-hostFF,PENDING,host plug=400G QSFP-DD (PN); fan-out end was set
+FN-CABLE-QSFPDD-2QSFP56-LB5,Fortinet,Formfaktor,QSFP56,QSFP-DD,FF-hostFF,PENDING,host plug=400G QSFP-DD (PN); fan-out end was set
+FN-CABLE-QSFPDD-8SFP56-L1,Fortinet,Formfaktor,SFP56,QSFP-DD,FF-hostFF,PENDING,host plug=400G QSFP-DD (PN); fan-out end was set
+FN-CABLE-QSFPDD-8SFP56-LB5,Fortinet,Formfaktor,SFP56,QSFP-DD,FF-hostFF,PENDING,host plug=400G QSFP-DD (PN); fan-out end was set
+FG-CABLE-SR10-SFP+,Fortinet,Formfaktor,SFP+,(Formfaktor-Zeile entfernt),FF-hostFF,PENDING,passives OM3 MPO-zu-10xLC fan-out (DS); kein Modul-FF. KEIN omit/empty-Präzedenzfall (829/829 Kabel populiert) -> Emitter muss Auslassung erlauben; operator-default OMIT
+FG-CABLE-SR10-SFP+5,Fortinet,Formfaktor,SFP+,(Formfaktor-Zeile entfernt),FF-hostFF,PENDING,passives OM3 MPO-zu-10xLC fan-out (DS); kein Modul-FF. KEIN omit/empty-Präzedenzfall (829/829 Kabel populiert) -> Emitter muss Auslassung erlauben; operator-default OMIT
+C-Y100-Y100-1M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-Y100-2M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-Y100-3M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-Q100-1M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-Q100-2M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-Q100-3M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-2S50-1M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-2S50-2M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+C-Y100-2S50-3M,Arista,Formfaktor,SFP,DSFP,FF-DSFP,PENDING,PN Y=DSFP + Anschlusstyp 'DSFP auf'; ADD DSFP to vocab
+MGBSX1,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Cisco SB DS c78-741408: full optical spec, NO DOM line; 1W SB; confirmed-by-omission"
+MGBLX1,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Cisco SB DS c78-741408: full optical spec, NO DOM line; 1W SB; confirmed-by-omission"
+MGBLH1,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Cisco SB DS c78-741408: full optical spec, NO DOM line; 1W SB; confirmed-by-omission"
+CWDM-SFP-1470,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+CWDM-SFP-1490,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+CWDM-SFP-1510,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+CWDM-SFP-1530,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+CWDM-SFP-1610,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+DWDM-SFP-3033,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+DWDM-SFP-3112,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+DWDM-SFP-3190,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+DWDM-SFP-3268,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+DWDM-SFP-6141,Cisco,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"OEM DS silent on DDM; 1G original non-DOM; konservativ, reversibel falls OEM-Beleg auftaucht"
+RX-10KM-SFP,Juniper,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Juniper OEM optic-modules DS silent on DOM; legacy E-series; konservativ, reversibel"
+RX-550M-SFP,Juniper,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Juniper OEM optic-modules DS silent on DOM; legacy E-series; konservativ, reversibel"
+RX-70KM-SFP,Juniper,DOM Unterstützung,Ja,Nein,VERIFY-DOM,PENDING,"Juniper OEM optic-modules DS silent on DOM; legacy E-series; konservativ, reversibel"
+FN-CABLE-QSFP+7-4PACK,Fortinet,Anwendung,4x SFP+/SFP28,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix,PENDING,"Fortinet DS: 'Pack of four 40 GE QSFP+ passive DAC' = gerade DAC, kein Breakout; entferne Aufteilung-Attribut"
+FN-CABLE-QSFP+7-4PACK,Fortinet,MAIN-prose (Artikelname/Kurz/Beschr/Meta),Breakout-DAC zu 4x SFP+/SFP28 (Build-Fehler),"40 GE QSFP+ DAC (4er-Pack), fest konfektioniert",L8-defect-fix,PENDING,"de-breakout, Konvention FN-CABLE-QSFP+1/3/5; the ONE allowed MAIN exception"
+S4B43A,HPE,MAIN-prose (Artikelname/Kurz/Beschr),QSFP-DD (mislabel),QSFP56,FF-cascade,PENDING,"FF QSFP-DD->QSFP56 propagated to all prose (token appeared in name+Kurz+Beschr, not just name); MAIN exception expanded from name-only"
+JH231A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+JH233A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+JL309A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+R9B41A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-16 / Faseranzahl 16,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+R9B42A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+S3N93A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+S4B43A,HPE,Anschlusstyp+Faseranzahl (parallel-optic),LC / Faseranzahl 2,MPO-12 / Faseranzahl 8,L8-defect-fix,PENDING,"parallel optic = MPO not duplex-LC; deriver gave fa=2 from LC connector; prose LC->MPO (MAIN exception, 7 SKUs)"
+MCP7H60-W02AR26,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MCP7F60-W002R26,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MCP7H50-H002R26,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MFS1S50-H005V,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MCP7H00-G01AR30N,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MCP7F00-A01AR30N,NVIDIA,Anwendung,<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+MCP7F00-A01AR30N,NVIDIA,Anschlusstyp,QSFP28 auf 4x QSFP28,QSFP28 auf 4x SFP28,L8-defect-fix(check2),PENDING,breakout ends are SFP28 25G (NVIDIA PB); lane 4x25=100 ✓; prose fixed (2-SKU MAIN exception)
+MCP7F60-W002R26,NVIDIA,Anschlusstyp+Geschwindigkeit+Formfaktor,QSFP56 auf 4x QSFP56 / 100G,QSFP-DD auf 4x QSFP56 / 400G / QSFP-DD (tails PAM4=QSFP56),L8-defect-fix(check2),PENDING,NVIDIA PB: 400G QSFP-DD->4x100G; was mis-built 100G QSFP56; FF cascade + weight-pin; prose fixed
+MCP7H60-W02AR26,NVIDIA,Anschlusstyp+Geschwindigkeit+Formfaktor,QSFP56 auf 2x QSFP56 / 200G,QSFP-DD auf 2x QSFP56 / 400G / QSFP-DD,L8-defect-fix(check2-refine),PENDING,host under-characterized 200G->400G QSFP-DD; tails PAM4=2x QSFP56@200G; weight-pin; 3rd MAIN-exception
+DAC/AOC-QSFP-4SFP28-25G (×4),Dell,Formfaktor+Anschlusstyp,QSFP+ auf 4x SFP28 / 25G,QSFP28 auf 4x SFP28 / 100G,L8-defect-fix(check2),PENDING,QSFP+ can't host 4x25G; host=QSFP28 100G (Dell spec); +prose
+Dell breakouts (×33 families),Dell,Geschwindigkeit (host-aggregate),per-leg rate,host-aggregate,L8-defect-fix(check2),PENDING,build under-characterized breakout rate as per-leg; convention=host-aggregate (all 6 cleared-brand breakouts); +prose
+Dell breakouts (×42),Dell,Anwendung (Aufteilung alias),<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,Aufteilung alias contaminated Anwendung (first-wins); removed Aufteilung
+Lenovo breakouts (×16),Lenovo,Anwendung (Aufteilung alias),<breakout-descriptor>,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),L8-defect-fix(check3),PENDING,"Aufteilung alias contaminated Anwendung; removed. FF/rate already correct (lane-math host-aggregate, no FF mismatch). ATTRIBUTES-only, MAIN 0-diff."
+Cisco BiDi-duplex (×6)+QDD-400G-BD,Cisco,Faseranzahl,1,2,deriver-fix(prereq4),PENDING,deriver bidi-exclusion fixed: 2-fibre duplex-LC BiDi
+Cisco duplex optics (×123),Cisco,Faseranzahl,(absent),2,deriver-fix(prereq1+SC),PENDING,"SC-connector + absent-fill: CFP/CFP2/CPAK/XENPAK/X2/DWDM-GBIC/WS-G548x duplex->2; safety-checked (0 single-fibre->2, 0 copper)"
+Cisco single-fibre (×5),Cisco,Faseranzahl,(absent),1,deriver-fix,PENDING,single/simplex connector absent-fill ->1
+Cisco dual-duplex (×3-4),Cisco,Faseranzahl,2,4,L8-defect-fix(check2),PENDING,OSFP-2X400G-FR4/QDD-2X400G-FR4/QDD-2X100-CWDM4-S/LR4-S: 2x duplex=4 (authored); QDD-2X100-SR4-S stays 16 (MPO-24)
+SFP-1G-SX / SFP-1G-LH,Cisco,Betriebstemperatur,0 bis 70 °C,(-5 bis 85 °C),HELD-UNVERIFIED,HELD,exact PN not in retrievable Cisco DS; equivalents GLC-SX-MMD/GLC-LH-SMD are EXT but not PN-confirmed; flag-don't-fabricate -> NOT applied
+Arista FF (×54),Arista,Formfaktor,SFP/QSFP-DD (Arista-verbatim),SFP-DD/DSFP/SFP56/SFP28/QSFP-DD800 (MSA grade),manifest+web-verify,PENDING,"catalog FF vocab uses MSA speed-grade tokens; Arista DS uses plainer 'SFP'+IEEE-CR; FF-vs-speed confirmed mislabeled; attributes-only (prose=cage+speed, consistent)"
+Arista Anschlusstyp (×94),Arista,Anschlusstyp,(empty),CAB-O/D breakout configs,manifest-fill+web-verify,PENDING,OSFP/QSFP-DD->2x/4x QSFP56(PAM4)/QSFP28(NRZ)/8x SFP56/SFP28; agent-confirmed CAB-O pattern
+Arista Faseranzahl (×75),Arista,Faseranzahl,'N (connector)' parenthetical,2 (duplex ×40) / 8 (single-MPO-12-SR4 ×20) / 16 (MPO-16+800G-dual ×15),L8-defect-fix(MPO-active),PENDING,MPO=ACTIVE fibres not connector-capacity (Arista FAQ: SR4 uses 8 of 12); confirms HPE=8; normalize parenthetical->bare-correct
+Arista -3M (×3),Arista,Länge,2 m,3 m,manifest+VL-note,PENDING,"DS-deviation: Arista DS prints 2m for -3M (typo, collides with -2M); corrected to 3m per PN+collision + VL note; 3-SKU MAIN exception"
