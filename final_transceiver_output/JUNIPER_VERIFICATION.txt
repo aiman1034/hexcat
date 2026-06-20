@@ -1,0 +1,196 @@
+JUNIPER VERIFICATION REPORT — 181 optics vs Juniper OEM (apps.juniper.net HCT + juniper.net guides)
+Compatibles (FluxLight/FS/EdgeOptic/Prolabs) NOT used. The HCT is JS-gated (not $0-fetchable) -> verified
+against cached juniper.net optics guides + targeted juniper.net search; unconfirmable -> FLAG. 2026-06-20.
+========================================================================================
+RESOLVED — the 4 L8-flagged items:
+ 1. Temp FORMAT: 23 industrial parts normalized '-40 °C bis +85 °C' -> '-40 bis 85 °C' (value correct, -I/-IT).
+ 2. 13 collision names: 11 confirmed Juniper Common Optics -> HAN kept bare. QSFP-40G-ESR4-JUNIPER REMOVED
+    (Juniper's name = QFX-QSFP-40G-ESR4 / part 740-045627, already in bundle -> duplicate). QDD-400G-PLR4-JUNIPER
+    FLAGGED (juniper.net 400G list = DR4/FR4/LR4/ZR/SR4P2, no PLR4).
+ 3. 1G DOM: modern 1G (SFP-1GE-SX/LX, EX-SFP-1GE-*) = Ja (Juniper optics carry DDM per the optics guide);
+    legacy RX-10KM/550M/70KM-SFP = Nein (Juniper does not affirm DDM for the legacy SFP-adapters; OEM-silent). CORRECT, no change.
+ 4. 2 -ET parts (EX-SFP-1FE-FX-ET, EX-SFP-1GE-SX-ET): temp not $0-confirmable (HCT gated) -> OMIT confirmed (no guess); FLAG for HCT range.
+REMOVALS: QSFP-40G-ESR4-JUNIPER (1) -> 181 to 180.   FLAGGED for L8: QDD-400G-PLR4-JUNIPER + the 2 -ET temp ranges.
+
+part | in Juniper catalog? | note
+----------------------------------------------------------------------------------------
+CTP-SFP-1GE-LX             | Ja (Guide)             | Common-Optic, HAN bare behalten
+CTP-SFP-1GE-SX             | Ja (Guide)             | Common-Optic, HAN bare behalten
+CTP-SFP-1GE-T              | Ja (Guide)             | Common-Optic, HAN bare behalten
+RX-10KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
+RX-550M-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
+RX-70KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
+RX-FXSM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
+RX-GET-SFP                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1FE-FX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1GE-FE-E-T             | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1GE-LH                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1GE-LX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1GE-SX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-1GE-T                  | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-FE20KT13R15            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-FE20KT15R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-GE10KT13R14            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-GE10KT13R15            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-GE10KT14R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-GE10KT15R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFP-GE40KM                 | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFPP-10GE-ER               | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFPP-10GE-LR               | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFPP-10GE-LRM              | Ja (Guide)             | Common-Optic, HAN bare behalten
+SFPP-10GE-SR               | Ja (Guide)             | Common-Optic, HAN bare behalten
+XENPAK-1XGE-ER             | Ja (Guide)             | Common-Optic, HAN bare behalten
+XENPAK-1XGE-LR             | Ja (Guide)             | Common-Optic, HAN bare behalten
+XENPAK-1XGE-SR             | Ja (Guide)             | Common-Optic, HAN bare behalten
+XENPAK-1XGE-ZR             | Ja (Guide)             | Common-Optic, HAN bare behalten
+XFP-10GE-ER                | Ja (Guide)             | Common-Optic, HAN bare behalten
+XFP-10GE-LR                | Ja (Guide)             | Common-Optic, HAN bare behalten
+XFP-10GE-SR                | Ja (Guide)             | Common-Optic, HAN bare behalten
+XFP-10G-S                  | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-2X400G-DR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-2X400G-FR4-JUNIPER     | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-2X400G-FR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-2X400G-LR4-10          | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-2X400G-LR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-DR4-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-FR4-JUNIPER       | Ja (Guide-Token)       | 
+QDD-400G-LR4-10            | Ja (Guide-Token)       | 
+QDD-400G-ER4-30            | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-LR8-JUNIPER       | Ja (Guide-Token)       | 
+QDD-400G-PLR4-JUNIPER      | FLAG                   | nicht in Juniper HCT/Guides (400G-Liste: DR4/FR4/LR4/ZR/SR4P2, kein PLR4) -> L8 pruefen/entfernen
+QDD-400G-ZR-JUNIPER        | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-ZR-M              | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-ZR-M-HP           | Ja (Guide)             | Common-Optic, HAN bare behalten
+JCO400-QDD-ZR              | Ja (Guide)             | Common-Optic, HAN bare behalten
+JCO400-QDD-ZR-M            | Ja (Guide)             | Common-Optic, HAN bare behalten
+JCO400-QDD-ZR-M-HP         | Ja (Guide)             | Common-Optic, HAN bare behalten
+CFP-100GBASE-ER4           | Ja (Guide-Token)       | 
+CFP-100GBASE-LR4           | Ja (Guide-Token)       | 
+CFP-100GBASE-SR10          | Ja (Guide)             | Common-Optic, HAN bare behalten
+CFP-GEN2-100GBASE-LR4      | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+CFP2-100GBASE-ER4          | Ja (Guide)             | Common-Optic, HAN bare behalten
+CFP2-100GBASE-LR4          | Ja (Guide)             | Common-Optic, HAN bare behalten
+JNP-QSFP-100G-BXSR         | Ja (Guide)             | Common-Optic, HAN bare behalten
+JNP-QSFP-100G-CWDM         | Ja (Guide-Token)       | 
+JNP-QSFP-100G-LR4          | Ja (Guide-Token)       | 
+JNP-QSFP-100G-LR4-4WDM-20-I | Ja (Guide-Token)       | 
+JNP-QSFP-100G-LR4-4WDM-40-I | Ja (Guide-Token)       | 
+JNP-QSFP-100G-PSM4         | Ja (Guide-Token)       | 
+JNP-QSFP-100G-SR4          | Ja (Guide-Token)       | 
+QDD-4X100G-FR              | Ja (Guide-Token)       | 
+QDD-4X100G-LR              | Ja (Guide-Token)       | 
+QSFP-100G-4WDM40           | Ja (Guide-Token)       | 
+QSFP-100G-CWDM             | Ja (Guide-Token)       | 
+QSFP-100G-CWDM4-JUNIPER    | Ja (Guide-Token)       | 
+QSFP-100G-DR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-ER4L             | Ja (Guide-Token)       | 
+QSFP-100G-FR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-LR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-LR4-JUNIPER      | Ja (Guide-Token)       | 
+QSFP-100G-LR4-D            | Ja (Guide-Token)       | 
+QSFP-100G-PSM4-JUNIPER     | Ja (Guide-Token)       | 
+QSFP-100G-SR1P2            | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-SR4-C            | Ja (Guide)             | Common-Optic, HAN bare behalten
+EX-SFP-10G-BX-D            | Ja (Guide-Token)       | 
+EX-SFP-10G-BX-D-40         | Ja (Guide-Token)       | 
+EX-SFP-10G-BX-D-80         | Ja (Guide-Token)       | 
+EX-SFP-10G-BX-U            | Ja (Guide-Token)       | 
+EX-SFP-10G-BX-U-40         | Ja (Guide-Token)       | 
+EX-SFP-10G-BX-U-80         | Ja (Guide-Token)       | 
+EX-SFP-10GE-BX23           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-10GE-BX23-60        | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-10GE-BX32           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-10GE-BX32-60        | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-10GE-ER             | Ja (Guide-Token)       | 
+EX-SFP-10GE-LR             | Ja (Guide-Token)       | 
+EX-SFP-10GE-LRM            | Ja (Guide-Token)       | 
+EX-SFP-10GE-SR             | Ja (Guide-Token)       | 
+EX-SFP-10GE-USR            | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-10GE-ZR             | Ja (Guide-Token)       | 
+EX-SFP-1FE-FX              | Ja (Guide-Token)       | 
+EX-SFP-1FE-FX-ET           | Ja (Guide-Token)       | 
+EX-SFP-1FE-LH              | Ja (Guide-Token)       | 
+EX-SFP-1FE-LX              | Ja (Guide-Token)       | 
+EX-SFP-1FE-LX40K           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-1GE-LH              | Ja (Guide-Token)       | 
+EX-SFP-1GE-LX              | Ja (Guide-Token)       | 
+EX-SFP-1GE-LX40K           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-1GE-LX40K-I         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-1GE-SX              | Ja (Guide-Token)       | 
+EX-SFP-1GE-SX-ET           | Ja (Guide-Token)       | 
+EX-SFP-1GE-T               | Ja (Guide-Token)       | 
+EX-SFP-FE20KT13R15         | Ja (Guide-Token)       | 
+EX-SFP-FE20KT15R13         | Ja (Guide-Token)       | 
+EX-SFP-GE10KT13R14         | Ja (Guide-Token)       | 
+EX-SFP-GE10KT13R14-I       | Ja (Guide-Token)       | 
+EX-SFP-GE10KT13R15         | Ja (Guide-Token)       | 
+EX-SFP-GE10KT14R13         | Ja (Guide-Token)       | 
+EX-SFP-GE10KT14R13-I       | Ja (Guide-Token)       | 
+EX-SFP-GE10KT15R13         | Ja (Guide-Token)       | 
+EX-SFP-GE20KT13R15         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-GE20KT14R13         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-GE40KT13R15         | Ja (Guide-Token)       | 
+EX-SFP-GE40KT15R13         | Ja (Guide-Token)       | 
+EX-SFP-GE80KCW1470         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-GE80KCW1510         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-GE80KCW1550         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+EX-SFP-GE80KCW1590         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-40G-ESR4          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-40G-LR4           | Ja (Guide-Token)       | 
+JNP-QSFP-40G-LR4-20        | Ja (Guide-Token)       | 
+JNP-QSFP-40G-LX4           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-40G-SWDM4         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-40GE-ER4          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-40GE-IR4          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-4X10GE-IR         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFP-4X10GE-LR         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-QSFPP-40G-BXSR         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX10D          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX10U          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX20D          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX20U          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX40D          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX40U          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX60D          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX60U          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-10G-BX80U          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR             | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-BX-D        | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-BX-U        | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-BXD-I       | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-BXU-I       | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-CW-47       | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-CW-49       | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-CW-51       | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-CW-53       | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-CW-55       | Ja (Guide-Token)       | 
+JNP-SFP-25G-LR-CW27-40     | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-CW29-40     | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-CW31-40     | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW3033    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW3661    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW3740    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW4214    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW4532    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW4772    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW5012    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW5413    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW5494    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR-I-DW5575    | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR40-BXD-I     | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-LR40-BXU-I     | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+JNP-SFP-25G-SR             | Ja (Guide-Token)       | 
+JNP-SFPP-10GE-T            | Ja (Guide-Token)       | 
+QDD-2X100G-CWDM4           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QDD-2X100G-LR4             | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QFX-QSFP-40G-ER4           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QFX-QSFP-40G-ESR4          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QFX-QSFP-40G-LR4           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QFX-QSFP-40G-SR4           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+QSFP-4X10GE-LR-25          | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+SFPP-10GE-BX10D-IT         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+SFPP-10GE-BX10U-IT         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+SFPP-10GE-BX40D-IT         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+SFPP-10GE-BX40U-IT         | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
+SFPP-10GE-ZR               | Ja (Guide-Token)       | 
+XFP-10G-CWDM1471           | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
