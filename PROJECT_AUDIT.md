@@ -1511,6 +1511,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   BOM from Juniper's Prices. Restored it (content byte-identical, `;`/CRLF/179 rows/`0,00` intact) → all 7 brands' Prices now carry the BOM. **LESSON:
   `final_transceiver_output` (the deliverable), NOT `output/`, is the byte-reference for the final bundle; verify a contract across the actual sibling
   files before "fixing" one to match an assumption.**
+- **FIVE NON-GOLD BRANDS VERIFIED — Extreme / Lenovo / Ubiquiti / NVIDIA / Supermicro (2026-06-20, one brand at a**
+  **time, commit+push PER brand, OEM-only, $0/Max, no self-clear, `1_IMPORT_THESE` untouched). STOP → L8.** Operator
+  task: independently datasheet-verify the 5 non-gold brands in `final_transceiver_output/2_full_catalog_by_brand/`,
+  OEM-only (compatibles NEVER count), flag-don't-guess, fix-at-source→re-emit→re-gate(0), write `<BRAND>_VERIFICATION.txt`.
+  Each brand: re-emit gate **0**, **pytest 420**, byte-contract OK (Prices/Main BOM), **no cross-brand collisions**, temp clean (no '+').
+  - **Extreme — 102, 0 corrections (`ef76ded`).** Verified vs cached Extreme Optics datasheets (OEM). Build already spec-accurate.
+  - **Lenovo — 104, 2 DOM corrections (`0093061`).** Cached lp1071 was the WRONG doc; build's real source lp1652 (Broadcom NIC
+    guide) is SILENT on DDM. The 2× **1G** optical `81Y1622` + `90Y9424` were derived Ja → corrected to **Nein** (1G OEM-silent rule);
+    added to `_DOM_NEIN_OEM_SILENT`. 10G+ optics keep Ja.
+  - **Ubiquiti — 49, 2 DOM corrections (`244bbe1`).** All 49 confirmed real `UACC-`/`UF-` codes (techspecs.ui.com per-PN pages; the
+    JS-gated store made the cached screen-caps thin, NOT the parts unreal). The 2× **1G** optical `UACC-OM-MM-1G-D` (1000BASE-SX) +
+    `UACC-OM-SM-1G-S` (1000BASE-BX BiDi) were Ja but techspecs.ui.com is SILENT on DDM → corrected to **Nein**; added to `_DOM_NEIN_OEM_SILENT`.
+  - **NVIDIA/Mellanox LinkX — 85, 0 corrections (`dc4ad30`).** All 85 matched the cached LinkX parts lists (exact PN). Families: MMA*
+    optical modules (Ja, 10G+ — NVIDIA optics are all 25G/100G/400G/800G, NO 1G tier so no OEM-silent question), MFA* AOC + MCP* DAC (cable-exempt).
+  - **Supermicro — 27, 0 corrections (this commit).** **Cached eStore PDFs were DEAD (3 bytes — JS-gated, never saved)** → I did NOT
+    declare "verified" against an empty cache (the self-green trap); verified **LIVE** against store.supermicro.com per-PN pages (OEM
+    e-store). All 27 confirmed genuine SKUs. 9 optical modules (10G/25G/40G)=Ja — incl. 4 'Dual-Rate 10G/1G SFP+' which OEM confirms are
+    **10G-primary** (1G fallback), so 10G+ Ja, NOT 1G-silent-Nein (my '10/1 Gbit' speed flag resolved by live OEM). `AOM-AQS-107-B0C2-CX`:
+    Supermicro TITLES it "Optical" but it is 10GBASE-T over **RJ45 copper** (Aquantia) — `classify_medium` correctly typed copper →
+    DOM=Nein (anti-blind-spot: gate read the medium, not the misleading title). 17 cables (CBL-*) = DOM-exempt.
+  - **Net gate change:** `validate.py _DOM_NEIN_OEM_SILENT` gained 4 legacy-1G optics (Lenovo 81Y1622/90Y9424 + Ubiquiti
+    UACC-OM-MM-1G-D/UACC-OM-SM-1G-S); all are reversible if the OEM later affirms DDM. Pytest stays **420** (allowlist additions don't
+    add fixtures). 5 `final_transceiver_output/<BRAND>_VERIFICATION.txt` reports added. **STILL PENDING (not attempted): real pricing, the 221 unverified-live products.**
 
 ---
 

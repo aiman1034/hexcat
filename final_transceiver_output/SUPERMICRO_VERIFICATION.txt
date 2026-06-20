@@ -1,0 +1,55 @@
+SUPERMICRO VERIFICATION REPORT — 27 transceivers & cables vs store.supermicro.com (OEM e-store)
+OEM source: store.supermicro.com per-PN product pages + the Supermicro Networking Cables & Transceivers
+Compatibility Matrix (supermicro.com/.../aoc/cables-transceivers). Compatibles excluded. 2026-06-20.
+NOTE ON SOURCE: the cached eStore PDFs (supermicro-estore-{transceivers,cables}.pdf) are DEAD (3 bytes —
+   the eStore is JS-gated and never saved real content). Verification was therefore done LIVE this session
+   against store.supermicro.com per-PN pages (the authoritative OEM e-store), NOT the empty cache. The
+   earlier '0/27 catalog match' was a dead-source artifact, not evidence the parts are unreal.
+==============================================================================================
+VERDICT: all 27 confirmed as genuine Supermicro SKUs (store.supermicro.com product pages located for each).
+   No collisions; byte-contract OK; gate 0; temp 0 bis 70 °C commercial (clean, no '+').
+
+DOM logic (all rule-correct, 0 corrections):
+ * 9 optical modules (10G/25G/40G) = Ja — 10G+ blanket rule. Includes 4 'Dual Rate 10G/1G SFP+' parts
+   (AOC-E10GSFPSR, AOM-TSFP-709DMZ-AVG, AOC-TSR-FS, AOM-TSR-FS): OEM pages confirm these are 10GBASE-SR/SW
+   + 1000BASE-SX DUAL-RATE — i.e. 10G-PRIMARY modules with a 1G fallback, NOT 1G-only optics. So they take
+   the 10G+ Ja, not the 1G OEM-silent-Nein treatment. (My catalog's '10/1 Gbit' speed string flagged them
+   for 1G review; live OEM resolved the flag — 10G primary.)
+ * 1 copper module AOM-AQS-107-B0C2-CX = Nein — Supermicro's page TITLES it 'Optical Transceivers' but the
+   body is 10GBASE-T/5G/2.5G/1G/100M over RJ45 (Aquantia) = COPPER. classify_medium correctly typed it copper
+   despite the misleading title -> DOM=Nein (RJ45 copper rule). [Anti-blind-spot: title said optical, gate
+   read the medium.]
+ * 17 cables (CBL-0347L/0348L/0349L, CBL-NTWK-*, CBL-SFP+AOC-*) = DOM omitted (DAC/AOC cable-exempt; never
+   falsely Ja). store.supermicro.com confirms CBL-NTWK-* = passive Twinax DAC, CBL-SFP+AOC-* = active optical.
+
+CORRECTIONS: 0.   REMOVALS: 0.   Supermicro build was already spec-accurate.
+
+part | role | DOM | OEM evidence
+----------------------------------------------------------------------------------------------
+AOC-E10GSFPSR            | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOC-TSR-FS               | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-AQS-107-B0C2-CX      | copper RJ45 module  | Nein (copper)       | store.supermicro.com page confirmed
+AOM-SFP28-25GBE-SR-1-MLN | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TQSFP-79EEPZ-AVG     | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TQSFP-79EIPZ-AVG     | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TQSFP-79EQDZ-AVG     | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TQSFP-79EQPZ-AVG     | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TSFP-709DMZ-AVG      | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+AOM-TSR-FS               | optical module      | Ja (10G+ rule)      | store.supermicro.com page confirmed
+CBL-0347L                | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-0348L                | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-0349L                | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0325-02         | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0347            | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0417-01         | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0422-01         | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0446-01         | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0456            | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0942-MQ28C10M   | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0943-SQ28C10M   | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-NTWK-0944-SS28C50M   | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-SFP+AOC-10M          | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-SFP+AOC-1M           | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-SFP+AOC-3M           | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-SFP+AOC-5M           | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
+CBL-SFP+AOC-5M-1         | cable (DAC/AOC)     | ∅ (cable-exempt)    | store.supermicro.com page confirmed
