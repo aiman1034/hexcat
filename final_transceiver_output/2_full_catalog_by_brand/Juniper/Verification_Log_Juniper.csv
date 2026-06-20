@@ -902,18 +902,6 @@ QSFP-100G-SR1P2,Anwendung,Rechenzentrum (Kurzstrecke),abgeleitet aus Reichweite 
 QSFP-100G-SR1P2,DOM Unterstützung,Ja,SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis),inference: SFF-8472 family-standard,2026-06-14T20:20:46Z
 QSFP-100G-SR1P2,Betriebstemperatur,0 bis 70 °C,abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich,industry-standard-commercial,2026-06-14T20:20:46Z
 QSFP-100G-SR1P2,Standard,100G SR BiDi,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Formfaktor,QSFP28,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Geschwindigkeit,100 Gbit/s,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Transceiver Typ,100GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Fasertyp,Multimode-Glasfaser (MMF),https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Faseranzahl,8,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Anschlusstyp,MPO-12,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Wellenlänge,850 nm,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Reichweite,bis 100 m (OM4),https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Anwendung,Rechenzentrum (Kurzstrecke),abgeleitet aus Reichweite / Transceiver Typ / Fasertyp,derivation,2026-06-14T20:20:46Z
-QSFP-100G-SR4,DOM Unterstützung,Ja,SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis),inference: SFF-8472 family-standard,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Betriebstemperatur,0 bis 70 °C,abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich,industry-standard-commercial,2026-06-14T20:20:46Z
-QSFP-100G-SR4,Standard,100GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-100G-SR4-C,Formfaktor,QSFP28,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-100G-SR4-C,Geschwindigkeit,100 Gbit/s,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-100G-SR4-C,Transceiver Typ,100GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
@@ -2086,30 +2074,6 @@ QSFP-40G-ESR4,Anwendung,Rechenzentrum (Kurzstrecke),abgeleitet aus Reichweite / 
 QSFP-40G-ESR4,DOM Unterstützung,Ja,SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis),inference: SFF-8472 family-standard,2026-06-14T20:20:46Z
 QSFP-40G-ESR4,Betriebstemperatur,0 bis 70 °C,abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich,industry-standard-commercial,2026-06-14T20:20:46Z
 QSFP-40G-ESR4,Standard,40GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Formfaktor,QSFP+,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Geschwindigkeit,40 Gbit/s,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Transceiver Typ,40GBASE-LR4,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Fasertyp,Singlemode-Glasfaser (SMF),https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Faseranzahl,2,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Anschlusstyp,Duplex LC,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Wellenlänge,1271 nm / 1291 nm / 1311 nm / 1331 nm,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Reichweite,bis 10 km,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Anwendung,Campus-/Metro-Netz (Langstrecke),abgeleitet aus Reichweite / Transceiver Typ / Fasertyp,derivation,2026-06-14T20:20:46Z
-QSFP-40G-LR4,DOM Unterstützung,Ja,SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis),inference: SFF-8472 family-standard,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Betriebstemperatur,0 bis 70 °C,abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich,industry-standard-commercial,2026-06-14T20:20:46Z
-QSFP-40G-LR4,Standard,40GBASE-LR4,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Formfaktor,QSFP+,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Geschwindigkeit,40 Gbit/s,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Transceiver Typ,40GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Fasertyp,Multimode-Glasfaser (MMF),https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Faseranzahl,8,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Anschlusstyp,MPO-12,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Wellenlänge,850 nm,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Reichweite,bis 150 m (OM4),https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Anwendung,Rechenzentrum (Kurzstrecke),abgeleitet aus Reichweite / Transceiver Typ / Fasertyp,derivation,2026-06-14T20:20:46Z
-QSFP-40G-SR4,DOM Unterstützung,Ja,SFF-8472 (DDM/DOM) Familienstandard — Inferenz (kein herstellerseitiger Per-Part-Nachweis),inference: SFF-8472 family-standard,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Betriebstemperatur,0 bis 70 °C,abgeleitet aus Temperaturklasse (Rule 9); kein veröffentlichter Betriebstemperaturbereich,industry-standard-commercial,2026-06-14T20:20:46Z
-QSFP-40G-SR4,Standard,40GBASE-SR4,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-4X10GE-LR-25,Formfaktor,QSFP+,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-4X10GE-LR-25,Geschwindigkeit,40 Gbit/s,https://www.juniper.net/documentation/us/en/hardware/,operator-provided,2026-06-14T20:20:46Z
 QSFP-4X10GE-LR-25,Transceiver Typ,4x10GE,https://www.juniper.net/documentation/us/en/hardware/,datasheet/MSA,2026-06-14T20:20:46Z
