@@ -559,6 +559,33 @@ def test_temp_oem_commercial_allowlist_matches_datasheet():
         "an EXT-grade part leaked into the COM allowlist — the Table 3 inversion"
 
 
+def test_dom_verify_omit_carveout_is_narrow(tmp_path, rules, weights):
+    """L7 anti-blind-spot (2026-06-20, L8): the DOM-OMIT allowlist (validate._DOM_VERIFY_OMIT) lets a part
+    whose DOM is genuinely unconfirmable ship with NO DOM attribute (rather than a placeholder string).
+    It must NOT generalize — a non-allowlisted non-cable transceiver with absent DOM still FAILS the
+    completeness check; only the explicit allowlist (e.g. GLC-FE-100FX) is exempt. Red-then-green."""
+    import copy
+    from hexcat.validate import validate_dir
+    _, base = _cisco_optic()
+
+    def dom_missing_violations(pn):
+        e = copy.deepcopy(base)
+        e["attributes"] = [a for a in e["attributes"] if a[0] not in ("DOM Unterstützung", "DOM/DDM")]
+        content = tmp_path / f"o_{pn}.json"
+        content.write_text(json.dumps({pn: e}, ensure_ascii=False), encoding="utf-8")
+        recs = reconcile_content(content, brand="Cisco", rules=rules, weights=weights)
+        out = tmp_path / f"oo_{pn}"
+        assemble_bundle(recs, rules, batch="Cisco_Transceivers", category="Transceivers",
+                        out_dir=out, build_time="2026-06-12T00:00:00Z")
+        return [v for v in validate_dir(rules, out).violations
+                if "DOM" in (v.field or "") and "completeness" in (v.message or "").lower()]
+
+    assert dom_missing_violations("SFP-10G-SR-NOTLISTED"), \
+        "absent DOM on a non-allowlisted non-cable transceiver must FAIL completeness"
+    assert not dom_missing_violations("GLC-FE-100FX"), \
+        "allowlisted GLC-FE-100FX may OMIT DOM (genuinely unconfirmable)"
+
+
 def test_gate_beschreibung_floor_is_90():
     import yaml
     from pathlib import Path

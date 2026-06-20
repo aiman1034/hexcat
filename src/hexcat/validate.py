@@ -147,6 +147,15 @@ _DOM_NEIN_OEM_SILENT = frozenset({
 # parts whose OEM datasheet EXPLICITLY affirms DDM/DOM (rare). EMPTY today — kept so a future logged
 # exception has a home without weakening the rule. Any copper part NOT here with DOM=Ja still FAILS.
 _DOM_JA_OEM_AFFIRMED: frozenset = frozenset()
+# DOM-completeness OMIT allowlist (2026-06-20, L8): non-cable optics whose DOM/DDM is genuinely NOT
+# $0-confirmable on the OEM datasheet — DOM is OMITTED (no attribute row) rather than shipped as a
+# placeholder string ("Nicht spezifiziert") or a fabricated Ja/Nein. Cisco 100M Fast-Ethernet FX/LX/BX/
+# EX/ZX SFP family (c78-486906 not $0-fetchable; compatibles don't count). Parallels _BETRIEBSTEMP_VERIFY_OMIT.
+# NARROW: any non-allowlisted non-cable transceiver with absent DOM still FAILS (fixture-guarded).
+_DOM_VERIFY_OMIT = frozenset({
+    "GLC-FE-100FX", "GLC-FE-100FX-RGD", "GLC-GE-100FX", "GLC-FE-100LX", "GLC-FE-100LX-RGD",
+    "GLC-FE-100BX-U", "GLC-FE-100BX-D", "GLC-FE-100EX", "GLC-FE-100ZX",
+})
 # OEM commercial-temperature-grade allowlist — TRANSCRIBED EXACTLY from Cisco c78-366584 Table 3 (the COM
 # column ONLY), corrected 2026-06-19 after an L8 REJECT: the FIRST cut INVERTED the table — the −SMD/−D
 # (DOM) variants are EXT (−5/85), and only the non-D bases (+ GLC-T, GLC-ZX-SM, GLC-BX-*) are COM (0/70).
@@ -753,7 +762,8 @@ class Validator:
                 # string where genuinely unfindable — NEVER a form-factor guess, never a [VERIFY]/[FLAG]
                 # literal (L4 blocks those). The gate checks PRESENCE only; it does not force Ja/Nein.
                 # DAC/AOC/MPO cables are exempt.
-                if k3 not in C.CABLE_CATEGORIES and _DOM_NAME not in names:
+                if (k3 not in C.CABLE_CATEGORIES and sku not in _DOM_VERIFY_OMIT
+                        and _DOM_NAME not in names):
                     self._fail(fname, sku, "Attributwert (DOM Unterstützung)",
                                "a DOM Unterstützung attribute (non-cable transceiver)", "(missing)",
                                "gold-slice completeness: every non-cable transceiver must carry a "
