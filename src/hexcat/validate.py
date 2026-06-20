@@ -138,7 +138,7 @@ _DOM_NEIN_OEM_SILENT = frozenset({
     "GLC-SX-MM-RGD",                                                    # Cisco c78-366584 Table 3: rugged variant graded "IND No" (L8 2026-06-19)
     "CXP-100G-SR10", "QSFP-40G-BD-RX",                                  # Cisco DDM NOT $0-affirmable (no Cisco DS line; only non-Cisco source) → conservative reversible Nein = the safe under-claim (L8 2026-06-19)
     # GLC-ZX-SM REMOVED 2026-06-19 (L8 ruling): c78-366584 Table 3 grades GLC-ZX-SM DOM=Yes — it was a stale Nein-exempt entry; corrected to Ja in the build.
-    "FG-TRAN-QSFP+SR-BIDI",                                              # Fortinet 40G BiDi (DS BiDi table: Digital Monitoring No)
+    "FG-TRAN-QSFP+SR-BIDI",                                              # Fortinet 40G BiDi — Fortinet Transceivers DS (fortinet.com) exposes NO DDM column (silent) → conservative Nein (re-verified 2026-06-20)
     # REMOVED 2026-06-18: J9142B/J9143B (HPE X122 1G SFP BX BiDi) — 1000%-rule web-verify found DOM=Nein
     # CONTESTED (HPE legacy guide=No, but current guide + 3rd-party compatibles=DDM-capable). flag-don't-fabricate:
     # not safely grounded as No-DDM → DOM stays Ja (cleared), parts NOT exempt. Re-add only on a definitive HPE QuickSpecs read.
