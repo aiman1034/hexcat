@@ -1668,6 +1668,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   RULE #3). **DID NOT fabricate a 35/31 list from snippets.** **UNBLOCK (→ §10 row added):** operator drops the per-series
   Cisco ordering-guide HTML (or PDF) into `datasheets/cache/cisco-switches/` — then Table 3 extracts clean and the gate
   is verifiable. Same source-gated pattern as Dell/Extreme/etc.
+- **CISCO SWITCHES — UNBLOCKED + CALIBRATION DONE (2026-06-20, committed+pushed per series; `config/coverage/**
+  **cisco_switches_coverage.yaml`).** Operator couriered the 4 PDFs into `datasheets/cache/cisco-switches/`. They are
+  **image-only** (no text layer; pypdf/pdfplumber get ~0 chars) and **no OCR is installed** (no tesseract/fitz) → extracted
+  via **pypdfium2 render → visual read** of the page PNGs. **Full-page reads GARBLE** dense PID tables (proven: a full-page
+  read returned "C9300X-48HX→C9300-24T") → switched to **half-page crops**, which read clean. Method per series: og
+  "Table 3 Switch ordering information" (primary, the -E/-A/-M rows) + ds "Table 2 Switch configurations" (cross-check).
+  - **C9300 = 40** (operator-confirmed include-all). og Table 3 = 32; ds Table 2 adds **8 ds-only** (the 3 deep-buffer
+    24UB/24UXB/48UB the operator flagged + **5 more found**: 24H/48H UPOE+ and C9300L 48PF-4G / 24UXG-2Q / 48UXG-2Q) →
+    all tagged `source_conflict: ds_only_not_in_ordering_guide` + `sourceable_new_sealed: verify`. Series split:
+    C9300X 6, C9300 16, C9300L 14, C9300LM 4. (Calibration target was 35 = og 32 + 3 UB; the cross-source rule surfaced 5 more.)
+  - **C9200 = 31** — og Table 3 == ds Table 2 exactly (0 conflict, 0 needs_verify). C9200 9 (incl 24PB/48PB = **license A only**,
+    enhanced VRF), C9200L 14, C9200CX 8 (HVDC -2XH/-2X2GH + pass-through -8PT-2G kept as **distinct hardware**).
+  - UNIT rule: license -E/-A/-M stripped; uplink suffix (-4G/-4X/-2Q/-4Y/-2Y/-2X2G…) = distinct hardware. EXCLUDED:
+    NM/PWR/FAN/STACK/adapters/licenses/transceivers/Meraki-M. **STOPPED for operator verification before any other family**
+    (per task: 9400/9500/9600/C9350/C9610, SMB, legacy, Nexus, CBS, IE, MDS still pending — drop their og+ds PDFs to proceed).
 
 ---
 
