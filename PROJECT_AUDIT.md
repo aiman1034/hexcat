@@ -1477,6 +1477,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   genuinely 0. **Gap D — prices:** READ_ME updated — new-product import = Main + Attributes + PlatformFlag + Condition ONLY, SKIP the 0,00 Prices step until
   a real pricing pass. **OUT OF SCOPE, flagged pending (not attempted):** datasheet-verifying the 7 non-gold brands (Dell/Extreme/Juniper/Lenovo/NVIDIA/
   Supermicro/Ubiquiti), the 221 unverified-live products, real pricing. STOP → L8. $0/Max; no self-clear.
+- **TWO DOM CLEANUPS + DELL VERIFICATION PASS (2026-06-20, committed+pushed per-task to `aiman1034/hexcat`).** **Cleanup 1 — GLC-FE-100 family
+  (9 parts) DOM placeholder:** the literal "Nicht spezifiziert" string is not a value — 100M FE DOM not $0-confirmable on Cisco's DS (c78-486906
+  unfetchable; compatibles don't count) → set DOM empty at source → emitter omits the row; new gate allowlist `validate._DOM_VERIFY_OMIT` (the 9)
+  exempts them from DOM-completeness (parallel to `_BETRIEBSTEMP_VERIFY_OMIT`) + L7 fixture (non-allowlisted absent-DOM still FAILS). final GLC-GE-100FX
+  DOM row removed (Attributes+VL parity). pytest 420. **Cleanup 2 — FG-TRAN-QSFP+SR-BIDI (Fortinet 40G BiDi):** re-checked Fortinet's OWN Transceivers DS
+  (fortinet.com) — it exposes NO DDM column for any transceiver → OEM does not affirm DDM → keep conservative **Nein** (not fabricated to Ja); corrected
+  the prior inaccurate rationale ("DS table: Monitoring No" → "DS silent on DDM"), logged the Fortinet DS URL in VL. **Dell verification pass — 156 optics
+  vs the official "Dell EMC Networking Transceivers and Cables" spec sheet (Dell.com cached PDFs; compatibles EXCLUDED):** all 156 trace to families in
+  Dell's catalog (token-level 146/156 exact; the 10 others differ only by GenN hardware-revision/reach suffixes on listed base optics); **all 6 renamed
+  collision parts (SFP-1G-SX-DELL …) confirmed listed by Dell → KEPT**; DOM all-optical=Ja / copper-DAC=Nein (gate-enforced) → 0 corrections. **0 removals,
+  0 source fixes** — Dell bundle verified clean. `final_transceiver_output/DELL_VERIFICATION.txt` report added. STILL PENDING (not attempted): the other
+  6 non-gold brands, the 221 unverified-live, real pricing. STOP → L8. $0/Max; no self-clear.
 
 ---
 
