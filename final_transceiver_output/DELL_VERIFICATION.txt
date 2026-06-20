@@ -1,0 +1,167 @@
+DELL VERIFICATION REPORT — 156 transceivers vs Dell's official spec sheet
+OEM source: 'Dell EMC Networking Transceivers and Cables' (datasheets/cache/dell-networking-optics-*.pdf,
+Dell.com). Compatibles (FS etc.) NOT used. Date: 2026-06-20.
+====================================================================================
+VERDICT: all 156 trace to part families present in Dell's official spec sheet. No foreign /
+templated parts found. 6 renamed collision parts confirmed in Dell's catalog -> KEEP all 6.
+DOM: every optical module = Ja, copper/DAC = Nein (gate-enforced + re-checked) -> 0 corrections.
+REMOVALS: none.   SOURCE CORRECTIONS: none.   Dell bundle gate: 0 violations.
+
+part                         | in Dell catalog? | note
+------------------------------------------------------------------------------------
+SFP-100M-FX-DELL             | Ja            | Kollision umbenannt; Dell listet SFP-100M-FX -> BEHALTEN
+SFP-1G-SX-DELL               | Ja            | Kollision umbenannt; Dell listet SFP-1G-SX -> BEHALTEN
+SFP-1G-LX-DELL               | Ja            | Kollision umbenannt; Dell listet SFP-1G-LX -> BEHALTEN
+SFP-1G-T-DELL                | Ja            | Kollision umbenannt; Dell listet SFP-1G-T -> BEHALTEN
+SFP-10G-T-DELL               | Ja            | Kollision umbenannt; Dell listet SFP-10G-T -> BEHALTEN
+SFP-10G-T-LP                 | Ja            | exact match
+SFP-10G-T-RA                 | Ja            | exact match
+SFP28-25G-SR                 | Ja            | exact match
+SFP28-25G-ESR                | Ja            | exact match
+SFP28-25G-LR                 | Ja            | exact match
+QSFP-40G-SM4                 | Ja            | exact match
+QSFP-40G-BIDI                | Ja            | exact match
+Q28-100G-SR1.2               | Ja            | exact match
+Q28-100G-SR4                 | Ja            | exact match
+Q28-100G-ESR4                | Ja            | exact match
+Q28-100G-BIDI                | Ja            | exact match
+Q28-100G-SWDM4               | Ja            | exact match
+Q28-100G-CWDM4               | Ja            | exact match
+Q28-100G-LR1                 | Ja            | exact match
+Q28-100G-LR4-Gen3            | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+Q28-100G-LR4-Gen4            | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+Q28-100G-FR                  | Ja            | exact match
+Q28-100G-ER4-lite            | Ja            | exact match
+Q28-100G-PSM4-IR             | Ja            | exact match
+Q28-100G-PSM4-10             | Ja            | exact match
+Q28-100G-SR4-G2              | Ja            | exact match
+Q28-100G-FR-Gen3-LP          | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+S56DD-100G-FR                | Ja            | exact match
+S56DD-100G-LR                | Ja            | exact match
+S56DD-100G-SR1.2             | Ja            | exact match
+Q28DD-200G-2SR4              | Ja            | exact match
+Q56-200G-SR4                 | Ja            | exact match
+400G-Q56DD-VR4               | Ja            | exact match
+400G-Q56DD-SR4.2-ON-Gen2     | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-SR4.2-ON-Gen3     | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56-DD-SR4.2-ON-Gen4    | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-SR8-Gen2          | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-EDR4-Gen2         | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-EDR4-Gen3         | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-FR4-Gen2          | Ja (Gen-Rev)  | Basis-Optik im Datenblatt; GenN = Dell-Hardware-Revision
+400G-Q56DD-LR4               | Ja            | exact match
+400G-Q56DD-LDR4              | Ja            | exact match
+400G-Q56DD-ZR+*              | Ja            | exact match
+800G-O112-2VR4               | Ja            | exact match
+800G-O112-2EDR4              | Ja            | exact match
+800G-O112-2FR4*              | Ja            | exact match
+800G-O112-VR8                | Ja            | exact match
+800G-O112-2DR4-DSPLPO        | Ja            | exact match
+800G-O112-EDR8               | Ja            | exact match
+800G-O112-DR8-LPO            | Ja            | exact match
+800G-O112-2DR4-LPO           | Ja            | exact match
+800G-O112-2VR4-DSPLPO        | Ja            | exact match
+DAC-SFP-10G-0.5M             | Ja            | exact match
+DAC-SFP-10G-1M               | Ja            | exact match
+DAC-SFP-10G-2M               | Ja            | exact match
+DAC-SFP-10G-3M               | Ja            | exact match
+DAC-SFP-10G-5M               | Ja            | exact match
+DAC-SFP-10G-7M               | Ja            | exact match
+AOC-SFP-10G-2M               | Ja            | exact match
+AOC-SFP-10G-3M               | Ja            | exact match
+AOC-SFP-10G-5M               | Ja            | exact match
+AOC-SFP-10G-10M              | Ja            | exact match
+AOC-SFP-10G-15M              | Ja            | exact match
+DAC-SFP-25G-1M               | Ja            | exact match
+DAC-SFP-25G-2M               | Ja            | exact match
+DAC-SFP-25G-2.5M             | Ja            | exact match
+DAC-SFP-25G-3M               | Ja            | exact match
+DAC-SFP-25G-5M               | Ja            | exact match
+AOC-SFP-25G-2M               | Ja            | exact match
+AOC-SFP-25G-7M               | Ja            | exact match
+AOC-SFP-25G-10M              | Ja            | exact match
+AOC-SFP-25G-20M              | Ja            | exact match
+DAC-QSFP-40G-0.5M            | Ja            | exact match
+DAC-QSFP-40G-1M              | Ja            | exact match
+DAC-QSFP-40G-3M              | Ja            | exact match
+DAC-QSFP-40G-5M              | Ja            | exact match
+AOC-QSFP-40G-3M              | Ja            | exact match
+AOC-QSFP-40G-10M             | Ja            | exact match
+DAC-QSFP-4SFP-10G-1M         | Ja            | exact match
+DAC-QSFP-4SFP-10G-3M         | Ja            | exact match
+DAC-QSFP-4SFP-10G-5M         | Ja            | exact match
+AOC-QSFP-4SFP-10G-10M        | Ja            | exact match
+AOC-QSFP-4SFP-10G-30M        | Ja            | exact match
+AOC-Q28DD-8SFP-10G-10M       | Ja            | exact match
+DAC-QSFP-100G-0.5M           | Ja            | exact match
+DAC-QSFP-100G-1M             | Ja            | exact match
+DAC-QSFP-100G-2M             | Ja            | exact match
+DAC-QSFP-100G-3M             | Ja            | exact match
+DAC-QSFP-100G-5M             | Ja            | exact match
+DAC-S56DD-Q56-SFF-100G-1M    | Ja            | exact match
+DAC-S56DD-Q56-SFF-100G-2M    | Ja            | exact match
+DAC-S56DD-Q56-SFF-100G-3M    | Ja            | exact match
+AOC-QSFP-100G-3M             | Ja            | exact match
+AOC-QSFP-100G-7M             | Ja            | exact match
+AOC-QSFP-100G-10M            | Ja            | exact match
+AOC-QSFP-100G-30M            | Ja            | exact match
+DAC-QSFP-4SFP28-25G-2M       | Ja            | exact match
+DAC-QSFP-4SFP28-25G-3M       | Ja            | exact match
+DAC-QSFP-4SFP28-25G-5M       | Ja            | exact match
+AOC-QSFP-4SFP28-25G-10M      | Ja            | exact match
+DAC-Q28DD-2Q28-100G-2M       | Ja            | exact match
+DAC-Q28DD-2Q28-100G-3M       | Ja            | exact match
+AOC-Q28DD-2Q28-100G-5M       | Ja            | exact match
+AOC-Q28DD-2Q28-100G-15M      | Ja            | exact match
+DAC-Q28DD-8S28-25G-2M        | Ja            | exact match
+DAC-Q28DD-8S28-25G-3M        | Ja            | exact match
+AOC-Q28DD-8S28-25G-10M       | Ja            | exact match
+DAC-Q28DD-200G-0.5M          | Ja            | exact match
+DAC-Q28DD-200G-1M            | Ja            | exact match
+DAC-Q28DD-200G-2M            | Ja            | exact match
+DAC-Q28DD-200G-3M            | Ja            | exact match
+AOC-Q28DD-200G-5M            | Ja            | exact match
+AOC-Q28DD-200G-10M           | Ja            | exact match
+AOC-Q28DD-200G-20M           | Ja            | exact match
+DAC-Q56DD-400G-0.5M          | Ja            | exact match
+DAC-Q56DD-400G-1M            | Ja            | exact match
+DAC-Q56DD-400G-2M            | Ja            | exact match
+DAC-Q56DD-4Q56-SFF-100G-1M   | Ja            | exact match
+DAC-Q56DD-4Q56-SFF-100G-2M   | Ja            | exact match
+DAC-Q56DD-4Q56-SFF-100G-3M   | Ja            | exact match
+DAC-Q56DD-2Q56-SFF-200G-1M   | Ja            | exact match
+DAC-Q56DD-2Q56-SFF-200G-2M   | Ja            | exact match
+DAC-Q56DD-2Q56-SFF-200G-3M   | Ja            | exact match
+DAC-Q56DD-2Q56-CMIS-200G-1M  | Ja            | exact match
+DAC-Q56DD-2Q56-CMIS-200G-2M  | Ja            | exact match
+DAC-Q56DD-2Q56-CMIS-200G-3M  | Ja            | exact match
+DAC-Q56DD-2Q56-CMIS-200G-4M  | Ja            | exact match
+DAC-Q56DD-2Q56-CMIS-200G-5M  | Ja            | exact match
+DAC-Q56DD-8xSFP56-2.5M       | Ja            | exact match
+AOC-Q56DD-400G-10M           | Ja            | exact match
+AOC-Q56DD-400G-15M           | Ja            | exact match
+AOC-Q56DD-400G-30M           | Ja            | exact match
+AOC-400G-Q56DD-200G-2Q56-3M  | Ja            | exact match
+AOC-400G-Q56DD-200G-2Q56-5M  | Ja            | exact match
+AOC-400G-Q56DD-200G-2Q56-10M | Ja            | exact match
+AOC-400G-Q56DD-200G-2Q56-30M | Ja            | exact match
+AOC-Q56DD-4Q28-100G-3M       | Ja            | exact match
+AOC-Q56DD-4Q28-100G-7M       | Ja            | exact match
+AOC-Q56DD-4Q28-100G-15M      | Ja            | exact match
+AOC-Q56DD-4Q28-100G-30M      | Ja            | exact match
+AEC-Q56DD-400G-3M            | Ja            | exact match
+AEC-Q56DD-400G-5M            | Ja            | exact match
+AEC-Q56DD-4Q28-100G-3M       | Ja            | exact match
+DAC-O112-800G-1M             | Ja            | exact match
+DAC-O112-800G-2M             | Ja            | exact match
+DAC-O112-800G-3M             | Ja            | exact match
+DAC-O112-800G-4M             | Ja            | exact match
+DAC-O112-800G2x400G-Q112-1M  | Ja            | exact match
+DAC-O112-800G2x400G-Q112-2M  | Ja            | exact match
+DAC-O112-800G2x400G-Q112-3M  | Ja            | exact match
+DAC-O112-800G2x400G-Q112-4M  | Ja            | exact match
+AEC-O112-800G-2M*            | Ja            | exact match
+AEC-O112-800G-3M*            | Ja            | exact match
+AEC-O112-800G-4M*            | Ja            | exact match
+QSFP-40G-ESR4-DELL           | Ja            | Kollision umbenannt; Dell listet QSFP-40G-ESR4 -> BEHALTEN
+QSFP-40G-LM4                 | Ja            | exact match
