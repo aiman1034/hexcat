@@ -1673,6 +1673,13 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
 
 ## 10. SOURCE MANIFEST — operator action to unblock fresh brands ($0-harvest blockers)
 
+**CISCO FIXED-SWITCHES (coverage manifest, 2026-06-20) — operator chose "drop HTML/PDF into cache".** cisco.com is
+fully $0-blocked (WebFetch/curl 403 Akamai; archive.org harness-blocked; mirror cert-error; web_search snippets garbled).
+Drop target + prioritized manifest: **`datasheets/cache/cisco-switches/DROP_HERE.txt`**. Naming: `<series>-og.html|pdf`
+(ordering guide = Table 3, primary) + `<series>-ds.html|pdf` (data sheet, cross-check). **Calibration FIRST: `c9300-og/ds`
++ `c9200-og/ds`** → I extract Table 3, run both calibrations (C9300=35 incl -24UB/-24UXB/-48UB; C9200=31 incl PB
+Advantage-only + CX HVDC -2XH/-2XGH), report counts, THEN enumerate the rest per series (commit+push per series).
+
 The 10 remaining fresh brands have **no cached source** and their official transceiver enumerations
 are not $0-fetchable in a cleanly-parseable form (the same external-dependency class as a CAPTCHA /
 the supplier price-feed). Per brand: the source to use · why it's blocked · **exactly what file to
