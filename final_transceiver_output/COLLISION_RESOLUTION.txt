@@ -1,0 +1,32 @@
+COLLISION RESOLUTION — cross-brand Artikelnummer (Gap B, 2026-06-20)
+========================================================================
+18 post-filter collisions. All are industry-standard multi-source MSA MPNs;
+every entry has a real per-brand datasheet source + brand-led Artikelname.
+ACTION: append brand to Artikelnummer (HAN keeps the bare MSA MPN for Google
+Shopping mpn/schema). No data removed.
+
+part              | brands             | already-live | action
+------------------------------------------------------------------------
+QDD-2X400G-FR4    | Cisco,Juniper      | No           | RENAME per brand (-CISCO/-JUNIPER)
+QDD-400G-DR4      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QDD-400G-FR4      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QDD-400G-LR8      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QDD-400G-PLR4     | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QDD-400G-ZR       | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-CWDM4   | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-DR      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-FR      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-LR      | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-LR4     | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-100G-PSM4    | Arista,Juniper     | No           | RENAME per brand (-ARISTA/-JUNIPER)
+QSFP-40G-ESR4     | Dell,Juniper       | No           | RENAME per brand (-DELL/-JUNIPER)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+SFP-100M-FX       | Arista,Dell        | No           | RENAME per brand (-ARISTA/-DELL)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+SFP-10G-T         | Arista,Dell        | No           | RENAME per brand (-ARISTA/-DELL)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+SFP-1G-LX         | Arista,Dell        | No           | RENAME per brand (-ARISTA/-DELL)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+SFP-1G-SX         | Arista,Cisco,Dell  | No           | RENAME per brand (-ARISTA/-CISCO/-DELL)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+SFP-1G-T          | Arista,Dell        | No           | RENAME per brand (-ARISTA/-DELL)  [FLAG-L8: Dell unverified — confirm orderable MPN or remove]
+
+FLAGGED FOR L8 (do not guess): the 6 Dell-involved parts above. Dell is in the
+out-of-scope 'non-gold, unverified' set; its entries are renamed -DELL to resolve
+the collision and PRESERVED (not deleted), pending L8 confirmation that Dell lists
+these MSA MPNs as orderable products — else remove the -DELL entry.
