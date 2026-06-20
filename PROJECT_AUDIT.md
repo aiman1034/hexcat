@@ -1654,6 +1654,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     $0-findable (Baltic "not stated", Streakwave/wifi-stock 403, Senetic silent, Amazon JS-shell); specs+code+dims captured
     in `_scratch/sw/perf.json` → completeness `captured 39, gap 1`. **Bundle: 39 switches, gate 0, temp scan 0, byte-contract
     OK, pytest 420.** PASS-4: just GPERx6's weight (one distributor spec line) → it authors clean from the persisted specs.
+- **CISCO FIXED-SWITCH COVERAGE MANIFEST — BLOCKED at the calibration gate by a $0-access wall (2026-06-20). No**
+  **manifest emitted (flag-don't-guess).** Task = enumerate Cisco fixed switches (Catalyst 9000/SMB/legacy, Nexus, CBS,
+  IE, MDS) into `config/coverage/cisco_switches_coverage.yaml`, calibration-gated on C9300=35 (incl the deep-buffer
+  C9300-24UB/-24UXB/-48UB hidden from Table 3) and C9200=31. **SOURCE RULE requires the Cisco ordering-guide HTML Table 3
+  — and every $0 path to it is blocked:** WebFetch cisco.com HTML → 403 (Akamai bot-block); WebFetch cisco.com PDF → 403;
+  WebFetch web.archive.org → harness-blocked ("unable to fetch from web.archive.org"); cisco-apps.cisco.com mirror →
+  TLS cert error; `curl` with a real browser UA → 403 "Access Denied". **web_search reaches Cisco-indexed snippets but
+  they are PARTIAL + GARBLED** (e.g. returned "C9300X-24Y: 48x ports" — it is a 24-port model; a 12Y/24Y port
+  contradiction) → SOURCE RULE #4 forbids trusting garbled fetches, and the exact 35/31 cannot be grounded from them.
+  **GROUNDED so far (1 clean snippet):** the 3 deep-buffer SKUs exist — C9300-24UB (24×1G UPOE), C9300-48UB (48×1G UPOE),
+  C9300-24UXB (24× mGig UPOE), modular uplink, 1100 W AC, "B"=deep buffer, stack-only-with-each-other (confirms SOURCE
+  RULE #3). **DID NOT fabricate a 35/31 list from snippets.** **UNBLOCK (→ §10 row added):** operator drops the per-series
+  Cisco ordering-guide HTML (or PDF) into `datasheets/cache/cisco-switches/` — then Table 3 extracts clean and the gate
+  is verifiable. Same source-gated pattern as Dell/Extreme/etc.
 
 ---
 
