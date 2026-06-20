@@ -9,8 +9,8 @@ category: switches
 # is otherwise ready (specs harvested); they emit gate-clean once distributor weights are dropped in.
 complete: false
 universe_total: 40            # distinct products on the switches group grid
-captured_count: 36            # authored to the switch gold-slice, gate PASS 36/36
-gap_count: 4                  # the 4 reclassified switches, pending a weight source (below)
+captured_count: 39            # authored to the switch gold-slice (36 + 3 new outdoor variants), gate PASS 39/39
+gap_count: 1                  # GPERx6 only — weight not $0-findable (below)
 excluded_not_switch_count: 0  # was 4 — those exclusions were errors, now reclassified in-scope
 populated_sources: 1
 per_source:
@@ -18,19 +18,17 @@ per_source:
   kind: vendor_product_grid
   url: https://mikrotik.com/products/group/switches
   populated: true
-pending_author:               # in-scope switches, specs harvested, HELD on weight-source (§10 weight wall)
-- {pn: netPower Lite 8P, url: "https://mikrotik.com/product/netpower_lite_ups",
-   spec: "8× 1G RJ45 (802.3af/at PoE-out, 120 W) + 2× 10G SFP+; integ. USV; -40..70 °C",
-   reason: "switch (prev. mis-excluded as UPS); MikroTik publishes no weight -> needs distributor weight"}
-- {pn: FiberBox Plus, url: "https://mikrotik.com/product/fiberboxplus",
-   spec: "CRS305-1G-4S+OUT: 4× 10G SFP+ + 1× 1G; IP66 outdoor; -40..70 °C; 330x200x70 mm; 98DX226S",
-   reason: "outdoor fibre-aggregation switch; MikroTik publishes no weight -> needs distributor weight"}
-- {pn: netFiber 9, url: "https://mikrotik.com/product/netfiber_9",
-   spec: "1× 1G (PoE-in) + 5× SFP + 4× 10G SFP+; IP54 outdoor; -40..70 °C; 98DX226S",
-   reason: "outdoor fibre-aggregation switch; MikroTik publishes no weight -> needs distributor weight"}
-- {pn: GPERx6, url: "https://mikrotik.com/product/gperx6",
-   spec: "3× 1G (PoE-in/out) + 3× 10G SFP+; IP66 outdoor; passive PoE-out 150 W; -40..70 °C; 88E6193X",
-   reason: "outdoor switch / PoE reach-extender; MikroTik publishes no weight -> needs distributor weight"}
+authored_new:                 # L8 2026-06-20 pass-3: the 3 mis-excluded switches with $0-found distributor weights
+- {pn: CSS610-8P-2S+OUT, name: netPower Lite 8P, weight_kg: "2,21",
+   spec: "8× 1G RJ45 (802.3af/at PoE-out, 120 W) + 2× 10G SFP+; integ. USV; Outdoor; -40 bis 70 °C; SwK 56 Gbps"}
+- {pn: CRS310-1G-5S-4S+OUT, name: netFiber 9, weight_kg: "2,59",
+   spec: "1× 1G + 5× SFP + 4× 10G SFP+; IP54 outdoor; -40 bis 70 °C; 98DX226S; SwK 92 Gbps"}
+- {pn: CRS305-1G-4S+OUT, name: FiberBox Plus, weight_kg: "2,70",
+   spec: "4× 10G SFP+ + 1× 1G; IP66 outdoor; -40 bis 70 °C; 330x200x70 mm; 98DX226S; SwK 82 Gbps"}
+pending_author:               # 1 left — GPERx6 weight is the ONLY blocker (every distributor page blocked/silent)
+- {pn: GPERx6, code: "CSS606-1G-2Gi-3S+OUT", url: "https://mikrotik.com/product/gperx6",
+   spec: "3× 1G (PoE-in/out) + 3× 10G SFP+; IP66 outdoor; passive PoE-out 150 W; -40..70 °C; 88E6193X; 406x116x76 mm",
+   reason: "specs harvested; weight NOT $0-findable (Baltic/Streakwave/Senetic/Amazon all blocked or silent) -> needs a weight"}
 deferred_not_sourceable:      # archived/EOL CRS1xx/2xx — NOT on the current grid, NOT dropped, held for a source
 - {pn: CRS109-8G-1S-2HnD-IN, reason: "archived/EOL — not on current Switches grid; no $0 live spec page"}
 - {pn: CRS112-8G-4S-IN,      reason: "archived/EOL — superseded; no $0 live spec page"}
@@ -38,14 +36,15 @@ deferred_not_sourceable:      # archived/EOL CRS1xx/2xx — NOT on the current g
 - {pn: CRS210-8G-2S+IN,      reason: "archived/EOL — superseded; no $0 live spec page"}
 - {pn: CRS212-1G-10S-1S+IN,  reason: "archived/EOL — superseded; no $0 live spec page"}
 - {pn: CRS226-24G-2S+IN/RM,  reason: "archived/EOL — superseded; no $0 live spec page"}
-verdict: 36 of 40 grid switches authored to the switch gold-slice (gate PASS 36/36 incl S.1-S.6,
+verdict: 39 of 40 grid switches authored to the switch gold-slice (gate PASS 39/39 incl S.1-S.6,
   audit_semantic 0×8 all-fields, Rule-8 parity 0-missing). The 4 once-"excluded not-switch" are in fact
-  switches (correction logged) -> reclassified in-scope, specs harvested, HELD only on the weight-source
-  wall (same as the original 36 before distributor weights). ~6 archived CRS1xx/2xx legacy models are
-  deferred_not_sourceable (EOL, no $0 live page) — held, not dropped. L3 by env-first precedence:
-  Managed (L3) 20, Smart-Managed 7, Industrie 3, Data-Center 6. Betriebstemperatur datasheet-verbatim,
-  normalized to the locked "-X bis Y °C" format. Switching-Kapazität + Durchsatz filled where MikroTik
-  states a headline in the product DESCRIPTION (7 switches, port-sum-validated); the rest publish only
-  per-frame test-results tables that $0 WebFetch cannot extract reliably (returns unit-corrupted values)
-  -> flagged for a precise pass-2 read, NOT fabricated. PoE-out budgets added to the 802.3 switches
-  (verbatim "Total output power"); passive-PoE stated as input-dependent. MSRP captured; EUR net deferred.
+  switches (correction logged) -> reclassified in-scope; 3 authored (pass-3, with $0-found distributor
+  weights), GPERx6 alone still held (its weight is not $0-findable). ~6 archived CRS1xx/2xx legacy models
+  are deferred_not_sourceable (EOL, no $0 live page) — held, not dropped. L3 by env-first precedence:
+  Managed (L3) ~20, Smart-Managed 7, Industrie 6, Data-Center 6. Betriebstemperatur datasheet-verbatim,
+  normalized to the locked "-X bis Y °C" format. **Switching-Kapazität = 39/39** (port-sum×2, MikroTik's
+  non-blocking convention, validated against the 7 description-stated values; high-end fabric-only). **Durchsatz
+  = 7 description-stated** (CRS312 178 / CRS326-24S+2Q 252 / CRS354-48G+48P 235 / CRS318-16P 53,6 / netPower 15FR 5,4 /
+  CRS328-24P 95,2 Mpps); the rest are a **test-table-only GAP** (MikroTik publishes them only in the per-frame
+  test-results table, which $0 extraction garbles) — NOT PROVABLY_ABSENT, NOT fabricated. PoE-out budgets verbatim
+  (CRS320-8P-8B = 600/1150 W dual-PSU, etc.); passive-PoE input-dependent. MSRP captured; EUR net deferred.

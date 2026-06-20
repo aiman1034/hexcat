@@ -2105,7 +2105,15 @@
    ],
    [
     "PoE",
-    "Passiv-PoE (eingangsabhängig)"
+    "Reverse-PoE-In (15 Ports), PoE-Out (Ether15)"
+   ],
+   [
+    "Switching-Kapazität",
+    "7,2 Gbps"
+   ],
+   [
+    "Durchsatz",
+    "5,4 Mpps"
    ],
    [
     "Bauform",
@@ -2188,6 +2196,14 @@
    "Anwendung": [
     "https://mikrotik.com/product/crs318_1fi_15fr_2s_out",
     "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://mikrotik.com/product/crs318_1fi_15fr_2s_out",
+    "vendor-spec (MikroTik-stated)"
+   ],
+   "Durchsatz": [
+    "https://mikrotik.com/product/crs318_1fi_15fr_2s_out",
+    "vendor-spec (MikroTik-stated)"
    ]
   },
   "beschreibung": "",
@@ -2902,6 +2918,10 @@
     "128 Gbps"
    ],
    [
+    "Durchsatz",
+    "95,2 Mpps"
+   ],
+   [
     "Bauform",
     "19-Zoll-Rackmontage (1 HE)"
    ],
@@ -2986,6 +3006,10 @@
    "Switching-Kapazität": [
     "https://mikrotik.com/products/group/switches",
     "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention)"
+   ],
+   "Durchsatz": [
+    "https://mikrotik.com/product/crs328_24p_4s_rm",
+    "vendor-spec (MikroTik-stated)"
    ]
   },
   "beschreibung": "",
@@ -4495,7 +4519,7 @@
    ],
    [
     "Switching-Kapazität",
-    "3,44 Tbps"
+    "3,4 Tbps"
    ],
    [
     "Bauform",
@@ -4580,8 +4604,8 @@
     "datasheet"
    ],
    "Switching-Kapazität": [
-    "https://mikrotik.com/products/group/switches",
-    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention) — High-Density, gerundete Headline ggf. abweichend (Pass-3 verifizieren)"
+    "https://mikrotik.com/product/crs520_4xs_16xq_rm",
+    "vendor-spec: Switch-Fabric-Ports×2 (Multi-Gig-Mgmt ausgenommen) = MikroTik-Headline"
    ]
   },
   "beschreibung": "",
@@ -4653,7 +4677,7 @@
    ],
    [
     "Switching-Kapazität",
-    "3,24 Tbps"
+    "3,2 Tbps"
    ],
    [
     "Bauform",
@@ -4738,8 +4762,8 @@
     "datasheet"
    ],
    "Switching-Kapazität": [
-    "https://mikrotik.com/products/group/switches",
-    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention) — High-Density, gerundete Headline ggf. abweichend (Pass-3 verifizieren)"
+    "https://mikrotik.com/product/crs804_4ddq_hrm",
+    "vendor-spec: Switch-Fabric-Ports×2 (Multi-Gig-Mgmt ausgenommen) = MikroTik-Headline"
    ]
   },
   "beschreibung": "",
@@ -4811,7 +4835,7 @@
    ],
    [
     "Switching-Kapazität",
-    "3,24 Tbps"
+    "3,2 Tbps"
    ],
    [
     "Bauform",
@@ -4896,8 +4920,8 @@
     "datasheet"
    ],
    "Switching-Kapazität": [
-    "https://mikrotik.com/products/group/switches",
-    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention) — High-Density, gerundete Headline ggf. abweichend (Pass-3 verifizieren)"
+    "https://mikrotik.com/product/crs812_8ds_2dq_2ddq_rm",
+    "vendor-spec: Switch-Fabric-Ports×2 (Multi-Gig-Mgmt ausgenommen) = MikroTik-Headline"
    ]
   },
   "beschreibung": "",
@@ -5702,5 +5726,479 @@
   "netto_vk": null,
   "artikelgewicht": "2,1",
   "versandgewicht": "2,52"
+ },
+ "CSS610-8P-2S+OUT": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://mikrotik.com/product/netpower_lite_ups",
+   "verifiziert_am": "2026-06-14"
+  },
+  "artikelname": "MikroTik CSS610-8P-2S+OUT Gemanagter Switch – 8× Gigabit-RJ45, 2× SFP+ (10G), Desktop",
+  "titel_tag": "MikroTik CSS610-8P-2S+OUT Managed Switch | Hexwaren",
+  "meta_description": "Original MikroTik CSS610-8P-2S+OUT: gemanagter Switch mit 8× Gigabit-RJ45, 2× SFP+ (10G). Desktop, lüfterlos, Industrie-/Outdoor-Einsatz. Betrieb unter RouterOS/SwOS. Versiegelte Original-Neuware.",
+  "kurzbeschreibung": "<p>Der MikroTik CSS610-8P-2S+OUT ist ein gemanagter Switch mit 8× Gigabit-RJ45, 2× SFP+ (10G). Über das Betriebssystem RouterOS/SwOS lässt er sich für den Industrie-/Outdoor-Einsatz konfigurieren.</p><p>Im Gehäuse für Desktop (lüfterlos) eignet sich der CSS610-8P-2S+OUT für den professionellen Dauerbetrieb und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der MikroTik CSS610-8P-2S+OUT ist ein gemanagter Switch mit 8× Gigabit-RJ45, 2× SFP+ (10G), ausgelegt für den Industrie-/Outdoor-Einsatz in MikroTik-Netzwerken.",
+   "Er bietet 10 Ports mit 2× SFP+ (10G) als Uplink; über poe-out (802.3af/at) versorgt er angeschlossene Geräte direkt per Netzwerkkabel. Unter RouterOS/SwOS ist der CSS610-8P-2S+OUT als Managed-Switch (L3 (RouterOS) / L2 (SwitchOS)) einsetzbar.",
+   "Im Formfaktor Desktop mit lüfterlos und interner Stromversorgung arbeitet der CSS610-8P-2S+OUT laut Datenblatt im Temperaturbereich -40 bis +70 °C. Konfiguriert wird er mit vollem Routing- und Management-Funktionsumfang über den Switch-Chip 88E6193X unter RouterOS/SwOS per WinBox, WebFig oder serieller Konsole; geliefert wird der CSS610-8P-2S+OUT als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz."
+  ],
+  "kompatibilitaet": [
+   "MikroTik-Netzwerke (RouterOS/SwOS)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales MikroTik-Produkt?",
+    "Ja. Der CSS610-8P-2S+OUT ist MikroTik-Original-Neuware – versiegelt geliefert und für den Betrieb unter RouterOS/SwOS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der CSS610-8P-2S+OUT?",
+    "Der CSS610-8P-2S+OUT bietet insgesamt 10 Ports: 8× Gigabit-RJ45, 2× SFP+ (10G)."
+   ],
+   [
+    "Unterstützt der CSS610-8P-2S+OUT PoE?",
+    "Ja, der CSS610-8P-2S+OUT stellt PoE-Out (802.3af/at) bereit und versorgt angeschlossene Geräte über das Netzwerkkabel."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3 (RouterOS) / L2 (SwitchOS)"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× Gigabit-RJ45 (PoE), 2× SFP+ (10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (Access), bis 10 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "PoE-Out (802.3af/at), 120 W Budget"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbps"
+   ],
+   [
+    "Bauform",
+    "Outdoor-Gehäuse"
+   ],
+   [
+    "Stromversorgung",
+    "intern + integrierte USV (Akku-Laderegler)"
+   ],
+   [
+    "Kühlung",
+    "lüfterlos"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie-/Outdoor-Einsatz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://mikrotik.com/product/netpower_lite_ups",
+    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention)"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "artikelgewicht": "2,21",
+  "versandgewicht": "2,65"
+ },
+ "CRS310-1G-5S-4S+OUT": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://mikrotik.com/product/netfiber_9",
+   "verifiziert_am": "2026-06-14"
+  },
+  "artikelname": "MikroTik CRS310-1G-5S-4S+OUT Gemanagter Switch – 1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G), Desktop",
+  "titel_tag": "MikroTik CRS310-1G-5S-4S+OUT Managed Switch | Hexwaren",
+  "meta_description": "Original MikroTik CRS310-1G-5S-4S+OUT: gemanagter Switch mit 1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G). Desktop, aktiver Lüfter, Industrie-/Outdoor-Einsatz. Betrieb unter RouterOS v7 / SwitchOS. Ver",
+  "kurzbeschreibung": "<p>Der MikroTik CRS310-1G-5S-4S+OUT ist ein gemanagter Switch mit 1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G). Über das Betriebssystem RouterOS v7 / SwitchOS lässt er sich für den Industrie-/Outdoor-Einsatz konfigurieren.</p><p>Im Gehäuse für Desktop (aktiver Lüfter) eignet sich der CRS310-1G-5S-4S+OUT für den professionellen Dauerbetrieb und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der MikroTik CRS310-1G-5S-4S+OUT ist ein gemanagter Switch mit 1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G), ausgelegt für den Industrie-/Outdoor-Einsatz in MikroTik-Netzwerken.",
+   "Er bietet 10 Ports mit 5× SFP (1G), 4× SFP+ (10G) als Uplink; er arbeitet ohne PoE-Einspeisung. Unter RouterOS v7 / SwitchOS ist der CRS310-1G-5S-4S+OUT als Managed-Switch (L3 (RouterOS) / L2 (SwitchOS)) einsetzbar.",
+   "Im Formfaktor Desktop mit aktiver Lüfter (1 fan) und interner Stromversorgung arbeitet der CRS310-1G-5S-4S+OUT laut Datenblatt im Temperaturbereich -40 bis +70 °C. Konfiguriert wird er mit vollem Routing- und Management-Funktionsumfang über den Switch-Chip 98DX226S unter RouterOS v7 / SwitchOS per WinBox, WebFig oder serieller Konsole; geliefert wird der CRS310-1G-5S-4S+OUT als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz."
+  ],
+  "kompatibilitaet": [
+   "MikroTik-Netzwerke (RouterOS v7 / SwitchOS)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales MikroTik-Produkt?",
+    "Ja. Der CRS310-1G-5S-4S+OUT ist MikroTik-Original-Neuware – versiegelt geliefert und für den Betrieb unter RouterOS v7 / SwitchOS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der CRS310-1G-5S-4S+OUT?",
+    "Der CRS310-1G-5S-4S+OUT bietet insgesamt 10 Ports: 1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der CRS310-1G-5S-4S+OUT?",
+    "Der CRS310-1G-5S-4S+OUT läuft unter RouterOS v7 / SwitchOS und wird als Managed-Switch betrieben."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3 (RouterOS) / L2 (SwitchOS)"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "1× Gigabit-RJ45, 5× SFP (1G), 4× SFP+ (10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (Access), bis 10 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "5× SFP (1G), 4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbps"
+   ],
+   [
+    "Bauform",
+    "Outdoor-Gehäuse (IP54)"
+   ],
+   [
+    "Stromversorgung",
+    "intern"
+   ],
+   [
+    "Kühlung",
+    "aktiver Lüfter (1 fan)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie-/Outdoor-Einsatz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://mikrotik.com/product/netfiber_9",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://mikrotik.com/product/netfiber_9",
+    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention)"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "artikelgewicht": "2,59",
+  "versandgewicht": "3,11"
+ },
+ "CRS305-1G-4S+OUT": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://mikrotik.com/product/fiberboxplus",
+   "verifiziert_am": "2026-06-14"
+  },
+  "artikelname": "MikroTik CRS305-1G-4S+OUT Gemanagter Switch – 1× Gigabit-RJ45, 4× SFP+ (10G), Desktop",
+  "titel_tag": "MikroTik CRS305-1G-4S+OUT Managed Switch | Hexwaren",
+  "meta_description": "Original MikroTik CRS305-1G-4S+OUT: gemanagter Switch mit 1× Gigabit-RJ45, 4× SFP+ (10G). Desktop, lüfterlos, Industrie-/Outdoor-Einsatz. Betrieb unter RouterOS / SwitchOS. Versiegelte Original-Neuwar",
+  "kurzbeschreibung": "<p>Der MikroTik CRS305-1G-4S+OUT ist ein gemanagter Switch mit 1× Gigabit-RJ45, 4× SFP+ (10G). Über das Betriebssystem RouterOS / SwitchOS lässt er sich für den Industrie-/Outdoor-Einsatz konfigurieren.</p><p>Im Gehäuse für Desktop (lüfterlos) eignet sich der CRS305-1G-4S+OUT für den professionellen Dauerbetrieb und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der MikroTik CRS305-1G-4S+OUT ist ein gemanagter Switch mit 1× Gigabit-RJ45, 4× SFP+ (10G), ausgelegt für den Industrie-/Outdoor-Einsatz in MikroTik-Netzwerken.",
+   "Er bietet 5 Ports mit 4× SFP+ (10G) als Uplink; er arbeitet ohne PoE-Einspeisung. Unter RouterOS / SwitchOS ist der CRS305-1G-4S+OUT als Managed-Switch (L3 (RouterOS) / L2 (SwitchOS)) einsetzbar.",
+   "Im Formfaktor Desktop mit lüfterlos und interner Stromversorgung arbeitet der CRS305-1G-4S+OUT laut Datenblatt im Temperaturbereich -40 bis +70 °C. Konfiguriert wird er mit vollem Routing- und Management-Funktionsumfang über den Switch-Chip 98DX3236 unter RouterOS / SwitchOS per WinBox, WebFig oder serieller Konsole; geliefert wird der CRS305-1G-4S+OUT als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz."
+  ],
+  "kompatibilitaet": [
+   "MikroTik-Netzwerke (RouterOS / SwitchOS)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales MikroTik-Produkt?",
+    "Ja. Der CRS305-1G-4S+OUT ist MikroTik-Original-Neuware – versiegelt geliefert und für den Betrieb unter RouterOS / SwitchOS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der CRS305-1G-4S+OUT?",
+    "Der CRS305-1G-4S+OUT bietet insgesamt 5 Ports: 1× Gigabit-RJ45, 4× SFP+ (10G)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der CRS305-1G-4S+OUT?",
+    "Der CRS305-1G-4S+OUT läuft unter RouterOS / SwitchOS und wird als Managed-Switch betrieben."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3 (RouterOS) / L2 (SwitchOS)"
+   ],
+   [
+    "Portanzahl",
+    "5"
+   ],
+   [
+    "Port-Konfiguration",
+    "1× Gigabit-RJ45, 4× SFP+ (10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (Access), bis 10 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "82 Gbps"
+   ],
+   [
+    "Bauform",
+    "Outdoor-Gehäuse (IP66)"
+   ],
+   [
+    "Stromversorgung",
+    "intern"
+   ],
+   [
+    "Kühlung",
+    "lüfterlos"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie-/Outdoor-Einsatz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://mikrotik.com/product/fiberboxplus",
+    "vendor-spec: Port-Summe×2 (MikroTik Non-Blocking-Konvention)"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "artikelgewicht": "2,70",
+  "versandgewicht": "3,24"
  }
 }

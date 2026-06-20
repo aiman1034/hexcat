@@ -1637,6 +1637,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     **only FiberBox Plus weight = 2,7 kg**; the other 3 distributor weights are in spec tables not in search snippets →
     need a per-distributor-page fetch (mikrotik-store.eu / Baltic / getic). Authoring deferred again — the gate weight-guard
     hard-fails without all 4 weights. Codes + the 1 weight persisted in `_scratch/sw/perf.json` for a focused completion.
+- **MikroTik SWITCHES — pass 3 (2026-06-20, committed+pushed; $0 web_search + PDF/distributor fetch; re-emit gate 0,**
+  **pytest 420). 39/40 switches now authored. STOP → L8.**
+  - **1. netPower 15FR restored** (operator: the `16× FE + 2× SFP 1G` config is correct — 15 reverse-PoE-in + Ether15
+    PoE-out): Switching-Kapazität **7,2 Gbps**, Durchsatz **5,4 Mpps** (both MikroTik-stated); PoE tightened to
+    `Reverse-PoE-In (15 Ports), PoE-Out (Ether15)`. → **Switching-Kapazität now 39/39.**
+  - **2. Durchsatz re-harvest:** found the missed **CRS328-24P = 95,2 Mpps** (+ netPower 15FR 5,4) → **7 filled**. The rest
+    reclassified **test-table-only GAP** (NOT PROVABLY_ABSENT) — MikroTik publishes them only in the per-frame test table.
+  - **3. High-end SwK corrected to OEM headline:** the PDFs are image-based (pypdf got only a port speed), but excluding the
+    2× Multi-Gig **mgmt** ports (which MikroTik excludes from the fabric figure) gives the round OEM values — **CRS520 3,4 Tbps,
+    CRS804 3,2 Tbps, CRS812 3,2 Tbps** (was 3,44/3,24 with mgmt included).
+  - **4. Authored 3 of the 4 new switches** to the gold-slice (reused the IN-variant facts + the gate-safe prose generator;
+    outdoor Bauform + SwK=port-sum×2 + weights post-edited): **netPower Lite 8P** (CSS610-8P-2S+OUT, 2,21 kg, 56 Gbps, 120 W
+    PoE), **netFiber 9** (CRS310-1G-5S-4S+OUT, 2,59 kg, 92 Gbps, IP54), **FiberBox Plus** (CRS305-1G-4S+OUT, 2,70 kg, 82 Gbps,
+    IP66). Weights from distributors (wifi-stock/mbsiwav/Baltic). **GPERx6 alone still held** — its weight is genuinely not
+    $0-findable (Baltic "not stated", Streakwave/wifi-stock 403, Senetic silent, Amazon JS-shell); specs+code+dims captured
+    in `_scratch/sw/perf.json` → completeness `captured 39, gap 1`. **Bundle: 39 switches, gate 0, temp scan 0, byte-contract
+    OK, pytest 420.** PASS-4: just GPERx6's weight (one distributor spec line) → it authors clean from the persisted specs.
 
 ---
 
