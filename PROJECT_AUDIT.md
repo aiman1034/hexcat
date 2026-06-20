@@ -1557,6 +1557,34 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     (Std=per-lane, Speed=aggregate), Cisco DWDM-GBIC (scan mis-split the German "1,25 Gbit/s"), Supermicro dual-rate.
     **No permanent speed↔standard gate added this turn** — a correct check needs breakout/dual-rate/DWDM exemptions;
     deferred to after the reverify so it can't destabilize it. pytest **420**; byte-contract OK. **STOP → L8 (full reverify).**
+- **REVERIFY FIXES — 2 spec defects + Arista RA call + 138 temp normalizations (2026-06-20, committed+pushed; $0/Max,**
+  **OEM-only, `1_IMPORT_THESE` untouched). STOP → L8.** All via source-edit → re-emit (gate 0) → bundle sync.
+  - **Defect 1 — Dell `SFP-100M-FX-DELL` mislabeled 1G → 100M.** It is a 100M FX optic (Dell.com; Std=100BASE-FX, Typ=FX
+    already correct) but Geschwindigkeit said 1 Gbit/s + name/prose said "1G". Fixed at source: Datenrate 1 Gbit/s →
+    **100 Mbit/s**; "1G"→"100M" in Artikelname/Titel/Meta + "1-Gigabit"→"100-Megabit (Fast Ethernet)" in prose. Fasertyp=
+    Multimode / 1310 nm / 2 km re-checked OK. DOM=Ja, temp 0/85 kept. Re-emit gate 0; bundle Main/Attr/VL synced.
+  - **Defect 2 — Juniper `SFP-1GE-FE-E-T` standard.** Confirmed 10/100/1000BASE-T tri-speed copper SFP (juniper.net),
+    100m/RJ45/DOM=Nein — but Std=Typ=name=`10BASE-T` (10M only). Fixed: Standard + Transceiver Typ 10BASE-T →
+    **10/100/1000BASE-T**; name/prose "10BASE-T-Transceiver" → "10/100/1000BASE-T-Transceiver". **Geschwindigkeit stays
+    1 Gbit/s** (it is an independent stored attr — top rate). Re-emit gate 0; bundle synced.
+  - **Arista RA call — `SFP-10G-RA-1G-SX` / `-1G-LX`, RESOLVED.** arista.com Transceiver Data Sheet confirms these are
+    **rate-adapting**: 10G XFI host interface, but the module rate-adapts to **1G** and the optical line is 1000BASE-SX/LX
+    (1 Gbit/s) — lets non-1G-native switches run 1G optics. Set Datenrate 10 Gbit/s → **1 Gbit/s**; kept Std=1000BASE-SX/LX,
+    Typ=SX/LX, Formfaktor=SFP+ (mechanically SFP+); name "10G SFP+" → "1G SFP+"; prose now states "1-Gigabit-Optik,
+    ratenadaptierend für 10G-SFP+-Ports". Speed/Std/name internally consistent. Re-emit gate 0; bundle synced.
+  - **Temp-format normalization — 138 bundle deviations (Cisco 20/Fortinet 83/HPE 19/MikroTik 16) → 0 across all 13 brands.**
+    Scope = **Betriebstemperatur ATTRIBUTE + Verification_Log** (operator's "Apply in Attributes + VL"). Normalizer: ASCII
+    `-`, unit once, no `+`, drop grade prefix/suffix (COM/EXT/IND/Commercial(...)), complex "Kaltstart, X bis Y Betrieb" →
+    operating range. **Three findings during the pass:** (a) normalizing temps in PROSE shortened exactly-90-word
+    Beschreibungen below the floor (each dropped "°C" = −1 word) → **reverted prose, attribute+VL only** (prose "X °C bis
+    Y °C" and attr "X bis Y °C" are the same range — formatting, not a contradiction); (b) **alias temp attributes** —
+    Cisco `Temperaturbereich`='Commercial (0 °C bis +70 °C)' and MikroTik `Betriebstemperatur (getestet)`='-40 bis +85 °C'
+    — are mapped to the output Betriebstemperatur during assembly and OVERRODE the clean one, so a name-exact match missed
+    them; fixed by normalizing **any temp-valued attribute**; (c) some bundle temps were **stale vs source/output** → added a
+    bundle→output temp reconcile for all parts. **Dual-rate `QSFP-40/100-SRBD`** ('100G: +10 bis 60 / 40G: +10 bis 70')
+    LEFT UNTOUCHED — not collapsed (standing don't-range-parse-dual-rate rule) and it is **not in the deliverable bundle**.
+    Re-emit gate 0 (×4); output/ Prices preserved (M/A/VL-only copy → keeps Cisco's priced anchors). **Final: temp scan
+    0/13 brands, Attributes↔VL temp parity 0, byte-contract 0 failures (7 brands × 6 files), pytest 420.** **STOP → L8.**
 
 ---
 
