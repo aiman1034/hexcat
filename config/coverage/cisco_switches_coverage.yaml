@@ -1,0 +1,461 @@
+# Cisco fixed-switch COVERAGE MANIFEST — enumeration only (no content authoring).
+# Source: LOCAL cached Cisco PDFs (cisco.com 403s WebFetch/curl; couriered in). Image-only PDFs ->
+# pypdfium2 render -> visual read of og "Table 3 Switch ordering information" + ds "Table 2 Switch
+# configurations" (half-page crops; full-page reads garbled per SOURCE RULE #4).
+# UNIT = base hardware model: license suffix -E/-A/-M STRIPPED; uplink suffix (-4G/-4X/-2Q/-4Y/-2Y/-2X...)
+# = DISTINCT hardware (kept). EXCLUDED: NM/PWR/FAN/STACK/licenses/transceivers/Meraki-M.
+# cross-source: ds-only models tagged source_conflict + sourceable_new_sealed: verify.
+# CALIBRATION: C9300 = 40 (og Table3 32 + 8 ds-only; operator-confirmed include-all). C9200 = 31 (og=ds, no conflict).
+meta:
+  generated: "2026-06-20"
+  source_docs: [c9300-og.pdf, c9300-ds.pdf, c9200-og.pdf, c9200-ds.pdf]
+  calibration: {C9300: 40, C9200: 31}
+switches:
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-12Y
+    ports: 12x 25G/10G/1G SFP28
+    poe_type: none
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-24Y
+    ports: 24x 25G/10G/1G SFP28
+    poe_type: none
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-24HX
+    ports: "24x mGig (10G/5G/2.5G/1G)"
+    poe_type: UPOE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-48HX
+    ports: "48x mGig (10G)"
+    poe_type: UPOE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-48HXN
+    ports: 36x 5G/mGig + 12x 10G
+    poe_type: UPOE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300X
+    base_pn: C9300X-48TX
+    ports: "48x mGig (10G)"
+    poe_type: data
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24T
+    ports: 24x 1G
+    poe_type: data
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24P
+    ports: 24x 1G
+    poe_type: PoE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24U
+    ports: 24x 1G
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24UX
+    ports: "24x mGig (10G)"
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24S
+    ports: 24x 1G SFP
+    poe_type: none
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24H
+    ports: 24x 1G
+    poe_type: UPOE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred; ds row has no license suffix)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24UB
+    ports: "24x 1G (deep buffer)"
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-24UXB
+    ports: "24x mGig (deep buffer)"
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48T
+    ports: 48x 1G
+    poe_type: data
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48P
+    ports: 48x 1G
+    poe_type: PoE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48U
+    ports: 48x 1G
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48UXM
+    ports: "48x (36x 2.5G + 12x mGig)"
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48UN
+    ports: 48x 5G mGig
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48H
+    ports: 48x 1G
+    poe_type: UPOE+
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48S
+    ports: 48x 1G SFP
+    poe_type: none
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300
+    base_pn: C9300-48UB
+    ports: "48x 1G (deep buffer)"
+    poe_type: UPOE
+    uplink: modular
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24T-4G
+    ports: 24x 1G
+    poe_type: data
+    uplink: 4x1G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24T-4X
+    ports: 24x 1G
+    poe_type: data
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48T-4G
+    ports: 48x 1G
+    poe_type: data
+    uplink: 4x1G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48T-4X
+    ports: 48x 1G
+    poe_type: data
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24P-4G
+    ports: 24x 1G
+    poe_type: PoE+
+    uplink: 4x1G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24P-4X
+    ports: 24x 1G
+    poe_type: PoE+
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48P-4G
+    ports: 48x 1G
+    poe_type: PoE+
+    uplink: 4x1G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48P-4X
+    ports: 48x 1G
+    poe_type: PoE+
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48PF-4G
+    ports: 48x 1G
+    poe_type: full PoE+
+    uplink: 4x1G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48PF-4X
+    ports: 48x 1G
+    poe_type: full PoE+
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24UXG-4X
+    ports: "24x (8x mGig + 16x 1G)"
+    poe_type: UPOE
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-24UXG-2Q
+    ports: "24x (8x mGig + 16x 1G)"
+    poe_type: UPOE
+    uplink: 2x40G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48UXG-4X
+    ports: "48x (12x mGig + 36x 1G)"
+    poe_type: UPOE
+    uplink: 4x10G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300L
+    base_pn: C9300L-48UXG-2Q
+    ports: "48x (12x mGig + 36x 1G)"
+    poe_type: UPOE
+    uplink: 2x40G fixed
+    form_factor: Fixed 1U
+    license_tiers: "E,A,M (inferred)"
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_table2
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9300LM
+    base_pn: C9300LM-24U-4Y
+    ports: 24x 1G
+    poe_type: UPOE
+    uplink: 4x25G fixed
+    form_factor: "Fixed 1U (shallow depth)"
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300LM
+    base_pn: C9300LM-48T-4Y
+    ports: 48x 1G
+    poe_type: data
+    uplink: 4x25G fixed
+    form_factor: "Fixed 1U (shallow depth)"
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300LM
+    base_pn: C9300LM-48U-4Y
+    ports: 48x 1G
+    poe_type: UPOE
+    uplink: 4x25G fixed
+    form_factor: "Fixed 1U (shallow depth)"
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9300LM
+    base_pn: C9300LM-48UX-4Y
+    ports: "48x (8x mGig + 40x 1G)"
+    poe_type: UPOE
+    uplink: 4x25G fixed
+    form_factor: "Fixed 1U (shallow depth)"
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_table3+ds_table2
