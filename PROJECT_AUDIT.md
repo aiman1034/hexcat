@@ -1615,6 +1615,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     212/226) recorded as `deferred_not_sourceable` (EOL, no $0 page) — held, not dropped. **PASS-2 (operator): drop
     distributor weights for the 4 → they author clean; precise read of the ~29 test-table Switching-Kapazität/Durchsatz
     cells; CRS318-16P PoE budget.** All harvested data persisted in `_scratch/sw/perf.json`.
+- **MikroTik SWITCHES — pass 2 (2026-06-20, committed+pushed; $0, web_search not WebFetch-on-tables; re-emit gate 0,**
+  **pytest 420). STOP → L8.** Method clarified by operator: port-sum×2 is MikroTik's published non-blocking convention
+  (validated against the 7 description-stated values) → authorized for standard configs.
+  - **1. CRS320-8P-8B PoE restated** (operator-exact): dropped the bare "963 W" → `PoE++ (802.3af/at/bt), bis 90 W/Port;
+    600 W (1 Netzteil) / bis 1150 W (mit optionalem 2. Netzteil)`.
+  - **2. CRS318-16P (netPower 16P) PoE:** MikroTik publishes no single-W budget (datasheet self-contradictory; forum
+    confirms current-limit only) → `PoE-Out (802.3af/at), Limit 2,8 A @ 24 V / 1,4 A @ 48–57 V` (verbatim, like CRS112-8P).
+  - **3. Switching-Kapazität — filled 28 more (35/36 total) via port-sum×2** (all ports at face value, ×2, rounded —
+    matches CRS354 168,1×2→336). The "irregular" 7 weren't in web_search snippets either (they're in the PDF datasheets),
+    BUT the searches gave the correct port speeds (CRS310-8G = 2,5G ports → 80; CRS326-4C = 20×2,5+4×10+2×40 → 340), so
+    ×2 computes them: CRS510 800, CRS520 3,44 Tbps, CRS804/812 3,24 Tbps (high-end flagged "rounded headline ggf.
+    abweichend, pass-3"). **netPower 15FR SwK OMITTED + flagged** — its harvested Port-Konfiguration (`16× FE + 2× SFP 1G`)
+    contradicts the OEM name `1Fi-15Fr-2S` (should be 1× SFP + 15× FE + 2× SFP+ → ~45, not the 7 the bad config gives);
+    a pre-existing port-label error → pass-3, NOT a guessed value.
+  - **4. Durchsatz:** filled only where MikroTik states a forwarding rate in the DESCRIPTION (5: CRS312 178, CRS326-24S+2Q
+    252, CRS354-48G/48P 235, CRS318-16P 53,6 Mpps). The rest = **PROVABLY_ABSENT** (omitted; MikroTik publishes no headline
+    forwarding rate — only the garbled per-frame test table, which is forbidden as a source).
+  - **5. Author the 4 new switches — STILL HELD (weights).** Confirmed real codes (netPower Lite 8P = CSS610-8P-2S+OUT,
+    FiberBox Plus = CRS305-1G-4S+OUT, netFiber 9 = CRS310-1G-5S-4S+OUT, GPERx6 = CSS606-1G-2Gi-3S+OUT). web_search found
+    **only FiberBox Plus weight = 2,7 kg**; the other 3 distributor weights are in spec tables not in search snippets →
+    need a per-distributor-page fetch (mikrotik-store.eu / Baltic / getic). Authoring deferred again — the gate weight-guard
+    hard-fails without all 4 weights. Codes + the 1 weight persisted in `_scratch/sw/perf.json` for a focused completion.
 
 ---
 
