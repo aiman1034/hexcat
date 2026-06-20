@@ -47,10 +47,11 @@ _ALLOWED_BESCH_TAGS = {"p"}
 # DAC needs less grounded prose than a coherent transceiver, and we NEVER pad to a floor.
 # Modules keep the full rules floor; cables get this lower floor.
 CABLE_BESCHREIBUNG_MIN_WORDS = 90   # gold-slice bar: every Beschreibung >= 90 words, cables included
-# Rule-7 switch weight floor: catches the transceiver optics placeholder (~0,05/0,20 kg) = a missing
-# weight. Set to 0,15 (below the lightest verified real switch: MikroTik CSS106-5G-1S/RB260GS @0,212 kg,
-# datasheet-net) so a genuine light switch is admitted while the 0,05/0,20 placeholder still hard-fails.
-_SWITCH_WEIGHT_FLOOR_KG = 0.15
+# Rule-7 switch weight floor: catches the transceiver optics placeholder (~0,05 kg) = a missing weight.
+# Lowered to 0,10 (L8 2026-06-20) to give sub-compact switches headroom — the lightest verified real
+# switch (MikroTik CSS106-5G-1S/RB260GS @0,212 kg, datasheet-net) is correct and stays admitted, while
+# the ~0,05 kg optics placeholder still hard-fails. (Do not alter the 0,212 kg weight itself.)
+_SWITCH_WEIGHT_FLOOR_KG = 0.10
 
 # --- cross-SKU sentence reuse (FAIL) ---------------------------------------------------
 # A non-closer body sentence shared by more than this fraction of a brand's SKUs is

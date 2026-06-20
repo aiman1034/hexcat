@@ -1585,6 +1585,36 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     LEFT UNTOUCHED — not collapsed (standing don't-range-parse-dual-rate rule) and it is **not in the deliverable bundle**.
     Re-emit gate 0 (×4); output/ Prices preserved (M/A/VL-only copy → keeps Cisco's priced anchors). **Final: temp scan
     0/13 brands, Attributes↔VL temp parity 0, byte-contract 0 failures (7 brands × 6 files), pytest 420.** **STOP → L8.**
+- **MikroTik SWITCHES — grounding fixes, Layer-8 pass 1 (2026-06-20, committed+pushed; $0/Max, OEM-only**
+  **mikrotik.com, source-edit → re-emit → gate 0, transceivers untouched). STOP → L8.** 36 switches re-emitted
+  gate 0 (S.1-S.6, audit_semantic 0×8), pytest 420. Switch re-emit path = `reconcile_content(MikroTik_Switches_content)`
+  + `assemble_bundle(category="MikroTik_Switches")`.
+  - **B Switching-Kapazität + Durchsatz — filled 7 (description-verbatim, port-sum-validated):** CRS312 240/178,
+    CRS326-24S+2Q 640/252, CRS354-48G 336/235, CRS354-48P 336/235, CRS318-16P 72/53,6, CRS309 162/(fr n/a),
+    CRS518 1,2 Tbps/(fr n/a). **HARD $0 WALL on the rest:** MikroTik states these as a single headline only in the
+    product DESCRIPTION for ~7 models; all others publish ONLY per-frame test-results tables, and $0 WebFetch reads
+    them unit-corrupted (returned "322 Tbps", "800 Tbps", "95,238 Mpps" — proven garbage). Used the reliable
+    description values only; the ~29 table-only cells are **flagged for a precise (browser/manual) pass-2 read — NOT
+    fabricated, NOT PROVABLY_ABSENT** (they ARE published, just not $0-extractable). Dual-rate guard held.
+  - **C PoE-out budgets (verbatim "Total output power"):** CRS328-24P 500 W, CRS320-8P-8B 963 W, CRS354-48P 700 W,
+    CRS418-8P (both) 150 W, CSS610-8P 140 W; CRS112-8P = MikroTik's verbatim current limit (2,8 A@24 V / 1,4 A@48–57 V,
+    no single-W figure). 3 passive → "Passiv-PoE (eingangsabhängig)" (no invented W). CRS318-16P = no clean W → pass-2.
+    **Gate S.1** (PoE budget ⇒ a PoE port in Port-Konfiguration) required tagging the PoE Gigabit ports: full-PoE
+    switches → "(PoE)", partial (CRS320-8P-8B, CRS418-8P-8G ×2) → "(teilw. PoE)" (accurate, no over-claim).
+  - **D Bauform:** CRS504-4XQ-OUT → "Outdoor-Gehäuse (IP66)", netPower 15FR (CRS318-1Fi-15Fr-2S-OUT) → "(IP54)"
+    (was "Desktop"). **E Betriebstemperatur (36):** "-X bis +Y °C" → "-X bis Y °C" (attribute + VL only, NOT prose —
+    matches the locked transceiver format). **F CRS504-4XQ-IN/OUT** Port-Geschwindigkeit → flat "4× 100 GbE (QSFP28) +
+    100 Mbit Management" (was a false access/uplink tier). **G weight floor** `_SWITCH_WEIGHT_FLOOR_KG` 0,15 → 0,10
+    (sub-compact headroom; 0,212 kg RB260GS/CSS106 weight unchanged; ~0,05 placeholder still fails).
+  - **A — 4 mis-excluded switches reclassified, but $0-BLOCKED on authoring.** Corrected the completeness yaml: the 4
+    prior "not a switch" exclusions were ERRORS (all on the Switches grid) → netPower Lite 8P (8× 1G PoE + 2× 10G SFP+,
+    120 W, USV), FiberBox Plus (CRS305-1G-4S+OUT, IP66), netFiber 9 (IP54), GPERx6 (IP66) — specs harvested + recorded.
+    **They cannot be authored gate-clean yet: MikroTik publishes no switch weight (the same wall that once HELD the 36),
+    and no distributor weight is in hand for these 4.** So `excluded_not_switch 4→0`, `pending_author 4` (weight-blocked),
+    captured stays 36 (NOT a false "captured 40" — flag-don't-guess). ~6 archived CRS1xx/2xx (CRS109/112-8G-4S/125/210/
+    212/226) recorded as `deferred_not_sourceable` (EOL, no $0 page) — held, not dropped. **PASS-2 (operator): drop
+    distributor weights for the 4 → they author clean; precise read of the ~29 test-table Switching-Kapazität/Durchsatz
+    cells; CRS318-16P PoE budget.** All harvested data persisted in `_scratch/sw/perf.json`.
 
 ---
 

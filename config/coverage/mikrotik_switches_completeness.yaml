@@ -2,25 +2,50 @@ brand: MikroTik
 category: switches
 # First switch brand on the Rule-7 switch gold-slice. Enumeration source: the official MikroTik
 # product group page "Switches" (mikrotik.com/products/group/switches), re-fetched 2026-06-14 ($0).
-complete: true
+# L8 2026-06-20: the 4 prior "not a switch" exclusions were ERRORS — all 4 are on the Switches grid
+# and ARE switches (netPower Lite 8P is an 8-port PoE switch w/ UPS, not a bare UPS; netFiber 9 +
+# FiberBox Plus + GPERx6 are outdoor fibre/PoE switches). Reclassified to in-scope. They are HELD on
+# the SAME weight-source wall as the original 36 (MikroTik does not publish switch weight) — authoring
+# is otherwise ready (specs harvested); they emit gate-clean once distributor weights are dropped in.
+complete: false
 universe_total: 40            # distinct products on the switches group grid
 captured_count: 36            # authored to the switch gold-slice, gate PASS 36/36
-gap_count: 0
-excluded_not_switch_count: 4
+gap_count: 4                  # the 4 reclassified switches, pending a weight source (below)
+excluded_not_switch_count: 0  # was 4 — those exclusions were errors, now reclassified in-scope
 populated_sources: 1
 per_source:
 - id: mikrotik_switches_group
   kind: vendor_product_grid
   url: https://mikrotik.com/products/group/switches
   populated: true
-exclude_not_switch:
-- {pn: fiberbox+,  reason: "FiberBox+ media converter / passive fibre enclosure — not a switch."}
-- {pn: gperx6,     reason: "GPeR media converter — not a switch."}
-- {pn: netfiber-9, reason: "netFiber-9 media converter — not a switch."}
-- {pn: netpower-lite-ups, reason: "netPower Lite UPS / power device — not a switch."}
-verdict: captured 36 of 40 enumerated MikroTik switch-group products (90%); the 4 excluded are media
-  converters + a UPS (not switches), each with a verbatim reason. All 36 authored to the switch
-  gold-slice (gate PASS 36/36 incl S.1-S.5, audit_semantic 0×8 all-fields, Rule-8 parity 0-missing).
-  L3 by env-first precedence: Managed (L3) 20, Smart-Managed 7, Industrie 3, Data-Center 6.
-  Betriebstemperatur datasheet-verbatim (MikroTik publishes "Tested ambient temperature").
-  MSRP captured (config/market_prices/mikrotik_switch_msrp.yaml); EUR net deferred.
+pending_author:               # in-scope switches, specs harvested, HELD on weight-source (§10 weight wall)
+- {pn: netPower Lite 8P, url: "https://mikrotik.com/product/netpower_lite_ups",
+   spec: "8× 1G RJ45 (802.3af/at PoE-out, 120 W) + 2× 10G SFP+; integ. USV; -40..70 °C",
+   reason: "switch (prev. mis-excluded as UPS); MikroTik publishes no weight -> needs distributor weight"}
+- {pn: FiberBox Plus, url: "https://mikrotik.com/product/fiberboxplus",
+   spec: "CRS305-1G-4S+OUT: 4× 10G SFP+ + 1× 1G; IP66 outdoor; -40..70 °C; 330x200x70 mm; 98DX226S",
+   reason: "outdoor fibre-aggregation switch; MikroTik publishes no weight -> needs distributor weight"}
+- {pn: netFiber 9, url: "https://mikrotik.com/product/netfiber_9",
+   spec: "1× 1G (PoE-in) + 5× SFP + 4× 10G SFP+; IP54 outdoor; -40..70 °C; 98DX226S",
+   reason: "outdoor fibre-aggregation switch; MikroTik publishes no weight -> needs distributor weight"}
+- {pn: GPERx6, url: "https://mikrotik.com/product/gperx6",
+   spec: "3× 1G (PoE-in/out) + 3× 10G SFP+; IP66 outdoor; passive PoE-out 150 W; -40..70 °C; 88E6193X",
+   reason: "outdoor switch / PoE reach-extender; MikroTik publishes no weight -> needs distributor weight"}
+deferred_not_sourceable:      # archived/EOL CRS1xx/2xx — NOT on the current grid, NOT dropped, held for a source
+- {pn: CRS109-8G-1S-2HnD-IN, reason: "archived/EOL — not on current Switches grid; no $0 live spec page"}
+- {pn: CRS112-8G-4S-IN,      reason: "archived/EOL — superseded; no $0 live spec page"}
+- {pn: CRS125-24G-1S-IN,     reason: "archived/EOL — superseded; no $0 live spec page"}
+- {pn: CRS210-8G-2S+IN,      reason: "archived/EOL — superseded; no $0 live spec page"}
+- {pn: CRS212-1G-10S-1S+IN,  reason: "archived/EOL — superseded; no $0 live spec page"}
+- {pn: CRS226-24G-2S+IN/RM,  reason: "archived/EOL — superseded; no $0 live spec page"}
+verdict: 36 of 40 grid switches authored to the switch gold-slice (gate PASS 36/36 incl S.1-S.6,
+  audit_semantic 0×8 all-fields, Rule-8 parity 0-missing). The 4 once-"excluded not-switch" are in fact
+  switches (correction logged) -> reclassified in-scope, specs harvested, HELD only on the weight-source
+  wall (same as the original 36 before distributor weights). ~6 archived CRS1xx/2xx legacy models are
+  deferred_not_sourceable (EOL, no $0 live page) — held, not dropped. L3 by env-first precedence:
+  Managed (L3) 20, Smart-Managed 7, Industrie 3, Data-Center 6. Betriebstemperatur datasheet-verbatim,
+  normalized to the locked "-X bis Y °C" format. Switching-Kapazität + Durchsatz filled where MikroTik
+  states a headline in the product DESCRIPTION (7 switches, port-sum-validated); the rest publish only
+  per-frame test-results tables that $0 WebFetch cannot extract reliably (returns unit-corrupted values)
+  -> flagged for a precise pass-2 read, NOT fabricated. PoE-out budgets added to the 802.3 switches
+  (verbatim "Total output power"); passive-PoE stated as input-dependent. MSRP captured; EUR net deferred.
