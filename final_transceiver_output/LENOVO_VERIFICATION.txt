@@ -1,0 +1,118 @@
+LENOVO VERIFICATION REPORT — 104 transceivers vs Lenovo Press (ThinkSystem adapter guides)
+OEM source: lenovopress.lenovo.com lp1652 (57504 25G) + lp1417 (57508 100G) supported-transceiver/cable
+tables + Lenovo Press product guides for legacy 1G. Compatibles (FS/FluxLight/BlueOptics) NOT used. 2026-06-20.
+======================================================================================
+VERDICT: all 104 are real Lenovo option codes confirmed in Lenovo Press. No collisions; byte-contract OK; gate 0.
+DOM: 10G+ optical = Ja (per the 10G+ rule); copper RJ45/10GBASE-T/1000BASE-T = Nein; DAC/AOC = omitted (cable-exempt).
+   CORRECTED 2x 1G optical: 81Y1622 (1000BASE-SX) + 90Y9424 (1000BASE-LX) Ja->Nein — Lenovo Press SILENT on DDM for
+   these legacy 1G SFPs (never blanket-Ja); added to _DOM_NEIN_OEM_SILENT. NB: Lenovo's DOM was originally DERIVED
+   (SFF-8472 inference), not per-part OEM — the 10G+ Ja stands by rule; the 1G needed the explicit OEM check.
+TEMP: 0 bis 70 °C = Rule-9 commercial default (Lenovo Press silent on operating temp; commercial parts, no -I/-ET).
+CORRECTIONS: 2 (81Y1622, 90Y9424 DOM Ja->Nein).  REMOVALS: none.
+
+part | in OEM catalog? | corrections
+--------------------------------------------------------------------------------------
+00FE333        | Ja (Lenovo Press) | -
+81Y1622        | Ja (Lenovo Press) | DOM Ja->Nein (1G, OEM-silent)
+90Y9424        | Ja (Lenovo Press) | DOM Ja->Nein (1G, OEM-silent)
+4TC7B13092     | Ja (Lenovo Press) | -
+7G17A03130     | Ja (Lenovo Press) | -
+4TC7B12410     | Ja (Lenovo Press) | -
+00FE331        | Ja (Lenovo Press) | -
+90Y9412        | Ja (Lenovo Press) | -
+90Y9415        | Ja (Lenovo Press) | -
+49Y4216        | Ja (Lenovo Press) | -
+49Y8578        | Ja (Lenovo Press) | -
+49Y4218        | Ja (Lenovo Press) | -
+46C3447        | Ja (Lenovo Press) | -
+68Y6923        | Ja (Lenovo Press) | -
+69Y0389        | Ja (Lenovo Press) | -
+4TC7A78615     | Ja (Lenovo Press) | -
+00NU537        | Ja (Lenovo Press) | -
+00VX183        | Ja (Lenovo Press) | -
+00MY034        | Ja (Lenovo Press) | -
+4M27A67041     | Ja (Lenovo Press) | -
+4TC7A69045     | Ja (Lenovo Press) | -
+7G17A03537     | Ja (Lenovo Press) | -
+4TC7A88638     | Ja (Lenovo Press) | -
+7G17A03538     | Ja (Lenovo Press) | -
+00YL631        | Ja (Lenovo Press) | -
+49Y7884        | Ja (Lenovo Press) | -
+00D9865        | Ja (Lenovo Press) | -
+00FE325        | Ja (Lenovo Press) | -
+00D6222        | Ja (Lenovo Press) | -
+4M27A67042     | Ja (Lenovo Press) | -
+7G17A03539     | Ja (Lenovo Press) | -
+4TC7A86257     | Ja (Lenovo Press) | -
+7G17A03540     | Ja (Lenovo Press) | -
+00YL634        | Ja (Lenovo Press) | -
+00YL637        | Ja (Lenovo Press) | -
+00YL640        | Ja (Lenovo Press) | -
+00YL643        | Ja (Lenovo Press) | -
+00YL646        | Ja (Lenovo Press) | -
+00YL649        | Ja (Lenovo Press) | -
+00D6288        | Ja (Lenovo Press) | -
+90Y9427        | Ja (Lenovo Press) | -
+00AY764        | Ja (Lenovo Press) | -
+00AY765        | Ja (Lenovo Press) | -
+90Y9430        | Ja (Lenovo Press) | -
+90Y9433        | Ja (Lenovo Press) | -
+00D6151        | Ja (Lenovo Press) | -
+00VX111        | Ja (Lenovo Press) | -
+00VX114        | Ja (Lenovo Press) | -
+00VX117        | Ja (Lenovo Press) | -
+4X97A94008     | Ja (Lenovo Press) | -
+4X97A94011     | Ja (Lenovo Press) | -
+4X97A94012     | Ja (Lenovo Press) | -
+4X97A94013     | Ja (Lenovo Press) | -
+4X97A94702     | Ja (Lenovo Press) | -
+7Z57A03541     | Ja (Lenovo Press) | -
+7Z57A03542     | Ja (Lenovo Press) | -
+7Z57A03543     | Ja (Lenovo Press) | -
+7Z57A03544     | Ja (Lenovo Press) | -
+7Z57A03545     | Ja (Lenovo Press) | -
+7Z57A03557     | Ja (Lenovo Press) | -
+7Z57A03558     | Ja (Lenovo Press) | -
+7Z57A03559     | Ja (Lenovo Press) | -
+4X97A94703     | Ja (Lenovo Press) | -
+4X97A94014     | Ja (Lenovo Press) | -
+4X97A94015     | Ja (Lenovo Press) | -
+4X97A94016     | Ja (Lenovo Press) | -
+4X97A94704     | Ja (Lenovo Press) | -
+4X97A94705     | Ja (Lenovo Press) | -
+4Z57A10844     | Ja (Lenovo Press) | -
+7Z57A03546     | Ja (Lenovo Press) | -
+7Z57A03547     | Ja (Lenovo Press) | -
+7Z57A03548     | Ja (Lenovo Press) | -
+7Z57A03549     | Ja (Lenovo Press) | -
+7Z57A03550     | Ja (Lenovo Press) | -
+7Z57A03561     | Ja (Lenovo Press) | -
+7Z57A03562     | Ja (Lenovo Press) | -
+7Z57A03563     | Ja (Lenovo Press) | -
+4X97A11113     | Ja (Lenovo Press) | -
+4X97A12613     | Ja (Lenovo Press) | -
+7Z57A03551     | Ja (Lenovo Press) | -
+7Z57A03552     | Ja (Lenovo Press) | -
+7Z57A03553     | Ja (Lenovo Press) | -
+7Z57A03554     | Ja (Lenovo Press) | -
+7Z57A03555     | Ja (Lenovo Press) | -
+7Z57A03564     | Ja (Lenovo Press) | -
+4Z57A85043     | Ja (Lenovo Press) | -
+4Z57A85044     | Ja (Lenovo Press) | -
+7Z57A03565     | Ja (Lenovo Press) | -
+7Z57A03566     | Ja (Lenovo Press) | -
+49Y7890        | Ja (Lenovo Press) | -
+49Y7891        | Ja (Lenovo Press) | -
+00D5810        | Ja (Lenovo Press) | -
+00D5813        | Ja (Lenovo Press) | -
+00YL652        | Ja (Lenovo Press) | -
+00YL655        | Ja (Lenovo Press) | -
+00YL658        | Ja (Lenovo Press) | -
+00YL661        | Ja (Lenovo Press) | -
+00YL664        | Ja (Lenovo Press) | -
+49Y7886        | Ja (Lenovo Press) | -
+49Y7887        | Ja (Lenovo Press) | -
+49Y7888        | Ja (Lenovo Press) | -
+00YL667        | Ja (Lenovo Press) | -
+00YL670        | Ja (Lenovo Press) | -
+00YL673        | Ja (Lenovo Press) | -
