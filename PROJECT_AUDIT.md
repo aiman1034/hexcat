@@ -1500,6 +1500,12 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (no guess; -ET omit-allowlist already covers them), flagged for an HCT range-fill. **Core pass:** 179/180 confirmed (55 guide-exact + 63 guide-token +
   61 juniper.net-named JNP-/EX-/QFX-/SFPP-/XFP- with juniper.net source), 1 FLAG (PLR4). Juniper re-emit gate 0. `final_transceiver_output/JUNIPER_VERIFICATION.txt`
   added. FLAGGED for L8: QDD-400G-PLR4-JUNIPER + the 2 -ET temp ranges. STILL PENDING: the other 5 non-gold brands, 221 unverified-live, real pricing. STOP → L8. $0/Max.
+- **JUNIPER FOLLOW-UP (2026-06-20).** (a) **ESR4 orphan finished:** the prior removal used ',' for all-but-Main, so the ';'-delimited Prices +
+  PlatformFlag kept the QSFP-40G-ESR4-JUNIPER row (181 vs 180) and Prices wrongly gained a BOM — removed with the correct ';' delimiter + restored
+  byte-contract (Prices no-BOM, PlatformFlag BOM). (b) **PLR4 call (was flagged → now RESOLVED):** REMOVED QDD-400G-PLR4-JUNIPER (CC call — juniper.net
+  400G common-optic list = DR4/FR4/LR4/ZR/SR4P2, no PLR4; not in HCT/guides; reversible if Juniper later confirms). **Juniper 181 → 179; re-emit gate 0;
+  all 5 core CSVs (Main/Attributes/PlatformFlag/Prices/Condition) share ONE identical 179-SKU Artikelnummer set, 0 orphans.** Only the 2 -ET temp ranges
+  remain flagged for L8. JUNIPER_VERIFICATION.txt updated.
 
 ---
 
