@@ -7,8 +7,11 @@ RESOLVED:
    = QFX-QSFP-40G-ESR4, already present -> duplicate) and QDD-400G-PLR4-JUNIPER (CC CALL: juniper.net 400G list =
    DR4/FR4/LR4/ZR/SR4P2, no PLR4; not in HCT/guides -> not a Juniper optic; reversible if Juniper later confirms).
  * 1G DOM verified (modern=Ja per guide DDM; legacy RX-*=Nein OEM-silent) - no change.
- * 2 -ET parts: temp not $0-confirmable -> OMIT confirmed; FLAGGED for HCT range-fill.
-REMOVALS: QSFP-40G-ESR4-JUNIPER, QDD-400G-PLR4-JUNIPER (2) -> 181 to 179.  FLAGGED: the 2 -ET temp ranges.
+ * 2 -ET parts (EX-SFP-1FE-FX-ET, EX-SFP-1GE-SX-ET): Betriebstemperatur range NOT $0-confirmable — HCT is JS-gated
+   and public sources conflict across -45 / -40 / -10 / 0 °C. Recorded as a DELIBERATE OMIT (cell left empty =
+   safe under-spec, never a guess). CLOSED — this is NOT an open flag; fill the range ONLY via a manual HCT read.
+REMOVALS: QSFP-40G-ESR4-JUNIPER, QDD-400G-PLR4-JUNIPER (2) -> 181 to 179.  OPEN FLAGS: none (the 2 -ET temps are a
+   closed deliberate OMIT, above).
 
 part | in Juniper catalog? | note
 ----------------------------------------------------------------------------------------

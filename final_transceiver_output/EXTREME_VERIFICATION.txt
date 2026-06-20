@@ -2,12 +2,17 @@ EXTREME VERIFICATION REPORT — 102 transceivers vs Extreme Optics / Pluggable T
 OEM source: datasheets/cache/extreme-optical-transceivers-cables-current.pdf + extreme-optics-solution-guide.pdf
 (extremenetworks.com). Compatibles NOT used. 2026-06-20.
 ====================================================================================
-VERDICT: all 102 confirmed in Extreme's datasheet. No collisions with verified brands. No corrections.
+VERDICT: all 102 confirmed in Extreme's datasheet. No collisions with verified brands. 1 CORRECTION (MGBIC-LC03 — below).
 DOM: 10G+ optical = Ja (verified); copper 10GBASE-T (10338) + 1000BASE-T (1G-SFP-000190) = Nein (verified copper);
    DAC/AOC cables = DOM omitted (cable-exempt, never falsely Ja). 1G optical (MGBIC-/1G-SFP-SX/10053H/10060) = Ja.
 TEMP: format clean (0 bis 70 / 0 bis 85, no '+'). -ET: 10G-SR-SFP300M-ET=0/85 (grounded); 10G-LR/ER-*-ET temp
    not in datasheet -> OMIT (not guessed). Byte-contract matches siblings (BOM; ';' Main/PF/Prices, ',' Attr/Cond).
-REMOVALS: none.  SOURCE CORRECTIONS: none.  Extreme gate: 0.
+REMOVALS: none.  SOURCE CORRECTIONS: 1.  Extreme gate: 0 (re-emit after fix).
+CORRECTION (2026-06-20, operator nit): MGBIC-LC03 Standard was 1000BASE-FX — invalid: FX = 100 Mbit/s, but this
+   part is a 1 Gbit/s 1000BASE-LX-class optic (1310 nm, 2 km, SMF, LC). The FX label was a mix-up with MGBIC-LC04
+   (the actual 100BASE-FX part). Fixed: Standard 1000BASE-FX -> 1000BASE-LX, Transceiver Typ FX -> LX, and ALL prose
+   (Artikelname / Titel-Tag / Meta / Kurzbeschreibung / Beschreibung). Speed kept 1 Gbit/s. Fasertyp=Singlemode,
+   Wellenlänge=1310 nm, Reichweite=bis 2 km re-checked vs extremenetworks.com Extreme Optics docs (already correct).
 
 part | in OEM catalog? | corrections
 ------------------------------------------------------------------------------------
@@ -92,7 +97,7 @@ part | in OEM catalog? | corrections
 10G-AOC-SFP10M           | Ja (exakt)    | -
 1G-SFP-000190            | Ja (exakt)    | -
 1G-SFP-SX-OM             | Ja (exakt)    | -
-MGBIC-LC03               | Ja (exakt)    | -
+MGBIC-LC03               | Ja (exakt)    | Standard 1000BASE-FX -> 1000BASE-LX (+Typ/prose); 1 Gbit/s kept
 10056H                   | Ja (exakt)    | -
 10060                    | Ja (exakt)    | -
 MGBIC-BX40-D             | Ja (exakt)    | -

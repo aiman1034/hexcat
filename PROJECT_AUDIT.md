@@ -1534,6 +1534,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   - **Net gate change:** `validate.py _DOM_NEIN_OEM_SILENT` gained 4 legacy-1G optics (Lenovo 81Y1622/90Y9424 + Ubiquiti
     UACC-OM-MM-1G-D/UACC-OM-SM-1G-S); all are reversible if the OEM later affirms DDM. Pytest stays **420** (allowlist additions don't
     add fixtures). 5 `final_transceiver_output/<BRAND>_VERIFICATION.txt` reports added. **STILL PENDING (not attempted): real pricing, the 221 unverified-live products.**
+- **TWO NITS FIXED + 2 cross-brand flags raised → STOP for L8 full reverify (2026-06-20, committed+pushed; $0/Max,**
+  **OEM-only, `1_IMPORT_THESE` untouched).**
+  - **Nit 1 — Extreme `MGBIC-LC03` Standard FX→LX.** Standard was `1000BASE-FX` (INVALID — FX=100 Mbit/s) on a
+    **1 Gbit/s 1000BASE-LX-class** optic (1310 nm / 2 km / SMF / LC; the FX label was a mix-up with `MGBIC-LC04`, the
+    real 100BASE-FX part). The defect was pervasive in the **prose** too (Artikelname/Titel-Tag/Meta/Kurzbeschreibung/
+    intro all said "Typ FX / 1000BASE-FX") — a Standard-only fix would have left the prose contradicting the attribute.
+    Fixed AT SOURCE: Standard→`1000BASE-LX`, Transceiver Typ FX→LX, all 5 prose fields; **speed kept 1 Gbit/s**;
+    Fasertyp=Singlemode / Wellenlänge=1310 nm / Reichweite=2 km re-checked vs extremenetworks.com (already correct).
+    Re-emit gate **0**; synced into the final bundle (Main 5 cells + Attributes 2 + Verification_Log 2, byte-contract
+    preserved); slug `extreme/mgbic-lc03` clean. EXTREME_VERIFICATION.txt 0→**1 correction**.
+  - **Nit 2 — Juniper 2 `-ET` temps closed as deliberate OMIT.** `EX-SFP-1FE-FX-ET` + `EX-SFP-1GE-SX-ET`
+    Betriebstemperatur cells are already EMPTY (source + bundle); the range is not $0-confirmable (HCT JS-gated; public
+    sources conflict −45/−40/−10/0 °C). Reworded JUNIPER_VERIFICATION.txt from "FLAGGED" to a **CLOSED deliberate OMIT**
+    (fill only via a manual HCT read). No data change. Juniper open flags: now **none**.
+  - **Same-class scan (all 13 brands, $0) → 2 GENUINE flags raised for the reverify (flag-don't-guess, NOT fixed):**
+    **(a) Dell `SFP-100M-FX-DELL`** — Std=`100BASE-FX` (100M) + PN "100M" but Geschwindigkeit=**1 Gbit/s** → the SPEED
+    cell is the error (should be 100 Mbit/s); same class as MGBIC-LC03, inverted. Logged as an L8-FLAG in
+    DELL_VERIFICATION.txt (the Dell report had said "0 corrections" — now carries the flag). **(b) Arista
+    `SFP-10G-RA-1G-SX` / `-1G-LX`** — Std=`1000BASE-SX/LX` but Speed=10 Gbit/s: rate-adapting optics (1G link in a 10G
+    cage), genuinely ambiguous → needs an OEM call. **Scan NOISE (verified NOT defects):** Arista 800/400/200G breakouts
+    (Std=per-lane, Speed=aggregate), Cisco DWDM-GBIC (scan mis-split the German "1,25 Gbit/s"), Supermicro dual-rate.
+    **No permanent speed↔standard gate added this turn** — a correct check needs breakout/dual-rate/DWDM exemptions;
+    deferred to after the reverify so it can't destabilize it. pytest **420**; byte-contract OK. **STOP → L8 (full reverify).**
 
 ---
 

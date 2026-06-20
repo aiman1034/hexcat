@@ -6,10 +6,15 @@ VERDICT: all 156 trace to part families present in Dell's official spec sheet. N
 templated parts found. 6 renamed collision parts confirmed in Dell's catalog -> KEEP all 6.
 DOM: every optical module = Ja, copper/DAC = Nein (gate-enforced + re-checked) -> 0 corrections.
 REMOVALS: none.   SOURCE CORRECTIONS: none.   Dell bundle gate: 0 violations.
+L8-FLAG (found 2026-06-20 in the cross-brand speed<->standard scan; NOT fixed — outside this turn's 2-nit scope):
+   SFP-100M-FX-DELL has Standard=100BASE-FX (= 100 Mbit/s) and PN "100M", but Geschwindigkeit=1 Gbit/s. The PN and
+   the standard agree on 100M, so the SPEED cell is the error (should be 100 Mbit/s). Same defect class as Extreme
+   MGBIC-LC03 (inverted). CONFIRM against Dell's spec sheet in the full reverify, then fix Geschwindigkeit 1 Gbit/s
+   -> 100 Mbit/s + any prose. NOT changed now (flag-don't-guess; the part itself is genuinely in Dell's catalog).
 
 part                         | in Dell catalog? | note
 ------------------------------------------------------------------------------------
-SFP-100M-FX-DELL             | Ja            | Kollision umbenannt; Dell listet SFP-100M-FX -> BEHALTEN
+SFP-100M-FX-DELL             | Ja            | Kollision umbenannt; Dell listet SFP-100M-FX -> BEHALTEN [L8-FLAG: Speed 1 Gbit/s widerspricht 100BASE-FX/100M — siehe oben]
 SFP-1G-SX-DELL               | Ja            | Kollision umbenannt; Dell listet SFP-1G-SX -> BEHALTEN
 SFP-1G-LX-DELL               | Ja            | Kollision umbenannt; Dell listet SFP-1G-LX -> BEHALTEN
 SFP-1G-T-DELL                | Ja            | Kollision umbenannt; Dell listet SFP-1G-T -> BEHALTEN
