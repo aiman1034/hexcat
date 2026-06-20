@@ -1465,6 +1465,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `_DOM_NEIN_OEM_SILENT` (GLC-SX-MM-RGD = DS-explicit-No; CXP-100G-SR10 + QSFP-40G-BD-RX = Cisco DDM not $0-affirmable → conservative reversible Nein) so
   the optical-media↔DOM gate stays green on the Nein. Cisco re-emit + re-promote: **output gate 0**, emitted DOM = Nein on all 3. **DOM import 77 → 74
   rows (Ja 24 / Nein 50).** pytest **419**. Re-zipped. STOP → L8 on the DOM import. $0/Max; PRICES + prose untouched.
+- **`final_transceiver_output\` CLOSE-OUT GAPS A–D (2026-06-20, committed+pushed per-gap to `aiman1034/hexcat`).** GitHub auditor folder built earlier;
+  `1_IMPORT_THESE\` (signed-off, untouched). **Gap A — filter bundles to NEW-only:** removed every Artikelnummer present in the live shop (545 live
+  transceivers) from each `2_full_catalog_by_brand\<brand>\` bundle → **1888 → 1546 new-only** (Cisco 544→230, HPE 147→140, Arista 347→338, Dell 163→156,
+  Juniper 184→181, Meraki 25→23; 7 brands fully net-new). **Gap B — 18 post-filter cross-brand Artikelnummer collisions:** all are multi-source MSA MPNs
+  with real per-brand datasheet sources → genuinely distinct OEM products → renamed per brand (QSFP-100G-LR4-ARISTA/-JUNIPER, …), HAN keeps the bare MSA
+  MPN (Google-Shopping mpn clean), Artikelname already brand-led; 0 remaining collisions; `COLLISION_RESOLUTION.txt` added. **6 Dell-involved parts FLAGGED
+  for L8** (Dell unverified/out-of-scope) — renamed+preserved, not deleted; L8 to confirm or remove. **Gap C — CFP-100G-SR10 DOM Nein→Ja at source** (Cisco
+  DS c78-633027; dropped "(laut Datenblatt)") **+ cleaned every DOM value to bare Ja/Nein** in BOTH Attributes and Verification_Log (parity preserved;
+  other attributes' parentheticals are legit specs, left). output/ re-emitted gate 0; final bundles 0 DOM-with-paren, 0 Attributes↔VL mismatch; media↔DOM
+  genuinely 0. **Gap D — prices:** READ_ME updated — new-product import = Main + Attributes + PlatformFlag + Condition ONLY, SKIP the 0,00 Prices step until
+  a real pricing pass. **OUT OF SCOPE, flagged pending (not attempted):** datasheet-verifying the 7 non-gold brands (Dell/Extreme/Juniper/Lenovo/NVIDIA/
+  Supermicro/Ubiquiti), the 221 unverified-live products, real pricing. STOP → L8. $0/Max; no self-clear.
 
 ---
 
