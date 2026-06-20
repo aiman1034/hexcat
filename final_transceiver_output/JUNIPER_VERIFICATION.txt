@@ -1,76 +1,73 @@
-JUNIPER VERIFICATION REPORT — 181 optics vs Juniper OEM (apps.juniper.net HCT + juniper.net guides)
-Compatibles (FluxLight/FS/EdgeOptic/Prolabs) NOT used. The HCT is JS-gated (not $0-fetchable) -> verified
-against cached juniper.net optics guides + targeted juniper.net search; unconfirmable -> FLAG. 2026-06-20.
+JUNIPER VERIFICATION REPORT — 181 -> 179 optics vs Juniper OEM (apps.juniper.net HCT + juniper.net guides)
+Compatibles NOT used. HCT JS-gated (not $0-fetchable) -> cached juniper.net guides + juniper.net search. 2026-06-20.
 ========================================================================================
-RESOLVED — the 4 L8-flagged items:
- 1. Temp FORMAT: 23 industrial parts normalized '-40 °C bis +85 °C' -> '-40 bis 85 °C' (value correct, -I/-IT).
- 2. 13 collision names: 11 confirmed Juniper Common Optics -> HAN kept bare. QSFP-40G-ESR4-JUNIPER REMOVED
-    (Juniper's name = QFX-QSFP-40G-ESR4 / part 740-045627, already in bundle -> duplicate). QDD-400G-PLR4-JUNIPER
-    FLAGGED (juniper.net 400G list = DR4/FR4/LR4/ZR/SR4P2, no PLR4).
- 3. 1G DOM: modern 1G (SFP-1GE-SX/LX, EX-SFP-1GE-*) = Ja (Juniper optics carry DDM per the optics guide);
-    legacy RX-10KM/550M/70KM-SFP = Nein (Juniper does not affirm DDM for the legacy SFP-adapters; OEM-silent). CORRECT, no change.
- 4. 2 -ET parts (EX-SFP-1FE-FX-ET, EX-SFP-1GE-SX-ET): temp not $0-confirmable (HCT gated) -> OMIT confirmed (no guess); FLAG for HCT range.
-REMOVALS: QSFP-40G-ESR4-JUNIPER (1) -> 181 to 180.   FLAGGED for L8: QDD-400G-PLR4-JUNIPER + the 2 -ET temp ranges.
+RESOLVED:
+ * Temp FORMAT: 23 industrial '-40 °C bis +85 °C' -> '-40 bis 85 °C'.
+ * 13 collision names: 11 confirmed Common Optics (HAN bare). REMOVED 2: QSFP-40G-ESR4-JUNIPER (Juniper's name
+   = QFX-QSFP-40G-ESR4, already present -> duplicate) and QDD-400G-PLR4-JUNIPER (CC CALL: juniper.net 400G list =
+   DR4/FR4/LR4/ZR/SR4P2, no PLR4; not in HCT/guides -> not a Juniper optic; reversible if Juniper later confirms).
+ * 1G DOM verified (modern=Ja per guide DDM; legacy RX-*=Nein OEM-silent) - no change.
+ * 2 -ET parts: temp not $0-confirmable -> OMIT confirmed; FLAGGED for HCT range-fill.
+REMOVALS: QSFP-40G-ESR4-JUNIPER, QDD-400G-PLR4-JUNIPER (2) -> 181 to 179.  FLAGGED: the 2 -ET temp ranges.
 
 part | in Juniper catalog? | note
 ----------------------------------------------------------------------------------------
-CTP-SFP-1GE-LX             | Ja (Guide)             | Common-Optic, HAN bare behalten
-CTP-SFP-1GE-SX             | Ja (Guide)             | Common-Optic, HAN bare behalten
-CTP-SFP-1GE-T              | Ja (Guide)             | Common-Optic, HAN bare behalten
-RX-10KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
-RX-550M-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
-RX-70KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
-RX-FXSM-SFP                | Ja (Guide)             | Common-Optic, HAN bare behalten
-RX-GET-SFP                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1FE-FX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1GE-FE-E-T             | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1GE-LH                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1GE-LX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1GE-SX                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-1GE-T                  | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-FE20KT13R15            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-FE20KT15R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-GE10KT13R14            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-GE10KT13R15            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-GE10KT14R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-GE10KT15R13            | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFP-GE40KM                 | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFPP-10GE-ER               | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFPP-10GE-LR               | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFPP-10GE-LRM              | Ja (Guide)             | Common-Optic, HAN bare behalten
-SFPP-10GE-SR               | Ja (Guide)             | Common-Optic, HAN bare behalten
-XENPAK-1XGE-ER             | Ja (Guide)             | Common-Optic, HAN bare behalten
-XENPAK-1XGE-LR             | Ja (Guide)             | Common-Optic, HAN bare behalten
-XENPAK-1XGE-SR             | Ja (Guide)             | Common-Optic, HAN bare behalten
-XENPAK-1XGE-ZR             | Ja (Guide)             | Common-Optic, HAN bare behalten
-XFP-10GE-ER                | Ja (Guide)             | Common-Optic, HAN bare behalten
-XFP-10GE-LR                | Ja (Guide)             | Common-Optic, HAN bare behalten
-XFP-10GE-SR                | Ja (Guide)             | Common-Optic, HAN bare behalten
-XFP-10G-S                  | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-2X400G-DR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-2X400G-FR4-JUNIPER     | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-2X400G-FR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-2X400G-LR4-10          | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-2X400G-LR4-P           | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-400G-DR4-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+CTP-SFP-1GE-LX             | Ja (Guide)             | Common-Optic, HAN bare
+CTP-SFP-1GE-SX             | Ja (Guide)             | Common-Optic, HAN bare
+CTP-SFP-1GE-T              | Ja (Guide)             | Common-Optic, HAN bare
+RX-10KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare
+RX-550M-SFP                | Ja (Guide)             | Common-Optic, HAN bare
+RX-70KM-SFP                | Ja (Guide)             | Common-Optic, HAN bare
+RX-FXSM-SFP                | Ja (Guide)             | Common-Optic, HAN bare
+RX-GET-SFP                 | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1FE-FX                 | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1GE-FE-E-T             | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1GE-LH                 | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1GE-LX                 | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1GE-SX                 | Ja (Guide)             | Common-Optic, HAN bare
+SFP-1GE-T                  | Ja (Guide)             | Common-Optic, HAN bare
+SFP-FE20KT13R15            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-FE20KT15R13            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-GE10KT13R14            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-GE10KT13R15            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-GE10KT14R13            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-GE10KT15R13            | Ja (Guide)             | Common-Optic, HAN bare
+SFP-GE40KM                 | Ja (Guide)             | Common-Optic, HAN bare
+SFPP-10GE-ER               | Ja (Guide)             | Common-Optic, HAN bare
+SFPP-10GE-LR               | Ja (Guide)             | Common-Optic, HAN bare
+SFPP-10GE-LRM              | Ja (Guide)             | Common-Optic, HAN bare
+SFPP-10GE-SR               | Ja (Guide)             | Common-Optic, HAN bare
+XENPAK-1XGE-ER             | Ja (Guide)             | Common-Optic, HAN bare
+XENPAK-1XGE-LR             | Ja (Guide)             | Common-Optic, HAN bare
+XENPAK-1XGE-SR             | Ja (Guide)             | Common-Optic, HAN bare
+XENPAK-1XGE-ZR             | Ja (Guide)             | Common-Optic, HAN bare
+XFP-10GE-ER                | Ja (Guide)             | Common-Optic, HAN bare
+XFP-10GE-LR                | Ja (Guide)             | Common-Optic, HAN bare
+XFP-10GE-SR                | Ja (Guide)             | Common-Optic, HAN bare
+XFP-10G-S                  | Ja (Guide)             | Common-Optic, HAN bare
+QDD-2X400G-DR4-P           | Ja (Guide)             | Common-Optic, HAN bare
+QDD-2X400G-FR4-JUNIPER     | Ja (Guide)             | Common-Optic, HAN bare
+QDD-2X400G-FR4-P           | Ja (Guide)             | Common-Optic, HAN bare
+QDD-2X400G-LR4-10          | Ja (Guide)             | Common-Optic, HAN bare
+QDD-2X400G-LR4-P           | Ja (Guide)             | Common-Optic, HAN bare
+QDD-400G-DR4-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare
 QDD-400G-FR4-JUNIPER       | Ja (Guide-Token)       | 
 QDD-400G-LR4-10            | Ja (Guide-Token)       | 
-QDD-400G-ER4-30            | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-ER4-30            | Ja (Guide)             | Common-Optic, HAN bare
 QDD-400G-LR8-JUNIPER       | Ja (Guide-Token)       | 
-QDD-400G-PLR4-JUNIPER      | FLAG                   | nicht in Juniper HCT/Guides (400G-Liste: DR4/FR4/LR4/ZR/SR4P2, kein PLR4) -> L8 pruefen/entfernen
-QDD-400G-ZR-JUNIPER        | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-400G-ZR-M              | Ja (Guide)             | Common-Optic, HAN bare behalten
-QDD-400G-ZR-M-HP           | Ja (Guide)             | Common-Optic, HAN bare behalten
-JCO400-QDD-ZR              | Ja (Guide)             | Common-Optic, HAN bare behalten
-JCO400-QDD-ZR-M            | Ja (Guide)             | Common-Optic, HAN bare behalten
-JCO400-QDD-ZR-M-HP         | Ja (Guide)             | Common-Optic, HAN bare behalten
+QDD-400G-ZR-JUNIPER        | Ja (Guide)             | Common-Optic, HAN bare
+QDD-400G-ZR-M              | Ja (Guide)             | Common-Optic, HAN bare
+QDD-400G-ZR-M-HP           | Ja (Guide)             | Common-Optic, HAN bare
+JCO400-QDD-ZR              | Ja (Guide)             | Common-Optic, HAN bare
+JCO400-QDD-ZR-M            | Ja (Guide)             | Common-Optic, HAN bare
+JCO400-QDD-ZR-M-HP         | Ja (Guide)             | Common-Optic, HAN bare
 CFP-100GBASE-ER4           | Ja (Guide-Token)       | 
 CFP-100GBASE-LR4           | Ja (Guide-Token)       | 
-CFP-100GBASE-SR10          | Ja (Guide)             | Common-Optic, HAN bare behalten
+CFP-100GBASE-SR10          | Ja (Guide)             | Common-Optic, HAN bare
 CFP-GEN2-100GBASE-LR4      | Ja (juniper.net-Quelle) | Juniper-Name (JNP-/EX-/QFX-/SFPP-/XFP-)
-CFP2-100GBASE-ER4          | Ja (Guide)             | Common-Optic, HAN bare behalten
-CFP2-100GBASE-LR4          | Ja (Guide)             | Common-Optic, HAN bare behalten
-JNP-QSFP-100G-BXSR         | Ja (Guide)             | Common-Optic, HAN bare behalten
+CFP2-100GBASE-ER4          | Ja (Guide)             | Common-Optic, HAN bare
+CFP2-100GBASE-LR4          | Ja (Guide)             | Common-Optic, HAN bare
+JNP-QSFP-100G-BXSR         | Ja (Guide)             | Common-Optic, HAN bare
 JNP-QSFP-100G-CWDM         | Ja (Guide-Token)       | 
 JNP-QSFP-100G-LR4          | Ja (Guide-Token)       | 
 JNP-QSFP-100G-LR4-4WDM-20-I | Ja (Guide-Token)       | 
@@ -82,15 +79,15 @@ QDD-4X100G-LR              | Ja (Guide-Token)       |
 QSFP-100G-4WDM40           | Ja (Guide-Token)       | 
 QSFP-100G-CWDM             | Ja (Guide-Token)       | 
 QSFP-100G-CWDM4-JUNIPER    | Ja (Guide-Token)       | 
-QSFP-100G-DR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-DR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare
 QSFP-100G-ER4L             | Ja (Guide-Token)       | 
-QSFP-100G-FR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
-QSFP-100G-LR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-FR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare
+QSFP-100G-LR-JUNIPER       | Ja (Guide)             | Common-Optic, HAN bare
 QSFP-100G-LR4-JUNIPER      | Ja (Guide-Token)       | 
 QSFP-100G-LR4-D            | Ja (Guide-Token)       | 
 QSFP-100G-PSM4-JUNIPER     | Ja (Guide-Token)       | 
-QSFP-100G-SR1P2            | Ja (Guide)             | Common-Optic, HAN bare behalten
-QSFP-100G-SR4-C            | Ja (Guide)             | Common-Optic, HAN bare behalten
+QSFP-100G-SR1P2            | Ja (Guide)             | Common-Optic, HAN bare
+QSFP-100G-SR4-C            | Ja (Guide)             | Common-Optic, HAN bare
 EX-SFP-10G-BX-D            | Ja (Guide-Token)       | 
 EX-SFP-10G-BX-D-40         | Ja (Guide-Token)       | 
 EX-SFP-10G-BX-D-80         | Ja (Guide-Token)       | 
