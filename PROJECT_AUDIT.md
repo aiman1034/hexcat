@@ -1489,6 +1489,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   collision parts (SFP-1G-SX-DELL …) confirmed listed by Dell → KEPT**; DOM all-optical=Ja / copper-DAC=Nein (gate-enforced) → 0 corrections. **0 removals,
   0 source fixes** — Dell bundle verified clean. `final_transceiver_output/DELL_VERIFICATION.txt` report added. STILL PENDING (not attempted): the other
   6 non-gold brands, the 221 unverified-live, real pricing. STOP → L8. $0/Max; no self-clear.
+- **JUNIPER VERIFICATION PASS — 181→180 (2026-06-20, committed+pushed per-task).** OEM-only: apps.juniper.net HCT is JS-gated (WebFetch returns the
+  "Loading…" shell — NOT $0-fetchable), so verified against 4 cached juniper.net optics guides (100G/400G/800G/optic-modules) + targeted juniper.net
+  search; compatibles (FluxLight/FS/EdgeOptic/Prolabs) excluded. **(1) Temp FORMAT:** 23 industrial parts normalized "-40 °C bis +85 °C" → "-40 bis
+  85 °C" (value correct, real -I/-IT; format-only) at source + Attributes + VL; re-emit gate 0. **(2) 13 collision names:** 11 confirmed Juniper Common
+  Optics → HAN kept bare; **QSFP-40G-ESR4-JUNIPER REMOVED** (Juniper's name = QFX-QSFP-40G-ESR4 / 740-045627, already in bundle → generic duplicate);
+  **QDD-400G-PLR4-JUNIPER FLAGGED** (juniper.net 400G list = DR4/FR4/LR4/ZR/SR4P2, no PLR4 → L8 verify/remove). **(3) 1G DOM verified, no change:**
+  modern 1G (SFP-1GE-SX/LX, EX-SFP-1GE-*) = Ja (Juniper optics carry DDM per the optics guide), legacy RX-10KM/550M/70KM-SFP = Nein (Juniper does not
+  affirm DDM for the legacy SFP-adapters — OEM-silent). **(4) 2 -ET parts** (EX-SFP-1FE-FX-ET, EX-SFP-1GE-SX-ET): temp not $0-confirmable → OMIT confirmed
+  (no guess; -ET omit-allowlist already covers them), flagged for an HCT range-fill. **Core pass:** 179/180 confirmed (55 guide-exact + 63 guide-token +
+  61 juniper.net-named JNP-/EX-/QFX-/SFPP-/XFP- with juniper.net source), 1 FLAG (PLR4). Juniper re-emit gate 0. `final_transceiver_output/JUNIPER_VERIFICATION.txt`
+  added. FLAGGED for L8: QDD-400G-PLR4-JUNIPER + the 2 -ET temp ranges. STILL PENDING: the other 5 non-gold brands, 221 unverified-live, real pricing. STOP → L8. $0/Max.
 
 ---
 
