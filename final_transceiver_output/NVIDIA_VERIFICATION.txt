@@ -1,0 +1,99 @@
+NVIDIA / Mellanox LinkX VERIFICATION REPORT — 85 transceivers & cables vs NVIDIA LinkX parts lists
+OEM source: NVIDIA LinkX parts lists (400G-100G-PAM4, 400G/200G, 800G-XDR) cached PDFs from nvidia.com.
+Compatibles excluded. 2026-06-20.
+============================================================================================
+VERDICT: all 85 confirmed against NVIDIA LinkX parts lists (85 exact PN match, 0 by prefix+suffix tokens —
+   length-variant codes whose family prefix and media suffix both appear). No collisions; byte-contract OK; gate 0.
+FAMILIES: {'other': 27, 'MCP*(DAC)': 45, 'MFA*(AOC)': 7, 'MMA*(module)': 6}
+DOM: MMA* optical modules = Ja (10G+ rule; all NVIDIA optics are 25G/100G/400G/800G — no 1G/100M tier).
+   MFA* AOC + MCP* DAC = cable-exempt (DOM omitted, never falsely Ja). 0 optical-Nein, 0 copper-Ja anomalies.
+TEMP: 0 bis 70 °C (LinkX commercial; format clean, no '+', no industrial overclaim).
+CORRECTIONS: 0.   REMOVALS: 0.   NVIDIA build was already spec-accurate.
+
+part | family | medium | DOM | catalog evidence
+--------------------------------------------------------------------------------------------
+C-DQ8FNM003-H0-M     | other        | optical | ∅(cable)  | exact PN in parts-list
+C-DQ8FNM005-H0-M     | other        | optical | ∅(cable)  | exact PN in parts-list
+C-DQ8FNM010-H0-M     | other        | optical | ∅(cable)  | exact PN in parts-list
+C-DQ8FNM020-H0-M     | other        | optical | ∅(cable)  | exact PN in parts-list
+C-DQ8FNM050-H0-M     | other        | optical | ∅(cable)  | exact PN in parts-list
+MCP1600-C001E30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1600-C002E30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1600-C003E30L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1600-C005E26L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1600-C01AE30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1600-C02AE30L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1650-V001E30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1650-V002E26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1650-V00AE30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1650-V01AE30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1650-V02AE26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1660-W001E30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1660-W002E26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1660-W00AE30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1660-W01AE30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP1660-W02AE26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A001E30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A002E30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A003E30L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A005E26L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A01AE30N     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP2M00-A02AE30L     | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7F00-A001R30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F00-A002R30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F00-A003R30L     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F00-A005R26L     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F00-A01AR30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F00-A02AR30L     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7F60-W001R30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7F60-W002R26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7F60-W02AR26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H00-G001R30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H00-G002R30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H00-G003R30L     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H00-G01AR30N     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H00-G02AR30L     | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H50-H001R30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H50-H002R26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H50-H02AR26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H60-W001R30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H60-W002R26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H60-W02AR26      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H70-V001R30      | MCP*(DAC)    | copper  | ∅(cable)  | exact PN in parts-list
+MCP7H70-V002R26      | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MCP7H70-V02AR26      | MCP*(DAC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C003         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C010         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C015         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C020         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C030         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C050         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFA1A00-C100         | MFA*(AOC)    | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H003V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H005V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H010V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H015V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H020V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H030V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H050V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H100V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H130V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S00-H150V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H003V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H005V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H010V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H015V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H020V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MFS1S50-H030V        | other        | optical | ∅(cable)  | exact PN in parts-list
+MMA1B00-C100D        | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMA1L10-CR           | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMA1L30-CR           | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMA1T00-VS           | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMA2L20-AR           | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMA2P00-AS           | MMA*(module) | optical | Ja        | exact PN in parts-list
+MMS1V00-WM           | other        | optical | Ja        | exact PN in parts-list
+MMS1V50-WM           | other        | optical | Ja        | exact PN in parts-list
+MMS1V70-CM           | other        | optical | Ja        | exact PN in parts-list
+MMS1V90-WR           | other        | optical | Ja        | exact PN in parts-list
+MMS1W50-HM           | other        | optical | Ja        | exact PN in parts-list
+T-DQ8FNS-N00-M       | other        | optical | Ja        | exact PN in parts-list
