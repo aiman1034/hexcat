@@ -1506,6 +1506,11 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   400G common-optic list = DR4/FR4/LR4/ZR/SR4P2, no PLR4; not in HCT/guides; reversible if Juniper later confirms). **Juniper 181 → 179; re-emit gate 0;
   all 5 core CSVs (Main/Attributes/PlatformFlag/Prices/Condition) share ONE identical 179-SKU Artikelnummer set, 0 orphans.** Only the 2 -ET temp ranges
   remain flagged for L8. JUNIPER_VERIFICATION.txt updated.
+- **CORRECTION (2026-06-20, L8 caught): the two "Prices no-BOM" claims above are WRONG.** The FINAL-bundle (`final_transceiver_output`) convention
+  is **BOM on every Prices CSV** — 6/7 brands carry `EF BB BF`. I had used the no-BOM `output/` bundle as the byte-reference and wrongly STRIPPED the
+  BOM from Juniper's Prices. Restored it (content byte-identical, `;`/CRLF/179 rows/`0,00` intact) → all 7 brands' Prices now carry the BOM. **LESSON:
+  `final_transceiver_output` (the deliverable), NOT `output/`, is the byte-reference for the final bundle; verify a contract across the actual sibling
+  files before "fixing" one to match an assumption.**
 
 ---
 
