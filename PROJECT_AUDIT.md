@@ -1679,7 +1679,8 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     all tagged `source_conflict: ds_only_not_in_ordering_guide` + `sourceable_new_sealed: verify`. Series split:
     C9300X 6, C9300 16, C9300L 14, C9300LM 4. (Calibration target was 35 = og 32 + 3 UB; the cross-source rule surfaced 5 more.)
   - **C9200 = 31** — og Table 3 == ds Table 2 exactly (0 conflict, 0 needs_verify). C9200 9 (incl 24PB/48PB = **license A only**,
-    enhanced VRF), C9200L 14, C9200CX 8 (HVDC -2XH/-2X2GH + pass-through -8PT-2G kept as **distinct hardware**).
+    enhanced VRF), C9200L 14, C9200CX 8 (HVDC -2XH/-2XGH + pass-through -8PT-2G kept as **distinct hardware**;
+    HVDC suffix corrected -2X2GH→-2XGH per cached PDF, 2026-06-20).
   - UNIT rule: license -E/-A/-M stripped; uplink suffix (-4G/-4X/-2Q/-4Y/-2Y/-2X2G…) = distinct hardware. EXCLUDED:
     NM/PWR/FAN/STACK/adapters/licenses/transceivers/Meraki-M. **STOPPED for operator verification before any other family**
     (per task: 9400/9500/9600/C9350/C9610, SMB, legacy, Nexus, CBS, IE, MDS still pending — drop their og+ds PDFs to proceed).
