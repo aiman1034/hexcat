@@ -1834,6 +1834,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `c9300-ds.html`) or a text-layer PDF — and the harvest → facts → Cisco-switch composer (mirror
   `_scratch/mikrotik_switch_author.py`) → emit → gate → commit runs clean and grounded. Contact sheet rendered to locate
   the spec table; no content authored yet (correctly — grounded-or-nothing).
+- **SWITCH AUTHORING — Cisco Catalyst 9300 (40 models) DONE (2026-06-20, commit bec49e4) — UNBLOCKED + AUTHORED.** The
+  auditor couriered the text-grounded spec harvest to `datasheets/cache/cisco-switches/c9300_harvest_source.md` (the
+  blocker above). Authored all **40 models** to the switch gold-slice → `output/switches/Cisco/`. Composer
+  `_scratch/cisco_switch_author.py` (mirrors the MikroTik one); content `stage3_content/Cisco_Switches_content.json`.
+  **Full 15-attr schema** incl Switching-Kapazität + Durchsatz (MikroTik omitted those). Cisco-specifics: Kat-Ebene-3
+  `Managed Switch (L3)` for all (access, NOT Data-Center — the 9300X 25G/100G are access uplinks); Switch-Typ Managed /
+  Layer L3; Stacking StackWise-1T(9300X)/480(9300)/320(9300L/LM); per-model PoE budget (UPOE+/UPOE/PoE+); 1HE / 3-fan /
+  −5…45 °C commons; per-model weights; closer "Originaler Cisco-Switch". **S.3 holds by construction** (Portanzahl derived
+  = Σ of N× in Port-Konfiguration). **gate.py L1–L6 + S.1–S.6 PASS, 0 violations**; content-floor 40/40 (Kurz 46–61w/2p,
+  Beschr 131–168w/3p + closer 40/40, Titel ≤52, Meta 186–198). Row counts: Main/PlatformFlag/Prices/Condition/FAQ 41
+  (1 hdr+40); Attributes/Verification_Log 601 (1+40×15). gate_completeness.yaml +`Cisco_switches` (captured 40 =
+  enumerated 40). All 40 active, no EoS. **Gate brand-keying note (Cisco-v2 lesson):** gate.py derives brand/category from
+  the FOLDER name, so it was run on a `Cisco_Switches`-named view (→ brand=Cisco, cat=switches); the audit copy lives at
+  `output/switches/Cisco/` per the MikroTik mirror (byte-identical). First core-brand switch family authored; the
+  switch pipeline (MikroTik-proven) carries to Cisco unchanged.
 
 ---
 
