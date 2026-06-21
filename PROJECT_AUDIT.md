@@ -1775,6 +1775,13 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   cross-check. EXCLUDED N9K-C9300-ACK/-RMK/-FAN3, NXA-PAC/FAN, N2K FEX, optics. **Nexus subtotal 36 (now COMPLETE for
   9200/9300/9400/9500 fixed+modular); Catalyst 105; manifest = 141.** **STOPPED** (remaining Nexus: n9300-Smart,
   n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
+- **NEXUS 9200 — 7 of 8 EoS flips (2026-06-20, commit 39a8c48) — auditor status-page cross-check.** As predicted (2016
+  gen), only 92348GC-FX3 (2024 refresh) is active. Flipped to EoS+verify+eol_note (per-model dates): 92160YC-X (EoSupport
+  2026-03-31), 92300YC (2025-02-28), 92304QC (2024-08-31), 9236C (2025-02-28), 9272Q (2025-09-30), 92348GC-X (EoSale;
+  support to 2030-08-31), 9232C (retired/off active support). source unchanged, no source_conflict, all rows kept (same
+  convention as Catalyst C9500 + Nexus EX/FX). **Manifest EoS = 20** (8 Catalyst C9500/X + 12 Nexus: 5 EX/FX + 7 9200);
+  total still 141. Reinforces the division of labor: I enumerate eol from the ds; the **auditor's EoL/status-page layer is
+  the EoS authority**.
 
 ---
 
