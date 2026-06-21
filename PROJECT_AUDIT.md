@@ -1756,6 +1756,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   cross-checks — GX gen is older, likely EoS candidates on the bulletin layer). 0 needs_verify. **Nexus subtotal now 24**
   (FX3 5 + EX 3 + FX 3 + FX2 5 + FX3S 1 + GX 3 + GX2 4); Catalyst 105; **manifest = 129**. **STOPPED** (remaining Nexus:
   n9200, n9300-Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
+- **NEXUS MODULAR — 9400 + 9500 chassis added (2026-06-20) — manifest now 133; per-series commits.** CHASSIS-ONLY
+  (replaced the standalone Catalyst-9500-style prompt). **Nexus 9400 (1):** N9K-C9408 — Centralized modular chassis,
+  **4RU/8-slot** (RU verified from ds: "Chassis height 4 RU"). **Nexus 9500 (3):** N9K-C9504 (4-slot), N9K-C9508 (8-slot),
+  N9K-C9516 (16-slot). `poe_type: n/a`, modular uplink, eol active (auditor cross-checks). 0 needs_verify. EXCLUDED the
+  FRU bulk: bundles (-B2/-B3-E), supervisors (N9K-*SUP*/N9K-C9400-SUP-A), system controllers, line cards/switch cards
+  (N9K-X*, N9K-C9400-SW-GX2A), **fabric modules (N9K-C95**-FM-R/-E/-E2/-S/-G/-CV — the bulk of the 9500 PIDs)**, PSUs,
+  fan trays (-FAN/-FAN2/-FAN-PWR), rack/accessory kits (-RMK/-ACK), optics. **Nexus subtotal 28; Catalyst 105; manifest
+  = 133.** **STOPPED** (remaining Nexus: n9200, n9300-Smart, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
 
 ---
 
