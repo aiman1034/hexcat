@@ -1692,11 +1692,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   refresh, NOT a chassis), C9400-LC-*, PWR/FAN/SSD/DNA/accessories. **STOPPED for verification before the next family.**
 - **CISCO C9500 + C9500X added (2026-06-20) — manifest now 88 (…+ C9400 3 + C9500/X 14).** Fixed-config, text-layer PDFs
   (direct pypdf). **C9500X (2):** 28C8D (E,A), 60L4D (**A-only**, no -E). **C9500 UADP3.0 (4):** 32C/32QC/24Y4C/48Y4C (E,A).
-  **C9500 UADP2.0 (4):** 16X (active) + 12Q/24Q/40X (**EoS**). **Fixed bundles (4):** 24X/16X-2Q (active) + 48X/40X-2Q (EoS)
-  = base switch + NM-8X/NM-2Q (standalone NMs excluded; bundles kept per the 'fixed bundles' scope). **EOL trap caught:**
-  ds note "Removed references to C9500-12Q/24Q/40X" → 5 og-only models (12Q/24Q/40X/48X/40X-2Q) tagged
-  `source_conflict: og_only_ds_removed_eos` + `eol_status: EoS` + `sourceable_new_sealed: verify` (NOT dropped). poe_type none
-  (aggregation/fiber). 0 needs_verify. **STOPPED for verification before the next family** (9600, C9350, C9610, SMB, legacy,
+  **C9500 UADP2.0 (4):** 16X + 12Q/24Q/40X. **Fixed bundles (4):** 24X/16X-2Q/48X/40X-2Q = base switch + NM-8X/NM-2Q
+  (standalone NMs excluded; bundles kept per the 'fixed bundles' scope). poe_type none (aggregation/fiber). 0 needs_verify.
+  **EOL state (2 sources):** 5 og-only (12Q/24Q/40X/48X/40X-2Q) = `source_conflict: og_only_ds_removed_eos` (ds note
+  "Removed references to C9500-12Q/24Q/40X"); 3 more (16X/24X/16X-2Q) flipped to **EoS via the Cisco EoL bulletin**
+  (C9500-16X/NM, LDoS 30-Apr-2026) — `eol_note` + `sourceable verify`, source stays og+ds (NOT a source_conflict; 3rd-source).
+  → **8 EoS + 6 active**, all 14 kept. **SELF-CAUGHT + fixed (commit 64a2107):** the 5 og-only models' fields were
+  scrambled by a mis-ordered `e()` call in the prior commit (source held the conflict label, conflict held 'verify',
+  sourceable was 'Y'); corrected. **STOPPED for verification before the next family** (9600, C9350, C9610, SMB, legacy,
   Nexus, CBS, IE, MDS pending).
 
 ---
