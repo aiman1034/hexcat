@@ -121,7 +121,7 @@ Formfaktor · Geschwindigkeit · Transceiver Typ · Faseranzahl · Fasertyp · A
 
 **Content floors:** Kurzbeschreibung 40–80 words (2× `<p>`); Beschreibung 90–175 words ending the authenticity closer `Originaler <Brand>-…`; Titel-Tag ≤60 chars ending ` | Hexwaren`; Meta-Description 140–200 chars; FAQ 3–10 pairs.
 
-**Taxonomy:** locked **25** Kat-Ebene-3 tokens (`config/taxonomy/transceivers.yaml` ⇄ `config/rules.yaml` ⇄ `constants.py`, lock-step enforced by `verify_taxonomy`): DAC/AOC/MPO Kabel, QSFP+/QSFP-DD/QSFP-DD800/QSFP28/**QSFP28-DD**/QSFP56/QSFP112, OSFP, SFP/SFP+/**SFP-DD**/SFP28/SFP56, X2, XENPAK, XFP, CFP/CFP2/CPAK/CXP, GBIC, CIM8. "Sonstige" never allowed. (POM removed 2026-06-14 — SONET/SDH out of scope; SFP-DD + QSFP28-DD added 2026-06-15 for Dell.)
+**Taxonomy:** locked **25** Kat-Ebene-3 tokens (`config/taxonomy/transceivers.yaml` ⇄ `config/rules.yaml` ⇄ `constants.py`, lock-step enforced by `verify_taxonomy`): DAC/AOC/MPO Kabel, QSFP+/QSFP-DD/QSFP-DD800/QSFP28/**QSFP28-DD**/QSFP56/QSFP112, OSFP, SFP/SFP+/**SFP-DD**/**DSFP**/SFP28/SFP56, X2, XENPAK, XFP, CFP/CFP2/CPAK/CXP, GBIC. "Sonstige" never allowed. (POM removed 2026-06-14 + **CIM8 removed 2026-06-20** — SONET/SDH and coherent DWDM both out of scope; SFP-DD + QSFP28-DD added 2026-06-15, DSFP 2026-06-17 for Dell/Arista.)
 
 **Byte contract (v5.0, 7 files):** Main (19-col `;` BOM CRLF), Attributes (8-col `,` BOM), PlatformFlag (`;`), Prices (`;` NO BOM, German decimal), Condition (7-col `,`), FAQ (`,`), Verification_Log (6-col `,`). Enforced by `validate_dir`; non-compliant → `_quarantine` (holds **only the rejected rows**, not a full copy).
 
@@ -1793,6 +1793,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   + "Originaler MikroTik-" closer 39/39, Titel 47–57 (≤60), Meta 188–200. **gate self-test 420 passed.** **1 known gap:
   GPERx6 (CSS606-1G-2Gi-3S+OUT) — not in content (weight not $0-findable); weight-blocked, held not dropped.** Re-emit
   driver: `_scratch/emit_switches_audit.py` (gitignored build script, per convention).
+- **CISCO TRANSCEIVERS — CIM8 CATEGORY DROPPED (2026-06-20, commit d03375d) — operator reversal of the 2026-06-14 keep.**
+  CIM8 = 3 NCS-1014 coherent transport line modules (C/CE/LE-K9), ruled out-of-scope (coherent DWDM trunk ≠ pluggable
+  Ethernet transceiver — same call as POM SONET). The **SECOND** operator-authorized domain exclusion alongside POM.
+  Removed from: both content jsons (catalog 544→541), both tracked 7-file bundles (Main/PlatformFlag/Prices/Condition/FAQ
+  −3 rows; Attributes/Verification_Log −30 = 10 attr-rows × 3 SKUs), taxonomy token (rules.yaml + transceivers.yaml 26→25,
+  constants.py PHYSICAL_FORMFAKTOR 23→22). **Added to out-of-scope** (the reconcile mechanism): enumerations/transceivers.yaml,
+  completeness.yaml (**captured 531→528, out_of_scope 19→22**, identity 528+22+0=550), gate_completeness.yaml (captured
+  544→541, +3 reason_code out-of-scope; 541+47=588 enumerated). **KEY DIFFERENCE vs POM:** CIM8 was an authored
+  grounded-orphan, so it also touched accounting POM never did — disposition.add (−1)+grounded_orphans (−2)/ADD 45→44,
+  surfaced 61→60; union_triage.add (−2)/ADD 158→156; coverage.orphan (−2)/orphan_count 110→108, missing_count 61→60.
+  tests: test_taxonomy 26→25 + CIM8 absent; test_cisco_coverage CIM8 pinned as the 2nd authorized exclusion; XENPAK/GBIC/
+  DWDM-GBIC stay protected-never-dropped. **gate.py L1–L6 PASS** on the reduced canonical bundle (541 SKUs); **full suite
+  420 passed.** (The dated 2026-06-14 §9/§5 entries above record the prior keep-decision — left as historical; this entry
+  supersedes.) **PRE-EXISTING + UNRELATED (flagged, not fixed):** the by-brand cut `final_transceiver_output/.../Cisco/`
+  has 8 L1 gate violations (URL-Pfad/HAN on SFP-1G-SX-CISCO + QDD-2X400G-FR4-CISCO; FAQ-quoting on 4 GLC-* SKUs) —
+  byte-identical at HEAD, not caused by the CIM8 drop.
 
 ---
 
