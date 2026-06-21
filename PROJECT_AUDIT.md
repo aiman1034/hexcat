@@ -1875,6 +1875,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   PASS 0 violations; content-floor 7/7; closer 7/7. gate_completeness +`Cisco_9500_switches` (captured 7 = enumerated 7);
   Attributes 104 rows = 5×15 + 2×14 (32C/32QC omit the Exp Uplink-Ports — all-ports-equal core). **Cisco switch total now
   78** (9300 40 + 9200 31 + 9500 7); 7 C9500 EoS deferred for the archived-ds harvest.
+- **SWITCH AUTHORING — Cisco Catalyst 9350 Smart Switch (15 models, FULL) DONE (2026-06-20, commit 39e1bef).** Grounded
+  from `c9350_harvest_source.md`. → `output/switches/Cisco_9350/`. **15/15 = manifest exactly, no deferred.** Composer
+  `_scratch/cisco_9350_author.py`. **Two 9350 gotchas handled:** (1) "Smart Switches" = Cisco branding, NOT the schema
+  `Smart-Managed` token → Kat-Ebene-3 `Managed Switch (L3)` for **all 15** (full IOS XE L2/L3, BGP-EVPN, SD-Access); (2)
+  **subscription licensing** (no -A/-E) → "Cisco Networking Subscription (Abonnement)" woven into prose + a dedicated FAQ,
+  no perpetual tiers invented. **Single silicon family** (Silicon One A100/L) → ASIC/Kühlung/Betriebstemp/Stromversorgung
+  common across all 15 (no sub-line split, unlike the 9500); Bauform 19-Zoll (1 HE) all; **Stacking StackWise-1.6T** all;
+  modular uplinks → Portanzahl = downlinks only. PoE Nein on the 7 data/fiber (24T/48T/48TX/24Y/12Y/48S/24S); PoE+/UPOE/
+  UPOE+ tiers+budgets on the other 8. **SwK ≥1000 → Tbit/s with explicit conversions (1,76 NOT 1,760 / 1,0 / 2,0)** —
+  trailing-zero trap avoided. **C9350-48HXN = single 48× Port-Konfiguration token** (the 36/12 mGig split → Beschreibung)
+  so S.3 holds 15/15. gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 15/15; closer 15/15; Attributes 226 rows
+  (1+15×15). gate_completeness +`Cisco_9350_switches` (captured 15 = enumerated 15). All 15 active. **Cisco switch total
+  now 93** (9300 40 + 9200 31 + 9500 7 + 9350 15).
 
 ---
 
