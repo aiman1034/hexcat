@@ -1809,6 +1809,16 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   supersedes.) **PRE-EXISTING + UNRELATED (flagged, not fixed):** the by-brand cut `final_transceiver_output/.../Cisco/`
   has 8 L1 gate violations (URL-Pfad/HAN on SFP-1G-SX-CISCO + QDD-2X400G-FR4-CISCO; FAQ-quoting on 4 GLC-* SKUs) —
   byte-identical at HEAD, not caused by the CIM8 drop.
+- **CISCO clean single bundle `final_transceiver_output/Cisco/` created (2026-06-20, commit 5fea5ea).** The complete
+  current Cisco transceiver catalog — **541 SKUs, CIM8-free, gate.py L1–L6 PASS (0 violations)** — sourced from the
+  gate-clean canonical `_scratch/hardening/stage3_Cisco`, NOT the old 227-SKU by-brand cut (so it carries none of that
+  cut's 8 pre-existing violations). Final-bundle byte convention: **BOM on all 7 incl Prices** (canonical's Prices was
+  no-BOM → added), CRLF throughout, columns/delimiters unchanged. **Named `Cisco`, not `Cisco v2` (operator decision):**
+  `gate.py:_brand_category` derives brand from the FOLDER NAME, so a `Cisco v2` name mis-resolves the brand → drops the
+  near-dup exemptions (L5) + the gate_completeness record (L6) → both FAIL on the name though the content is clean (a
+  `Cisco`-named copy passes). `Cisco` resolves natively and is the endgame single-folder name. **Lesson: per-bundle gate
+  brand/exemption/completeness keying is folder-name-derived — name brand folders by the bare brand token.** Old
+  `2_full_catalog_by_brand/Cisco` + `_scratch/hardening` left in place pending retirement once this is audited clean.
 
 ---
 
