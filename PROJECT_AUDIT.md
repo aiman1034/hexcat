@@ -1861,6 +1861,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   content-floor 31/31; closer 31/31; all 7 files consistently named `Cisco_9200_Switches`; BOM on 6 + no-BOM Prices.
   gate_completeness +`Cisco_9200_switches` (captured 31 = enumerated 31); gated via a `Cisco_9200_Switches` view (the
   folder-name brand-keying note). All 31 active. **Cisco switch total now 71** (9300 40 + 9200 31).
+- **SWITCH AUTHORING — Cisco Catalyst 9500 (7 of 14, PARTIAL) DONE (2026-06-20, commit 34ac9b8).** Grounded from
+  `c9500_harvest_source.md`. → `output/switches/Cisco_9500/`. **Reconciliation (manifest 14, ds documents 7):** authored
+  the 7 ds-documented — C9500-16X (EoS-info), C9500-32C, -32QC, -48Y4C, -24Y4C (UADP 3.0), C9500X-28C8D, -60L4D (Silicon
+  One Q200). **7 DEFERRED** (EoS-removed from the current ds, NOT fabricated — archived-ds harvest later): C9500-12Q,
+  -24Q, -40X, -48X, -40X-2Q (og-only) + -24X, -16X-2Q (bundles). Composer `_scratch/cisco_9500_author.py`. 9500 commons:
+  Kat-Ebene-3 `Managed Switch (L3)` for all 7 (campus core/aggregation, **NOT Data-Center** — that token waits for
+  Nexus); **PoE Nein** all; **Stacking `StackWise Virtual (2 Knoten)`** all (NOT physical stacking); Bauform 19-Zoll (1
+  HE) all; 1+1-redundante Hot-Swap-Netzteile. **3 silicon sub-lines** differ in ASIC/Kühlung/Betriebstemp (UADP 2.0 XL /
+  UADP 3.0 / Silicon One Q200 — 9500X = 6 fans, wählbarer Luftstrom, −5…45 °C). **Port-Konfiguration = native ports only**
+  (breakout/alt-modes → Beschreibung) so S.3 holds 7/7. SwK ≥1000 → Tbit/s German-decimal, all "bis zu"; Durchsatz Mpps
+  (2.000/1.000/8.000), all "bis zu". C9500-16X EoS = informational only (authored, never dropped). gate.py L1–L6 + S.1–S.6
+  PASS 0 violations; content-floor 7/7; closer 7/7. gate_completeness +`Cisco_9500_switches` (captured 7 = enumerated 7);
+  Attributes 104 rows = 5×15 + 2×14 (32C/32QC omit the Exp Uplink-Ports — all-ports-equal core). **Cisco switch total now
+  78** (9300 40 + 9200 31 + 9500 7); 7 C9500 EoS deferred for the archived-ds harvest.
 
 ---
 
