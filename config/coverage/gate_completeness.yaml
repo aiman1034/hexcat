@@ -3,9 +3,15 @@ Arista_transceivers:
   enumerated: 347
   flagged: []
 Cisco_transceivers:
-  captured: 544
+  captured: 541
   enumerated: 588
   flagged:
+  - pn: CIM8-C-K9
+    reason_code: out-of-scope
+  - pn: CIM8-CE-K9
+    reason_code: out-of-scope
+  - pn: CIM8-LE-K9
+    reason_code: out-of-scope
   - pn: DS-SFP-4X32G-SW
     reason_code: out-of-scope
   - pn: DS-SFP-FC-2G-LW

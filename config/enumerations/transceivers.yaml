@@ -88,6 +88,11 @@ brands:
       - SFP-CH-OC3STM1-I
       - SFP-TS-OC3STM1-I
       - SFP-TS-OC12STM4-I
+      # Coherent DWDM trunk (NCS-1014 line modules, 3) — operator reversal 2026-06-20: coherent DWDM
+      # transport modules are NOT pluggable Ethernet transceivers (same out-of-scope call as POM SONET).
+      - CIM8-C-K9
+      - CIM8-CE-K9
+      - CIM8-LE-K9
 
     sources:
       - id: tmg_matrix

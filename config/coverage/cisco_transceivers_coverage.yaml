@@ -5,8 +5,8 @@ files_mined: 87
 files_skipped: 118
 mined_total: 450
 in_catalog: 389
-missing_count: 61
-orphan_count: 110
+missing_count: 60
+orphan_count: 108
 excluded_count: 11
 missing_by_family:
   AOC Kabel:
@@ -63,10 +63,6 @@ missing_by_family:
   - pn: CB-M12-4LC-MMF7M
     source: high-density-fiber-patch-mpo-ds
     description: 6.0m
-    eol: false
-  - pn: CIM8-LE-K9
-    source: ncs-1014c-band-transponder-line-card-ds
-    description: Coherent Interface Module 8 enhanced L-Band
     eol: false
   - pn: CWDM-SFP10G-1470
     source: 10g-cwdm-transceiver-module-eol
@@ -259,8 +255,6 @@ missing_by_family:
 orphan:
 - CFP2-WDM-D-1HL
 - CFP2-WDM-DET-1HL
-- CIM8-C-K9
-- CIM8-CE-K9
 - DP01QS28-E20
 - DP01QS28-E25
 - DP04CFP2-M25-K9

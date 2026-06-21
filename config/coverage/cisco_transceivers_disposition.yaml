@@ -4,9 +4,9 @@ policy: 'NON-NEGOTIABLE: every physical part number that is a real transceiver i
   cable, or CPE box). EOL/legacy/obsolete are informational flags, NEVER exclusion reasons. A missing form factor is a taxonomy gap to fix, not a reason to drop a part (POM was added to the taxonomy for
   the OC-3/OC-48 Pluggable Optic Modules). ADD = real transceiver (family + optional lifecycle=EOL). EXCLUDE_NOT_TRANSCEIVER = genuinely not a pluggable optic. Flag, don''t emit; nothing silently dropped.
   $0, deterministic.'
-surfaced_total: 61
+surfaced_total: 60
 counts:
-  ADD: 45
+  ADD: 44
   EXCLUDE_NOT_TRANSCEIVER: 16
 add_eol_flagged: 16
 add_families:
@@ -19,12 +19,6 @@ grounded_orphans:
 - pn: CFP2-WDM-DET-1HL
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
-- pn: CIM8-C-K9
-  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
-- pn: CIM8-CE-K9
-  reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
-  source: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: DP01QS28-E20
   reason: Authored in-session from its Cisco source (quell_url + per-attribute provenance); grounded but not re-found by the generic optic ordering-miner's datasheet parser.
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp28-100g-zr-coherent-optics-module-ds.html
@@ -345,11 +339,6 @@ grounded_orphans:
   source: https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/10-gigabit-modules/product_data_sheet0900aecd802a61b9.pdf
 orphan_catalog_skus: 0
 add:
-- pn: CIM8-LE-K9
-  source: ncs-1014c-band-transponder-line-card-ds
-  description: Coherent Interface Module 8 enhanced L-Band
-  reason: Real transceiver confirmed by mined datasheet description
-  family: SFP
 - pn: CWDM-SFP10G-1470
   source: 10g-cwdm-transceiver-module-eol
   description: CWDM 1470 nm SFP+ 10 Gigabit Ethernet Transceiver Module

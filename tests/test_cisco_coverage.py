@@ -13,8 +13,9 @@ These assert config/coverage/cisco_transceivers_disposition.yaml stays consisten
 rule. The decisive regression — test_legacy_transceivers_are_added_not_excluded — pins that
 XENPAK / GBIC / DWDM-GBIC (all real Ethernet transceivers, all EOL) are ADD/authored, not dropped:
 an earlier triage wrongly excluded 75 of them as "out of scope", directly violating the mission.
-That can never silently come back. The ONE authorized domain exclusion (SONET/SDH POM) is pinned
-explicitly and separately, so it stays a deliberate, traceable, operator-owned decision.
+That can never silently come back. The TWO authorized domain exclusions (SONET/SDH POM, ruled out
+2026-06-14; and coherent DWDM CIM8 / NCS-1014, ruled out 2026-06-20) are pinned explicitly and
+separately, so they stay deliberate, traceable, operator-owned decisions.
 """
 from __future__ import annotations
 
@@ -146,6 +147,12 @@ def test_legacy_transceivers_are_added_not_excluded():
     # documented exception that proves the rule; it is distinct from EOL/legacy, which never exclude.
     assert not any(p.startswith("POM-") for p in catalog), "POM (SONET/SDH) must be out of scope, not authored"
     assert "POM" not in tax, "POM form-factor token must be removed (SONET/SDH out of scope)"
+
+    # The SECOND authorized domain exclusion: CIM8 (NCS-1014 coherent DWDM trunk modules) is out of scope
+    # (operator reversal 2026-06-20) — coherent DWDM transport is not a pluggable Ethernet transceiver, the
+    # same call as POM. Its SKUs are NOT authored and its form-factor token is NOT in the taxonomy.
+    assert not any(p.startswith("CIM8") for p in catalog), "CIM8 (coherent DWDM) must be out of scope, not authored"
+    assert "CIM8" not in tax, "CIM8 form-factor token must be removed (coherent DWDM trunk out of scope)"
 
 
 def test_eol_is_a_flag_not_an_exclusion_reason():

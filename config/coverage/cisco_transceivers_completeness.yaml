@@ -2,19 +2,19 @@ brand: Cisco
 category: transceivers
 complete: true
 universe_total: 550
-captured_count: 531
+captured_count: 528
 gap_count: 0
 confirmed_gone_count: 0
 extra_count: 72
 populated_sources: 3
 routed_out_count: 30
-out_of_scope_count: 19
+out_of_scope_count: 22
 per_source:
 - id: tmg_matrix
   kind: compatibility_matrix
   total: 408
   populated: true
-  captured: 389
+  captured: 386
   gaps: 0
 - id: eol_eos_bulletins
   kind: eol_eos_bulletins
@@ -141,6 +141,9 @@ routed_out:
 - MGBSX1
 - MGBT1
 out_of_scope:
+- CIM8-C-K9
+- CIM8-CE-K9
+- CIM8-LE-K9
 - SFP-CH-OC3STM1-I
 - SFP-E1F-SATOP-I
 - SFP-OC12-IR1

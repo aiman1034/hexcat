@@ -8,16 +8,17 @@ from hexcat import constants as C
 from hexcat.config import ConfigError, load_taxonomy, verify_taxonomy
 
 
-def test_taxonomy_loads_with_26_subcategories_and_14_attributes():
+def test_taxonomy_loads_with_25_subcategories_and_14_attributes():
     tax = load_taxonomy()
     assert tax.category == "transceivers"
-    # 26 form factors. CIM8 (Cisco NCS 1014 coherent module) stays. POM (Cisco SONET/SDH) was REMOVED
-    # 2026-06-14 (out of scope, the one operator-authorized domain exclusion). SFP-DD + QSFP28-DD were
-    # ADDED 2026-06-15 — real current Dell module form factors (S56DD-100G, Q28DD-200G); DSFP ADDED
-    # 2026-06-17 — Arista C-Y100-* 100G DACs (Dual SFP, distinct from SFP-DD). A missing form factor is
-    # a taxonomy gap to FIX, never an exclusion. Every in-domain transceiver PN is included.
-    assert len(tax.subcategories) == 26
-    assert "CIM8" in tax.subcategories
+    # 25 form factors. TWO operator-authorized domain exclusions, both out of scope (NOT EOL/legacy):
+    # POM (Cisco SONET/SDH) REMOVED 2026-06-14, and CIM8 (Cisco NCS 1014 coherent DWDM transport module)
+    # REMOVED 2026-06-20 — coherent DWDM trunk modules are not pluggable Ethernet transceivers, same call.
+    # SFP-DD + QSFP28-DD were ADDED 2026-06-15 — real current Dell module form factors (S56DD-100G,
+    # Q28DD-200G); DSFP ADDED 2026-06-17 — Arista C-Y100-* 100G DACs (Dual SFP, distinct from SFP-DD). A
+    # missing form factor is a taxonomy gap to FIX, never an exclusion. Every in-domain transceiver PN is included.
+    assert len(tax.subcategories) == 25
+    assert "CIM8" not in tax.subcategories
     assert {"SFP-DD", "QSFP28-DD", "DSFP"} <= set(tax.subcategories)
     assert "POM" not in tax.subcategories
     assert "Sonstige" not in tax.subcategories

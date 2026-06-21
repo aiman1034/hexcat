@@ -4,7 +4,7 @@ provenance: completeness union (TMG matrix + EOL bulletins + ordering guide) min
 policy: ADD = real transceiver (queued for Stage-3 authoring). EXCLUDE_NOT_TRANSCEIVER = genuine non-transceiver, grounded by the part's own Cisco description (passive cable / converter / mux-demux / OADM
   / amplifier). Nothing guessed or silently dropped; an ungrounded PN is FLAGGED, never excluded.
 counts:
-  ADD: 158
+  ADD: 156
   EXCLUDE_NOT_TRANSCEIVER: 14
   FLAG_UNGROUNDED: 4
   total: 176
@@ -23,20 +23,6 @@ add:
   reason: Listed in Cisco's optics-to-device matrix as a CFP2 transceiver
   family: CFP2
   datasheet: https://www.cisco.com/c/en/us/products/collateral/routers/network-convergence-system-5500-series/optical-modules-cfp2-wdm-eol.html
-- pn: CIM8-C-K9
-  source: tmg_matrix
-  disposition: ADD
-  description: CIM8
-  reason: Listed in Cisco's optics-to-device matrix as a CIM8 transceiver
-  family: CIM8
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
-- pn: CIM8-CE-K9
-  source: tmg_matrix
-  disposition: ADD
-  description: CIM8
-  reason: Listed in Cisco's optics-to-device matrix as a CIM8 transceiver
-  family: CIM8
-  datasheet: https://www.cisco.com/c/en/us/products/collateral/optical-networking/network-convergence-system-1000-series/ncs-1014c-band-transponder-line-card-ds.html
 - pn: CWDM-SFP-1470
   source: tmg_matrix
   disposition: ADD

@@ -119,7 +119,7 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
 PHYSICAL_FORMFAKTOR_ORDERED: tuple[str, ...] = (
     "QSFP-DD800", "QSFP-DD", "QSFP112", "QSFP56", "QSFP28-DD", "QSFP28", "QSFP+",
     "OSFP", "SFP-DD", "DSFP", "SFP56", "SFP28", "SFP+", "SFP",
-    "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC", "CIM8",
+    "CFP2", "CFP", "CPAK", "CXP", "XENPAK", "XFP", "X2", "GBIC",
 )
 # DSFP (Dual SFP, an SFP-sized 2-lane MSA, distinct from SFP-DD) added Phase-2 (2026-06-17) for the
 # Arista C-Y100-* 100G DACs — physically DSFP per Arista's DS, not SFP-DD. Placed after SFP-DD; the

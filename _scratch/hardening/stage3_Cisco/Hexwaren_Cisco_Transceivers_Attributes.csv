@@ -2939,24 +2939,6 @@ SFP-10G-OLT20-X,,Transceivers & SFP Modul,Anwendung,Zugriffsnetz (GPON / PON-Zug
 SFP-10G-OLT20-X,,Transceivers & SFP Modul,DOM Unterstützung,Ja,12,Wertliste,Attribut
 SFP-10G-OLT20-X,,Transceivers & SFP Modul,Betriebstemperatur,−20 bis 75 °C,13,Wertliste,Attribut
 SFP-10G-OLT20-X,,Transceivers & SFP Modul,Standard,ITU-T G.9807.1 / G.988 (XGS-PON),14,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Formfaktor,CIM8,1,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Geschwindigkeit,"60–142 Gbaud/s (bis ~1,2 Tbit/s je Modul; 2,4-Tbit/s-Linecard mit zwei CIM8)",2,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Transceiver Typ,Kohärentes DWDM-Trunk-Modul (C-Band),3,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Fasertyp,Singlemode,4,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Wellenlänge,"Durchstimmbar 1528,77–1566,72 nm (C-Band)",8,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Anwendung,Carrier-/Transportnetz (DWDM / kohärent),11,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,DOM Unterstützung,Ja (Trunk Optical Performance Monitoring),12,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Betriebstemperatur,0 bis 40 °C,13,Wertliste,Attribut
-CIM8-C-K9,,Transceivers & SFP Modul,Standard,"Kohärentes DWDM, durchstimmbares C-Band",14,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Formfaktor,CIM8,1,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Geschwindigkeit,"60–142 Gbaud/s (bis ~1,2 Tbit/s je Modul; 2,4-Tbit/s-Linecard mit zwei CIM8)",2,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Transceiver Typ,Kohärentes DWDM-Trunk-Modul (erweitertes C-Band),3,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Fasertyp,Singlemode,4,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Wellenlänge,"Erweitertes C-Band (enhanced C-Band), durchstimmbar",8,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Anwendung,Carrier-/Transportnetz (DWDM / kohärent),11,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,DOM Unterstützung,Ja (Trunk Optical Performance Monitoring),12,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Betriebstemperatur,0 bis 40 °C,13,Wertliste,Attribut
-CIM8-CE-K9,,Transceivers & SFP Modul,Standard,"Kohärentes DWDM, erweitertes (enhanced) C-Band",14,Wertliste,Attribut
 CFP2-WDM-D-1HL,,Transceivers & SFP Modul,Formfaktor,CFP2,1,Wertliste,Attribut
 CFP2-WDM-D-1HL,,Transceivers & SFP Modul,Geschwindigkeit,"200G-fähig, ab Werk 100G-lizenziert (DP-QPSK/DP-16QAM)",2,Wertliste,Attribut
 CFP2-WDM-D-1HL,,Transceivers & SFP Modul,Transceiver Typ,"Digital Coherent Optics (DCO, integrierter DSP)",3,Wertliste,Attribut
@@ -5928,18 +5910,6 @@ QDD-4ZQ100-CU2.5M,,Transceivers & SFP Modul,Kabeltyp,Passives Twinax-Kupfer (Dir
 QDD-4ZQ100-CU2.5M,,Transceivers & SFP Modul,Anwendung,Rechenzentrum (Top-of-Rack-/Row-Verkabelung),11,Wertliste,Attribut
 QDD-4ZQ100-CU2.5M,,Transceivers & SFP Modul,DOM Unterstützung,Nein,12,Wertliste,Attribut
 QDD-4ZQ100-CU2.5M,,Transceivers & SFP Modul,Betriebstemperatur,0 bis 70 °C,13,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Formfaktor,CIM8,1,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Geschwindigkeit,"bis 2,4 Tbit/s (kohärent, 60–142 Gbaud)",2,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Transceiver Typ,Coherent Interface Module 8 (L-Band),3,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Fasertyp,Singlemode,4,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Faseranzahl,2,5,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Anschlusstyp,LC,6,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Wellenlänge,L-Band 1565–1625 nm (durchstimmbar),8,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Reichweite,Metro / Long-Haul / Subsea (kohärent),10,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Anwendung,Carrier-/Transportnetz (DWDM / kohärent),11,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,DOM Unterstützung,Ja,12,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Betriebstemperatur,0 bis 40 °C,13,Wertliste,Attribut
-CIM8-LE-K9,,Transceivers & SFP Modul,Standard,"Kohärent (OIF, ITU-T G.709)",14,Wertliste,Attribut
 QSFP-100G-ER4,,Transceivers & SFP Modul,Formfaktor,QSFP28,1,Wertliste,Attribut
 QSFP-100G-ER4,,Transceivers & SFP Modul,Geschwindigkeit,100 Gbit/s (4×25G),2,Wertliste,Attribut
 QSFP-100G-ER4,,Transceivers & SFP Modul,Transceiver Typ,ER4 (4× LAN-WDM),3,Wertliste,Attribut
