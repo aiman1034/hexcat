@@ -800,3 +800,36 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: og_table3+ds_table2
+  - family: Catalyst 9000
+    series: C9400
+    base_pn: C9404R
+    ports: "modular — 2 payload (line-card) slots"
+    poe_type: "modular (line-card dependent)"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Modular chassis, 4-slot"
+    license_tiers: "n/a (license on supervisor/software)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_ordering+ds_table1
+  - family: Catalyst 9000
+    series: C9400
+    base_pn: C9407R
+    ports: "modular — 5 payload (line-card) slots"
+    poe_type: "modular (line-card dependent)"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Modular chassis, 7-slot"
+    license_tiers: "n/a (license on supervisor/software)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_ordering+ds_table1
+  - family: Catalyst 9000
+    series: C9400
+    base_pn: C9410R
+    ports: "modular — 8 payload (line-card) slots"
+    poe_type: "modular (line-card dependent)"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Modular chassis, 10-slot"
+    license_tiers: "n/a (license on supervisor/software)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: og_ordering+ds_table1
