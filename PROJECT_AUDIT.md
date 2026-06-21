@@ -1764,6 +1764,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (N9K-X*, N9K-C9400-SW-GX2A), **fabric modules (N9K-C95**-FM-R/-E/-E2/-S/-G/-CV — the bulk of the 9500 PIDs)**, PSUs,
   fan trays (-FAN/-FAN2/-FAN-PWR), rack/accessory kits (-RMK/-ACK), optics. **Nexus subtotal 28; Catalyst 105; manifest
   = 133.** **STOPPED** (remaining Nexus: n9200, n9300-Smart, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
+- **NEXUS 9200 added (2026-06-20) — manifest now 141; completes the Nexus 9000 FIXED line.** Two ds (platform Table 1 +
+  standalone 9232C). **8 models:** 92160YC-X, 92300YC, 92304QC, 9236C, 9272Q, 92348GC-X, 92348GC-FX3, 9232C. **PDF
+  line-wrap catch (lesson):** `N9K-C92348GC-X` rendered as `"N9K- C92348GC-X"` (space after the hyphen) and was missed on
+  the first no-space scan; a space-tolerant re-scan recovered it → BOTH 92348GC-X (2017 original) and 92348GC-FX3 (2024
+  refresh) are distinct orderable models, both kept. **Future Nexus scans must tolerate the `N9K-\s*C` wrap.** Per-model
+  RU from the ds (6×1RU, 2×2RU 9272Q/92304QC); 92300YC RU derived from the Physical-dims table (height 1.72in) since the
+  prose only said "top-of-rack". poe none (DC; 92348GC has NO PoE per ds). All `eol_status: active` per ds — but **2016-gen,
+  EoS-trending**; 92348GC-X especially is refresh-superseded by -FX3 → strong EoS candidate for the auditor's status-page
+  cross-check. EXCLUDED N9K-C9300-ACK/-RMK/-FAN3, NXA-PAC/FAN, N2K FEX, optics. **Nexus subtotal 36 (now COMPLETE for
+  9200/9300/9400/9500 fixed+modular); Catalyst 105; manifest = 141.** **STOPPED** (remaining Nexus: n9300-Smart,
+  n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
 
 ---
 
