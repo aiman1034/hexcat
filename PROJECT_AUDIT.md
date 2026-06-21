@@ -1710,6 +1710,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   payload slots + 2 sup). poe/uplink modular (line-card dependent); no -E/-A on chassis. 0 source_conflict, 0 needs_verify.
   EXCLUDED: C9600-SUP-1/C9600X-SUP-2 (sups; "9600X" = a supervisor, NOT a chassis), C9600-LC-*, C9606-FAN, C9600-PWR-*,
   licenses, transceivers. **STOPPED for verification before the next family** (C9350, C9610, SMB, legacy, Nexus, CBS, IE, MDS).
+- **CISCO C9350 + C9610 Smart Switches added (2026-06-20) — manifest now 105.** NEW 2025 "Smart Switch" families,
+  **UNIFIED licensing** → single SKU per model (NO -E/-A/-M, NO -M Meraki); `license_tiers: unified`. All 4 PDFs fetched
+  locally (no courier). **C9350 (15 fixed, stackable):** ds "Models and specifications" = 15; og = 12 → **3 ds-only**
+  (C9350-12Y/24Y/48HM) tagged `source_conflict: ds_only_not_in_ordering_guide` + verify. Silicon One A100/L ASIC;
+  T/TX=data, S/Y=fiber-none, P=PoE+30W, U=UPOE60W, HX/HXN/HM=UPOE+90W; modular NM uplinks (NM-2C/4C/8Y, 200/400G).
+  Excluded C9350-NM-*/PWR/FAN/StackWise-1.6T/SSD/licenses + the C9350-SWITCH CCW placeholder. **C9610 (1 modular
+  chassis):** **C9610R** 10-slot (8 line-card + 2 sup), `unified (Advantage)` (og: "Only Advantage Tier available");
+  excluded C9610-SUP-3/-3XL, C9610-LC-* + LC-ADPT (reuses C9600/C9600X LCs), C9610-FAN, C9600-PWR-* (shared), SSD,
+  rack/NEBS kits, blanks, and the C9610-SWITCH CCW placeholder. 0 needs_verify. **Cisco switch manifest = 105 across 13
+  series** (9300×4 + 9200×3 + 9400 + 9500×2 + 9600 + 9350 + 9610). **STOPPED** (SMB 1200/1300/Micro, legacy 2960,
+  Nexus, CBS, IE, MDS pending).
 
 ---
 
