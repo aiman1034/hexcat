@@ -1185,3 +1185,63 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "og_ordering+ds_table"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3
+    base_pn: N9K-C93180YC-FX3
+    marketing_name: 93180YC-FX3
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "6x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_table2+ordering_table11"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3
+    base_pn: N9K-C93108TC-FX3
+    marketing_name: 93108TC-FX3
+    ports: "48x 100M/1/10G BASE-T"
+    poe_type: none
+    uplink: "6x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_table2+ordering_table11"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3
+    base_pn: N9K-C93108TC-FX3P
+    marketing_name: 93108TC-FX3P
+    ports: "48x 100M/1/2.5/5/10G BASE-T (mGig)"
+    poe_type: "PoE (mGig copper)"
+    uplink: 6x 100G QSFP28
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_table2+ordering_table11"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3
+    base_pn: N9K-C9348GC-FX3
+    marketing_name: 9348GC-FX3
+    ports: "48x 100M/1G BASE-T"
+    poe_type: none
+    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_table2+ordering_table11"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3
+    base_pn: N9K-C9348GC-FX3PH
+    marketing_name: 9348GC-FX3PH
+    ports: "48x 100M/1G BASE-T (8x half-duplex)"
+    poe_type: "PoE (1G copper)"
+    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_table2+ordering_table11"
