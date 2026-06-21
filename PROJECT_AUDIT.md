@@ -1849,6 +1849,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   the FOLDER name, so it was run on a `Cisco_Switches`-named view (→ brand=Cisco, cat=switches); the audit copy lives at
   `output/switches/Cisco/` per the MikroTik mirror (byte-identical). First core-brand switch family authored; the
   switch pipeline (MikroTik-proven) carries to Cisco unchanged.
+- **SWITCH AUTHORING — Cisco Catalyst 9200 (31 models, 3 sub-lines) DONE (2026-06-20, commit 82967c7).** Grounded from
+  `c9200_harvest_source.md` (auditor-couriered). → `output/switches/Cisco_9200/`. Composer `_scratch/cisco_9200_author.py`
+  (mirrors the C9300 one) with **per-sub-line commons**: **C9200 modular (9)** 19-Zoll/Dual-Lüfter-FRU/StackWise-160;
+  **C9200L fixed (14)** 19-Zoll/Dual-Lüfter-fest/StackWise-80; **C9200CX compact (8)** `Kompakt (1 HE, halbe Breite,
+  lüfterlos)` / Lüfterlos / Stacking **Nein**. Kat-Ebene-3 `Managed Switch (L3)` for **all 31** incl CX (compact
+  enterprise, not industrial). PoE Nein on the 7 data models; budget per Table 4 on the rest. **C9200-24PB weight 5.5 kg**
+  (ds kg-typo corrected per the harvest note). UADP-2.0-Mini; temp −5…45 °C (8UXG = −5…40). **HVDC variants** (-2XGH/-2XH)
+  weave the HVDC distinction into prose so the AC/HVDC pairs clear L5 near-dup. S.3 holds by construction (incl. CX's
+  intricate SFP+/Kupfer/PD configs — e.g. 12T-2X2G = 17 ports). **gate.py L1–L6 + S.1–S.6 PASS, 0 violations**;
+  content-floor 31/31; closer 31/31; all 7 files consistently named `Cisco_9200_Switches`; BOM on 6 + no-BOM Prices.
+  gate_completeness +`Cisco_9200_switches` (captured 31 = enumerated 31); gated via a `Cisco_9200_Switches` view (the
+  folder-name brand-keying note). All 31 active. **Cisco switch total now 71** (9300 40 + 9200 31).
 
 ---
 
