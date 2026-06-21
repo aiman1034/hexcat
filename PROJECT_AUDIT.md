@@ -1684,6 +1684,12 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   - UNIT rule: license -E/-A/-M stripped; uplink suffix (-4G/-4X/-2Q/-4Y/-2Y/-2X2G…) = distinct hardware. EXCLUDED:
     NM/PWR/FAN/STACK/adapters/licenses/transceivers/Meraki-M. **STOPPED for operator verification before any other family**
     (per task: 9400/9500/9600/C9350/C9610, SMB, legacy, Nexus, CBS, IE, MDS still pending — drop their og+ds PDFs to proceed).
+- **CISCO C9400 added (2026-06-20) — manifest now 74 (C9300 40 + C9200 31 + C9400 3).** Modular chassis line; UNIT =
+  chassis. The c9400 PDFs HAVE a text layer (unlike the image-only 9300/9200) → direct pypdf extract. og ordering rows +
+  ds Table 1 both list exactly 3 chassis: **C9404R** (4-slot, 2 LC slots), **C9407R** (7-slot, 5 LC), **C9410R** (10-slot,
+  8 LC) — no conflict, no needs_verify. poe/uplink = "modular (line-card dependent)"; no -E/-A/-M on chassis (license rides
+  the supervisor/software). EXCLUDED the modular-line bulk: C9400-SUP-*/C9400X-SUP-2/-2XL (the "9400X" is a **supervisor**
+  refresh, NOT a chassis), C9400-LC-*, PWR/FAN/SSD/DNA/accessories. **STOPPED for verification before the next family.**
 
 ---
 
