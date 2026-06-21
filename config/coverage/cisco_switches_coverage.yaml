@@ -1430,3 +1430,51 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX2
+    base_pn: N9K-C9332D-GX2B
+    marketing_name: 9332D-GX2B
+    ports: "32x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX2
+    base_pn: N9K-C9332D-GX2B-M
+    marketing_name: 9332D-GX2B-M
+    ports: "32x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX2
+    base_pn: N9K-C9348D-GX2A
+    marketing_name: 9348D-GX2A
+    ports: "48x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated)"
+    form_factor: Fixed 2RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX2
+    base_pn: N9K-C9364D-GX2A
+    marketing_name: 9364D-GX2A
+    ports: "64x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated)"
+    form_factor: Fixed 2RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
