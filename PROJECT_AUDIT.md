@@ -1819,6 +1819,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `Cisco`-named copy passes). `Cisco` resolves natively and is the endgame single-folder name. **Lesson: per-bundle gate
   brand/exemption/completeness keying is folder-name-derived — name brand folders by the bare brand token.** Old
   `2_full_catalog_by_brand/Cisco` + `_scratch/hardening` left in place pending retirement once this is audited clean.
+- **SWITCH AUTHORING — Cisco Catalyst 9300 (40 models) KICKED OFF, BLOCKED ON A TEXT SOURCE (2026-06-20).** Target: author
+  the 40 C9300 base models from `cisco_switches_coverage.yaml` to the locked switch gold-slice (15-attr + S.1–S.6 + 7-file
+  contract, the bar MikroTik just passed L8) → `output/switches/Cisco/`. Cisco-specific rules captured: L3 token =
+  "Managed Switch (L3)" (access, NOT Data-Center despite 9300X 25G/100G uplinks — env-first ≥25G⇒DC is for DC leaf/spine,
+  not access); -E/-A = license tier not HW; Stacking = StackWise-480 (9300) / StackWise-1T (9300X); PoE on -P/-U/-UXM.
+  **HARVEST BLOCKER (honest):** the **1000% rule** needs the full per-model 15-attr specs (SwK, Durchsatz, PoE-budget,
+  Stromversorgung, Betriebstemp…). Both cached PDFs are **IMAGE-ONLY** (`c9300-ds.pdf` 55 pages / `c9300-og.pdf` — 0 text
+  chars); the HTML ds and every `/c/dam/` PDF path **403/404** to the local fetch. A 40-column spec table read off a
+  rendered image is exactly the "dense-table GARBLE" failure mode — visually eyeballing it for 40 models × 5 variable
+  specs would risk the fabrication the 1000% rule forbids. The coverage manifest's ports/poe/uplink were enough for
+  *enumeration* from the image ds, but **full 15-attr authoring needs a TEXT source.** **UNBLOCK (operator's established
+  courier pattern):** drop a TEXT 9300 ds into the cache — the **HTML data sheet** (browser "Save Page As" →
+  `c9300-ds.html`) or a text-layer PDF — and the harvest → facts → Cisco-switch composer (mirror
+  `_scratch/mikrotik_switch_author.py`) → emit → gate → commit runs clean and grounded. Contact sheet rendered to locate
+  the spec table; no content authored yet (correctly — grounded-or-nothing).
 
 ---
 
