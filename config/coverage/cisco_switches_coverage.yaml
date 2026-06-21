@@ -1281,3 +1281,39 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-FX
+    base_pn: N9K-C93180YC-FX
+    marketing_name: 93180YC-FX
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "6x 40/100G QSFP28 (MACsec, Unified Ports)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-FX
+    base_pn: N9K-C93108TC-FX
+    marketing_name: 93108TC-FX
+    ports: 48x 10G BASE-T
+    poe_type: none
+    uplink: "6x 40/100G QSFP28 (MACsec)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-FX
+    base_pn: N9K-C9348GC-FXP
+    marketing_name: 9348GC-FXP
+    ports: "48x 100M/1G BASE-T"
+    poe_type: PoE
+    uplink: "4x 1/10/25G SFP28 + 2x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
