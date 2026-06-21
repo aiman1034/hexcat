@@ -1748,6 +1748,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (8 Catalyst C9500/X + 5 Nexus); total still 122. This is the proven flow: I enumerate eol from the ds, the **auditor's
   EoL-bulletin layer is the EoS authority** (a 3rd source my PDFs don't carry). **STOPPED** (remaining Nexus: n9200,
   n9300 -GX/-GX2/Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
+- **NEXUS BATCH 3 — 9300 400G tier added (2026-06-20) — manifest now 129; per-series commits.** Locked conventions
+  applied. **9300-GX (3):** 9316D-GX (16×400G, 1RU spine), 93600CD-GX (28×100G + 8×400G, 1RU spine/leaf), 9364C-GX
+  (64×100G, **2RU**). **9300-GX2 (4):** 9332D-GX2B + **9332D-GX2B-M (distinct -M HW variant KEPT per rule)** (32×400G,
+  **1RU** compact), 9348D-GX2A (48×400G, 2RU), 9364D-GX2A (64×400G, 2RU). All-QSFP-DD/QSFP28 fabric → poe none. Per-model
+  RU read from the ds (GX/GX2 genuinely mix 1RU+2RU — not assumed). All `eol_status: active` (ds states no EoS; auditor
+  cross-checks — GX gen is older, likely EoS candidates on the bulletin layer). 0 needs_verify. **Nexus subtotal now 24**
+  (FX3 5 + EX 3 + FX 3 + FX2 5 + FX3S 1 + GX 3 + GX2 4); Catalyst 105; **manifest = 129**. **STOPPED** (remaining Nexus:
+  n9200, n9300-Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
 
 ---
 
