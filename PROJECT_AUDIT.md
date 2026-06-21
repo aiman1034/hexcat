@@ -1690,6 +1690,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   8 LC) — no conflict, no needs_verify. poe/uplink = "modular (line-card dependent)"; no -E/-A/-M on chassis (license rides
   the supervisor/software). EXCLUDED the modular-line bulk: C9400-SUP-*/C9400X-SUP-2/-2XL (the "9400X" is a **supervisor**
   refresh, NOT a chassis), C9400-LC-*, PWR/FAN/SSD/DNA/accessories. **STOPPED for verification before the next family.**
+- **CISCO C9500 + C9500X added (2026-06-20) — manifest now 88 (…+ C9400 3 + C9500/X 14).** Fixed-config, text-layer PDFs
+  (direct pypdf). **C9500X (2):** 28C8D (E,A), 60L4D (**A-only**, no -E). **C9500 UADP3.0 (4):** 32C/32QC/24Y4C/48Y4C (E,A).
+  **C9500 UADP2.0 (4):** 16X (active) + 12Q/24Q/40X (**EoS**). **Fixed bundles (4):** 24X/16X-2Q (active) + 48X/40X-2Q (EoS)
+  = base switch + NM-8X/NM-2Q (standalone NMs excluded; bundles kept per the 'fixed bundles' scope). **EOL trap caught:**
+  ds note "Removed references to C9500-12Q/24Q/40X" → 5 og-only models (12Q/24Q/40X/48X/40X-2Q) tagged
+  `source_conflict: og_only_ds_removed_eos` + `eol_status: EoS` + `sourceable_new_sealed: verify` (NOT dropped). poe_type none
+  (aggregation/fiber). 0 needs_verify. **STOPPED for verification before the next family** (9600, C9350, C9610, SMB, legacy,
+  Nexus, CBS, IE, MDS pending).
 
 ---
 
