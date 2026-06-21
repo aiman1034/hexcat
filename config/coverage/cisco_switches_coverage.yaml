@@ -995,3 +995,14 @@ switches:
     sourceable_new_sealed: verify
     source: og_switch_table
     source_conflict: og_only_ds_removed_eos
+  - family: Catalyst 9000
+    series: C9600
+    base_pn: C9606R
+    ports: "modular — 4 payload (line-card) slots"
+    poe_type: "modular (line-card dependent)"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Modular chassis, 6-slot"
+    license_tiers: "n/a (license on supervisor/software)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_table1"
