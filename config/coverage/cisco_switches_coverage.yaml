@@ -1526,3 +1526,99 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: ds_ordering_table
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C92160YC-X
+    marketing_name: 92160YC-X
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "6x 40G QSFP+ / 4x 100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C92300YC
+    marketing_name: 92300YC
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "18x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C92304QC
+    marketing_name: 92304QC
+    ports: "56x 40G QSFP+"
+    poe_type: none
+    uplink: 8x 100G QSFP28
+    form_factor: Fixed 2RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C9236C
+    marketing_name: 9236C
+    ports: "36x 40/100G QSFP28"
+    poe_type: none
+    uplink: "(integrated; spine)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C9272Q
+    marketing_name: 9272Q
+    ports: "72x 40G QSFP+"
+    poe_type: none
+    uplink: "(integrated; spine)"
+    form_factor: Fixed 2RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C92348GC-X
+    marketing_name: 92348GC-X
+    ports: "48x 100M/1G BASE-T"
+    poe_type: none
+    uplink: "4x 1/10/25G SFP28 + 2x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C92348GC-FX3
+    marketing_name: 92348GC-FX3
+    ports: "48x 100M/1G BASE-T"
+    poe_type: none
+    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_platform_table1+ordering"
+  - family: Nexus 9000
+    series: Nexus 9200
+    base_pn: N9K-C9232C
+    marketing_name: 9232C
+    ports: "32x 40/100G QSFP28"
+    poe_type: none
+    uplink: "(integrated; spine)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: ds_9232c_standalone
