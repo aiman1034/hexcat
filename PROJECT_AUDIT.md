@@ -1733,6 +1733,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   N9K-C9348GC-FX3P (no H) appears ONLY in the PSU/fan compat tables as a truncation of -FX3PH — absent from the model
   table, ordering table, and changelog → not enumerated. **STOPPED** before scaling Nexus (n9200, n9300 -EX/-FX/-FX2/-GX/
   -GX2/smart, n9400, n9500, n3000/3550/5000-5600/7000-7700) + SMB/legacy/CBS/IE/MDS.
+- **NEXUS BATCH 2 — 9300 Cloud Scale 100G leaf line added (2026-06-20) — manifest now 122; committed per-series (4
+  commits af5ab8b/80faede/534f17d/d9e41cc).** All from self-contained ds (local fetch), locked FX3 conventions applied.
+  **9300-EX (3):** 93180YC-EX, 93108TC-EX, 93180LC-EX (all 1RU). **9300-FX (3):** 93180YC-FX, 93108TC-FX, 9348GC-FXP
+  (the FXP = PoE; 1RU). **9300-FX2 (5):** 9336C-FX2 + **9336C-FX2-E (enhanced HW variant KEPT distinct per rule)**,
+  93240YC-FX2 (**1.2RU**, ds-verbatim), 93360YC-FX2 (2RU, 96p), 93216TC-FX2 (2RU, 96p BASE-T). **9300-FX3S (1):**
+  93180YC-FX3S (1RU). All `eol_status: active` (ds states no EoS; **older gens, EoS-trending — auditor cross-checks
+  Cisco EoL bulletins**). 0 needs_verify. Per-model RU read from the ds (not assumed). **STOPPED** (remaining Nexus:
+  n9200, n9300 -GX/-GX2/Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
 
 ---
 
