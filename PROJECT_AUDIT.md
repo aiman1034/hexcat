@@ -1888,6 +1888,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   so S.3 holds 15/15. gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 15/15; closer 15/15; Attributes 226 rows
   (1+15×15). gate_completeness +`Cisco_9350_switches` (captured 15 = enumerated 15). All 15 active. **Cisco switch total
   now 93** (9300 40 + 9200 31 + 9500 7 + 9350 15).
+- **SWITCH AUTHORING — Nexus 9200 fixed switches (7 of 8) DONE — FIRST Data-Center-Switch tier (2026-06-20, commit
+  dfd3c31).** Grounded from `nexus9200_harvest_source.md`. → `output/switches/Cisco_Nexus9200/`. Sub-batch A of the
+  Nexus 9000 fixed rollout; **7 of 8** — N9K-C9232C **deferred** (separate older sheet, couriering next, not fabricated).
+  Composer `_scratch/nexus9200_author.py`. **NEW-FAMILY rules (differ from Catalyst):** (1) Kat-Ebene-3
+  **`Data-Center-Switch`** all 7 — role-based, incl the 1G 92348GC OOB ToR (the schema's reserved DC token, in the
+  allowlist; the gate has no ≥25G constraint and the GC have 25/100G uplinks anyway); (2) Switch-Typ Managed / Layer L3
+  so **S.2 holds** (only the *token* is DC); (3) OS **NX-OS** (not IOS XE), Essentials/Advantage subscription in prose,
+  no -A/-E PID; (4) **PoE Nein** all; (5) **Stacking Nein** all (vPC in prose, not the attribute — S.4 only trips on
+  Stacking=Ja); (6) **Portanzahl = TOTAL fixed ports** (Nexus uplinks built-in → count; S.3 on the full sum
+  54/54/54/66/72/64/36). 14-vs-15 attrs: uniform spines 9272Q + 9236C omit Uplink-Ports (14); other 5 split-port (15).
+  SwK ≥1000 → Tbit/s explicit (3,2/6,0/5,76/6,1/7,2; 696G stays Gbit/s); Durchsatz Bpps (517 Mpps for the GC). Bauform
+  1HE×5 / 2HE×2. Weight = chassis-only Artikel + 2,5 kg Versand. **GC models: no VXLAN claims** (1G OOB ToRs). gate.py
+  L1–L6 + S.1–S.6 PASS 0 violations; content-floor 7/7; closer 7/7. gate_completeness +`Cisco_Nexus9200_switches`
+  (captured 7 = enumerated 7). **Cisco switch total now 100** (Catalyst 93 + Nexus 7); 1 deferred (9232C).
 
 ---
 
