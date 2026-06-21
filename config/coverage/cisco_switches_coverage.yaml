@@ -833,3 +833,162 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: og_ordering+ds_table1
+  - family: Catalyst 9000
+    series: C9500X
+    base_pn: C9500X-28C8D
+    ports: "28x 100G QSFP28 + 8x 40/100/200/400G QSFP-DD"
+    poe_type: none
+    uplink: "8x 400G QSFP-DD (fixed)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500X
+    base_pn: C9500X-60L4D
+    ports: "60x 10/25/50G SFP56 + 4x 40/100/200/400G QSFP-DD"
+    poe_type: none
+    uplink: "4x 400G QSFP-DD (fixed)"
+    form_factor: Fixed 1U
+    license_tiers: A
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-32C
+    ports: 32x 100G QSFP28
+    poe_type: none
+    uplink: "fixed (100G)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-32QC
+    ports: "32x 40G / 16x 100G QSFP28"
+    poe_type: none
+    uplink: "fixed (40G/100G)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-24Y4C
+    ports: "24x 1/10/25G SFP28 + 4x 40/100G QSFP28"
+    poe_type: none
+    uplink: "4x 40/100G QSFP28 (fixed)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-48Y4C
+    ports: "48x 1/10/25G SFP28 + 4x 40/100G QSFP28"
+    poe_type: none
+    uplink: "4x 40/100G QSFP28 (fixed)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-16X
+    ports: "16x 1/10G SFP+ (+ modular NM slot)"
+    poe_type: none
+    uplink: "modular NM slot (8x10G / 2x40G)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-12Q
+    ports: "12x 40G QSFP+"
+    poe_type: none
+    uplink: "fixed (40G QSFP+)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: EoS
+    sourceable_new_sealed: Y
+    source: og_only_ds_removed_eos
+    source_conflict: verify
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-24Q
+    ports: "24x 40G QSFP+"
+    poe_type: none
+    uplink: "fixed (40G QSFP+)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: EoS
+    sourceable_new_sealed: Y
+    source: og_only_ds_removed_eos
+    source_conflict: verify
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-40X
+    ports: "40x 1/10G SFP+ (+ modular NM slot)"
+    poe_type: none
+    uplink: "modular NM slot (8x10G / 2x40G)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: EoS
+    sourceable_new_sealed: Y
+    source: og_only_ds_removed_eos
+    source_conflict: verify
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-24X
+    ports: "24x 10G SFP+ (= C9500-16X + bundled 8x10G NM-8X)"
+    poe_type: none
+    uplink: via bundled NM-8X
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-16X-2Q
+    ports: "16x 10G SFP+ + 2x 40G (= C9500-16X + bundled NM-2Q)"
+    poe_type: none
+    uplink: "2x 40G (bundled NM-2Q)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_switch_table+ds_model_list"
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-48X
+    ports: "48x 10G SFP+ (= C9500-40X + bundled 8x10G NM-8X)"
+    poe_type: none
+    uplink: via bundled NM-8X
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: EoS
+    sourceable_new_sealed: Y
+    source: og_only_ds_removed_eos
+    source_conflict: verify
+  - family: Catalyst 9000
+    series: C9500
+    base_pn: C9500-40X-2Q
+    ports: "40x 10G SFP+ + 2x 40G (= C9500-40X + bundled NM-2Q)"
+    poe_type: none
+    uplink: "2x 40G (bundled NM-2Q)"
+    form_factor: Fixed 1U
+    license_tiers: "E,A"
+    eol_status: EoS
+    sourceable_new_sealed: Y
+    source: og_only_ds_removed_eos
+    source_conflict: verify
