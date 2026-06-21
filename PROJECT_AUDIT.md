@@ -1912,6 +1912,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   is a 2016 Cloud-Scale doc never revised → **very likely EoS/EoL; confirm new-sealed sourcing before listing** (the
   coverage manifest already marks 9232C EoS — "retired/off active support"). **Cisco_Nexus9200 = 8/8 manifest-complete;
   Cisco switch total now 101** (Catalyst 93 + Nexus 8).
+- **SWITCH AUTHORING — Nexus 9300-EX/FX fixed switches (6, sub-batch B) DONE (2026-06-20, commit 4147ce4).** Grounded
+  from `nexus9300_ex_fx_harvest_source.md` (per-model EX `c78-742283` / FX `c78-742284` ds URL cited). →
+  `output/switches/Cisco_Nexus9300_EX_FX/`. 6 models: EX 93180YC/93108TC/93180LC, FX 93180YC/93108TC/9348GC-FXP.
+  Composer `_scratch/nexus9300_exfx_author.py`. Same six Nexus rules. **PoE Nein all 6** (the 9348GC-FXP "P" is NOT PoE —
+  1G data/mgmt ToR; sub-batch C's FX3P/FX3PH will be the first PoE Nexus). Attr-split **5×15 + 1×14**: 93180LC-EX =
+  uniform flex-Gearbox 50G spine → single `32× 40/50G-QSFP+` token (alt-mode 18×100G / 72×10G breakout → Beschreibung),
+  omit Uplink-Ports. Portanzahl = total fixed ports (54/54/32/54/54/54, S.3 holds). SwK Tbit/s explicit (3,6 / 2,16;
+  696G Gbit/s); Durchsatz Bpps (517 Mpps for GC-FXP). **VXLAN:** 5 leaf/spine carry VXLAN-EVPN claims; **9348GC-FXP carries
+  NO positive VXLAN claim** (verified — body clean, negation-FAQ only; mirrors 92348GC). FX differentiated from EX by
+  MACsec/RoCE/Unified-Ports/ASIC-gen. gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 6/6; closer 6/6; Main 7 /
+  Attributes 90. gate_completeness +`Cisco_Nexus9300_EX_FX_switches` (captured 6 = enumerated 6). **⚠ EoS/sourcing FLAG
+  (never-dropped, informational):** EX (2016–17 Cloud-Scale) likely EoS; FX (2018–19) EoL-approaching — confirm new-sealed
+  sourcing before listing. **Cisco switch total now 107** (Catalyst 93 + Nexus 14: 9200 8 + 9300-EX/FX 6).
 
 ---
 
