@@ -1174,3 +1174,14 @@ switches:
     sourceable_new_sealed: verify
     source: ds_models_table
     source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9610
+    base_pn: C9610R
+    ports: "modular — 8 payload (line-card) slots"
+    poe_type: "modular (line-card dependent)"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Modular chassis, 10-slot (8 line-card + 2 supervisor)"
+    license_tiers: "unified (Advantage)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_table"
