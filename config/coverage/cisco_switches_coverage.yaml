@@ -1478,3 +1478,15 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9400
+    base_pn: N9K-C9408
+    marketing_name: 9408
+    ports: "modular — 8 linecard slots"
+    poe_type: "n/a"
+    uplink: "modular (line-card dependent)"
+    form_factor: "Centralized modular chassis, 4RU/8-slot"
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: ds_ordering_table
