@@ -1738,9 +1738,16 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **9300-EX (3):** 93180YC-EX, 93108TC-EX, 93180LC-EX (all 1RU). **9300-FX (3):** 93180YC-FX, 93108TC-FX, 9348GC-FXP
   (the FXP = PoE; 1RU). **9300-FX2 (5):** 9336C-FX2 + **9336C-FX2-E (enhanced HW variant KEPT distinct per rule)**,
   93240YC-FX2 (**1.2RU**, ds-verbatim), 93360YC-FX2 (2RU, 96p), 93216TC-FX2 (2RU, 96p BASE-T). **9300-FX3S (1):**
-  93180YC-FX3S (1RU). All `eol_status: active` (ds states no EoS; **older gens, EoS-trending — auditor cross-checks
-  Cisco EoL bulletins**). 0 needs_verify. Per-model RU read from the ds (not assumed). **STOPPED** (remaining Nexus:
-  n9200, n9300 -GX/-GX2/Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
+  93180YC-FX3S (1RU). 0 needs_verify. Per-model RU read from the ds (not assumed).
+- **NEXUS 9300 EX/FX — 5 EoS flips (2026-06-20, commit 2b282c4) — auditor EoL-bulletin cross-check.** The ds stated no
+  EoS, but the auditor's Cisco EoL-bulletin check found 5 are End-of-Sale (last-order dates passed): EX 93180YC/93108TC
+  (LDoS 2022-08-09), 93180LC (EoL bulletin 2023-01-18), FX 93180YC/93108TC (LDoS 2024-07-31). Flipped to `eol_status:
+  EoS` + `sourceable_new_sealed: verify` + `eol_note` (basis), **source unchanged, no source_conflict** (3rd-source
+  bulletin, not a ds removal) — same convention as the Catalyst C9500 EoS set. **KEPT all rows** (new-sealed surplus
+  still sells). Left active (no EoS bulletin): 9348GC-FXP, all 5 FX2, 93180YC-FX3S, + the FX3 pilot. **Manifest EoS = 13**
+  (8 Catalyst C9500/X + 5 Nexus); total still 122. This is the proven flow: I enumerate eol from the ds, the **auditor's
+  EoL-bulletin layer is the EoS authority** (a 3rd source my PDFs don't carry). **STOPPED** (remaining Nexus: n9200,
+  n9300 -GX/-GX2/Smart, n9400, n9500, n3000/3550/5000-5600/7000-7700; then SMB/legacy/CBS/IE/MDS).
 
 ---
 
