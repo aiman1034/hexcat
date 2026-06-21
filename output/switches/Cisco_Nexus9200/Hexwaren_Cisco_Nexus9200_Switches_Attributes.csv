@@ -102,3 +102,17 @@ N9K-C9236C,,Switch,Kühlung,"Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: 
 N9K-C9236C,,Switch,Stacking,Nein,13,Wertliste,Attribut
 N9K-C9236C,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
 N9K-C9236C,,Switch,Anwendung,Data-Center kompakter 100-Gigabit-Spine/Aggregation; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit,15,Wertliste,Attribut
+N9K-C9232C,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+N9K-C9232C,,Switch,Layer,L3,2,Wertliste,Attribut
+N9K-C9232C,,Switch,Portanzahl,32,3,Wertliste,Attribut
+N9K-C9232C,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+N9K-C9232C,,Switch,Port-Geschwindigkeit,40/100 GbE (pro Port: 1×100 / 4×10 / 4×25 / 1×40 / 2×50 Gbit/s),5,Wertliste,Attribut
+N9K-C9232C,,Switch,PoE,Nein,7,Wertliste,Attribut
+N9K-C9232C,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+N9K-C9232C,,Switch,Durchsatz,"5,1 Bpps",9,Wertliste,Attribut
+N9K-C9232C,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+N9K-C9232C,,Switch,Stromversorgung,Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 650 W AC / 930 W DC / 1200 W HVAC·HVDC,11,Wertliste,Attribut
+N9K-C9232C,,Switch,Kühlung,"Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)",12,Wertliste,Attribut
+N9K-C9232C,,Switch,Stacking,Nein,13,Wertliste,Attribut
+N9K-C9232C,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+N9K-C9232C,,Switch,Anwendung,Data-Center kompakter 100-Gigabit-Data-Center-Spine/Aggregation; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit,15,Wertliste,Attribut
