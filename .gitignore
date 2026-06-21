@@ -31,7 +31,12 @@ datasheets/cache/
 datasheets/*.html
 datasheets/*.htm
 datasheets/*.pdf
-output/
+# output/ runtime artifacts ignored (ZIPs, ledgers, reports), EXCEPT the committed switch BUNDLES:
+# the L8 byte-auditor needs line-level diffs of the staged deliverables (same audit-channel pattern
+# as the _scratch exceptions above). output/** ignores contents but allows the switches/ re-include.
+output/**
+!output/switches/
+!output/switches/**
 inputs/live_pns_cisco.csv
 # Operator's local reference ledger — proprietary catalog data (7k+ PNs), binary.
 # The tool writes the workbook structure from code; it does not read this at runtime.
