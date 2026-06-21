@@ -1254,9 +1254,10 @@ switches:
     uplink: "6x 40/100G QSFP28"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_model+ordering_table"
+    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.'
   - family: Nexus 9000
     series: Nexus 9300-EX
     base_pn: N9K-C93108TC-EX
@@ -1266,9 +1267,10 @@ switches:
     uplink: "6x 40/100G QSFP28"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_model+ordering_table"
+    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.'
   - family: Nexus 9000
     series: Nexus 9300-EX
     base_pn: N9K-C93180LC-EX
@@ -1278,9 +1280,10 @@ switches:
     uplink: "(integrated QSFP28 fabric)"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_model+ordering_table"
+    eol_note: 'EoS per Cisco EoL bulletin dated 2023-01-18. New-sealed surplus only.'
   - family: Nexus 9000
     series: Nexus 9300-FX
     base_pn: N9K-C93180YC-FX
@@ -1290,9 +1293,10 @@ switches:
     uplink: "6x 40/100G QSFP28 (MACsec, Unified Ports)"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_model+ordering_table"
+    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.'
   - family: Nexus 9000
     series: Nexus 9300-FX
     base_pn: N9K-C93108TC-FX
@@ -1302,9 +1306,10 @@ switches:
     uplink: "6x 40/100G QSFP28 (MACsec)"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_model+ordering_table"
+    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.'
   - family: Nexus 9000
     series: Nexus 9300-FX
     base_pn: N9K-C9348GC-FXP
