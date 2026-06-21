@@ -1245,3 +1245,39 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_table2+ordering_table11"
+  - family: Nexus 9000
+    series: Nexus 9300-EX
+    base_pn: N9K-C93180YC-EX
+    marketing_name: 93180YC-EX
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "6x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-EX
+    base_pn: N9K-C93108TC-EX
+    marketing_name: 93108TC-EX
+    ports: 48x 10G BASE-T
+    poe_type: none
+    uplink: "6x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-EX
+    base_pn: N9K-C93180LC-EX
+    marketing_name: 93180LC-EX
+    ports: "up to 32x 40/50G QSFP+ / 18x 100G QSFP28"
+    poe_type: none
+    uplink: "(integrated QSFP28 fabric)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
