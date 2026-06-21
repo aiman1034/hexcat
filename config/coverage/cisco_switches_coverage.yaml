@@ -1535,9 +1535,10 @@ switches:
     uplink: "6x 40G QSFP+ / 4x 100G QSFP28"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Support 2026-03-31'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C92300YC
@@ -1547,9 +1548,10 @@ switches:
     uplink: "18x 40/100G QSFP28"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Support 2025-02-28'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C92304QC
@@ -1559,9 +1561,10 @@ switches:
     uplink: 8x 100G QSFP28
     form_factor: Fixed 2RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Support 2024-08-31'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C9236C
@@ -1571,9 +1574,10 @@ switches:
     uplink: "(integrated; spine)"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Support 2025-02-28'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C9272Q
@@ -1583,9 +1587,10 @@ switches:
     uplink: "(integrated; spine)"
     form_factor: Fixed 2RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Support 2025-09-30'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C92348GC-X
@@ -1595,9 +1600,10 @@ switches:
     uplink: "4x 1/10/25G SFP28 + 2x 40/100G QSFP28"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "ds_platform_table1+ordering"
+    eol_note: 'End of Sale; support to 2030-08-31'
   - family: Nexus 9000
     series: Nexus 9200
     base_pn: N9K-C92348GC-FX3
@@ -1619,6 +1625,7 @@ switches:
     uplink: "(integrated; spine)"
     form_factor: Fixed 1RU
     license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: ds_9232c_standalone
+    eol_note: 'retired - off Cisco active support listing'
