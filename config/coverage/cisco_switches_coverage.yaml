@@ -1006,3 +1006,171 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "og_ordering+ds_table1"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24T
+    ports: 24x 1G
+    poe_type: data
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24P
+    ports: 24x 1G
+    poe_type: "PoE+ (30W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24U
+    ports: 24x 1G
+    poe_type: "UPOE (60W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24S
+    ports: "24x 1G SFP (fiber)"
+    poe_type: none
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24HX
+    ports: "24x mGig (100M-10G)"
+    poe_type: "UPOE+ (90W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-24Y
+    ports: 24x 25G SFP28
+    poe_type: none
+    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_models_table
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-12Y
+    ports: 12x 25G SFP28
+    poe_type: none
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_models_table
+    source_conflict: ds_only_not_in_ordering_guide
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48T
+    ports: 48x 1G
+    poe_type: data
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48P
+    ports: 48x 1G
+    poe_type: "PoE+ (30W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48U
+    ports: 48x 1G
+    poe_type: "UPOE (60W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48S
+    ports: "48x 1G SFP (fiber)"
+    poe_type: none
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48HX
+    ports: "48x mGig (100M-10G)"
+    poe_type: "UPOE+ (90W)"
+    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48HXN
+    ports: "12x 10G mGig + 36x 5G mGig"
+    poe_type: "UPOE+ (90W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48TX
+    ports: "48x mGig (100M-10G)"
+    poe_type: data
+    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "og_ordering+ds_models_table"
+  - family: Catalyst 9000
+    series: C9350
+    base_pn: C9350-48HM
+    ports: "48x mGig (100M-2.5G)"
+    poe_type: "UPOE+ (90W)"
+    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
+    form_factor: "Fixed 1U (stackable)"
+    license_tiers: unified
+    eol_status: active
+    sourceable_new_sealed: verify
+    source: ds_models_table
+    source_conflict: ds_only_not_in_ordering_guide
