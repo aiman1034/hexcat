@@ -907,9 +907,10 @@ switches:
     uplink: "modular NM slot (8x10G / 2x40G)"
     form_factor: Fixed 1U
     license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "og_switch_table+ds_model_list"
+    eol_note: 'EoS per Cisco EoL bulletin (C9500-16X Switch + NM C9500-NM-8X/NM-2Q); last-order-date 30-Apr-2026 (passed). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-12Q
@@ -919,9 +920,9 @@ switches:
     form_factor: Fixed 1U
     license_tiers: "E,A"
     eol_status: EoS
-    sourceable_new_sealed: Y
-    source: og_only_ds_removed_eos
-    source_conflict: verify
+    sourceable_new_sealed: verify
+    source: og_switch_table
+    source_conflict: og_only_ds_removed_eos
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-24Q
@@ -931,9 +932,9 @@ switches:
     form_factor: Fixed 1U
     license_tiers: "E,A"
     eol_status: EoS
-    sourceable_new_sealed: Y
-    source: og_only_ds_removed_eos
-    source_conflict: verify
+    sourceable_new_sealed: verify
+    source: og_switch_table
+    source_conflict: og_only_ds_removed_eos
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-40X
@@ -943,9 +944,9 @@ switches:
     form_factor: Fixed 1U
     license_tiers: "E,A"
     eol_status: EoS
-    sourceable_new_sealed: Y
-    source: og_only_ds_removed_eos
-    source_conflict: verify
+    sourceable_new_sealed: verify
+    source: og_switch_table
+    source_conflict: og_only_ds_removed_eos
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-24X
@@ -954,9 +955,10 @@ switches:
     uplink: via bundled NM-8X
     form_factor: Fixed 1U
     license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "og_switch_table+ds_model_list"
+    eol_note: 'EoS by composition (= C9500-16X + NM-8X; both in the C9500-16X/NM EoL bulletin, LDoS 30-Apr-2026). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-16X-2Q
@@ -965,9 +967,10 @@ switches:
     uplink: "2x 40G (bundled NM-2Q)"
     form_factor: Fixed 1U
     license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
+    eol_status: EoS
+    sourceable_new_sealed: verify
     source: "og_switch_table+ds_model_list"
+    eol_note: 'EoS by composition (= C9500-16X + NM-2Q; both in the C9500-16X/NM EoL bulletin, LDoS 30-Apr-2026). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-48X
@@ -977,9 +980,9 @@ switches:
     form_factor: Fixed 1U
     license_tiers: "E,A"
     eol_status: EoS
-    sourceable_new_sealed: Y
-    source: og_only_ds_removed_eos
-    source_conflict: verify
+    sourceable_new_sealed: verify
+    source: og_switch_table
+    source_conflict: og_only_ds_removed_eos
   - family: Catalyst 9000
     series: C9500
     base_pn: C9500-40X-2Q
@@ -989,6 +992,6 @@ switches:
     form_factor: Fixed 1U
     license_tiers: "E,A"
     eol_status: EoS
-    sourceable_new_sealed: Y
-    source: og_only_ds_removed_eos
-    source_conflict: verify
+    sourceable_new_sealed: verify
+    source: og_switch_table
+    source_conflict: og_only_ds_removed_eos
