@@ -1394,3 +1394,39 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX
+    base_pn: N9K-C9316D-GX
+    marketing_name: 9316D-GX
+    ports: "16x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated; spine)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX
+    base_pn: N9K-C93600CD-GX
+    marketing_name: 93600CD-GX
+    ports: "28x 100/40G QSFP28 + 8x 400/100G QSFP-DD"
+    poe_type: none
+    uplink: "(integrated; spine/leaf)"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-GX
+    base_pn: N9K-C9364C-GX
+    marketing_name: 9364C-GX
+    ports: "64x 100/40G QSFP28"
+    poe_type: none
+    uplink: "(integrated; spine/leaf)"
+    form_factor: Fixed 2RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
