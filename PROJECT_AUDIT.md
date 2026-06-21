@@ -1902,6 +1902,16 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   1HE×5 / 2HE×2. Weight = chassis-only Artikel + 2,5 kg Versand. **GC models: no VXLAN claims** (1G OOB ToRs). gate.py
   L1–L6 + S.1–S.6 PASS 0 violations; content-floor 7/7; closer 7/7. gate_completeness +`Cisco_Nexus9200_switches`
   (captured 7 = enumerated 7). **Cisco switch total now 100** (Catalyst 93 + Nexus 7); 1 deferred (9232C).
+- **NEXUS 9200 — 8th model N9K-C9232C APPENDED → 8/8 manifest-complete (2026-06-20, commit 8d5c2f7).** Grounded from
+  `nexus9232c_harvest_source.md` (2016 ds). Re-emitted all 8 rows. 9232C = uniform 100G spine (sibling of 9236C) → 14
+  attrs (omit Uplink-Ports); `32× 40/100G-QSFP28`, Portanzahl 32 (S.3 32==32); Data-Center-Switch / Managed / L3 / NX-OS;
+  PoE Nein; Stacking Nein (vPC); SwK 6,4 Tbit/s; Durchsatz 5,1 Bpps; 1HE; 0–40 °C; **VXLAN supported** (no GC caveat);
+  Artikel 8,1 kg chassis-only + 2,5 kg Versand. **Attr-split now 5×15 + 3×14** (9272Q/9236C/9232C uniform) → Attributes
+  118 rows / Main 9. gate.py L1–L6 + S.1–S.6 PASS 0 violations over all 8; closer 8/8. gate_completeness
+  Cisco_Nexus9200_switches captured 7→8. **⚠ EoS/sourcing FLAG for Fawaz (never-dropped, informational):** the 9232C ds
+  is a 2016 Cloud-Scale doc never revised → **very likely EoS/EoL; confirm new-sealed sourcing before listing** (the
+  coverage manifest already marks 9232C EoS — "retired/off active support"). **Cisco_Nexus9200 = 8/8 manifest-complete;
+  Cisco switch total now 101** (Catalyst 93 + Nexus 8).
 
 ---
 
