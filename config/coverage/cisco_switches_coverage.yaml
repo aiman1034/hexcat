@@ -1377,3 +1377,15 @@ switches:
     eol_status: active
     sourceable_new_sealed: Y
     source: "ds_model+ordering_table"
+  - family: Nexus 9000
+    series: Nexus 9300-FX3S
+    base_pn: N9K-C93180YC-FX3S
+    marketing_name: 93180YC-FX3S
+    ports: "48x 1/10/25G SFP28"
+    poe_type: none
+    uplink: "6x 40/100G QSFP28"
+    form_factor: Fixed 1RU
+    license_tiers: "NX-OS (separate license)"
+    eol_status: active
+    sourceable_new_sealed: Y
+    source: "ds_model+ordering_table"
