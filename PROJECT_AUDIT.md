@@ -1782,6 +1782,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   convention as Catalyst C9500 + Nexus EX/FX). **Manifest EoS = 20** (8 Catalyst C9500/X + 12 Nexus: 5 EX/FX + 7 9200);
   total still 141. Reinforces the division of labor: I enumerate eol from the ds; the **auditor's EoL/status-page layer is
   the EoS authority**.
+- **MIKROTIK SWITCH BUNDLE committed to the AUDIT CHANNEL (2026-06-20, commit ddfdda3).** The 39/39 switch gold-slice was
+  gate-PASS but its emitted 7-file bundle lived only under gitignored `output/` (+ a build ZIP) — the L8 byte-auditor
+  couldn't diff it. Re-emitted fresh from `stage3_content/MikroTik_Switches_content.json` (reconcile_content →
+  assemble_bundle → validate_dir, batch/category MikroTik_Switches) into **`output/switches/MikroTik/`** and COMMITTED the
+  7 CSVs. **`.gitignore`: `output/` → `output/**` + `!output/switches/**`** (audit-channel exception, mirrors the
+  `_scratch` L8 pattern). **GATE ok=True** — L1–L6 byte-contract + S.1–S.6 switch checks, 0 violations; 7 warnings =
+  expected IN/OUT/RM sibling sentence-reuse (known families). Row counts: Main/FAQ/Prices/PlatformFlag/Condition 40
+  (1 hdr + 39), Attributes/Verification_Log 552. **Content-floor 39/39:** Kurz 43–54w/2×&lt;p&gt;, Beschr 104–131w/3×&lt;p&gt;
+  + "Originaler MikroTik-" closer 39/39, Titel 47–57 (≤60), Meta 188–200. **gate self-test 420 passed.** **1 known gap:
+  GPERx6 (CSS606-1G-2Gi-3S+OUT) — not in content (weight not $0-findable); weight-blocked, held not dropped.** Re-emit
+  driver: `_scratch/emit_switches_audit.py` (gitignored build script, per convention).
 
 ---
 
