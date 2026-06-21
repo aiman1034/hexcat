@@ -1721,6 +1721,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   rack/NEBS kits, blanks, and the C9610-SWITCH CCW placeholder. 0 needs_verify. **Cisco switch manifest = 105 across 13
   series** (9300×4 + 9200×3 + 9400 + 9500×2 + 9600 + 9350 + 9610). **STOPPED** (SMB 1200/1300/Micro, legacy 2960,
   Nexus, CBS, IE, MDS pending).
+- **NEXUS PILOT — Nexus 9300-FX3 added (2026-06-20) — manifest now 110.** First Nexus sub-series; **conventions LOCKED
+  for the campaign:** (1) Nexus has NO separate ordering guide — ONE self-contained ds per sub-series (switch-model
+  table + ordering info + licensing all inside); PDF at `.../datasheet-c78-NNNNN.pdf` (FX3 = c78-744052, local fetch).
+  (2) **base_pn = the full orderable `N9K-C…` PID** (e.g. N9K-C93180YC-FX3); short marketing name (93180YC-FX3) kept in
+  a new `marketing_name` field. (3) ACI/NX-OS/Hyperfabric = SW operating modes on ONE hardware → one row per model (never
+  split). (4) `-E` enhanced = distinct hardware (keep); license is SEPARATE from the PID → `license_tiers: NX-OS
+  (separate license)`. (5) Exclude NXA-PAC-* PSUs, NXA-FAN-*/NXA-SFAN-* fans, N2000 FEX, optics/DAC/breakout/accessories,
+  GEM/uplink-module-only PIDs. **FX3 = 5 models** (Table 2 == Table 11): 93180YC-FX3, 93108TC-FX3, 93108TC-FX3P,
+  9348GC-FX3, 9348GC-FX3PH; all Fixed 1RU, active; PoE on FX3P/FX3PH only. **Resolved ambiguity (NOT a model):**
+  N9K-C9348GC-FX3P (no H) appears ONLY in the PSU/fan compat tables as a truncation of -FX3PH — absent from the model
+  table, ordering table, and changelog → not enumerated. **STOPPED** before scaling Nexus (n9200, n9300 -EX/-FX/-FX2/-GX/
+  -GX2/smart, n9400, n9500, n3000/3550/5000-5600/7000-7700) + SMB/legacy/CBS/IE/MDS.
 
 ---
 
