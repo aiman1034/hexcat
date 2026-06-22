@@ -1,0 +1,1038 @@
+{
+ "N9K-C93180YC-FX3": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C93180YC-FX3 Data-Center-Switch (NX-OS, L3) – 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N9K-C93180YC-FX3 Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C93180YC-FX3 (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 3,6 Tbit/s, 1 HE. NX-OS, vPC. Versiegelte Original-Neuware.",
+  "artikelgewicht": "9,52",
+  "versandgewicht": "12,02",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C93180YC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing das Line-Rate-VXLAN-BGP-EVPN-Routing in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C93180YC-FX3 eine Switching-Kapazität von 3,6 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C93180YC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C93180YC-FX3 eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 1,2 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C93180YC-FX3 über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS. Mit SyncE, PTP Boundary Clock und 1PPS/10-MHz/ToD-Schnittstellen eignet er sich für den Telco-Data-Center-Edge.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (650 W AC / 930 W DC / 1200 W HVAC·HVDC) arbeitet der N9K-C93180YC-FX3 laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C93180YC-FX3 25-Gigabit-Fiber-Leaf/ToR-Switching mit VXLAN-BGP-EVPN, PTP-Telecom-Timing und 128-Wege-ECMP sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C93180YC-FX3 als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C93180YC-FX3 ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C93180YC-FX3?",
+    "Der N9K-C93180YC-FX3 bietet insgesamt 54 feste Ports: 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C93180YC-FX3 Stacking oder PoE?",
+    "Nein. Der N9K-C93180YC-FX3 ist ein Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C93180YC-FX3 VXLAN-Routing?",
+    "Ja. Der N9K-C93180YC-FX3 leistet Line-Rate-VXLAN-BGP-EVPN-Routing für programmierbare Spine-/Leaf-Fabrics unter NX-OS, inkl. MACsec."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (Access), 40/100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1,2 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 650 W AC / 930 W DC / 1200 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit, 128-Wege-ECMP und AI/ML-Fabric-Features"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C93108TC-FX3": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C93108TC-FX3 Data-Center-Switch (NX-OS, L3) – 48× 100M/1/10G-RJ45 (BASE-T) + 6× 40/100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N9K-C93108TC-FX3 Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C93108TC-FX3 (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 48× 100M/1/10G-RJ45 (BASE-T), Switching-Kapazität 2,16 Tbit/s, 1 HE. NX-OS, vPC. Versiegelte Original-Neuware.",
+  "artikelgewicht": "7,1",
+  "versandgewicht": "9,6",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C93108TC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 48× 100M/1/10G-RJ45 (BASE-T) + 6× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als 10-Gigabit-BASE-T-Leaf/ToR das Line-Rate-VXLAN-BGP-EVPN-Routing in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C93108TC-FX3 eine Switching-Kapazität von 2,16 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C93108TC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als 10-Gigabit-BASE-T-Leaf/ToR in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C93108TC-FX3 eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von 1,2 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C93108TC-FX3 über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (500 W AC / 930 W DC / 1200 W HVAC·HVDC) arbeitet der N9K-C93108TC-FX3 laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C93108TC-FX3 10-Gigabit-BASE-T-Leaf/ToR-Switching mit VXLAN-BGP-EVPN und AI/ML-Fabric-Features (RoCE/RDMA) sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C93108TC-FX3 als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C93108TC-FX3 ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C93108TC-FX3?",
+    "Der N9K-C93108TC-FX3 bietet insgesamt 54 feste Ports: 48× 100M/1/10G-RJ45 (BASE-T) + 6× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C93108TC-FX3 Stacking oder PoE?",
+    "Nein. Der N9K-C93108TC-FX3 ist ein Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C93108TC-FX3 VXLAN-Routing?",
+    "Ja. Der N9K-C93108TC-FX3 leistet Line-Rate-VXLAN-BGP-EVPN-Routing für programmierbare Spine-/Leaf-Fabrics unter NX-OS, inkl. MACsec."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/10G-RJ45 (BASE-T) + 6× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s / 1/10 GbE BASE-T (Access), 40/100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1,2 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 500 W AC / 930 W DC / 1200 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-BASE-T-Leaf/ToR; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit, 128-Wege-ECMP und AI/ML-Fabric-Features"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C93108TC-FX3P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C93108TC-FX3P Data-Center-Switch (NX-OS, L3) – 48× 100M/1/2.5/5/10G-RJ45 (mGig BASE-T, UPoE bis 60 W) + 6× …",
+  "titel_tag": "Cisco N9K-C93108TC-FX3P Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C93108TC-FX3P (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 48× 100M/1/2.5/5/10G-RJ45 (mGig BASE-T, UPoE bis 60 W), Switching-Kapazität 2,16 Tbit/s, 1 HE. NX-OS, vPC, …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "9,76",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C93108TC-FX3P ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 48× 100M/1/2.5/5/10G-RJ45 (mGig BASE-T, UPoE bis 60 W) + 6× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als Multigigabit-PoE-Leaf für Campus-/Wireless-/AP-Aggregation das Line-Rate-VXLAN-BGP-EVPN-Routing in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C93108TC-FX3P eine Switching-Kapazität von 2,16 Tbit/s; mit PoE-Versorgung an den Ports 1–48 wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C93108TC-FX3P ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als Multigigabit-PoE-Leaf für Campus-/Wireless-/AP-Aggregation in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C93108TC-FX3P eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von 1,2 Bpps; an den Ports 1–48 stellt der N9K-C93108TC-FX3P UPoE mit bis zu 60 W je Port und einem PoE-Budget von bis zu 1.920 W bereit. Hochverfügbarkeit erreicht der N9K-C93108TC-FX3P über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (1100 W AC / 1900 W AC / 715 W DC) arbeitet der N9K-C93108TC-FX3P laut Datenblatt im Temperaturbereich 0 bis 55 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C93108TC-FX3P Multigigabit-PoE-Leaf-Switching (100M–10G) mit UPoE (60 W je Port), VXLAN-BGP-EVPN und 0–55-°C-Härtung sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C93108TC-FX3P als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C93108TC-FX3P ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C93108TC-FX3P?",
+    "Der N9K-C93108TC-FX3P bietet insgesamt 54 feste Ports: 48× 100M/1/2.5/5/10G-RJ45 (mGig BASE-T, UPoE bis 60 W) + 6× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des N9K-C93108TC-FX3P?",
+    "Der N9K-C93108TC-FX3P liefert UPoE mit bis zu 60 W je Port an den Ports 1–48; das verfügbare Gesamt-PoE-Budget beträgt bis zu 1.920 W. Stacking gibt es nicht – Hochverfügbarkeit läuft über vPC."
+   ],
+   [
+    "Beherrscht der N9K-C93108TC-FX3P VXLAN-Routing?",
+    "Ja. Der N9K-C93108TC-FX3P leistet Line-Rate-VXLAN-BGP-EVPN-Routing für programmierbare Spine-/Leaf-Fabrics unter NX-OS, inkl. MACsec."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/2.5/5/10G-RJ45 (mGig BASE-T, UPoE bis 60 W) + 6× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s bis 10 GbE Multigigabit (Access), 40/100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Ja – bis 60 W (UPoE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1,2 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 1100 W AC / 1900 W AC / 715 W DC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Multigigabit-PoE-Leaf für Campus-/Wireless-/AP-Aggregation; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit, 128-Wege-ECMP und AI/ML-Fabric-Features"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C9348GC-FX3": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C9348GC-FX3 Data-Center-Switch (NX-OS, L3) – 48× 10M/100M/1G-RJ45 (BASE-T) + 4× 1/10/25G-SFP28 + 2× 40/10…",
+  "titel_tag": "Cisco N9K-C9348GC-FX3 Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9348GC-FX3 (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 48× 10M/100M/1G-RJ45 (BASE-T), Switching-Kapazität 696 Gbit/s, 1 HE. NX-OS, vPC. Versiegelte Original-Neuware.",
+  "artikelgewicht": "6,57",
+  "versandgewicht": "9,07",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9348GC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 48× 10M/100M/1G-RJ45 (BASE-T) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als Gigabit-Management-/OOB-Top-of-Rack mit lokalem Switching das lokales Layer-2/Layer-3-Switching in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C9348GC-FX3 eine Switching-Kapazität von 696 Gbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C9348GC-FX3 ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als Gigabit-Management-/OOB-Top-of-Rack mit lokalem Switching in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C9348GC-FX3 eine Switching-Kapazität von 696 Gbit/s bei einer Weiterleitungsrate von 517 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C9348GC-FX3 über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (350 W AC / 440 W DC / 350 W HVAC·HVDC) arbeitet der N9K-C9348GC-FX3 laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C9348GC-FX3 Gigabit-Management-/OOB-Top-of-Rack-Switching im NX-OS-Fabric sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C9348GC-FX3 als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "Cisco NX-OS",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C9348GC-FX3 ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C9348GC-FX3?",
+    "Der N9K-C9348GC-FX3 bietet insgesamt 54 feste Ports: 48× 10M/100M/1G-RJ45 (BASE-T) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C9348GC-FX3 Stacking oder PoE?",
+    "Nein. Der N9K-C9348GC-FX3 ist ein Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Wofür eignet sich der N9K-C9348GC-FX3?",
+    "Der N9K-C9348GC-FX3 ist ein NX-OS-Gigabit-Management-/OOB-Top-of-Rack-Switch für lokales Layer-2/Layer-3-Switching; natives VXLAN-Routing bietet dieses Management-Modell nicht."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10M/100M/1G-RJ45 (BASE-T) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 Mbit/s / 1 GbE (Access), bis 100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "696 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "517 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 350 W AC / 440 W DC / 350 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Gigabit-Management-/OOB-Top-of-Rack mit lokalem Switching; NX-OS-Programmierbarkeit und vPC-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C9348GC-FX3PH": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C9348GC-FX3PH Data-Center-Switch (NX-OS, L3) – 40× 10M/100M/1G-RJ45 (BASE-T, PoE++) + 8× 10/100M-RJ45 (BASE…",
+  "titel_tag": "Cisco N9K-C9348GC-FX3PH Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9348GC-FX3PH (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 40× 10M/100M/1G-RJ45 (BASE-T, PoE++), Switching-Kapazität 696 Gbit/s, 1 HE. NX-OS, vPC, PoE. Versiegelte …",
+  "artikelgewicht": "6,49",
+  "versandgewicht": "8,99",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9348GC-FX3PH ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 40× 10M/100M/1G-RJ45 (BASE-T, PoE++) + 8× 10/100M-RJ45 (BASE-T, Halbduplex-Legacy, PoE) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als PoE-gehärteter Gigabit-Management-Top-of-Rack das lokales Layer-2/Layer-3-Switching in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C9348GC-FX3PH eine Switching-Kapazität von 696 Gbit/s; mit PoE-Versorgung an den Ports 1–48 wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C9348GC-FX3PH ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als PoE-gehärteter Gigabit-Management-Top-of-Rack in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C9348GC-FX3PH eine Switching-Kapazität von 696 Gbit/s bei einer Weiterleitungsrate von 517 Mpps; an den Ports 1–48 stellt der N9K-C9348GC-FX3PH PoE++ mit bis zu 60 W je Port und einem PoE-Budget von bis zu 3.000 W bereit. Hochverfügbarkeit erreicht der N9K-C9348GC-FX3PH über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (350 W AC / 1900 W AC / 440 W DC / 350 W HVAC·HVDC) arbeitet der N9K-C9348GC-FX3PH laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C9348GC-FX3PH PoE-gehärtetes Gigabit-Management-Top-of-Rack-Switching mit PoE++ (60 W je Port) und 8 Halbduplex-Legacy-Ports sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C9348GC-FX3PH als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "Cisco NX-OS",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C9348GC-FX3PH ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C9348GC-FX3PH?",
+    "Der N9K-C9348GC-FX3PH bietet insgesamt 54 feste Ports: 40× 10M/100M/1G-RJ45 (BASE-T, PoE++) + 8× 10/100M-RJ45 (BASE-T, Halbduplex-Legacy, PoE) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des N9K-C9348GC-FX3PH?",
+    "Der N9K-C9348GC-FX3PH liefert PoE++ mit bis zu 60 W je Port an den Ports 1–48; das verfügbare Gesamt-PoE-Budget beträgt bis zu 3.000 W. Stacking gibt es nicht – Hochverfügbarkeit läuft über vPC."
+   ],
+   [
+    "Wofür eignet sich der N9K-C9348GC-FX3PH?",
+    "Der N9K-C9348GC-FX3PH ist ein NX-OS-Gigabit-Management-/OOB-Top-of-Rack-Switch für lokales Layer-2/Layer-3-Switching; natives VXLAN-Routing bietet dieses Management-Modell nicht."
+   ],
+   [
+    "Was sind die 8 Halbduplex-Ports des N9K-C9348GC-FX3PH?",
+    "Acht der 48 Kupfer-Ports des N9K-C9348GC-FX3PH unterstützen zusätzlich 10/100-Mbit/s-Halbduplex-Betrieb für ältere SCADA-, Industrie- und Legacy-Geräte; auch sie sind PoE++-fähig."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 10M/100M/1G-RJ45 (BASE-T, PoE++) + 8× 10/100M-RJ45 (BASE-T, Halbduplex-Legacy, PoE) + 4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 Mbit/s / 1 GbE (Access), bis 100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10/25G-SFP28 + 2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Ja – bis 60 W (PoE++)"
+   ],
+   [
+    "Switching-Kapazität",
+    "696 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "517 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 350 W AC / 1900 W AC / 440 W DC / 350 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center PoE-gehärteter Gigabit-Management-Top-of-Rack; NX-OS-Programmierbarkeit und vPC-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744052.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C93180YC-FX3S": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C93180YC-FX3S Data-Center-Switch (NX-OS, L3) – 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N9K-C93180YC-FX3S Nexus Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C93180YC-FX3S (Nexus 9300-FX3): Managed Layer-3-Data-Center-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 3,6 Tbit/s, 1 HE. NX-OS, vPC. Versiegelte Original-Neuware.",
+  "artikelgewicht": "9,52",
+  "versandgewicht": "12,02",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C93180YC-FX3S ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-FX3-Serie mit 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing und CloudSec das Line-Rate-VXLAN-BGP-EVPN-Routing in der Cloud-Scale-Fabric.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N9K-C93180YC-FX3S eine Switching-Kapazität von 3,6 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C93180YC-FX3S ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-FX3-Familie, ausgelegt als 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing und CloudSec in der Cloud-Scale-Fabric.",
+   "Mit 54 festen Ports erreicht der N9K-C93180YC-FX3S eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 1,2 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C93180YC-FX3S über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS. Als NX-OS-only-Variante (kein ACI) ergänzt er CloudSec-VTEP-zu-VTEP-Verschlüsselung und enhanced SyncE (G.8273.2 Class B) gegenüber dem 93180YC-FX3.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (650 W AC / 930 W DC / 1200 W HVAC·HVDC) arbeitet der N9K-C93180YC-FX3S laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C93180YC-FX3S 25-Gigabit-Fiber-Leaf/ToR-Switching mit VXLAN-BGP-EVPN, CloudSec-Verschlüsselung und PTP-Telecom-Timing sowie MACsec, NX-API/POAP-Programmierbarkeit und Cloud-Scale-Telemetrie; geliefert wird der N9K-C93180YC-FX3S als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C93180YC-FX3S ist Cisco-Original-Neuware aus der Nexus-9300-FX3-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C93180YC-FX3S?",
+    "Der N9K-C93180YC-FX3S bietet insgesamt 54 feste Ports: 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C93180YC-FX3S Stacking oder PoE?",
+    "Nein. Der N9K-C93180YC-FX3S ist ein Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C93180YC-FX3S VXLAN-Routing?",
+    "Ja. Der N9K-C93180YC-FX3S leistet Line-Rate-VXLAN-BGP-EVPN-Routing für programmierbare Spine-/Leaf-Fabrics unter NX-OS, inkl. MACsec und CloudSec."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (Access), 40/100 GbE (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1,2 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 650 W AC / 930 W DC / 1200 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 25-Gigabit-Fiber-Leaf/ToR mit PTP-Telecom-Timing und CloudSec; programmierbare VXLAN-BGP-EVPN-Fabric (ACI-ready) mit vPC-Hochverfügbarkeit, 128-Wege-ECMP und AI/ML-Fabric-Features"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-744874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ }
+}
