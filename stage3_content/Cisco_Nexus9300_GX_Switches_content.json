@@ -1,0 +1,502 @@
+{
+ "N9K-C9316D-GX": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C9316D-GX Data-Center-Switch (NX-OS, L3) – 16× 400/100/40G-QSFP-DD, 1 HE",
+  "titel_tag": "Cisco N9K-C9316D-GX Nexus 400G Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9316D-GX (Nexus 9300-GX): Managed Layer-3-Data-Center-Switch mit 16× 400/100/40G-QSFP-DD, Switching-Kapazität 12,8 Tbit/s, 1 HE. 400G QSFP-DD, NX-OS, vPC, VXLAN-EVPN, ACI. …",
+  "artikelgewicht": "13,0",
+  "versandgewicht": "15,5",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9316D-GX ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-GX-Serie mit 16× 400/100/40G-QSFP-DD. Unter Cisco NX-OS übernimmt er als kompakter 400-Gigabit-Spine (16× 400G QSFP-DD) das Line-Rate-VXLAN-BGP-EVPN-Routing in der 400G-Cloud-Scale-Fabric.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der N9K-C9316D-GX eine Switching-Kapazität von 12,8 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C9316D-GX ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-GX-Familie, ausgelegt als kompakter 400-Gigabit-Spine (16× 400G QSFP-DD) in der 400G-Cloud-Scale-Fabric.",
+   "Mit 16 festen Ports erreicht der N9K-C9316D-GX eine Switching-Kapazität von 12,8 Tbit/s bei einer Weiterleitungsrate von 4,3 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C9316D-GX über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS. Die QSFP-DD-Ports sind abwärtskompatibel zu 40/100G; mit 80 MB Puffer eignet er sich für dichte 400G-Leaf-Spine-Fabrics.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (1100 W AC / 1100 W DC / 1100 W HVAC·HVDC) arbeitet der N9K-C9316D-GX laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C9316D-GX kompaktes 400-Gigabit-Spine-Switching mit 16× QSFP-DD, VXLAN-BGP-EVPN und Single-Chip-ACI-Spine/-Leaf sowie 80 MB Puffer, MACsec und NX-API/gNMI-Programmierbarkeit; geliefert wird der N9K-C9316D-GX als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C9316D-GX ist Cisco-Original-Neuware aus der Nexus-9300-GX-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C9316D-GX?",
+    "Der N9K-C9316D-GX bietet insgesamt 16 feste Ports: 16× 400/100/40G-QSFP-DD (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C9316D-GX Stacking oder PoE?",
+    "Nein. Der N9K-C9316D-GX ist ein 400G-Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C9316D-GX 400G und VXLAN-Routing?",
+    "Ja. Der N9K-C9316D-GX nutzt QSFP-DD-400G-Optik (abwärtskompatibel zu 40/100G) und leistet Line-Rate-VXLAN-BGP-EVPN-Routing; jedes Modell lässt sich als ACI-Spine oder ACI-Leaf einsetzen (Single-Chip)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 400/100/40G-QSFP-DD"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100/400 GbE (QSFP-DD)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "12,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "4,3 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 1100 W AC / 1100 W DC / 1100 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center kompakter 400-Gigabit-Spine (16× 400G QSFP-DD); 400G-VXLAN-BGP-EVPN-Fabric (Single-Chip-ACI-Spine/-Leaf) mit vPC-Hochverfügbarkeit, Segment Routing (SR/SRv6) und AI/ML-Fabric (RoCE/RDMA)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C93600CD-GX": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C93600CD-GX Data-Center-Switch (NX-OS, L3) – 28× 40/100G-QSFP28 + 8× 400/100G-QSFP-DD, 1 HE",
+  "titel_tag": "Cisco N9K-C93600CD-GX Nexus DC-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C93600CD-GX (Nexus 9300-GX): Managed Layer-3-Data-Center-Switch mit 28× 40/100G-QSFP28, Switching-Kapazität 12 Tbit/s, 1 HE. 400G QSFP-DD, NX-OS, vPC, VXLAN-EVPN, ACI. …",
+  "artikelgewicht": "12,7",
+  "versandgewicht": "15,2",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C93600CD-GX ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-GX-Serie mit 28× 40/100G-QSFP28 + 8× 400/100G-QSFP-DD. Unter Cisco NX-OS übernimmt er als 400-Gigabit-Spine+Leaf (28× 100G-Downlinks + 8× 400G-Uplinks) das Line-Rate-VXLAN-BGP-EVPN-Routing in der 400G-Cloud-Scale-Fabric.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der N9K-C93600CD-GX eine Switching-Kapazität von 12 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C93600CD-GX ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-GX-Familie, ausgelegt als 400-Gigabit-Spine+Leaf (28× 100G-Downlinks + 8× 400G-Uplinks) in der 400G-Cloud-Scale-Fabric.",
+   "Mit 36 festen Ports erreicht der N9K-C93600CD-GX eine Switching-Kapazität von 12 Tbit/s bei einer Weiterleitungsrate von 4,0 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C93600CD-GX über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS. Die 100G-Downlinks kombinieren sich mit 400G-QSFP-DD-Uplinks zu einem non-oversubscribed ToR mit 400G-Migrationspfad; 80 MB Puffer, Single-Chip-ACI-Spine/-Leaf.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (1100 W AC / 1100 W DC / 1100 W HVAC·HVDC) arbeitet der N9K-C93600CD-GX laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C93600CD-GX 400-Gigabit-Spine+Leaf-Switching mit 28× 100G-Downlinks und 8× 400G-QSFP-DD-Uplinks für die 400G-Migration sowie 80 MB Puffer, MACsec und NX-API/gNMI-Programmierbarkeit; geliefert wird der N9K-C93600CD-GX als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C93600CD-GX ist Cisco-Original-Neuware aus der Nexus-9300-GX-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C93600CD-GX?",
+    "Der N9K-C93600CD-GX bietet insgesamt 36 feste Ports: 28× 40/100G-QSFP28 + 8× 400/100G-QSFP-DD (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C93600CD-GX Stacking oder PoE?",
+    "Nein. Der N9K-C93600CD-GX ist ein 400G-Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C93600CD-GX 400G und VXLAN-Routing?",
+    "Ja. Der N9K-C93600CD-GX nutzt QSFP-DD-400G-Optik (abwärtskompatibel zu 40/100G) und leistet Line-Rate-VXLAN-BGP-EVPN-Routing; jedes Modell lässt sich als ACI-Spine oder ACI-Leaf einsetzen (Single-Chip)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "36"
+   ],
+   [
+    "Port-Konfiguration",
+    "28× 40/100G-QSFP28 + 8× 400/100G-QSFP-DD"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (Downlink), bis 400 GbE QSFP-DD (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400/100G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "12 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "4,0 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 1100 W AC / 1100 W DC / 1100 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 400-Gigabit-Spine+Leaf (28× 100G-Downlinks + 8× 400G-Uplinks); 400G-VXLAN-BGP-EVPN-Fabric (Single-Chip-ACI-Spine/-Leaf) mit vPC-Hochverfügbarkeit, Segment Routing (SR/SRv6) und AI/ML-Fabric (RoCE/RDMA)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "N9K-C9364C-GX": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+   "verifiziert_am": "2026-06-20"
+  },
+  "artikelname": "Cisco N9K-C9364C-GX Data-Center-Switch (NX-OS, L3) – 64× 40/100G-QSFP28, 2 HE",
+  "titel_tag": "Cisco N9K-C9364C-GX Nexus 400G Data-Center-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9364C-GX (Nexus 9300-GX): Managed Layer-3-Data-Center-Switch mit 64× 40/100G-QSFP28, Switching-Kapazität 12,8 Tbit/s, 2 HE. 400G QSFP-DD, NX-OS, vPC, VXLAN-EVPN, ACI. …",
+  "artikelgewicht": "13,2",
+  "versandgewicht": "15,7",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9364C-GX ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-9300-GX-Serie mit 64× 40/100G-QSFP28. Unter Cisco NX-OS übernimmt er als High-Density-100-Gigabit-Spine (64× 100G QSFP28) das Line-Rate-VXLAN-BGP-EVPN-Routing in der 400G-Cloud-Scale-Fabric.</p><p>Im Format 19-Zoll-Rackmontage (2 HE) liefert der N9K-C9364C-GX eine Switching-Kapazität von 12,8 Tbit/s; ohne PoE und ohne Stacking wird er als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der Cisco N9K-C9364C-GX ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-9300-GX-Familie, ausgelegt als High-Density-100-Gigabit-Spine (64× 100G QSFP28) in der 400G-Cloud-Scale-Fabric.",
+   "Mit 64 festen Ports erreicht der N9K-C9364C-GX eine Switching-Kapazität von 12,8 Tbit/s bei einer Weiterleitungsrate von 4,3 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N9K-C9364C-GX über vPC (Multichassis-LAG) statt über Stacking; betrieben wird er unter Cisco NX-OS. Mit 80 MB Puffer und Single-Chip-ACI-Spine/-Leaf liefert er dichte 100G-Aggregation im 2-HE-Format; QSFP28 abwärtskompatibel zu 40G.",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (2000 W AC / 2000 W DC / 2000 W HVAC·HVDC) arbeitet der N9K-C9364C-GX laut Datenblatt im Temperaturbereich 0 bis 40 °C. Unter Cisco NX-OS (Essentials/Advantage-Lizenz) bietet der N9K-C9364C-GX High-Density-100-Gigabit-Spine-Switching (64× QSFP28) mit VXLAN-BGP-EVPN und Single-Chip-ACI-Spine/-Leaf sowie 80 MB Puffer, MACsec und NX-API/gNMI-Programmierbarkeit; geliefert wird der N9K-C9364C-GX als versiegelte Original-Neuware für den direkten Produktiv- oder Ersatzeinsatz. Originaler Cisco-Switch."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9000 (NX-OS)",
+   "VXLAN BGP-EVPN / ACI",
+   "vPC / Multichassis-LAG"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales Cisco-Produkt?",
+    "Ja. Der N9K-C9364C-GX ist Cisco-Original-Neuware aus der Nexus-9300-GX-Serie – versiegelt geliefert und für den Betrieb unter Cisco NX-OS vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der N9K-C9364C-GX?",
+    "Der N9K-C9364C-GX bietet insgesamt 64 feste Ports: 64× 40/100G-QSFP28 (Uplinks sind fest integriert, kein separates Modul)."
+   ],
+   [
+    "Unterstützt der N9K-C9364C-GX Stacking oder PoE?",
+    "Nein. Der N9K-C9364C-GX ist ein 400G-Data-Center-Switch ohne PoE; Hochverfügbarkeit wird statt über Stacking über vPC (virtuelle PortChannels / Multichassis-LAG) realisiert."
+   ],
+   [
+    "Beherrscht der N9K-C9364C-GX 400G und VXLAN-Routing?",
+    "Ja. Der N9K-C9364C-GX nutzt QSFP-DD-400G-Optik (abwärtskompatibel zu 40/100G) und leistet Line-Rate-VXLAN-BGP-EVPN-Routing; jedes Modell lässt sich als ACI-Spine oder ACI-Leaf einsetzen (Single-Chip)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "64"
+   ],
+   [
+    "Port-Konfiguration",
+    "64× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP28)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "12,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "4,3 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); 2000 W AC / 2000 W DC / 2000 W HVAC·HVDC"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (N+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center High-Density-100-Gigabit-Spine (64× 100G QSFP28); 400G-VXLAN-BGP-EVPN-Fabric (Single-Chip-ACI-Spine/-Leaf) mit vPC-Hochverfügbarkeit, Segment Routing (SR/SRv6) und AI/ML-Fabric (RoCE/RDMA)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus-9300-gx-series-switches-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ }
+}
