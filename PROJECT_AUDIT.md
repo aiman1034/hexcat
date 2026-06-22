@@ -1972,6 +1972,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   vs 9364C-GX 100G/QSFP28/2HE high-density vs 93600CD-GX mixed-optics spine+leaf. gate.py L1–L6 + S.1–S.6 PASS 0
   violations; content-floor 3/3; closer 3/3; Main 4 / Attributes 44. gate_completeness +`Cisco_Nexus9300_GX_switches`
   (captured 3 = enumerated 3). **Cisco switch total now 121** (Catalyst 93 + Nexus 28). Next: D2 = GX2 (4 × 800G/400G).
+- **TRANSCEIVERS — Cisco NEW-227 FAQ §5-UWG fix (2026-06-20, commit da9d837).** The 227-batch FAQ
+  (`final_transceiver_output/Cisco_NEW_227/Hexwaren_FAQ_Cisco.csv`) carried a per-SKU **origin/condition self-promo Q**
+  ("Ist dies ein originales Cisco-Modul? … Original Cisco-Neuware aus dem autorisierten Distributionskanal — versiegelt…")
+  → breaks §5 UWG (condition/provenance prohibition) + the no-self-promo rule. Local text surgery: deleted that Q from
+  all 227, **regenerated 6–7 purely-technical FAQs per SKU grounded in the Attributes CSV** (Datenrate/Standard,
+  Formfaktor+Anschluss, Reichweite/Länge, DOM, Betriebstemp, Anwendung, Stromversorgung). Reformatted to the NEW
+  **3-column** contract `Artikelnummer,Attributname(=FAQ),Attributwert` (Q||A / ## / col3 double-quoted), BOM+CRLF+comma.
+  Verified: 227 SKUs (0 drop), 6–7 each (3–10 range), no dup Q, **forbidden-token grep = 0**. **⚠ CATALOG-WIDE RISK
+  (flag for remediation):** the identical origin/condition authenticity-FAQ (+ "versiegelt"/"Neuware"/sourcing tokens) is
+  the **standard composer pattern** — it is present in the SOURCE `final_transceiver_output/Cisco/`, every other
+  transceiver brand bundle, AND every switch bundle authored this session (the "Ist dies ein originales Cisco-Produkt? …
+  versiegelt geliefert" FAQ + the "Original {Hersteller}-… versiegelte Original-Neuware" closer). **All emitted bundles
+  need the same §5-UWG scrub** (FAQ self-promo Q + the condition/provenance tokens in FAQ/Beschreibung/closer) before going
+  live — a separate, catalog-wide pass.
 
 ---
 
