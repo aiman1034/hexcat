@@ -1986,6 +1986,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   versiegelt geliefert" FAQ + the "Original {Hersteller}-… versiegelte Original-Neuware" closer). **All emitted bundles
   need the same §5-UWG scrub** (FAQ self-promo Q + the condition/provenance tokens in FAQ/Beschreibung/closer) before going
   live — a separate, catalog-wide pass.
+- **TRANSCEIVERS — Cisco NEW-227 PRICING + FAQ finalise (2026-06-22).** Filled a positive genuine-Cisco net price (Netto-VK,
+  ex-VAT) for **all 227** SKUs in `final_transceiver_output/Cisco_NEW_227/` — previously every SKU was 0,00 (un-listable under
+  the oversell model). **Phase-1 market-anchored estimation** (Phase-2 BrokerBin refinement later); blocked on COMPLETENESS +
+  CORRECT genuine anchoring, not perfect accuracy. **Method:** grouped the 227 by form-factor+speed+reach into ~22 families,
+  found ONE genuine-Cisco anchor per family (residential web access — WebSearch + reseller pages; itprice/router-switch/Senetic
+  bot-block the datacenter IP, so anchors came from WebSearch snippets + eBay genuine new-sealed listings + GPL list prices),
+  applied across variants with reach (SR<LR<ER<ZR) + DAC/AOC length scaling. **Genuine-Cisco-ONLY anchor rule enforced**
+  (compatible/refurb explicitly ignored: e.g. 800G compat $1.4k IGNORED → genuine €6.5k; DAC compat $20 IGNORED → genuine €110+).
+  **Key anchors:** calibration **SFP-10G-SR = €198 netto** (operator-verified @ Senetic); GLC-LH-SMD GPL $1.174; QSFP-40G-SR4
+  genuine $167; QSFP-100G-SR4-S genuine ~€480; QSFP-200G-SR4-S genuine regular $3.058; QDD-400G-DR4-S genuine new-sealed (eBay
+  w/holo) ~€2.4k; OSFP-800G-DR8 genuine ~€6.5k; **CPAK-100G-LR4 genuine $10.3–12k** (premium EOL — corrected far up from the
+  naive ~€3k); coherent CFP2-DCO 400G ~$6.5k (DP04* class €4.5–9.5k). **Files (overwrite):** `Hexwaren_Cisco_Transceivers_Prices.csv`
+  (2-col `Artikelnummer;Netto-VK`, **`;`-sep, UTF-8 BOM, CRLF, German decimal** `2.400,00`) + provenance log
+  `Verification_Log_Cisco_Transceivers_Prices.csv` (5-col `,`-sep BOM: PN, Netto-VK, Anker-Quelle, Methode, Anker-PN). **Verify:**
+  227/227 priced, **grep `;0,00` = 0**, exact Main↔Prices set match (0 missing/extra), **8 direkt / 219 geschätzt-aus-Vergleich**
+  (the prescribed one-anchor-per-family-then-apply method), range €40 (MGBT1 SB-copper) – €11.000 (CPAK-10X10G-LR), median €550.
+  **FAQ re-verified** (`Hexwaren_FAQ_Cisco.csv`, unchanged since da9d837): 227 SKUs, 6–7 FAQs each, forbidden-token grep = 0,
+  3-col contract intact — left as-is (clean). Build script `_scratch/cisco227_pricing.py` (gitignored). **STANDING:** the
+  genuine-Cisco-only anchor rule + the §5-UWG FAQ rules now apply to every future pricing/FAQ batch.
 
 ---
 
