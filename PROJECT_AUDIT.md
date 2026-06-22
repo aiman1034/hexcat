@@ -1959,7 +1959,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Tbit/s (3,6/2,16; 696G Gbit/s); Durchsatz 1,2 Bpps / 517 Mpps (GC). 93180YC-FX3 vs FX3S differentiated (FX3S = CloudSec +
   G.8273.2-Class-B SyncE + NX-OS-only). gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 6/6; closer 6/6; Main 7 /
   Attributes 91. gate_completeness +`Cisco_Nexus9300_FX3_switches` (captured 6 = enumerated 6). No EoS (current/latest gen).
-  **Cisco switch total now 118** (Catalyst 93 + Nexus 25: 9200 8 + EX/FX 6 + FX2 5 + FX3/FX3S 6). Nexus 9300 fixed line complete.
+  **Cisco switch total now 118** (Catalyst 93 + Nexus 25: 9200 8 + EX/FX 6 + FX2 5 + FX3/FX3S 6). Nexus 9300 **1/10/25G** fixed line complete (the 400G GX/GX2 tier follows in D1/D2).
+- **SWITCH AUTHORING — Nexus 9300-GX (3, sub-batch D1, first-gen 400G) DONE (2026-06-20, commit a5db9d6).** Grounded from
+  `nexus9300_gx_harvest_source.md` (ds Sep 2025, current). → `output/switches/Cisco_Nexus9300_GX/`. 3 models: 9316D-GX,
+  93600CD-GX, 9364C-GX. Composer `_scratch/nexus9300_gx_author.py`. **Clean batch (like FX2):** PoE Nein all, all
+  VXLAN-capable, **all current → NO EoS flag** (the online EoS notices are for the *older* 9364C/9332C spines, not these
+  GX). Same Nexus rules. Attr-split **2×14 + 1×15**: 9316D-GX (16× QSFP-DD) + 9364C-GX (64× QSFP28) = uniform spines →
+  omit Uplink-Ports; 93600CD-GX (28× QSFP28 + 8× QSFP-DD) = split → 15. Portanzahl = total (16/36/64). **400G headline:**
+  first fixed Nexus 9000 with QSFP-DD 400G (abwärtskompatibel 40/100G), 80 MB Puffer, Single-Chip-ACI Spine *und* Leaf.
+  SwK Tbit/s explicit (**12,8 / 12** — rendered "12 Tbit/s", not "12,0"); Durchsatz Bpps (4,3/4,0). Betriebstemp 0–40 °C
+  (platform-standard — GX ds omits the temp row; HW-install-guide-confirmed). Differentiated: 9316D-GX 400G/QSFP-DD/1HE
+  vs 9364C-GX 100G/QSFP28/2HE high-density vs 93600CD-GX mixed-optics spine+leaf. gate.py L1–L6 + S.1–S.6 PASS 0
+  violations; content-floor 3/3; closer 3/3; Main 4 / Attributes 44. gate_completeness +`Cisco_Nexus9300_GX_switches`
+  (captured 3 = enumerated 3). **Cisco switch total now 121** (Catalyst 93 + Nexus 28). Next: D2 = GX2 (4 × 800G/400G).
 
 ---
 
