@@ -1925,6 +1925,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Attributes 90. gate_completeness +`Cisco_Nexus9300_EX_FX_switches` (captured 6 = enumerated 6). **⚠ EoS/sourcing FLAG
   (never-dropped, informational):** EX (2016–17 Cloud-Scale) likely EoS; FX (2018–19) EoL-approaching — confirm new-sealed
   sourcing before listing. **Cisco switch total now 107** (Catalyst 93 + Nexus 14: 9200 8 + 9300-EX/FX 6).
+- **SWITCH AUTHORING — Nexus 9300-FX2 fixed switches (5, sub-batch C1) DONE (2026-06-20, commit b144927).** Grounded from
+  `nexus9300_fx2_harvest_source.md` (ds c78-742282, Aug 2025 — **current**). → `output/switches/Cisco_Nexus9300_FX2/`.
+  5 models: 9336C-FX2, 9336C-FX2-E, 93240YC-FX2, 93360YC-FX2, 93216TC-FX2. Composer `_scratch/nexus9300_fx2_author.py`.
+  **The clean batch:** all 5 VXLAN-capable (no GC caveat), **all current → NO EoS flag**. Same Nexus rules (DC token,
+  Managed/L3, NX-OS, PoE Nein, Stacking Nein/vPC, Portanzahl=total fixed ports 36/36/60/108/108). Attr-split **2×14 + 3×15**:
+  9336C-FX2 + 9336C-FX2-E = uniform 36× QSFP28 spines → omit Uplink-Ports. **9336C-FX2 vs -FX2-E** differentiated: -E adds
+  flexible port-speed (1–100G) + 16/32G Fibre-Channel/SAN-Konvergenz (base has no FC). 93240YC-FX2 = 1.2RU (2.1") →
+  Bauform 19-Zoll (1 HE) + 1,2-RU note in Beschreibung; weight 10,0 kg (ds "2.2 lb" typo corrected). SwK Tbit/s explicit
+  (7,2/4,8/4,32); Durchsatz Bpps (2,4/2,5). gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 5/5; closer 5/5;
+  Main 6 / Attributes 74. gate_completeness +`Cisco_Nexus9300_FX2_switches` (captured 5 = enumerated 5). **Cisco switch
+  total now 112** (Catalyst 93 + Nexus 19: 9200 8 + EX/FX 6 + FX2 5). Next: sub-batch C2 = FX3/FX3S.
 
 ---
 
