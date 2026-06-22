@@ -1936,6 +1936,16 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (7,2/4,8/4,32); Durchsatz Bpps (2,4/2,5). gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 5/5; closer 5/5;
   Main 6 / Attributes 74. gate_completeness +`Cisco_Nexus9300_FX2_switches` (captured 5 = enumerated 5). **Cisco switch
   total now 112** (Catalyst 93 + Nexus 19: 9200 8 + EX/FX 6 + FX2 5). Next: sub-batch C2 = FX3/FX3S.
+- **CISCO TRANSCEIVERS — additive NEW-only import subset (2026-06-20, commit 795f6a8).** A JTL dry-run of the full 541
+  Cisco transceiver bundle returned 227 "existiert nicht" (new) + 314 "existiert bereits" (live). Built
+  `final_transceiver_output/Cisco_NEW_227/` = a **pure mechanical byte-for-byte row-subset** of
+  `final_transceiver_output/Cisco/` keeping only the 227 (from `cisco_transceiver_NEW_only_227.txt`) so only the new
+  SKUs import without touching the 314 live listings. NO re-authoring/regen/recompute — verified every output line is a
+  verbatim source line. 7 files mirror source set/names/byte-contract. **227-match: found 227 / MISSING 0 / EXTRA 0**;
+  subset integrity True. Main/PlatformFlag/Prices/Condition/FAQ 228 rows (1+227); Attributes/Verification_Log 2527
+  (1+2526). validate_dir (L1–L4 + B.1–B.8) PASS 0 violations (57 inherited near-dup-sibling warnings, unchanged). Prices
+  keeps the source's BOM (the final-bundle convention) per the byte-for-byte mandate — flagged in case no-BOM Prices is
+  later wanted. Source `Cisco/` (full 541) untouched.
 
 ---
 
