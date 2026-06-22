@@ -1946,6 +1946,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (1+2526). validate_dir (L1–L4 + B.1–B.8) PASS 0 violations (57 inherited near-dup-sibling warnings, unchanged). Prices
   keeps the source's BOM (the final-bundle convention) per the byte-for-byte mandate — flagged in case no-BOM Prices is
   later wanted. Source `Cisco/` (full 541) untouched.
+- **SWITCH AUTHORING — Nexus 9300-FX3/FX3S (6, sub-batch C2) DONE — FIRST PoE Nexus (2026-06-20, commit ab64d05).**
+  Grounded from `nexus9300_fx3_fx3s_harvest_source.md` (per-model FX3 `c78-744052` / FX3S `c78-744874` ds URL). →
+  `output/switches/Cisco_Nexus9300_FX3/`. 6 models: FX3 93180YC/93108TC/93108TC-FX3P/9348GC/9348GC-FX3PH + FX3S
+  93180YC-FX3S. Composer `_scratch/nexus9300_fx3_author.py`. **THE PoE BATCH — "PoE Nein for all Nexus" broke here, not
+  auto-filled:** PoE **Ja** on `93108TC-FX3P` (UPoE, bis 60 W, Budget 1.920 W, Ports 1–48) + `9348GC-FX3PH` (PoE++, bis
+  60 W, Budget 3.000 W, Ports 1–48); the other 4 = Nein. Per-port class + Ports-1–48 + budget in Beschreibung + a
+  dedicated PoE-FAQ; **S.1 holds** (both PoE models carry a PoE/UPoE/PoE++ token in Port-Konfiguration). Carve-outs:
+  VXLAN on the 4 leaves; **the 2 GC ToRs carry NO VXLAN claim**. **Betriebstemp `93108TC-FX3P` = 0–55 °C** (mGig-hardened);
+  other 5 = 0–40 °C (not uniformity-filled). Attr-split **6×15** (all split-port). Portanzahl = total fixed ports (all 54;
+  `9348GC-FX3PH` = 4-token 40+8+4+2, its 8× 10/100M **half-duplex legacy** ports noted in Beschreibung + an FAQ). SwK
+  Tbit/s (3,6/2,16; 696G Gbit/s); Durchsatz 1,2 Bpps / 517 Mpps (GC). 93180YC-FX3 vs FX3S differentiated (FX3S = CloudSec +
+  G.8273.2-Class-B SyncE + NX-OS-only). gate.py L1–L6 + S.1–S.6 PASS 0 violations; content-floor 6/6; closer 6/6; Main 7 /
+  Attributes 91. gate_completeness +`Cisco_Nexus9300_FX3_switches` (captured 6 = enumerated 6). No EoS (current/latest gen).
+  **Cisco switch total now 118** (Catalyst 93 + Nexus 25: 9200 8 + EX/FX 6 + FX2 5 + FX3/FX3S 6). Nexus 9300 fixed line complete.
 
 ---
 
