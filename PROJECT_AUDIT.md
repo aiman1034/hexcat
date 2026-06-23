@@ -2210,6 +2210,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   guess, anchored to actual listings per the genuine-OEM rule); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact.
   gate PASS. Manifest 16 model rows (P2) → reconciler **Cisco_1200 16/16**. **Coverage now: 202 built, 13
   families complete, 23%.**
+- **BUILD Catalyst IE3100 Rugged — family #5, FIRST industrial (2026-06-23), 11/11.** New family
+  `output/switches/Cisco_IE3100/` from `ie3100_harvest_source.md` (cisco.com DS 18-May-2026, current).
+  **FIRST use of the `Industrie-Switch` Kat-L3 token** — validate.py **S.5** enforces DIN-rail/Hutschiene
+  Bauform ⇒ Industrie-Switch (passing). Switch-Typ=Managed, Layer **L2** (inter-VLAN + static routing).
+  **OS = Cisco IOS XE + Network Essentials** (perpetual, all `-E`) + Cisco Catalyst Center/WebUI (Catalyst
+  Center optional, no Pflicht-Abo) — NOT SMB Linux/Business Dashboard (0 leaked). Kühlung **lüfterlos
+  (Konvektion)** ALL; Bauform **DIN-Schienen-Montage** ALL; Stromversorgung **doppelte DC-Eingänge
+  (12–54 V DC)**; Betriebstemp **-40 bis 75 °C** ALL; **Stacking Nein** ALL → ring resiliency (MRP/Fast
+  MRP/REP/G.8032) in prose (no StackWise/Single-IP leaked). PoE+ (802.3at) + **4PPoE/802.3bt 90 W on U
+  models**, max 240 W; Nein on T. Warranty **5 Jahre**; 256 VLANs, 8.000 MAC. SwK full-duplex Gbit/s
+  (12/20/24/40), Durchsatz Mpps; uniform 1G → **14 attrs** (verified {14}). **IE3105** (2 SKUs) lead with
+  **Layer-2-NAT (L2NAT)**; **-CC** = Conformal Coating. Single-closer (G5), §5-clean, no [VERIFY], S.3 holds.
+  Priced 11 genuine-new (industrial premium; refurb ignored; **3 direkt** [4T2S €810/$877, 8T2C €1.300/$1421,
+  8P2C €2.600/$2885] **/ 8 geschätzt**; monotonic port×PoE, PoE>data, 4PPoE>PoE+, IE3105/-CC premium,
+  **€810–2.900** — flagship 6P2U2C (2×90W-4PPoE) runs above the ~€2.500 guess); ungrouped, NO-BOM, 0 zeros,
+  Main↔Prices exact. gate PASS. **MANIFEST SPLIT:** the "IE3x00 ~45" lump → 6 named sub-families (IE3100
+  built; IE3200/IE3400H/IE3500 fixed-missing; **IE3300/IE3400 modular → DEFERRED with chassis**); families
+  in scope **44→49**. reconciler → **Cisco_IE3100 11/11**. **Coverage now: 213 built, 14 families complete, 24%.**
 
 ---
 
