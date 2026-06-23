@@ -2018,7 +2018,8 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   write `Verification_Log_<Brand>_Transceivers_Prices.csv` (5-col provenance). **DONE:** Arista (338, premium
   1,08×; 0 zeros, exact PN match; FAQ 5–8, forbidden 0; range €92–9.180, median €589) · Juniper (179,
   mainstream-premium 0,90×; 0 zeros; FAQ 7–8, forbidden 0; range €81–7.650, median €405) · Dell (156,
-  mainstream 0,80×; 0 zeros; FAQ 7–8, forbidden 0; range €68–6.000, median €392).
+  mainstream 0,80×; 0 zeros; FAQ 7–8, forbidden 0; range €68–6.000, median €392) · HPE/Aruba (140,
+  mainstream 0,85×; 0 zeros; FAQ 6–8, forbidden 0; range €76–6.375, median €348).
 
 ---
 
