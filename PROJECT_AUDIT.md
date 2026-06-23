@@ -2164,6 +2164,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   new-sealed EoS (first-gen monotonic €4.000→8.000, below the high-perf 9500; ungrouped, NO-BOM, 0 zeros, Main↔Prices
   exact). gate PASS, §5 grep 0, 420 tests. `gate_completeness` Cisco_9500 7→13; coverage now **131 built, 10 families
   complete, ~867 models, 15%**. (Coverage yaml reformatted by safe_dump when removing the phantom 24X — data intact.)
+- **BUILD Catalyst 1300 — family #2 (SMB), 28/28 (2026-06-23).** New family `output/switches/Cisco_1300/` from
+  `c1300_harvest_source.md` (C78-3659554-06, 28 models). **SMB schema (NOT the 9000/Nexus template):** Managed
+  Switch (L3) with SMB-tier dynamic L3 (RIPv2); **customized Linux OS** + Web-UI/Cisco Business Dashboard/mobile app
+  (NO IOS XE/NX-OS/DNA); **perpetual license + limited lifetime warranty**; **Front-Panel-Stacking per-model** (Ja on
+  -4X/MGP/X, Nein on -2G/-4G — not StackWise); PoE+ (802.3at) per-model budget (Nein on T); fanless vs 1-fan
+  per-model; compact (8/16-port) vs 19" (24/48/X); **SwK Gbit/s** (never Tbit/s), Durchsatz Mpps; attr-split 15
+  (-4X/MGP/12XT, 10G uplink) / 14 (-2G/-4G + X); Portanzahl computed from Port-Konfig (S.3 holds). Single-closer
+  (composer+G5), §5-clean, no [VERIFY]. **Betriebstemperatur 0–50 °C was NOT in the harvest → grounded from the Cisco
+  1300 datasheet/admin-guide via web** (cited in provenance, not invented). Priced 28 genuine-new-sealed (1300 is
+  **distributor-only** — Senetic/Bechtle EUR-net anchors: 8P-E €269, 48P-4G €969, 48FP-4G €1.487, 48P-4X €1.089,
+  48FP-4X €1.654, 24P-4G ~€540, 24XS ~€2.450; **7 direkt / 21 geschätzt**; monotonic by port×PoE×uplink, €170–2.550);
+  ungrouped, NO-BOM, 0 zeros, exact Main↔Prices. gate PASS; manifest count corrected ~30→**28** (P1), emitted as 28
+  model rows → reconciler **Cisco_1300 28/28**. **Coverage now: 159 built, 11 families complete, 18%.** (Catalyst
+  **1300X** — PoE++/25G/OSPF — is a SEPARATE series; flag as its own family if wanted, not folded in.)
 
 ---
 
