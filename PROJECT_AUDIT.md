@@ -2083,7 +2083,13 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   C9200L-48P-4G €2.400 router-switch) · Cisco_9350 (15; gate PASS; 2 direkt/13 geschätzt; €3.500–12.000;
   anchors C9350-48P €5.200 / C9350-48HX €11.000 Layer23-street, newest-gen Smart Switch) · Cisco_Nexus9200
   (8; gate PASS; 3 direkt/5 geschätzt; €6.000–17.500; anchors N9K-C9236C €17.500 ORM / C9272Q €13.000 /
-  C92160YC-X €9.500; DC-Leiter nach Kapazität).
+  C92160YC-X €9.500; DC-Leiter nach Kapazität) · Cisco_9500 (7; €4.000–28.000; 1 direkt; C9500-48Y4C €5.500
+  ORM, bis 400G-Core) · Cisco_Nexus9300_EX_FX (6; €7.000–10.000; 1 direkt; C93180YC-FX €9.000 ORM) ·
+  Cisco_Nexus9300_FX3 (6; €8.000–13.000; 0 direkt — von FX +20%; refurb/Liste ignoriert) ·
+  Cisco_Nexus9300_FX2 (5; €11.000–16.000; 1 direkt; C9336C-FX2 €13.000 CompSource) · Cisco_Nexus9300_GX
+  (3; €18.000–23.000; 1 direkt; C9316D-GX €19.500). **ALL 9 CISCO SWITCH FAMILIES DONE (121 models) — gate
+  PASS each; refurb/used/pre-owned ignored throughout; per-family commit. CAMPAIGN COMPLETE.** (MikroTik
+  switches out of scope — separate WIP with the known 39-vs-36 count issue.)
 
 ---
 
