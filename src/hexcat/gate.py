@@ -817,6 +817,29 @@ def check_banned_stem(bundle: Path) -> list:
     return out
 
 
+# G5: single-closer guard. The authenticity closer ("Originaler {Brand}-…") must appear EXACTLY ONCE
+# in a Beschreibung. The author wrote it AND reconcile appended it → verbatim double (caught on GX2).
+_CLOSER_COUNT = re.compile(r"\bOriginale[rs]?\b")
+
+
+def check_single_closer(bundle: Path) -> list:
+    """G5: HARD-fail any Beschreibung carrying the 'Originaler …' authenticity closer more than once
+    (composer double-closer guard — keep exactly one per SKU)."""
+    out = []
+    mh, mr = _main(bundle)
+    if not mh or "Artikelnummer" not in mh or "Beschreibung" not in mh:
+        return out
+    iA, iB = mh.index("Artikelnummer"), mh.index("Beschreibung")
+    for r in mr:
+        if len(r) > iB:
+            n = len(_CLOSER_COUNT.findall(re.sub(r"<[^>]+>", " ", r[iB])))
+            if n > 1:
+                out.append(Violation(bundle.name, r[iA] if len(r) > iA else "", "Beschreibung",
+                                     "exactly one authenticity closer", "%d closers" % n,
+                                     "G5: Beschreibung carries the 'Originaler …' closer %d times (composer double-closer)" % n))
+    return out
+
+
 def check_orphan_text(bundle: Path) -> list:
     """G4: HARD-fail text outside <p>…</p> in Kurzbeschreibung/Beschreibung (the 2×<p> count passed while
     a padding sentence sat AFTER </p>). Strip all <p>…</p>; any non-whitespace residue fires."""
@@ -872,6 +895,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     by["L1"] += check_html_wellformed(bundle)
     by["L1"] += check_orphan_text(bundle)   # G4: text outside <p>…</p> (byte-contract; cleared brands clean)
     by["L1"] += check_banned_stem(bundle)   # G3: §5-UWG condition/provenance claim stems in prose (HARD FAIL)
+    by["L1"] += check_single_closer(bundle)  # G5: exactly one 'Originaler …' authenticity closer per Beschreibung
     by["L4"] += check_grounding(bundle)
 
     for L in ("L1", "L2", "L3", "L4"):

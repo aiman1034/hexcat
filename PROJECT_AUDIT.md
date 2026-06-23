@@ -2136,6 +2136,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   PASS; Prices NO-BOM + ungrouped + 0 zeros + exact PN match; gate_completeness record added. **Coverage now: 125
   built (9 families complete), GX2 4/4.** (Chassis families 9400/9600/9610/Nexus-9408/9504/9508/9516/9800 untouched
   — await the chassis-modeling decision.)
+- **DOUBLE-CLOSER FIX — composer + gate guard (2026-06-23).** GX2's Beschreibung ended with the closer
+  "Originaler Cisco-Switch …" **verbatim twice** on all 4 models. Root cause: the author writes the closer in
+  intro[-1] AND `reconcile._compose_beschreibung` appends `_closer()` again — the §5 scrub had deduped existing
+  OUTPUT but never fixed the composer or added a gate check, so GX2 (fresh-built) regenerated it and the gate
+  passed it (same dead-code pattern as G3). **(1) Composer:** `_compose_beschreibung` now STRIPS any author-written
+  closer from intro[-1] before appending exactly one canonical closer (single source; handles every author script
+  uniformly). **(2) Gate G5:** `check_single_closer` HARD-fails any Beschreibung with the "Originaler …" closer >1×,
+  WIRED into `gate()` L1 — proven via negative test (injected double → gate FAIL, G5 fired; not dead code).
+  **(3) GX2 deduped:** re-authored (closer removed from intro[-1]) + re-emitted → single closer, Beschreibung 164 w
+  (in 90–175 floor), gate PASS, re-priced (NO-BOM ungrouped). **(4) Rescan:** 26 Main files, **0 SKUs with >1
+  closer** (scrubbed bundles still single; nothing else fresh carries it). 420 tests pass. **Single-closer-per-SKU
+  is now gate-enforced for every build.**
 
 ---
 

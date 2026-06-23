@@ -208,9 +208,13 @@ def _compose_beschreibung(intro: list[str], hersteller: str, kategorie3: str) ->
         raise ReconcileError("intro is empty — cannot compose Beschreibung")
     closer = _closer(hersteller, kategorie3)
     last = paras[-1].rstrip()
-    if not last.endswith((".", "!", "?")):
+    # Strip any authenticity closer the AUTHOR already appended to intro[-1] ("Originaler …Switch/
+    # Transceiver … .") so reconcile emits EXACTLY ONE closer — never the verbatim double that the
+    # author + this append previously produced (gate G5 enforces single-closer on every build).
+    last = re.sub(r"(?:\s*Originale[rs]?\b[^.!?]*[.!?])+\s*$", "", last).rstrip()
+    if last and not last.endswith((".", "!", "?")):
         last += "."
-    paras[-1] = f"{last} {closer}"
+    paras[-1] = f"{last} {closer}".strip()
     return "".join(f"<p>{p}</p>" for p in paras)
 
 
