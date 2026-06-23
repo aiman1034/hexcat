@@ -2120,6 +2120,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **STANDING RULE:** no "category complete" claim without citing `coverage_report.md`; complete = built ==
   in-scope manifest (deferred items listed, never silently dropped). **NOT building missing families yet —
   operator sets priority from the map.**
+- **DENOMINATOR VERIFY + BUILD GX2 (2026-06-23).** **Part A — cross-check:** verified the manifest vs Cisco
+  portfolio + Senetic/Bechtle; added 2 in-scope families the router-switch nav omitted — **Cisco SMB 350/550**
+  (SG/SF 350/350X/550X; EoS ~2021 but still channel-stocked new-sealed, flag-not-drop, ~40 PNs, P3) + **Cisco
+  Nexus 9800** (newest 800G modular DC, N9K-C9804/C9808, chassis lane, P2). Manifest now **44 families / ~868
+  in-scope models**. **Part B1 — Catalyst 9500 first-gen 7: BLOCKED (flagged, not built).** `c9500_harvest_source.md`
+  explicitly states the first-gen models (12Q/24Q/40X/48X/24X/16X-2Q/40X-2Q) are NOT in the current data sheet
+  ("must not be fabricated") — per the 1000% rule, await the auditor's archived first-gen 9500 data sheet. 9500
+  stays 7/14. **Part B2 — Nexus 9300-GX2: BUILT (4/4).** Authored from the cached `nexus9300_gx2_harvest_source.md`
+  into `output/switches/Cisco_Nexus9300_GX2/`, **§5-UWG-clean from the start** (no condition prose, single
+  "Originaler Cisco-Switch" closer — would otherwise fail the now-wired G3). 14-attr uniform spines (Portanzahl =
+  QSFP-DD count 32/32/48/64), Data-Center-Switch / Managed / L3 / NX-OS / PoE Nein / Stacking Nein / 0–40 °C;
+  SwK 25,6–51,2 Tbit/s. Priced genuine-new-sealed **geschätzt-aus-Vergleich** (anchored to 1st-gen GX €18–23k +
+  2nd-gen/2×-SwK premium → €27.000/29.000/36.000/44.000, monotonic; no clean GX2 listing — line very new). gate
+  PASS; Prices NO-BOM + ungrouped + 0 zeros + exact PN match; gate_completeness record added. **Coverage now: 125
+  built (9 families complete), GX2 4/4.** (Chassis families 9400/9600/9610/Nexus-9408/9504/9508/9516/9800 untouched
+  — await the chassis-modeling decision.)
 
 ---
 
