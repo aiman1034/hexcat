@@ -2090,6 +2090,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (3; €18.000–23.000; 1 direkt; C9316D-GX €19.500). **ALL 9 CISCO SWITCH FAMILIES DONE (121 models) — gate
   PASS each; refurb/used/pre-owned ignored throughout; per-family commit. CAMPAIGN COMPLETE.** (MikroTik
   switches out of scope — separate WIP with the known 39-vs-36 count issue.)
+- **PRICE FORMAT — catalog-wide UNGROUPED German decimal (2026-06-23).** The codebase deliberately used
+  ungrouped (`1899,00`); my pricing directives wrongly specified grouped (`1.899,00`), so both switch +
+  transceiver Prices shipped grouped. Pure REFORMAT (no re-price/re-anchor): stripped every thousands `.`
+  from the **Netto-VK column only** (PNs like `QSFP-100G-CU1.5M` + provenance text `$5.429`/URLs untouched)
+  across **47 files** — all `*_Prices.csv` + `Verification_Log_*_Prices.csv` in both trees. Verified: 0
+  numeric values changed (parsed before==after per file), grouped-value grep (`\d\.\d{3},\d{2}`) = 0,
+  byte-contracts preserved (switch Prices NO-BOM, transceiver Prices BOM), row counts + `;0,00`=0 unchanged.
+  `writers.py` `GERMAN_DECIMAL_RE` reverted to ungrouped-only `^\d+,\d{2}$` (hard-fails any future grouped
+  value); the `validate.py` `*_Prices` verification-role exclusion KEPT (format-independent). 420 tests pass;
+  all 9 switch bundles gate PASS under the ungrouped regex; transceiver bundles' price-format passes (0
+  grouped) — their residual L1-header/L5-cluster/L6-completeness flags are PRE-EXISTING + unrelated (those
+  bundles aren't gated as switch bundles are; the L5 identical-price clusters are the Phase-1 ladder siblings
+  sharing a price). **Ungrouped German decimal (no thousands separator) is now the standing Prices format.**
 
 ---
 

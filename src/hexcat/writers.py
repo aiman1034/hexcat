@@ -17,11 +17,11 @@ from pathlib import Path
 LINE_TERMINATOR = "\r\n"
 BOM = "﻿"
 
-# German decimal: comma decimal + OPTIONAL period thousands-grouping — the operator-specified
-# shop/JTL format ("1.899,00" / "12.500,00"), matching the emitted transceiver + switch Prices.
-# Superset of the old plain "\d+,\d{2}": ungrouped values (weights "13,00", "49,00", "0,00") still
-# validate; grouped prices now validate too. Malformed grouping ("2.9000,00") is still rejected.
-GERMAN_DECIMAL_RE = re.compile(r"^(\d{1,3}(\.\d{3})+|\d+),\d{2}$")
+# German decimal: comma decimal separator, NO thousands separator, exactly two decimals.
+# e.g. "1899,00", "14000,00", "49,00". Ungrouped is unambiguous to JTL-Ameise (a '.' would be
+# misread as a decimal point) and is the codebase's standing choice. Enforced on write AND in
+# validation — any grouped value ("1.899,00") HARD-FAILs the gate.
+GERMAN_DECIMAL_RE = re.compile(r"^\d+,\d{2}$")
 
 
 class GermanDecimalError(ValueError):
