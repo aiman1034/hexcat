@@ -2080,7 +2080,8 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   gate PASS; 4 direkt / 36 geschätzt-aus-Vergleich; €1.500–14.000; anchors C9300-48P €5.900 Bechtle,
   C9300-48UXM €10.500, C9300X-24Y €10.500 router-switch, C9300L-48P-4X €2.400 Amazon-NS) · Cisco_9200 (31;
   gate PASS; 3 direkt/28 geschätzt; €1.000–4.500; anchors C9200-48P €3.500 Bechtle, C9200CX-12P-2X2G €2.000,
-  C9200L-48P-4G €2.400 router-switch).
+  C9200L-48P-4G €2.400 router-switch) · Cisco_9350 (15; gate PASS; 2 direkt/13 geschätzt; €3.500–12.000;
+  anchors C9350-48P €5.200 / C9350-48HX €11.000 Layer23-street, newest-gen Smart Switch).
 
 ---
 
