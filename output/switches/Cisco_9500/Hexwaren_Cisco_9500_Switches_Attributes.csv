@@ -102,3 +102,87 @@ C9500X-60L4D,,Switch,Kühlung,"6 feldaustauschbare Lüfter (N+1, wählbare Lufts
 C9500X-60L4D,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
 C9500X-60L4D,,Switch,Betriebstemperatur,-5 bis 45 °C,14,Wertliste,Attribut
 C9500X-60L4D,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation, Cisco-SD-Access-Fabric (Border/Control-Plane) und StackWise-Virtual-Hochverfügbarkeits-Backbone",15,Wertliste,Attribut
+C9500-12Q,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-12Q,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-12Q,,Switch,Portanzahl,12,3,Wertliste,Attribut
+C9500-12Q,,Switch,Port-Konfiguration,12× 40G-QSFP+,4,Wertliste,Attribut
+C9500-12Q,,Switch,Port-Geschwindigkeit,40G,5,Wertliste,Attribut
+C9500-12Q,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-12Q,,Switch,Switching-Kapazität,480 Gbit/s,8,Wertliste,Attribut
+C9500-12Q,,Switch,Durchsatz,720 Mpps,9,Wertliste,Attribut
+C9500-12Q,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-12Q,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-12Q,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-12Q,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-12Q,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-12Q,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut
+C9500-24Q,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-24Q,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-24Q,,Switch,Portanzahl,24,3,Wertliste,Attribut
+C9500-24Q,,Switch,Port-Konfiguration,24× 40G-QSFP+,4,Wertliste,Attribut
+C9500-24Q,,Switch,Port-Geschwindigkeit,40G,5,Wertliste,Attribut
+C9500-24Q,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-24Q,,Switch,Switching-Kapazität,960 Gbit/s,8,Wertliste,Attribut
+C9500-24Q,,Switch,Durchsatz,"1,44 Bpps",9,Wertliste,Attribut
+C9500-24Q,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-24Q,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-24Q,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-24Q,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-24Q,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-24Q,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut
+C9500-40X,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-40X,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-40X,,Switch,Portanzahl,40,3,Wertliste,Attribut
+C9500-40X,,Switch,Port-Konfiguration,40× 10G-SFP+,4,Wertliste,Attribut
+C9500-40X,,Switch,Port-Geschwindigkeit,10G,5,Wertliste,Attribut
+C9500-40X,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-40X,,Switch,Switching-Kapazität,480 Gbit/s,8,Wertliste,Attribut
+C9500-40X,,Switch,Durchsatz,720 Mpps,9,Wertliste,Attribut
+C9500-40X,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-40X,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-40X,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-40X,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-40X,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-40X,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut
+C9500-48X,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-48X,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-48X,,Switch,Portanzahl,48,3,Wertliste,Attribut
+C9500-48X,,Switch,Port-Konfiguration,48× 10G-SFP+,4,Wertliste,Attribut
+C9500-48X,,Switch,Port-Geschwindigkeit,10G,5,Wertliste,Attribut
+C9500-48X,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-48X,,Switch,Switching-Kapazität,480 Gbit/s,8,Wertliste,Attribut
+C9500-48X,,Switch,Durchsatz,720 Mpps,9,Wertliste,Attribut
+C9500-48X,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-48X,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-48X,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-48X,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-48X,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-48X,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Portanzahl,42,3,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Port-Konfiguration,40× 10G-SFP+ + 2× 40G-QSFP+,4,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Port-Geschwindigkeit,10G (Uplink 40G),5,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Uplink-Ports,2× 40G-QSFP+,6,Wertliste,Attribut
+C9500-40X-2Q,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Switching-Kapazität,480 Gbit/s,8,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Durchsatz,720 Mpps,9,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-40X-2Q,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Layer,L3,2,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Portanzahl,18,3,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Port-Konfiguration,16× 10G-SFP+ + 2× 40G-QSFP+,4,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Port-Geschwindigkeit,10G (Uplink 40G),5,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Uplink-Ports,2× 40G-QSFP+,6,Wertliste,Attribut
+C9500-16X-2Q,,Switch,PoE,Nein,7,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Stromversorgung,"Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)",11,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Kühlung,"5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)",12,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Stacking,StackWise Virtual (2 Knoten),13,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+C9500-16X-2Q,,Switch,Anwendung,"Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)",15,Wertliste,Attribut

@@ -1186,5 +1186,997 @@
   },
   "beschreibung": "",
   "netto_vk": null
+ },
+ "C9500-12Q": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-12Q Catalyst-9500-Core-Switch (IOS XE, L3) – 12× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco C9500-12Q Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-12Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 12× 40G-QSFP+, Switching-Kapazität 480 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-12Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 12× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-12Q eine Switching-Kapazität von 480 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-12Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-12Q ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 12× 40G-QSFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Mit 12 nativen Ports erreicht der C9500-12Q eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 720 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-12Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-12Q laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-12Q unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-12Q ist der Einstieg in die 40-Gigabit-Core-Klasse mit 12 nativen 40G-QSFP+-Ports."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-12Q?",
+    "Der C9500-12Q bietet 12 native Ports: 12× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der C9500-12Q PoE?",
+    "Nein. Der C9500-12Q ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-12Q erreicht?",
+    "Der C9500-12Q nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-12Q?",
+    "Der C9500-12Q läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "C9500-24Q": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-24Q Catalyst-9500-Core-Switch (IOS XE, L3) – 24× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco C9500-24Q Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-24Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 24× 40G-QSFP+, Switching-Kapazität 960 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-24Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 24× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-24Q eine Switching-Kapazität von 960 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-24Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-24Q ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 24× 40G-QSFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Mit 24 nativen Ports erreicht der C9500-24Q eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 1,44 Bpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-24Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-24Q laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-24Q unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-24Q ist das dichteste First-Gen-40G-Core-Modell mit 24× 40G-QSFP+, 960 Gbit/s und 1,44 Mrd. Paketen/s."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-24Q?",
+    "Der C9500-24Q bietet 24 native Ports: 24× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der C9500-24Q PoE?",
+    "Nein. Der C9500-24Q ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-24Q erreicht?",
+    "Der C9500-24Q nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-24Q?",
+    "Der C9500-24Q läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1,44 Bpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "C9500-40X": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-40X Catalyst-9500-Core-Switch (IOS XE, L3) – 40× 10G-SFP+, 1 HE",
+  "titel_tag": "Cisco C9500-40X Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-40X (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 40× 10G-SFP+, Switching-Kapazität 480 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-40X ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 40× 10G-SFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-40X eine Switching-Kapazität von 480 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-40X über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-40X ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 40× 10G-SFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Mit 40 nativen Ports erreicht der C9500-40X eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 720 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-40X über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-40X laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-40X unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-40X bietet 40 native 10G-SFP+-Ports für die 10-Gigabit-Aggregation im Campus-Core."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-40X?",
+    "Der C9500-40X bietet 40 native Ports: 40× 10G-SFP+."
+   ],
+   [
+    "Unterstützt der C9500-40X PoE?",
+    "Nein. Der C9500-40X ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-40X erreicht?",
+    "Der C9500-40X nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-40X?",
+    "Der C9500-40X läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "C9500-48X": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-48X Catalyst-9500-Core-Switch (IOS XE, L3) – 48× 10G-SFP+, 1 HE",
+  "titel_tag": "Cisco C9500-48X Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-48X (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 48× 10G-SFP+, Switching-Kapazität 480 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-48X ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 48× 10G-SFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-48X eine Switching-Kapazität von 480 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-48X über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-48X ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 48× 10G-SFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Mit 48 nativen Ports erreicht der C9500-48X eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 720 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-48X über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-48X laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-48X unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-48X erreicht mit 40 festen 10G-SFP+ plus 8× 10G-Netzwerkmodul die maximale 10-Gigabit-Portdichte (48×10G) der First-Gen-Reihe."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-48X?",
+    "Der C9500-48X bietet 48 native Ports: 48× 10G-SFP+."
+   ],
+   [
+    "Unterstützt der C9500-48X PoE?",
+    "Nein. Der C9500-48X ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-48X erreicht?",
+    "Der C9500-48X nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-48X?",
+    "Der C9500-48X läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "C9500-40X-2Q": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-40X-2Q Catalyst-9500-Core-Switch (IOS XE, L3) – 40× 10G-SFP+ + 2× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco C9500-40X-2Q Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-40X-2Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 40× 10G-SFP+ + 2× 40G-QSFP+, Switching-Kapazität 480 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, …",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-40X-2Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 40× 10G-SFP+ + 2× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-40X-2Q eine Switching-Kapazität von 480 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-40X-2Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-40X-2Q ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 40× 10G-SFP+ + 2× 40G-QSFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Mit 42 nativen Ports erreicht der C9500-40X-2Q eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 720 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-40X-2Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-40X-2Q laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-40X-2Q unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-40X-2Q kombiniert 40× 10G-SFP+ mit zwei 40G-QSFP+-Uplinks (Netzwerkmodul) für 10G-Aggregation mit 40G-Anbindung."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-40X-2Q?",
+    "Der C9500-40X-2Q bietet 42 native Ports: 40× 10G-SFP+ + 2× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der C9500-40X-2Q PoE?",
+    "Nein. Der C9500-40X-2Q ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-40X-2Q erreicht?",
+    "Der C9500-40X-2Q nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-40X-2Q?",
+    "Der C9500-40X-2Q läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 10G-SFP+ + 2× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G (Uplink 40G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "C9500-16X-2Q": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco C9500-16X-2Q Catalyst-9500-Core-Switch (IOS XE, L3) – 16× 10G-SFP+ + 2× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco C9500-16X-2Q Catalyst 9500 Core-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco C9500-16X-2Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 16× 10G-SFP+ + 2× 40G-QSFP+, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
+  "artikelgewicht": "11,68",
+  "versandgewicht": "14,68",
+  "kurzbeschreibung": "<p>Der Cisco C9500-16X-2Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 16× 10G-SFP+ + 2× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-16X-2Q Core-Switching auf dem UADP-2.0-ASIC; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "intro": [
+   "Der Cisco C9500-16X-2Q ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 16× 10G-SFP+ + 2× 40G-QSFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
+   "Der C9500-16X-2Q bietet 18 native Ports; die genauen Werte für Switching-Kapazität und Weiterleitungsrate sind diesem Modell-Datenblatt zu entnehmen (im Quelldokument von 2017 nicht ausgewiesen); PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-16X-2Q laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-16X-2Q unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-16X-2Q ist die kompakte 16× 10G-SFP+-Variante mit zwei 40G-QSFP+-Uplinks (Netzwerkmodul)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9500 (IOS XE)",
+   "StackWise Virtual (2-Knoten)",
+   "SD-Access Fabric Border"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der C9500-16X-2Q?",
+    "Der C9500-16X-2Q bietet 18 native Ports: 16× 10G-SFP+ + 2× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der C9500-16X-2Q PoE?",
+    "Nein. Der C9500-16X-2Q ist ein Glasfaser-/QSFP-Core-Switch ohne PoE-Einspeisung; die Ports sind reine Daten-/Uplink-Ports."
+   ],
+   [
+    "Wie wird Hochverfügbarkeit beim C9500-16X-2Q erreicht?",
+    "Der C9500-16X-2Q nutzt Cisco StackWise Virtual (zwei Knoten zu einem logischen Switch über 40G-Links, MEC, SSO/NSF) statt klassischem Daten-Stacking."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9500-16X-2Q?",
+    "Der C9500-16X-2Q läuft unter Cisco IOS XE (16.5.1+) auf dem UADP-2.0-ASIC; Lizenzstufen Network Essentials/Advantage plus DNA."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "18"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 10G-SFP+ + 2× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G (Uplink 40G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (950 W AC, 1+1-redundant, Platinum)"
+   ],
+   [
+    "Kühlung",
+    "5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "StackWise Virtual (2 Knoten)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-Campus-Core und -Aggregation; Cisco SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT); StackWise-Virtual-Hochverfügbarkeits-Core; MPLS-L3VPN/MVPN; programmierbar via NETCONF/RESTCONF/YANG (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9500-16X-2Q",
+    "Switching-Kapazität+Durchsatz",
+    "post-2017-ds: 16X-2Q exakte Werte sind im Quelldatenblatt C78-738978-02 (2017) nicht ausgewiesen; bewusst ausgelassen statt geschätzt (flag-don't-fabricate); 16X-spezifisches Datenblatt/HW-Guide nachzureichen.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html"
+   ]
+  ]
  }
 }

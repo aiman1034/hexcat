@@ -2148,6 +2148,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (in 90–175 floor), gate PASS, re-priced (NO-BOM ungrouped). **(4) Rescan:** 26 Main files, **0 SKUs with >1
   closer** (scrubbed bundles still single; nothing else fresh carries it). 420 tests pass. **Single-closer-per-SKU
   is now gate-enforced for every build.**
+- **BUILD B1 — Catalyst 9500 first-gen → Cisco_9500 13/13 (2026-06-23).** **Reconciliation correction (the
+  operator's instruction had two factual errors I surfaced + fixed):** (a) **C9500-16X is ALREADY built** (one of
+  the existing 7, priced €4.000) — NOT rebuilt (would have duplicated it); (b) **C9500-24X is a PHANTOM** SKU (does
+  not exist) — removed from the coverage yaml, **NOT replaced with 16X** (which would re-add a built model). So the
+  real first-gen-missing = **6** (not 7), and the real C9500 family = **13 models, not 14** (the "14/14" target was
+  inflated by the phantom 24X + the already-built 16X). **Built the 6** into the EXISTING `output/switches/Cisco_9500/`
+  (MERGE → 13; the existing 7 came out **byte-identical** — diff = 6 insertions only — since the composer/scrub are
+  idempotent): 5 fully datasheet-grounded (C9500-12Q/24Q/40X/48X/40X-2Q from C78-738978-02) + **C9500-16X-2Q with
+  Switching-Kapazität+Durchsatz OMITTED & flagged** (post-2017-ds [VERIFY] — flag-don't-fabricate; rest grounded;
+  weight 11,68 kg conservative; 16X-specific datasheet to be couriered to backfill the 2 attrs). Catalyst rules
+  (Managed Switch (L3), IOS XE, StackWise Virtual, PoE Nein); SwK Gbit/s (480/960, NOT Tbit/s); Durchsatz 24Q=1,44
+  Bpps else Mpps; 14/15-attr split (40X-2Q/16X-2Q = 2×40G uplink). Single-closer (composer + G5). Priced genuine
+  new-sealed EoS (first-gen monotonic €4.000→8.000, below the high-perf 9500; ungrouped, NO-BOM, 0 zeros, Main↔Prices
+  exact). gate PASS, §5 grep 0, 420 tests. `gate_completeness` Cisco_9500 7→13; coverage now **131 built, 10 families
+  complete, ~867 models, 15%**. (Coverage yaml reformatted by safe_dump when removing the phantom 24X — data intact.)
 
 ---
 

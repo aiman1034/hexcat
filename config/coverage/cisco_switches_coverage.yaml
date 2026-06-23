@@ -1,1631 +1,1617 @@
-# Cisco fixed-switch COVERAGE MANIFEST — enumeration only (no content authoring).
-# Source: LOCAL cached Cisco PDFs (cisco.com 403s WebFetch/curl; couriered in). Image-only PDFs ->
-# pypdfium2 render -> visual read of og "Table 3 Switch ordering information" + ds "Table 2 Switch
-# configurations" (half-page crops; full-page reads garbled per SOURCE RULE #4).
-# UNIT = base hardware model: license suffix -E/-A/-M STRIPPED; uplink suffix (-4G/-4X/-2Q/-4Y/-2Y/-2X...)
-# = DISTINCT hardware (kept). EXCLUDED: NM/PWR/FAN/STACK/licenses/transceivers/Meraki-M.
-# cross-source: ds-only models tagged source_conflict + sourceable_new_sealed: verify.
-# CALIBRATION: C9300 = 40 (og Table3 32 + 8 ds-only; operator-confirmed include-all). C9200 = 31 (og=ds, no conflict).
 meta:
-  generated: "2026-06-20"
-  source_docs: [c9300-og.pdf, c9300-ds.pdf, c9200-og.pdf, c9200-ds.pdf]
-  calibration: {C9300: 40, C9200: 31}
+  generated: '2026-06-20'
+  source_docs:
+  - c9300-og.pdf
+  - c9300-ds.pdf
+  - c9200-og.pdf
+  - c9200-ds.pdf
+  calibration:
+    C9300: 40
+    C9200: 31
 switches:
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-12Y
-    ports: 12x 25G/10G/1G SFP28
-    poe_type: none
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-24Y
-    ports: 24x 25G/10G/1G SFP28
-    poe_type: none
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-24HX
-    ports: "24x mGig (10G/5G/2.5G/1G)"
-    poe_type: UPOE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-48HX
-    ports: "48x mGig (10G)"
-    poe_type: UPOE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-48HXN
-    ports: 36x 5G/mGig + 12x 10G
-    poe_type: UPOE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300X
-    base_pn: C9300X-48TX
-    ports: "48x mGig (10G)"
-    poe_type: data
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24T
-    ports: 24x 1G
-    poe_type: data
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24P
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24U
-    ports: 24x 1G
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24UX
-    ports: "24x mGig (10G)"
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24S
-    ports: 24x 1G SFP
-    poe_type: none
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24H
-    ports: 24x 1G
-    poe_type: UPOE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred; ds row has no license suffix)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24UB
-    ports: "24x 1G (deep buffer)"
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-24UXB
-    ports: "24x mGig (deep buffer)"
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48T
-    ports: 48x 1G
-    poe_type: data
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48P
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48U
-    ports: 48x 1G
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48UXM
-    ports: "48x (36x 2.5G + 12x mGig)"
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48UN
-    ports: 48x 5G mGig
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48H
-    ports: 48x 1G
-    poe_type: UPOE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48S
-    ports: 48x 1G SFP
-    poe_type: none
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300
-    base_pn: C9300-48UB
-    ports: "48x 1G (deep buffer)"
-    poe_type: UPOE
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24T-4G
-    ports: 24x 1G
-    poe_type: data
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24T-4X
-    ports: 24x 1G
-    poe_type: data
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48T-4G
-    ports: 48x 1G
-    poe_type: data
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48T-4X
-    ports: 48x 1G
-    poe_type: data
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24P-4G
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24P-4X
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48P-4G
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48P-4X
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48PF-4G
-    ports: 48x 1G
-    poe_type: full PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48PF-4X
-    ports: 48x 1G
-    poe_type: full PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24UXG-4X
-    ports: "24x (8x mGig + 16x 1G)"
-    poe_type: UPOE
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-24UXG-2Q
-    ports: "24x (8x mGig + 16x 1G)"
-    poe_type: UPOE
-    uplink: 2x40G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48UXG-4X
-    ports: "48x (12x mGig + 36x 1G)"
-    poe_type: UPOE
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300L
-    base_pn: C9300L-48UXG-2Q
-    ports: "48x (12x mGig + 36x 1G)"
-    poe_type: UPOE
-    uplink: 2x40G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A,M (inferred)"
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_table2
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9300LM
-    base_pn: C9300LM-24U-4Y
-    ports: 24x 1G
-    poe_type: UPOE
-    uplink: 4x25G fixed
-    form_factor: "Fixed 1U (shallow depth)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300LM
-    base_pn: C9300LM-48T-4Y
-    ports: 48x 1G
-    poe_type: data
-    uplink: 4x25G fixed
-    form_factor: "Fixed 1U (shallow depth)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300LM
-    base_pn: C9300LM-48U-4Y
-    ports: 48x 1G
-    poe_type: UPOE
-    uplink: 4x25G fixed
-    form_factor: "Fixed 1U (shallow depth)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9300LM
-    base_pn: C9300LM-48UX-4Y
-    ports: "48x (8x mGig + 40x 1G)"
-    poe_type: UPOE
-    uplink: 4x25G fixed
-    form_factor: "Fixed 1U (shallow depth)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-24T
-    ports: 24x 1G
-    poe_type: data
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-24P
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-24PB
-    ports: "24x 1G (enhanced VRF)"
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: A
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-48T
-    ports: 48x 1G
-    poe_type: data
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-48P
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-48PL
-    ports: 48x 1G
-    poe_type: partial PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-48PB
-    ports: "48x 1G (enhanced VRF)"
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: A
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-24PXG
-    ports: "24x (8x mGig + 16x 1G)"
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200
-    base_pn: C9200-48PXG
-    ports: "48x (8x mGig + 40x 1G)"
-    poe_type: PoE+
-    uplink: modular
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24T-4G
-    ports: 24x 1G
-    poe_type: data
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24T-4X
-    ports: 24x 1G
-    poe_type: data
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24P-4G
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24P-4X
-    ports: 24x 1G
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48T-4G
-    ports: 48x 1G
-    poe_type: data
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48T-4X
-    ports: 48x 1G
-    poe_type: data
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48P-4G
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48P-4X
-    ports: 48x 1G
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48PL-4G
-    ports: 48x 1G
-    poe_type: partial PoE+
-    uplink: 4x1G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48PL-4X
-    ports: 48x 1G
-    poe_type: partial PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24PXG-4X
-    ports: "24x (8x mGig + 16x 1G)"
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48PXG-4X
-    ports: "48x (12x mGig + 36x 1G)"
-    poe_type: PoE+
-    uplink: 4x10G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-24PXG-2Y
-    ports: "24x (8x mGig + 16x 1G)"
-    poe_type: PoE+
-    uplink: 2x25G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200L
-    base_pn: C9200L-48PXG-2Y
-    ports: "48x (8x mGig + 40x 1G)"
-    poe_type: PoE+
-    uplink: 2x25G fixed
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-12T-2X2G
-    ports: 12x 1G
-    poe_type: data
-    uplink: 2x10G SFP+ + 2x1G fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-12P-2X2G
-    ports: 12x 1G
-    poe_type: PoE+
-    uplink: 2x10G SFP+ + 2x1G fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-12P-2XGH
-    ports: "12x 1G (HVDC/AC)"
-    poe_type: PoE+
-    uplink: 2x10G SFP+ + 2x1G fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-8P-2X2G
-    ports: 8x 1G
-    poe_type: full PoE+
-    uplink: 2x10G SFP+ + 2x1G fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-8P-2XGH
-    ports: "8x 1G (HVDC/AC)"
-    poe_type: full PoE+
-    uplink: 2x10G SFP+ + 2x1G fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-8UXG-2X
-    ports: "8x (4x mGig + 4x 1G)"
-    poe_type: UPOE
-    uplink: 2x 1/10G SFP+ fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-8UXG-2XH
-    ports: "8x (4x mGig + 4x 1G) (HVDC/AC)"
-    poe_type: UPOE
-    uplink: 2x 1/10G SFP+ fixed
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9200CX
-    base_pn: C9200CX-8PT-2G
-    ports: "8x 1G (pass-through)"
-    poe_type: full PoE+
-    uplink: 2x1G + UPOE+ pass-through
-    form_factor: "Compact (fanless)"
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_table3+ds_table2
-  - family: Catalyst 9000
-    series: C9400
-    base_pn: C9404R
-    ports: "modular — 2 payload (line-card) slots"
-    poe_type: "modular (line-card dependent)"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 4-slot"
-    license_tiers: "n/a (license on supervisor/software)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_ordering+ds_table1
-  - family: Catalyst 9000
-    series: C9400
-    base_pn: C9407R
-    ports: "modular — 5 payload (line-card) slots"
-    poe_type: "modular (line-card dependent)"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 7-slot"
-    license_tiers: "n/a (license on supervisor/software)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_ordering+ds_table1
-  - family: Catalyst 9000
-    series: C9400
-    base_pn: C9410R
-    ports: "modular — 8 payload (line-card) slots"
-    poe_type: "modular (line-card dependent)"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 10-slot"
-    license_tiers: "n/a (license on supervisor/software)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: og_ordering+ds_table1
-  - family: Catalyst 9000
-    series: C9500X
-    base_pn: C9500X-28C8D
-    ports: "28x 100G QSFP28 + 8x 40/100/200/400G QSFP-DD"
-    poe_type: none
-    uplink: "8x 400G QSFP-DD (fixed)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500X
-    base_pn: C9500X-60L4D
-    ports: "60x 10/25/50G SFP56 + 4x 40/100/200/400G QSFP-DD"
-    poe_type: none
-    uplink: "4x 400G QSFP-DD (fixed)"
-    form_factor: Fixed 1U
-    license_tiers: A
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-32C
-    ports: 32x 100G QSFP28
-    poe_type: none
-    uplink: "fixed (100G)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-32QC
-    ports: "32x 40G / 16x 100G QSFP28"
-    poe_type: none
-    uplink: "fixed (40G/100G)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-24Y4C
-    ports: "24x 1/10/25G SFP28 + 4x 40/100G QSFP28"
-    poe_type: none
-    uplink: "4x 40/100G QSFP28 (fixed)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-48Y4C
-    ports: "48x 1/10/25G SFP28 + 4x 40/100G QSFP28"
-    poe_type: none
-    uplink: "4x 40/100G QSFP28 (fixed)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_switch_table+ds_model_list"
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-16X
-    ports: "16x 1/10G SFP+ (+ modular NM slot)"
-    poe_type: none
-    uplink: "modular NM slot (8x10G / 2x40G)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "og_switch_table+ds_model_list"
-    eol_note: 'EoS per Cisco EoL bulletin (C9500-16X Switch + NM C9500-NM-8X/NM-2Q); last-order-date 30-Apr-2026 (passed). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-12Q
-    ports: "12x 40G QSFP+"
-    poe_type: none
-    uplink: "fixed (40G QSFP+)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: og_switch_table
-    source_conflict: og_only_ds_removed_eos
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-24Q
-    ports: "24x 40G QSFP+"
-    poe_type: none
-    uplink: "fixed (40G QSFP+)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: og_switch_table
-    source_conflict: og_only_ds_removed_eos
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-40X
-    ports: "40x 1/10G SFP+ (+ modular NM slot)"
-    poe_type: none
-    uplink: "modular NM slot (8x10G / 2x40G)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: og_switch_table
-    source_conflict: og_only_ds_removed_eos
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-24X
-    ports: "24x 10G SFP+ (= C9500-16X + bundled 8x10G NM-8X)"
-    poe_type: none
-    uplink: via bundled NM-8X
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "og_switch_table+ds_model_list"
-    eol_note: 'EoS by composition (= C9500-16X + NM-8X; both in the C9500-16X/NM EoL bulletin, LDoS 30-Apr-2026). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-16X-2Q
-    ports: "16x 10G SFP+ + 2x 40G (= C9500-16X + bundled NM-2Q)"
-    poe_type: none
-    uplink: "2x 40G (bundled NM-2Q)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "og_switch_table+ds_model_list"
-    eol_note: 'EoS by composition (= C9500-16X + NM-2Q; both in the C9500-16X/NM EoL bulletin, LDoS 30-Apr-2026). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html'
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-48X
-    ports: "48x 10G SFP+ (= C9500-40X + bundled 8x10G NM-8X)"
-    poe_type: none
-    uplink: via bundled NM-8X
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: og_switch_table
-    source_conflict: og_only_ds_removed_eos
-  - family: Catalyst 9000
-    series: C9500
-    base_pn: C9500-40X-2Q
-    ports: "40x 10G SFP+ + 2x 40G (= C9500-40X + bundled NM-2Q)"
-    poe_type: none
-    uplink: "2x 40G (bundled NM-2Q)"
-    form_factor: Fixed 1U
-    license_tiers: "E,A"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: og_switch_table
-    source_conflict: og_only_ds_removed_eos
-  - family: Catalyst 9000
-    series: C9600
-    base_pn: C9606R
-    ports: "modular — 4 payload (line-card) slots"
-    poe_type: "modular (line-card dependent)"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 6-slot"
-    license_tiers: "n/a (license on supervisor/software)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_table1"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24T
-    ports: 24x 1G
-    poe_type: data
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24P
-    ports: 24x 1G
-    poe_type: "PoE+ (30W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24U
-    ports: 24x 1G
-    poe_type: "UPOE (60W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24S
-    ports: "24x 1G SFP (fiber)"
-    poe_type: none
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24HX
-    ports: "24x mGig (100M-10G)"
-    poe_type: "UPOE+ (90W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-24Y
-    ports: 24x 25G SFP28
-    poe_type: none
-    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_models_table
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-12Y
-    ports: 12x 25G SFP28
-    poe_type: none
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_models_table
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48T
-    ports: 48x 1G
-    poe_type: data
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48P
-    ports: 48x 1G
-    poe_type: "PoE+ (30W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48U
-    ports: 48x 1G
-    poe_type: "UPOE (60W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48S
-    ports: "48x 1G SFP (fiber)"
-    poe_type: none
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48HX
-    ports: "48x mGig (100M-10G)"
-    poe_type: "UPOE+ (90W)"
-    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48HXN
-    ports: "12x 10G mGig + 36x 5G mGig"
-    poe_type: "UPOE+ (90W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48TX
-    ports: "48x mGig (100M-10G)"
-    poe_type: data
-    uplink: "modular NM (up to 400G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_models_table"
-  - family: Catalyst 9000
-    series: C9350
-    base_pn: C9350-48HM
-    ports: "48x mGig (100M-2.5G)"
-    poe_type: "UPOE+ (90W)"
-    uplink: "modular NM (up to 200G; NM-2C/4C/8Y)"
-    form_factor: "Fixed 1U (stackable)"
-    license_tiers: unified
-    eol_status: active
-    sourceable_new_sealed: verify
-    source: ds_models_table
-    source_conflict: ds_only_not_in_ordering_guide
-  - family: Catalyst 9000
-    series: C9610
-    base_pn: C9610R
-    ports: "modular — 8 payload (line-card) slots"
-    poe_type: "modular (line-card dependent)"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 10-slot (8 line-card + 2 supervisor)"
-    license_tiers: "unified (Advantage)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "og_ordering+ds_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3
-    base_pn: N9K-C93180YC-FX3
-    marketing_name: 93180YC-FX3
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "6x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_table2+ordering_table11"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3
-    base_pn: N9K-C93108TC-FX3
-    marketing_name: 93108TC-FX3
-    ports: "48x 100M/1/10G BASE-T"
-    poe_type: none
-    uplink: "6x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_table2+ordering_table11"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3
-    base_pn: N9K-C93108TC-FX3P
-    marketing_name: 93108TC-FX3P
-    ports: "48x 100M/1/2.5/5/10G BASE-T (mGig)"
-    poe_type: "PoE (mGig copper)"
-    uplink: 6x 100G QSFP28
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_table2+ordering_table11"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3
-    base_pn: N9K-C9348GC-FX3
-    marketing_name: 9348GC-FX3
-    ports: "48x 100M/1G BASE-T"
-    poe_type: none
-    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_table2+ordering_table11"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3
-    base_pn: N9K-C9348GC-FX3PH
-    marketing_name: 9348GC-FX3PH
-    ports: "48x 100M/1G BASE-T (8x half-duplex)"
-    poe_type: "PoE (1G copper)"
-    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_table2+ordering_table11"
-  - family: Nexus 9000
-    series: Nexus 9300-EX
-    base_pn: N9K-C93180YC-EX
-    marketing_name: 93180YC-EX
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "6x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_model+ordering_table"
-    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.'
-  - family: Nexus 9000
-    series: Nexus 9300-EX
-    base_pn: N9K-C93108TC-EX
-    marketing_name: 93108TC-EX
-    ports: 48x 10G BASE-T
-    poe_type: none
-    uplink: "6x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_model+ordering_table"
-    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.'
-  - family: Nexus 9000
-    series: Nexus 9300-EX
-    base_pn: N9K-C93180LC-EX
-    marketing_name: 93180LC-EX
-    ports: "up to 32x 40/50G QSFP+ / 18x 100G QSFP28"
-    poe_type: none
-    uplink: "(integrated QSFP28 fabric)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_model+ordering_table"
-    eol_note: 'EoS per Cisco EoL bulletin dated 2023-01-18. New-sealed surplus only.'
-  - family: Nexus 9000
-    series: Nexus 9300-FX
-    base_pn: N9K-C93180YC-FX
-    marketing_name: 93180YC-FX
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "6x 40/100G QSFP28 (MACsec, Unified Ports)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_model+ordering_table"
-    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.'
-  - family: Nexus 9000
-    series: Nexus 9300-FX
-    base_pn: N9K-C93108TC-FX
-    marketing_name: 93108TC-FX
-    ports: 48x 10G BASE-T
-    poe_type: none
-    uplink: "6x 40/100G QSFP28 (MACsec)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_model+ordering_table"
-    eol_note: 'EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.'
-  - family: Nexus 9000
-    series: Nexus 9300-FX
-    base_pn: N9K-C9348GC-FXP
-    marketing_name: 9348GC-FXP
-    ports: "48x 100M/1G BASE-T"
-    poe_type: PoE
-    uplink: "4x 1/10/25G SFP28 + 2x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX2
-    base_pn: N9K-C9336C-FX2
-    marketing_name: 9336C-FX2
-    ports: "36x 40/100G QSFP28"
-    poe_type: none
-    uplink: "(integrated; 36x 40/100G)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX2
-    base_pn: N9K-C9336C-FX2-E
-    marketing_name: 9336C-FX2-E
-    ports: "36x 40/100G QSFP28"
-    poe_type: none
-    uplink: "(integrated; 36x 40/100G)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX2
-    base_pn: N9K-C93240YC-FX2
-    marketing_name: 93240YC-FX2
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "12x 40/100G QSFP28"
-    form_factor: Fixed 1.2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX2
-    base_pn: N9K-C93360YC-FX2
-    marketing_name: 93360YC-FX2
-    ports: "96x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "12x 40/100G QSFP28"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX2
-    base_pn: N9K-C93216TC-FX2
-    marketing_name: 93216TC-FX2
-    ports: "96x 100M/1/10G BASE-T"
-    poe_type: none
-    uplink: "12x 40/100G QSFP28"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-FX3S
-    base_pn: N9K-C93180YC-FX3S
-    marketing_name: 93180YC-FX3S
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "6x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX
-    base_pn: N9K-C9316D-GX
-    marketing_name: 9316D-GX
-    ports: "16x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated; spine)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX
-    base_pn: N9K-C93600CD-GX
-    marketing_name: 93600CD-GX
-    ports: "28x 100/40G QSFP28 + 8x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated; spine/leaf)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX
-    base_pn: N9K-C9364C-GX
-    marketing_name: 9364C-GX
-    ports: "64x 100/40G QSFP28"
-    poe_type: none
-    uplink: "(integrated; spine/leaf)"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX2
-    base_pn: N9K-C9332D-GX2B
-    marketing_name: 9332D-GX2B
-    ports: "32x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX2
-    base_pn: N9K-C9332D-GX2B-M
-    marketing_name: 9332D-GX2B-M
-    ports: "32x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX2
-    base_pn: N9K-C9348D-GX2A
-    marketing_name: 9348D-GX2A
-    ports: "48x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated)"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9300-GX2
-    base_pn: N9K-C9364D-GX2A
-    marketing_name: 9364D-GX2A
-    ports: "64x 400/100G QSFP-DD"
-    poe_type: none
-    uplink: "(integrated)"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_model+ordering_table"
-  - family: Nexus 9000
-    series: Nexus 9400
-    base_pn: N9K-C9408
-    marketing_name: 9408
-    ports: "modular — 8 linecard slots"
-    poe_type: "n/a"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Centralized modular chassis, 4RU/8-slot"
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: ds_ordering_table
-  - family: Nexus 9000
-    series: Nexus 9500
-    base_pn: N9K-C9504
-    marketing_name: 9504
-    ports: "modular — 4 slots"
-    poe_type: "n/a"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 4-slot"
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: ds_ordering_table
-  - family: Nexus 9000
-    series: Nexus 9500
-    base_pn: N9K-C9508
-    marketing_name: 9508
-    ports: "modular — 8 slots"
-    poe_type: "n/a"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 8-slot"
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: ds_ordering_table
-  - family: Nexus 9000
-    series: Nexus 9500
-    base_pn: N9K-C9516
-    marketing_name: 9516
-    ports: "modular — 16 slots"
-    poe_type: "n/a"
-    uplink: "modular (line-card dependent)"
-    form_factor: "Modular chassis, 16-slot"
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: ds_ordering_table
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C92160YC-X
-    marketing_name: 92160YC-X
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "6x 40G QSFP+ / 4x 100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Support 2026-03-31'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C92300YC
-    marketing_name: 92300YC
-    ports: "48x 1/10/25G SFP28"
-    poe_type: none
-    uplink: "18x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Support 2025-02-28'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C92304QC
-    marketing_name: 92304QC
-    ports: "56x 40G QSFP+"
-    poe_type: none
-    uplink: 8x 100G QSFP28
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Support 2024-08-31'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C9236C
-    marketing_name: 9236C
-    ports: "36x 40/100G QSFP28"
-    poe_type: none
-    uplink: "(integrated; spine)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Support 2025-02-28'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C9272Q
-    marketing_name: 9272Q
-    ports: "72x 40G QSFP+"
-    poe_type: none
-    uplink: "(integrated; spine)"
-    form_factor: Fixed 2RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Support 2025-09-30'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C92348GC-X
-    marketing_name: 92348GC-X
-    ports: "48x 100M/1G BASE-T"
-    poe_type: none
-    uplink: "4x 1/10/25G SFP28 + 2x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: "ds_platform_table1+ordering"
-    eol_note: 'End of Sale; support to 2030-08-31'
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C92348GC-FX3
-    marketing_name: 92348GC-FX3
-    ports: "48x 100M/1G BASE-T"
-    poe_type: none
-    uplink: "4x 10/25G SFP28 + 2x 40/100G QSFP28"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: active
-    sourceable_new_sealed: Y
-    source: "ds_platform_table1+ordering"
-  - family: Nexus 9000
-    series: Nexus 9200
-    base_pn: N9K-C9232C
-    marketing_name: 9232C
-    ports: "32x 40/100G QSFP28"
-    poe_type: none
-    uplink: "(integrated; spine)"
-    form_factor: Fixed 1RU
-    license_tiers: "NX-OS (separate license)"
-    eol_status: EoS
-    sourceable_new_sealed: verify
-    source: ds_9232c_standalone
-    eol_note: 'retired - off Cisco active support listing'
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-12Y
+  ports: 12x 25G/10G/1G SFP28
+  poe_type: none
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-24Y
+  ports: 24x 25G/10G/1G SFP28
+  poe_type: none
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-24HX
+  ports: 24x mGig (10G/5G/2.5G/1G)
+  poe_type: UPOE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-48HX
+  ports: 48x mGig (10G)
+  poe_type: UPOE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-48HXN
+  ports: 36x 5G/mGig + 12x 10G
+  poe_type: UPOE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300X
+  base_pn: C9300X-48TX
+  ports: 48x mGig (10G)
+  poe_type: data
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24T
+  ports: 24x 1G
+  poe_type: data
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24P
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24U
+  ports: 24x 1G
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24UX
+  ports: 24x mGig (10G)
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24S
+  ports: 24x 1G SFP
+  poe_type: none
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24H
+  ports: 24x 1G
+  poe_type: UPOE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred; ds row has no license suffix)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24UB
+  ports: 24x 1G (deep buffer)
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-24UXB
+  ports: 24x mGig (deep buffer)
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48T
+  ports: 48x 1G
+  poe_type: data
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48P
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48U
+  ports: 48x 1G
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48UXM
+  ports: 48x (36x 2.5G + 12x mGig)
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48UN
+  ports: 48x 5G mGig
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48H
+  ports: 48x 1G
+  poe_type: UPOE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48S
+  ports: 48x 1G SFP
+  poe_type: none
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300
+  base_pn: C9300-48UB
+  ports: 48x 1G (deep buffer)
+  poe_type: UPOE
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24T-4G
+  ports: 24x 1G
+  poe_type: data
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24T-4X
+  ports: 24x 1G
+  poe_type: data
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48T-4G
+  ports: 48x 1G
+  poe_type: data
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48T-4X
+  ports: 48x 1G
+  poe_type: data
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24P-4G
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24P-4X
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48P-4G
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48P-4X
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48PF-4G
+  ports: 48x 1G
+  poe_type: full PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48PF-4X
+  ports: 48x 1G
+  poe_type: full PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24UXG-4X
+  ports: 24x (8x mGig + 16x 1G)
+  poe_type: UPOE
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-24UXG-2Q
+  ports: 24x (8x mGig + 16x 1G)
+  poe_type: UPOE
+  uplink: 2x40G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48UXG-4X
+  ports: 48x (12x mGig + 36x 1G)
+  poe_type: UPOE
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300L
+  base_pn: C9300L-48UXG-2Q
+  ports: 48x (12x mGig + 36x 1G)
+  poe_type: UPOE
+  uplink: 2x40G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A,M (inferred)
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_table2
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9300LM
+  base_pn: C9300LM-24U-4Y
+  ports: 24x 1G
+  poe_type: UPOE
+  uplink: 4x25G fixed
+  form_factor: Fixed 1U (shallow depth)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300LM
+  base_pn: C9300LM-48T-4Y
+  ports: 48x 1G
+  poe_type: data
+  uplink: 4x25G fixed
+  form_factor: Fixed 1U (shallow depth)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300LM
+  base_pn: C9300LM-48U-4Y
+  ports: 48x 1G
+  poe_type: UPOE
+  uplink: 4x25G fixed
+  form_factor: Fixed 1U (shallow depth)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9300LM
+  base_pn: C9300LM-48UX-4Y
+  ports: 48x (8x mGig + 40x 1G)
+  poe_type: UPOE
+  uplink: 4x25G fixed
+  form_factor: Fixed 1U (shallow depth)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-24T
+  ports: 24x 1G
+  poe_type: data
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-24P
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-24PB
+  ports: 24x 1G (enhanced VRF)
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-48T
+  ports: 48x 1G
+  poe_type: data
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-48P
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-48PL
+  ports: 48x 1G
+  poe_type: partial PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-48PB
+  ports: 48x 1G (enhanced VRF)
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-24PXG
+  ports: 24x (8x mGig + 16x 1G)
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200
+  base_pn: C9200-48PXG
+  ports: 48x (8x mGig + 40x 1G)
+  poe_type: PoE+
+  uplink: modular
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24T-4G
+  ports: 24x 1G
+  poe_type: data
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24T-4X
+  ports: 24x 1G
+  poe_type: data
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24P-4G
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24P-4X
+  ports: 24x 1G
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48T-4G
+  ports: 48x 1G
+  poe_type: data
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48T-4X
+  ports: 48x 1G
+  poe_type: data
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48P-4G
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48P-4X
+  ports: 48x 1G
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48PL-4G
+  ports: 48x 1G
+  poe_type: partial PoE+
+  uplink: 4x1G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48PL-4X
+  ports: 48x 1G
+  poe_type: partial PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24PXG-4X
+  ports: 24x (8x mGig + 16x 1G)
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48PXG-4X
+  ports: 48x (12x mGig + 36x 1G)
+  poe_type: PoE+
+  uplink: 4x10G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-24PXG-2Y
+  ports: 24x (8x mGig + 16x 1G)
+  poe_type: PoE+
+  uplink: 2x25G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200L
+  base_pn: C9200L-48PXG-2Y
+  ports: 48x (8x mGig + 40x 1G)
+  poe_type: PoE+
+  uplink: 2x25G fixed
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-12T-2X2G
+  ports: 12x 1G
+  poe_type: data
+  uplink: 2x10G SFP+ + 2x1G fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-12P-2X2G
+  ports: 12x 1G
+  poe_type: PoE+
+  uplink: 2x10G SFP+ + 2x1G fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-12P-2XGH
+  ports: 12x 1G (HVDC/AC)
+  poe_type: PoE+
+  uplink: 2x10G SFP+ + 2x1G fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-8P-2X2G
+  ports: 8x 1G
+  poe_type: full PoE+
+  uplink: 2x10G SFP+ + 2x1G fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-8P-2XGH
+  ports: 8x 1G (HVDC/AC)
+  poe_type: full PoE+
+  uplink: 2x10G SFP+ + 2x1G fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-8UXG-2X
+  ports: 8x (4x mGig + 4x 1G)
+  poe_type: UPOE
+  uplink: 2x 1/10G SFP+ fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-8UXG-2XH
+  ports: 8x (4x mGig + 4x 1G) (HVDC/AC)
+  poe_type: UPOE
+  uplink: 2x 1/10G SFP+ fixed
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9200CX
+  base_pn: C9200CX-8PT-2G
+  ports: 8x 1G (pass-through)
+  poe_type: full PoE+
+  uplink: 2x1G + UPOE+ pass-through
+  form_factor: Compact (fanless)
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_table3+ds_table2
+- family: Catalyst 9000
+  series: C9400
+  base_pn: C9404R
+  ports: modular — 2 payload (line-card) slots
+  poe_type: modular (line-card dependent)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 4-slot
+  license_tiers: n/a (license on supervisor/software)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_table1
+- family: Catalyst 9000
+  series: C9400
+  base_pn: C9407R
+  ports: modular — 5 payload (line-card) slots
+  poe_type: modular (line-card dependent)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 7-slot
+  license_tiers: n/a (license on supervisor/software)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_table1
+- family: Catalyst 9000
+  series: C9400
+  base_pn: C9410R
+  ports: modular — 8 payload (line-card) slots
+  poe_type: modular (line-card dependent)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 10-slot
+  license_tiers: n/a (license on supervisor/software)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_table1
+- family: Catalyst 9000
+  series: C9500X
+  base_pn: C9500X-28C8D
+  ports: 28x 100G QSFP28 + 8x 40/100/200/400G QSFP-DD
+  poe_type: none
+  uplink: 8x 400G QSFP-DD (fixed)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500X
+  base_pn: C9500X-60L4D
+  ports: 60x 10/25/50G SFP56 + 4x 40/100/200/400G QSFP-DD
+  poe_type: none
+  uplink: 4x 400G QSFP-DD (fixed)
+  form_factor: Fixed 1U
+  license_tiers: A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-32C
+  ports: 32x 100G QSFP28
+  poe_type: none
+  uplink: fixed (100G)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-32QC
+  ports: 32x 40G / 16x 100G QSFP28
+  poe_type: none
+  uplink: fixed (40G/100G)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-24Y4C
+  ports: 24x 1/10/25G SFP28 + 4x 40/100G QSFP28
+  poe_type: none
+  uplink: 4x 40/100G QSFP28 (fixed)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-48Y4C
+  ports: 48x 1/10/25G SFP28 + 4x 40/100G QSFP28
+  poe_type: none
+  uplink: 4x 40/100G QSFP28 (fixed)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_switch_table+ds_model_list
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-16X
+  ports: 16x 1/10G SFP+ (+ modular NM slot)
+  poe_type: none
+  uplink: modular NM slot (8x10G / 2x40G)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table+ds_model_list
+  eol_note: EoS per Cisco EoL bulletin (C9500-16X Switch + NM C9500-NM-8X/NM-2Q); last-order-date 30-Apr-2026 (passed). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-12Q
+  ports: 12x 40G QSFP+
+  poe_type: none
+  uplink: fixed (40G QSFP+)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table
+  source_conflict: og_only_ds_removed_eos
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-24Q
+  ports: 24x 40G QSFP+
+  poe_type: none
+  uplink: fixed (40G QSFP+)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table
+  source_conflict: og_only_ds_removed_eos
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-40X
+  ports: 40x 1/10G SFP+ (+ modular NM slot)
+  poe_type: none
+  uplink: modular NM slot (8x10G / 2x40G)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table
+  source_conflict: og_only_ds_removed_eos
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-16X-2Q
+  ports: 16x 10G SFP+ + 2x 40G (= C9500-16X + bundled NM-2Q)
+  poe_type: none
+  uplink: 2x 40G (bundled NM-2Q)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table+ds_model_list
+  eol_note: EoS by composition (= C9500-16X + NM-2Q; both in the C9500-16X/NM EoL bulletin, LDoS 30-Apr-2026). https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/c9500-16x-switch-nm-c9500-nm-8x-nm-2q-eol.html
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-48X
+  ports: 48x 10G SFP+ (= C9500-40X + bundled 8x10G NM-8X)
+  poe_type: none
+  uplink: via bundled NM-8X
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table
+  source_conflict: og_only_ds_removed_eos
+- family: Catalyst 9000
+  series: C9500
+  base_pn: C9500-40X-2Q
+  ports: 40x 10G SFP+ + 2x 40G (= C9500-40X + bundled NM-2Q)
+  poe_type: none
+  uplink: 2x 40G (bundled NM-2Q)
+  form_factor: Fixed 1U
+  license_tiers: E,A
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: og_switch_table
+  source_conflict: og_only_ds_removed_eos
+- family: Catalyst 9000
+  series: C9600
+  base_pn: C9606R
+  ports: modular — 4 payload (line-card) slots
+  poe_type: modular (line-card dependent)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 6-slot
+  license_tiers: n/a (license on supervisor/software)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_table1
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24T
+  ports: 24x 1G
+  poe_type: data
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24P
+  ports: 24x 1G
+  poe_type: PoE+ (30W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24U
+  ports: 24x 1G
+  poe_type: UPOE (60W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24S
+  ports: 24x 1G SFP (fiber)
+  poe_type: none
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24HX
+  ports: 24x mGig (100M-10G)
+  poe_type: UPOE+ (90W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-24Y
+  ports: 24x 25G SFP28
+  poe_type: none
+  uplink: modular NM (up to 400G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_models_table
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-12Y
+  ports: 12x 25G SFP28
+  poe_type: none
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_models_table
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48T
+  ports: 48x 1G
+  poe_type: data
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48P
+  ports: 48x 1G
+  poe_type: PoE+ (30W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48U
+  ports: 48x 1G
+  poe_type: UPOE (60W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48S
+  ports: 48x 1G SFP (fiber)
+  poe_type: none
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48HX
+  ports: 48x mGig (100M-10G)
+  poe_type: UPOE+ (90W)
+  uplink: modular NM (up to 400G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48HXN
+  ports: 12x 10G mGig + 36x 5G mGig
+  poe_type: UPOE+ (90W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48TX
+  ports: 48x mGig (100M-10G)
+  poe_type: data
+  uplink: modular NM (up to 400G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_models_table
+- family: Catalyst 9000
+  series: C9350
+  base_pn: C9350-48HM
+  ports: 48x mGig (100M-2.5G)
+  poe_type: UPOE+ (90W)
+  uplink: modular NM (up to 200G; NM-2C/4C/8Y)
+  form_factor: Fixed 1U (stackable)
+  license_tiers: unified
+  eol_status: active
+  sourceable_new_sealed: verify
+  source: ds_models_table
+  source_conflict: ds_only_not_in_ordering_guide
+- family: Catalyst 9000
+  series: C9610
+  base_pn: C9610R
+  ports: modular — 8 payload (line-card) slots
+  poe_type: modular (line-card dependent)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 10-slot (8 line-card + 2 supervisor)
+  license_tiers: unified (Advantage)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: og_ordering+ds_table
+- family: Nexus 9000
+  series: Nexus 9300-FX3
+  base_pn: N9K-C93180YC-FX3
+  marketing_name: 93180YC-FX3
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 6x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_table2+ordering_table11
+- family: Nexus 9000
+  series: Nexus 9300-FX3
+  base_pn: N9K-C93108TC-FX3
+  marketing_name: 93108TC-FX3
+  ports: 48x 100M/1/10G BASE-T
+  poe_type: none
+  uplink: 6x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_table2+ordering_table11
+- family: Nexus 9000
+  series: Nexus 9300-FX3
+  base_pn: N9K-C93108TC-FX3P
+  marketing_name: 93108TC-FX3P
+  ports: 48x 100M/1/2.5/5/10G BASE-T (mGig)
+  poe_type: PoE (mGig copper)
+  uplink: 6x 100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_table2+ordering_table11
+- family: Nexus 9000
+  series: Nexus 9300-FX3
+  base_pn: N9K-C9348GC-FX3
+  marketing_name: 9348GC-FX3
+  ports: 48x 100M/1G BASE-T
+  poe_type: none
+  uplink: 4x 10/25G SFP28 + 2x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_table2+ordering_table11
+- family: Nexus 9000
+  series: Nexus 9300-FX3
+  base_pn: N9K-C9348GC-FX3PH
+  marketing_name: 9348GC-FX3PH
+  ports: 48x 100M/1G BASE-T (8x half-duplex)
+  poe_type: PoE (1G copper)
+  uplink: 4x 10/25G SFP28 + 2x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_table2+ordering_table11
+- family: Nexus 9000
+  series: Nexus 9300-EX
+  base_pn: N9K-C93180YC-EX
+  marketing_name: 93180YC-EX
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 6x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_model+ordering_table
+  eol_note: EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.
+- family: Nexus 9000
+  series: Nexus 9300-EX
+  base_pn: N9K-C93108TC-EX
+  marketing_name: 93108TC-EX
+  ports: 48x 10G BASE-T
+  poe_type: none
+  uplink: 6x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_model+ordering_table
+  eol_note: EoS per Cisco EoL bulletin; last-order-date 2022-08-09 (passed). New-sealed surplus only.
+- family: Nexus 9000
+  series: Nexus 9300-EX
+  base_pn: N9K-C93180LC-EX
+  marketing_name: 93180LC-EX
+  ports: up to 32x 40/50G QSFP+ / 18x 100G QSFP28
+  poe_type: none
+  uplink: (integrated QSFP28 fabric)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_model+ordering_table
+  eol_note: EoS per Cisco EoL bulletin dated 2023-01-18. New-sealed surplus only.
+- family: Nexus 9000
+  series: Nexus 9300-FX
+  base_pn: N9K-C93180YC-FX
+  marketing_name: 93180YC-FX
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 6x 40/100G QSFP28 (MACsec, Unified Ports)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_model+ordering_table
+  eol_note: EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.
+- family: Nexus 9000
+  series: Nexus 9300-FX
+  base_pn: N9K-C93108TC-FX
+  marketing_name: 93108TC-FX
+  ports: 48x 10G BASE-T
+  poe_type: none
+  uplink: 6x 40/100G QSFP28 (MACsec)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_model+ordering_table
+  eol_note: EoS per Cisco EoL bulletin; last-order-date 2024-07-31 (passed). New-sealed surplus only.
+- family: Nexus 9000
+  series: Nexus 9300-FX
+  base_pn: N9K-C9348GC-FXP
+  marketing_name: 9348GC-FXP
+  ports: 48x 100M/1G BASE-T
+  poe_type: PoE
+  uplink: 4x 1/10/25G SFP28 + 2x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX2
+  base_pn: N9K-C9336C-FX2
+  marketing_name: 9336C-FX2
+  ports: 36x 40/100G QSFP28
+  poe_type: none
+  uplink: (integrated; 36x 40/100G)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX2
+  base_pn: N9K-C9336C-FX2-E
+  marketing_name: 9336C-FX2-E
+  ports: 36x 40/100G QSFP28
+  poe_type: none
+  uplink: (integrated; 36x 40/100G)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX2
+  base_pn: N9K-C93240YC-FX2
+  marketing_name: 93240YC-FX2
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 12x 40/100G QSFP28
+  form_factor: Fixed 1.2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX2
+  base_pn: N9K-C93360YC-FX2
+  marketing_name: 93360YC-FX2
+  ports: 96x 1/10/25G SFP28
+  poe_type: none
+  uplink: 12x 40/100G QSFP28
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX2
+  base_pn: N9K-C93216TC-FX2
+  marketing_name: 93216TC-FX2
+  ports: 96x 100M/1/10G BASE-T
+  poe_type: none
+  uplink: 12x 40/100G QSFP28
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-FX3S
+  base_pn: N9K-C93180YC-FX3S
+  marketing_name: 93180YC-FX3S
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 6x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX
+  base_pn: N9K-C9316D-GX
+  marketing_name: 9316D-GX
+  ports: 16x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated; spine)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX
+  base_pn: N9K-C93600CD-GX
+  marketing_name: 93600CD-GX
+  ports: 28x 100/40G QSFP28 + 8x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated; spine/leaf)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX
+  base_pn: N9K-C9364C-GX
+  marketing_name: 9364C-GX
+  ports: 64x 100/40G QSFP28
+  poe_type: none
+  uplink: (integrated; spine/leaf)
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX2
+  base_pn: N9K-C9332D-GX2B
+  marketing_name: 9332D-GX2B
+  ports: 32x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX2
+  base_pn: N9K-C9332D-GX2B-M
+  marketing_name: 9332D-GX2B-M
+  ports: 32x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX2
+  base_pn: N9K-C9348D-GX2A
+  marketing_name: 9348D-GX2A
+  ports: 48x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated)
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9300-GX2
+  base_pn: N9K-C9364D-GX2A
+  marketing_name: 9364D-GX2A
+  ports: 64x 400/100G QSFP-DD
+  poe_type: none
+  uplink: (integrated)
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_model+ordering_table
+- family: Nexus 9000
+  series: Nexus 9400
+  base_pn: N9K-C9408
+  marketing_name: 9408
+  ports: modular — 8 linecard slots
+  poe_type: n/a
+  uplink: modular (line-card dependent)
+  form_factor: Centralized modular chassis, 4RU/8-slot
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_ordering_table
+- family: Nexus 9000
+  series: Nexus 9500
+  base_pn: N9K-C9504
+  marketing_name: 9504
+  ports: modular — 4 slots
+  poe_type: n/a
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 4-slot
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_ordering_table
+- family: Nexus 9000
+  series: Nexus 9500
+  base_pn: N9K-C9508
+  marketing_name: 9508
+  ports: modular — 8 slots
+  poe_type: n/a
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 8-slot
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_ordering_table
+- family: Nexus 9000
+  series: Nexus 9500
+  base_pn: N9K-C9516
+  marketing_name: 9516
+  ports: modular — 16 slots
+  poe_type: n/a
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 16-slot
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_ordering_table
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C92160YC-X
+  marketing_name: 92160YC-X
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 6x 40G QSFP+ / 4x 100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Support 2026-03-31
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C92300YC
+  marketing_name: 92300YC
+  ports: 48x 1/10/25G SFP28
+  poe_type: none
+  uplink: 18x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Support 2025-02-28
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C92304QC
+  marketing_name: 92304QC
+  ports: 56x 40G QSFP+
+  poe_type: none
+  uplink: 8x 100G QSFP28
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Support 2024-08-31
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C9236C
+  marketing_name: 9236C
+  ports: 36x 40/100G QSFP28
+  poe_type: none
+  uplink: (integrated; spine)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Support 2025-02-28
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C9272Q
+  marketing_name: 9272Q
+  ports: 72x 40G QSFP+
+  poe_type: none
+  uplink: (integrated; spine)
+  form_factor: Fixed 2RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Support 2025-09-30
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C92348GC-X
+  marketing_name: 92348GC-X
+  ports: 48x 100M/1G BASE-T
+  poe_type: none
+  uplink: 4x 1/10/25G SFP28 + 2x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_platform_table1+ordering
+  eol_note: End of Sale; support to 2030-08-31
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C92348GC-FX3
+  marketing_name: 92348GC-FX3
+  ports: 48x 100M/1G BASE-T
+  poe_type: none
+  uplink: 4x 10/25G SFP28 + 2x 40/100G QSFP28
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_platform_table1+ordering
+- family: Nexus 9000
+  series: Nexus 9200
+  base_pn: N9K-C9232C
+  marketing_name: 9232C
+  ports: 32x 40/100G QSFP28
+  poe_type: none
+  uplink: (integrated; spine)
+  form_factor: Fixed 1RU
+  license_tiers: NX-OS (separate license)
+  eol_status: EoS
+  sourceable_new_sealed: verify
+  source: ds_9232c_standalone
+  eol_note: retired - off Cisco active support listing
