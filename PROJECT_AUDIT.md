@@ -2062,6 +2062,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   priced — Cisco was priced in the separate Cisco_NEW_227 folder; out of scope, untouched). (c) `stage3_content/*.json`
   (intermediate source) still hold the phrases — out of scope (operator scoped verify to Main+FAQ); the now-wired
   G3 backstops any future re-emit.
+- **SWITCH PRICING — Cisco Catalyst + Nexus (Phase-1 genuine-new-sealed, 2026-06-23, IN PROGRESS).** All 9
+  Cisco switch families under `output/switches/` were §5-clean + gate-passing but every Prices file was 0,00
+  (un-listable). Filling genuine-Cisco **new-sealed** net prices, **commit+push per family** (largest first).
+  **Byte-contract (DIFFERENT from transceivers):** switch Prices = `;`-sep, **NO BOM**, CRLF, German decimal;
+  provenance `Verification_Log_<Family>_Switches_Prices.csv` (5-col). Method: genuine new-sealed German-market
+  street anchors (Bechtle/Senetic/router-switch), **refurb/used IGNORED** (huge refurb market = 10–40% of new),
+  grouped by ports×PoE×uplink/license, monotonic ladder, hardware/appliance basis (not multi-year DNA bundle).
+  Engine `_scratch/switch_pricing.py` (gitignored). **Two enabling gate fixes landed with family 1** (both
+  needed for every family, 420 tests still green): (1) `validate.py` verification-role now excludes
+  `*_Prices.csv` — the pricing provenance was colliding with the authoring `Verification_Log_*.csv` →
+  false "ambiguous verification" L4 fail; (2) `writers.py` `GERMAN_DECIMAL_RE` broadened to accept the
+  operator-specified thousands-grouping (`1.899,00`) — the old `^\d+,\d{2}$` rejected the operator's own format
+  + the already-shipped grouped transceiver Prices. **⚠ JTL note:** switch + transceiver Prices now use grouped
+  German format (`1.899,00`); German-locale JTL parses this correctly, but if your JTL-Ameise profile needs
+  NO thousands separator, flag it and I'll re-emit ungrouped catalog-wide. **DONE:** Cisco/9300 (40 models;
+  gate PASS; 4 direkt / 36 geschätzt-aus-Vergleich; €1.500–14.000; anchors C9300-48P €5.900 Bechtle,
+  C9300-48UXM €10.500, C9300X-24Y €10.500 router-switch, C9300L-48P-4X €2.400 Amazon-NS).
 
 ---
 

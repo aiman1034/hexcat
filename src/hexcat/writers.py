@@ -17,9 +17,11 @@ from pathlib import Path
 LINE_TERMINATOR = "\r\n"
 BOM = "﻿"
 
-# German decimal: comma decimal separator, no dot, no thousands separator, exactly
-# two decimal places. e.g. "1350,00", "49,00". Enforced on write AND in validation.
-GERMAN_DECIMAL_RE = re.compile(r"^\d+,\d{2}$")
+# German decimal: comma decimal + OPTIONAL period thousands-grouping — the operator-specified
+# shop/JTL format ("1.899,00" / "12.500,00"), matching the emitted transceiver + switch Prices.
+# Superset of the old plain "\d+,\d{2}": ungrouped values (weights "13,00", "49,00", "0,00") still
+# validate; grouped prices now validate too. Malformed grouping ("2.9000,00") is still rejected.
+GERMAN_DECIMAL_RE = re.compile(r"^(\d{1,3}(\.\d{3})+|\d+),\d{2}$")
 
 
 class GermanDecimalError(ValueError):

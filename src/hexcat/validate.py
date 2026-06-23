@@ -351,6 +351,10 @@ class Validator:
         ok = True
         for role, pattern in ROLE_GLOBS.items():
             matches = sorted(self.dir.glob(pattern))
+            if role == "verification":
+                # the pricing provenance (Verification_Log_*_Prices.csv) is a SEPARATE artifact, not the
+                # content-grounding verification log — exclude it so it never makes the role ambiguous.
+                matches = [m for m in matches if not m.name.endswith("_Prices.csv")]
             if len(matches) == 0:
                 self._fail(role, "", "", "exactly 1 file", "0 files",
                            f"missing {role} file matching {pattern}")
