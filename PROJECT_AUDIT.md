@@ -2078,7 +2078,9 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   German format (`1.899,00`); German-locale JTL parses this correctly, but if your JTL-Ameise profile needs
   NO thousands separator, flag it and I'll re-emit ungrouped catalog-wide. **DONE:** Cisco/9300 (40 models;
   gate PASS; 4 direkt / 36 geschätzt-aus-Vergleich; €1.500–14.000; anchors C9300-48P €5.900 Bechtle,
-  C9300-48UXM €10.500, C9300X-24Y €10.500 router-switch, C9300L-48P-4X €2.400 Amazon-NS).
+  C9300-48UXM €10.500, C9300X-24Y €10.500 router-switch, C9300L-48P-4X €2.400 Amazon-NS) · Cisco_9200 (31;
+  gate PASS; 3 direkt/28 geschätzt; €1.000–4.500; anchors C9200-48P €3.500 Bechtle, C9200CX-12P-2X2G €2.000,
+  C9200L-48P-4G €2.400 router-switch).
 
 ---
 
