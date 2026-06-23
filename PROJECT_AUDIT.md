@@ -2192,6 +2192,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **/ 23 geschätzt**; monotonic by port×PoE×uplink, FE<Gigabit, €145–1.800); ungrouped, NO-BOM, 0 zeros,
   Main↔Prices exact. gate PASS. Manifest count ~28→**27** (P2), 27 model rows → reconciler **Cisco_1000 27/27**.
   **Coverage now: 186 built, 12 families complete, 21%.**
+- **BUILD Catalyst 1200 — family #4 (modern affordable-SMB), 16/16, current (2026-06-23).** New family
+  `output/switches/Cisco_1200/` from `c1200_harvest_source.md` (cisco.com DS 21-Mar-2025, 16 models).
+  **Threads between the 1000 (IOS/EoS) and 1300 (Linux/front-panel/L3):** Kat L3 = **Managed Switch (L2)**
+  — Cisco **removed the "smart-switch" label** (20-Mar-2025), so NOT Smart-Managed; Layer **L2** (static
+  routing only, up to 32 static routes / 16 IP interfaces — below the 1300's RIP L3). **OS = customized
+  Linux OS** (SAME as the 1300) + Cisco Business Dashboard + mobile app + Web-UI + CLI — the key prose split
+  from the **IOS-based 1000**. Stacking = **Single-IP-Management** on the 15 uplink models, **Nein** on
+  C1200-8T-D (no uplink); **NO "bis zu 8"** claim (datasheet gives no count); not front-panel, not StackWise.
+  PoE+ (802.3af/at, Perpetual PoE), **max 375 W** (no 48FP/740W). Betriebstemp **-5 bis 50 °C** (8T-D =
+  **0 bis 50 °C**). SwK Gbit/s (24-port = 56), Durchsatz Mpps; 255 VLANs, 8.000 MAC; **Limited Lifetime**
+  warranty, perpetual, no DNA. **8T-D special:** Desktop, no uplink/stack, can be a PoE-Powered-Device.
+  attr-split **15 (-4X) / 14 (rest)** — verified {14,15}. Single-closer (G5), §5+"smart"-clean, no [VERIFY],
+  S.3 holds. Priced 16 genuine-new-sealed (current value line; refurb ignored; **4 direkt** [8T-D €107,98
+  Senetic, 24P-4G ~€310 Senetic/Bechtle, 48P-4G ~€860, 48P-4X ~€1.030] **/ 12 geschätzt**; monotonic
+  port×PoE×uplink, 8T-D cheapest, **€108–1.030** — real distributor net landed well below the ~€2.000 upper
+  guess, anchored to actual listings per the genuine-OEM rule); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact.
+  gate PASS. Manifest 16 model rows (P2) → reconciler **Cisco_1200 16/16**. **Coverage now: 202 built, 13
+  families complete, 23%.**
 
 ---
 
