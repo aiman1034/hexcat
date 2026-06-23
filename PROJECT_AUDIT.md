@@ -2021,7 +2021,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   mainstream 0,80×; 0 zeros; FAQ 7–8, forbidden 0; range €68–6.000, median €392) · HPE/Aruba (140,
   mainstream 0,85×; 0 zeros; FAQ 6–8, forbidden 0; range €76–6.375, median €348) · Lenovo (104,
   mainstream 0,80×; €68–2.240, med €208) · Extreme (102, mainstream 0,80×; €68–3.600, med €252) ·
-  Fortinet (87, mainstream 0,85×; €76–3.825, med €268) — all: 0 zeros, exact PN match, FAQ forbidden 0, 3-col.
+  Fortinet (87, mainstream 0,85×; €76–3.825, med €268) · NVIDIA (85, PREMIUM 1,15×; €276–7.417, med €977) ·
+  Meraki (23, Cisco-Meraki 0,95×; €86–2.660, med €185) · Ubiquiti (49, BUDGET-Leiter; €12–500, med €34 —
+  bewusst NICHT inflationiert) · MikroTik (24, BUDGET-Leiter; €17–600, med €30) · Supermicro (27, modest 0,55×;
+  €50–193). **ALL 12 BRANDS DONE — CAMPAIGN COMPLETE.** Every brand: 0 zeros, exact Main↔Prices match, FAQ
+  forbidden-token grep 0, 3-col. Premium (NVIDIA/Arista) sit above mainstream; budget (Ubiquiti/MikroTik) sit
+  genuinely low (not inflated to "look OEM"). Engine guards added mid-run: tier-snap (20G→25G stacking, 2G→1G
+  FC), coherent only ≥100G (10G-DWDM-tunable false-pos), long-reach ladder fallback (25G-CWDM4→LR), FAQ pad-to-≥3,
+  and **COMPAT scrub tightened** (bare "FS"/"CBO" removed — they false-matched brands' OWN PNs e.g. Supermicro
+  `AOC-TSR-FS`). **Supermicro deviation (disclosed):** its FAQ was token-clean BUT carried the self-promo
+  authenticity Q ("Ist dies ein originales Supermicro-Produkt?") on all 27 — a HARD-RULE-2 violation — so it was
+  **regenerated from Attributes like the others** (not merely reformatted), per the standing §5-UWG rule.
+  Phase-2 BrokerBin refinement remains the follow-up for all brands.
 
 ---
 
