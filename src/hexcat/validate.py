@@ -844,11 +844,13 @@ class Validator:
         if counts and pa.isdigit() and sum(counts) != int(pa):
             self._fail(fname, sku, "Portanzahl", f"sum of Port-Konfiguration ({sum(counts)})", pa,
                        "semantic S.3: Portanzahl must equal the port count in Port-Konfiguration")
-        # S.4 Stacking=Ja only on Managed / Data-Center.
+        # S.4 Stacking=Ja only on managed-class switches (Managed L2/L3, Data-Center, Industrie).
+        # Industrial rack-aggregation switches (Catalyst IE9300) run real Cisco StackWise; the rule's
+        # intent is to reject stacking claims on unmanaged/smart-managed edge switches, not industrial.
         if stacking.strip().lower().startswith("ja") and k3 not in (
-                "Managed Switch (L2)", "Managed Switch (L3)", "Data-Center-Switch"):
-            self._fail(fname, sku, "Stacking", "Stacking only on Managed/Data-Center switches", k3,
-                       "semantic S.4: Stacking is valid only on managed/data-center switches")
+                "Managed Switch (L2)", "Managed Switch (L3)", "Data-Center-Switch", "Industrie-Switch"):
+            self._fail(fname, sku, "Stacking", "Stacking only on Managed/Data-Center/Industrie switches", k3,
+                       "semantic S.4: Stacking is valid only on managed/data-center/industrial switches")
         # S.5 env-first single-token determinism (key case): a DIN-rail/Hutschiene switch must be Industrie.
         if re.search(r"Hutschiene|DIN", bauform, re.I) and k3 != "Industrie-Switch":
             self._fail(fname, sku, "Kategorie Ebene 3", "Industrie-Switch (DIN-rail, env-first)", k3,

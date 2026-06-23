@@ -2241,6 +2241,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   8P2S>8T2S); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: IE3200 moved from missing-family →
   built block (count 8→2, 2 model rows P2) → reconciler **Cisco_IE3200 2/2**. **Coverage now: 215 built,
   15 families complete, 24%.**
+- **BUILD Catalyst IE9300 Rugged — family #7 (industrial RACK aggregation), 8/8 (2026-06-23).** New family
+  `output/switches/Cisco_IE9300/` from `ie9300_harvest_source.md` (cisco.com DS 10-Dec-2025, current; 8 base
+  PIDs, -E/-A license tier in prose). Still **Industrie-Switch** (set explicitly — rack, no DIN, S.5 doesn't
+  fire), but **FOUR deltas** from the DIN-rail IE3x00: (1) Bauform **19-Zoll-Rackmontage (1 HE)**; (2) Stacking
+  **PER-MODEL** — Ja Cisco **StackWise** (bis zu 4) on the six IE9320, Nein on the two IE9310 (26S2C, 16P8S4X);
+  (3) Stromversorgung **zwei Hot-Swap-Netzteilschächte** (AC/DC 150/250/400 W, 1+1 redundant); (4) **Layer L3**
+  (OSPF/RIP/static on Essentials, BGP/EIGRP/IS-IS on Advantage), Switch-Typ Managed (S.2 holds). Rest =
+  industrial schema (IOS XE + Network Essentials/Advantage perpetual, Catalyst Center+WebUI optional; lüfterlos;
+  -40–75 °C; 5-yr; ring REP/MRP/PRP/HSR + StackWise in prose; SwK Gbit/s 56/128/152, Durchsatz Mpps). attr-split:
+  10G-uplink = **15-attr** (Uplink 4× 10G-SFP+, 5 models), 1G-uplink = **14-attr** (3 models); verified {14,15}.
+  All Portanzahl = 28 (S.3 holds). Per-model special lead: 16P8U4X mGig 2.5G + 720 W 4PPoE-90W flagship; 22S2C4X
+  conformal + GPS/IRIG-B + PRP/HSR substation; 26S2C fiber-dense; 16P8S4X 8 GB-DRAM non-stack. Single-closer
+  (G5), §5-UWG + wrong-token clean (0/0), no [VERIFY], gate PASS. **GATE CHANGE: extended validate.py S.4 to
+  allow Stacking=Ja on `Industrie-Switch`** (industrial *managed* switches genuinely run StackWise; the rule's
+  intent is to block stacking claims on unmanaged/smart edge switches) — **full suite 420 passed**. Priced 8
+  genuine-new-sealed (industrial premium > IE3x00; **PSU modules separate, NOT bundled**; refurb + inflated
+  reseller lists ignored; **0 direkt / 8 geschätzt** cross-anchored to operator band **€2.500–6.000**; monotonic
+  10G>1G uplink, PoE>data, mGig/4PPoE flagship €6.000, substation-premium 22S2C4X €5.500 despite no-PoE); ungrouped,
+  NO-BOM, 0 zeros, Main↔Prices exact. Manifest: IE9300 moved missing-family → built block (count 15→8, 8 model
+  rows P2) → reconciler **Cisco_IE9300 8/8**. **Coverage now: 223 built, 16 families complete, 25%.**
 
 ---
 
