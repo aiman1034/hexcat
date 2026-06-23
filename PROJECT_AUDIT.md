@@ -2019,7 +2019,9 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   1,08×; 0 zeros, exact PN match; FAQ 5–8, forbidden 0; range €92–9.180, median €589) · Juniper (179,
   mainstream-premium 0,90×; 0 zeros; FAQ 7–8, forbidden 0; range €81–7.650, median €405) · Dell (156,
   mainstream 0,80×; 0 zeros; FAQ 7–8, forbidden 0; range €68–6.000, median €392) · HPE/Aruba (140,
-  mainstream 0,85×; 0 zeros; FAQ 6–8, forbidden 0; range €76–6.375, median €348).
+  mainstream 0,85×; 0 zeros; FAQ 6–8, forbidden 0; range €76–6.375, median €348) · Lenovo (104,
+  mainstream 0,80×; €68–2.240, med €208) · Extreme (102, mainstream 0,80×; €68–3.600, med €252) ·
+  Fortinet (87, mainstream 0,85×; €76–3.825, med €268) — all: 0 zeros, exact PN match, FAQ forbidden 0, 3-col.
 
 ---
 
