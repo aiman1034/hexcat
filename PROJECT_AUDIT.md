@@ -2178,6 +2178,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ungrouped, NO-BOM, 0 zeros, exact Main↔Prices. gate PASS; manifest count corrected ~30→**28** (P1), emitted as 28
   model rows → reconciler **Cisco_1300 28/28**. **Coverage now: 159 built, 11 families complete, 18%.** (Catalyst
   **1300X** — PoE++/25G/OSPF — is a SEPARATE series; flag as its own family if wanted, not folded in.)
+- **BUILD Catalyst 1000 — family #3 (entry-SMB), 27/27, EoS-flagged (2026-06-23).** New family
+  `output/switches/Cisco_1000/` from `c1000_harvest_source.md` (cisco.com DS 25-Apr-2023, 27 models).
+  **Entry-SMB, distinct from the 1300:** classic **Cisco IOS** (LAN Base), CLI + on-box Web-UI (Cisco
+  Configuration Professional) — NOT IOS XE/Linux/Cisco Business Dashboard; **Kat L3 = Managed Switch (L2)**,
+  Layer **L2** (static routing only — the tier below the 1300's RIP L3); **Single-IP-Management** stacking
+  (Gigabit only; Nein on the 4 FE models — not StackWise); PoE+ (802.3af/at, Perpetual PoE); **E-LLW** warranty,
+  LAN Base perpetual; Betriebstemp **-5 bis 50 °C**; SwK Gbit/s, Durchsatz Mpps; attr-split 15 (-4X + FE,
+  higher-speed uplink) / 14 (-2G/-4G); Portanzahl from Port-Konfig (S.3 holds). Single-closer (G5), §5-clean,
+  no [VERIFY]. **EoS VERIFIED** (Cisco EoL bulletin: End-of-Sale 30-Apr-2025, support to 30-Apr-2030) →
+  flagged informational in the FAQ, **never dropped**. Priced 27 genuine-new-sealed (cheapest Cisco managed
+  line; refurb ignored hard; **4 direkt** [8P-2G €296 Bechtle, 24T-4G ~€580, 48P-4X ~€1.380, FE-24T ~€420]
+  **/ 23 geschätzt**; monotonic by port×PoE×uplink, FE<Gigabit, €145–1.800); ungrouped, NO-BOM, 0 zeros,
+  Main↔Prices exact. gate PASS. Manifest count ~28→**27** (P2), 27 model rows → reconciler **Cisco_1000 27/27**.
+  **Coverage now: 186 built, 12 families complete, 21%.**
 
 ---
 
