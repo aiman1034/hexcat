@@ -2005,6 +2005,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **FAQ re-verified** (`Hexwaren_FAQ_Cisco.csv`, unchanged since da9d837): 227 SKUs, 6–7 FAQs each, forbidden-token grep = 0,
   3-col contract intact — left as-is (clean). Build script `_scratch/cisco227_pricing.py` (gitignored). **STANDING:** the
   genuine-Cisco-only anchor rule + the §5-UWG FAQ rules now apply to every future pricing/FAQ batch.
+- **TRANSCEIVERS — ALL-BRANDS pricing + FAQ finalise (2026-06-23, IN PROGRESS).** Same job as Cisco NEW-227,
+  now for the 12 per-brand bundles under `final_transceiver_output/2_full_catalog_by_brand/<Brand>/` (priority/
+  largest-first; **commit + push per brand**). Built a reusable engine `_scratch/brand_pricing.py` (gitignored):
+  classifies each SKU from its NORMALISED Attributes (Geschwindigkeit/Kabeltyp/Standard/Reichweite/Länge/Wellenlänge)
+  — robust across brands' cryptic PN schemes — prices from a Cisco-level **REFERENCE ladder** (verified tier ratios,
+  calibration SFP-10G-SR €198) then **RE-ANCHORS to each brand's genuine level** via a per-brand multiplier (premium
+  >1 / mainstream <1) or an explicit BUDGET ladder (Ubiquiti/MikroTik — genuine prices ARE low, not inflated).
+  GENUINE-OEM-ONLY anchoring (compatible/refurb/used ignored). Same FAQ regen (3-col, scrubbed, from Attributes).
+  Guard: coherent only ≥100G (10G-DWDM-tunable false-positive fixed). Per-brand files: overwrite
+  `Hexwaren_<Brand>_Transceivers_Prices.csv` (`;` BOM CRLF German-decimal) + `Hexwaren_FAQ_<Brand>.csv` (3-col),
+  write `Verification_Log_<Brand>_Transceivers_Prices.csv` (5-col provenance). **DONE:** Arista (338, premium
+  1,08×; 0 zeros, exact PN match; FAQ 5–8, forbidden 0; range €92–9.180, median €589).
 
 ---
 
