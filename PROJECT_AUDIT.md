@@ -2103,6 +2103,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   grouped) — their residual L1-header/L5-cluster/L6-completeness flags are PRE-EXISTING + unrelated (those
   bundles aren't gated as switch bundles are; the L5 identical-price clusters are the Phase-1 ladder siblings
   sharing a price). **Ungrouped German decimal (no thousands separator) is now the standing Prices format.**
+- **CATALOG COMPLETENESS SYSTEM — Cisco switches (2026-06-23).** Made coverage a measured, gated property
+  (root cause of "9 of ~35 families called done"). **BUILD 1 — manifest** `catalog_manifest/cisco_switches.csv`
+  (the denominator): **168 rows** = 141 model-level for Catalyst-9000 + Nexus-9000 (from the existing per-model
+  `cisco_switches_coverage.yaml`, status diffed vs `output/switches/`) + 27 curated family-level rows for the
+  legacy/SMB/Industrial/Nexus-2k-7k/Meraki/MDS families (router-switch nav + Cisco portfolio). Cols: Family,
+  Model-PN, In-Scope, Priority(1–4), Status, Source-URL, Notes. **In scope INCLUDES still-stocked EoS** (flagged,
+  never dropped). **BUILD 2 — reconciler** `lib/coverage_reconcile.py` (permanent gate) diffs manifest vs emitted
+  → `coverage_report.md`. **Headline: 42 families in scope · 8 fully built + 1 partial (Catalyst 9500 = 7/14) +
+  33 not-started · ~826 in-scope models · 121 built = 14% coverage.** Exact missing PNs listed for the 20
+  enumerated Catalyst-9000/Nexus-9000 gaps (C9400 ×3, C9500 ×7 incl the EoS-removed 12Q/24X/40X/48X…, C9600,
+  C9610, Nexus GX2 ×4, Nexus 9400 C9408, Nexus 9500 ×3); family-level backlog (~685 models) prioritized P1→P4
+  (P1 next: Catalyst 1300, Meraki MS, 9500-rest, Nexus GX2, 9400, 9600). **BUILD 3 — transceivers:** reconciler
+  is wired (`coverage_reconcile.py transceivers`) but PENDING its denominator — assemble `catalog_manifest/
+  cisco_transceivers.csv` from the live JTL export + distributor catalogues to close the known ~201-SKU gap.
+  **STANDING RULE:** no "category complete" claim without citing `coverage_report.md`; complete = built ==
+  in-scope manifest (deferred items listed, never silently dropped). **NOT building missing families yet —
+  operator sets priority from the map.**
 
 ---
 
