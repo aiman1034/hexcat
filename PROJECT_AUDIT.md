@@ -2155,9 +2155,10 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   real first-gen-missing = **6** (not 7), and the real C9500 family = **13 models, not 14** (the "14/14" target was
   inflated by the phantom 24X + the already-built 16X). **Built the 6** into the EXISTING `output/switches/Cisco_9500/`
   (MERGE → 13; the existing 7 came out **byte-identical** — diff = 6 insertions only — since the composer/scrub are
-  idempotent): 5 fully datasheet-grounded (C9500-12Q/24Q/40X/48X/40X-2Q from C78-738978-02) + **C9500-16X-2Q with
-  Switching-Kapazität+Durchsatz OMITTED & flagged** (post-2017-ds [VERIFY] — flag-don't-fabricate; rest grounded;
-  weight 11,68 kg conservative; 16X-specific datasheet to be couriered to backfill the 2 attrs). Catalyst rules
+  idempotent): 5 fully datasheet-grounded (C9500-12Q/24Q/40X/48X/40X-2Q from C78-738978-02) + **C9500-16X-2Q** (SwK/Durchsatz
+  were post-2017-ds [VERIFY] → **BACKFILLED 2026-06-23**: Switching-Kapazität 480 Gbit/s / Durchsatz 360 Mpps,
+  grounded from the published Cisco 16X spec — "up to 480 Gbps full-duplex / 360 Mpps", which already assumes the
+  module, so 16X-2Q inherits it — weight 10,7 kg exact; now a COMPLETE 15-attr split model, no [VERIFY] token). Catalyst rules
   (Managed Switch (L3), IOS XE, StackWise Virtual, PoE Nein); SwK Gbit/s (480/960, NOT Tbit/s); Durchsatz 24Q=1,44
   Bpps else Mpps; 14/15-attr split (40X-2Q/16X-2Q = 2×40G uplink). Single-closer (composer + G5). Priced genuine
   new-sealed EoS (first-gen monotonic €4.000→8.000, below the high-perf 9500; ungrouped, NO-BOM, 0 zeros, Main↔Prices

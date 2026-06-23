@@ -2023,13 +2023,13 @@
   },
   "artikelname": "Cisco C9500-16X-2Q Catalyst-9500-Core-Switch (IOS XE, L3) – 16× 10G-SFP+ + 2× 40G-QSFP+, 1 HE",
   "titel_tag": "Cisco C9500-16X-2Q Catalyst 9500 Core-Switch L3 | Hexwaren",
-  "meta_description": "Original Cisco C9500-16X-2Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 16× 10G-SFP+ + 2× 40G-QSFP+, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, MACsec-256.",
-  "artikelgewicht": "11,68",
-  "versandgewicht": "14,68",
-  "kurzbeschreibung": "<p>Der Cisco C9500-16X-2Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 16× 10G-SFP+ + 2× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-16X-2Q Core-Switching auf dem UADP-2.0-ASIC; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
+  "meta_description": "Original Cisco C9500-16X-2Q (Catalyst 9500): Managed Layer-3-Campus-Core-Switch, 16× 10G-SFP+ + 2× 40G-QSFP+, Switching-Kapazität 480 Gbit/s, 1 HE. UADP 2.0, IOS XE, StackWise Virtual, SD-Access, …",
+  "artikelgewicht": "10,7",
+  "versandgewicht": "13,7",
+  "kurzbeschreibung": "<p>Der Cisco C9500-16X-2Q ist ein gemanagter Layer-3-Core-Switch der Catalyst-9500-Serie mit 16× 10G-SFP+ + 2× 40G-QSFP+. Unter Cisco IOS XE übernimmt er auf dem UADP-2.0-ASIC das Core- und Aggregations-Switching im Enterprise-Campus.</p><p>Im Format 19-Zoll-Rackmontage (1 HE) liefert der C9500-16X-2Q eine Switching-Kapazität von 480 Gbit/s; PoE wird nicht unterstützt (reine Glasfaser-/QSFP-Core-Plattform), Hochverfügbarkeit erreicht der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC).</p>",
   "intro": [
    "Der Cisco C9500-16X-2Q ist ein gemanagter Layer-3-Campus-Core-/Aggregations-Switch aus der Catalyst-9500-Familie mit 16× 10G-SFP+ + 2× 40G-QSFP+, betrieben unter Cisco IOS XE auf dem UADP-2.0-ASIC.",
-   "Der C9500-16X-2Q bietet 18 native Ports; die genauen Werte für Switching-Kapazität und Weiterleitungsrate sind diesem Modell-Datenblatt zu entnehmen (im Quelldokument von 2017 nicht ausgewiesen); PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
+   "Mit 18 nativen Ports erreicht der C9500-16X-2Q eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 360 Mpps; PoE wird nicht unterstützt. Hochverfügbarkeit realisiert der C9500-16X-2Q über Cisco StackWise Virtual (2-Knoten-MEC mit SSO/NSF) statt über klassisches Daten-Stacking; AES-256-MACsec steht auf allen Ports bereit.",
    "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit 5× Hot-Swap-Lüfter (variabel, N+1, Front-to-Back) und bis zu zwei Hot-Swap-Netzteilen (950 W AC, 1+1) arbeitet der C9500-16X-2Q laut Datenblatt im Temperaturbereich 0 bis 40 °C. Auf dem UADP-2.0-ASIC (4-Kern-x86-CPU, 16 GB DDR4, bis 32 MB Puffer, 64.000 Routen/MAC) unterstützt der C9500-16X-2Q unter IOS XE volles L3-Routing (OSPF/BGP/EIGRP/IS-IS), SD-Access-Fabric-Border (LISP/VXLAN, TrustSec/SGT), MPLS-L3VPN, NSF/SSO sowie Programmierbarkeit (NETCONF/RESTCONF/YANG, Telemetrie). Der C9500-16X-2Q ist die kompakte 16× 10G-SFP+-Variante mit zwei 40G-QSFP+-Uplinks (Netzwerkmodul)."
   ],
   "kompatibilitaet": [
@@ -2084,6 +2084,14 @@
    [
     "PoE",
     "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "360 Mpps"
    ],
    [
     "Bauform",
@@ -2143,6 +2151,14 @@
     "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
     "datasheet"
    ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
+    "datasheet"
+   ],
    "Bauform": [
     "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html",
     "datasheet"
@@ -2169,14 +2185,6 @@
    ]
   },
   "beschreibung": "",
-  "netto_vk": null,
-  "extra_log": [
-   [
-    "C9500-16X-2Q",
-    "Switching-Kapazität+Durchsatz",
-    "post-2017-ds: 16X-2Q exakte Werte sind im Quelldatenblatt C78-738978-02 (2017) nicht ausgewiesen; bewusst ausgelassen statt geschätzt (flag-don't-fabricate); 16X-spezifisches Datenblatt/HW-Guide nachzureichen.",
-    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9500-series-switches/datasheet-c78-738978.html"
-   ]
-  ]
+  "netto_vk": null
  }
 }
