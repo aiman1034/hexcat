@@ -789,9 +789,12 @@ def check_boilerplate_freq(bundle: Path, thresh: float = 0.40) -> list:
 
 
 # G3: banned-phrase STEM match (the "neu und versiegelt" matched but "Neu, versiegelt" evaded).
+# §5-UWG: condition + provenance/sourcing claims are HARD-banned in prose (Condition file carries
+# itemCondition=new). Covers sealing/new-goods + the authorized-channel/Quality-ID provenance class.
 _BANNED_STEM = re.compile(
     r"versiegel\w*|\bneuware\b|fabrikneu\w*|ungeöffn\w*|ungeoeffn\w*|\bneu[,\s]+versiegel|"
-    r"\bsealed\b|originalverp\w*|\bbrandneu\w*", re.I)
+    r"\bsealed\b|originalverp\w*|\bbrandneu\w*|autorisiert\w*|\bauthorized\b|distributionskanal|"
+    r"offiziell\w*|quality-?id|\bOVP\b", re.I)
 
 
 def check_banned_stem(bundle: Path) -> list:
@@ -868,6 +871,7 @@ def gate(bundle_dir, rules=None) -> GateResult:
     by["L1"] += check_utf8_umlaut(bundle)
     by["L1"] += check_html_wellformed(bundle)
     by["L1"] += check_orphan_text(bundle)   # G4: text outside <p>…</p> (byte-contract; cleared brands clean)
+    by["L1"] += check_banned_stem(bundle)   # G3: §5-UWG condition/provenance claim stems in prose (HARD FAIL)
     by["L4"] += check_grounding(bundle)
 
     for L in ("L1", "L2", "L3", "L4"):

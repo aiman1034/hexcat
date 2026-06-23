@@ -2033,6 +2033,35 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   authenticity Q ("Ist dies ein originales Supermicro-Produkt?") on all 27 — a HARD-RULE-2 violation — so it was
   **regenerated from Attributes like the others** (not merely reformatted), per the standing §5-UWG rule.
   Phase-2 BrokerBin refinement remains the follow-up for all brands.
+- **§5-UWG CONDITION-TOKEN SCRUB — whole catalog + composer fix (2026-06-23).** The composer baked
+  condition/provenance claims (Neuware/versiegelt/fabrikneu/„autorisierter Distributionskanal"/„Cisco
+  Quality-ID"/„offizieller …" + the authenticity FAQ) into standard prose across nearly every Main file
+  + the switch FAQs — binding §5-UWG quality representations = live Abmahnung exposure.
+  **PART 1 — composer (durable, tracked):** `gate.py` G3 `check_banned_stem` was DEFINED-but-never-CALLED
+  → now WIRED into `gate()` L1, and its stem regex EXTENDED (+autorisiert\\w*, authorized, distributionskanal,
+  offiziell\\w*, quality-?id, \\bOVP\\b on top of versiegel*/neuware/fabrikneu/sealed/originalverp*/brandneu)
+  so any future family carrying these in Beschreibung/Kurz/Meta/Titel HARD-FAILs. `config/rules.yaml`
+  `banned_hard_fail` += the §5-UWG condition/provenance tokens (feeds the prompt `{{BANNED}}` + validate
+  hard-fail). `config/prompts/transceiver_content.txt` fixed (dropped „fabrikneue", replaced „Betone
+  Authentizität" with the §5-UWG prohibition, closer = exactly „Originaler {Marke}-{Produkt}."). **Standing
+  composer rule.** **PART 2 — in-place surgical scrub** (`_scratch/scrub_uwg.py`, gitignored): phrase-level
+  salvage that KEEPS technical content (e.g. the DOM sentence — only the „…Quality-ID als Original erkennbar"
+  clause is cut), last-resort sentence-drop for safety, `<p>`-count preserved (Kurz 2 / Beschr 3), the
+  „Originaler {Brand}-…" closer DEDUPED to exactly one per SKU (source often had two), and word-floor
+  backfill from the SKU's own Attributes using the GATE's `word_count` (tags→'' fuses across </p><p>).
+  Scrubbed **35 Main + 15 FAQ** files (10 switch Main + 10 switch FAQ + all transceiver Mains incl. the stale
+  full-Cisco + `_audit_export`/`_scratch/hardening` copies + the 2 stale Cisco FAQ copies). The clean live
+  transceiver FAQs (Cisco_NEW_227 + 12 brand bundles) were NOT touched. **VERIFY:** forbidden-token grep over
+  ALL Main+FAQ = **0**; **4076 Main SKUs** with 0 floor/closer/p-count/token violations (gate counter); every
+  FAQ ≥3 pairs + token-free; **0 Prices/Attributes/Condition/Verification_Log files modified** (byte-unchanged
+  — the 227 priced bundles stay clean); **420 tests pass** (test_stage3 fixtures updated to compliant prose —
+  the rule changed; `Zustand: Neu, versiegelt` KEPT as the structured Condition attribute, gate-exempt);
+  gate.py → **9/10 switch bundles PASS**. **Disclosures:** (a) MikroTik switch bundle has a PRE-EXISTING L6
+  count mismatch (39 Main rows vs 36 in gate_completeness) — predates + unrelated to this scrub (the
+  weight-held WIP bundle; scrub preserves row counts). (b) 2 stale Cisco Prices copies remain 0,00 (never
+  priced — Cisco was priced in the separate Cisco_NEW_227 folder; out of scope, untouched). (c) `stage3_content/*.json`
+  (intermediate source) still hold the phrases — out of scope (operator scoped verify to Main+FAQ); the now-wired
+  G3 backstops any future re-emit.
 
 ---
 

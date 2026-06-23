@@ -45,7 +45,7 @@ def _cisco_optic() -> tuple[str, dict]:
         "meta_description": (
             "Original Cisco SFP-10G-SR 10GBASE-SR SFP+ Transceiver kaufen: 850 nm Multimode, "
             "bis 300 m auf OM3, LC-Duplex, mit Digital Optical Monitoring und Hot-Swap. "
-            "Neuware für Cisco Catalyst und Nexus."
+            "Für Cisco Catalyst und Nexus."
         ),
         "kurzbeschreibung": (
             "<p>Der Cisco SFP-10G-SR ist ein originaler 10GBASE-SR SFP+ Transceiver für "
@@ -69,8 +69,8 @@ def _cisco_optic() -> tuple[str, dict]:
             "voller Hot-Swap-Fähigkeit.",
         ],
         "faq": [
-            ["Ist dies ein originales Cisco-Modul?",
-             "Ja, Original Cisco-Neuware, werkseitig versiegelt."],
+            ["Mit welchen Geräten ist das Modul kompatibel?",
+             "Das Modul ist für Cisco Catalyst und Nexus Switches mit SFP+-Ports ausgelegt."],
             ["Welche Faser wird benötigt?",
              "Multimode-Faser (OM3) mit LC-Duplex-Anschluss, bis 300 Meter."],
             ["Welche Wellenlänge nutzt das Modul?",
@@ -102,7 +102,7 @@ def _cisco_dac() -> tuple[str, dict]:
         "titel_tag": "Cisco SFP-H10GB-CU3M 10G SFP+ DAC 3m | Hexwaren",
         "meta_description": (
             "Original Cisco SFP-H10GB-CU3M kaufen: passives 10G SFP+ Direktanschlusskabel, "
-            "3 m Twinax-Kupfer, beidseitig SFP+, ohne Stromversorgung. Neuware für "
+            "3 m Twinax-Kupfer, beidseitig SFP+, ohne Stromversorgung. Für die "
             "Top-of-Rack-Verkabelung im Rechenzentrum."
         ),
         "kurzbeschreibung": (

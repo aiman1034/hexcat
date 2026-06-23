@@ -107,6 +107,21 @@ banned_hard_fail:
   - "Rechnungskauf"
   - "neu und versiegelt"
   - "voller Herstellergarantie"
+  # §5-UWG condition / provenance / sourcing claims — banned in ALL prose (the ONLY allowed
+  # authenticity signal is the closer "Originaler {brand}-…"). Enforced as stems by gate.py G3.
+  - "Neuware"
+  - "Original-Neuware"
+  - "versiegelt"
+  - "fabrikneu"
+  - "OVP"
+  - "ungeöffnet"
+  - "originalverpackt"
+  - "autorisiert"
+  - "autorisierter Distributionskanal"
+  - "authorized"
+  - "Distributionskanal"
+  - "offizieller"
+  - "Quality-ID"
 
 # Banned language — WARN ONLY (puffery; context-dependent, flag don't fail).
 banned_warn:
