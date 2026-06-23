@@ -2228,6 +2228,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Main↔Prices exact. gate PASS. **MANIFEST SPLIT:** the "IE3x00 ~45" lump → 6 named sub-families (IE3100
   built; IE3200/IE3400H/IE3500 fixed-missing; **IE3300/IE3400 modular → DEFERRED with chassis**); families
   in scope **44→49**. reconciler → **Cisco_IE3100 11/11**. **Coverage now: 213 built, 14 families complete, 24%.**
+- **BUILD Catalyst IE3200 Rugged — family #6 (industrial fixed L2), 2/2 (2026-06-23).** New family
+  `output/switches/Cisco_IE3200/` from `ie3200_harvest_source.md` (cisco.com DS 12-May-2025, current).
+  **Schema = IE3100 reused verbatim** (Industrie-Switch / IOS XE + Network Essentials / lüfterlos /
+  DIN-Schiene / dual DC / -40–75 °C / ring resiliency / Stacking Nein / 5-yr warranty / Layer L2 /
+  14 attrs uniform 1G), with IE3200 deltas: **DC 9,6–60 V DC**; **per-model MAC** (8K on 8T2S, 16K on
+  8P2S); resiliency **MRP/REP/Fast REP**; **MACsec-128**; **no Perpetual-PoE claim** (not in the IE3200
+  datasheet). 2 models: **8T2S** (data-only, Nein PoE) / **8P2S** (240 W PoE) — sole differentiator.
+  S.3 holds (10 = 8+2), attr {14}, gate PASS incl. **S.5**, single-closer (G5), §5+wrong-OS-clean, no
+  [VERIFY]. Priced 2 genuine-new-sealed, **cross-anchored to the IE3100 10-port siblings + operator band**
+  (8T2S €1.350, 8P2S €2.600; 2 geschätzt; **inflated reseller lists $2.6k/$5.5k IGNORED**; refurb ignored;
+  8P2S>8T2S); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: IE3200 moved from missing-family →
+  built block (count 8→2, 2 model rows P2) → reconciler **Cisco_IE3200 2/2**. **Coverage now: 215 built,
+  15 families complete, 24%.**
 
 ---
 
