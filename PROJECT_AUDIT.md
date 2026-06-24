@@ -2417,6 +2417,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   families in scope **54→55**. reconciler → **Cisco_2960Plus 10/10**. Re-gated all 23 Cisco switch families → all PASS
   (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 342 built, 23 families complete, 38%.**
   (2960 family progress: X/XR 23 + S 12 + SF 7 + Plus 10 = **52 of ~120**.)
+- **BUILD Cisco Catalyst 2960-L (sub-batch 5 of the ~120 2960 family, the biggest) — family #15, 24/24 (2026-06-23).**
+  New family `output/switches/Cisco_2960L/` from `c2960l_harvest_source.md` (Cisco DS 12-Aug-2020). **24 = 12
+  configs × 2 variants** (`-LL` full-managed + `-SM` Smart-Managed). **Both Switch-Typ Managed / Layer L2 /
+  Kat-L3 Managed Switch (L2)** — the `-SM` carry "Smart Managed" in **Titel/Meta only** (search intent), Switch-Typ
+  unchanged (verified: -SM Titel carry it, -LL don't). **Two PID formats:** `-LL` = `WS-C2960L-<cfg>-LL`, `-SM` =
+  `WS-C2960L-SM-<cfg>` (12 + 12, verified). **REAL PoE+** (802.3af/at, 30 W, **Perpetual PoE**) 67/120/195/370 W —
+  opposite of the 2960-Plus (af-only). **No stacking** (all 24 Nein, S.4 idle, no FlexStack/StackWise). attr-split
+  **{15:8, 14:16}** (8 "Q"/10G-SFP+ models get Uplink-Ports). Bauform 8/16-port Kompakt (lüfterlos) vs 24/48-port
+  19" (1 HE); Kühlung lüfterlos except 48PS+48PQ (both variants) = aktiv; Temp -5–45 °C except **16PS = -5–40 °C**.
+  SwK Gbit/s (Table 2, no Tbit/s), Durchsatz fwd-bw×1,488. OS = Cisco IOS (LAN Lite); wrong-OS incl. StackWise/
+  FlexStack/Meraki = 0. **DNA license SKUs EXCLUDED** (only 24 WS-C2960L-* hardware PIDs). S.3 holds, single-closer
+  (G5), §5 0, no [VERIFY], **gate PASS**. **GATE NOTE (no code change):** the compact Bauform's "DIN" (DIN-rail
+  *mountable* option) tripped **S.5** (DIN/Hutschiene ⇒ Industrie-Switch) — a false positive for this Managed-L2
+  office switch. Fix: the Bauform attribute carries the form factor only ("Kompakt-Gehäuse, lüfterlos"); the
+  wall/DIN/magnet **mounting options moved into the prose** (S.5 scans only the Bauform attr). Flagged for the
+  operator: S.5 could be refined to distinguish "DIN-Schienen-Montage" (primary industrial form) from
+  "DIN-schienen-montierbar" (optional mount) if they prefer the attr to carry it. Priced 24 — refurb-saturated;
+  genuine new-sealed only, refurb hard-rejected; **0 direkt / 24 geschätzt** anchored to operator band **€250–2.500**;
+  -LL ladder monotonic ports(8<16<24<48)×uplink(S<Q)×PoE, **-SM = -LL ×0,95** (floor SM-8TS €250, ceiling 48PQ-LL
+  €2.500); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: 2960-L built (24) + remaining 2960 legacy reduced
+  to ~44 (2960-CX/-C, 2960/2960G); families in scope **55→56**. reconciler → **Cisco_2960L 24/24**. Re-gated all 24
+  Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 366 built,
+  24 families complete, 41%.** (2960 family: X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 = **76 of ~120**.)
 
 ---
 
