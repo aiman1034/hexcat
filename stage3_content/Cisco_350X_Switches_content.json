@@ -1,0 +1,3530 @@
+{
+ "SG350X-8PMD": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-8PMD 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo",
+  "titel_tag": "Cisco SG350X-8PMD 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-8PMD (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo, PoE+ 240 W, Switching-Kapazität 80 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes …",
+  "artikelgewicht": "2,74",
+  "versandgewicht": "3,94",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-8PMD ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo und 240-W-PoE+-Budget. Verwaltet wird der SG350X-8PMD über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-8PMD unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-8PMD ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein kompakter Multigigabit-Switch (2,5G) mit 10G-Uplinks für Wi-Fi-6-Access-Points mit 8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo.",
+   "Mit 10 Ports erreicht der SG350X-8PMD eine Switching-Kapazität von 80 Gbit/s bei einer Weiterleitungsrate von 29,76 Mpps. Über sein PoE+-Budget von 240 W (802.3af/at inkl. 4× 60-W-PoE-Ports) versorgt der SG350X-8PMD Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-8PMD-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-8PMD statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-8PMD unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-8PMD mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-8PMD ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-8PMD?",
+    "Der SG350X-8PMD bietet insgesamt 10 Ports: 8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo."
+   ],
+   [
+    "Lässt sich der SG350X-8PMD stapeln?",
+    "Ja, der SG350X-8PMD unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-8PMD?",
+    "Der SG350X-8PMD liefert PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports mit insgesamt 240 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-8PMD verwaltet und ist er noch aktuell?",
+    "Der SG350X-8PMD läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-8PMD bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 2,5G-RJ45 (PoE+) + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "2,5G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports, 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "80 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "29,76 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (1 HE; 19-Zoll-Rackmontage mit Montagekit)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "1 Lüfter (42,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-8PMD",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-12PMV": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-12PMV 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-12PMV 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-12PMV (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 375 W, Switching-Kapazität 200 Gbit/s. Cisco-SB-OS …",
+  "artikelgewicht": "4,24",
+  "versandgewicht": "5,44",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-12PMV ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 375-W-PoE+-Budget. Verwaltet wird der SG350X-12PMV über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-12PMV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-12PMV ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein Multigigabit-Switch mit 5G-PoE-Ports und 10G-Uplinks für leistungsstarke Access-Points mit 12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 16 Ports erreicht der SG350X-12PMV eine Switching-Kapazität von 200 Gbit/s bei einer Weiterleitungsrate von 148,80 Mpps. Über sein PoE+-Budget von 375 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG350X-12PMV Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-12PMV-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-12PMV statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-12PMV unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-12PMV mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-12PMV ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-12PMV?",
+    "Der SG350X-12PMV bietet insgesamt 16 Ports: 12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-12PMV stapeln?",
+    "Ja, der SG350X-12PMV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-12PMV?",
+    "Der SG350X-12PMV liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 375 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-12PMV verwaltet und ist er noch aktuell?",
+    "Der SG350X-12PMV läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-12PMV bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "5G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 375 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "200 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "148,80 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "3 Lüfter (52,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-12PMV",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-24": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-24 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-24 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-24 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 128 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, …",
+  "artikelgewicht": "4,32",
+  "versandgewicht": "5,52",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-24 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350X-24 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-24 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-24 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 1G-Access-Switch mit 10G-Uplinks zur Aggregation mit 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG350X-24 eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Die Ports des SG350X-24 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350X-24-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-24 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-24 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-24 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-24 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-24?",
+    "Der SG350X-24 bietet insgesamt 28 Ports: 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-24 stapeln?",
+    "Ja, der SG350X-24 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350X-24 PoE?",
+    "Nein, der SG350X-24 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG350X-24 verwaltet und ist er noch aktuell?",
+    "Der SG350X-24 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-24 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "1 Lüfter (49,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-24",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-24P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-24P 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-24P 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-24P (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 195 W, Switching-Kapazität 128 Gbit/s. Cisco-SB-OS …",
+  "artikelgewicht": "4,93",
+  "versandgewicht": "6,13",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-24P ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 195-W-PoE+-Budget. Verwaltet wird der SG350X-24P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-24P unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-24P ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 1G-PoE+-Access-Switch mit 10G-Uplinks mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG350X-24P eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Über sein PoE+-Budget von 195 W (802.3af/at inkl. 4× 60-W-PoE-Ports) versorgt der SG350X-24P Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-24P-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-24P statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-24P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-24P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-24P ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-24P?",
+    "Der SG350X-24P bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-24P stapeln?",
+    "Ja, der SG350X-24P unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-24P?",
+    "Der SG350X-24P liefert PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports mit insgesamt 195 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-24P verwaltet und ist er noch aktuell?",
+    "Der SG350X-24P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-24P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports, 195 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "2 Lüfter (52,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-24P",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-24MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-24MP 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-24MP 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-24MP (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 128 Gbit/s. Cisco-SB-OS …",
+  "artikelgewicht": "5,69",
+  "versandgewicht": "6,89",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-24MP ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SG350X-24MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-24MP unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-24MP ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 1G-Voll-PoE+-Access-Switch mit 10G-Uplinks mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG350X-24MP eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 4× 60-W-PoE-Ports) versorgt der SG350X-24MP Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-24MP-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-24MP statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-24MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-24MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-24MP ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-24MP?",
+    "Der SG350X-24MP bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-24MP stapeln?",
+    "Ja, der SG350X-24MP unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-24MP?",
+    "Der SG350X-24MP liefert PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-24MP verwaltet und ist er noch aktuell?",
+    "Der SG350X-24MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-24MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "2 Lüfter (52,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-24MP",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-24PD": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-24PD 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-24PD 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-24PD (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 375 W, Switching-Kapazität 140 Gbit/s. …",
+  "artikelgewicht": "3,99",
+  "versandgewicht": "5,19",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-24PD ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 375-W-PoE+-Budget. Verwaltet wird der SG350X-24PD über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-24PD unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-24PD ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein gemischter 1G/2,5G-mGig-PoE+-Switch mit 10G-Uplinks mit 20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG350X-24PD eine Switching-Kapazität von 140 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Über sein PoE+-Budget von 375 W (802.3af/at inkl. 4× 60-W-PoE-Ports) versorgt der SG350X-24PD Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-24PD-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-24PD statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-24PD unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-24PD mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-24PD ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-24PD?",
+    "Der SG350X-24PD bietet insgesamt 28 Ports: 20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-24PD stapeln?",
+    "Ja, der SG350X-24PD unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-24PD?",
+    "Der SG350X-24PD liefert PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports mit insgesamt 375 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-24PD verwaltet und ist er noch aktuell?",
+    "Der SG350X-24PD läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-24PD bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 1G-RJ45 (PoE+) + 4× 2,5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G/2,5G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 4× 60-W-PoE-Ports, 375 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "140 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "3 Lüfter (45,1 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-24PD",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-24PV": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-24PV 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-24PV 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-24PV (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 375 W, Switching-Kapazität 192 Gbit/s. …",
+  "artikelgewicht": "5,30",
+  "versandgewicht": "6,5",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-24PV ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 375-W-PoE+-Budget. Verwaltet wird der SG350X-24PV über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-24PV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-24PV ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein gemischter 1G/5G-mGig-PoE+-Switch mit 10G-Uplinks mit 16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG350X-24PV eine Switching-Kapazität von 192 Gbit/s bei einer Weiterleitungsrate von 142,85 Mpps. Über sein PoE+-Budget von 375 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG350X-24PV Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-24PV-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-24PV statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-24PV unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-24PV mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-24PV ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-24PV?",
+    "Der SG350X-24PV bietet insgesamt 28 Ports: 16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-24PV stapeln?",
+    "Ja, der SG350X-24PV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-24PV?",
+    "Der SG350X-24PV liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 375 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-24PV verwaltet und ist er noch aktuell?",
+    "Der SG350X-24PV läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-24PV bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G/5G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 375 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "192 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "142,85 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "3 Lüfter (55,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-24PV",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-48": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-48 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-48 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-48 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 176 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, …",
+  "artikelgewicht": "3,73",
+  "versandgewicht": "4,93",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-48 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350X-48 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-48 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-48 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 48-Port-1G-Access-Switch mit 10G-Uplinks zur Aggregation mit 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG350X-48 eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Die Ports des SG350X-48 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350X-48-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-48 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-48 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-48 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-48 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-48?",
+    "Der SG350X-48 bietet insgesamt 52 Ports: 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-48 stapeln?",
+    "Ja, der SG350X-48 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350X-48 PoE?",
+    "Nein, der SG350X-48 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG350X-48 verwaltet und ist er noch aktuell?",
+    "Der SG350X-48 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-48 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "1 Lüfter (51,7 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-48",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-48P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-48P 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-48P 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-48P (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 176 Gbit/s. Cisco-SB-OS …",
+  "artikelgewicht": "5,82",
+  "versandgewicht": "7,02",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-48P ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SG350X-48P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-48P unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-48P ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 48-Port-1G-PoE+-Access-Switch mit 10G-Uplinks mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG350X-48P eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG350X-48P Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-48P-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-48P statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-48P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-48P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-48P ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-48P?",
+    "Der SG350X-48P bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-48P stapeln?",
+    "Ja, der SG350X-48P unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-48P?",
+    "Der SG350X-48P liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-48P verwaltet und ist er noch aktuell?",
+    "Der SG350X-48P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-48P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "3 Lüfter (52,1 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-48P",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-48MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-48MP 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-48MP 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-48MP (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 176 Gbit/s. Cisco-SB-OS …",
+  "artikelgewicht": "6,69",
+  "versandgewicht": "7,89",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-48MP ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 740-W-PoE+-Budget. Verwaltet wird der SG350X-48MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-48MP unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-48MP ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 48-Port-1G-Voll-PoE+-Access-Switch (740 W) mit 10G-Uplinks mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG350X-48MP eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG350X-48MP Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-48MP-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-48MP statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-48MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-48MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-48MP ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-48MP?",
+    "Der SG350X-48MP bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-48MP stapeln?",
+    "Ja, der SG350X-48MP unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-48MP?",
+    "Der SG350X-48MP liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 740 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-48MP verwaltet und ist er noch aktuell?",
+    "Der SG350X-48MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-48MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (53,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-48MP",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350X-48PV": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350X-48PV 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350X-48PV 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350X-48PV (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 240 Gbit/s. …",
+  "artikelgewicht": "5,95",
+  "versandgewicht": "7,15",
+  "kurzbeschreibung": "<p>Der Cisco SG350X-48PV ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 740-W-PoE+-Budget. Verwaltet wird der SG350X-48PV über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350X-48PV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350X-48PV ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein gemischter 1G/5G-mGig-Voll-PoE+-Switch (740 W) mit 10G-Uplinks mit 40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG350X-48PV eine Switching-Kapazität von 240 Gbit/s bei einer Weiterleitungsrate von 178,56 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG350X-48PV Access-Points, Kameras und IP-Telefone. Bis zu vier SG350X-48PV-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350X-48PV statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350X-48PV unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350X-48PV mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350X-48PV ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350X-48PV?",
+    "Der SG350X-48PV bietet insgesamt 52 Ports: 40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Lässt sich der SG350X-48PV stapeln?",
+    "Ja, der SG350X-48PV unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG350X-48PV?",
+    "Der SG350X-48PV liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 740 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG350X-48PV verwaltet und ist er noch aktuell?",
+    "Der SG350X-48PV läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350X-48PV bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 1G-RJ45 (PoE+) + 8× 5G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G/5G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "240 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "178,56 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (56,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; PoE+-Versorgung für leistungsstarke Access-Points und Kameras; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350X-48PV",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350XG-2F10": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350XG-2F10 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 10× 10G-RJ45 + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG350XG-2F10 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350XG-2F10 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 10× 10G-RJ45 + 2× 10G-SFP+, Switching-Kapazität 240 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "4,03",
+  "versandgewicht": "5,23",
+  "kurzbeschreibung": "<p>Der Cisco SG350XG-2F10 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 10× 10G-RJ45 + 2× 10G-SFP+ für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350XG-2F10 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350XG-2F10 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350XG-2F10 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein kompakter 10G-Kupfer-Aggregations-Switch mit dediziertem SFP+-Uplink mit 10× 10G-RJ45 + 2× 10G-SFP+.",
+   "Mit 12 Ports erreicht der SG350XG-2F10 eine Switching-Kapazität von 240 Gbit/s bei einer Weiterleitungsrate von 178,56 Mpps. Die Ports des SG350XG-2F10 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350XG-2F10-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350XG-2F10 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350XG-2F10 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350XG-2F10 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350XG-2F10 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350XG-2F10?",
+    "Der SG350XG-2F10 bietet insgesamt 12 Ports: 10× 10G-RJ45 + 2× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SG350XG-2F10 stapeln?",
+    "Ja, der SG350XG-2F10 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350XG-2F10 PoE?",
+    "Nein, der SG350XG-2F10 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (10× 10G-RJ45 + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG350XG-2F10 verwaltet und ist er noch aktuell?",
+    "Der SG350XG-2F10 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350XG-2F10 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "10× 10G-RJ45 + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "240 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "178,56 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "3 Lüfter (49,7 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350XG-2F10",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350XG-24F": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350XG-24F 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 22× 10G-SFP+ + 2× 10G-Combo",
+  "titel_tag": "Cisco SG350XG-24F 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350XG-24F (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 22× 10G-SFP+ + 2× 10G-Combo, Switching-Kapazität 480 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "4,16",
+  "versandgewicht": "5,36",
+  "kurzbeschreibung": "<p>Der Cisco SG350XG-24F ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 22× 10G-SFP+ + 2× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350XG-24F über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350XG-24F unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350XG-24F ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 24-Port-10G-SFP+-Glasfaser-Aggregations-Switch mit 22× 10G-SFP+ + 2× 10G-Combo.",
+   "Mit 24 Ports erreicht der SG350XG-24F eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 357,12 Mpps. Die Ports des SG350XG-24F sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350XG-24F-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350XG-24F statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350XG-24F unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350XG-24F mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350XG-24F ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350XG-24F?",
+    "Der SG350XG-24F bietet insgesamt 24 Ports: 22× 10G-SFP+ + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SG350XG-24F stapeln?",
+    "Ja, der SG350XG-24F unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350XG-24F PoE?",
+    "Nein, der SG350XG-24F ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (22× 10G-SFP+ + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG350XG-24F verwaltet und ist er noch aktuell?",
+    "Der SG350XG-24F läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350XG-24F bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "22× 10G-SFP+ + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "357,12 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (36,4 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350XG-24F",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350XG-24T": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350XG-24T 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 22× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SG350XG-24T 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350XG-24T (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 22× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 480 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "5,57",
+  "versandgewicht": "6,77",
+  "kurzbeschreibung": "<p>Der Cisco SG350XG-24T ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 22× 10G-RJ45 + 2× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350XG-24T über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350XG-24T unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350XG-24T ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 24-Port-10G-Kupfer-Aggregations-Switch mit 22× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 24 Ports erreicht der SG350XG-24T eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 357,12 Mpps. Die Ports des SG350XG-24T sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350XG-24T-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350XG-24T statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350XG-24T unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350XG-24T mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350XG-24T ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350XG-24T?",
+    "Der SG350XG-24T bietet insgesamt 24 Ports: 22× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SG350XG-24T stapeln?",
+    "Ja, der SG350XG-24T unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350XG-24T PoE?",
+    "Nein, der SG350XG-24T ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (22× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG350XG-24T verwaltet und ist er noch aktuell?",
+    "Der SG350XG-24T läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350XG-24T bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "22× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "357,12 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (50,5 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350XG-24T",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SG350XG-48T": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG350XG-48T 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 46× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SG350XG-48T 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SG350XG-48T (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 46× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 960 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "7,43",
+  "versandgewicht": "8,63",
+  "kurzbeschreibung": "<p>Der Cisco SG350XG-48T ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 46× 10G-RJ45 + 2× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SG350XG-48T über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG350XG-48T unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SG350XG-48T ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 48-Port-10G-Kupfer-Aggregations-Switch (960 Gbit/s) mit 46× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 48 Ports erreicht der SG350XG-48T eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 714,24 Mpps. Die Ports des SG350XG-48T sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SG350XG-48T-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SG350XG-48T statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SG350XG-48T unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG350XG-48T mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SG350XG-48T ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG350XG-48T?",
+    "Der SG350XG-48T bietet insgesamt 48 Ports: 46× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SG350XG-48T stapeln?",
+    "Ja, der SG350XG-48T unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG350XG-48T PoE?",
+    "Nein, der SG350XG-48T ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (46× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG350XG-48T verwaltet und ist er noch aktuell?",
+    "Der SG350XG-48T läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SG350XG-48T bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "46× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714,24 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (58,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG350XG-48T",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SX350X-08": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX350X-08 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 6× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SX350X-08 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SX350X-08 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 6× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 160 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "2,98",
+  "versandgewicht": "4,18",
+  "kurzbeschreibung": "<p>Der Cisco SX350X-08 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 6× 10G-RJ45 + 2× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SX350X-08 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX350X-08 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SX350X-08 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein kompakter 8-Port-10G-Kupfer-Switch mit 6× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 8 Ports erreicht der SX350X-08 eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 119,05 Mpps. Die Ports des SX350X-08 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SX350X-08-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SX350X-08 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SX350X-08 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX350X-08 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SX350X-08 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX350X-08?",
+    "Der SX350X-08 bietet insgesamt 8 Ports: 6× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SX350X-08 stapeln?",
+    "Ja, der SX350X-08 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX350X-08 PoE?",
+    "Nein, der SX350X-08 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (6× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX350X-08 verwaltet und ist er noch aktuell?",
+    "Der SX350X-08 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SX350X-08 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "6× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "119,05 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "2 Lüfter (59,0 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX350X-08",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SX350X-12": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX350X-12 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 10× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SX350X-12 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SX350X-12 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 10× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 240 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "2,93",
+  "versandgewicht": "4,13",
+  "kurzbeschreibung": "<p>Der Cisco SX350X-12 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 10× 10G-RJ45 + 2× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SX350X-12 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX350X-12 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SX350X-12 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 12-Port-10G-Kupfer-Switch mit 10× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 12 Ports erreicht der SX350X-12 eine Switching-Kapazität von 240 Gbit/s bei einer Weiterleitungsrate von 178,56 Mpps. Die Ports des SX350X-12 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SX350X-12-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SX350X-12 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SX350X-12 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX350X-12 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SX350X-12 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX350X-12?",
+    "Der SX350X-12 bietet insgesamt 12 Ports: 10× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SX350X-12 stapeln?",
+    "Ja, der SX350X-12 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX350X-12 PoE?",
+    "Nein, der SX350X-12 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (10× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX350X-12 verwaltet und ist er noch aktuell?",
+    "Der SX350X-12 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SX350X-12 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "10× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "240 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "178,56 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "2 Lüfter (51,8 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX350X-12",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SX350X-24F": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX350X-24F 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 20× 10G-SFP+ + 4× 10G-Combo",
+  "titel_tag": "Cisco SX350X-24F 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SX350X-24F (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 20× 10G-SFP+ + 4× 10G-Combo, Switching-Kapazität 480 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "4,40",
+  "versandgewicht": "5,6",
+  "kurzbeschreibung": "<p>Der Cisco SX350X-24F ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 20× 10G-SFP+ + 4× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SX350X-24F über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX350X-24F unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SX350X-24F ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 24-Port-10G-SFP+-Glasfaser-Switch mit 20× 10G-SFP+ + 4× 10G-Combo.",
+   "Mit 24 Ports erreicht der SX350X-24F eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 240,00 Mpps. Die Ports des SX350X-24F sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SX350X-24F-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SX350X-24F statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SX350X-24F unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX350X-24F mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SX350X-24F ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX350X-24F?",
+    "Der SX350X-24F bietet insgesamt 24 Ports: 20× 10G-SFP+ + 4× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SX350X-24F stapeln?",
+    "Ja, der SX350X-24F unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX350X-24F PoE?",
+    "Nein, der SX350X-24F ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (20× 10G-SFP+ + 4× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX350X-24F verwaltet und ist er noch aktuell?",
+    "Der SX350X-24F läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SX350X-24F bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10G-SFP+ + 4× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "240,00 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (57,6 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX350X-24F",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SX350X-24": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX350X-24 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 20× 10G-RJ45 + 4× 10G-Combo",
+  "titel_tag": "Cisco SX350X-24 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SX350X-24 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 20× 10G-RJ45 + 4× 10G-Combo, Switching-Kapazität 480 Gbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "6,3",
+  "kurzbeschreibung": "<p>Der Cisco SX350X-24 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 20× 10G-RJ45 + 4× 10G-Combo für die 10G-Aggregation ohne PoE. Verwaltet wird der SX350X-24 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX350X-24 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SX350X-24 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 24-Port-10G-Kupfer-Switch mit 20× 10G-RJ45 + 4× 10G-Combo.",
+   "Mit 24 Ports erreicht der SX350X-24 eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 240,00 Mpps. Die Ports des SX350X-24 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SX350X-24-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SX350X-24 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SX350X-24 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX350X-24 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SX350X-24 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX350X-24?",
+    "Der SX350X-24 bietet insgesamt 24 Ports: 20× 10G-RJ45 + 4× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SX350X-24 stapeln?",
+    "Ja, der SX350X-24 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX350X-24 PoE?",
+    "Nein, der SX350X-24 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (20× 10G-RJ45 + 4× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX350X-24 verwaltet und ist er noch aktuell?",
+    "Der SX350X-24 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SX350X-24 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10G-RJ45 + 4× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "240,00 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "4 Lüfter (53,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX350X-24",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ },
+ "SX350X-52": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX350X-52 350X-Series stapelbarer Managed Switch (L2, SB-OS) – 48× 10G-RJ45 + 4× 10G-SFP+",
+  "titel_tag": "Cisco SX350X-52 350X stapelbarer Switch (L2) | Hexwaren",
+  "meta_description": "Original Cisco SX350X-52 (Serie 350X): stapelbarer gemanagter Layer-2-Switch, 48× 10G-RJ45 + 4× 10G-SFP+, Switching-Kapazität 1,04 Tbit/s. Cisco-SB-OS (SNA/FindIT), echtes Stacking, Limited …",
+  "artikelgewicht": "7,29",
+  "versandgewicht": "8,49",
+  "kurzbeschreibung": "<p>Der Cisco SX350X-52 ist ein stapelbarer gemanagter Layer-2-Switch der Cisco-350X-Serie (Small Business) für 10G-Aggregation und wachsende Netze mit 48× 10G-RJ45 + 4× 10G-SFP+ für die 10G-Aggregation ohne PoE. Verwaltet wird der SX350X-52 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX350X-52 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack) unter einer Verwaltungs-IP, arbeitet aktiv gekühlt und ist mit Cisco Limited Lifetime Warranty abgedeckt.</p>",
+  "intro": [
+   "Der Cisco SX350X-52 ist ein stapelbarer gemanagter Layer-2-Switch aus der Cisco-350X-Serie (Small Business) – ein 48-Port-10G-Kupfer-Aggregations-Switch mit 1,04 Tbit/s Switching-Kapazität mit 48× 10G-RJ45 + 4× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SX350X-52 eine Switching-Kapazität von 1,04 Tbit/s bei einer Weiterleitungsrate von 755,81 Mpps. Die Ports des SX350X-52 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Bis zu vier SX350X-52-Einheiten lassen sich per echtem Stacking (208 Ports, Ring- oder Chain-Topologie, Hybrid-Stack) zu einem System mit einer Verwaltungs-IP verbinden. Als Layer-2-Switch beherrscht der SX350X-52 statisches IPv4-/IPv6-Routing (bis zu 990 statische Routen), jedoch kein dynamisches Routing.",
+   "Betrieben wird der SX350X-52 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX350X-52 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Der SX350X-52 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 350X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 4 Einheiten, Hybrid-Stack)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX350X-52?",
+    "Der SX350X-52 bietet insgesamt 52 Ports: 48× 10G-RJ45 + 4× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Lässt sich der SX350X-52 stapeln?",
+    "Ja, der SX350X-52 unterstützt echtes Hardware-Stacking von bis zu vier Einheiten (208 Ports, Hybrid-Stack aus SG350X/SG350XG/SX350X) unter einer einzigen Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX350X-52 PoE?",
+    "Nein, der SX350X-52 ist ein reiner 10G-Aggregations-Switch ohne PoE-Einspeisung (48× 10G-RJ45 + 4× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SX350X-52 verwaltet und ist er noch aktuell?",
+    "Der SX350X-52 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 350X-Serie ist abgekündigt (End-of-Sale 2021); der SX350X-52 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10G-RJ45 + 4× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,04 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "755,81 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "100–240 V AC (50/60 Hz)"
+   ],
+   [
+    "Kühlung",
+    "5 Lüfter (60,4 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 4 Einheiten, 208 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Wachsende kleine und mittlere Unternehmen, 10G-Server-/Storage-Anbindung, Glasfaser-Backbone und Wi-Fi-6-Aggregation; reine 10G-Aggregation ohne PoE; echtes Stacking (bis 4 Einheiten, eine Verwaltungs-IP); managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX350X-52",
+    "EoL",
+    "Cisco 350X Series End-of-Sale ~2021 (abgelöst durch CBS350/Catalyst 1300; 10G-/Stacking-Nische bleibt im Restkanal) — informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/datasheet-c78-735986.html"
+   ]
+  ]
+ }
+}

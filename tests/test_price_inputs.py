@@ -127,6 +127,9 @@ def test_cisco_prices_are_phase1_catalog_consistent_zero():
     import io
 
     prices = REPO / "output" / "stage3_Cisco" / "Hexwaren_Cisco_Transceivers_Prices.csv"
+    if not prices.exists():
+        pytest.skip("Phase-1 Cisco Prices CSV lives under the untracked output/stage3_Cisco/ "
+                    "(transient pipeline artifact, not committed by design) — absent on a clean clone")
     raw = prices.read_bytes().decode("utf-8")
     assert not raw.startswith("﻿"), "Prices CSV must have NO BOM"
     rows = list(csv.reader(io.StringIO(raw), delimiter=";"))

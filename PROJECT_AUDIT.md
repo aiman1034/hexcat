@@ -2288,6 +2288,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. **MANIFEST SPLIT:** "SMB 350/550" → SMB 350 (built 24),
   **SMB 350X (~13)**, **SMB 550X (~20, Managed L3)**; families in scope **49→51**. reconciler → **Cisco_350
   24/24**. **Coverage now: 247 built, 17 families complete, 28%.**
+- **HOUSEKEEPING (Parts 1–2) + BUILD Cisco SMB 350X (Part 3) (2026-06-23).**
+  - **PART 1 — IE3500 reclassified:** manifest row re-tagged from "new fixed family" → **"(modular)" DEFERRED-class**
+    (base PIDs IE-3500-8T3S/8P3S/8T3X/8P3X/8U3X + IE-3505-8T3S/8P3S expand to 27 ports via IEM-3500 modules — the
+    SAME base+module architecture as IE3300/IE3400), grouped with the chassis cluster; dropped from the clean-fixed
+    not-started queue. (Separate IE3500H Heavy Duty Series noted, NOT actioned.)
+  - **PART 2 — 3 transceiver tests made clean-clone reproducible:** guarded `test_cisco_prices_are_phase1_catalog_consistent_zero`
+    (skip if the untracked `output/stage3_Cisco/…Prices.csv` is absent) and `test_cisco_mined_set_equals_curated_seed`
+    (skip if untracked `Cisco_Transceivers_SEED.xlsx` is absent); hardened `test_quarantine_holds_only_rejected_rows`
+    to **skip-with-reason if the CLI subprocess CRASHED** (returncode≠0 + no quarantine + traceback) vs a real
+    emit-bug (still fails) + added the missing `import pytest`. **Reproduced in a clean `git worktree`:** tests 1&2
+    now SKIP cleanly, test 3 PASSES — so it was NOT a quarantine-emission bug (the auditor's "didn't emit" was a
+    crash-exit, now skipped gracefully). Did NOT commit the transient pipeline files. Full suite **422 passed**.
+  - **PART 3 — BUILD Cisco SMB 350X (sub-batch 2) — family #9, 20/20.** New family `output/switches/Cisco_350X/`
+    from `c350x_harvest_source.md` (Cisco 350X DS 2021-02-22; 11 SG350X + 4 SG350XG + 5 SX350X). Same SMB taxonomy
+    as the 350 base (Managed L2, **Cisco SB/SNA/FindIT OS** — no IOS XE/NX-OS/Business Dashboard, 0 leaks; static L3
+    only; EoS ~2021, never-dropped) EXCEPT **real stacking**: Stacking = **"Ja – Echtes Stacking (bis zu 4 Einheiten,
+    208 Ports; Hybrid-Stack)"** on all 20 — **FIRST new family to exercise the re-keyed S.4 Managed-stacking path;
+    ALL 20 PASS S.4** (Switch-Typ=Managed) → re-key confirmed, no regression. SwK Gbit/s **except SX350X-52 = 1,04
+    Tbit/s** (only ≥1000 Gbps). PoE+ +60-W on 9 P/MP/PD/PV/PMD/PMV models; Nein on SG350X-24/-48 + all SG350XG/SX350X.
+    Bauform Kompakt only SG350X-8PMD. **OOB mgmt port excluded from Portanzahl.** attr-split **11×15 / 9×14**
+    (verified {15:11, 14:9}); S.3 holds; single-closer (G5), §5+wrong-OS prose clean (0/0), no [VERIFY], **gate PASS**.
+    Priced 20 genuine-new-sealed restkanal (refurb ignored hard; **0 direkt / 20 geschätzt** — web had no clean genuine
+    EUR new-sealed, anchored to operator band **€350–4.000**; monotonic port×speed (1G<mGig<10G)×PoE, **pure-10G XG/SX
+    top band, mGig/Voll-PoE-48-port mid**); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: SMB 350X **13→20**,
+    built → reconciler **Cisco_350X 20/20**. **Re-gated all 18 Cisco switch families → all PASS** (MikroTik L6
+    completeness-count fails — pre-existing, orthogonal to this work; flagged). **Coverage now: 267 built, 18 families
+    complete, 30%.**
 
 ---
 

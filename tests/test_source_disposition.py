@@ -81,6 +81,9 @@ def test_manifest_well_formed_and_reconciles(brand):
 
 def test_cisco_mined_set_equals_curated_seed():
     """Tracked-to-tracked: the 29 MINED Cisco URLs must equal the curated SEED workbook."""
+    if not SEED_XLSX.exists():
+        pytest.skip("Cisco_Transceivers_SEED.xlsx is an untracked curated input (not committed) — "
+                    "absent on a clean clone")
     d = _load("cisco")
     mined_urls = {s["url"] for s in d["sources"] if s["disposition"] == "MINED"}
 
