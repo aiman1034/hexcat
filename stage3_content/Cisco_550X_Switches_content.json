@@ -1,0 +1,4062 @@
+{
+ "SF550X-24": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-24 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-24 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-24 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 84,8 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, …",
+  "artikelgewicht": "3,09",
+  "versandgewicht": "4,29",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-24 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SF550X-24 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-24 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-24 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein Fast-Ethernet-Access-Switch mit 10G-Uplinks und L3-Routing für Legacy-10/100-Installationen mit 24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SF550X-24 eine Switching-Kapazität von 84,8 Gbit/s bei einer Weiterleitungsrate von 63,09 Mpps. Die Ports des SF550X-24 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SF550X-24 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-24-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-24 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-24 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-24 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-24 ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-24?",
+    "Der SF550X-24 bietet insgesamt 28 Ports: 24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-24?",
+    "Der SF550X-24 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SF550X-24 PoE?",
+    "Nein, der SF550X-24 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SF550X-24 verwaltet und ist er noch aktuell?",
+    "Der SF550X-24 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-24 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "84,8 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "63,09 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "1+1-redundante Smart-Fan-Lüfter (38,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-24",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SF550X-24P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-24P 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-24P 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-24P (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 195 W, Switching-Kapazität 84,8 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "4,14",
+  "versandgewicht": "5,34",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-24P ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 195-W-PoE+-Budget. Verwaltet wird der SF550X-24P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-24P stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-24P ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein Fast-Ethernet-PoE+-Access-Switch mit 10G-Uplinks und L3-Routing mit 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SF550X-24P eine Switching-Kapazität von 84,8 Gbit/s bei einer Weiterleitungsrate von 63,09 Mpps. Über sein PoE+-Budget von 195 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SF550X-24P Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SF550X-24P dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-24P-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-24P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-24P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-24P ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-24P ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-24P?",
+    "Der SF550X-24P bietet insgesamt 28 Ports: 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-24P?",
+    "Der SF550X-24P ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SF550X-24P?",
+    "Der SF550X-24P liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 195 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SF550X-24P verwaltet und ist er noch aktuell?",
+    "Der SF550X-24P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-24P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 195 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "84,8 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "63,09 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "2+1-redundante Smart-Fan-Lüfter (41,6 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-24P",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SF550X-24MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-24MP 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-24MP 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-24MP (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 84,8 Gbit/s. RIP/VRRP, …",
+  "artikelgewicht": "4,74",
+  "versandgewicht": "5,94",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-24MP ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SF550X-24MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-24MP stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-24MP ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein Fast-Ethernet-Voll-PoE+-Access-Switch mit 10G-Uplinks und L3-Routing mit 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SF550X-24MP eine Switching-Kapazität von 84,8 Gbit/s bei einer Weiterleitungsrate von 63,09 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SF550X-24MP Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SF550X-24MP dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-24MP-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-24MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-24MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-24MP ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-24MP ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-24MP?",
+    "Der SF550X-24MP bietet insgesamt 28 Ports: 24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-24MP?",
+    "Der SF550X-24MP ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SF550X-24MP?",
+    "Der SF550X-24MP liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SF550X-24MP verwaltet und ist er noch aktuell?",
+    "Der SF550X-24MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-24MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "84,8 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "63,09 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (41,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-24MP",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SF550X-48": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-48 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-48 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-48 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 89,6 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, …",
+  "artikelgewicht": "3,54",
+  "versandgewicht": "4,74",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-48 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SF550X-48 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-48 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-48 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-Fast-Ethernet-Access-Switch mit 10G-Uplinks und L3-Routing mit 48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SF550X-48 eine Switching-Kapazität von 89,6 Gbit/s bei einer Weiterleitungsrate von 66,66 Mpps. Die Ports des SF550X-48 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SF550X-48 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-48-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-48 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-48 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-48 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-48 ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-48?",
+    "Der SF550X-48 bietet insgesamt 52 Ports: 48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-48?",
+    "Der SF550X-48 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SF550X-48 PoE?",
+    "Nein, der SF550X-48 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SF550X-48 verwaltet und ist er noch aktuell?",
+    "Der SF550X-48 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-48 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× FE-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "89,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "66,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "1+1-redundante Smart-Fan-Lüfter (40,8 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-48",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SF550X-48P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-48P 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-48P 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-48P (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 89,6 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "5,09",
+  "versandgewicht": "6,29",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-48P ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SF550X-48P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-48P stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-48P ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-Fast-Ethernet-PoE+-Access-Switch mit 10G-Uplinks und L3-Routing mit 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SF550X-48P eine Switching-Kapazität von 89,6 Gbit/s bei einer Weiterleitungsrate von 66,66 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 16× 60-W-PoE-Ports) versorgt der SF550X-48P Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SF550X-48P dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-48P-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-48P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-48P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-48P ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-48P ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-48P?",
+    "Der SF550X-48P bietet insgesamt 52 Ports: 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-48P?",
+    "Der SF550X-48P ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SF550X-48P?",
+    "Der SF550X-48P liefert PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SF550X-48P verwaltet und ist er noch aktuell?",
+    "Der SF550X-48P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-48P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "89,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "66,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (43,8 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-48P",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SF550X-48MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SF550X-48MP 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SF550X-48MP 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SF550X-48MP (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 89,6 Gbit/s. RIP/VRRP, …",
+  "artikelgewicht": "5,16",
+  "versandgewicht": "6,36",
+  "kurzbeschreibung": "<p>Der Cisco SF550X-48MP ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 740-W-PoE+-Budget. Verwaltet wird der SF550X-48MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SF550X-48MP stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SF550X-48MP ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-Fast-Ethernet-Voll-PoE+-Switch (740 W) für große Legacy-Telefonie-Installationen mit 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SF550X-48MP eine Switching-Kapazität von 89,6 Gbit/s bei einer Weiterleitungsrate von 66,66 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at inkl. 16× 60-W-PoE-Ports) versorgt der SF550X-48MP Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SF550X-48MP dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SF550X-48MP-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SF550X-48MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SF550X-48MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SF550X-48MP ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SF550X-48MP ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SF550X-48MP?",
+    "Der SF550X-48MP bietet insgesamt 52 Ports: 48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SF550X-48MP?",
+    "Der SF550X-48MP ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SF550X-48MP?",
+    "Der SF550X-48MP liefert PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports mit insgesamt 740 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SF550X-48MP verwaltet und ist er noch aktuell?",
+    "Der SF550X-48MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SF550X-48MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× FE-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports, 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "89,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "66,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (46,5 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SF550X-48MP",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-24": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-24 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-24 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-24 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 128 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, …",
+  "artikelgewicht": "3,27",
+  "versandgewicht": "4,47",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-24 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550X-24 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-24 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-24 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 1G-Access-Switch mit 10G-Uplinks und dynamischem L3-Routing mit 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG550X-24 eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Die Ports des SG550X-24 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550X-24 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-24-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-24 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-24 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-24 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-24 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-24?",
+    "Der SG550X-24 bietet insgesamt 28 Ports: 24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-24?",
+    "Der SG550X-24 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550X-24 PoE?",
+    "Nein, der SG550X-24 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG550X-24 verwaltet und ist er noch aktuell?",
+    "Der SG550X-24 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-24 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "1+1-redundante Smart-Fan-Lüfter (49,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-24",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-24P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-24P 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-24P 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-24P (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 195 W, Switching-Kapazität 128 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "4,72",
+  "versandgewicht": "5,92",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-24P ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 195-W-PoE+-Budget. Verwaltet wird der SG550X-24P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-24P stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-24P ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 1G-PoE+-Access-Switch mit 10G-Uplinks und dynamischem L3-Routing mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG550X-24P eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Über sein PoE+-Budget von 195 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG550X-24P Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SG550X-24P dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-24P-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-24P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-24P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-24P ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-24P ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-24P?",
+    "Der SG550X-24P bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-24P?",
+    "Der SG550X-24P ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG550X-24P?",
+    "Der SG550X-24P liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 195 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG550X-24P verwaltet und ist er noch aktuell?",
+    "Der SG550X-24P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-24P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 195 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (52,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-24P",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-24MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-24MP 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-24MP 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-24MP (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 128 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "5,33",
+  "versandgewicht": "6,53",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-24MP ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SG550X-24MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-24MP stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-24MP ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 1G-Voll-PoE+-Access-Switch mit 10G-Uplinks und dynamischem L3-Routing mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG550X-24MP eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 8× 60-W-PoE-Ports) versorgt der SG550X-24MP Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SG550X-24MP dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-24MP-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-24MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-24MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-24MP ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-24MP ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-24MP?",
+    "Der SG550X-24MP bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-24MP?",
+    "Der SG550X-24MP ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG550X-24MP?",
+    "Der SG550X-24MP liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG550X-24MP verwaltet und ist er noch aktuell?",
+    "Der SG550X-24MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-24MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (52,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-24MP",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-24MPP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-24MPP 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-24MPP 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-24MPP (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 128 Gbit/s. RIP/VRRP, …",
+  "artikelgewicht": "6,19",
+  "versandgewicht": "7,39",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-24MPP ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 740-W-PoE+-Budget. Verwaltet wird der SG550X-24MPP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-24MPP stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-24MPP ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 1G-Access-Switch mit 740-W-Doppel-PoE-Budget, 10G-Uplinks und L3-Routing mit 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 28 Ports erreicht der SG550X-24MPP eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,23 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at inkl. 8× 60-W-PoE-Ports (Doppel-Budget)) versorgt der SG550X-24MPP Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SG550X-24MPP dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-24MPP-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-24MPP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-24MPP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-24MPP ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-24MPP ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-24MPP?",
+    "Der SG550X-24MPP bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-24MPP?",
+    "Der SG550X-24MPP ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG550X-24MPP?",
+    "Der SG550X-24MPP liefert PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports mit insgesamt 740 W (Doppel-Budget) für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG550X-24MPP verwaltet und ist er noch aktuell?",
+    "Der SG550X-24MPP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-24MPP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 8× 60-W-PoE-Ports, 740 W (Doppel-Budget)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,23 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (53,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-24MPP",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-48": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-48 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-48 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-48 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+, Switching-Kapazität 176 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, …",
+  "artikelgewicht": "3,73",
+  "versandgewicht": "4,93",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-48 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550X-48 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-48 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-48 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-1G-Access-Switch mit 10G-Uplinks und dynamischem L3-Routing mit 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG550X-48 eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Die Ports des SG550X-48 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550X-48 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-48-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-48 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-48 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-48 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-48 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-48?",
+    "Der SG550X-48 bietet insgesamt 52 Ports: 48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-48?",
+    "Der SG550X-48 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550X-48 PoE?",
+    "Nein, der SG550X-48 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG550X-48 verwaltet und ist er noch aktuell?",
+    "Der SG550X-48 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-48 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "1+1-redundante Smart-Fan-Lüfter (51,7 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-48",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-48P": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-48P 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-48P 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-48P (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 382 W, Switching-Kapazität 176 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "5,82",
+  "versandgewicht": "7,02",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-48P ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 382-W-PoE+-Budget. Verwaltet wird der SG550X-48P über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-48P stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-48P ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-1G-PoE+-Access-Switch mit 10G-Uplinks und dynamischem L3-Routing mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG550X-48P eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Über sein PoE+-Budget von 382 W (802.3af/at inkl. 16× 60-W-PoE-Ports) versorgt der SG550X-48P Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SG550X-48P dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-48P-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-48P unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-48P mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-48P ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-48P ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-48P?",
+    "Der SG550X-48P bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-48P?",
+    "Der SG550X-48P ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG550X-48P?",
+    "Der SG550X-48P liefert PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports mit insgesamt 382 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG550X-48P verwaltet und ist er noch aktuell?",
+    "Der SG550X-48P läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-48P bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports, 382 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (52,1 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-48P",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550X-48MP": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550X-48MP 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+",
+  "titel_tag": "Cisco SG550X-48MP 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550X-48MP (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 176 Gbit/s. RIP/VRRP, 8er-Stacking, …",
+  "artikelgewicht": "6,69",
+  "versandgewicht": "7,89",
+  "kurzbeschreibung": "<p>Der Cisco SG550X-48MP ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+ und 740-W-PoE+-Budget. Verwaltet wird der SG550X-48MP über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550X-48MP stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550X-48MP ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-1G-Voll-PoE+-Switch (740 W) mit 10G-Uplinks und L3-Routing mit 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SG550X-48MP eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,94 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at inkl. 16× 60-W-PoE-Ports) versorgt der SG550X-48MP Access-Points, Kameras und IP-Telefone. Als Layer-3-Switch beherrscht der SG550X-48MP dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550X-48MP-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550X-48MP unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550X-48MP mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550X-48MP ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550X-48MP ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550X-48MP?",
+    "Der SG550X-48MP bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550X-48MP?",
+    "Der SG550X-48MP ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Welches PoE-Budget hat der SG550X-48MP?",
+    "Der SG550X-48MP liefert PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports mit insgesamt 740 W für Access-Points, Kameras und IP-Telefone."
+   ],
+   [
+    "Wie wird der SG550X-48MP verwaltet und ist er noch aktuell?",
+    "Der SG550X-48MP läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SG550X-48MP bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-Combo + 2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at) inkl. 16× 60-W-PoE-Ports, 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,94 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (53,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; PoE+-Versorgung für Access-Points, Kameras und IP-Telefone; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550X-48MP",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550XG-8F8T": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550XG-8F8T 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 8× 10G-RJ45 + 8× 10G-SFP+",
+  "titel_tag": "Cisco SG550XG-8F8T 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550XG-8F8T (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 8× 10G-RJ45 + 8× 10G-SFP+, Switching-Kapazität 320 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "5,23",
+  "versandgewicht": "6,43",
+  "kurzbeschreibung": "<p>Der Cisco SG550XG-8F8T ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 8× 10G-RJ45 + 8× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550XG-8F8T über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550XG-8F8T stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550XG-8F8T ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein gemischter 10G-Kupfer-/SFP+-L3-Aggregations-Switch mit 8× 10G-RJ45 + 8× 10G-SFP+.",
+   "Mit 16 Ports erreicht der SG550XG-8F8T eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 238,08 Mpps. Die Ports des SG550XG-8F8T sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550XG-8F8T dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550XG-8F8T-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550XG-8F8T unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550XG-8F8T mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550XG-8F8T ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550XG-8F8T ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550XG-8F8T?",
+    "Der SG550XG-8F8T bietet insgesamt 16 Ports: 8× 10G-RJ45 + 8× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550XG-8F8T?",
+    "Der SG550XG-8F8T ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550XG-8F8T PoE?",
+    "Nein, der SG550XG-8F8T ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (8× 10G-RJ45 + 8× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SG550XG-8F8T verwaltet und ist er noch aktuell?",
+    "Der SG550XG-8F8T läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SG550XG-8F8T bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 10G-RJ45 + 8× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "238,08 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (49,6 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550XG-8F8T",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550XG-24F": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550XG-24F 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 22× 10G-SFP+ + 2× 10G-Combo",
+  "titel_tag": "Cisco SG550XG-24F 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550XG-24F (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 22× 10G-SFP+ + 2× 10G-Combo, Switching-Kapazität 480 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "4,16",
+  "versandgewicht": "5,36",
+  "kurzbeschreibung": "<p>Der Cisco SG550XG-24F ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 22× 10G-SFP+ + 2× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550XG-24F über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550XG-24F stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550XG-24F ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 24-Port-10G-SFP+-Glasfaser-L3-Aggregations-Switch mit 22× 10G-SFP+ + 2× 10G-Combo.",
+   "Mit 24 Ports erreicht der SG550XG-24F eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 357,12 Mpps. Die Ports des SG550XG-24F sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550XG-24F dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550XG-24F-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550XG-24F unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550XG-24F mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550XG-24F ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550XG-24F ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550XG-24F?",
+    "Der SG550XG-24F bietet insgesamt 24 Ports: 22× 10G-SFP+ + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550XG-24F?",
+    "Der SG550XG-24F ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550XG-24F PoE?",
+    "Nein, der SG550XG-24F ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (22× 10G-SFP+ + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG550XG-24F verwaltet und ist er noch aktuell?",
+    "Der SG550XG-24F läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SG550XG-24F bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "22× 10G-SFP+ + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "357,12 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (49,1 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550XG-24F",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550XG-24T": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550XG-24T 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 22× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SG550XG-24T 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550XG-24T (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 22× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 480 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "6,38",
+  "versandgewicht": "7,58",
+  "kurzbeschreibung": "<p>Der Cisco SG550XG-24T ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 22× 10G-RJ45 + 2× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550XG-24T über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550XG-24T stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550XG-24T ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 24-Port-10G-Kupfer-L3-Aggregations-Switch mit 22× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 24 Ports erreicht der SG550XG-24T eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 357,12 Mpps. Die Ports des SG550XG-24T sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550XG-24T dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550XG-24T-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550XG-24T unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550XG-24T mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550XG-24T ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550XG-24T ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550XG-24T?",
+    "Der SG550XG-24T bietet insgesamt 24 Ports: 22× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550XG-24T?",
+    "Der SG550XG-24T ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550XG-24T PoE?",
+    "Nein, der SG550XG-24T ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (22× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG550XG-24T verwaltet und ist er noch aktuell?",
+    "Der SG550XG-24T läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SG550XG-24T bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "22× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "357,12 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (50,5 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550XG-24T",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SG550XG-48T": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SG550XG-48T 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 46× 10G-RJ45 + 2× 10G-Combo",
+  "titel_tag": "Cisco SG550XG-48T 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SG550XG-48T (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 46× 10G-RJ45 + 2× 10G-Combo, Switching-Kapazität 960 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "7,43",
+  "versandgewicht": "8,63",
+  "kurzbeschreibung": "<p>Der Cisco SG550XG-48T ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 46× 10G-RJ45 + 2× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SG550XG-48T über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SG550XG-48T stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SG550XG-48T ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-10G-Kupfer-L3-Aggregations-Switch (960 Gbit/s) mit 46× 10G-RJ45 + 2× 10G-Combo.",
+   "Mit 48 Ports erreicht der SG550XG-48T eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 714,24 Mpps. Die Ports des SG550XG-48T sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SG550XG-48T dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SG550XG-48T-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SG550XG-48T unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SG550XG-48T mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SG550XG-48T ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SG550XG-48T ist ein abgekündigtes Modell (End-of-Sale Dezember 2019), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SG550XG-48T?",
+    "Der SG550XG-48T bietet insgesamt 48 Ports: 46× 10G-RJ45 + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SG550XG-48T?",
+    "Der SG550XG-48T ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SG550XG-48T PoE?",
+    "Nein, der SG550XG-48T ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (46× 10G-RJ45 + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SG550XG-48T verwaltet und ist er noch aktuell?",
+    "Der SG550XG-48T läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale Dezember 2019); der SG550XG-48T bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "46× 10G-RJ45 + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714,24 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (58,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SG550XG-48T",
+    "EoL",
+    "Cisco 550X Series End-of-Sale Dezember 2019 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-12F": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-12F 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 10× 10G-SFP+ + 2× 10G-Combo",
+  "titel_tag": "Cisco SX550X-12F 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-12F (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 10× 10G-SFP+ + 2× 10G-Combo, Switching-Kapazität 240 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "3,42",
+  "versandgewicht": "4,62",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-12F ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 10× 10G-SFP+ + 2× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-12F über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-12F stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-12F ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein kompakter 12-Port-10G-SFP+-Glasfaser-L3-Switch mit 10× 10G-SFP+ + 2× 10G-Combo.",
+   "Mit 12 Ports erreicht der SX550X-12F eine Switching-Kapazität von 240 Gbit/s bei einer Weiterleitungsrate von 178,56 Mpps. Die Ports des SX550X-12F sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-12F dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-12F-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-12F unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-12F mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-12F ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-12F ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-12F?",
+    "Der SX550X-12F bietet insgesamt 12 Ports: 10× 10G-SFP+ + 2× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-12F?",
+    "Der SX550X-12F ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-12F PoE?",
+    "Nein, der SX550X-12F ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (10× 10G-SFP+ + 2× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX550X-12F verwaltet und ist er noch aktuell?",
+    "Der SX550X-12F läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-12F bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "10× 10G-SFP+ + 2× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "240 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "178,56 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (60,0 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-12F",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-16FT": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-16FT 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 8× 10G-RJ45 + 8× 10G-SFP+",
+  "titel_tag": "Cisco SX550X-16FT 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-16FT (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 8× 10G-RJ45 + 8× 10G-SFP+, Switching-Kapazität 320 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "3,79",
+  "versandgewicht": "4,99",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-16FT ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 8× 10G-RJ45 + 8× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-16FT über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-16FT stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-16FT ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein gemischter 16-Port-10G-Kupfer-/SFP+-L3-Switch mit 8× 10G-RJ45 + 8× 10G-SFP+.",
+   "Mit 16 Ports erreicht der SX550X-16FT eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 238,08 Mpps. Die Ports des SX550X-16FT sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-16FT dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-16FT-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-16FT unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-16FT mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-16FT ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-16FT ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-16FT?",
+    "Der SX550X-16FT bietet insgesamt 16 Ports: 8× 10G-RJ45 + 8× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-16FT?",
+    "Der SX550X-16FT ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-16FT PoE?",
+    "Nein, der SX550X-16FT ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (8× 10G-RJ45 + 8× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SX550X-16FT verwaltet und ist er noch aktuell?",
+    "Der SX550X-16FT läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-16FT bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 10G-RJ45 + 8× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "238,08 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "2+1-redundante Smart-Fan-Lüfter (49,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-16FT",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-24FT": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-24FT 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 12× 10G-RJ45 + 12× 10G-SFP+",
+  "titel_tag": "Cisco SX550X-24FT 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-24FT (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 12× 10G-RJ45 + 12× 10G-SFP+, Switching-Kapazität 480 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "4,84",
+  "versandgewicht": "6,04",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-24FT ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 12× 10G-RJ45 + 12× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-24FT über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-24FT stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-24FT ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein gemischter 24-Port-10G-Kupfer-/SFP+-L3-Switch mit 12× 10G-RJ45 + 12× 10G-SFP+.",
+   "Mit 24 Ports erreicht der SX550X-24FT eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 240,00 Mpps. Die Ports des SX550X-24FT sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-24FT dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-24FT-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-24FT unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-24FT mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-24FT ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-24FT ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-24FT?",
+    "Der SX550X-24FT bietet insgesamt 24 Ports: 12× 10G-RJ45 + 12× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-24FT?",
+    "Der SX550X-24FT ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-24FT PoE?",
+    "Nein, der SX550X-24FT ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (12× 10G-RJ45 + 12× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SX550X-24FT verwaltet und ist er noch aktuell?",
+    "Der SX550X-24FT läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-24FT bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 10G-RJ45 + 12× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "240,00 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "2+1-redundante Smart-Fan-Lüfter (60,3 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-24FT",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-24F": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-24F 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 20× 10G-SFP+ + 4× 10G-Combo",
+  "titel_tag": "Cisco SX550X-24F 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-24F (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 20× 10G-SFP+ + 4× 10G-Combo, Switching-Kapazität 480 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "4,70",
+  "versandgewicht": "5,9",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-24F ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 20× 10G-SFP+ + 4× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-24F über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-24F stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-24F ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 24-Port-10G-SFP+-Glasfaser-L3-Aggregations-Switch mit 20× 10G-SFP+ + 4× 10G-Combo.",
+   "Mit 24 Ports erreicht der SX550X-24F eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 240,00 Mpps. Die Ports des SX550X-24F sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-24F dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-24F-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-24F unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-24F mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-24F ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-24F ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-24F?",
+    "Der SX550X-24F bietet insgesamt 24 Ports: 20× 10G-SFP+ + 4× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-24F?",
+    "Der SX550X-24F ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-24F PoE?",
+    "Nein, der SX550X-24F ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (20× 10G-SFP+ + 4× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX550X-24F verwaltet und ist er noch aktuell?",
+    "Der SX550X-24F läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-24F bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10G-SFP+ + 4× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "240,00 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "3+1-redundante Smart-Fan-Lüfter (52,9 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-24F",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-24": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-24 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 20× 10G-RJ45 + 4× 10G-Combo",
+  "titel_tag": "Cisco SX550X-24 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-24 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 20× 10G-RJ45 + 4× 10G-Combo, Switching-Kapazität 480 Gbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "5,16",
+  "versandgewicht": "6,36",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-24 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 20× 10G-RJ45 + 4× 10G-Combo für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-24 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-24 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-24 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 24-Port-10G-Kupfer-L3-Aggregations-Switch mit 20× 10G-RJ45 + 4× 10G-Combo.",
+   "Mit 24 Ports erreicht der SX550X-24 eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 240,00 Mpps. Die Ports des SX550X-24 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-24 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-24-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-24 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-24 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-24 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-24 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-24?",
+    "Der SX550X-24 bietet insgesamt 24 Ports: 20× 10G-RJ45 + 4× 10G-Combo. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-24?",
+    "Der SX550X-24 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-24 PoE?",
+    "Nein, der SX550X-24 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (20× 10G-RJ45 + 4× 10G-Combo)."
+   ],
+   [
+    "Wie wird der SX550X-24 verwaltet und ist er noch aktuell?",
+    "Der SX550X-24 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-24 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10G-RJ45 + 4× 10G-Combo"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "240,00 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "4+1-redundante Smart-Fan-Lüfter (53,6 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-24",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ },
+ "SX550X-52": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco SX550X-52 550X-Series stapelbarer Layer-3-Managed-Switch (SB-OS) – 48× 10G-RJ45 + 4× 10G-SFP+",
+  "titel_tag": "Cisco SX550X-52 550X stapelbarer L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco SX550X-52 (Serie 550X): stapelbarer gemanagter Layer-3-Switch, 48× 10G-RJ45 + 4× 10G-SFP+, Switching-Kapazität 1,04 Tbit/s. RIP/VRRP, 8er-Stacking, RPS-Redundanz, Cisco-SB-OS, …",
+  "artikelgewicht": "7,36",
+  "versandgewicht": "8,56",
+  "kurzbeschreibung": "<p>Der Cisco SX550X-52 ist ein stapelbarer gemanagter Layer-3-Switch der Cisco-550X-Serie (Small Business) für den redundanten SMB-Core mit 48× 10G-RJ45 + 4× 10G-SFP+ für die 10G-L3-Aggregation ohne PoE. Verwaltet wird der SX550X-52 über eine Web-Oberfläche, die Smart Network Application (SNA), FindIT und CLI – ohne Abo-Lizenz.</p><p>Der SX550X-52 stapelt bis zu acht Einheiten (400 Ports, Hybrid-Stack) und sichert den Betrieb über RPS-Stromredundanz (Cisco RPS2300) und N+1-Lüfter; er trägt Cisco Limited Lifetime Warranty.</p>",
+  "intro": [
+   "Der Cisco SX550X-52 ist ein stapelbarer gemanagter Layer-3-Switch aus der Cisco-550X-Serie (Small Business) – ein 48-Port-10G-Kupfer-L3-Core mit 1,04 Tbit/s und RPS-Stromredundanz mit 48× 10G-RJ45 + 4× 10G-SFP+.",
+   "Mit 52 Ports erreicht der SX550X-52 eine Switching-Kapazität von 1,04 Tbit/s bei einer Weiterleitungsrate von 755,81 Mpps. Die Ports des SX550X-52 sind reine Daten-/Aggregationsports ohne PoE-Einspeisung. Als Layer-3-Switch beherrscht der SX550X-52 dynamisches Routing mit RIP v2 und VRRP (bis zu 255 virtuelle Router) zwischen VLANs und Stacks. Bis zu acht SX550X-52-Einheiten lassen sich per echtem Stacking unter einer Verwaltungs-IP verbinden.",
+   "Betrieben wird der SX550X-52 unter dem Cisco-Small-Business-Switch-Betriebssystem; Sicherheit bietet der SX550X-52 mit 802.1X, DHCP-Snooping, Dynamic ARP Inspection, IP Source Guard und ACLs, dazu bis zu 4.094 VLANs. Für Ausfallsicherheit kombiniert der SX550X-52 ein internes Universalnetzteil mit RPS-Anschluss (Cisco RPS2300) und N+1-redundante Smart-Fan-Lüfter. Der SX550X-52 ist ein abgekündigtes Modell (End-of-Sale 2021), bleibt als Lagerware erhältlich, trägt Cisco Limited Lifetime Warranty und arbeitet im Temperaturbereich 0 bis 50 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco 550X Series (Cisco Small Business switch OS)",
+   "Smart Network Application (SNA) / FindIT",
+   "Echtes Stacking (bis 8 Einheiten) + Cisco RPS2300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der SX550X-52?",
+    "Der SX550X-52 bietet insgesamt 52 Ports: 48× 10G-RJ45 + 4× 10G-SFP+. Der dedizierte 1G-OOB-Management-Port zählt nicht zu den Datenports."
+   ],
+   [
+    "Welche Routing- und Stacking-Funktionen hat der SX550X-52?",
+    "Der SX550X-52 ist ein Layer-3-Switch mit dynamischem Routing (RIP v2, VRRP bis 255 virtuelle Router, Policy-Based Routing, IP-SLA-Tracking) und stapelt per echtem Hardware-Stacking bis zu acht Einheiten (400 Ports, Hybrid-Stack) unter einer Verwaltungs-IP."
+   ],
+   [
+    "Hat der SX550X-52 PoE?",
+    "Nein, der SX550X-52 ist ein reiner 10G-L3-Aggregations-Switch ohne PoE-Einspeisung (48× 10G-RJ45 + 4× 10G-SFP+)."
+   ],
+   [
+    "Wie wird der SX550X-52 verwaltet und ist er noch aktuell?",
+    "Der SX550X-52 läuft unter dem Cisco-Small-Business-Switch-Betriebssystem (nicht dem Catalyst-Betriebssystem) und wird über Web-UI, SNA, FindIT und CLI verwaltet. Die 550X-Serie ist abgekündigt (End-of-Sale 2021); der SX550X-52 bleibt als Lagerware erhältlich und trägt Cisco Limited Lifetime Warranty."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10G-RJ45 + 4× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,04 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "755,81 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Universalnetzteil (100–240 V) + RPS-Anschluss (Cisco RPS2300, externe Stromredundanz)"
+   ],
+   [
+    "Kühlung",
+    "5+1-redundante Smart-Fan-Lüfter (61,2 dB)"
+   ],
+   [
+    "Stacking",
+    "Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Anspruchsvolle kleine und mittlere Netze mit redundantem L3-Core/-Aggregation; reine 10G-L3-Aggregation ohne PoE; dynamisches Routing (RIP/VRRP), echtes Stacking bis 8 Einheiten, RPS-Stromredundanz und N+1-Lüfter; managed über Web-UI, Smart Network Application (SNA) und FindIT, ohne Abo-Lizenz"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "SX550X-52",
+    "EoL",
+    "Cisco 550X Series End-of-Sale 2021 (SF550X+SG550XG 20.12.2019; SG550X/SX550X später) — abgelöst durch Cisco Business, L3-/8er-Stack-/RPS-Nische ohne direkten Ersatz; informativ geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/550x-series-stackable-managed-switches/datasheet-c78-735874.html"
+   ]
+  ]
+ }
+}

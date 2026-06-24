@@ -2315,6 +2315,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     built → reconciler **Cisco_350X 20/20**. **Re-gated all 18 Cisco switch families → all PASS** (MikroTik L6
     completeness-count fails — pre-existing, orthogonal to this work; flagged). **Coverage now: 267 built, 18 families
     complete, 30%.**
+- **BUILD Cisco SMB 550X (sub-batch 3, FINAL) — family #10, 23/23 (2026-06-23). CLOSES SMB 350/550 = 67 models**
+  (Cisco_350 24 + Cisco_350X 20 + Cisco_550X 23). New family `output/switches/Cisco_550X/` from
+  `c550x_harvest_source.md` (Cisco 550X DS 2021-02-19; 6 SF550X + 7 SG550X + 4 SG550XG + 6 SX550X). **TOP tier —
+  two structural moves from the 350/350X:** (1) Kat-L3 **Managed Switch (L3)**, Layer **L3** — DYNAMIC routing
+  (RIP v2 + VRRP ≤255 vRouter, PBR, IP-SLA, ≤7168 routes; **RIP/VRRP only, NOT OSPF/BGP**); **S.2 (L3⇒Managed
+  exact) applies + ALL 23 PASS**. (2) Stacking **"Ja – Echtes Stacking (bis zu 8 Einheiten, 400 Ports; Hybrid-Stack)"**
+  — 8/400 vs the 350X's 4/208; **S.4 ALL 23 PASS** (Switch-Typ=Managed). **Hardware redundancy:** internal universal
+  PSU + **RPS2300** + **N+1 smart-fan** (woven into Stromversorgung/Kühlung/prose). Carried: Cisco SB/SNA/FindIT OS
+  (no IOS XE/NX-OS/Business Dashboard/OSPF/BGP — 0 leaks even negated); PoE+ +60-W on 9 P/MP/MPP (**MPP=740 W
+  double-budget**), Nein on plain + all XG/SX; all 23 = 19-Zoll (1 HE); SwK Gbit/s except **SX550X-52 = 1,04 Tbit/s**;
+  OOB mgmt port excluded; attr-split **13×15 / 10×14** (verified {15:13, 14:10}); per-model EoS (SF550X+SG550XG
+  Dec-2019, rest 2021) FAQ+log never-drop. S.3 holds, single-closer (G5), no [VERIFY], **gate PASS** (fixed 3
+  Beschr@176 by trimming the i2 stacking parenthetical; dropped the OSPF/BGP negation from FAQ2). Priced 23
+  genuine-new-sealed restkanal (refurb ignored hard; **0 direkt / 23 geschätzt** — web sparse for EoS SMB, anchored
+  to operator band **€450–4.500**; monotonic port×speed (FE<1G<10G)×PoE (kein<P<MP<MPP), 10G top band, MPP/740W
+  premium); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: SMB 550X **20→23**, built → reconciler
+  **Cisco_550X 23/23**; **SMB 350/550 family COMPLETE (3/3 sub-families, 67 models)**. **Re-gated all 19 Cisco
+  switch families → all PASS** (MikroTik L6 completeness pre-existing); full suite **422 passed**. **Coverage now:
+  290 built, 19 families complete, 32%.**
 
 ---
 
