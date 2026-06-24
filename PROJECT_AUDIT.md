@@ -2480,6 +2480,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
     Cisco_2960 20/20. Re-gated all 27 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite
     **422 passed**. **CATALYST 2960 FAMILY COMPLETE: 105 models** (X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 + CX 2 +
     C 7 + original 20). **Coverage now: 395 built, 27 families complete, 45%.**
+- **BUILD Cisco Catalyst 3560-X flagship — family #19, 21/21 (2026-06-23).** New family `output/switches/Cisco_3560X/`
+  from `c3560x_harvest_source.md` (shared 3750-X/3560-X DS C78-584733). Standalone enterprise L2/L3 Gigabit access.
+  **21 = 7 configs (24T/48T/24P/48P/48PF/24U/48U) × 3 license tiers (-L/-S/-E)** — no 12S/24S (3750-X-only), no
+  3750-X bleed, no module/PSU/license/transceiver SKUs. **FIRST Layer-split family: the suffix sets featureset
+  AND Layer AND Kat-L3** — `-L` = LAN Base = **L2** = Managed Switch (L2); `-S` = IP Base = **L3** = Managed Switch
+  (L3); `-E` = IP Services = **L3** = Managed Switch (L3). **7 L2 + 14 L3** (verified Layer↔suffix exact); featureset
+  keyword in Artikelname/Titel/Meta; **two Kat-L3 tokens → two FAQ sets**. **S.2 (L3 ⇒ Managed-exact) passes** for all
+  14 L3. **Four PoE tiers:** T=Nein; P/48P=PoE+ (802.3at, 30 W, 435 W); 48PF=PoE+ (800 W); U=UPOE (60 W, 800 W /
+  1800 W w/2 PSU) — **802.3at/UPOE/60 W legit on P/PF/U, T models PoE-clean** (verified). **MACsec (IEEE 802.1AE)
+  REAL — present on all 21** (NOT stripped). **StackWise/StackPower/FlexStack = 0** (standalone, no stacking — those
+  are 3750-X-only; caught + removed a FAQ negation that leaked them). Modular uplinks → no fixed uplink ports →
+  **attr {14:21}**; Portanzahl = 24/48 (base only). SwK **160 Gbit/s** all; Durchsatz 65,5 (24) / 101,2 (48); Port-
+  Gesch 1G; Bauform 19" 1HE (no DIN, S.5 clean); Kühlung aktiv; Temp -5–45 °C; Stromversorgung int. AC modular +
+  Cisco XPS 2200; OS Cisco IOS (classic, no IOS XE/NX-OS); E-LLW. S.3 holds, single-closer (G5), §5 0, no [VERIFY],
+  **gate PASS**. EoS never-drop. Priced 21 — refurb-saturated; genuine new-sealed only, refurb hard-rejected;
+  **0 direkt / 21 geschätzt** to operator band **€350–2.500**, monotonic ports×PoE-tier×license (-S=-L×1,3, -E=-L×1,7;
+  floor 24T-L €350, ceiling 48U-E €2.500); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: opened a NEW
+  `Cisco_3560X` row + split the legacy "3560 (CX/X)" → "3560/3560-C/3560-CX (legacy)" ~19 (distinct from 3560-X);
+  families in scope **58→59**. reconciler → **Cisco_3560X 21/21**. Re-gated all 28 Cisco switch families → all PASS
+  (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 416 built, 28 families complete, 47%.**
 
 ---
 
