@@ -2398,6 +2398,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Manifest: 2960-SF built (7) + remaining 2960 legacy reduced to ~78 (2960-Plus/-L/-CX/-C/-G); families in scope
   **53→54**. reconciler → **Cisco_2960SF 7/7**. Re-gated all 22 Cisco switch families → all PASS (MikroTik L6
   pre-existing); full suite **422 passed**. **Coverage now: 332 built, 22 families complete, 37%.**
+- **BUILD Cisco Catalyst 2960-Plus (sub-batch 4 of the ~120 2960 family) — family #14, 10/10 (2026-06-23).**
+  New family `output/switches/Cisco_2960Plus/` from `c2960plus_harvest_source.md` (Cisco DS C78-728003, 2013-2014).
+  FE refresh of the original 2960 — **FIVE traps:** (1) **PID format `WS-C2960+…` (literal +)** — NOT `WS-C2960-…`
+  (older original) / NOT `WS-C2960PLUS-…` (all 10 verified). (2) **NO stacking — all 10 Nein**, S.4 idle, never
+  FlexStack/StackWise/stackbar. (3) **802.3af PoE only (bis 15,4 W/Port)** — zero "PoE+"/"30 W" (verified 0, incl.
+  negations dropped). (4) **RPS 2300 back** — Stromversorgung "Internes Netzteil (100–240 V AC); externe Redundanz
+  über Cisco RPS 2300" (unlike the SF). (5) **24LC "(8 PoE)" S.3 trap** — PoE attr "123 W (davon 8 Ports mit PoE)",
+  Port-Konfig "(davon 8 mit PoE)" (no "8×"), **Portanzahl = 26 holds**. Carried: classic Cisco IOS (LAN Base/LAN
+  Lite), all Managed Switch (L2)/Layer L2, FE 10/100 access ("100M (Uplink 1G)"), E-LLW, -5–45 °C, aktiv gekühlt,
+  19-Zoll (1 HE). Combo uplinks (SFP/1000BASE-T); 48PST = 2× SFP + 2× 1000BASE-T. Durchsatz = Table-5 per-model
+  (published). attr-split uniform **{14:10}**. S.3 holds, single-closer (G5), §5+wrong-OS (incl. StackWise/FlexStack/
+  PoE+/30W) 0, no [VERIFY], **gate PASS**. EoS never-drop, §5-clean body. Accessories excluded (only 10 WS-C2960+*
+  PIDs). Priced 10 — refurb-saturated; genuine new-sealed only, refurb hard-rejected; **0 direkt / 10 geschätzt**
+  anchored to operator band **€200–1.800**; ceiling 48PST-L set at €1.400 (below the 2960-SF, more basic FE line);
+  monotonic featureset(LAN Lite<LAN Base)×ports×PoE(kein<123<370)×uplinks(2 combo<4 48PST); ungrouped, NO-BOM,
+  0 zeros, Main↔Prices exact. Manifest: 2960-Plus built (10) + remaining 2960 legacy reduced to ~68 (2960-L/-CX/-C/-G);
+  families in scope **54→55**. reconciler → **Cisco_2960Plus 10/10**. Re-gated all 23 Cisco switch families → all PASS
+  (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 342 built, 23 families complete, 38%.**
+  (2960 family progress: X/XR 23 + S 12 + SF 7 + Plus 10 = **52 of ~120**.)
 
 ---
 
