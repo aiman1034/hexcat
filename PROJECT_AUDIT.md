@@ -2458,6 +2458,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (2960-C, 2960/2960G); families in scope **56→57**. reconciler → **Cisco_2960CX 2/2**. Re-gated all 25 Cisco
   switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 368 built,
   25 families complete, 41%.** (2960 family: X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 + CX 2 = **78 of ~120**.)
+- **BUILD Cisco Catalyst 2960-C (7) + 2960/2960G original (20) — sub-batches 7+8, families #17+#18 (2026-06-23).
+  CLOSES THE 2960 FAMILY at 105 models.**
+  - **2960-C (7)** — `output/switches/Cisco_2960C/` from `c2960c_harvest_source.md` (shared 2960-C/3560-C DS
+    C78-639705). Compact fanless FE (one GbE) with PoE-passthrough/PD. Exactly 7 PIDs (8TC-L/-S, 8PC-L, 12PC-L,
+    CG-8TC-L Gigabit, CPD-8TT-L PD, CPD-8PT-L passthrough) — **no WS-C3560C\*, no 8PT-L/12PT-L typo PIDs**.
+    **Four-way PoE:** Nein (8TC-L/-S/CG/8TT-L PD); **802.3af 124 W** (8PC-L/12PC-L — NO PoE+/30 W output);
+    **Passthrough 30,8 W** (8PT-L). "PoE+" appears ONLY on the CPD uplink-input (verified). No MACsec (3560-C-only).
+    CG = 1G / 40 °C, rest 100M / 45 °C. SwK 5,6/6,4/20; Durchsatz 4,2/4,8/14,9. attr {14:7}. Priced €200–650.
+  - **2960/2960G original (20)** — `output/switches/Cisco_2960/` from two DS (C78-481303 LAN Base, C78-486688
+    LAN Lite). 2009-era FE, 3× Gigabit 2960G, 1 PoE-input PD. 12 `-L` + 8 `-S` (incl. `WS-C2960G-*` ×3 +
+    `WS-C2960PD-8TT-L`) — no `WS-2960-*` typos. **802.3af-only** (15,4 W; PD-8TT-L = Nein; PoE+/30W/802.3at = 0).
+    **RPS 2300 only on LAN-Base 24/48-port** (9 models); 8TC-L/G-8TC-L/PD + all `-S` = no RPS. **Fanless only on
+    the 4 compact 8-port.** Speed split (3× 2960G = 1G, 24-S = 100M, rest 100M-Uplink-1G); SwK 16/32; Durchsatz
+    published per-model; G-8TC-L = 40 °C. Warranty **LLW** (not E-LLW). attr {14:20}. Priced €150–650.
+  - **Both:** all Managed Switch (L2)/Layer L2, single Kat-L3 token; Cisco IOS (LAN Base/Lite); no stacking (S.4
+    idle); no MACsec; mounting in prose (S.5-clean, no DIN in Bauform attr); single-closer (G5); §5 0 (incl.
+    `\bsealed\b`); wrong-OS incl. StackWise/FlexStack/Meraki = 0; no [VERIFY]; **gate PASS**; Main↔Prices 7 & 20;
+    0 direkt / 27 geschätzt (refurb hard-rejected). Manifest: opened `Cisco_2960C` + `Cisco_2960`, **removed the
+    legacy-2960 remainder row** (family fully covered); families in scope **57→58**. reconciler → Cisco_2960C 7/7,
+    Cisco_2960 20/20. Re-gated all 27 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite
+    **422 passed**. **CATALYST 2960 FAMILY COMPLETE: 105 models** (X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 + CX 2 +
+    C 7 + original 20). **Coverage now: 395 built, 27 families complete, 45%.**
 
 ---
 
