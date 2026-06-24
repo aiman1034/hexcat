@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from hexcat.validate import valid_gtin, validate_dir
+from hexcat.validate import Validator, valid_gtin, validate_dir
 from conftest import read_bytes_text, write_text_bytes
 
 
@@ -167,6 +167,38 @@ def test_warn_list_is_not_a_failure(good_bundle, rules):
     r = validate_dir(rules, d)
     assert r.ok, _violations_str(r)
     assert any("Premium" in w.message for w in r.warnings)
+
+
+# ---- switch semantic S.4: Stacking is keyed off the management tier, EXACT "Managed" -------
+# "Smart-Managed" contains the substring "Managed", so a substring test would wrongly pass it;
+# S.4 must use an exact match. These pin both directions.
+
+def _switch_vals(switch_typ: str, stacking: str, layer: str = "L2") -> dict:
+    return {
+        "Switch-Typ": switch_typ, "Layer": layer, "Portanzahl": "10",
+        "Port-Konfiguration": "8× 1G-RJ45 + 2× 1G-SFP", "Port-Geschwindigkeit": "1G",
+        "PoE": "Nein", "Bauform": "19-Zoll-Rackmontage (1 HE)",
+        "Anwendung": "Kleine Bueros", "Betriebstemperatur": "0 bis 50 °C",
+        "Stacking": stacking,
+    }
+
+
+def test_s4_smart_managed_stacking_fails(rules, tmp_path):
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Smart-Managed", "Ja – Single-IP-Management")
+    v._check_switch_sku("X_Main.csv", "SG350-10", "Smart-Managed Switch", set(vals), vals)
+    s4 = [vio for vio in v.result.violations if "S.4" in vio.message]
+    assert s4, [str(x) for x in v.result.violations]
+    assert s4[0].field == "Stacking"
+
+
+def test_s4_managed_stacking_ok(rules, tmp_path):
+    # A fully Managed switch may stack (StackWise) — no S.4 violation (exact-match companion).
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Ja – Cisco StackWise (bis zu 4)")
+    v._check_switch_sku("X_Main.csv", "C9300-24T", "Managed Switch (L2)", set(vals), vals)
+    assert not [vio for vio in v.result.violations if "S.4" in vio.message], \
+        [str(x) for x in v.result.violations]
 
 
 def test_verification_log_missing_row(good_bundle, rules):

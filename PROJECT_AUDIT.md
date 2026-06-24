@@ -2261,6 +2261,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   10G>1G uplink, PoE>data, mGig/4PPoE flagship €6.000, substation-premium 22S2C4X €5.500 despite no-PoE); ungrouped,
   NO-BOM, 0 zeros, Main↔Prices exact. Manifest: IE9300 moved missing-family → built block (count 15→8, 8 model
   rows P2) → reconciler **Cisco_IE9300 8/8**. **Coverage now: 223 built, 16 families complete, 25%.**
+- **GATE HARDENING — S.2/S.4 re-keyed to the management tier (2026-06-23).** Re-keyed **S.4** off the
+  Kat-L3 token allowlist onto **Switch-Typ**: FAIL when Stacking starts "ja" AND `Switch-Typ != "Managed"`
+  (**exact** match — "Smart-Managed" *contains* the substring "Managed" but smart switches don't stack;
+  this holds across Managed-L2/L3, Data-Center and Industrie alike, so the IE9300 industrial StackWise
+  stays valid). Tightened **S.2**'s same substring trap to exact (`Layer L3 ⇒ Switch-Typ == "Managed"`).
+  Added 2 unit tests (`tests/test_validate.py`): Smart-Managed + Stacking=Ja → FAIL; Managed + Stacking=Ja
+  → no S.4. **Full suite 422 passed**; **re-gated all 16 Cisco switch families → all PASS** (MikroTik fails
+  L6 *completeness count-mismatch* only — pre-existing, orthogonal to this semantic change).
+- **BUILD Cisco SMB 350 Series (SF350 + SG350) — family #8, 24/24 (2026-06-23).** New family
+  `output/switches/Cisco_350/` from `c350_harvest_source.md` (Cisco 350 DS 2020-04-15; **sub-batch 1** of
+  the SMB 350/550 rollout). **OLDER Small Business line (NOT Catalyst):** Kat-L3 **Managed Switch (L2)**,
+  Switch-Typ Managed, Layer **L2** (static L3 only — up to 990 static routes — in prose; no dynamic routing).
+  **OS = Cisco Small Business switch OS** via Web-UI + **Smart Network Application (SNA)** + FindIT + CLI —
+  NEVER IOS XE / NX-OS / Cisco Business Dashboard (0 leaked). Stacking = **"Single-IP-Management"** (bare
+  value, management-plane only; doesn't start "ja" → S.4-exempt; NOT StackWise). PoE+ (802.3af/at) + **60-W-PoE**
+  on selected ports (P/MP); Nein on plain/SFP/T. Bauform per-model (compact 8–20-port vs 19" 24/48 + SG355-10P);
+  Kühlung per-model. Betriebstemp 0–50 °C (SG350-8PD = 0–45 °C). SwK Gbit/s, Durchsatz Mpps. Limited Lifetime
+  warranty, perpetual, no DNA. **EoS ~2021** (flagged in FAQ + Verification_Log, **never dropped**). attr-split
+  **10×15 (Uplink-Ports) / 14×14 (uniform)** — verified {14:14, 15:10}; S.3 holds. Single-closer (G5),
+  §5-UWG + wrong-OS prose clean (0/0), no [VERIFY], **gate PASS**. Fixed a reuse-check trip: "ca." in the EoS
+  sentence split off a PN-less tail (`reuse_candidate_sentences` masks neither PN nor numbers → only PN-*less*
+  sentences collide); dropping "ca." made every Beschreibung sentence PN-bearing → clean. Priced 24 genuine-
+  new-sealed restkanal (refurb ignored hard; **2 direkt** [SF350-08 €140 floor, SG350-52MP €1.550/$1680] **/
+  22 geschätzt**; monotonic port×PoE×media, **FE<Gigabit at equal ports**, SFP/mGig premium, **€140–1.550**);
+  ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. **MANIFEST SPLIT:** "SMB 350/550" → SMB 350 (built 24),
+  **SMB 350X (~13)**, **SMB 550X (~20, Managed L3)**; families in scope **49→51**. reconciler → **Cisco_350
+  24/24**. **Coverage now: 247 built, 17 families complete, 28%.**
 
 ---
 

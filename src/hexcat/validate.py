@@ -834,8 +834,9 @@ class Validator:
         if re.search(r"\d+\s*W|Budget", poe) and not re.search(r"PoE|802\.3(?:af|at|bt)", portcfg, re.I):
             self._fail(fname, sku, "PoE", "a PoE port in Port-Konfiguration", poe,
                        "semantic S.1: a PoE budget requires at least one PoE port in Port-Konfiguration")
-        # S.2 Layer L3 -> Switch-Typ Managed.
-        if "L3" in layer and "Managed" not in styp:
+        # S.2 Layer L3 -> Switch-Typ EXACTLY "Managed" (exact, not substring: "Smart-Managed" contains
+        # "Managed" but a smart switch does not do L3 routing).
+        if "L3" in layer and styp.strip() != "Managed":
             self._fail(fname, sku, "Layer↔Switch-Typ", "Switch-Typ=Managed for L3", f"{layer} / {styp}",
                        "semantic S.2: Layer-3 routing requires a Managed switch")
         # S.3 Portanzahl == sum of the port counts parsed from Port-Konfiguration.
@@ -844,13 +845,13 @@ class Validator:
         if counts and pa.isdigit() and sum(counts) != int(pa):
             self._fail(fname, sku, "Portanzahl", f"sum of Port-Konfiguration ({sum(counts)})", pa,
                        "semantic S.3: Portanzahl must equal the port count in Port-Konfiguration")
-        # S.4 Stacking=Ja only on managed-class switches (Managed L2/L3, Data-Center, Industrie).
-        # Industrial rack-aggregation switches (Catalyst IE9300) run real Cisco StackWise; the rule's
-        # intent is to reject stacking claims on unmanaged/smart-managed edge switches, not industrial.
-        if stacking.strip().lower().startswith("ja") and k3 not in (
-                "Managed Switch (L2)", "Managed Switch (L3)", "Data-Center-Switch", "Industrie-Switch"):
-            self._fail(fname, sku, "Stacking", "Stacking only on Managed/Data-Center/Industrie switches", k3,
-                       "semantic S.4: Stacking is valid only on managed/data-center/industrial switches")
+        # S.4 Stacking=Ja only on a fully Managed switch — keyed off the management tier (Switch-Typ),
+        # NOT the Kat-L3 token, so it holds across Managed-L2/L3, Data-Center and Industrie switches alike
+        # (e.g. the Catalyst IE9300 industrial stack). Exact match: "Smart-Managed" contains the substring
+        # "Managed" but smart switches do not run real data-plane stacking.
+        if stacking.strip().lower().startswith("ja") and styp.strip() != "Managed":
+            self._fail(fname, sku, "Stacking", "Stacking only on a Managed switch", styp,
+                       "semantic S.4: Stacking is valid only on a Managed switch")
         # S.5 env-first single-token determinism (key case): a DIN-rail/Hutschiene switch must be Industrie.
         if re.search(r"Hutschiene|DIN", bauform, re.I) and k3 != "Industrie-Switch":
             self._fail(fname, sku, "Kategorie Ebene 3", "Industrie-Switch (DIN-rail, env-first)", k3,
