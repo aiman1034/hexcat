@@ -2357,6 +2357,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   pre-existing); full suite **422 passed**. **OPERATOR FLAG (from harvest):** LAN Base catalogued as **L2** (Cisco
   positions 2960-X as L2 access, reserves L3 for the XR) — one-line flip to L3 if Fawaz wants it; confirm before
   the next 2960 sub-batch. **Coverage now: 313 built, 20 families complete, 35%.**
+- **BUILD Cisco Catalyst 2960-S (sub-batch 2 of the ~120 2960 family) — family #12, 12/12 (2026-06-23).**
+  New family `output/switches/Cisco_2960S/` from `c2960s_harvest_source.md` (Cisco DS C78-726680, 21-May-2024;
+  12 models). Same classic-IOS lineage as the 2960-X, **THREE traps differ:** (1) **original FlexStack (NOT
+  FlexStack-Plus)** — "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"; never -Plus/8/80 (verified 0).
+  (2) **ALL Managed Switch (L2)/Layer L2** (no XR/L3 in the S series); S.2 idle, **S.4 live on the 10 FlexStack +
+  ALL PASS**. (3) **10 Ja / 2 Nein** — the two `-S` PIDs (48TS-S, 24TS-S) are LAN Lite, cannot stack (**-S = LAN
+  Lite, NOT SFP**). OS "Cisco IOS" (LAN Base/LAN Lite); **wrong-OS incl. StackWise = 0** (write FlexStack;
+  CISCO-STACKWISE-MIB is an internal MIB name only). PoE 740/370 W on FP/LP/P, Nein on T+LL; all 19-Zoll (1 HE),
+  aktiv gekühlt, -5–45 °C (2960-S datasheet value, sibling-consistent), perpetual Cisco IOS, E-LLW. SwK Gbit/s
+  (×2 method, no Tbit/s); Durchsatz Table-5 Mpps. attr-split **5×15 (D, 10G-SFP+) / 7×14 (S/LAN-Lite)** — verified
+  {15:5, 14:7}. Accessories/spares (C2960S-STACK/RPS/CAB/RCKMNT) + 2960-SF **EXCLUDED** (only 12 WS-C2960S-* switch
+  PIDs). S.3 holds, single-closer (G5), §5+wrong-OS 0 (caught + removed a "neu-sealed" → `\bsealed\b` G3 trap),
+  no [VERIFY], **gate PASS**. EoS past End-of-Support → never-drop, **§5-clean body** (no "versiegelt"; the
+  structured Zustand flag carries condition). Priced 12 — refurb-saturated (same as 2960-X); genuine new-sealed
+  only, refurb hard-rejected; **0 direkt / 12 geschätzt** anchored to operator band **€300–2.800** (just below the
+  2960-X band €400–4000, older line), monotonic featureset(LAN Lite<LAN Base)×ports×uplink(S<D)×PoE(kein<370<740);
+  ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: 2960-S built (12) + remaining 2960 legacy reduced to
+  ~85 (2960-SF/-Plus/-L/-CX/-C/-G); families in scope **52→53**. reconciler → **Cisco_2960S 12/12**. Re-gated all
+  21 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 325
+  built, 21 families complete, 36%.**
 
 ---
 

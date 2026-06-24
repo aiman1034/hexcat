@@ -1,0 +1,2106 @@
+{
+ "WS-C2960S-48FPD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48FPD-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+",
+  "titel_tag": "Cisco WS-C2960S-48FPD-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48FPD-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+, PoE+ 740 W, Switching-Kapazität 136 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,9",
+  "versandgewicht": "7,4",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48FPD-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+ und 740-W-PoE+-Budget. Der WS-C2960S-48FPD-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48FPD-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48FPD-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 10G-SFP+-Uplinks und FlexStack mit 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+.",
+   "Mit 50 Ports erreicht der WS-C2960S-48FPD-L eine Switching-Kapazität von 136 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-48FPD-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48FPD-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48FPD-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48FPD-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48FPD-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48FPD-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48FPD-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48FPD-L?",
+    "Der WS-C2960S-48FPD-L bietet insgesamt 50 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48FPD-L?",
+    "Der WS-C2960S-48FPD-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48FPD-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-48FPD-L?",
+    "Der WS-C2960S-48FPD-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 740 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-48FPD-L gestapelt werden?",
+    "Ja, der WS-C2960S-48FPD-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "50"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 740 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "136 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48FPD-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48LPD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48LPD-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+",
+  "titel_tag": "Cisco WS-C2960S-48LPD-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48LPD-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+, PoE+ 370 W, Switching-Kapazität 136 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,7",
+  "versandgewicht": "7,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48LPD-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+ und 370-W-PoE+-Budget. Der WS-C2960S-48LPD-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48LPD-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48LPD-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 10G-SFP+-Uplinks und FlexStack mit 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+.",
+   "Mit 50 Ports erreicht der WS-C2960S-48LPD-L eine Switching-Kapazität von 136 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps. Über sein PoE+-Budget von 370 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-48LPD-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48LPD-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48LPD-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48LPD-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48LPD-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48LPD-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48LPD-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48LPD-L?",
+    "Der WS-C2960S-48LPD-L bietet insgesamt 50 Ports: 48× 1G-RJ45 (PoE+) + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48LPD-L?",
+    "Der WS-C2960S-48LPD-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48LPD-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-48LPD-L?",
+    "Der WS-C2960S-48LPD-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 370 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-48LPD-L gestapelt werden?",
+    "Ja, der WS-C2960S-48LPD-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "50"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 370 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "136 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48LPD-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-24PD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-24PD-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 (PoE+) + 2× 10G-SFP+",
+  "titel_tag": "Cisco WS-C2960S-24PD-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-24PD-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 24× 1G-RJ45 (PoE+) + 2× 10G-SFP+, PoE+ 370 W, Switching-Kapazität 88 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,7",
+  "versandgewicht": "7,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-24PD-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 24× 1G-RJ45 (PoE+) + 2× 10G-SFP+ und 370-W-PoE+-Budget. Der WS-C2960S-24PD-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-24PD-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-24PD-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 10G-SFP+-Uplinks und FlexStack mit 24× 1G-RJ45 (PoE+) + 2× 10G-SFP+.",
+   "Mit 26 Ports erreicht der WS-C2960S-24PD-L eine Switching-Kapazität von 88 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps. Über sein PoE+-Budget von 370 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-24PD-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-24PD-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-24PD-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-24PD-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-24PD-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-24PD-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-24PD-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-24PD-L?",
+    "Der WS-C2960S-24PD-L bietet insgesamt 26 Ports: 24× 1G-RJ45 (PoE+) + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-24PD-L?",
+    "Der WS-C2960S-24PD-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-24PD-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-24PD-L?",
+    "Der WS-C2960S-24PD-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 370 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-24PD-L gestapelt werden?",
+    "Ja, der WS-C2960S-24PD-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 370 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "88 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-24PD-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48TD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48TD-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 + 2× 10G-SFP+",
+  "titel_tag": "Cisco WS-C2960S-48TD-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48TD-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 + 2× 10G-SFP+, Switching-Kapazität 136 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW (End-of-Support).",
+  "artikelgewicht": "4,3",
+  "versandgewicht": "5,8",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48TD-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 + 2× 10G-SFP+ ohne PoE (reine Datenports). Der WS-C2960S-48TD-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48TD-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48TD-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 10G-SFP+-Uplinks und FlexStack mit 48× 1G-RJ45 + 2× 10G-SFP+.",
+   "Mit 50 Ports erreicht der WS-C2960S-48TD-L eine Switching-Kapazität von 136 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps. Die Ports des WS-C2960S-48TD-L sind reine Datenports ohne PoE-Einspeisung. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48TD-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48TD-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48TD-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48TD-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48TD-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48TD-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48TD-L?",
+    "Der WS-C2960S-48TD-L bietet insgesamt 50 Ports: 48× 1G-RJ45 + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48TD-L?",
+    "Der WS-C2960S-48TD-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48TD-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-48TD-L PoE?",
+    "Nein, der WS-C2960S-48TD-L ist ein Datenmodell ohne PoE-Einspeisung (48× 1G-RJ45 + 2× 10G-SFP+)."
+   ],
+   [
+    "Kann der WS-C2960S-48TD-L gestapelt werden?",
+    "Ja, der WS-C2960S-48TD-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "50"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "136 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48TD-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-24TD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-24TD-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 + 2× 10G-SFP+",
+  "titel_tag": "Cisco WS-C2960S-24TD-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-24TD-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 24× 1G-RJ45 + 2× 10G-SFP+, Switching-Kapazität 88 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW (End-of-Support).",
+  "artikelgewicht": "4,3",
+  "versandgewicht": "5,8",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-24TD-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 24× 1G-RJ45 + 2× 10G-SFP+ ohne PoE (reine Datenports). Der WS-C2960S-24TD-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-24TD-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-24TD-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 10G-SFP+-Uplinks und FlexStack mit 24× 1G-RJ45 + 2× 10G-SFP+.",
+   "Mit 26 Ports erreicht der WS-C2960S-24TD-L eine Switching-Kapazität von 88 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps. Die Ports des WS-C2960S-24TD-L sind reine Datenports ohne PoE-Einspeisung. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-24TD-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-24TD-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-24TD-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-24TD-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-24TD-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-24TD-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-24TD-L?",
+    "Der WS-C2960S-24TD-L bietet insgesamt 26 Ports: 24× 1G-RJ45 + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-24TD-L?",
+    "Der WS-C2960S-24TD-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-24TD-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-24TD-L PoE?",
+    "Nein, der WS-C2960S-24TD-L ist ein Datenmodell ohne PoE-Einspeisung (24× 1G-RJ45 + 2× 10G-SFP+)."
+   ],
+   [
+    "Kann der WS-C2960S-24TD-L gestapelt werden?",
+    "Ja, der WS-C2960S-24TD-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G (Uplink 10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "88 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-24TD-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48FPS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48FPS-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+) + 4× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-48FPS-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48FPS-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 4× 1G-SFP, PoE+ 740 W, Switching-Kapazität 104 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,9",
+  "versandgewicht": "7,4",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48FPS-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 (PoE+) + 4× 1G-SFP und 740-W-PoE+-Budget. Der WS-C2960S-48FPS-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48FPS-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48FPS-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 1G-SFP-Uplinks und FlexStack mit 48× 1G-RJ45 (PoE+) + 4× 1G-SFP.",
+   "Mit 52 Ports erreicht der WS-C2960S-48FPS-L eine Switching-Kapazität von 104 Gbit/s bei einer Weiterleitungsrate von 77,4 Mpps. Über sein PoE+-Budget von 740 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-48FPS-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48FPS-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48FPS-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48FPS-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48FPS-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48FPS-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48FPS-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48FPS-L?",
+    "Der WS-C2960S-48FPS-L bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 4× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48FPS-L?",
+    "Der WS-C2960S-48FPS-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48FPS-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-48FPS-L?",
+    "Der WS-C2960S-48FPS-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 740 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-48FPS-L gestapelt werden?",
+    "Ja, der WS-C2960S-48FPS-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 4× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 740 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48FPS-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48LPS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48LPS-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+) + 4× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-48LPS-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48LPS-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 (PoE+) + 4× 1G-SFP, PoE+ 370 W, Switching-Kapazität 104 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,7",
+  "versandgewicht": "7,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48LPS-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 (PoE+) + 4× 1G-SFP und 370-W-PoE+-Budget. Der WS-C2960S-48LPS-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48LPS-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48LPS-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 1G-SFP-Uplinks und FlexStack mit 48× 1G-RJ45 (PoE+) + 4× 1G-SFP.",
+   "Mit 52 Ports erreicht der WS-C2960S-48LPS-L eine Switching-Kapazität von 104 Gbit/s bei einer Weiterleitungsrate von 77,4 Mpps. Über sein PoE+-Budget von 370 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-48LPS-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48LPS-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48LPS-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48LPS-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48LPS-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48LPS-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48LPS-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48LPS-L?",
+    "Der WS-C2960S-48LPS-L bietet insgesamt 52 Ports: 48× 1G-RJ45 (PoE+) + 4× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48LPS-L?",
+    "Der WS-C2960S-48LPS-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48LPS-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-48LPS-L?",
+    "Der WS-C2960S-48LPS-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 370 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-48LPS-L gestapelt werden?",
+    "Ja, der WS-C2960S-48LPS-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + 4× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 370 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48LPS-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-24PS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-24PS-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 (PoE+) + 4× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-24PS-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-24PS-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 24× 1G-RJ45 (PoE+) + 4× 1G-SFP, PoE+ 370 W, Switching-Kapazität 56 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW …",
+  "artikelgewicht": "5,7",
+  "versandgewicht": "7,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-24PS-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 24× 1G-RJ45 (PoE+) + 4× 1G-SFP und 370-W-PoE+-Budget. Der WS-C2960S-24PS-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-24PS-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-24PS-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 1G-SFP-Uplinks und FlexStack mit 24× 1G-RJ45 (PoE+) + 4× 1G-SFP.",
+   "Mit 28 Ports erreicht der WS-C2960S-24PS-L eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Über sein PoE+-Budget von 370 W (802.3af/at, bis 30 W/Port) versorgt der WS-C2960S-24PS-L IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-24PS-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-24PS-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-24PS-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-24PS-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-24PS-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-24PS-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-24PS-L?",
+    "Der WS-C2960S-24PS-L bietet insgesamt 28 Ports: 24× 1G-RJ45 (PoE+) + 4× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-24PS-L?",
+    "Der WS-C2960S-24PS-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-24PS-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C2960S-24PS-L?",
+    "Der WS-C2960S-24PS-L liefert PoE+ (802.3af/at, bis 30 W/Port) mit insgesamt 370 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Kann der WS-C2960S-24PS-L gestapelt werden?",
+    "Ja, der WS-C2960S-24PS-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + 4× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (802.3af/at), 370 W (bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); PoE+-Versorgung für IP-Telefone, WLAN-Access-Points und Kameras; per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-24PS-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48TS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48TS-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 + 4× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-48TS-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48TS-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 + 4× 1G-SFP, Switching-Kapazität 104 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW (End-of-Support).",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48TS-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 + 4× 1G-SFP ohne PoE (reine Datenports). Der WS-C2960S-48TS-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48TS-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48TS-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 1G-SFP-Uplinks und FlexStack mit 48× 1G-RJ45 + 4× 1G-SFP.",
+   "Mit 52 Ports erreicht der WS-C2960S-48TS-L eine Switching-Kapazität von 104 Gbit/s bei einer Weiterleitungsrate von 77,4 Mpps. Die Ports des WS-C2960S-48TS-L sind reine Datenports ohne PoE-Einspeisung. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-48TS-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-48TS-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-48TS-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-48TS-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48TS-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48TS-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48TS-L?",
+    "Der WS-C2960S-48TS-L bietet insgesamt 52 Ports: 48× 1G-RJ45 + 4× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48TS-L?",
+    "Der WS-C2960S-48TS-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48TS-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-48TS-L PoE?",
+    "Nein, der WS-C2960S-48TS-L ist ein Datenmodell ohne PoE-Einspeisung (48× 1G-RJ45 + 4× 1G-SFP)."
+   ],
+   [
+    "Kann der WS-C2960S-48TS-L gestapelt werden?",
+    "Ja, der WS-C2960S-48TS-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 4× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48TS-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-24TS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-24TS-L Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 + 4× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-24TS-L Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-24TS-L (Catalyst 2960-S): gemanagter Layer-2-Switch, 24× 1G-RJ45 + 4× 1G-SFP, Switching-Kapazität 56 Gbit/s. Cisco IOS (LAN Base), FlexStack, E-LLW (End-of-Support).",
+  "artikelgewicht": "4,5",
+  "versandgewicht": "6,0",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-24TS-L ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 24× 1G-RJ45 + 4× 1G-SFP ohne PoE (reine Datenports). Der WS-C2960S-24TS-L läuft unter Cisco IOS (LAN Base-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-24TS-L ist per Cisco FlexStack zu bis zu vier Einheiten stapelbar, wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-24TS-L ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein Layer-2-Access-Switch (LAN Base) mit 1G-SFP-Uplinks und FlexStack mit 24× 1G-RJ45 + 4× 1G-SFP.",
+   "Mit 28 Ports erreicht der WS-C2960S-24TS-L eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Die Ports des WS-C2960S-24TS-L sind reine Datenports ohne PoE-Einspeisung. Als Layer-2-Switch mit LAN-Base-Featureset bietet der WS-C2960S-24TS-L ausgereiftes Switching (PVRST+, EtherChannel, QoS) sowie Basis-Routing (statisch, RIP). Optional verbindet Cisco FlexStack bis zu vier WS-C2960S-24TS-L-Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP.",
+   "Betrieben wird der WS-C2960S-24TS-L unter Cisco IOS; Sicherheit bietet der WS-C2960S-24TS-L mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-24TS-L lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-24TS-L ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Base)",
+   "Cisco FlexStack-Modul C2960S-STACK (optional, bis 4 Einheiten)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-24TS-L?",
+    "Der WS-C2960S-24TS-L bietet insgesamt 28 Ports: 24× 1G-RJ45 + 4× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-24TS-L?",
+    "Der WS-C2960S-24TS-L läuft unter Cisco IOS mit LAN Base-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-24TS-L bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-24TS-L PoE?",
+    "Nein, der WS-C2960S-24TS-L ist ein Datenmodell ohne PoE-Einspeisung (24× 1G-RJ45 + 4× 1G-SFP)."
+   ],
+   [
+    "Kann der WS-C2960S-24TS-L gestapelt werden?",
+    "Ja, der WS-C2960S-24TS-L lässt sich optional per Cisco-FlexStack-Modul (C2960S-STACK) mit bis zu vier Einheiten (20 Gbit/s) zu einem Verband mit einer Management-IP verbinden – kompatibel auch mit dem 2960-SF im Mixed-Stack."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 4× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – FlexStack (optional, bis zu 4 Einheiten, 20 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Base)); per Cisco FlexStack bis 4 Einheiten stapelbar; verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-24TS-L",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-48TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-48TS-S Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Lite) – 48× 1G-RJ45 + 2× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-48TS-S Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-48TS-S (Catalyst 2960-S): gemanagter Layer-2-Switch, 48× 1G-RJ45 + 2× 1G-SFP, Switching-Kapazität 100 Gbit/s. Cisco IOS (LAN Lite), E-LLW (End-of-Support).",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-48TS-S ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 48× 1G-RJ45 + 2× 1G-SFP ohne PoE (reine Datenports). Der WS-C2960S-48TS-S läuft unter Cisco IOS (LAN Lite-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-48TS-S ist für den eigenständigen Betrieb ausgelegt (LAN Lite), wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-48TS-S ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein LAN-Lite-Access-Switch (reduzierter Funktionsumfang, nicht stapelbar) mit 48× 1G-RJ45 + 2× 1G-SFP.",
+   "Mit 50 Ports erreicht der WS-C2960S-48TS-S eine Switching-Kapazität von 100 Gbit/s bei einer Weiterleitungsrate von 74,4 Mpps. Die Ports des WS-C2960S-48TS-S sind reine Datenports ohne PoE-Einspeisung. Als LAN-Lite-Modell arbeitet der WS-C2960S-48TS-S als reiner Layer-2-Access-Switch mit reduziertem Funktionsumfang. FlexStack-Stacking wird vom WS-C2960S-48TS-S (LAN Lite) nicht unterstützt.",
+   "Betrieben wird der WS-C2960S-48TS-S unter Cisco IOS; Sicherheit bietet der WS-C2960S-48TS-S mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-48TS-S lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-48TS-S ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Lite)",
+   "Standalone-Betrieb (LAN Lite)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-48TS-S?",
+    "Der WS-C2960S-48TS-S bietet insgesamt 50 Ports: 48× 1G-RJ45 + 2× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-48TS-S?",
+    "Der WS-C2960S-48TS-S läuft unter Cisco IOS mit LAN Lite-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-48TS-S bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-48TS-S PoE?",
+    "Nein, der WS-C2960S-48TS-S ist ein Datenmodell ohne PoE-Einspeisung (48× 1G-RJ45 + 2× 1G-SFP)."
+   ],
+   [
+    "Kann der WS-C2960S-48TS-S gestapelt werden?",
+    "Nein, der WS-C2960S-48TS-S ist ein LAN-Lite-Modell ohne FlexStack-Unterstützung und arbeitet eigenständig."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "50"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "100 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "74,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Lite)); eigenständiger Betrieb (nicht stapelbar); verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-48TS-S",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ },
+ "WS-C2960S-24TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C2960S-24TS-S Catalyst 2960-S Layer-2-Managed-Switch (Cisco IOS, LAN Lite) – 24× 1G-RJ45 + 2× 1G-SFP",
+  "titel_tag": "Cisco WS-C2960S-24TS-S Catalyst 2960-S L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C2960S-24TS-S (Catalyst 2960-S): gemanagter Layer-2-Switch, 24× 1G-RJ45 + 2× 1G-SFP, Switching-Kapazität 52 Gbit/s. Cisco IOS (LAN Lite), E-LLW (End-of-Support).",
+  "artikelgewicht": "4,5",
+  "versandgewicht": "6,0",
+  "kurzbeschreibung": "<p>Der Cisco WS-C2960S-24TS-S ist ein gemanagter Layer-2-Access-Switch der Catalyst-2960-S-Serie für den Enterprise-Campus mit 24× 1G-RJ45 + 2× 1G-SFP ohne PoE (reine Datenports). Der WS-C2960S-24TS-S läuft unter Cisco IOS (LAN Lite-Featureset) und wird per CLI und Web-UI verwaltet.</p><p>Der WS-C2960S-24TS-S ist für den eigenständigen Betrieb ausgelegt (LAN Lite), wird aktiv gekühlt im 19-Zoll-Format montiert und ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C2960S-24TS-S ist ein gemanagter Layer-2-Switch aus der Catalyst-2960-S-Familie für den Enterprise-Campus-Zugang – ein LAN-Lite-Access-Switch (reduzierter Funktionsumfang, nicht stapelbar) mit 24× 1G-RJ45 + 2× 1G-SFP.",
+   "Mit 26 Ports erreicht der WS-C2960S-24TS-S eine Switching-Kapazität von 52 Gbit/s bei einer Weiterleitungsrate von 38,7 Mpps. Die Ports des WS-C2960S-24TS-S sind reine Datenports ohne PoE-Einspeisung. Als LAN-Lite-Modell arbeitet der WS-C2960S-24TS-S als reiner Layer-2-Access-Switch mit reduziertem Funktionsumfang. FlexStack-Stacking wird vom WS-C2960S-24TS-S (LAN Lite) nicht unterstützt.",
+   "Betrieben wird der WS-C2960S-24TS-S unter Cisco IOS; Sicherheit bietet der WS-C2960S-24TS-S mit 802.1X, Dynamic ARP Inspection, IP Source Guard, Port Security und ACLs, dazu bis zu 255 VLANs. Die Stromversorgung des WS-C2960S-24TS-S lässt sich extern über ein Cisco RPS 2300 redundant auslegen. Der WS-C2960S-24TS-S ist ein abgekündigtes Modell (End-of-Support), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 2960-S (Cisco IOS, LAN Lite)",
+   "Standalone-Betrieb (LAN Lite)",
+   "Cisco RPS 2300 (externe Stromredundanz)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C2960S-24TS-S?",
+    "Der WS-C2960S-24TS-S bietet insgesamt 26 Ports: 24× 1G-RJ45 + 2× 1G-SFP."
+   ],
+   [
+    "Welches Betriebssystem und welche Lizenz nutzt der WS-C2960S-24TS-S?",
+    "Der WS-C2960S-24TS-S läuft unter Cisco IOS mit LAN Lite-Featureset (perpetual) und wird per CLI und Web-UI verwaltet. Die 2960-S-Serie ist abgekündigt (End-of-Support); der WS-C2960S-24TS-S bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich und trägt Cisco Enhanced Limited Lifetime Warranty."
+   ],
+   [
+    "Hat der WS-C2960S-24TS-S PoE?",
+    "Nein, der WS-C2960S-24TS-S ist ein Datenmodell ohne PoE-Einspeisung (24× 1G-RJ45 + 2× 1G-SFP)."
+   ],
+   [
+    "Kann der WS-C2960S-24TS-S gestapelt werden?",
+    "Nein, der WS-C2960S-24TS-S ist ein LAN-Lite-Modell ohne FlexStack-Unterstützung und arbeitet eigenständig."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "52 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC); externe Redundanz über Cisco RPS 2300"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Layer-2-Access (LAN Lite)); eigenständiger Betrieb (nicht stapelbar); verwaltet über Cisco IOS (CLI) und Web-UI; Original-Ersatz-Hardware für bestehende Standorte"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C2960S-24TS-S",
+    "EoL",
+    "Cisco Catalyst 2960-S past End-of-Support (gesamte Serie) — informativ geführt als neu-sealed Ersatz-/Bestands-Spare, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-2960-s-series-switches/data_sheet_c78-726680.html"
+   ]
+  ]
+ }
+}
