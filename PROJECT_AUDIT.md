@@ -2377,6 +2377,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ~85 (2960-SF/-Plus/-L/-CX/-C/-G); families in scope **52→53**. reconciler → **Cisco_2960S 12/12**. Re-gated all
   21 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 325
   built, 21 families complete, 36%.**
+- **BUILD Cisco Catalyst 2960-SF (sub-batch 3 of the ~120 2960 family) — family #13, 7/7 (2026-06-23).**
+  New family `output/switches/Cisco_2960SF/` from `c2960sf_harvest_source.md` (Cisco DS C78-715638-02, 04/13;
+  retired line, verbatim PDF mirror — cisco.com pulled the page). **Fast-Ethernet sibling of the 2960-S; FIVE
+  differences (4 traps):** (1) **PID format `WS-C2960S-F…` (hyphen-F)**, not `WS-C2960SF-…` (folder Cisco_2960SF,
+  PIDs 2960S-F — verified all 7). (2) **Datasheet typo corrected** — one F24PS-L (370W PoE) + one F24TS-L (no-PoE),
+  not two F24PS-L. (3) **NO redundant power** — Stromversorgung = "Internes Netzteil (100–240 V AC)" only, **no RPS
+  2300** (verified 0). (4) **All 1G-SFP uplinks, no 10G "D"** → uniform attr-split **{14:7}** (no Uplink-Ports attr).
+  (5) **Fast-Ethernet 10/100 access** → Port-Geschwindigkeit "100M (Uplink 1G)". Carried from 2960-S: original
+  **FlexStack (4/20, NOT -Plus)**, classic **Cisco IOS** (LAN Base/LAN Lite), all **Managed Switch (L2)/Layer L2**,
+  **5 Ja / 2 Nein** (the two `-S` LAN Lite), "Cisco IOS"+**wrong-OS incl. StackWise = 0** (write FlexStack),
+  enterprise-L2 positioning (NOT Small Business), E-LLW, -5–45 °C, aktiv gekühlt, 19-Zoll (1 HE). **Durchsatz =
+  64-byte wire-rate (×1,488)** — Cisco-validated method (reproduces the 2960-S published rates), emitted NOT
+  [VERIFY]. SwK Gbit/s (×2, no Tbit/s). Accessories (C2960S-F-STACK/CAB/RCKMNT) excluded (only 7 WS-C2960S-F* PIDs).
+  S.3 holds, S.4 PASS on the 5 FlexStack, single-closer (G5), §5+wrong-OS 0 (no 'sealed'/'versiegelt' in body),
+  no [VERIFY], **gate PASS**. EoS retired → never-drop. Priced 7 — refurb-saturated; genuine new-sealed only,
+  refurb hard-rejected; **0 direkt / 7 geschätzt** anchored to operator band **€250–2.200**; ceiling set at €1.700
+  (F48FPS-L) to keep the FE SF **below** its GbE 2960-S sibling (cross-family FE<GbE); monotonic featureset(LAN
+  Lite<LAN Base)×ports×PoE(kein<370<740), no uplink dimension; ungrouped, NO-BOM, 0 zeros, Main↔Prices exact.
+  Manifest: 2960-SF built (7) + remaining 2960 legacy reduced to ~78 (2960-Plus/-L/-CX/-C/-G); families in scope
+  **53→54**. reconciler → **Cisco_2960SF 7/7**. Re-gated all 22 Cisco switch families → all PASS (MikroTik L6
+  pre-existing); full suite **422 passed**. **Coverage now: 332 built, 22 families complete, 37%.**
 
 ---
 
