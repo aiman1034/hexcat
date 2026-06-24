@@ -2440,6 +2440,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   to ~44 (2960-CX/-C, 2960/2960G); families in scope **55→56**. reconciler → **Cisco_2960L 24/24**. Re-gated all 24
   Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 366 built,
   24 families complete, 41%.** (2960 family: X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 = **76 of ~120**.)
+- **BUILD Cisco Catalyst 2960-CX (sub-batch 6 of the ~120 2960 family) — family #16, 2/2 (2026-06-23).**
+  New family `output/switches/Cisco_2960CX/` from `c2960cx_harvest_source.md` (shared 3560-CX/2960-CX DS
+  C78-733229, 17-Oct-2024). Compact, fanless, 8-port Gigabit LAN-Base access. **Exactly 2 models:**
+  `WS-C2960CX-8TC-L` (data) + `WS-C2960CX-8PC-L` (124 W PoE+/Perpetual) — the datasheet's 12-port/10G-PD/
+  UPOE-PT/mGig-XPD variants are **all WS-C3560CX-* (separate P4 family), NOT built here**. Both Managed L2 /
+  Kat-L3 Managed Switch (L2). 8× GbE + 4 uplinks (2× 1G-SFP + 2× 1G-Cu, all 1G) → both **14 attr ({14:2})**.
+  Real **PoE+** (802.3af/at, 30 W, Perpetual) 124 W on 8PC-L; 8TC-L no PoE. **No stacking** (both Nein, S.4
+  idle). SwK 24 Gbit/s, **Durchsatz 17,9 Mpps** (Cisco-published, Table 6), Portanz 12. **Flash 128 MB** (not
+  256). **No MACsec/TrustSec** claim (3560-CX-only). Bauform attr = "Kompakt-Gehäuse (lüfterlos, geringe
+  Bautiefe)" — wall/DIN/rack/desk **mounting in prose** (S.5-clean, same pattern as the 2960-L). Temp -5–45 °C.
+  OS = Cisco IOS (LAN Base); wrong-OS incl. StackWise/FlexStack/Meraki/3560 = 0. **DNA SKU (C2960CX-DNA-E-8=)
+  + accessories EXCLUDED.** S.3 holds, single-closer (G5), §5 0, no [VERIFY], **gate PASS**. EoS never-drop,
+  §5-clean body. Priced 2 — refurb-saturated; genuine new-sealed only, refurb hard-rejected; **0 direkt / 2
+  geschätzt** to operator band **€300–900**, monotonic by PoE (8TC-L €380 floor < 8PC-L €750 ceiling); ungrouped,
+  NO-BOM, 0 zeros, Main↔Prices exact. Manifest: 2960-CX built (2) + remaining 2960 legacy reduced to ~42
+  (2960-C, 2960/2960G); families in scope **56→57**. reconciler → **Cisco_2960CX 2/2**. Re-gated all 25 Cisco
+  switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 368 built,
+  25 families complete, 41%.** (2960 family: X/XR 23 + S 12 + SF 7 + Plus 10 + L 24 + CX 2 = **78 of ~120**.)
 
 ---
 
