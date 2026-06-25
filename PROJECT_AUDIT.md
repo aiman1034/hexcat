@@ -2744,6 +2744,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   OTHER row to a queued **9220i FCIP/IPS gateway (~1)**; S-series (~3, EoS) + 9700 directors (~6) stay queued. Families
   in scope **69**. **Coverage now: 522 built, 38 families complete, 57%.** JTL category branch already exists (created
   for the V-series).
+- **BUILD Cisco_MDS_S (2/2) — MDS Round 3, 16G S-series FC fabric switches (EoS), pure content build on the FC-green
+  gate (2026-06-25).** New folder `output/switches/Cisco_MDS_S/` from `mds_s_series_harvest_source.md`. NO gate-model
+  work (`git diff` over src/ empty). 2 base switch-only PIDs: **DS-C9148S-12PK9** (48 ports, 0,768 Tbit/s, 1HE, 9 kg,
+  single airflow, 300W) / **DS-C9396S-48EK9** (96, 1,5 Tbit/s, 2HE, 17,8 kg, E/I airflow, 1200W). 9250i deferred to the
+  multiservice mini-round. Same category + 12-attr FC model; closer auto-PID-welds. **Four traps handled:** (1) **speed
+  strings differ** — 9148S `2/4/8/16`, 9396S `2/4/8/10/16` (10G on 9396S only; port types E/F/FL); (2) **Switching-
+  Kapazität DERIVED** (0,768 = 48×16G, 1,5 = 96×16G) — neither DS states an aggregate, so its Verification_Log method =
+  "berechnet (Ports × 16G-Leitungsrate)", not "datasheet"; (3) **9396S weight = 17,8 kg** (the Cisco techspec PDF is
+  copy-corrupted with the 9148S's 9 kg/1RU — used 17,8 from the IBM-rebrand DS); (4) **EoS note, §5-UWG-clean** — prose
+  states "abgekündigtes Modell (End-of-Sale; 9148S letzter Bestelltag 15. August 2023)" + installed-base/spares
+  relevance, with **0** neuware/versiegelt/fabrikneu/originalverpackt/autorisiert/`\bsealed\b` across the WHOLE bundle
+  (caught + reworded the price-log's "new-sealed" → "ungebrauchte Original-Hardware"); the new-sealed condition rides
+  the Zustand/Condition CSV. OS NX-OS 6.2(9)+ bis 8.x (IOS XE 0); PoE Nein, Stacking Nein, Switch-Typ Managed;
+  Portanzahl PHYSICAL 48/96 (12/48-active + 12-port-license path in Beschreibung only; S.3 parses 48/96); Betriebstemp
+  0–40 °C; single PID-welded closer; Beschreibung 173/170 words (trimmed the 9148S from 183). Prices Phase-2 PROVISIONAL
+  (2200/7000, monotonic, no-BOM/LF, 0 `;0,00`, flagged unanchored). Byte-contract all 7 files correct; Main↔Prices both
+  2; 24 attribute rows (2×12). `gate_completeness Cisco_MDS_S_switches` 2/2. **Canonical gate ok=True, 0 viol / 0 warn.**
+  Zero regression: all 40 switch families re-gate PASS (MikroTik L6 pre-existing); full suite **431 passed, 0 skipped,
+  0 failed**. Manifest: opened built `Cisco_MDS_S` + folded the **9250i into the multiservice queue with the 9220i**
+  ("Cisco MDS Multiservice (9220i + 9250i)" ~2); 9700 directors stay queued. Families in scope **69**. **Coverage now:
+  524 built, 39 families complete, 58%.** MDS pure-FC fabric lineup (V + T + S) is complete; remaining MDS = multiservice
+  (9220i/9250i) + 9700 director chassis.
 
 ---
 
