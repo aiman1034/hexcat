@@ -188,6 +188,14 @@ def check_plausibility(bundle: Path) -> list[Violation]:
     out = []
     cat = _bundle_category(bundle)
     hdr, rows = _main(bundle)
+    # Chassis-class switches (modular directors) legitimately weigh tens of kg (a 26 HE chassis with 16
+    # PSUs ≈ 136 kg) — the fixed-switch 50 kg ceiling would wrongly flag them. Detected by Kat-L3; raises
+    # ONLY the ceiling for chassis bundles (the floor + non-chassis ceiling are unchanged → zero regression).
+    is_chassis = False
+    if "Kategorie Ebene 3" in hdr:
+        i_k3 = hdr.index("Kategorie Ebene 3")
+        is_chassis = any(len(r) > i_k3 and r[i_k3].strip() in C.CHASSIS_KAT3_VALUES for r in rows)
+    sw_ceiling = C.CHASSIS_WEIGHT_CEILING_KG if is_chassis else 50.0
     if "Artikelnummer" in hdr and "Artikelgewicht" in hdr:
         i_sku, i_w = hdr.index("Artikelnummer"), hdr.index("Artikelgewicht")
         for r in rows:
@@ -201,9 +209,9 @@ def check_plausibility(bundle: Path) -> list[Violation]:
                 if w < 0.15:
                     out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "switch >= 0,15 kg",
                                          r[i_w], "L5: switch weight below floor (optic-placeholder on a switch?)"))
-                elif w > 50:
-                    out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "switch <= 50 kg", r[i_w],
-                                         "L5: implausible switch weight (>50 kg)"))
+                elif w > sw_ceiling:
+                    out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", f"switch <= {sw_ceiling:g} kg", r[i_w],
+                                         f"L5: implausible switch weight (>{sw_ceiling:g} kg)"))
             else:  # transceiver/optic module: small
                 if w > 1.0:
                     out.append(Violation(bundle.name, r[i_sku], "Artikelgewicht", "optic <= ~1 kg", r[i_w],

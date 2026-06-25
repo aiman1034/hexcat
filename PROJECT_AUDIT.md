@@ -2789,6 +2789,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   + retired the "MDS Multiservice (9220i+9250i)" OTHER row. Families in scope **69**. **Coverage now: 526 built, 40
   families complete, 58%.** **MDS fixed-fabric is CLOSED (V+T+S+MS = 10 SKUs); only the MDS 9700 director chassis
   remain (chassis lane, ~6, deferred on the chassis-modeling decision).**
+- **CHASSIS CARVE-OUT (src/) + BUILD Cisco_MDS_9700 (3/3) — Chassis Round 1; CLOSES Cisco MDS entirely
+  (2026-06-25).** A SRC-touching round (precedent: the FC carve-out 4872db9). **Part A — gate change (additive,
+  config-driven, zero-regression):** added a **chassis-switch class** detected by Kat-L3 ∈ `constants.CHASSIS_KAT3_VALUES`
+  (initially `{"Fibre-Channel-Director"}`, extensible for future Ethernet chassis). Six files: (1) `rules.yaml` + `config.py`
+  register `Fibre-Channel-Director` in the switch Kat-L3 set; (2) `constants.py` adds `CHASSIS_KAT3_VALUES` +
+  `CHASSIS_REQUIRED_ATTRS` (the 7: Anwendung/Bauform/Betriebstemperatur/Kühlung/Stromversorgung/Switch-Typ/Switching-
+  Kapazität) + `CHASSIS_FORBIDDEN_ATTRS` (Portanzahl/Port-Konfiguration/Port-Geschwindigkeit/PoE/Stacking) +
+  `CHASSIS_WEIGHT_CEILING_KG=200` + the Fibre-Channel-Director→"SAN & Fibre Channel" Ebene-2 mapping; (3) `validate.py`
+  routes chassis-class to a NEW `_check_chassis_sku` (7 required, 5 forbidden-absent, S.2+S.5 kept, S.1/S.3/S.4/S.6
+  skipped) via an early return — the fixed-switch path is byte-identical for non-chassis; (4) `gate.py` L5 raises the
+  switch weight ceiling to 200 kg for chassis bundles (a 26 HE/136 kg director would trip the 50 kg fixed-switch
+  ceiling); (5) `reconcile._closer` adds the FC-director branch (`Originaler Cisco-MDS-<modell>-Fibre-Channel-Director
+  (<PID>)`) + the free 9220I→9220i trailing-letter fix (lowercase only the multiservice "I"; V/T/S stay uppercase).
+  **Zero-regression PROVEN: all 41 prior families re-gate identically (only the pre-existing MikroTik L6); full suite
+  green.** Added `tests/test_chassis_family.py` (3 tests) + `tests/fixtures/chassis_mds_9700_content.json`. **Part B —
+  the 3 bare chassis:** DS-C9706 (4 LC-slots, 12 Tbit/s, 9HE, 65,80 kg, ≤4 PSU) / DS-C9710 (8, 24, 14HE, 84,20, ≤8) /
+  DS-C9718 (16, 48, 26HE, 136,00, ≤16). 7 attrs each (21 rows), Kat-L3 Fibre-Channel-Director, **no port Merkmale**;
+  **Switching-Kapazität = DATASHEET** figure (12/24/48 Tbit/s, provenance "datasheet"); Leermodul-Chassis incl. fans,
+  supervisors/fabric/line-cards/PSU **separate → future "Module & Komponenten" components track (NOT switches)**, excluded
+  + documented in prose. All current-shipping (no EoS); NX-OS; Spedition-Versand; Versandgewicht estimated + flagged;
+  §5-clean; single FC-director closer. Prices Phase-2 provisional (12000/18000/30000, no-BOM/LF, 0 `;0,00`). Byte-contract
+  all 7 files; Main↔Prices both 3; 21 attribute rows (3×7). **Canonical gate ok=True, 0 viol / 0 warn.** Zero regression:
+  all 42 switch families re-gate PASS (MikroTik L6 pre-existing); full suite **434 passed, 0 skipped, 0 failed** (431 +
+  3 chassis tests). Manifest: re-scoped the "MDS 9700 Directors ~6" (the ~3 non-chassis modules were never switches) →
+  built `Cisco_MDS_9700` 3. Families in scope **69**. **Coverage now: 529 built, 41 families complete, 58%. CISCO MDS IS
+  FULLY CLOSED** (V+T+S+MS fixed-fabric + 9700 directors = 13 SKUs). Remaining: the MDS module/component track (future
+  "Module & Komponenten" category, Fawaz to create) — not switches.
 
 ---
 

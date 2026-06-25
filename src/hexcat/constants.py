@@ -119,12 +119,32 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
 # validate (expected) so the emitted and expected Ebene-2 can never drift.
 KATEGORIE_EBENE_2_BY_KAT3: dict[str, str] = {
     "Fibre-Channel-Switch": "SAN & Fibre Channel",
+    "Fibre-Channel-Director": "SAN & Fibre Channel",   # modular FC director chassis (same SAN branch)
 }
 
 # Every Kategorie-Ebene-2 value that denotes a SWITCH-class bundle: the default "Switches" plus any
 # per-Kat-L3 override (e.g. "SAN & Fibre Channel"). Used where a layer must tell switch bundles from
 # transceiver bundles by Ebene-2 alone (gate L5 weight plausibility) without re-importing the rules.
 SWITCH_EBENE2_VALUES: frozenset[str] = frozenset({CATEGORY_SWITCH_L2, *KATEGORIE_EBENE_2_BY_KAT3.values()})
+
+# CHASSIS-SWITCH class (modular directors / chassis): a bare chassis has no fixed ports — line cards
+# (and their ports/PoE) are sold separately. Detected purely by Kat-L3 ∈ this set (config-driven, so a
+# future Ethernet chassis like Catalyst 9400/9600 or Nexus 9500 extends it by adding its Kat-L3 value —
+# no logic rewrite). Chassis-class SKUs carry a REDUCED 7-Merkmal set (Anwendung, Bauform,
+# Betriebstemperatur, Kühlung, Stromversorgung, Switch-Typ, Switching-Kapazität), FORBID the port-centric
+# Merkmale (Portanzahl/Port-Konfiguration/Port-Geschwindigkeit/PoE/Stacking), and skip the port-rules
+# S.1/S.3/S.4 while keeping S.2/S.5. Additive: empty for every non-chassis SKU → no behaviour change.
+CHASSIS_KAT3_VALUES: frozenset[str] = frozenset({"Fibre-Channel-Director"})
+CHASSIS_REQUIRED_ATTRS: tuple[str, ...] = (
+    "Anwendung", "Bauform", "Betriebstemperatur", "Kühlung", "Stromversorgung",
+    "Switch-Typ", "Switching-Kapazität",
+)
+CHASSIS_FORBIDDEN_ATTRS: tuple[str, ...] = (
+    "Portanzahl", "Port-Konfiguration", "Port-Geschwindigkeit", "PoE", "Stacking",
+)
+# A chassis legitimately weighs tens of kg (a 26 HE director with 16 PSUs ≈ 136 kg); the fixed-switch
+# L5 ceiling (50 kg) would wrongly flag it. Chassis-class uses this higher ceiling instead.
+CHASSIS_WEIGHT_CEILING_KG: float = 200.0
 
 
 def ebene2_for(kat_ebene_3: str, *, is_switch: bool, switch_default: str, transceiver_default: str) -> str:

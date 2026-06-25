@@ -843,6 +843,13 @@ class Validator:
 
     def _check_switch_sku(self, fname, sku, k3, names, vals):
         """Rule-7 switch gold-slice: required-attr completeness + S.1-S.5. (B.4/B.8 run elsewhere.)"""
+        # CHASSIS-SWITCH carve-out: a modular director/chassis (Kat-L3 in CHASSIS_KAT3_VALUES) is a bare
+        # chassis — no fixed ports/PoE/stacking — so it uses a reduced 7-attr set and the port-rules
+        # (S.1/S.3/S.4) do not apply. Routed to a SEPARATE method so the fixed-switch path below is
+        # untouched (zero-regression for the existing port-centric families).
+        if k3 in C.CHASSIS_KAT3_VALUES:
+            self._check_chassis_sku(fname, sku, k3, names, vals)
+            return
         # Fibre Channel SAN switches are switch-class but use the 12-attr FC model: no Ethernet Layer
         # (FC does FC-switching/NPV/IVR, not L2/L3) and no separate Durchsatz (the aggregate FC bandwidth
         # IS the throughput, carried in Switching-Kapazität). Drop Layer from the required set for FC;
@@ -915,6 +922,39 @@ class Validator:
                 self._fail(fname, sku, "Port-Konfiguration", f"{pn_combo} Combo-Ports (PN-kodiert)",
                            f"{cfg_combo} Combo", "semantic S.6: the PN encodes combo ports absent from "
                            "Port-Konfiguration (consistent-omission guard)")
+
+    def _check_chassis_sku(self, fname, sku, k3, names, vals):
+        """Chassis-switch gold-slice (modular director / bare chassis): the REDUCED 7-attr set, port
+        Merkmale FORBIDDEN, S.1/S.3/S.4/S.6 skipped (no fixed ports/PoE/stacking), S.2 + S.5 kept.
+        Separate from _check_switch_sku so the port-centric path is byte-identical for non-chassis SKUs."""
+        for req in C.CHASSIS_REQUIRED_ATTRS:
+            if req not in names:
+                self._fail(fname, sku, f"Attributwert ({req})", f"a {req} attribute (every chassis-switch)",
+                           "(missing)", f"chassis gold-slice completeness: every chassis must carry {req}")
+        for forb in C.CHASSIS_FORBIDDEN_ATTRS:
+            if forb in names:
+                self._fail(fname, sku, f"Attributwert ({forb})", f"no {forb} on a bare chassis", vals.get(forb, ""),
+                           f"chassis-switch: {forb} must be ABSENT — a modular chassis has no fixed ports "
+                           "(ports come from line cards, sold separately)")
+        styp = vals.get("Switch-Typ", ""); layer = vals.get("Layer", "")
+        # S.2 (kept): Layer L3 -> Switch-Typ EXACTLY "Managed". A chassis carries no Layer attribute, so
+        # this is silent for FC directors — but kept so an Ethernet chassis that DOES declare L3 is held.
+        if "L3" in layer and styp.strip() != "Managed":
+            self._fail(fname, sku, "Layer↔Switch-Typ", "Switch-Typ=Managed for L3", f"{layer} / {styp}",
+                       "semantic S.2: Layer-3 routing requires a Managed switch")
+        # S.5 (kept): environmental category by operating temperature (same logic as the fixed switches).
+        temp_lo, temp_hi = _parse_temp_range(vals.get("Betriebstemperatur", ""))
+        is_extended = temp_lo is not None and (temp_lo <= -25 or temp_hi >= 60)
+        is_industrie = k3 == "Industrie-Switch"
+        if is_industrie and temp_lo is not None and not is_extended:
+            self._fail(fname, sku, "Betriebstemperatur",
+                       "extended-range temp (min ≤ -25 °C or max ≥ +60 °C)", vals.get("Betriebstemperatur", ""),
+                       "semantic S.5: an Industrie-Switch must carry an extended operating-temperature range")
+        elif is_extended and not is_industrie:
+            self._warn(fname, sku, "Kategorie Ebene 3",
+                       f"extended operating temp ({vals.get('Betriebstemperatur', '')}) without the "
+                       "Industrie-Switch token — review classification (semantic S.5: extended temp is "
+                       "necessary but not sufficient for an industrial switch)")
 
     def _check_prices(self):
         t = self.tables.get("prices")

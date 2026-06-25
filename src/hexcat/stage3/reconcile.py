@@ -195,13 +195,19 @@ def _closer(hersteller: str, kategorie3: str, pn: str = "") -> str:
         return f"Originales {hersteller}-AOC-Kabel für {tail}."
     if kategorie3 == "MPO Kabel":
         return f"Originales {hersteller}-MPO-Kabel für {tail}."
-    if kategorie3 == "Fibre-Channel-Switch" and pn:
+    if kategorie3 in ("Fibre-Channel-Switch", "Fibre-Channel-Director") and pn:
         # PID-welded SAN closer. Keeps the gate-required "Originaler {brand}-<noun>" form
         # ("{brand}-MDS…", so closer_present's `{brand}-\w` still matches) while welding the
         # model + PID, per the harvest. Falls back to the generic switch closer if no PN.
         m = re.search(r"C(\d+[A-Z]?)\b", pn)
-        modell = f"-{m.group(1)}" if m else ""
-        return (f"Originaler {hersteller}-MDS{modell}-Fibre-Channel-Switch ({pn}) "
+        modell = m.group(1) if m else ""
+        # Lowercase ONLY a trailing multiservice "I" (Cisco brands the 9220i/9250i with a lowercase i);
+        # V/T/S suffixes stay uppercase (9148V/9148T/9148S are uppercase in Cisco's own branding).
+        if modell.endswith("I"):
+            modell = modell[:-1] + "i"
+        modell = f"-{modell}" if modell else ""
+        noun = "Fibre-Channel-Director" if kategorie3 == "Fibre-Channel-Director" else "Fibre-Channel-Switch"
+        return (f"Originaler {hersteller}-MDS{modell}-{noun} ({pn}) "
                 f"für den Aufbau hochverfügbarer Fibre-Channel-Fabrics.")
     if "Switch" in kategorie3:          # any switch L3 token (Rule-7) — masculine "Switch"
         return f"Originaler {hersteller}-Switch für {tail}."

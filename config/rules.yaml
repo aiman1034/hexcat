@@ -85,6 +85,11 @@ kategorie_ebene_3_switch_allowed:
   - "Smart-Managed Switch"
   - "Unmanaged Switch"
   - "Fibre-Channel-Switch"
+  # Fibre-Channel-Director (added 2026-06-25) is a switch-CLASS token for modular FC director CHASSIS.
+  # Switch-class (SWITCH attr set, "Switch" Attributgruppe, Ebene-2 "SAN & Fibre Channel"), but ALSO
+  # chassis-class (see constants.CHASSIS_KAT3_VALUES): reduced 7-attr set, port Merkmale forbidden,
+  # S.1/S.3/S.4 skipped, S.2/S.5 kept. Additive — activates only for this Kat-L3.
+  - "Fibre-Channel-Director"
 
 # Word / character budgets.
 budgets:
