@@ -2940,6 +2940,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `coverage_report.md`: **both 3850 sub-families ✅** (core-copper 21/21 + fiber/10G/40G/mGig 22/22). **In-scope unchanged (69**;
   OTHER row replaced by the built family). **Coverage now: 560 built, 47 families fully built, 61%.** First fixed/legacy-lane
   family complete; next legacy rounds (3650 R2, 3560/3750 legacy remainders, Meraki MS, IE/Nexus-legacy) await per-family harvests.
+- **BUILD Cisco_C3650_R2 (45/45) — Catalyst 3650 Round 2 (data-T / Q-R-Z / mGig / mini); completes the 3650 family (2026-06-25).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). Fixed-switch round on the live S.1–S.6 gate. Completes
+  the 3650 family (R1 18 PoE+ S/D + R2 45 = 63). **Sibling bundle `Cisco_C3650_R2`** so the audited R1 `Cisco_C3650` stays
+  **byte-frozen**. Reuses the R1 3650 model verbatim (14-attr S-uplink / 15-attr Uplink-Ports for D/Q/R/Z; StackWise-160 on ALL;
+  IOS XE retained in Beschreibung; Kat-L3 `Managed Switch (L2|L3)`; MACsec prose-only). **45 SKUs = 15 hardware × L/S/E** —
+  built the COMPLETE tier set per the courier directive ("all available -L/-S/-E, don't stop at 21") + the universal-IOS-XE-image
+  architecture (license is a hardware-independent software bundle → each config orderable in each tier; unlike the 3850, the
+  courier stated NO per-config tier restriction). The **five §0 nuances — all verified in the emitted bundle:** (1) FIRST no-PoE
+  **data-T** 24TS/48TS/24TD/48TD/48TQ (PoE "Nein"); (2) **Q/R/Z uplinks** = 4×10G / 8×10G / 2×40G (Uplink-Ports values present);
+  (3) **mGig+UPOE** 8X24PD/8X24UQ/12X48FD/UQ/UR/UZ (mGig access 100M–10G); (4) **mini 24PDM/48FQM = fixed PSU/fans + RPS-2300**
+  (distinct Stromversorgung value), still stack; (5) **14-attr only on S-uplink 24TS/48TS**, 15-attr (Uplink-Ports) on all 13 D/Q/R/Z
+  hardware. **ALL 45 stack** (StackWise-160, no `Nein`). **IOS XE present** whole-bundle (225×), **NX-OS = 0**. S.3 port sums match
+  Portanzahl (mGig 8/16 & 12/36 splits written without stray `N×`). **Durchsatz = `datasheet`** (Table-7 Mpps per §1 — not derived);
+  **only 12X48FD Switching-Kapazität = `berechnet`** (392 − 2×20 = 352 Gbit/s, the 2×10G-uplink variant absent from Table 7),
+  logged. **MACsec-128 (prose)** for the 1G-access models (R1 wording); **generic "MACsec-Verschlüsselung"** for the mGig models
+  (256-bit NOT grounded for the 3650 — flag-don't-fabricate). 3650 is **EoS** (Nachfolger 9300) → flagged, never dropped. §5-clean
+  whole-bundle (no "Sealed"). Beschr trimmed to 148–165 words (StackWise/EoS/PSU clauses tightened to clear the 175 ceiling for the
+  verbose mini/mGig prose). Prices Phase-2 provisional, tier-ordered (base × L/S/E 1,0/1,3/1,6; no-BOM/LF, 0 `;0,00`). Added the
+  `Cisco_C3650_R2_switches` `gate_completeness` record. **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite **438
+  passed, 0 skipped, 0 failed**. Manifest: retired the "3650 T/Q/mGig/mini ~21" OTHER row, added the `Cisco_C3650_R2` built-block
+  (45). Regenerated `coverage_report.md`: **both 3650 sub-families ✅** (PoE+ S/D 18/18 + data-T/Q/R/Z/mGig/mini 45/45). **In-scope
+  unchanged (69**). **Coverage now: 605 built, 48 families fully built, 65%.** ⚠ L8-reconcile note: the 45 = all-L/S/E enumeration is
+  directive-grounded; if any specific tier PID (esp. mini 24PDM/48FQM or 12X48UR/UZ at LAN Base) is not orderable, flag it then.
 
 ---
 
