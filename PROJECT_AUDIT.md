@@ -2653,6 +2653,30 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   deferred "3650 (T/Q/mGig/mini) ~21" Round-2 remainder; families in scope **64→65**. reconciler → 100%. Re-gated all
   36 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 516 built,
   36 families complete, 56%.** (3850+3650 round closed; both pushed.)
+- **MDS Round 1 (64G V-series Fibre Channel SAN, 3 SKUs) — BLOCKED on a gate-model extension (2026-06-25, NOT
+  built, NOT pushed).** Harvest `mds_v_series_harvest_source.md` stands up a NEW product class (Fibre Channel SAN):
+  Ebene-1 `Netzwerk & Infrastruktur` / Ebene-2 `SAN & Fibre Channel` (NEW) / Kat-L3 `Fibre-Channel-Switch` (NEW);
+  12-attr model (drops Layer + Durchsatz); 3 SKUs DS-C9124V-8EK9 / DS-C9148V-24EK9 / DS-C9396V-48EK9 (24/48/96 phys
+  ports, 1,5/3/6 Tbit/s, NX-OS, PoE=Nein, Stacking=Nein, Switch-Typ=Managed, 0–40 °C, weights 8,5/9,9/20 kg). **Per
+  the harvest's step-2 instruction I ran the gate on a faithful 3-SKU probe BEFORE building — it FAILED structurally,
+  so per the same instruction ("if any gate trips, STOP and report; do not mutate FC values") I stopped.** Root cause:
+  the harvest's S.1–S.5 analysis is correct, but the gate has a LOCKED category model ABOVE S.1–S.5 that only knows
+  two classes — switches (Ebene-2 `Switches`) and transceivers (Ebene-2 `Transceivers & SFP Module`). FC is a 3rd
+  class registered in neither, so the gate: (1) rejects Ebene-2 `SAN & Fibre Channel` (Kat-L2 mismatch), (2) rejects
+  Kat-L3 `Fibre-Channel-Switch` (not in the locked set), (3) routes FC to the TRANSCEIVER path → demands Wellenlänge/
+  DOM/Geschwindigkeit + transceiver Attributgruppe + rejects all 12 FC Merkmal as unknown; and (4) if FC is instead
+  registered as a switch token, `_check_switch_sku`'s required-attr loop (validate.py:842) demands `Layer`, which the
+  12-attr model drops. (Ebene-1 itself matches the constant — fine.) **Operator decision (asked + answered): operator
+  owns the gate-model change first; CC stops, does not modify the locked gate.** EXTENSION SPEC the gate change must
+  satisfy before CC builds: (a) `rules.yaml` add `Fibre-Channel-Switch` to the switch Kat-L3 set; (b) `validate.py`
+  make Ebene-2 per-Kat-L3 (FC → `SAN & Fibre Channel`, not the single `kategorie_ebene_2_switch` constant) AND make
+  `_check_switch_sku` required-attrs FC-aware (no Layer/Durchsatz for FC); (c) `reconcile.py`/`assemble.py` route FC as
+  switch-class but emit Ebene-2 `SAN & Fibre Channel` + the 12-attr model; (d) `taxonomy.yaml` add the branch + keep
+  the drift-check green; (e) add `test_fc_family` + RE-GATE all 37 existing families for zero regression. Once the gate
+  is FC-green, CC builds the 3 (full §5/§6/§9/§10/§12 content, NX-OS, active-port note in Beschreibung, Prices Phase-2),
+  updates coverage (new `MDS_V` 3/3), and pushes with the JTL-category-branch + carve-out notes. **MDS T-series + MDS
+  S-series (16G, S-series needs EoS handling) are queued behind this.** No coverage/manifest change this turn (nothing
+  built).
 
 ---
 
