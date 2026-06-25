@@ -2500,6 +2500,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `Cisco_3560X` row + split the legacy "3560 (CX/X)" → "3560/3560-C/3560-CX (legacy)" ~19 (distinct from 3560-X);
   families in scope **58→59**. reconciler → **Cisco_3560X 21/21**. Re-gated all 28 Cisco switch families → all PASS
   (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 416 built, 28 families complete, 47%.**
+- **BUILD Cisco Catalyst 3750-X (stackable sister of the 3560-X) — family #20, 25/25 (2026-06-23).** New family
+  `output/switches/Cisco_3750X/` from `c3750x_harvest_source.md` (shared 3750-X/3560-X DS C78-584733). Reuses the
+  3560-X logic (suffix→Layer, PoE tiers, MACsec-legit, modular uplinks, SwK 160) **+ stacking**. **25 = 7 copper
+  configs × {-L/-S/-E} (21) + 12S/24S GE-SFP × {-S/-E} only (4)** — **no 12S-L/24S-L** (GE SFP not in LAN Base),
+  no 3560-X bleed, no module/PSU/cable/license/transceiver SKUs. **TWO INVERSIONS vs the 3560-X:** (1) **Stacking =
+  "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)" on ALL 25** — this is the **FIRST time gate
+  S.4 fired LIVE on a real stacking family** (Stacking Ja ⇒ Switch-Typ Managed exact; all 25 Managed → **S.4
+  PASSES**). (2) **StackWise Plus / StackPower now LEGIT/REQUIRED** (present + mentioned) — the opposite of the
+  3560-X; **FlexStack stays WRONG → grep 0** (caught + removed the FAQ that would have introduced it). Suffix→Layer
+  (7 L2 + 18 L3, the 4 SFP all L3; verified Layer↔suffix exact); featureset keyword in Artikelname/Titel/Meta; two
+  Kat-L3 tokens → two FAQ sets; **S.2 (L3 ⇒ Managed-exact) passes** for all 18 L3. Four PoE tiers (copper): T=Nein;
+  P/48P=PoE+ (802.3at, 30 W, 435 W); 48PF=PoE+ (800 W); U=UPOE (60 W, 800 W/1800 W); **12S/24S = Nein** (802.3at/
+  UPOE/60 W on P/PF/U only, verified). **MACsec (802.1AE) present, all 25.** Modular uplinks → **attr {14:25}**;
+  Portanzahl 24/48/12 (base only). SwK **160** all; Durchsatz 65,5 (24-cu/24S) / 101,2 (48-cu) / 35,7 (12S); Port-
+  Gesch 1G; Bauform 19" 1HE (no DIN, S.5 clean); Kühlung aktiv; Temp -5–45 °C; Stromversorgung int. AC modular +
+  **StackPower** + XPS 2200; OS Cisco IOS (classic); E-LLW. S.3 holds, single-closer (G5), §5 0, no [VERIFY], **gate
+  PASS**. EoS never-drop. Priced 25 — refurb-saturated; genuine new-sealed only, refurb hard-rejected; **0 direkt /
+  25 geschätzt** to operator band **€380–2.800** (modest stacking premium over the 3560-X), monotonic ports×PoE-tier×
+  license (-S=base×1,3, -E=base×1,7; floor 24T-L €380, ceiling 48U-E €2.800; 12S-S above the copper-data floor on the
+  SFP premium); ungrouped, NO-BOM, 0 zeros, Main↔Prices exact. Manifest: opened a NEW `Cisco_3750X` row + split the
+  legacy "3750 (X/E)" → "3750/3750-E/3750-G (legacy)" ~15; families in scope **59→60**. reconciler → **Cisco_3750X
+  25/25**. Re-gated all 29 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**.
+  **Coverage now: 441 built, 29 families complete, 50%** (half the in-scope Cisco switch catalogue).
 
 ---
 

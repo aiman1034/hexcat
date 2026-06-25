@@ -1,0 +1,4302 @@
+{
+ "WS-C3750X-24T-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24T-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-24T-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24T-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 24× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,1",
+  "versandgewicht": "8,8",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24T-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24T-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-24T-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24T-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit LAN Base-Lizenz und 24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24T-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-24T-L sind reine Datenports ohne PoE-Einspeisung. Mit der LAN Base-Lizenz bietet der WS-C3750X-24T-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24T-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24T-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24T-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24T-L?",
+    "Der WS-C3750X-24T-L bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24T-L stapeln?",
+    "Ja, der WS-C3750X-24T-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Hat der WS-C3750X-24T-L PoE?",
+    "Nein, der WS-C3750X-24T-L ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Routet der WS-C3750X-24T-L (LAN Base)?",
+    "Der WS-C3750X-24T-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24T-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24T-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24T-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 24× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-24T-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24T-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,1",
+  "versandgewicht": "8,8",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24T-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24T-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-24T-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24T-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit IP Base-Lizenz und 24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24T-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-24T-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3750X-24T-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24T-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24T-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24T-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24T-S?",
+    "Der WS-C3750X-24T-S bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24T-S stapeln?",
+    "Ja, der WS-C3750X-24T-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Hat der WS-C3750X-24T-S PoE?",
+    "Nein, der WS-C3750X-24T-S ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-24T-S?",
+    "Der WS-C3750X-24T-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24T-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24T-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24T-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 24× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-24T-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24T-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,1",
+  "versandgewicht": "8,8",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24T-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24T-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-24T-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24T-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit IP Services-Lizenz und 24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24T-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-24T-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3750X-24T-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24T-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24T-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24T-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24T-E?",
+    "Der WS-C3750X-24T-E bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24T-E stapeln?",
+    "Ja, der WS-C3750X-24T-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Hat der WS-C3750X-24T-E PoE?",
+    "Nein, der WS-C3750X-24T-E ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-24T-E?",
+    "Der WS-C3750X-24T-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24T-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48T-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48T-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-48T-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48T-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 48× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,4",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48T-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48T-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-48T-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48T-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit LAN Base-Lizenz und 48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48T-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-48T-L sind reine Datenports ohne PoE-Einspeisung. Mit der LAN Base-Lizenz bietet der WS-C3750X-48T-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48T-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48T-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48T-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48T-L?",
+    "Der WS-C3750X-48T-L bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48T-L stapeln?",
+    "Ja, der WS-C3750X-48T-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Hat der WS-C3750X-48T-L PoE?",
+    "Nein, der WS-C3750X-48T-L ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Routet der WS-C3750X-48T-L (LAN Base)?",
+    "Der WS-C3750X-48T-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48T-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48T-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48T-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 48× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-48T-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48T-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,4",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48T-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48T-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-48T-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48T-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit IP Base-Lizenz und 48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48T-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-48T-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3750X-48T-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48T-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48T-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48T-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48T-S?",
+    "Der WS-C3750X-48T-S bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48T-S stapeln?",
+    "Ja, der WS-C3750X-48T-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Hat der WS-C3750X-48T-S PoE?",
+    "Nein, der WS-C3750X-48T-S ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-48T-S?",
+    "Der WS-C3750X-48T-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48T-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48T-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48T-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 48× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3750X-48T-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48T-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,4",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48T-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 ohne PoE (reine Datenports) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48T-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-48T-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48T-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Daten-Access-Switch mit IP Services-Lizenz und 48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48T-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Die Ports des WS-C3750X-48T-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3750X-48T-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48T-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48T-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48T-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48T-E?",
+    "Der WS-C3750X-48T-E bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48T-E stapeln?",
+    "Ja, der WS-C3750X-48T-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Hat der WS-C3750X-48T-E PoE?",
+    "Nein, der WS-C3750X-48T-E ist ein Datenmodell ohne PoE-Einspeisung; PoE+-/UPOE-Varianten sind die P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-48T-E?",
+    "Der WS-C3750X-48T-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); reine Datenports ohne PoE; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48T-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24P-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24P-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-24P-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24P-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 24× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,2",
+  "versandgewicht": "8,9",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24P-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24P-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-24P-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24P-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit LAN Base-Lizenz und 24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24P-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-24P-L IP-Telefone, WLAN-Access-Points und Kameras. Mit der LAN Base-Lizenz bietet der WS-C3750X-24P-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24P-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24P-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24P-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24P-L?",
+    "Der WS-C3750X-24P-L bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24P-L stapeln?",
+    "Ja, der WS-C3750X-24P-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-24P-L?",
+    "Der WS-C3750X-24P-L liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Routet der WS-C3750X-24P-L (LAN Base)?",
+    "Der WS-C3750X-24P-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24P-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24P-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24P-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 24× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-24P-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24P-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,2",
+  "versandgewicht": "8,9",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24P-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24P-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-24P-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24P-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit IP Base-Lizenz und 24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24P-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-24P-S IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Base-Lizenz beherrscht der WS-C3750X-24P-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24P-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24P-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24P-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24P-S?",
+    "Der WS-C3750X-24P-S bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24P-S stapeln?",
+    "Ja, der WS-C3750X-24P-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-24P-S?",
+    "Der WS-C3750X-24P-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-24P-S?",
+    "Der WS-C3750X-24P-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24P-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24P-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24P-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 24× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-24P-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24P-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,2",
+  "versandgewicht": "8,9",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24P-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24P-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-24P-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24P-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit IP Services-Lizenz und 24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24P-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-24P-E IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Services-Lizenz beherrscht der WS-C3750X-24P-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24P-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24P-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24P-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24P-E?",
+    "Der WS-C3750X-24P-E bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24P-E stapeln?",
+    "Ja, der WS-C3750X-24P-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-24P-E?",
+    "Der WS-C3750X-24P-E liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-24P-E?",
+    "Der WS-C3750X-24P-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24P-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48P-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48P-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48P-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48P-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 48× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,5",
+  "versandgewicht": "9,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48P-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48P-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-48P-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48P-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit LAN Base-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48P-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48P-L IP-Telefone, WLAN-Access-Points und Kameras. Mit der LAN Base-Lizenz bietet der WS-C3750X-48P-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48P-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48P-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48P-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48P-L?",
+    "Der WS-C3750X-48P-L bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48P-L stapeln?",
+    "Ja, der WS-C3750X-48P-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48P-L?",
+    "Der WS-C3750X-48P-L liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Routet der WS-C3750X-48P-L (LAN Base)?",
+    "Der WS-C3750X-48P-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48P-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48P-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48P-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48P-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48P-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,5",
+  "versandgewicht": "9,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48P-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48P-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-48P-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48P-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit IP Base-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48P-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48P-S IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Base-Lizenz beherrscht der WS-C3750X-48P-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48P-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48P-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48P-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48P-S?",
+    "Der WS-C3750X-48P-S bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48P-S stapeln?",
+    "Ja, der WS-C3750X-48P-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48P-S?",
+    "Der WS-C3750X-48P-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-48P-S?",
+    "Der WS-C3750X-48P-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48P-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48P-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48P-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48P-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48P-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, PoE+ 435 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,5",
+  "versandgewicht": "9,2",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48P-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 435-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48P-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-48P-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48P-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (435 W) mit IP Services-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48P-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 435 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48P-E IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Services-Lizenz beherrscht der WS-C3750X-48P-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48P-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48P-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48P-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48P-E?",
+    "Der WS-C3750X-48P-E bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48P-E stapeln?",
+    "Ja, der WS-C3750X-48P-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48P-E?",
+    "Der WS-C3750X-48P-E liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 435 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-48P-E?",
+    "Der WS-C3750X-48P-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 435 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (715 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48P-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48PF-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48PF-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48PF-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48PF-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 48× 1G, PoE+ 800 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48PF-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 800-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48PF-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-48PF-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48PF-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (800 W) mit LAN Base-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48PF-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 800 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48PF-L IP-Telefone, WLAN-Access-Points und Kameras. Mit der LAN Base-Lizenz bietet der WS-C3750X-48PF-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48PF-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48PF-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48PF-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48PF-L?",
+    "Der WS-C3750X-48PF-L bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48PF-L stapeln?",
+    "Ja, der WS-C3750X-48PF-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48PF-L?",
+    "Der WS-C3750X-48PF-L liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 800 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Routet der WS-C3750X-48PF-L (LAN Base)?",
+    "Der WS-C3750X-48PF-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 800 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48PF-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48PF-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48PF-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48PF-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48PF-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, PoE+ 800 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48PF-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 800-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48PF-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-48PF-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48PF-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (800 W) mit IP Base-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48PF-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 800 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48PF-S IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Base-Lizenz beherrscht der WS-C3750X-48PF-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48PF-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48PF-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48PF-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48PF-S?",
+    "Der WS-C3750X-48PF-S bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48PF-S stapeln?",
+    "Ja, der WS-C3750X-48PF-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48PF-S?",
+    "Der WS-C3750X-48PF-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 800 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-48PF-S?",
+    "Der WS-C3750X-48PF-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 800 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48PF-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48PF-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48PF-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 48× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3750X-48PF-E 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48PF-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, PoE+ 800 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48PF-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und 800-W-PoE+-Budget (802.3at) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48PF-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-48PF-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48PF-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein Voll-PoE+-Access-Switch (800 W) mit IP Services-Lizenz und 48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48PF-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über sein PoE+-Budget von 800 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3750X-48PF-E IP-Telefone, WLAN-Access-Points und Kameras. Mit der IP Services-Lizenz beherrscht der WS-C3750X-48PF-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48PF-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48PF-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48PF-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48PF-E?",
+    "Der WS-C3750X-48PF-E bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48PF-E stapeln?",
+    "Ja, der WS-C3750X-48PF-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3750X-48PF-E?",
+    "Der WS-C3750X-48PF-E liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 800 W für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-48PF-E?",
+    "Der WS-C3750X-48PF-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE+) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 800 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); PoE+-Versorgung (802.3at, bis 30 W/Port) für IP-Telefone, WLAN-Access-Points und Kameras; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48PF-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24U-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24U-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 24× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-24U-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24U-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 24× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,3",
+  "versandgewicht": "9,0",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24U-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24U-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-24U-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24U-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit LAN Base-Lizenz und 24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24U-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-24U-L bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der LAN Base-Lizenz bietet der WS-C3750X-24U-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24U-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24U-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24U-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24U-L?",
+    "Der WS-C3750X-24U-L bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24U-L stapeln?",
+    "Ja, der WS-C3750X-24U-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-24U-L?",
+    "Der WS-C3750X-24U-L bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Routet der WS-C3750X-24U-L (LAN Base)?",
+    "Der WS-C3750X-24U-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24U-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24U-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24U-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 24× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-24U-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24U-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,3",
+  "versandgewicht": "9,0",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24U-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24U-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-24U-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24U-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit IP Base-Lizenz und 24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24U-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-24U-S bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der IP Base-Lizenz beherrscht der WS-C3750X-24U-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24U-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24U-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24U-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24U-S?",
+    "Der WS-C3750X-24U-S bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24U-S stapeln?",
+    "Ja, der WS-C3750X-24U-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-24U-S?",
+    "Der WS-C3750X-24U-S bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-24U-S?",
+    "Der WS-C3750X-24U-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24U-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24U-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24U-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 24× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-24U-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24U-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 24× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,3",
+  "versandgewicht": "9,0",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24U-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24U-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-24U-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24U-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit IP Services-Lizenz und 24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24U-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-24U-E bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der IP Services-Lizenz beherrscht der WS-C3750X-24U-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24U-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24U-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24U-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24U-E?",
+    "Der WS-C3750X-24U-E bietet 24× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24U-E stapeln?",
+    "Ja, der WS-C3750X-24U-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-24U-E?",
+    "Der WS-C3750X-24U-E bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-24U-E?",
+    "Der WS-C3750X-24U-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24U-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48U-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48U-L Catalyst 3750-X stapelbarer Layer-2-Managed-Switch (Cisco IOS, LAN Base) – 48× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-48U-L Catalyst 3750-X LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48U-L (Catalyst 3750-X, LAN Base): stapelbarer Layer-2-Gigabit-Switch, 48× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48U-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48U-L läuft unter Cisco IOS mit LAN Base-Lizenz.</p><p>Der WS-C3750X-48U-L stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48U-L ist ein stapelbarer gemanagter Layer-2-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit LAN Base-Lizenz und 48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48U-L eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-48U-L bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der LAN Base-Lizenz bietet der WS-C3750X-48U-L ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48U-L bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48U-L mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48U-L ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, LAN Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48U-L?",
+    "Der WS-C3750X-48U-L bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48U-L stapeln?",
+    "Ja, der WS-C3750X-48U-L unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (LAN Base)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-48U-L?",
+    "Der WS-C3750X-48U-L bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Routet der WS-C3750X-48U-L (LAN Base)?",
+    "Der WS-C3750X-48U-L ist mit LAN Base ein reiner Layer-2-Switch (ausgereiftes Layer-2-Switching (VLANs, QoS, EtherChannel), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-2, LAN Base); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48U-L",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48U-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48U-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 48× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-48U-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48U-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48U-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48U-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-48U-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48U-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit IP Base-Lizenz und 48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48U-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-48U-S bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der IP Base-Lizenz beherrscht der WS-C3750X-48U-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48U-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48U-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48U-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48U-S?",
+    "Der WS-C3750X-48U-S bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48U-S stapeln?",
+    "Ja, der WS-C3750X-48U-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-48U-S?",
+    "Der WS-C3750X-48U-S bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-48U-S?",
+    "Der WS-C3750X-48U-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48U-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-48U-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-48U-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 48× 1G-RJ45 (UPOE)",
+  "titel_tag": "Cisco WS-C3750X-48U-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-48U-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 48× 1G, UPOE 60 W, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,6",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-48U-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 48× RJ45 und UPOE (bis 60 W/Port) und einem modularen 10G-Uplink-Slot. Der WS-C3750X-48U-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-48U-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-48U-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein UPOE-Access-Switch (60 W/Port) mit IP Services-Lizenz und 48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 48 Ports erreicht der WS-C3750X-48U-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 101,2 Mpps (mit 10G-Uplink-Modul). Über Cisco UPOE liefert der WS-C3750X-48U-E bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) für TelePresence und Multiband-Access-Points. Mit der IP Services-Lizenz beherrscht der WS-C3750X-48U-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-48U-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-48U-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-48U-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-48U-E?",
+    "Der WS-C3750X-48U-E bietet 48× 10/100/1000-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-48U-E stapeln?",
+    "Ja, der WS-C3750X-48U-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Welches PoE hat der WS-C3750X-48U-E?",
+    "Der WS-C3750X-48U-E bietet Cisco UPOE mit bis zu 60 W pro Port (800 W Budget, bis 1800 W mit zwei Netzteilen) – für TelePresence, Multiband-APs und leistungsstarke Endgeräte."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-48U-E?",
+    "Der WS-C3750X-48U-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (UPOE) + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port), 800 W (bis 1800 W mit zwei Netzteilen)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (1100 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); UPOE-Versorgung (bis 60 W/Port) für TelePresence und leistungsstarke Endgeräte; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-48U-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-12S-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-12S-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 12× 1G-SFP",
+  "titel_tag": "Cisco WS-C3750X-12S-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-12S-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 12× SFP, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "6,8",
+  "versandgewicht": "8,5",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-12S-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 12× SFP als GE-SFP-Glasfaser-Aggregation und einem modularen 10G-Uplink-Slot. Der WS-C3750X-12S-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-12S-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-12S-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein GE-SFP-Glasfaser-Aggregations-Switch mit IP Base-Lizenz und 12× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 12 Ports erreicht der WS-C3750X-12S-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 35,7 Mpps (mit 10G-Uplink-Modul). Über seine 12 GE-SFP-Ports eignet sich der WS-C3750X-12S-S für die Glasfaser-Aggregation; PoE wird nicht ausgegeben. Mit der IP Base-Lizenz beherrscht der WS-C3750X-12S-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-12S-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-12S-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-12S-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-12S-S?",
+    "Der WS-C3750X-12S-S bietet 12× GE-SFP-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-12S-S stapeln?",
+    "Ja, der WS-C3750X-12S-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Hat der WS-C3750X-12S-S PoE?",
+    "Nein, der WS-C3750X-12S-S ist ein GE-SFP-Glasfaser-Aggregations-Switch ohne PoE-Ausgabe; PoE+-/UPOE-Varianten sind die Kupfer-P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-12S-S?",
+    "Der WS-C3750X-12S-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "35,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); Glasfaser-Aggregation über GE-SFP-Ports; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-12S-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-12S-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-12S-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 12× 1G-SFP",
+  "titel_tag": "Cisco WS-C3750X-12S-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-12S-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 12× SFP, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "6,8",
+  "versandgewicht": "8,5",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-12S-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 12× SFP als GE-SFP-Glasfaser-Aggregation und einem modularen 10G-Uplink-Slot. Der WS-C3750X-12S-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-12S-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-12S-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein GE-SFP-Glasfaser-Aggregations-Switch mit IP Services-Lizenz und 12× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 12 Ports erreicht der WS-C3750X-12S-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 35,7 Mpps (mit 10G-Uplink-Modul). Über seine 12 GE-SFP-Ports eignet sich der WS-C3750X-12S-E für die Glasfaser-Aggregation; PoE wird nicht ausgegeben. Mit der IP Services-Lizenz beherrscht der WS-C3750X-12S-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-12S-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-12S-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-12S-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-12S-E?",
+    "Der WS-C3750X-12S-E bietet 12× GE-SFP-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-12S-E stapeln?",
+    "Ja, der WS-C3750X-12S-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Hat der WS-C3750X-12S-E PoE?",
+    "Nein, der WS-C3750X-12S-E ist ein GE-SFP-Glasfaser-Aggregations-Switch ohne PoE-Ausgabe; PoE+-/UPOE-Varianten sind die Kupfer-P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-12S-E?",
+    "Der WS-C3750X-12S-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "35,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); Glasfaser-Aggregation über GE-SFP-Ports; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-12S-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24S-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24S-S Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Base) – 24× 1G-SFP",
+  "titel_tag": "Cisco WS-C3750X-24S-S Catalyst 3750-X IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24S-S (Catalyst 3750-X, IP Base): stapelbarer Layer-3-Gigabit-Switch, 24× SFP, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,0",
+  "versandgewicht": "8,7",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24S-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× SFP als GE-SFP-Glasfaser-Aggregation und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24S-S läuft unter Cisco IOS mit IP Base-Lizenz.</p><p>Der WS-C3750X-24S-S stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24S-S ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein GE-SFP-Glasfaser-Aggregations-Switch mit IP Base-Lizenz und 24× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24S-S eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über seine 24 GE-SFP-Ports eignet sich der WS-C3750X-24S-S für die Glasfaser-Aggregation; PoE wird nicht ausgegeben. Mit der IP Base-Lizenz beherrscht der WS-C3750X-24S-S Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24S-S bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24S-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24S-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Base)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24S-S?",
+    "Der WS-C3750X-24S-S bietet 24× GE-SFP-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24S-S stapeln?",
+    "Ja, der WS-C3750X-24S-S unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Base)."
+   ],
+   [
+    "Hat der WS-C3750X-24S-S PoE?",
+    "Nein, der WS-C3750X-24S-S ist ein GE-SFP-Glasfaser-Aggregations-Switch ohne PoE-Ausgabe; PoE+-/UPOE-Varianten sind die Kupfer-P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3750X-24S-S?",
+    "Der WS-C3750X-24S-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIP, EIGRP Stub, OSPF for Routed Access) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); Glasfaser-Aggregation über GE-SFP-Ports; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24S-S",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ },
+ "WS-C3750X-24S-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3750X-24S-E Catalyst 3750-X stapelbarer Layer-3-Managed-Switch (Cisco IOS, IP Services) – 24× 1G-SFP",
+  "titel_tag": "Cisco WS-C3750X-24S-E Catalyst 3750-X IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750X-24S-E (Catalyst 3750-X, IP Services): stapelbarer Layer-3-Gigabit-Switch, 24× SFP, StackWise Plus, MACsec. Cisco IOS, Switching-Kapazität 160 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "7,0",
+  "versandgewicht": "8,7",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750X-24S-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Access-Switch der Catalyst-3750-X-Serie für den Enterprise-Campus mit 24× SFP als GE-SFP-Glasfaser-Aggregation und einem modularen 10G-Uplink-Slot. Der WS-C3750X-24S-E läuft unter Cisco IOS mit IP Services-Lizenz.</p><p>Der WS-C3750X-24S-E stapelt per Cisco StackWise Plus bis zu neun Einheiten (64 Gbit/s Stack-Ring) und teilt sich Strom über Cisco StackPower; er verschlüsselt Access-Links per MACsec und ist mit Cisco E-LLW abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3750X-24S-E ist ein stapelbarer gemanagter Layer-3-Gigabit-Switch aus der Catalyst-3750-X-Familie für den Enterprise-Campus-Access – ein GE-SFP-Glasfaser-Aggregations-Switch mit IP Services-Lizenz und 24× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional).",
+   "Mit 24 Ports erreicht der WS-C3750X-24S-E eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 65,5 Mpps (mit 10G-Uplink-Modul). Über seine 24 GE-SFP-Ports eignet sich der WS-C3750X-24S-E für die Glasfaser-Aggregation; PoE wird nicht ausgegeben. Mit der IP Services-Lizenz beherrscht der WS-C3750X-24S-E volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3).",
+   "Per Cisco StackWise Plus verbindet der WS-C3750X-24S-E bis zu neun Einheiten zu einem System (64 Gbit/s Stack-Ring, eine Verwaltungs-IP), während Cisco StackPower die Stromversorgung im Stack teilt. Sicherheit bietet der WS-C3750X-24S-E mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X und IP Source Guard. Der WS-C3750X-24S-E ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3750-X (Cisco IOS, IP Services)",
+   "Cisco StackWise Plus / StackPower (stapelbar, bis 9 Einheiten)",
+   "C3KX-NM Uplink-Modul (1G/10G, optional)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3750X-24S-E?",
+    "Der WS-C3750X-24S-E bietet 24× GE-SFP-Ports plus einen modularen Uplink-Slot (optionales C3KX-NM-Modul, z. B. 2× 10G-SFP+); im Auslieferungszustand ohne Uplink-Modul."
+   ],
+   [
+    "Lässt sich der WS-C3750X-24S-E stapeln?",
+    "Ja, der WS-C3750X-24S-E unterstützt Cisco StackWise Plus (bis zu 9 Einheiten, 64 Gbit/s Stack-Ring, eine Verwaltungs-IP) sowie Cisco StackPower für geteilte Stromredundanz; er läuft unter Cisco IOS (IP Services)."
+   ],
+   [
+    "Hat der WS-C3750X-24S-E PoE?",
+    "Nein, der WS-C3750X-24S-E ist ein GE-SFP-Glasfaser-Aggregations-Switch ohne PoE-Ausgabe; PoE+-/UPOE-Varianten sind die Kupfer-P-/PF-/U-Modelle der 3750-X-Serie."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3750X-24S-E?",
+    "Der WS-C3750X-24S-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGP, IS-IS, PBR, VRF-Lite, IPv6/OSPFv3) frei. Innerhalb einer Konfiguration ist die Hardware identisch; nur die Lizenz unterscheidet sich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-SFP + modularer Uplink-Slot (C3KX-NM, optional)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (350 W, modular, hot-swap; 2. Netzteil optional); Cisco StackPower (Strom-Sharing im Stack) und XPS 2200"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (modulare, hot-swap Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Stapelbarer Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); Glasfaser-Aggregation über GE-SFP-Ports; Cisco StackWise Plus (bis 9 Einheiten) und StackPower; MACsec-Hardware-Verschlüsselung; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750X-24S-E",
+    "EoL",
+    "Cisco Catalyst 3750-X End-of-Sale (Serie, ~2010–2020) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-x-series-switches/data_sheet_c78-584733.html"
+   ]
+  ]
+ }
+}
