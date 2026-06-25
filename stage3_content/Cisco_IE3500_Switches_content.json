@@ -1,0 +1,2050 @@
+{
+ "IE-3500-8T3S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8T3S-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3500-8T3S-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8T3S-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, −40/+75 °C, MACsec-128. Cisco IOS XE, …",
+  "artikelgewicht": "1,77",
+  "versandgewicht": "2,57",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8T3S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 1G-SFP-Uplinks. Der IE-3500-8T3S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8T3S-E bietet Ring-Redundanz (REP und MRP), MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8T3S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 3× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8T3S-E eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Die acht Downlink-Ports des IE-3500-8T3S-E sind reine Datenports ohne PoE-Einspeisung. Mit der Network Essentials-Lizenz beherrscht der IE-3500-8T3S-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3500-8T3S-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8T3S-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8T3S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8T3S-E?",
+    "Der IE-3500-8T3S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3500-8T3S-E?",
+    "Der IE-3500-8T3S-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Hat der IE-3500-8T3S-E PoE?",
+    "Nein, der IE-3500-8T3S-E ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8T3S-E?",
+    "Der IE-3500-8T3S-E besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8T3S-E?",
+    "Der IE-3500-8T3S-E unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8T3S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8T3S-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3500-8T3S-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8T3S-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, −40/+75 °C, MACsec-256. Cisco IOS XE, …",
+  "artikelgewicht": "1,77",
+  "versandgewicht": "2,57",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8T3S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 1G-SFP-Uplinks. Der IE-3500-8T3S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8T3S-A bietet Ring-Redundanz (REP und MRP), MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8T3S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 3× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8T3S-A eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Die acht Downlink-Ports des IE-3500-8T3S-A sind reine Datenports ohne PoE-Einspeisung. Mit der Network Advantage-Lizenz beherrscht der IE-3500-8T3S-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3500-8T3S-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8T3S-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8T3S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8T3S-A?",
+    "Der IE-3500-8T3S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3500-8T3S-A?",
+    "Der IE-3500-8T3S-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Hat der IE-3500-8T3S-A PoE?",
+    "Nein, der IE-3500-8T3S-A ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8T3S-A?",
+    "Der IE-3500-8T3S-A besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8T3S-A?",
+    "Der IE-3500-8T3S-A unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8P3S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8P3S-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 (PoE+) + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3500-8P3S-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8P3S-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-128. …",
+  "artikelgewicht": "1,77",
+  "versandgewicht": "2,57",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8P3S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 3× 1G-SFP-Uplinks. Der IE-3500-8P3S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8P3S-E bietet Ring-Redundanz (REP und MRP), MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8P3S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 3× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8P3S-E eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3500-8P3S-E Industriekameras, Sensoren und Access-Points. Mit der Network Essentials-Lizenz beherrscht der IE-3500-8P3S-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3500-8P3S-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8P3S-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8P3S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8P3S-E?",
+    "Der IE-3500-8P3S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3500-8P3S-E?",
+    "Der IE-3500-8P3S-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3500-8P3S-E?",
+    "Der IE-3500-8P3S-E liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8P3S-E?",
+    "Der IE-3500-8P3S-E besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8P3S-E?",
+    "Der IE-3500-8P3S-E unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8P3S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8P3S-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 (PoE+) + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3500-8P3S-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8P3S-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-256. …",
+  "artikelgewicht": "1,77",
+  "versandgewicht": "2,57",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8P3S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 3× 1G-SFP-Uplinks. Der IE-3500-8P3S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8P3S-A bietet Ring-Redundanz (REP und MRP), MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8P3S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 3× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8P3S-A eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3500-8P3S-A Industriekameras, Sensoren und Access-Points. Mit der Network Advantage-Lizenz beherrscht der IE-3500-8P3S-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3500-8P3S-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8P3S-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8P3S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8P3S-A?",
+    "Der IE-3500-8P3S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3500-8P3S-A?",
+    "Der IE-3500-8P3S-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3500-8P3S-A?",
+    "Der IE-3500-8P3S-A liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8P3S-A?",
+    "Der IE-3500-8P3S-A besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8P3S-A?",
+    "Der IE-3500-8P3S-A unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3505-8T3S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3505-8T3S-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3505-8T3S-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3505-8T3S-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, −40/+75 °C, MACsec-128. Cisco IOS XE, …",
+  "artikelgewicht": "1,79",
+  "versandgewicht": "2,59",
+  "kurzbeschreibung": "<p>Der Cisco IE-3505-8T3S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 1G-SFP-Uplinks. Der IE-3505-8T3S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3505-8T3S-E bietet Ring-Redundanz (REP, MRP, DLR, HSR-SAN und PRP) inklusive verlustfreier DLR/HSR/PRP-Redundanz, MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3505-8T3S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 3× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3505-8T3S-E eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Die acht Downlink-Ports des IE-3505-8T3S-E sind reine Datenports ohne PoE-Einspeisung. Mit der Network Essentials-Lizenz beherrscht der IE-3505-8T3S-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3505-8T3S-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3505-8T3S-E Ring-Redundanz nach REP und MRP sowie verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3505-8T3S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3505-8T3S-E?",
+    "Der IE-3505-8T3S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3505-8T3S-E?",
+    "Der IE-3505-8T3S-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Hat der IE-3505-8T3S-E PoE?",
+    "Nein, der IE-3505-8T3S-E ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3505-8T3S-E?",
+    "Der IE-3505-8T3S-E besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3505-8T3S-E?",
+    "Der IE-3505-8T3S-E ist eine IE3505-Variante und unterstützt neben REP und MRP zusätzlich verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP plus verlustfreie DLR/HSR/PRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3505-8T3S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3505-8T3S-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3505-8T3S-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3505-8T3S-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, −40/+75 °C, MACsec-256. Cisco IOS XE, …",
+  "artikelgewicht": "1,79",
+  "versandgewicht": "2,59",
+  "kurzbeschreibung": "<p>Der Cisco IE-3505-8T3S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 1G-SFP-Uplinks. Der IE-3505-8T3S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3505-8T3S-A bietet Ring-Redundanz (REP, MRP, DLR, HSR-SAN und PRP) inklusive verlustfreier DLR/HSR/PRP-Redundanz, MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3505-8T3S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 3× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3505-8T3S-A eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Die acht Downlink-Ports des IE-3505-8T3S-A sind reine Datenports ohne PoE-Einspeisung. Mit der Network Advantage-Lizenz beherrscht der IE-3505-8T3S-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3505-8T3S-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3505-8T3S-A Ring-Redundanz nach REP und MRP sowie verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3505-8T3S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3505-8T3S-A?",
+    "Der IE-3505-8T3S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3505-8T3S-A?",
+    "Der IE-3505-8T3S-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Hat der IE-3505-8T3S-A PoE?",
+    "Nein, der IE-3505-8T3S-A ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3505-8T3S-A?",
+    "Der IE-3505-8T3S-A besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3505-8T3S-A?",
+    "Der IE-3505-8T3S-A ist eine IE3505-Variante und unterstützt neben REP und MRP zusätzlich verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP plus verlustfreie DLR/HSR/PRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3505-8P3S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3505-8P3S-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 (PoE+) + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3505-8P3S-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3505-8P3S-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-128. …",
+  "artikelgewicht": "1,97",
+  "versandgewicht": "2,77",
+  "kurzbeschreibung": "<p>Der Cisco IE-3505-8P3S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 3× 1G-SFP-Uplinks. Der IE-3505-8P3S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3505-8P3S-E bietet Ring-Redundanz (REP, MRP, DLR, HSR-SAN und PRP) inklusive verlustfreier DLR/HSR/PRP-Redundanz, MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3505-8P3S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 3× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3505-8P3S-E eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3505-8P3S-E Industriekameras, Sensoren und Access-Points. Mit der Network Essentials-Lizenz beherrscht der IE-3505-8P3S-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3505-8P3S-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3505-8P3S-E Ring-Redundanz nach REP und MRP sowie verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3505-8P3S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3505-8P3S-E?",
+    "Der IE-3505-8P3S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3505-8P3S-E?",
+    "Der IE-3505-8P3S-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3505-8P3S-E?",
+    "Der IE-3505-8P3S-E liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3505-8P3S-E?",
+    "Der IE-3505-8P3S-E besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3505-8P3S-E?",
+    "Der IE-3505-8P3S-E ist eine IE3505-Variante und unterstützt neben REP und MRP zusätzlich verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP plus verlustfreie DLR/HSR/PRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3505-8P3S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3505-8P3S-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 (PoE+) + 3× 1G-SFP",
+  "titel_tag": "Cisco IE-3505-8P3S-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3505-8P3S-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-256. …",
+  "artikelgewicht": "1,97",
+  "versandgewicht": "2,77",
+  "kurzbeschreibung": "<p>Der Cisco IE-3505-8P3S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 3× 1G-SFP-Uplinks. Der IE-3505-8P3S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3505-8P3S-A bietet Ring-Redundanz (REP, MRP, DLR, HSR-SAN und PRP) inklusive verlustfreier DLR/HSR/PRP-Redundanz, MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3505-8P3S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 3× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3505-8P3S-A eine Switching-Kapazität von 22 Gbit/s bei einer Weiterleitungsrate von 16,4 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3505-8P3S-A Industriekameras, Sensoren und Access-Points. Mit der Network Advantage-Lizenz beherrscht der IE-3505-8P3S-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3505-8P3S-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3505-8P3S-A Ring-Redundanz nach REP und MRP sowie verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3505-8P3S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3505-8P3S-A?",
+    "Der IE-3505-8P3S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3505-8P3S-A?",
+    "Der IE-3505-8P3S-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3505-8P3S-A?",
+    "Der IE-3505-8P3S-A liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3505-8P3S-A?",
+    "Der IE-3505-8P3S-A besitzt drei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T3X-/8U3X-Modelle der Serie."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3505-8P3S-A?",
+    "Der IE-3505-8P3S-A ist eine IE3505-Variante und unterstützt neben REP und MRP zusätzlich verlustfreie DLR-, HSR-SAN- und PRP-Redundanz für unterbrechungsfreie Prozessnetze. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 3× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "22 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "16,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP plus verlustfreie DLR/HSR/PRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8T3X-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8T3X-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 + 3× 10G-SFP+",
+  "titel_tag": "Cisco IE-3500-8T3X-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8T3X-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× 10G-SFP+, −40/+75 °C, MACsec-128. Cisco IOS XE, …",
+  "artikelgewicht": "2,13",
+  "versandgewicht": "2,93",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8T3X-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 10G-SFP+-Uplinks. Der IE-3500-8T3X-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8T3X-E bietet Ring-Redundanz (REP und MRP), MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8T3X-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 + 3× 10G-SFP+, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8T3X-E eine Switching-Kapazität von 76 Gbit/s bei einer Weiterleitungsrate von 56,5 Mpps. Die acht Downlink-Ports des IE-3500-8T3X-E sind reine Datenports ohne PoE-Einspeisung. Drei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Essentials-Lizenz beherrscht der IE-3500-8T3X-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3500-8T3X-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8T3X-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8T3X-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8T3X-E?",
+    "Der IE-3500-8T3X-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3500-8T3X-E?",
+    "Der IE-3500-8T3X-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Hat der IE-3500-8T3X-E PoE?",
+    "Nein, der IE-3500-8T3X-E ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8T3X-E?",
+    "Der IE-3500-8T3X-E besitzt drei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8T3X-E?",
+    "Der IE-3500-8T3X-E unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "3× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "76 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "56,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 3× 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8T3X-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8T3X-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 + 3× 10G-SFP+",
+  "titel_tag": "Cisco IE-3500-8T3X-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8T3X-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× 10G-SFP+, −40/+75 °C, MACsec-256. Cisco IOS XE, …",
+  "artikelgewicht": "2,13",
+  "versandgewicht": "2,93",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8T3X-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 3× 10G-SFP+-Uplinks. Der IE-3500-8T3X-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8T3X-A bietet Ring-Redundanz (REP und MRP), MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8T3X-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein Daten-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 + 3× 10G-SFP+, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8T3X-A eine Switching-Kapazität von 76 Gbit/s bei einer Weiterleitungsrate von 56,5 Mpps. Die acht Downlink-Ports des IE-3500-8T3X-A sind reine Datenports ohne PoE-Einspeisung. Drei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Advantage-Lizenz beherrscht der IE-3500-8T3X-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3500-8T3X-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8T3X-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8T3X-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8T3X-A?",
+    "Der IE-3500-8T3X-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3500-8T3X-A?",
+    "Der IE-3500-8T3X-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Hat der IE-3500-8T3X-A PoE?",
+    "Nein, der IE-3500-8T3X-A ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind die 8P3S (PoE+, 240 W) und das 8U3X (4-Paar-PoE/802.3bt Typ 4, 90 W, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8T3X-A?",
+    "Der IE-3500-8T3X-A besitzt drei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8T3X-A?",
+    "Der IE-3500-8T3X-A unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 3× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "3× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "76 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "56,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 3× 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8U3X-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8U3X-E Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+",
+  "titel_tag": "Cisco IE-3500-8U3X-E IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8U3X-E (Catalyst IE3500, Network Essentials): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× 10G-SFP+, 90 W 4PPoE 480 W, −40/+75 °C, …",
+  "artikelgewicht": "2,29",
+  "versandgewicht": "3,09",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8U3X-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 480-W-4-Paar-PoE-Budget (802.3bt Typ 4, bis 90 W/Port) und 3× 10G-SFP+-Uplinks. Der IE-3500-8U3X-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8U3X-E bietet Ring-Redundanz (REP und MRP), MACsec-128-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8U3X-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein 90-W-4-Paar-PoE-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+, mit Network Essentials-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8U3X-E eine Switching-Kapazität von 76 Gbit/s bei einer Weiterleitungsrate von 56,5 Mpps. Über 4-Paar-PoE (IEEE 802.3bt Typ 4) liefert der IE-3500-8U3X-E bis zu 90 W pro Port (480 W) für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs. Drei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Essentials-Lizenz beherrscht der IE-3500-8U3X-E OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN- und statisches Routing und MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3500-8U3X-E lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8U3X-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8U3X-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8U3X-E?",
+    "Der IE-3500-8U3X-E ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3500-8U3X-E?",
+    "Der IE-3500-8U3X-E trägt die Network Essentials-Lizenz: echtes Layer-3-Routing mit OSPF, OSPFv3, RIP und PBR sowie Inter-VLAN-/statischem Routing und MACsec-128. Für BGP/IS-IS/EIGRP, VRF-lite, MACsec-256 und Cisco TrustSec gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Welches PoE hat der IE-3500-8U3X-E?",
+    "Der IE-3500-8U3X-E bietet 4-Paar-PoE nach IEEE 802.3bt Typ 4 mit bis zu 90 W pro Port (480 W Budget) – das „U“ steht für 4PPoE Typ 4, deutlich mehr als PoE+; ideal für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8U3X-E?",
+    "Der IE-3500-8U3X-E besitzt drei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8U3X-E?",
+    "Der IE-3500-8U3X-E unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "3× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – 4-Paar-PoE (IEEE 802.3bt Typ 4, bis 90 W/Port), 480 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "76 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "56,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 3× 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; 90-W-4-Paar-PoE (802.3bt Typ 4, 480 W) für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs; Network Essentials (Layer-3-Routing (OSPF/RIP/PBR) und MACsec-128); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3500-8U3X-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco IE-3500-8U3X-A Catalyst IE3500 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+",
+  "titel_tag": "Cisco IE-3500-8U3X-A IE3500 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3500-8U3X-A (Catalyst IE3500, Network Advantage): neuester lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 3× 10G-SFP+, 90 W 4PPoE 480 W, −40/+75 °C, …",
+  "artikelgewicht": "2,29",
+  "versandgewicht": "3,09",
+  "kurzbeschreibung": "<p>Der Cisco IE-3500-8U3X-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der neuesten Catalyst-IE3500-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 480-W-4-Paar-PoE-Budget (802.3bt Typ 4, bis 90 W/Port) und 3× 10G-SFP+-Uplinks. Der IE-3500-8U3X-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3500-8U3X-A bietet Ring-Redundanz (REP und MRP), MACsec-256-Verschlüsselung, 8 GB DRAM, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3500-8U3X-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der neuesten Catalyst-IE3500-Familie für die DIN-Schiene in rauen OT-Umgebungen – ein 90-W-4-Paar-PoE-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+, mit Network Advantage-Lizenz.",
+   "Mit 11 Ports (8 Downlinks + 3 Uplinks) erreicht der IE-3500-8U3X-A eine Switching-Kapazität von 76 Gbit/s bei einer Weiterleitungsrate von 56,5 Mpps. Über 4-Paar-PoE (IEEE 802.3bt Typ 4) liefert der IE-3500-8U3X-A bis zu 90 W pro Port (480 W) für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs. Drei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Advantage-Lizenz beherrscht der IE-3500-8U3X-A zusätzlich BGP, IS-IS und EIGRP, VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3500-8U3X-A lüfterlos von −40 bis +75 °C (Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3500-8U3X-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3500-8U3X-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) mit 8 GB DRAM und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3500 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3500 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3500-8U3X-A?",
+    "Der IE-3500-8U3X-A ist ein Basissystem mit 8 Gigabit-Downlinks + 3 Uplinks = 11 Ports; per Erweiterungsmodul ist er auf bis zu 27 Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3500-8U3X-A?",
+    "Der IE-3500-8U3X-A trägt die Network Advantage-Lizenz: zusätzlich zum Basis-Routing erweitertes dynamisches Routing (BGP, IS-IS, EIGRP), VRF-lite, MACsec-256, Cisco TrustSec mit SGT/SGACL und PIM-Multicast. Die -E-Variante (Network Essentials) bietet bereits OSPF, RIP, PBR und MACsec-128."
+   ],
+   [
+    "Welches PoE hat der IE-3500-8U3X-A?",
+    "Der IE-3500-8U3X-A bietet 4-Paar-PoE nach IEEE 802.3bt Typ 4 mit bis zu 90 W pro Port (480 W Budget) – das „U“ steht für 4PPoE Typ 4, deutlich mehr als PoE+; ideal für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs."
+   ],
+   [
+    "Welche Uplinks hat der IE-3500-8U3X-A?",
+    "Der IE-3500-8U3X-A besitzt drei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Welche Ring-Redundanz bietet der IE-3500-8U3X-A?",
+    "Der IE-3500-8U3X-A unterstützt REP- und MRP-Ring-Redundanz; verlustfreie DLR/HSR/PRP-Redundanz bieten die IE3505-Varianten der Serie. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "11"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (4PPoE Typ 4) + 3× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "3× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – 4-Paar-PoE (IEEE 802.3bt Typ 4, bis 90 W/Port), 480 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "76 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "56,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) der neuesten Generation – Fertigung, Maschinen-Vision, Energie/Umspannwerk, Verkehr/ITS und Bergbau; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 3× 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; 90-W-4-Paar-PoE (802.3bt Typ 4, 480 W) für PTZ-Kameras, Vision-Systeme und Wi-Fi-6E-APs; Network Advantage (erweitertes Routing (BGP/IS-IS/EIGRP), VRF-lite, MACsec-256 und Cisco TrustSec); verwaltet über Cisco Catalyst Center und WebUI (IOS XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/networking/industrial-switches/ie3500-rugged-series/ie3500-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ }
+}

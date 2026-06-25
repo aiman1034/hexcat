@@ -2589,6 +2589,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   base families (8 + 4); families in scope **62** (net 0), in-scope est ~873→~863. reconciler → both 100%. Re-gated all
   33 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 465 built,
   33 families complete, 53%.**
+- **BUILD Cisco_IE3500 (12/12), family #25 — newest rugged IE, UN-DEFERRED (2026-06-25).** New folder from
+  `ie3500_harvest_source.md` (DS rev Jan-2026). The newest (2025-26) IOS XE industrial L3 DIN-rail switch. **Un-deferred
+  from the chassis cluster — it was parked there in error;** its base units are standalone switches exactly like IE3300/
+  IE3400, no chassis blocker. **S.5 reverse PASSES** all 12 (Industrie-Switch token + −40/+75 °C together; verified
+  viol=0 warn=0). 12 = 6 configs × {E,A}: IE-3500-8T3S/8P3S/8T3X/8U3X + IE-3505-8T3S/8P3S. **6 NEW traps vs IE3300/
+  IE3400** (did NOT pattern-copy): (1) **Portanzahl 11** — three uplinks (…3S = 3× GE SFP, …3X = 3× 10G SFP+); (2)
+  **{14:8, 15:4}** — 15th Uplink-Ports = "3× 10G-SFP+" keys on 10G (8T3X/8U3X ×E/A = 4), not uplink-count; the 8 1G-
+  uplink …3S SKUs stay 14; Port-Gesch 1G all; (3) **SwK/Durchsatz split** 1G-uplink = 22/16,4, 10G-uplink = 76/56,5;
+  (4) **ring split** — REP+MRP on all 12, **DLR/HSR-SAN/PRP (lossless) ONLY on the 4 IE-3505-***; caught + dropped
+  `HSRP` (the -A routing protocol) because a bare `HSR` grep collides with `HSR-SAN` — now the only `HSR` anywhere is
+  `HSR-SAN` on IE-3505 (per-SKU grep clean, IE-3500 = 0); (5) **PoE three-way** — 6× Nein, 4× PoE+ (240 W), 2× 4-Paar-
+  PoE **802.3bt Typ 4 (90 W, 480 W)** on 8U3X (Type 4/90 W, higher than IE3300's Type 3/60 W); (6) **-E already has
+  OSPF/RIP/PBR** (richer L3 than IE3300/IE3400 -E), -A adds BGP/IS-IS/EIGRP + VRF-lite + MACsec-256 + TrustSec/SGT.
+  **Roadmap terms OMITTED** (TSN/frame-preemption, BGP-EVPN, SD-Access, ThousandEyes, Meraki-dashboard, REP auto-
+  discovery = future IOS XE — never stated as shipping; verified 0). All Managed/L3/Industrie-Switch (S.2 pass); OS IOS
+  XE (no NX-OS/Meraki); fanless; Dual-DC; Stacking Nein (no StackWise/StackPower/FlexStack, S.4 idle); MACsec 128/256;
+  8 GB DRAM; 5-yr HW warranty; newest/shipping (no EoS). §5 0, single-closer, no [VERIFY], no Tbit, refurb hard-rejected
+  (0 direkt / 12 geschätzt), ungrouped NO-BOM 0-zeros, Main↔Prices both 12, **gate PASS** (watched Beschreibung ≤175 on
+  the dense 8U3X/8T3X/3505 SKUs — all in range). Priced €1.100–3.200, **4-axis monotonic** Lizenz×PoE×Uplink×Ring-Tier
+  (floor IE-3500-8T3S-E, ceiling IE-3500-8U3X-A; all four axes verified). Manifest: un-deferred IE3500 "~8" → built
+  `Cisco_IE3500` 12 + spun the IE3500H Heavy-Duty pointer out to its own future OTHER row (~6, M12/IP67, wants the IP-
+  Schutzart signal); families in scope **62→63**. reconciler → 100%. Re-gated all 34 Cisco switch families → all PASS
+  (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 477 built, 34 families complete, 54%.**
 
 ---
 
