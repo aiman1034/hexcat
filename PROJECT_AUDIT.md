@@ -2891,6 +2891,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **534→537**, missing **4→1** (the lone remaining unbuilt coverage chassis is **N9K-C9408** = Nexus 9400 modular — next
   chassis candidate, same carve-out). **In-scope unchanged (69** — already a tracked family). **Coverage now: 537 built, 45
   families complete, 59%.**
+- **BUILD Cisco_Nexus_9400 (1/1) — N9K-C9408 DC modular chassis; CLOSES THE MODULAR-CHASSIS LANE (2026-06-25).**
+  Content-only, **NO src** (`git diff -- src/` empty); single SKU on the `Modularer Switch (Chassis)` class, same as the
+  9500. **N9K-C9408**: 4 RU, 8 LEM-Slots (Line Expansion Modules), centralized-modular Clos-style DC chassis, 55,00 kg.
+  7 attrs, **zero forbidden Merkmale**, Ebene-2 `Switches`, Kat-L3 `Modularer Switch (Chassis)`, Switch-Typ Managed, temp
+  `0 bis 40 °C`, Kühlung `Aktiv (5× Lüfter-Modul, 4+1, front-to-back)`, Stromversorgung `4× 2000-W (2+2)`, Anwendung
+  `Data-Center` (reused — same canonical value as the 9500/fixed-Nexus families). **NX-OS + ACI-Modus in prose, IOS XE
+  ABSENT** (whole-bundle grep `IOS XE` = 0); **no PoE** (DC 400G/200G fiber platform, MACsec all ports — not mentioned).
+  **Switching-Kapazität `Bis zu 25,6 Tbit/s` provenance `datasheet`** — Cisco's stated overview figure ("can scale up to
+  25.6 Tbps") used **verbatim, NOT doubled to 51,2** (whole-bundle grep `51,2` = 0); source line logged in the
+  Verification_Log. Beschr notes capacity realized via the central Switch-Card (Cloud Scale) + up to 8 LEMs (64×400G /
+  128×200G / 176×10/25/50G). **Artikelgewicht 55,00 = PUBLISHED bare-chassis** (9408 NX-OS install guide "Switch and Module
+  Weights"; supervisor/switch-card/LEMs/PSU/fans separate SKUs → excluded + named → future Module & Komponenten track);
+  Versand 70,00 estimated + flagged (Spedition). **EoS verified active** (coverage + harvest = current 2024-era AI/ML
+  platform; no bulletin → no note). §5-clean whole-bundle; Prices Phase-2 provisional (19000,00; no-BOM/LF, 0 `;0,00`;
+  flagged unanchored "ungebrauchte Original-Hardware"); Beschr 138 words. Coverage entry **already existed** (`cov[…]`,
+  series "Nexus 9400", grounded 2026-06-20) → **no coverage-YAML edit, no built-block line** (manifest auto-flips to built).
+  Added the `Cisco_Nexus_9400_switches` `gate_completeness` record. **No new test** (class pinned by `test_ethernet_chassis`);
+  **A/B N/A** (src unchanged). **Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**.
+  **Regenerated `coverage_report.md`** via `lib/coverage_reconcile.py` (now the standing final step): **Cisco Nexus 9400 ✅
+  1/1**, **enum_missing 1→0**, in-scope **69**, **538 models built (46 families fully built, 0 partial)**, 59%. **🏁 MILESTONE
+  — the modular-chassis lane is CLOSED:** every precisely-enumerated Catalyst-9000 + Nexus-9000 model (538) is built, 0
+  enumerated-missing (FC directors + Catalyst 9400/9600 + C9610 + Nexus 9500 + Nexus 9400 all done). Remaining switch work =
+  the 23 family-level legacy/SMB/Nexus-legacy/Meraki families (~362 est models, await per-family harvests).
 
 ---
 
