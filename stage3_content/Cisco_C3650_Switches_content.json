@@ -1,0 +1,3170 @@
+{
+ "WS-C3650-24PS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 4× 1G LAN Base (WS-C3650-24PS-L)",
+  "titel_tag": "Cisco WS-C3650-24PS-L 3650 4× 1G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PS-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 24× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-24PS-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-24PS-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit LAN Base-Lizenz, 24 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PS-L eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 41,66 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PS-L Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-24PS-L an die Aggregation an. Mit der LAN Base-Lizenz beherrscht der WS-C3650-24PS-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-24PS-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PS-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PS-L?",
+    "Der WS-C3650-24PS-L bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PS-L stapeln?",
+    "Ja, der WS-C3650-24PS-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PS-L?",
+    "Der WS-C3650-24PS-L (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (24PD)."
+   ],
+   [
+    "Routet der WS-C3650-24PS-L (LAN Base)?",
+    "Der WS-C3650-24PS-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PS-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-24PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 4× 1G IP Base (WS-C3650-24PS-S)",
+  "titel_tag": "Cisco WS-C3650-24PS-S Catalyst 3650 4× 1G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PS-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 24× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-24PS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-24PS-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Base-Lizenz, 24 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PS-S eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 41,66 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PS-S Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-24PS-S an die Aggregation an. Mit der IP Base-Lizenz beherrscht der WS-C3650-24PS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-24PS-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PS-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PS-S?",
+    "Der WS-C3650-24PS-S bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PS-S stapeln?",
+    "Ja, der WS-C3650-24PS-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PS-S?",
+    "Der WS-C3650-24PS-S (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (24PD)."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-24PS-S?",
+    "Der WS-C3650-24PS-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PS-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-24PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 4× 1G IP Services (WS-C3650-24PS-E)",
+  "titel_tag": "Cisco WS-C3650-24PS-E 3650 4× 1G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PS-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 24× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-24PS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-24PS-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Services-Lizenz, 24 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PS-E eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 41,66 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PS-E Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-24PS-E an die Aggregation an. Mit der IP Services-Lizenz beherrscht der WS-C3650-24PS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-24PS-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PS-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PS-E?",
+    "Der WS-C3650-24PS-E bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PS-E stapeln?",
+    "Ja, der WS-C3650-24PS-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PS-E?",
+    "Der WS-C3650-24PS-E (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (24PD)."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-24PS-E?",
+    "Der WS-C3650-24PS-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,66 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PS-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 4× 1G LAN Base (WS-C3650-48PS-L)",
+  "titel_tag": "Cisco WS-C3650-48PS-L 3650 4× 1G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PS-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-48PS-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-48PS-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit LAN Base-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PS-L eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PS-L Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48PS-L an die Aggregation an. Mit der LAN Base-Lizenz beherrscht der WS-C3650-48PS-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-48PS-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PS-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PS-L?",
+    "Der WS-C3650-48PS-L bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PS-L stapeln?",
+    "Ja, der WS-C3650-48PS-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PS-L?",
+    "Der WS-C3650-48PS-L (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48PD)."
+   ],
+   [
+    "Routet der WS-C3650-48PS-L (LAN Base)?",
+    "Der WS-C3650-48PS-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PS-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 4× 1G IP Base (WS-C3650-48PS-S)",
+  "titel_tag": "Cisco WS-C3650-48PS-S Catalyst 3650 4× 1G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PS-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-48PS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-48PS-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Base-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PS-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PS-S Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48PS-S an die Aggregation an. Mit der IP Base-Lizenz beherrscht der WS-C3650-48PS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-48PS-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PS-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PS-S?",
+    "Der WS-C3650-48PS-S bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PS-S stapeln?",
+    "Ja, der WS-C3650-48PS-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PS-S?",
+    "Der WS-C3650-48PS-S (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48PD)."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-48PS-S?",
+    "Der WS-C3650-48PS-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PS-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 4× 1G IP Services (WS-C3650-48PS-E)",
+  "titel_tag": "Cisco WS-C3650-48PS-E 3650 4× 1G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PS-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und vier festen 1G-SFP-Uplinks. Der WS-C3650-48PS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-48PS-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Services-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PS-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PS-E Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48PS-E an die Aggregation an. Mit der IP Services-Lizenz beherrscht der WS-C3650-48PS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-48PS-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PS-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PS-E?",
+    "Der WS-C3650-48PS-E bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PS-E stapeln?",
+    "Ja, der WS-C3650-48PS-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PS-E?",
+    "Der WS-C3650-48PS-E (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48PD)."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-48PS-E?",
+    "Der WS-C3650-48PS-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PS-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FS-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 4× 1G LAN Base (WS-C3650-48FS-L)",
+  "titel_tag": "Cisco WS-C3650-48FS-L 3650 4× 1G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FS-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und vier festen 1G-SFP-Uplinks. Der WS-C3650-48FS-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-48FS-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FS-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit LAN Base-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FS-L eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FS-L alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48FS-L an die Aggregation an. Mit der LAN Base-Lizenz beherrscht der WS-C3650-48FS-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-48FS-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FS-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FS-L?",
+    "Der WS-C3650-48FS-L bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FS-L stapeln?",
+    "Ja, der WS-C3650-48FS-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FS-L?",
+    "Der WS-C3650-48FS-L (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48FD)."
+   ],
+   [
+    "Routet der WS-C3650-48FS-L (LAN Base)?",
+    "Der WS-C3650-48FS-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FS-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 4× 1G IP Base (WS-C3650-48FS-S)",
+  "titel_tag": "Cisco WS-C3650-48FS-S Catalyst 3650 4× 1G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FS-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und vier festen 1G-SFP-Uplinks. Der WS-C3650-48FS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-48FS-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FS-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit IP Base-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FS-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FS-S alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48FS-S an die Aggregation an. Mit der IP Base-Lizenz beherrscht der WS-C3650-48FS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-48FS-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FS-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FS-S?",
+    "Der WS-C3650-48FS-S bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FS-S stapeln?",
+    "Ja, der WS-C3650-48FS-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FS-S?",
+    "Der WS-C3650-48FS-S (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48FD)."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-48FS-S?",
+    "Der WS-C3650-48FS-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FS-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 4× 1G IP Services (WS-C3650-48FS-E)",
+  "titel_tag": "Cisco WS-C3650-48FS-E 3650 4× 1G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FS-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 4× 1G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und vier festen 1G-SFP-Uplinks. Der WS-C3650-48FS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-48FS-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FS-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit IP Services-Lizenz, 48 PoE+-Ports und 4× 1G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FS-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 77,37 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FS-E alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Vier feste 1G-SFP-Uplinks binden den WS-C3650-48FS-E an die Aggregation an. Mit der IP Services-Lizenz beherrscht der WS-C3650-48FS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-48FS-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FS-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FS-E?",
+    "Der WS-C3650-48FS-E bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus vier feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FS-E stapeln?",
+    "Ja, der WS-C3650-48FS-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FS-E?",
+    "Der WS-C3650-48FS-E (S-Modell) hat vier feste 1G-SFP-Uplinks; 10G-SFP+-Uplinks bieten die D-Modelle der 3650-Serie (48FD)."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-48FS-E?",
+    "Der WS-C3650-48FS-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + vier feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,37 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); vier feste 1G-SFP-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FS-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-24PD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 2× 10G LAN Base (WS-C3650-24PD-L)",
+  "titel_tag": "Cisco WS-C3650-24PD-L 3650 2× 10G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PD-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 24× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-24PD-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-24PD-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit LAN Base-Lizenz, 24 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PD-L eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,45 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PD-L Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-24PD-L den High-Speed-Backhaul. Mit der LAN Base-Lizenz beherrscht der WS-C3650-24PD-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-24PD-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PD-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PD-L?",
+    "Der WS-C3650-24PD-L bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PD-L stapeln?",
+    "Ja, der WS-C3650-24PD-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PD-L?",
+    "Der WS-C3650-24PD-L (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 24 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Routet der WS-C3650-24PD-L (LAN Base)?",
+    "Der WS-C3650-24PD-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,45 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PD-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-24PD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 2× 10G IP Base (WS-C3650-24PD-S)",
+  "titel_tag": "Cisco WS-C3650-24PD-S 3650 2× 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PD-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 24× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-24PD-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-24PD-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Base-Lizenz, 24 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PD-S eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,45 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PD-S Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-24PD-S den High-Speed-Backhaul. Mit der IP Base-Lizenz beherrscht der WS-C3650-24PD-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-24PD-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PD-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PD-S?",
+    "Der WS-C3650-24PD-S bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PD-S stapeln?",
+    "Ja, der WS-C3650-24PD-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PD-S?",
+    "Der WS-C3650-24PD-S (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 24 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-24PD-S?",
+    "Der WS-C3650-24PD-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,45 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PD-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-24PD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 24-Port PoE+ Switch 2× 10G IP Services (WS-C3650-24PD-E)",
+  "titel_tag": "Cisco WS-C3650-24PD-E 3650 2× 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-24PD-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 24× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,26",
+  "versandgewicht": "8,76",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-24PD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 24× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-24PD-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-24PD-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-24PD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Services-Lizenz, 24 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 24 Zugangs-Ports erreicht der WS-C3650-24PD-E eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,45 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-24PD-E Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-24PD-E den High-Speed-Backhaul. Mit der IP Services-Lizenz beherrscht der WS-C3650-24PD-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-24PD-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-24PD-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-24PD-E?",
+    "Der WS-C3650-24PD-E bietet 24× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-24PD-E stapeln?",
+    "Ja, der WS-C3650-24PD-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-24PD-E?",
+    "Der WS-C3650-24PD-E (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 24 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-24PD-E?",
+    "Der WS-C3650-24PD-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,45 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-24PD-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 2× 10G LAN Base (WS-C3650-48PD-L)",
+  "titel_tag": "Cisco WS-C3650-48PD-L 3650 2× 10G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PD-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48PD-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-48PD-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit LAN Base-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PD-L eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PD-L Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48PD-L den High-Speed-Backhaul. Mit der LAN Base-Lizenz beherrscht der WS-C3650-48PD-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-48PD-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PD-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PD-L?",
+    "Der WS-C3650-48PD-L bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PD-L stapeln?",
+    "Ja, der WS-C3650-48PD-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PD-L?",
+    "Der WS-C3650-48PD-L (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Routet der WS-C3650-48PD-L (LAN Base)?",
+    "Der WS-C3650-48PD-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PD-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 2× 10G IP Base (WS-C3650-48PD-S)",
+  "titel_tag": "Cisco WS-C3650-48PD-S 3650 2× 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PD-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48PD-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-48PD-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Base-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PD-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PD-S Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48PD-S den High-Speed-Backhaul. Mit der IP Base-Lizenz beherrscht der WS-C3650-48PD-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-48PD-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PD-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PD-S?",
+    "Der WS-C3650-48PD-S bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PD-S stapeln?",
+    "Ja, der WS-C3650-48PD-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PD-S?",
+    "Der WS-C3650-48PD-S (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-48PD-S?",
+    "Der WS-C3650-48PD-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PD-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48PD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port PoE+ Switch 2× 10G IP Services (WS-C3650-48PD-E)",
+  "titel_tag": "Cisco WS-C3650-48PD-E 3650 2× 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48PD-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 390 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,60",
+  "versandgewicht": "9,1",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48PD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit 390-W-PoE+-Budget und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48PD-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-48PD-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48PD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein PoE+-Access-Switch mit IP Services-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48PD-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Über sein PoE+-Budget von 390 W (IEEE 802.3at, bis 30 W/Port) versorgt der WS-C3650-48PD-E Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48PD-E den High-Speed-Backhaul. Mit der IP Services-Lizenz beherrscht der WS-C3650-48PD-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-48PD-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 640-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48PD-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48PD-E?",
+    "Der WS-C3650-48PD-E bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48PD-E stapeln?",
+    "Ja, der WS-C3650-48PD-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48PD-E?",
+    "Der WS-C3650-48PD-E (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-48PD-E?",
+    "Der WS-C3650-48PD-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; PoE+ (802.3at, 30 W/Port, 390 W Budget) für Telefone, APs und Kameras; zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48PD-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FD-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 2× 10G LAN Base (WS-C3650-48FD-L)",
+  "titel_tag": "Cisco WS-C3650-48FD-L 3650 2× 10G LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FD-L (Catalyst 3650, LAN Base): stapelbarer Layer 2-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48FD-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3650-48FD-L stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FD-L ist ein stapelbarer gemanagter Layer 2-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit LAN Base-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FD-L eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FD-L alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48FD-L den High-Speed-Backhaul. Mit der LAN Base-Lizenz beherrscht der WS-C3650-48FD-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing).",
+   "Der WS-C3650-48FD-L stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FD-L als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, LAN Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FD-L?",
+    "Der WS-C3650-48FD-L bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FD-L stapeln?",
+    "Ja, der WS-C3650-48FD-L unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FD-L?",
+    "Der WS-C3650-48FD-L (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Routet der WS-C3650-48FD-L (LAN Base)?",
+    "Der WS-C3650-48FD-L ist mit LAN Base ein Layer-2-Switch (umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing), kein dynamisches Routing). Für Routed Access gibt es dieselbe Hardware als IP-Base- (-S) oder IP-Services- (-E) Variante."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 2-Zugang mit LAN Base-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FD-L",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 2× 10G IP Base (WS-C3650-48FD-S)",
+  "titel_tag": "Cisco WS-C3650-48FD-S 3650 2× 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FD-S (Catalyst 3650, IP Base): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48FD-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3650-48FD-S stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FD-S ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit IP Base-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FD-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FD-S alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48FD-S den High-Speed-Backhaul. Mit der IP Base-Lizenz beherrscht der WS-C3650-48FD-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite).",
+   "Der WS-C3650-48FD-S stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FD-S als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Base)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FD-S?",
+    "Der WS-C3650-48FD-S bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FD-S stapeln?",
+    "Ja, der WS-C3650-48FD-S unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FD-S?",
+    "Der WS-C3650-48FD-S (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3650-48FD-S?",
+    "Der WS-C3650-48FD-S ist ein Layer-3-Switch: die IP Base-Lizenz schaltet Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR, VRF-Lite) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Base-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FD-S",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ },
+ "WS-C3650-48FD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3650 48-Port Full-PoE+ Switch 2× 10G IP Services (WS-C3650-48FD-E)",
+  "titel_tag": "Cisco WS-C3650-48FD-E 3650 2× 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3650-48FD-E (Catalyst 3650, IP Services): stapelbarer Layer 3-Gigabit-PoE+-Switch, 48× 1G + 2× 10G-Uplink, 775 W PoE, MACsec. Cisco IOS XE, Switching-Kapazität 176 Gbit/s, E-LLW …",
+  "artikelgewicht": "7,80",
+  "versandgewicht": "9,3",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3650-48FD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Access-Switch der Catalyst-3650-Serie für den Enterprise-/Branch-Campus mit 48× 10/100/1000-PoE+-Ports mit vollem PoE+-Budget (alle 48 Ports, 775 W) und zwei 10G-SFP+- und zwei 1G-SFP-Uplinks (fest). Der WS-C3650-48FD-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3650-48FD-E stapelt per optionalem Cisco StackWise-160-Modul bis zu neun Einheiten (160 Gbit/s); er verschlüsselt Access-Links per MACsec (802.1AE, AES-128) und trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3650-48FD-E ist ein stapelbarer gemanagter Layer 3-Gigabit-PoE+-Switch aus der Catalyst-3650-Familie für den Enterprise-/Branch-Campus-Access – ein Voll-PoE+-Access-Switch (775 W) mit IP Services-Lizenz, 48 PoE+-Ports und 2× 10G-Uplinks.",
+   "Mit 48 Zugangs-Ports erreicht der WS-C3650-48FD-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 104,16 Mpps. Mit vollem PoE+-Budget von 775 W versorgt der WS-C3650-48FD-E alle 48 Ports gleichzeitig mit 30 W (IEEE 802.3at) für Telefone, WLAN-Access-Points und Kameras. Zwei feste 10G-SFP+-Uplinks (plus zwei 1G-SFP) tragen beim WS-C3650-48FD-E den High-Speed-Backhaul. Mit der IP Services-Lizenz beherrscht der WS-C3650-48FD-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3).",
+   "Der WS-C3650-48FD-E stapelt per optionalem StackWise-160-Modul bis zu neun Einheiten zu einem System, kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1025-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3650-48FD-E als Original-Hardware erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3650 (Cisco IOS XE, IP Services)",
+   "Cisco StackWise-160 Stacking-Modul (C3650-STACK-KIT, optional)",
+   "Nachfolgemodell: Cisco Catalyst 9300"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3650-48FD-E?",
+    "Der WS-C3650-48FD-E bietet 48× 10/100/1000-PoE+-Zugangs-Ports plus zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3650-48FD-E stapeln?",
+    "Ja, der WS-C3650-48FD-E unterstützt Cisco StackWise-160 über das optionale Stacking-Modul (bis zu 9 Einheiten, 160 Gbit/s, eine Verwaltungs-IP); ein Stack ist feature-set-homogen (LAN Base nur mit LAN Base, IP Base/IP Services untereinander)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3650-48FD-E?",
+    "Der WS-C3650-48FD-E (D-Modell) hat zwei feste 10G-SFP+-Uplinks plus zwei 1G-SFP-Uplinks für High-Speed-Backhaul; die 48 Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3650-48FD-E?",
+    "Der WS-C3650-48FD-E ist ein Layer-3-Switch: die IP Services-Lizenz schaltet volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, IPv6/OSPFv3) frei. Die Hardware ist je Konfiguration identisch; nur die Lizenz unterscheidet sich (LAN Base/IP Base/IP Services)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45, PoE+) + zwei feste 10G-SFP+- und zwei feste 1G-SFP-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+ + 2× 1G-SFP"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "104,16 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – StackWise-160 (optional, bis 9 Einheiten, 160 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, optionales StackWise-160-Modul) – Layer 3-Zugang mit IP Services-Lizenz; volles PoE+ auf allen 48 Ports (802.3at, 30 W/Port, 775 W Budget); zwei 10G-SFP+- plus zwei 1G-SFP-Uplinks (fest); konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3650-48FD-E",
+    "EoL",
+    "Cisco Catalyst 3650 End-of-Sale (Serie; Nachfolger Catalyst 9300) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3650-series-switches/data_sheet-c78-729449.html"
+   ]
+  ]
+ }
+}

@@ -2632,6 +2632,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (core copper 21) + a deferred "3850 (fiber/mGig/10G/40G) ~18" Round-2 remainder; families in scope **63→64**.
   reconciler → 100%. Re-gated all 35 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427
   passed**. **Coverage now: 498 built, 35 families complete, 56%.** (3650 is the companion family, building next.)
+- **BUILD Cisco_C3650 PoE+ S/D-uplink (18/18), family #27 — companion to the 3850 (2026-06-25).** New folder from
+  `c3650_harvest_source.md` (DS C78-729449). EoS enterprise stackable PoE+ access (successor Catalyst 9300; new-sealed
+  EoL channel). 18 = 6 PoE configs (24PS/48PS/48FS S-uplink + 24PD/48PD/48FD D-uplink) × 3 licenses. Same shared rules
+  as the 3850: NOT industrial (commercial −5/+45 → Managed Switch (L2)/(L3); **S.5 silent**); license → Layer+Kat-L3
+  (6 L2 + 12 L3, **S.2 passes**); stacks → Switch-Typ "Managed" all 18 (**S.4 passes**); **MACsec-128 only** (no 256);
+  IOS XE, E-LLW, EoS. **The structural contrast vs the 3850 — the {14}/{15} split:** S models (4×1G fixed uplink) =
+  **{14}**, D models (2×10G+2×1G fixed uplink) = **{15}** with Uplink-Ports = "2× 10G-SFP+ + 2× 1G-SFP" → **{14:9,
+  15:9}** (verified S→14, D→15, Uplink-Ports on D only). Stacks via the **OPTIONAL StackWise-160 module** (NOT the
+  3850's built-in -480) → Stacking = "Ja – StackWise-160 (optional, …)" (2960-X optional-precedent); **StackWise-480
+  absent**. SwK 92/176 Gbit/s by port count; **Durchsatz split by uplink** S=41,66/77,37, D=68,45/104,16 Mpps. PoE+
+  all (P/F same PoE attr; 390 W vs 775 W budget → description). **Portanzahl 24/48 = downlinks only** (per harvest);
+  the fixed uplinks are written **non-countably** in Port-Konfiguration ("vier feste"/"zwei feste", no "N×") so **S.3
+  counts only the downlink count** — the key trap vs the IE families (which counted uplinks in Portanz). Caught + fixed
+  one reuse-boilerplate hard-fail: the D-model uplink sentence was PN-less and repeated across all 9 D-models (50% >
+  25%) → welded the PID in (auto-unique). §5 0 (incl. `\bsealed\b`), single-closer, no [VERIFY], no Tbit, no Industrie/
+  DIN, refurb hard-rejected (0 direkt / 18 geschätzt), ungrouped NO-BOM 0-zeros, Main↔Prices both 18, Datentyp
+  Wertliste, **gate PASS**. Priced €300–2.800, **4-axis monotonic** Port×PoE×Uplink(S<D)×Lizenz (floor 24PS-L, ceiling
+  48FD-E; -S=base×1,3, -E=base×1,6). Manifest: split the legacy "3650 ~20" → built `Cisco_C3650` (PoE+ S/D 18) + a
+  deferred "3650 (T/Q/mGig/mini) ~21" Round-2 remainder; families in scope **64→65**. reconciler → 100%. Re-gated all
+  36 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 516 built,
+  36 families complete, 56%.** (3850+3650 round closed; both pushed.)
 
 ---
 
