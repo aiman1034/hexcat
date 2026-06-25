@@ -1,0 +1,310 @@
+{
+ "DS-C9220I-4PEK9": {
+  "_facts": {
+   "unterkategorie": "Fibre-Channel-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco MDS 9220i Multiservice-Fabric-Switch – 12× 32G Fibre Channel + FCIP/IP-Storage (1 HE)",
+  "titel_tag": "Cisco DS-C9220I-4PEK9 MDS 9220i FC+FCIP-Switch | Hexwaren",
+  "meta_description": "Original Cisco DS-C9220I-4PEK9 (MDS 9220i): Multiservice-Fibre-Channel-Switch, 12× 32G FC + FCIP/IP-Storage, Cisco NX-OS, 0,384 Tbit/s FC, redundante Hot-Swap-Netzteile. Für hochverfügbare …",
+  "artikelgewicht": "9,80",
+  "versandgewicht": "11,3",
+  "kurzbeschreibung": "<p>Der Cisco DS-C9220I-4PEK9 ist ein gemanagter Multiservice-Fibre-Channel-Fabric-Switch der Cisco-MDS-9220i-Serie (1 HE) mit 12× 32G-Fibre-Channel-Ports plus IP-/FCIP-Ports für Storage-Area-Networks unter Cisco NX-OS.</p><p>Der DS-C9220I-4PEK9 verbindet Fibre Channel mit SAN-Erweiterung über IP, leitet non-blocking weiter und besitzt redundante Hot-Swap-Netzteile und -Lüfter.</p>",
+  "intro": [
+   "Der Cisco DS-C9220I-4PEK9 ist ein gemanagter Multiservice-Fibre-Channel-Fabric-Switch der Cisco-MDS-9220i-Serie (1 HE) mit 12× 32-Gbit/s-Fibre-Channel-Ports (4/8/16/32 Gbit/s autosensing) für den platzsparenden Einstieg in die SAN-Erweiterung über IP (FCIP). Über die reinen Fibre-Channel-Ports hinaus bietet der DS-C9220I-4PEK9 sechs IP-Storage-Services-Ports (3× 1/10GbE, 1× 1/10/25GbE, 1× 25GbE, 1× 40GbE) für FCIP und SAN-Extension. Vier der zwölf Fibre-Channel-Ports sind ab Werk aktiv; per On-Demand-Upgrade-Lizenz (M9220I-UPGK9) werden alle zwölf sowie die 10G-Funktion der IP-Ports freigeschaltet.",
+   "Der DS-C9220I-4PEK9 läuft unter Cisco NX-OS und leitet jeden Port non-blocking weiter; als Multiservice-Switch unterstützt der DS-C9220I-4PEK9 FCIP mit hardwarebeschleunigter IPsec-Verschlüsselung und Kompression (bis 43:1), bis zu 40 Gbit/s WAN-Durchsatz, FICON, VSAN und IVR. Er arbeitet im Switch- oder NPV-Modus mit VSAN, Smart-Zoning und QoS und nutzt vorhandene FC-SFP+-Optik weiter.",
+   "Der DS-C9220I-4PEK9 sichert die Fabric mit FC-SP-Authentifizierung; Hochverfügbarkeit bieten redundante, im Betrieb tauschbare Komponenten samt ISSU. Der Luftstrom ist bidirektional wählbar (Port-Side-Exhaust/-Intake); die beiden 500-W-Netzteile arbeiten 1+1-redundant (hot-swap). Verwaltet wird der DS-C9220I-4PEK9 über Cisco NX-OS (CLI, Cisco DCNM/NDFC)."
+  ],
+  "kompatibilitaet": [
+   "Cisco MDS 9220i (Cisco NX-OS, Multiservice FC + FCIP)",
+   "Fibre-Channel-SFP+ (separat)",
+   "On-Demand-Port-/Upgrade-Lizenz (separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der DS-C9220I-4PEK9?",
+    "Der DS-C9220I-4PEK9 (MDS 9220i) hat 12 Fibre-Channel-Ports (4/8/16/32G autosensing); vier sind ab Werk aktiv, der Rest per On-Demand-Lizenz. Zusätzlich bietet er sechs IP-Storage-Services-Ports (3× 1/10GbE, 1× 1/10/25GbE, 1× 25GbE, 1× 40GbE) für FCIP und SAN-Extension."
+   ],
+   [
+    "Was bedeutet Multiservice beim DS-C9220I-4PEK9?",
+    "Der DS-C9220I-4PEK9 verbindet Fibre Channel mit SAN-Erweiterung über IP: FCIP mit hardwarebeschleunigter IPsec-Verschlüsselung und Kompression (bis 43:1), bis zu 40 Gbit/s WAN-Durchsatz, FICON, VSAN und IVR. So lassen sich Standorte über WAN/IP koppeln, ohne ein separates Gateway."
+   ],
+   [
+    "Welches Betriebssystem nutzt der DS-C9220I-4PEK9?",
+    "Der DS-C9220I-4PEK9 läuft unter Cisco NX-OS und wird per CLI oder Cisco DCNM/NDFC verwaltet."
+   ],
+   [
+    "Welche Schalt-Bandbreite hat der DS-C9220I-4PEK9?",
+    "Der DS-C9220I-4PEK9 erreicht rechnerisch 0,384 Tbit/s (12 FC-Ports × 32 Gbit/s); die Datenblätter nennen keinen Aggregat-Wert, der Fibre-Channel-Wert ist also abgeleitet."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "SAN / Storage-Networking (Fibre Channel)"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Hot-Swap-Lüfter, bidirektional)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "4/8/16/32 Gbit/s FC (autosensing)"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× Fibre-Channel-Ports (SFP+)"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Stromversorgung",
+    "Redundant (2× Hot-Swap-Netzteil, 500 W)"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "0,384 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html",
+    "berechnet (12 Ports × 32G-Leitungsrate); kein Aggregat-Wert im Datenblatt"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "DS-C9220I-4PEK9",
+    "Variante",
+    "Intake-Luftführung DS-C9220I-4PIK9 sowie 12-FC-aktive Varianten -12PEK9/-12PIK9 (separate PIDs, nicht dieser Artikel).",
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9200-series-multiservice-switches/datasheet-c78-744805.html"
+   ]
+  ]
+ },
+ "DS-C9250I-K9": {
+  "_facts": {
+   "unterkategorie": "Fibre-Channel-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco MDS 9250i Multiservice-Fabric-Switch – 40× 16G Fibre Channel + 8× FCoE + FCIP (2 HE, EoS)",
+  "titel_tag": "Cisco DS-C9250I-K9 MDS 9250i FC+FCoE-Switch | Hexwaren",
+  "meta_description": "Original Cisco DS-C9250I-K9 (MDS 9250i): Multiservice-Fibre-Channel-Switch, 40× 16G FC + FCoE + FCIP/iSCSI, Cisco NX-OS, 0,64 Tbit/s FC, redundante Hot-Swap-Netzteile. End-of-Sale, …",
+  "artikelgewicht": "10,20",
+  "versandgewicht": "11,7",
+  "kurzbeschreibung": "<p>Der Cisco DS-C9250I-K9 ist ein gemanagter Multiservice-Fibre-Channel-Fabric-Switch der Cisco-MDS-9250i-Serie (2 HE) mit 40× 16G-Fibre-Channel-Ports plus IP-/FCIP-Ports für Storage-Area-Networks unter Cisco NX-OS.</p><p>Der DS-C9250I-K9 verbindet Fibre Channel mit SAN-Erweiterung über IP, leitet non-blocking weiter und besitzt redundante Hot-Swap-Netzteile und -Lüfter. Als End-of-Sale-Modell bleibt er für Bestandsnetze, Ersatz und Erweiterung relevant.</p>",
+  "intro": [
+   "Der Cisco DS-C9250I-K9 ist ein gemanagter Multiservice-Fibre-Channel-Fabric-Switch der Cisco-MDS-9250i-Serie (2 HE) mit 40× 16-Gbit/s-Fibre-Channel-Ports (2/4/8/16 Gbit/s autosensing) für hochverfügbare Multiprotokoll-SANs (Fibre Channel, FCoE, FCIP, iSCSI). Über die reinen Fibre-Channel-Ports hinaus bietet der DS-C9250I-K9 acht 10GbE-FCoE-Ports und zwei 1/10GbE-IPS-Ports (FCIP/iSCSI), zusammen 50 Ports. Zwanzig FC-Ports sind ab Werk aktiv, per On-Demand-Lizenz auf vierzig erweiterbar.",
+   "Der DS-C9250I-K9 läuft unter Cisco NX-OS und leitet jeden Port non-blocking weiter; als Multiservice-Switch unterstützt der DS-C9250I-K9 FCIP, iSCSI, FCoE und FICON sowie I/O Accelerator (IOA), Data Mobility Manager (DMM), IVR und VSAN. Er arbeitet im Switch- oder NPV-Modus mit VSAN, Smart-Zoning und QoS und nutzt vorhandene FC-SFP+-Optik weiter.",
+   "Der DS-C9250I-K9 sichert die Fabric mit FC-SP-Authentifizierung; Hochverfügbarkeit bieten redundante, im Betrieb tauschbare Komponenten samt ISSU. Der Luftstrom verläuft von vorne nach hinten; bis zu drei 300-W-Netzteile arbeiten N+1-redundant. Verwaltet wird der DS-C9250I-K9 über Cisco NX-OS (CLI, Cisco DCNM/NDFC). Der DS-C9250I-K9 ist ein abgekündigtes Modell (End-of-Sale; letzter Bestelltag 19. Dezember 2023) und bleibt über Cisco Refresh sowie als ungebrauchte Original-Hardware verfügbar; Nachfolger ist der MDS 9220i."
+  ],
+  "kompatibilitaet": [
+   "Cisco MDS 9250i (Cisco NX-OS, Multiservice FC + FCIP)",
+   "Fibre-Channel-SFP+ (separat)",
+   "On-Demand-Port-/Upgrade-Lizenz (separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der DS-C9250I-K9?",
+    "Der DS-C9250I-K9 (MDS 9250i) hat 40 Fibre-Channel-Ports (2/4/8/16G autosensing); zwanzig sind ab Werk aktiv, der Rest per On-Demand-Lizenz. Zusätzlich bietet er acht 10GbE-FCoE-Ports und zwei 1/10GbE-IPS-Ports (FCIP/iSCSI) – insgesamt 50 Ports."
+   ],
+   [
+    "Was bedeutet Multiservice beim DS-C9250I-K9?",
+    "Der DS-C9250I-K9 verbindet Fibre Channel mit SAN-Erweiterung über IP: FCIP, iSCSI, FCoE und FICON sowie I/O Accelerator (IOA), Data Mobility Manager (DMM), IVR und VSAN. So lassen sich Standorte über WAN/IP koppeln, ohne ein separates Gateway."
+   ],
+   [
+    "Welches Betriebssystem nutzt der DS-C9250I-K9?",
+    "Der DS-C9250I-K9 läuft unter Cisco NX-OS und wird per CLI oder Cisco DCNM/NDFC verwaltet."
+   ],
+   [
+    "Welche Schalt-Bandbreite hat der DS-C9250I-K9?",
+    "Der DS-C9250I-K9 erreicht rechnerisch 0,64 Tbit/s (40 FC-Ports × 16 Gbit/s); die Datenblätter nennen keinen Aggregat-Wert, der Fibre-Channel-Wert ist also abgeleitet."
+   ],
+   [
+    "Ist der DS-C9250I-K9 noch lieferbar (End-of-Sale)?",
+    "Der DS-C9250I-K9 ist abgekündigt (letzter Bestelltag 19. Dezember 2023), bleibt aber über Cisco Refresh und als ungebrauchte Original-Hardware aus Lagerbestand verfügbar – für Bestandsnetze, Ersatz und Erweiterung; Nachfolger ist der MDS 9220i. Der Lieferzustand steht im Zustand-Attribut."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "SAN / Storage-Networking (Fibre Channel)"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (2 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Hot-Swap-Lüfter)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "2/4/8/16 Gbit/s FC (autosensing)"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× Fibre-Channel-Ports (SFP+)"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Stromversorgung",
+    "Redundant (3× Hot-Swap-Netzteil, 300 W, N+1)"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "0,64 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "generationsabgeleitet (MDS 16G-Fixed-Generation 0–40 °C); kein 9250i-spezifischer Datenblatt-Wert in dieser Quelle"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html",
+    "berechnet (40 Ports × 16G-Leitungsrate); kein Aggregat-Wert im Datenblatt"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "DS-C9250I-K9",
+    "EoL",
+    "Cisco MDS 9250i End-of-Sale (letzter Bestelltag 19-Dez-2023; danach Cisco Refresh) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9250i-multiservice-fabric-switch/data_sheet_c78-727493.html"
+   ]
+  ]
+ }
+}

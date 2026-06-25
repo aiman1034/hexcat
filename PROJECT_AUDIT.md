@@ -2766,6 +2766,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ("Cisco MDS Multiservice (9220i + 9250i)" ~2); 9700 directors stay queued. Families in scope **69**. **Coverage now:
   524 built, 39 families complete, 58%.** MDS pure-FC fabric lineup (V + T + S) is complete; remaining MDS = multiservice
   (9220i/9250i) + 9700 director chassis.
+- **BUILD Cisco_MDS_MS (2/2) — MDS Round 4, multiservice; CLOSES MDS fixed-fabric (V+T+S+MS) (2026-06-25).** New folder
+  `output/switches/Cisco_MDS_MS/` from `mds_multiservice_harvest_source.md`. Pure content build (`git diff src/` empty).
+  **§0 attribute decision (locked): the 9220i/9250i are FC+IP multiservice switches but stay FC-ANCHORED on the proven
+  12-attr model** — Portanzahl/Port-Konfiguration/Port-Geschwindigkeit describe the **FC ports only** (S.3 parses FC
+  count = Portanzahl); the IP/FCIP/FCoE/IPS ports live in the **Beschreibung** + title (no 13th Merkmal, no schema
+  change; Anwendung identical to pure-FC so all FC switches group under one filter). 2 base PIDs: **DS-C9220I-4PEK9**
+  (12× 32G FC [4 active→12] + 6 IP storage-services ports for FCIP/SAN-extension, 0,384 Tbit/s, 1HE, 9,80 kg, 500W×2
+  redundant, bidirektional, NX-OS 8.5(1)+, **CURRENT**) / **DS-C9250I-K9** (40× 16G FC [20→40] + 8× 10GbE FCoE + 2×
+  1/10GbE IPS = 50 ports, 0,64 Tbit/s, 2HE, 10,20 kg, 300W×3 N+1, front-to-back, NX-OS 6.2+, **EoS last-order
+  19-Dez-2023**). **Four traps handled:** (1) FC speed strings differ — 9220i `4/8/16/32`, 9250i `2/4/8/16`; (2) SwK
+  **DERIVED** (0,384 = 12×32G, 0,64 = 40×16G), Verification_Log method "berechnet (… × …G-Leitungsrate)" not
+  "datasheet"; (3) weights 9,80 / 10,20; (4) **9250i EoS note §5-UWG-clean** (9220i NOT EoS) — whole-bundle grep of
+  neuware/versiegelt/fabrikneu/originalverpackt/autorisiert/`\bsealed\b` = **0** (used "ungebrauchte Original-Hardware",
+  never "new-sealed", incl. the price-log SRC). OS NX-OS (IOS XE 0); PoE Nein, Stacking Nein, Switch-Typ Managed;
+  single PID-welded closer; Beschreibung 163/174 words. Prices Phase-2 PROVISIONAL (6500/5000, no-BOM/LF, 0 `;0,00`,
+  flagged unanchored). Byte-contract all 7 files; Main↔Prices both 2; 24 attribute rows (2×12). `gate_completeness
+  Cisco_MDS_MS_switches` 2/2. **Canonical gate ok=True, 0 viol / 0 warn.** Zero regression: all 41 switch families
+  re-gate PASS (MikroTik L6 pre-existing); full suite **431 passed, 0 skipped, 0 failed**. (Note: the auto-welded closer
+  renders the PID-faithful uppercase "Cisco-MDS-9220I/9250I" — the harvest example's lowercase "9220i/9250i" would need a
+  `reconcile._closer` change, out of scope this content round; gate-clean as-is.) Manifest: opened built `Cisco_MDS_MS`
+  + retired the "MDS Multiservice (9220i+9250i)" OTHER row. Families in scope **69**. **Coverage now: 526 built, 40
+  families complete, 58%.** **MDS fixed-fabric is CLOSED (V+T+S+MS = 10 SKUs); only the MDS 9700 director chassis
+  remain (chassis lane, ~6, deferred on the chassis-modeling decision).**
 
 ---
 
