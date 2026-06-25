@@ -1,0 +1,389 @@
+{
+ "N9K-C9504": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Nexus 9504 Modularer Data-Center-Switch-Chassis – 4 Linecard-Slots, bis zu 43,2 Tbit/s, 7 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco N9K-C9504 Nexus 9500 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9504 (Nexus 9500): modulares Data-Center-Switch-Chassis, 4 Linecard-Slots, bis zu 43,2 Tbit/s, 7 HE, Leermodul-Chassis (Module separat). Cisco NX-OS und ACI-Modus.",
+  "artikelgewicht": "38,20",
+  "versandgewicht": "52,00",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9504 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (7 HE) mit 4 Linecard-Slots und bis zu 43,2 Tbit/s Switching-Kapazität für hochverfügbare Data-Center-Fabrics unter Cisco NX-OS und im Cisco-ACI-Modus.</p><p>Der N9K-C9504 wird als Leermodul-Chassis (Clos-Fabric) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich.</p>",
+  "intro": [
+   "Der Cisco N9K-C9504 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (7 HE) mit 4 Linecard-Slots für hochverfügbare, modulare Data-Center-Fabrics. Der N9K-C9504 wird als Leermodul-Chassis (Clos-Fabric, midplane-loses Design) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Die Switching-Kapazität von bis zu 43,2 Tbit/s realisiert der N9K-C9504 über bis zu sechs Crossbar-Fabric-Module; sie skaliert mit der Fabric- und Linecard-Generation (Cisco Cloud Scale, R-Series Deep-Buffer oder Classic). Unterstützt werden Supervisoren (N9K-SUP-A/-A+/-B/-B+), System-Controller (N9K-SC-A), Fabric-Module (N9K-C95xx-FM-Serie) und Linecards (N9K-X97xx) für 1/10/25/40/100/400-Gigabit-Ethernet.",
+   "Der N9K-C9504 läuft unter Cisco NX-OS und unterstützt zusätzlich den Cisco-ACI-Modus (Application Centric Infrastructure). Redundanz besteht auf allen Hauptkomponenten – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays. Der Luftstrom verläuft front-to-back. Aufgrund von Größe und Gewicht wird der N9K-C9504 per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9500 Supervisor (N9K-SUP-A/-A+/-B/-B+, separat)",
+   "Cisco Nexus 9500 System-Controller (N9K-SC-A, separat)",
+   "Cisco Nexus 9500 Fabric-Module (N9K-C95xx-FM-Serie, separat)",
+   "Cisco Nexus 9500 Linecards (N9K-X97xx, 1/10/25/40/100/400G, separat)",
+   "Cisco Nexus 9500 Lüfter-Trays (N9K-C95xx-FAN, separat)",
+   "Hot-Swap-Netzteile 3000 W AC/DC/HV (N9K-PAC/PDC/PUV-3000W-B, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des N9K-C9504 enthalten?",
+    "Der N9K-C9504 ist ein Leermodul-Chassis (Clos-Fabric). Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der N9K-C9504?",
+    "Der N9K-C9504 hat 4 Linecard-Slots, bis zu 2 Supervisor-Slots, bis zu 2 System-Controller und bis zu 6 Fabric-Module (7 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N9K-C9504?",
+    "Der N9K-C9504 läuft unter Cisco NX-OS und unterstützt den Cisco-ACI-Modus; verwaltet wird er per CLI, NX-API oder NETCONF/RESTCONF/YANG."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N9K-C9504?",
+    "Der N9K-C9504 erreicht über bis zu sechs Fabric-Module eine Switching-Kapazität von bis zu 43,2 Tbit/s; die realisierte Kapazität hängt von den Fabric-Modulen und Linecards ab."
+   ],
+   [
+    "Welche Redundanz bietet der N9K-C9504?",
+    "Der N9K-C9504 ist auf allen Hauptkomponenten redundant ausgelegt – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays; der Luftstrom verläuft front-to-back."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Data-Center"
+   ],
+   [
+    "Bauform",
+    "Modularer Data-Center-Switch-Chassis (4 Linecard-Slots, 7 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (bis zu 3× Lüfter-Tray, midplane-loses Design, Airflow front-to-back)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 4× Hot-Swap-Netzteil (3000 W AC/DC/HV, 80 PLUS Platinum), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 43,2 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "berechnet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N9K-C9504",
+    "Artikelgewicht",
+    "38,20 (publiziertes Leergewicht des Chassis, Cisco-Datenblatt c78-729404 Table 2; Fabric-Module/Supervisoren/System-Controller/Netzteile/Lüfter-Trays/Linecards sind separate SKUs und nicht enthalten)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ],
+   [
+    "N9K-C9504",
+    "Versandgewicht",
+    "52,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ],
+   [
+    "N9K-C9504",
+    "Switching-Kapazität",
+    "Bis zu 43,2 Tbit/s (berechnet: 172,8 Tbit/s 16-Slot-Maximum laut Datenblatt ÷ 16 Linecard-Slots = 10,8 Tbit/s pro Slot × 4 Slots = 43,2 Tbit/s)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ]
+  ]
+ },
+ "N9K-C9508": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Nexus 9508 Modularer Data-Center-Switch-Chassis – 8 Linecard-Slots, bis zu 86,4 Tbit/s, 13 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco N9K-C9508 Nexus 9500 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9508 (Nexus 9500): modulares Data-Center-Switch-Chassis, 8 Linecard-Slots, bis zu 86,4 Tbit/s, 13 HE, Leermodul-Chassis (Module separat). Cisco NX-OS und ACI-Modus.",
+  "artikelgewicht": "68,20",
+  "versandgewicht": "88,00",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9508 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (13 HE) mit 8 Linecard-Slots und bis zu 86,4 Tbit/s Switching-Kapazität für hochverfügbare Data-Center-Fabrics unter Cisco NX-OS und im Cisco-ACI-Modus.</p><p>Der N9K-C9508 wird als Leermodul-Chassis (Clos-Fabric) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich.</p>",
+  "intro": [
+   "Der Cisco N9K-C9508 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (13 HE) mit 8 Linecard-Slots für hochverfügbare, modulare Data-Center-Fabrics. Der N9K-C9508 wird als Leermodul-Chassis (Clos-Fabric, midplane-loses Design) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Die Switching-Kapazität von bis zu 86,4 Tbit/s realisiert der N9K-C9508 über bis zu sechs Crossbar-Fabric-Module; sie skaliert mit der Fabric- und Linecard-Generation (Cisco Cloud Scale, R-Series Deep-Buffer oder Classic). Unterstützt werden Supervisoren (N9K-SUP-A/-A+/-B/-B+), System-Controller (N9K-SC-A), Fabric-Module (N9K-C95xx-FM-Serie) und Linecards (N9K-X97xx) für 1/10/25/40/100/400-Gigabit-Ethernet.",
+   "Der N9K-C9508 läuft unter Cisco NX-OS und unterstützt zusätzlich den Cisco-ACI-Modus (Application Centric Infrastructure). Redundanz besteht auf allen Hauptkomponenten – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays. Der Luftstrom verläuft front-to-back. Aufgrund von Größe und Gewicht wird der N9K-C9508 per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9500 Supervisor (N9K-SUP-A/-A+/-B/-B+, separat)",
+   "Cisco Nexus 9500 System-Controller (N9K-SC-A, separat)",
+   "Cisco Nexus 9500 Fabric-Module (N9K-C95xx-FM-Serie, separat)",
+   "Cisco Nexus 9500 Linecards (N9K-X97xx, 1/10/25/40/100/400G, separat)",
+   "Cisco Nexus 9500 Lüfter-Trays (N9K-C95xx-FAN, separat)",
+   "Hot-Swap-Netzteile 3000 W AC/DC/HV (N9K-PAC/PDC/PUV-3000W-B, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des N9K-C9508 enthalten?",
+    "Der N9K-C9508 ist ein Leermodul-Chassis (Clos-Fabric). Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der N9K-C9508?",
+    "Der N9K-C9508 hat 8 Linecard-Slots, bis zu 2 Supervisor-Slots, bis zu 2 System-Controller und bis zu 6 Fabric-Module (13 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N9K-C9508?",
+    "Der N9K-C9508 läuft unter Cisco NX-OS und unterstützt den Cisco-ACI-Modus; verwaltet wird er per CLI, NX-API oder NETCONF/RESTCONF/YANG."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N9K-C9508?",
+    "Der N9K-C9508 erreicht über bis zu sechs Fabric-Module eine Switching-Kapazität von bis zu 86,4 Tbit/s; die realisierte Kapazität hängt von den Fabric-Modulen und Linecards ab."
+   ],
+   [
+    "Welche Redundanz bietet der N9K-C9508?",
+    "Der N9K-C9508 ist auf allen Hauptkomponenten redundant ausgelegt – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays; der Luftstrom verläuft front-to-back."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Data-Center"
+   ],
+   [
+    "Bauform",
+    "Modularer Data-Center-Switch-Chassis (8 Linecard-Slots, 13 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (bis zu 3× Lüfter-Tray, midplane-loses Design, Airflow front-to-back)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 8× Hot-Swap-Netzteil (3000 W AC/DC/HV, 80 PLUS Platinum), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 86,4 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "berechnet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N9K-C9508",
+    "Artikelgewicht",
+    "68,20 (publiziertes Leergewicht des Chassis, Cisco-Datenblatt c78-729404 Table 2; Fabric-Module/Supervisoren/System-Controller/Netzteile/Lüfter-Trays/Linecards sind separate SKUs und nicht enthalten)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ],
+   [
+    "N9K-C9508",
+    "Versandgewicht",
+    "88,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ],
+   [
+    "N9K-C9508",
+    "Switching-Kapazität",
+    "Bis zu 86,4 Tbit/s (berechnet: 172,8 Tbit/s 16-Slot-Maximum laut Datenblatt ÷ 16 Linecard-Slots = 10,8 Tbit/s pro Slot × 8 Slots = 86,4 Tbit/s)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ]
+  ]
+ },
+ "N9K-C9516": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Nexus 9516 Modularer Data-Center-Switch-Chassis – 16 Linecard-Slots, bis zu 172,8 Tbit/s, 21 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco N9K-C9516 Nexus 9500 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco N9K-C9516 (Nexus 9500): modulares Data-Center-Switch-Chassis, 16 Linecard-Slots, bis zu 172,8 Tbit/s, 21 HE, Leermodul-Chassis (Module separat). Cisco NX-OS und ACI-Modus.",
+  "artikelgewicht": "87,30",
+  "versandgewicht": "110,00",
+  "kurzbeschreibung": "<p>Der Cisco N9K-C9516 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (21 HE) mit 16 Linecard-Slots und bis zu 172,8 Tbit/s Switching-Kapazität für hochverfügbare Data-Center-Fabrics unter Cisco NX-OS und im Cisco-ACI-Modus.</p><p>Der N9K-C9516 wird als Leermodul-Chassis (Clos-Fabric) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich.</p>",
+  "intro": [
+   "Der Cisco N9K-C9516 ist ein modulares Data-Center-Switch-Chassis der Cisco-Nexus-9500-Serie (21 HE) mit 16 Linecard-Slots für hochverfügbare, modulare Data-Center-Fabrics. Der N9K-C9516 wird als Leermodul-Chassis (Clos-Fabric, midplane-loses Design) geliefert; Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Die Switching-Kapazität von bis zu 172,8 Tbit/s realisiert der N9K-C9516 über bis zu sechs Crossbar-Fabric-Module; sie skaliert mit der Fabric- und Linecard-Generation (Cisco Cloud Scale, R-Series Deep-Buffer oder Classic). Unterstützt werden Supervisoren (N9K-SUP-A/-A+/-B/-B+), System-Controller (N9K-SC-A), Fabric-Module (N9K-C95xx-FM-Serie) und Linecards (N9K-X97xx) für 1/10/25/40/100/400-Gigabit-Ethernet.",
+   "Der N9K-C9516 läuft unter Cisco NX-OS und unterstützt zusätzlich den Cisco-ACI-Modus (Application Centric Infrastructure). Redundanz besteht auf allen Hauptkomponenten – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays. Der Luftstrom verläuft front-to-back. Aufgrund von Größe und Gewicht wird der N9K-C9516 per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Nexus 9500 Supervisor (N9K-SUP-A/-A+/-B/-B+, separat)",
+   "Cisco Nexus 9500 System-Controller (N9K-SC-A, separat)",
+   "Cisco Nexus 9500 Fabric-Module (N9K-C95xx-FM-Serie, separat)",
+   "Cisco Nexus 9500 Linecards (N9K-X97xx, 1/10/25/40/100/400G, separat)",
+   "Cisco Nexus 9500 Lüfter-Trays (N9K-C95xx-FAN, separat)",
+   "Hot-Swap-Netzteile 3000 W AC/DC/HV (N9K-PAC/PDC/PUV-3000W-B, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des N9K-C9516 enthalten?",
+    "Der N9K-C9516 ist ein Leermodul-Chassis (Clos-Fabric). Supervisoren, System-Controller, Fabric-Module, Linecards, Lüfter-Trays und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der N9K-C9516?",
+    "Der N9K-C9516 hat 16 Linecard-Slots, bis zu 2 Supervisor-Slots, bis zu 2 System-Controller und bis zu 6 Fabric-Module (21 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N9K-C9516?",
+    "Der N9K-C9516 läuft unter Cisco NX-OS und unterstützt den Cisco-ACI-Modus; verwaltet wird er per CLI, NX-API oder NETCONF/RESTCONF/YANG."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N9K-C9516?",
+    "Der N9K-C9516 erreicht über bis zu sechs Fabric-Module eine Switching-Kapazität von bis zu 172,8 Tbit/s; die realisierte Kapazität hängt von den Fabric-Modulen und Linecards ab."
+   ],
+   [
+    "Welche Redundanz bietet der N9K-C9516?",
+    "Der N9K-C9516 ist auf allen Hauptkomponenten redundant ausgelegt – Supervisor 1+1, Fabric-Module, System-Controller, Netzteile (N+1/N+N) und Lüfter-Trays; der Luftstrom verläuft front-to-back."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Data-Center"
+   ],
+   [
+    "Bauform",
+    "Modularer Data-Center-Switch-Chassis (16 Linecard-Slots, 21 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (bis zu 3× Lüfter-Tray, midplane-loses Design, Airflow front-to-back)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 10× Hot-Swap-Netzteil (3000 W AC/DC/HV, 80 PLUS Platinum), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 172,8 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N9K-C9516",
+    "Artikelgewicht",
+    "87,30 (publiziertes Leergewicht des Chassis, Cisco-Datenblatt c78-729404 Table 2; Fabric-Module/Supervisoren/System-Controller/Netzteile/Lüfter-Trays/Linecards sind separate SKUs und nicht enthalten)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ],
+   [
+    "N9K-C9516",
+    "Versandgewicht",
+    "110,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-729404.html"
+   ]
+  ]
+ }
+}

@@ -2866,6 +2866,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   via the coverage path (built auto-detected; no built-block line → no double-count). Families in scope **68→69**. **Coverage
   now: 534 built, 44 families complete, 59%.** **Lesson:** a "series X has N chassis" datasheet line bounds series X only —
   scope every negative-existence claim to the exact series the source covers (logged for future harvests).
+- **BUILD Cisco_Nexus_9500 (3/3) — Data-Center modular chassis, harvest-only chassis round (2026-06-25).** Content-only,
+  **NO src** (`git diff -- src/` empty); reuses the `Modularer Switch (Chassis)` class + Ethernet-chassis closer exactly as
+  the Catalyst/C9610 chassis. **3 bare Clos-fabric chassis:** N9K-C9504 (4 LC/7HE/38,20 kg) / N9K-C9508 (8 LC/13HE/68,20 kg)
+  / N9K-C9516 (16 LC/21HE/87,30 kg). 7 attrs each, **zero forbidden Merkmale**, Ebene-2 `Switches`, Kat-L3 `Modularer Switch
+  (Chassis)`, Switch-Typ Managed, temp `0 bis 40 °C` (non-extended), Kühlung front-to-back/midplane-less, Stromversorgung ≤4/8/10×
+  3000-W 80-PLUS-Platinum. **OS HYGIENE FLIPS (the inverse of Catalyst): Cisco NX-OS + ACI-Modus in prose, IOS XE ABSENT** —
+  whole-bundle grep `IOS XE` = 0 (for Nexus, IOS XE is a defect). **No PoE** (DC fiber/QSFP platform — not mentioned at all).
+  **Anwendung `Data-Center`** (short value, like the chassis `Campus-Netzwerk`; term-consistent with the fixed Nexus families,
+  which all use the "Data-Center" prefix — avoids a `Rechenzentrum` near-duplicate). **Switching-Kapazität:** 9516 `Bis zu
+  172,8 Tbit/s` provenance **`datasheet`** (16-slot cloud-scale backplane max); 9504/9508 `Bis zu 43,2`/`86,4 Tbit/s`
+  provenance **`berechnet`** (172,8 ÷ 16 Linecard-Slots = 10,8 Tbit/s/Slot × N — derivation logged in Verification_Log). Beschr
+  notes capacity scales with ≤6 Fabric-Module + Fabric/Linecard-Generation (Cloud Scale / R-Series Deep-Buffer / Classic).
+  **Artikelgewicht = PUBLISHED bare-chassis weight** (c78-729404 Table 2; fabric modules/supervisoren/system-controller/PSU/
+  fan-trays/line-cards are separate SKUs → excluded + named in prose → future Module & Komponenten track); Versandgewicht
+  estimated + flagged (Spedition, Übermaß). **EoS verified active** (coverage YAML grounded 2026-06-20 + harvest = current
+  cloud-scale platform; no EoS bulletin cited → no EoS note, none fabricated). §5-clean whole-bundle; Prices Phase-2
+  provisional + monotonic (18000/32000/55000; no-BOM/LF, 0 `;0,00`; flagged unanchored "ungebrauchte Original-Hardware");
+  Beschr 135 words each. The Nexus 9500 coverage entries **already existed** (`cov["switches"]`, series "Nexus 9500", grounded
+  2026-06-20) → **no coverage-YAML edit, no built-block line** (the manifest auto-flips them to built via the coverage path).
+  Added the `Cisco_Nexus_9500_switches` record to `gate_completeness.yaml`. **No new test** (the class + closer are pinned by
+  `test_ethernet_chassis`); **A/B N/A** (src unchanged). **Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed,
+  0 skipped, 0 failed** (clone baseline). Manifest: **Cisco Nexus 9500 ✅ 3/3** via the coverage path; model-level built
+  **534→537**, missing **4→1** (the lone remaining unbuilt coverage chassis is **N9K-C9408** = Nexus 9400 modular — next
+  chassis candidate, same carve-out). **In-scope unchanged (69** — already a tracked family). **Coverage now: 537 built, 45
+  families complete, 59%.**
 
 ---
 
