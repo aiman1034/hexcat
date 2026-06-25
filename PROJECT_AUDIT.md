@@ -2523,6 +2523,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   legacy "3750 (X/E)" → "3750/3750-E/3750-G (legacy)" ~15; families in scope **59→60**. reconciler → **Cisco_3750X
   25/25**. Re-gated all 29 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**.
   **Coverage now: 441 built, 29 families complete, 50%** (half the in-scope Cisco switch catalogue).
+- **BUILD compact 3xxx pair — Cisco_3560CX (7/7) + Cisco_3560C (5/5), families #21–22 (2026-06-23).** Two new
+  folders from `c3560cx_harvest_source.md` (DS C78-733229) + `c3560c_harvest_source.md` (DS C78-639705). Both compact,
+  fanless, **single-tier IP Base = Layer 3** (no license split), non-stacking — **all 12 Switch-Typ Managed → S.2
+  passes; all Stacking Nein → S.4 idle; Bauform compact (DIN/mount in PROSE) → S.5 clean.** **3560-CX (7):** PIDs
+  8TC/12TC/8PC/12PC/12PD/8PT/8XPD (all -S); **mGig (100M–10G) ONLY on 8XPD-S** (Port-Gesch "Multigigabit"), other 6 =
+  1G; **fixed 2× 10G-SFP+ uplinks on 12PD-S + 8XPD-S → 15th Uplink-Ports attr → {14:5, 15:2}**; four-way PoE (8TC/
+  12TC=Nein; 8PC/12PC/12PD/8XPD=PoE+ 802.3at 30 W, 240 W; 8PT=passthrough UPOE-uplink bis 146 W, no PSU); **MACsec
+  (802.1AE) REAL all 7**; SwK 24/32/68/20/92, Durchsatz 17,9/23,8/50,6/14,9/68,4, Portanz 12/16/10; temp 40 °C on the
+  two 10G SKUs (12PD/8XPD) else 45; no StackWise/StackPower/FlexStack. Priced €400–1.800 (floor 8TC-S, ceiling 8XPD-S
+  mGig+10G; 8PT PD low). **3560-C (5):** PIDs CG-8TC/CG-8PC/CPD-8PT (GbE) + C-8PC/C-12PC (FE), all -S; same chassis as
+  the 2960-C but IP Base/L3 (do-not-copy-2960-C). **TRAP #1: PoE+ (802.3at, 30 W, 124 W) — NOT 802.3af** on CG-8PC/
+  C-8PC/C-12PC, CG-8TC=Nein, CPD-8PT=passthrough bis 23,8 W no PSU; caught + dropped an `802.3af` contrast token that
+  had leaked into a PoE FAQ (now `15,4 W` only). **TRAP #2: MACsec GbE-ONLY** — present CG-8TC/CG-8PC/CPD-8PT, **absent
+  on the FE C-8PC/C-12PC**; caught + reworded the FE security FAQ so the `MACsec`/`802.1AE` tokens no longer appear on
+  the FE SKUs (verified per-SKU). FE/GbE split (CG/CPD=1G, C=100M), SwK 20/5,6/6,4, Durchsatz 14,9/4,2/4,8, Portanz
+  10/14, temp 40 °C GbE / 45 °C FE, {14:5}. Priced €380–750 (floor C-8PC FE-PoE+, ceiling CG-8PC GbE-PoE+-MACsec).
+  Both: OS Cisco IOS (no IOS XE/NX-OS), E-LLW, EoS never-drop, §5 0, single-closer, no [VERIFY], wrong-OS 0, no Tbit,
+  refurb hard-rejected (0 direkt / 12 geschätzt), ungrouped NO-BOM 0-zeros, Main↔Prices exact (7 + 5), **both gate
+  PASS**. Manifest: opened `Cisco_3560CX` + `Cisco_3560C` + reduced the legacy "3560/3560-C/3560-CX (~19)" → "3560
+  (legacy, original FE/GbE 1RU) ~7"; families in scope **60→62**. reconciler → both 100%. Re-gated all 31 Cisco switch
+  families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 453 built, 31 families
+  complete, 51%.**
 
 ---
 

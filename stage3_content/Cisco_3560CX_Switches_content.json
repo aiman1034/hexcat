@@ -1,0 +1,1222 @@
+{
+ "WS-C3560CX-8TC-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-8TC-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 8× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3560CX-8TC-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-8TC-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 8× 1G-RJ45, MACsec. Cisco IOS, Switching-Kapazität 24 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "1,72",
+  "versandgewicht": "2,72",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-8TC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 8× 1G-RJ45 ohne PoE (reine Datenports). Der WS-C3560CX-8TC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-8TC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-8TC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein kompakter, lüfterloser Layer-3-Access-Switch mit 8× 1G-RJ45 und IP-Base-Lizenz.",
+   "Mit 12 Ports erreicht der WS-C3560CX-8TC-S eine Switching-Kapazität von 24 Gbit/s bei einer Weiterleitungsrate von 17,9 Mpps. Die Ports des WS-C3560CX-8TC-S sind reine Datenports ohne PoE-Einspeisung. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-8TC-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-8TC-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-8TC-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-8TC-S?",
+    "Der WS-C3560CX-8TC-S bietet insgesamt 12 Ports: 8× 1G-RJ45 + 2× 1G-SFP + 2× 1G-RJ45."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-8TC-S?",
+    "Der WS-C3560CX-8TC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Hat der WS-C3560CX-8TC-S PoE?",
+    "Nein, der WS-C3560CX-8TC-S ist ein Datenmodell ohne PoE-Einspeisung; PoE+-Varianten sind die PC-/PD-/XPD-Modelle der 3560-CX-Serie."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-8TC-S MACsec?",
+    "Ja, der WS-C3560CX-8TC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 2× 1G-SFP + 2× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "24 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "17,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; reine Datenports ohne PoE; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-8TC-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-12TC-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-12TC-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 12× 1G-RJ45",
+  "titel_tag": "Cisco WS-C3560CX-12TC-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-12TC-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 12× 1G-RJ45, MACsec. Cisco IOS, Switching-Kapazität 32 Gbit/s, E-LLW (EoS).",
+  "artikelgewicht": "1,77",
+  "versandgewicht": "2,77",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-12TC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 12× 1G-RJ45 ohne PoE (reine Datenports). Der WS-C3560CX-12TC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-12TC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-12TC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein kompakter, lüfterloser Layer-3-Access-Switch mit 12× 1G-RJ45 und IP-Base-Lizenz.",
+   "Mit 16 Ports erreicht der WS-C3560CX-12TC-S eine Switching-Kapazität von 32 Gbit/s bei einer Weiterleitungsrate von 23,8 Mpps. Die Ports des WS-C3560CX-12TC-S sind reine Datenports ohne PoE-Einspeisung. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-12TC-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-12TC-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-12TC-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-12TC-S?",
+    "Der WS-C3560CX-12TC-S bietet insgesamt 16 Ports: 12× 1G-RJ45 + 2× 1G-SFP + 2× 1G-RJ45."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-12TC-S?",
+    "Der WS-C3560CX-12TC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Hat der WS-C3560CX-12TC-S PoE?",
+    "Nein, der WS-C3560CX-12TC-S ist ein Datenmodell ohne PoE-Einspeisung; PoE+-Varianten sind die PC-/PD-/XPD-Modelle der 3560-CX-Serie."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-12TC-S MACsec?",
+    "Ja, der WS-C3560CX-12TC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-RJ45 + 2× 1G-SFP + 2× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "23,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; reine Datenports ohne PoE; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-12TC-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-8PC-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-8PC-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 8× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3560CX-8PC-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-8PC-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 8× 1G-RJ45 (PoE+), PoE+ 240 W, MACsec. Cisco IOS, Switching-Kapazität 24 Gbit/s, E-LLW …",
+  "artikelgewicht": "2,27",
+  "versandgewicht": "3,27",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-8PC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 8× 1G-RJ45 (PoE+) und 240-W-PoE+-Budget (802.3at). Der WS-C3560CX-8PC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-8PC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-8PC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein kompakter, lüfterloser Layer-3-Access-Switch mit 8× 1G-RJ45 (PoE+) und IP-Base-Lizenz.",
+   "Mit 12 Ports erreicht der WS-C3560CX-8PC-S eine Switching-Kapazität von 24 Gbit/s bei einer Weiterleitungsrate von 17,9 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3at, bis 30 W/Port, Perpetual PoE) versorgt der WS-C3560CX-8PC-S IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-8PC-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-8PC-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-8PC-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-8PC-S?",
+    "Der WS-C3560CX-8PC-S bietet insgesamt 12 Ports: 8× 1G-RJ45 (PoE+) + 2× 1G-SFP + 2× 1G-RJ45."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-8PC-S?",
+    "Der WS-C3560CX-8PC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3560CX-8PC-S?",
+    "Der WS-C3560CX-8PC-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 240 W und Perpetual PoE für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-8PC-S MACsec?",
+    "Ja, der WS-C3560CX-8PC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 2× 1G-SFP + 2× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "24 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "17,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; PoE+-Versorgung (802.3at, 240 W) für IP-Telefone, WLAN-Access-Points und Kameras; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-8PC-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-12PC-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-12PC-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 12× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3560CX-12PC-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-12PC-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 12× 1G-RJ45 (PoE+), PoE+ 240 W, MACsec. Cisco IOS, Switching-Kapazität 32 Gbit/s, E-LLW …",
+  "artikelgewicht": "2,31",
+  "versandgewicht": "3,31",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-12PC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 12× 1G-RJ45 (PoE+) und 240-W-PoE+-Budget (802.3at). Der WS-C3560CX-12PC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-12PC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-12PC-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein kompakter, lüfterloser Layer-3-Access-Switch mit 12× 1G-RJ45 (PoE+) und IP-Base-Lizenz.",
+   "Mit 16 Ports erreicht der WS-C3560CX-12PC-S eine Switching-Kapazität von 32 Gbit/s bei einer Weiterleitungsrate von 23,8 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3at, bis 30 W/Port, Perpetual PoE) versorgt der WS-C3560CX-12PC-S IP-Telefone, WLAN-Access-Points und Kameras. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-12PC-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-12PC-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-12PC-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-12PC-S?",
+    "Der WS-C3560CX-12PC-S bietet insgesamt 16 Ports: 12× 1G-RJ45 (PoE+) + 2× 1G-SFP + 2× 1G-RJ45."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-12PC-S?",
+    "Der WS-C3560CX-12PC-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3560CX-12PC-S?",
+    "Der WS-C3560CX-12PC-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 240 W und Perpetual PoE für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-12PC-S MACsec?",
+    "Ja, der WS-C3560CX-12PC-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-RJ45 (PoE+) + 2× 1G-SFP + 2× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "23,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; PoE+-Versorgung (802.3at, 240 W) für IP-Telefone, WLAN-Access-Points und Kameras; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-12PC-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-12PD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-12PD-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 12× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3560CX-12PD-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-12PD-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 12× 1G-RJ45 (PoE+), PoE+ 240 W, MACsec. Cisco IOS, Switching-Kapazität 68 Gbit/s, E-LLW …",
+  "artikelgewicht": "2,31",
+  "versandgewicht": "3,31",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-12PD-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 12× 1G-RJ45 (PoE+) und 240-W-PoE+-Budget (802.3at). Der WS-C3560CX-12PD-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-12PD-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-12PD-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein Layer-3-Access-Switch mit 10G-SFP+-Uplinks mit 12× 1G-RJ45 (PoE+) und IP-Base-Lizenz.",
+   "Mit 16 Ports erreicht der WS-C3560CX-12PD-S eine Switching-Kapazität von 68 Gbit/s bei einer Weiterleitungsrate von 50,6 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3at, bis 30 W/Port, Perpetual PoE) versorgt der WS-C3560CX-12PD-S IP-Telefone, WLAN-Access-Points und Kameras. Zwei 10G-SFP+-Uplinks binden den WS-C3560CX-12PD-S an den Core/die Aggregation an. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-12PD-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-12PD-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-12PD-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 40 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-12PD-S?",
+    "Der WS-C3560CX-12PD-S bietet insgesamt 16 Ports: 12× 1G-RJ45 (PoE+) + 2× 10G-SFP+ + 2× 1G-RJ45."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-12PD-S?",
+    "Der WS-C3560CX-12PD-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3560CX-12PD-S?",
+    "Der WS-C3560CX-12PD-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 240 W und Perpetual PoE für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-12PD-S MACsec?",
+    "Ja, der WS-C3560CX-12PD-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-RJ45 (PoE+) + 2× 10G-SFP+ + 2× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "68 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "50,6 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; PoE+-Versorgung (802.3at, 240 W) für IP-Telefone, WLAN-Access-Points und Kameras; 2× 10G-SFP+-Uplinks für die Aggregation; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-12PD-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-8PT-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-8PT-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 8× 1G-RJ45 (PoE+ Passthrough)",
+  "titel_tag": "Cisco WS-C3560CX-8PT-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-8PT-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 8× 1G-RJ45 (PoE+ Passthrough), PoE-Passthrough 146 W, MACsec. Cisco IOS, …",
+  "artikelgewicht": "1,58",
+  "versandgewicht": "2,58",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-8PT-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 8× 1G-RJ45 (PoE+ Passthrough) mit PoE-Passthrough (über UPOE-Uplink gespeist). Der WS-C3560CX-8PT-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-8PT-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-8PT-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein kompakter, lüfterloser Layer-3-Access-Switch mit 8× 1G-RJ45 (PoE+ Passthrough) und IP-Base-Lizenz.",
+   "Mit 10 Ports erreicht der WS-C3560CX-8PT-S eine Switching-Kapazität von 20 Gbit/s bei einer Weiterleitungsrate von 14,9 Mpps. Der WS-C3560CX-8PT-S bezieht seinen Strom über einen Cisco-UPOE-Uplink und gibt per Passthrough bis zu 146 W an seine acht Downlink-Ports weiter – ohne eigenes Netzteil. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-8PT-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-8PT-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-8PT-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 45 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-8PT-S?",
+    "Der WS-C3560CX-8PT-S bietet insgesamt 10 Ports: 8× 1G-RJ45 (PoE+ Passthrough) + 2× 1G-RJ45 (UPOE-Eingang)."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-8PT-S?",
+    "Der WS-C3560CX-8PT-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Wie wird der WS-C3560CX-8PT-S mit Strom versorgt?",
+    "Der WS-C3560CX-8PT-S ist ein PoE-Passthrough-Switch: er bezieht Strom über einen Cisco-UPOE-Uplink und gibt bis zu 146 W an seine acht Downlink-Ports weiter – ohne eigenes Netzteil."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-8PT-S MACsec?",
+    "Ja, der WS-C3560CX-8PT-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+ Passthrough) + 2× 1G-RJ45 (UPOE-Eingang)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+-Passthrough (über Cisco UPOE-Uplink gespeist, bis 146 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Kein internes Netzteil – Speisung über Cisco-UPOE-Uplink (optionaler Adapter PWR-ADPT)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; PoE-Passthrough an die Downlinks (über UPOE-Uplink gespeist); Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-8PT-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ },
+ "WS-C3560CX-8XPD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+   "verifiziert_am": "2026-06-23"
+  },
+  "artikelname": "Cisco WS-C3560CX-8XPD-S Catalyst 3560-CX kompakter Layer-3-Managed-Switch (Cisco IOS, IP Base) – 6× 1G-RJ45 (PoE+)",
+  "titel_tag": "Cisco WS-C3560CX-8XPD-S 3560-CX IP Base L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560CX-8XPD-S (Catalyst 3560-CX, IP Base): kompakter, lüfterloser Gigabit-Layer-3-Switch, 6× 1G-RJ45 (PoE+), PoE+ 240 W, MACsec. Cisco IOS, Switching-Kapazität 92 Gbit/s, E-LLW …",
+  "artikelgewicht": "2,72",
+  "versandgewicht": "3,72",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560CX-8XPD-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Access-Switch der Catalyst-3560-CX-Serie für den Einsatz außerhalb des Verteilerschranks mit 6× 1G-RJ45 (PoE+) und 240-W-PoE+-Budget (802.3at). Der WS-C3560CX-8XPD-S läuft unter Cisco IOS mit IP-Base-Lizenz (Routed Access).</p><p>Der WS-C3560CX-8XPD-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE), arbeitet lüfterlos und lässt sich wand-, untertisch-, rack- oder DIN-schienen-montieren; er ist mit Cisco Enhanced Limited Lifetime Warranty (E-LLW) abgedeckt.</p>",
+  "intro": [
+   "Der Cisco WS-C3560CX-8XPD-S ist ein kompakter, lüfterloser Gigabit-Layer-3-Switch aus der Catalyst-3560-CX-Familie für den platz- und geräuschkritischen Edge – ein Layer-3-Access-Switch mit 10G-SFP+-Uplinks mit 6× 1G-RJ45 (PoE+) und IP-Base-Lizenz.",
+   "Mit 10 Ports erreicht der WS-C3560CX-8XPD-S eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,4 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3at, bis 30 W/Port, Perpetual PoE) versorgt der WS-C3560CX-8XPD-S IP-Telefone, WLAN-Access-Points und Kameras. Zwei 10G-SFP+-Uplinks binden den WS-C3560CX-8XPD-S an den Core/die Aggregation an. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C3560CX-8XPD-S Routed Access (statisches Routing, RIP, OSPF for Routed Access) und ist per RTU-Lizenz auf IP Services erweiterbar.",
+   "Sicherheit bietet der WS-C3560CX-8XPD-S mit MACsec-Hardware-Verschlüsselung (IEEE 802.1AE), Cisco TrustSec, 802.1X, Dynamic ARP Inspection und IP Source Guard. Der WS-C3560CX-8XPD-S ist ein abgekündigtes Modell (End-of-Sale), bleibt als Original-Hardware für Ersatz und Bestandserweiterung erhältlich, trägt Cisco Enhanced Limited Lifetime Warranty und arbeitet im Temperaturbereich -5 bis 40 °C."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 3560-CX (Cisco IOS, IP Base)",
+   "RTU-Lizenz IP Services (C3560CX-RTU, optional)",
+   "Kompakt-Montagekits (Wand/DIN-Schiene/Rack, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3560CX-8XPD-S?",
+    "Der WS-C3560CX-8XPD-S bietet insgesamt 10 Ports: 6× 1G-RJ45 (PoE+) + 2× mGig-RJ45 (PoE+) + 2× 10G-SFP+."
+   ],
+   [
+    "Welches Betriebssystem und welche Routing-Funktionen hat der WS-C3560CX-8XPD-S?",
+    "Der WS-C3560CX-8XPD-S läuft unter Cisco IOS mit IP-Base-Lizenz (Layer 3, Routed Access: statisches Routing, RIP, OSPF for Routed Access) und wird per CLI verwaltet; per RTU-Lizenz ist er auf IP Services erweiterbar. Stacking gibt es nicht (kompakter Standalone-Switch)."
+   ],
+   [
+    "Welches PoE-Budget hat der WS-C3560CX-8XPD-S?",
+    "Der WS-C3560CX-8XPD-S liefert PoE+ nach IEEE 802.3at (bis 30 W/Port) mit insgesamt 240 W und Perpetual PoE für IP-Telefone, WLAN-APs und Kameras."
+   ],
+   [
+    "Unterstützt der WS-C3560CX-8XPD-S MACsec?",
+    "Ja, der WS-C3560CX-8XPD-S verschlüsselt seine Access-Links per MACsec (IEEE 802.1AE) hardwarebasiert; dazu kommen Cisco TrustSec, 802.1X und IP Source Guard."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "6× 1G-RJ45 (PoE+) + 2× mGig-RJ45 (PoE+) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit (100 Mbit/s–10 Gbit/s)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil (100–240 V AC, lüfterlos, 80-Plus-Silver)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (passiv gekühlt)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter, lüfterloser Layer-3-Access außerhalb des Verteilerschranks (IP Base) – Büro, Klassenraum, Hotel, Verkaufsfläche, WLAN-Backhaul und IoT; PoE+-Versorgung (802.3at, 240 W) für IP-Telefone, WLAN-Access-Points und Kameras; 2× 10G-SFP+-Uplinks für die Aggregation; Routed Access mit MACsec; wand-, rack- oder DIN-schienen-montierbar; verwaltet über Cisco IOS (CLI)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560CX-8XPD-S",
+    "EoL",
+    "Cisco Catalyst 3560-CX End-of-Sale (kompakte Serie, ~2015–2023) — informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-cx-series-switches/datasheet-c78-733229.html"
+   ]
+  ]
+ }
+}
