@@ -2722,6 +2722,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   queued **MDS T-Series (9132T/9148T/9396T/9220i ~4)**, **S-Series (9148S/9396S/9250i ~3, EoS)**, **9700 Directors (~6,
   chassis decision pending)**; families in scope **68**. **Coverage now: 519 built, 37 families complete, 57%.** JTL
   category branch "SAN & Fibre Channel → Fibre-Channel-Switch" must exist in the backend before import (flagged in the push).
+- **BUILD Cisco_MDS_T (3/3) — MDS Round 2, 32G T-series FC fabric switches, pure content build on the FC-green gate
+  (2026-06-25).** New folder `output/switches/Cisco_MDS_T/` from `mds_t_series_harvest_source.md`. NO gate-model work
+  (FC class 4872db9 + PID-welded closer d76de38 already merged) — did NOT touch validate/gate/rules/constants/intake/
+  assemble. 3 base switch-only EXHAUST PIDs: **DS-C9132T-MEK9** (16-port base, 1,024 Tbit/s, 1HE, 9,1 kg) / **DS-C9148T-
+  24EK9** (48, 1,5 Tbit/s, 1HE, 8,5 kg) / **DS-C9396T-48EK9** (96, 3 Tbit/s, 2HE, 18,88 kg). Same category + 12-attr FC
+  model (no Layer/Durchsatz/Uplink-Ports, Attributgruppe Switch); closer auto-PID-welds. **Two T-series traps handled:**
+  (1) **9132T Portanzahl = 16** (base chassis is physically 16; 8-active + license-to-16/24 + 16-port-expansion-module-
+  to-32 path is in the Beschreibung ONLY — Port-Konfig "16× …" → S.3 parses 16=16; title bridges "16-Port-Basis, auf 32
+  erweiterbar"); (2) **9132T temp = 0 bis 40 °C** (DS "45 °C" is a Cisco typo; 104 °F = 40 °C, matches family). **Port-
+  Geschwindigkeit = "4/8/16/32 Gbit/s FC (autosensing)"** (T-series adds 4G; NOT the V-series 8/16/32/64). SwK 1,024 /
+  1,5 / 3 Tbit/s (9132T kept EXACT "1,024 Tbit/s" not rounded). OS NX-OS (IOS XE = 0 — dropped the "kein IOS XE"
+  negation again); PoE Nein, Stacking Nein, Switch-Typ Managed; FC-NVMe-ready, SAN Analytics, FC-SP+HW-encryption,
+  redundant hot-swap PSU/fan; current-shipping. §5 0, single PID-welded closer, Beschreibung 168–171 words (trimmed the
+  9132T from 181). Prices Phase-2 PROVISIONAL (3500/5500/13000, monotonic 9132T<9148T<9396T, no-BOM/LF, 0 `;0,00`,
+  flagged unanchored). Byte-contract all 7 files correct; Main↔Prices both 3; 36 attribute rows (3×12). Added
+  `gate_completeness.yaml Cisco_MDS_T_switches` 3/3 (built+recorded together). **Canonical gate ok=True, 0 viol /
+  0 warn.** Zero regression: all 39 switch families re-gate PASS (MikroTik L6 pre-existing); full suite **431 passed,
+  0 skipped, 0 failed** (locally; the ~7 skip-guarded transceiver tests pass because their untracked inputs exist in
+  the working tree — they skip on a bare clone). Manifest: opened built `Cisco_MDS_T` + reduced the "MDS T-Series ~4"
+  OTHER row to a queued **9220i FCIP/IPS gateway (~1)**; S-series (~3, EoS) + 9700 directors (~6) stay queued. Families
+  in scope **69**. **Coverage now: 522 built, 38 families complete, 57%.** JTL category branch already exists (created
+  for the V-series).
 
 ---
 
