@@ -1,0 +1,4042 @@
+{
+ "WS-C3850-12S-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 12-Port 1G-SFP Switch IP Base (WS-C3850-12S-S)",
+  "titel_tag": "Cisco WS-C3850-12S-S 3850 SFP IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12S-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 12× 1G-SFP, StackWise-480, MACsec-128. Cisco IOS XE, Switching-Kapazität 68 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "7,02",
+  "versandgewicht": "8,72",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12S-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 12× 1G-SFP (1000BASE-X) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12S-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-12S-S MACsec-128 (AES-128) schützt Access-Links; Der WS-C3850-12S-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12S-S ist ein stapelbarer gemanagter Layer 3-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 12 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 12 Ports erreicht der WS-C3850-12S-S eine Switching-Kapazität von 68 Gbit/s bei einer Weiterleitungsrate von 50,6 Mpps. Die 12 Ports des WS-C3850-12S-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-12S-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12S-S zu einem System verbinden.",
+   "Der WS-C3850-12S-S verschlüsselt Access-Links per MACsec-128 (AES-128), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12S-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12S-S?",
+    "Der WS-C3850-12S-S bietet 12× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12S-S stapeln?",
+    "Ja, der WS-C3850-12S-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-12S-S PoE?",
+    "Nein, der WS-C3850-12S-S hat keine PoE-Einspeisung; die 12 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-12S-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-12S-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (1000BASE-X SFP)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "68 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "50,6 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 12 SFP-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12S-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12S-S",
+    "Durchsatz",
+    "50,6 Mpps berechnet: 68 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12S-S",
+    "Versandgewicht",
+    "8,72 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12S-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 12-Port 1G-SFP Switch IP Services (WS-C3850-12S-E)",
+  "titel_tag": "Cisco WS-C3850-12S-E 3850 SFP IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12S-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 12× 1G-SFP, StackWise-480, MACsec-128. Cisco IOS XE, Switching-Kapazität 68 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "7,02",
+  "versandgewicht": "8,72",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12S-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 12× 1G-SFP (1000BASE-X) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12S-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-12S-E MACsec-128 (AES-128) schützt Access-Links; Der WS-C3850-12S-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12S-E ist ein stapelbarer gemanagter Layer 3-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 12 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 12 Ports erreicht der WS-C3850-12S-E eine Switching-Kapazität von 68 Gbit/s bei einer Weiterleitungsrate von 50,6 Mpps. Die 12 Ports des WS-C3850-12S-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-12S-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12S-E zu einem System verbinden.",
+   "Der WS-C3850-12S-E verschlüsselt Access-Links per MACsec-128 (AES-128), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12S-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12S-E?",
+    "Der WS-C3850-12S-E bietet 12× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12S-E stapeln?",
+    "Ja, der WS-C3850-12S-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-12S-E PoE?",
+    "Nein, der WS-C3850-12S-E hat keine PoE-Einspeisung; die 12 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-12S-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-12S-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (1000BASE-X SFP)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "68 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "50,6 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 12 SFP-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12S-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12S-E",
+    "Durchsatz",
+    "50,6 Mpps berechnet: 68 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12S-E",
+    "Versandgewicht",
+    "8,72 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24S-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port 1G-SFP Switch IP Base (WS-C3850-24S-S)",
+  "titel_tag": "Cisco WS-C3850-24S-S 3850 SFP IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24S-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 24× 1G-SFP, StackWise-480, MACsec-128. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "7,03",
+  "versandgewicht": "8,73",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24S-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× 1G-SFP (1000BASE-X) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24S-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-24S-S MACsec-128 (AES-128) schützt Access-Links; Der WS-C3850-24S-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24S-S ist ein stapelbarer gemanagter Layer 3-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24S-S eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,4 Mpps. Die 24 Ports des WS-C3850-24S-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-24S-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24S-S zu einem System verbinden.",
+   "Der WS-C3850-24S-S verschlüsselt Access-Links per MACsec-128 (AES-128), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24S-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24S-S?",
+    "Der WS-C3850-24S-S bietet 24× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24S-S stapeln?",
+    "Ja, der WS-C3850-24S-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-24S-S PoE?",
+    "Nein, der WS-C3850-24S-S hat keine PoE-Einspeisung; die 24 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-24S-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-24S-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (1000BASE-X SFP)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 24 SFP-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24S-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24S-S",
+    "Durchsatz",
+    "68,4 Mpps berechnet: 92 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24S-S",
+    "Versandgewicht",
+    "8,73 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24S-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port 1G-SFP Switch IP Services (WS-C3850-24S-E)",
+  "titel_tag": "Cisco WS-C3850-24S-E 3850 SFP IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24S-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 24× 1G-SFP, StackWise-480, MACsec-128. Cisco IOS XE, Switching-Kapazität 92 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "7,03",
+  "versandgewicht": "8,73",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24S-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× 1G-SFP (1000BASE-X) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24S-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-24S-E MACsec-128 (AES-128) schützt Access-Links; Der WS-C3850-24S-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24S-E ist ein stapelbarer gemanagter Layer 3-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24S-E eine Switching-Kapazität von 92 Gbit/s bei einer Weiterleitungsrate von 68,4 Mpps. Die 24 Ports des WS-C3850-24S-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-24S-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24S-E zu einem System verbinden.",
+   "Der WS-C3850-24S-E verschlüsselt Access-Links per MACsec-128 (AES-128), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24S-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24S-E?",
+    "Der WS-C3850-24S-E bietet 24× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24S-E stapeln?",
+    "Ja, der WS-C3850-24S-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-24S-E PoE?",
+    "Nein, der WS-C3850-24S-E hat keine PoE-Einspeisung; die 24 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-24S-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-24S-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-SFP (1000BASE-X) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (1000BASE-X SFP)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "92 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "68,4 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 24 SFP-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24S-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24S-E",
+    "Durchsatz",
+    "68,4 Mpps berechnet: 92 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24S-E",
+    "Versandgewicht",
+    "8,73 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12XS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 12-Port 10G-SFP+ Switch IP Base (WS-C3850-12XS-S)",
+  "titel_tag": "Cisco WS-C3850-12XS-S 3850 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12XS-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 12× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 320 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "5,80",
+  "versandgewicht": "7,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12XS-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 12× 1/10G-SFP+ ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12XS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-12XS-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-12XS-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12XS-S ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 12 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 12 Ports erreicht der WS-C3850-12XS-S eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 238,1 Mpps. Die 12 Ports des WS-C3850-12XS-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-12XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12XS-S zu einem System verbinden.",
+   "Der WS-C3850-12XS-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12XS-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12XS-S?",
+    "Der WS-C3850-12XS-S bietet 12× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12XS-S stapeln?",
+    "Ja, der WS-C3850-12XS-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-12XS-S PoE?",
+    "Nein, der WS-C3850-12XS-S hat keine PoE-Einspeisung; die 12 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-12XS-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-12XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "238,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 12 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12XS-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12XS-S",
+    "Durchsatz",
+    "238,1 Mpps berechnet: 320 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12XS-S",
+    "Versandgewicht",
+    "7,50 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12XS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 12-Port 10G-SFP+ Switch IP Services (WS-C3850-12XS-E)",
+  "titel_tag": "Cisco WS-C3850-12XS-E 3850 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12XS-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 12× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 320 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "5,80",
+  "versandgewicht": "7,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12XS-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 12× 1/10G-SFP+ ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12XS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-12XS-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-12XS-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12XS-E ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 12 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 12 Ports erreicht der WS-C3850-12XS-E eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 238,1 Mpps. Die 12 Ports des WS-C3850-12XS-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-12XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12XS-E zu einem System verbinden.",
+   "Der WS-C3850-12XS-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12XS-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12XS-E?",
+    "Der WS-C3850-12XS-E bietet 12× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12XS-E stapeln?",
+    "Ja, der WS-C3850-12XS-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-12XS-E PoE?",
+    "Nein, der WS-C3850-12XS-E hat keine PoE-Einspeisung; die 12 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-12XS-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-12XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "238,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 12 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12XS-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12XS-E",
+    "Durchsatz",
+    "238,1 Mpps berechnet: 320 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12XS-E",
+    "Versandgewicht",
+    "7,50 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-16XS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 16-Port 10G-SFP+ Switch IP Base (WS-C3850-16XS-S)",
+  "titel_tag": "Cisco WS-C3850-16XS-S 3850 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-16XS-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 16× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 400 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,14",
+  "versandgewicht": "7,84",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-16XS-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-16XS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-16XS-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-16XS-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-16XS-S ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 16 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 16 Ports erreicht der WS-C3850-16XS-S eine Switching-Kapazität von 400 Gbit/s bei einer Weiterleitungsrate von 297,6 Mpps. Die 16 Ports des WS-C3850-16XS-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-16XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-16XS-S zu einem System verbinden.",
+   "Der WS-C3850-16XS-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-16XS-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-16XS-S?",
+    "Der WS-C3850-16XS-S bietet 16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G)."
+   ],
+   [
+    "Lässt sich der WS-C3850-16XS-S stapeln?",
+    "Ja, der WS-C3850-16XS-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-16XS-S PoE?",
+    "Nein, der WS-C3850-16XS-S hat keine PoE-Einspeisung; die 16 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-16XS-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-16XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297,6 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 16 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-16XS-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-S",
+    "Durchsatz",
+    "297,6 Mpps berechnet: 400 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-S",
+    "Versandgewicht",
+    "7,84 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-S",
+    "Artikelgewicht",
+    "6,14 berechnet: Basis-Chassis 5,80 kg + Netzwerkmodul NM-4-10G 0,34 kg (Bundle-SKU; Cisco-Tabelle listet nur die Basis).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-S",
+    "Switching-Kapazität",
+    "400 Gbit/s berechnet: Basis 320 Gbit/s + NM-4-10G (4× 10G ≈ 80 Gbit/s); Cisco-Tabelle listet nur die Basis-Variante.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-16XS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 16-Port 10G-SFP+ Switch IP Services (WS-C3850-16XS-E)",
+  "titel_tag": "Cisco WS-C3850-16XS-E 3850 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-16XS-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 16× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 400 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,14",
+  "versandgewicht": "7,84",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-16XS-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-16XS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-16XS-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-16XS-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-16XS-E ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 16 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 16 Ports erreicht der WS-C3850-16XS-E eine Switching-Kapazität von 400 Gbit/s bei einer Weiterleitungsrate von 297,6 Mpps. Die 16 Ports des WS-C3850-16XS-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-16XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-16XS-E zu einem System verbinden.",
+   "Der WS-C3850-16XS-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 350-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-16XS-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-16XS-E?",
+    "Der WS-C3850-16XS-E bietet 16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G)."
+   ],
+   [
+    "Lässt sich der WS-C3850-16XS-E stapeln?",
+    "Ja, der WS-C3850-16XS-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-16XS-E PoE?",
+    "Nein, der WS-C3850-16XS-E hat keine PoE-Einspeisung; die 16 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-16XS-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-16XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 10G-SFP+ (12 onboard plus 4 über das Modul NM-4-10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297,6 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 16 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-16XS-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-E",
+    "Durchsatz",
+    "297,6 Mpps berechnet: 400 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-E",
+    "Versandgewicht",
+    "7,84 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-E",
+    "Artikelgewicht",
+    "6,14 berechnet: Basis-Chassis 5,80 kg + Netzwerkmodul NM-4-10G 0,34 kg (Bundle-SKU; Cisco-Tabelle listet nur die Basis).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-16XS-E",
+    "Switching-Kapazität",
+    "400 Gbit/s berechnet: Basis 320 Gbit/s + NM-4-10G (4× 10G ≈ 80 Gbit/s); Cisco-Tabelle listet nur die Basis-Variante.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24XS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port 10G-SFP+ Switch IP Base (WS-C3850-24XS-S)",
+  "titel_tag": "Cisco WS-C3850-24XS-S 3850 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24XS-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 24× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 640 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,10",
+  "versandgewicht": "7,80",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24XS-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× 1/10G-SFP+ ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24XS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-24XS-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-24XS-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24XS-S ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24XS-S eine Switching-Kapazität von 640 Gbit/s bei einer Weiterleitungsrate von 476,2 Mpps. Die 24 Ports des WS-C3850-24XS-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-24XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24XS-S zu einem System verbinden.",
+   "Der WS-C3850-24XS-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 715-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24XS-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24XS-S?",
+    "Der WS-C3850-24XS-S bietet 24× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24XS-S stapeln?",
+    "Ja, der WS-C3850-24XS-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-24XS-S PoE?",
+    "Nein, der WS-C3850-24XS-S hat keine PoE-Einspeisung; die 24 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-24XS-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-24XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "476,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 24 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24XS-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XS-S",
+    "Durchsatz",
+    "476,2 Mpps berechnet: 640 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XS-S",
+    "Versandgewicht",
+    "7,80 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24XS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port 10G-SFP+ Switch IP Services (WS-C3850-24XS-E)",
+  "titel_tag": "Cisco WS-C3850-24XS-E 3850 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24XS-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 24× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 640 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,10",
+  "versandgewicht": "7,80",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24XS-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× 1/10G-SFP+ ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24XS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-24XS-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-24XS-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24XS-E ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24XS-E eine Switching-Kapazität von 640 Gbit/s bei einer Weiterleitungsrate von 476,2 Mpps. Die 24 Ports des WS-C3850-24XS-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-24XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24XS-E zu einem System verbinden.",
+   "Der WS-C3850-24XS-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 715-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24XS-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24XS-E?",
+    "Der WS-C3850-24XS-E bietet 24× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24XS-E stapeln?",
+    "Ja, der WS-C3850-24XS-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-24XS-E PoE?",
+    "Nein, der WS-C3850-24XS-E hat keine PoE-Einspeisung; die 24 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-24XS-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-24XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "476,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 24 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24XS-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XS-E",
+    "Durchsatz",
+    "476,2 Mpps berechnet: 640 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XS-E",
+    "Versandgewicht",
+    "7,80 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-32XS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 32-Port 10G-SFP+ Switch IP Base (WS-C3850-32XS-S)",
+  "titel_tag": "Cisco WS-C3850-32XS-S 3850 10G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-32XS-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 32× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 800 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,44",
+  "versandgewicht": "8,14",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-32XS-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-32XS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-32XS-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-32XS-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-32XS-S ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 32 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 32 Ports erreicht der WS-C3850-32XS-S eine Switching-Kapazität von 800 Gbit/s bei einer Weiterleitungsrate von 595,2 Mpps. Die 32 Ports des WS-C3850-32XS-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-32XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-32XS-S zu einem System verbinden.",
+   "Der WS-C3850-32XS-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 715-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-32XS-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-32XS-S?",
+    "Der WS-C3850-32XS-S bietet 32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G)."
+   ],
+   [
+    "Lässt sich der WS-C3850-32XS-S stapeln?",
+    "Ja, der WS-C3850-32XS-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-32XS-S PoE?",
+    "Nein, der WS-C3850-32XS-S hat keine PoE-Einspeisung; die 32 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-32XS-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-32XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "800 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "595,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 32 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-32XS-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-S",
+    "Durchsatz",
+    "595,2 Mpps berechnet: 800 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-S",
+    "Versandgewicht",
+    "8,14 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-S",
+    "Artikelgewicht",
+    "6,44 berechnet: Basis-Chassis 6,10 kg + Netzwerkmodul NM-8-10G 0,34 kg (Bundle-SKU; Cisco-Tabelle listet nur die Basis).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-S",
+    "Switching-Kapazität",
+    "800 Gbit/s berechnet: Basis 640 Gbit/s + NM-8-10G (8× 10G ≈ 160 Gbit/s); Cisco-Tabelle listet nur die Basis-Variante.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-32XS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 32-Port 10G-SFP+ Switch IP Services (WS-C3850-32XS-E)",
+  "titel_tag": "Cisco WS-C3850-32XS-E 3850 10G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-32XS-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 32× 10G-SFP+, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 800 Gbit/s, E-LLW (EoS, …",
+  "artikelgewicht": "6,44",
+  "versandgewicht": "8,14",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-32XS-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G) ohne PoE (reine Datenports) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-32XS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-32XS-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-32XS-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-32XS-E ist ein stapelbarer gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 32 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 32 Ports erreicht der WS-C3850-32XS-E eine Switching-Kapazität von 800 Gbit/s bei einer Weiterleitungsrate von 595,2 Mpps. Die 32 Ports des WS-C3850-32XS-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-32XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-32XS-E zu einem System verbinden.",
+   "Der WS-C3850-32XS-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 715-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-32XS-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-32XS-E?",
+    "Der WS-C3850-32XS-E bietet 32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G)."
+   ],
+   [
+    "Lässt sich der WS-C3850-32XS-E stapeln?",
+    "Ja, der WS-C3850-32XS-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Hat der WS-C3850-32XS-E PoE?",
+    "Nein, der WS-C3850-32XS-E hat keine PoE-Einspeisung; die 32 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-32XS-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-32XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10G-SFP+ (24 onboard plus 8 über das Modul NM-8-10G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "800 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "595,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 32 SFP+-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-32XS-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-E",
+    "Durchsatz",
+    "595,2 Mpps berechnet: 800 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-E",
+    "Versandgewicht",
+    "8,14 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-E",
+    "Artikelgewicht",
+    "6,44 berechnet: Basis-Chassis 6,10 kg + Netzwerkmodul NM-8-10G 0,34 kg (Bundle-SKU; Cisco-Tabelle listet nur die Basis).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-32XS-E",
+    "Switching-Kapazität",
+    "800 Gbit/s berechnet: Basis 640 Gbit/s + NM-8-10G (8× 10G ≈ 160 Gbit/s); Cisco-Tabelle listet nur die Basis-Variante.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-48XS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port 10G-SFP+ + 40G-QSFP Switch IP Base (WS-C3850-48XS-S)",
+  "titel_tag": "Cisco WS-C3850-48XS-S 3850 40G IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-48XS-S (Catalyst 3850, IP Base): Layer 3-Access-Switch, 48× 10G-SFP+ + 40G-QSFP, MACsec-256. Cisco IOS XE, Switching-Kapazität 1280 Gbit/s, E-LLW (EoS, Nachfolger Catalyst …",
+  "artikelgewicht": "7,45",
+  "versandgewicht": "9,15",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-48XS-S ist ein gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× 1/10G-SFP+ ohne PoE (reine Datenports) und vier festen 40G-QSFP+-Uplinks. Der WS-C3850-48XS-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-48XS-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-48XS-S ist ein gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 48 Ports plus vier festen 40G-QSFP+-Uplinks.",
+   "Mit 48 Ports erreicht der WS-C3850-48XS-S eine Switching-Kapazität von 1280 Gbit/s bei einer Weiterleitungsrate von 952,3 Mpps. Die 48 Ports des WS-C3850-48XS-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-48XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR).",
+   "Der WS-C3850-48XS-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 750-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Der Luftstrom verläuft vorne-nach-hinten. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-48XS-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-48XS-S?",
+    "Der WS-C3850-48XS-S bietet 48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3850-48XS-S stapeln?",
+    "Nein, der WS-C3850-48XS-S ist nicht stapelbar (kein StackWise/StackPower) – er ist ein eigenständiger High-Density-Aggregations-Switch mit vier festen 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Hat der WS-C3850-48XS-S PoE?",
+    "Nein, der WS-C3850-48XS-S hat keine PoE-Einspeisung; die 48 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-48XS-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-48XS-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1280 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952,3 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (nicht stapelbar, High-Density-Aggregation) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 48× 10G-SFP+ plus vier feste 40G-QSFP+-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-48XS-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-S",
+    "Durchsatz",
+    "952,3 Mpps berechnet: 1280 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-S",
+    "Versandgewicht",
+    "9,15 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-48XS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port 10G-SFP+ + 40G-QSFP Switch IP Services (WS-C3850-48XS-E)",
+  "titel_tag": "Cisco WS-C3850-48XS-E 3850 40G IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-48XS-E (Catalyst 3850, IP Services): Layer 3-Access-Switch, 48× 10G-SFP+ + 40G-QSFP, MACsec-256. Cisco IOS XE, Switching-Kapazität 1280 Gbit/s, E-LLW (EoS, Nachfolger …",
+  "artikelgewicht": "7,45",
+  "versandgewicht": "9,15",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-48XS-E ist ein gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× 1/10G-SFP+ ohne PoE (reine Datenports) und vier festen 40G-QSFP+-Uplinks. Der WS-C3850-48XS-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-48XS-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-48XS-E ist ein gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 48 Ports plus vier festen 40G-QSFP+-Uplinks.",
+   "Mit 48 Ports erreicht der WS-C3850-48XS-E eine Switching-Kapazität von 1280 Gbit/s bei einer Weiterleitungsrate von 952,3 Mpps. Die 48 Ports des WS-C3850-48XS-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-48XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3).",
+   "Der WS-C3850-48XS-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 750-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Der Luftstrom verläuft vorne-nach-hinten. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-48XS-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-48XS-E?",
+    "Der WS-C3850-48XS-E bietet 48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3850-48XS-E stapeln?",
+    "Nein, der WS-C3850-48XS-E ist nicht stapelbar (kein StackWise/StackPower) – er ist ein eigenständiger High-Density-Aggregations-Switch mit vier festen 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Hat der WS-C3850-48XS-E PoE?",
+    "Nein, der WS-C3850-48XS-E hat keine PoE-Einspeisung; die 48 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-48XS-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-48XS-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1280 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952,3 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (nicht stapelbar, High-Density-Aggregation) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 48× 10G-SFP+ plus vier feste 40G-QSFP+-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-48XS-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-E",
+    "Durchsatz",
+    "952,3 Mpps berechnet: 1280 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-E",
+    "Versandgewicht",
+    "9,15 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-48XS-F-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port 10G-SFP+ + 40G-QSFP Switch IP Base (WS-C3850-48XS-F-S)",
+  "titel_tag": "Cisco WS-C3850-48XS-F-S 3850 40G-F IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-48XS-F-S (Catalyst 3850, IP Base): Layer 3-Access-Switch, 48× 10G-SFP+ + 40G-QSFP, MACsec-256. Cisco IOS XE, Switching-Kapazität 1280 Gbit/s, E-LLW (EoS, Nachfolger …",
+  "artikelgewicht": "7,45",
+  "versandgewicht": "9,15",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-48XS-F-S ist ein gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× 1/10G-SFP+ ohne PoE (reine Datenports) und vier festen 40G-QSFP+-Uplinks. Der WS-C3850-48XS-F-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-48XS-F-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-48XS-F-S ist ein gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Base-Lizenz, 48 Ports plus vier festen 40G-QSFP+-Uplinks.",
+   "Mit 48 Ports erreicht der WS-C3850-48XS-F-S eine Switching-Kapazität von 1280 Gbit/s bei einer Weiterleitungsrate von 952,3 Mpps. Die 48 Ports des WS-C3850-48XS-F-S sind reine Datenports ohne PoE-Einspeisung. Mit der IP Base-Lizenz beherrscht der WS-C3850-48XS-F-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR).",
+   "Der WS-C3850-48XS-F-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 750-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Der Luftstrom verläuft hinten-nach-vorne. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-48XS-F-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-48XS-F-S?",
+    "Der WS-C3850-48XS-F-S bietet 48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3850-48XS-F-S stapeln?",
+    "Nein, der WS-C3850-48XS-F-S ist nicht stapelbar (kein StackWise/StackPower) – er ist ein eigenständiger High-Density-Aggregations-Switch mit vier festen 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Hat der WS-C3850-48XS-F-S PoE?",
+    "Nein, der WS-C3850-48XS-F-S hat keine PoE-Einspeisung; die 48 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-48XS-F-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-48XS-F-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1280 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952,3 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (nicht stapelbar, High-Density-Aggregation) – Layer 3-Zugang mit IP Base-Lizenz; reine Datenports ohne PoE; 48× 10G-SFP+ plus vier feste 40G-QSFP+-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-48XS-F-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-F-S",
+    "Durchsatz",
+    "952,3 Mpps berechnet: 1280 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-F-S",
+    "Versandgewicht",
+    "9,15 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-48XS-F-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port 10G-SFP+ + 40G-QSFP Switch IP Services (WS-C3850-48XS-F-E)",
+  "titel_tag": "Cisco WS-C3850-48XS-F-E 3850 40G-F IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-48XS-F-E (Catalyst 3850, IP Services): Layer 3-Access-Switch, 48× 10G-SFP+ + 40G-QSFP, MACsec-256. Cisco IOS XE, Switching-Kapazität 1280 Gbit/s, E-LLW (EoS, Nachfolger …",
+  "artikelgewicht": "7,45",
+  "versandgewicht": "9,15",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-48XS-F-E ist ein gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× 1/10G-SFP+ ohne PoE (reine Datenports) und vier festen 40G-QSFP+-Uplinks. Der WS-C3850-48XS-F-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-48XS-F-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-48XS-F-E ist ein gemanagter Layer 3-10-Gigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein Glasfaser-/SFP-Access-Switch mit IP Services-Lizenz, 48 Ports plus vier festen 40G-QSFP+-Uplinks.",
+   "Mit 48 Ports erreicht der WS-C3850-48XS-F-E eine Switching-Kapazität von 1280 Gbit/s bei einer Weiterleitungsrate von 952,3 Mpps. Die 48 Ports des WS-C3850-48XS-F-E sind reine Datenports ohne PoE-Einspeisung. Mit der IP Services-Lizenz beherrscht der WS-C3850-48XS-F-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3).",
+   "Der WS-C3850-48XS-F-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 750-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Der Luftstrom verläuft hinten-nach-vorne. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-48XS-F-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-48XS-F-E?",
+    "Der WS-C3850-48XS-F-E bietet 48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Lässt sich der WS-C3850-48XS-F-E stapeln?",
+    "Nein, der WS-C3850-48XS-F-E ist nicht stapelbar (kein StackWise/StackPower) – er ist ein eigenständiger High-Density-Aggregations-Switch mit vier festen 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Hat der WS-C3850-48XS-F-E PoE?",
+    "Nein, der WS-C3850-48XS-F-E hat keine PoE-Einspeisung; die 48 Ports sind reine Datenports."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-48XS-F-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-48XS-F-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + vier feste 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (1/10G-SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1280 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952,3 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (nicht stapelbar, High-Density-Aggregation) – Layer 3-Zugang mit IP Services-Lizenz; reine Datenports ohne PoE; 48× 10G-SFP+ plus vier feste 40G-QSFP+-Uplinks; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-48XS-F-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-F-E",
+    "Durchsatz",
+    "952,3 Mpps berechnet: 1280 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-48XS-F-E",
+    "Versandgewicht",
+    "9,15 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24XU-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port Multigigabit UPOE Switch LAN Base (WS-C3850-24XU-L)",
+  "titel_tag": "Cisco WS-C3850-24XU-L 3850 UPOE LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24XU-L (Catalyst 3850, LAN Base): stapelbarer Layer 2-Access-Switch, 24× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 640 Gbit/s, E-LLW …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24XU-L ist ein stapelbarer gemanagter Layer 2-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24XU-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3850-24XU-L MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-24XU-L stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24XU-L ist ein stapelbarer gemanagter Layer 2-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit LAN Base-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24XU-L eine Switching-Kapazität von 640 Gbit/s bei einer Weiterleitungsrate von 476,2 Mpps. Über Cisco UPOE liefert der WS-C3850-24XU-L bis zu 60 W pro Port (580 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der LAN Base-Lizenz beherrscht der WS-C3850-24XU-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24XU-L zu einem System verbinden.",
+   "Der WS-C3850-24XU-L verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24XU-L als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24XU-L?",
+    "Der WS-C3850-24XU-L bietet 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24XU-L stapeln?",
+    "Ja, der WS-C3850-24XU-L stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-24XU-L?",
+    "Der WS-C3850-24XU-L liefert Cisco UPOE mit bis zu 60 W pro Port (580 W Budget)."
+   ],
+   [
+    "Routet der WS-C3850-24XU-L (LAN Base)?",
+    "Der WS-C3850-24XU-L beherrscht mit LAN Base umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing); für dynamisches Routing dienen IP Base/IP Services."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit bis 10 GbE (100M/1/2.5/5/10G)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "476,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 2-Zugang mit LAN Base-Lizenz; Cisco UPOE (bis 60 W/Port, 580 W Budget); 24 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24XU-L",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-L",
+    "Durchsatz",
+    "476,2 Mpps berechnet: 640 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-L",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24XU-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port Multigigabit UPOE Switch IP Base (WS-C3850-24XU-S)",
+  "titel_tag": "Cisco WS-C3850-24XU-S 3850 UPOE IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24XU-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 24× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 640 Gbit/s, E-LLW …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24XU-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24XU-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-24XU-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-24XU-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24XU-S ist ein stapelbarer gemanagter Layer 3-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit IP Base-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24XU-S eine Switching-Kapazität von 640 Gbit/s bei einer Weiterleitungsrate von 476,2 Mpps. Über Cisco UPOE liefert der WS-C3850-24XU-S bis zu 60 W pro Port (580 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der IP Base-Lizenz beherrscht der WS-C3850-24XU-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24XU-S zu einem System verbinden.",
+   "Der WS-C3850-24XU-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24XU-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24XU-S?",
+    "Der WS-C3850-24XU-S bietet 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24XU-S stapeln?",
+    "Ja, der WS-C3850-24XU-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-24XU-S?",
+    "Der WS-C3850-24XU-S liefert Cisco UPOE mit bis zu 60 W pro Port (580 W Budget)."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-24XU-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-24XU-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit bis 10 GbE (100M/1/2.5/5/10G)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "476,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; Cisco UPOE (bis 60 W/Port, 580 W Budget); 24 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24XU-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-S",
+    "Durchsatz",
+    "476,2 Mpps berechnet: 640 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-S",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-24XU-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 24-Port Multigigabit UPOE Switch IP Services (WS-C3850-24XU-E)",
+  "titel_tag": "Cisco WS-C3850-24XU-E 3850 UPOE IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-24XU-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 24× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 640 Gbit/s, …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-24XU-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-24XU-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-24XU-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-24XU-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-24XU-E ist ein stapelbarer gemanagter Layer 3-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit IP Services-Lizenz, 24 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 24 Ports erreicht der WS-C3850-24XU-E eine Switching-Kapazität von 640 Gbit/s bei einer Weiterleitungsrate von 476,2 Mpps. Über Cisco UPOE liefert der WS-C3850-24XU-E bis zu 60 W pro Port (580 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der IP Services-Lizenz beherrscht der WS-C3850-24XU-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-24XU-E zu einem System verbinden.",
+   "Der WS-C3850-24XU-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-24XU-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-24XU-E?",
+    "Der WS-C3850-24XU-E bietet 24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-24XU-E stapeln?",
+    "Ja, der WS-C3850-24XU-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-24XU-E?",
+    "Der WS-C3850-24XU-E liefert Cisco UPOE mit bis zu 60 W pro Port (580 W Budget)."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-24XU-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-24XU-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× Multigigabit (100M/1/2.5/5/10G, RJ-45, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit bis 10 GbE (100M/1/2.5/5/10G)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "476,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; Cisco UPOE (bis 60 W/Port, 580 W Budget); 24 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-24XU-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-E",
+    "Durchsatz",
+    "476,2 Mpps berechnet: 640 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-24XU-E",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12X48U-L": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port Multigigabit UPOE Switch LAN Base (WS-C3850-12X48U-L)",
+  "titel_tag": "Cisco WS-C3850-12X48U-L 3850 UPOE LAN Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12X48U-L (Catalyst 3850, LAN Base): stapelbarer Layer 2-Access-Switch, 48× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 472 Gbit/s, E-LLW …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12X48U-L ist ein stapelbarer gemanagter Layer 2-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12X48U-L läuft unter Cisco IOS XE mit LAN Base-Lizenz.</p><p>Der WS-C3850-12X48U-L MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-12X48U-L stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12X48U-L ist ein stapelbarer gemanagter Layer 2-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit LAN Base-Lizenz, 48 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 48 Ports erreicht der WS-C3850-12X48U-L eine Switching-Kapazität von 472 Gbit/s bei einer Weiterleitungsrate von 351,2 Mpps. Über Cisco UPOE liefert der WS-C3850-12X48U-L bis zu 60 W pro Port (630 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der LAN Base-Lizenz beherrscht der WS-C3850-12X48U-L umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12X48U-L zu einem System verbinden.",
+   "Der WS-C3850-12X48U-L verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12X48U-L als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12X48U-L?",
+    "Der WS-C3850-12X48U-L bietet 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12X48U-L stapeln?",
+    "Ja, der WS-C3850-12X48U-L stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-12X48U-L?",
+    "Der WS-C3850-12X48U-L liefert Cisco UPOE mit bis zu 60 W pro Port (630 W Budget)."
+   ],
+   [
+    "Routet der WS-C3850-12X48U-L (LAN Base)?",
+    "Der WS-C3850-12X48U-L beherrscht mit LAN Base umfassendes Layer-2-Switching (bis 255 VLANs, statisches Routing); für dynamisches Routing dienen IP Base/IP Services."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit (100M/1/2.5/5/10G) und Gigabit (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "472 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "351,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 2-Zugang mit LAN Base-Lizenz; Cisco UPOE (bis 60 W/Port, 630 W Budget); 48 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12X48U-L",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-L",
+    "Durchsatz",
+    "351,2 Mpps berechnet: 472 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-L",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12X48U-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port Multigigabit UPOE Switch IP Base (WS-C3850-12X48U-S)",
+  "titel_tag": "Cisco WS-C3850-12X48U-S 3850 UPOE IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12X48U-S (Catalyst 3850, IP Base): stapelbarer Layer 3-Access-Switch, 48× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 472 Gbit/s, E-LLW …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12X48U-S ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12X48U-S läuft unter Cisco IOS XE mit IP Base-Lizenz.</p><p>Der WS-C3850-12X48U-S MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-12X48U-S stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12X48U-S ist ein stapelbarer gemanagter Layer 3-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit IP Base-Lizenz, 48 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 48 Ports erreicht der WS-C3850-12X48U-S eine Switching-Kapazität von 472 Gbit/s bei einer Weiterleitungsrate von 351,2 Mpps. Über Cisco UPOE liefert der WS-C3850-12X48U-S bis zu 60 W pro Port (630 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der IP Base-Lizenz beherrscht der WS-C3850-12X48U-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12X48U-S zu einem System verbinden.",
+   "Der WS-C3850-12X48U-S verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12X48U-S als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12X48U-S?",
+    "Der WS-C3850-12X48U-S bietet 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12X48U-S stapeln?",
+    "Ja, der WS-C3850-12X48U-S stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-12X48U-S?",
+    "Der WS-C3850-12X48U-S liefert Cisco UPOE mit bis zu 60 W pro Port (630 W Budget)."
+   ],
+   [
+    "Was leistet die IP Base-Lizenz des WS-C3850-12X48U-S?",
+    "Mit der IP Base-Lizenz beherrscht der WS-C3850-12X48U-S Routed Access (statisches Routing, RIPv2, EIGRP-Stub, OSPF for Routed Access, PBR)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit (100M/1/2.5/5/10G) und Gigabit (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "472 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "351,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Base-Lizenz; Cisco UPOE (bis 60 W/Port, 630 W Budget); 48 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12X48U-S",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-S",
+    "Durchsatz",
+    "351,2 Mpps berechnet: 472 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-S",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ },
+ "WS-C3850-12X48U-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 3850 48-Port Multigigabit UPOE Switch IP Services (WS-C3850-12X48U-E)",
+  "titel_tag": "Cisco WS-C3850-12X48U-E 3850 UPOE IP Services | Hexwaren",
+  "meta_description": "Original Cisco WS-C3850-12X48U-E (Catalyst 3850, IP Services): stapelbarer Layer 3-Access-Switch, 48× Multigigabit UPOE, StackWise-480, MACsec-256. Cisco IOS XE, Switching-Kapazität 472 Gbit/s, …",
+  "artikelgewicht": "8,00",
+  "versandgewicht": "9,70",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3850-12X48U-E ist ein stapelbarer gemanagter Layer 3-Access-Switch der Catalyst-3850-Serie für den Enterprise-Campus mit 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) Cisco UPOE (bis 60 W/Port) und einem modularen Netzwerkmodul-Steckplatz für Uplinks. Der WS-C3850-12X48U-E läuft unter Cisco IOS XE mit IP Services-Lizenz.</p><p>Der WS-C3850-12X48U-E MACsec-256 (AES-256, zusätzlich 128-Bit) schützt Access-Links; Der WS-C3850-12X48U-E stapelt per Cisco StackWise-480 bis zu neun Einheiten (480 Gbit/s) und teilt sich Strom über StackPower. er trägt Cisco E-LLW.</p>",
+  "intro": [
+   "Der Cisco WS-C3850-12X48U-E ist ein stapelbarer gemanagter Layer 3-Multigigabit-Switch aus der Catalyst-3850-Familie für den Enterprise-Campus-Access unter Cisco IOS XE – ein UPOE-Access-Switch (60 W/Port) mit IP Services-Lizenz, 48 Ports plus modularem Uplink-Steckplatz.",
+   "Mit 48 Ports erreicht der WS-C3850-12X48U-E eine Switching-Kapazität von 472 Gbit/s bei einer Weiterleitungsrate von 351,2 Mpps. Über Cisco UPOE liefert der WS-C3850-12X48U-E bis zu 60 W pro Port (630 W Budget) für APs, Kameras, Turrets und kompakte Switches. Mit der IP Services-Lizenz beherrscht der WS-C3850-12X48U-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3). Per StackWise-480 lassen sich bis zu neun Einheiten des WS-C3850-12X48U-E zu einem System verbinden.",
+   "Der WS-C3850-12X48U-E verschlüsselt Access-Links per MACsec-256 (AES-256, zusätzlich 128-Bit), kühlt aktiv über drei austauschbare Lüfter und arbeitet mit modularen, redundanten Netzteilen (ein 1100-W-AC-Netzteil im Lieferumfang, ein zweites optional) im Bereich -5 bis 45 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der WS-C3850-12X48U-E als Original-Hardware für Ersatz und Bestandserweiterung erhältlich – der Nachfolger ist der Catalyst 9300 – und trägt Cisco Enhanced Limited Lifetime Warranty (E-LLW)."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C3850-12X48U-E?",
+    "Der WS-C3850-12X48U-E bietet 48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)."
+   ],
+   [
+    "Lässt sich der WS-C3850-12X48U-E stapeln?",
+    "Ja, der WS-C3850-12X48U-E stapelt per Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s) und teilt sich Strom über StackPower."
+   ],
+   [
+    "Welches PoE hat der WS-C3850-12X48U-E?",
+    "Der WS-C3850-12X48U-E liefert Cisco UPOE mit bis zu 60 W pro Port (630 W Budget)."
+   ],
+   [
+    "Was leistet die IP Services-Lizenz des WS-C3850-12X48U-E?",
+    "Mit der IP Services-Lizenz beherrscht der WS-C3850-12X48U-E volles dynamisches Routing (OSPF, EIGRP, BGPv4, IS-IS, PIM, VRF-Lite, IPv6/OSPFv3)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× Kupfer-Ports (12 Multigigabit 100M/1/2.5/5/10G plus 36 Gigabit 10/100/1000, UPOE) + 1 Netzwerkmodul-Steckplatz (Uplinks separat)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "Multigigabit (100M/1/2.5/5/10G) und Gigabit (10/100/1000)"
+   ],
+   [
+    "PoE",
+    "Ja – Cisco UPOE (bis 60 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "472 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "351,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modular, redundant (1 Netzteil im Lieferumfang, 2 möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (redundante Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja – Cisco StackWise-480 (bis 9 Einheiten, 480 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Enterprise-Access (stapelbar, Cisco StackWise-480) – Layer 3-Zugang mit IP Services-Lizenz; Cisco UPOE (bis 60 W/Port, 630 W Budget); 48 Multigigabit/Gigabit-Ports mit modularem Uplink-Steckplatz; konvergiertes Wired/Wireless unter Cisco IOS XE (UADP-ASIC); verwaltet über CLI/WebUI"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "berechnet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3850-12X48U-E",
+    "EoL",
+    "Cisco Catalyst 3850 End-of-Sale (Serie; Nachfolger Catalyst 9300) – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-E",
+    "Durchsatz",
+    "351,2 Mpps berechnet: 472 Gbit/s × 1,488 ÷ 2 (Line-Rate, 64-Byte-Frames); reproduziert die Cisco-Datenblatt-Paare der Serie (z. B. 92 Gbit/s → 68,4 Mpps).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ],
+   [
+    "WS-C3850-12X48U-E",
+    "Versandgewicht",
+    "9,70 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3850-series-switches/datasheet_c78-720918.html"
+   ]
+  ]
+ }
+}

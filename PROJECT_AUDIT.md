@@ -2914,6 +2914,32 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   — the modular-chassis lane is CLOSED:** every precisely-enumerated Catalyst-9000 + Nexus-9000 model (538) is built, 0
   enumerated-missing (FC directors + Catalyst 9400/9600 + C9610 + Nexus 9500 + Nexus 9400 all done). Remaining switch work =
   the 23 family-level legacy/SMB/Nexus-legacy/Meraki families (~362 est models, await per-family harvests).
+- **BUILD Cisco_C3850_R2 (22/22) — Catalyst 3850 Round 2 (fiber/10G-SFP+/40G/multigigabit); FIRST fixed/legacy-lane round (2026-06-25).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). **Fixed-switch round on the live S.1–S.6 gate** (NOT
+  chassis) — completes the flagship 3850 family (R1 21 core-copper + R2 22 = 43). Emitted as the **sibling bundle
+  `Cisco_C3850_R2`** so the audited R1 `Cisco_C3850` stays **byte-frozen** (re-emitting R1 would only churn its internal
+  Verification_Log timestamps). Reuses the **R1 14-attr model verbatim** (LAN Base=L2 / IP Base+IP Services=L3; StackWise-480
+  fires S.4 where it stacks; IOS XE retained; Kat-L3 `Managed Switch (L2|L3)`; MACsec is PROSE-ONLY, not a Merkmal). **22 SKUs /
+  10 hardware configs:** fiber-1G 12S/24S (-S/-E), 10G-SFP+ 12XS/16XS/24XS/32XS (-S/-E), 40G-fixed 48XS/48XS-F (-S/-E), mGig-UPOE
+  24XU/12X48U (-L/-S/-E). W-/UW-AP-bundle variants excluded (flagged). **The four §0 class-splits — all verified in the emitted
+  bundle:** (1) **48XS/48XS-F are the only NON-stacking 3850s** → Stacking "Nein", S.4 silent, NO StackWise/StackPower in prose;
+  the other 8 hardware stack (S.4 fires). (2) **48XS/48XS-F use the 15-attr fixed-4×40G-QSFP uplink pattern** (the existing 3650
+  Uplink-Ports Merkmal → no new attribute, no STOP needed); the rest keep modular-14. (3) **MACsec-256 on every SFP+/mGig model,
+  128 only on the 1G-SFP 12S/24S** (prose). (4) **UPOE only on 24XU/12X48U** (rest no-PoE). S.3 port sums match Portanzahl (the
+  multi-speed 12X48U written with a single `48×` + word-breakdown so S.3 counts 48). **IOS XE present** whole-bundle (110×,
+  retained in Beschreibung + Kurz + Anwendung), **NX-OS = 0** (correct for Catalyst — inverse of the Nexus rounds). **Grounding:**
+  datasheet c78-720918 (weights/SwK/temp/tiers per §2). **Durchsatz (Mpps) NOT couriered → DERIVED `berechnet`** = SwK_Gbps ×
+  1,488 ÷ 2 (line-rate, 64-Byte-Frames; reproduces the Cisco pairs e.g. 92→68,4), logged per SKU. **16XS/32XS are bundle SKUs →
+  weight + Switching-Kapazität COMPOSED `berechnet`** (12XS 5,80 + NM-4-10G 0,34 = 6,14 kg / 320+80 = 400 Gbit/s; 24XS 6,10 + NM-8-10G
+  = 6,44 / 640+160 = 800), composition logged; not invented. 3850 is **EoS** (Nachfolger Catalyst 9300) → flagged in prose +
+  extra_log, never dropped. §5-clean whole-bundle (Zustand "Neu, versiegelt" → condition=new; "ungebrauchte Original-Hardware" in
+  the price-log — R2 does NOT carry R1's latent "Sealed" slip). Prices Phase-2 provisional + tier-ordered (520…5000; no-BOM/LF, 0
+  `;0,00`); Beschr 130–173 words. Added the `Cisco_C3850_R2_switches` `gate_completeness` record. **No new test** (S-gate + 15-attr
+  pinned by existing tests). **Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**.
+  Manifest: retired the family-level "3850 fiber/mGig ~18" OTHER row, added the `Cisco_C3850_R2` built-block (22). Regenerated
+  `coverage_report.md`: **both 3850 sub-families ✅** (core-copper 21/21 + fiber/10G/40G/mGig 22/22). **In-scope unchanged (69**;
+  OTHER row replaced by the built family). **Coverage now: 560 built, 47 families fully built, 61%.** First fixed/legacy-lane
+  family complete; next legacy rounds (3650 R2, 3560/3750 legacy remainders, Meraki MS, IE/Nexus-legacy) await per-family harvests.
 
 ---
 
