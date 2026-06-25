@@ -173,12 +173,14 @@ def test_warn_list_is_not_a_failure(good_bundle, rules):
 # "Smart-Managed" contains the substring "Managed", so a substring test would wrongly pass it;
 # S.4 must use an exact match. These pin both directions.
 
-def _switch_vals(switch_typ: str, stacking: str, layer: str = "L2") -> dict:
+def _switch_vals(switch_typ: str, stacking: str, layer: str = "L2",
+                 temp: str = "0 bis 50 °C", bauform: str = "19-Zoll-Rackmontage (1 HE)",
+                 anwendung: str = "Kleine Bueros") -> dict:
     return {
         "Switch-Typ": switch_typ, "Layer": layer, "Portanzahl": "10",
         "Port-Konfiguration": "8× 1G-RJ45 + 2× 1G-SFP", "Port-Geschwindigkeit": "1G",
-        "PoE": "Nein", "Bauform": "19-Zoll-Rackmontage (1 HE)",
-        "Anwendung": "Kleine Bueros", "Betriebstemperatur": "0 bis 50 °C",
+        "PoE": "Nein", "Bauform": bauform,
+        "Anwendung": anwendung, "Betriebstemperatur": temp,
         "Stacking": stacking,
     }
 
@@ -199,6 +201,73 @@ def test_s4_managed_stacking_ok(rules, tmp_path):
     v._check_switch_sku("X_Main.csv", "C9300-24T", "Managed Switch (L2)", set(vals), vals)
     assert not [vio for vio in v.result.violations if "S.4" in vio.message], \
         [str(x) for x in v.result.violations]
+
+
+# ---- switch semantic S.5: environmental category keyed on OPERATING TEMPERATURE, not DIN ----
+# Re-keyed off the Bauform/DIN substring (a mount option, not an industrial grade) onto an
+# extended-range operating-temperature test: min ≤ -25 °C OR max ≥ +60 °C. Reverse direction
+# (Industrie-Switch ⇒ extended temp) is a hard FAIL; forward (extended temp ⇒ Industrie-Switch)
+# is a WARN, because extended temp is necessary but not sufficient for "industrial".
+
+def _s5_viol(v):
+    return [vio for vio in v.result.violations if "S.5" in vio.message]
+
+
+def _s5_warn(v):
+    return [w for w in v.result.warnings if "S.5" in w.message]
+
+
+def test_s5_extended_temp_without_token_warns(rules, tmp_path):
+    # -40/+70 °C without the Industrie-Switch token → forward direction: WARN, NOT a hard fail
+    # (a warm-rated commercial rackmount/data-center switch is not an Industrie-Switch).
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Nein", layer="L3", temp="-40 bis 70 °C")
+    v._check_switch_sku("X_Main.csv", "CRS354-48G", "Managed Switch (L3)", set(vals), vals)
+    assert not _s5_viol(v), [str(x) for x in v.result.violations]
+    assert _s5_warn(v), "extended temp without Industrie-Switch should WARN"
+
+
+def test_s5_extended_temp_with_token_ok(rules, tmp_path):
+    # -40/+75 °C WITH the Industrie-Switch token → the IE3x00 case: no violation, no warn.
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Nein", layer="L3", temp="-40 bis 75 °C")
+    v._check_switch_sku("X_Main.csv", "IE-9320-24T4X", "Industrie-Switch", set(vals), vals)
+    assert not _s5_viol(v), [str(x) for x in v.result.violations]
+    assert not _s5_warn(v), [str(x) for x in v.result.warnings]
+
+
+def test_s5_commercial_compact_no_industrie_ok(rules, tmp_path):
+    # -5/+45 °C, DIN-rail mentioned in prose, Bauform = compact form factor, no Industrie-Switch
+    # token → must NOT demand Industrie-Switch. This is the office-compact case (3560-CX/2960-C)
+    # the OLD DIN-substring gate got wrong.
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Nein", layer="L3", temp="-5 bis 45 °C",
+                        bauform="Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)",
+                        anwendung="Büro/Klassenraum; wand-, rack- oder DIN-schienen-montierbar")
+    v._check_switch_sku("X_Main.csv", "WS-C3560CX-8PC-S", "Managed Switch (L3)", set(vals), vals)
+    assert not _s5_viol(v), [str(x) for x in v.result.violations]
+    assert not _s5_warn(v), [str(x) for x in v.result.warnings]
+
+
+def test_s5_din_in_bauform_commercial_no_fire(rules, tmp_path):
+    # Regression guard: the DIN substring is DEAD. DIN in the Bauform attribute at commercial temp
+    # must NOT fire S.5 (the old gate hard-failed exactly this; the re-key consults only temperature).
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Nein", temp="-5 bis 45 °C",
+                        bauform="Kompakt-Gehäuse, DIN-Schiene/Hutschiene-montierbar")
+    v._check_switch_sku("X_Main.csv", "WS-C2960CX-8TC-L", "Managed Switch (L2)", set(vals), vals)
+    assert not _s5_viol(v), [str(x) for x in v.result.violations]
+
+
+def test_s5_industrie_token_commercial_temp_fails(rules, tmp_path):
+    # Reverse direction (hard FAIL): the Industrie-Switch token on a commercial-temp switch is a
+    # real mis-tag — a switch that only runs 0/+50 °C is not industrial.
+    v = Validator(rules, tmp_path)
+    vals = _switch_vals("Managed", "Nein", layer="L3", temp="0 bis 50 °C")
+    v._check_switch_sku("X_Main.csv", "FAKE-IND-1", "Industrie-Switch", set(vals), vals)
+    s5 = _s5_viol(v)
+    assert s5, [str(x) for x in v.result.violations]
+    assert s5[0].field == "Betriebstemperatur"
 
 
 def test_verification_log_missing_row(good_bundle, rules):

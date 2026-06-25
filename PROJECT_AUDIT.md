@@ -2545,6 +2545,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (legacy, original FE/GbE 1RU) ~7"; families in scope **60→62**. reconciler → both 100%. Re-gated all 31 Cisco switch
   families → all PASS (MikroTik L6 pre-existing); full suite **422 passed**. **Coverage now: 453 built, 31 families
   complete, 51%.**
+- **GATE RE-KEY: S.5 industrial-switch trigger moved from the DIN/Hutschiene substring to operating temperature
+  (2026-06-23).** `validate.py` only (S.5 check + a `_parse_temp_range` helper) + `tests/test_validate.py` (5 new S.5
+  tests). **Why:** the old S.5 fired Industrie-Switch enforcement on `DIN`/`Hutschiene` in the Bauform attribute — a
+  false signal (DIN-rail is a mount option, not an industrial grade), which is why the office-compact families
+  (3560-CX/3560-C/2960-CX/2960-C, all commercial-temp −5/+45) had to park DIN mounting in prose. **New S.5:** parse min/
+  max from Betriebstemperatur ("-5 bis 45 °C" → (-5,45)); a switch is **extended-range iff min ≤ −25 °C OR max ≥ +60 °C**.
+  **Reverse direction = HARD FAIL** (Industrie-Switch token ⇒ must be extended-range — a mis-tag is a real defect).
+  **Forward direction = WARN** (extended-range without the token is flagged, not failed). The forward severity is a
+  WARN, **not the originally-specified FAIL**, by operator decision after a pre-flight dry-run showed the bidirectional-
+  FAIL version would newly red-fail **30 already-built MikroTik SKUs**: MikroTik rates ordinary rackmount (CRS354/328),
+  data-center 100G (CRS504/510/518) and desktop-smart (CSS) switches to −20…−40/+60…+70 °C, so extended temp is
+  necessary-but-NOT-sufficient for "industrial" (the spec's premise "commercial tops at +45" holds for Cisco, not
+  MikroTik). DIN/Hutschiene substring + the now-unused `bauform` local fully removed. **Verified:** IE3100/IE3200/IE9300
+  → PASS (extended + carry Industrie-Switch → reverse passes, forward N/A); office-compact + every commercial Cisco
+  family → green (commercial temp, DIN-in-prose trips nothing — the case the old gate got wrong); MikroTik → green
+  (0 S.5 violations, **30 S.5 forward-warns**; still only the pre-existing L6 completeness fail). All 32 switch families
+  re-gate (no new failures); full suite **427 passed** (422 + 5 S.5 tests). **OPEN FOLLOW-UP (separate task, operator
+  decision):** the 30 MikroTik forward-warns flag a classification question — which `-IN`/`-OUT` ruggedized models are
+  genuinely Industrie-Switch vs which warm-rated rackmount/DC units should keep Managed/Data-Center. IP-Schutzart as a
+  second industrial signal stays deferred to the IE3400H (needs a new Merkmal + approval); temp alone covers IE3300/
+  IE3400/IE3500.
 
 ---
 

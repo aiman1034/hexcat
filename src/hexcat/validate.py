@@ -79,6 +79,23 @@ FAQ_CELL_REUSE_WARN_SKUS = 2
 FAQ_CELL_REUSE_FAIL_SKUS = 4
 _FAQ_AUTHENTICITY_RE = re.compile(r"^\s*ist dies ein original", re.IGNORECASE)
 
+# --- switch operating-temperature parse (switch gate S.5) ------------------------------
+# Parse a Betriebstemperatur string like "-5 bis 45 °C" / "-40 bis 70 °C" into (min, max)
+# integer °C. Used by S.5 to classify "extended-range" (industrial) operating temperature.
+# Accepts "bis" plus dash/ellipsis range separators; the low and high signs are read
+# independently so "-40 bis 70" parses as (-40, 70). Returns (None, None) if unparseable.
+_TEMP_RANGE_RE = re.compile(
+    r"(?P<lsign>[-−])?\s*(?P<lo>\d+)\s*(?:bis|–|—|…|\.\.\.)\s*(?P<hsign>[+\-−])?\s*(?P<hi>\d+)")
+
+
+def _parse_temp_range(s):
+    m = _TEMP_RANGE_RE.search(s or "")
+    if not m:
+        return (None, None)
+    lo = int(m.group("lo")) * (-1 if m.group("lsign") else 1)
+    hi = int(m.group("hi")) * (-1 if m.group("hsign") in ("-", "−") else 1)
+    return (lo, hi)
+
 
 # --- optical-module completeness (FAIL) ------------------------------------------------
 # Any module whose Kategorie Ebene 3 is a transceiver form factor (NOT a DAC/AOC/MPO cable)
@@ -829,7 +846,7 @@ class Validator:
                            "(missing)", f"gold-slice completeness: every switch must carry {req}")
         poe = vals.get("PoE", ""); portcfg = vals.get("Port-Konfiguration", "")
         layer = vals.get("Layer", ""); styp = vals.get("Switch-Typ", "")
-        bauform = vals.get("Bauform", ""); stacking = vals.get("Stacking", "")
+        stacking = vals.get("Stacking", "")
         # S.1 PoE budget present -> at least one PoE port in Port-Konfiguration.
         if re.search(r"\d+\s*W|Budget", poe) and not re.search(r"PoE|802\.3(?:af|at|bt)", portcfg, re.I):
             self._fail(fname, sku, "PoE", "a PoE port in Port-Konfiguration", poe,
@@ -852,10 +869,31 @@ class Validator:
         if stacking.strip().lower().startswith("ja") and styp.strip() != "Managed":
             self._fail(fname, sku, "Stacking", "Stacking only on a Managed switch", styp,
                        "semantic S.4: Stacking is valid only on a Managed switch")
-        # S.5 env-first single-token determinism (key case): a DIN-rail/Hutschiene switch must be Industrie.
-        if re.search(r"Hutschiene|DIN", bauform, re.I) and k3 != "Industrie-Switch":
-            self._fail(fname, sku, "Kategorie Ebene 3", "Industrie-Switch (DIN-rail, env-first)", k3,
-                       "semantic S.5: a DIN-rail/Hutschiene switch must take the Industrie-Switch token")
+        # S.5 environmental category determinism — keyed on OPERATING TEMPERATURE, not the Bauform/DIN
+        # substring. DIN-rail mounting is a mount option, not an industrial grade: office-compact
+        # families (3560-CX/3560-C/2960-CX/2960-C) are commercial-temp yet DIN-mountable, and the old
+        # substring trigger forced them wrongly into Industrie-Switch (so DIN mounting had to be parked
+        # in prose). The real signal is an extended operating-temperature range: min ≤ -25 °C OR
+        # max ≥ +60 °C. The two directions differ in severity because extended temp is necessary but
+        # NOT sufficient for "industrial" (MikroTik rates ordinary rackmount/data-center switches to
+        # +60/+70 °C):
+        #   reverse (HARD FAIL): the Industrie-Switch token REQUIRES an extended-range temp — a
+        #                        mis-tagged industrial SKU is a real defect.
+        #   forward (WARN):      an extended-range temp WITHOUT the token is flagged for review, not
+        #                        failed (a warm-rated commercial DC/rackmount switch is not industrial).
+        temp_lo, temp_hi = _parse_temp_range(vals.get("Betriebstemperatur", ""))
+        is_extended = temp_lo is not None and (temp_lo <= -25 or temp_hi >= 60)
+        is_industrie = k3 == "Industrie-Switch"
+        if is_industrie and temp_lo is not None and not is_extended:
+            self._fail(fname, sku, "Betriebstemperatur",
+                       "extended-range temp (min ≤ -25 °C or max ≥ +60 °C)",
+                       vals.get("Betriebstemperatur", ""),
+                       "semantic S.5: an Industrie-Switch must carry an extended operating-temperature range")
+        elif is_extended and not is_industrie:
+            self._warn(fname, sku, "Kategorie Ebene 3",
+                       f"extended operating temp ({vals.get('Betriebstemperatur', '')}) without the "
+                       "Industrie-Switch token — review classification (semantic S.5: extended temp is "
+                       "necessary but not sufficient for an industrial switch)")
         # S.6 PN-encoded port groups (vendors like MikroTik whose PN encodes ports) must appear in
         # Port-Konfiguration — catches the consistent-omission class S.3's sum can miss (e.g. combo "C").
         if re.match(r"^(CRS|CSS)\d", sku):
