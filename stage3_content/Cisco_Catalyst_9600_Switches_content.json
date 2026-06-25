@@ -1,0 +1,124 @@
+{
+ "C9606R": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 9606R Modularer Campus-Switch-Chassis – 4 Linecard-Slots, bis zu 25,6 tbit/s, 8 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco C9606R Catalyst 9600 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco C9606R (Catalyst 9600): modulares Campus-Switch-Chassis, 4 Linecard-Slots, bis zu 25,6 tbit/s, 8 HE, Leermodul-Chassis inkl. Lüfter-Tray (Module separat). Cisco IOS XE, redundante …",
+  "artikelgewicht": "28,92",
+  "versandgewicht": "40,00",
+  "kurzbeschreibung": "<p>Der Cisco C9606R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9600-Serie (8 HE) mit 4 Linecard-Slots und bis zu 25,6 Tbit/s Switching-Kapazität für hochverfügbare Campus-Netzwerke unter Cisco IOS XE.</p><p>Der C9606R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich.</p>",
+  "intro": [
+   "Der Cisco C9606R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9600-Serie (8 HE) mit 4 Linecard-Slots und 2 Supervisor-Slots für hochverfügbare, modulare Campus-Netzwerke. Der C9606R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Mit 6,4 Tbit/s pro Slot erreicht der C9606R eine Switching-Kapazität von bis zu 25,6 tbit/s (mit bestückten Supervisor- und Linecard-Modulen). Unterstützt werden Supervisoren (C9600-SUP-1 und C9600X-SUP-2) und Glasfaser-Linecards mit 10/25/50/100/400-Gigabit-Ethernet (Core/Aggregation, kein PoE).",
+   "Der C9606R läuft unter Cisco IOS XE (ab 16.11.1 mit SUP-1, ab 17.7.1 mit SUP-2) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, N+1-redundante Netzteile und Lüfter. Der Luftstrom verläuft side-to-side. Aufgrund von Größe und Gewicht wird der C9606R per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9600 Supervisor (C9600-SUP-1 und C9600X-SUP-2, separat)",
+   "Cisco Catalyst 9600 Linecards (10/25/50/100/400G Glasfaser, separat)",
+   "Hot-Swap-Netzteile (AC/DC, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des C9606R enthalten?",
+    "Der C9606R ist ein Leermodul-Chassis inklusive Lüfter-Tray. Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der C9606R?",
+    "Der C9606R hat 4 Linecard-Slots und 2 Supervisor-Slots (8 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9606R?",
+    "Der C9606R läuft unter Cisco IOS XE (ab 16.11.1 mit SUP-1, ab 17.7.1 mit SUP-2) und wird per CLI, WebUI oder NETCONF/RESTCONF/YANG verwaltet."
+   ],
+   [
+    "Liefert der C9606R PoE?",
+    "Nein – der C9606R ist ein Core-/Aggregations-Chassis mit Glasfaser-Linecards (10/25/50/100/400G) ohne PoE; PoE bietet die Catalyst-9400-Serie."
+   ],
+   [
+    "Wie wird der C9606R geliefert?",
+    "Aufgrund von Größe und Gewicht (28 kg Chassis, 8 HE) erfolgt der Versand des C9606R per Spedition mit Terminabstimmung."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Campus-Netzwerk"
+   ],
+   [
+    "Bauform",
+    "Modularer Campus-Switch-Chassis (4 Linecard-Slots, 8 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Lüfter-Tray C9606-FAN, 9 redundante Lüfter, Airflow side-to-side)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 4× Hot-Swap-Netzteil (3000 W / 2000 W AC oder 2000 W DC), min. 2, Combined/N+1-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 25,6 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9606R",
+    "Versandgewicht",
+    "40,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html"
+   ],
+   [
+    "C9606R",
+    "Artikelgewicht",
+    "28,92 = Chassis inkl. Lüfter-Tray, ohne Netzteile (Cisco HIG/Datenblatt)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9600-series-switches/nb-06-cat9600-series-data-sheet-cte-en.html"
+   ]
+  ]
+ }
+}

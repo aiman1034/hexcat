@@ -1,0 +1,368 @@
+{
+ "C9404R": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 9404R Modularer Campus-Switch-Chassis – 2 Linecard-Slots, bis zu 9 tbit/s, 6 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco C9404R Catalyst 9400 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco C9404R (Catalyst 9400): modulares Campus-Switch-Chassis, 2 Linecard-Slots, bis zu 9 tbit/s, 6 HE, Leermodul-Chassis inkl. Lüfter-Tray (Module separat). Cisco IOS XE, PoE über …",
+  "artikelgewicht": "17,20",
+  "versandgewicht": "24,00",
+  "kurzbeschreibung": "<p>Der Cisco C9404R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (6 HE) mit 2 Linecard-Slots und bis zu 9 Tbit/s Switching-Kapazität für hochverfügbare Campus-Netzwerke unter Cisco IOS XE.</p><p>Der C9404R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich. PoE-fähige Linecards liefern bis zu 90 W pro Port (UPOE+).</p>",
+  "intro": [
+   "Der Cisco C9404R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (6 HE) mit 2 Linecard-Slots und 2 Supervisor-Slots für hochverfügbare, modulare Campus-Netzwerke. Der C9404R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Mit 480 Gbit/s pro Slot (mit SUP-2XL) erreicht der C9404R eine Switching-Kapazität von bis zu 9 tbit/s (mit bestückten Supervisor- und Linecard-Modulen). PoE stellt der C9404R über Linecards bereit – UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W PoE-Budget pro Slot. Unterstützt werden Supervisoren (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL) und Linecards mit 1/10/25/40/100-Gigabit-Ethernet.",
+   "Der C9404R läuft unter Cisco IOS XE (ab 16.6.1) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, N+1-redundante Netzteile und Lüfter. Der Luftstrom verläuft side-to-side. Aufgrund von Größe und Gewicht wird der C9404R per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9400 Supervisor (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL, separat)",
+   "Cisco Catalyst 9400 Linecards (1/10/25/40/100G, PoE/UPOE+, separat)",
+   "Hot-Swap-Netzteile (AC/DC, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des C9404R enthalten?",
+    "Der C9404R ist ein Leermodul-Chassis inklusive Lüfter-Tray. Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der C9404R?",
+    "Der C9404R hat 2 Linecard-Slots und 2 Supervisor-Slots (6 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9404R?",
+    "Der C9404R läuft unter Cisco IOS XE (ab 16.6.1) und wird per CLI, WebUI oder NETCONF/RESTCONF/YANG verwaltet."
+   ],
+   [
+    "Liefert der C9404R PoE?",
+    "Ja – der C9404R stellt PoE über entsprechende Linecards bereit: UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W pro Slot."
+   ],
+   [
+    "Wie wird der C9404R geliefert?",
+    "Aufgrund von Größe und Gewicht (17 kg Chassis, 6 HE) erfolgt der Versand des C9404R per Spedition mit Terminabstimmung."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Campus-Netzwerk"
+   ],
+   [
+    "Bauform",
+    "Modularer Campus-Switch-Chassis (2 Linecard-Slots, 6 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (dual-serviceable Lüfter-Tray, N+1-redundante Lüfter, Airflow side-to-side)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 4× Hot-Swap-Netzteil (3200 W / 2100 W AC oder 3200 W DC), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 9 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9404R",
+    "Versandgewicht",
+    "24,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ],
+   [
+    "C9404R",
+    "Artikelgewicht",
+    "17,20 = Chassis inkl. Lüfter-Tray, ohne Netzteile (Cisco HIG/Datenblatt)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ]
+  ]
+ },
+ "C9407R": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 9407R Modularer Campus-Switch-Chassis – 5 Linecard-Slots, bis zu 9 tbit/s, 10 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco C9407R Catalyst 9400 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco C9407R (Catalyst 9400): modulares Campus-Switch-Chassis, 5 Linecard-Slots, bis zu 9 tbit/s, 10 HE, Leermodul-Chassis inkl. Lüfter-Tray (Module separat). Cisco IOS XE, PoE über …",
+  "artikelgewicht": "28,58",
+  "versandgewicht": "38,00",
+  "kurzbeschreibung": "<p>Der Cisco C9407R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (10 HE) mit 5 Linecard-Slots und bis zu 9 Tbit/s Switching-Kapazität für hochverfügbare Campus-Netzwerke unter Cisco IOS XE.</p><p>Der C9407R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich. PoE-fähige Linecards liefern bis zu 90 W pro Port (UPOE+).</p>",
+  "intro": [
+   "Der Cisco C9407R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (10 HE) mit 5 Linecard-Slots und 2 Supervisor-Slots für hochverfügbare, modulare Campus-Netzwerke. Der C9407R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Mit 480 Gbit/s pro Slot (mit SUP-2XL) erreicht der C9407R eine Switching-Kapazität von bis zu 9 tbit/s (mit bestückten Supervisor- und Linecard-Modulen). PoE stellt der C9407R über Linecards bereit – UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W PoE-Budget pro Slot. Unterstützt werden Supervisoren (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL) und Linecards mit 1/10/25/40/100-Gigabit-Ethernet.",
+   "Der C9407R läuft unter Cisco IOS XE (ab 16.6.1) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, N+1-redundante Netzteile und Lüfter. Der Luftstrom verläuft side-to-side. Aufgrund von Größe und Gewicht wird der C9407R per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9400 Supervisor (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL, separat)",
+   "Cisco Catalyst 9400 Linecards (1/10/25/40/100G, PoE/UPOE+, separat)",
+   "Hot-Swap-Netzteile (AC/DC, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des C9407R enthalten?",
+    "Der C9407R ist ein Leermodul-Chassis inklusive Lüfter-Tray. Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der C9407R?",
+    "Der C9407R hat 5 Linecard-Slots und 2 Supervisor-Slots (10 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9407R?",
+    "Der C9407R läuft unter Cisco IOS XE (ab 16.6.1) und wird per CLI, WebUI oder NETCONF/RESTCONF/YANG verwaltet."
+   ],
+   [
+    "Liefert der C9407R PoE?",
+    "Ja – der C9407R stellt PoE über entsprechende Linecards bereit: UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W pro Slot."
+   ],
+   [
+    "Wie wird der C9407R geliefert?",
+    "Aufgrund von Größe und Gewicht (28 kg Chassis, 10 HE) erfolgt der Versand des C9407R per Spedition mit Terminabstimmung."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Campus-Netzwerk"
+   ],
+   [
+    "Bauform",
+    "Modularer Campus-Switch-Chassis (5 Linecard-Slots, 10 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (dual-serviceable Lüfter-Tray, N+1-redundante Lüfter, Airflow side-to-side)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 8× Hot-Swap-Netzteil (3200 W / 2100 W AC oder 3200 W DC), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 9 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9407R",
+    "Versandgewicht",
+    "38,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ],
+   [
+    "C9407R",
+    "Artikelgewicht",
+    "28,58 = Chassis inkl. Lüfter-Tray, ohne Netzteile (Cisco HIG/Datenblatt)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ]
+  ]
+ },
+ "C9410R": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco Catalyst 9410R Modularer Campus-Switch-Chassis – 8 Linecard-Slots, bis zu 9 tbit/s, 13 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco C9410R Catalyst 9400 Chassis-Switch | Hexwaren",
+  "meta_description": "Original Cisco C9410R (Catalyst 9400): modulares Campus-Switch-Chassis, 8 Linecard-Slots, bis zu 9 tbit/s, 13 HE, Leermodul-Chassis inkl. Lüfter-Tray (Module separat). Cisco IOS XE, PoE über …",
+  "artikelgewicht": "29,48",
+  "versandgewicht": "40,00",
+  "kurzbeschreibung": "<p>Der Cisco C9410R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (13 HE) mit 8 Linecard-Slots und bis zu 9 Tbit/s Switching-Kapazität für hochverfügbare Campus-Netzwerke unter Cisco IOS XE.</p><p>Der C9410R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich. PoE-fähige Linecards liefern bis zu 90 W pro Port (UPOE+).</p>",
+  "intro": [
+   "Der Cisco C9410R ist ein modulares Campus-Switch-Chassis der Cisco-Catalyst-9400-Serie (13 HE) mit 8 Linecard-Slots und 2 Supervisor-Slots für hochverfügbare, modulare Campus-Netzwerke. Der C9410R wird als Leermodul-Chassis inklusive Lüfter-Tray geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Mit 480 Gbit/s pro Slot (mit SUP-2XL) erreicht der C9410R eine Switching-Kapazität von bis zu 9 tbit/s (mit bestückten Supervisor- und Linecard-Modulen). PoE stellt der C9410R über Linecards bereit – UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W PoE-Budget pro Slot. Unterstützt werden Supervisoren (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL) und Linecards mit 1/10/25/40/100-Gigabit-Ethernet.",
+   "Der C9410R läuft unter Cisco IOS XE (ab 16.6.1) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, N+1-redundante Netzteile und Lüfter. Der Luftstrom verläuft side-to-side. Aufgrund von Größe und Gewicht wird der C9410R per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst 9400 Supervisor (C9400-SUP-1/1XL/1XL-Y und C9400X-SUP-2/2XL, separat)",
+   "Cisco Catalyst 9400 Linecards (1/10/25/40/100G, PoE/UPOE+, separat)",
+   "Hot-Swap-Netzteile (AC/DC, separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des C9410R enthalten?",
+    "Der C9410R ist ein Leermodul-Chassis inklusive Lüfter-Tray. Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der C9410R?",
+    "Der C9410R hat 8 Linecard-Slots und 2 Supervisor-Slots (13 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9410R?",
+    "Der C9410R läuft unter Cisco IOS XE (ab 16.6.1) und wird per CLI, WebUI oder NETCONF/RESTCONF/YANG verwaltet."
+   ],
+   [
+    "Liefert der C9410R PoE?",
+    "Ja – der C9410R stellt PoE über entsprechende Linecards bereit: UPOE+ (bis 90 W/Port), UPOE (60 W) und PoE+ nach IEEE 802.3bt (Typ 4), mit bis zu 4.800 W pro Slot."
+   ],
+   [
+    "Wie wird der C9410R geliefert?",
+    "Aufgrund von Größe und Gewicht (29 kg Chassis, 13 HE) erfolgt der Versand des C9410R per Spedition mit Terminabstimmung."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Campus-Netzwerk"
+   ],
+   [
+    "Bauform",
+    "Modularer Campus-Switch-Chassis (8 Linecard-Slots, 13 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (dual-serviceable Lüfter-Tray, N+1-redundante Lüfter, Airflow side-to-side)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 8× Hot-Swap-Netzteil (3200 W / 2100 W AC oder 3200 W DC), N+1/N+N-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 9 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9410R",
+    "Versandgewicht",
+    "40,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ],
+   [
+    "C9410R",
+    "Artikelgewicht",
+    "29,48 = Chassis inkl. Lüfter-Tray, ohne Netzteile (Cisco HIG/Datenblatt)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/nb-06-cat9400-ser-data-sheet-cte-en.html"
+   ]
+  ]
+ }
+}

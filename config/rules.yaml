@@ -90,6 +90,10 @@ kategorie_ebene_3_switch_allowed:
   # chassis-class (see constants.CHASSIS_KAT3_VALUES): reduced 7-attr set, port Merkmale forbidden,
   # S.1/S.3/S.4 skipped, S.2/S.5 kept. Additive — activates only for this Kat-L3.
   - "Fibre-Channel-Director"
+  # Modularer Switch (Chassis) (added 2026-06-25): Ethernet campus/DC modular chassis (Catalyst 9400/9600,
+  # later Nexus 9500). Switch-class + chassis-class (same reduced 7-attr carve-out), but Ebene-2 stays the
+  # DEFAULT "Switches" (NOT in KATEGORIE_EBENE_2_BY_KAT3). Additive — activates only for this Kat-L3.
+  - "Modularer Switch (Chassis)"
 
 # Word / character budgets.
 budgets:

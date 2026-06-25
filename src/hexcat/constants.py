@@ -134,7 +134,10 @@ SWITCH_EBENE2_VALUES: frozenset[str] = frozenset({CATEGORY_SWITCH_L2, *KATEGORIE
 # Betriebstemperatur, Kühlung, Stromversorgung, Switch-Typ, Switching-Kapazität), FORBID the port-centric
 # Merkmale (Portanzahl/Port-Konfiguration/Port-Geschwindigkeit/PoE/Stacking), and skip the port-rules
 # S.1/S.3/S.4 while keeping S.2/S.5. Additive: empty for every non-chassis SKU → no behaviour change.
-CHASSIS_KAT3_VALUES: frozenset[str] = frozenset({"Fibre-Channel-Director"})
+CHASSIS_KAT3_VALUES: frozenset[str] = frozenset({
+    "Fibre-Channel-Director",            # modular FC SAN directors (MDS 9700) — Ebene-2 "SAN & Fibre Channel"
+    "Modularer Switch (Chassis)",        # Ethernet campus/DC modular chassis (Catalyst 9400/9600, later Nexus 9500)
+})
 CHASSIS_REQUIRED_ATTRS: tuple[str, ...] = (
     "Anwendung", "Bauform", "Betriebstemperatur", "Kühlung", "Stromversorgung",
     "Switch-Typ", "Switching-Kapazität",

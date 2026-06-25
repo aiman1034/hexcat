@@ -2816,6 +2816,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   built `Cisco_MDS_9700` 3. Families in scope **69**. **Coverage now: 529 built, 41 families complete, 58%. CISCO MDS IS
   FULLY CLOSED** (V+T+S+MS fixed-fabric + 9700 directors = 13 SKUs). Remaining: the MDS module/component track (future
   "Module & Komponenten" category, Fawaz to create) — not switches.
+- **ETHERNET CHASSIS extension + BUILD Cisco_Catalyst_9400 (3/3) + Cisco_Catalyst_9600 (1/1) — Ethernet Chassis
+  Round 1 (2026-06-25).** Extends the chassis carve-out from FC directors to Ethernet campus modular chassis. SRC-
+  touching but tiny + additive. **Part A (3 edits):** registered Kat-L3 **`Modularer Switch (Chassis)`** in
+  `CHASSIS_KAT3_VALUES` (constants.py) + `kategorie_ebene_3_switch_allowed` (config.py + rules.yaml); added a PID-welded
+  Ethernet-chassis branch to `reconcile._closer` **before** the generic `if "Switch" in kategorie3` fallback (`Originaler
+  {hersteller}-Chassis-Switch ({pn}) für den Aufbau modularer, hochverfügbarer Netzwerkinfrastrukturen.` — product-line-
+  agnostic, also serves the later Nexus 9500). **Deliberately NOT in `KATEGORIE_EBENE_2_BY_KAT3`** → Ebene-2 defaults to
+  `Switches` (the standard switch branch, unlike the FC directors' `SAN & Fibre Channel`). The existing `_check_chassis_sku`
+  + L5 chassis ceiling handle it unchanged. **#1 check — ZERO REGRESSION: A/B gate of ALL 44 families at HEAD~1 vs HEAD →
+  byte-identical** (stash A/B; only the pre-existing MikroTik L6). **Part B — 2 chassis-only families:** Cisco_Catalyst_9400
+  = C9404R (2 LC/6HE/17,20 kg) / C9407R (5 LC/10HE/28,58 kg) / C9410R (8 LC/13HE/29,48 kg), all SwK "Bis zu 9 Tbit/s";
+  Cisco_Catalyst_9600 = C9606R (4 LC/8HE/28,92 kg), SwK "Bis zu 25,6 Tbit/s". 7 attrs each (no port Merkmale), Kat-L3
+  `Modularer Switch (Chassis)`, Ebene-2 `Switches`, Anwendung `Campus-Netzwerk` (no canonical short campus value existed to
+  reuse — the fixed Catalyst use long per-SKU strings), SwK provenance `datasheet`. **IOS XE RETAINED in prose** (Catalyst
+  runs IOS XE — the IOS XE=0 rule was MDS/NX-OS-specific). **PoE in prose on the 9400 ONLY** (UPOE+ 90 W via line cards);
+  the 9606R is core/aggregation/fiber, NO PoE. Supervisors/line-cards/PSU separate → future Module & Komponenten track,
+  excluded + in prose. Weights = chassis incl. fan tray; Versandgewicht estimated + flagged; Spedition; current-shipping
+  (no EoS); §5-clean; single Cisco-Chassis-Switch closer; Beschreibung 148/125 words. Prices Phase-2 provisional
+  (9400 8000/12000/15000, 9606R 14000; no-BOM/LF, 0 `;0,00`). Added `tests/test_ethernet_chassis.py` (4 tests) + fixture.
+  **Rebuilt Cisco_MDS_MS** (content regen, no data change) to propagate the closer fix → now renders **`9220i`/`9250i`**
+  (lowercase). **Coverage correction:** removed the phantom **C9610R** from `cisco_switches_coverage.yaml` — the harvest's
+  this-session cisco.com fetch confirms the 9600 has exactly one chassis (C9606R); the older og_ordering-sourced C9610R
+  did not exist. **Both new bundles canonical gate ok=True / 0 viol / 0 warn**; all 46 switch families re-gate PASS
+  (MikroTik L6 pre-existing); full suite **438 passed, 0 skipped, 0 failed** (434 + 4 ethernet-chassis tests). Manifest:
+  Catalyst 9400 ✅ 3/3, 9600 ✅ 1/1 (via the coverage path; chassis already in `cov["switches"]`), C9610 family removed.
+  Families in scope **68**. **Coverage now: 533 built, 43 families complete, 59%.** (First Ethernet chassis; the carve-out
+  is now proven for both FC directors and Ethernet campus chassis — Nexus 9500 DC chassis can reuse it.)
 
 ---
 

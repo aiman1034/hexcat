@@ -209,6 +209,13 @@ def _closer(hersteller: str, kategorie3: str, pn: str = "") -> str:
         noun = "Fibre-Channel-Director" if kategorie3 == "Fibre-Channel-Director" else "Fibre-Channel-Switch"
         return (f"Originaler {hersteller}-MDS{modell}-{noun} ({pn}) "
                 f"für den Aufbau hochverfügbarer Fibre-Channel-Fabrics.")
+    if kategorie3 == "Modularer Switch (Chassis)" and pn:
+        # Ethernet modular chassis (Catalyst 9400/9600, later Nexus 9500). PID-welded, product-line-
+        # agnostic; keeps the gate-required "Originaler {brand}-<noun>" form (closer_present's `{brand}-\w`
+        # matches "Cisco-C…"). MUST precede the generic fallback — "Modularer Switch (Chassis)" contains
+        # "Switch", so the fallback would otherwise catch it first and drop the PID.
+        return (f"Originaler {hersteller}-Chassis-Switch ({pn}) "
+                f"für den Aufbau modularer, hochverfügbarer Netzwerkinfrastrukturen.")
     if "Switch" in kategorie3:          # any switch L3 token (Rule-7) — masculine "Switch"
         return f"Originaler {hersteller}-Switch für {tail}."
     return f"Originaler {hersteller}-Transceiver für {tail}."
