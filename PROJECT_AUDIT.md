@@ -2612,6 +2612,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `Cisco_IE3500` 12 + spun the IE3500H Heavy-Duty pointer out to its own future OTHER row (~6, M12/IP67, wants the IP-
   Schutzart signal); families in scope **62→63**. reconciler → 100%. Re-gated all 34 Cisco switch families → all PASS
   (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 477 built, 34 families complete, 54%.**
+- **BUILD Cisco_C3850 core copper (21/21), family #26 (2026-06-25).** New folder from `c3850_harvest_source.md`
+  (DS C78-720918). EoS enterprise stackable Gigabit access (successor Catalyst 9300; new-sealed EoL channel, refurb
+  hard-reject). First of a 2-family 3850+3650 round. 21 = 7 core copper configs (24T/48T/24P/48P/48F/24U/48U) × 3
+  licenses (-L LAN Base=L2 / -S IP Base=L3 / -E IP Services=L3). **NOT industrial** — commercial −5/+45 → Kat-L3
+  Managed Switch (L2)/(L3), never Industrie-Switch; **S.5 silent** (verified viol=0 warn=0, the first commercial family
+  on the re-keyed S.5). License drives Layer+Kat-L3: 7 L2 + 14 L3 (Layer↔suffix exact); **S.2 passes** on the 14 L3.
+  **They stack** (StackWise-480, 480 Gbit/s, up to 9 + StackPower) → Switch-Typ exactly "Managed" on all 21 → **S.4
+  fires + passes** on every SKU (incl. the L2 LAN Base ones). **MACsec-128 ONLY** (grep "256" = 0). **Modular uplinks**
+  (optional NM slot, none fixed) → every SKU **{14}, no 15th Uplink-Ports attr** (the structural contrast vs the 3650).
+  SwK 92/176 Gbit/s, Durchsatz 68,4/130,95 Mpps (24U/48U parity-derived from 24P/48P — DS gap, physically dictated,
+  asserted not [VERIFY]). Four PoE tiers: T=Nein, P/F=PoE+ (802.3at, 30 W/Port), U=UPOE (60 W/Port) — **PoE attribute
+  carries the standard only (no total budget) so 48P==48F** (435 W vs 800 W budget → description); PoE marked in
+  Port-Konfiguration so S.1 passes (the per-port "30 W" in the PoE attr would otherwise trip S.1 against the modular-
+  uplink Port-Konfig). OS Cisco IOS XE (UADP; no NX-OS/Meraki), E-LLW, EoS. §5 0 (incl. `\bsealed\b`), single-closer,
+  no [VERIFY], no Tbit, no Industrie/DIN, refurb hard-rejected (0 direkt / 21 geschätzt), ungrouped NO-BOM 0-zeros,
+  Main↔Prices both 21, Datentyp Wertliste, **gate PASS**. Priced €350–3.500, **3-axis monotonic** Port×PoE×Lizenz
+  (floor 24T-L, ceiling 48U-E; -S=base×1,3, -E=base×1,6). Manifest: split the legacy "3850 ~24" → built `Cisco_C3850`
+  (core copper 21) + a deferred "3850 (fiber/mGig/10G/40G) ~18" Round-2 remainder; families in scope **63→64**.
+  reconciler → 100%. Re-gated all 35 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427
+  passed**. **Coverage now: 498 built, 35 families complete, 56%.** (3650 is the companion family, building next.)
 
 ---
 
