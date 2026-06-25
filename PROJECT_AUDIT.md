@@ -2566,6 +2566,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   genuinely Industrie-Switch vs which warm-rated rackmount/DC units should keep Managed/Data-Center. IP-Schutzart as a
   second industrial signal stays deferred to the IE3400H (needs a new Merkmal + approval); temp alone covers IE3300/
   IE3400/IE3500.
+- **BUILD current-IE pair — Cisco_IE3400 (4/4) + Cisco_IE3300 (8/8), families #23–24 (2026-06-24).** Two new folders
+  from `ie3400_harvest_source.md` (DS 13-May-2025) + `ie3300_harvest_source.md` (DS 12-May-2025) — **the FIRST families
+  built on the re-keyed S.5** (`d76ec90`). Every IE SKU carries **Betriebstemperatur "-40 bis 75 °C" AND Kat-L3
+  "Industrie-Switch" together → reverse S.5 PASSES** (verified directly: both families S.5 violations=0, warns=0). DIN-
+  rail now lives in the **Bauform attribute** ("Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)") — no more
+  parking it in prose. Both: Switch-Typ Managed, Layer L3 (the -E/-A suffix is routing-depth+security, **not** a Layer
+  split — built as separate SKUs), OS Cisco IOS XE (no NX-OS/Meraki), fanless, Dual-DC (9,6–60 VDC, no AC), Stacking
+  Nein (ring-based; StackWise/StackPower/FlexStack = 0, S.4 idle), MACsec real, 5-yr HW warranty, Portanz 10, current/
+  shipping (no EoS). **S.2 passes** (all 12 L3 Managed-exact). **IE3400 (4):** IE-3400-8T2S-{E,A} (data, Nein) +
+  8P2S-{E,A} (PoE+ 802.3af/at 30 W, 240 W); 1G SFP uplinks → **{14:4}**; SwK 20 / Durchsatz 14,9 all; redundancy REP/
+  MRP/DLR/HSR/PRP; **TrustSec/SGT/SGACL present on -A** (Advantage). Priced €1.200–2.800 (PoE×Lizenz, floor 8T2S-E,
+  ceiling 8P2S-A). **IE3300 (8) — the 3-trap family:** 8T2S/8P2S (1G-up) + 8T2X/8U2X (10G-up), each ×{E,A}. (1) **10G-
+  uplink models get the 15th Uplink-Ports = "2× 10G-SFP+" → {14:4, 15:4}** (Port-Gesch 1G all = downlink speed). (2)
+  **SwK/Durchsatz split by uplink:** 1G = 20/14,9, 10G = 56/41,7. (3) **REP+MRP ONLY** (no DLR/HSR/PRP) and **no
+  TrustSec/SGT** — both IE3400-only; verified absent in the IE3300 output (no leak). PoE three-way: 8T2S/8T2X=Nein,
+  8P2S=PoE+ (240 W), **8U2X=4-Paar-PoE/802.3bt Typ 3 (60 W, 480 W)** — not PoE+. Priced €900–2.600 (3-axis monotonic
+  Lizenz×PoE×Uplink, floor 8T2S-E, ceiling 8U2X-A; trimmed two bt/10G Beschreibungen that overflowed 175 words). Both:
+  §5 0 (incl. `\bsealed\b`), single-closer, no [VERIFY], no Tbit, refurb hard-rejected (0 direkt / 12 geschätzt),
+  ungrouped NO-BOM 0-zeros, Main↔Prices exact (4 + 8), **both gate PASS**. Manifest: replaced the inflated modular
+  "IE3300 ~10"/"IE3400 ~12" OTHER rows (they over-counted IEM expansion modules — excluded accessories) with the real
+  base families (8 + 4); families in scope **62** (net 0), in-scope est ~873→~863. reconciler → both 100%. Re-gated all
+  33 Cisco switch families → all PASS (MikroTik L6 pre-existing); full suite **427 passed**. **Coverage now: 465 built,
+  33 families complete, 53%.**
 
 ---
 

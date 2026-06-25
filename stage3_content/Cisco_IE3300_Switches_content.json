@@ -1,0 +1,1378 @@
+{
+ "IE-3300-8T2S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8T2S-E Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 + 2× 1G-SFP",
+  "titel_tag": "Cisco IE-3300-8T2S-E IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8T2S-E (Catalyst IE3300, Network Essentials): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× GbE-SFP, −40/+75 °C, MACsec-128. Cisco IOS XE, Dual-DC, 5 …",
+  "artikelgewicht": "1,7",
+  "versandgewicht": "2,5",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8T2S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 2× 1G-SFP-Uplinks. Der IE-3300-8T2S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8T2S-E bietet Ring-Redundanz (REP, MRP), MACsec-128-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8T2S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 2× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8T2S-E eine Switching-Kapazität von 20 Gbit/s bei einer Weiterleitungsrate von 14,9 Mpps. Die acht Downlink-Ports des IE-3300-8T2S-E sind reine Datenports ohne PoE-Einspeisung. Mit der Network Essentials-Lizenz beherrscht der IE-3300-8T2S-E Inter-VLAN- und statisches Routing, MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3300-8T2S-E lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8T2S-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8T2S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8T2S-E?",
+    "Der IE-3300-8T2S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3300-8T2S-E?",
+    "Der IE-3300-8T2S-E trägt die Network Essentials-Lizenz: Layer-2-Switching plus Inter-VLAN- und statisches Routing sowie MACsec-128. Für volles dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256 gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Hat der IE-3300-8T2S-E PoE?",
+    "Nein, der IE-3300-8T2S-E ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind das 8P2S (PoE+, 240 W) und das 8U2X (4-Paar-PoE/802.3bt, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8T2S-E?",
+    "Der IE-3300-8T2S-E besitzt zwei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T2X-/8U2X-Modelle der Serie."
+   ],
+   [
+    "Wofür ist der IE-3300-8T2S-E ausgelegt?",
+    "Der IE-3300-8T2S-E ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Essentials (Inter-VLAN-/statisches Routing und MACsec-128); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8T2S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8T2S-A Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 + 2× 1G-SFP",
+  "titel_tag": "Cisco IE-3300-8T2S-A IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8T2S-A (Catalyst IE3300, Network Advantage): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× GbE-SFP, −40/+75 °C, MACsec-256. Cisco IOS XE, Dual-DC, 5 …",
+  "artikelgewicht": "1,7",
+  "versandgewicht": "2,5",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8T2S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 2× 1G-SFP-Uplinks. Der IE-3300-8T2S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8T2S-A bietet Ring-Redundanz (REP, MRP), MACsec-256-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8T2S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein Daten-Industrie-Switch, 8× 1G-RJ45 + 2× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8T2S-A eine Switching-Kapazität von 20 Gbit/s bei einer Weiterleitungsrate von 14,9 Mpps. Die acht Downlink-Ports des IE-3300-8T2S-A sind reine Datenports ohne PoE-Einspeisung. Mit der Network Advantage-Lizenz beherrscht der IE-3300-8T2S-A volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3300-8T2S-A lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8T2S-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8T2S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8T2S-A?",
+    "Der IE-3300-8T2S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3300-8T2S-A?",
+    "Der IE-3300-8T2S-A trägt die Network Advantage-Lizenz: volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast. Die -E-Variante (Network Essentials) bietet stattdessen Inter-VLAN-/statisches Routing und MACsec-128."
+   ],
+   [
+    "Hat der IE-3300-8T2S-A PoE?",
+    "Nein, der IE-3300-8T2S-A ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind das 8P2S (PoE+, 240 W) und das 8U2X (4-Paar-PoE/802.3bt, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8T2S-A?",
+    "Der IE-3300-8T2S-A besitzt zwei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T2X-/8U2X-Modelle der Serie."
+   ],
+   [
+    "Wofür ist der IE-3300-8T2S-A ausgelegt?",
+    "Der IE-3300-8T2S-A ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Advantage (dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8P2S-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8P2S-E Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 (PoE+) + 2× 1G-SFP",
+  "titel_tag": "Cisco IE-3300-8P2S-E IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8P2S-E (Catalyst IE3300, Network Essentials): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-128. Cisco IOS …",
+  "artikelgewicht": "1,7",
+  "versandgewicht": "2,5",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8P2S-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 2× 1G-SFP-Uplinks. Der IE-3300-8P2S-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8P2S-E bietet Ring-Redundanz (REP, MRP), MACsec-128-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8P2S-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 2× 1G-SFP, mit Network Essentials-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8P2S-E eine Switching-Kapazität von 20 Gbit/s bei einer Weiterleitungsrate von 14,9 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3300-8P2S-E Industriekameras, Sensoren und Access-Points. Mit der Network Essentials-Lizenz beherrscht der IE-3300-8P2S-E Inter-VLAN- und statisches Routing, MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3300-8P2S-E lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8P2S-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8P2S-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8P2S-E?",
+    "Der IE-3300-8P2S-E ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3300-8P2S-E?",
+    "Der IE-3300-8P2S-E trägt die Network Essentials-Lizenz: Layer-2-Switching plus Inter-VLAN- und statisches Routing sowie MACsec-128. Für volles dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256 gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3300-8P2S-E?",
+    "Der IE-3300-8P2S-E liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8P2S-E?",
+    "Der IE-3300-8P2S-E besitzt zwei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T2X-/8U2X-Modelle der Serie."
+   ],
+   [
+    "Wofür ist der IE-3300-8P2S-E ausgelegt?",
+    "Der IE-3300-8P2S-E ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Essentials (Inter-VLAN-/statisches Routing und MACsec-128); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8P2S-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8P2S-A Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 (PoE+) + 2× 1G-SFP",
+  "titel_tag": "Cisco IE-3300-8P2S-A IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8P2S-A (Catalyst IE3300, Network Advantage): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× GbE-SFP, PoE+ 240 W, −40/+75 °C, MACsec-256. Cisco IOS XE, …",
+  "artikelgewicht": "1,7",
+  "versandgewicht": "2,5",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8P2S-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 240-W-PoE+-Budget (802.3af/at) und 2× 1G-SFP-Uplinks. Der IE-3300-8P2S-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8P2S-A bietet Ring-Redundanz (REP, MRP), MACsec-256-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8P2S-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein PoE+-Industrie-Switch (240 W), 8× 1G-RJ45 (PoE+) + 2× 1G-SFP, mit Network Advantage-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8P2S-A eine Switching-Kapazität von 20 Gbit/s bei einer Weiterleitungsrate von 14,9 Mpps. Über sein PoE+-Budget von 240 W (IEEE 802.3af/at, bis 30 W/Port) versorgt der IE-3300-8P2S-A Industriekameras, Sensoren und Access-Points. Mit der Network Advantage-Lizenz beherrscht der IE-3300-8P2S-A volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3300-8P2S-A lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8P2S-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8P2S-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8P2S-A?",
+    "Der IE-3300-8P2S-A ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3300-8P2S-A?",
+    "Der IE-3300-8P2S-A trägt die Network Advantage-Lizenz: volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast. Die -E-Variante (Network Essentials) bietet stattdessen Inter-VLAN-/statisches Routing und MACsec-128."
+   ],
+   [
+    "Welches PoE-Budget hat der IE-3300-8P2S-A?",
+    "Der IE-3300-8P2S-A liefert PoE+ nach IEEE 802.3af/at (bis 30 W/Port) mit insgesamt 240 W für Industriekameras, Sensoren und Access-Points."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8P2S-A?",
+    "Der IE-3300-8P2S-A besitzt zwei GE-SFP-Uplinks (1 Gbit/s) plus 8 Gigabit-Downlinks; 10G-SFP+-Uplinks bieten die 8T2X-/8U2X-Modelle der Serie."
+   ],
+   [
+    "Wofür ist der IE-3300-8P2S-A ausgelegt?",
+    "Der IE-3300-8P2S-A ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE+) + 2× 1G-SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "PoE",
+    "Ja – PoE+ (IEEE 802.3af/at, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; PoE+-Versorgung (802.3af/at, 240 W) für Industriekameras, Sensoren und Access-Points; Network Advantage (dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8T2X-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8T2X-E Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 + 2× 10G-SFP+",
+  "titel_tag": "Cisco IE-3300-8T2X-E IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8T2X-E (Catalyst IE3300, Network Essentials): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× 10G-SFP+, −40/+75 °C, MACsec-128. Cisco IOS XE, Dual-DC, …",
+  "artikelgewicht": "1,6",
+  "versandgewicht": "2,4",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8T2X-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 2× 10G-SFP+-Uplinks. Der IE-3300-8T2X-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8T2X-E bietet Ring-Redundanz (REP, MRP), MACsec-128-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8T2X-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein Daten-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 + 2× 10G-SFP+, mit Network Essentials-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8T2X-E eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Die acht Downlink-Ports des IE-3300-8T2X-E sind reine Datenports ohne PoE-Einspeisung. Zwei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Essentials-Lizenz beherrscht der IE-3300-8T2X-E Inter-VLAN- und statisches Routing, MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3300-8T2X-E lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8T2X-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8T2X-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8T2X-E?",
+    "Der IE-3300-8T2X-E ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3300-8T2X-E?",
+    "Der IE-3300-8T2X-E trägt die Network Essentials-Lizenz: Layer-2-Switching plus Inter-VLAN- und statisches Routing sowie MACsec-128. Für volles dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256 gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Hat der IE-3300-8T2X-E PoE?",
+    "Nein, der IE-3300-8T2X-E ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind das 8P2S (PoE+, 240 W) und das 8U2X (4-Paar-PoE/802.3bt, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8T2X-E?",
+    "Der IE-3300-8T2X-E besitzt zwei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Wofür ist der IE-3300-8T2X-E ausgelegt?",
+    "Der IE-3300-8T2X-E ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Essentials (Inter-VLAN-/statisches Routing und MACsec-128); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8T2X-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8T2X-A Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 + 2× 10G-SFP+",
+  "titel_tag": "Cisco IE-3300-8T2X-A IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8T2X-A (Catalyst IE3300, Network Advantage): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× 10G-SFP+, −40/+75 °C, MACsec-256. Cisco IOS XE, Dual-DC, 5 …",
+  "artikelgewicht": "1,6",
+  "versandgewicht": "2,4",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8T2X-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks ohne PoE (reine Datenports) und 2× 10G-SFP+-Uplinks. Der IE-3300-8T2X-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8T2X-A bietet Ring-Redundanz (REP, MRP), MACsec-256-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8T2X-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein Daten-Industrie-Switch mit 10G-SFP+-Uplinks, 8× 1G-RJ45 + 2× 10G-SFP+, mit Network Advantage-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8T2X-A eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Die acht Downlink-Ports des IE-3300-8T2X-A sind reine Datenports ohne PoE-Einspeisung. Zwei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Advantage-Lizenz beherrscht der IE-3300-8T2X-A volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3300-8T2X-A lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8T2X-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8T2X-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8T2X-A?",
+    "Der IE-3300-8T2X-A ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3300-8T2X-A?",
+    "Der IE-3300-8T2X-A trägt die Network Advantage-Lizenz: volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast. Die -E-Variante (Network Essentials) bietet stattdessen Inter-VLAN-/statisches Routing und MACsec-128."
+   ],
+   [
+    "Hat der IE-3300-8T2X-A PoE?",
+    "Nein, der IE-3300-8T2X-A ist ein Datenmodell ohne PoE; PoE-Varianten der Serie sind das 8P2S (PoE+, 240 W) und das 8U2X (4-Paar-PoE/802.3bt, 480 W)."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8T2X-A?",
+    "Der IE-3300-8T2X-A besitzt zwei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Wofür ist der IE-3300-8T2X-A ausgelegt?",
+    "Der IE-3300-8T2X-A ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; reine Datenports ohne PoE; Network Advantage (dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8U2X-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8U2X-E Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Essentials) – 8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+",
+  "titel_tag": "Cisco IE-3300-8U2X-E IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8U2X-E (Catalyst IE3300, Network Essentials): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× 10G-SFP+, 4PPoE 480 W, −40/+75 °C, MACsec-128. Cisco IOS …",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,8",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8U2X-E ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 480-W-4-Paar-PoE-Budget (802.3bt Typ 3) und 2× 10G-SFP+-Uplinks. Der IE-3300-8U2X-E läuft unter Cisco IOS XE mit Network Essentials-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8U2X-E bietet Ring-Redundanz (REP, MRP), MACsec-128-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8U2X-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein 4-Paar-PoE-Industrie-Switch (480 W) mit 10G-SFP+-Uplinks, 8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+, mit Network Essentials-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8U2X-E eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Über 4-Paar-PoE (IEEE 802.3bt Typ 3) liefert der IE-3300-8U2X-E bis zu 60 W pro Port (480 W) für UHD-PTZ-Kameras und Wi-Fi-6-APs. Zwei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Essentials-Lizenz beherrscht der IE-3300-8U2X-E Inter-VLAN- und statisches Routing, MACsec-128.",
+   "Robust ausgelegt arbeitet der IE-3300-8U2X-E lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8U2X-E Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8U2X-E läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Essentials)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8U2X-E?",
+    "Der IE-3300-8U2X-E ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Essentials-Lizenz des IE-3300-8U2X-E?",
+    "Der IE-3300-8U2X-E trägt die Network Essentials-Lizenz: Layer-2-Switching plus Inter-VLAN- und statisches Routing sowie MACsec-128. Für volles dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256 gibt es dieselbe Hardware als -A-Variante (Network Advantage)."
+   ],
+   [
+    "Welches PoE hat der IE-3300-8U2X-E?",
+    "Der IE-3300-8U2X-E bietet 4-Paar-PoE nach IEEE 802.3bt Typ 3 mit bis zu 60 W pro Port (480 W Budget) – das „U“ im Namen steht für 4PPoE, nicht für PoE+; ideal für UHD-PTZ-Kameras und Wi-Fi-6-APs."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8U2X-E?",
+    "Der IE-3300-8U2X-E besitzt zwei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Wofür ist der IE-3300-8U2X-E ausgelegt?",
+    "Der IE-3300-8U2X-E ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – 4-Paar-PoE (IEEE 802.3bt Typ 3, bis 60 W/Port), 480 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; 4-Paar-PoE (802.3bt Typ 3, 480 W) für UHD-PTZ-Kameras, Wi-Fi-6-APs und leistungsstarke Endgeräte; Network Essentials (Inter-VLAN-/statisches Routing und MACsec-128); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "IE-3300-8U2X-A": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+   "verifiziert_am": "2026-06-24"
+  },
+  "artikelname": "Cisco IE-3300-8U2X-A Catalyst IE3300 lüfterloser Layer-3-Industrie-Switch (Cisco IOS XE, Network Advantage) – 8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+",
+  "titel_tag": "Cisco IE-3300-8U2X-A IE3300 Industrie-Switch L3 | Hexwaren",
+  "meta_description": "Original Cisco IE-3300-8U2X-A (Catalyst IE3300, Network Advantage): lüfterloser Layer-3-Industrie-Switch für die DIN-Schiene, 8× GbE + 2× 10G-SFP+, 4PPoE 480 W, −40/+75 °C, MACsec-256. Cisco IOS …",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,8",
+  "kurzbeschreibung": "<p>Der Cisco IE-3300-8U2X-A ist ein kompakter, lüfterloser Layer-3-Industrie-Switch der Catalyst-IE3300-Serie für die DIN-Schiene mit 8 Gigabit-Downlinks und 480-W-4-Paar-PoE-Budget (802.3bt Typ 3) und 2× 10G-SFP+-Uplinks. Der IE-3300-8U2X-A läuft unter Cisco IOS XE mit Network Advantage-Lizenz und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-3300-8U2X-A bietet Ring-Redundanz (REP, MRP), MACsec-256-Verschlüsselung, Dual-DC-Eingang (9,6–60 VDC) und fünf Jahre Hardware-Garantie.</p>",
+  "intro": [
+   "Der Cisco IE-3300-8U2X-A ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch aus der Catalyst-IE3300-Familie für die DIN-Schiene in rauen Umgebungen – ein 4-Paar-PoE-Industrie-Switch (480 W) mit 10G-SFP+-Uplinks, 8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+, mit Network Advantage-Lizenz.",
+   "Mit 10 Ports (8 Downlinks + 2 Uplinks) erreicht der IE-3300-8U2X-A eine Switching-Kapazität von 56 Gbit/s bei einer Weiterleitungsrate von 41,7 Mpps. Über 4-Paar-PoE (IEEE 802.3bt Typ 3) liefert der IE-3300-8U2X-A bis zu 60 W pro Port (480 W) für UHD-PTZ-Kameras und Wi-Fi-6-APs. Zwei 10G-SFP+-Uplinks dienen dem High-Speed-Backhaul. Mit der Network Advantage-Lizenz beherrscht der IE-3300-8U2X-A volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast.",
+   "Robust ausgelegt arbeitet der IE-3300-8U2X-A lüfterlos von −40 bis +75 °C (IEC 61850-3, IEEE 1613, Class I Div 2, IP30) mit redundantem Dual-DC-Eingang und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-3300-8U2X-A Ring-Redundanz nach REP und MRP; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 sind integriert. Der IE-3300-8U2X-A läuft unter Cisco IOS XE (Secure Boot, IOx Cyber Vision) und trägt fünf Jahre Hardware-Garantie."
+  ],
+  "kompatibilitaet": [
+   "Cisco Catalyst IE3300 Rugged (Cisco IOS XE, Network Advantage)",
+   "IEM-3300 Erweiterungsmodule (1G/10G/PoE, optional, separat)",
+   "PWR-IE DIN-Schienen-Netzteile (Dual-DC, separat)"
+  ],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3300-8U2X-A?",
+    "Der IE-3300-8U2X-A ist ein Basissystem mit 8 Gigabit-Downlinks + 2 Uplinks = 10 Ports; per Erweiterungsmodul ist er auf bis zu 26 GE-Ports erweiterbar (Module separat, nicht Teil dieses Artikels)."
+   ],
+   [
+    "Was unterscheidet die Network Advantage-Lizenz des IE-3300-8U2X-A?",
+    "Der IE-3300-8U2X-A trägt die Network Advantage-Lizenz: volles dynamisches Routing (OSPF, BGP, EIGRP, IS-IS, PBR, VRRP, HSRP), VRF-lite, MACsec-256 und PIM-Multicast. Die -E-Variante (Network Essentials) bietet stattdessen Inter-VLAN-/statisches Routing und MACsec-128."
+   ],
+   [
+    "Welches PoE hat der IE-3300-8U2X-A?",
+    "Der IE-3300-8U2X-A bietet 4-Paar-PoE nach IEEE 802.3bt Typ 3 mit bis zu 60 W pro Port (480 W Budget) – das „U“ im Namen steht für 4PPoE, nicht für PoE+; ideal für UHD-PTZ-Kameras und Wi-Fi-6-APs."
+   ],
+   [
+    "Welche Uplinks hat der IE-3300-8U2X-A?",
+    "Der IE-3300-8U2X-A besitzt zwei feste 10G-SFP+-Uplinks (plus 8 Gigabit-Downlinks) für High-Speed-Backhaul; die Zugangs-Ports arbeiten mit 1 Gbit/s."
+   ],
+   [
+    "Wofür ist der IE-3300-8U2X-A ausgelegt?",
+    "Der IE-3300-8U2X-A ist ein lüfterloser DIN-Schienen-Industrie-Switch für −40 bis +75 °C: IEC 61850-3 und IEEE 1613 (Umspannwerk), Class I Div 2, IP30, redundanter Dual-DC-Eingang (9,6–60 VDC) und Ring-Redundanz nach REP und MRP. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (4PPoE Typ 3) + 2× 10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Ja – 4-Paar-PoE (IEEE 802.3bt Typ 3, bis 60 W/Port), 480 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual-DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Gehärteter, lüfterloser Layer-3-Zugang auf der DIN-Schiene (Industrie-Switch) – Fertigung, Energie/Umspannwerk, Verkehr/ITS und Bahn; −40 bis +75 °C, Dual-DC-Eingang; Ring-Redundanz REP/MRP; 10G-SFP+-Uplinks für High-Speed-Backhaul; Industrieprotokolle CIP/EtherNet-IP, PROFINET, MODBUS TCP und PTPv2; 4-Paar-PoE (802.3bt Typ 3, 480 W) für UHD-PTZ-Kameras, Wi-Fi-6-APs und leistungsstarke Endgeräte; Network Advantage (dynamisches Routing (OSPF/BGP/EIGRP), VRF-lite und MACsec-256); verwaltet über Cisco IOS XE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-ie3300-rugged-series/catalyst-ie3300-rugged-series-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ }
+}
