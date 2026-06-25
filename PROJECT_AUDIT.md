@@ -2698,6 +2698,30 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   A/B git-stash proof on a transceiver bundle (stage3_Cisco) → identical fail-set with/without the change (the stage3_*
   working-copies are pre-existing non-green intermediates, not gate targets). **MDS V-series build is now unblocked** —
   next task can build the 3 SKUs on the FC-green gate (auditor verifies this push first).
+- **BUILD Cisco_MDS_V (3/3) — FIRST Fibre Channel SAN family, on the FC-green gate (2026-06-25).** New folder
+  `output/switches/Cisco_MDS_V/` from `mds_v_series_harvest_source.md` + the validated `tests/fixtures/fc_mds_v_content.json`.
+  3 base switch-only EXHAUST PIDs: **DS-C9124V-8EK9** (24 FC ports, 1,5 Tbit/s, 1 HE, 8,5 kg) / **DS-C9148V-24EK9** (48,
+  3 Tbit/s, 1 HE, 9,9 kg) / **DS-C9396V-48EK9** (96, 6 Tbit/s, 2 HE, 20 kg). Category **Netzwerk & Infrastruktur → SAN &
+  Fibre Channel → Fibre-Channel-Switch**; **12-attr model** (Datentyp Wertliste, Attributgruppe "Switch"; NO Layer, NO
+  Durchsatz, NO Uplink-Ports — verified). OS **NX-OS** (grep IOS XE = 0; caught + dropped a "kein IOS XE" negation that
+  leaked the literal token); PoE Nein, Stacking Nein, Switch-Typ Managed all 3; **Portanzahl = PHYSICAL 24/48/96** (active
+  fraction 8/24/48 in Beschreibung only → S.3 parses 24/48/96 = Portanzahl). 64G FC autosensing, NVMe/FC-ready, Line-Rate
+  SAN Analytics, FC-SP + HW link encryption, redundant hot-swap PSU/fan; airflow E/I + port-tiers + optics-bundle variants
+  documented in the Beschreibung (not separate SKUs); M91xxV-PL8/optics-bundle/PSU-fan-cable/=/subscription SKUs excluded.
+  **One minimal additive content-emit change:** `reconcile._closer` got a Fibre-Channel-Switch branch (+ PID threaded
+  through `_compose_beschreibung`) to PID-weld the closer per the harvest — `Originaler Cisco-MDS-{model}-Fibre-Channel-
+  Switch ({PID}) für …`, which keeps the gate-required `Originaler {brand}-\w` form AND welds the PID/model. Additive,
+  FC-only, default param → existing 37 families + transceivers byte-identical (NOT the gate/category model). §5 0, single
+  closer (PID-welded), Beschreibung 154–165 words (3 paras), Kurz 42, Titel ≤60, Meta 140–200. **Prices = Phase-2
+  PROVISIONAL** (non-zero placeholders 6000/9500/22000, monotonic 9124V<9148V<9396V, no-BOM/LF, **0 `;0,00` rows**;
+  flagged unanchored in Verification_Log_Prices — real anchoring deferred). Byte-contract: all 7 files correct (Main/
+  Attributes/Platform/Condition/FAQ/VerLog BOM+CRLF; Prices no-BOM+LF); Main↔Prices both 3; 36 attribute rows (3×12).
+  **Full 8-layer gate ok=True, 0 viol / 0 warn** (canonical bundle Cisco_MDS_V_Switches; gate_completeness Cisco_MDS_V_
+  switches 3/3 now matches the 3 emitted). Zero regression: 37 canonical families still PASS (MikroTik L6 pre-existing) +
+  full suite **431 passed**. Manifest: opened built `Cisco_MDS_V` + split the old "MDS 9000 (FC/SAN) ~20" OTHER row into
+  queued **MDS T-Series (9132T/9148T/9396T/9220i ~4)**, **S-Series (9148S/9396S/9250i ~3, EoS)**, **9700 Directors (~6,
+  chassis decision pending)**; families in scope **68**. **Coverage now: 519 built, 37 families complete, 57%.** JTL
+  category branch "SAN & Fibre Channel → Fibre-Channel-Switch" must exist in the backend before import (flagged in the push).
 
 ---
 

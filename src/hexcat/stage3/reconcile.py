@@ -181,12 +181,12 @@ def map_attributes(authored: list[tuple[str, str]], formfaktor: str | None) -> d
 
 
 # --- authenticity closer ------------------------------------------------------------------
-def _closer(hersteller: str, kategorie3: str) -> str:
+def _closer(hersteller: str, kategorie3: str, pn: str = "") -> str:
     """The mandatory authenticity closer sentence woven onto the END of the Beschreibung.
 
     Article ending agrees with the product noun's gender ("Originaler …Transceiver" m. /
     "Originales …Kabel" n.). Uses ONLY the Hersteller token (matching the gate's closer
-    regex) and carries no banned/transactional language.
+    regex `Original(er|es|e) {brand}-\\w`) and carries no banned/transactional language.
     """
     tail = f"den professionellen Einsatz in {hersteller}-Netzwerkumgebungen"
     if kategorie3 == "DAC Kabel":
@@ -195,18 +195,27 @@ def _closer(hersteller: str, kategorie3: str) -> str:
         return f"Originales {hersteller}-AOC-Kabel für {tail}."
     if kategorie3 == "MPO Kabel":
         return f"Originales {hersteller}-MPO-Kabel für {tail}."
+    if kategorie3 == "Fibre-Channel-Switch" and pn:
+        # PID-welded SAN closer. Keeps the gate-required "Originaler {brand}-<noun>" form
+        # ("{brand}-MDS…", so closer_present's `{brand}-\w` still matches) while welding the
+        # model + PID, per the harvest. Falls back to the generic switch closer if no PN.
+        m = re.search(r"C(\d+[A-Z]?)\b", pn)
+        modell = f"-{m.group(1)}" if m else ""
+        return (f"Originaler {hersteller}-MDS{modell}-Fibre-Channel-Switch ({pn}) "
+                f"für den Aufbau hochverfügbarer Fibre-Channel-Fabrics.")
     if "Switch" in kategorie3:          # any switch L3 token (Rule-7) — masculine "Switch"
         return f"Originaler {hersteller}-Switch für {tail}."
     return f"Originaler {hersteller}-Transceiver für {tail}."
 
 
-def _compose_beschreibung(intro: list[str], hersteller: str, kategorie3: str) -> str:
+def _compose_beschreibung(intro: list[str], hersteller: str, kategorie3: str, pn: str = "") -> str:
     """3 prose-only <p> blocks; the closer is appended to the final paragraph so the
-    Beschreibung ENDS on it. No <ul>/<strong>/<br>/<a> and no inline FAQ."""
+    Beschreibung ENDS on it. No <ul>/<strong>/<br>/<a> and no inline FAQ. `pn` lets the closer
+    PID-weld where the category calls for it (e.g. Fibre Channel SAN); ignored otherwise."""
     paras = [p.strip() for p in intro if p and p.strip()]
     if not paras:
         raise ReconcileError("intro is empty — cannot compose Beschreibung")
-    closer = _closer(hersteller, kategorie3)
+    closer = _closer(hersteller, kategorie3, pn)
     last = paras[-1].rstrip()
     # Strip any authenticity closer the AUTHOR already appended to intro[-1] ("Originaler …Switch/
     # Transceiver … .") so reconcile emits EXACTLY ONE closer — never the verbatim double that the
@@ -277,7 +286,7 @@ def entry_to_intake(pn: str, entry: dict, *, brand: str, rules: Rules) -> SkuInt
     attr_fields = map_attributes(authored_attrs, ff)
 
     intro = [str(p) for p in (entry.get("intro") or [])]
-    beschreibung = _compose_beschreibung(intro, hersteller, kategorie3)
+    beschreibung = _compose_beschreibung(intro, hersteller, kategorie3, pn)
 
     price = entry.get("netto_vk")
     netto_vk = str(price).strip() if price else "0.00"  # PRICES-PENDING placeholder
