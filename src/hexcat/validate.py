@@ -512,10 +512,14 @@ class Validator:
                 self._fail(fname, sku, "Kategorie Ebene 1", c.kategorie_ebene_1, row[i_k1],
                            "Kategorie Ebene 1 constant mismatch")
             # Category-aware (Rule-7): a SKU is a switch iff its Kat-L3 is a switch token; then its
-            # Kat-L2 must be "Switches". Otherwise the transceiver L2 + L3 set applies.
+            # Kat-L2 must be "Switches" — EXCEPT switch-class tokens with a per-Kat-L3 Ebene-2 override
+            # (e.g. Fibre-Channel-Switch → "SAN & Fibre Channel"). Otherwise the transceiver L2 + L3 set
+            # applies. Same C.ebene2_for resolver the emit side (intake) uses → expected can't drift.
             k3 = row[i_k3]
             is_switch = k3 in set(self.rules.kategorie_ebene_3_switch_allowed)
-            exp_k2 = c.kategorie_ebene_2_switch if is_switch else c.kategorie_ebene_2
+            exp_k2 = C.ebene2_for(k3, is_switch=is_switch,
+                                  switch_default=c.kategorie_ebene_2_switch,
+                                  transceiver_default=c.kategorie_ebene_2)
             if row[i_k2] != exp_k2:
                 self._fail(fname, sku, "Kategorie Ebene 2", exp_k2, row[i_k2],
                            "Kategorie Ebene 2 mismatch (Switches / Transceivers & SFP Module)")
@@ -839,8 +843,15 @@ class Validator:
 
     def _check_switch_sku(self, fname, sku, k3, names, vals):
         """Rule-7 switch gold-slice: required-attr completeness + S.1-S.5. (B.4/B.8 run elsewhere.)"""
-        for req in ("Switch-Typ", "Layer", "Portanzahl", "Port-Konfiguration",
-                    "Port-Geschwindigkeit", "PoE", "Bauform", "Anwendung", "Betriebstemperatur"):
+        # Fibre Channel SAN switches are switch-class but use the 12-attr FC model: no Ethernet Layer
+        # (FC does FC-switching/NPV/IVR, not L2/L3) and no separate Durchsatz (the aggregate FC bandwidth
+        # IS the throughput, carried in Switching-Kapazität). Drop Layer from the required set for FC;
+        # Durchsatz is not in the required set for any switch, so it is already tolerated absent.
+        required = ("Switch-Typ", "Layer", "Portanzahl", "Port-Konfiguration",
+                    "Port-Geschwindigkeit", "PoE", "Bauform", "Anwendung", "Betriebstemperatur")
+        if k3 == "Fibre-Channel-Switch":
+            required = tuple(a for a in required if a != "Layer")
+        for req in required:
             if req not in names:
                 self._fail(fname, sku, f"Attributwert ({req})", f"a {req} attribute (every switch)",
                            "(missing)", f"gold-slice completeness: every switch must carry {req}")

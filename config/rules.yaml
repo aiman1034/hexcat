@@ -70,9 +70,13 @@ kategorie_ebene_3_allowed:
   - "CXP"
   - "GBIC"
 
-# Locked SWITCH Kategorie Ebene 3 set (6) — Rule-7 signed off. Single token per SKU by ENVIRONMENT-FIRST
+# Locked SWITCH Kategorie Ebene 3 set (7) — Rule-7 signed off. Single token per SKU by ENVIRONMENT-FIRST
 # precedence (S.5): Industrie → Data-Center → Managed (L3) → Managed (L2) → Smart-Managed → Unmanaged.
-# "Sonstige" never allowed. Must stay in lock-step with config/taxonomy/switches.yaml.
+# "Sonstige" never allowed.
+# Fibre-Channel-Switch (added 2026-06-25) is a switch-CLASS token for the Fibre Channel SAN product class:
+# it uses the SWITCH attribute set + the "Switch" Attributgruppe, but its Kategorie Ebene 2 is the distinct
+# "SAN & Fibre Channel" branch (see constants.KATEGORIE_EBENE_2_BY_KAT3) and its FC attribute model drops
+# Layer + Durchsatz (validate._check_switch_sku is FC-aware). S.1–S.5 stay silent on FC values.
 kategorie_ebene_3_switch_allowed:
   - "Industrie-Switch"
   - "Data-Center-Switch"
@@ -80,6 +84,7 @@ kategorie_ebene_3_switch_allowed:
   - "Managed Switch (L2)"
   - "Smart-Managed Switch"
   - "Unmanaged Switch"
+  - "Fibre-Channel-Switch"
 
 # Word / character budgets.
 budgets:

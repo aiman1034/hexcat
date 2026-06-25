@@ -211,9 +211,14 @@ def build_record(intake: SkuIntake, rules: Rules, weights: Weights,
     source_url = intake.SourceURLs.strip() or C.VERIFICATION_SOURCE_OPERATOR
 
     # Category dispatch (Rule-7): a switch L3 token routes to the switch attribute set + L2 "Switches".
+    # A per-Kat-L3 override (constants.KATEGORIE_EBENE_2_BY_KAT3) lets a switch-CLASS token carry a
+    # distinct Ebene-2 — e.g. Fibre-Channel-Switch is switch-class (SWITCH attr set) but lives under
+    # "SAN & Fibre Channel". Additive: tokens absent from the map keep the default → unchanged behaviour.
     is_switch = intake.KategorieEbene3.strip() in rules.kategorie_ebene_3_switch_allowed
     attr_set = C.SWITCH_ATTRIBUTES if is_switch else C.TRANSCEIVER_ATTRIBUTES
-    kat_l2 = rules.constants.kategorie_ebene_2_switch if is_switch else rules.constants.kategorie_ebene_2
+    kat_l2 = C.ebene2_for(intake.KategorieEbene3.strip(), is_switch=is_switch,
+                          switch_default=rules.constants.kategorie_ebene_2_switch,
+                          transceiver_default=rules.constants.kategorie_ebene_2)
 
     attributes, skipped = _build_attributes(intake, source_url, attr_provenance, attr_set)
     faq_pairs, faq_cell = normalize_faq(intake.FAQ, sku)

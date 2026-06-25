@@ -2677,6 +2677,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   updates coverage (new `MDS_V` 3/3), and pushes with the JTL-category-branch + carve-out notes. **MDS T-series + MDS
   S-series (16G, S-series needs EoS handling) are queued behind this.** No coverage/manifest change this turn (nothing
   built).
+- **GATE-MODEL EXTENSION: registered Fibre-Channel-Switch as the 3rd product class — MDS blocker RESOLVED, build
+  UNBLOCKED (2026-06-25). Gate/category model + tests ONLY; no MDS catalog SKUs emitted.** Additive change so existing
+  switch + transceiver behaviour is byte-identical. Six edits: (1) `config/rules.yaml` + `config.py` default — added
+  `Fibre-Channel-Switch` to the switch Kat-L3 set (7 tokens). (2) `constants.py` — single-source `KATEGORIE_EBENE_2_BY_KAT3`
+  ({"Fibre-Channel-Switch": "SAN & Fibre Channel"}) + `ebene2_for()` resolver + `SWITCH_EBENE2_VALUES` ({"Switches",
+  "SAN & Fibre Channel"}). (3) `intake.py` — Ebene-2 now via `ebene2_for` (FC → "SAN & Fibre Channel"; FC still uses the
+  SWITCH attr set). (4) `assemble.py` — Attributgruppe keyed on switch-CLASS (Kat-L3 ∈ switch set), not Ebene-2=="Switches",
+  so FC gets the "Switch" group under its SAN Ebene-2. (5) `validate.py` — expected Ebene-2 via the same `ebene2_for`
+  (emit/expected can't drift); `_check_switch_sku` required-attr loop FC-aware (drops `Layer`; `Durchsatz` already not
+  required → 12-attr FC model passes). (6) `gate.py` — L5 `_bundle_category` recognizes switch-class via `SWITCH_EBENE2_VALUES`
+  (FC weighs kg like a switch, not optic grams). `taxonomy.yaml` deliberately NOT touched — the only taxonomy file is the
+  TRANSCEIVER one (drift-check vs `kategorie_ebene_3_allowed`); there is no switch taxonomy file, so the switch set is
+  rules.yaml-only and the transceiver drift-check stays green untouched. Added `config/coverage/gate_completeness.yaml`
+  `Cisco_MDS_V_switches` 3/3 (gate-side family registration, L6) + `tests/fixtures/fc_mds_v_content.json` (3-SKU 12-attr
+  fixture) + `tests/test_fc_family.py` (4 tests). **VERIFIED:** the 3 FC fixture SKUs gate **ok=True, 0 viol / 0 warn**
+  through the real reconcile→assemble→8-layer gate (Ebene-2 "SAN & Fibre Channel", Kat-L3 "Fibre-Channel-Switch",
+  Attributgruppe "Switch", 12 attrs, NO Layer/Durchsatz/Uplink-Ports; S.3 parses 96×→96=Portanzahl). **ZERO REGRESSION:**
+  the 37 canonical switch families re-gate → all PASS (MikroTik L6 pre-existing); full suite **431 passed** (427 + 4 FC);
+  A/B git-stash proof on a transceiver bundle (stage3_Cisco) → identical fail-set with/without the change (the stage3_*
+  working-copies are pre-existing non-green intermediates, not gate targets). **MDS V-series build is now unblocked** —
+  next task can build the 3 SKUs on the FC-green gate (auditor verifies this push first).
 
 ---
 

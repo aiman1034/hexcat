@@ -20,6 +20,7 @@ from pathlib import Path
 
 from .config import load_rules
 from .validate import validate_dir, Violation
+from . import constants as C
 
 _REPO = Path(__file__).resolve().parents[2]
 REASON_CODES = {"out-of-scope", "un-groundable-after-ladder", "eol", "harvest-gap", "source-blocked"}
@@ -162,7 +163,10 @@ def _bundle_category(bundle: Path) -> str:
     hdr, rows = _main(bundle)
     if "Kategorie Ebene 2" in hdr:
         i = hdr.index("Kategorie Ebene 2")
-        if any(r[i].strip() == "Switches" for r in rows if len(r) > i):
+        # Switch-class includes the "Switches" Ebene-2 AND per-Kat-L3 override branches (e.g. Fibre
+        # Channel SAN under "SAN & Fibre Channel"): all are switches for weight-plausibility (kilograms,
+        # not optic grams). Additive — existing "Switches" bundles are unchanged.
+        if any(r[i].strip() in C.SWITCH_EBENE2_VALUES for r in rows if len(r) > i):
             return "switch"
     return "transceiver"
 

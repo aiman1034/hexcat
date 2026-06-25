@@ -89,6 +89,7 @@ class Rules(BaseModel):
     kategorie_ebene_3_switch_allowed: list[str] = [
         "Industrie-Switch", "Data-Center-Switch", "Managed Switch (L3)",
         "Managed Switch (L2)", "Smart-Managed Switch", "Unmanaged Switch",
+        "Fibre-Channel-Switch",
     ]
     budgets: Budgets
     beschreibung_closer_prefix: str

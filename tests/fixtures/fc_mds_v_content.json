@@ -1,0 +1,422 @@
+{
+ "DS-C9124V-8EK9": {
+  "_facts": {
+   "unterkategorie": "Fibre-Channel-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco MDS 9124V 64G Fibre-Channel-Switch (24 Ports)",
+  "titel_tag": "Cisco DS-C9124V-8EK9 MDS 9124V 64G FC-Switch | Hexwaren",
+  "meta_description": "Original Cisco DS-C9124V-8EK9 (MDS 9124V): 64G-Fibre-Channel-Switch, 24 Ports, Cisco NX-OS, NVMe/FC-ready, SAN Analytics, 1,5 Tbit/s, redundante Hot-Swap-Netzteile. Für hochverfügbare SAN-Fabrics.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,0",
+  "kurzbeschreibung": "<p>Der Cisco DS-C9124V-8EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der Cisco-MDS-9124V-Serie mit 24 FC-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks unter Cisco NX-OS.</p><p>Der DS-C9124V-8EK9 ist NVMe-over-Fibre-Channel-ready, arbeitet non-blocking mit voller Leitungsrate (1,5 Tbit/s aggregiert), bietet integrierte SAN-Analytics-Telemetrie sowie redundante Hot-Swap-Netzteile und -Lüfter und aktiviert 8 der 24 Ports ab Werk.</p>",
+  "intro": [
+   "Der Cisco DS-C9124V-8EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der MDS-9124V-Serie mit 24 Fibre-Channel-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks.",
+   "Der DS-C9124V-8EK9 läuft unter Cisco NX-OS und ist NVMe-over-Fibre-Channel-ready, sodass SCSI und NVMe/FC auf derselben Verbindung koexistieren; jeder Port arbeitet non-blocking mit voller Leitungsrate und die aggregierte Bandbreite beträgt 1,5 Tbit/s. Das Basismodell aktiviert 8 der 24 Ports ab Werk; weitere Ports lassen sich in 8er-Schritten per Port-Aktivierungslizenz freischalten.",
+   "Der DS-C9124V-8EK9 bietet redundante Hot-Swap-Netzteile und -Lüfter, FC-SP-Authentifizierung sowie hardwaregestützte Link-Verschlüsselung; verwaltet wird er über Cisco NX-OS (CLI, NX-API, DCNM/NDFC). Lieferbar mit Port-Side-Exhaust- oder -Intake-Luftführung."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der DS-C9124V-8EK9?",
+    "Der DS-C9124V-8EK9 (MDS 9124V) bietet 24 Fibre-Channel-Ports (8/16/32/64G autosensing); das Basismodell aktiviert 8 ab Werk, weitere in 8er-Schritten per Port-Aktivierungslizenz."
+   ],
+   [
+    "Welches Betriebssystem nutzt der DS-C9124V-8EK9?",
+    "Der DS-C9124V-8EK9 läuft unter Cisco NX-OS (9.3(1)+) und wird per CLI, NX-API oder Cisco DCNM/NDFC verwaltet."
+   ],
+   [
+    "Ist der DS-C9124V-8EK9 NVMe/FC-ready?",
+    "Ja, der DS-C9124V-8EK9 unterstützt NVMe-over-Fibre-Channel ohne Hardwaretausch; SCSI und NVMe/FC koexistieren auf derselben Verbindung."
+   ],
+   [
+    "Wie ist der DS-C9124V-8EK9 gegen Ausfälle abgesichert?",
+    "Der DS-C9124V-8EK9 besitzt redundante Hot-Swap-Netzteile und einen Hot-Swap-Lüfter; SFP+, Netzteile und Lüfter sind im Betrieb tauschbar."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "SAN / Storage-Networking (Fibre Channel)"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Hot-Swap-Lüfter, bidirektional)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "8/16/32/64 Gbit/s FC (autosensing)"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× Fibre-Channel-Ports (SFP+)"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Stromversorgung",
+    "Redundant (2× Hot-Swap-Netzteil, 500 W oder 1200 W)"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,5 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "DS-C9148V-24EK9": {
+  "_facts": {
+   "unterkategorie": "Fibre-Channel-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco MDS 9148V 64G Fibre-Channel-Switch (48 Ports)",
+  "titel_tag": "Cisco DS-C9148V-24EK9 MDS 9148V 64G FC-Switch | Hexwaren",
+  "meta_description": "Original Cisco DS-C9148V-24EK9 (MDS 9148V): 64G-Fibre-Channel-Switch, 48 Ports, Cisco NX-OS, NVMe/FC-ready, SAN Analytics, 3 Tbit/s, redundante Hot-Swap-Netzteile. Für hochverfügbare SAN-Fabrics.",
+  "artikelgewicht": "9,9",
+  "versandgewicht": "11,4",
+  "kurzbeschreibung": "<p>Der Cisco DS-C9148V-24EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der Cisco-MDS-9148V-Serie mit 48 FC-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks unter Cisco NX-OS.</p><p>Der DS-C9148V-24EK9 ist NVMe-over-Fibre-Channel-ready, arbeitet non-blocking mit voller Leitungsrate (3 Tbit/s aggregiert), bietet integrierte SAN-Analytics-Telemetrie sowie redundante Hot-Swap-Netzteile und -Lüfter und aktiviert 24 der 48 Ports ab Werk.</p>",
+  "intro": [
+   "Der Cisco DS-C9148V-24EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der MDS-9148V-Serie mit 48 Fibre-Channel-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks.",
+   "Der DS-C9148V-24EK9 läuft unter Cisco NX-OS und ist NVMe-over-Fibre-Channel-ready, sodass SCSI und NVMe/FC auf derselben Verbindung koexistieren; jeder Port arbeitet non-blocking mit voller Leitungsrate und die aggregierte Bandbreite beträgt 3 Tbit/s. Das Basismodell aktiviert 24 der 48 Ports ab Werk; weitere Ports lassen sich in 8er-Schritten per Port-Aktivierungslizenz freischalten.",
+   "Der DS-C9148V-24EK9 bietet redundante Hot-Swap-Netzteile und -Lüfter, FC-SP-Authentifizierung sowie hardwaregestützte Link-Verschlüsselung; verwaltet wird er über Cisco NX-OS (CLI, NX-API, DCNM/NDFC). Lieferbar mit Port-Side-Exhaust- oder -Intake-Luftführung."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der DS-C9148V-24EK9?",
+    "Der DS-C9148V-24EK9 (MDS 9148V) bietet 48 Fibre-Channel-Ports (8/16/32/64G autosensing); das Basismodell aktiviert 24 ab Werk, weitere in 8er-Schritten per Port-Aktivierungslizenz."
+   ],
+   [
+    "Welches Betriebssystem nutzt der DS-C9148V-24EK9?",
+    "Der DS-C9148V-24EK9 läuft unter Cisco NX-OS (9.3(1)+) und wird per CLI, NX-API oder Cisco DCNM/NDFC verwaltet."
+   ],
+   [
+    "Ist der DS-C9148V-24EK9 NVMe/FC-ready?",
+    "Ja, der DS-C9148V-24EK9 unterstützt NVMe-over-Fibre-Channel ohne Hardwaretausch; SCSI und NVMe/FC koexistieren auf derselben Verbindung."
+   ],
+   [
+    "Wie ist der DS-C9148V-24EK9 gegen Ausfälle abgesichert?",
+    "Der DS-C9148V-24EK9 besitzt redundante Hot-Swap-Netzteile und einen Hot-Swap-Lüfter; SFP+, Netzteile und Lüfter sind im Betrieb tauschbar."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "SAN / Storage-Networking (Fibre Channel)"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (1 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Hot-Swap-Lüfter, bidirektional)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "8/16/32/64 Gbit/s FC (autosensing)"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× Fibre-Channel-Ports (SFP+)"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Stromversorgung",
+    "Redundant (2× Hot-Swap-Netzteil, 500 W oder 1200 W)"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "3 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ },
+ "DS-C9396V-48EK9": {
+  "_facts": {
+   "unterkategorie": "Fibre-Channel-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco MDS 9396V 64G Fibre-Channel-Switch (96 Ports)",
+  "titel_tag": "Cisco DS-C9396V-48EK9 MDS 9396V 64G FC-Switch | Hexwaren",
+  "meta_description": "Original Cisco DS-C9396V-48EK9 (MDS 9396V): 64G-Fibre-Channel-Switch, 96 Ports, Cisco NX-OS, NVMe/FC-ready, SAN Analytics, 6 Tbit/s, redundante Hot-Swap-Netzteile. Für hochverfügbare SAN-Fabrics.",
+  "artikelgewicht": "20,0",
+  "versandgewicht": "21,5",
+  "kurzbeschreibung": "<p>Der Cisco DS-C9396V-48EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der Cisco-MDS-9396V-Serie mit 96 FC-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks unter Cisco NX-OS.</p><p>Der DS-C9396V-48EK9 ist NVMe-over-Fibre-Channel-ready, arbeitet non-blocking mit voller Leitungsrate (6 Tbit/s aggregiert), bietet integrierte SAN-Analytics-Telemetrie sowie redundante Hot-Swap-Netzteile und -Lüfter und aktiviert 48 der 96 Ports ab Werk.</p>",
+  "intro": [
+   "Der Cisco DS-C9396V-48EK9 ist ein gemanagter 64G-Fibre-Channel-Fabric-Switch der MDS-9396V-Serie mit 96 Fibre-Channel-Ports (8/16/32/64 Gbit/s autosensing) für den Aufbau hochverfügbarer Storage-Area-Networks.",
+   "Der DS-C9396V-48EK9 läuft unter Cisco NX-OS und ist NVMe-over-Fibre-Channel-ready, sodass SCSI und NVMe/FC auf derselben Verbindung koexistieren; jeder Port arbeitet non-blocking mit voller Leitungsrate und die aggregierte Bandbreite beträgt 6 Tbit/s. Das Basismodell aktiviert 48 der 96 Ports ab Werk; weitere Ports lassen sich in 8er-Schritten per Port-Aktivierungslizenz freischalten.",
+   "Der DS-C9396V-48EK9 bietet redundante Hot-Swap-Netzteile und -Lüfter, FC-SP-Authentifizierung sowie hardwaregestützte Link-Verschlüsselung; verwaltet wird er über Cisco NX-OS (CLI, NX-API, DCNM/NDFC). Lieferbar mit Port-Side-Exhaust- oder -Intake-Luftführung."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der DS-C9396V-48EK9?",
+    "Der DS-C9396V-48EK9 (MDS 9396V) bietet 96 Fibre-Channel-Ports (8/16/32/64G autosensing); das Basismodell aktiviert 48 ab Werk, weitere in 8er-Schritten per Port-Aktivierungslizenz."
+   ],
+   [
+    "Welches Betriebssystem nutzt der DS-C9396V-48EK9?",
+    "Der DS-C9396V-48EK9 läuft unter Cisco NX-OS (9.3(1)+) und wird per CLI, NX-API oder Cisco DCNM/NDFC verwaltet."
+   ],
+   [
+    "Ist der DS-C9396V-48EK9 NVMe/FC-ready?",
+    "Ja, der DS-C9396V-48EK9 unterstützt NVMe-over-Fibre-Channel ohne Hardwaretausch; SCSI und NVMe/FC koexistieren auf derselben Verbindung."
+   ],
+   [
+    "Wie ist der DS-C9396V-48EK9 gegen Ausfälle abgesichert?",
+    "Der DS-C9396V-48EK9 besitzt redundante Hot-Swap-Netzteile und einen Hot-Swap-Lüfter; SFP+, Netzteile und Lüfter sind im Betrieb tauschbar."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "SAN / Storage-Networking (Fibre Channel)"
+   ],
+   [
+    "Bauform",
+    "Rack-Montage (2 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (Hot-Swap-Lüfter, bidirektional)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "8/16/32/64 Gbit/s FC (autosensing)"
+   ],
+   [
+    "Port-Konfiguration",
+    "96× Fibre-Channel-Ports (SFP+)"
+   ],
+   [
+    "Portanzahl",
+    "96"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Stromversorgung",
+    "Redundant (2× Hot-Swap-Netzteil, 1400 W oder 2000 W)"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "6 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/storage-networking/mds-9100-series-multilayer-fabric-switches/mds-9148v-fibre-channel-switch-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null
+ }
+}

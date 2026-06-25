@@ -111,6 +111,30 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
     """Return the fixed (Attributname, intake_field) tuple for a SKU's Kategorie Ebene 2."""
     return SWITCH_ATTRIBUTES if kat_ebene_2 == CATEGORY_SWITCH_L2 else TRANSCEIVER_ATTRIBUTES
 
+# Per-Kat-L3 Kategorie-Ebene-2 overrides for switch-class tokens whose Ebene-2 is NOT the default
+# "Switches". Fibre Channel SAN switches are switch-class (they use the SWITCH attribute set + the
+# "Switch" Attributgruppe) but live under a distinct Ebene-2 branch. Additive + single-source-of-truth:
+# a token absent from this map falls back to the switch/transceiver default, so existing switch and
+# transceiver behaviour is byte-for-byte unchanged. Read by intake (emit), assemble (emit) and
+# validate (expected) so the emitted and expected Ebene-2 can never drift.
+KATEGORIE_EBENE_2_BY_KAT3: dict[str, str] = {
+    "Fibre-Channel-Switch": "SAN & Fibre Channel",
+}
+
+# Every Kategorie-Ebene-2 value that denotes a SWITCH-class bundle: the default "Switches" plus any
+# per-Kat-L3 override (e.g. "SAN & Fibre Channel"). Used where a layer must tell switch bundles from
+# transceiver bundles by Ebene-2 alone (gate L5 weight plausibility) without re-importing the rules.
+SWITCH_EBENE2_VALUES: frozenset[str] = frozenset({CATEGORY_SWITCH_L2, *KATEGORIE_EBENE_2_BY_KAT3.values()})
+
+
+def ebene2_for(kat_ebene_3: str, *, is_switch: bool, switch_default: str, transceiver_default: str) -> str:
+    """Resolve the Kategorie Ebene 2 for a SKU: a per-Kat-L3 override wins, else the switch/transceiver
+    default. Keeps emit (intake/assemble) and expected (validate) in lock-step from one definition."""
+    override = KATEGORIE_EBENE_2_BY_KAT3.get(kat_ebene_3.strip())
+    if override is not None:
+        return override
+    return switch_default if is_switch else transceiver_default
+
 # The physical connector form-factors (the connector subset of the locked Kategorie-Ebene-3
 # set). The `Formfaktor` attribute VALUE must be one of these — never a commerce category like
 # "DAC Kabel" (the category stays in Kategorie Ebene 3, the connector goes in Formfaktor).

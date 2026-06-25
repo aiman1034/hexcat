@@ -77,7 +77,11 @@ def _attribute_rows(records: list[SkuRecord], rules: Rules) -> list[list[str]]:
     grp_sw = rules.constants.attributgruppe_switch        # "Switch"
     rows = []
     for r in records:
-        grp = grp_sw if r.kategorie_ebene_2 == rules.constants.kategorie_ebene_2_switch else grp_tx
+        # Attributgruppe is keyed on switch-CLASS (the Kat-L3 token), NOT on Ebene-2 string equality —
+        # a switch-class token may carry a non-"Switches" Ebene-2 (e.g. Fibre-Channel-Switch under
+        # "SAN & Fibre Channel") yet must still use the "Switch" group + SWITCH attribute set. For the
+        # existing families (switch Kat-L3 ⇒ Ebene-2 "Switches"; transceivers otherwise) this is identical.
+        grp = grp_sw if r.kategorie_ebene_3 in rules.kategorie_ebene_3_switch_allowed else grp_tx
         for a in r.attributes:
             rows.append([
                 r.artikelnummer,
