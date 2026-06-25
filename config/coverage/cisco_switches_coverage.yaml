@@ -1160,9 +1160,21 @@ switches:
   sourceable_new_sealed: verify
   source: ds_models_table
   source_conflict: ds_only_not_in_ordering_guide
-# C9610R REMOVED 2026-06-25: the Catalyst 9600 series has exactly ONE chassis (C9606R) — confirmed by the
-# this-session cisco.com fetch ("Cisco Catalyst 9600 Series Switches offer one chassis option"). The earlier
-# og_ordering+ds_table-sourced C9610R was a phantom; removed so the 9600 family is accurately 1 chassis.
+# C9610R RESTORED 2026-06-25 (correction to eeb03c0): the prior removal was WRONG. The C9610R is the chassis of
+# the SEPARATE "Cisco C9610 Series Smart Switches" line (2025, Silicon One E100/K100, 51,2 Tbps) — it is NOT a
+# Catalyst 9600 chassis. The earlier "9600 = 1 chassis (C9606R)" datasheet line bounds the 9600 SERIES only and
+# never ruled out the C9610 series. Re-grounded this session vs cisco.com (c9610-series-smart-switches ds + og).
+- family: C9610 Series Smart Switches
+  series: C9610
+  base_pn: C9610R
+  ports: modular — 8 line-card slots + 2 supervisor slots (slots 5,6 = supervisors)
+  poe_type: none (high-speed fiber core)
+  uplink: modular (line-card dependent)
+  form_factor: Modular chassis, 10-slot (8 line-card + 2 supervisor), 18 HE
+  license_tiers: unified (Advantage-tier only)
+  eol_status: active
+  sourceable_new_sealed: Y
+  source: ds_c9610_series+og_c9610 (cisco.com, this session)
 - family: Nexus 9000
   series: Nexus 9300-FX3
   base_pn: N9K-C93180YC-FX3

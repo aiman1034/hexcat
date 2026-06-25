@@ -1,0 +1,125 @@
+{
+ "C9610R": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco C9610R Modularer Campus-Switch-Chassis – 8 Linecard-Slots, bis zu 51,2 Tbit/s, 18 HE (Leermodul-Chassis)",
+  "titel_tag": "Cisco C9610R Smart-Switch-Chassis | Hexwaren",
+  "meta_description": "Original Cisco C9610R, Chassis der C9610 Series Smart Switches: 8 Linecard-Slots, 51,2 Tbit/s, 18 HE, Leermodul-Chassis inkl. Lüfter (Module separat). Cisco IOS XE 17, Cisco Silicon One.",
+  "artikelgewicht": "109,50",
+  "versandgewicht": "140,00",
+  "kurzbeschreibung": "<p>Der Cisco C9610R ist ein modulares Switch-Chassis der Cisco-C9610-Serie (Smart Switches, 18 HE) mit 8 Linecard-Slots und bis zu 51,2 Tbit/s Switching-Kapazität für hochverfügbare Campus-Core-Netzwerke unter Cisco IOS XE.</p><p>Der C9610R wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren (Cisco Silicon One), Linecards und Netzteile sind separat erhältlich. Die zentralisierte Architektur führt die Weiterleitung auf dem Supervisor aus.</p>",
+  "intro": [
+   "Der Cisco C9610R ist ein modulares Switch-Chassis der Cisco-C9610-Serie (Smart Switches, 18 HE) mit 8 Linecard-Slots und 2 Supervisor-Slots (Steckplätze 5 und 6) für hochverfügbare, modulare Campus-Core-Netzwerke. Der C9610R wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
+   "Mit 6,4 Tbit/s pro Slot erreicht der C9610R eine Switching-Kapazität von bis zu 51,2 Tbit/s. Die zentralisierte Architektur führt die gesamte Weiterleitung auf dem Supervisor (Cisco Silicon One, C9610-SUP-3/-3XL) aus, während die Linecards transparent arbeiten. Unterstützt werden Linecards der C9610-Serie (C9610-LC-32CD, C9610-LC-40YL4CD/56YL4C) sowie – über den C9600-LC-Adapter – Catalyst-9600-Linecards; die Netzteile teilt sich der C9610R mit der Catalyst-9600-Serie (C9600-PWR-3KWAC/2KWAC/2KWDC). Als Hochgeschwindigkeits-Glasfaser-Core bietet der C9610R kein PoE.",
+   "Der C9610R läuft unter Cisco IOS XE 17 (Advantage-Lizenzierung) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, bis zu acht Combined/N+1-redundante Netzteile und vier Lüfter-Trays (C9610-FAN). Der Luftstrom verläuft front-to-back. Aufgrund von Größe und Gewicht wird der C9610R per Spedition mit Terminabstimmung geliefert."
+  ],
+  "kompatibilitaet": [
+   "Cisco C9610 Supervisor (C9610-SUP-3 / C9610-SUP-3-XL, Cisco Silicon One, separat)",
+   "Cisco C9610 Linecards (C9610-LC-32CD / -40YL4CD / -56YL4C, separat)",
+   "Cisco Catalyst 9600 Linecards über C9600-LC-Adapter (separat)",
+   "Hot-Swap-Netzteile C9600-PWR-3KWAC / 2KWAC / 2KWDC (separat)"
+  ],
+  "faq": [
+   [
+    "Was ist im Lieferumfang des C9610R enthalten?",
+    "Der C9610R ist ein Leermodul-Chassis inklusive Lüfter-Trays. Supervisoren, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten)."
+   ],
+   [
+    "Wie viele Slots hat der C9610R?",
+    "Der C9610R hat 8 Linecard-Slots und 2 Supervisor-Slots (Steckplätze 5 und 6), insgesamt 10 Steckplätze (18 HE)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der C9610R?",
+    "Der C9610R läuft unter Cisco IOS XE 17 (Advantage-Lizenzierung) und wird per CLI, WebUI oder NETCONF/RESTCONF/YANG verwaltet."
+   ],
+   [
+    "Welche Switching-Kapazität hat der C9610R?",
+    "Der C9610R erreicht mit den Cisco-Silicon-One-Supervisoren (C9610-SUP-3/-3XL) bis zu 51,2 Tbit/s, das entspricht 6,4 Tbit/s pro Slot."
+   ],
+   [
+    "Liefert der C9610R PoE?",
+    "Nein – der C9610R ist ein Core-/Aggregations-Chassis mit Hochgeschwindigkeits-Glasfaser-Linecards ohne PoE; PoE bieten die Catalyst-Access-Serien."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Anwendung",
+    "Campus-Netzwerk"
+   ],
+   [
+    "Bauform",
+    "Modularer Campus-Switch-Chassis (8 Linecard-Slots, 18 HE)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 40 °C"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (4× Lüfter-Tray C9610-FAN, Airflow front-to-back)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 8× Hot-Swap-Netzteil (3000 W / 2000 W AC oder 2000 W DC), Combined/N+1-redundant"
+   ],
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Switching-Kapazität",
+    "Bis zu 51,2 Tbit/s"
+   ]
+  ],
+  "provenance": {
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "C9610R",
+    "Artikelgewicht",
+    "109,50 (geschätzt: Cisco veröffentlicht für C9610R kein Leergewicht; 120,7 kg inkl. 8× 3000-W-Netzteil + 4 Lüfter-Trays minus 8× 1,4 kg Netzteil = Chassis + 4 Lüfter-Trays, ohne Netzteile)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html"
+   ],
+   [
+    "C9610R",
+    "Versandgewicht",
+    "140,00 (geschätzt: Chassis + Transportverpackung; Spedition, Übermaß — Cisco veröffentlicht kein Packgewicht)",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/c9610-series-smart-switches/c9610-series-smart-switches-ds.html"
+   ]
+  ]
+ }
+}

@@ -2843,6 +2843,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Catalyst 9400 ✅ 3/3, 9600 ✅ 1/1 (via the coverage path; chassis already in `cov["switches"]`), C9610 family removed.
   Families in scope **68**. **Coverage now: 533 built, 43 families complete, 59%.** (First Ethernet chassis; the carve-out
   is now proven for both FC directors and Ethernet campus chassis — Nexus 9500 DC chassis can reuse it.)
+- **CORRECTION — RESTORE + BUILD Cisco_C9610 (1/1); reverses the wrong C9610R deletion in `eeb03c0` (2026-06-25).**
+  Content-only, **NO src** (`git diff -- src/` empty). **Root cause:** the prior harvest's "the 9600 has one chassis
+  (C9606R)" line bounds the **Catalyst 9600 series only** and never ruled out the **separate** "Cisco C9610 Series Smart
+  Switches" line (2025; Cisco Silicon One E100/K100; 51,2 Tbit/s) whose chassis is the **C9610R**. Re-grounded this session
+  vs cisco.com (c9610-series-smart-switches ds + ordering guide). **Action 1 — revert:** restored the C9610 entry in
+  `cisco_switches_coverage.yaml` (now `family: C9610 Series Smart Switches`, `series: C9610`, distinct line — not Catalyst
+  9000) with a corrected comment; restored the `"C9610"` FAM mapping in the manifest builder. **Action 2 — build:**
+  `Cisco_C9610` = **C9610R** on the existing **`Modularer Switch (Chassis)`** class — 7 attrs (Anwendung `Campus-Netzwerk`,
+  Bauform `8 Linecard-Slots, 18 HE`, Temp `-5 bis 40 °C`, Kühlung 4× C9610-FAN front-to-back, Stromversorgung ≤8× 3000-W,
+  Switch-Typ Managed, SwK **`Bis zu 51,2 Tbit/s`** provenance `datasheet`), **zero forbidden Merkmale**, Ebene-2 `Switches`
+  (default — not in `KATEGORIE_EBENE_2_BY_KAT3`). **IOS XE 17 retained**; **no PoE** (high-speed fiber core — "kein PoE" in
+  prose); zentralisierte Architektur (forwarding on the Sup-3/-3XL, transparent line cards); shares C9600 line cards (via
+  C9600-LC-Adapter) + C9600 PSUs; supervisors/line-cards/PSU separate → Module & Komponenten track, excluded + in prose.
+  **Weight 109,50 kg = flagged estimate** (Cisco publishes only 120,7 kg *inkl. 8× 3000-W-Netzteil + 4 Lüfter-Trays*; derived
+  120,7 − 8×1,4 kg PSU = Chassis + 4 Fans, ohne Netzteile — full derivation in `Verification_Log_…_Prices`/extra_log);
+  Versand 140,00 Spedition. **Ethernet-chassis closer auto-fired:** `Originaler Cisco-Chassis-Switch (C9610R) …`. §5-clean;
+  Prices Phase-2 provisional (22000,00; no-BOM/LF, 0 `;0,00`; flagged unanchored "ungebrauchte Original-Hardware"); Beschr
+  163 words. Added the `Cisco_C9610_switches` record to `gate_completeness.yaml`. **No new test** (the class + closer are
+  already pinned by `test_ethernet_chassis`); **zero-regression A/B N/A** (src unchanged). **Canonical gate ok=True / 0 viol
+  / 0 warn**; full suite **438 passed, 0 skipped, 0 failed** (clone baseline — no test added). Manifest: **Cisco C9610 ✅ 1/1**
+  via the coverage path (built auto-detected; no built-block line → no double-count). Families in scope **68→69**. **Coverage
+  now: 534 built, 44 families complete, 59%.** **Lesson:** a "series X has N chassis" datasheet line bounds series X only —
+  scope every negative-existence claim to the exact series the source covers (logged for future harvests).
 
 ---
 
