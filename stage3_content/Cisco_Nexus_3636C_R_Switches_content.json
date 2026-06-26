@@ -1,0 +1,194 @@
+{
+ "N3K-C3636C-R": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3636C-R 3636C-R Data-Center-Switch (NX-OS, L3) – 36× 100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N3K-C3636C-R Nexus 3636C-R 100G-Spine | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3636C-R (3636C-R): Layer-3-Data-Center-Switch, 36× 100G-QSFP28, 7,2 Tbit/s, 3.340 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "16,1",
+  "versandgewicht": "18,00",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3636C-R ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3600-Serie mit 36× 100G-QSFP28 (8 MACsec-fähig) im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 16 GB Deep-Buffer, vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3636C-R 7,2 Tbit/s bei 3.340 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3K-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3636C-R ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3600-Serie, ausgelegt als 100-Gigabit-Spine der R-Serie (Deep-Buffer) im 1-HE-Gehäuse.",
+   "Mit 36 Ports erreicht der N3K-C3636C-R eine Switching-Kapazität von 7,2 Tbit/s bei einer Weiterleitungsrate von 3.340 Mpps (Line-Rate Layer 2/3, 16 GB Deep-Buffer (R-Serie), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3636C-R über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3K-LAN1K9) schaltet volles OSPF, EIGRP und BGP frei. Acht der Ports des N3K-C3636C-R sind MACsec-fähig (Hardware-Verschlüsselung).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC oder DC (100–240 V)) arbeitet der N3K-C3636C-R im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3600-Serie ist der N3K-C3636C-R als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3636C-R?",
+    "Der N3K-C3636C-R bietet 36× 100G-QSFP28 (8 MACsec-fähig)."
+   ],
+   [
+    "Unterstützt der N3K-C3636C-R Stacking oder PoE?",
+    "Nein – der N3K-C3636C-R nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N3K-C3636C-R MACsec?",
+    "Ja – acht der 36 QSFP28-Ports sind MACsec-fähig (Hardware-Verschlüsselung); die Verfügbarkeit ist release-abhängig."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3636C-R?",
+    "Der N3K-C3636C-R läuft unter Cisco NX-OS; die Lizenz N3K-LAN1K9 schaltet volles OSPF, EIGRP und BGP frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "36"
+   ],
+   [
+    "Port-Konfiguration",
+    "36× 100G-QSFP28 (8 MACsec-fähig)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28; auch 40G; Breakout auf 10G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "7,2 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "3.340 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC oder DC (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 100-Gigabit-Spine/Edge-Routing (R-Serie, Deep-Buffer) – 36× 100G-QSFP28 (8 MACsec-fähig); Layer 2/3, Line-Rate; NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; LAN-Enterprise-Lizenz N3K-LAN1K9 für OSPF/EIGRP/BGP; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3636C-R",
+    "EoL",
+    "Cisco 3636C-R (Nexus-3600-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-740345 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html"
+   ],
+   [
+    "N3K-C3636C-R",
+    "PID",
+    "Ordering-PID N3K-C3636C-R verbatim aus c78-740345 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html"
+   ],
+   [
+    "N3K-C3636C-R",
+    "Switching-Kapazität",
+    "7,2 Tbit/s: Cisco-Angabe (c78-740345 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html"
+   ],
+   [
+    "N3K-C3636C-R",
+    "Artikelgewicht",
+    "16,1 = ZU_VERIFIZIEREN: die Datenblatt-Zelle (c78-740345) ist verstümmelt (zwei zusammengeführte Spalten); ~16,1 kg geschätzt (35.6 lb, Vollkonfiguration) – gegen den HW Install Guide prüfen.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html"
+   ],
+   [
+    "N3K-C3636C-R",
+    "Feature-Grounding",
+    "MACsec gegroundet (8 Ports, c78-740345) -> Prosa, KEIN Merkmal. VXLAN in der Lizenztabelle NICHT gelistet (nur OSPF/EIGRP/BGP); Release Notes nennen VXLAN, aber das Datenblatt ist maßgeblich -> nicht behauptet. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740345.html"
+   ]
+  ]
+ }
+}

@@ -3158,6 +3158,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3264C-E). **Per-datasheet feature record across the 3200 lane (the discipline vindicated):** 3232C = VXLAN-deferred/MACsec✗ ·
   3264Q = VXLAN✓/MACsec✗ · 3264C-E = VXLAN✗/MACsec✓ — three siblings, three answers, none inferable from the platform or ASIC.
   Remaining Nexus 3000: **T5 3500** (Algo Boost <200 ns) · T6 3600 (deep-buffer) · 3432D-S fixed (400G) · 3408-S chassis (carve-out).
+- **Nexus 3000 BATCH B1 — BUILD 6 families / 9 SKUs in ONE round (first multi-family batch; 2026-06-26).** Content-only, **NO src,
+  NO new Merkmal** (`git diff -- src/` empty). Operator directive: denser batches where quality permits. Closes the **Nexus 3500 +
+  3600 platforms** and the **3400-S fixed trio**. **`Cisco_Nexus_3500`** (4 SKUs, 14-attr uniform, Algo Boost ultra-low-latency):
+  N3K-C3548P-XL (48) / N3K-C3524P-XL (24 lic.→48, phrased "auf achtundvierzig aufrüstbar" so S.3=24) / N3K-C3548P-10GX (48) /
+  N3K-C3524P-10GX (24); SwK 960/480 Gbit/s, Durchsatz 720/360 Mpps, 7,9 kg, Warp <200 ns / Warp-SPAN ~50 ns, **vPC NOT in warp mode**
+  (caveat in prose). **`Cisco_Nexus_3636C_R`** (1, 14-attr, R-series deep-buffer): N3K-C3636C-R, 36× 100G-QSFP28 (8 MACsec-fähig),
+  SwK 7,2 Tbit/s, 16 GB deep buffer; **Artikelgewicht ZU_VERIFIZIEREN** (garbled datasheet cell — ~16,1 kg estimate used, flagged in
+  the Verification_Log). **`Cisco_Nexus_36180YC_R`** (1, **15-attr access+uplink**): N3K-C36180YC-R, 48× SFP28 + 6× 100G-QSFP28 uplink
+  (Portanzahl 54), 6 MACsec-fähige QSFP28; **SwK 1,8 Tbit/s** (Table 3 directional — the marketing 3,6 is bidirectional → NOT doubled,
+  logged). **`Cisco_Nexus_34180YC`** (1, 15-attr): N3K-C34180YC, 48× SFP28 + 6× 100G-QSFP28 (Portanzahl 54), SwK 1,8 Tbit/s (same
+  convention, HW-identical to 36180YC-R), INT/telemetry. **`Cisco_Nexus_3464C`** (1, 14-attr): N3K-C3464C, 64× 100G-QSFP28 + 2 aux SFP+
+  ("zwei" → S.3=64), 2 RU, SwK 12,8 Tbit/s, INT. **`Cisco_Nexus_3432D_S`** (1, 14-attr): N3K-C3432D-S, 32× 400G-QSFP-DD + 2 aux
+  ("zwei" → S.3=32), **the FIRST 400G in the Nexus 3000 line** (50G PAM4), SwK 25,6 Tbit/s (Table 2; NOT doubled), **asymmetric
+  Durchsatz 7.200 Mpps Ingress / 10.000 Mpps Egress** (both in prose, attribute = bis 10.000 Mpps), 70 MB deep buffer, AC-only,
+  up to 512-way ECMP, IS-IS, deep analytics. **MACsec grounded ONLY on the two 3600 SKUs (8 / 6 ports) → PROSE ONLY, NO MACsec
+  Merkmal** (verified absent as an attribute on all nine; Catalyst precedent, no STOP). **VXLAN / EVPN / Cloud-Scale / ACI = 0 on ALL
+  nine** (no datasheet license table lists VXLAN — the 3600 release-notes VXLAN nuance kept in the Verification_Log only; customer
+  files verified 0). NX-OS in prose, IOS XE = 0. **No "new-sealed" anywhere** (whole-bundle `\bsealed\b` = 0 on all six bundles). All
+  EoL-generation → EoS dates ZU_VERIFIZIEREN, never dropped. PIDs verbatim (c78-707001/740345/739189/740836/741557). 1 base PID per
+  SKU. §5-clean; Beschr 133–165 words. Prices Phase-2 provisional. Added 6 `gate_completeness` records. **No new test. All 6 bundles
+  canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added 6 built-blocks,
+  **reduced the "Nexus 3000" catch-all 18→9** (no double-count). Regenerated `coverage_report.md`: **all 6 families ✅ (9/9 SKUs)**.
+  **In-scope 81→87** (+6 families). **Coverage now: 636 built, 66 families fully built, 68%.** The Nexus 3000 fixed lane is now
+  essentially complete (T1–T4 + B1 = 626→636 SKUs); the only Nexus-3000 remainders are the **3408-S chassis** (→ chassis carve-out),
+  **34200YC-SM** (PID ZU_VERIFIZIEREN — datasheet not yet located), and the 3100-Z/3132C-Z BiDi parts (if in scope). **Pass 3** (per
+  the courier): **Nexus 5000** (~12 SKUs, FCoE/unified-ports in prose) — but that needs the operator's FCoE prose-vs-Merkmal +
+  Nexus-2000-FEX model decisions first (the single-source-of-truth rule; I will NOT auto-create those Merkmale).
 
 ---
 

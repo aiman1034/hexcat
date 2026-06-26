@@ -1,0 +1,188 @@
+{
+ "N3K-C3464C": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3464C 3464C Data-Center-Switch (NX-OS, L3) – 64× 100G-QSFP28, 2 HE",
+  "titel_tag": "Cisco N3K-C3464C Nexus 3464C programmable | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3464C (3464C): Layer-3-Data-Center-Switch, 64× 100G-QSFP28, 12,8 Tbit/s, 5.200 Mpps, 2 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "16,1",
+  "versandgewicht": "18,00",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3464C ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3400-Serie mit 64× 100G-QSFP28 (zwei zusätzliche 1/10G-SFP+) im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 22 MB Shared-Buffer, vPC-Hochverfügbarkeit und 32-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N3K-C3464C 12,8 Tbit/s bei 5.200 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3K-LAN2K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3464C ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3400-Serie, ausgelegt als programmierbarer 100-Gigabit-Spine (Inband-Telemetrie) im 2-HE-Gehäuse.",
+   "Mit 64 Ports erreicht der N3K-C3464C eine Switching-Kapazität von 12,8 Tbit/s bei einer Weiterleitungsrate von 5.200 Mpps (Line-Rate Layer 2/3, 22 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3464C über vPC (Multichassis-LAG) statt über Stacking, mit 32-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3K-LAN2K9) schaltet OSPF, EIGRP und BGP frei. Die programmierbare Pipeline des N3K-C3464C liefert Inband Network Telemetry (INT) und Streaming-Telemetrie.",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC (1200 W), DC (930 W) oder HVAC/HVDC (1200 W)) arbeitet der N3K-C3464C im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3400-Serie ist der N3K-C3464C als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3464C?",
+    "Der N3K-C3464C bietet 64× 100G-QSFP28 (zwei zusätzliche 1/10G-SFP+)."
+   ],
+   [
+    "Unterstützt der N3K-C3464C Stacking oder PoE?",
+    "Nein – der N3K-C3464C nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N3K-C3464C Telemetrie?",
+    "Ja – die programmierbare Pipeline liefert Inband Network Telemetry (INT) und Streaming-Telemetrie (Lizenz N3K-STR2K9)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3464C?",
+    "Der N3K-C3464C läuft unter Cisco NX-OS; die Lizenz N3K-LAN2K9 schaltet OSPF, EIGRP und BGP frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "64"
+   ],
+   [
+    "Port-Konfiguration",
+    "64× 100G-QSFP28 (zwei zusätzliche 1/10G-SFP+)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28; auch 40G; Breakout auf 10G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "12,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "5.200 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (1200 W), DC (930 W) oder HVAC/HVDC (1200 W)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 100-Gigabit-Spine, programmierbar (Inband-Telemetrie) – 64× 100G-QSFP28; Layer 2/3, Line-Rate; NX-OS mit vPC und 32-Wege-ECMP; LAN-Enterprise-Lizenz N3K-LAN2K9 für OSPF/EIGRP/BGP; Inband Network Telemetry; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3464C",
+    "EoL",
+    "Cisco 3464C (Nexus-3400-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-740836 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html"
+   ],
+   [
+    "N3K-C3464C",
+    "PID",
+    "Ordering-PID N3K-C3464C verbatim aus c78-740836 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html"
+   ],
+   [
+    "N3K-C3464C",
+    "Switching-Kapazität",
+    "12,8 Tbit/s: Cisco-Angabe (c78-740836; 64× 100G × 2) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html"
+   ],
+   [
+    "N3K-C3464C",
+    "Versandgewicht",
+    "18,00 (geschätzt: Artikelgewicht 16,1 kg + Standard-Paketverpackung; 2 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-740836.html"
+   ]
+  ]
+ }
+}

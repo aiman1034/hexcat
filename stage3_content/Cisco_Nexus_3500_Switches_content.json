@@ -1,0 +1,746 @@
+{
+ "N3K-C3548P-XL": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3548P-XL 3548P-XL Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3548P-XL 3548P-XL Algo-Boost | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3548P-XL (3548P-XL): Layer-3-Data-Center-Switch, 48× 1/10G-SFP+, 960 Gbit/s, 720 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "7,9",
+  "versandgewicht": "9,40",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3548P-XL ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie mit 48× 1/10G-SFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 6 MB Shared-Buffer, vPC-Hochverfügbarkeit und 24-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3548P-XL 960 Gbit/s bei 720 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3548-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3548P-XL ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie, ausgelegt als ultra-niedrig-latenter Top-of-Rack-Switch (HFT/HPC) im 1-HE-Gehäuse.",
+   "Mit 48 Ports erreicht der N3K-C3548P-XL eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 720 Mpps (Line-Rate Layer 2/3, 6 MB Shared-Buffer (16 Ports, 18 MB gesamt), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3548P-XL über vPC (Multichassis-LAG) statt über Stacking (im Warp-Modus nicht verfügbar), mit 24-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3548-LAN1K9) schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei. Mit Cisco Algo Boost erreicht der N3K-C3548P-XL im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns) und unterstützt PTP-1588- sowie 1-PPS-Timing. Die XL-Revision bietet 16 GB Systemspeicher und Boot-Flash.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC oder DC (100–240 V)) arbeitet der N3K-C3548P-XL im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3500-Serie ist der N3K-C3548P-XL als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3548P-XL?",
+    "Der N3K-C3548P-XL bietet 48× 1/10G-SFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3548P-XL Stacking oder PoE?",
+    "Nein – der N3K-C3548P-XL nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Wie niedrig ist die Latenz des N3K-C3548P-XL?",
+    "Mit Cisco Algo Boost erreicht der N3K-C3548P-XL im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns); vPC ist im Warp-Modus nicht verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3548P-XL?",
+    "Der N3K-C3548P-XL läuft unter Cisco NX-OS; die Lizenz N3548-LAN1K9 schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC oder DC (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Ultra-Low-Latency-Top-of-Rack (HFT/HPC) – 48× 1/10G-SFP+; Cisco Algo Boost mit Warp-Modus (<200 ns, Warp-SPAN ~50 ns); Layer 2/3, Line-Rate; NX-OS mit vPC (nicht im Warp-Modus) und 24-Wege-ECMP; LAN-Enterprise-Lizenz für OSPFv2/EIGRP/BGP/VRF-Lite; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3548P-XL",
+    "EoL",
+    "Cisco 3548P-XL (Nexus-3500-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-707001 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-XL",
+    "PID",
+    "Ordering-PID N3K-C3548P-XL verbatim aus c78-707001 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-XL",
+    "Switching-Kapazität",
+    "960 Gbit/s: Cisco-Angabe (c78-707001 Table 6) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-XL",
+    "Versandgewicht",
+    "9,40 (geschätzt: Artikelgewicht 7,9 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ]
+  ]
+ },
+ "N3K-C3524P-XL": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3524P-XL 3524P-XL Data-Center-Switch (NX-OS, L3) – 24× 1/10G-SFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3524P-XL 3524P-XL Algo-Boost | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3524P-XL (3524P-XL): Layer-3-Data-Center-Switch, 24× 1/10G-SFP+, 480 Gbit/s, 360 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "7,9",
+  "versandgewicht": "9,40",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3524P-XL ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie mit 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar) im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 6 MB Shared-Buffer, vPC-Hochverfügbarkeit und 24-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3524P-XL 480 Gbit/s bei 360 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3524-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3524P-XL ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie, ausgelegt als ultra-niedrig-latenter Top-of-Rack-Switch (HFT/HPC) im 1-HE-Gehäuse.",
+   "Mit 24 Ports erreicht der N3K-C3524P-XL eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 360 Mpps (Line-Rate Layer 2/3, 6 MB Shared-Buffer (16 Ports, 18 MB gesamt), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3524P-XL über vPC (Multichassis-LAG) statt über Stacking (im Warp-Modus nicht verfügbar), mit 24-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3524-LAN1K9) schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei. Mit Cisco Algo Boost erreicht der N3K-C3524P-XL im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns) und unterstützt PTP-1588- sowie 1-PPS-Timing. Die XL-Revision bietet 16 GB Systemspeicher und Boot-Flash.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC oder DC (100–240 V)) arbeitet der N3K-C3524P-XL im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3500-Serie ist der N3K-C3524P-XL als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3524P-XL?",
+    "Der N3K-C3524P-XL bietet 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar)."
+   ],
+   [
+    "Unterstützt der N3K-C3524P-XL Stacking oder PoE?",
+    "Nein – der N3K-C3524P-XL nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Wie niedrig ist die Latenz des N3K-C3524P-XL?",
+    "Mit Cisco Algo Boost erreicht der N3K-C3524P-XL im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns); vPC ist im Warp-Modus nicht verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3524P-XL?",
+    "Der N3K-C3524P-XL läuft unter Cisco NX-OS; die Lizenz N3524-LAN1K9 schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "360 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC oder DC (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Ultra-Low-Latency-Top-of-Rack (HFT/HPC) – 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar); Cisco Algo Boost mit Warp-Modus (<200 ns, Warp-SPAN ~50 ns); Layer 2/3, Line-Rate; NX-OS mit vPC (nicht im Warp-Modus) und 24-Wege-ECMP; LAN-Enterprise-Lizenz für OSPFv2/EIGRP/BGP/VRF-Lite; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3524P-XL",
+    "EoL",
+    "Cisco 3524P-XL (Nexus-3500-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-707001 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-XL",
+    "PID",
+    "Ordering-PID N3K-C3524P-XL verbatim aus c78-707001 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-XL",
+    "Switching-Kapazität",
+    "480 Gbit/s: Cisco-Angabe (c78-707001 Table 6) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-XL",
+    "Versandgewicht",
+    "9,40 (geschätzt: Artikelgewicht 7,9 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ]
+  ]
+ },
+ "N3K-C3548P-10GX": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3548P-10GX 3548P-10GX Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3548P-10GX 3548P-10GX Algo-Boost | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3548P-10GX (3548P-10GX): Layer-3-Data-Center-Switch, 48× 1/10G-SFP+, 960 Gbit/s, 720 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "7,9",
+  "versandgewicht": "9,40",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3548P-10GX ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie mit 48× 1/10G-SFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 6 MB Shared-Buffer, vPC-Hochverfügbarkeit und 24-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3548P-10GX 960 Gbit/s bei 720 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3548-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3548P-10GX ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie, ausgelegt als ultra-niedrig-latenter Top-of-Rack-Switch (HFT/HPC) im 1-HE-Gehäuse.",
+   "Mit 48 Ports erreicht der N3K-C3548P-10GX eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 720 Mpps (Line-Rate Layer 2/3, 6 MB Shared-Buffer (16 Ports, 18 MB gesamt), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3548P-10GX über vPC (Multichassis-LAG) statt über Stacking (im Warp-Modus nicht verfügbar), mit 24-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3548-LAN1K9) schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei. Mit Cisco Algo Boost erreicht der N3K-C3548P-10GX im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns) und unterstützt PTP-1588- sowie 1-PPS-Timing. Die -10GX-Revision senkt die Leistungsaufnahme um rund 25 % (4 GB Systemspeicher).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC oder DC (100–240 V)) arbeitet der N3K-C3548P-10GX im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3500-Serie ist der N3K-C3548P-10GX als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3548P-10GX?",
+    "Der N3K-C3548P-10GX bietet 48× 1/10G-SFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3548P-10GX Stacking oder PoE?",
+    "Nein – der N3K-C3548P-10GX nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Wie niedrig ist die Latenz des N3K-C3548P-10GX?",
+    "Mit Cisco Algo Boost erreicht der N3K-C3548P-10GX im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns); vPC ist im Warp-Modus nicht verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3548P-10GX?",
+    "Der N3K-C3548P-10GX läuft unter Cisco NX-OS; die Lizenz N3548-LAN1K9 schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "720 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC oder DC (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Ultra-Low-Latency-Top-of-Rack (HFT/HPC) – 48× 1/10G-SFP+; Cisco Algo Boost mit Warp-Modus (<200 ns, Warp-SPAN ~50 ns); Layer 2/3, Line-Rate; NX-OS mit vPC (nicht im Warp-Modus) und 24-Wege-ECMP; LAN-Enterprise-Lizenz für OSPFv2/EIGRP/BGP/VRF-Lite; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3548P-10GX",
+    "EoL",
+    "Cisco 3548P-10GX (Nexus-3500-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-707001 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-10GX",
+    "PID",
+    "Ordering-PID N3K-C3548P-10GX verbatim aus c78-707001 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-10GX",
+    "Switching-Kapazität",
+    "960 Gbit/s: Cisco-Angabe (c78-707001 Table 6) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3548P-10GX",
+    "Versandgewicht",
+    "9,40 (geschätzt: Artikelgewicht 7,9 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ]
+  ]
+ },
+ "N3K-C3524P-10GX": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3524P-10GX 3524P-10GX Data-Center-Switch (NX-OS, L3) – 24× 1/10G-SFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3524P-10GX 3524P-10GX Algo-Boost | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3524P-10GX (3524P-10GX): Layer-3-Data-Center-Switch, 24× 1/10G-SFP+, 480 Gbit/s, 360 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "7,9",
+  "versandgewicht": "9,40",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3524P-10GX ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie mit 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar) im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 6 MB Shared-Buffer, vPC-Hochverfügbarkeit und 24-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3524P-10GX 480 Gbit/s bei 360 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3524-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3524P-10GX ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3500-Serie, ausgelegt als ultra-niedrig-latenter Top-of-Rack-Switch (HFT/HPC) im 1-HE-Gehäuse.",
+   "Mit 24 Ports erreicht der N3K-C3524P-10GX eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 360 Mpps (Line-Rate Layer 2/3, 6 MB Shared-Buffer (16 Ports, 18 MB gesamt), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3524P-10GX über vPC (Multichassis-LAG) statt über Stacking (im Warp-Modus nicht verfügbar), mit 24-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3524-LAN1K9) schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei. Mit Cisco Algo Boost erreicht der N3K-C3524P-10GX im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns) und unterstützt PTP-1588- sowie 1-PPS-Timing. Die -10GX-Revision senkt die Leistungsaufnahme um rund 25 % (4 GB Systemspeicher).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC oder DC (100–240 V)) arbeitet der N3K-C3524P-10GX im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3500-Serie ist der N3K-C3524P-10GX als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3524P-10GX?",
+    "Der N3K-C3524P-10GX bietet 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar)."
+   ],
+   [
+    "Unterstützt der N3K-C3524P-10GX Stacking oder PoE?",
+    "Nein – der N3K-C3524P-10GX nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Wie niedrig ist die Latenz des N3K-C3524P-10GX?",
+    "Mit Cisco Algo Boost erreicht der N3K-C3524P-10GX im Warp-Modus Latenzen unter 200 ns (Warp-SPAN ~50 ns); vPC ist im Warp-Modus nicht verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3524P-10GX?",
+    "Der N3K-C3524P-10GX läuft unter Cisco NX-OS; die Lizenz N3524-LAN1K9 schaltet OSPFv2, EIGRP, BGP und VRF-Lite frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "360 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC oder DC (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Ultra-Low-Latency-Top-of-Rack (HFT/HPC) – 24× 1/10G-SFP+ (per Lizenz auf achtundvierzig Ports aufrüstbar); Cisco Algo Boost mit Warp-Modus (<200 ns, Warp-SPAN ~50 ns); Layer 2/3, Line-Rate; NX-OS mit vPC (nicht im Warp-Modus) und 24-Wege-ECMP; LAN-Enterprise-Lizenz für OSPFv2/EIGRP/BGP/VRF-Lite; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3524P-10GX",
+    "EoL",
+    "Cisco 3524P-10GX (Nexus-3500-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-707001 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-10GX",
+    "PID",
+    "Ordering-PID N3K-C3524P-10GX verbatim aus c78-707001 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-10GX",
+    "Switching-Kapazität",
+    "480 Gbit/s: Cisco-Angabe (c78-707001 Table 6) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ],
+   [
+    "N3K-C3524P-10GX",
+    "Versandgewicht",
+    "9,40 (geschätzt: Artikelgewicht 7,9 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-707001.html"
+   ]
+  ]
+ }
+}

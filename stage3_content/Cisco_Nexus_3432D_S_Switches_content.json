@@ -1,0 +1,188 @@
+{
+ "N3K-C3432D-S": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3432D-S 3432D-S Data-Center-Switch (NX-OS, L3) – 32× 400G-QSFP-DD, 1 HE",
+  "titel_tag": "Cisco N3K-C3432D-S Nexus 3432D-S 400G | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3432D-S (3432D-S): Layer-3-Data-Center-Switch, 32× 400G-QSFP-DD, 25,6 Tbit/s, bis 10.000 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,50",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3432D-S ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3400-Serie mit 32× 400G-QSFP-DD (zwei zusätzliche 100M/1G-SFP) im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 70 MB Deep-Buffer, vPC-Hochverfügbarkeit und 512-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3432D-S 25,6 Tbit/s bei bis 10.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3K-ES-XF2.</p>",
+  "intro": [
+   "Der Cisco N3K-C3432D-S ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3400-Serie, ausgelegt als erster 400-Gigabit-Switch der Nexus-3000-Linie im 1-HE-Gehäuse.",
+   "Mit 32 Ports erreicht der N3K-C3432D-S eine Switching-Kapazität von 25,6 Tbit/s bei einer Weiterleitungsrate von bis 10.000 Mpps (Line-Rate Layer 2/3, 70 MB Deep-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3432D-S über vPC (Multichassis-LAG) statt über Stacking, mit 512-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Essential-Lizenz (N3K-ES-XF2) schaltet OSPF, EIGRP, BGP, IS-IS und VRF-Lite frei. Als erster 400-Gigabit-Switch der Nexus-3000-Linie (50G-PAM4-SerDes) liefert der N3K-C3432D-S eine asymmetrische Weiterleitungsrate von 7.200 Mpps Ingress / 10.000 Mpps Egress sowie Deep-Analytics (Per-Flow-, Queue- und Drop-Packet-Forensik) per Inband Network Telemetry.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC (1500 W, 100–240 V)) arbeitet der N3K-C3432D-S im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3400-Serie ist der N3K-C3432D-S als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3432D-S?",
+    "Der N3K-C3432D-S bietet 32× 400G-QSFP-DD (zwei zusätzliche 100M/1G-SFP)."
+   ],
+   [
+    "Unterstützt der N3K-C3432D-S Stacking oder PoE?",
+    "Nein – der N3K-C3432D-S nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Welchen Durchsatz hat der N3K-C3432D-S?",
+    "Der N3K-C3432D-S leitet asymmetrisch weiter: 7.200 Mpps Ingress und bis zu 10.000 Mpps Egress, bei 25,6 Tbit/s Switching-Kapazität und 70 MB Deep-Buffer."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3432D-S?",
+    "Der N3K-C3432D-S läuft unter Cisco NX-OS; die Lizenz N3K-ES-XF2 schaltet OSPF, EIGRP, BGP, IS-IS und VRF-Lite frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 400G-QSFP-DD (zwei zusätzliche 100M/1G-SFP)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "400 GbE (QSFP-DD; abwärtskompatibel QSFP+/28/56; Breakout auf 200G/100G/50G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "25,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "bis 10.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (1500 W, 100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 400-Gigabit-Spine mit Deep-Analytics – 32× 400G-QSFP-DD (50G-PAM4); Layer 2/3, Line-Rate, 70 MB Deep-Buffer; NX-OS mit vPC, bis 512-Wege-ECMP und IS-IS; Essential-Lizenz N3K-ES-XF2 für OSPF/EIGRP/BGP/IS-IS/VRF-Lite; Inband Network Telemetry; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3432D-S",
+    "EoL",
+    "Cisco 3432D-S (Nexus-3400-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-741557 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html"
+   ],
+   [
+    "N3K-C3432D-S",
+    "PID",
+    "Ordering-PID N3K-C3432D-S verbatim aus c78-741557 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html"
+   ],
+   [
+    "N3K-C3432D-S",
+    "Switching-Kapazität",
+    "25,6 Tbit/s: Cisco-Angabe (c78-741557 Tabelle 2, switching capacity) übernommen; der 12,8-Tbit/s-ASIC-Wert ist gerichtet -> NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html"
+   ],
+   [
+    "N3K-C3432D-S",
+    "Versandgewicht",
+    "15,50 (geschätzt: Artikelgewicht 13,6 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-741557.html"
+   ]
+  ]
+ }
+}

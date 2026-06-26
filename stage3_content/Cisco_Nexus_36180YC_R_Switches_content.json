@@ -1,0 +1,202 @@
+{
+ "N3K-C36180YC-R": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C36180YC-R 36180YC-R Data-Center-Switch (NX-OS, L3) – 48× 25G-SFP28 + 6× 100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N3K-C36180YC-R Nexus 36180YC-R Leaf | Hexwaren",
+  "meta_description": "Original Cisco N3K-C36180YC-R (36180YC-R): Layer-3-Data-Center-Switch, 48× 25G-SFP28 + 6× 100G-QSFP28, 1,8 Tbit/s, 1.670 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "12,3",
+  "versandgewicht": "14,00",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C36180YC-R ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3600-Serie mit 48× 25G-SFP28 (1/10/25G) + 6× 100G-QSFP28 (MACsec-fähig) im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 8 GB Deep-Buffer, vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C36180YC-R 1,8 Tbit/s bei 1.670 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. L3-Funktionen über die Lizenz N3K-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C36180YC-R ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3600-Serie, ausgelegt als 25-Gigabit-Aggregations-/Leaf-Switch der R-Serie (Deep-Buffer) im 1-HE-Gehäuse.",
+   "Mit 54 Ports erreicht der N3K-C36180YC-R eine Switching-Kapazität von 1,8 Tbit/s bei einer Weiterleitungsrate von 1.670 Mpps (Line-Rate Layer 2/3, 8 GB Deep-Buffer (R-Serie), MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C36180YC-R über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die LAN-Enterprise-Lizenz (N3K-LAN1K9) schaltet volles OSPF, EIGRP und BGP frei. Sechs der Ports des N3K-C36180YC-R sind MACsec-fähig (Hardware-Verschlüsselung).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul und bis zu zwei Hot-Swap-Netzteilen (2× redundant; AC, DC oder HV-AC/DC-Option (100–240 V)) arbeitet der N3K-C36180YC-R im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-3600-Serie ist der N3K-C36180YC-R als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C36180YC-R?",
+    "Der N3K-C36180YC-R bietet 48× 25G-SFP28 (1/10/25G) + 6× 100G-QSFP28 (MACsec-fähig)."
+   ],
+   [
+    "Unterstützt der N3K-C36180YC-R Stacking oder PoE?",
+    "Nein – der N3K-C36180YC-R nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N3K-C36180YC-R MACsec?",
+    "Ja – die 6 QSFP28-Uplink-Ports unterstützen Wire-Rate-MACsec (IEEE 802.1ae)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C36180YC-R?",
+    "Der N3K-C36180YC-R läuft unter Cisco NX-OS; die Lizenz N3K-LAN1K9 schaltet volles OSPF, EIGRP und BGP frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 25G-SFP28 (1/10/25G) + 6× 100G-QSFP28 (MACsec-fähig)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 100 GbE (QSFP28, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.670 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC, DC oder HV-AC/DC-Option (100–240 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 25-Gigabit-Aggregation/Leaf (R-Serie, Deep-Buffer) – 48× 25G-SFP28-Access plus 6× 100G-QSFP28-Uplinks (MACsec-fähig); Layer 2/3, Line-Rate; NX-OS mit vPC und 64-Wege-ECMP; LAN-Enterprise-Lizenz N3K-LAN1K9 für OSPF/EIGRP/BGP; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C36180YC-R",
+    "EoL",
+    "Cisco 36180YC-R (Nexus-3600-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-739189 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html"
+   ],
+   [
+    "N3K-C36180YC-R",
+    "PID",
+    "Ordering-PID N3K-C36180YC-R verbatim aus c78-739189 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/Lizenzen nicht gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html"
+   ],
+   [
+    "N3K-C36180YC-R",
+    "Switching-Kapazität",
+    "1,8 Tbit/s: Cisco-Angabe (c78-739189 Tabelle 3, gerichtet) übernommen; die Marketing-Angabe 3,6 Tbit/s ist bidirektional -> NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html"
+   ],
+   [
+    "N3K-C36180YC-R",
+    "Versandgewicht",
+    "14,00 (geschätzt: Artikelgewicht 12,3 kg + Standard-Paketverpackung; 1 HE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html"
+   ],
+   [
+    "N3K-C36180YC-R",
+    "Feature-Grounding",
+    "MACsec gegroundet (6 QSFP28-Ports, Wire-Rate 802.1ae) -> Prosa, KEIN Merkmal. VXLAN in der Lizenztabelle NICHT gelistet -> nicht behauptet. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-739189.html"
+   ]
+  ]
+ }
+}
