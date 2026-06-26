@@ -1,0 +1,200 @@
+{
+ "N3K-C3232C": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3232C Nexus 3232C Data-Center-Switch (NX-OS, L3) – 32× 100G-QSFP28, 1 HE",
+  "titel_tag": "Cisco N3K-C3232C Nexus 3232C 100G-Spine | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3232C (Nexus 3232C): Layer-3-Data-Center-Spine, 32× 100G-QSFP28, 6,4 Tbit/s, 3.300 Mpps, ~450 ns, 1 HE. Cisco NX-OS, vPC, 64-Wege-ECMP, kein PoE/Stacking. Für Data-Center-Fabrics.",
+  "artikelgewicht": "10,06",
+  "versandgewicht": "11,60",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3232C ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3200-Serie mit 32× 100G-QSFP28 im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er als einheitlicher 100-Gigabit-Spine das Line-Rate-Layer-2/3-Switching mit ~450 ns Latenz, vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3232C 6,4 Tbit/s bei 3.300 Mpps und 16 MB Shared-Buffer; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-AC-Netzteilen und -Lüftern. Erweiterte L3-Funktionen über die Lizenz N3K-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C3232C ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-3200-Serie, ausgelegt als einheitlicher 100-Gigabit-Spine mit 32 QSFP28-Ports (je 10/25/40/50/100G, Breakout auf 25G) im 1-HE-Gehäuse.",
+   "Mit 32 Ports erreicht der N3K-C3232C eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 3.300 Mpps und nur ~450 ns Latenz (Line-Rate Layer 2/3, 16 MB Shared-Buffer, Jumbo 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3232C über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 256-Wege-EtherChannel; betrieben wird er unter Cisco NX-OS (Nexus-9000-Lizenzschema). Die Enhanced-Layer-3-Lizenz (N3K-LAN1K9) schaltet volles OSPF, EIGRP und BGP frei.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (3+1, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-AC-Netzteilen (NXA-PAC-650W) arbeitet der N3K-C3232C im Temperaturbereich 0 bis 40 °C. Als 100-Gigabit-Spine der Cisco-Nexus-3200-Serie ist der N3K-C3232C als Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3232C?",
+    "Der N3K-C3232C bietet 32× 100G-QSFP28; jeder Port unterstützt 10/25/40/50/100G und Breakout auf 25G (bis zu 128 Ports im 25G-Modus)."
+   ],
+   [
+    "Unterstützt der N3K-C3232C Stacking oder PoE?",
+    "Nein – der N3K-C3232C nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Spine ohne PoE-Einspeisung."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3232C?",
+    "Der N3K-C3232C erreicht 6,4 Tbit/s bei 3.300 Mpps und nur ~450 ns Latenz, Line-Rate Layer 2/3 auf allen Ports."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3232C?",
+    "Der N3K-C3232C läuft unter Cisco NX-OS (Nexus-9000-Lizenzschema); die Enhanced-Layer-3-Lizenz N3K-LAN1K9 schaltet OSPF, EIGRP und BGP frei."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G-QSFP28 (Breakout auf 25G)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28; wahlweise 10/25/40/50/100G, Breakout auf 25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "3.300 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V, NXA-PAC-650W)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center einheitlicher 100-Gigabit-Spine (32× 100G-QSFP28, je 10/25/40/50/100G, Breakout auf 25G; Layer 2/3, Line-Rate, ~450 ns Latenz, 1 HE) – Cisco NX-OS mit vPC-Hochverfügbarkeit, 64-Wege-ECMP und bis zu 256-Wege-EtherChannel; Enhanced-Layer-3-Lizenz N3K-LAN1K9 für OSPF/EIGRP/BGP; Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3232C",
+    "EoL",
+    "Cisco Nexus 3232C (Nexus-3200-Generation) – EoL/EoS-Status und genaues Datum ZU_VERIFIZIEREN (Datenblatt c78-734883 nennt keines). In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ],
+   [
+    "N3K-C3232C",
+    "PID",
+    "Ordering-PID N3K-C3232C verbatim aus c78-734883 Table 7 (nur Basis-Chassis-PID gebankt; Nexus-9300-Lüfter NXA-FAN-30CFM-F/B, AC-Netzteile NXA-PAC-650W-PI/PE, Lizenz N3K-LAN1K9 und Varianten -S/-B8C/-OE NICHT gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ],
+   [
+    "N3K-C3232C",
+    "Switching-Kapazität",
+    "6,4 Tbit/s: Cisco-Angabe (c78-734883 Table 4; 32× 100G × 2 = 6,4 Tbit/s) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ],
+   [
+    "N3K-C3232C",
+    "Feature-Caveat",
+    "VXLAN unter der Lizenz N3K-LAN1K9 gelistet, im Datenblatt jedoch als 'VXLAN will be supported in future release' gekennzeichnet -> in der Kundenbeschreibung NICHT als vorhandenes Feature ausgewiesen (flag-don't-fabricate). Cloud-Scale/EVPN/ACI/MACsec im Datenblatt nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ],
+   [
+    "N3K-C3232C",
+    "Stromversorgung",
+    "Nur AC-PSU-PID (NXA-PAC-650W) in der Bestelltabelle gelistet; DC wird in der Übersicht erwähnt, aber ohne DC-PSU-PID -> AC ausgewiesen (zitierbar).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ],
+   [
+    "N3K-C3232C",
+    "Versandgewicht",
+    "11,60 (geschätzt: Artikelgewicht 10,06 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734883.html"
+   ]
+  ]
+ }
+}

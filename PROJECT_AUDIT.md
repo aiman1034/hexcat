@@ -3094,6 +3094,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Per-datasheet VXLAN/EVPN record across the lane: 3132Q/3164Q = VXLAN✓/EVPN✗ · 3172 = ✗/✗ · 3100-V = ✓/✓ · 31128PQ = ✓/✗ (each
   read from its own license table — never inferred from the ASIC). Remaining Nexus 3000: **T4 3200** (Cloud-Scale becomes grounded)
   · T5 3500 (Algo Boost) · T6 3600 (deep-buffer) · 3432D-S fixed (400G) / 3408-S chassis (carve-out).
+- **Nexus 3000 TRANCHE 4a — BUILD Cisco_Nexus_3232C (1/1); OPENS the Nexus 3200 platform (2026-06-26).** Content-only, **NO src,
+  NO new Merkmal** (`git diff -- src/` empty). Single SKU **N3K-C3232C** on the 14-attr uniform model (32× 100G-QSFP28 uniform,
+  Uplink-Ports omitted, Portanzahl 32, S.3=32). SwK 6,4 Tbit/s, Durchsatz 3.300 Mpps, **~450 ns latency**, 10,06 kg, **1 RU (NOT
+  2RU)**, **AC PSU only** (the ordering table lists no DC-PSU-PID; DC is overview-mentioned → noted in the Verification_Log), 16 MB
+  shared buffer, 64-way ECMP, EtherChannel 256/vPC, temp 0–40, Layer L3, Managed, no PoE, no stacking. **THIS ROUND = the
+  negative-grounding discipline (per-datasheet, c78-734883):** ⚠ **Cloud-Scale is NOT named in the datasheet → NOT claimed** (the
+  prior tranche-plan's "3200 = Cloud-Scale" was a loose ASIC inference; corrected — the ASIC is not named at all). 🔑 **VXLAN is
+  license-listed (N3K-LAN1K9) but datasheet-caveated *"VXLAN will be supported in future release"* → OMITTED from customer prose**
+  (treated as absent — the intermediate case between the 3172 [VXLAN absent] and the 3100-V [VXLAN grounded]); the caveat is
+  recorded in the Verification_Log ONLY. **EVPN / ACI / MACsec: none in the datasheet → excluded.** Customer files (Main/Attributes/
+  FAQ) carry ZERO of VXLAN/Cloud-Scale/EVPN/ACI/MACsec (verified); the only L3 features in prose are OSPF/EIGRP/BGP via N3K-LAN1K9.
+  NX-OS in prose (Nexus-9000 licensing scheme), IOS XE = 0. **SwK NOT doubled** (32×100G×2 = 6,4 Tbit/s, logged). **EoL/EoS-Status +
+  Datum ZU_VERIFIZIEREN** (datasheet names none) → flagged in the Verification_Log; the Beschreibung stays neutral (in-scope-spare /
+  new-build framing, no fabricated EoS date). **1 base chassis PID only** (N9300 fans/PSUs/license/-S/-B8C/-OE variants not banked).
+  PID **verbatim** (c78-734883 Table 7). **§5-clean whole-bundle** — caught + fixed a self-inflicted "new-sealed" slip in the EoL
+  note (it trips `\bsealed\b`; the gate passes prose-only but the standing rule is whole-bundle 0) → reworded to "ungebrauchte
+  Original-Hardware". Beschr 139 words. Prices Phase-2 provisional (6000). Added `Cisco_Nexus_3232C_switches` `gate_completeness`
+  record. **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added
+  the `Cisco_Nexus_3232C` built-block (1), **reduced the "Nexus 3000" catch-all 21→20**. Regenerated `coverage_report.md`: **Nexus
+  3232C ✅ 1/1**. **In-scope 78→79.** **Coverage now: 625 built, 58 families fully built, 67%.** Remaining Nexus 3200: **T4b 3264Q**
+  (64× 40G, 2RU) · **T4c 3264C-E** (64× 100G, 2RU, +MACsec) — re-check VXLAN/Cloud-Scale/MACsec per each datasheet · then T5 3500 ·
+  T6 3600 · 3432D-S fixed / 3408-S chassis. **Lane lesson reaffirmed:** VXLAN/EVPN/MACsec/Cloud-Scale are per-datasheet, never per-ASIC.
 
 ---
 
