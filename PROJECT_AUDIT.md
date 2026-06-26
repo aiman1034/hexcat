@@ -3074,6 +3074,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **reduced the "Nexus 3000" catch-all 26→22** (no double-count). Regenerated `coverage_report.md`: **Nexus 31108 ✅ 3/3, 3132Q-V
   ✅ 1/1**. **In-scope 75→77.** **Coverage now: 623 built, 56 families fully built, 67%.** Remaining Nexus 3000: **T3d 31128PQ**
   (96× SFP+ + 8× QSFP+ — finishes the 3100 platform) · T4 3200 (Cloud-Scale) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
+- **Nexus 3000 TRANCHE 3d — BUILD Cisco_Nexus_31128PQ (1/1); FINISHES the Nexus 3100 platform (2026-06-26).** Content-only,
+  **NO src, NO new Merkmal** (`git diff -- src/` empty). Single SKU **N3K-C31128PQ-10GE** on the 15-attr DC-switch model
+  (Uplink-Ports = **`8× 40G-QSFP+`**; **Portanzahl = 104** = 96× 10G-SFP+ access + 8 always-on QSFP+ uplinks, S.3 counts both).
+  SwK 2,5 Tbit/s, Durchsatz 1.400 Mpps, 10,1 kg. **FOUR verbatim-from-datasheet traps (not the lane defaults):** ⚠ **Bauform
+  2 RU** (only the lane's 2nd 2RU after the 3164Q); ⚠ **Betriebstemperatur 0 bis 50 °C** (genuinely higher than the lane's 0–40);
+  **buffer 12 MB shared** (NOT the 3100-V's 16 MB deep); Kühlung **1+1**-redundant. AC+DC, Layer L3, Managed, NX-OS, 64-way ECMP,
+  no PoE, no stacking (vPC). **VXLAN GROUNDED → included** (Base N3K-BAS1K9 has basic L3; LAN-Enterprise N3K-LAN1K9 adds BGP,
+  VRF-lite, **VXLAN**, PBR — Table 2 + Table 4). **EVPN NOT grounded → EXCLUDED** (whole-bundle EVPN=0; the deliberate contrast
+  with the 3100-V, which grounded EVPN). **ACI = Cloud-Scale = 0** (Trident II, not Cloud-Scale); IOS XE = 0, NX-OS present.
+  **SwK NOT doubled** (2,5 Tbit/s logged). **EoL flagged with EoS date `ZU_VERIFIZIEREN`** (the datasheet names no EoS date — the
+  flag lives in the Verification_Log ONLY; the Beschreibung says "abgekündigte zweite Nexus-3000-Generation" with NO fabricated
+  date). 1 base chassis PID only — the N9K-family fans/PSUs/license/ACK it borrows are NOT banked. PID **verbatim** (c78-734585
+  Table 7). §5-clean (no "Sealed"). Beschr 151 words. Prices Phase-2 provisional (4800). Added `Cisco_Nexus_31128PQ_switches`
+  `gate_completeness` record. **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0
+  failed**. Manifest: added the `Cisco_Nexus_31128PQ` built-block (1), **reduced the "Nexus 3000" catch-all 22→21**. Regenerated
+  `coverage_report.md`: **Nexus 31128PQ ✅ 1/1**. **In-scope 77→78.** **Coverage now: 624 built, 57 families fully built, 67%.**
+  **🏁 The ENTIRE Nexus 3100 platform is COMPLETE** (3132Q/-X/-XL + 3164Q + 3172 ×5 + 31108 trio + 3132Q-V + 31128PQ = 14 SKUs).
+  Per-datasheet VXLAN/EVPN record across the lane: 3132Q/3164Q = VXLAN✓/EVPN✗ · 3172 = ✗/✗ · 3100-V = ✓/✓ · 31128PQ = ✓/✗ (each
+  read from its own license table — never inferred from the ASIC). Remaining Nexus 3000: **T4 3200** (Cloud-Scale becomes grounded)
+  · T5 3500 (Algo Boost) · T6 3600 (deep-buffer) · 3432D-S fixed (400G) / 3408-S chassis (carve-out).
 
 ---
 

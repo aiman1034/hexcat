@@ -1,0 +1,202 @@
+{
+ "N3K-C31128PQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C31128PQ-10GE Nexus 31128PQ Data-Center-Switch (NX-OS, L3) – 96× 10G-SFP+ + 8× 40G-QSFP+, 2 HE",
+  "titel_tag": "Cisco N3K-C31128PQ-10GE Nexus 31128PQ ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C31128PQ-10GE (Nexus 31128PQ): Layer-3-Data-Center-Leaf, 96× 10G-SFP+ + 8× 40G-QSFP+, 2,5 Tbit/s, 1.400 Mpps, 2 HE, 0–50 °C. Cisco NX-OS, vPC, VXLAN, kein PoE/Stacking. EoL …",
+  "artikelgewicht": "10,1",
+  "versandgewicht": "11,60",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C31128PQ-10GE ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3100-Serie mit 96× 10G-SFP+ + 8× 40G-QSFP+ im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er als hochdichter 10-Gigabit-Leaf das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit, 64-Wege-ECMP und VXLAN-Bridging.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N3K-C31128PQ-10GE 2,5 Tbit/s bei 1.400 Mpps und 12 MB Shared-Buffer; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. VXLAN/BGP über die Lizenz N3K-LAN1K9.</p>",
+  "intro": [
+   "Der Cisco N3K-C31128PQ-10GE ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3100-Familie (zweite Nexus-3000-Generation), ausgelegt als hochdichter 10-Gigabit-Leaf/Top-of-Rack mit 96× 10G-SFP+-Access-Ports und 8× 40G-QSFP+-Uplinks (40G oder 10G-Breakout) im 2-HE-Gehäuse.",
+   "Mit 104 Ports erreicht der N3K-C31128PQ-10GE eine Switching-Kapazität von 2,5 Tbit/s bei einer Weiterleitungsrate von 1.400 Mpps (Line-Rate Layer 2/3, 12 MB Shared-Buffer, Jumbo 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C31128PQ-10GE über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP, VRF-lite, VXLAN-Bridging und PBR.",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul (1+1, Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C31128PQ-10GE im erweiterten Temperaturbereich 0 bis 50 °C. Als Modell der abgekündigten zweiten Nexus-3000-Generation bleibt der N3K-C31128PQ-10GE als Original-Hardware für Ersatz und Bestandserweiterung erhältlich; die Nachfolge übernehmen die aktuellen Cisco-Nexus-9300-Modelle."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C31128PQ-10GE?",
+    "Der N3K-C31128PQ-10GE bietet 96× 10G-SFP+ + 8× 40G-QSFP+ (Portanzahl 104); die 8 QSFP+-Uplinks sind stets aktiv."
+   ],
+   [
+    "Unterstützt der N3K-C31128PQ-10GE Stacking oder PoE?",
+    "Nein – der N3K-C31128PQ-10GE nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Leaf/Top-of-Rack ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N3K-C31128PQ-10GE VXLAN?",
+    "Ja – mit der LAN-Enterprise-Lizenz (N3K-LAN1K9) beherrscht der N3K-C31128PQ-10GE VXLAN-Bridging sowie BGP, VRF-lite und PBR; Layer 2 und Basis-Layer-3 deckt bereits die Base-Lizenz ab."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C31128PQ-10GE?",
+    "Der N3K-C31128PQ-10GE läuft unter Cisco NX-OS (ab Release 7.0(3)I2(1)) und wird per CLI, NX-API oder Linux-Bash verwaltet."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "104"
+   ],
+   [
+    "Port-Konfiguration",
+    "96× 10G-SFP+ + 8× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+, Access), 40 GbE (QSFP+, Uplink; 10G-Breakout)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,5 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.400 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (1+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center hochdichter 10-Gigabit-Leaf/Top-of-Rack (96× 10G-SFP+ + 8× 40G-QSFP+-Uplinks; Layer 2/3, Line-Rate, 2 HE) – Cisco NX-OS mit vPC-Hochverfügbarkeit, 64-Wege-ECMP und VXLAN-Bridging; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite, VXLAN, PBR); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C31128PQ-10GE",
+    "EoL",
+    "Cisco Nexus 31128PQ (zweite Nexus-3000-Generation / Nexus 3100) – EoL-Generation; genaues End-of-Sale-Datum ZU_VERIFIZIEREN (Datenblatt c78-734585 nennt kein EoS-Datum). Informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html"
+   ],
+   [
+    "N3K-C31128PQ-10GE",
+    "PID",
+    "Ordering-PID N3K-C31128PQ-10GE verbatim aus c78-734585 Table 7 (nur Basis-Chassis-PID gebankt; N9K-Lüfter N9K-C9300-FAN3/-B, Netzteile N9K-PAC-650W/-B/UCSC-PSU-930WDC/UCS-PSU-6332-DC, Lizenz N3K-LAN1K9 und Accessory-Kit N9K-C9300-ACK NICHT gebankt; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html"
+   ],
+   [
+    "N3K-C31128PQ-10GE",
+    "Switching-Kapazität",
+    "2,5 Tbit/s: Cisco-Angabe (c78-734585 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html"
+   ],
+   [
+    "N3K-C31128PQ-10GE",
+    "Portanzahl",
+    "Portanzahl = 104 = 96 10G-SFP+-Access + 8 stets-aktive 40G-QSFP+-Uplinks (zählt die Uplinks, Nexus-Konvention; S.3 = 96+8).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html"
+   ],
+   [
+    "N3K-C31128PQ-10GE",
+    "Versandgewicht",
+    "11,60 (geschätzt: Artikelgewicht 10,1 kg + Standard-Paketverpackung; 2 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/datasheet-c78-734585.html"
+   ]
+  ]
+ }
+}
