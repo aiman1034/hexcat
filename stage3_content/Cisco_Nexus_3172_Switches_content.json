@@ -1,0 +1,978 @@
+{
+ "N3K-C3172PQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3172PQ-10GE Nexus 3172PQ Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3172PQ-10GE Nexus 3172PQ ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3172PQ-10GE (Nexus 3172PQ): Layer-3-Data-Center-ToR-Switch, 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1,4 Tbit/s, 1.000 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. EoS (Nachfolger …",
+  "artikelgewicht": "8,4",
+  "versandgewicht": "9,90",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3172PQ-10GE ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3172-Serie mit 48× 1/10G-SFP+ + 6× 40G-QSFP+. Unter Cisco NX-OS übernimmt er als 10-Gigabit-Top-of-Rack das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3172PQ-10GE eine Switching-Kapazität von 1,4 Tbit/s bei 1.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (BGP, VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3172PQ-10GE ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3172-Familie, ausgelegt als 10-Gigabit-Top-of-Rack mit 48× 1/10-Gigabit-SFP+ (Glasfaser/DAC) und 6× 40G-QSFP+-Uplinks (40G oder Breakout auf 10G).",
+   "Mit 54 Ports erreicht der N3K-C3172PQ-10GE eine Switching-Kapazität von 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3172PQ-10GE über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 (OSPFv2, EIGRP-Stub, HSRP/VRRP, PIM) ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP und VRF-lite.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3172PQ-10GE laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 21-Okt-2021, Nachfolger Cisco Nexus 9300) bleibt der N3K-C3172PQ-10GE als Original-Hardware für Ersatz und Bestandserweiterung erhältlich."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3172PQ-10GE?",
+    "Der N3K-C3172PQ-10GE bietet 48× 1/10G-SFP+ + 6× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3172PQ-10GE Stacking oder PoE?",
+    "Nein – der N3K-C3172PQ-10GE nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Top-of-Rack mit Glasfaser-/Kupfer-Access und 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3172PQ-10GE?",
+    "Der N3K-C3172PQ-10GE läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt BGP und VRF-lite."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3172PQ-10GE?",
+    "Der N3K-C3172PQ-10GE erreicht 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps, Line-Rate Layer 2/3 auf allen Ports."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + 6× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40 GbE (QSFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – 48× 1/10-Gigabit-SFP+ (Glasfaser/DAC) plus 6× 40G-QSFP+-Uplinks; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3172PQ-10GE",
+    "EoL",
+    "Cisco Nexus 3172 (Nexus-3100-Plattform) End-of-Sale 21-Okt-2021 – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-10GE",
+    "PID",
+    "Ordering-PID N3K-C3172PQ-10GE verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-729483 (Table 7; nur Basis-Chassis-PID gebankt, nicht die FA/BA/FD/BD-Bundles oder -32T-Lizenzen N3K-32X-LIC/N3K-16T-UPG; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-10GE",
+    "Switching-Kapazität",
+    "1,4 Tbit/s: Cisco-Angabe (c78-729483 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-10GE",
+    "Versandgewicht",
+    "9,90 (geschätzt: Artikelgewicht 8,4 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ]
+  ]
+ },
+ "N3K-C3172PQ-XL": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3172PQ-XL Nexus 3172PQ-XL Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3172PQ-XL Nexus 3172PQ-XL ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3172PQ-XL (Nexus 3172PQ-XL): Layer-3-Data-Center-ToR-Switch, 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1,4 Tbit/s, 1.000 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. EoS (Nachfolger …",
+  "artikelgewicht": "8,4",
+  "versandgewicht": "9,90",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3172PQ-XL ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3172-Serie mit 48× 1/10G-SFP+ + 6× 40G-QSFP+. Unter Cisco NX-OS übernimmt er als 10-Gigabit-Top-of-Rack das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3172PQ-XL eine Switching-Kapazität von 1,4 Tbit/s bei 1.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (BGP, VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3172PQ-XL ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3172-Familie, ausgelegt als 10-Gigabit-Top-of-Rack mit 48× 1/10-Gigabit-SFP+ (Glasfaser/DAC) und 6× 40G-QSFP+-Uplinks (40G oder Breakout auf 10G).",
+   "Mit 54 Ports erreicht der N3K-C3172PQ-XL eine Switching-Kapazität von 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3172PQ-XL über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 (OSPFv2, EIGRP-Stub, HSRP/VRRP, PIM) ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP und VRF-lite. Als XL-Revision bietet der N3K-C3172PQ-XL 8 GB Arbeitsspeicher, eine 2,5-GHz-CPU und 16 GB Boot-Flash für umfangreichere Object-Model-Programmierung.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3172PQ-XL laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 21-Okt-2021, Nachfolger Cisco Nexus 9300) bleibt der N3K-C3172PQ-XL als Original-Hardware für Ersatz und Bestandserweiterung erhältlich."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3172PQ-XL?",
+    "Der N3K-C3172PQ-XL bietet 48× 1/10G-SFP+ + 6× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3172PQ-XL Stacking oder PoE?",
+    "Nein – der N3K-C3172PQ-XL nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Top-of-Rack mit Glasfaser-/Kupfer-Access und 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3172PQ-XL?",
+    "Der N3K-C3172PQ-XL läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt BGP und VRF-lite."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3172PQ-XL?",
+    "Der N3K-C3172PQ-XL erreicht 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps, Line-Rate Layer 2/3 auf allen Ports."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + 6× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40 GbE (QSFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – 48× 1/10-Gigabit-SFP+ (Glasfaser/DAC) plus 6× 40G-QSFP+-Uplinks; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3172PQ-XL",
+    "EoL",
+    "Cisco Nexus 3172 (Nexus-3100-Plattform) End-of-Sale 21-Okt-2021 – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-XL",
+    "PID",
+    "Ordering-PID N3K-C3172PQ-XL verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-729483 (Table 7; nur Basis-Chassis-PID gebankt, nicht die FA/BA/FD/BD-Bundles oder -32T-Lizenzen N3K-32X-LIC/N3K-16T-UPG; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-XL",
+    "Switching-Kapazität",
+    "1,4 Tbit/s: Cisco-Angabe (c78-729483 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172PQ-XL",
+    "Versandgewicht",
+    "9,90 (geschätzt: Artikelgewicht 8,4 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ]
+  ]
+ },
+ "N3K-C3172TQ-10GT": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3172TQ-10GT Nexus 3172TQ Data-Center-Switch (NX-OS, L3) – 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3172TQ-10GT Nexus 3172TQ ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3172TQ-10GT (Nexus 3172TQ): Layer-3-Data-Center-ToR-Switch, 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+, 1,4 Tbit/s, 1.000 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. EoS …",
+  "artikelgewicht": "10,0",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3172TQ-10GT ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3172-Serie mit 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+. Unter Cisco NX-OS übernimmt er als 10-Gigabit-Top-of-Rack das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3172TQ-10GT eine Switching-Kapazität von 1,4 Tbit/s bei 1.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (BGP, VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3172TQ-10GT ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3172-Familie, ausgelegt als 10-Gigabit-Top-of-Rack mit 48× 10-Gigabit-BASE-T (Kupfer, RJ-45) und 6× 40G-QSFP+-Uplinks (40G oder Breakout auf 10G).",
+   "Mit 54 Ports erreicht der N3K-C3172TQ-10GT eine Switching-Kapazität von 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3172TQ-10GT über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 (OSPFv2, EIGRP-Stub, HSRP/VRRP, PIM) ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP und VRF-lite.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3172TQ-10GT laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 21-Okt-2021, Nachfolger Cisco Nexus 9300) bleibt der N3K-C3172TQ-10GT als Original-Hardware für Ersatz und Bestandserweiterung erhältlich."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3172TQ-10GT?",
+    "Der N3K-C3172TQ-10GT bietet 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3172TQ-10GT Stacking oder PoE?",
+    "Nein – der N3K-C3172TQ-10GT nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Top-of-Rack mit Glasfaser-/Kupfer-Access und 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3172TQ-10GT?",
+    "Der N3K-C3172TQ-10GT läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt BGP und VRF-lite."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3172TQ-10GT?",
+    "Der N3K-C3172TQ-10GT erreicht 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps, Line-Rate Layer 2/3 auf allen Ports."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/10 GbE (10GBASE-T, Access), 40 GbE (QSFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – 48× 10-Gigabit-BASE-T (Kupfer, RJ-45) plus 6× 40G-QSFP+-Uplinks; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3172TQ-10GT",
+    "EoL",
+    "Cisco Nexus 3172 (Nexus-3100-Plattform) End-of-Sale 21-Okt-2021 – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-10GT",
+    "PID",
+    "Ordering-PID N3K-C3172TQ-10GT verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-729483 (Table 7; nur Basis-Chassis-PID gebankt, nicht die FA/BA/FD/BD-Bundles oder -32T-Lizenzen N3K-32X-LIC/N3K-16T-UPG; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-10GT",
+    "Switching-Kapazität",
+    "1,4 Tbit/s: Cisco-Angabe (c78-729483 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-10GT",
+    "Versandgewicht",
+    "11,50 (geschätzt: Artikelgewicht 10,0 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ]
+  ]
+ },
+ "N3K-C3172TQ-32T": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3172TQ-32T Nexus 3172TQ-32T Data-Center-Switch (NX-OS, L3) – 32× 100M/1/10G-BASE-T (RJ-45; 32 von 48 lizenziert) + 6× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3172TQ-32T Nexus 3172TQ-32T ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3172TQ-32T (Nexus 3172TQ-32T): Layer-3-Data-Center-ToR-Switch, 32× 100M/1/10G-BASE-T (RJ-45; 32 von 48 lizenziert) + 6× 40G-QSFP+, 1,4 Tbit/s, 1.000 Mpps, 1 HE. Cisco NX-OS, …",
+  "artikelgewicht": "10,0",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3172TQ-32T ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3172-Serie mit 32× 100M/1/10G-BASE-T (RJ-45; 32 von 48 lizenziert) + 6× 40G-QSFP+. Unter Cisco NX-OS übernimmt er als 10-Gigabit-Top-of-Rack das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3172TQ-32T eine Switching-Kapazität von 1,4 Tbit/s bei 1.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (BGP, VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3172TQ-32T ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3172-Familie, ausgelegt als 10-Gigabit-Top-of-Rack mit 32 von 48 lizenzierte 10-Gigabit-BASE-T (Kupfer, RJ-45) und 6× 40G-QSFP+-Uplinks (40G oder Breakout auf 10G).",
+   "Mit 38 Ports erreicht der N3K-C3172TQ-32T eine Switching-Kapazität von 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3172TQ-32T über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 (OSPFv2, EIGRP-Stub, HSRP/VRRP, PIM) ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP und VRF-lite. Der N3K-C3172TQ-32T ist mit 32 von 48 10GBASE-T-Ports lizenziert; die 16-Port-Upgrade-Lizenz schaltet die vollen 48 frei (die 6 QSFP+-Uplinks bleiben stets aktiv).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3172TQ-32T laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 21-Okt-2021, Nachfolger Cisco Nexus 9300) bleibt der N3K-C3172TQ-32T als Original-Hardware für Ersatz und Bestandserweiterung erhältlich."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3172TQ-32T?",
+    "Der N3K-C3172TQ-32T bietet 32× 100M/1/10G-BASE-T (RJ-45; 32 von 48 lizenziert) + 6× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3172TQ-32T Stacking oder PoE?",
+    "Nein – der N3K-C3172TQ-32T nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Top-of-Rack mit Glasfaser-/Kupfer-Access und 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3172TQ-32T?",
+    "Der N3K-C3172TQ-32T läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt BGP und VRF-lite."
+   ],
+   [
+    "Wie viele Ports sind beim N3K-C3172TQ-32T aktiv?",
+    "32 von 48 10GBASE-T-Ports sind lizenziert; eine 16-Port-Upgrade-Lizenz (N3K-16T-UPG) schaltet die vollen 48 frei (die 6× 40G-QSFP+-Uplinks sind stets aktiv)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "38"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100M/1/10G-BASE-T (RJ-45; 32 von 48 lizenziert) + 6× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/10 GbE (10GBASE-T, Access), 40 GbE (QSFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – 32 von 48 lizenzierte 10-Gigabit-BASE-T (Kupfer, RJ-45) plus 6× 40G-QSFP+-Uplinks; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3172TQ-32T",
+    "EoL",
+    "Cisco Nexus 3172 (Nexus-3100-Plattform) End-of-Sale 21-Okt-2021 – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-32T",
+    "PID",
+    "Ordering-PID N3K-C3172TQ-32T verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-729483 (Table 7; nur Basis-Chassis-PID gebankt, nicht die FA/BA/FD/BD-Bundles oder -32T-Lizenzen N3K-32X-LIC/N3K-16T-UPG; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-32T",
+    "Switching-Kapazität",
+    "1,4 Tbit/s: Cisco-Angabe (c78-729483 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-32T",
+    "Versandgewicht",
+    "11,50 (geschätzt: Artikelgewicht 10,0 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-32T",
+    "Portanzahl",
+    "Portanzahl = 38 = 32 lizenzierte 10GBASE-T-Datenports + 6 stets-aktive 40G-QSFP+-Uplinks (zählt die Uplinks, gleiche Konvention wie 3064-32T = 36). 16-Port-Upgrade-Lizenz schaltet die vollen 48 Datenports frei (dann 54 gesamt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ]
+  ]
+ },
+ "N3K-C3172TQ-XL": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+   "verifiziert_am": "2026-06-26"
+  },
+  "artikelname": "Cisco N3K-C3172TQ-XL Nexus 3172TQ-XL Data-Center-Switch (NX-OS, L3) – 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3172TQ-XL Nexus 3172TQ-XL ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3172TQ-XL (Nexus 3172TQ-XL): Layer-3-Data-Center-ToR-Switch, 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+, 1,4 Tbit/s, 1.000 Mpps, 1 HE. Cisco NX-OS, vPC, kein PoE/Stacking. …",
+  "artikelgewicht": "10,0",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3172TQ-XL ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3172-Serie mit 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+. Unter Cisco NX-OS übernimmt er als 10-Gigabit-Top-of-Rack das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3172TQ-XL eine Switching-Kapazität von 1,4 Tbit/s bei 1.000 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (BGP, VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3172TQ-XL ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3172-Familie, ausgelegt als 10-Gigabit-Top-of-Rack mit 48× 10-Gigabit-BASE-T (Kupfer, RJ-45) und 6× 40G-QSFP+-Uplinks (40G oder Breakout auf 10G).",
+   "Mit 54 Ports erreicht der N3K-C3172TQ-XL eine Switching-Kapazität von 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3172TQ-XL über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 (OSPFv2, EIGRP-Stub, HSRP/VRRP, PIM) ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt BGP und VRF-lite. Als XL-Revision bietet der N3K-C3172TQ-XL 8 GB Arbeitsspeicher, eine 2,5-GHz-CPU und 16 GB Boot-Flash für umfangreichere Object-Model-Programmierung.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3172TQ-XL laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 21-Okt-2021, Nachfolger Cisco Nexus 9300) bleibt der N3K-C3172TQ-XL als Original-Hardware für Ersatz und Bestandserweiterung erhältlich."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3172TQ-XL?",
+    "Der N3K-C3172TQ-XL bietet 48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3172TQ-XL Stacking oder PoE?",
+    "Nein – der N3K-C3172TQ-XL nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Top-of-Rack mit Glasfaser-/Kupfer-Access und 40G-QSFP+-Uplinks."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3172TQ-XL?",
+    "Der N3K-C3172TQ-XL läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt BGP und VRF-lite."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3172TQ-XL?",
+    "Der N3K-C3172TQ-XL erreicht 1,4 Tbit/s bei einer Weiterleitungsrate von 1.000 Mpps, Line-Rate Layer 2/3 auf allen Ports."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/10G-BASE-T (RJ-45) + 6× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/10 GbE (10GBASE-T, Access), 40 GbE (QSFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (3+1-redundant, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 10-Gigabit-Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – 48× 10-Gigabit-BASE-T (Kupfer, RJ-45) plus 6× 40G-QSFP+-Uplinks; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (BGP, VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3172TQ-XL",
+    "EoL",
+    "Cisco Nexus 3172 (Nexus-3100-Plattform) End-of-Sale 21-Okt-2021 – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-XL",
+    "PID",
+    "Ordering-PID N3K-C3172TQ-XL verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-729483 (Table 7; nur Basis-Chassis-PID gebankt, nicht die FA/BA/FD/BD-Bundles oder -32T-Lizenzen N3K-32X-LIC/N3K-16T-UPG; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-XL",
+    "Switching-Kapazität",
+    "1,4 Tbit/s: Cisco-Angabe (c78-729483 Table 3) übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ],
+   [
+    "N3K-C3172TQ-XL",
+    "Versandgewicht",
+    "11,50 (geschätzt: Artikelgewicht 10,0 kg + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3000-series-switches/data_sheet_c78-729483.html"
+   ]
+  ]
+ }
+}

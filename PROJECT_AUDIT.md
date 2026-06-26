@@ -3032,6 +3032,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   built-blocks, **reduced the "Nexus 3000" catch-all 35→31** (no double-count). Regenerated `coverage_report.md`: **Nexus 3132Q ✅
   3/3, 3164Q ✅ 1/1**. **In-scope 72→74.** **Coverage now: 614 built, 53 families fully built, 66%.** Remaining Nexus 3000: T3b
   (3172/31108-V/31128PQ/3132Q-V, 10G/100G) · T4 3200 (Cloud-Scale becomes grounded) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
+- **Nexus 3000 TRANCHE 3b — BUILD Cisco_Nexus_3172 (5/5); 10G ToR + 6× 40G uplinks (2026-06-26).** Content-only, **NO src, NO
+  new Merkmal** (`git diff -- src/` empty). **Structural shift BACK to the 15-attr DC-switch model** (the 3064/3048 pattern,
+  Uplink-Ports PRESENT) — the 3172 is an access+uplink ToR, NOT a uniform spine (so it does NOT use the T2/T3a 14-attr uniform
+  pattern). **5 base chassis PIDs** N3K-C3172PQ-10GE / -PQ-XL / -TQ-10GT / -TQ-32T / -TQ-XL (single hardware PID per model — the
+  FA/BA/FD/BD-L3 bundles + -32T licenses N3K-32X-LIC/N3K-16T-UPG NOT banked). **Uplink-Ports = `6× 40G-QSFP+`** (all 5);
+  **Portanzahl = access+uplink = 54/54/54/38/54** with S.3 matching (TQ-32T = **38** = 32 licensed + 6 always-on uplinks, the
+  same count-uplinks convention as the corrected 3064-32T=36; "32 von 48 lizenziert +16 Upgrade" in prose + Verification_Log).
+  **Weights split by port type — NOT uniform: PQ (SFP+) = 8,4 kg, TQ (10GBASE-T) = 10,0 kg** (copper PHYs heavier). SwK 1,4 Tbit/s,
+  Durchsatz 1.000 Mpps, 1 RU, AC+DC, temp 0–40, Layer L3, Managed, NX-OS, 64-way ECMP, no PoE, no stacking (vPC). XL variants
+  (PQ-XL/TQ-XL) = +8 GB RAM / 2,5 GHz CPU / 16 GB boot-flash (prose). **🔑 THE CRITICAL REVERSAL — VXLAN EXCLUDED:** unlike the
+  same-generation 3132Q/3164Q (T3a, VXLAN grounded), the **3172 datasheet's LAN-Enterprise license = BGP + VRF-lite ONLY** (Table 2
+  + Table 4 L3 list — no VXLAN). Grounding is **per-datasheet, not per-ASIC** → whole-bundle **VXLAN = 0** (correctly excluded);
+  ACI = Cloud-Scale = EVPN = 0 as always; IOS XE = 0, NX-OS present (35×). **SwK NOT doubled** (1,4 Tbit/s logged). PIDs **verbatim**
+  (c78-729483 Table 7; provenance logged). EoS 21-Okt-2021 → flagged. §5-clean (no "Sealed"). Beschr 149–175 words (TQ-32T license
+  sentence trimmed to clear the 175 ceiling). Prices Phase-2 provisional (3200/3600/3000/2600/3400). Added the
+  `Cisco_Nexus_3172_switches` `gate_completeness` record. **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite
+  **438 passed, 0 skipped, 0 failed**. Manifest: added the `Cisco_Nexus_3172` built-block (5), **reduced the "Nexus 3000" catch-all
+  31→26** (no double-count). Regenerated `coverage_report.md`: **Nexus 3172 ✅ 5/5**. **In-scope 74→75.** **Coverage now: 619 built,
+  54 families fully built, 66%.** Remaining Nexus 3000: T3c (31108PC-V/TC-V + 3132Q-V + 31128PQ — 100G/96-port, **re-check VXLAN
+  per datasheet**; the -V/Trident-II parts likely ground it) · T4 3200 (Cloud-Scale) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
 
 ---
 
