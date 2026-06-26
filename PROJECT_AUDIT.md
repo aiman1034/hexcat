@@ -3052,6 +3052,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   31→26** (no double-count). Regenerated `coverage_report.md`: **Nexus 3172 ✅ 5/5**. **In-scope 74→75.** **Coverage now: 619 built,
   54 families fully built, 66%.** Remaining Nexus 3000: T3c (31108PC-V/TC-V + 3132Q-V + 31128PQ — 100G/96-port, **re-check VXLAN
   per datasheet**; the -V/Trident-II parts likely ground it) · T4 3200 (Cloud-Scale) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
+- **Nexus 3000 TRANCHE 3c — BUILD Cisco_Nexus_31108 (3/3) + Cisco_Nexus_3132Q_V (1/1); 3100-V deep-buffer / 100G / VXLAN+EVPN
+  (2026-06-26).** Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). One datasheet (c78-736608), **two
+  already-established attribute shapes:** **`Cisco_Nexus_31108`** (3 SKUs, **15-attr**, Uplink-Ports = **`6× 100G-QSFP28`** —
+  the lane's first 100G uplinks; reuses the 3064/3172 model) = N3K-C31108PC-V (48× SFP+, 9,7 kg) / N3K-C31108TC-V (48× 10GBASE-T,
+  10,0) / N3K-C31108TCV-32T (32-of-48 licensed +16-upgrade, **Portanzahl 38** = 32+6, 10,0); SwK 2,16 Tbit/s, Durchsatz 1.200 Mpps;
+  Portanzahl **54/54/38** (S.3 matches). **`Cisco_Nexus_3132Q_V`** (1 SKU, **14-attr uniform**, Uplink-Ports omitted; reuses the
+  3016/3132Q pattern) = N3K-C3132Q-V (32× 40G-QSFP+ + 4 SFP+ **multiplexed** w/ QSFP#1 → **Portanzahl 32, not 36**, multiplex
+  spelled non-countably so S.3=32); SwK 2,56 Tbit/s, Durchsatz 1.400 Mpps, 8,5 kg, 3 boot-selectable modes. **Three distinct
+  weights** (9,7 / 10,0 / 8,5 — not uniform). All 1 RU, AC+DC, temp 0–40, Layer L3, Managed, NX-OS, 64-way ECMP, **16 MB deep
+  buffer**, ~650 ns latency, no PoE, no stacking (vPC). **NEW — EVPN now grounded (a lane first):** the 3100-V datasheet states
+  *"native line-rate VXLAN routing"* + *"the BGP EVPN control plane provides scalable multitenancy and host mobility"* → **both
+  VXLAN and EVPN included in prose** (whole-bundle VXLAN present 24/8, EVPN present 15/5). Licensing differs from the 3172: **no
+  base-L3 step — N3K-LAN1K9 (LAN Enterprise) required for ANY L3 feature** (OSPF/EIGRP/BGP/VXLAN); noted in prose. Still **no
+  fabrication: ACI = Cloud-Scale = 0** (Nexus 3000 never runs ACI; not Cloud-Scale ASIC); IOS XE = 0, NX-OS present. **SwK NOT
+  doubled** (2,16 / 2,56 Tbit/s logged). **4 base chassis PIDs only** — no PSU/fan/license SKUs. PIDs **verbatim** (c78-736608
+  Table 7; provenance logged). EoS 21-Okt-2021 → flagged. §5-clean (no "Sealed"). Beschr 152–173 words (EVPN benefit clause +
+  TCV-32T license sentence trimmed to clear the 175 ceiling). Prices Phase-2 provisional (5500/5200/4400; 3600). Added
+  `Cisco_Nexus_31108_switches` + `Cisco_Nexus_3132Q_V_switches` `gate_completeness` records. **No new test. Both bundles canonical
+  gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added the 31108 + 3132Q-V built-blocks,
+  **reduced the "Nexus 3000" catch-all 26→22** (no double-count). Regenerated `coverage_report.md`: **Nexus 31108 ✅ 3/3, 3132Q-V
+  ✅ 1/1**. **In-scope 75→77.** **Coverage now: 623 built, 56 families fully built, 67%.** Remaining Nexus 3000: **T3d 31128PQ**
+  (96× SFP+ + 8× QSFP+ — finishes the 3100 platform) · T4 3200 (Cloud-Scale) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
 
 ---
 
