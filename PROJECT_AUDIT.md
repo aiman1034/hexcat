@@ -2963,6 +2963,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (45). Regenerated `coverage_report.md`: **both 3650 sub-families ✅** (PoE+ S/D 18/18 + data-T/Q/R/Z/mGig/mini 45/45). **In-scope
   unchanged (69**). **Coverage now: 605 built, 48 families fully built, 65%.** ⚠ L8-reconcile note: the 45 = all-L/S/E enumeration is
   directive-grounded; if any specific tier PID (esp. mini 24PDM/48FQM or 12X48UR/UZ at LAN Base) is not orderable, flag it then.
+- **BUILD Cisco_Nexus_3064 (3/3) — Nexus 3000 Tranche 1, original 10G DC ToR (2026-06-25/26).** Content-only, **NO src, NO new
+  Merkmal** (`git diff -- src/` empty). FIXED-switch round (NOT chassis) reusing the **Nexus 9300 DC-switch model verbatim**
+  (15-attr incl. **Uplink-Ports**; Kat-L3 **`Data-Center-Switch`**; **Portanzahl counts access+uplink** so S.3 sums both;
+  PoE Nein; **Stacking Nein = vPC**; Anwendung Data-Center; generic Cisco-Switch closer). **NEXUS = single hardware PID per
+  model** (no Catalyst -L/-S/-E tiers — L2/L3 is licensing, not a SKU). **3 SKUs:** N3K-C3064PQ-10GX (3064-X: 48× 1/10G-SFP+ +
+  4× 40G-QSFP+, AC+DC, 9,30 kg) · N3K-C3064TQ-10GT (3064-T: 48× 10GBASE-T + 4× QSFP+, AC, 9,50) · N3K-C3064TQ-32T (3064-32T:
+  32 of 48 10GBASE-T LICENSED +16-port upgrade, AC, 9,50). All Layer **L3**, Switch-Typ Managed, **NX-OS** (Base N3K-BAS1K9 +
+  LAN-Enterprise N3K-LAN1K9 add-on), **SwK 1,28 Tbit/s, Durchsatz 950 Mpps**, temp 0–40 °C, Portanzahl 52/52/32. **PIDs banked
+  VERBATIM** from the courier's c78-651097 ordering transcription (the only $0 source, internally consistent + match Cisco's
+  standard PIDs → no `ZU_VERIFIZIEREN` conflict; provenance logged per SKU). **IOS XE absent** whole-bundle (NX-OS = 21, IOS XE
+  = 0). **GROUNDING DISCIPLINE — no fabrication of 9300-only features:** the 3064 is the original 2011 ToR, so VXLAN-BGP-EVPN /
+  ACI / Cloud-Scale (which the 9300 model's Anwendung carries) are **excluded** (whole-bundle VXLAN=0, EVPN=0); only 3064-grounded
+  values used (line-rate L2/3, vPC, 64-way ECMP, OSPF/EIGRP/BGP/VRF-lite, Jumbo 9216). **3064-32T Portanzahl=32** = licensed
+  10GBASE-T data ports (courier directive + product identity); the 4× 40G-QSFP+ uplinks are always-on, carried by the Uplink-Ports
+  Merkmal and written non-countably in Port-Konfiguration so S.3 counts the 32 data ports — convention flagged in the
+  Verification_Log (X/T count uplinks → Portanzahl 52 per the Nexus model; 32T is the license-limited exception). EoS → flagged,
+  never dropped. §5-clean whole-bundle (Zustand→condition=new; no "Sealed"). Prices Phase-2 provisional (3800/3500/2800; no-BOM/LF,
+  0 `;0,00`). Added the `Cisco_Nexus_3064_switches` `gate_completeness` record. **No new test. Canonical gate ok=True / 0 viol /
+  0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added the `Cisco_Nexus_3064` built-block (3) + **reduced
+  the family-level "Cisco Nexus 3000" OTHER row 40→37** (no double-count; remaining tranches T2 3048/3016, T3 3100, T4 3200, T5
+  3500, T6 3600, + the 3408-S chassis → chassis carve-out). Regenerated `coverage_report.md`: **Cisco Nexus 3064 ✅ 3/3**.
+  **In-scope 69→70** (genuinely new family split out of the Nexus-3000 catch-all bucket). **Coverage now: 608 built, 49 families
+  fully built, 65%.** Opens the Nexus 3000 lane (~40 across 6 platforms) — couriered tranche by tranche (T2–T6 + 3432D-S fixed).
 
 ---
 
