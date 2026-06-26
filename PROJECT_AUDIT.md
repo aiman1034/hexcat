@@ -3116,6 +3116,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3232C ✅ 1/1**. **In-scope 78→79.** **Coverage now: 625 built, 58 families fully built, 67%.** Remaining Nexus 3200: **T4b 3264Q**
   (64× 40G, 2RU) · **T4c 3264C-E** (64× 100G, 2RU, +MACsec) — re-check VXLAN/Cloud-Scale/MACsec per each datasheet · then T5 3500 ·
   T6 3600 · 3432D-S fixed / 3408-S chassis. **Lane lesson reaffirmed:** VXLAN/EVPN/MACsec/Cloud-Scale are per-datasheet, never per-ASIC.
+- **Nexus 3000 TRANCHE 4b — BUILD Cisco_Nexus_3264Q (1/1); the sibling VXLAN flip (2026-06-26).** Content-only, **NO src, NO new
+  Merkmal** (`git diff -- src/` empty). Single SKU **N3K-C3264Q** on the 14-attr uniform model (64× 40G-QSFP+ uniform, Uplink-Ports
+  omitted, **Portanzahl 64**). SwK 5,12 Tbit/s, Durchsatz 3.800 Mpps, **515–700 ns latency**, **14,9 kg (the heaviest fixed Nexus
+  3000 so far)**, **2 RU**, **AC 200–240 V only** (narrower than the usual 100–240; no DC-PSU-PID), 16 MB shared buffer, 64-way ECMP,
+  EtherChannel 256/vPC, temp 0–40, Layer L3, Managed, NX-OS (single binary w/ Nexus 9300/9500), no PoE, no stacking. **Aux-port
+  trap handled:** the Configuration lists 2× 1/10G-SFP+ but Table 3 *Physical* counts only the 64 QSFP+ → the aux SFP+ are spelled
+  **"zwei zusätzliche"** (non-countable) in Port-Konfiguration so **S.3 = 64, NOT 66**. **🔑 THE SIBLING VXLAN FLIP — the per-datasheet
+  lesson at its purest:** the 3264Q is the 3232C's sibling (same platform, same datasheet date, same ASIC class) yet makes the
+  OPPOSITE VXLAN call — c78-734905 grounds VXLAN as a SHIPPING feature in three places (Overview "VXLAN bridging at full line rate";
+  Table 2 N3K-LAN1K9 lists VXLAN with **no** "future release" footnote — unlike the 3232C; Table 4 "VXLAN gateway / bridging") →
+  **VXLAN INCLUDED in customer prose** (present 9×). **40G BiDi** (QSFP-40G-SR-BD, reuses 10G duplex-MMF cabling) noted in one
+  sentence. Still excluded (not in this datasheet): **EVPN = Cloud-Scale = MACsec = ACI = 0**. IOS XE = 0, NX-OS present. **SwK NOT
+  doubled** (64×40G×2 = 5,12 Tbit/s, logged). **EoL/EoS ZU_VERIFIZIEREN** (Verification_Log; prose neutral, no fabricated date).
+  **No "new-sealed" anywhere** (the operator's explicit reminder after the 3232C slip — whole-bundle `\bsealed\b` = 0, verified).
+  1 base PID only (PSUs/fans/license/QSFP-optics/-S/-OE/-3PK/-2PK/-BUN/-ZZ variants not banked). PID **verbatim** (c78-734905 Table 6).
+  §5-clean. Beschr 156 words. Prices Phase-2 provisional (7000). Added `Cisco_Nexus_3264Q_switches` `gate_completeness` record.
+  **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added the
+  `Cisco_Nexus_3264Q` built-block (1), **reduced the catch-all 20→19**. Regenerated `coverage_report.md`: **Nexus 3264Q ✅ 1/1**.
+  **In-scope 79→80.** **Coverage now: 626 built, 59 families fully built, 67%.** **Per-datasheet VXLAN record (3200 lane): 3232C
+  VXLAN-deferred (omit) · 3264Q VXLAN-grounded (include) — same platform/date, opposite call.** Remaining Nexus 3200: **T4c 3264C-E**
+  (64× 100G, 2RU, +MACsec — re-check ASIC/VXLAN/EVPN/MACsec per its own datasheet) · then T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
 
 ---
 
