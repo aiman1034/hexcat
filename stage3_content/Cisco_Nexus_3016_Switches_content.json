@@ -1,0 +1,188 @@
+{
+ "N3K-C3016Q-40GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco N3K-C3016Q-40GE Nexus 3016 Data-Center-Switch (NX-OS, L3) – 16× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3016Q-40GE Nexus 3016 ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3016Q-40GE (Nexus 3016): Layer-3-Data-Center-Switch, 16× 40G-QSFP+, 1,28 Tbit/s, 950 Mpps, 1 HE. Cisco NX-OS, vPC, 64-Wege-ECMP, kein PoE/Stacking. EoS (Nachfolger Nexus 9300).",
+  "artikelgewicht": "9,30",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3016Q-40GE ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3016-Serie mit 16× 40G-QSFP+. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 64-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3016Q-40GE eine Switching-Kapazität von 1,28 Tbit/s bei 950 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (OSPF/EIGRP/BGP/VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3016Q-40GE ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3016-Familie, ausgelegt als einheitlicher 16-Port-40-Gigabit-Switch (alle Ports gleichwertig, ohne dedizierte Uplinks). Als Ciscos erste 40-Gigabit-Plattform ist der N3K-C3016Q-40GE auf ultra-niedrige Latenz für HFT und Finanz-Co-Location ausgelegt; alle 16 QSFP+-Ports sind gleichwertig (40G nativ oder 4×10G-Breakout).",
+   "Mit 16 Ports erreicht der N3K-C3016Q-40GE eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 950 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3016Q-40GE über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die Base-Lizenz (N3K-BAS1K9) deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz (N3K-LAN1K9) ergänzt volles OSPF/EIGRP/BGP/VRF-lite.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3016Q-40GE laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der N3K-C3016Q-40GE als Original-Hardware für Ersatz und Bestandserweiterung erhältlich; die Nachfolge übernehmen die aktuellen Cisco-Nexus-9300-Modelle."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3016Q-40GE?",
+    "Der N3K-C3016Q-40GE bietet 16× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3016Q-40GE Stacking oder PoE?",
+    "Nein – der N3K-C3016Q-40GE nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3016Q-40GE?",
+    "Der N3K-C3016Q-40GE läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt volles OSPF/EIGRP/BGP/VRF-lite."
+   ],
+   [
+    "Haben alle Ports des N3K-C3016Q-40GE dieselbe Rolle?",
+    "Ja – der N3K-C3016Q-40GE hat 16 gleichwertige 40G-QSFP+-Ports ohne feste Access/Uplink-Trennung (jeder Port 40G nativ oder 4×10G); als Ciscos erste 40G-Plattform ist er auf ultra-niedrige Latenz ausgelegt."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+, je 40G nativ oder 4×10G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "950 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundante Lüfter, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 40-Gigabit-Spine/Top-of-Rack (Layer 2/3, Line-Rate, niedrige Latenz) – einheitlicher 16-Port-40-Gigabit-Switch; Cisco NX-OS mit vPC-Hochverfügbarkeit und 64-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (OSPF/EIGRP/BGP/VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3016Q-40GE",
+    "EoL",
+    "Cisco Nexus 3016 End-of-Sale – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html"
+   ],
+   [
+    "N3K-C3016Q-40GE",
+    "PID",
+    "Ordering-PID N3K-C3016Q-40GE verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-687506 (Ordering-Section; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html"
+   ],
+   [
+    "N3K-C3016Q-40GE",
+    "Versandgewicht",
+    "10,80 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html"
+   ],
+   [
+    "N3K-C3016Q-40GE",
+    "Uplink-Ports",
+    "Kein Uplink-Ports-Merkmal: der Nexus 3016 ist ein einheitlicher 16× 40G-QSFP+-Switch OHNE Access/Uplink-Trennung (alle Ports gleichwertig). Folgt dem etablierten Uniform-Spine-Muster der Nexus-9300-GX/GX2 (9316D-GX/9332D-GX2B/9364C-GX führen ebenfalls kein Uplink-Ports-Merkmal) — 14-Attribut-Modell, kein neues Merkmal.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3016-switch/data_sheet_c78-687506.html"
+   ]
+  ]
+ }
+}

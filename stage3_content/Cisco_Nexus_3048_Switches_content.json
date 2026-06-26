@@ -1,0 +1,190 @@
+{
+ "N3K-C3048TP-1GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+   "verifiziert_am": "2026-06-25"
+  },
+  "artikelname": "Cisco N3K-C3048TP-1GE Nexus 3048 Data-Center-Switch (NX-OS, L3) – 48× 10/100/1000 (RJ-45) + 4× 1/10G-SFP+, 1 HE",
+  "titel_tag": "Cisco N3K-C3048TP-1GE Nexus 3048 ToR | Hexwaren",
+  "meta_description": "Original Cisco N3K-C3048TP-1GE (Nexus 3048): Layer-3-Data-Center-Switch, 48× 10/100/1000 (RJ-45) + 4× 1/10G-SFP+, 176 Gbit/s, 132 Mpps, 1 HE. Cisco NX-OS, vPC, 32-Wege-ECMP, kein PoE/Stacking. EoS …",
+  "artikelgewicht": "9,30",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der Cisco N3K-C3048TP-1GE ist ein gemanagter Layer-3-Data-Center-Switch der Nexus-3048-Serie mit 48× 10/100/1000 (RJ-45) + 4× 1/10G-SFP+. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit vPC-Hochverfügbarkeit und 32-Wege-ECMP.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N3K-C3048TP-1GE eine Switching-Kapazität von 176 Gbit/s bei 132 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen (AC/DC) und -Lüftern. Base-Lizenz erweiterbar per LAN-Enterprise (OSPF/EIGRP/BGP/VRF-lite).</p>",
+  "intro": [
+   "Der Cisco N3K-C3048TP-1GE ist ein gemanagter Layer-3-Data-Center-Switch aus der Nexus-3048-Familie, ausgelegt als 1-Gigabit-Top-of-Rack mit 48× Gigabit-BASE-T (Kupfer, RJ-45) und 4× 1/10G-SFP+-Uplinks. Als Server-Access-Switch bündelt der N3K-C3048TP-1GE 48 Gigabit-Kupferports mit 10-Gigabit-Uplinks in die Aggregation.",
+   "Mit 52 Ports erreicht der N3K-C3048TP-1GE eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 132 Mpps (Line-Rate Layer 2/3 auf allen Ports, Jumbo-Frames bis 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N3K-C3048TP-1GE über vPC (Multichassis-LAG) statt über Stacking, mit 32-Wege-ECMP; betrieben wird er unter Cisco NX-OS. Die 4× SFP+-Uplinks binden den N3K-C3048TP-1GE an die Aggregation an. Die Base-Lizenz (N3K-C3048-BAS1K9) deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz (N3K-C3048-LAN1K9) ergänzt volles OSPF/EIGRP/BGP/VRF-lite.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (Airflow wählbar: Port-side Intake/Exhaust) und bis zu zwei Hot-Swap-Netzteilen (AC oder DC) arbeitet der N3K-C3048TP-1GE laut Datenblatt im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale) bleibt der N3K-C3048TP-1GE als Original-Hardware für Ersatz und Bestandserweiterung erhältlich; die Nachfolge übernehmen die aktuellen Cisco-Nexus-9300-Modelle."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N3K-C3048TP-1GE?",
+    "Der N3K-C3048TP-1GE bietet 48× 10/100/1000 (RJ-45) + 4× 1/10G-SFP+."
+   ],
+   [
+    "Unterstützt der N3K-C3048TP-1GE Stacking oder PoE?",
+    "Nein – der N3K-C3048TP-1GE nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N3K-C3048TP-1GE?",
+    "Der N3K-C3048TP-1GE läuft unter Cisco NX-OS; die Base-Lizenz deckt Layer 2 und Basis-Layer-3 ab, die LAN-Enterprise-Lizenz ergänzt volles OSPF/EIGRP/BGP/VRF-lite."
+   ],
+   [
+    "Welche Switching-Kapazität hat der N3K-C3048TP-1GE?",
+    "Der N3K-C3048TP-1GE erreicht 176 Gbit/s bei einer Weiterleitungsrate von 132 Mpps, Line-Rate Layer 2/3 auf allen Ports."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ-45) + 4× 1/10G-SFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 (1 GbE, Access), 1/10 GbE (SFP+, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "132 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Bis zu 2× Hot-Swap-Netzteil (N+1-redundant); AC (100–240 V) oder DC (−40 bis −72 V)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundante Lüfter, Airflow wählbar: Port-side Intake/Exhaust)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 1-Gigabit-Top-of-Rack (Server-Access) (Layer 2/3, Line-Rate, niedrige Latenz) – 1-Gigabit-Top-of-Rack mit 48× Gigabit-BASE-T; Cisco NX-OS mit vPC-Hochverfügbarkeit und 32-Wege-ECMP; Base-Lizenz (L2 + Basis-L3) erweiterbar per LAN-Enterprise (OSPF/EIGRP/BGP/VRF-lite); Jumbo-Frames bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N3K-C3048TP-1GE",
+    "EoL",
+    "Cisco Nexus 3048 End-of-Sale – informativ als Original-Ersatz-/Bestands-Spare geführt, nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html"
+   ],
+   [
+    "N3K-C3048TP-1GE",
+    "PID",
+    "Ordering-PID N3K-C3048TP-1GE verbatim aus der Courier-Transkription des Cisco-Datenblatts c78-685363 (Ordering-Section; deckt sich mit Ciscos Standard-PID).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html"
+   ],
+   [
+    "N3K-C3048TP-1GE",
+    "Versandgewicht",
+    "10,80 (geschätzt: Artikelgewicht + Standard-Paketverpackung; 1 HE, Paketversand).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-3048-switch/data_sheet_c78-685363.html"
+   ]
+  ]
+ }
+}

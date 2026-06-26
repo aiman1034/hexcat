@@ -2986,6 +2986,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3500, T6 3600, + the 3408-S chassis → chassis carve-out). Regenerated `coverage_report.md`: **Cisco Nexus 3064 ✅ 3/3**.
   **In-scope 69→70** (genuinely new family split out of the Nexus-3000 catch-all bucket). **Coverage now: 608 built, 49 families
   fully built, 65%.** Opens the Nexus 3000 lane (~40 across 6 platforms) — couriered tranche by tranche (T2–T6 + 3432D-S fixed).
+- **Nexus 3000 TRANCHE 2 — 32T Portanzahl fix + BUILD Cisco_Nexus_3048 + Cisco_Nexus_3016 (2026-06-26).** Content-only, **NO
+  src, NO new Merkmal** (`git diff -- src/` empty). **Part A (correction):** reversed last round's `N3K-C3064TQ-32T` Portanzahl
+  **32 → 36** (the courier's own T1 error). The 4× 40G-QSFP+ uplinks are always-on and identical to those on X/T (which count
+  them → 52), so the 32T now counts them too → Port-Konfiguration makes the 4 uplinks countable, **S.3 = 32 access + 4 uplink =
+  36**; Uplink-Ports `4× 40G-QSFP+` and the "32 von 48 lizenziert + 16-Upgrade" prose unchanged; the Verification_Log note
+  updated. **X/T untouched** (Portanzahl still 52; their Main/Attributes/FAQ/PlatformFlag/Condition/Prices re-emit byte-identical
+  — only the internal Verification_Log timestamps refreshed). **Part B (2 new single-PID families):** `Cisco_Nexus_3048` =
+  **N3K-C3048TP-1GE** (1G server-access ToR: 48× 10/100/1000 RJ-45 + 4× 1/10G-SFP+, Portanzahl 52, 15-attr Uplink-Ports `4×
+  1/10G-SFP+`, SwK 176 Gbit/s, Durchsatz 132 Mpps, **32-way ECMP**); `Cisco_Nexus_3016` = **N3K-C3016Q-40GE** (Cisco's first 40G
+  platform, ultra-low-latency/HFT: **16× 40G-QSFP+ UNIFORM, no access/uplink split**, Portanzahl 16, SwK 1,28 Tbit/s, Durchsatz
+  950 Mpps, **64-way ECMP**). **3016 uniform-port resolution (the flagged STOP-or-not):** the uniform case needs **NO new
+  Merkmal** — it follows the established **14-attr uniform-spine pattern** (the Nexus 9300-GX/GX2 spines 9316D-GX/9332D-GX2B/
+  9364C-GX all **omit** the Uplink-Ports Merkmal; verified). So 3016 = 14-attr, **Uplink-Ports absent**, Port-Konfiguration `16×
+  40G-QSFP+`, **S.3 = 16**; logged in the Verification_Log. Both 9,30 kg, AC+DC, temp 0–40, Layer L3, Managed, NX-OS (Base +
+  LAN-Enterprise), no PoE, no stacking (vPC). PIDs **verbatim** (c78-685363 / c78-687506 ordering tables; provenance logged).
+  **GROUNDING DISCIPLINE held:** IOS XE = 0, and **VXLAN = EVPN = ACI = Cloud-Scale = 0** whole-bundle (2011–2012 ToRs — no
+  9300-feature fabrication); only line-rate L2/3, vPC, 32/64-way ECMP, OSPF/EIGRP/BGP/VRF-lite, Jumbo 9216. EoS → flagged. §5-clean
+  (no "Sealed"). Prices Phase-2 provisional (3048 1900, 3016 3200). Added `Cisco_Nexus_3048_switches` + `Cisco_Nexus_3016_switches`
+  `gate_completeness` records. **No new test. All 3 bundles canonical gate ok=True / 0 viol / 0 warn** (incl. the re-gated 3064
+  with S.3=36); full suite **438 passed, 0 skipped, 0 failed**. Manifest: added the 3048 + 3016 built-blocks, **reduced the "Nexus
+  3000" catch-all 37→35** (no double-count). Regenerated `coverage_report.md`: **Nexus 3064 ✅ 3/3, 3048 ✅ 1/1, 3016 ✅ 1/1** —
+  **original-generation Nexus 3000 (3064/3048/3016) is COMPLETE**. **In-scope 70→72** (two new families). **Coverage now: 610 built,
+  51 families fully built, 65%.** Remaining Nexus 3000 lane: T3 3100/3100-V, T4 3200, T5 3500, T6 3600, + 3432D-S fixed / 3408-S chassis.
 
 ---
 
