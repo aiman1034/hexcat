@@ -3137,6 +3137,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **In-scope 79→80.** **Coverage now: 626 built, 59 families fully built, 67%.** **Per-datasheet VXLAN record (3200 lane): 3232C
   VXLAN-deferred (omit) · 3264Q VXLAN-grounded (include) — same platform/date, opposite call.** Remaining Nexus 3200: **T4c 3264C-E**
   (64× 100G, 2RU, +MACsec — re-check ASIC/VXLAN/EVPN/MACsec per its own datasheet) · then T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
+- **Nexus 3000 TRANCHE 4c — BUILD Cisco_Nexus_3264C_E (1/1); CLOSES the Nexus 3200 platform (2026-06-26).** Content-only, **NO src,
+  NO new Merkmal** (`git diff -- src/` empty). Single SKU **N3K-C3264C-E** on the 14-attr uniform model (64× 100G-QSFP28 uniform,
+  Uplink-Ports omitted, **Portanzahl 64** — the 2 aux 1/10G-SFP+ on ports 65/66 spelled "zwei zusätzliche" non-countably so S.3=64,
+  not 66). Flagship of the 3200 platform: **SwK 12,8 Tbit/s** (highest in the lane), Durchsatz 4.300 Mpps, ~450 ns, **15,79 kg
+  (heaviest fixed Nexus 3000)**, **2 RU**, **AC+DC** (1200 W AC / 930–1200 W DC; typ 392 W / max 1263 W), **42 MB shared buffer (NOT
+  16)**, **MTU 9416 (NOT 9216)**, 128 GB boot, 64-way ECMP, EtherChannel 256/vPC, temp 0–40, Layer L3, Managed, NX-OS, no PoE, no
+  stacking. **THE PER-DATASHEET FINALE — three 3200 siblings, three different answers:** 🔑 **MACsec GROUNDED → INCLUDED** ("16
+  MACsec-fähige Ports"; first MACsec in the entire Nexus 3000 lane) **as PROSE ONLY — NO MACsec Merkmal** (Catalyst precedent: MACsec
+  was always prose; the JTL Merkmal tree is the single source of truth — no new attribute, no STOP). 🔑 **VXLAN NOT grounded →
+  EXCLUDED** (the surprise: the MOST capable 3200 lists no VXLAN — license = OSPFv2/EIGRP/BGP/VRF-Lite via N3K-LAN2K9; **capability ≠
+  grounding**); caveat in the Verification_Log. **EVPN / Cloud-Scale / ACI = 0** (not named, even though almost certainly Cloud-Scale
+  silicon — not inferred). Customer files: MACsec present (10×), VXLAN/EVPN/Cloud-Scale/ACI = 0, IOS XE = 0 (verified). **SwK NOT
+  doubled** (64×100G×2 = 12,8 Tbit/s, logged). **EoS date ZU_VERIFIZIEREN** (Verification_Log; prose neutral). **No "new-sealed"
+  anywhere** (whole-bundle `\bsealed\b` = 0, verified). 1 base PID only (fans/PSUs/N3K-LAN2K9 not banked). PID **verbatim** (c78-740134
+  Table 7). §5-clean. Beschr 148 words. Prices Phase-2 provisional (12000). Added `Cisco_Nexus_3264C_E_switches` `gate_completeness`
+  record. **No new test. Canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added
+  the built-block (1), **reduced the catch-all 19→18**. Regenerated `coverage_report.md`: **Nexus 3264C-E ✅ 1/1**. **In-scope 80→81.**
+  **Coverage now: 627 built, 60 families fully built, 67%.** **🏁 The ENTIRE Nexus 3200 platform is COMPLETE** (3232C + 3264Q +
+  3264C-E). **Per-datasheet feature record across the 3200 lane (the discipline vindicated):** 3232C = VXLAN-deferred/MACsec✗ ·
+  3264Q = VXLAN✓/MACsec✗ · 3264C-E = VXLAN✗/MACsec✓ — three siblings, three answers, none inferable from the platform or ASIC.
+  Remaining Nexus 3000: **T5 3500** (Algo Boost <200 ns) · T6 3600 (deep-buffer) · 3432D-S fixed (400G) · 3408-S chassis (carve-out).
 
 ---
 
