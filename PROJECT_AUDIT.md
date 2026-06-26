@@ -3009,6 +3009,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3000" catch-all 37→35** (no double-count). Regenerated `coverage_report.md`: **Nexus 3064 ✅ 3/3, 3048 ✅ 1/1, 3016 ✅ 1/1** —
   **original-generation Nexus 3000 (3064/3048/3016) is COMPLETE**. **In-scope 70→72** (two new families). **Coverage now: 610 built,
   51 families fully built, 65%.** Remaining Nexus 3000 lane: T3 3100/3100-V, T4 3200, T5 3500, T6 3600, + 3432D-S fixed / 3408-S chassis.
+- **Nexus 3000 TRANCHE 3a — BUILD Cisco_Nexus_3132Q (3/3) + Cisco_Nexus_3164Q (1/1); opens the Nexus 3100 platform
+  (2026-06-26).** Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). 40G-QSFP cut of the 3100 platform
+  (Trident II), on the **uniform-spine 14-attr model** (the 3016/9316D-GX pattern — Uplink-Ports OMITTED, Portanzahl = QSFP
+  count, Port-Konfiguration `N× 40G-QSFP+`, S.3 = N; verified precedent, **no new Merkmal**). **`Cisco_Nexus_3132Q`** = 3 base
+  chassis PIDs **N3K-C3132Q-40GE / -40GX / -XL** (3 hardware revisions of one switch; differ only in minor prose — 3132Q-X
+  lane-LED/rear-ports/−40 W, 3132Q-XL +8 GB RAM/16 GB logflash/2,5 GHz CPU). 1 RU, **32× 40G-QSFP+ uniform, Portanzahl 32**:
+  the 4× SFP+ are **MULTIPLEXED with QSFP#1 (steal its cage) → NOT additive → 32, not 36** (the contrast with the 3064-32T's
+  always-on uplinks; multiplex documented in Port-Konfiguration + FAQ + Verification_Log). SwK 2,5 Tbit/s, Durchsatz 1.400 Mpps,
+  9,30 kg, AC+DC. **`Cisco_Nexus_3164Q`** = **N3K-C3164Q-40GE** (1 PID): **2 RU**, **64× 40G-QSFP+ uniform** (Portanzahl 64),
+  SwK 5,12 Tbit/s, Durchsatz 3.800 Mpps, **16,8 kg, AC only** (1200 W), **enhanced NX-OS** (single binary image shared with
+  Nexus 9300/9500). Both Layer L3, Managed, 64-way ECMP, temp 0–40, no PoE, no stacking (vPC). **Only the base chassis PIDs
+  banked** — NOT the FA/BA/FD/BD-L3 airflow/power/license bundles (Nexus single-hardware-PID rule). **HYGIENE FLIP: VXLAN is
+  GROUNDED here → included in prose** (LAN-Enterprise N3K-LAN1K9 + L3 feature tables; 3164Q line-rate VXLAN bridging) — whole-bundle
+  VXLAN present (21/9). **Still no fabrication: ACI = Cloud-Scale = EVPN = 0** (Nexus 3000 never runs ACI; Trident II ≠ Cloud-Scale;
+  EVPN not in these datasheets). IOS XE = 0, NX-OS present. **SwK NOT doubled** (2,5 / 5,12 Tbit/s = Cisco's stated aggregates;
+  logged `Cisco-Angabe übernommen, NICHT verdoppelt`). PIDs **verbatim** (c78-729482 / c78-731524 ordering tables; provenance
+  logged). EoS 18-Jan-2023 → flagged. §5-clean (no "Sealed"). Beschr trimmed to 155–170 words (multiplex moved to the
+  Port-Konfiguration attribute + FAQ to clear the 175 ceiling on the 3-revision prose). Prices Phase-2 provisional (2800/3000/3400;
+  5500). Added `Cisco_Nexus_3132Q_switches` + `Cisco_Nexus_3164Q_switches` `gate_completeness` records. **No new test. Both bundles
+  canonical gate ok=True / 0 viol / 0 warn**; full suite **438 passed, 0 skipped, 0 failed**. Manifest: added the 3132Q + 3164Q
+  built-blocks, **reduced the "Nexus 3000" catch-all 35→31** (no double-count). Regenerated `coverage_report.md`: **Nexus 3132Q ✅
+  3/3, 3164Q ✅ 1/1**. **In-scope 72→74.** **Coverage now: 614 built, 53 families fully built, 66%.** Remaining Nexus 3000: T3b
+  (3172/31108-V/31128PQ/3132Q-V, 10G/100G) · T4 3200 (Cloud-Scale becomes grounded) · T5 3500 · T6 3600 · 3432D-S fixed / 3408-S chassis.
 
 ---
 
