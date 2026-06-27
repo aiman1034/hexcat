@@ -1,0 +1,776 @@
+{
+ "N5K-C5548P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5548P 5548P Data-Center-Switch (NX-OS, L2) – 32× 1/10G-SFP+ (FCoE), 1 HE",
+  "titel_tag": "Cisco N5K-C5548P 5548P FCoE-ToR | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5548P (5548P): L2-Data-Center-Switch, 32× 1/10G-SFP+ (FCoE), 960 Gbit/s, 714,24 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE, kein PoE/Stacking.",
+  "artikelgewicht": "15,88",
+  "versandgewicht": "18,00",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5548P ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie mit 32× 1/10G-SFP+ (Ethernet/FCoE); 1 GEM-Steckplatz im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 24 FEX sowie FCoE.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5548P 960 Gbit/s bei 714,24 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Daughter-Card.</p>",
+  "intro": [
+   "Der Cisco N5K-C5548P ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie, ausgelegt als FCoE-fähiger Top-of-Rack-Switch im 1-HE-Gehäuse.",
+   "Mit 32 festen Ports erreicht der N5K-C5548P eine Switching-Kapazität von 960 Gbit/s (Vollsystem) bei einer Weiterleitungsrate von 714,24 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5548P über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 24 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 (160 Gbit/s, 240 Mpps) ist optional per Layer-3-Daughter-Card nachrüstbar (nicht im Lieferumfang); FCoE erfordert die Storage-Services-Lizenz. Alle 32 Basis-Ports des N5K-C5548P sind Ethernet/FCoE-fähig; natives Fibre Channel (8/4/2/1G) ist ausschließlich über ein FC-Plus-Ethernet-GEM im Erweiterungssteckplatz verfügbar — die Basis-Ports selbst sind nicht Unified.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (2 Lüfter) und bis zu zwei Hot-Swap-Netzteilen (750 W) arbeitet der N5K-C5548P im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5500-Serie ist der N5K-C5548P als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5548P?",
+    "Der N5K-C5548P bietet 32× 1/10G-SFP+ (Ethernet/FCoE); 1 GEM-Steckplatz."
+   ],
+   [
+    "Unterstützt der N5K-C5548P Stacking oder PoE?",
+    "Nein – der N5K-C5548P nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N5K-C5548P natives Fibre Channel?",
+    "Der N5K-C5548P ist FCoE-fähig auf allen 32 Basis-Ports, aber nicht Unified: natives Fibre Channel (8/4/2/1G) ist nur über ein FC-Plus-Ethernet-GEM im Erweiterungssteckplatz verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5548P?",
+    "Der N5K-C5548P läuft unter Cisco NX-OS und bietet Layer 2, vPC, FabricPath, FCoE und bis zu 24 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar (160 Gbit/s, 240 Mpps), FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1/10G-SFP+ (Ethernet/FCoE); 1 GEM-Steckplatz"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+; Ethernet/FCoE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714,24 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (750 W)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack (FCoE-Konvergenz) – 32× 1/10G-SFP+ (Ethernet/FCoE; natives FC nur via GEM, nicht Unified) plus 1 GEM-Steckplatz; FCoE; Layer 2 (Layer 3 optional via Daughter-Card); NX-OS mit vPC und bis 24 FEX; FabricPath; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5548P",
+    "EoL",
+    "Cisco 5548P (Nexus-5500-Generation) – EoL abgekündigt 03-Apr-2019; EoSupport-Datum ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548P",
+    "PID",
+    "Ordering-PID N5K-C5548P verbatim aus c78-618603 (nur Basis-Chassis-PID gebankt; GEM-/L3-Module, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548P",
+    "Switching-Kapazität",
+    "960 Gbit/s: Cisco-Angabe (c78-618603, „Layer 2 hardware forwarding at 960 Gbps\") übernommen, NICHT verdoppelt; Vollsystem-48-Port-Wert, Portanzahl = 32 Basis-Festports (Expansion-Modul nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548P",
+    "Artikelgewicht",
+    "15,88 kg = Datenblattwert (c78-618603) inkl. 1 Expansion-Modul + 2 PSU + 2 Lüfter; Basis-Chassis (ohne Erweiterungsmodule) leichter -> ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548P",
+    "Feature-Grounding",
+    "VXLAN nicht im Datenblatt c78-618603 -> nicht aufgenommen (5500-Generation vor VXLAN-HW). FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa, KEIN Merkmal. Layer 2 Basis-Chassis; Layer 3 optional via Layer-3-Daughter-Card (160 Gbit/s, 240 Mpps) -> Prosa, NICHT im Layer-Attribut, NICHT gebankt. GEM/L3-Module = Modul: nicht gebankt, nicht in Portanzahl. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548P",
+    "FCoE-Abgrenzung",
+    "5548P: FCoE auf allen Basis-Ports, aber NICHT Unified / kein natives FC an den Basis-Ports (nur via FC-Plus-Ethernet-GEM) — Abgrenzung zum 5548UP dokumentiert (c78-618603).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ]
+  ]
+ },
+ "N5K-C5548UP": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5548UP 5548UP Data-Center-Switch (NX-OS, L2) – 32× Unified-SFP+, 1 HE",
+  "titel_tag": "Cisco N5K-C5548UP 5548UP Unified-ToR | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5548UP (5548UP): L2-Data-Center-Switch, 32× Unified-SFP+, 960 Gbit/s, 714,24 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE, kein PoE/Stacking.",
+  "artikelgewicht": "15,88",
+  "versandgewicht": "18,00",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5548UP ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie mit 32× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 1 GEM-Steckplatz im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 24 FEX sowie FCoE.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5548UP 960 Gbit/s bei 714,24 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Daughter-Card.</p>",
+  "intro": [
+   "Der Cisco N5K-C5548UP ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie, ausgelegt als Unified-Port-Top-of-Rack-Switch (LAN/SAN-Konvergenz) im 1-HE-Gehäuse.",
+   "Mit 32 festen Ports erreicht der N5K-C5548UP eine Switching-Kapazität von 960 Gbit/s (Vollsystem) bei einer Weiterleitungsrate von 714,24 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5548UP über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 24 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 (160 Gbit/s, 240 Mpps) ist optional per Layer-3-Daughter-Card nachrüstbar (nicht im Lieferumfang); FCoE erfordert die Storage-Services-Lizenz. Alle 32 Ports des N5K-C5548UP sind Unified Ports: je Port wahlweise 1/10G Ethernet/FCoE oder 8/4/2/1G natives Fibre Channel — LAN und SAN auf einem Switch.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (2 Lüfter) und bis zu zwei Hot-Swap-Netzteilen (750 W) arbeitet der N5K-C5548UP im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5500-Serie ist der N5K-C5548UP als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5548UP?",
+    "Der N5K-C5548UP bietet 32× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 1 GEM-Steckplatz."
+   ],
+   [
+    "Unterstützt der N5K-C5548UP Stacking oder PoE?",
+    "Nein – der N5K-C5548UP nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Was bedeutet Unified Port beim N5K-C5548UP?",
+    "Jeder der 32 Ports lässt sich wahlweise als 1/10G Ethernet/FCoE oder als 8/4/2/1G natives Fibre Channel betreiben – LAN und SAN auf einem Switch."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5548UP?",
+    "Der N5K-C5548UP läuft unter Cisco NX-OS und bietet Layer 2, vPC, FabricPath, FCoE und bis zu 24 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar (160 Gbit/s, 240 Mpps), FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 1 GEM-Steckplatz"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+; Unified: Ethernet/FCoE oder 8/4/2/1G FC)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714,24 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (750 W)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack mit LAN/SAN-Konvergenz – 32× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC) plus 1 GEM-Steckplatz; FCoE; Layer 2 (Layer 3 optional via Daughter-Card); NX-OS mit vPC und bis 24 FEX; FabricPath; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5548UP",
+    "EoL",
+    "Cisco 5548UP (Nexus-5500-Generation) – EoL abgekündigt 03-Apr-2019; EoSupport-Datum ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548UP",
+    "PID",
+    "Ordering-PID N5K-C5548UP verbatim aus c78-618603 (nur Basis-Chassis-PID gebankt; GEM-/L3-Module, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548UP",
+    "Switching-Kapazität",
+    "960 Gbit/s: Cisco-Angabe (c78-618603, „Layer 2 hardware forwarding at 960 Gbps\") übernommen, NICHT verdoppelt; Vollsystem-48-Port-Wert, Portanzahl = 32 Basis-Festports (Expansion-Modul nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548UP",
+    "Artikelgewicht",
+    "15,88 kg = Datenblattwert (c78-618603) inkl. 1 Expansion-Modul + 2 PSU + 2 Lüfter; Basis-Chassis (ohne Erweiterungsmodule) leichter -> ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5548UP",
+    "Feature-Grounding",
+    "VXLAN nicht im Datenblatt c78-618603 -> nicht aufgenommen (5500-Generation vor VXLAN-HW). FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa, KEIN Merkmal. Layer 2 Basis-Chassis; Layer 3 optional via Layer-3-Daughter-Card (160 Gbit/s, 240 Mpps) -> Prosa, NICHT im Layer-Attribut, NICHT gebankt. GEM/L3-Module = Modul: nicht gebankt, nicht in Portanzahl. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ]
+  ]
+ },
+ "N5K-C5596UP": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5596UP 5596UP Data-Center-Switch (NX-OS, L2) – 48× Unified-SFP+, 2 HE",
+  "titel_tag": "Cisco N5K-C5596UP 5596UP Unified-Agg | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5596UP (5596UP): L2-Data-Center-Switch, 48× Unified-SFP+, 1,92 Tbit/s, 1.428 Mpps, 2 HE. Cisco NX-OS, vPC, FCoE, kein PoE/Stacking.",
+  "artikelgewicht": "21,55",
+  "versandgewicht": "24,00",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5596UP ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie mit 48× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 24 FEX sowie FCoE.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N5K-C5596UP 1,92 Tbit/s bei 1.428 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Erweiterungsmodul.</p>",
+  "intro": [
+   "Der Cisco N5K-C5596UP ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie, ausgelegt als Unified-Port-Aggregations-Switch (2 HE) im 2-HE-Gehäuse.",
+   "Mit 48 festen Ports erreicht der N5K-C5596UP eine Switching-Kapazität von 1,92 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.428 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5596UP über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 24 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 (160 Gbit/s, 240 Mpps) ist optional per Layer-3-Erweiterungsmodul nachrüstbar (nicht im Lieferumfang); FCoE erfordert die Storage-Services-Lizenz. Alle 48 Ports des N5K-C5596UP sind Unified Ports: je Port wahlweise 1/10G Ethernet/FCoE oder 8/4/2/1G natives Fibre Channel; bis zu drei GEM-Steckplätze erweitern den Switch (Module separat erhältlich).",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul (4 Lüfter) und bis zu zwei Hot-Swap-Netzteilen (1100 W; DC-Option) arbeitet der N5K-C5596UP im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5500-Serie ist der N5K-C5596UP als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5596UP?",
+    "Der N5K-C5596UP bietet 48× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze."
+   ],
+   [
+    "Unterstützt der N5K-C5596UP Stacking oder PoE?",
+    "Nein – der N5K-C5596UP nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Wie lässt sich der N5K-C5596UP erweitern?",
+    "Der N5K-C5596UP bietet 48 Unified Ports (1/10G Ethernet/FCoE oder 8/4/2/1G FC) und bis zu drei GEM-Steckplätze für zusätzliche Ethernet-, FC- oder L3-Module. Die Module sind separate Artikel und nicht im Lieferumfang."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5596UP?",
+    "Der N5K-C5596UP läuft unter Cisco NX-OS und bietet Layer 2, vPC, FabricPath, FCoE und bis zu 24 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Erweiterungsmodul nachrüstbar (160 Gbit/s, 240 Mpps), FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+; Unified: Ethernet/FCoE oder 8/4/2/1G FC)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,92 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.428 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (1100 W; DC-Option)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Aggregation mit LAN/SAN-Konvergenz (2 HE) – 48× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC) plus 3 GEM-Steckplätze; FCoE; Layer 2 (Layer 3 optional via Erweiterungsmodul); NX-OS mit vPC und bis 24 FEX; FabricPath; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5596UP",
+    "EoL",
+    "Cisco 5596UP (Nexus-5500-Generation) – EoL abgekündigt 03-Apr-2019; EoSupport-Datum ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596UP",
+    "PID",
+    "Ordering-PID N5K-C5596UP verbatim aus c78-618603 (nur Basis-Chassis-PID gebankt; GEM-/L3-Module, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596UP",
+    "Switching-Kapazität",
+    "1,92 Tbit/s: Cisco-Angabe (c78-618603, „Layer 2 hardware forwarding at 1920 Gbps\") übernommen, NICHT verdoppelt; Vollsystem-96-Port-Wert, Portanzahl = 48 Basis-Festports (Module nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596UP",
+    "Artikelgewicht",
+    "21,55 kg = Datenblattwert (c78-618603) inkl. 3 Expansion-Module + 2 PSU + 4 Lüfter; Basis-Chassis (ohne Erweiterungsmodule) leichter -> ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596UP",
+    "Feature-Grounding",
+    "VXLAN nicht im Datenblatt c78-618603 -> nicht aufgenommen (5500-Generation vor VXLAN-HW). FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa, KEIN Merkmal. Layer 2 Basis-Chassis; Layer 3 optional via Layer-3-Erweiterungsmodul (160 Gbit/s, 240 Mpps) -> Prosa, NICHT im Layer-Attribut, NICHT gebankt. GEM/L3-Module = Modul: nicht gebankt, nicht in Portanzahl. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ]
+  ]
+ },
+ "N5K-C5596T": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5596T 5596T Data-Center-Switch (NX-OS, L2) – 32× 10GBASE-T + 16× Unified-SFP+, 2 HE",
+  "titel_tag": "Cisco N5K-C5596T 5596T 10GBASE-T | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5596T (5596T): L2-Data-Center-Switch, 32× 10GBASE-T + 16× Unified-SFP+, 1,92 Tbit/s, 1.428 Mpps, 2 HE. Cisco NX-OS, vPC, FCoE, kein PoE/Stacking.",
+  "artikelgewicht": "21,55",
+  "versandgewicht": "24,00",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5596T ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie mit 32× 10GBASE-T (1/10G) + 16× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 24 FEX sowie FCoE.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N5K-C5596T 1,92 Tbit/s bei 1.428 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Erweiterungsmodul.</p>",
+  "intro": [
+   "Der Cisco N5K-C5596T ist ein gemanagter Layer-2-Data-Center-Switch der Cisco-Nexus-5500-Serie, ausgelegt als 10GBASE-T- und Unified-Port-Aggregations-Switch (2 HE) im 2-HE-Gehäuse.",
+   "Mit 48 festen Ports erreicht der N5K-C5596T eine Switching-Kapazität von 1,92 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.428 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5596T über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 24 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 (160 Gbit/s, 240 Mpps) ist optional per Layer-3-Erweiterungsmodul nachrüstbar (nicht im Lieferumfang); FCoE erfordert die Storage-Services-Lizenz. Die 16 SFP+-Ports des N5K-C5596T sind Unified (1/10G Ethernet/FCoE oder 8/4/2/1G FC); die 32 festen 10GBASE-T-Ports unterstützen FCoE bis 30 m über Cat-6a/7-Kabel; bis zu drei GEM-Steckplätze erweitern den Switch (Module separat).",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul (4 Lüfter) und bis zu zwei Hot-Swap-Netzteilen (1100 W; DC-Option) arbeitet der N5K-C5596T im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5500-Serie ist der N5K-C5596T als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5596T?",
+    "Der N5K-C5596T bietet 32× 10GBASE-T (1/10G) + 16× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze."
+   ],
+   [
+    "Unterstützt der N5K-C5596T Stacking oder PoE?",
+    "Nein – der N5K-C5596T nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Welche Ports hat der N5K-C5596T?",
+    "Der N5K-C5596T kombiniert 32 feste 10GBASE-T-Ports (FCoE bis 30 m über Cat-6a/7-Kabel) mit 16 Unified-SFP+-Ports (1/10G Ethernet/FCoE oder 8/4/2/1G FC); drei GEM-Steckplätze erlauben Erweiterungen (Module separat)."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5596T?",
+    "Der N5K-C5596T läuft unter Cisco NX-OS und bietet Layer 2, vPC, FabricPath, FCoE und bis zu 24 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Erweiterungsmodul nachrüstbar (160 Gbit/s, 240 Mpps), FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10GBASE-T (1/10G) + 16× Unified-SFP+ (1/10G Ethernet/FCoE oder 8/4/2/1G FC); 3 GEM-Steckplätze"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, Kupfer; SFP+ Unified: Ethernet/FCoE oder 8/4/2/1G FC)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,92 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.428 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (1100 W; DC-Option)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Aggregation 10GBASE-T + Unified (2 HE) – 32× 10GBASE-T plus 16× Unified-SFP+ (Ethernet/FCoE oder 8/4/2/1G FC) plus 3 GEM-Steckplätze; FCoE (10GBASE-T bis 30 m über Cat-6a/7); Layer 2 (Layer 3 optional via Erweiterungsmodul); NX-OS mit vPC und bis 24 FEX; FabricPath; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5596T",
+    "EoL",
+    "Cisco 5596T (Nexus-5500-Generation) – EoL abgekündigt 03-Apr-2019; EoSupport-Datum ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596T",
+    "PID",
+    "Ordering-PID N5K-C5596T verbatim aus c78-618603 (nur Basis-Chassis-PID gebankt; GEM-/L3-Module, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596T",
+    "Switching-Kapazität",
+    "1,92 Tbit/s: Cisco-Angabe (c78-618603, „Layer 2 hardware forwarding at 1920 Gbps\") übernommen, NICHT verdoppelt; Vollsystem-96-Port-Wert, Portanzahl = 48 Basis-Festports (Module nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596T",
+    "Artikelgewicht",
+    "21,55 kg = Datenblattwert (c78-618603) inkl. 3 Expansion-Module + 2 PSU + 4 Lüfter; Basis-Chassis (ohne Erweiterungsmodule) leichter -> ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ],
+   [
+    "N5K-C5596T",
+    "Feature-Grounding",
+    "VXLAN nicht im Datenblatt c78-618603 -> nicht aufgenommen (5500-Generation vor VXLAN-HW). FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa, KEIN Merkmal. Layer 2 Basis-Chassis; Layer 3 optional via Layer-3-Erweiterungsmodul (160 Gbit/s, 240 Mpps) -> Prosa, NICHT im Layer-Attribut, NICHT gebankt. GEM/L3-Module = Modul: nicht gebankt, nicht in Portanzahl. EVPN/Cloud-Scale/ACI nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html"
+   ]
+  ]
+ }
+}

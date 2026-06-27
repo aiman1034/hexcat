@@ -3209,6 +3209,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   641 built, 68 Familien fully built, 69%.** **5696Q bleibt Chassis-Carve-out** (4 RU / 8 LEM, modular → NICHT das Fixed-Gate).
   Remaining Nexus 5000: 5500/5000-Legacy (5548/5596/5010/5020) + 5696Q-Chassis; **Nexus 2000 FEX** wartet weiterhin auf die
   FEX-Modell-Entscheidung des Operators (kein Auto-Merkmal).
+- **Nexus 5500 PLATFORM — BUILD 4 SKUs / 1 family; COMPLETES the Nexus 5000 fixed lane (2026-06-27).** Content-only, **NO src,
+  NO new Merkmal** (`git diff -- src/` empty). The FIRST unified-port/FCoE generation (predecessor of the 5600). **`Cisco_Nexus_5500`**
+  (4 SKUs, all 14-attr uniform, c78-618603): N5K-C5548P (Portanz 32 = 32× 1/10G-SFP+ Ethernet/FCoE + 1 GEM-Steckplatz, 960 Gbit/s,
+  714,24 Mpps, 15,88 kg, 1 RU) / N5K-C5548UP (Portanz 32 = 32× Unified-SFP+ [1/10G Eth/FCoE oder 8/4/2/1G FC] + 1 GEM, 960 Gbit/s,
+  15,88 kg, 1 RU) / N5K-C5596UP (Portanz 48 = 48× Unified-SFP+ + 3 GEM, 1,92 Tbit/s, 1.428 Mpps, 21,55 kg, 2 RU) / N5K-C5596T
+  (Portanz 48 = **32× 10GBASE-T + 16× Unified-SFP+** + 3 GEM, S.3 = 32+16, 1,92 Tbit/s, 21,55 kg, 2 RU; 10GBASE-T FCoE bis 30 m
+  Cat-6a/7). **TWO grounded INVERSIONS vs the 5600 (per-datasheet, NOT carried over):** **(1) VXLAN OMITTED on all 4** — c78-618603
+  has no hardware VXLAN (pre-VXLAN generation) → VXLAN appears NOWHERE in customer prose (verified VXLAN=0 in customer files; the
+  omission reasoning logged in the Verification_Log). **(2) Layer attr = L2** on all 4 — base chassis is L2; Layer 3 is an OPTIONAL
+  add-on (Daughter-Card on 5548; L3-Erweiterungsmodul on 5596; 160 Gbit/s / 240 Mpps) → **PROSE only, never the Layer value, never a
+  banked PID** (verified no L3 in the Layer attr). **5548P FCoE-exception:** FCoE-fähig auf allen Basis-Ports, aber **NICHT Unified /
+  kein natives FC** (natives FC nur via GEM) — die Abgrenzung zum 5548UP ist in Prosa + Verification_Log dokumentiert. FCoE/Unified-Ports/
+  FC-Geschwindigkeiten → Prosa, **kein VXLAN/FCoE/Unified Merkmal** (verifiziert; attrs = 14 je SKU). **GEM/L3-Module = Modul:** nicht
+  gebankt, nicht in Portanzahl (Steckplätze als WORTE ohne „×" → S.3 zählt nur Basis-Festports). **SwK = Vollsystem-L2-Wert, NICHT
+  verdoppelt** (logged; Portanzahl = Basis-Festports). **Kein gegroundeter Buffer/ECMP-Wert in c78-618603 → OMITTED** (flag-don't-
+  fabricate; Cut-Through + bis-24-FEX tragen die Plattform-Prosa). Gewichte inkl. Erweiterungsmodule → Basis-Chassis ZU_VERIFIZIEREN.
+  EoL abgekündigt **03-Apr-2019**, EoSupport ZU_VERIFIZIEREN, nie entfernt. NX-OS, IOS XE = 0. **Kein "new-sealed"** (WB §5 = 0). Beschr
+  160–171 Wörter (≤175). 1 `gate_completeness`-Record ergänzt. **Kein neuer Test. Bundle canonical gate ok=True / 0 viol / 0 warn**;
+  volle Suite **438 passed**; Byte-Contract sauber. Manifest: 1 Built-Block, **Catch-all "Nexus 5000 (5500/5600)" 10→6** (kein
+  Doppel-Count). `coverage_report.md`: **Cisco Nexus 5500 ✅ (4/4)**. **In-scope 89→90** (+1). **Coverage jetzt: 645 built, 69 Familien
+  fully built, 69%.** **Die Nexus-5000-FIXED-LANE ist damit KOMPLETT** (5600 + 5500); Rest: Nexus 5010/5020 First-Gen (pre-FCoE-unified)
+  + 5696Q-Chassis-Carve-out; **Nexus 2000 FEX** wartet weiter auf die FEX-Modell-Entscheidung des Operators (kein Auto-Merkmal).
 
 ---
 
