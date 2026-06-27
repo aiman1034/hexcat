@@ -1,0 +1,802 @@
+{
+ "IE-3000-4TC": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-3000-4TC Industrial-Ethernet-IE3000 lüfterloser Layer-2-Industrie-Switch – 4× FE-RJ45 + 2× Dual-Purpose-Uplink",
+  "titel_tag": "Cisco IE-3000-4TC Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-3000-4TC (Industrial-Ethernet-IE3000): lüfterloser Layer-2-Industrie-Switch, 4× FE-RJ45 + 2× Dual-Purpose-Uplink, -40 bis 75 °C, IP30. 16 Gbit/s, 6,5 Mpps.",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,60",
+  "kurzbeschreibung": "<p>Der Cisco IE-3000-4TC ist ein lüfterloser Layer-2-Industrie-Switch der Cisco-IE3000-Serie für die DIN-Schiene mit 4× FE-RJ45 + 2× Dual-Purpose-Uplink (LAN Base). Der IE-3000-4TC läuft unter Cisco IOS (nicht IOS-XE) und ist für −40 bis +75 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-3000-4TC bietet REP-Ring (50 ms), PROFINET v2, Modbus TCP, IEC-61850-Substation-Konformität, IEEE-1588v2-Timing und redundanten 24-VDC-Eingang; die IP-Services-Variante (PID-Suffix E) liefert Layer 3 ab Werk.</p>",
+  "intro": [
+   "Der Cisco IE-3000-4TC ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE3000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× FE-RJ45 + 2× Dual-Purpose-Uplink mit LAN-Base-Image (Layer 2).",
+   "Mit 6 Ports (4 Zugangs-Ports plus zwei Dual-Purpose-Uplinks) liefert der IE-3000-4TC eine Switching-Kapazität von 16 Gbit/s bei 6,5 Mpps. PoE wird vom Basis-Switch nicht unterstützt (optional über IEM-3000-Erweiterungsmodule). Im LAN-Base-Image arbeitet der IE-3000-4TC als Layer-2-Switch mit statischem IPv4-Routing; die baugleiche IP-Services-Variante (PID-Suffix E) liefert ab Werk vollwertiges Layer 3 (OSPF, EIGRP, BGPv4, VRF-Lite).",
+   "Robust ausgelegt arbeitet der IE-3000-4TC lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30) mit redundantem 24-VDC-Eingang (18–60 VDC, Versorgung A/B). Für ausfallsichere Topologien bietet der IE-3000-4TC REP-Ring-Resilienz (50 ms) sowie PROFINET v2 (Conformance Class B), Modbus TCP und IEC-61850-/IEEE-1613-Substation-Konformität; IEEE-1588v2-Timing ist integriert. Der IE-3000-4TC läuft unter Cisco IOS (nicht IOS-XE); die Serie ist abgekündigt (EoS 22-Jan-2021) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3000-4TC?",
+    "Der IE-3000-4TC bietet 4× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE) = 6 Ports (4 Zugangs-Ports plus zwei Dual-Purpose-Uplinks, je Combo: Kupfer oder SFP-GE)."
+   ],
+   [
+    "Arbeitet der IE-3000-4TC unter Layer 2 oder Layer 3?",
+    "Layer 2 – der IE-3000-4TC trägt das LAN-Base-Image; vollwertiges Layer-3-Routing liefert die baugleiche IP-Services-Variante (PID-Suffix E, ab Werk)."
+   ],
+   [
+    "Hat der IE-3000-4TC PoE?",
+    "Nein – der Basis-Switch IE-3000-4TC besitzt kein PoE; PoE-Ports lassen sich über IEM-3000-PoE-Erweiterungsmodule ergänzen (separate Artikel, nicht Teil dieses Chassis)."
+   ],
+   [
+    "Welche Industrie- und Ring-Funktionen bietet der IE-3000-4TC?",
+    "Der IE-3000-4TC bietet REP-Ring-Resilienz (50 ms, bis 130 Knoten), PROFINET v2 (Conformance Class B), Modbus TCP, IEEE-1588v2-Timing sowie IEC-61850-/IEEE-1613-Konformität für Umspannwerke. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "6"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 10/100/1000 + 1G-SFP (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× Dual-Purpose (Combo Kupfer/SFP-GE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter 24-VDC-Eingang (18–60 VDC, Versorgung A/B), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie (Fabrikautomation, ITS, Umspannwerk IEC61850/IEEE1613, Bahn) – 4× FE-RJ45 + 2× Dual-Purpose-Uplink; DIN-Schiene/Wand, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 75 °C; Ring-Resilienz REP (50 ms); PROFINET v2 (CC-B), Modbus TCP, IEEE-1588v2; Layer 2 (IP-Services-Variante mit PID-Suffix E liefert L3); Cisco IOS; redundanter 24-VDC-Eingang A/B"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-3000-4TC",
+    "EoL",
+    "Cisco IE-3000-4TC (Industrial Ethernet IE3000) – EoL; EoS angekündigt 22-Jan-2021. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC",
+    "PID",
+    "Ordering-PID IE-3000-4TC verbatim aus c78-440930 (nur Basis-Chassis-PID gebankt; das „-E\"-Suffix ist das IP-Services-Image im PID -> Layer-3-Variante, eigene orderbare Hardware). NICHT gebankt: IEM-3000-Erweiterungsmodule (8TM/8FM/4SM/8SM/4PC/4PC-4TC), PWR-IE-Netzteile und alle DNA/IP-Services-Lizenz-PIDs. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC",
+    "Switching-Kapazität",
+    "16 Gbit/s / 6,5 Mpps: Cisco-Angabe (c78-440930) verbatim übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC",
+    "Versandgewicht",
+    "2,60 (geschätzt: Artikelgewicht 2,0 kg [gegroundet c78-440930 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Layer = L2: das „-E\"-Tier (IP Services) FLIPPT das Layer-Attribut auf L3 (Lizenz-Tier-Banking, Prinzip h – hier ändert der Tier den Attributwert). REP/PROFINET/Modbus/IEC-61850/IEEE-1588 = Prosa, KEIN Merkmal. IOS (nicht IOS-XE). Dual-Purpose-Uplink ohne „1×\" formuliert -> S.3 = Portanzahl.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ]
+  ]
+ },
+ "IE-3000-4TC-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-3000-4TC-E Industrial-Ethernet-IE3000 lüfterloser Layer-3-Industrie-Switch – 4× FE-RJ45 + 2× Dual-Purpose-Uplink",
+  "titel_tag": "Cisco IE-3000-4TC-E Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-3000-4TC-E (Industrial-Ethernet-IE3000): lüfterloser Layer-3-Industrie-Switch, 4× FE-RJ45 + 2× Dual-Purpose-Uplink, -40 bis 75 °C, IP30. 16 Gbit/s, 6,5 Mpps.",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,60",
+  "kurzbeschreibung": "<p>Der Cisco IE-3000-4TC-E ist ein lüfterloser Layer-3-Industrie-Switch der Cisco-IE3000-Serie für die DIN-Schiene mit 4× FE-RJ45 + 2× Dual-Purpose-Uplink (IP Services). Der IE-3000-4TC-E läuft unter Cisco IOS (nicht IOS-XE) und ist für −40 bis +75 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-3000-4TC-E bietet REP-Ring (50 ms), PROFINET v2, Modbus TCP, IEC-61850-Substation-Konformität, IEEE-1588v2-Timing und redundanten 24-VDC-Eingang; Layer 3 ist ab Werk freigeschaltet (IP Services).</p>",
+  "intro": [
+   "Der Cisco IE-3000-4TC-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch der Cisco-Industrial-Ethernet-IE3000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× FE-RJ45 + 2× Dual-Purpose-Uplink mit IP-Services-Image (Layer 3).",
+   "Mit 6 Ports (4 Zugangs-Ports plus zwei Dual-Purpose-Uplinks) liefert der IE-3000-4TC-E eine Switching-Kapazität von 16 Gbit/s bei 6,5 Mpps. PoE wird vom Basis-Switch nicht unterstützt (optional über IEM-3000-Erweiterungsmodule). Das im PID enthaltene IP-Services-Image schaltet vollwertiges Layer 3 frei (OSPF, EIGRP, BGPv4, IS-IS, PIM, HSRP, PBR, VRF-Lite).",
+   "Robust ausgelegt arbeitet der IE-3000-4TC-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30) mit redundantem 24-VDC-Eingang (18–60 VDC, Versorgung A/B). Für ausfallsichere Topologien bietet der IE-3000-4TC-E REP-Ring-Resilienz (50 ms) sowie PROFINET v2 (Conformance Class B), Modbus TCP und IEC-61850-/IEEE-1613-Substation-Konformität; IEEE-1588v2-Timing ist integriert. Der IE-3000-4TC-E läuft unter Cisco IOS (nicht IOS-XE); die Serie ist abgekündigt (EoS 22-Jan-2021) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3000-4TC-E?",
+    "Der IE-3000-4TC-E bietet 4× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE) = 6 Ports (4 Zugangs-Ports plus zwei Dual-Purpose-Uplinks, je Combo: Kupfer oder SFP-GE)."
+   ],
+   [
+    "Arbeitet der IE-3000-4TC-E unter Layer 2 oder Layer 3?",
+    "Layer 3 – der IE-3000-4TC-E trägt das IP-Services-Image ab Werk im PID und routet OSPF, EIGRP, BGPv4, IS-IS, PIM, HSRP, PBR und VRF-Lite."
+   ],
+   [
+    "Hat der IE-3000-4TC-E PoE?",
+    "Nein – der Basis-Switch IE-3000-4TC-E besitzt kein PoE; PoE-Ports lassen sich über IEM-3000-PoE-Erweiterungsmodule ergänzen (separate Artikel, nicht Teil dieses Chassis)."
+   ],
+   [
+    "Welche Industrie- und Ring-Funktionen bietet der IE-3000-4TC-E?",
+    "Der IE-3000-4TC-E bietet REP-Ring-Resilienz (50 ms, bis 130 Knoten), PROFINET v2 (Conformance Class B), Modbus TCP, IEEE-1588v2-Timing sowie IEC-61850-/IEEE-1613-Konformität für Umspannwerke. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "6"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 10/100/1000 + 1G-SFP (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× Dual-Purpose (Combo Kupfer/SFP-GE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter 24-VDC-Eingang (18–60 VDC, Versorgung A/B), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie (Fabrikautomation, ITS, Umspannwerk IEC61850/IEEE1613, Bahn) – 4× FE-RJ45 + 2× Dual-Purpose-Uplink; DIN-Schiene/Wand, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 75 °C; Ring-Resilienz REP (50 ms); PROFINET v2 (CC-B), Modbus TCP, IEEE-1588v2; Layer 3 ab Werk (IP Services: OSPF/EIGRP/BGPv4/IS-IS/VRF-Lite); Cisco IOS; redundanter 24-VDC-Eingang A/B"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-3000-4TC-E",
+    "EoL",
+    "Cisco IE-3000-4TC-E (Industrial Ethernet IE3000) – EoL; EoS angekündigt 22-Jan-2021. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC-E",
+    "PID",
+    "Ordering-PID IE-3000-4TC-E verbatim aus c78-440930 (nur Basis-Chassis-PID gebankt; das „-E\"-Suffix ist das IP-Services-Image im PID -> Layer-3-Variante, eigene orderbare Hardware). NICHT gebankt: IEM-3000-Erweiterungsmodule (8TM/8FM/4SM/8SM/4PC/4PC-4TC), PWR-IE-Netzteile und alle DNA/IP-Services-Lizenz-PIDs. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC-E",
+    "Switching-Kapazität",
+    "16 Gbit/s / 6,5 Mpps: Cisco-Angabe (c78-440930) verbatim übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC-E",
+    "Versandgewicht",
+    "2,60 (geschätzt: Artikelgewicht 2,0 kg [gegroundet c78-440930 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-4TC-E",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Layer = L3: das „-E\"-Tier (IP Services) FLIPPT das Layer-Attribut auf L3 (Lizenz-Tier-Banking, Prinzip h – hier ändert der Tier den Attributwert). REP/PROFINET/Modbus/IEC-61850/IEEE-1588 = Prosa, KEIN Merkmal. IOS (nicht IOS-XE). Dual-Purpose-Uplink ohne „1×\" formuliert -> S.3 = Portanzahl.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ]
+  ]
+ },
+ "IE-3000-8TC": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-3000-8TC Industrial-Ethernet-IE3000 lüfterloser Layer-2-Industrie-Switch – 8× FE-RJ45 + 2× Dual-Purpose-Uplink",
+  "titel_tag": "Cisco IE-3000-8TC Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-3000-8TC (Industrial-Ethernet-IE3000): lüfterloser Layer-2-Industrie-Switch, 8× FE-RJ45 + 2× Dual-Purpose-Uplink, -40 bis 75 °C, IP30. 16 Gbit/s, 6,5 Mpps.",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,60",
+  "kurzbeschreibung": "<p>Der Cisco IE-3000-8TC ist ein lüfterloser Layer-2-Industrie-Switch der Cisco-IE3000-Serie für die DIN-Schiene mit 8× FE-RJ45 + 2× Dual-Purpose-Uplink (LAN Base). Der IE-3000-8TC läuft unter Cisco IOS (nicht IOS-XE) und ist für −40 bis +75 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-3000-8TC bietet REP-Ring (50 ms), PROFINET v2, Modbus TCP, IEC-61850-Substation-Konformität, IEEE-1588v2-Timing und redundanten 24-VDC-Eingang; die IP-Services-Variante (PID-Suffix E) liefert Layer 3 ab Werk.</p>",
+  "intro": [
+   "Der Cisco IE-3000-8TC ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE3000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× FE-RJ45 + 2× Dual-Purpose-Uplink mit LAN-Base-Image (Layer 2).",
+   "Mit 10 Ports (8 Zugangs-Ports plus zwei Dual-Purpose-Uplinks) liefert der IE-3000-8TC eine Switching-Kapazität von 16 Gbit/s bei 6,5 Mpps. PoE wird vom Basis-Switch nicht unterstützt (optional über IEM-3000-Erweiterungsmodule). Im LAN-Base-Image arbeitet der IE-3000-8TC als Layer-2-Switch mit statischem IPv4-Routing; die baugleiche IP-Services-Variante (PID-Suffix E) liefert ab Werk vollwertiges Layer 3 (OSPF, EIGRP, BGPv4, VRF-Lite).",
+   "Robust ausgelegt arbeitet der IE-3000-8TC lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30) mit redundantem 24-VDC-Eingang (18–60 VDC, Versorgung A/B). Für ausfallsichere Topologien bietet der IE-3000-8TC REP-Ring-Resilienz (50 ms) sowie PROFINET v2 (Conformance Class B), Modbus TCP und IEC-61850-/IEEE-1613-Substation-Konformität; IEEE-1588v2-Timing ist integriert. Der IE-3000-8TC läuft unter Cisco IOS (nicht IOS-XE); die Serie ist abgekündigt (EoS 22-Jan-2021) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3000-8TC?",
+    "Der IE-3000-8TC bietet 8× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE) = 10 Ports (8 Zugangs-Ports plus zwei Dual-Purpose-Uplinks, je Combo: Kupfer oder SFP-GE)."
+   ],
+   [
+    "Arbeitet der IE-3000-8TC unter Layer 2 oder Layer 3?",
+    "Layer 2 – der IE-3000-8TC trägt das LAN-Base-Image; vollwertiges Layer-3-Routing liefert die baugleiche IP-Services-Variante (PID-Suffix E, ab Werk)."
+   ],
+   [
+    "Hat der IE-3000-8TC PoE?",
+    "Nein – der Basis-Switch IE-3000-8TC besitzt kein PoE; PoE-Ports lassen sich über IEM-3000-PoE-Erweiterungsmodule ergänzen (separate Artikel, nicht Teil dieses Chassis)."
+   ],
+   [
+    "Welche Industrie- und Ring-Funktionen bietet der IE-3000-8TC?",
+    "Der IE-3000-8TC bietet REP-Ring-Resilienz (50 ms, bis 130 Knoten), PROFINET v2 (Conformance Class B), Modbus TCP, IEEE-1588v2-Timing sowie IEC-61850-/IEEE-1613-Konformität für Umspannwerke. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 10/100/1000 + 1G-SFP (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× Dual-Purpose (Combo Kupfer/SFP-GE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter 24-VDC-Eingang (18–60 VDC, Versorgung A/B), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie (Fabrikautomation, ITS, Umspannwerk IEC61850/IEEE1613, Bahn) – 8× FE-RJ45 + 2× Dual-Purpose-Uplink; DIN-Schiene/Wand, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 75 °C; Ring-Resilienz REP (50 ms); PROFINET v2 (CC-B), Modbus TCP, IEEE-1588v2; Layer 2 (IP-Services-Variante mit PID-Suffix E liefert L3); Cisco IOS; redundanter 24-VDC-Eingang A/B"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-3000-8TC",
+    "EoL",
+    "Cisco IE-3000-8TC (Industrial Ethernet IE3000) – EoL; EoS angekündigt 22-Jan-2021. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC",
+    "PID",
+    "Ordering-PID IE-3000-8TC verbatim aus c78-440930 (nur Basis-Chassis-PID gebankt; das „-E\"-Suffix ist das IP-Services-Image im PID -> Layer-3-Variante, eigene orderbare Hardware). NICHT gebankt: IEM-3000-Erweiterungsmodule (8TM/8FM/4SM/8SM/4PC/4PC-4TC), PWR-IE-Netzteile und alle DNA/IP-Services-Lizenz-PIDs. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC",
+    "Switching-Kapazität",
+    "16 Gbit/s / 6,5 Mpps: Cisco-Angabe (c78-440930) verbatim übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC",
+    "Versandgewicht",
+    "2,60 (geschätzt: Artikelgewicht 2,0 kg [gegroundet c78-440930 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Layer = L2: das „-E\"-Tier (IP Services) FLIPPT das Layer-Attribut auf L3 (Lizenz-Tier-Banking, Prinzip h – hier ändert der Tier den Attributwert). REP/PROFINET/Modbus/IEC-61850/IEEE-1588 = Prosa, KEIN Merkmal. IOS (nicht IOS-XE). Dual-Purpose-Uplink ohne „1×\" formuliert -> S.3 = Portanzahl.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ]
+  ]
+ },
+ "IE-3000-8TC-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-3000-8TC-E Industrial-Ethernet-IE3000 lüfterloser Layer-3-Industrie-Switch – 8× FE-RJ45 + 2× Dual-Purpose-Uplink",
+  "titel_tag": "Cisco IE-3000-8TC-E Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-3000-8TC-E (Industrial-Ethernet-IE3000): lüfterloser Layer-3-Industrie-Switch, 8× FE-RJ45 + 2× Dual-Purpose-Uplink, -40 bis 75 °C, IP30. 16 Gbit/s, 6,5 Mpps.",
+  "artikelgewicht": "2,0",
+  "versandgewicht": "2,60",
+  "kurzbeschreibung": "<p>Der Cisco IE-3000-8TC-E ist ein lüfterloser Layer-3-Industrie-Switch der Cisco-IE3000-Serie für die DIN-Schiene mit 8× FE-RJ45 + 2× Dual-Purpose-Uplink (IP Services). Der IE-3000-8TC-E läuft unter Cisco IOS (nicht IOS-XE) und ist für −40 bis +75 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-3000-8TC-E bietet REP-Ring (50 ms), PROFINET v2, Modbus TCP, IEC-61850-Substation-Konformität, IEEE-1588v2-Timing und redundanten 24-VDC-Eingang; Layer 3 ist ab Werk freigeschaltet (IP Services).</p>",
+  "intro": [
+   "Der Cisco IE-3000-8TC-E ist ein gehärteter, lüfterloser Layer-3-Industrie-Switch der Cisco-Industrial-Ethernet-IE3000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× FE-RJ45 + 2× Dual-Purpose-Uplink mit IP-Services-Image (Layer 3).",
+   "Mit 10 Ports (8 Zugangs-Ports plus zwei Dual-Purpose-Uplinks) liefert der IE-3000-8TC-E eine Switching-Kapazität von 16 Gbit/s bei 6,5 Mpps. PoE wird vom Basis-Switch nicht unterstützt (optional über IEM-3000-Erweiterungsmodule). Das im PID enthaltene IP-Services-Image schaltet vollwertiges Layer 3 frei (OSPF, EIGRP, BGPv4, IS-IS, PIM, HSRP, PBR, VRF-Lite).",
+   "Robust ausgelegt arbeitet der IE-3000-8TC-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30) mit redundantem 24-VDC-Eingang (18–60 VDC, Versorgung A/B). Für ausfallsichere Topologien bietet der IE-3000-8TC-E REP-Ring-Resilienz (50 ms) sowie PROFINET v2 (Conformance Class B), Modbus TCP und IEC-61850-/IEEE-1613-Substation-Konformität; IEEE-1588v2-Timing ist integriert. Der IE-3000-8TC-E läuft unter Cisco IOS (nicht IOS-XE); die Serie ist abgekündigt (EoS 22-Jan-2021) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-3000-8TC-E?",
+    "Der IE-3000-8TC-E bietet 8× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE) = 10 Ports (8 Zugangs-Ports plus zwei Dual-Purpose-Uplinks, je Combo: Kupfer oder SFP-GE)."
+   ],
+   [
+    "Arbeitet der IE-3000-8TC-E unter Layer 2 oder Layer 3?",
+    "Layer 3 – der IE-3000-8TC-E trägt das IP-Services-Image ab Werk im PID und routet OSPF, EIGRP, BGPv4, IS-IS, PIM, HSRP, PBR und VRF-Lite."
+   ],
+   [
+    "Hat der IE-3000-8TC-E PoE?",
+    "Nein – der Basis-Switch IE-3000-8TC-E besitzt kein PoE; PoE-Ports lassen sich über IEM-3000-PoE-Erweiterungsmodule ergänzen (separate Artikel, nicht Teil dieses Chassis)."
+   ],
+   [
+    "Welche Industrie- und Ring-Funktionen bietet der IE-3000-8TC-E?",
+    "Der IE-3000-8TC-E bietet REP-Ring-Resilienz (50 ms, bis 130 Knoten), PROFINET v2 (Conformance Class B), Modbus TCP, IEEE-1588v2-Timing sowie IEC-61850-/IEEE-1613-Konformität für Umspannwerke. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× FE-RJ45 (10/100) + 2× Dual-Purpose-Uplink (Combo: 10/100/1000-Kupfer oder SFP-GE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 10/100/1000 + 1G-SFP (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× Dual-Purpose (Combo Kupfer/SFP-GE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter 24-VDC-Eingang (18–60 VDC, Versorgung A/B), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie (Fabrikautomation, ITS, Umspannwerk IEC61850/IEEE1613, Bahn) – 8× FE-RJ45 + 2× Dual-Purpose-Uplink; DIN-Schiene/Wand, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 75 °C; Ring-Resilienz REP (50 ms); PROFINET v2 (CC-B), Modbus TCP, IEEE-1588v2; Layer 3 ab Werk (IP Services: OSPF/EIGRP/BGPv4/IS-IS/VRF-Lite); Cisco IOS; redundanter 24-VDC-Eingang A/B"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-3000-8TC-E",
+    "EoL",
+    "Cisco IE-3000-8TC-E (Industrial Ethernet IE3000) – EoL; EoS angekündigt 22-Jan-2021. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC-E",
+    "PID",
+    "Ordering-PID IE-3000-8TC-E verbatim aus c78-440930 (nur Basis-Chassis-PID gebankt; das „-E\"-Suffix ist das IP-Services-Image im PID -> Layer-3-Variante, eigene orderbare Hardware). NICHT gebankt: IEM-3000-Erweiterungsmodule (8TM/8FM/4SM/8SM/4PC/4PC-4TC), PWR-IE-Netzteile und alle DNA/IP-Services-Lizenz-PIDs. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC-E",
+    "Switching-Kapazität",
+    "16 Gbit/s / 6,5 Mpps: Cisco-Angabe (c78-440930) verbatim übernommen, NICHT verdoppelt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC-E",
+    "Versandgewicht",
+    "2,60 (geschätzt: Artikelgewicht 2,0 kg [gegroundet c78-440930 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ],
+   [
+    "IE-3000-8TC-E",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Layer = L3: das „-E\"-Tier (IP Services) FLIPPT das Layer-Attribut auf L3 (Lizenz-Tier-Banking, Prinzip h – hier ändert der Tier den Attributwert). REP/PROFINET/Modbus/IEC-61850/IEEE-1588 = Prosa, KEIN Merkmal. IOS (nicht IOS-XE). Dual-Purpose-Uplink ohne „1×\" formuliert -> S.3 = Portanzahl.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-3000-series-switches/data_sheet_c78-440930.html"
+   ]
+  ]
+ }
+}

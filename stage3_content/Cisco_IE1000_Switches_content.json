@@ -1,0 +1,826 @@
+{
+ "IE-1000-4T1T-LM": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-1000-4T1T-LM Industrial-Ethernet-IE1000 lüfterloser Layer-2-Industrie-Switch – 4× FE-RJ45 + 1× RJ45",
+  "titel_tag": "Cisco IE-1000-4T1T-LM Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-1000-4T1T-LM (Industrial-Ethernet-IE1000): lüfterloser Layer-2-Industrie-Switch, 4× FE-RJ45 + 1× RJ45, -20 bis 70 °C, IP30. 5,6 Gbit/s, Line-Rate (alle Ports/Paketgrößen).",
+  "artikelgewicht": "0,50",
+  "versandgewicht": "1,10",
+  "kurzbeschreibung": "<p>Der Cisco IE-1000-4T1T-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE1000-Serie für die DIN-Schiene mit 4× FE-RJ45 + 1× RJ45. Der IE-1000-4T1T-LM wird schlank über den Cisco Device Manager (Web-/GUI) verwaltet und ist für −20 bis 70 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-1000-4T1T-LM bietet EtherNet/IP (CIP), RSTP/MSTP, 802.1x, IGMP-/DHCP-Snooping, EtherChannel und SFP-Uplinks bis 80 km bei 5,6 Gbit/s Switching-Kapazität (Line-Rate); aktuelles Modell ohne End-of-Sale.</p>",
+  "intro": [
+   "Der Cisco IE-1000-4T1T-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE1000-Familie für die DIN-Schienenmontage in industriellen Einstiegsnetzen – 4× FE-RJ45 + 1× RJ45, schlank verwaltet.",
+   "Mit 5 Ports (4 Zugangs-Ports plus 1 Uplink-Ports) liefert der IE-1000-4T1T-LM eine nicht-blockierende Switching-Kapazität von 5,6 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 4 Zugangs-Ports des IE-1000-4T1T-LM sind reine Datenports ohne PoE-Einspeisung. Der IE-1000-4T1T-LM wird schlank verwaltet (Lightly-Managed) über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch-Provisioning.",
+   "Robust ausgelegt arbeitet der IE-1000-4T1T-LM lüfterlos von −20 bis 70 °C (ATEX Class I Zone 2, IP30). Der IE-1000-4T1T-LM unterstützt EtherNet/IP (CIP), STP/MSTP/RSTP, LLDP, 802.1Q-VLAN, IGMP- und DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC, EtherChannel/LACP sowie SFP-Uplinks bis 80 km. Als aktuelles Modell (Firmware-Stand 1.9.x) ist der IE-1000-4T1T-LM als ungebrauchte Original-Hardware für industrielle Einstiegsnetze verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-1000-4T1T-LM?",
+    "Der IE-1000-4T1T-LM bietet 4× FE-RJ45 (10/100) + 1× RJ45 (10/100/1000, Uplink) = 5 Ports (4 Zugangs-Ports plus 1 Uplink-Ports)."
+   ],
+   [
+    "Wie wird der IE-1000-4T1T-LM verwaltet?",
+    "Der IE-1000-4T1T-LM ist ein schlank verwalteter (Lightly-Managed) Switch: Konfiguration und Monitoring laufen über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch – eine klassische CLI-Vollverwaltung bieten die Catalyst-IE-Serien (IE3x00/IE4000)."
+   ],
+   [
+    "Hat der IE-1000-4T1T-LM PoE?",
+    "Nein – der IE-1000-4T1T-LM ist ein reines Datenmodell ohne PoE; die PoE/PoE+-Varianten der IE1000-Serie sind die −P-Modelle (4P2S/8P2S)."
+   ],
+   [
+    "Welche Industrie- und Sicherheitsfunktionen bietet der IE-1000-4T1T-LM?",
+    "Der IE-1000-4T1T-LM unterstützt EtherNet/IP (CIP), RSTP/MSTP-Ring, LLDP, 802.1Q-VLAN, IGMP-/DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC sowie EtherChannel/LACP und SFP-Uplinks bis 80 km."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "5"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-RJ45 (10/100) + 1× RJ45 (10/100/1000, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 1G (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "1× 10/100/1000-RJ45"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "5,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundante Spannungseinspeisung (DC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-20 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie / Einstieg-OT (Fabrikautomation, ITS, Stadtüberwachung, Gebäudeautomation, M2M) – 4× FE-RJ45 + 1× RJ45; DIN-Schiene, lüfterlos, IP30, ATEX Class I Zone 2, -20 bis 70 °C; schlank verwaltet (Cisco Device Manager, SNMP/Syslog/PnP); EtherNet/IP (CIP), RSTP/MSTP, 802.1x/MAB, IGMP-/DHCP-Snooping, EtherChannel; Layer 2; SFP-Uplinks bis 80 km"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-1000-4T1T-LM",
+    "Lifecycle",
+    "Cisco IE-1000-4T1T-LM (Industrial Ethernet IE1000) – AKTUELLES Modell, KEINE EoS-Ankündigung (Firmware-Stand 1.9.x, 2025); daher kein EoL-Flag. Hexwaren führt ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4T1T-LM",
+    "PID",
+    "Ordering-PID IE-1000-4T1T-LM verbatim aus c78-737277 (nur Basis-Chassis-PID gebankt). NICHT gebankt: PWR-IE-Netzteile (PWR-IE50W/65W/170W/240W/480W-Serie) und STK-RACK-DINRAIL=. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4T1T-LM",
+    "Management-Plane",
+    "IE-1000-4T1T-LM läuft NICHT unter Cisco IOS und NICHT IOS-XE, sondern unter der schlank verwalteten IE1000-Device-Manager-Firmware (Web-/GUI, SNMP, Syslog, PnP). Keine IOS-Aussage in der Prosa (per-Familie-Management-Plane).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4T1T-LM",
+    "Durchsatz",
+    "Durchsatz: Datenblatt c78-737277 nennt KEINE Mpps-Angabe -> «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4T1T-LM",
+    "Versandgewicht",
+    "1,10 (geschätzt: Artikelgewicht 0,50 kg [gegroundet c78-737277 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4T1T-LM",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN, Einstieg) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Management-Plane PER-FAMILIE: IE1000 = schlank verwaltet (Web-GUI-Firmware), NICHT IOS -> keine IOS-Prosa, Durchsatz Line-Rate, aktiv/keine EoS. EtherNet/IP/Ring/802.1x = Prosa, KEIN Merkmal. Layer = L2.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ]
+  ]
+ },
+ "IE-1000-6T2T-LM": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-1000-6T2T-LM Industrial-Ethernet-IE1000 lüfterloser Layer-2-Industrie-Switch – 6× FE-RJ45 + 2× RJ45",
+  "titel_tag": "Cisco IE-1000-6T2T-LM Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-1000-6T2T-LM (Industrial-Ethernet-IE1000): lüfterloser Layer-2-Industrie-Switch, 6× FE-RJ45 + 2× RJ45, -20 bis 70 °C, IP30. 5,6 Gbit/s, Line-Rate (alle Ports/Paketgrößen).",
+  "artikelgewicht": "0,57",
+  "versandgewicht": "1,17",
+  "kurzbeschreibung": "<p>Der Cisco IE-1000-6T2T-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE1000-Serie für die DIN-Schiene mit 6× FE-RJ45 + 2× RJ45. Der IE-1000-6T2T-LM wird schlank über den Cisco Device Manager (Web-/GUI) verwaltet und ist für −20 bis 70 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-1000-6T2T-LM bietet EtherNet/IP (CIP), RSTP/MSTP, 802.1x, IGMP-/DHCP-Snooping, EtherChannel und SFP-Uplinks bis 80 km bei 5,6 Gbit/s Switching-Kapazität (Line-Rate); aktuelles Modell ohne End-of-Sale.</p>",
+  "intro": [
+   "Der Cisco IE-1000-6T2T-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE1000-Familie für die DIN-Schienenmontage in industriellen Einstiegsnetzen – 6× FE-RJ45 + 2× RJ45, schlank verwaltet.",
+   "Mit 8 Ports (6 Zugangs-Ports plus 2 Uplink-Ports) liefert der IE-1000-6T2T-LM eine nicht-blockierende Switching-Kapazität von 5,6 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 6 Zugangs-Ports des IE-1000-6T2T-LM sind reine Datenports ohne PoE-Einspeisung. Der IE-1000-6T2T-LM wird schlank verwaltet (Lightly-Managed) über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch-Provisioning.",
+   "Robust ausgelegt arbeitet der IE-1000-6T2T-LM lüfterlos von −20 bis 70 °C (ATEX Class I Zone 2, IP30). Der IE-1000-6T2T-LM unterstützt EtherNet/IP (CIP), STP/MSTP/RSTP, LLDP, 802.1Q-VLAN, IGMP- und DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC, EtherChannel/LACP sowie SFP-Uplinks bis 80 km. Als aktuelles Modell (Firmware-Stand 1.9.x) ist der IE-1000-6T2T-LM als ungebrauchte Original-Hardware für industrielle Einstiegsnetze verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-1000-6T2T-LM?",
+    "Der IE-1000-6T2T-LM bietet 6× FE-RJ45 (10/100) + 2× RJ45 (10/100/1000, Uplink) = 8 Ports (6 Zugangs-Ports plus 2 Uplink-Ports)."
+   ],
+   [
+    "Wie wird der IE-1000-6T2T-LM verwaltet?",
+    "Der IE-1000-6T2T-LM ist ein schlank verwalteter (Lightly-Managed) Switch: Konfiguration und Monitoring laufen über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch – eine klassische CLI-Vollverwaltung bieten die Catalyst-IE-Serien (IE3x00/IE4000)."
+   ],
+   [
+    "Hat der IE-1000-6T2T-LM PoE?",
+    "Nein – der IE-1000-6T2T-LM ist ein reines Datenmodell ohne PoE; die PoE/PoE+-Varianten der IE1000-Serie sind die −P-Modelle (4P2S/8P2S)."
+   ],
+   [
+    "Welche Industrie- und Sicherheitsfunktionen bietet der IE-1000-6T2T-LM?",
+    "Der IE-1000-6T2T-LM unterstützt EtherNet/IP (CIP), RSTP/MSTP-Ring, LLDP, 802.1Q-VLAN, IGMP-/DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC sowie EtherChannel/LACP und SFP-Uplinks bis 80 km."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "6× FE-RJ45 (10/100) + 2× RJ45 (10/100/1000, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 1G (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10/100/1000-RJ45"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "5,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundante Spannungseinspeisung (DC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-20 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie / Einstieg-OT (Fabrikautomation, ITS, Stadtüberwachung, Gebäudeautomation, M2M) – 6× FE-RJ45 + 2× RJ45; DIN-Schiene, lüfterlos, IP30, ATEX Class I Zone 2, -20 bis 70 °C; schlank verwaltet (Cisco Device Manager, SNMP/Syslog/PnP); EtherNet/IP (CIP), RSTP/MSTP, 802.1x/MAB, IGMP-/DHCP-Snooping, EtherChannel; Layer 2; SFP-Uplinks bis 80 km"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-1000-6T2T-LM",
+    "Lifecycle",
+    "Cisco IE-1000-6T2T-LM (Industrial Ethernet IE1000) – AKTUELLES Modell, KEINE EoS-Ankündigung (Firmware-Stand 1.9.x, 2025); daher kein EoL-Flag. Hexwaren führt ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-6T2T-LM",
+    "PID",
+    "Ordering-PID IE-1000-6T2T-LM verbatim aus c78-737277 (nur Basis-Chassis-PID gebankt). NICHT gebankt: PWR-IE-Netzteile (PWR-IE50W/65W/170W/240W/480W-Serie) und STK-RACK-DINRAIL=. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-6T2T-LM",
+    "Management-Plane",
+    "IE-1000-6T2T-LM läuft NICHT unter Cisco IOS und NICHT IOS-XE, sondern unter der schlank verwalteten IE1000-Device-Manager-Firmware (Web-/GUI, SNMP, Syslog, PnP). Keine IOS-Aussage in der Prosa (per-Familie-Management-Plane).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-6T2T-LM",
+    "Durchsatz",
+    "Durchsatz: Datenblatt c78-737277 nennt KEINE Mpps-Angabe -> «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-6T2T-LM",
+    "Versandgewicht",
+    "1,17 (geschätzt: Artikelgewicht 0,57 kg [gegroundet c78-737277 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-6T2T-LM",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN, Einstieg) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Management-Plane PER-FAMILIE: IE1000 = schlank verwaltet (Web-GUI-Firmware), NICHT IOS -> keine IOS-Prosa, Durchsatz Line-Rate, aktiv/keine EoS. EtherNet/IP/Ring/802.1x = Prosa, KEIN Merkmal. Layer = L2.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ]
+  ]
+ },
+ "IE-1000-4P2S-LM": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-1000-4P2S-LM Industrial-Ethernet-IE1000 lüfterloser Layer-2-Industrie-Switch – 4× FE-RJ45 + 2× SFP",
+  "titel_tag": "Cisco IE-1000-4P2S-LM Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-1000-4P2S-LM (Industrial-Ethernet-IE1000): lüfterloser Layer-2-Industrie-Switch, 4× FE-RJ45 + 2× SFP, -40 bis 70 °C, IP30. 5,6 Gbit/s, Line-Rate (alle Ports/Paketgrößen).",
+  "artikelgewicht": "0,77",
+  "versandgewicht": "1,37",
+  "kurzbeschreibung": "<p>Der Cisco IE-1000-4P2S-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE1000-Serie für die DIN-Schiene mit 4× FE-RJ45 + 2× SFP. Der IE-1000-4P2S-LM wird schlank über den Cisco Device Manager (Web-/GUI) verwaltet und ist für −40 bis 70 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-1000-4P2S-LM bietet EtherNet/IP (CIP), RSTP/MSTP, 802.1x, IGMP-/DHCP-Snooping, EtherChannel und SFP-Uplinks bis 80 km bei 5,6 Gbit/s Switching-Kapazität (Line-Rate); aktuelles Modell ohne End-of-Sale.</p>",
+  "intro": [
+   "Der Cisco IE-1000-4P2S-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE1000-Familie für die DIN-Schienenmontage in industriellen Einstiegsnetzen – 4× FE-RJ45 + 2× SFP, schlank verwaltet.",
+   "Mit 6 Ports (4 Zugangs-Ports plus 2 Uplink-Ports) liefert der IE-1000-4P2S-LM eine nicht-blockierende Switching-Kapazität von 5,6 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Alle 4 Zugangs-Ports des IE-1000-4P2S-LM liefern PoE/PoE+ (IEEE 802.3af/at, bis 120 W Gesamtbudget) für Kameras, Sensoren oder Access Points. Der IE-1000-4P2S-LM wird schlank verwaltet (Lightly-Managed) über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch-Provisioning.",
+   "Robust ausgelegt arbeitet der IE-1000-4P2S-LM lüfterlos von −40 bis 70 °C (ATEX Class I Zone 2, IP30). Der IE-1000-4P2S-LM unterstützt EtherNet/IP (CIP), STP/MSTP/RSTP, LLDP, 802.1Q-VLAN, IGMP- und DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC, EtherChannel/LACP sowie SFP-Uplinks bis 80 km. Als aktuelles Modell (Firmware-Stand 1.9.x) ist der IE-1000-4P2S-LM als ungebrauchte Original-Hardware für industrielle Einstiegsnetze verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-1000-4P2S-LM?",
+    "Der IE-1000-4P2S-LM bietet 4× FE-RJ45 (10/100, PoE/PoE+) + 2× SFP (1G, Uplink) = 6 Ports (4 Zugangs-Ports plus 2 Uplink-Ports)."
+   ],
+   [
+    "Wie wird der IE-1000-4P2S-LM verwaltet?",
+    "Der IE-1000-4P2S-LM ist ein schlank verwalteter (Lightly-Managed) Switch: Konfiguration und Monitoring laufen über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch – eine klassische CLI-Vollverwaltung bieten die Catalyst-IE-Serien (IE3x00/IE4000)."
+   ],
+   [
+    "Hat der IE-1000-4P2S-LM PoE?",
+    "Ja – alle 4 Kupfer-Zugangs-Ports des IE-1000-4P2S-LM liefern PoE/PoE+ (IEEE 802.3af/at) mit bis zu 120 W Gesamtbudget."
+   ],
+   [
+    "Welche Industrie- und Sicherheitsfunktionen bietet der IE-1000-4P2S-LM?",
+    "Der IE-1000-4P2S-LM unterstützt EtherNet/IP (CIP), RSTP/MSTP-Ring, LLDP, 802.1Q-VLAN, IGMP-/DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC sowie EtherChannel/LACP und SFP-Uplinks bis 80 km."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "6"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-RJ45 (10/100, PoE/PoE+) + 2× SFP (1G, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 1G (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE/PoE+, bis 120 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "5,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundante Spannungseinspeisung (DC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie / Einstieg-OT (Fabrikautomation, ITS, Stadtüberwachung, Gebäudeautomation, M2M) – 4× FE-RJ45 + 2× SFP; DIN-Schiene, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 70 °C; schlank verwaltet (Cisco Device Manager, SNMP/Syslog/PnP); EtherNet/IP (CIP), RSTP/MSTP, 802.1x/MAB, IGMP-/DHCP-Snooping, EtherChannel; Layer 2; SFP-Uplinks bis 80 km"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-1000-4P2S-LM",
+    "Lifecycle",
+    "Cisco IE-1000-4P2S-LM (Industrial Ethernet IE1000) – AKTUELLES Modell, KEINE EoS-Ankündigung (Firmware-Stand 1.9.x, 2025); daher kein EoL-Flag. Hexwaren führt ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4P2S-LM",
+    "PID",
+    "Ordering-PID IE-1000-4P2S-LM verbatim aus c78-737277 (nur Basis-Chassis-PID gebankt). NICHT gebankt: PWR-IE-Netzteile (PWR-IE50W/65W/170W/240W/480W-Serie) und STK-RACK-DINRAIL=. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4P2S-LM",
+    "Management-Plane",
+    "IE-1000-4P2S-LM läuft NICHT unter Cisco IOS und NICHT IOS-XE, sondern unter der schlank verwalteten IE1000-Device-Manager-Firmware (Web-/GUI, SNMP, Syslog, PnP). Keine IOS-Aussage in der Prosa (per-Familie-Management-Plane).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4P2S-LM",
+    "Durchsatz",
+    "Durchsatz: Datenblatt c78-737277 nennt KEINE Mpps-Angabe -> «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4P2S-LM",
+    "Versandgewicht",
+    "1,37 (geschätzt: Artikelgewicht 0,77 kg [gegroundet c78-737277 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-4P2S-LM",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN, Einstieg) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Management-Plane PER-FAMILIE: IE1000 = schlank verwaltet (Web-GUI-Firmware), NICHT IOS -> keine IOS-Prosa, Durchsatz Line-Rate, aktiv/keine EoS. EtherNet/IP/Ring/802.1x = Prosa, KEIN Merkmal. Layer = L2.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ]
+  ]
+ },
+ "IE-1000-8P2S-LM": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-1000-8P2S-LM Industrial-Ethernet-IE1000 lüfterloser Layer-2-Industrie-Switch – 8× FE-RJ45 + 2× SFP",
+  "titel_tag": "Cisco IE-1000-8P2S-LM Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-1000-8P2S-LM (Industrial-Ethernet-IE1000): lüfterloser Layer-2-Industrie-Switch, 8× FE-RJ45 + 2× SFP, -40 bis 70 °C, IP30. 5,6 Gbit/s, Line-Rate (alle Ports/Paketgrößen).",
+  "artikelgewicht": "0,84",
+  "versandgewicht": "1,44",
+  "kurzbeschreibung": "<p>Der Cisco IE-1000-8P2S-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE1000-Serie für die DIN-Schiene mit 8× FE-RJ45 + 2× SFP. Der IE-1000-8P2S-LM wird schlank über den Cisco Device Manager (Web-/GUI) verwaltet und ist für −40 bis 70 °C (IP30, ATEX) ausgelegt.</p><p>Der IE-1000-8P2S-LM bietet EtherNet/IP (CIP), RSTP/MSTP, 802.1x, IGMP-/DHCP-Snooping, EtherChannel und SFP-Uplinks bis 80 km bei 5,6 Gbit/s Switching-Kapazität (Line-Rate); aktuelles Modell ohne End-of-Sale.</p>",
+  "intro": [
+   "Der Cisco IE-1000-8P2S-LM ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE1000-Familie für die DIN-Schienenmontage in industriellen Einstiegsnetzen – 8× FE-RJ45 + 2× SFP, schlank verwaltet.",
+   "Mit 10 Ports (8 Zugangs-Ports plus 2 Uplink-Ports) liefert der IE-1000-8P2S-LM eine nicht-blockierende Switching-Kapazität von 5,6 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Alle 8 Zugangs-Ports des IE-1000-8P2S-LM liefern PoE/PoE+ (IEEE 802.3af/at, bis 180 W Gesamtbudget) für Kameras, Sensoren oder Access Points. Der IE-1000-8P2S-LM wird schlank verwaltet (Lightly-Managed) über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch-Provisioning.",
+   "Robust ausgelegt arbeitet der IE-1000-8P2S-LM lüfterlos von −40 bis 70 °C (ATEX Class I Zone 2, IP30). Der IE-1000-8P2S-LM unterstützt EtherNet/IP (CIP), STP/MSTP/RSTP, LLDP, 802.1Q-VLAN, IGMP- und DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC, EtherChannel/LACP sowie SFP-Uplinks bis 80 km. Als aktuelles Modell (Firmware-Stand 1.9.x) ist der IE-1000-8P2S-LM als ungebrauchte Original-Hardware für industrielle Einstiegsnetze verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-1000-8P2S-LM?",
+    "Der IE-1000-8P2S-LM bietet 8× FE-RJ45 (10/100, PoE/PoE+) + 2× SFP (1G, Uplink) = 10 Ports (8 Zugangs-Ports plus 2 Uplink-Ports)."
+   ],
+   [
+    "Wie wird der IE-1000-8P2S-LM verwaltet?",
+    "Der IE-1000-8P2S-LM ist ein schlank verwalteter (Lightly-Managed) Switch: Konfiguration und Monitoring laufen über den Cisco Device Manager (Web-/GUI-Oberfläche), SNMP v2/v3, Syslog sowie Plug-and-Play/Zero-Touch – eine klassische CLI-Vollverwaltung bieten die Catalyst-IE-Serien (IE3x00/IE4000)."
+   ],
+   [
+    "Hat der IE-1000-8P2S-LM PoE?",
+    "Ja – alle 8 Kupfer-Zugangs-Ports des IE-1000-8P2S-LM liefern PoE/PoE+ (IEEE 802.3af/at) mit bis zu 180 W Gesamtbudget."
+   ],
+   [
+    "Welche Industrie- und Sicherheitsfunktionen bietet der IE-1000-8P2S-LM?",
+    "Der IE-1000-8P2S-LM unterstützt EtherNet/IP (CIP), RSTP/MSTP-Ring, LLDP, 802.1Q-VLAN, IGMP-/DHCP-Snooping, BPDU-Guard, 802.1x mit MAB und Sticky-MAC sowie EtherChannel/LACP und SFP-Uplinks bis 80 km."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× FE-RJ45 (10/100, PoE/PoE+) + 2× SFP (1G, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100 (Access), 1G (Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE/PoE+, bis 180 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "5,6 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundante Spannungseinspeisung (DC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 70 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrie / Einstieg-OT (Fabrikautomation, ITS, Stadtüberwachung, Gebäudeautomation, M2M) – 8× FE-RJ45 + 2× SFP; DIN-Schiene, lüfterlos, IP30, ATEX Class I Zone 2, -40 bis 70 °C; schlank verwaltet (Cisco Device Manager, SNMP/Syslog/PnP); EtherNet/IP (CIP), RSTP/MSTP, 802.1x/MAB, IGMP-/DHCP-Snooping, EtherChannel; Layer 2; SFP-Uplinks bis 80 km"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-1000-8P2S-LM",
+    "Lifecycle",
+    "Cisco IE-1000-8P2S-LM (Industrial Ethernet IE1000) – AKTUELLES Modell, KEINE EoS-Ankündigung (Firmware-Stand 1.9.x, 2025); daher kein EoL-Flag. Hexwaren führt ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-8P2S-LM",
+    "PID",
+    "Ordering-PID IE-1000-8P2S-LM verbatim aus c78-737277 (nur Basis-Chassis-PID gebankt). NICHT gebankt: PWR-IE-Netzteile (PWR-IE50W/65W/170W/240W/480W-Serie) und STK-RACK-DINRAIL=. „PWR-IE-Serie\" im Stromversorgungs-Wert ist Prosa, kein gebanktes PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-8P2S-LM",
+    "Management-Plane",
+    "IE-1000-8P2S-LM läuft NICHT unter Cisco IOS und NICHT IOS-XE, sondern unter der schlank verwalteten IE1000-Device-Manager-Firmware (Web-/GUI, SNMP, Syslog, PnP). Keine IOS-Aussage in der Prosa (per-Familie-Management-Plane).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-8P2S-LM",
+    "Durchsatz",
+    "Durchsatz: Datenblatt c78-737277 nennt KEINE Mpps-Angabe -> «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-8P2S-LM",
+    "Versandgewicht",
+    "1,44 (geschätzt: Artikelgewicht 0,84 kg [gegroundet c78-737277 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ],
+   [
+    "IE-1000-8P2S-LM",
+    "Feature-Grounding",
+    "Industrie-Switch (DIN, Einstieg) über die IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung. Management-Plane PER-FAMILIE: IE1000 = schlank verwaltet (Web-GUI-Firmware), NICHT IOS -> keine IOS-Prosa, Durchsatz Line-Rate, aktiv/keine EoS. EtherNet/IP/Ring/802.1x = Prosa, KEIN Merkmal. Layer = L2.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-1000-series-switches/datasheet-c78-737277.html"
+   ]
+  ]
+ }
+}

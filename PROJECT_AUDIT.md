@@ -3318,6 +3318,39 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Datenblätter) → eigene Runden, NICHT hier eingefaltet. LESSON (memory-consolidated): **bank distinct orderable chassis PIDs incl
   license-tier variants** (IE3300/3400/3500 precedent); exclude pure-software-license + accessory + PSU PIDs — and the exclusion
   test checks the BANKED Artikelnummer set, not a substring scan (a series name in a spec VALUE is legitimate prose).
+- **Cisco IE5000 + IE3000 + IE1000 Industrial Ethernet — BUILD 10 chassis PIDs / 3 families in one round (2026-06-27).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). Same IE Rugged template as IE4000/IE2000 — all three
+  mirror `Cisco_IE3500`; **verified the emitted attr-name set == IE3500's** on all 3 (Merkmal tree UNCHANGED). **THREE
+  per-family divergences (not flattened):** **(1) `Cisco_IE5000`** (2, c78-734967) is **RACK-mount** → Bauform = the canonical
+  **"19-Zoll-Rackmontage (1 HE)"** value (the Catalyst/Nexus rack families' value, NOT invented — lüfterlos lives in Kühlung),
+  and it **STACKS** (first IE family to do so): IE-5000-12S12P-10G **Stacking=Ja** (10G uplink stack ports, conformal coating +
+  SFP+ heater), IE-5000-16S12P **Stacking=Nein**; both Layer L2, PoE=Ja (12× PoE/PoE+ bis 360 W), 6,21 kg, SwK 128/56 Gbit/s,
+  95,24/41,67 Mpps, Portanz 28 (S.3=12+12+4). Stacking=Ja passes S.4 (Switch-Typ=Managed). **(2) `Cisco_IE3000`** (4,
+  c78-440930): the **−E license tier FLIPS the Layer value** — IE-3000-4TC-E/-8TC-E ship the IP Services image baked into the PID
+  → **Layer = L3** (Switch-Typ stays Managed → S.2 passes); IE-3000-4TC/-8TC = Layer L2. *A license/feature tier can flip an
+  attribute value, not just add a PID.* All 4: 2,0 kg, SwK 16 Gbit/s, 6,5 Mpps, PoE=Nein, Stacking=Nein, Portanz 6/6/10/10. **S.3
+  trap handled:** the dual-purpose uplink phrased WITHOUT "1×" ("2× Dual-Purpose-Uplink (Combo: …)") so S.3=6/10. **(3)
+  `Cisco_IE1000`** (4, c78-737277): **management plane is per-family** — IE1000 is **NOT Cisco IOS and NOT IOS-XE**, it runs
+  lightly-managed Web-GUI firmware (Cisco Device Manager 1.9.x) → **NO "Cisco IOS (nicht IOS-XE)" negation, zero IOS tokens on
+  IE1000** (affirmative "IOS XE" = 0 across the whole bundle); **Durchsatz = Line-Rate** (no Mpps in the datasheet → none
+  computed, like IE4000); **still ACTIVE → NO EoS, no EoL flag.** Per-model splits honored: Betriebstemperatur −20 °C on
+  4T1T/6T2T vs −40 °C on 4P2S/8P2S (both pass S.5 — max +70 ≥ 60); PoE=Ja only on the −P models; Portanz 5/8/6/10. **MODEL =
+  standard switch on all 10:** Portanzahl = TOTAL (access+uplink summed), all N× → **S.3 = Portanzahl on all 10**. MACsec /
+  IP-Services-L3 / conformal-coating / SFP+-heater / timing (GPS/GNSS/IRIG-B/PTPv2) / rings (REP/PRP/MRP/HSR) / PROFINET /
+  IEC-61850 / management-plane = **PROSE, no Merkmal**. IOS prose: IE5000 + IE3000 carry "Cisco IOS (nicht IOS-XE)"; IE1000 none.
+  EoS: IE5000 25-Jan-2024, IE3000 22-Jan-2021, IE1000 none. **All weights grounded → NO ZU_VERIFIZIEREN**; banked = orderable
+  chassis only (PWR-RGD/PWR-IE PSUs, SD-IE-1GB=, STK-RACK-DINRAIL=, IEM-3000-* modules, L-IE5000-RTU= + DNA/Cisco-ONE/IP-Services
+  license PIDs EXCLUDED — verified no excluded token is a banked Artikelnummer; "PWR-IE/-RGD-Serie" in a Stromversorgung value is
+  legit prose). §5 whole-bundle = 0. Fixes: IE5000-12S12P-10G hit 177 words (coat+heater+stack) → trimmed i3 → 172; IE3000 non-E
+  tripped B.8 ("ein -E-Modell" / „-E"-Suffix → indefinite-article + hyphen) → reworded to "IP-Services-Variante (PID-Suffix E)".
+  Beschr 136–172 words. 3 `gate_completeness` records. **Kein neuer Test. Alle 3 Bundles canonical gate ok=True / 0 / 0**; volle
+  Suite **438 passed**; Byte-Contract sauber (Condition new ×10). Manifest: 3 Built-Blocks; **die drei IE5000/IE3000/IE1000-
+  Catch-alls RETIRED mit ehrlicher Korrektur 28 → 10**. `coverage_report.md`: **alle 3 ✅ (2/2 · 4/4 · 4/4)**. **In-scope 91**
+  (netto 0: −3 Catch-alls, +3 gebaute Familien); models_exp **901→883** (−18 Phantom). **Coverage jetzt: 708 built, 76 Familien
+  fully built, 80 %.** LESSONS (memory-consolidated): a license/feature tier can **flip** an attribute value (IE3000 −E → Layer
+  L3), not just add a PID; the **management plane is per-family** (IE1000 = web-GUI firmware → no IOS prose, Durchsatz Line-Rate,
+  active/no-EoS); **rack-mount + stacking are per-model attrs within the same IE template** (IE5000) — reuse the canonical
+  Bauform value, never invent one.
 
 ---
 
