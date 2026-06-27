@@ -3291,6 +3291,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Catch-all, +1 gebaute Familie); models_exp **914→906** (−8 Phantom). **Coverage jetzt: 673 built, 72 Familien fully built, 74%.**
   LESSON (memory-consolidated): **check for precedent before proposing a new Merkmal** — a "new" class is often already modelled;
   reuse the audited template before forking the gate. (The IP-Schutzart STOP-and-ask flagged earlier was correctly NOT needed.)
+- **Cisco IE2000 Industrial Ethernet family — BUILD 25 chassis PIDs / 1 family; NOT a new device class (2026-06-27).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). Same established IE Rugged template as the IE4000 —
+  mirrors `Cisco_IE3500`; **verified the emitted attr-name set == IE3500's** (Merkmal tree UNCHANGED). **`Cisco_IE2000`** (25,
+  c78-730729): 6-port 4-access (10) + 8-port (6) + 16-port (9); Portanzahl 6/10/20/18. **NEW THIS ROUND — license-tier banking:**
+  IE2000 bakes the license tier into the chassis PID (−L LAN Lite / −B LAN Base / −E LAN Base+1588/L2NAT / −N Enhanced LAN Base);
+  banked as **25 distinct orderable chassis PIDs** per the IE3300/3400/3500 precedent (the 8-port −E/−N are genuinely different
+  hardware — longer chassis, 1,56 vs 1,25 kg). **EXCLUDED** (not hardware): IE-LICENSE-SPARE / L-/LIC-IE2000-* / LIC-MRP-* /
+  IE2000-DNA-* / SD-IE-1GB= / STK-RACK-DINRAIL= / Wallmount-IE2k-* / PWR-IE* (verified no excluded token is a banked Artikelnummer;
+  the "(PWR-IE-Serie)" inside the Stromversorgung VALUE is a prose ref, not a banked PSU PID — IE3500 precedent). **MODEL = standard
+  switch:** Portanzahl = TOTAL (access + uplink, SUMMED), all N× → **S.3 = Portanzahl on all 25** — the 16PTC "(4× PoE+)" subset is
+  **WORD-FORMED "(vier davon PoE+)"** so the regex does NOT add the 4 (S.3=18 not 22). Layer = L2 (LAN Lite/Base); full L3 via
+  **IP-Lite** upgrade → PROSE only, never the Layer value (verified no leak). **SwK 7,6 Gbit/s (NOT doubled); Durchsatz 5,66 Mpps —
+  the datasheet gives the Mpps explicitly, so it is banked** (unlike the IE4000 Line-Rate/no-Mpps gap). Bauform Kompakt-
+  Industriegehäuse (DIN, lüfterlos); IP30 / ATEX / conformal coating (−X/−NX → "Schutzlackierung") / ring (REP/PROFINET-MRP) /
+  CIP/EtherNet-IP / PROFINET / PTPv2 / Layer-2-NAT / license-tier = **PROSE, no Merkmal**; -40 bis 70 °C (S.5 reverse PASS). **IOS,
+  NOT IOS-XE** — uses the explicit "Cisco IOS (nicht IOS-XE)" negation (affirmative "IOS XE" space-form = 0; the hyphenated negation
+  is intentional). Weights grounded per chassis (1,11/1,22/1,25/1,56/1,97 kg) → **NO ZU_VERIFIZIEREN**. EoL → flagged (EoS
+  10-Apr-2024, Nachfolger IE3100/3200/3400 → prose), never dropped. §5 whole-bundle = 0. Every Beschreibung sentence PID-welded
+  (cross-SKU reuse gate, 25 ≥ 8). Fix: the −NX (enh+PoE+coating) hit 180 words (coating named twice) → dropped the i1 coating
+  mention + shortened the i3 clause → 173. Beschr 155–173 words. 1 `gate_completeness` record. **Kein neuer Test. Bundle canonical
+  gate ok=True / 0 viol / 0 warn**; volle Suite **438 passed**; Byte-Contract sauber (25 Prices-Zeilen, Condition new=25). Manifest:
+  1 Built-Block; **die „~30"-IE2000-Catch-all RETIRED mit ehrlicher Korrektur ~30 → 25**. `coverage_report.md`: **Cisco IE2000 ✅
+  (25/25)**. **In-scope 91** (netto 0: −1 Catch-all, +1 gebaute Familie); models_exp **906→901** (−5 Phantom). **Coverage jetzt: 698
+  built, 73 Familien fully built, 77%.** SCOPE: IE2000U (c78-729056) + IE2000-IP67 (c78-731074) sind DISTINKTE Familien (eigene
+  Datenblätter) → eigene Runden, NICHT hier eingefaltet. LESSON (memory-consolidated): **bank distinct orderable chassis PIDs incl
+  license-tier variants** (IE3300/3400/3500 precedent); exclude pure-software-license + accessory + PSU PIDs — and the exclusion
+  test checks the BANKED Artikelnummer set, not a substring scan (a series name in a spec VALUE is legitimate prose).
 
 ---
 
