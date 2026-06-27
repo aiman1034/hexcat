@@ -3351,6 +3351,45 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   L3), not just add a PID; the **management plane is per-family** (IE1000 = web-GUI firmware → no IOS prose, Durchsatz Line-Rate,
   active/no-EoS); **rack-mount + stacking are per-model attrs within the same IE template** (IE5000) — reuse the canonical
   Bauform value, never invent one.
+- **Cisco IE3400H + IE3500H IP67 Heavy-Duty — BUILD 28 chassis PIDs / 2 families; CLOSES THE ENTIRE IE LANE (2026-06-27).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). Both mirror `Cisco_IE3500` — **verified attr-name set ==
+  IE3500's** (Merkmal tree UNCHANGED). **`Cisco_IE3400H`** (12 = 6 HW × −E/−A, c78-742313) + **`Cisco_IE3500H`** (16 = 8 HW ×
+  −E/−A, ie3500-heavy-duty-series-ds). **🔴 STEP-0 BAUFORM DECISION GATE (operator-approved):** IP67/IP66 wall-mount M12 without
+  a cabinet is a form factor the catalog never had; **no existing Bauform value fit** (DIN-rail / 19-Zoll-Rack / MikroTik
+  Outdoor-IP66 all wrong) → I **STOPPED and asked Fawaz**, who approved the **new Wertliste VALUE `Wandmontage (IP67/IP66, M12,
+  lüfterlos)`**. This adds a VALUE to the existing Bauform Merkmal (no new Attributname) — the right bar: a genuinely new form
+  factor needs operator approval, never a silent invention. **FOUR DIVERGENCES (not flattened):** **(1) IOS-XE FLIP** — these run
+  **Cisco IOS XE**, so the prose says so affirmatively with **NO "nicht IOS-XE" negation**; the affirmative-`IOS XE`=0 invariant
+  was always IOS-family-ONLY (the built IE3100–3500 Rugged are IOS-XE too) — verified `Cisco IOS XE` present, `nicht IOS-XE`=0 on
+  both. **(2) Layer = L3 on ALL 28**, mirroring the built `Cisco_IE3400`/`Cisco_IE3500` Rugged siblings (both carry L3 on −E AND
+  −A). The courier cross-check read IE3400H −E as L2 (Essentials = inter-VLAN + static), but **inter-VLAN + static routing IS Layer
+  3** — the −E/−A split is routing SCOPE (static vs dynamic OSPF/BGP/EIGRP/IS-IS), not L2-vs-L3 → followed the sibling and **FLAGGED
+  the IE3400H −E=L3 call** in each −E Verification_Log for L8 record (operator confirmed the call). **(3) SwK + Durchsatz =
+  Line-Rate on all 28** — both datasheets give NO Gbps and NO Mpps (Table 6 "Line rate for all ports/packet sizes") → SwK =
+  "Line-Rate (nicht-blockierend)", Durchsatz = "Line-Rate", nothing fabricated/computed (IE4000 precedent). **(4) PoE/Uplink/Speed
+  per-model:** PoE Ja ONLY on IE3500H-14P2T (PoE/PoE+ 240 W) + -12P2MU2X (4PPoE/UPoE 240 W), Nein on the other 26; Uplink-Ports
+  present only on 12FT4T/20FT4T (4× GE) + 12P2MU2X (2× SFP+), omitted on the no-dedicated-uplink models (IE3500-Rugged convention).
+  **S.3 = Portanzahl on all 28** (−14P2T 14+2=16, -12P2MU2X 12+2+2=16, clean groups). **PID-naming traps banked exactly:**
+  IE-3500H-12P2MU2X**E**/…X**A** (tier appended WITHOUT a dash) and IE-**3505**H-16T-E/-A (3505, the advanced lossless-PRP/HSR/DLR
+  variant). MACsec-256 / Cyber-Vision / IOx / TSN-frame-preemption / SD-Access / ThousandEyes / rings / PTP / license-tier =
+  **PROSE, no Merkmal**. **Both families CURRENT/ACTIVE → NO EoS**, no EoL flag. Weights grounded → NO ZU_VERIFIZIEREN; banked =
+  orderable chassis only (IP67 PSUs / SD-IE-16GB / CAB-CONSOLE-M12= / CW-SFP-KIT / NW-A/DNA/MRP licenses EXCLUDED — verified no
+  excluded token is a banked Artikelnummer). §5 = 0; Condition new ×28. Fix: console-print only (a `✓` char); content was clean.
+  Beschr ≤175. 2 `gate_completeness` records. **Kein neuer Test. Beide Bundles canonical gate ok=True / 0 / 0**; volle Suite **438
+  passed**; Byte-Contract sauber. Manifest: 2 Built-Blocks; **die IE3400H/IE3500H-Catch-alls RETIRED mit ehrlicher UNTER-Schätzungs-
+  Korrektur 12 → 28** (die Schätzung verfehlte das −E/−A-Doubling + IE3500H's 8 HW-Modelle → models_exp **883→899**, +16).
+  `coverage_report.md`: **beide ✅ (12/12 · 16/16)**. **In-scope 91** (netto 0: −2 Catch-alls, +2 gebaute Familien). **Coverage
+  jetzt: 736 built, 78 Familien fully built, 81 %.** **🏁 DIE IE-LANE IST GESCHLOSSEN** — IE1000/2000/3000/4000/5000 + IE3100/3200/
+  3300/3400/3500/9300 Rugged + IE3400H/IE3500H, alle gebaut. LESSON (memory principle (j)): license-tier families estimate LOW
+  (−E/−A doubling, inverse of module/PSU-sprawl over-estimates); IOS-XE families FLIP the `IOS XE`=0 invariant; a new form factor
+  needs an approved Bauform Wertliste value; inter-VLAN+static IS L3 (mirror the sibling); no-Gbps-no-Mpps → both SwK and Durchsatz
+  take "Line-Rate".
+- **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
+  that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
+  EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
+  (project identity; two-agent architecture; repo; persistent-memory mechanics; current state incl. the IE lane now CLOSED and the
+  latest commit awaiting byte-audit; ALL locked rules/conventions; the audit method; what to review first; open decisions; role
+  definitions). Err toward too much context, never too little.
 
 ---
 
