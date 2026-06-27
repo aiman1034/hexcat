@@ -3265,6 +3265,32 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   new Wertliste values, new Merkmal only when no attribute fits (needs approval); (b) word-form lever documents a non-counted
   port while keeping S.3=Portanzahl; (c) SwK = datasheet HW-forwarding, never the bidirectional aggregate; (d) grounding is
   per-datasheet, never per-platform (the three temp bands prove it); (e) an estimate is not a fact — reconcile it out loud.
+- **Cisco IE4000 Industrial Ethernet family — BUILD 12 PIDs / 1 family; NOT a new device class (2026-06-27).** Content-only,
+  **NO src, NO new Merkmal, NO IP-Schutzart** (`git diff -- src/` empty). **The inverse lesson of the FEX round: CHECK FOR
+  PRECEDENT before growing the schema.** IE is already a solved class — the built Catalyst IE3100/3200/3300/3400/3500/9300
+  Rugged families convey ruggedness through EXISTING attrs (Bauform/Betriebstemperatur/Anwendung), so the IP-rating-as-Merkmal
+  idea was correctly dropped. **`Cisco_IE4000`** mirrors the `Cisco_IE3500` record exactly — **verified the emitted attr-name set
+  == IE3500's** (Merkmal tree UNCHANGED, no new Attributname). 12 chassis (c78-733058): FE-access 4TC4G/8T4G/8S4G/4T4P4G/16T4G/
+  4S8P4G (100M/1G) + GE-access 8GT4G/8GS4G/4GC4GP4G/16GT4G/8GT8GP4G/4GS8GP4G (1G); Portanzahl 8/12/12/12/20/16/12/12/12/20/20/16.
+  **MODEL = standard switch, NOT the FEX rule:** Portanzahl = TOTAL ports (access + uplink, SUMMED), all in N× form → **S.3 =
+  Portanzahl on all 12** (the uplinks ARE counted, unlike a FEX); Uplink-Ports = "4× GE-Combo (SFP/RJ45)" on every model. **Layer =
+  L2** (base LAN Base + static IPv4); full L3 (OSPF/EIGRP/BGP/PBR) + MACsec-128 = IP-Services upgrade → **PROSE only, never the Layer
+  value** (same discipline as the 5500 L3-optional; verified no L3 leak in the attr). SwK = **20 Gbit/s** (all 12, NOT doubled).
+  **Durchsatz = "Line-Rate (alle Ports/Paketgrößen)"** — the datasheet gives NO Mpps → none fabricated/computed (1000%-grounding).
+  PoE per model (7 Daten / 4× 125 W / 1× 240 W; S.1 satisfied — PoE+ ports present in Port-Konfiguration). Bauform =
+  Kompakt-Industriegehäuse (DIN, lüfterlos); **IP30 rides in Anwendung prose, not Bauform**; -40 bis 75 °C (S.5 reverse PASS —
+  Industrie-Switch token requires extended temp). Industrial protocols (CIP/EtherNet-IP, PROFINET, MODBUS TCP) / ring redundancy
+  (REP/PRP/MRP/HSR) / PTPv2 / Layer-2-NAT / dying gasp / alarm-I/O / ATEX Class I Zone 2 / IP-Services-L3-upgrade = **PROSE, no
+  Merkmal**. **IOS, NOT IOS-XE** (the IE3x00 Rugged are IOS-XE; verified IOS-XE = 0 in customer files). 1 chassis PID each (no
+  PWR-IE / SD-IE-1GB / STK-RACK-DINRAIL / L-/LIC-/DNA-/C1-/IE4000-DNA license PIDs). **Weight 2,88 kg grounded → NO ZU_VERIFIZIEREN.**
+  EoL → flagged (EoS 25-Jan-2024, Nachfolger IE3300/IE3400 Rugged → prose), never dropped. §5 whole-bundle = 0. Every Beschreibung
+  sentence PID-welded (cross-SKU reuse gate, 12 ≥ 8). Beschr 165–173 words. 1 `gate_completeness` record. **Kein neuer Test. Bundle
+  canonical gate ok=True / 0 viol / 0 warn**; volle Suite **438 passed**; Byte-Contract sauber. Manifest: 1 Built-Block; **die
+  „~20"-IE4000-Catch-all RETIRED mit ehrlicher Korrektur ~20 → 12** (die 20 zählte DNA/Cisco-ONE/IE-LICENSE-Lizenzen + PWR-IE/SD/
+  DIN-Rail-Zubehör — keine Switch-Hardware). `coverage_report.md`: **Cisco IE4000 ✅ (12/12)**. **In-scope 91** (netto 0: −1
+  Catch-all, +1 gebaute Familie); models_exp **914→906** (−8 Phantom). **Coverage jetzt: 673 built, 72 Familien fully built, 74%.**
+  LESSON (memory-consolidated): **check for precedent before proposing a new Merkmal** — a "new" class is often already modelled;
+  reuse the audited template before forking the gate. (The IP-Schutzart STOP-and-ask flagged earlier was correctly NOT needed.)
 
 ---
 

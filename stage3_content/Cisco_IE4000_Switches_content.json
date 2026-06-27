@@ -1,0 +1,2474 @@
+{
+ "IE-4000-4TC4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-4TC4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 4× FE-Combo + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-4TC4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-4TC4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 4× FE-Combo + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-4TC4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 4× FE-Combo + 4× GE-Uplink. Der IE-4000-4TC4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-4TC4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-4TC4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× FE-Combo + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 8 Ports (4 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-4TC4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 4 Zugangs-Ports des IE-4000-4TC4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4TC4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-4TC4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-4TC4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-4TC4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-4TC4G-E?",
+    "Der IE-4000-4TC4G-E bietet 4× FE-Combo (RJ45/SFP) + 4× GE-Combo-Uplink = 8 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-4TC4G-E?",
+    "Der IE-4000-4TC4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-4TC4G-E PoE?",
+    "Nein – der IE-4000-4TC4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-4TC4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4TC4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-Combo (RJ45/SFP) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 4× FE-Combo + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-4TC4G-E",
+    "EoL",
+    "Cisco IE-4000-4TC4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4TC4G-E",
+    "PID",
+    "Ordering-PID IE-4000-4TC4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4TC4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4TC4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4TC4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4TC4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-8T4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-8T4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 8× FE-RJ45 + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-8T4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-8T4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 8× FE-RJ45 + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-8T4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 8× FE-RJ45 + 4× GE-Uplink. Der IE-4000-8T4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-8T4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-8T4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× FE-RJ45 + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-8T4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 8 Zugangs-Ports des IE-4000-8T4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8T4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-8T4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-8T4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-8T4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-8T4G-E?",
+    "Der IE-4000-8T4G-E bietet 8× FE-RJ45 + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-8T4G-E?",
+    "Der IE-4000-8T4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-8T4G-E PoE?",
+    "Nein – der IE-4000-8T4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-8T4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8T4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× FE-RJ45 + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 8× FE-RJ45 + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-8T4G-E",
+    "EoL",
+    "Cisco IE-4000-8T4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8T4G-E",
+    "PID",
+    "Ordering-PID IE-4000-8T4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8T4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8T4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8T4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8T4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-8S4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-8S4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 8× FE-SFP + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-8S4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-8S4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 8× FE-SFP + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-8S4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 8× FE-SFP + 4× GE-Uplink. Der IE-4000-8S4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-8S4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-8S4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× FE-SFP + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-8S4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 8 Zugangs-Ports des IE-4000-8S4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8S4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-8S4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-8S4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-8S4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-8S4G-E?",
+    "Der IE-4000-8S4G-E bietet 8× FE-SFP + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-8S4G-E?",
+    "Der IE-4000-8S4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-8S4G-E PoE?",
+    "Nein – der IE-4000-8S4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-8S4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8S4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× FE-SFP + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 8× FE-SFP + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-8S4G-E",
+    "EoL",
+    "Cisco IE-4000-8S4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8S4G-E",
+    "PID",
+    "Ordering-PID IE-4000-8S4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8S4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8S4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8S4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8S4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-4T4P4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-4T4P4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 4× FE + 4× FE-PoE+ + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-4T4P4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-4T4P4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 4× FE + 4× FE-PoE+ + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-4T4P4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 4× FE + 4× FE-PoE+ + 4× GE-Uplink. Der IE-4000-4T4P4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-4T4P4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-4T4P4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× FE + 4× FE-PoE+ + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-4T4P4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. 4 der Zugangs-Ports des IE-4000-4T4P4G-E speisen PoE+ (IEEE 802.3at) mit bis zu 125 W Gesamtbudget. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4T4P4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-4T4P4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-4T4P4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-4T4P4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-4T4P4G-E?",
+    "Der IE-4000-4T4P4G-E bietet 4× FE-RJ45 + 4× FE-PoE+ (RJ45) + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-4T4P4G-E?",
+    "Der IE-4000-4T4P4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-4T4P4G-E PoE?",
+    "Ja – der IE-4000-4T4P4G-E speist PoE+ (IEEE 802.3at) an 4 Zugangs-Ports mit bis zu 125 W Gesamtbudget."
+   ],
+   [
+    "Läuft der IE-4000-4T4P4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4T4P4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-RJ45 + 4× FE-PoE+ (RJ45) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE+, bis 125 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 4× FE + 4× FE-PoE+ + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-4T4P4G-E",
+    "EoL",
+    "Cisco IE-4000-4T4P4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4T4P4G-E",
+    "PID",
+    "Ordering-PID IE-4000-4T4P4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4T4P4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4T4P4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4T4P4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4T4P4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-16T4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-16T4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 16× FE-RJ45 + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-16T4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-16T4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 16× FE-RJ45 + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-16T4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 16× FE-RJ45 + 4× GE-Uplink. Der IE-4000-16T4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-16T4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-16T4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 16× FE-RJ45 + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 20 Ports (16 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-16T4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 16 Zugangs-Ports des IE-4000-16T4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-16T4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-16T4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-16T4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-16T4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-16T4G-E?",
+    "Der IE-4000-16T4G-E bietet 16× FE-RJ45 + 4× GE-Combo-Uplink = 20 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-16T4G-E?",
+    "Der IE-4000-16T4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-16T4G-E PoE?",
+    "Nein – der IE-4000-16T4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-16T4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-16T4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "20"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× FE-RJ45 + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 16× FE-RJ45 + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-16T4G-E",
+    "EoL",
+    "Cisco IE-4000-16T4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16T4G-E",
+    "PID",
+    "Ordering-PID IE-4000-16T4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16T4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16T4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16T4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16T4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-4S8P4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-4S8P4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 4× FE-SFP + 8× FE-PoE+ + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-4S8P4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-4S8P4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 4× FE-SFP + 8× FE-PoE+ + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-4S8P4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 4× FE-SFP + 8× FE-PoE+ + 4× GE-Uplink. Der IE-4000-4S8P4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-4S8P4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-4S8P4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× FE-SFP + 8× FE-PoE+ + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 16 Ports (12 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-4S8P4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. 8 der Zugangs-Ports des IE-4000-4S8P4G-E speisen PoE+ (IEEE 802.3at) mit bis zu 125 W Gesamtbudget. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4S8P4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-4S8P4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-4S8P4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-4S8P4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-4S8P4G-E?",
+    "Der IE-4000-4S8P4G-E bietet 4× FE-SFP + 8× FE-PoE+ (RJ45) + 4× GE-Combo-Uplink = 16 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-4S8P4G-E?",
+    "Der IE-4000-4S8P4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-4S8P4G-E PoE?",
+    "Ja – der IE-4000-4S8P4G-E speist PoE+ (IEEE 802.3at) an 8 Zugangs-Ports mit bis zu 125 W Gesamtbudget."
+   ],
+   [
+    "Läuft der IE-4000-4S8P4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4S8P4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× FE-SFP + 8× FE-PoE+ (RJ45) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE+, bis 125 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 4× FE-SFP + 8× FE-PoE+ + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-4S8P4G-E",
+    "EoL",
+    "Cisco IE-4000-4S8P4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4S8P4G-E",
+    "PID",
+    "Ordering-PID IE-4000-4S8P4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4S8P4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4S8P4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4S8P4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4S8P4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-8GT4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-8GT4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 8× GE-RJ45 + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-8GT4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-8GT4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 8× GE-RJ45 + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-8GT4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 8× GE-RJ45 + 4× GE-Uplink. Der IE-4000-8GT4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-8GT4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-8GT4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× GE-RJ45 + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-8GT4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 8 Zugangs-Ports des IE-4000-8GT4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GT4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-8GT4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-8GT4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-8GT4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-8GT4G-E?",
+    "Der IE-4000-8GT4G-E bietet 8× GE-RJ45 + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-8GT4G-E?",
+    "Der IE-4000-8GT4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-8GT4G-E PoE?",
+    "Nein – der IE-4000-8GT4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-8GT4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GT4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× GE-RJ45 + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 8× GE-RJ45 + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-8GT4G-E",
+    "EoL",
+    "Cisco IE-4000-8GT4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT4G-E",
+    "PID",
+    "Ordering-PID IE-4000-8GT4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-8GS4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-8GS4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 8× GE-SFP + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-8GS4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-8GS4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 8× GE-SFP + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-8GS4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 8× GE-SFP + 4× GE-Uplink. Der IE-4000-8GS4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-8GS4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-8GS4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× GE-SFP + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-8GS4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 8 Zugangs-Ports des IE-4000-8GS4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GS4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-8GS4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-8GS4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-8GS4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-8GS4G-E?",
+    "Der IE-4000-8GS4G-E bietet 8× GE-SFP + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-8GS4G-E?",
+    "Der IE-4000-8GS4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-8GS4G-E PoE?",
+    "Nein – der IE-4000-8GS4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-8GS4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GS4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× GE-SFP + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 8× GE-SFP + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-8GS4G-E",
+    "EoL",
+    "Cisco IE-4000-8GS4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GS4G-E",
+    "PID",
+    "Ordering-PID IE-4000-8GS4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GS4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GS4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GS4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GS4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-4GC4GP4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-4GC4GP4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 4× GE-Combo + 4× GE-PoE+ + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-4GC4GP4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-4GC4GP4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 4× GE-Combo + 4× GE-PoE+ + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-4GC4GP4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 4× GE-Combo + 4× GE-PoE+ + 4× GE-Uplink. Der IE-4000-4GC4GP4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-4GC4GP4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-4GC4GP4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× GE-Combo + 4× GE-PoE+ + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 12 Ports (8 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-4GC4GP4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. 4 der Zugangs-Ports des IE-4000-4GC4GP4G-E speisen PoE+ (IEEE 802.3at) mit bis zu 125 W Gesamtbudget. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4GC4GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-4GC4GP4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-4GC4GP4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-4GC4GP4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-4GC4GP4G-E?",
+    "Der IE-4000-4GC4GP4G-E bietet 4× GE-Combo (RJ45/SFP) + 4× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink = 12 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-4GC4GP4G-E?",
+    "Der IE-4000-4GC4GP4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-4GC4GP4G-E PoE?",
+    "Ja – der IE-4000-4GC4GP4G-E speist PoE+ (IEEE 802.3at) an 4 Zugangs-Ports mit bis zu 125 W Gesamtbudget."
+   ],
+   [
+    "Läuft der IE-4000-4GC4GP4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4GC4GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× GE-Combo (RJ45/SFP) + 4× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE+, bis 125 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 4× GE-Combo + 4× GE-PoE+ + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-4GC4GP4G-E",
+    "EoL",
+    "Cisco IE-4000-4GC4GP4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GC4GP4G-E",
+    "PID",
+    "Ordering-PID IE-4000-4GC4GP4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GC4GP4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GC4GP4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GC4GP4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GC4GP4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-16GT4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-16GT4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 16× GE-RJ45 + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-16GT4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-16GT4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 16× GE-RJ45 + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-16GT4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 16× GE-RJ45 + 4× GE-Uplink. Der IE-4000-16GT4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-16GT4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-16GT4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 16× GE-RJ45 + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 20 Ports (16 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-16GT4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. Die 16 Zugangs-Ports des IE-4000-16GT4G-E sind reine Datenports ohne PoE-Einspeisung. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-16GT4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-16GT4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-16GT4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-16GT4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-16GT4G-E?",
+    "Der IE-4000-16GT4G-E bietet 16× GE-RJ45 + 4× GE-Combo-Uplink = 20 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-16GT4G-E?",
+    "Der IE-4000-16GT4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-16GT4G-E PoE?",
+    "Nein – der IE-4000-16GT4G-E ist ein reines Datenmodell ohne PoE-Einspeisung; PoE+-Varianten der IE4000-Serie speisen bis zu 240 W (z. B. IE-4000-8GT8GP4G-E)."
+   ],
+   [
+    "Läuft der IE-4000-16GT4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-16GT4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "20"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× GE-RJ45 + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 16× GE-RJ45 + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-16GT4G-E",
+    "EoL",
+    "Cisco IE-4000-16GT4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16GT4G-E",
+    "PID",
+    "Ordering-PID IE-4000-16GT4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16GT4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16GT4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16GT4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-16GT4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-8GT8GP4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-8GT8GP4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 8× GE-RJ45 + 8× GE-PoE+ + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-8GT8GP4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-8GT8GP4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 8× GE-RJ45 + 8× GE-PoE+ + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-8GT8GP4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 8× GE-RJ45 + 8× GE-PoE+ + 4× GE-Uplink. Der IE-4000-8GT8GP4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-8GT8GP4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-8GT8GP4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 8× GE-RJ45 + 8× GE-PoE+ + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 20 Ports (16 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-8GT8GP4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. 8 der Zugangs-Ports des IE-4000-8GT8GP4G-E speisen PoE+ (IEEE 802.3at) mit bis zu 240 W Gesamtbudget. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GT8GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-8GT8GP4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-8GT8GP4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-8GT8GP4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-8GT8GP4G-E?",
+    "Der IE-4000-8GT8GP4G-E bietet 8× GE-RJ45 + 8× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink = 20 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-8GT8GP4G-E?",
+    "Der IE-4000-8GT8GP4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-8GT8GP4G-E PoE?",
+    "Ja – der IE-4000-8GT8GP4G-E speist PoE+ (IEEE 802.3at) an 8 Zugangs-Ports mit bis zu 240 W Gesamtbudget."
+   ],
+   [
+    "Läuft der IE-4000-8GT8GP4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-8GT8GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "20"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× GE-RJ45 + 8× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE+, bis 240 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 8× GE-RJ45 + 8× GE-PoE+ + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-8GT8GP4G-E",
+    "EoL",
+    "Cisco IE-4000-8GT8GP4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT8GP4G-E",
+    "PID",
+    "Ordering-PID IE-4000-8GT8GP4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT8GP4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT8GP4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT8GP4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-8GT8GP4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ },
+ "IE-4000-4GS8GP4G-E": {
+  "_facts": {
+   "unterkategorie": "Industrie-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco IE-4000-4GS8GP4G-E IE4000 lüfterloser Layer-2-Industrie-Switch (Cisco IOS, LAN Base) – 4× GE-SFP + 8× GE-PoE+ + 4× GE-Uplink",
+  "titel_tag": "Cisco IE-4000-4GS8GP4G-E IE4000 Industrie-Switch | Hexwaren",
+  "meta_description": "Original Cisco IE-4000-4GS8GP4G-E (IE4000, LAN Base): lüfterloser Layer-2-Industrie-Switch für die DIN-Schiene, 4× GE-SFP + 8× GE-PoE+ + 4× GE-Uplink, -40/+75 °C, IP30. Cisco IOS, Ring-Redundanz, …",
+  "artikelgewicht": "2,88",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco IE-4000-4GS8GP4G-E ist ein kompakter, lüfterloser Layer-2-Industrie-Switch der Cisco-IE4000-Serie für die DIN-Schiene mit 4× GE-SFP + 8× GE-PoE+ + 4× GE-Uplink. Der IE-4000-4GS8GP4G-E läuft unter Cisco IOS (LAN Base, IP-Services-Upgrade-Pfad) und ist für −40 bis +75 °C ausgelegt.</p><p>Der IE-4000-4GS8GP4G-E bietet Ring-Redundanz (REP/PRP/MRP/HSR), Industrieprotokolle (CIP/EtherNet-IP, PROFINET, MODBUS TCP), 20 Gbit/s nicht-blockierende Switching-Kapazität, IP30 und redundanten DC-Eingang (9,6–60 VDC).</p>",
+  "intro": [
+   "Der Cisco IE-4000-4GS8GP4G-E ist ein gehärteter, lüfterloser Layer-2-Industrie-Switch der Cisco-Industrial-Ethernet-IE4000-Familie für die DIN-Schienenmontage in rauen OT-Umgebungen – 4× GE-SFP + 8× GE-PoE+ + 4× GE-Uplink, mit LAN-Base-Lizenz und IP-Services-Upgrade-Pfad.",
+   "Mit 16 Ports (12 Zugangs-Ports plus vier GE-Combo-Uplinks) liefert der IE-4000-4GS8GP4G-E eine nicht-blockierende Switching-Kapazität von 20 Gbit/s bei Line-Rate über alle Ports und Paketgrößen. 8 der Zugangs-Ports des IE-4000-4GS8GP4G-E speisen PoE+ (IEEE 802.3at) mit bis zu 125 W Gesamtbudget. Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4GS8GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei.",
+   "Robust ausgelegt arbeitet der IE-4000-4GS8GP4G-E lüfterlos von −40 bis +75 °C (ATEX Class I Zone 2, IP30 nach EN60529) mit redundantem DC-Eingang (9,6–60 VDC) und Alarm-I/O. Für ausfallsichere Topologien bietet der IE-4000-4GS8GP4G-E Ring-Redundanz nach REP, PRP, MRP und HSR; Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP sowie IEEE-1588-PTPv2 und Layer-2-NAT sind integriert. Der IE-4000-4GS8GP4G-E läuft unter Cisco IOS; die Serie ist abgekündigt (EoS 25-Jan-2024, Nachfolger Catalyst IE3300/IE3400 Rugged) und als ungebrauchte Original-Hardware verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der IE-4000-4GS8GP4G-E?",
+    "Der IE-4000-4GS8GP4G-E bietet 4× GE-SFP + 8× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink = 16 Ports (Zugangs-Ports plus vier GE-Combo-Uplinks für die Ring-Topologie)."
+   ],
+   [
+    "Welche Industrieprotokolle und Ring-Redundanz unterstützt der IE-4000-4GS8GP4G-E?",
+    "Der IE-4000-4GS8GP4G-E unterstützt Ring-Redundanz nach REP, PRP, MRP und HSR sowie Industrieprotokolle wie CIP/EtherNet-IP, PROFINET und MODBUS TCP, dazu IEEE-1588-PTPv2 und Layer-2-NAT. Stacking gibt es nicht – Industrie-Switches bilden Ringe statt Stacks."
+   ],
+   [
+    "Hat der IE-4000-4GS8GP4G-E PoE?",
+    "Ja – der IE-4000-4GS8GP4G-E speist PoE+ (IEEE 802.3at) an 8 Zugangs-Ports mit bis zu 125 W Gesamtbudget."
+   ],
+   [
+    "Läuft der IE-4000-4GS8GP4G-E unter Layer 2 oder Layer 3?",
+    "Im Auslieferungszustand (LAN Base) arbeitet der IE-4000-4GS8GP4G-E als Layer-2-Switch mit statischem IPv4-Routing; das optionale IP-Services-Upgrade schaltet vollwertiges Layer 3 (OSPF, EIGRP, BGP, PBR) und MACsec-128 frei – dieselbe Hardware, nur per Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "4× GE-SFP + 8× GE-PoE+ (RJ45) + 4× GE-Combo-Uplink"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× GE-Combo (SFP/RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (PoE+, bis 125 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (alle Ports/Paketgrößen)"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)"
+   ],
+   [
+    "Stromversorgung",
+    "Redundanter DC-Eingang (9,6–60 VDC), externe DIN-Schienen-Netzteile (PWR-IE-Serie)"
+   ],
+   [
+    "Kühlung",
+    "Lüfterlos (Konvektionskühlung, keine bewegten Teile)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "-40 bis 75 °C"
+   ],
+   [
+    "Anwendung",
+    "Industrielle Automatisierung/OT (Fertigung, Energie, Verkehr, ITS) – 4× GE-SFP + 8× GE-PoE+ + 4× GE-Uplink; lüfterlos, DIN-Schiene, IP30 (EN60529), ATEX Class I Zone 2, -40 bis 75 °C; Ring-Redundanz REP/PRP/MRP/HSR; CIP/EtherNet-IP, PROFINET, MODBUS TCP, PTPv2; Layer 2 (IP-Services-Upgrade auf L3 OSPF/EIGRP/BGP + MACsec-128); Cisco IOS; redundanter DC-Eingang 9,6–60 VDC, Alarm-I/O"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "IE-4000-4GS8GP4G-E",
+    "EoL",
+    "Cisco IE-4000-4GS8GP4G-E (Industrial Ethernet IE4000) – EoL; EoS angekündigt 25-Jan-2024; Nachfolger Catalyst IE3300/IE3400 Rugged. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GS8GP4G-E",
+    "PID",
+    "Ordering-PID IE-4000-4GS8GP4G-E verbatim aus c78-733058 (nur Basis-Chassis-PID gebankt; PWR-IE-Netzteile, SD-IE-1GB, STK-RACK-DINRAIL und alle L-/LIC-/DNA-/C1-/IE4000-DNA-Lizenz-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GS8GP4G-E",
+    "Switching-Kapazität",
+    "20 Gbit/s: Cisco-Angabe (c78-733058) übernommen, NICHT verdoppelt (nicht-blockierende Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GS8GP4G-E",
+    "Durchsatz",
+    "Datenblatt c78-733058 nennt „Line rate for all ports and all packet sizes\" – KEINE Mpps-Angabe; «Line-Rate» übernommen, KEINE Mpps fabriziert/berechnet (1000%-Grounding).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GS8GP4G-E",
+    "Versandgewicht",
+    "3,80 (geschätzt: Artikelgewicht 2,88 kg [gegroundet c78-733058 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ],
+   [
+    "IE-4000-4GS8GP4G-E",
+    "Feature-Grounding",
+    "Industrielle Geräteklasse über die etablierte IE-Rugged-Vorlage (Cisco_IE3500-Struktur) – KEIN neues Merkmal, keine src-Änderung (Merkmal-Baum unverändert). IP30/ATEX/Ring-Redundanz (REP/PRP/MRP/HSR)/Industrieprotokolle (CIP/PROFINET/MODBUS)/PTPv2/Layer-2-NAT/IP-Services-L3-Upgrade = Prosa, KEIN Merkmal. Layer = L2 (Basis LAN Base); L3 via IP-Services-Upgrade nur in Prosa, nicht im Layer-Wert. IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/industrial-ethernet-4000-series-switches/datasheet-c78-733058.html"
+   ]
+  ]
+ }
+}
