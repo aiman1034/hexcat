@@ -1,0 +1,386 @@
+{
+ "N5K-C5624Q": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5624Q 5624Q Data-Center-Switch (NX-OS, L3) – 12× 40G-QSFP+, 1 HE",
+  "titel_tag": "Cisco N5K-C5624Q 5624Q 40G-Spine | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5624Q (5624Q): L3-Data-Center-Switch, 12× 40G-QSFP+, 1,92 Tbit/s, 1.428 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
+  "artikelgewicht": "16,3",
+  "versandgewicht": "18,00",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5624Q ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 12× 40G-QSFP+ (fest); 1 GEM-Steckplatz für zwölf weitere 40G; bis zu sechsundneunzig 10G via Breakout-Kabel im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5624Q 1,92 Tbit/s bei 1.428 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
+  "intro": [
+   "Der Cisco N5K-C5624Q ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie, ausgelegt als 40-Gigabit-Spine-/Aggregations-Switch im 1-HE-Gehäuse.",
+   "Mit 12 festen Ports erreicht der N5K-C5624Q eine Switching-Kapazität von 1,92 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.428 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5624Q über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. Die FabricPath-Lizenz (N5624Q-EL2P-SSK9) schaltet FabricPath und erweiterte L3-Funktionen frei; FCoE erfordert die Storage-Services-Lizenz. Der N5K-C5624Q unterstützt FCoE sowie VXLAN-Bridging und -Routing auf allen Ports mit Line-Rate; ein GEM-Steckplatz nimmt zwölf weitere 40G-QSFP+ auf (Modul separat), per Breakout bis zu 96 10-Gigabit-Ports.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (3 Lüfter, 2+1) und bis zu zwei Hot-Swap-Netzteilen (1+1; AC) arbeitet der N5K-C5624Q im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5600-Serie ist der N5K-C5624Q als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5624Q?",
+    "Der N5K-C5624Q bietet 12× 40G-QSFP+ (fest); 1 GEM-Steckplatz für zwölf weitere 40G; bis zu sechsundneunzig 10G via Breakout-Kabel."
+   ],
+   [
+    "Unterstützt der N5K-C5624Q Stacking oder PoE?",
+    "Nein – der N5K-C5624Q nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Lässt sich der N5K-C5624Q über die 12 festen Ports hinaus erweitern?",
+    "Ja – ein GEM-Steckplatz nimmt zwölf weitere 40G-QSFP+ auf, und per Breakout-Kabel sind bis zu 96× 10G möglich. Das GEM-Modul ist ein separater Artikel und nicht im Lieferumfang."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5624Q?",
+    "Der N5K-C5624Q läuft unter Cisco NX-OS (L2/L3, vPC, FabricPath, FCoE, VXLAN); die FabricPath-Lizenz N5624Q-EL2P-SSK9 schaltet FabricPath frei, FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 40G-QSFP+ (fest); 1 GEM-Steckplatz für zwölf weitere 40G; bis zu sechsundneunzig 10G via Breakout-Kabel"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+; Breakout zu 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,92 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.428 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (1+1); AC (typ. 650 W / max. 1100 W)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Port-side/Fan-side Intake)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 40-Gigabit-Spine/Aggregation – 12× 40G-QSFP+ fest (1 GEM-Steckplatz, +12× 40G; per Breakout bis 96× 10G); VXLAN-Bridging/-Routing line-rate; FCoE; Layer 2/3; NX-OS mit vPC, 64-Wege-ECMP und bis 24 FEX; FabricPath (N5624Q-EL2P-SSK9); Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5624Q",
+    "EoL",
+    "Cisco 5624Q (Nexus-5600-Generation) – EoL abgekündigt 10-Mär-2023; EoSupport-Datum -> ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5624Q",
+    "PID",
+    "Ordering-PID N5K-C5624Q verbatim aus c78-733100 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/GEM-Module/Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5624Q",
+    "Switching-Kapazität",
+    "1,92 Tbit/s: Cisco-Angabe (c78-733100 Table 3) übernommen, NICHT verdoppelt; Vollsystem-24-Port-Wert, Portanzahl = 12 Basis-Festports (GEM-Modul nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5624Q",
+    "Artikelgewicht",
+    "16,3 kg = HW Install Guide App. B (36 lb, 2 PSU + 3 Lüfter); Datenblatt Table 5 nennt 32 lb – Quellenkonflikt, HW-Guide (dedizierte Physical-Specs-Referenz) maßgeblich; Diskrepanz dokumentiert.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5624Q",
+    "Feature-Grounding",
+    "VXLAN-Bridging/-Routing gegroundet (beide Datenblätter, „on all ports at line rate\") -> Prosa, KEIN VXLAN-Merkmal. FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa (Port-Konfiguration + Anwendung), KEIN Merkmal (Operator-Default). GEM = Modul: nicht gebankt, nicht in Portanzahl. EVPN/ACI/Cloud-Scale nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ]
+  ]
+ },
+ "N5K-C5648Q": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N5K-C5648Q 5648Q Data-Center-Switch (NX-OS, L3) – 24× 40G-QSFP+, 2 HE",
+  "titel_tag": "Cisco N5K-C5648Q 5648Q 40G-Spine 2HE | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5648Q (5648Q): L3-Data-Center-Switch, 24× 40G-QSFP+, 3,84 Tbit/s, 2.856 Mpps, 2 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
+  "artikelgewicht": "28,4",
+  "versandgewicht": "30,50",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5648Q ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 24× 40G-QSFP+ (fest); 2 GEM-Steckplätze für vierundzwanzig weitere 40G; bis zu hundertzweiundneunzig 10G via Breakout-Kabel im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N5K-C5648Q 3,84 Tbit/s bei 2.856 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
+  "intro": [
+   "Der Cisco N5K-C5648Q ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie, ausgelegt als 40-Gigabit-Spine-/Aggregations-Switch (2 HE) im 2-HE-Gehäuse.",
+   "Mit 24 festen Ports erreicht der N5K-C5648Q eine Switching-Kapazität von 3,84 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 2.856 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5648Q über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. Die FabricPath-Lizenz (N5648Q-EL2-SSK9) schaltet FabricPath und erweiterte L3-Funktionen frei; FCoE erfordert die Storage-Services-Lizenz. Der N5K-C5648Q unterstützt FCoE sowie VXLAN-Bridging und -Routing auf allen Ports mit Line-Rate; zwei GEM-Steckplätze nehmen je zwölf weitere 40G-QSFP+ auf (Module separat), per Breakout bis zu 192 10-Gigabit-Ports.",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul (3 Lüfter, 2+1) und bis zu vier Hot-Swap-Netzteilen (2+2; AC) arbeitet der N5K-C5648Q im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5600-Serie ist der N5K-C5648Q als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5648Q?",
+    "Der N5K-C5648Q bietet 24× 40G-QSFP+ (fest); 2 GEM-Steckplätze für vierundzwanzig weitere 40G; bis zu hundertzweiundneunzig 10G via Breakout-Kabel."
+   ],
+   [
+    "Unterstützt der N5K-C5648Q Stacking oder PoE?",
+    "Nein – der N5K-C5648Q nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Lässt sich der N5K-C5648Q erweitern?",
+    "Ja – zwei GEM-Steckplätze nehmen je zwölf weitere 40G-QSFP+ auf, und per Breakout-Kabel sind bis zu 192× 10G möglich. Die GEM-Module sind separate Artikel und nicht im Lieferumfang."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5648Q?",
+    "Der N5K-C5648Q läuft unter Cisco NX-OS (L2/L3, vPC, FabricPath, FCoE, VXLAN); die FabricPath-Lizenz N5648Q-EL2-SSK9 schaltet FabricPath frei, FCoE erfordert die Storage-Services-Lizenz."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 40G-QSFP+ (fest); 2 GEM-Steckplätze für vierundzwanzig weitere 40G; bis zu hundertzweiundneunzig 10G via Breakout-Kabel"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+; Breakout zu 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,84 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.856 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "4× redundant (2+2); AC (typ. 650 W / max. 1100 W je PSU)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (redundant; Airflow wählbar: Port-side/Fan-side Intake)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center 40-Gigabit-Spine/Aggregation (2 HE) – 24× 40G-QSFP+ fest (2 GEM-Steckplätze, +24× 40G; per Breakout bis 192× 10G); VXLAN-Bridging/-Routing line-rate; FCoE; Layer 2/3; NX-OS mit vPC, 64-Wege-ECMP und bis 24 FEX; FabricPath (N5648Q-EL2-SSK9); Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5648Q",
+    "EoL",
+    "Cisco 5648Q (Nexus-5600-Generation) – EoL abgekündigt 10-Mär-2023; EoSupport-Datum -> ZU_VERIFIZIEREN. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5648Q",
+    "PID",
+    "Ordering-PID N5K-C5648Q verbatim aus c78-733100 (nur Basis-Chassis-PID gebankt; PSUs/Lüfter/GEM-Module/Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5648Q",
+    "Switching-Kapazität",
+    "3,84 Tbit/s: Cisco-Angabe (c78-733100 Table 3) übernommen, NICHT verdoppelt; Vollsystem-48-Port-Wert, Portanzahl = 24 Basis-Festports (GEM-Module nicht gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5648Q",
+    "Artikelgewicht",
+    "28,4 kg = Datenblatt-/HW-Guide-Wert inkl. 2 GEMs + 4 PSU + 3 Lüfter; Basis-Chassis (ohne GEM) leichter -> ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ],
+   [
+    "N5K-C5648Q",
+    "Feature-Grounding",
+    "VXLAN-Bridging/-Routing gegroundet (beide Datenblätter, „on all ports at line rate\") -> Prosa, KEIN VXLAN-Merkmal. FCoE/Unified-Ports/FC-Geschwindigkeiten gegroundet -> Prosa (Port-Konfiguration + Anwendung), KEIN Merkmal (Operator-Default). GEM = Modul: nicht gebankt, nicht in Portanzahl. EVPN/ACI/Cloud-Scale nicht genannt -> nicht behauptet. NX-OS (kein IOS XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5624q-switch/datasheet-c78-733100.html"
+   ]
+  ]
+ }
+}

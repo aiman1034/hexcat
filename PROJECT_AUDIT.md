@@ -3185,6 +3185,30 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **34200YC-SM** (PID ZU_VERIFIZIEREN — datasheet not yet located), and the 3100-Z/3132C-Z BiDi parts (if in scope). **Pass 3** (per
   the courier): **Nexus 5000** (~12 SKUs, FCoE/unified-ports in prose) — but that needs the operator's FCoE prose-vs-Merkmal +
   Nexus-2000-FEX model decisions first (the single-source-of-truth rule; I will NOT auto-create those Merkmale).
+- **Nexus 5600 PLATFORM — BUILD 5 SKUs / 2 families; UNBLOCKS the Nexus 5000 lane (2026-06-27).** Content-only, **NO src, NO new
+  Merkmal** (`git diff -- src/` empty). **Operator model decision (made this round):** FCoE / Unified Ports / Fibre-Channel speeds →
+  **PROSE** (Port-Konfiguration value + Anwendung + Beschreibung), **NO FCoE/Unified Merkmal**; **VXLAN grounded on all 5** ("on all
+  ports at line rate", both datasheets) → **PROSE**, **NO VXLAN Merkmal** (same prose-only convention as MACsec/INT — the OPPOSITE of
+  most of B1, where VXLAN was absent → omitted; here present → included). **`Cisco_Nexus_5600`** (3 SKUs, **15-attr access+uplink**,
+  10-Gbps c78-730760): N5K-C5672UP (Portanz 54 = 48× 1/10G-SFP+ [16 Unified Ports: 10GbE/FCoE oder 8/4/2G FC] + 6× 40G-QSFP+ uplink,
+  1,44 Tbit/s, 1.071 Mpps, 14,5 kg, 1 RU, **EoS ZU_VERIFIZIEREN**) / N5K-C5672UP-16G (Portanz 54, 24 Unified Ports **16/8/4/2G FC**, bis
+  128 B2B-Credits → 16G-FC-ISL bis 16 km, 15,0 kg, **EoS 31-Mai-2026** grounded) / N5K-C56128P (Portanz 52 = 48× SFP+ + 4× 40G-QSFP+
+  Basis + **2 GEM-Steckplätze**, **2,56 Tbit/s full-system**, 1.904 Mpps, 31,8 kg **inkl. 2 GEMs → Basis ZU_VERIFIZIEREN**, 2 RU,
+  **EoS 30-Sep-2025** grounded). **`Cisco_Nexus_5600Q`** (2 SKUs, **14-attr uniform**, 40-Gbps c78-733100): N5K-C5624Q (Portanz 12 =
+  12× 40G-QSFP+ fest; **GEM/Breakout als WORTE** "zwölf weitere"/"sechsundneunzig" so S.3=12, 1,92 Tbit/s full-system, 1.428 Mpps,
+  **Gewicht-Diskrepanz HW-Guide 36 lb vs Datenblatt 32 lb → HW-Guide maßgeblich, logged** [16,3 kg], 1 RU, FabricPath N5624Q-EL2P-SSK9) /
+  N5K-C5648Q (Portanz 24, GEM/Breakout als Worte so S.3=24, 3,84 Tbit/s full-system, 2.856 Mpps, 28,4 kg **inkl. 2 GEMs → Basis
+  ZU_VERIFIZIEREN**, 2 RU, FabricPath N5648Q-EL2-SSK9). **GEM = Modul: nicht gebankt, nicht in Portanzahl**; 1 Basis-Chassis-PID je SKU.
+  **SwK = Vollsystem-Wert, NICHT verdoppelt** (je SKU logged; Portanzahl = Basis-Festports). **S.3 matcht Portanzahl auf allen 5**
+  (54/54/52/12/24). VXLAN/FCoE als Prosa, **kein VXLAN/FCoE/MACsec-Merkmal** (verifiziert abwesend, attrs = 15/15/15 + 14/14).
+  **EVPN/Cloud-Scale/ACI = 0; IOS XE = 0**; NX-OS in Prosa. **Kein "new-sealed"** (WB §5 = 0 auf beiden Bundles). Alle EoL-Generation →
+  nie entfernt. **Fix:** L3-semantic adjacent-dup auf dem -16G-Titel (PID-Endung "-16G" + "16G-FC" → "16G 16G") → titel_short
+  umformuliert. Beschr 156–170 Wörter (≤175). 2 `gate_completeness`-Records ergänzt. **Kein neuer Test. Beide Bundles canonical gate
+  ok=True / 0 viol / 0 warn**; volle Suite **438 passed**; Byte-Contract sauber. Manifest: 2 Built-Blocks, **Catch-all "Nexus 5000
+  (5500/5600)" 15→10** (kein Doppel-Count). `coverage_report.md`: **beide Familien ✅ (5/5)**. **In-scope 87→89** (+2). **Coverage jetzt:
+  641 built, 68 Familien fully built, 69%.** **5696Q bleibt Chassis-Carve-out** (4 RU / 8 LEM, modular → NICHT das Fixed-Gate).
+  Remaining Nexus 5000: 5500/5000-Legacy (5548/5596/5010/5020) + 5696Q-Chassis; **Nexus 2000 FEX** wartet weiterhin auf die
+  FEX-Modell-Entscheidung des Operators (kein Auto-Merkmal).
 
 ---
 
