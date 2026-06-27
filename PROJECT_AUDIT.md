@@ -3231,6 +3231,40 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Doppel-Count). `coverage_report.md`: **Cisco Nexus 5500 ✅ (4/4)**. **In-scope 89→90** (+1). **Coverage jetzt: 645 built, 69 Familien
   fully built, 69%.** **Die Nexus-5000-FIXED-LANE ist damit KOMPLETT** (5600 + 5500); Rest: Nexus 5010/5020 First-Gen (pre-FCoE-unified)
   + 5696Q-Chassis-Carve-out; **Nexus 2000 FEX** wartet weiter auf die FEX-Modell-Entscheidung des Operators (kein Auto-Merkmal).
+- **Nexus 2000/2300/B22 FABRIC EXTENDER lane — BUILD 16 PIDs / 2 families; a NEW DEVICE CLASS via OPTION 1 (2026-06-27).**
+  Content-only, **NO src, NO new Merkmal** (`git diff -- src/` empty). The operator's FEX model decision = **Option 1**:
+  reuse the existing Merkmal set via prose + **new Wertliste VALUES** where an existing attribute carries the meaning;
+  a new Merkmal is reached for ONLY when no existing attribute can express the fact (needs operator approval, forks the
+  audited gate). **Verified from the gate code** (not assumed): `Switch-Typ`/`Layer` carry NO value enum, so "Fabric
+  Extender" passes as a free Wertliste value; the Kat-Ebene-3 token stays "Data-Center-Switch" (in
+  `kategorie_ebene_3_switch_allowed`) so the FEX route through the switch gate's 15-attr required set; S.2 fires only on
+  Layer containing "L3" (skipped), S.4 only on Stacking="ja" (skipped), S.3 sums `(\d+)[×xX]` in Port-Konfiguration ONLY
+  (Uplink-Ports never scanned). **`Cisco_Nexus_2000`** (12 standalone ToR, 15-attr) = Group A gen-1/2200 (8, c78-507093,
+  0–40 °C, 1 HE: 2148T/2224TP/2248TP/2248TP-E/2232PP/2248PQ/2232TM/2232TM-E) + Group B 2300 (4, c78-731663, 0–55 °C, 1 HE:
+  2348UPQ/2348TQ/2332TQ/2348TQ-E). **`Cisco_Nexus_B22`** (4 blade, c78-685265, 10–40 °C, Bauform=Blade-I/O-Modul:
+  B22HP/B22FTS/B22IBM/B22DELL). **MODEL:** Portanzahl = HOST-facing ports (buyer's capacity); Uplink-Ports = FABRIC ports
+  (present, NOT summed into Portanzahl); Port-Konfiguration spells fabric ports + breakout counts as GERMAN WORDS / keeps
+  breakout only in Uplink-Ports, so **S.3 = Portanzahl (host-only) on all 16** (48/24/48/48/32/48/32/32 · 48/48/32/48 ·
+  16/16/14/16). Switch-Typ = Layer = **"Fabric Extender"** (new VALUES — JTL Merkmal tree UNCHANGED, verified no
+  feature-named Merkmal). **SwK = datasheet HW-forwarding VERBATIM, NOT doubled** (the bidirectional aggregate is not the
+  switching figure — same discipline as 36180YC-R 1,8≠3,6). **Betriebstemperatur per-datasheet, never per-platform** (three
+  gens → three bands 0-40/0-55/10-40 °C). FCoE / Unified-Ports (2348UPQ native FC 2/4/8/16G on 5600 parent) / parent
+  compatibility / oversubscription / 32-MB deep buffer = **PROSE only, no Merkmal**. **No standalone OS** — FEX = transparent
+  remote line card, vom Parent (NX-OS) verwaltet (IOS XE = 0). **1 base chassis/module PID each** (no PSU/fan/FET/airflow/
+  -F-bundle PIDs). Weights full-system & grounded → **NO ZU_VERIFIZIEREN** (over-flagging is as sloppy as under-flagging).
+  All 16 EoL → flagged, never dropped; EoS dates ZU_VERIFIZIEREN where the harvest is silent/conflicting (2248TP & 2348TQ
+  carry two conflicting harvest dates → flagged). §5 whole-bundle = 0 (no "new-sealed"). Fix: the 12-SKU family tripped the
+  cross-SKU reuse gate (a non-PID FCoE sentence shared by 5/12 > 25%) → PID-welded the FCoE/buffer sentences (FCoE stays
+  prose-only; the PN makes each unique). Beschr 127–161 words. 2 `gate_completeness` records. **Kein neuer Test. Beide
+  Bundles canonical gate ok=True / 0 viol / 0 warn**; volle Suite **438 passed**; Byte-Contract sauber. Manifest: 2
+  Built-Blocks; **die „~30"-FEX-Catch-all RETIRED mit ehrlicher Korrektur ~30 → 16** (die 30 war durch Airflow/PSU/Fan/
+  FET-Bundle-Config-Varianten aufgebläht — keine separate Hardware; ein Estimate ist ein Platzhalter, kein Fakt, und wird
+  beim Enumerieren gegen Datenblätter abgeglichen). `coverage_report.md`: **beide Familien ✅ (16/16)**. **In-scope 90→91**
+  (+1 netto: −1 Catch-all, +2 gebaute Familien); models_exp **928→914** (−14 Phantom-Configs). **Coverage jetzt: 661 built,
+  71 Familien fully built, 72%.** REUSABLE LESSONS (memory-consolidated): (a) new-device-class decision rule = reuse attrs +
+  new Wertliste values, new Merkmal only when no attribute fits (needs approval); (b) word-form lever documents a non-counted
+  port while keeping S.3=Portanzahl; (c) SwK = datasheet HW-forwarding, never the bidirectional aggregate; (d) grounding is
+  per-datasheet, never per-platform (the three temp bands prove it); (e) an estimate is not a fact — reconcile it out loud.
 
 ---
 

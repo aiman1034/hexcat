@@ -1,0 +1,802 @@
+{
+ "N2K-B22HP-P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-B22HP-P B22HP Fabric Extender (Cisco Nexus-B22) – 16 Host-Ports, Blade-I/O-Modul",
+  "titel_tag": "Cisco N2K-B22HP-P B22HP Blade FEX (HP) | Hexwaren",
+  "meta_description": "Original Cisco N2K-B22HP-P (B22HP): Cisco-Nexus-B22 Fabric Extender, 16 Host-Ports + acht 10G-SFP+-Uplinks Fabric-Uplink, 400 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "1,27",
+  "versandgewicht": "2,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-B22HP-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie mit 16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-B22HP-P liefert 400 Gbit/s Hardware-Weiterleitung bei 297 Mpps (Oversubscription 2:1); Fabric-Anbindung über acht 10G-SFP+-Uplinks. Blade-I/O-Modul für HP c3000/c7000; 16× interne 10GBASE-KR + 8× 10G-Fabric, FCoE/DCB.</p>",
+  "intro": [
+   "Der Cisco N2K-B22HP-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie, ausgelegt als Blade-Fabric-Extender für HP-BladeSystem im Blade-I/O-Modul.",
+   "Mit 16 hostseitigen Ports (1/10 GbE (10GBASE-KR, intern)) erreicht der N2K-B22HP-P eine Hardware-Weiterleitungskapazität von 400 Gbit/s bei 297 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+-Uplinks (Oversubscription 2:1). Als Fabric Extender besitzt der N2K-B22HP-P keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-B22HP-P unterstützt FCoE (DCB).",
+   "Als Blade-I/O-Modul steckt der N2K-B22HP-P im Blade-Chassis (HP c3000/c7000); Strom und Kühlung stellt das Chassis bereit. Im Temperaturbereich 10 bis 40 °C betrieben, ist der N2K-B22HP-P mit Parent-Switches der Reihen Nexus 5000/6000/7000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-B22HP-P?",
+    "Der N2K-B22HP-P bietet 16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (16) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-B22HP-P ein eigenständiger Switch?",
+    "Nein – der N2K-B22HP-P ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Wo wird der N2K-B22HP-P eingebaut?",
+    "Der N2K-B22HP-P ist ein Blade-I/O-Modul für das HP c3000/c7000-Chassis; die 16 Host-Ports sind interne Midplane-Verbindungen (10GBASE-KR) zu den Blade-Servern, Strom und Kühlung liefert das Chassis."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-B22HP-P kompatibel?",
+    "Der N2K-B22HP-P arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-KR, intern)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297 Mpps"
+   ],
+   [
+    "Bauform",
+    "Blade-I/O-Modul (steckt im Blade-Chassis)"
+   ],
+   [
+    "Stromversorgung",
+    "über Blade-Chassis (kein eigenes Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "über Blade-Chassis"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "10 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Blade-Fabric-Extender (HP BladeSystem) – 16 interne 10GBASE-KR-Host-Ports (Midplane) zu den Blade-Servern; Fabric über acht 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Blade-Chassis HP c3000/c7000; Parent: Nexus 5000/6000/7000; Oversubscription 2:1; FCoE/DCB"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-B22HP-P",
+    "EoL",
+    "Cisco B22HP (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22HP-P",
+    "PID",
+    "Ordering-PID N2K-B22HP-P verbatim aus c78-685265 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22HP-P",
+    "Switching-Kapazität",
+    "400 Gbit/s: Hardware-Weiterleitung verbatim aus c78-685265 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22HP-P",
+    "Versandgewicht",
+    "2,00 (geschätzt: Artikelgewicht 1,27 kg [vollbestückt, gegroundet aus c78-685265 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22HP-P",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ]
+  ]
+ },
+ "N2K-B22FTS-P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-B22FTS-P B22FTS Fabric Extender (Cisco Nexus-B22) – 16 Host-Ports, Blade-I/O-Modul",
+  "titel_tag": "Cisco N2K-B22FTS-P B22FTS Blade FEX (Fujitsu) | Hexwaren",
+  "meta_description": "Original Cisco N2K-B22FTS-P (B22FTS): Cisco-Nexus-B22 Fabric Extender, 16 Host-Ports + acht 10G-SFP+-Uplinks Fabric-Uplink, 400 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "1,27",
+  "versandgewicht": "2,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-B22FTS-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie mit 16× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-B22FTS-P liefert 400 Gbit/s Hardware-Weiterleitung bei 297 Mpps (Oversubscription 2:1); Fabric-Anbindung über acht 10G-SFP+-Uplinks. Blade-I/O-Modul für Fujitsu PRIMERGY BX400/BX900; 16× interne 10GBASE-KR + 8× 10G-Fabric, FCoE/DCB.</p>",
+  "intro": [
+   "Der Cisco N2K-B22FTS-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie, ausgelegt als Blade-Fabric-Extender für Fujitsu PRIMERGY im Blade-I/O-Modul.",
+   "Mit 16 hostseitigen Ports (10 GbE (10GBASE-KR, intern)) erreicht der N2K-B22FTS-P eine Hardware-Weiterleitungskapazität von 400 Gbit/s bei 297 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+-Uplinks (Oversubscription 2:1). Als Fabric Extender besitzt der N2K-B22FTS-P keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-B22FTS-P unterstützt FCoE (DCB).",
+   "Als Blade-I/O-Modul steckt der N2K-B22FTS-P im Blade-Chassis (Fujitsu PRIMERGY BX400/BX900); Strom und Kühlung stellt das Chassis bereit. Im Temperaturbereich 10 bis 40 °C betrieben, ist der N2K-B22FTS-P mit Parent-Switches der Reihen Nexus 5000/6000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-B22FTS-P?",
+    "Der N2K-B22FTS-P bietet 16× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (16) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-B22FTS-P ein eigenständiger Switch?",
+    "Nein – der N2K-B22FTS-P ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Wo wird der N2K-B22FTS-P eingebaut?",
+    "Der N2K-B22FTS-P ist ein Blade-I/O-Modul für das Fujitsu PRIMERGY BX400/BX900-Chassis; die 16 Host-Ports sind interne Midplane-Verbindungen (10GBASE-KR) zu den Blade-Servern, Strom und Kühlung liefert das Chassis."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-B22FTS-P kompatibel?",
+    "Der N2K-B22FTS-P arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (10GBASE-KR, intern)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297 Mpps"
+   ],
+   [
+    "Bauform",
+    "Blade-I/O-Modul (steckt im Blade-Chassis)"
+   ],
+   [
+    "Stromversorgung",
+    "über Blade-Chassis (kein eigenes Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "über Blade-Chassis"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "10 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Blade-Fabric-Extender (Fujitsu PRIMERGY) – 16 interne 10GBASE-KR-Host-Ports (Midplane) zu den Blade-Servern; Fabric über acht 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Blade-Chassis Fujitsu PRIMERGY BX400/BX900; Parent: Nexus 5000/6000; Oversubscription 2:1; FCoE/DCB"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-B22FTS-P",
+    "EoL",
+    "Cisco B22FTS (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22FTS-P",
+    "PID",
+    "Ordering-PID N2K-B22FTS-P verbatim aus c78-685265 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22FTS-P",
+    "Switching-Kapazität",
+    "400 Gbit/s: Hardware-Weiterleitung verbatim aus c78-685265 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22FTS-P",
+    "Versandgewicht",
+    "2,00 (geschätzt: Artikelgewicht 1,27 kg [vollbestückt, gegroundet aus c78-685265 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22FTS-P",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ]
+  ]
+ },
+ "N2K-B22IBM-P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-B22IBM-P B22IBM Fabric Extender (Cisco Nexus-B22) – 14 Host-Ports, Blade-I/O-Modul",
+  "titel_tag": "Cisco N2K-B22IBM-P B22IBM Blade FEX (IBM) | Hexwaren",
+  "meta_description": "Original Cisco N2K-B22IBM-P (B22IBM): Cisco-Nexus-B22 Fabric Extender, 14 Host-Ports + acht 10G-SFP+-Uplinks Fabric-Uplink, 400 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "3,2",
+  "versandgewicht": "4,20",
+  "kurzbeschreibung": "<p>Der Cisco N2K-B22IBM-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie mit 14× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-B22IBM-P liefert 400 Gbit/s Hardware-Weiterleitung bei 297 Mpps (Oversubscription 1,75:1); Fabric-Anbindung über acht 10G-SFP+-Uplinks. Blade-I/O-Modul für IBM Flex System; 14× interne 10GBASE-KR + 8× 10G-Fabric, FCoE/DCB.</p>",
+  "intro": [
+   "Der Cisco N2K-B22IBM-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie, ausgelegt als Blade-Fabric-Extender für IBM Flex System im Blade-I/O-Modul.",
+   "Mit 14 hostseitigen Ports (10 GbE (10GBASE-KR, intern)) erreicht der N2K-B22IBM-P eine Hardware-Weiterleitungskapazität von 400 Gbit/s bei 297 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+-Uplinks (Oversubscription 1,75:1). Als Fabric Extender besitzt der N2K-B22IBM-P keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-B22IBM-P unterstützt FCoE (DCB).",
+   "Als Blade-I/O-Modul steckt der N2K-B22IBM-P im Blade-Chassis (IBM Flex System); Strom und Kühlung stellt das Chassis bereit. Im Temperaturbereich 10 bis 40 °C betrieben, ist der N2K-B22IBM-P mit Parent-Switches der Reihen Nexus 5500/6000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-B22IBM-P?",
+    "Der N2K-B22IBM-P bietet 14× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (14) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-B22IBM-P ein eigenständiger Switch?",
+    "Nein – der N2K-B22IBM-P ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Wo wird der N2K-B22IBM-P eingebaut?",
+    "Der N2K-B22IBM-P ist ein Blade-I/O-Modul für das IBM Flex System-Chassis; die 14 Host-Ports sind interne Midplane-Verbindungen (10GBASE-KR) zu den Blade-Servern, Strom und Kühlung liefert das Chassis."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-B22IBM-P kompatibel?",
+    "Der N2K-B22IBM-P arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/6000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "14"
+   ],
+   [
+    "Port-Konfiguration",
+    "14× 10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (10GBASE-KR, intern)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297 Mpps"
+   ],
+   [
+    "Bauform",
+    "Blade-I/O-Modul (steckt im Blade-Chassis)"
+   ],
+   [
+    "Stromversorgung",
+    "über Blade-Chassis (kein eigenes Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "über Blade-Chassis"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "10 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Blade-Fabric-Extender (IBM Flex System) – 14 interne 10GBASE-KR-Host-Ports (Midplane) zu den Blade-Servern; Fabric über acht 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Blade-Chassis IBM Flex System; Parent: Nexus 5500/6000; Oversubscription 1,75:1; FCoE/DCB"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-B22IBM-P",
+    "EoL",
+    "Cisco B22IBM (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22IBM-P",
+    "PID",
+    "Ordering-PID N2K-B22IBM-P verbatim aus c78-685265 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22IBM-P",
+    "Switching-Kapazität",
+    "400 Gbit/s: Hardware-Weiterleitung verbatim aus c78-685265 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22IBM-P",
+    "Versandgewicht",
+    "4,20 (geschätzt: Artikelgewicht 3,2 kg [vollbestückt, gegroundet aus c78-685265 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22IBM-P",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ]
+  ]
+ },
+ "N2K-B22DELL-P": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-B22DELL-P B22DELL Fabric Extender (Cisco Nexus-B22) – 16 Host-Ports, Blade-I/O-Modul",
+  "titel_tag": "Cisco N2K-B22DELL-P B22DELL Blade FEX (Dell) | Hexwaren",
+  "meta_description": "Original Cisco N2K-B22DELL-P (B22DELL): Cisco-Nexus-B22 Fabric Extender, 16 Host-Ports + acht 10G-SFP+-Uplinks Fabric-Uplink, 400 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "1,9",
+  "versandgewicht": "2,70",
+  "kurzbeschreibung": "<p>Der Cisco N2K-B22DELL-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie mit 16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-B22DELL-P liefert 400 Gbit/s Hardware-Weiterleitung bei 297 Mpps (Oversubscription 2:1); Fabric-Anbindung über acht 10G-SFP+-Uplinks. Blade-I/O-Modul für Dell PowerEdge M1000e; 16× interne 10GBASE-KR + 8× 10G-Fabric, FCoE/DCB.</p>",
+  "intro": [
+   "Der Cisco N2K-B22DELL-P ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-B22-Serie, ausgelegt als Blade-Fabric-Extender für Dell PowerEdge M1000e im Blade-I/O-Modul.",
+   "Mit 16 hostseitigen Ports (1/10 GbE (10GBASE-KR, intern)) erreicht der N2K-B22DELL-P eine Hardware-Weiterleitungskapazität von 400 Gbit/s bei 297 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+-Uplinks (Oversubscription 2:1). Als Fabric Extender besitzt der N2K-B22DELL-P keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-B22DELL-P unterstützt FCoE (DCB).",
+   "Als Blade-I/O-Modul steckt der N2K-B22DELL-P im Blade-Chassis (Dell PowerEdge M1000e); Strom und Kühlung stellt das Chassis bereit. Im Temperaturbereich 10 bis 40 °C betrieben, ist der N2K-B22DELL-P mit Parent-Switches der Reihen Nexus 5500/6000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-B22DELL-P?",
+    "Der N2K-B22DELL-P bietet 16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (16) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-B22DELL-P ein eigenständiger Switch?",
+    "Nein – der N2K-B22DELL-P ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Wo wird der N2K-B22DELL-P eingebaut?",
+    "Der N2K-B22DELL-P ist ein Blade-I/O-Modul für das Dell PowerEdge M1000e-Chassis; die 16 Host-Ports sind interne Midplane-Verbindungen (10GBASE-KR) zu den Blade-Servern, Strom und Kühlung liefert das Chassis."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-B22DELL-P kompatibel?",
+    "Der N2K-B22DELL-P arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/6000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1/10GBASE-KR (intern, Midplane, Host); acht 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-KR, intern)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "400 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "297 Mpps"
+   ],
+   [
+    "Bauform",
+    "Blade-I/O-Modul (steckt im Blade-Chassis)"
+   ],
+   [
+    "Stromversorgung",
+    "über Blade-Chassis (kein eigenes Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "über Blade-Chassis"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "10 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Blade-Fabric-Extender (Dell PowerEdge M1000e) – 16 interne 10GBASE-KR-Host-Ports (Midplane) zu den Blade-Servern; Fabric über acht 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Blade-Chassis Dell PowerEdge M1000e; Parent: Nexus 5500/6000; Oversubscription 2:1; FCoE/DCB"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-B22DELL-P",
+    "EoL",
+    "Cisco B22DELL (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22DELL-P",
+    "PID",
+    "Ordering-PID N2K-B22DELL-P verbatim aus c78-685265 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22DELL-P",
+    "Switching-Kapazität",
+    "400 Gbit/s: Hardware-Weiterleitung verbatim aus c78-685265 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22DELL-P",
+    "Versandgewicht",
+    "2,70 (geschätzt: Artikelgewicht 1,9 kg [vollbestückt, gegroundet aus c78-685265 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ],
+   [
+    "N2K-B22DELL-P",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-685265.html"
+   ]
+  ]
+ }
+}

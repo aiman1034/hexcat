@@ -1,0 +1,2414 @@
+{
+ "N2K-C2148T": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2148T 2148T Fabric Extender (Cisco Nexus-2000) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2148T 2148T 48-Port FEX (1G) | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2148T (2148T): Cisco-Nexus-2000 Fabric Extender, 48 Host-Ports + vier 10G-SFP+-Uplinks Fabric-Uplink, 176 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,2",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2148T ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 48× 1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2148T liefert 176 Gbit/s Hardware-Weiterleitung bei 131 Mpps (Oversubscription 1,2:1); Fabric-Anbindung über vier 10G-SFP+-Uplinks. Gen-1-FEX ohne FCoE; ausschließlich an Nexus-5000-Parents.</p>",
+  "intro": [
+   "Der Cisco N2K-C2148T ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als Gen-1-Top-of-Rack-Fabric-Extender (1 GbE) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (1 GbE (1000BASE-T, RJ-45)) erreicht der N2K-C2148T eine Hardware-Weiterleitungskapazität von 176 Gbit/s bei 131 Mpps; die Anbindung an den Parent-Switch erfolgt über vier 10G-SFP+-Uplinks (Oversubscription 1,2:1). Als Fabric Extender besitzt der N2K-C2148T keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2148T ist ein reiner Ethernet-Fabric-Extender ohne FCoE-Konvergenz.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2148T im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2148T mit Parent-Switches der Reihen Nexus 5000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2148T?",
+    "Der N2K-C2148T bietet 48× 1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2148T ein eigenständiger Switch?",
+    "Nein – der N2K-C2148T ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2148T FCoE?",
+    "Nein – der N2K-C2148T ist ein reiner Ethernet-Fabric-Extender ohne FCoE; für FCoE-Konvergenz eignen sich die FCoE-fähigen Nexus-2000/2300-Modelle (z. B. 2232PP, 2348TQ)."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2148T kompatibel?",
+    "Der N2K-C2148T arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (1000BASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (Gen-1, 1 GbE) – 48 hostseitige 1000BASE-T-Ports; Fabric über vier 10G-SFP+ zum Parent; transparent vom Parent-Switch (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000; Oversubscription 1,2:1; kein FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2148T",
+    "EoL",
+    "Cisco 2148T (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ältestes Modell (~2013) -> ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2148T",
+    "PID",
+    "Ordering-PID N2K-C2148T verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2148T",
+    "Switching-Kapazität",
+    "176 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2148T",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,2 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2148T",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2224TP-1GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2224TP-1GE 2224TP Fabric Extender (Cisco Nexus-2000) – 24 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2224TP-1GE 2224TP 24-Port FEX (1G) | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2224TP-1GE (2224TP): Cisco-Nexus-2000 Fabric Extender, 24 Host-Ports + zwei 10G-SFP+-Uplinks Fabric-Uplink, 88 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "7,53",
+  "versandgewicht": "9,50",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2224TP-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 24× 100/1000BASE-T (RJ-45, Host); zwei 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2224TP-1GE liefert 88 Gbit/s Hardware-Weiterleitung bei 65 Mpps (Oversubscription 1,2:1); Fabric-Anbindung über zwei 10G-SFP+-Uplinks. 24-Port-1-GbE-FEX ohne FCoE.</p>",
+  "intro": [
+   "Der Cisco N2K-C2224TP-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als kompakter Top-of-Rack-Fabric-Extender (1 GbE, 24 Ports) im 1-HE-Gehäuse.",
+   "Mit 24 hostseitigen Ports (100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)) erreicht der N2K-C2224TP-1GE eine Hardware-Weiterleitungskapazität von 88 Gbit/s bei 65 Mpps; die Anbindung an den Parent-Switch erfolgt über zwei 10G-SFP+-Uplinks (Oversubscription 1,2:1). Als Fabric Extender besitzt der N2K-C2224TP-1GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2224TP-1GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE-Konvergenz.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2224TP-1GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2224TP-1GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2224TP-1GE?",
+    "Der N2K-C2224TP-1GE bietet 24× 100/1000BASE-T (RJ-45, Host); zwei 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (24) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2224TP-1GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2224TP-1GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2224TP-1GE FCoE?",
+    "Nein – der N2K-C2224TP-1GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE; für FCoE-Konvergenz eignen sich die FCoE-fähigen Nexus-2000/2300-Modelle (z. B. 2232PP, 2348TQ)."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2224TP-1GE kompatibel?",
+    "Der N2K-C2224TP-1GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 100/1000BASE-T (RJ-45, Host); zwei 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "88 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (1 GbE, kompakt) – 24 hostseitige 100/1000BASE-T-Ports; Fabric über zwei 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 1,2:1; kein FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2224TP-1GE",
+    "EoL",
+    "Cisco 2224TP (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 23-Nov-2015. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2224TP-1GE",
+    "PID",
+    "Ordering-PID N2K-C2224TP-1GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2224TP-1GE",
+    "Switching-Kapazität",
+    "88 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2224TP-1GE",
+    "Versandgewicht",
+    "9,50 (geschätzt: Artikelgewicht 7,53 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2224TP-1GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2248TP-1GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2248TP-1GE 2248TP Fabric Extender (Cisco Nexus-2000) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2248TP-1GE 2248TP 48-Port FEX (1G) | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2248TP-1GE (2248TP): Cisco-Nexus-2000 Fabric Extender, 48 Host-Ports + vier 10G-SFP+-Uplinks Fabric-Uplink, 176 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2248TP-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2248TP-1GE liefert 176 Gbit/s Hardware-Weiterleitung bei 131 Mpps (Oversubscription 1,2:1); Fabric-Anbindung über vier 10G-SFP+-Uplinks. 48-Port-1-GbE-FEX ohne FCoE.</p>",
+  "intro": [
+   "Der Cisco N2K-C2248TP-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als Top-of-Rack-Fabric-Extender (1 GbE, 48 Ports) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)) erreicht der N2K-C2248TP-1GE eine Hardware-Weiterleitungskapazität von 176 Gbit/s bei 131 Mpps; die Anbindung an den Parent-Switch erfolgt über vier 10G-SFP+-Uplinks (Oversubscription 1,2:1). Als Fabric Extender besitzt der N2K-C2248TP-1GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2248TP-1GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE-Konvergenz.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2248TP-1GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2248TP-1GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2248TP-1GE?",
+    "Der N2K-C2248TP-1GE bietet 48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2248TP-1GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2248TP-1GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2248TP-1GE FCoE?",
+    "Nein – der N2K-C2248TP-1GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE; für FCoE-Konvergenz eignen sich die FCoE-fähigen Nexus-2000/2300-Modelle (z. B. 2232PP, 2348TQ)."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2248TP-1GE kompatibel?",
+    "Der N2K-C2248TP-1GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (1 GbE) – 48 hostseitige 100/1000BASE-T-Ports; Fabric über vier 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 1,2:1; kein FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2248TP-1GE",
+    "EoL",
+    "Cisco 2248TP (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: Harvest nennt zwei Daten (27-Aug-2021 und 23-Nov-2015) -> KONFLIKT, ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-1GE",
+    "PID",
+    "Ordering-PID N2K-C2248TP-1GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-1GE",
+    "Switching-Kapazität",
+    "176 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-1GE",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,0 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-1GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2248TP-E-1GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2248TP-E-1GE 2248TP-E Fabric Extender (Cisco Nexus-2000) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2248TP-E-1GE 2248TP-E Deep-Buffer FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2248TP-E-1GE (2248TP-E): Cisco-Nexus-2000 Fabric Extender, 48 Host-Ports + vier 10G-SFP+-Uplinks Fabric-Uplink, 176 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2248TP-E-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2248TP-E-1GE liefert 176 Gbit/s Hardware-Weiterleitung bei 131 Mpps (Oversubscription 1,2:1); Fabric-Anbindung über vier 10G-SFP+-Uplinks. 48-Port-1-GbE-FEX mit 32-MB-Puffer (Mikroburst-Schutz).</p>",
+  "intro": [
+   "Der Cisco N2K-C2248TP-E-1GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als Top-of-Rack-Fabric-Extender (1 GbE, 48 Ports, Deep-Buffer) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)) erreicht der N2K-C2248TP-E-1GE eine Hardware-Weiterleitungskapazität von 176 Gbit/s bei 131 Mpps; die Anbindung an den Parent-Switch erfolgt über vier 10G-SFP+-Uplinks (Oversubscription 1,2:1). Als Fabric Extender besitzt der N2K-C2248TP-E-1GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2248TP-E-1GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE-Konvergenz. Ein 32-MB-Puffer im N2K-C2248TP-E-1GE entschärft Mikroburst-Lasten.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2248TP-E-1GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2248TP-E-1GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2248TP-E-1GE?",
+    "Der N2K-C2248TP-E-1GE bietet 48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2248TP-E-1GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2248TP-E-1GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Worin unterscheidet sich der N2K-C2248TP-E-1GE vom 2248TP?",
+    "Die -E-Variante ergänzt einen 32-MB-Puffer, der Mikroburst-Lasten abfedert; Portbild (48× 100/1000BASE-T + vier 10G-Fabric-Uplinks) und Kapazität bleiben identisch."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2248TP-E-1GE kompatibel?",
+    "Der N2K-C2248TP-E-1GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100/1000BASE-T (RJ-45, Host); vier 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–1 GbE (100/1000BASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (1 GbE, Deep-Buffer) – 48 hostseitige 100/1000BASE-T-Ports + 32-MB-Puffer; Fabric über vier 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 1,2:1; kein FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2248TP-E-1GE",
+    "EoL",
+    "Cisco 2248TP-E (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN (Harvest datiert nur das Basis-2248TP). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-E-1GE",
+    "PID",
+    "Ordering-PID N2K-C2248TP-E-1GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-E-1GE",
+    "Switching-Kapazität",
+    "176 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-E-1GE",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,0 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248TP-E-1GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2232PP-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2232PP-10GE 2232PP Fabric Extender (Cisco Nexus-2000) – 32 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2232PP-10GE 2232PP 32-Port 10G FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2232PP-10GE (2232PP): Cisco-Nexus-2000 Fabric Extender, 32 Host-Ports + acht 10G-SFP+-Uplinks Fabric-Uplink, 800 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,3",
+  "versandgewicht": "10,30",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2232PP-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 32× 1/10G-SFP+ (Host); acht 10G-SFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2232PP-10GE liefert 800 Gbit/s Hardware-Weiterleitung bei 595 Mpps (Oversubscription 4:1); Fabric-Anbindung über acht 10G-SFP+-Uplinks. 32× 10G-SFP+ mit FCoE-Konvergenz.</p>",
+  "intro": [
+   "Der Cisco N2K-C2232PP-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als 10-Gigabit-Top-of-Rack-Fabric-Extender (FCoE) im 1-HE-Gehäuse.",
+   "Mit 32 hostseitigen Ports (1/10 GbE (SFP+)) erreicht der N2K-C2232PP-10GE eine Hardware-Weiterleitungskapazität von 800 Gbit/s bei 595 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+-Uplinks (Oversubscription 4:1). Als Fabric Extender besitzt der N2K-C2232PP-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2232PP-10GE unterstützt FCoE.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2232PP-10GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2232PP-10GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2232PP-10GE?",
+    "Der N2K-C2232PP-10GE bietet 32× 1/10G-SFP+ (Host); acht 10G-SFP+ Fabric-Uplinks. Die hostseitige Portanzahl (32) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2232PP-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2232PP-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2232PP-10GE FCoE?",
+    "Ja – der N2K-C2232PP-10GE unterstützt FCoE, sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2232PP-10GE kompatibel?",
+    "Der N2K-C2232PP-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1/10G-SFP+ (Host); acht 10G-SFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "800 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "595 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10 GbE, FCoE) – 32 hostseitige 1/10G-SFP+-Ports; Fabric über acht 10G-SFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 4:1; FCoE-fähig"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2232PP-10GE",
+    "EoL",
+    "Cisco 2232PP (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 31-Jul-2020. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232PP-10GE",
+    "PID",
+    "Ordering-PID N2K-C2232PP-10GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232PP-10GE",
+    "Switching-Kapazität",
+    "800 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232PP-10GE",
+    "Versandgewicht",
+    "10,30 (geschätzt: Artikelgewicht 8,3 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232PP-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2248PQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2248PQ-10GE 2248PQ Fabric Extender (Cisco Nexus-2000) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2248PQ-10GE 2248PQ 48-Port 10G FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2248PQ-10GE (2248PQ): Cisco-Nexus-2000 Fabric Extender, 48 Host-Ports + vier 40G-QSFP+-Uplinks Fabric-Uplink, 1.280 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2248PQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 48× 1/10G-SFP+ (Host); vier 40G-QSFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2248PQ-10GE liefert 1.280 Gbit/s Hardware-Weiterleitung bei 952 Mpps (Oversubscription 3:1); Fabric-Anbindung über vier 40G-QSFP+-Uplinks. 48× 10G-SFP+ mit 40G-QSFP+-Fabric, FCoE/DCB.</p>",
+  "intro": [
+   "Der Cisco N2K-C2248PQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als 10-Gigabit-Top-of-Rack-Fabric-Extender mit 40G-Fabric (FCoE/DCB) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (1/10 GbE (SFP+)) erreicht der N2K-C2248PQ-10GE eine Hardware-Weiterleitungskapazität von 1.280 Gbit/s bei 952 Mpps; die Anbindung an den Parent-Switch erfolgt über vier 40G-QSFP+-Uplinks (Oversubscription 3:1). Als Fabric Extender besitzt der N2K-C2248PQ-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2248PQ-10GE unterstützt FCoE (inkl. DCB).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2248PQ-10GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2248PQ-10GE mit Parent-Switches der Reihen Nexus 5500/6000/7000/9000 (nicht 5010/5020) kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2248PQ-10GE?",
+    "Der N2K-C2248PQ-10GE bietet 48× 1/10G-SFP+ (Host); vier 40G-QSFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2248PQ-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2248PQ-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2248PQ-10GE FCoE?",
+    "Ja – der N2K-C2248PQ-10GE unterstützt FCoE inklusive DCB, sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2248PQ-10GE kompatibel?",
+    "Der N2K-C2248PQ-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/6000/7000/9000 (nicht 5010/5020)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ (Host); vier 40G-QSFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+ (Breakout 16× 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.280 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10 GbE, 40G-Fabric, FCoE/DCB) – 48 hostseitige 1/10G-SFP+-Ports; Fabric über vier 40G-QSFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5500/6000/7000/9000 (nicht 5010/5020); Oversubscription 3:1; FCoE/DCB"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2248PQ-10GE",
+    "EoL",
+    "Cisco 2248PQ (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 23-Nov-2015. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248PQ-10GE",
+    "PID",
+    "Ordering-PID N2K-C2248PQ-10GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248PQ-10GE",
+    "Switching-Kapazität",
+    "1.280 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248PQ-10GE",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,0 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2248PQ-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2232TM-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2232TM-10GE 2232TM Fabric Extender (Cisco Nexus-2000) – 32 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2232TM-10GE 2232TM 10GBASE-T FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2232TM-10GE (2232TM): Cisco-Nexus-2000 Fabric Extender, 32 Host-Ports + acht 10G-SFP+ (Uplink-Modul) Fabric-Uplink, 800 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,4",
+  "versandgewicht": "10,40",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2232TM-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2232TM-10GE liefert 800 Gbit/s Hardware-Weiterleitung bei 595 Mpps (Oversubscription 4:1); Fabric-Anbindung über acht 10G-SFP+ (Uplink-Modul). 32× 10GBASE-T mit Uplink-Modul-Fabric.</p>",
+  "intro": [
+   "Der Cisco N2K-C2232TM-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als 10GBASE-T-Top-of-Rack-Fabric-Extender im 1-HE-Gehäuse.",
+   "Mit 32 hostseitigen Ports (100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)) erreicht der N2K-C2232TM-10GE eine Hardware-Weiterleitungskapazität von 800 Gbit/s bei 595 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+ (Uplink-Modul) (Oversubscription 4:1). Als Fabric Extender besitzt der N2K-C2232TM-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2232TM-10GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE-Konvergenz.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2232TM-10GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2232TM-10GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2232TM-10GE?",
+    "Der N2K-C2232TM-10GE bietet 32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul. Die hostseitige Portanzahl (32) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2232TM-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2232TM-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2232TM-10GE FCoE?",
+    "Nein – der N2K-C2232TM-10GE ist ein reiner Ethernet-Fabric-Extender ohne FCoE; für FCoE-Konvergenz eignen sich die FCoE-fähigen Nexus-2000/2300-Modelle (z. B. 2232PP, 2348TQ)."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2232TM-10GE kompatibel?",
+    "Der N2K-C2232TM-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+ (Uplink-Modul N2K-M2800P)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "800 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "595 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10GBASE-T) – 32 hostseitige 100M/1/10GBASE-T-Ports; Fabric über acht 10G-SFP+ (Uplink-Modul N2K-M2800P) zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 4:1; kein FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2232TM-10GE",
+    "EoL",
+    "Cisco 2232TM (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 23-Nov-2015. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-10GE",
+    "PID",
+    "Ordering-PID N2K-C2232TM-10GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-10GE",
+    "Switching-Kapazität",
+    "800 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-10GE",
+    "Versandgewicht",
+    "10,40 (geschätzt: Artikelgewicht 8,4 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-10GE",
+    "Uplink-Modul",
+    "Fabric über separates Uplink-Modul N2K-M2800P (8× 10G-SFP+) – Modul nicht gebankt (eigene PID); nur das Chassis N2K-C2232TM-10GE ist die Artikel-PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2232TM-E-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2232TM-E-10GE 2232TM-E Fabric Extender (Cisco Nexus-2000) – 32 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2232TM-E-10GE 2232TM-E 10GBASE-T FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2232TM-E-10GE (2232TM-E): Cisco-Nexus-2000 Fabric Extender, 32 Host-Ports + acht 10G-SFP+ (Uplink-Modul) Fabric-Uplink, 800 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,4",
+  "versandgewicht": "10,40",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2232TM-E-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie mit 32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2232TM-E-10GE liefert 800 Gbit/s Hardware-Weiterleitung bei 595 Mpps (Oversubscription 4:1); Fabric-Anbindung über acht 10G-SFP+ (Uplink-Modul). 32× 10GBASE-T mit FCoE (bis 30 m Cat-6a/7).</p>",
+  "intro": [
+   "Der Cisco N2K-C2232TM-E-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2000-Serie, ausgelegt als 10GBASE-T-Top-of-Rack-Fabric-Extender (FCoE) im 1-HE-Gehäuse.",
+   "Mit 32 hostseitigen Ports (100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)) erreicht der N2K-C2232TM-E-10GE eine Hardware-Weiterleitungskapazität von 800 Gbit/s bei 595 Mpps; die Anbindung an den Parent-Switch erfolgt über acht 10G-SFP+ (Uplink-Modul) (Oversubscription 4:1). Als Fabric Extender besitzt der N2K-C2232TM-E-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2232TM-E-10GE unterstützt FCoE (bis 30 m über Cat-6a/7).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2232TM-E-10GE im Temperaturbereich 0 bis 40 °C. Als Fabric Extender ist der N2K-C2232TM-E-10GE mit Parent-Switches der Reihen Nexus 5000/6000/7000/9000 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2232TM-E-10GE?",
+    "Der N2K-C2232TM-E-10GE bietet 32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul. Die hostseitige Portanzahl (32) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2232TM-E-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2232TM-E-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2232TM-E-10GE FCoE?",
+    "Ja – der N2K-C2232TM-E-10GE unterstützt FCoE (10GBASE-T bis 30 m über Cat-6a/7), sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2232TM-E-10GE kompatibel?",
+    "Der N2K-C2232TM-E-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5000/6000/7000/9000."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100M/1/10GBASE-T (RJ-45, Host); acht 10G-SFP+ über Uplink-Modul"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 10G-SFP+ (Uplink-Modul N2K-M2800P)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "800 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "595 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10GBASE-T, FCoE) – 32 hostseitige 100M/1/10GBASE-T-Ports (FCoE bis 30 m über Cat-6a/7); Fabric über acht 10G-SFP+ (Uplink-Modul N2K-M2800P) zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5000/6000/7000/9000; Oversubscription 4:1; FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2232TM-E-10GE",
+    "EoL",
+    "Cisco 2232TM-E (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 31-Jul-2020. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-E-10GE",
+    "PID",
+    "Ordering-PID N2K-C2232TM-E-10GE verbatim aus c78-507093 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-E-10GE",
+    "Switching-Kapazität",
+    "800 Gbit/s: Hardware-Weiterleitung verbatim aus c78-507093 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-E-10GE",
+    "Versandgewicht",
+    "10,40 (geschätzt: Artikelgewicht 8,4 kg [vollbestückt, gegroundet aus c78-507093 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-E-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ],
+   [
+    "N2K-C2232TM-E-10GE",
+    "Uplink-Modul",
+    "Fabric über separates Uplink-Modul N2K-M2800P (8× 10G-SFP+) – Modul nicht gebankt (eigene PID); nur das Chassis ist die Artikel-PID.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/data_sheet_c78-507093.html"
+   ]
+  ]
+ },
+ "N2K-C2348UPQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2348UPQ-10GE 2348UPQ Fabric Extender (Cisco Nexus-2300) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2348UPQ-10GE 2348UPQ Unified FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2348UPQ-10GE (2348UPQ): Cisco-Nexus-2300 Fabric Extender, 48 Host-Ports + sechs 40G-QSFP+-Uplinks Fabric-Uplink, 1.440 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "7,0",
+  "versandgewicht": "9,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2348UPQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie mit 48× 1/10G Unified-SFP+ (Host); sechs 40G-QSFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2348UPQ-10GE liefert 1.440 Gbit/s Hardware-Weiterleitung bei 2.160 Mpps (Oversubscription bis 2:1); Fabric-Anbindung über sechs 40G-QSFP+-Uplinks. 48× Unified-SFP+ (Eth/FCoE/FC) mit 40G-Fabric, 32-MB-Puffer.</p>",
+  "intro": [
+   "Der Cisco N2K-C2348UPQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie, ausgelegt als 10-Gigabit-Top-of-Rack-Fabric-Extender mit Unified Ports (Deep-Buffer) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (1/10 GbE (Unified SFP+)) erreicht der N2K-C2348UPQ-10GE eine Hardware-Weiterleitungskapazität von 1.440 Gbit/s bei 2.160 Mpps; die Anbindung an den Parent-Switch erfolgt über sechs 40G-QSFP+-Uplinks (Oversubscription bis 2:1). Als Fabric Extender besitzt der N2K-C2348UPQ-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2348UPQ-10GE unterstützt FCoE. Ein 32-MB-Puffer im N2K-C2348UPQ-10GE entschärft Mikroburst-Lasten. Die Host-Ports sind Unified Ports: an einem Nexus-5600-Parent (ab NX-OS 7.3(0)N1(1)) auch natives Fibre Channel 2/4/8/16G (24 Ports bei 16G), sonst 1/10 GbE plus FCoE.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2348UPQ-10GE im Temperaturbereich 0 bis 55 °C. Als Fabric Extender ist der N2K-C2348UPQ-10GE mit Parent-Switches der Reihen Nexus 5500/5600/6000/7000/7700/9300/9500 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2348UPQ-10GE?",
+    "Der N2K-C2348UPQ-10GE bietet 48× 1/10G Unified-SFP+ (Host); sechs 40G-QSFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2348UPQ-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2348UPQ-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Was bedeuten die Unified Ports beim N2K-C2348UPQ-10GE?",
+    "An einem Nexus-5600-Parent (ab NX-OS 7.3(0)N1(1)) lassen sich die 48 Host-Ports auch als natives Fibre Channel (2/4/8/16G, 24 Ports bei 16G) betreiben; an anderen Parents arbeiten sie als 1/10 GbE plus FCoE."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2348UPQ-10GE kompatibel?",
+    "Der N2K-C2348UPQ-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/5600/6000/7000/7700/9300/9500."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G Unified-SFP+ (Host); sechs 40G-QSFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (Unified SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+ (Breakout 24× 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.440 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.160 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10 GbE, Unified Ports, Deep-Buffer) – 48 hostseitige 1/10G-Unified-SFP+-Ports (an Nexus-5600-Parent auch natives 2/4/8/16G FC) + 32-MB-Puffer; Fabric über sechs 40G-QSFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5500/5600/6000/7000/7700/9300/9500; Oversubscription bis 2:1; FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2348UPQ-10GE",
+    "EoL",
+    "Cisco 2348UPQ (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 27-Aug-2021. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348UPQ-10GE",
+    "PID",
+    "Ordering-PID N2K-C2348UPQ-10GE verbatim aus c78-731663 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348UPQ-10GE",
+    "Switching-Kapazität",
+    "1.440 Gbit/s: Hardware-Weiterleitung verbatim aus c78-731663 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348UPQ-10GE",
+    "Versandgewicht",
+    "9,00 (geschätzt: Artikelgewicht 7,0 kg [vollbestückt, gegroundet aus c78-731663 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348UPQ-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ]
+  ]
+ },
+ "N2K-C2348TQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2348TQ-10GE 2348TQ Fabric Extender (Cisco Nexus-2300) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2348TQ-10GE 2348TQ 10GBASE-T FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2348TQ-10GE (2348TQ): Cisco-Nexus-2300 Fabric Extender, 48 Host-Ports + sechs 40G-QSFP+-Uplinks Fabric-Uplink, 1.440 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2348TQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie mit 48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2348TQ-10GE liefert 1.440 Gbit/s Hardware-Weiterleitung bei 2.160 Mpps (Oversubscription bis 2:1); Fabric-Anbindung über sechs 40G-QSFP+-Uplinks. 48× 10GBASE-T mit 40G-QSFP+-Fabric, FCoE.</p>",
+  "intro": [
+   "Der Cisco N2K-C2348TQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie, ausgelegt als 10GBASE-T-Top-of-Rack-Fabric-Extender mit 40G-Fabric (FCoE) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)) erreicht der N2K-C2348TQ-10GE eine Hardware-Weiterleitungskapazität von 1.440 Gbit/s bei 2.160 Mpps; die Anbindung an den Parent-Switch erfolgt über sechs 40G-QSFP+-Uplinks (Oversubscription bis 2:1). Als Fabric Extender besitzt der N2K-C2348TQ-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2348TQ-10GE unterstützt FCoE (10GBASE-T bis 30 m).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2348TQ-10GE im Temperaturbereich 0 bis 55 °C. Als Fabric Extender ist der N2K-C2348TQ-10GE mit Parent-Switches der Reihen Nexus 5500/5600/6000/7000/7700/9300/9500 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2348TQ-10GE?",
+    "Der N2K-C2348TQ-10GE bietet 48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2348TQ-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2348TQ-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2348TQ-10GE FCoE?",
+    "Ja – der N2K-C2348TQ-10GE unterstützt FCoE (10GBASE-T bis 30 m), sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2348TQ-10GE kompatibel?",
+    "Der N2K-C2348TQ-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/5600/6000/7000/7700/9300/9500."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+ (Breakout 24× 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.440 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.160 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10GBASE-T, 40G-Fabric, FCoE) – 48 hostseitige 100M/1/10GBASE-T-Ports (FCoE bis 30 m); Fabric über sechs 40G-QSFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5500/5600/6000/7000/7700/9300/9500; Oversubscription bis 2:1; FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2348TQ-10GE",
+    "EoL",
+    "Cisco 2348TQ (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: Harvest nennt zwei Daten (27-Aug-2021 und 31-Jul-2020) -> KONFLIKT, ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-10GE",
+    "PID",
+    "Ordering-PID N2K-C2348TQ-10GE verbatim aus c78-731663 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-10GE",
+    "Switching-Kapazität",
+    "1.440 Gbit/s: Hardware-Weiterleitung verbatim aus c78-731663 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-10GE",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,0 kg [vollbestückt, gegroundet aus c78-731663 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ]
+  ]
+ },
+ "N2K-C2332TQ-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2332TQ-10GE 2332TQ Fabric Extender (Cisco Nexus-2300) – 32 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2332TQ-10GE 2332TQ 10GBASE-T FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2332TQ-10GE (2332TQ): Cisco-Nexus-2300 Fabric Extender, 32 Host-Ports + vier 40G-QSFP+-Uplinks Fabric-Uplink, 960 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "6,8",
+  "versandgewicht": "8,80",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2332TQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie mit 32× 100M/1/10GBASE-T (RJ-45, Host); vier 40G-QSFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2332TQ-10GE liefert 960 Gbit/s Hardware-Weiterleitung bei 1.440 Mpps (Oversubscription bis 2:1); Fabric-Anbindung über vier 40G-QSFP+-Uplinks. 32× 10GBASE-T mit 40G-QSFP+-Fabric, FCoE.</p>",
+  "intro": [
+   "Der Cisco N2K-C2332TQ-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie, ausgelegt als 10GBASE-T-Top-of-Rack-Fabric-Extender (32 Ports, FCoE) im 1-HE-Gehäuse.",
+   "Mit 32 hostseitigen Ports (100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)) erreicht der N2K-C2332TQ-10GE eine Hardware-Weiterleitungskapazität von 960 Gbit/s bei 1.440 Mpps; die Anbindung an den Parent-Switch erfolgt über vier 40G-QSFP+-Uplinks (Oversubscription bis 2:1). Als Fabric Extender besitzt der N2K-C2332TQ-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2332TQ-10GE unterstützt FCoE (10GBASE-T bis 30 m).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2332TQ-10GE im Temperaturbereich 0 bis 55 °C. Als Fabric Extender ist der N2K-C2332TQ-10GE mit Parent-Switches der Reihen Nexus 5500/5600/6000/9300/9500 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2332TQ-10GE?",
+    "Der N2K-C2332TQ-10GE bietet 32× 100M/1/10GBASE-T (RJ-45, Host); vier 40G-QSFP+ Fabric-Uplinks. Die hostseitige Portanzahl (32) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2332TQ-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2332TQ-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2332TQ-10GE FCoE?",
+    "Ja – der N2K-C2332TQ-10GE unterstützt FCoE (10GBASE-T bis 30 m), sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2332TQ-10GE kompatibel?",
+    "Der N2K-C2332TQ-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/5600/6000/9300/9500."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100M/1/10GBASE-T (RJ-45, Host); vier 40G-QSFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G-QSFP+ (Breakout 16× 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.440 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10GBASE-T, 40G-Fabric, FCoE) – 32 hostseitige 100M/1/10GBASE-T-Ports (FCoE bis 30 m); Fabric über vier 40G-QSFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5500/5600/6000/9300/9500; Oversubscription bis 2:1; FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2332TQ-10GE",
+    "EoL",
+    "Cisco 2332TQ (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: 31-Jul-2020. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2332TQ-10GE",
+    "PID",
+    "Ordering-PID N2K-C2332TQ-10GE verbatim aus c78-731663 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2332TQ-10GE",
+    "Switching-Kapazität",
+    "960 Gbit/s: Hardware-Weiterleitung verbatim aus c78-731663 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2332TQ-10GE",
+    "Versandgewicht",
+    "8,80 (geschätzt: Artikelgewicht 6,8 kg [vollbestückt, gegroundet aus c78-731663 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2332TQ-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ]
+  ]
+ },
+ "N2K-C2348TQ-E-10GE": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+   "verifiziert_am": "2026-06-27"
+  },
+  "artikelname": "Cisco N2K-C2348TQ-E-10GE 2348TQ-E Fabric Extender (Cisco Nexus-2300) – 48 Host-Ports, 1-HE-Gehäuse",
+  "titel_tag": "Cisco N2K-C2348TQ-E-10GE 2348TQ-E 10GBASE-T FEX | Hexwaren",
+  "meta_description": "Original Cisco N2K-C2348TQ-E-10GE (2348TQ-E): Cisco-Nexus-2300 Fabric Extender, 48 Host-Ports + sechs 40G-QSFP+-Uplinks Fabric-Uplink, 1.440 Gbit/s. Vom Parent (NX-OS) verwaltet, kein eigenes OS.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der Cisco N2K-C2348TQ-E-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie mit 48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks. Er besitzt kein eigenes Betriebssystem und wird transparent vom Parent-Switch unter Cisco NX-OS verwaltet.</p><p>Der N2K-C2348TQ-E-10GE liefert 1.440 Gbit/s Hardware-Weiterleitung bei 2.160 Mpps (Oversubscription bis 2:1); Fabric-Anbindung über sechs 40G-QSFP+-Uplinks. 48× 10GBASE-T (Enhanced) mit 40G-QSFP+-Fabric, FCoE.</p>",
+  "intro": [
+   "Der Cisco N2K-C2348TQ-E-10GE ist ein Fabric Extender (Remote-Line-Card) der Cisco-Nexus-2300-Serie, ausgelegt als 10GBASE-T-Top-of-Rack-Fabric-Extender (Enhanced, FCoE) im 1-HE-Gehäuse.",
+   "Mit 48 hostseitigen Ports (100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)) erreicht der N2K-C2348TQ-E-10GE eine Hardware-Weiterleitungskapazität von 1.440 Gbit/s bei 2.160 Mpps; die Anbindung an den Parent-Switch erfolgt über sechs 40G-QSFP+-Uplinks (Oversubscription bis 2:1). Als Fabric Extender besitzt der N2K-C2348TQ-E-10GE keine eigene Steuerungsebene und kein eigenes Betriebssystem – er wird transparent wie eine entfernte Line-Card vom Parent-Switch unter Cisco NX-OS verwaltet. Der N2K-C2348TQ-E-10GE unterstützt FCoE (10GBASE-T bis 30 m).",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit zwei redundanten Hot-Swap-Netzteilen und Hot-Swap-Lüftern (Airflow wählbar: Front-to-Back/Back-to-Front) arbeitet der N2K-C2348TQ-E-10GE im Temperaturbereich 0 bis 55 °C. Als Fabric Extender ist der N2K-C2348TQ-E-10GE mit Parent-Switches der Reihen Nexus 5500/5600/6000/9300/9500 kompatibel und als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N2K-C2348TQ-E-10GE?",
+    "Der N2K-C2348TQ-E-10GE bietet 48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks. Die hostseitige Portanzahl (48) zählt die Server-Ports; die Fabric-Uplinks binden den Extender an den Parent-Switch an und zählen nicht zur Host-Kapazität."
+   ],
+   [
+    "Ist der N2K-C2348TQ-E-10GE ein eigenständiger Switch?",
+    "Nein – der N2K-C2348TQ-E-10GE ist ein Fabric Extender (Remote-Line-Card) ohne eigenes Betriebssystem; er wird transparent von einem Cisco-Nexus-Parent-Switch unter NX-OS verwaltet und kann nicht eigenständig betrieben werden."
+   ],
+   [
+    "Unterstützt der N2K-C2348TQ-E-10GE FCoE?",
+    "Ja – der N2K-C2348TQ-E-10GE unterstützt FCoE (10GBASE-T bis 30 m), sodass LAN- und SAN-Verkehr konvergiert über den Parent-Switch laufen."
+   ],
+   [
+    "Mit welchen Parent-Switches ist der N2K-C2348TQ-E-10GE kompatibel?",
+    "Der N2K-C2348TQ-E-10GE arbeitet mit Cisco-Nexus-Parent-Switches der Reihen Nexus 5500/5600/6000/9300/9500."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Fabric Extender"
+   ],
+   [
+    "Layer",
+    "Fabric Extender"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/10GBASE-T (RJ-45, Host); sechs 40G-QSFP+ Fabric-Uplinks"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 Mbit/s–10 GbE (100M/1/10GBASE-T, RJ-45)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G-QSFP+ (Breakout 24× 10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.440 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.160 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (Hot-Swap)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüfter (Airflow wählbar: Front-to-Back/Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack Fabric Extender (10GBASE-T Enhanced, 40G-Fabric, FCoE) – 48 hostseitige 100M/1/10GBASE-T-Ports (FCoE bis 30 m); Fabric über sechs 40G-QSFP+ zum Parent; transparent vom Parent (NX-OS) verwaltet, kein eigenes OS; Parent: Nexus 5500/5600/6000/9300/9500; Oversubscription bis 2:1; FCoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N2K-C2348TQ-E-10GE",
+    "EoL",
+    "Cisco 2348TQ-E (Fabric Extender) – EoL/abgekündigte Generation. EoS-Ankündigung: ZU_VERIFIZIEREN. In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-E-10GE",
+    "PID",
+    "Ordering-PID N2K-C2348TQ-E-10GE verbatim aus c78-731663 (nur Basis-Chassis/-Modul-PID gebankt; PSUs, Lüfter, FET-Transceiver, Airflow-Kits und -F-Bundle-PIDs NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-E-10GE",
+    "Switching-Kapazität",
+    "1.440 Gbit/s: Hardware-Weiterleitung verbatim aus c78-731663 übernommen, NICHT verdoppelt (die bidirektionale Aggregat-Angabe ist nicht die Switching-Kapazität).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-E-10GE",
+    "Versandgewicht",
+    "10,00 (geschätzt: Artikelgewicht 8,0 kg [vollbestückt, gegroundet aus c78-731663 – kein ZU_VERIFIZIEREN] + Standard-Paketverpackung).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ],
+   [
+    "N2K-C2348TQ-E-10GE",
+    "Feature-Grounding",
+    "Neue Geräteklasse Fabric Extender via OPTION 1: Switch-Typ/Layer = „Fabric Extender\" als neue Wertlisten-WERTE (kein neues Merkmal, keine src-Änderung). Portanzahl = Host-Ports; Uplink-Ports = Fabric-Ports (nicht in Portanzahl summiert). FCoE/Unified-Ports/Parent-Kompatibilität/Oversubscription/Puffer = Prosa, KEIN Merkmal. Kein eigenes OS (vom Parent-NX-OS verwaltet; IOS XE = 0). VXLAN/EVPN/Cloud-Scale/ACI/MACsec nicht genannt -> nicht behauptet.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-2000-series-fabric-extenders/datasheet-c78-731663.html"
+   ]
+  ]
+ }
+}
