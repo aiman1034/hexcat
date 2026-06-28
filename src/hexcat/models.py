@@ -78,6 +78,11 @@ class SkuIntake(BaseModel):
     Stromversorgung: str = ""
     Kuehlung: str = ""
     Stacking: str = ""
+    # Modular-chassis (Class A) intake fields — only the Catalyst 4500-E/6500-E chassis populate them;
+    # every fixed switch leaves them "" (additive, backward-compatible).
+    Steckplaetze: str = ""
+    SupervisorEngines: str = ""
+    Redundanz: str = ""
     Condition: str = ""
     FAQ: str = ""
     SourceURLs: str = ""

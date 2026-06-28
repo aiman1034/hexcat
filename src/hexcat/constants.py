@@ -98,6 +98,12 @@ SWITCH_ATTRIBUTES: tuple[tuple[str, str], ...] = (
     ("Stacking", "Stacking"),
     ("Betriebstemperatur", "Betriebstemperatur"),
     ("Anwendung", "Anwendung"),
+    # Modular-chassis-class Merkmale (Wertliste), appended so the fixed-switch order is unchanged.
+    # Only emitted when a SKU's content carries them (the modular Catalyst 4500-E/6500-E chassis); every
+    # fixed-switch SKU omits them, so existing output is byte-identical (additive, backward-compatible).
+    ("Steckplätze", "Steckplaetze"),
+    ("Unterstützte Supervisor-Engines", "SupervisorEngines"),
+    ("Redundanz", "Redundanz"),
 )
 SWITCH_ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in SWITCH_ATTRIBUTES)
 
@@ -139,9 +145,12 @@ CHASSIS_KAT3_VALUES: frozenset[str] = frozenset({
     "Modularer Switch (Chassis)",        # Ethernet campus/DC modular chassis (Catalyst 9400/9600, later Nexus 9500)
 })
 CHASSIS_REQUIRED_ATTRS: tuple[str, ...] = (
-    "Anwendung", "Bauform", "Betriebstemperatur", "Kühlung", "Stromversorgung",
+    "Anwendung", "Bauform", "Kühlung", "Stromversorgung",
     "Switch-Typ", "Switching-Kapazität",
 )
+# Betriebstemperatur is OPTIONAL for chassis (NOT in the required set): the modular-campus-chassis model
+# (Catalyst 4500-E/6500-E) carries the operating-temperature range in prose, while older chassis records
+# (C9610/MDS 9700/Nexus 9500) keep it as a Merkmal — both pass (present-but-not-required is backward-compatible).
 CHASSIS_FORBIDDEN_ATTRS: tuple[str, ...] = (
     "Portanzahl", "Port-Konfiguration", "Port-Geschwindigkeit", "PoE", "Stacking",
 )

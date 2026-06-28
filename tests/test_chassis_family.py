@@ -67,6 +67,10 @@ def test_chassis_7_attr_no_port_merkmale(tmp_path):
     names, groups = _attrs_by_sku(out)
     assert names, "no attribute rows emitted"
     assert all(len(v) == 7 for v in names.values()), {k: len(v) for k, v in names.items()}
-    assert all(set(v) == set(C.CHASSIS_REQUIRED_ATTRS) for v in names.values())
+    # CHASSIS_REQUIRED_ATTRS is now 6 (Betriebstemperatur is OPTIONAL — the modular-campus-chassis model
+    # carries operating temp in prose). These legacy fixtures carry the 6 required + Betriebstemperatur = 7,
+    # with no port Merkmale and no other extras.
+    assert all(set(C.CHASSIS_REQUIRED_ATTRS) <= set(v) for v in names.values())
+    assert all(set(v) == set(C.CHASSIS_REQUIRED_ATTRS) | {"Betriebstemperatur"} for v in names.values())
     assert groups == {"Switch"}
     assert all(not (FORBIDDEN & set(v)) for v in names.values())

@@ -3420,6 +3420,37 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   note that other 4900 legacy is couriered separately if in scope). `coverage_report.md`: CMICR ✅ (3/3), 4948E ✅ (2/2). **In-scope
   90→91; models_exp 891→889; 741 built, 80 families fully built, 83 %.** OPEN: BrokerBin-confirm the 4948E −F naming + the 4948E weight,
   then the −F pair can be banked live.
+- **Phase M1a — FIRST MODULAR BATCH: Catalyst 4500-E (4) + 6500-E (6) = 10 modular chassis; established the NEW modular-campus
+  chassis attribute model with an operator-approved ADDITIVE src extension (2026-06-27).** Anti-duplicate check first (genuinely
+  unbuilt). **THE FIRST `src` CHANGE OF THE SWITCH LANE** — the new model conflicted with two hardcoded chassis-gate rules, so I
+  **STOPPED and asked Fawaz**, who approved a small additive extension. **`src` diff (4 files, +27/−6, all additive +
+  backward-compatible — full suite re-gates identically):** (1) `constants.py` — `CHASSIS_REQUIRED_ATTRS` drops `Betriebstemperatur`
+  (now OPTIONAL → modular chassis carry operating temp in PROSE; older C9610/MDS/Nexus-9500 chassis still pass present-but-optional);
+  (2) `constants.py` — `SWITCH_ATTRIBUTES` += the 3 new Merkmale (appended, fixed-switch order unchanged); (3) `validate.py` —
+  chassis S.2 accepts `Switch-Typ='Modular-Chassis'` for Layer L3 (a chassis routes L3 via its supervisor); (4) `reconcile.py` —
+  `ATTR_ALIAS` += the 3 new identity entries. Plus `models.py` `SkuIntake` += 3 string fields (so the new Merkmale thread name→
+  alias→canonical→field→emit). **The new Merkmale needed the WHOLE chain wired** (alias + canon-map + intake-model field +
+  SWITCH_ATTRIBUTES emit-order), not just the gate — discovered by tracing why they were silently dropped. Added a permanent
+  regression test (`tests/test_modular_chassis_model.py`, 3 tests + a real 4-chassis fixture); **full suite 441 passed** (438 + 3;
+  the 2 legacy `test_*chassis*` "7-attr exact-equality" assertions relaxed to required⊆attrs since the required set is now 6).
+  **NEW MODEL (verified end-to-end):** `Cisco_4500E` (4: WS-C4503-E/4506-E/4507R+E/4510R+E) + `Cisco_6500E` (6: WS-C6503-E/6504-E/
+  6506-E/6509-E/6509-V-E/6513-E). k3=`Modularer Switch (Chassis)` → chassis gate, Ebene-2 Switches. Attrs (10): Switch-Typ=
+  **Modular-Chassis** (new VALUE), Layer **L3**, **Steckplätze** (new Wertliste Merkmal: 3/6/7/10 · 3/4/6/9/9/13), Bauform=
+  **`19-Zoll-Rackmontage (N HE)`** (existing rack format, NEW HE sizes 7/10/11/14 · 4/5/11/14/21/19), Switching-Kapazität (per-slot:
+  4500-E 48 Gbit/s/Linecard-Steckplatz Sup8-E, 6500-E 80 Gbit/s/Steckplatz Sup2T — NOT doubled), Stromversorgung, Kühlung
+  (6509-V-E = redundant front-to-back), **Unterstützte Supervisor-Engines** (new Merkmal: 4500-E Sup6-E/7-E/8-E/9-E; 6500-E
+  Sup32/720/2T), **Redundanz** (new Merkmal), Anwendung, Zustand. **DROPPED (chassis has no fixed ports): Portanzahl/Port-Konfig/PoE/
+  Port-Gesch/Uplink/Durchsatz/Stacking/Betriebstemperatur — NO S.3** (no Port-Konfiguration). Bare chassis (Leergehäuse +
+  Lüftereinschub); **supervisors/linecards/PSUs = dormant Class B (Phase M2/M3), EXCLUDED, NOT banked** (verified no PWR-/WS-CAC-/
+  SUP/-LC- PID in the banked set). OS is **supervisor-provided** (4500-E Sup8/9-E run IOS XE, Sup6/7-E classic IOS; 6500-E classic
+  IOS — so I corrected my initial wrong "nicht IOS-XE" blanket: the IOS-XE=0 invariant does NOT apply to a bare chassis). Weights
+  grounded → no ZU_VERIFIZIEREN. EoL → prose, banked. **Both bundles canonical gate ok=True / 0 / 0**; Byte-Contract sauber (4+6
+  rows, Condition new ×10). Manifest: 2 built-blocks; the 4500/6500 modular catch-alls reduced (30→26, 25→19; remainder =
+  supervisors/linecards Class B + 4500-X fixed/6807). `coverage_report.md`: **4500-E ✅ (4/4), 6500-E ✅ (6/6)**. **In-scope 91→93;
+  741→751 built, 82 families fully built, 84 %.** LESSON (memory): a genuinely new device CLASS (chassis with new filterable
+  Merkmale) is NOT content-only — it threads through the whole schema (ATTR_ALIAS → canon-map → intake-model field → emit-order →
+  gate required/forbidden/S.2); when the existing gate's hardcoded rules conflict with an approved new model, STOP-and-ask, then
+  extend ADDITIVELY (loosen a required-set, exempt a Switch-Typ value) and pin it with a regression test — never silently rewrite.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

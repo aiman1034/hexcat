@@ -64,6 +64,9 @@ def test_ethernet_chassis_7_attr_no_ports(tmp_path):
             groups.add(row[2])
     assert names
     assert all(len(v) == 7 for v in names.values()), {k: len(v) for k, v in names.items()}
-    assert all(set(v) == set(C.CHASSIS_REQUIRED_ATTRS) for v in names.values())
+    # CHASSIS_REQUIRED_ATTRS is now 6 (Betriebstemperatur OPTIONAL); this fixture carries the 6 required +
+    # Betriebstemperatur = 7, with no port Merkmale and no other extras.
+    assert all(set(C.CHASSIS_REQUIRED_ATTRS) <= set(v) for v in names.values())
+    assert all(set(v) == set(C.CHASSIS_REQUIRED_ATTRS) | {"Betriebstemperatur"} for v in names.values())
     assert groups == {"Switch"}
     assert all(not (FORBIDDEN & set(v)) for v in names.values())

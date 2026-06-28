@@ -102,6 +102,11 @@ ATTR_ALIAS: dict[str, str] = {
     "Stromversorgung": "Stromversorgung",
     "Kühlung": "Kühlung",
     "Stacking": "Stacking",
+    # --- modular-chassis Merkmale (Class A, Wertliste): identity-mapped like the other switch attrs.
+    # Only the modular Catalyst 4500-E/6500-E chassis author them; every other SKU omits them (additive).
+    "Steckplätze": "Steckplätze",
+    "Unterstützte Supervisor-Engines": "Unterstützte Supervisor-Engines",
+    "Redundanz": "Redundanz",
 }
 
 # Canonical name -> the SkuIntake field that carries it (from BOTH locked schemas: transceiver +

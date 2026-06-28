@@ -937,11 +937,13 @@ class Validator:
                            f"chassis-switch: {forb} must be ABSENT — a modular chassis has no fixed ports "
                            "(ports come from line cards, sold separately)")
         styp = vals.get("Switch-Typ", ""); layer = vals.get("Layer", "")
-        # S.2 (kept): Layer L3 -> Switch-Typ EXACTLY "Managed". A chassis carries no Layer attribute, so
-        # this is silent for FC directors — but kept so an Ethernet chassis that DOES declare L3 is held.
-        if "L3" in layer and styp.strip() != "Managed":
-            self._fail(fname, sku, "Layer↔Switch-Typ", "Switch-Typ=Managed for L3", f"{layer} / {styp}",
-                       "semantic S.2: Layer-3 routing requires a Managed switch")
+        # S.2 (kept): Layer L3 -> Switch-Typ a fully-managed tier. An FC director carries no Layer attribute
+        # (silent); an Ethernet chassis that DOES declare L3 must be either "Managed" OR "Modular-Chassis"
+        # (a modular chassis routes L3 through its supervisor engine — Catalyst 4500-E/6500-E — and is fully
+        # managed, so its dedicated Switch-Typ value is accepted here; a Smart-/Unmanaged tier still fails).
+        if "L3" in layer and styp.strip() not in ("Managed", "Modular-Chassis"):
+            self._fail(fname, sku, "Layer↔Switch-Typ", "Switch-Typ Managed/Modular-Chassis for L3", f"{layer} / {styp}",
+                       "semantic S.2: Layer-3 routing requires a fully-managed switch (Managed or Modular-Chassis)")
         # S.5 (kept): environmental category by operating temperature (same logic as the fixed switches).
         temp_lo, temp_hi = _parse_temp_range(vals.get("Betriebstemperatur", ""))
         is_extended = temp_lo is not None and (temp_lo <= -25 or temp_hi >= 60)
