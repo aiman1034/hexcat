@@ -53,7 +53,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Brand | Count | Status | Note |
 |---|---|---|---|
 | MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
-| **Cisco** | **918/918 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 PUSH 1 (2026-06-28) added 31 Class-B modules (Cat6500/6807 sups+linecards + 6800-X port-cards); 4500-E + Nexus 7000/7700 modules = PUSH 2. Prices Phase-1 provisional |
+| **Cisco** | **961/961 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 PUSH 1 (31: Cat6500/6807 + 6800-X) + PUSH 2B (43: Nexus 7000/7700 sups+fabric+I/O) = **74 Class-B modules** (2026-06-28). PUSH 2A (Catalyst 4500-E modules, ~22) HELD — Cisco never web-published the E-gen module weights (`SPECS_NEEDED_PUSH2.md`). Prices Phase-1 provisional |
 | HPE/Aruba/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
 
 ### Server Memory — NOT IN SCOPE (charter error, corrected 2026-06-14)
@@ -3637,6 +3637,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   missing** (4500-E module catch-all kept for PUSH 2). L6 `gate_completeness` += Cisco_Cat6500_modules 29/29 + Cisco_Cat6800X_modules 2/2.
   Prices Phase-1 provisional (EoL €-class, unanchored). **Awaiting operator's HARD byte-audit of PUSH 1** (flagged: the multi-value emit
   src). PUSH 2 next: Catalyst 4500-E sups/linecards + Nexus 7000/7700 sup/I-O/fabric modules (agents enumerate+ground).
+- **Batch M-1 PUSH 1 CLEARED (operator hard-audit PASS, live `6de6f3c`) + PUSH 2B BUILT — Nexus 7000/7700 Class-B modules (43 SKUs,
+  2026-06-28).** PUSH 2 = same module schema, NO new mechanism. **src-diff EMPTY (content-only — verified `git diff HEAD -- src/`).**
+  3 research agents enumerated+grounded both PUSH-2 families from Cisco OEM datasheets (cisco.com 403 → Wayback / Cisco-PDF mirrors;
+  nothing guessed). **Built `Cisco_Nexus7000_Modules` = 43** (gate ok=True/0/0): **5 Supervisor-Engines** (N7K-SUP1/2/2E, N77-SUP2E/3E —
+  portlose Control-Plane, kein Hardware-Forwarding → no Switching-Kapazität Merkmal), **10 Fabric-Modules** (N7K-C7010/7018-FAB-1,
+  N7K-C7009/7010/7018-FAB-2, N77-C7706/7710/7718-FAB-2, N77-C7706/7710-FAB-3 — portlos, SwK je Steckplatz je Fabric-Modul), **28 I/O
+  linecards** (M1/M2/M3 + F1/F2/F2E/F3/F4). **NEW Modultyp value `Fabric-Module`** (operator pre-approved; free-emit, no src enum — that's
+  why the push is content-only). **SINGLE-SERIES throughout** — agents confirmed NO Nexus I/O module is dual-cert 7000/7700 per datasheet,
+  so the multi-value emit isn't exercised here (it stays proven from PUSH 1). NX-OS / Data-Center / Betriebstemperatur in PROSE, never a
+  Merkmal. S.3 holds on all 28 ported linecards (F4 N77-F430CQ-36 = 30 Ports, the "36" is a Cisco-internal code; M2 SwK = bulletin
+  per-module 240/240/200, datasheet Switch-Fabric-Interface 550/230 logged in VLog). **All 43 weights grounded verbatim** (sups+fabric from
+  datasheets; I/O from the Nexus 7000/7700 HW-Install-Guide Switch-Specifications appendices). Agents corrected 3 non-existent seed PIDs
+  (N77-C7718-FAB-3, N7K-F248XML-25E, N7K-F324FQ-25). **Verify:** suite 444; byte-contract PASS (Beschr 129-162w, Kurz 44-51w, Condition
+  new); `validate_dir` **0 errors across 109 bundles / 1000 SKUs** (prior 957 + 43). Manifest: **Nexus 7000/7700 module catch-all retired →
+  43-SKU built-block; 961/961 built (918 + 43)**; L6 += Cisco_Nexus7000_modules 43/43. **PUSH 2A (Catalyst 4500-E modules, ~22) HELD:**
+  Cisco genuinely never web-published per-module weights for the entire E-generation (agent verified exhaustively across all 7 sup
+  datasheets + install notes + the line-cards datasheet + module install guide). artikelgewicht is a core Main-CSV field → can't ship blank
+  → pinged operator (`SPECS_NEEDED_PUSH2.md`): courier a non-web weight source, or accept (no defensible estimate exists, unlike C6880-X),
+  or hold. 4500-E catch-all deliberately kept in the manifest. Prices Phase-1 provisional. **Awaiting operator hard-audit of PUSH 2B +
+  the 4500-E weight decision.**
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
