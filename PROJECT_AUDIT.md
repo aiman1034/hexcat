@@ -3469,6 +3469,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   modular catch-all reduced 12→4 (remainder = supervisors/I-O/fabric Class B). `coverage_report.md`: **7000 ✅ (4/4), 7700 ✅ (4/4)**.
   **In-scope 93→95; 751→759 built, 84 families fully built, 85 %.** Still open in the modular-chassis class: **Catalyst 6807-XL**
   (1 PID, classic-IOS supervisor-provided, same Sup2T/6T as 6500-E) → a quick M1c (1 fetch + 1 chassis) closes the modular class.
+- **Phase M1c — Catalyst 6807-XL (1 chassis); CONTENT-ONLY; CLOSES the modular-chassis class (2026-06-27).** Anti-duplicate first
+  (unbuilt). **`git diff 575f47d..HEAD -- src/` EMPTY** — reuses the M1a chassis model, third content-only round (after M1b).
+  Full suite **441 passed** (no new tests, no src). `Cisco_6807XL`, single PID **C6807-XL**, k3=`Modularer Switch (Chassis)` →
+  chassis gate, Ebene-2 Switches. Switch-Typ=Modular-Chassis, Layer L3, **Steckplätze** "7 (2 Supervisor + 5 Linecard-Module)",
+  Bauform **10 HE** (existing, reused from 4506-E — no new Wertliste value), SwK **440 Gbit/s pro Steckplatz** (System bis 11,4 /
+  22,8 Tbit/s VSS; Sup6T bis 160 Gbit/s/slot — per-slot, NOT doubled), **Unterstützte Supervisor-Engines** Sup2T/6T (VS-S2T-10G/-XL,
+  C6800-SUP6T/-XL), **Redundanz** Supervisor 1+1 / Lüfter N+1 / Netzteil N+1. **Anwendung = the M1a 6500-E campus-core/aggregation
+  value** (the SIBLING's value — "Campus-/Data-Center-Aggregation und -Core …", grounded to the 6807-XL — NOT the Nexus cousin's bare
+  `Data-Center`). **OS = CLASSIC Cisco IOS** (datasheet: "same Cisco IOS Software … as the Catalyst 6500 Series", supervisor-provided
+  via Sup2T/6T): `Cisco IOS` is grounded/correct here, but wrote **NO `IOS XE` token** and did NOT run the affirmative-IOS-XE
+  invariant (bare chassis). Weight grounded **28,1 kg** (62 lbs Table 2); no port Merkmale, no S.3, Betriebstemperatur (0-40 °C) in
+  prose; Beschreibung 173 words (≤175). Bare chassis; bundles (C6807-XL-S2T/S6T-BUN, C1-*) / supervisors / linecards (C6800-8P..48P,
+  WS-X6*) / service-modules / PSU / fan / DNA + the separate **FIXED** Catalyst 6800-X switches (C68xx-X-LE, C6880-*) all EXCLUDED —
+  verified only C6807-XL banked. EoL → prose, banked. **Gate ok=True / 0 / 0**; byte-contract PASS (1 row, no-BOM Prices, Condition
+  new). Manifest: 1 built-block; the 6500-E/6807 supervisors+linecards catch-all reduced 19→18 (6807-XL removed from it). **In-scope
+  95→96; 759→760 built, 85 families fully built, 85 %.** ✅ **MODULAR-CHASSIS CLASS COMPLETE** — Catalyst 4500-E/6500-E/6807-XL +
+  Nexus 7000/7700 = 19 bare chassis, all on the one validated model. Remaining modular work is only **dormant Class B**
+  (supervisors / line cards / fabric / PSU → hauptkat `Switch-Module & Komponenten`, Phases M2–M4); every excluded PID across
+  M1a/M1b/M1c is already enumerated in those harvests as the Class B backlog.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
