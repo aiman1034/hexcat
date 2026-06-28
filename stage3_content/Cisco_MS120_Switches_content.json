@@ -1,0 +1,1650 @@
+{
+ "MS120-8-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-8-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45, 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-8-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-8-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45, 2× SFP (1G), 20 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "1,07",
+  "versandgewicht": "3,57",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-8-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45, 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS120-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-8-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 8× 1G-RJ45 und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-8-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und 14,88 Mpps Durchsatz und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS120-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "In der Bauform Kompakt-Gehäuse (lüfterlos, geringe Bautiefe) arbeitet der MS120-8-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS120-8-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-8-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-8-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-8-HW verwaltet?",
+    "Der MS120-8-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-8-HW stapeln?",
+    "Nein – der MS120-8-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-8-HW PoE?",
+    "Nein – der MS120-8-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,88 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 8× 1G-RJ45 und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-8-HW",
+    "EoS",
+    "Cisco Meraki MS120-8-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-8-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8-HW",
+    "Switching-Kapazität",
+    "20 Gbit/s / 14,88 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8-HW",
+    "Gewicht",
+    "1,07 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8-HW",
+    "PID",
+    "Ordering-PID MS120-8-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-8LP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-8LP-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45 (PoE), 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-8LP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-8LP-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "1,25",
+  "versandgewicht": "3,75",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-8LP-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS120-8LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-8LP-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 8× 1G-RJ45 (PoE) und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-8LP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und 14,88 Mpps Durchsatz und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS120-8LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "In der Bauform Kompakt-Gehäuse (lüfterlos, geringe Bautiefe) arbeitet der MS120-8LP-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS120-8LP-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-8LP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-8LP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-8LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-8LP-HW verwaltet?",
+    "Der MS120-8LP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-8LP-HW stapeln?",
+    "Nein – der MS120-8LP-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-8LP-HW PoE?",
+    "Ja – der MS120-8LP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 67 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,88 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 8× 1G-RJ45 (PoE) und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-8LP-HW",
+    "EoS",
+    "Cisco Meraki MS120-8LP-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8LP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-8LP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8LP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8LP-HW",
+    "Switching-Kapazität",
+    "20 Gbit/s / 14,88 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8LP-HW",
+    "Gewicht",
+    "1,25 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8LP-HW",
+    "PID",
+    "Ordering-PID MS120-8LP-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-8FP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-8FP-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45 (PoE), 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-8FP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-8FP-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "1,55",
+  "versandgewicht": "4,05",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-8FP-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS120-8FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-8FP-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 8× 1G-RJ45 (PoE) und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-8FP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und 14,88 Mpps Durchsatz und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS120-8FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "In der Bauform Kompakt-Gehäuse (lüfterlos, geringe Bautiefe) arbeitet der MS120-8FP-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS120-8FP-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-8FP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-8FP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-8FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-8FP-HW verwaltet?",
+    "Der MS120-8FP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-8FP-HW stapeln?",
+    "Nein – der MS120-8FP-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-8FP-HW PoE?",
+    "Ja – der MS120-8FP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 124 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "14,88 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 8× 1G-RJ45 (PoE) und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-8FP-HW",
+    "EoS",
+    "Cisco Meraki MS120-8FP-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8FP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-8FP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8FP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8FP-HW",
+    "Switching-Kapazität",
+    "20 Gbit/s / 14,88 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8FP-HW",
+    "Gewicht",
+    "1,55 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-8FP-HW",
+    "PID",
+    "Ordering-PID MS120-8FP-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-24-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-24-HW cloud-gemanagter Layer-2-Access-Switch (24× 1G-RJ45, 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-24-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-24-HW: cloud-gemanagter L2-Switch, 24× 1G-RJ45, 4× SFP (1G), 56 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,67",
+  "versandgewicht": "6,17",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-24-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 24× 1G-RJ45, 4× SFP (1G), 56 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS120-24-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-24-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 24× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-24-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 56 Gbit/s Switching-Kapazität und 41,67 Mpps Durchsatz und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS120-24-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS120-24-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS120-24-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-24-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-24-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-24-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-24-HW verwaltet?",
+    "Der MS120-24-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-24-HW stapeln?",
+    "Nein – der MS120-24-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-24-HW PoE?",
+    "Nein – der MS120-24-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,67 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 24× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-24-HW",
+    "EoS",
+    "Cisco Meraki MS120-24-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-24-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24-HW",
+    "Switching-Kapazität",
+    "56 Gbit/s / 41,67 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24-HW",
+    "Gewicht",
+    "3,67 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24-HW",
+    "PID",
+    "Ordering-PID MS120-24-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-24P-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-24P-HW cloud-gemanagter Layer-2-Access-Switch (24× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-24P-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-24P-HW: cloud-gemanagter L2-Switch, 24× 1G-RJ45 (PoE), 4× SFP (1G), 56 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "4,20",
+  "versandgewicht": "6,70",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-24P-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 24× 1G-RJ45 (PoE), 4× SFP (1G), 56 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS120-24P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-24P-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 24× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-24P-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 56 Gbit/s Switching-Kapazität und 41,67 Mpps Durchsatz und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS120-24P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS120-24P-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS120-24P-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-24P-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-24P-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-24P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-24P-HW verwaltet?",
+    "Der MS120-24P-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-24P-HW stapeln?",
+    "Nein – der MS120-24P-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-24P-HW PoE?",
+    "Ja – der MS120-24P-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,67 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 24× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-24P-HW",
+    "EoS",
+    "Cisco Meraki MS120-24P-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24P-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-24P-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24P-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24P-HW",
+    "Switching-Kapazität",
+    "56 Gbit/s / 41,67 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24P-HW",
+    "Gewicht",
+    "4,20 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-24P-HW",
+    "PID",
+    "Ordering-PID MS120-24P-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-48-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-48-HW cloud-gemanagter Layer-2-Access-Switch (48× 1G-RJ45, 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-48-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-48-HW: cloud-gemanagter L2-Switch, 48× 1G-RJ45, 4× SFP (1G), 104 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "4,06",
+  "versandgewicht": "6,56",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-48-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 48× 1G-RJ45, 4× SFP (1G), 104 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS120-48-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-48-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 48× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-48-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS120-48-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS120-48-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS120-48-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-48-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-48-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-48-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-48-HW verwaltet?",
+    "Der MS120-48-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-48-HW stapeln?",
+    "Nein – der MS120-48-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-48-HW PoE?",
+    "Nein – der MS120-48-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 48× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-48-HW",
+    "EoS",
+    "Cisco Meraki MS120-48-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-48-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / 77,38 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48-HW",
+    "Gewicht",
+    "4,06 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48-HW",
+    "PID",
+    "Ordering-PID MS120-48-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-48LP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-48LP-HW cloud-gemanagter Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-48LP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-48LP-HW: cloud-gemanagter L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,70",
+  "versandgewicht": "8,20",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-48LP-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS120-48LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-48LP-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-48LP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS120-48LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS120-48LP-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS120-48LP-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-48LP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-48LP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-48LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-48LP-HW verwaltet?",
+    "Der MS120-48LP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-48LP-HW stapeln?",
+    "Nein – der MS120-48LP-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-48LP-HW PoE?",
+    "Ja – der MS120-48LP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-48LP-HW",
+    "EoS",
+    "Cisco Meraki MS120-48LP-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48LP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-48LP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48LP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48LP-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / 77,38 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48LP-HW",
+    "Gewicht",
+    "5,70 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48LP-HW",
+    "PID",
+    "Ordering-PID MS120-48LP-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS120-48FP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS120-48FP-HW cloud-gemanagter Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS120-48FP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS120-48FP-HW: cloud-gemanagter L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,70",
+  "versandgewicht": "8,20",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS120-48FP-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS120-48FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS120-48FP-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS120-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS120-48FP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS120-48FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS120-48FP-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS120-48FP-HW ist abgekündigt (End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150)); als ungebrauchte Original-Hardware bleibt der MS120-48FP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS120-48FP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS120-48FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS120-48FP-HW verwaltet?",
+    "Der MS120-48FP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS120-48FP-HW stapeln?",
+    "Nein – der MS120-48FP-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS120-48FP-HW PoE?",
+    "Ja – der MS120-48FP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Netzteil modellabhängig (intern bzw. externes Steckernetzteil bei den 8-Port-Modellen)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS120-48FP-HW",
+    "EoS",
+    "Cisco Meraki MS120-48FP-HW – End-of-Sale (angekündigt 28.03.2024, letzte Bestellung 28.03.2025; Nachfolger Meraki MS130/MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48FP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS120-48FP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48FP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48FP-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / 77,38 Mpps: verbatim Meraki-MS120-Datenblatt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48FP-HW",
+    "Gewicht",
+    "5,70 kg: Meraki-MS120-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ],
+   [
+    "MS120-48FP-HW",
+    "PID",
+    "Ordering-PID MS120-48FP-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS120_Overview_and_Specifications"
+   ]
+  ]
+ }
+}

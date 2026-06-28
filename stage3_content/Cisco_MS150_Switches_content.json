@@ -1,0 +1,2474 @@
+{
+ "MS150-24T-4G-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-24T-4G-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45, 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS150-24T-4G-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-24T-4G-HW: cloud-gemanagter stapelbarer L2-Switch, 24× 1G-RJ45, 4× SFP (1G), 56 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,45",
+  "versandgewicht": "5,95",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-24T-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45, 4× SFP (1G), 56 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS150-24T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-24T-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 24× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-24T-4G-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 56 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS150-24T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-24T-4G-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-24T-4G-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-24T-4G-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-24T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-24T-4G-HW verwaltet?",
+    "Der MS150-24T-4G-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-24T-4G-HW stapeln?",
+    "Ja – der MS150-24T-4G-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-24T-4G-HW PoE?",
+    "Nein – der MS150-24T-4G-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 24× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-24T-4G-HW",
+    "Status",
+    "Cisco Meraki MS150-24T-4G-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4G-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-24T-4G-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4G-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4G-HW",
+    "Switching-Kapazität",
+    "56 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4G-HW",
+    "Gewicht",
+    "3,45 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4G-HW",
+    "PID",
+    "Ordering-PID MS150-24T-4G-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-24P-4G-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-24P-4G-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS150-24P-4G-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-24P-4G-HW: cloud-gemanagter stapelbarer L2-Switch, 24× 1G-RJ45 (PoE), 4× SFP (1G), 56 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,60",
+  "versandgewicht": "6,10",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-24P-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45 (PoE), 4× SFP (1G), 56 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-24P-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-24P-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 24× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-24P-4G-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 56 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-24P-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-24P-4G-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-24P-4G-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-24P-4G-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-24P-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-24P-4G-HW verwaltet?",
+    "Der MS150-24P-4G-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-24P-4G-HW stapeln?",
+    "Ja – der MS150-24P-4G-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-24P-4G-HW PoE?",
+    "Ja – der MS150-24P-4G-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "56 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 24× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-24P-4G-HW",
+    "Status",
+    "Cisco Meraki MS150-24P-4G-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4G-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-24P-4G-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4G-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4G-HW",
+    "Switching-Kapazität",
+    "56 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4G-HW",
+    "Gewicht",
+    "3,60 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4G-HW",
+    "PID",
+    "Ordering-PID MS150-24P-4G-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-24T-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-24T-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45, 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-24T-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-24T-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 24× 1G-RJ45, 4× SFP+ (10G), 128 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,45",
+  "versandgewicht": "5,95",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-24T-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45, 4× SFP+ (10G), 128 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS150-24T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-24T-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 24× 1G-RJ45 und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-24T-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 128 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS150-24T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-24T-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-24T-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-24T-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-24T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-24T-4X-HW verwaltet?",
+    "Der MS150-24T-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-24T-4X-HW stapeln?",
+    "Ja – der MS150-24T-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-24T-4X-HW PoE?",
+    "Nein – der MS150-24T-4X-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 24× 1G-RJ45 und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-24T-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-24T-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-24T-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4X-HW",
+    "Switching-Kapazität",
+    "128 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4X-HW",
+    "Gewicht",
+    "3,45 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24T-4X-HW",
+    "PID",
+    "Ordering-PID MS150-24T-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-24P-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-24P-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45 (PoE), 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-24P-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-24P-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 24× 1G-RJ45 (PoE), 4× SFP+ (10G), 128 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,60",
+  "versandgewicht": "6,10",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-24P-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45 (PoE), 4× SFP+ (10G), 128 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-24P-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-24P-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 24× 1G-RJ45 (PoE) und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-24P-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 128 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-24P-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-24P-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-24P-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-24P-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-24P-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-24P-4X-HW verwaltet?",
+    "Der MS150-24P-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-24P-4X-HW stapeln?",
+    "Ja – der MS150-24P-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-24P-4X-HW PoE?",
+    "Ja – der MS150-24P-4X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 24× 1G-RJ45 (PoE) und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-24P-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-24P-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-24P-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4X-HW",
+    "Switching-Kapazität",
+    "128 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4X-HW",
+    "Gewicht",
+    "3,60 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24P-4X-HW",
+    "PID",
+    "Ordering-PID MS150-24P-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-24MP-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-24MP-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-24MP-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-24MP-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G), 192 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,50",
+  "versandgewicht": "8,00",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-24MP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G), 192 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-24MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-24MP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE) und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-24MP-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 192 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-24MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-24MP-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-24MP-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-24MP-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-24MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-24MP-4X-HW verwaltet?",
+    "Der MS150-24MP-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-24MP-4X-HW stapeln?",
+    "Ja – der MS150-24MP-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-24MP-4X-HW PoE?",
+    "Ja – der MS150-24MP-4X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + mGig (bis 5G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 60 W/Port an Multigigabit-Ports), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "192 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 16× 1G-RJ45 + 8× mGig-RJ45 (bis 5G) (PoE) und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-24MP-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-24MP-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24MP-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-24MP-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24MP-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24MP-4X-HW",
+    "Switching-Kapazität",
+    "192 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24MP-4X-HW",
+    "Gewicht",
+    "5,50 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-24MP-4X-HW",
+    "PID",
+    "Ordering-PID MS150-24MP-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48T-4G-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48T-4G-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45, 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS150-48T-4G-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48T-4G-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45, 4× SFP (1G), 104 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,60",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48T-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45, 4× SFP (1G), 104 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS150-48T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48T-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48T-4G-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS150-48T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48T-4G-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48T-4G-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48T-4G-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48T-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48T-4G-HW verwaltet?",
+    "Der MS150-48T-4G-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48T-4G-HW stapeln?",
+    "Ja – der MS150-48T-4G-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48T-4G-HW PoE?",
+    "Nein – der MS150-48T-4G-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48T-4G-HW",
+    "Status",
+    "Cisco Meraki MS150-48T-4G-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4G-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48T-4G-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4G-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4G-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4G-HW",
+    "Gewicht",
+    "5,10 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4G-HW",
+    "PID",
+    "Ordering-PID MS150-48T-4G-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48LP-4G-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48LP-4G-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS150-48LP-4G-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48LP-4G-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48LP-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-48LP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48LP-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48LP-4G-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-48LP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48LP-4G-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48LP-4G-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48LP-4G-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48LP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48LP-4G-HW verwaltet?",
+    "Der MS150-48LP-4G-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48LP-4G-HW stapeln?",
+    "Ja – der MS150-48LP-4G-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48LP-4G-HW PoE?",
+    "Ja – der MS150-48LP-4G-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48LP-4G-HW",
+    "Status",
+    "Cisco Meraki MS150-48LP-4G-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4G-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48LP-4G-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4G-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4G-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4G-HW",
+    "Gewicht",
+    "5,40 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4G-HW",
+    "PID",
+    "Ordering-PID MS150-48LP-4G-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48FP-4G-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48FP-4G-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS150-48FP-4G-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48FP-4G-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48FP-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 104 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-48FP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48FP-4G-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48FP-4G-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 104 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-48FP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48FP-4G-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48FP-4G-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48FP-4G-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48FP-4G-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48FP-4G-HW verwaltet?",
+    "Der MS150-48FP-4G-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48FP-4G-HW stapeln?",
+    "Ja – der MS150-48FP-4G-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48FP-4G-HW PoE?",
+    "Ja – der MS150-48FP-4G-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "104 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48FP-4G-HW",
+    "Status",
+    "Cisco Meraki MS150-48FP-4G-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4G-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48FP-4G-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4G-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4G-HW",
+    "Switching-Kapazität",
+    "104 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4G-HW",
+    "Gewicht",
+    "5,40 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4G-HW",
+    "PID",
+    "Ordering-PID MS150-48FP-4G-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48T-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48T-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45, 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-48T-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48T-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45, 4× SFP+ (10G), 176 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,60",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48T-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45, 4× SFP+ (10G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS150-48T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48T-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48T-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS150-48T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48T-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48T-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48T-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48T-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48T-4X-HW verwaltet?",
+    "Der MS150-48T-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48T-4X-HW stapeln?",
+    "Ja – der MS150-48T-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48T-4X-HW PoE?",
+    "Nein – der MS150-48T-4X-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48T-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-48T-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48T-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4X-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4X-HW",
+    "Gewicht",
+    "5,10 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48T-4X-HW",
+    "PID",
+    "Ordering-PID MS150-48T-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48LP-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48LP-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-48LP-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48LP-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP+ (10G), 176 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48LP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP+ (10G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-48LP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48LP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48LP-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-48LP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48LP-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48LP-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48LP-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48LP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48LP-4X-HW verwaltet?",
+    "Der MS150-48LP-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48LP-4X-HW stapeln?",
+    "Ja – der MS150-48LP-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48LP-4X-HW PoE?",
+    "Ja – der MS150-48LP-4X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 (PoE) und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48LP-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-48LP-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48LP-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4X-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4X-HW",
+    "Gewicht",
+    "5,40 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48LP-4X-HW",
+    "PID",
+    "Ordering-PID MS150-48LP-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48FP-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48FP-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-48FP-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48FP-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 48× 1G-RJ45 (PoE), 4× SFP+ (10G), 176 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48FP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP+ (10G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-48FP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48FP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48FP-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-48FP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48FP-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48FP-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48FP-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48FP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48FP-4X-HW verwaltet?",
+    "Der MS150-48FP-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48FP-4X-HW stapeln?",
+    "Ja – der MS150-48FP-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48FP-4X-HW PoE?",
+    "Ja – der MS150-48FP-4X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 30 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 48× 1G-RJ45 (PoE) und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48FP-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-48FP-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48FP-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4X-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4X-HW",
+    "Gewicht",
+    "5,40 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48FP-4X-HW",
+    "PID",
+    "Ordering-PID MS150-48FP-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ },
+ "MS150-48MP-4X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS150-48MP-4X-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS150-48MP-4X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS150-48MP-4X-HW: cloud-gemanagter stapelbarer L2-Switch, 32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G), 304 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "5,71",
+  "versandgewicht": "8,21",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS150-48MP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE), 4× SFP+ (10G), 304 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb des MS150-48MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS150-48MP-4X-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS150-Serie – ein Gerät mit 32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE) und 4× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS150-48MP-4X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 304 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb des MS150-48MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS150-48MP-4X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS150-48MP-4X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS150-48MP-4X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS150-48MP-4X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS150-48MP-4X-HW verwaltet?",
+    "Der MS150-48MP-4X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS150-48MP-4X-HW stapeln?",
+    "Ja – der MS150-48MP-4X-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS150-48MP-4X-HW PoE?",
+    "Ja – der MS150-48MP-4X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + mGig (bis 5G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3bt, bis 60 W/Port an Multigigabit-Ports), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "304 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-/Multigigabit-Ethernet, Layer 2); stapelbarer Switch mit 32× 1G-RJ45 + 16× mGig-RJ45 (bis 5G) (PoE) und 4× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS150-48MP-4X-HW",
+    "Status",
+    "Cisco Meraki MS150-48MP-4X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48MP-4X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS150-48MP-4X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48MP-4X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48MP-4X-HW",
+    "Switching-Kapazität",
+    "304 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS150-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48MP-4X-HW",
+    "Gewicht",
+    "5,71 kg: Meraki-MS150-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ],
+   [
+    "MS150-48MP-4X-HW",
+    "PID",
+    "Ordering-PID MS150-48MP-4X-HW verbatim (Hardware-SKU, -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-/Netzwerkmodule, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS150_Datasheet"
+   ]
+  ]
+ }
+}

@@ -3574,6 +3574,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (~25 deferred). **In-scope 100→106; 819→844 built, 96 families fully built; coverage 89 %→87 % (the dip is HONEST — the Meraki lane
   is newly in-scope with a ~25-SKU deferred backlog: denominator +50, numerator +25).** Next: deferred Meraki series; then Nexus 9800
   + Nexus 3000/5000 remnants; then the Class-B module lane (`Switch-Module & Komponenten`).
+- **Cisco Switches Batch 4 — Cisco Meraki MS REMAINDER: 9 families → 43 -HW SKUs; COMPLETES the MS rack/aggregation lane (2026-06-28);
+  content+config only.** Anti-duplicate first (all unbuilt). No harvest — grounded via THREE parallel research agents (MS120/125;
+  MS130/150; MS410/425/450/MS390) against the live meraki.cisco.com datasheets. Same cloud-managed model as Batch 3 (no "nicht IOS-XE";
+  "Cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS)"; Switch-Typ=Managed; Meraki-Lizenz line every SKU; Hersteller=Cisco via
+  the Batch-3 `"Cisco Meraki"` vendor entry). **`git diff -- src/` EMPTY; suite 441 passed.** Families: `Cisco_MS120` (8, L2 entry),
+  `MS125` (5, L2), `MS130` (6, L2 — **ACTIVE/not-EoS**), `MS130R` (1, L2 ruggedized DIN/IP30, ACTIVE), `MS150` (12, L2+static, ACTIVE),
+  `MS410`/`MS425`/`MS450` (2/2/1, L3 **all-fiber** aggregation), `MS390` (6, L3 **Catalyst-9300-based**). **New per-SKU dimensions
+  handled within a series:** Bauform (compact `Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)` for MS120-8, industrial
+  `Kompakt-Industriegehäuse (DIN-Schienenmontage, lüfterlos)` for MS130R — BOTH existing values reused, no new Wertliste/no STOP),
+  Kühlung (fanless on non-PoE/compact vs fans on PoE), Stacking (**VIRTUAL-only on MS120/125/130 → Merkmal Nein**, vs physical Ja on
+  MS150 80G / MS410·425 160G / MS450 400G / MS390 480G StackPower), SwK (per-SKU). **Active-vs-EoS is per-series** (MS130/130R/150/450
+  active → "aktuelles, lieferbares Modell", no EoS flag; the rest EoS → flagged, banked). **All-fiber L3 (MS410/425/450):** SFP/QSFP =
+  the access ports (Portanzahl), with SEPARATE dedicated uplinks (10G/40G/100G) in Uplink-Ports, no PoE. **MS390:** modular uplink in
+  Port-Konfig ("+ modularer Uplink-Slot", network module separate/excluded), PoE+/UPOE, Mpps published (154,76/190,48). Durchsatz =
+  Mpps where published (MS120/125 14,88-130; MS390) else **Line-Rate** (MS130/130R/150/410/425/450). PoE std grounded per-series:
+  MS120/125 = 802.3at; MS130/130R/150 = **802.3bt** (60 W on mGig); MS390 = 802.3at/UPOE. mGig speeds grounded (MS130-X = 2,5G;
+  MS150-MP = 5G; not 10G). Two datasheet self-conflicts logged in the VLog (MS410-16 SwK 52-vs-72; MS150-48MP-4X 304-vs-192).
+  **Two fixes caught:** the required license line tripped **B.8** on the ≥8-SKU MS120/MS150 (identical sentence) → PID-welded it; and a
+  VLog note said "Genuine new-sealed" → **§5** `\bsealed\b` → changed to "ungebrauchte Original-Hardware". EXCLUDED (verified none
+  banked): MA-* accessories incl. MS390 network modules (MA-MOD-*), LIC-MS* licenses. All 9 bundles gate ok=True / 0 / 0; byte-contract
+  PASS (Condition new, Prices ungrouped no-BOM, Beschreibung ≤175); Hersteller=Cisco verified. Manifest: 9 built-blocks; the Batch-3
+  "remaining Meraki" catch-all collapsed 25→5 (only the MS130 DESKTOP models -8/-8P/-8P-I/-8X/-12X deferred — beyond the explicit rack
+  candidate). **In-scope 106→115; 844→887 built, 105 families fully built; coverage 87 %→89 %.** **MS lane essentially COMPLETE** (B3
+  25 + B4 43 = 68 -HW). Next: the deferred MS130 desktop (quick follow-up); then Nexus 9800 + 3000/5000 remnants; then the Class-B
+  module lane.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
