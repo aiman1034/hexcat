@@ -53,7 +53,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Brand | Count | Status | Note |
 |---|---|---|---|
 | MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
-| **Cisco** | **961/961 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 PUSH 1 (31: Cat6500/6807 + 6800-X) + PUSH 2B (43: Nexus 7000/7700 sups+fabric+I/O) = **74 Class-B modules** (2026-06-28). PUSH 2A (Catalyst 4500-E modules, ~22) HELD — Cisco never web-published the E-gen module weights (`SPECS_NEEDED_PUSH2.md`). Prices Phase-1 provisional |
+| **Cisco** | **983/983 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 modules **COMPLETE — 96 Class-B SKUs**: PUSH 1 (31: Cat6500/6807 + 6800-X) + PUSH 2B (43: Nexus 7000/7700) + PUSH 2A (22: Catalyst 4500-E). PUSH 2A weights = operator-decided scoped exception (22 conservative ZU_VERIFIZIEREN placeholders — Cisco never published E-gen module weights, no supplier feed). Prices Phase-1 provisional |
 | HPE/Aruba/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
 
 ### Server Memory — NOT IN SCOPE (charter error, corrected 2026-06-14)
@@ -3677,6 +3677,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   brand now has clean Standard/Typ.** (2) **transceiver bundles are STALE vs the §5-hardened consolidated `gate()`** — Cisco (536) + Juniper (188 pre-fix) Mains
   still carry `Neuware`/`versiegelt` + L4/L5/L6 flags (the §5 scrub hit switches, not the earlier transceiver emits); a separate re-scrub
   task. `juniper_author.py` line-111 latent bug left as-is (content JSON is the live source; re-running the author would wipe backfills).
+- **Batch M-1 PUSH 2A BUILT — Catalyst 4500-E Class-B modules (22 SKUs); CLOSES the Batch M-1 module lane (96 SKUs total).** Content-only
+  (src-diff EMPTY). Bundle `Cisco_Cat4500E_Modules` (gate ok=True/0/0): **7 supervisor-engines** (WS-X45-SUP6-E/6L-E/7-E/7L-E/8-E/8L-E/9-E —
+  SwK per-slot + system, Uplink-Ports) + **15 linecards** (WS-X4748-12X48U+E/-UPOE+E/-RJ45V+E/-RJ45-E/-SFP-E, WS-X4712-SFP+E/-SFP-E,
+  WS-X4724-SFP-E, WS-X4624/4612-SFP-E, WS-X4640-CSFP-E, WS-X4648-RJ45-E/-RJ45V-E/-RJ45V+E, WS-X4606-X2-E). Modultyp Supervisor-Engine/
+  Linecard, Kompatible Serie Catalyst 4500-E (single-series). **PoE Merkmal on the 5 UPOE/PoE+ cards** (reused, gate-allowed, S.1 holds via
+  PoE-marked Port-Konfiguration). The 3 `(oder …)` alternative port-configs (4712-SFP+E/4640-CSFP-E/4606-X2-E) moved to prose so S.3 holds
+  (the WS-X6904 lesson). TAA `++` linecards EXCLUDED (only `++=` spares evidenced — flag-don't-fabricate); classic non-E 4500 linecards out
+  of scope (branded "Catalyst 4500" not "4500-E"). **WEIGHTS — explicit operator-decided SCOPED EXCEPTION to nothing-guessed (2026-06-28),
+  these 22 only:** the auditor confirmed Cisco never web-published per-module weights for the entire E-generation (Module Install Guide
+  App-A = pinouts/environmental/power; chassis guides = chassis weight only; Sup9-E datasheet has no weight row) AND no supplier/warehouse
+  feed exists (BrokerBin off the table). Preferred path = EMPTY Artikel/Versandgewicht — **but EMPTY fails the gate** (emit defaults an empty
+  weight to the 0,05 optics-placeholder, tripping the L3+L5 switch-weight-floor), so per the operator's documented fallback the 22 ship
+  **conservative ZU_VERIFIZIEREN PLACEHOLDERS** (Sup 7,00 / 48-port 6,00 / smaller 5,00 kg; Versand +2,5; over-estimated so shipping is never
+  under-quoted; NEVER measured/sourced, NEVER a subtracted packaging allowance; VLog: "ZU_VERIFIZIEREN — kein OEM-/Lieferanten-Wert,
+  Nachtrag bei physischer Messung"). **Verify:** suite 444; byte-contract PASS (Beschr 137-157w, Kurz, Condition new); `validate_dir` **0
+  errors across 110 bundles / 1022 SKUs**. Manifest: **4500-E catch-all retired → 22-SKU built-block; 983/983 built (961 + 22)**; L6 +=
+  Cisco_Cat4500E_modules 22. **Batch M-1 module lane now COMPLETE: 96 Class-B SKUs across 4 ecosystems** (6500/6807 29 + 6800-X 2 + Nexus
+  7000/7700 43 + 4500-E 22). Physical-measurement weight follow-up is the only open item on the 22.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

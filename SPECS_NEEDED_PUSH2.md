@@ -17,20 +17,23 @@ each card's Verification_Log. Say the word if you prefer the datasheet represent
 
 ---
 
-## PUSH 2A — Catalyst 4500-E modules (~22 PIDs) — WEIGHTS BLOCKED (decision needed)
+## PUSH 2A — Catalyst 4500-E modules (22 PIDs) — RESOLVED & SHIPPED (scoped weight exception)
 
-**The blocker is a genuine OEM-source gap, not an unfetched courier.** A dedicated sub-agent
-exhaustively checked, via Wayback + Cisco PDF mirrors:
-- all 7 supervisor datasheets + their Installation & Configuration Notes (b-sup8e-note, b-sup8le-note,
-  b-sup9e-note, 78_18337 Sup6-E, OL_19334 Sup6L-E),
-- the Catalyst 4500 Series Line Cards Data Sheet (product_data_sheet0900aecd802109ea),
-- the Catalyst 4500-E chassis + Module Installation Guide spec appendices.
+**Final operator decision (2026-06-28):** the 4500-E per-module weights are **NOT OEM-published anywhere**
+(auditor confirmed exhaustively — Module Install Guide App-A = pinouts/environmental/power, chassis guides
+carry chassis weight only, Sup9-E datasheet has no weight row) AND **no supplier/warehouse feed exists**
+(BrokerBin off the table; the earlier "in the install guides / IP-blocked" framing is withdrawn). The 22
+legacy EoS SKUs were deliberately **closed WITHOUT grounded weights** — an explicit, documented exception
+to the nothing-guessed bar, scoped to these 22 only.
 
-**Cisco prints NO per-module weight (lb or kg) for ANY of these ~22 PIDs.** The E-generation moved
-physical specs into the datasheets, and those list dimensions/temp/humidity/altitude/power/MTBF but
-omit weight. The classic Module Installation Guide has only one generic 4.8 lb / 2.2 kg figure for
-pre-E modules (does not apply). Reseller "weights" exist but are inconsistent shipping weights →
-disallowed per the guardrails.
+**Outcome:** EMPTY weights were tried first (preferred) but **fail the gate** (the emit defaults an empty
+weight to the 0,05 optics-placeholder, tripping the switch-weight-floor). So per the operator's fallback,
+the 22 shipped with **conservative ZU_VERIFIZIEREN placeholders** (Sup 7,00 / 48-port 6,00 / smaller 5,00
+kg; over-estimated so shipping is never under-quoted; NOT measured, NOT sourced; VLog flagged). Only open
+item: a physical-measurement weight follow-up. Built + pushed; see PROJECT_AUDIT §9.
+
+---
+### (historical) the 22 PIDs that needed a weight:
 
 ### The 22 PIDs needing a weight (artikelgewicht is a core Main-CSV field — can't ship blank):
 **Supervisors (7):** WS-X45-SUP6-E, WS-X45-SUP6L-E, WS-X45-SUP7-E, WS-X45-SUP7L-E, WS-X45-SUP8-E,
