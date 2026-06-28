@@ -5,7 +5,7 @@ WS-C4503-E,,Switch,Switching-Kapazität,48 Gbit/s pro Linecard-Steckplatz (mit S
 WS-C4503-E,,Switch,Bauform,19-Zoll-Rackmontage (7 HE),10,Wertliste,Attribut
 WS-C4503-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C4503-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C4503-E,,Switch,Anwendung,"Campus-Aggregation/Core – modulares Catalyst-4500-E-Chassis (3 Steckplätze (2 für Linecards, 1 für die Supervisor-Engine)); 48 Gbit/s pro Linecard-Steckplatz; Supervisor-Engines Sup6-E/Sup7-E/Sup8-E/Sup9-E + Catalyst-4500-E-Linecards (separat); Layer 2/3 und Routing über die Module; Redundanz: Netzteil (1+1), Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüftereinschub; 19-Zoll-Rack (7 HE); Betrieb 0 bis 40 °C; Betriebssystem je Supervisor (Sup6-E/7-E: Cisco IOS, Sup8-E/9-E: IOS XE); EoL",15,Wertliste,Attribut
+WS-C4503-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C4503-E,,Switch,Steckplätze,3,16,Wertliste,Attribut
 WS-C4503-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup6-E, Sup7-E, Sup8-E und Sup9-E",17,Wertliste,Attribut
 WS-C4503-E,,Switch,Redundanz,Netzteil (1+1) und Lüftereinschub,18,Wertliste,Attribut
@@ -15,7 +15,7 @@ WS-C4506-E,,Switch,Switching-Kapazität,48 Gbit/s pro Linecard-Steckplatz (mit S
 WS-C4506-E,,Switch,Bauform,19-Zoll-Rackmontage (10 HE),10,Wertliste,Attribut
 WS-C4506-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C4506-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C4506-E,,Switch,Anwendung,"Campus-Aggregation/Core – modulares Catalyst-4500-E-Chassis (6 Steckplätze (5 für Linecards, 1 für die Supervisor-Engine)); 48 Gbit/s pro Linecard-Steckplatz; Supervisor-Engines Sup6-E/Sup7-E/Sup8-E/Sup9-E + Catalyst-4500-E-Linecards (separat); Layer 2/3 und Routing über die Module; Redundanz: Netzteil (1+1), Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüftereinschub; 19-Zoll-Rack (10 HE); Betrieb 0 bis 40 °C; Betriebssystem je Supervisor (Sup6-E/7-E: Cisco IOS, Sup8-E/9-E: IOS XE); EoL",15,Wertliste,Attribut
+WS-C4506-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C4506-E,,Switch,Steckplätze,6,16,Wertliste,Attribut
 WS-C4506-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup6-E, Sup7-E, Sup8-E und Sup9-E",17,Wertliste,Attribut
 WS-C4506-E,,Switch,Redundanz,Netzteil (1+1) und Lüftereinschub,18,Wertliste,Attribut
@@ -25,7 +25,7 @@ WS-C4507R+E,,Switch,Switching-Kapazität,48 Gbit/s pro Linecard-Steckplatz (mit 
 WS-C4507R+E,,Switch,Bauform,19-Zoll-Rackmontage (11 HE),10,Wertliste,Attribut
 WS-C4507R+E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C4507R+E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C4507R+E,,Switch,Anwendung,"Campus-Aggregation/Core – modulares Catalyst-4500-E-Chassis (7 Steckplätze (5 für Linecards, 2 für redundante Supervisor-Engines)); 48 Gbit/s pro Linecard-Steckplatz; Supervisor-Engines Sup6-E/Sup7-E/Sup8-E/Sup9-E + Catalyst-4500-E-Linecards (separat); Layer 2/3 und Routing über die Module; Redundanz: Supervisor (1+1), Netzteil (1+1), Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüftereinschub; 19-Zoll-Rack (11 HE); Betrieb 0 bis 40 °C; Betriebssystem je Supervisor (Sup6-E/7-E: Cisco IOS, Sup8-E/9-E: IOS XE); EoL",15,Wertliste,Attribut
+WS-C4507R+E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C4507R+E,,Switch,Steckplätze,7,16,Wertliste,Attribut
 WS-C4507R+E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup6-E, Sup7-E, Sup8-E und Sup9-E",17,Wertliste,Attribut
 WS-C4507R+E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -35,7 +35,7 @@ WS-C4510R+E,,Switch,Switching-Kapazität,48 Gbit/s pro Linecard-Steckplatz (mit 
 WS-C4510R+E,,Switch,Bauform,19-Zoll-Rackmontage (14 HE),10,Wertliste,Attribut
 WS-C4510R+E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C4510R+E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C4510R+E,,Switch,Anwendung,"Campus-Aggregation/Core – modulares Catalyst-4500-E-Chassis (10 Steckplätze (8 für Linecards, 2 für redundante Supervisor-Engines)); 48 Gbit/s pro Linecard-Steckplatz; Supervisor-Engines Sup6-E/Sup7-E/Sup8-E/Sup9-E + Catalyst-4500-E-Linecards (separat); Layer 2/3 und Routing über die Module; Redundanz: Supervisor (1+1), Netzteil (1+1), Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüftereinschub; 19-Zoll-Rack (14 HE); Betrieb 0 bis 40 °C; Betriebssystem je Supervisor (Sup6-E/7-E: Cisco IOS, Sup8-E/9-E: IOS XE); EoL",15,Wertliste,Attribut
+WS-C4510R+E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C4510R+E,,Switch,Steckplätze,10,16,Wertliste,Attribut
 WS-C4510R+E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup6-E, Sup7-E, Sup8-E und Sup9-E",17,Wertliste,Attribut
 WS-C4510R+E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut

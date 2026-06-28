@@ -3488,6 +3488,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Nexus 7000/7700 = 19 bare chassis, all on the one validated model. Remaining modular work is only **dormant Class B**
   (supervisors / line cards / fabric / PSU → hauptkat `Switch-Module & Komponenten`, Phases M2–M4); every excluded PID across
   M1a/M1b/M1c is already enumerated in those harvests as the Class B backlog.
+- **Anwendung normalization scrub — 11 Catalyst modular chassis (2026-06-28); CONTENT-ONLY.** Finding: the M1a/M1c Catalyst chassis
+  (Cisco_4500E ×4, Cisco_6500E ×6, Cisco_6807XL ×1) carried `Anwendung` as a 450–530-char spec RECAP, while every other chassis uses
+  a short filterable token (C9610=`Campus-Netzwerk`; Nexus 9500/7000/7700=`Data-Center`; MDS 9700=SAN/Storage). `Anwendung` is a
+  faceted-search Merkmal → a recap defeats the facet. Normalized all 11 to **`Campus-Netzwerk`** (the EXISTING value C9610 uses — no
+  new Wertliste value). **Pre-flight per operator rule:** verified the recap's substance (slots/SwK/supervisors/redundancy/PSU/HE/
+  temp/EoL) was ALREADY in each chassis's Beschreibung — only the **OS** line was recap-only, so a grounded, PID-welded OS sentence
+  was FOLDED into intro[1] for the 10 4500-E/6500-E chassis before dropping the recap (4500-E: "Sup6-E/7-E: Cisco IOS; Sup8-E/9-E:
+  Cisco IOS XE" — grounded, chassis OS not gated; 6500-E: "klassisches Cisco IOS (Sup32/720/2T)"; 6807-XL already stated its OS →
+  Anwendung-only). The OS was already logged in each `Modell-Hinweis` extra_log → no source-less claim. Nexus 7000/7700 already use
+  `Data-Center` → UNTOUCHED. Diff is surgical: **Attributes = Anwendung cell only (3 families); Main = Beschreibung only (2 families;
+  6807-XL Main byte-unchanged); Verification_Log = the Anwendung row only** (re-emit bumped the VLog's real-time ISO timestamp on
+  every row → I PINNED it back to the committed value so the audit diff shows just the one changed cell — a re-serialization of
+  already-verified data, not a re-verification). Prices/Condition/FAQ/PlatformFlag byte-identical; **`git diff -- src/` EMPTY**;
+  manifest unchanged except the 6807-XL note's now-historical Anwendung line (corrected); coverage byte-identical (counts unchanged,
+  still 760/85 %). All 11 re-gate **ok=True / 0 / 0**; suite **441 passed**; Beschreibung ≤175 (max 143/148/173). Lesson (memory):
+  a filterable Merkmal must stay a SHORT token — never let a spec recap leak into `Anwendung`; if normalizing one, fold any
+  recap-only substance into the Beschreibung FIRST so no grounded detail is lost.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

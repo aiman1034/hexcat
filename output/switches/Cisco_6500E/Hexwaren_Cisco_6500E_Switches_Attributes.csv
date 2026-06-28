@@ -5,7 +5,7 @@ WS-C6503-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervisor
 WS-C6503-E,,Switch,Bauform,19-Zoll-Rackmontage (4 HE),10,Wertliste,Attribut
 WS-C6503-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6503-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C6503-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (3 Steckplätze); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (4 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6503-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6503-E,,Switch,Steckplätze,3,16,Wertliste,Attribut
 WS-C6503-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6503-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -15,7 +15,7 @@ WS-C6504-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervisor
 WS-C6504-E,,Switch,Bauform,19-Zoll-Rackmontage (5 HE),10,Wertliste,Attribut
 WS-C6504-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6504-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C6504-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (4 Steckplätze); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (5 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6504-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6504-E,,Switch,Steckplätze,4,16,Wertliste,Attribut
 WS-C6504-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6504-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -25,7 +25,7 @@ WS-C6506-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervisor
 WS-C6506-E,,Switch,Bauform,19-Zoll-Rackmontage (11 HE),10,Wertliste,Attribut
 WS-C6506-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6506-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C6506-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (6 Steckplätze); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (11 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6506-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6506-E,,Switch,Steckplätze,6,16,Wertliste,Attribut
 WS-C6506-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6506-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -35,7 +35,7 @@ WS-C6509-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervisor
 WS-C6509-E,,Switch,Bauform,19-Zoll-Rackmontage (14 HE),10,Wertliste,Attribut
 WS-C6509-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6509-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C6509-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (9 Steckplätze); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (14 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6509-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6509-E,,Switch,Steckplätze,9,16,Wertliste,Attribut
 WS-C6509-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6509-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -45,7 +45,7 @@ WS-C6509-V-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervis
 WS-C6509-V-E,,Switch,Bauform,19-Zoll-Rackmontage (21 HE),10,Wertliste,Attribut
 WS-C6509-V-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6509-V-E,,Switch,Kühlung,"Redundante Lüfter (Front-to-Back, Hot-Swap)",12,Wertliste,Attribut
-WS-C6509-V-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (9 Steckplätze, vertikal); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (21 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6509-V-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6509-V-E,,Switch,Steckplätze,9,16,Wertliste,Attribut
 WS-C6509-V-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6509-V-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
@@ -55,7 +55,7 @@ WS-C6513-E,,Switch,Switching-Kapazität,80 Gbit/s pro Steckplatz (mit Supervisor
 WS-C6513-E,,Switch,Bauform,19-Zoll-Rackmontage (19 HE),10,Wertliste,Attribut
 WS-C6513-E,,Switch,Stromversorgung,"Zwei Netzteilschächte (1+1-Redundanz, AC oder DC)",11,Wertliste,Attribut
 WS-C6513-E,,Switch,Kühlung,"Lüftereinschub (Fan Tray, Hot-Swap)",12,Wertliste,Attribut
-WS-C6513-E,,Switch,Anwendung,"Campus-/Data-Center-Aggregation und -Core – modulares Catalyst-6500-E-Chassis (13 Steckplätze); 80 Gbit/s pro Steckplatz; Supervisor-Engines Sup32/Sup720/Sup2T + Catalyst-6500-E-Linecards (separat); Layer 2/3, Routing und Services über die Module; Redundanz: Supervisor 1+1, Netzteil 1+1, Lüfter; zwei Netzteilschächte (1+1, AC/DC), Hot-Swap-Lüfter; 19-Zoll-Rack (19 HE); Betrieb 0 bis 40 °C; klassisches Cisco IOS (je Supervisor Sup32/720/2T, kein IOS XE); EoL",15,Wertliste,Attribut
+WS-C6513-E,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
 WS-C6513-E,,Switch,Steckplätze,13,16,Wertliste,Attribut
 WS-C6513-E,,Switch,Unterstützte Supervisor-Engines,"Cisco Catalyst Supervisor Sup32, Sup720 und Sup2T",17,Wertliste,Attribut
 WS-C6513-E,,Switch,Redundanz,"Supervisor (1+1), Netzteil (1+1) und Lüftereinschub",18,Wertliste,Attribut
