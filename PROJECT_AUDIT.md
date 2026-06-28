@@ -3396,6 +3396,30 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   catch-alls are distinct and stay). Bundles UNTOUCHED, `git diff -- src/` empty. Coverage: in-scope 91→90, models_exp 899→891
   (−8 phantom), **736 built, 78 fully built, 82 %.** LESSON: before building any "new" family, grep `output/switches/` + the
   manifest for it first — an earlier session may already have shipped it (the inverse of trusting a stale "not built" label).
+- **Catalyst Micro (CMICR) + Catalyst 4948E — BUILD the FINAL fixed-switch batch (2026-06-27).** Content-only, **NO src, NO new
+  Merkmal** (`git diff -- src/` empty; attr-name set == the fixed-switch template = `Cisco_2960CX` ∪ `Cisco_3560CX`). Anti-duplicate
+  check first (principle k): grepped `output/switches/` — **both genuinely unbuilt** (unlike the prior Compact false-alarm). Both run
+  **CLASSIC Cisco IOS — invariant UN-FLIPPED**: prose "Cisco IOS (nicht IOS-XE)", affirmative `IOS XE` (space) = 0 (verified). **`Cisco_CMICR`**
+  (3): CMICR-4PS/-4PC/-4PT — ultra-compact PoE+ micro-access, **Layer L2** (LAN Lite), Portanzahl 6 (4 PoE+ downlinks + 2 uplinks,
+  S.3=6), SwK 12 Gbit/s, Durchsatz 8,928 Mpps, lüfterlos, external AC/DC PSU, PoE 62 W (4PS/4PC) / 120 W + 2× USB-C-UPOE (4PT),
+  weights grounded 0,60/0,60/0,94; **Bauform = the EXISTING canonical `Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)` value** (same as
+  2960CX/3560CX — no new value needed, STEP-0 moot); k3 = Managed Switch (L2); **ACTIVE → NO EoS**. **`Cisco_4948E`** (2 confirmed
+  LIVE): WS-C4948E-S (IP Base) + WS-C4948E-E (Enterprise Services), DC Top-of-Rack, **Layer L3 on both** — IP Base AND Enterprise both
+  route; the −S/−E split is routing SCOPE (static/RIP/EIGRP-stub vs full BGP/OSPF/IS-IS), NOT L2-vs-L3 (mirrors the 3560-CX IP-Base=L3
+  call); Portanzahl 52 (48× 1G-RJ45 + 4× SFP+ 1/10G, S.3=52), SwK 96 Gbit/s, Durchsatz 72 Mpps, 1RU rack (canonical
+  `19-Zoll-Rackmontage (1 HE)`), 1+1 Hot-Swap PSU (AC/DC mischbar), Hot-Swap fan tray, 0/+40 °C, dual-stack IPv4/IPv6, PoE Nein; k3 =
+  Managed Switch (L3); **EoL** (datasheet © 2011) → EoS in prose, banked. **🟡 TWO ZU_VERIFIZIEREN items (flag-don't-fabricate):**
+  **(1) GEWICHT** — no source for any 4948E weight; ~7,00 kg est used + flagged ZU_VERIFIZIEREN (3636C-R precedent; not invented).
+  **(2) the 2 back-to-front −F PIDs** (WS-C4948E-F-S/-F-E) — the exact −F suffix/software-split is INFERRED, not verbatim-confirmed
+  (ordering page robots-blocked); an inferred Artikelnummer is a primary key, so per 1000%-grounding I **did NOT emit them live** —
+  they sit in the `Cisco_4948E` Verification_Log **review tab**, to be BrokerBin-confirmed before banking (verified 0 −F rows in any
+  Main). **Both bundles canonical gate ok=True / 0 / 0**; S.3=Portanzahl on all 5 live; PoE Ja+budget on the 3 CMICR + Nein on the 2
+  4948E; no excluded PID banked (PSU-adapter/PWR-C49/TwinGig/DNA); §5 = 0; Condition new ×5; full suite **438 passed**; Byte-Contract
+  sauber (no-BOM Prices, 3+2 rows). 2 `gate_completeness` records. Manifest: 2 built-blocks; CMICR catch-all retired (3→3); the
+  "Cisco Catalyst 4900 (4948)" catch-all (6) reworked into **2 confirmed-built + a 2-count ZU_VERIFIZIEREN row** for the −F pair (+ a
+  note that other 4900 legacy is couriered separately if in scope). `coverage_report.md`: CMICR ✅ (3/3), 4948E ✅ (2/2). **In-scope
+  90→91; models_exp 891→889; 741 built, 80 families fully built, 83 %.** OPEN: BrokerBin-confirm the 4948E −F naming + the 4948E weight,
+  then the −F pair can be banked live.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
