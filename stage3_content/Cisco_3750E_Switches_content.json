@@ -1,0 +1,2002 @@
+{
+ "WS-C3750E-24TD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-24TD-S Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (24× 10/100/1000 und 2× X2 (10G), IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-24TD-S Catalyst 3750-E L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-24TD-S (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Base, klassisches Cisco …",
+  "artikelgewicht": "8,10",
+  "versandgewicht": "10,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-24TD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 65,5 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-24TD-S ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-24TD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-24TD-S bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 65,5 Mpps Durchsatz. Im Software-Image IP Base führt der WS-C3750E-24TD-S hardwarebasiertes IP-Routing (CEF) aus – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub – und arbeitet im reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3750E-24TD-S unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-24TD-S mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-24TD-S ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-24TD-S für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-24TD-S stapeln?",
+    "Ja – der WS-C3750E-24TD-S unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-24TD-S?",
+    "Der WS-C3750E-24TD-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-24TD-S PoE?",
+    "Nein – der WS-C3750E-24TD-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-/-PD-Modelle der Serie)."
+   ],
+   [
+    "Ist der WS-C3750E-24TD-S noch aktuell?",
+    "Der WS-C3750E-24TD-S ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Base); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 24× 10/100/1000 und 2× X2 (10G); IP Base (SMI): statisches Routing, RIP und EIGRP-Stub; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-24TD-S",
+    "EoS",
+    "Cisco WS-C3750E-24TD-S – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-S",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-S",
+    "Gewicht",
+    "8,10 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-24TD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-S",
+    "PID",
+    "Ordering-PID WS-C3750E-24TD-S verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-24TD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-24TD-E Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (24× 10/100/1000 und 2× X2 (10G), IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-24TD-E Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-24TD-E (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Services, klassisches Cisco …",
+  "artikelgewicht": "8,10",
+  "versandgewicht": "10,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-24TD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 65,5 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-24TD-E ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-24TD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-24TD-E bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 65,5 Mpps Durchsatz. Im Software-Image IP Services führt der WS-C3750E-24TD-E hardwarebasiertes IP-Routing (CEF) aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing – und arbeitet im reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3750E-24TD-E unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-24TD-E mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-24TD-E ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-24TD-E für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-24TD-E stapeln?",
+    "Ja – der WS-C3750E-24TD-E unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-24TD-E?",
+    "Der WS-C3750E-24TD-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-24TD-E PoE?",
+    "Nein – der WS-C3750E-24TD-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-/-PD-Modelle der Serie)."
+   ],
+   [
+    "Ist der WS-C3750E-24TD-E noch aktuell?",
+    "Der WS-C3750E-24TD-E ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Services); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 24× 10/100/1000 und 2× X2 (10G); IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-24TD-E",
+    "EoS",
+    "Cisco WS-C3750E-24TD-E – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-E",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-E",
+    "Gewicht",
+    "8,10 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-24TD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24TD-E",
+    "PID",
+    "Ordering-PID WS-C3750E-24TD-E verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-24PD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-24PD-S Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (24× 10/100/1000 und 2× X2 (10G), IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-24PD-S Catalyst 3750-E L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-24PD-S (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Base, PoE, klassisches …",
+  "artikelgewicht": "8,30",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-24PD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 65,5 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-24PD-S ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-24PD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-24PD-S bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 65,5 Mpps Durchsatz. Im Software-Image IP Base führt der WS-C3750E-24PD-S hardwarebasiertes IP-Routing (CEF) aus – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-24PD-S unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-24PD-S mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-24PD-S ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-24PD-S für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-24PD-S stapeln?",
+    "Ja – der WS-C3750E-24PD-S unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-24PD-S?",
+    "Der WS-C3750E-24PD-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-24PD-S PoE?",
+    "Ja – der WS-C3750E-24PD-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-24PD-S noch aktuell?",
+    "Der WS-C3750E-24PD-S ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Base); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 24× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und EIGRP-Stub; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-24PD-S",
+    "EoS",
+    "Cisco WS-C3750E-24PD-S – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-S",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-S",
+    "Gewicht",
+    "8,30 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-24PD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-S",
+    "PID",
+    "Ordering-PID WS-C3750E-24PD-S verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-24PD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-24PD-E Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (24× 10/100/1000 und 2× X2 (10G), IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-24PD-E Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-24PD-E (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Services, PoE, klassisches …",
+  "artikelgewicht": "8,30",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-24PD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 24× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 65,5 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-24PD-E ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-24PD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-24PD-E bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 65,5 Mpps Durchsatz. Im Software-Image IP Services führt der WS-C3750E-24PD-E hardwarebasiertes IP-Routing (CEF) aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-24PD-E unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-24PD-E mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-24PD-E ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-24PD-E für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-24PD-E stapeln?",
+    "Ja – der WS-C3750E-24PD-E unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-24PD-E?",
+    "Der WS-C3750E-24PD-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-24PD-E PoE?",
+    "Ja – der WS-C3750E-24PD-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-24PD-E noch aktuell?",
+    "Der WS-C3750E-24PD-E ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "65,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Services); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 24× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-24PD-E",
+    "EoS",
+    "Cisco WS-C3750E-24PD-E – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-E",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-E",
+    "Gewicht",
+    "8,30 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-24PD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-24PD-E",
+    "PID",
+    "Ordering-PID WS-C3750E-24PD-E verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48TD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48TD-S Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48TD-S Catalyst 3750-E L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48TD-S (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Base, klassisches Cisco …",
+  "artikelgewicht": "8,60",
+  "versandgewicht": "11,10",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48TD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48TD-S ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48TD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48TD-S bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Base führt der WS-C3750E-48TD-S hardwarebasiertes IP-Routing (CEF) aus – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub – und arbeitet im reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3750E-48TD-S unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48TD-S mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48TD-S ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48TD-S für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48TD-S stapeln?",
+    "Ja – der WS-C3750E-48TD-S unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48TD-S?",
+    "Der WS-C3750E-48TD-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48TD-S PoE?",
+    "Nein – der WS-C3750E-48TD-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-/-PD-Modelle der Serie)."
+   ],
+   [
+    "Ist der WS-C3750E-48TD-S noch aktuell?",
+    "Der WS-C3750E-48TD-S ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Base); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); IP Base (SMI): statisches Routing, RIP und EIGRP-Stub; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48TD-S",
+    "EoS",
+    "Cisco WS-C3750E-48TD-S – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-S",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-S",
+    "Gewicht",
+    "8,60 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48TD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-S",
+    "PID",
+    "Ordering-PID WS-C3750E-48TD-S verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48TD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48TD-E Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48TD-E Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48TD-E (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Services, klassisches Cisco …",
+  "artikelgewicht": "8,60",
+  "versandgewicht": "11,10",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48TD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48TD-E ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48TD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48TD-E bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Services führt der WS-C3750E-48TD-E hardwarebasiertes IP-Routing (CEF) aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing – und arbeitet im reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3750E-48TD-E unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48TD-E mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48TD-E ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48TD-E für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48TD-E stapeln?",
+    "Ja – der WS-C3750E-48TD-E unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48TD-E?",
+    "Der WS-C3750E-48TD-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48TD-E PoE?",
+    "Nein – der WS-C3750E-48TD-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-/-PD-Modelle der Serie)."
+   ],
+   [
+    "Ist der WS-C3750E-48TD-E noch aktuell?",
+    "Der WS-C3750E-48TD-E ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Services); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48TD-E",
+    "EoS",
+    "Cisco WS-C3750E-48TD-E – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-E",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-E",
+    "Gewicht",
+    "8,60 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48TD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48TD-E",
+    "PID",
+    "Ordering-PID WS-C3750E-48TD-E verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48PD-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48PD-S Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48PD-S Catalyst 3750-E L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48PD-S (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Base, PoE, klassisches …",
+  "artikelgewicht": "8,75",
+  "versandgewicht": "11,25",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48PD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48PD-S ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48PD-S ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48PD-S bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Base führt der WS-C3750E-48PD-S hardwarebasiertes IP-Routing (CEF) aus – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-48PD-S unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48PD-S mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48PD-S ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48PD-S für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48PD-S stapeln?",
+    "Ja – der WS-C3750E-48PD-S unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48PD-S?",
+    "Der WS-C3750E-48PD-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48PD-S PoE?",
+    "Ja – der WS-C3750E-48PD-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-48PD-S noch aktuell?",
+    "Der WS-C3750E-48PD-S ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port mit 1150-W-Netzteil)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Base); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und EIGRP-Stub; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48PD-S",
+    "EoS",
+    "Cisco WS-C3750E-48PD-S – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-S",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-S",
+    "Gewicht",
+    "8,75 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48PD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-S",
+    "PID",
+    "Ordering-PID WS-C3750E-48PD-S verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48PD-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48PD-E Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48PD-E Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48PD-E (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Services, PoE, klassisches …",
+  "artikelgewicht": "8,75",
+  "versandgewicht": "11,25",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48PD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48PD-E ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48PD-E ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48PD-E bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Services führt der WS-C3750E-48PD-E hardwarebasiertes IP-Routing (CEF) aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-48PD-E unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48PD-E mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48PD-E ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48PD-E für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48PD-E stapeln?",
+    "Ja – der WS-C3750E-48PD-E unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48PD-E?",
+    "Der WS-C3750E-48PD-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48PD-E PoE?",
+    "Ja – der WS-C3750E-48PD-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-48PD-E noch aktuell?",
+    "Der WS-C3750E-48PD-E ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port mit 1150-W-Netzteil)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Services); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48PD-E",
+    "EoS",
+    "Cisco WS-C3750E-48PD-E – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-E",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-E",
+    "Gewicht",
+    "8,75 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48PD ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-E",
+    "PID",
+    "Ordering-PID WS-C3750E-48PD-E verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48PD-SF": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48PD-SF Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48PD-SF Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48PD-SF (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Base, PoE, klassisches …",
+  "artikelgewicht": "9,50",
+  "versandgewicht": "12,00",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48PD-SF ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48PD-SF ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48PD-SF ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48PD-SF bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Base führt der WS-C3750E-48PD-SF hardwarebasiertes IP-Routing (CEF) aus – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-48PD-SF unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48PD-SF mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48PD-SF ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48PD-SF für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48PD-SF stapeln?",
+    "Ja – der WS-C3750E-48PD-SF unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48PD-SF?",
+    "Der WS-C3750E-48PD-SF trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und EIGRP-Stub. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48PD-SF PoE?",
+    "Ja – der WS-C3750E-48PD-SF liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-48PD-SF noch aktuell?",
+    "Der WS-C3750E-48PD-SF ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  Voll-PoE (über 15,4 W an allen 48 Ports, 1150-W-Netzteil)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Base); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und EIGRP-Stub; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48PD-SF",
+    "EoS",
+    "Cisco WS-C3750E-48PD-SF – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-SF",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-SF",
+    "Gewicht",
+    "9,50 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-SF",
+    "Image-Tier",
+    "Artikelnummer-Suffix -SF = IP Base. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48PD-F ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-SF",
+    "PID",
+    "Ordering-PID WS-C3750E-48PD-SF verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ },
+ "WS-C3750E-48PD-EF": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3750E-48PD-EF Catalyst 3750-E gemanagter stapelbarer L3-Access-Switch (48× 10/100/1000 und 2× X2 (10G), IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3750E-48PD-EF Catalyst 3750-E L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3750E-48PD-EF (Catalyst 3750-E): gemanagter, stapelbarer L3-Access-Switch, 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, Cisco StackWise Plus, Image IP Services, PoE, klassisches …",
+  "artikelgewicht": "9,50",
+  "versandgewicht": "12,00",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3750E-48PD-EF ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie: 48× 10/100/1000 und 2× X2 (10G), 128 Gbit/s, 101,2 Mpps, Cisco StackWise Plus (64 Gbit/s Stack-Ring), Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>Der WS-C3750E-48PD-EF ist ein 1-HE-Gerät. Abgekündigt (End-of-Sale 2011/2014); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3750E-48PD-EF ist ein gemanagter, stapelbarer Layer-3-Access-Switch der Catalyst 3750-E-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 2× X2 (10G)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3750E-48PD-EF bündelt per Cisco StackWise Plus (64 Gbit/s Stack-Ring) bis zu neun Einheiten zu einem logischen Switch und liefert 128 Gbit/s Switching-Kapazität sowie 101,2 Mpps Durchsatz. Im Software-Image IP Services führt der WS-C3750E-48PD-EF hardwarebasiertes IP-Routing (CEF) aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing – und versorgt seine Zugangsports per PoE nach IEEE 802.3af (plus Cisco prestandard). Betrieben wird der WS-C3750E-48PD-EF unter klassisches Cisco IOS (nicht IOS-XE).",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3750E-48PD-EF mit aktiv (feldtauschbarer lüfter-einschub) und feldtauschbares ac-netzteil (bis 1150 w) im Bereich 0 bis 45 °C. Der WS-C3750E-48PD-EF ist ein abgekündigtes Modell (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt der WS-C3750E-48PD-EF für Ersatz und Bestandserweiterung in Stack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Lässt sich der WS-C3750E-48PD-EF stapeln?",
+    "Ja – der WS-C3750E-48PD-EF unterstützt Cisco StackWise Plus (64 Gbit/s Stack-Ring) und bündelt bis zu neun Einheiten zu einem logischen Switch mit gemeinsamer Verwaltung."
+   ],
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3750E-48PD-EF?",
+    "Der WS-C3750E-48PD-EF trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing. Beide Tiers routen in Hardware (Layer 3)."
+   ],
+   [
+    "Unterstützt der WS-C3750E-48PD-EF PoE?",
+    "Ja – der WS-C3750E-48PD-EF liefert PoE nach IEEE 802.3af (plus Cisco prestandard) an seinen Zugangsports."
+   ],
+   [
+    "Ist der WS-C3750E-48PD-EF noch aktuell?",
+    "Der WS-C3750E-48PD-EF ist abgekündigt (End-of-Sale 2011/2014); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× X2 (10G)"
+   ],
+   [
+    "PoE",
+    "Ja  Voll-PoE (über 15,4 W an allen 48 Ports, 1150-W-Netzteil)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "101,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldtauschbares AC-Netzteil (bis 1150 W); externe Redundanz über Cisco RPS 2300 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (feldtauschbarer Lüfter-Einschub)"
+   ],
+   [
+    "Stacking",
+    "Ja  Cisco StackWise Plus (bis 9 Einheiten, 64 Gbit/s Stack-Ring)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit-Ethernet mit 10G-Uplinks, Layer-3, IP Services); stapelbarer Multilayer-Access-Switch (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) mit 48× 10/100/1000 und 2× X2 (10G); PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP, PIM), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3750E-48PD-EF",
+    "EoS",
+    "Cisco WS-C3750E-48PD-EF – End-of-Sale 2011/2014 (ursprüngliche 3750-StackWise-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-EF",
+    "Switching-Kapazität",
+    "128 Gbit/s: verbatim Cisco-Datenblatt („128-Gbps switching fabric\"). Stack-Bandbreite (Cisco StackWise Plus (64 Gbit/s Stack-Ring)) ist davon getrennt und steht in der Beschreibung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-EF",
+    "Gewicht",
+    "9,50 kg (Chassis): Cisco-Catalyst 3750-E-Datenblatt-Physik (per-PID gegroundet, nicht geschätzt). Versandgewicht = +2,5 kg Verpackung.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-EF",
+    "Image-Tier",
+    "Artikelnummer-Suffix -EF = IP Services. Orderbare PID trägt zwingend den Tier-Suffix; WS-C3750E-48PD-F ohne Suffix ist nicht orderbar. Layer L3 bei beiden Tiers (Suffix = Routing-Umfang, nicht L2-vs-L3).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ],
+   [
+    "WS-C3750E-48PD-EF",
+    "PID",
+    "Ordering-PID WS-C3750E-48PD-EF verbatim. NICHT gebankt (separat/Class B): X2-/TwinGig-Module (CVR-X2-SFP), StackWise-Kabel (CAB-STACK-*/CAB-SPWR-*), RPS 2300/675, Netzteile (PWR-C*/C3K-PWR-*), Lüfter-Trays und alle „=\"-/-RF-/++-PIDs. Nicht in scope: WS-C3750-24FS, WS-C3750G-24WS/-16TD, 1,5RU-Original WS-C3750G-24TS.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3750-e-series-switches/data_sheet_c78-spec.html"
+   ]
+  ]
+ }
+}

@@ -3531,6 +3531,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   operator's "starts at `<h2>`" — the built catalog (499+ switches) + `_compose_beschreibung` start Beschreibung with `<p>` and the gate
   has no `<h2>` check, so I followed the established `<p>` convention for consistency. Batch 2 (remaining): original 3750/3750-E/-G
   (~15), Nexus 9800 (2), Nexus 3000/5000 remnants (~5).
+- **Cisco Switches Batch 2 — Original 3750 StackWise family: 3 sub-line families, 15 base → 30 SKUs (2026-06-28); content+config only.**
+  Anti-duplicate first (original 3750 unbuilt; the 3750-X is a distinct built family). Same fixed-switch path as Batch-1 3560
+  (`_facts.unterkategorie="Managed Switch (L3)"`). **`git diff -- src/` EMPTY; suite 441 passed.** `Cisco_3750` (8: WS-C3750-24/48
+  TS/PS FE), `Cisco_3750G` (12: 24TS-1U/24T/24PS/48TS/48PS/12S GbE), `Cisco_3750E` (10: 24/48 TD/PD + 48PD-F, GbE+10G) — each base ×
+  **-S/-E** (15 base × 2 = 30). **The defining NEW flag vs Batch 1 = Stacking JA** (first stacking family this run): `Stacking` Merkmal
+  = "Ja  Cisco StackWise (32 Gbit/s Stack-Ring)" on 3750/3750G, "Ja  Cisco StackWise Plus (64 Gbit/s Stack-Ring)" on 3750-E (passes
+  S.4 because Switch-Typ=Managed; stack bandwidth in Beschreibung, separate from SwK). **Switching-Kapazität is TWO values, not
+  flattened: 32 Gbit/s (3750/3750G) vs 128 Gbit/s (3750-E)** — verified per-family in the build. OS = classic Cisco IOS all 30
+  (`IOS XE`=0 + "nicht IOS-XE"; NOT the 4500-X flip). Layer L3 all, 1 HE all. Uplink-Ports per-model (SFP on FE/G, **X2 10G** on 3750-E;
+  24T/12S have none). **Two PID-suffix quirks handled** (the base label's form-marker is REPLACED by the tier suffix, not appended):
+  WS-C3750G-24TS-1U → **-S1U/-E1U** (the 1RU variant; the 1.5RU original WS-C3750G-24TS is DROPPED), and WS-C3750E-48PD-F → **-SF/-EF**.
+  **All specs grounded via the research agent (no guessing):** per-PID weights (3,6–9,5 kg, verbatim Cisco datasheets via Wayback —
+  incl. the 1U=5,5 kg vs 1.5RU=5,7 kg disambiguation) + operating temp (0–45 °C, shared across 3750/3750G/3750-E, confirmed despite
+  the -E often differing). **B.8 boilerplate trap on tier-pairs:** the 12/10-SKU families initially failed L3 boilerplate because a
+  non-PID-welded sentence ("Er führt … IP-Routing … Image {img}") repeated across same-tier siblings — fixed by welding the PID into
+  EVERY Beschreibung+kurzbeschreibung sentence (the 8-SKU family stayed under the >25% threshold, masking it). EXCLUDED (verified none
+  banked): WS-C3750-24FS / -24WS / -16TD / 1.5RU-24TS, X2/CVR-X2-SFP, CAB-STACK/SPWR cables, RPS 2300/675, PWR-C*/C3K-PWR*, fans, and
+  =/-RF/++ — **but NOT "-WS"** (the family PID prefix, per the harvest). All 3 bundles gate ok=True / 0 / 0; byte-contract PASS (8+12+10
+  rows, Condition new, Prices ungrouped no-BOM, Beschreibung ≤175). Manifest: 3 built-blocks; the "~15" 3750/3750-E/3750-G legacy
+  catch-all RETIRED. **In-scope 98→100; 789→819 built, 91 families fully built, 89 % (100-family milestone).** Next: Batch 3 = Meraki
+  MS (~30, Hersteller Cisco + "Meraki-Lizenz separat erforderlich" line); then Nexus 9800 + 3000/5000 remnants; then Class-B modules.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
