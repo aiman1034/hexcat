@@ -3657,6 +3657,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   → pinged operator (`SPECS_NEEDED_PUSH2.md`): courier a non-web weight source, or accept (no defensible estimate exists, unlike C6880-X),
   or hold. 4500-E catch-all deliberately kept in the manifest. Prices Phase-1 provisional. **Awaiting operator hard-audit of PUSH 2B +
   the 4500-E weight decision.**
+- **JUNIPER TRANSCEIVERS — Standard / Transceiver-Typ attribute correction (operator 2026-06-28; module lane paused).** Operator
+  flagged that the Juniper transceiver attribute VALUES were wrong (same class as a Cisco fix done earlier): the **basis of a
+  transceiver is its STANDARD (10GBASE-/100GBASE-…)**, and `Transceiver Typ` must be the SHORT reach-code kept DISTINCT from
+  `Standard` — exactly the corrected Cisco convention (Cisco `Standard`=`IEEE 802.3ae 10GBASE-SR`, `Transceiver Typ`=`SR`). **Root
+  cause:** `juniper_author.py` line 111 `typ = f.get("type") or f.get("standard")` — with no clean `type`, Transceiver Typ fell back
+  to the FULL standard → **109/182 rows had Transceiver Typ == Standard**, the rest broken fragments (`(coherent)`,`(4x100G)`,`Lite`,
+  `BiDi`). **Fix (operator confirmed both: short-code Typ + normalise Standard):** built a 72-entry mapping (`_scratch/juniper_fix_std_typ.py`,
+  SMAP) → Standard = formal IEEE/MSA (`10G-ZR`→`10GBASE-ZR`, `100G-CWDM4`→`100G CWDM4 MSA`, `400G-ZR (coherent)`→`400ZR (kohärent)`),
+  Transceiver Typ = short reach-code (SR/LR4/ER4/ZR/CWDM4/PSM4/BX/DR4/…, 37 distinct). In-place patch of the certified
+  `stage3_content/Juniper_content.json` (preserved all post-author backfill + the 22 thin-grid re-authors) — updated Standard + Typ
+  attrs **and the coupled name/prose** (`{typ}-Transceiver`→`{std}-Transceiver`, `vom Typ {typ}`→`vom Typ {short}`, meta std). Re-emit
+  (reconcile+assemble reproduces the bundle byte-identically) → synced Main + Attributes + VL (VL merged surgically: value-changed rows
+  updated, unchanged rows keep their original Verified_At). **Verify: 109→0 Typ==Std dups, 8→0 broken fragments, 0 Typ-contains-BASE;
+  `audit_semantic.py` Juniper = 0×8; no §5 regression (Main 182 vs backup 188 tokens).** ZIP `output/Hexwaren_Juniper_stage3_stdtyp-fix.zip`.
+  **Two findings surfaced:** (1) **residual Typ-contains-standard — FIXED (operator Option 1, same pass):** Cisco ×1 (`DS-SFP-GE-T`
+  `1000BASE-T Kupfer`→`T (Kupfer)`, surgical bundle patch since the live Cisco bundle merges `Cisco_content_ADD.json`) + Supermicro ×4
+  (`SR (10GBASE-SR)`→`SR`, content→re-emit→sync) normalised to pure short codes; both re-checked `audit_semantic` 0×8 — **every transceiver
+  brand now has clean Standard/Typ.** (2) **transceiver bundles are STALE vs the §5-hardened consolidated `gate()`** — Cisco (536) + Juniper (188 pre-fix) Mains
+  still carry `Neuware`/`versiegelt` + L4/L5/L6 flags (the §5 scrub hit switches, not the earlier transceiver emits); a separate re-scrub
+  task. `juniper_author.py` line-111 latent bug left as-is (content JSON is the live source; re-running the author would wipe backfills).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
