@@ -3384,6 +3384,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (−E/−A doubling, inverse of module/PSU-sprawl over-estimates); IOS-XE families FLIP the `IOS XE`=0 invariant; a new form factor
   needs an approved Bauform Wertliste value; inter-VLAN+static IS L3 (mirror the sibling); no-Gbps-no-Mpps → both SwK and Durchsatz
   take "Line-Rate".
+- **Catalyst Compact (3560-CX + 2960-CX) — VERIFIED ALREADY BUILT, no rebuild (2026-06-27).** A build request arrived for the
+  9-PID compact batch (7× WS-C3560CX + 2× WS-C2960CX, datasheet c78-733229). The §0 anchor + overwrite-safety check found it
+  **already built and committed** (`aa5a178`): `Cisco_3560CX` (7/7) + `Cisco_2960CX` (2/2), gate-green, and already matching the
+  harvest verbatim — **Layer L3 on all 7 3560-CX / L2 on both 2960-CX; classic IOS (`IOS XE`=0); Portanzahl per the S.3 traps
+  (12/16/12/16/16/10/10 · 12/12); PoE Ja+budget on the 6 (240 W / 146 W UPOE / 124 W), Nein on 3; Bauform = the EXISTING canonical
+  compact value `Kompakt-Gehäuse (lüfterlos, geringe Bautiefe)`** (so STEP-0's "approve a new compact Bauform" was moot — a compact
+  value already existed and was in use). I **surfaced this rather than silently overwrite committed/audited bundles; operator chose
+  LEAVE-AS-IS.** The only action taken: **retired the stale `Cisco Catalyst Compact` catch-all (~8 missing)** — it was the pre-build
+  estimate of this exact class, now a double-count against the 9 built model rows → honest 8→9 reconcile (the CMICR + legacy-3560
+  catch-alls are distinct and stay). Bundles UNTOUCHED, `git diff -- src/` empty. Coverage: in-scope 91→90, models_exp 899→891
+  (−8 phantom), **736 built, 78 fully built, 82 %.** LESSON: before building any "new" family, grep `output/switches/` + the
+  manifest for it first — an earlier session may already have shipped it (the inverse of trusting a stale "not built" label).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
