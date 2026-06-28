@@ -3451,6 +3451,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Merkmale) is NOT content-only — it threads through the whole schema (ATTR_ALIAS → canon-map → intake-model field → emit-order →
   gate required/forbidden/S.2); when the existing gate's hardcoded rules conflict with an approved new model, STOP-and-ask, then
   extend ADDITIVELY (loosen a required-set, exempt a Switch-Typ value) and pin it with a regression test — never silently rewrite.
+- **Phase M1b — Nexus 7000 (4) + 7700 (4) = 8 modular chassis; CONTENT-ONLY reuse of the M1a chassis model (2026-06-27).**
+  Anti-duplicate first (unbuilt). **`git diff ac5b91a..HEAD -- src/` EMPTY** — the defining M1b contract: the modular-chassis
+  model (Switch-Typ=Modular-Chassis, Layer L3, Steckplätze/Unterstützte-Supervisor-Engines/Redundanz Wertliste Merkmale, no
+  port Merkmale, no Betriebstemperatur Merkmal, no S.3) already existed from M1a, so M1b only AUTHORS content with it. Full
+  suite **441 passed** (unchanged — no new tests, no src). `Cisco_Nexus_7000` (N7K-C7004/7009/7010/7018) + `Cisco_Nexus_7700`
+  (N77-C7702/7706/7710/7718), k3=`Modularer Switch (Chassis)` → chassis gate, Ebene-2 Switches. New **Bauform** HE values 3/9/25/26
+  (7/14/21 existed). **Steckplätze** here is DESCRIPTIVE verbatim ("9 (2 Supervisor + 7 I/O) + 5 Fabric-Steckplätze") — a richer
+  Wertliste value than M1a's bare integer; same Merkmal. **Anwendung = the EXISTING `Data-Center` value** the Nexus 9500/9400
+  chassis carry (reused, not invented). **OS = Cisco NX-OS** — a THIRD OS family beside classic-IOS and IOS-XE: made ZERO IOS/IOS-XE
+  claim and did NOT run the IOS-XE invariant (it is IOS-family-only). SwK per-slot (7700 1,32 Tbit/s; 7000 550 Gbit/s; 7702 Line-Rate,
+  7004 440 Gbit/s — NOT doubled). Weights grounded incl. the **7010 = 90 kg > 7018 = 85 kg** quirk (verbatim Table 1, flagged in the
+  harvest as not a transcription slip); 7718 = 136 kg < the 200 kg chassis ceiling. Bare chassis (Leergehäuse); **supervisors/I-O/
+  fabric/PSU/fan PIDs = dormant Class B (M2/M3), EXCLUDED** — verified only the 8 chassis PIDs banked (no N7K-SUP/M/F/FAB/AC/DC/HV/
+  -FAN/-BLANK/kit/=/++/K9). EoL/EoS (7000 EoS-announced Jan 2023) → prose, banked. **Both bundles canonical gate ok=True / 0 / 0**;
+  byte-contract PASS (4+4 rows, no-BOM Prices, Condition new ×8, Main↔Prices match). Manifest: 2 built-blocks; the Nexus 7000/7700
+  modular catch-all reduced 12→4 (remainder = supervisors/I-O/fabric Class B). `coverage_report.md`: **7000 ✅ (4/4), 7700 ✅ (4/4)**.
+  **In-scope 93→95; 751→759 built, 84 families fully built, 85 %.** Still open in the modular-chassis class: **Catalyst 6807-XL**
+  (1 PID, classic-IOS supervisor-provided, same Sup2T/6T as 6500-E) → a quick M1c (1 fetch + 1 chassis) closes the modular class.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
