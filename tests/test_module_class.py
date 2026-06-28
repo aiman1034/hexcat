@@ -77,3 +77,8 @@ def test_module_gates_clean_and_emits_reduced_set(tmp_path):
     # the portless supervisor carries no Portanzahl; the linecard's S.3 (48 == 48× ...) held (gate is clean)
     assert "Portanzahl" not in by_sku["C6800-SUP6T"]
     assert by_sku["WS-X6748-GE-TX"].get("Portanzahl") == "48"
+    # MULTI-VALUE Kompatible Serie: the cross-chassis linecard emits ONE Attributes row per series
+    rows = [r for r in csv.reader(att.read_bytes().decode("utf-8-sig").splitlines(), delimiter=",")
+            if len(r) > 4 and r[0] == "WS-X6748-GE-TX" and r[3] == "Kompatible Serie"]
+    assert {r[4] for r in rows} == {"Catalyst 6500-E", "Catalyst 6807-XL"}, [r[4] for r in rows]
+    assert "Kompatible Serie" in by_sku["C6800-SUP6T"]  # single-value path still works (supervisor)

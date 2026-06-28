@@ -179,6 +179,11 @@ MODULE_FORBIDDEN_ATTRS: tuple[str, ...] = (
     "Switch-Typ", "Layer", "Bauform", "Kühlung", "Stromversorgung",
     "Betriebstemperatur", "Anwendung", "Stacking", "Port-Geschwindigkeit",
 )
+# MULTI-VALUE (JTL Wertliste multi-select) Merkmale: a value joined by " | " emits one Attributes ROW per
+# part (true multi-value), so a cross-chassis module lists EVERY compatible series (a 6500-E linecard that
+# also runs in the 6807-XL carries both rows). Single values + every other Merkmal are unchanged (additive).
+MULTI_VALUE_ATTRS: frozenset[str] = frozenset({"Kompatible Serie"})
+MULTI_VALUE_SEP: str = " | "
 
 
 def ebene2_for(kat_ebene_3: str, *, is_switch: bool, switch_default: str, transceiver_default: str) -> str:

@@ -53,7 +53,8 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Brand | Count | Status | Note |
 |---|---|---|---|
 | MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
-| HPE/Aruba/Cisco/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
+| **Cisco** | **918/918 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 PUSH 1 (2026-06-28) added 31 Class-B modules (Cat6500/6807 sups+linecards + 6800-X port-cards); 4500-E + Nexus 7000/7700 modules = PUSH 2. Prices Phase-1 provisional |
+| HPE/Aruba/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
 
 ### Server Memory — NOT IN SCOPE (charter error, corrected 2026-06-14)
 The earlier "Server Memory 25-SKU batch" was a charter assertion in error — operator does not
@@ -3616,6 +3617,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3750E/MS355/6800X/Nexus_7000 (every gate path) is byte-identical ok=True/0/0.** Module CONTENT (the 45 sup/linecard/fabric/port-card
   PNs across the 4 chassis ecosystems) is NOT built yet — awaiting the operator's audit of this isolated schema commit; on approval,
   agents enumerate+ground each ecosystem (6500/6800 first to prove the path end-to-end), then 4500-E + Nexus 7000/7700.
+- **Batch M-1 PUSH 1 BUILT — Catalyst 6500-E/6807 + 6800-X Class-B modules (31 SKUs, 2026-06-28).** Operator AUDITED the schema
+  commit CLEAN (additive 234/0, suite 444) + approved all 3 judgment calls (keep the forbid-not-tolerate module gate). Built **29×
+  `Cisco_Cat6500_Modules`** (6 Supervisor-Engines VS-S720-10G-3C/-3CXL, VS-S2T-10G/-XL, C6800-SUP6T/-XL + 23 linecards WS-X6748-GE-TX/
+  -SFP, WS-X6848-TX/-SFP-2T/-2TXL, WS-X6816/6908/6904-*-2T/-2TXL, WS-X6824-SFP-2T, C6800-8P/16P/32P-10G + 48P-TX/-SFP base+XL) +
+  **2× `Cisco_Cat6800X_Modules`** (port-cards C6880-X-LE-16P10G/-16P10G, Modultyp=Port-Card). Both gate **ok=True/0/0**. **KEY SRC (for
+  hard audit): MULTI-VALUE `Kompatible Serie`** — a cross-chassis module emits ONE Attributes row per series. `constants.MULTI_VALUE_ATTRS`
+  {"Kompatible Serie"} + `MULTI_VALUE_SEP " | "`; `intake._build_attributes` splits a ` | `-joined value into N rows, **truly
+  additive (+5/+9, 0 deletions — the original single-value append is byte-identical, a new branch + `continue` precedes it)**; 25 of 31
+  modules emit multi-value (6500-E | 6807-XL). **Weights: 9 couriered verbatim** (cisco.com 403'd the install-guide appendix here →
+  operator couriered): 7 WS-X (OL-6265-04 Tbl 2-41/49/51: 6748-GE-TX/6848-TX 4,63; 6748-SFP 4,10; 6848-SFP 4,50; 6824-SFP 4,30) + 2
+  VS-S720 (Sup-Engine-Guide Tbl 2-19: 5,22). **WS-X6848-TX-2T/-2TXL** = verbatim OEM *group* weight (Tbl 2-41 shares one Weight cell with
+  6748-GE-TX; no DFC4-config breakout) — banked 4,63, caveat in the Verification_Log (NOT an estimate). **2 C6880-X = Gewicht
+  ZU_VERIFIZIEREN** (chassis-only, no per-card OEM figure — flagged in VLog, only spec withheld). WATCH-items held in PROSE not Merkmal:
+  operating-temp (0–40 °C, "Beim {pid} gilt: …") + WS-X6904 FourX 16×10G breakout (kept out of Port-Konfiguration so S.3 holds 4==4).
+  **Verification:** suite **444 passed**; byte-contract PASS (Beschr 123–172w ≤175, Kurz 52–66w, Condition new, BOM/CRLF, Prices no-0,00);
+  `validate_dir` **TOTAL_ERRORS=0 across all 108 switch-tree bundles (957 SKUs incl. the 31 modules)**. **Manifest: retired the
+  6500-E/6807 + 6800-X module catch-alls → real model-level built-blocks; `build_cisco_manifest` now 918/918 built (prior 887 + 31), 0
+  missing** (4500-E module catch-all kept for PUSH 2). L6 `gate_completeness` += Cisco_Cat6500_modules 29/29 + Cisco_Cat6800X_modules 2/2.
+  Prices Phase-1 provisional (EoL €-class, unanchored). **Awaiting operator's HARD byte-audit of PUSH 1** (flagged: the multi-value emit
+  src). PUSH 2 next: Catalyst 4500-E sups/linecards + Nexus 7000/7700 sup/I-O/fabric modules (agents enumerate+ground).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

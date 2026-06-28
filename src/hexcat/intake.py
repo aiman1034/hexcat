@@ -159,6 +159,15 @@ def _build_attributes(intake: SkuIntake, source_url: str,
             # as a datasheet/page ground the source does not actually contain. Uniform across all brands.
             if attr_name == "DOM Unterstützung" and present[attr_name].strip().startswith("Ja"):
                 su, cf = C.DOM_INFERENCE_SOURCE, C.DOM_INFERENCE_CONFIDENCE
+            # MULTI-VALUE Merkmal (Wertliste multi-select, e.g. Kompatible Serie): a " | "-joined value emits
+            # one AttributeValue ROW per part (true JTL multi-value) so a cross-chassis module lists every
+            # compatible series. ADDITIVE: single values + every other Merkmal fall through to the original
+            # append below unchanged; only a " | "-joined multi-value Merkmal takes this branch (then skips it).
+            if attr_name in C.MULTI_VALUE_ATTRS and C.MULTI_VALUE_SEP in present[attr_name]:
+                for part in (p.strip() for p in present[attr_name].split(C.MULTI_VALUE_SEP) if p.strip()):
+                    attrs.append(AttributeValue(name=attr_name, value=part, sortiernummer=idx,
+                                                source_url=su, confidence=cf))
+                continue
             attrs.append(AttributeValue(
                 name=attr_name, value=present[attr_name], sortiernummer=idx,
                 source_url=su, confidence=cf,
