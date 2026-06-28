@@ -107,6 +107,9 @@ ATTR_ALIAS: dict[str, str] = {
     "Steckplätze": "Steckplätze",
     "Unterstützte Supervisor-Engines": "Unterstützte Supervisor-Engines",
     "Redundanz": "Redundanz",
+    # Class-B module Merkmale (identity-mapped like the chassis attrs).
+    "Modultyp": "Modultyp",
+    "Kompatible Serie": "Kompatible Serie",
 }
 
 # Canonical name -> the SkuIntake field that carries it (from BOTH locked schemas: transceiver +

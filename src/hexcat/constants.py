@@ -104,6 +104,11 @@ SWITCH_ATTRIBUTES: tuple[tuple[str, str], ...] = (
     ("Steckplätze", "Steckplaetze"),
     ("Unterstützte Supervisor-Engines", "SupervisorEngines"),
     ("Redundanz", "Redundanz"),
+    # Class-B MODULE Merkmale (Wertliste): the only two the switch set can't express. Emitted ONLY by
+    # Switch-Module & Komponenten SKUs (supervisors/linecards/fabric/port-cards); every switch omits them
+    # (additive, backward-compatible — existing switch/chassis output byte-identical).
+    ("Modultyp", "Modultyp"),
+    ("Kompatible Serie", "KompatibleSerie"),
 )
 SWITCH_ATTRIBUTE_NAMES_ORDERED: tuple[str, ...] = tuple(n for n, _ in SWITCH_ATTRIBUTES)
 
@@ -126,6 +131,7 @@ def attributes_for_category(kat_ebene_2: str) -> tuple[tuple[str, str], ...]:
 KATEGORIE_EBENE_2_BY_KAT3: dict[str, str] = {
     "Fibre-Channel-Switch": "SAN & Fibre Channel",
     "Fibre-Channel-Director": "SAN & Fibre Channel",   # modular FC director chassis (same SAN branch)
+    "Switch-Modul": "Switch-Module & Komponenten",     # Class-B modules (sup/linecard/fabric/port-card)
 }
 
 # Every Kategorie-Ebene-2 value that denotes a SWITCH-class bundle: the default "Switches" plus any
@@ -157,6 +163,22 @@ CHASSIS_FORBIDDEN_ATTRS: tuple[str, ...] = (
 # A chassis legitimately weighs tens of kg (a 26 HE director with 16 PSUs ≈ 136 kg); the fixed-switch
 # L5 ceiling (50 kg) would wrongly flag it. Chassis-class uses this higher ceiling instead.
 CHASSIS_WEIGHT_CEILING_KG: float = 200.0
+
+# MODULE class (Class-B: supervisors / linecards / fabric / port-cards / service modules for the built
+# chassis). Like the chassis carve-out, a module is switch-CLASS (rides SWITCH_ATTRIBUTES + the switch
+# gate) but uses a REDUCED set: the two module Merkmale (Modultyp, Kompatible Serie) + whichever reused
+# port Merkmale apply (Portanzahl/Port-Konfiguration/Uplink-Ports/Switching-Kapazität/PoE), and FORBIDS the
+# switch/chassis-only Merkmale (Switch-Typ/Layer/Bauform/Kühlung/Stromversorgung/Betriebstemperatur/
+# Anwendung/Stacking/Port-Geschwindigkeit) — a bare module has no OS/temperature/mount of its own. The
+# port-rules S.1/S.3 still apply (a linecard HAS ports, guarded by their presence); S.2/S.4/S.5 are skipped
+# (no Layer/Stacking/temperature). Detected by Kat-L3 ∈ this set; Ebene-2 = "Switch-Module & Komponenten"
+# via the KATEGORIE_EBENE_2_BY_KAT3 override above. Additive: empty for every non-module SKU → no change.
+MODULE_KAT3_VALUES: frozenset[str] = frozenset({"Switch-Modul"})
+MODULE_REQUIRED_ATTRS: tuple[str, ...] = ("Modultyp", "Kompatible Serie")
+MODULE_FORBIDDEN_ATTRS: tuple[str, ...] = (
+    "Switch-Typ", "Layer", "Bauform", "Kühlung", "Stromversorgung",
+    "Betriebstemperatur", "Anwendung", "Stacking", "Port-Geschwindigkeit",
+)
 
 
 def ebene2_for(kat_ebene_3: str, *, is_switch: bool, switch_default: str, transceiver_default: str) -> str:

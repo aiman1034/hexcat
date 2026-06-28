@@ -97,6 +97,11 @@ kategorie_ebene_3_switch_allowed:
   # later Nexus 9500). Switch-class + chassis-class (same reduced 7-attr carve-out), but Ebene-2 stays the
   # DEFAULT "Switches" (NOT in KATEGORIE_EBENE_2_BY_KAT3). Additive — activates only for this Kat-L3.
   - "Modularer Switch (Chassis)"
+  # Switch-Modul (added 2026-06-28): Class-B modules (supervisor/linecard/fabric/port-card) for the built
+  # chassis. Switch-class routing, but a REDUCED module gate (_check_module_sku: required Modultyp+Kompatible
+  # Serie, forbids the switch/chassis-only Merkmale, skips S.2/S.4/S.5) and Ebene-2 = "Switch-Module &
+  # Komponenten" via the KATEGORIE_EBENE_2_BY_KAT3 override. Additive — activates only for this Kat-L3.
+  - "Switch-Modul"
 
 # Word / character budgets.
 budgets:

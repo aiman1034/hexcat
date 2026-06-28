@@ -83,6 +83,9 @@ class SkuIntake(BaseModel):
     Steckplaetze: str = ""
     SupervisorEngines: str = ""
     Redundanz: str = ""
+    # Class-B module intake fields — only Switch-Module & Komponenten SKUs populate them (additive).
+    Modultyp: str = ""
+    KompatibleSerie: str = ""
     Condition: str = ""
     FAQ: str = ""
     SourceURLs: str = ""

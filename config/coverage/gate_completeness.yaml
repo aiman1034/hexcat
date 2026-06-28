@@ -683,3 +683,9 @@ Cisco_MS390_switches:
   captured: 6
   enumerated: 6
   flagged: []
+# Class-B MODULE lane — L6 coverage namespace (_Modules bundles). Test fixture record below; real
+# ecosystems (Cisco_Catalyst6500_Modules etc.) get their records when Batch M-1 content is built.
+Cisco_ModuleTest_modules:
+  captured: 2
+  enumerated: 2
+  flagged: []

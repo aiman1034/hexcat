@@ -3599,6 +3599,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   candidate). **In-scope 106→115; 844→887 built, 105 families fully built; coverage 87 %→89 %.** **MS lane essentially COMPLETE** (B3
   25 + B4 43 = 68 -HW). Next: the deferred MS130 desktop (quick follow-up); then Nexus 9800 + 3000/5000 remnants; then the Class-B
   module lane.
+- **Batch M-1 SETUP — Class-B MODULE class schema stand-up (2026-06-28); SRC + CONFIG ONLY, no module content yet (operator chose
+  "show me the diff first").** The prompt's SETUP STOP-check fired: the pipeline dispatch was strictly binary (switch | transceiver) —
+  a module PID would crash in the transceiver Formfaktor path. Stood up the module class as the **chassis-carve-out pattern, second
+  use** (NOT a new dispatch branch): a module is switch-CLASS (rides `SWITCH_ATTRIBUTES` + the switch path, is_switch=True) with (a) an
+  Ebene-2 override and (b) a reduced gate carve-out keyed by a Kat-L3 token. **Additive src diff (5 files + rules.yaml + test):**
+  `constants.py` — appended the 2 module Merkmale (`Modultyp`, `Kompatible Serie`) to SWITCH_ATTRIBUTES + `MODULE_KAT3_VALUES`
+  {"Switch-Modul"} + `MODULE_REQUIRED_ATTRS` (Modultyp, Kompatible Serie) + `MODULE_FORBIDDEN_ATTRS` (the 9 switch/chassis-only
+  Merkmale) + the `KATEGORIE_EBENE_2_BY_KAT3["Switch-Modul"] = "Switch-Module & Komponenten"` override; `models.py` — 2 SkuIntake
+  fields; `reconcile.py` — 2 ATTR_ALIAS identity entries; `validate.py` — the module dispatch + `_check_module_sku` (required
+  Modultyp+Kompatible Serie; FORBID the switch/chassis-only Merkmale; **S.1/S.3 kept-but-guarded** so a 48-port linecard's S.3 holds
+  while a portless supervisor passes; S.2/S.4/S.5 skipped); `gate.py` — a `_Modules` bundle-name suffix → its own `_modules` L6 coverage
+  namespace; `rules.yaml` — "Switch-Modul" in kategorie_ebene_3_switch_allowed. Pinned by `tests/test_module_class.py` (+ a 2-module
+  fixture: a portless C6800-SUP6T supervisor + a 48-port WS-X6748-GE-TX linecard) — both gate ok=True/0/0 with the reduced set emitted
+  and the switch-only Merkmale absent. **Backward-compat proven: full suite 444 passed (441 + 3 new); a re-gate of Cisco_4500E/3560/
+  3750E/MS355/6800X/Nexus_7000 (every gate path) is byte-identical ok=True/0/0.** Module CONTENT (the 45 sup/linecard/fabric/port-card
+  PNs across the 4 chassis ecosystems) is NOT built yet — awaiting the operator's audit of this isolated schema commit; on approval,
+  agents enumerate+ground each ecosystem (6500/6800 first to prove the path end-to-end), then 4500-E + Nexus 7000/7700.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

@@ -176,6 +176,8 @@ def _brand_category(bundle: Path) -> tuple[str, str]:
     name = bundle.name.replace("stage3_", "")
     if name.endswith("_Switches"):
         return name[:-9], "switches"
+    if name.endswith("_Modules"):                # Class-B module bundles -> their own L6 coverage namespace
+        return name[:-8], "modules"
     return name, "transceivers"
 
 

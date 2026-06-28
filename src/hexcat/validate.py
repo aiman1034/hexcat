@@ -850,6 +850,13 @@ class Validator:
         if k3 in C.CHASSIS_KAT3_VALUES:
             self._check_chassis_sku(fname, sku, k3, names, vals)
             return
+        # MODULE carve-out (Class-B sup/linecard/fabric/port-card): a bare module rides the switch path but
+        # carries the REDUCED module set — required Modultyp+Kompatible Serie, FORBIDS the switch/chassis-only
+        # Merkmale, keeps the port-rules S.1/S.3 (a linecard has ports) but skips S.2/S.4/S.5 (no Layer/
+        # Stacking/operating-temperature). Separate method -> the fixed-switch path below stays byte-identical.
+        if k3 in C.MODULE_KAT3_VALUES:
+            self._check_module_sku(fname, sku, k3, names, vals)
+            return
         # Fibre Channel SAN switches are switch-class but use the 12-attr FC model: no Ethernet Layer
         # (FC does FC-switching/NPV/IVR, not L2/L3) and no separate Durchsatz (the aggregate FC bandwidth
         # IS the throughput, carried in Switching-Kapazität). Drop Layer from the required set for FC;
@@ -957,6 +964,35 @@ class Validator:
                        f"extended operating temp ({vals.get('Betriebstemperatur', '')}) without the "
                        "Industrie-Switch token — review classification (semantic S.5: extended temp is "
                        "necessary but not sufficient for an industrial switch)")
+
+    def _check_module_sku(self, fname, sku, k3, names, vals):
+        """Class-B module gold-slice (supervisor / linecard / fabric / port-card): required Modultyp +
+        Kompatible Serie, the switch/chassis-only Merkmale FORBIDDEN, S.2/S.4/S.5 skipped (a bare module has
+        no Layer/Stacking/operating-temperature of its own); the port-rules S.1 (PoE marker) + S.3 (Portanzahl
+        == port count) are KEPT but fire only when the relevant Merkmal is present, so a portless supervisor/
+        fabric module passes. Separate from _check_switch_sku so the port-centric path is byte-identical for
+        every non-module SKU."""
+        for req in C.MODULE_REQUIRED_ATTRS:
+            if req not in names:
+                self._fail(fname, sku, f"Attributwert ({req})", f"a {req} attribute (every module)",
+                           "(missing)", f"module gold-slice completeness: every module must carry {req}")
+        for forb in C.MODULE_FORBIDDEN_ATTRS:
+            if forb in names:
+                self._fail(fname, sku, f"Attributwert ({forb})", f"no {forb} on a bare module", vals.get(forb, ""),
+                           f"module: {forb} must be ABSENT — a Class-B module has no OS/mount/environment of "
+                           "its own (those belong to the host chassis)")
+        # S.1 (kept, guarded): a PoE budget on a PoE linecard requires a PoE port in Port-Konfiguration.
+        poe = vals.get("PoE", ""); portcfg = vals.get("Port-Konfiguration", "")
+        if re.search(r"\d+\s*W|Budget", poe) and not re.search(r"PoE|802\.3(?:af|at|bt)", portcfg, re.I):
+            self._fail(fname, sku, "PoE", "a PoE port in Port-Konfiguration", poe,
+                       "semantic S.1: a PoE budget requires at least one PoE port in Port-Konfiguration")
+        # S.3 (kept, guarded): a linecard's Portanzahl == the port count parsed from Port-Konfiguration; a
+        # portless supervisor/fabric module carries neither Merkmal and is silently exempt.
+        counts = [int(m) for m in re.findall(r"(\d+)\s*[×xX]", portcfg)]
+        pa = vals.get("Portanzahl", "").strip()
+        if counts and pa.isdigit() and sum(counts) != int(pa):
+            self._fail(fname, sku, "Portanzahl", f"sum of Port-Konfiguration ({sum(counts)})", pa,
+                       "semantic S.3: Portanzahl must equal the port count in Port-Konfiguration")
 
     def _check_prices(self):
         t = self.tables.get("prices")
