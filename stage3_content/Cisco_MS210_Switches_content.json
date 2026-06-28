@@ -1,0 +1,1032 @@
+{
+ "MS210-24-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS210-24-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45, 4× SFP (1G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS210-24-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS210-24-HW: cloud-gemanagter stapelbarer L2-Access-Switch, 24× 1G-RJ45, 4× SFP (1G), 128 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "2,73",
+  "versandgewicht": "5,23",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS210-24-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45, 4× SFP (1G), 128 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS210-24-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS210-Serie – ein festes 1-HE-Gerät mit 24× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS210-24-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 128 Gbit/s Switching-Kapazität und 41,67 Mpps Durchsatz, lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS210-24-HW mit aktiv (temperaturgeregelte lüfter) im Bereich -5 bis 50 °C. Der MS210-24-HW ist abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)); als ungebrauchte Original-Hardware bleibt der MS210-24-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS210-24-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS210-24-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS210-24-HW verwaltet?",
+    "Der MS210-24-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS210-24-HW stapeln?",
+    "Ja – der MS210-24-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS210-24-HW PoE?",
+    "Nein – der MS210-24-HW ist ein reiner Datenswitch ohne PoE (für PoE siehe die P-/LP-/FP-Varianten der Serie)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,67 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); stapelbarer Access-Switch mit 24× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS210-24-HW",
+    "EoS",
+    "Cisco Meraki MS210-24-HW – End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS210-24-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24-HW",
+    "Switching-Kapazität",
+    "128 Gbit/s / 41,67 Mpps: verbatim Meraki-MS210-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24-HW",
+    "Gewicht",
+    "2,73 kg: Meraki-MS210-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24-HW",
+    "PID",
+    "Ordering-PID MS210-24-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS210-24P-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS210-24P-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (24× 1G-RJ45 (PoE), 4× SFP (1G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS210-24P-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS210-24P-HW: cloud-gemanagter stapelbarer L2-Access-Switch, 24× 1G-RJ45 (PoE), 4× SFP (1G), 128 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,71",
+  "versandgewicht": "6,21",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS210-24P-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 24× 1G-RJ45 (PoE), 4× SFP (1G), 128 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS210-24P-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS210-Serie – ein festes 1-HE-Gerät mit 24× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS210-24P-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 128 Gbit/s Switching-Kapazität und 41,67 Mpps Durchsatz, lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS210-24P-HW mit aktiv (temperaturgeregelte lüfter) im Bereich -5 bis 50 °C. Der MS210-24P-HW ist abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)); als ungebrauchte Original-Hardware bleibt der MS210-24P-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS210-24P-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS210-24P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS210-24P-HW verwaltet?",
+    "Der MS210-24P-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS210-24P-HW stapeln?",
+    "Ja – der MS210-24P-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS210-24P-HW PoE?",
+    "Ja – der MS210-24P-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "41,67 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); stapelbarer Access-Switch mit 24× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS210-24P-HW",
+    "EoS",
+    "Cisco Meraki MS210-24P-HW – End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24P-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS210-24P-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24P-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24P-HW",
+    "Switching-Kapazität",
+    "128 Gbit/s / 41,67 Mpps: verbatim Meraki-MS210-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24P-HW",
+    "Gewicht",
+    "3,71 kg: Meraki-MS210-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-24P-HW",
+    "PID",
+    "Ordering-PID MS210-24P-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS210-48-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS210-48-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45, 4× SFP (1G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS210-48-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS210-48-HW: cloud-gemanagter stapelbarer L2-Access-Switch, 48× 1G-RJ45, 4× SFP (1G), 176 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "3,98",
+  "versandgewicht": "6,48",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS210-48-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45, 4× SFP (1G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS210-48-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS210-Serie – ein festes 1-HE-Gerät mit 48× 1G-RJ45 und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS210-48-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz, lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS210-48-HW mit aktiv (temperaturgeregelte lüfter) im Bereich -5 bis 50 °C. Der MS210-48-HW ist abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)); als ungebrauchte Original-Hardware bleibt der MS210-48-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS210-48-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS210-48-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS210-48-HW verwaltet?",
+    "Der MS210-48-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS210-48-HW stapeln?",
+    "Ja – der MS210-48-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS210-48-HW PoE?",
+    "Nein – der MS210-48-HW ist ein reiner Datenswitch ohne PoE (für PoE siehe die P-/LP-/FP-Varianten der Serie)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); stapelbarer Access-Switch mit 48× 1G-RJ45 und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS210-48-HW",
+    "EoS",
+    "Cisco Meraki MS210-48-HW – End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS210-48-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / 77,38 Mpps: verbatim Meraki-MS210-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48-HW",
+    "Gewicht",
+    "3,98 kg: Meraki-MS210-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48-HW",
+    "PID",
+    "Ordering-PID MS210-48-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS210-48LP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS210-48LP-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS210-48LP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS210-48LP-HW: cloud-gemanagter stapelbarer L2-Access-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 176 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "4,37",
+  "versandgewicht": "6,87",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS210-48LP-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS210-48LP-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS210-Serie – ein festes 1-HE-Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS210-48LP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz, lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS210-48LP-HW mit aktiv (temperaturgeregelte lüfter) im Bereich -5 bis 50 °C. Der MS210-48LP-HW ist abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)); als ungebrauchte Original-Hardware bleibt der MS210-48LP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS210-48LP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS210-48LP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS210-48LP-HW verwaltet?",
+    "Der MS210-48LP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS210-48LP-HW stapeln?",
+    "Ja – der MS210-48LP-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS210-48LP-HW PoE?",
+    "Ja – der MS210-48LP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 370 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); stapelbarer Access-Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS210-48LP-HW",
+    "EoS",
+    "Cisco Meraki MS210-48LP-HW – End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48LP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS210-48LP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48LP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48LP-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / 77,38 Mpps: verbatim Meraki-MS210-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48LP-HW",
+    "Gewicht",
+    "4,37 kg: Meraki-MS210-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48LP-HW",
+    "PID",
+    "Ordering-PID MS210-48LP-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS210-48FP-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS210-48FP-HW cloud-gemanagter stapelbarer Layer-2-Access-Switch (48× 1G-RJ45 (PoE), 4× SFP (1G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS210-48FP-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS210-48FP-HW: cloud-gemanagter stapelbarer L2-Access-Switch, 48× 1G-RJ45 (PoE), 4× SFP (1G), 176 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "4,37",
+  "versandgewicht": "6,87",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS210-48FP-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch: 48× 1G-RJ45 (PoE), 4× SFP (1G), 176 Gbit/s, Stacking 80 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS210-48FP-HW ist ein cloud-gemanagter, stapelbarer Layer-2-Access-Switch der Meraki-MS210-Serie – ein festes 1-HE-Gerät mit 48× 1G-RJ45 (PoE) und 4× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS210-48FP-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 176 Gbit/s Switching-Kapazität und 77,38 Mpps Durchsatz, lässt sich per physischem Stacking (80 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS210-48FP-HW mit aktiv (temperaturgeregelte lüfter) im Bereich -5 bis 50 °C. Der MS210-48FP-HW ist abgekündigt (End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150)); als ungebrauchte Original-Hardware bleibt der MS210-48FP-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS210-48FP-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS210-48FP-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS210-48FP-HW verwaltet?",
+    "Der MS210-48FP-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS210-48FP-HW stapeln?",
+    "Ja – der MS210-48FP-HW unterstützt physisches Stacking (80 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS210-48FP-HW PoE?",
+    "Ja – der MS210-48FP-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE+ (IEEE 802.3at, bis 30 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "77,38 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte Stack-Ports, 80 Gbit/s, bis 8 Mitglieder)"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 50 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); stapelbarer Access-Switch mit 48× 1G-RJ45 (PoE) und 4× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (80 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS210-48FP-HW",
+    "EoS",
+    "Cisco Meraki MS210-48FP-HW – End-of-Sale (angekündigt 30.10.2025, letzte Bestellung 30.04.2026; Nachfolger Meraki MS150). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48FP-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS210-48FP-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48FP-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48FP-HW",
+    "Switching-Kapazität",
+    "176 Gbit/s / 77,38 Mpps: verbatim Meraki-MS210-Datenblatt. Stacking-Bandbreite (80 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48FP-HW",
+    "Gewicht",
+    "4,37 kg: Meraki-MS210-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ],
+   [
+    "MS210-48FP-HW",
+    "PID",
+    "Ordering-PID MS210-48FP-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS210_Overview_and_Specifications"
+   ]
+  ]
+ }
+}

@@ -3552,6 +3552,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   rows, Condition new, Prices ungrouped no-BOM, Beschreibung ≤175). Manifest: 3 built-blocks; the "~15" 3750/3750-E/3750-G legacy
   catch-all RETIRED. **In-scope 98→100; 789→819 built, 91 families fully built, 89 % (100-family milestone).** Next: Batch 3 = Meraki
   MS (~30, Hersteller Cisco + "Meraki-Lizenz separat erforderlich" line); then Nexus 9800 + 3000/5000 remnants; then Class-B modules.
+- **Cisco Switches Batch 3 — Cisco Meraki MS: NEW cloud-managed LANE, 5 series → 25 -HW SKUs (2026-06-28); content+config only.**
+  Anti-duplicate first (Meraki MS unbuilt; the built Meraki *transceivers* use a separate vendor entry). NO harvest — the auditor is
+  robots-blocked on meraki.cisco.com, so I GROUNDED everything via two parallel research agents against the live datasheets.
+  **`git diff -- src/` EMPTY; suite 441 passed.** `Cisco_MS210`/`MS225` (L2, 5 each), `Cisco_MS250`/`MS350`/`MS355` (L3; 5/6/4).
+  **Three modeling deltas vs every IOS batch:** (1) **OS** — NO "nicht IOS-XE"; Beschreibung carries "Cloud-gemanagt über das Cisco
+  Meraki Dashboard (Meraki OS)"; Switch-Typ=Managed; no OS Merkmal (verified IOS-claim=0 in the customer-facing fields — the VLog
+  *documents* the absence of IOS and is excluded from that check). (2) **License** — every SKU's Beschreibung+FAQ carries the
+  "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 J) separat erforderlich — ohne aktive Lizenz nicht betriebsbereit" line. (3) **PIDs**
+  MSxxx-NN[P/LP/FP/X/X2]-HW; Layer per-series; Stacking=Ja (physical). **Hersteller=Cisco** via an additive `config/rules.yaml`
+  vendor entry `"Cisco Meraki" → {hersteller: Cisco, slug: cisco-meraki}` (does NOT touch the existing "Meraki" entry that serves the
+  built transceivers; brand="Cisco Meraki" in the build). **Grounding corrected 3 assumptions** (agents vs the prompt): MS355 stacking
+  = **400 Gbps** (not 200), MS355 uplinks = **4× SFP+ 10G + 2× QSFP+ 40G** (not SFP28/25G), and all 5 series are **EoS** (flag, banked).
+  **SwK + Durchsatz are PER-SKU, not per-series** (128/176 by port-count; MS355 352/640/544/688) — Durchsatz = Mpps where published
+  (MS210/225/250: 41,67–127,98) else **Line-Rate** (MS350/MS355 — Meraki publishes no Mpps). mGig mixed-port S.3 balances (e.g.
+  MS355-48X "32× 1G + 16× mGig" → Σ=48); UPOE 740 W on the mGig models (MS350-24X, all MS355); per-PID weights (2,73–7,33 kg) +
+  operating temps (-5/50 °C; MS355 0/45; MS225 spec-page vs PDF conflict logged) all grounded. EXCLUDED (verified none banked): all
+  MA-* accessories (PSU/fans/stack cables/uplink modules/optics) + LIC-MS* licenses; the prompt's MS120/125/390 + MS130/150/410/425/450
+  + 9300-M/9200L-M are out of this batch. All 5 bundles gate ok=True / 0 / 0; byte-contract PASS (Condition new, Prices ungrouped
+  no-BOM, Beschreibung ≤175); Hersteller=Cisco + slug cisco-meraki verified. Manifest: 5 built-blocks + a "remaining Meraki" catch-all
+  (~25 deferred). **In-scope 100→106; 819→844 built, 96 families fully built; coverage 89 %→87 % (the dip is HONEST — the Meraki lane
+  is newly in-scope with a ~25-SKU deferred backlog: denominator +50, numerator +25).** Next: deferred Meraki series; then Nexus 9800
+  + Nexus 3000/5000 remnants; then the Class-B module lane (`Switch-Module & Komponenten`).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

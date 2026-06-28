@@ -11,6 +11,9 @@ vendors:
   "Juniper": { hersteller: "Juniper", slug: "juniper" }
   "Arista":  { hersteller: "Arista",  slug: "arista" }
   "Meraki":  { hersteller: "Meraki",  slug: "meraki" }
+  # Cisco Meraki MS switches: cloud-managed line, Hersteller=Cisco (operator directive), distinct slug.
+  # Additive — does NOT change the "Meraki" entry above (that serves the built Meraki transceivers).
+  "Cisco Meraki": { hersteller: "Cisco", slug: "cisco-meraki" }
   "Fortinet": { hersteller: "Fortinet", slug: "fortinet" }
   "MikroTik": { hersteller: "MikroTik", slug: "mikrotik" }
   "NVIDIA":  { hersteller: "NVIDIA",  slug: "nvidia" }

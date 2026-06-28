@@ -1,0 +1,826 @@
+{
+ "MS355-24X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS355-24X-HW cloud-gemanagter stapelbarer Layer-3-Access-Switch (16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS355-24X-HW L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS355-24X-HW: cloud-gemanagter stapelbarer L3-Access-Switch, 16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 352 Gbit/s, PoE. Meraki-Lizenz …",
+  "artikelgewicht": "6,96",
+  "versandgewicht": "9,46",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS355-24X-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch: 16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 352 Gbit/s, Stacking 400 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS355-24X-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch der Meraki-MS355-Serie – ein festes 1-HE-Gerät mit 16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS355-24X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 352 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz, lässt sich per physischem Stacking (400 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS355-24X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS355-24X-HW ist abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)); als ungebrauchte Original-Hardware bleibt der MS355-24X-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS355-24X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS355-24X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS355-24X-HW verwaltet?",
+    "Der MS355-24X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS355-24X-HW stapeln?",
+    "Ja – der MS355-24X-HW unterstützt physisches Stacking (400 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS355-24X-HW PoE?",
+    "Ja – der MS355-24X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + mGig (100M–10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G) + 2× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Ja  Cisco UPOE (bis 60 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "352 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modulares, feldtauschbares Netzteil (Redundanz möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte 100G-Stack-Ports, 400 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Multigigabit-Ethernet (bis 10G) mit 10G/40G-Uplinks, Layer 3); stapelbarer Access-Switch mit 16× 1G-RJ45 + 8× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (400 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS355-24X-HW",
+    "EoS",
+    "Cisco Meraki MS355-24X-HW – End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS355-24X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X-HW",
+    "Switching-Kapazität",
+    "352 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS355-Datenblatt. Stacking-Bandbreite (400 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X-HW",
+    "Gewicht",
+    "6,96 kg: Meraki-MS355-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X-HW",
+    "PID",
+    "Ordering-PID MS355-24X-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS355-24X2-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS355-24X2-HW cloud-gemanagter stapelbarer Layer-3-Access-Switch (24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS355-24X2-HW L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS355-24X2-HW: cloud-gemanagter stapelbarer L3-Access-Switch, 24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 640 Gbit/s, PoE. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "6,84",
+  "versandgewicht": "9,34",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS355-24X2-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch: 24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 640 Gbit/s, Stacking 400 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS355-24X2-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch der Meraki-MS355-Serie – ein festes 1-HE-Gerät mit 24× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS355-24X2-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 640 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz, lässt sich per physischem Stacking (400 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS355-24X2-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS355-24X2-HW ist abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)); als ungebrauchte Original-Hardware bleibt der MS355-24X2-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS355-24X2-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS355-24X2-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS355-24X2-HW verwaltet?",
+    "Der MS355-24X2-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS355-24X2-HW stapeln?",
+    "Ja – der MS355-24X2-HW unterstützt physisches Stacking (400 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS355-24X2-HW PoE?",
+    "Ja – der MS355-24X2-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× mGig-RJ45 (100M–10G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "mGig (100M–10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G) + 2× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Ja  Cisco UPOE (bis 60 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "640 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modulares, feldtauschbares Netzteil (Redundanz möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte 100G-Stack-Ports, 400 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Multigigabit-Ethernet (bis 10G) mit 10G/40G-Uplinks, Layer 3); stapelbarer Access-Switch mit 24× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (400 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS355-24X2-HW",
+    "EoS",
+    "Cisco Meraki MS355-24X2-HW – End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X2-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS355-24X2-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X2-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X2-HW",
+    "Switching-Kapazität",
+    "640 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS355-Datenblatt. Stacking-Bandbreite (400 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X2-HW",
+    "Gewicht",
+    "6,84 kg: Meraki-MS355-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-24X2-HW",
+    "PID",
+    "Ordering-PID MS355-24X2-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS355-48X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS355-48X-HW cloud-gemanagter stapelbarer Layer-3-Access-Switch (32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS355-48X-HW L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS355-48X-HW: cloud-gemanagter stapelbarer L3-Access-Switch, 32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 544 Gbit/s, PoE. Meraki-Lizenz …",
+  "artikelgewicht": "7,28",
+  "versandgewicht": "9,78",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS355-48X-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch: 32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 544 Gbit/s, Stacking 400 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS355-48X-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch der Meraki-MS355-Serie – ein festes 1-HE-Gerät mit 32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS355-48X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 544 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz, lässt sich per physischem Stacking (400 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS355-48X-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS355-48X-HW ist abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)); als ungebrauchte Original-Hardware bleibt der MS355-48X-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS355-48X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS355-48X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS355-48X-HW verwaltet?",
+    "Der MS355-48X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS355-48X-HW stapeln?",
+    "Ja – der MS355-48X-HW unterstützt physisches Stacking (400 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS355-48X-HW PoE?",
+    "Ja – der MS355-48X-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + mGig (100M–10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G) + 2× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Ja  Cisco UPOE (bis 60 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "544 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modulares, feldtauschbares Netzteil (Redundanz möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte 100G-Stack-Ports, 400 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Multigigabit-Ethernet (bis 10G) mit 10G/40G-Uplinks, Layer 3); stapelbarer Access-Switch mit 32× 1G-RJ45 + 16× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (400 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS355-48X-HW",
+    "EoS",
+    "Cisco Meraki MS355-48X-HW – End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS355-48X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X-HW",
+    "Switching-Kapazität",
+    "544 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS355-Datenblatt. Stacking-Bandbreite (400 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X-HW",
+    "Gewicht",
+    "7,28 kg: Meraki-MS355-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X-HW",
+    "PID",
+    "Ordering-PID MS355-48X-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ]
+  ]
+ },
+ "MS355-48X2-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco Meraki MS355-48X2-HW cloud-gemanagter stapelbarer Layer-3-Access-Switch (24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 1 HE)",
+  "titel_tag": "Cisco Meraki MS355-48X2-HW L3-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS355-48X2-HW: cloud-gemanagter stapelbarer L3-Access-Switch, 24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 688 Gbit/s, PoE. Meraki-Lizenz …",
+  "artikelgewicht": "7,33",
+  "versandgewicht": "9,83",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS355-48X2-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch: 24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE), 4× SFP+ (10G) + 2× QSFP+ (40G), 688 Gbit/s, Stacking 400 Gbit/s, verwaltet über das Cisco Meraki Dashboard, PoE.</p><p>Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)). Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS355-48X2-HW ist ein cloud-gemanagter, stapelbarer Layer-3-Access-Switch der Meraki-MS355-Serie – ein festes 1-HE-Gerät mit 24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS355-48X2-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt über das cisco meraki dashboard ohne lokale CLI. Er liefert 688 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz, lässt sich per physischem Stacking (400 Gbit/s) zu einem logischen Switch bündeln und versorgt seine Zugangsports per Power over Ethernet. Hinweis: Für den Betrieb ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der MS355-48X2-HW mit aktiv (temperaturgeregelte lüfter) im Bereich 0 bis 45 °C. Der MS355-48X2-HW ist abgekündigt (End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M)); als ungebrauchte Original-Hardware bleibt der MS355-48X2-HW für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS355-48X2-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS355-48X2-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS355-48X2-HW verwaltet?",
+    "Der MS355-48X2-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS355-48X2-HW stapeln?",
+    "Ja – der MS355-48X2-HW unterstützt physisches Stacking (400 Gbit/s) und lässt sich mit weiteren Switches der Serie zu einem logischen Switch zusammenfassen."
+   ],
+   [
+    "Unterstützt der MS355-48X2-HW PoE?",
+    "Ja – der MS355-48X2-HW liefert Power over Ethernet an seinen Zugangsports (Budget und Standard siehe Merkmal PoE)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + mGig (100M–10G)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (10G) + 2× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Ja  Cisco UPOE (bis 60 W/Port), 740 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "688 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Modulares, feldtauschbares Netzteil (Redundanz möglich)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (temperaturgeregelte Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Ja  Physisches Stacking (2 dedizierte 100G-Stack-Ports, 400 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Multigigabit-Ethernet (bis 10G) mit 10G/40G-Uplinks, Layer 3); stapelbarer Access-Switch mit 24× 1G-RJ45 + 24× mGig-RJ45 (100M–10G) (PoE) und 4× SFP+ (10G) + 2× QSFP+ (40G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); PoE-Versorgung für IP-Telefone, Access-Points und Kameras; physisches Stacking (400 Gbit/s); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS355-48X2-HW",
+    "EoS",
+    "Cisco Meraki MS355-48X2-HW – End-of-Sale (angekündigt 28.08.2024; Nachfolger Catalyst 9300X-M). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X2-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS355-48X2-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEIN Cisco IOS/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet. Verwaltung/Lizenz Cloud-basiert.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X2-HW",
+    "Lizenz",
+    "Cisco-Meraki-Enterprise-Lizenz (1/3/5/7/10 Jahre) separat erforderlich — Gerät ohne aktive Lizenz nicht betriebsbereit. In Beschreibung + FAQ prominent ausgewiesen.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X2-HW",
+    "Switching-Kapazität",
+    "688 Gbit/s / Line-Rate (nicht-blockierend): verbatim Meraki-MS355-Datenblatt. Stacking-Bandbreite (400 Gbit/s) ist davon getrennt und steht in der Beschreibung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X2-HW",
+    "Gewicht",
+    "7,33 kg: Meraki-MS355-Datenblatt (per-PID gegroundet). Versandgewicht = +2,5 kg Verpackung.",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ],
+   [
+    "MS355-48X2-HW",
+    "PID",
+    "Ordering-PID MS355-48X2-HW verbatim (Hardware-SKU, Suffix -HW). NICHT gebankt: MA-*-Zubehör (Netzteile, Lüfter, Stack-Kabel, Uplink-Module, Optik), Lizenzen (LIC-MS*). Hersteller=Cisco (Meraki-Linie).",
+    "https://documentation.meraki.com/Switching/MS_-_Switches/Product_Information/Overviews_and_Datasheets/MS355_Overview_and_Specifications"
+   ]
+  ]
+ }
+}
