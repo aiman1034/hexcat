@@ -1,0 +1,3202 @@
+{
+ "WS-C3560-24TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-24TS-S Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100, 2× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-24TS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-24TS-S (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "3,90",
+  "versandgewicht": "6,40",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-24TS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, 6,5 Mpps, Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-24TS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100 und 2× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-24TS-S liefert 32 Gbit/s Switching-Bandbreite und 6,5 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560-24TS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-24TS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-24TS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-24TS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-24TS-S?",
+    "Der WS-C3560-24TS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-24TS-S PoE?",
+    "Nein – der WS-C3560-24TS-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-24TS-S?",
+    "Der WS-C3560-24TS-S bietet 2× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-24TS-S noch aktuell?",
+    "Der WS-C3560-24TS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Base); fester Multilayer-Access-Switch mit 24× 10/100 und 2× SFP (GbE)-Uplinks; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-24TS-S",
+    "EoS",
+    "Cisco WS-C3560-24TS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-S",
+    "Gewicht",
+    "3,90 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-24TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-S",
+    "PID",
+    "Ordering-PID WS-C3560-24TS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-24TS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-24TS-E Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100, 2× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-24TS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-24TS-E (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "3,90",
+  "versandgewicht": "6,40",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-24TS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, 6,5 Mpps, Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-24TS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100 und 2× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-24TS-E liefert 32 Gbit/s Switching-Bandbreite und 6,5 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560-24TS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-24TS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-24TS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-24TS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-24TS-E?",
+    "Der WS-C3560-24TS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-24TS-E PoE?",
+    "Nein – der WS-C3560-24TS-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-24TS-E?",
+    "Der WS-C3560-24TS-E bietet 2× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-24TS-E noch aktuell?",
+    "Der WS-C3560-24TS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Services); fester Multilayer-Access-Switch mit 24× 10/100 und 2× SFP (GbE)-Uplinks; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-24TS-E",
+    "EoS",
+    "Cisco WS-C3560-24TS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-E",
+    "Gewicht",
+    "3,90 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-24TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24TS-E",
+    "PID",
+    "Ordering-PID WS-C3560-24TS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-48TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-48TS-S Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-48TS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-48TS-S (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "4,10",
+  "versandgewicht": "6,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-48TS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 13,1 Mpps, Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-48TS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-48TS-S liefert 32 Gbit/s Switching-Bandbreite und 13,1 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560-48TS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-48TS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-48TS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-48TS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-48TS-S?",
+    "Der WS-C3560-48TS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-48TS-S PoE?",
+    "Nein – der WS-C3560-48TS-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-48TS-S?",
+    "Der WS-C3560-48TS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-48TS-S noch aktuell?",
+    "Der WS-C3560-48TS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "13,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Base); fester Multilayer-Access-Switch mit 48× 10/100 und 4× SFP (GbE)-Uplinks; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-48TS-S",
+    "EoS",
+    "Cisco WS-C3560-48TS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-S",
+    "Gewicht",
+    "4,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-48TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-S",
+    "PID",
+    "Ordering-PID WS-C3560-48TS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-48TS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-48TS-E Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-48TS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-48TS-E (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "4,10",
+  "versandgewicht": "6,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-48TS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 13,1 Mpps, Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-48TS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-48TS-E liefert 32 Gbit/s Switching-Bandbreite und 13,1 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560-48TS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-48TS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-48TS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-48TS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-48TS-E?",
+    "Der WS-C3560-48TS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-48TS-E PoE?",
+    "Nein – der WS-C3560-48TS-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-48TS-E?",
+    "Der WS-C3560-48TS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-48TS-E noch aktuell?",
+    "Der WS-C3560-48TS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "13,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Services); fester Multilayer-Access-Switch mit 48× 10/100 und 4× SFP (GbE)-Uplinks; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-48TS-E",
+    "EoS",
+    "Cisco WS-C3560-48TS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-E",
+    "Gewicht",
+    "4,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-48TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48TS-E",
+    "PID",
+    "Ordering-PID WS-C3560-48TS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-24PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-24PS-S Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100, 2× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-24PS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-24PS-S (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-24PS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, 6,5 Mpps, Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-24PS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100 und 2× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-24PS-S liefert 32 Gbit/s Switching-Bandbreite und 6,5 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560-24PS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-24PS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-24PS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-24PS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-24PS-S?",
+    "Der WS-C3560-24PS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-24PS-S PoE?",
+    "Ja – der WS-C3560-24PS-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 24 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-24PS-S?",
+    "Der WS-C3560-24PS-S bietet 2× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-24PS-S noch aktuell?",
+    "Der WS-C3560-24PS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Base); fester Multilayer-Access-Switch mit 24× 10/100 und 2× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-24PS-S",
+    "EoS",
+    "Cisco WS-C3560-24PS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-S",
+    "Gewicht",
+    "5,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-24PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-S",
+    "PID",
+    "Ordering-PID WS-C3560-24PS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-24PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-24PS-E Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100, 2× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-24PS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-24PS-E (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-24PS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100, 2× SFP (GbE)-Uplinks, 32 Gbit/s, 6,5 Mpps, Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-24PS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100 und 2× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-24PS-E liefert 32 Gbit/s Switching-Bandbreite und 6,5 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560-24PS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-24PS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-24PS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-24PS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-24PS-E?",
+    "Der WS-C3560-24PS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-24PS-E PoE?",
+    "Ja – der WS-C3560-24PS-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 24 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-24PS-E?",
+    "Der WS-C3560-24PS-E bietet 2× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-24PS-E noch aktuell?",
+    "Der WS-C3560-24PS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "6,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Services); fester Multilayer-Access-Switch mit 24× 10/100 und 2× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-24PS-E",
+    "EoS",
+    "Cisco WS-C3560-24PS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-E",
+    "Gewicht",
+    "5,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-24PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-24PS-E",
+    "PID",
+    "Ordering-PID WS-C3560-24PS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-48PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-48PS-S Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-48PS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-48PS-S (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "6,00",
+  "versandgewicht": "8,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-48PS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 13,1 Mpps, Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-48PS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-48PS-S liefert 32 Gbit/s Switching-Bandbreite und 13,1 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560-48PS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-48PS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-48PS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-48PS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-48PS-S?",
+    "Der WS-C3560-48PS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-48PS-S PoE?",
+    "Ja – der WS-C3560-48PS-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 48 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-48PS-S?",
+    "Der WS-C3560-48PS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-48PS-S noch aktuell?",
+    "Der WS-C3560-48PS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "13,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Base); fester Multilayer-Access-Switch mit 48× 10/100 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-48PS-S",
+    "EoS",
+    "Cisco WS-C3560-48PS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-S",
+    "Gewicht",
+    "6,00 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-48PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-S",
+    "PID",
+    "Ordering-PID WS-C3560-48PS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560-48PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560-48PS-E Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560-48PS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560-48PS-E (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "6,00",
+  "versandgewicht": "8,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560-48PS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 13,1 Mpps, Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560-48PS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560-48PS-E liefert 32 Gbit/s Switching-Bandbreite und 13,1 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560-48PS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560-48PS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560-48PS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560-48PS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560-48PS-E?",
+    "Der WS-C3560-48PS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560-48PS-E PoE?",
+    "Ja – der WS-C3560-48PS-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 48 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560-48PS-E?",
+    "Der WS-C3560-48PS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560-48PS-E noch aktuell?",
+    "Der WS-C3560-48PS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "13,1 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Fast-Ethernet (10/100), Layer-3, IP Services); fester Multilayer-Access-Switch mit 48× 10/100 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560-48PS-E",
+    "EoS",
+    "Cisco WS-C3560-48PS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-E",
+    "Gewicht",
+    "6,00 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560-48PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560-48PS-E",
+    "PID",
+    "Ordering-PID WS-C3560-48PS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-24TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-24TS-S Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-24TS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-24TS-S (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-24TS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-24TS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-24TS-S liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560G-24TS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-24TS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-24TS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-24TS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-24TS-S?",
+    "Der WS-C3560G-24TS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-24TS-S PoE?",
+    "Nein – der WS-C3560G-24TS-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-24TS-S?",
+    "Der WS-C3560G-24TS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-24TS-S noch aktuell?",
+    "Der WS-C3560G-24TS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); fester Multilayer-Access-Switch mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-24TS-S",
+    "EoS",
+    "Cisco WS-C3560G-24TS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-S",
+    "Gewicht",
+    "5,40 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-24TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-S",
+    "PID",
+    "Ordering-PID WS-C3560G-24TS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-24TS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-24TS-E Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-24TS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-24TS-E (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "5,40",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-24TS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-24TS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-24TS-E liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560G-24TS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-24TS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-24TS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-24TS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-24TS-E?",
+    "Der WS-C3560G-24TS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-24TS-E PoE?",
+    "Nein – der WS-C3560G-24TS-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-24TS-E?",
+    "Der WS-C3560G-24TS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-24TS-E noch aktuell?",
+    "Der WS-C3560G-24TS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); fester Multilayer-Access-Switch mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-24TS-E",
+    "EoS",
+    "Cisco WS-C3560G-24TS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-E",
+    "Gewicht",
+    "5,40 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-24TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24TS-E",
+    "PID",
+    "Ordering-PID WS-C3560G-24TS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-48TS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-48TS-S Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-48TS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-48TS-S (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "6,40",
+  "versandgewicht": "8,90",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-48TS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Base, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-48TS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-48TS-S liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560G-48TS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-48TS-S mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-48TS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-48TS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-48TS-S?",
+    "Der WS-C3560G-48TS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-48TS-S PoE?",
+    "Nein – der WS-C3560G-48TS-S ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-48TS-S?",
+    "Der WS-C3560G-48TS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-48TS-S noch aktuell?",
+    "Der WS-C3560G-48TS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); fester Multilayer-Access-Switch mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-48TS-S",
+    "EoS",
+    "Cisco WS-C3560G-48TS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-S",
+    "Gewicht",
+    "6,40 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-48TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-S",
+    "PID",
+    "Ordering-PID WS-C3560G-48TS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-48TS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-48TS-E Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-48TS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-48TS-E (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, klassisches Cisco IOS. Abgekündigt, neuwertig.",
+  "artikelgewicht": "6,40",
+  "versandgewicht": "8,90",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-48TS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Services, ohne PoE unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-48TS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-48TS-E liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt reinen Datenbetrieb ohne PoE. Betrieben wird der WS-C3560G-48TS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-48TS-E mit internem AC-Netzteil (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-48TS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-48TS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-48TS-E?",
+    "Der WS-C3560G-48TS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-48TS-E PoE?",
+    "Nein – der WS-C3560G-48TS-E ist ein reiner Datenswitch ohne PoE (für PoE siehe die -PS-Modelle der Serie)."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-48TS-E?",
+    "Der WS-C3560G-48TS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-48TS-E noch aktuell?",
+    "Der WS-C3560G-48TS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil; externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); fester Multilayer-Access-Switch mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-48TS-E",
+    "EoS",
+    "Cisco WS-C3560G-48TS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-E",
+    "Gewicht",
+    "6,40 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-48TS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48TS-E",
+    "PID",
+    "Ordering-PID WS-C3560G-48TS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-24PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-24PS-S Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-24PS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-24PS-S (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, …",
+  "artikelgewicht": "6,10",
+  "versandgewicht": "8,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-24PS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-24PS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-24PS-S liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560G-24PS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-24PS-S mit internem AC-Netzteil (0,52 kVA) (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-24PS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-24PS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-24PS-S?",
+    "Der WS-C3560G-24PS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-24PS-S PoE?",
+    "Ja – der WS-C3560G-24PS-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 24 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-24PS-S?",
+    "Der WS-C3560G-24PS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-24PS-S noch aktuell?",
+    "Der WS-C3560G-24PS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (0,52 kVA); externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); fester Multilayer-Access-Switch mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-24PS-S",
+    "EoS",
+    "Cisco WS-C3560G-24PS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-S",
+    "Gewicht",
+    "6,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-24PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-S",
+    "PID",
+    "Ordering-PID WS-C3560G-24PS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-24PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-24PS-E Catalyst 3560 gemanagter L3-Access-Switch (24× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-24PS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-24PS-E (Catalyst 3560): gemanagter L3-Access-Switch, 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, …",
+  "artikelgewicht": "6,10",
+  "versandgewicht": "8,60",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-24PS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 24× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-24PS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-24PS-E liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560G-24PS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-24PS-E mit internem AC-Netzteil (0,52 kVA) (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-24PS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-24PS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-24PS-E?",
+    "Der WS-C3560G-24PS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-24PS-E PoE?",
+    "Ja – der WS-C3560G-24PS-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 24 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-24PS-E?",
+    "Der WS-C3560G-24PS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 24 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-24PS-E noch aktuell?",
+    "Der WS-C3560G-24PS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (0,52 kVA); externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); fester Multilayer-Access-Switch mit 24× 10/100/1000 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-24PS-E",
+    "EoS",
+    "Cisco WS-C3560G-24PS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-E",
+    "Gewicht",
+    "6,10 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-24PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-24PS-E",
+    "PID",
+    "Ordering-PID WS-C3560G-24PS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-48PS-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-48PS-S Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Base, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-48PS-S Catalyst 3560 L3 IP Base | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-48PS-S (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Base, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, …",
+  "artikelgewicht": "7,00",
+  "versandgewicht": "9,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-48PS-S ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Base, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-48PS-S ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-48PS-S liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Base aus – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560G-48PS-S unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-48PS-S mit internem AC-Netzteil (0,56 kVA) (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-48PS-S ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-48PS-S für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-48PS-S?",
+    "Der WS-C3560G-48PS-S trägt das Image IP Base – IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing. Beide Images routen in Hardware (Layer 3); IP Base bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-48PS-S PoE?",
+    "Ja – der WS-C3560G-48PS-S liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 48 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-48PS-S?",
+    "Der WS-C3560G-48PS-S bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-48PS-S noch aktuell?",
+    "Der WS-C3560G-48PS-S ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (0,56 kVA); externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Base); fester Multilayer-Access-Switch mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Base (SMI): statisches Routing, RIP und Inter-VLAN-Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-48PS-S",
+    "EoS",
+    "Cisco WS-C3560G-48PS-S – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-S",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-S",
+    "Gewicht",
+    "7,00 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-S",
+    "Image-Tier",
+    "Artikelnummer-Suffix -S = IP Base. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-48PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-S",
+    "PID",
+    "Ordering-PID WS-C3560G-48PS-S verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ },
+ "WS-C3560G-48PS-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+   "verifiziert_am": "2026-06-28"
+  },
+  "artikelname": "Cisco WS-C3560G-48PS-E Catalyst 3560 gemanagter L3-Access-Switch (48× 10/100/1000, 4× SFP (GbE)-Uplinks, IP Services, 1 HE)",
+  "titel_tag": "Cisco WS-C3560G-48PS-E Catalyst 3560 L3 | Hexwaren",
+  "meta_description": "Original Cisco WS-C3560G-48PS-E (Catalyst 3560): gemanagter L3-Access-Switch, 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, Image IP Services, PoE 802.3af, klassisches Cisco IOS. Abgekündigt, …",
+  "artikelgewicht": "7,00",
+  "versandgewicht": "9,50",
+  "kurzbeschreibung": "<p>Der Cisco WS-C3560G-48PS-E ist ein gemanagter Layer-3-Access-Switch der Catalyst-3560-Serie: 48× 10/100/1000, 4× SFP (GbE)-Uplinks, 32 Gbit/s, 38,7 Mpps, Image IP Services, PoE 802.3af unter klassisches Cisco IOS (nicht IOS-XE).</p><p>1-HE-Gerät, internes Netzteil. Abgekündigt (End-of-Sale 2013); ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco WS-C3560G-48PS-E ist ein gemanagter Layer-3-Access-Switch der ursprünglichen Catalyst-3560-Serie – ein festes 1-HE-Gerät mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks für den Enterprise- und Campus-Zugang.",
+   "Der WS-C3560G-48PS-E liefert 32 Gbit/s Switching-Bandbreite und 38,7 Mpps Durchsatz (64-Byte-Pakete), führt hardwarebasiertes IP-Routing (CEF) im Software-Image IP Services aus – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing – und unterstützt PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) für IP-Telefone, Access-Points und Kameras. Betrieben wird der WS-C3560G-48PS-E unter klassisches Cisco IOS (nicht IOS-XE); Stacking ist nicht vorgesehen.",
+   "Im 19-Zoll-Rack (1 HE) arbeitet der WS-C3560G-48PS-E mit internem AC-Netzteil (0,56 kVA) (optionale externe Redundanz über Cisco RPS 675) und aktiver Lüftung im Bereich 0 bis 45 °C. Der WS-C3560G-48PS-E ist ein abgekündigtes Modell (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt der WS-C3560G-48PS-E für Ersatz und Bestandserweiterung im Campus-Access verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Welchen Routing-Funktionsumfang hat der WS-C3560G-48PS-E?",
+    "Der WS-C3560G-48PS-E trägt das Image IP Services – IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing. Beide Images routen in Hardware (Layer 3); IP Services bestimmt den Funktionsumfang."
+   ],
+   [
+    "Unterstützt der WS-C3560G-48PS-E PoE?",
+    "Ja – der WS-C3560G-48PS-E liefert PoE nach IEEE 802.3af (plus Cisco prestandard, bis 15,4 W/Port) an seinen 48 Zugangsports."
+   ],
+   [
+    "Welche Uplinks hat der WS-C3560G-48PS-E?",
+    "Der WS-C3560G-48PS-E bietet 4× SFP (GbE)-Uplinks (SFP-Slots) zusätzlich zu seinen 48 10/100/1000-Zugangsports."
+   ],
+   [
+    "Ist der WS-C3560G-48PS-E noch aktuell?",
+    "Der WS-C3560G-48PS-E ist abgekündigt (End-of-Sale 2013); als ungebrauchte Original-Hardware bleibt er für Ersatz und Bestandserweiterung erhältlich."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP (GbE)"
+   ],
+   [
+    "PoE",
+    "Ja  PoE (IEEE 802.3af + Cisco prestandard, bis 15,4 W/Port)"
+   ],
+   [
+    "Switching-Kapazität",
+    "32 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "38,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes AC-Netzteil (0,56 kVA); externe Redundanz über Cisco RPS 675 (optional)"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Enterprise-/Campus-Zugang (Gigabit, Layer-3, IP Services); fester Multilayer-Access-Switch mit 48× 10/100/1000 und 4× SFP (GbE)-Uplinks; PoE-Versorgung (802.3af) für IP-Telefone, Access-Points und Kameras; IP Services (EMI): voll dynamisches Routing (OSPF, EIGRP, BGP), IPv6 und Policy-Based Routing; verwaltet über klassisches Cisco IOS (nicht IOS-XE)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C3560G-48PS-E",
+    "EoS",
+    "Cisco WS-C3560G-48PS-E – End-of-Sale 2013 (ursprüngliche 3560-Serie). In scope (Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-E",
+    "Switching-Kapazität",
+    "32 Gbit/s: GEGROUNDET aus dem Cisco-Datenblatt (Tabelle 2, „32 Gbps forwarding bandwidth\", serienweiter Wert für alle 3560/3560G; Cisco variiert nur die Mpps). Quelle via Wayback (product_data_sheet09186a00801f3d7d). Hinweis: Reseller-Mirror führen für das FE-48-Port-Modell eine errechnete Backplane von 17,6 Gbit/s — der Cisco-eigene Datenblattwert ist jedoch 32 Gbit/s serienweit.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-E",
+    "Gewicht",
+    "7,00 kg (Chassis): Cisco-3560-Datenblatt-Physik / Reseller-Mirror. Versandgewicht = +2,5 kg Verpackung.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-E",
+    "Image-Tier",
+    "Artikelnummer-Suffix -E = IP Services. Orderbare PID trägt zwingend den Tier-Suffix (WS-C3560G-48PS ohne Suffix ist nicht orderbar). Layer L3 bei beiden Tiers; der Suffix bestimmt den Routing-Funktionsumfang, nicht L2-vs-L3.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ],
+   [
+    "WS-C3560G-48PS-E",
+    "PID",
+    "Ordering-PID WS-C3560G-48PS-E verbatim. NICHT gebankt: License-Upgrade-Kits (CD-3560-EMI=, CD-3560G-EMI=), RPS-675-Einheiten und alle „=\"-Spares.",
+    "https://web.archive.org/web/20181221124749/https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-3560-series-switches/product_data_sheet09186a00801f3d7d.html"
+   ]
+  ]
+ }
+}

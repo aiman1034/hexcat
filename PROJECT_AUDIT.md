@@ -3505,6 +3505,32 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   still 760/85 %). All 11 re-gate **ok=True / 0 / 0**; suite **441 passed**; Beschreibung ≤175 (max 143/148/173). Lesson (memory):
   a filterable Merkmal must stay a SHORT token — never let a spec recap leak into `Anwendung`; if normalizing one, fold any
   recap-only substance into the Beschreibung FIRST so no grounded detail is lost.
+- **Cisco Switches Batch 1 — Remaining Fixed Catalyst: 3 fixed-switch families, 21 PNs → 29 SKUs (2026-06-28); content+config only.**
+  Anti-duplicate first (all unbuilt; the compact 3560-C/3560-CX are distinct from the original 3560). FIXED switches (Switch-Typ=
+  **Managed**, full port Merkmale + S.3; NOT chassis) — `_facts.unterkategorie = "Managed Switch (L3)"` (the bare "Managed Switch"
+  routes to the transceiver Formfaktor path → ReconcileError). **`git diff -- src/` EMPTY; suite 441 passed.** Three families:
+  `Cisco_6800X` (6: C6880-X-LE/-X 5 HE + C6816/6832/6824/6840-X-LE 2 HE), `Cisco_4500X` (7: WS-C4500X 1 HE, split out of the 4500-E
+  module catch-all), `Cisco_3560` (16 = 8 base × **-S IP Base / -E IP Services** tier-granularity, 3560-X/3750-X precedent; bare PID
+  not orderable). **The IOS-XE flag is PER-FAMILY, three answers in one batch** (verified in the build): 6800-X = classic Cisco IOS
+  (Sup2T arch) → affirmative `IOS XE`=0 + "nicht IOS-XE"; **4500-X = Cisco IOS XE → invariant FLIPS** (affirmative IOS XE=Yes, no
+  negation); 3560 = classic Cisco IOS → `IOS XE`=0. Layer **L3** all (3560 -S/-E both L3 — suffix = routing scope, not L2-vs-L3,
+  per the 4948E/IE3000 precedent). Stacking **nein** all (6800-X/4500-X = VSS → prose, no Merkmal). Bauform 5/2/1/1 HE (5 HE already
+  existed from WS-C6504-E → no new Wertliste value). **Grounding via a web-research subagent (no guessing):** 3560 Switching-Kapazität
+  (the harvest's lone ZU_VERIFIZIEREN) = **32 Gbit/s** — the Cisco datasheet prints ONE series-wide "forwarding bandwidth" for all
+  3560/3560G (only Mpps varies; Wayback product_data_sheet09186a00801f3d7d); 3560 per-PID weights (3,9–7,0 kg) + 6880-X/4500-X
+  operating temps (both 0–40 °C) all grounded from Cisco datasheets; **4500-X weights live in the Installation Note OL_24795, NOT the
+  datasheet** (8,62/9,07 kg, chassis without PSU as shipped). Gate mechanic learned: a **PoE Merkmal (Ja) needs a `(PoE)` marker in
+  Port-Konfiguration** or S.1 fails ("PoE budget requires ≥1 PoE port") — the marker carries no digit so S.3 is unaffected. EXCLUDED
+  (Class B / spares / licenses, verified none banked): 6800 port-cards/linecards (C6880-X-*-16P10G, C6800-*), C4KX-NM/FAN/PWR,
+  CD-3560*-EMI=, RPS-675, and every -RF/-WS/++/=/DNA/C1-* PID. **All 3 bundles gate ok=True / 0 / 0**; byte-contract PASS (6+7+16 rows,
+  Condition new, Prices ungrouped no-BOM, Beschreibung ≤175 max 143/158/149). Manifest: 3 built-blocks; 3560-legacy catch-all retired,
+  4500-E 26→19 (4500-X split out), 6800 10→4 (Class-B remnant). **In-scope 96→98; 760→789 built, 88 families fully built, 87 %.**
+  NOTE on coverage file: `config/coverage/cisco_switches_coverage.yaml` is Catalyst-9000/Nexus-9000-scoped (generated from C9300/C9200
+  docs) and has no 6800/4500/3560 entries — these legacy families are tracked via the `build_cisco_manifest.py` built-blocks +
+  catch-alls, which feed `coverage_report.md` (coverage_reconcile reads the manifest CSV, not that yaml). NOTE on Beschreibung: the
+  operator's "starts at `<h2>`" — the built catalog (499+ switches) + `_compose_beschreibung` start Beschreibung with `<p>` and the gate
+  has no `<h2>` check, so I followed the established `<p>` convention for consistency. Batch 2 (remaining): original 3750/3750-E/-G
+  (~15), Nexus 9800 (2), Nexus 3000/5000 remnants (~5).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
