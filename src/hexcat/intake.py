@@ -12,6 +12,7 @@ Responsibilities (deterministic, offline):
 from __future__ import annotations
 
 import csv
+import re
 from pathlib import Path
 
 from . import attribute_depth
@@ -34,6 +35,27 @@ class IntakeError(ValueError):
 # Friendlier FAQ delimiters the operator may use; normalized to canonical.
 _FRIENDLY_PAIR_SEP = ";;"
 _FRIENDLY_QA_SEP = "::"
+
+
+# A FAQ answer occasionally leaks a boolean-prefixed Merkmal value (e.g. the PoE/Stacking attribute
+# "Ja (FIRST, REST...)") verbatim into a sentence OBJECT, yielding broken German ("stellt Ja (...) bereit",
+# "unterstützt Ja (...)"). Promote the substantive content: drop the Ja/Nein boolean and the redundant outer
+# parens around the first element -> "FIRST (REST...)". General (any of these object-verbs, any SKU, any future
+# boolean-prefixed Merkmal); only fires in the verb-object position so a sentence-initial yes-answer is untouched.
+_FAQ_BOOL_OBJECT = re.compile(
+    r"\b(stellt|unterstützt|bietet|verfügt über|liefert|beherrscht)\s+(?:Ja|Nein)\s*\(([^()]+)\)"
+)
+
+
+def _promote_boolean_object(answer: str) -> str:
+    def _repl(m: "re.Match[str]") -> str:
+        verb, inner = m.group(1), m.group(2).strip()
+        first, _, rest = inner.partition(",")
+        first, rest = first.strip(), rest.strip()
+        promoted = f"{first} ({rest})" if rest else first
+        return f"{verb} {promoted}"
+
+    return _FAQ_BOOL_OBJECT.sub(_repl, answer)
 
 
 def normalize_faq(raw: str, sku: str) -> tuple[list[FaqPair], str]:
@@ -63,6 +85,7 @@ def normalize_faq(raw: str, sku: str) -> tuple[list[FaqPair], str]:
             )
         q, a = chunk.split(qa_sep, 1)
         q, a = q.strip(), a.strip()
+        a = _promote_boolean_object(a)
         if not q or not a:
             raise IntakeError(
                 f"[{sku}] FAQ: empty question or answer in pair {chunk!r}."
