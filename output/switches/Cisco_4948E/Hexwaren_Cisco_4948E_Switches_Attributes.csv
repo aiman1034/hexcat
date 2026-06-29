@@ -13,7 +13,7 @@ WS-C4948E-S,,Switch,Stromversorgung,2× redundant (1+1) Hot-Swap-Netzteil (AC/DC
 WS-C4948E-S,,Switch,Kühlung,"Hot-Swap-Lüftermodul (Fan Tray, Front-to-Back)",12,Wertliste,Attribut
 WS-C4948E-S,,Switch,Stacking,Nein,13,Wertliste,Attribut
 WS-C4948E-S,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
-WS-C4948E-S,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, IP-Base) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
+WS-C4948E-S,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, IP-Base) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 176 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
 WS-C4948E-E,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
 WS-C4948E-E,,Switch,Layer,L3,2,Wertliste,Attribut
 WS-C4948E-E,,Switch,Portanzahl,52,3,Wertliste,Attribut
@@ -28,7 +28,7 @@ WS-C4948E-E,,Switch,Stromversorgung,2× redundant (1+1) Hot-Swap-Netzteil (AC/DC
 WS-C4948E-E,,Switch,Kühlung,"Hot-Swap-Lüftermodul (Fan Tray, Front-to-Back)",12,Wertliste,Attribut
 WS-C4948E-E,,Switch,Stacking,Nein,13,Wertliste,Attribut
 WS-C4948E-E,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
-WS-C4948E-E,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, Enterprise-Services) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
+WS-C4948E-E,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, Enterprise-Services) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 176 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
 WS-C4948E-F-S,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
 WS-C4948E-F-S,,Switch,Layer,L3,2,Wertliste,Attribut
 WS-C4948E-F-S,,Switch,Portanzahl,52,3,Wertliste,Attribut
@@ -43,7 +43,7 @@ WS-C4948E-F-S,,Switch,Stromversorgung,2× redundant (1+1) Hot-Swap-Netzteil (AC/
 WS-C4948E-F-S,,Switch,Kühlung,"Hot-Swap-Lüftermodul (Fan Tray, Back-to-Front)",12,Wertliste,Attribut
 WS-C4948E-F-S,,Switch,Stacking,Nein,13,Wertliste,Attribut
 WS-C4948E-F-S,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
-WS-C4948E-F-S,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, IP-Base) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
+WS-C4948E-F-S,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, IP-Base) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 176 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Back-to-Front); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
 WS-C4948E-F-E,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
 WS-C4948E-F-E,,Switch,Layer,L3,2,Wertliste,Attribut
 WS-C4948E-F-E,,Switch,Portanzahl,52,3,Wertliste,Attribut
@@ -58,4 +58,4 @@ WS-C4948E-F-E,,Switch,Stromversorgung,2× redundant (1+1) Hot-Swap-Netzteil (AC/
 WS-C4948E-F-E,,Switch,Kühlung,"Hot-Swap-Lüftermodul (Fan Tray, Back-to-Front)",12,Wertliste,Attribut
 WS-C4948E-F-E,,Switch,Stacking,Nein,13,Wertliste,Attribut
 WS-C4948E-F-E,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
-WS-C4948E-F-E,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, Enterprise-Services) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut
+WS-C4948E-F-E,,Switch,Anwendung,"Data-Center Top-of-Rack / Server-Access (Layer 3, Enterprise-Services) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 176 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Back-to-Front); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE",15,Wertliste,Attribut

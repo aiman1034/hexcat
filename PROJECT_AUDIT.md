@@ -3710,7 +3710,11 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   EVPN/MACsec/Cloud-Scale omitted per-datasheet; SwK 6,4 Tbit/s NOT doubled; 8,71 kg); **Cisco_4948E** +2 (WS-C4948E-F-S/-F-E
   back-to-front, CONFIRMED verbatim Cisco bulletin C25-638058 Table 3 + 3 sources). **CORRECTION (reconcile find, agent-sourced):** the
   already-built WS-C4948E-S/-E carried the ORIGINAL-4948 specs (96 Gbit/s / 72 Mpps / ~7,00 kg estimate); fixed all four to the real
-  4948E figures **176 Gbit/s / 131 Mpps / 8,62 kg** (Cisco bulletin) across attrs + prose. **VERIFY/PARK (NOT built, flag-don't-
+  4948E figures **176 Gbit/s / 131 Mpps / 8,62 kg** (Cisco bulletin) across attrs + prose. **Follow-up (same day):** the
+  Anwendung attribute (96→176 Gbit/s on all 4) + the -F Anwendung airflow (Front→Back-to-Front) were missed by the first pass and
+  fixed; 3 superseded VLog lines removed (the 96/72-"NICHT verdoppelt" SwK note, the 7,00-kg ZU_VERIFIZIEREN note, the -F "NICHT live
+  gebankt/INFERIERT" Review-Tab note) — VLog now [EoL, PID, Feature-Grounding, Korrektur], the Korrektur line carries the full audit
+  trail. Re-gate 0/0. **VERIFY/PARK (NOT built, flag-don't-
   fabricate):** N3K-C34200YC-SM (real PID, Cisco published no datasheet → ZU_VERIFIZIEREN), N3K-C3408-S + N5K-C5696Q (modular chassis
   carve-outs, separate gate), Nexus 9800 (chassis decision), superseded first-gen -10GE/-10G (out of current ordering tables).
   **Verify:** suite 444; byte-contract PASS (4 bundles, Beschr 124-155w); `validate_dir` **0 errors across 113 bundles / 1032 SKUs**;
