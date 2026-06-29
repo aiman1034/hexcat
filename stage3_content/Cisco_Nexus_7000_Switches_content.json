@@ -14,7 +14,7 @@
   "intro": [
    "Der Cisco N7K-C7004 ist ein modulares Cisco-Nexus-7000-Data-Center-Chassis – ein 7-HE-Rackgehäuse mit 4 (2 Supervisor + 2 I/O; keine Fabric-Module) für die Supervisor-Engines N7K-SUP2 und N7K-SUP2E, I/O-Module (keine Fabric-Module) und Hot-Swap-Komponenten.",
    "Das N7K-C7004-Chassis nimmt die Supervisor-Engines N7K-SUP2 und N7K-SUP2E sowie die Nexus-7000-I/O-Module auf und liefert 440 Gbit/s (Inter-Slot, keine Fabric-Module); Layer-2/3-Switching und Routing erbringen die Supervisor- und I/O-Module (separat erhältlich). Betrieben wird das Chassis unter Cisco NX-OS (ab Release 6.1(2)+). Hochverfügbarkeit bietet der N7K-C7004 über Supervisor 1+1, Netzteil und Lüfter (OIR); Fabric-Redundanz über I/O-Module.",
-   "Im 19-Zoll-Rackgehäuse (7 HE) mit Side-to-Rear; 1 Lüftereinschub (Lüfter-/Controller-Redundanz, hot-swap) und 4 Netzteilschächte (3-kW AC/DC + 3,5-kW HV AC/DC) arbeitet der N7K-C7004 im Temperaturbereich 0 bis 40 °C; das System leitet bis 1,92 Tbit/s weiter. Der N7K-C7004 ist ein abgekündigtes Modell (End-of-Sale, Ankündigung Januar 2023); als Original-Hardware (Leergehäuse – Supervisor-Engines, I/O-Module, Fabric-Module und Netzteile separat) bleibt der N7K-C7004 für Ersatz und Bestandserweiterung in Data-Center-Installationen verfügbar."
+   "Im 19-Zoll-Rackgehäuse (7 HE) mit Side-to-Rear; 1 Lüftereinschub (Lüfter-/Controller-Redundanz, hot-swap) und 4 Netzteilschächte (3-kW AC/DC + 3,5-kW HV AC/DC) arbeitet der N7K-C7004 im Temperaturbereich 0 bis 40 °C; das System leitet bis 1920 Gbit/s weiter. Der N7K-C7004 ist ein abgekündigtes Modell (End-of-Sale, Ankündigung Januar 2023); als Original-Hardware (Leergehäuse – Supervisor-Engines, I/O-Module, Fabric-Module und Netzteile separat) bleibt der N7K-C7004 für Ersatz und Bestandserweiterung in Data-Center-Installationen verfügbar."
   ],
   "kompatibilitaet": [],
   "faq": [
@@ -142,7 +142,7 @@
    [
     "N7K-C7004",
     "Switching-Kapazität",
-    "440 Gbit/s (Inter-Slot, keine Fabric-Module): Cisco-Angabe (Table 1) verbatim übernommen, NICHT verdoppelt; das System leitet bis 1,92 Tbit/s weiter (Vollausbau). Per-Steckplatz-Wert; Gesamtkapazität skaliert mit Supervisor, Fabric-Modulen und Steckplatzzahl.",
+    "440 Gbit/s (Inter-Slot, keine Fabric-Module): Cisco-Angabe (Table 1) verbatim übernommen, NICHT verdoppelt; das System leitet bis 1920 Gbit/s weiter (Vollausbau). Per-Steckplatz-Wert; Gesamtkapazität skaliert mit Supervisor, Fabric-Modulen und Steckplatzzahl.",
     "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-7000-series-switches/Data_Sheet_C78-437762.html"
    ],
    [

@@ -3760,10 +3760,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   "sibling-graft" was RETRACTED** by the L8 courier (live Catalyst 9500 HIG Table 3 publishes 48Y4C 9,96 kg + 24Y4C 9,52 kg,
   matching the catalog — my agent's miss was a Wayback snapshot without the physical-spec table); and the **C9300X capacity
   rendering** `1,000`/`2,000`/`1,760 Tbit/s` (values courier-confirmed correct but ambiguously 3-decimal, misreadable as 1000×).
-- **POST-AUDIT FIX PASS (2026-06-29):** report committed; then FIX 1 (rename Cisco/→Cisco_9300 at source), FIX 2 (format
-  normalizations incl. C9300X capacity → ungrouped Gbit/s catalog-wide), FIX 3 (Y4C weight provenance rows). HELD by operator:
-  MAJOR-2 chassis schema, MAJOR-3 MDS category, the 532 weight-provenance process question, Prices line-endings (reconcile
-  canonical first). [hashes appended below as commits land.]
+- **POST-AUDIT FIX PASS (2026-06-29):** report `5055edc`; **FIX 1 `52ac088`** (renamed Cisco/→Cisco_9300 at source —
+  content git-mv + coverage key + re-emit; Main/Attributes byte-identical, prices preserved, dedup 0); **FIX 2+3** (this
+  commit). FIX 2 = pure-format normalizations across 63 content files / 88 distinct Wertliste value changes (see
+  `CISCO_FIX2_WERTLISTE_LOG.md`): capacity **threshold convention** (operator-chosen) — <2 Tbit/s → ungrouped Gbit/s
+  (kills the C9300X `1,000`/`2,000`/`1,760 Tbit/s` misread), ≥2 Tbit/s → Tbit/s ≤2-dec (big DC switches stay 25,6/115,2/
+  172,8 Tbit/s); stacking-bandwidth Tbit/s guarded (not switching); Durchsatz dot-grouping + trailing-zero; Cisco_350
+  trailing `,0`; en-dash normalized (142 double-space → dominant en-dash); temp `+70`→`70`; `2.5G`→`2,5G`; `10G SFP+`→
+  `10G-SFP+`. FIX 3 = Y4C weight-provenance VLog rows (HIG Table 3; values unchanged 9,96/9,52). Verify: cross-field 0
+  contradictions (attr+prose consistent), validate_dir 0, dedup 0, suite 444, gate 0/0 all 63. HELD by operator: MAJOR-2
+  chassis schema, MAJOR-3 MDS category, the 532 weight-provenance process question, Prices line-endings (reconcile canonical
+  first). Pre-existing (NOT a FIX-2 regression): a few Beschreibung at 176-177w by whitespace-split (gate tokenizer passes).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

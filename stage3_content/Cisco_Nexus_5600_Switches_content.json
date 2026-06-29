@@ -7,13 +7,13 @@
   },
   "artikelname": "Cisco N5K-C5672UP 5672UP Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1 HE",
   "titel_tag": "Cisco N5K-C5672UP 5672UP Unified-Port-ToR | Hexwaren",
-  "meta_description": "Original Cisco N5K-C5672UP (5672UP): L3-Data-Center-Switch, 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1,44 Tbit/s, 1.071 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
+  "meta_description": "Original Cisco N5K-C5672UP (5672UP): L3-Data-Center-Switch, 48× 1/10G-SFP+ + 6× 40G-QSFP+, 1440 Gbit/s, 1071 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
   "artikelgewicht": "14,5",
   "versandgewicht": "16,50",
-  "kurzbeschreibung": "<p>Der Cisco N5K-C5672UP ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 1/10G-SFP+ (16 Unified Ports: 10GbE/FCoE oder 8/4/2G FC) + 6× 40G-QSFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5672UP 1,44 Tbit/s bei 1.071 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5672UP ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 1/10G-SFP+ (16 Unified Ports: 10GbE/FCoE oder 8/4/2G FC) + 6× 40G-QSFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5672UP 1440 Gbit/s bei 1071 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
   "intro": [
    "Der Cisco N5K-C5672UP ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie, ausgelegt als Unified-Port-Top-of-Rack-Switch (LAN/SAN-Konvergenz) im 1-HE-Gehäuse.",
-   "Mit 54 festen Ports erreicht der N5K-C5672UP eine Switching-Kapazität von 1,44 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.071 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5672UP über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Über die Unified Ports bietet der N5K-C5672UP neben 10GbE/FCoE auch 8/4/2G Fibre Channel (bis 15 Buffer-to-Buffer-Credits je Port, SAN-Erweiterung bis 3,7 km bei 8G); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
+   "Mit 54 festen Ports erreicht der N5K-C5672UP eine Switching-Kapazität von 1440 Gbit/s (Vollsystem) bei einer Weiterleitungsrate von 1071 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5672UP über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Über die Unified Ports bietet der N5K-C5672UP neben 10GbE/FCoE auch 8/4/2G Fibre Channel (bis 15 Buffer-to-Buffer-Credits je Port, SAN-Erweiterung bis 3,7 km bei 8G); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
    "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (3 Lüfter, 2+1) und bis zu zwei Hot-Swap-Netzteilen (1+1; AC) arbeitet der N5K-C5672UP im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5600-Serie ist der N5K-C5672UP als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
   ],
   "kompatibilitaet": [],
@@ -67,11 +67,11 @@
    ],
    [
     "Switching-Kapazität",
-    "1,44 Tbit/s"
+    "1440 Gbit/s"
    ],
    [
     "Durchsatz",
-    "1.071 Mpps"
+    "1071 Mpps"
    ],
    [
     "Bauform",
@@ -182,7 +182,7 @@
    [
     "N5K-C5672UP",
     "Switching-Kapazität",
-    "1,44 Tbit/s: Cisco-Angabe (c78-730760, „Layer 2 and 3 hardware forwarding at 1.44 Tbps\") übernommen, NICHT verdoppelt; Portanzahl = 54 Basis-Festports.",
+    "1440 Gbit/s: Cisco-Angabe (c78-730760, „Layer 2 and 3 hardware forwarding at 1.44 Tbps\") übernommen, NICHT verdoppelt; Portanzahl = 54 Basis-Festports.",
     "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html"
    ],
    [
@@ -213,13 +213,13 @@
   },
   "artikelname": "Cisco N5K-C5672UP-16G 5672UP-16G Data-Center-Switch (NX-OS, L3) – 48× 10G-SFP+ + 6× 40G-QSFP+, 1 HE",
   "titel_tag": "Cisco N5K-C5672UP-16G Unified-Port 16G-FC ToR | Hexwaren",
-  "meta_description": "Original Cisco N5K-C5672UP-16G (5672UP-16G): L3-Data-Center-Switch, 48× 10G-SFP+ + 6× 40G-QSFP+, 1,44 Tbit/s, 1.071 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
+  "meta_description": "Original Cisco N5K-C5672UP-16G (5672UP-16G): L3-Data-Center-Switch, 48× 10G-SFP+ + 6× 40G-QSFP+, 1440 Gbit/s, 1071 Mpps, 1 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
   "artikelgewicht": "15,0",
   "versandgewicht": "17,00",
-  "kurzbeschreibung": "<p>Der Cisco N5K-C5672UP-16G ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 10G-SFP+ (erste 24 auch 1G; letzte 24 Unified Ports: 16/8/4/2G FC) + 6× 40G-QSFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5672UP-16G 1,44 Tbit/s bei 1.071 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5672UP-16G ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 10G-SFP+ (erste 24 auch 1G; letzte 24 Unified Ports: 16/8/4/2G FC) + 6× 40G-QSFP+ im 1-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert der N5K-C5672UP-16G 1440 Gbit/s bei 1071 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
   "intro": [
    "Der Cisco N5K-C5672UP-16G ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie, ausgelegt als Unified-Port-Top-of-Rack-Switch mit 16-Gigabit-Fibre-Channel im 1-HE-Gehäuse.",
-   "Mit 54 festen Ports erreicht der N5K-C5672UP-16G eine Switching-Kapazität von 1,44 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.071 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5672UP-16G über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Die 24 Unified Ports bieten 16/8/4/2G Fibre Channel neben 10GbE/FCoE (bis 128 Buffer-to-Buffer-Credits, 16G-FC-ISL bis 16 km); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
+   "Mit 54 festen Ports erreicht der N5K-C5672UP-16G eine Switching-Kapazität von 1440 Gbit/s (Vollsystem) bei einer Weiterleitungsrate von 1071 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5672UP-16G über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Die 24 Unified Ports bieten 16/8/4/2G Fibre Channel neben 10GbE/FCoE (bis 128 Buffer-to-Buffer-Credits, 16G-FC-ISL bis 16 km); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
    "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit redundantem Hot-Swap-Lüftermodul (3 Lüfter, 2+1) und bis zu zwei Hot-Swap-Netzteilen (1+1; AC) arbeitet der N5K-C5672UP-16G im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5600-Serie ist der N5K-C5672UP-16G als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
   ],
   "kompatibilitaet": [],
@@ -273,11 +273,11 @@
    ],
    [
     "Switching-Kapazität",
-    "1,44 Tbit/s"
+    "1440 Gbit/s"
    ],
    [
     "Durchsatz",
-    "1.071 Mpps"
+    "1071 Mpps"
    ],
    [
     "Bauform",
@@ -388,7 +388,7 @@
    [
     "N5K-C5672UP-16G",
     "Switching-Kapazität",
-    "1,44 Tbit/s: Cisco-Angabe (c78-730760) übernommen, NICHT verdoppelt; Portanzahl = 54 Basis-Festports.",
+    "1440 Gbit/s: Cisco-Angabe (c78-730760) übernommen, NICHT verdoppelt; Portanzahl = 54 Basis-Festports.",
     "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html"
    ],
    [
@@ -419,13 +419,13 @@
   },
   "artikelname": "Cisco N5K-C56128P 56128P Data-Center-Switch (NX-OS, L3) – 48× 1/10G-SFP+ + 4× 40G-QSFP+, 2 HE",
   "titel_tag": "Cisco N5K-C56128P 56128P Unified Aggregation | Hexwaren",
-  "meta_description": "Original Cisco N5K-C56128P (56128P): L3-Data-Center-Switch, 48× 1/10G-SFP+ + 4× 40G-QSFP+, 2,56 Tbit/s, 1.904 Mpps, 2 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
+  "meta_description": "Original Cisco N5K-C56128P (56128P): L3-Data-Center-Switch, 48× 1/10G-SFP+ + 4× 40G-QSFP+, 2,56 Tbit/s, 1904 Mpps, 2 HE. Cisco NX-OS, vPC, FCoE/VXLAN, kein PoE/Stacking.",
   "artikelgewicht": "31,8",
   "versandgewicht": "34,00",
-  "kurzbeschreibung": "<p>Der Cisco N5K-C56128P ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 1/10G-SFP+ + 4× 40G-QSFP+ (Basis-Chassis); 2 GEM-Steckplätze im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N5K-C56128P 2,56 Tbit/s bei 1.904 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C56128P ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie mit 48× 1/10G-SFP+ + 4× 40G-QSFP+ (Basis-Chassis); 2 GEM-Steckplätze im 2-HE-Gehäuse. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2/3-Switching mit 25 MB Shared-Buffer, vPC-Hochverfügbarkeit, 64-Wege-ECMP sowie FCoE und VXLAN.</p><p>Im 19-Zoll-Gehäuse (2 HE) liefert der N5K-C56128P 2,56 Tbit/s bei 1904 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern.</p>",
   "intro": [
    "Der Cisco N5K-C56128P ist ein gemanagter Layer-3-Data-Center-Switch der Cisco-Nexus-5600-Serie, ausgelegt als Unified-Port-Aggregations-Switch mit GEM-Erweiterung im 2-HE-Gehäuse.",
-   "Mit 52 festen Ports erreicht der N5K-C56128P eine Switching-Kapazität von 2,56 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1.904 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C56128P über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Alle 48 Basis-Ports und die vier 40G-QSFP+ unterstützen 10GbE/FCoE; die zwei GEM-Steckplätze nehmen je ein Modul mit 24 Unified Ports (10GbE/FCoE oder 2/4/8G FC) und 2× 40G auf (Module separat erhältlich); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
+   "Mit 52 festen Ports erreicht der N5K-C56128P eine Switching-Kapazität von 2,56 Tbit/s (Vollsystem) bei einer Weiterleitungsrate von 1904 Mpps (Line-Rate Layer 2/3, 25 MB Shared-Buffer, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C56128P über vPC (Multichassis-LAG) statt über Stacking, mit 64-Wege-ECMP und bis zu 24 FEX; betrieben wird er unter Cisco NX-OS. FCoE erfordert die Storage-Services-Lizenz; FabricPath und erweiterte L3-Funktionen sind separat lizenzierbar. Alle 48 Basis-Ports und die vier 40G-QSFP+ unterstützen 10GbE/FCoE; die zwei GEM-Steckplätze nehmen je ein Modul mit 24 Unified Ports (10GbE/FCoE oder 2/4/8G FC) und 2× 40G auf (Module separat erhältlich); VXLAN-Bridging und -Routing arbeiten auf allen Ports mit Line-Rate.",
    "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit redundantem Hot-Swap-Lüftermodul (4 Lüfter, 3+1) und bis zu vier Hot-Swap-Netzteilen (2+2; AC) arbeitet der N5K-C56128P im Temperaturbereich 0 bis 40 °C. Als Switch der Cisco-Nexus-5600-Serie ist der N5K-C56128P als ungebrauchte Original-Hardware für Neuaufbauten, Ersatz und Bestandserweiterung verfügbar."
   ],
   "kompatibilitaet": [],
@@ -483,7 +483,7 @@
    ],
    [
     "Durchsatz",
-    "1.904 Mpps"
+    "1904 Mpps"
    ],
    [
     "Bauform",

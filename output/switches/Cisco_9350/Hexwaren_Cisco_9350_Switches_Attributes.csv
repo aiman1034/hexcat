@@ -111,7 +111,7 @@ C9350-48HX,,Switch,Port-Konfiguration,"48× 10G-Multigigabit-RJ45 (UPOE+, 90 W)"
 C9350-48HX,,Switch,Port-Geschwindigkeit,100 Mbit/s bis 10 GbE (Multigigabit),5,Wertliste,Attribut
 C9350-48HX,,Switch,Uplink-Ports,Modulare Uplinks (C9350-NM-Modul: 2C=2×100G / 4C=4×100G / 8Y=8×25G / 8L=8×50G Fiber / 8M=8×mGig; Basis-Switch ohne Modul),6,Wertliste,Attribut
 C9350-48HX,,Switch,PoE,"Ja (Cisco UPOE+ 802.3bt Type 4, 90 W/Port, Budget 4.320 W)",7,Wertliste,Attribut
-C9350-48HX,,Switch,Switching-Kapazität,"1,76 Tbit/s",8,Wertliste,Attribut
+C9350-48HX,,Switch,Switching-Kapazität,1760 Gbit/s,8,Wertliste,Attribut
 C9350-48HX,,Switch,Durchsatz,"1.309,44 Mpps",9,Wertliste,Attribut
 C9350-48HX,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9350-48HX,,Switch,Stromversorgung,"Bis zu 3× Hot-Swap-Netzteil (FRU, N+1-redundant), 80 PLUS Platinum/Titanium, 500/850/1600 W AC",11,Wertliste,Attribut
@@ -126,8 +126,8 @@ C9350-48HXN,,Switch,Port-Konfiguration,"48× 10G-Multigigabit-RJ45 (UPOE+, 90 W)
 C9350-48HXN,,Switch,Port-Geschwindigkeit,100 Mbit/s bis 10 GbE (Multigigabit),5,Wertliste,Attribut
 C9350-48HXN,,Switch,Uplink-Ports,Modulare Uplinks (C9350-NM-Modul: 2C=2×100G / 4C=4×100G / 8Y=8×25G / 8L=8×50G Fiber / 8M=8×mGig; Basis-Switch ohne Modul),6,Wertliste,Attribut
 C9350-48HXN,,Switch,PoE,"Ja (Cisco UPOE+ 802.3bt Type 4, 90 W/Port, Budget 4.320 W)",7,Wertliste,Attribut
-C9350-48HXN,,Switch,Switching-Kapazität,"1,0 Tbit/s",8,Wertliste,Attribut
-C9350-48HXN,,Switch,Durchsatz,1.488 Mpps,9,Wertliste,Attribut
+C9350-48HXN,,Switch,Switching-Kapazität,1000 Gbit/s,8,Wertliste,Attribut
+C9350-48HXN,,Switch,Durchsatz,1488 Mpps,9,Wertliste,Attribut
 C9350-48HXN,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9350-48HXN,,Switch,Stromversorgung,"Bis zu 3× Hot-Swap-Netzteil (FRU, N+1-redundant), 80 PLUS Platinum/Titanium, 500/850/1600 W AC",11,Wertliste,Attribut
 C9350-48HXN,,Switch,Kühlung,"3 feldaustauschbare Lüfter (FRU, N+1-redundant, front-to-back)",12,Wertliste,Attribut
@@ -141,7 +141,7 @@ C9350-48TX,,Switch,Port-Konfiguration,48× 10G-Multigigabit-RJ45 (Data),4,Wertli
 C9350-48TX,,Switch,Port-Geschwindigkeit,100 Mbit/s bis 10 GbE (Multigigabit),5,Wertliste,Attribut
 C9350-48TX,,Switch,Uplink-Ports,Modulare Uplinks (C9350-NM-Modul: 2C=2×100G / 4C=4×100G / 8Y=8×25G / 8L=8×50G Fiber / 8M=8×mGig; Basis-Switch ohne Modul),6,Wertliste,Attribut
 C9350-48TX,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9350-48TX,,Switch,Switching-Kapazität,"1,76 Tbit/s",8,Wertliste,Attribut
+C9350-48TX,,Switch,Switching-Kapazität,1760 Gbit/s,8,Wertliste,Attribut
 C9350-48TX,,Switch,Durchsatz,"1.309,44 Mpps",9,Wertliste,Attribut
 C9350-48TX,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9350-48TX,,Switch,Stromversorgung,"Bis zu 3× Hot-Swap-Netzteil (FRU, N+1-redundant), 80 PLUS Platinum/Titanium, 500/850/1600 W AC",11,Wertliste,Attribut
@@ -171,8 +171,8 @@ C9350-24Y,,Switch,Port-Konfiguration,24× 1/10/25G-SFP28,4,Wertliste,Attribut
 C9350-24Y,,Switch,Port-Geschwindigkeit,1/10/25 GbE,5,Wertliste,Attribut
 C9350-24Y,,Switch,Uplink-Ports,Modulare Uplinks (C9350-NM-Modul: 2C=2×100G / 4C=4×100G / 8Y=8×25G / 8L=8×50G Fiber / 8M=8×mGig; Basis-Switch ohne Modul),6,Wertliste,Attribut
 C9350-24Y,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9350-24Y,,Switch,Switching-Kapazität,"2,0 Tbit/s",8,Wertliste,Attribut
-C9350-24Y,,Switch,Durchsatz,1.488 Mpps,9,Wertliste,Attribut
+C9350-24Y,,Switch,Switching-Kapazität,2 Tbit/s,8,Wertliste,Attribut
+C9350-24Y,,Switch,Durchsatz,1488 Mpps,9,Wertliste,Attribut
 C9350-24Y,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9350-24Y,,Switch,Stromversorgung,"Bis zu 3× Hot-Swap-Netzteil (FRU, N+1-redundant), 80 PLUS Platinum/Titanium, 500/850/1600 W AC",11,Wertliste,Attribut
 C9350-24Y,,Switch,Kühlung,"3 feldaustauschbare Lüfter (FRU, N+1-redundant, front-to-back)",12,Wertliste,Attribut
@@ -186,7 +186,7 @@ C9350-12Y,,Switch,Port-Konfiguration,12× 1/10/25G-SFP28,4,Wertliste,Attribut
 C9350-12Y,,Switch,Port-Geschwindigkeit,1/10/25 GbE,5,Wertliste,Attribut
 C9350-12Y,,Switch,Uplink-Ports,Modulare Uplinks (C9350-NM-Modul: 2C=2×100G / 4C=4×100G / 8Y=8×25G / 8L=8×50G Fiber / 8M=8×mGig; Basis-Switch ohne Modul),6,Wertliste,Attribut
 C9350-12Y,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9350-12Y,,Switch,Switching-Kapazität,"1,0 Tbit/s",8,Wertliste,Attribut
+C9350-12Y,,Switch,Switching-Kapazität,1000 Gbit/s,8,Wertliste,Attribut
 C9350-12Y,,Switch,Durchsatz,744 Mpps,9,Wertliste,Attribut
 C9350-12Y,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9350-12Y,,Switch,Stromversorgung,"Bis zu 3× Hot-Swap-Netzteil (FRU, N+1-redundant), 80 PLUS Platinum/Titanium, 500/850/1600 W AC",11,Wertliste,Attribut

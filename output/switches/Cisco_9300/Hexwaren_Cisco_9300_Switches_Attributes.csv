@@ -6,7 +6,7 @@ C9300X-48HX,,Switch,Port-Konfiguration,"48× 10G-Multigigabit-RJ45 (UPOE+, 90 W)
 C9300X-48HX,,Switch,Port-Geschwindigkeit,100 Mbit/s bis 10 GbE (Multigigabit),5,Wertliste,Attribut
 C9300X-48HX,,Switch,Uplink-Ports,Modulare Uplinks (C9300-NM-/C9300X-NM-Netzwerkmodul: 1G/10G/25G/40G/100G),6,Wertliste,Attribut
 C9300X-48HX,,Switch,PoE,"Ja (Cisco UPOE+, 90 W/Port, Budget 590 W bei 1100-W-Netzteil, mit 2. Netzteil erweiterbar)",7,Wertliste,Attribut
-C9300X-48HX,,Switch,Switching-Kapazität,"1,760 Tbit/s",8,Wertliste,Attribut
+C9300X-48HX,,Switch,Switching-Kapazität,1760 Gbit/s,8,Wertliste,Attribut
 C9300X-48HX,,Switch,Durchsatz,1309 Mpps,9,Wertliste,Attribut
 C9300X-48HX,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9300X-48HX,,Switch,Stromversorgung,"Duale, redundante Hot-Swap-Netzteile (1100 W AC im Lieferumfang, 2. optional); StackPower-fähig",11,Wertliste,Attribut
@@ -21,7 +21,7 @@ C9300X-48TX,,Switch,Port-Konfiguration,48× 10G-Multigigabit-RJ45 (Data),4,Wertl
 C9300X-48TX,,Switch,Port-Geschwindigkeit,100 Mbit/s bis 10 GbE (Multigigabit),5,Wertliste,Attribut
 C9300X-48TX,,Switch,Uplink-Ports,Modulare Uplinks (C9300-NM-/C9300X-NM-Netzwerkmodul: 1G/10G/25G/40G/100G),6,Wertliste,Attribut
 C9300X-48TX,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9300X-48TX,,Switch,Switching-Kapazität,"1,760 Tbit/s",8,Wertliste,Attribut
+C9300X-48TX,,Switch,Switching-Kapazität,1760 Gbit/s,8,Wertliste,Attribut
 C9300X-48TX,,Switch,Durchsatz,1309 Mpps,9,Wertliste,Attribut
 C9300X-48TX,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9300X-48TX,,Switch,Stromversorgung,"Duale, redundante Hot-Swap-Netzteile (715 W AC im Lieferumfang, 2. optional); StackPower-fähig",11,Wertliste,Attribut
@@ -66,7 +66,7 @@ C9300X-12Y,,Switch,Port-Konfiguration,12× 25G/10G/1G-SFP28,4,Wertliste,Attribut
 C9300X-12Y,,Switch,Port-Geschwindigkeit,1/10/25 GbE,5,Wertliste,Attribut
 C9300X-12Y,,Switch,Uplink-Ports,Modulare Uplinks (C9300-NM-/C9300X-NM-Netzwerkmodul: 1G/10G/25G/40G/100G),6,Wertliste,Attribut
 C9300X-12Y,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9300X-12Y,,Switch,Switching-Kapazität,"1,000 Tbit/s",8,Wertliste,Attribut
+C9300X-12Y,,Switch,Switching-Kapazität,1000 Gbit/s,8,Wertliste,Attribut
 C9300X-12Y,,Switch,Durchsatz,"744,04 Mpps",9,Wertliste,Attribut
 C9300X-12Y,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9300X-12Y,,Switch,Stromversorgung,"Duale, redundante Hot-Swap-Netzteile (715 W AC im Lieferumfang, 2. optional); StackPower-fähig",11,Wertliste,Attribut
@@ -81,7 +81,7 @@ C9300X-24Y,,Switch,Port-Konfiguration,24× 25G/10G/1G-SFP28,4,Wertliste,Attribut
 C9300X-24Y,,Switch,Port-Geschwindigkeit,1/10/25 GbE,5,Wertliste,Attribut
 C9300X-24Y,,Switch,Uplink-Ports,Modulare Uplinks (C9300-NM-/C9300X-NM-Netzwerkmodul: 1G/10G/25G/40G/100G),6,Wertliste,Attribut
 C9300X-24Y,,Switch,PoE,Nein,7,Wertliste,Attribut
-C9300X-24Y,,Switch,Switching-Kapazität,"2,000 Tbit/s",8,Wertliste,Attribut
+C9300X-24Y,,Switch,Switching-Kapazität,2 Tbit/s,8,Wertliste,Attribut
 C9300X-24Y,,Switch,Durchsatz,1488 Mpps,9,Wertliste,Attribut
 C9300X-24Y,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9300X-24Y,,Switch,Stromversorgung,"Duale, redundante Hot-Swap-Netzteile (715 W AC im Lieferumfang, 2. optional); StackPower-fähig",11,Wertliste,Attribut
@@ -502,7 +502,7 @@ C9300L-24UXG-2Q,,Switch,Port-Geschwindigkeit,1 GbE / bis 10 GbE (Multigigabit),5
 C9300L-24UXG-2Q,,Switch,Uplink-Ports,2× 40G-QSFP+,6,Wertliste,Attribut
 C9300L-24UXG-2Q,,Switch,PoE,"Ja (Cisco UPOE, 60 W/Port, Budget 722 W bei 1100-W-Netzteil)",7,Wertliste,Attribut
 C9300L-24UXG-2Q,,Switch,Switching-Kapazität,352 Gbit/s,8,Wertliste,Attribut
-C9300L-24UXG-2Q,,Switch,Durchsatz,"261,90 Mpps",9,Wertliste,Attribut
+C9300L-24UXG-2Q,,Switch,Durchsatz,"261,9 Mpps",9,Wertliste,Attribut
 C9300L-24UXG-2Q,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
 C9300L-24UXG-2Q,,Switch,Stromversorgung,"Duale, redundante Hot-Swap-Netzteile (1100 W AC im Lieferumfang, 2. optional); StackPower-fähig",11,Wertliste,Attribut
 C9300L-24UXG-2Q,,Switch,Kühlung,"3 feldaustauschbare Lüfter (N+1-Redundanz, variable Drehzahl)",12,Wertliste,Attribut

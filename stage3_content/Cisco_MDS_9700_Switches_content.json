@@ -13,7 +13,7 @@
   "kurzbeschreibung": "<p>Der Cisco DS-C9706 ist ein modulares Fibre-Channel-Director-Chassis der Cisco-MDS-9700-Serie (9 HE) mit 4 Linecard-Slots und bis zu 12 Tbit/s Switching-Kapazität für großskalige Storage-Area-Networks.</p><p>Der DS-C9706 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich. Er läuft unter Cisco NX-OS mit Grid-redundanter Stromversorgung.</p>",
   "intro": [
    "Der Cisco DS-C9706 ist ein modulares Multilayer-Director-Chassis der Cisco-MDS-9700-Serie (9 HE) mit 4 Linecard-Slots, 2 Supervisor-Slots und bis zu 6 Crossbar-Fabric-Slots für hochverfügbare, großskalige Fibre-Channel-Fabrics. Der DS-C9706 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
-   "Die Switching-Kapazität von 12 Tbit/s erreicht der DS-C9706 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9706 ist 64G-ready.",
+   "Die Switching-Kapazität von 12 Tbit/s erreicht der DS-C9706 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9706 ist 64G-ready.",
    "Der DS-C9706 läuft unter Cisco NX-OS (ab 6.2; 64G-Optik ab 9.3(1)) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, Crossbar-Fabric und Netzteile (Grid). Der Luftstrom verläuft front-to-back. Aufgrund von Übermaß und -gewicht wird der DS-C9706 per Spedition mit Terminabstimmung geliefert."
   ],
   "kompatibilitaet": [
@@ -33,7 +33,7 @@
    ],
    [
     "Wie erreicht der DS-C9706 12 Tbit/s?",
-    "Die 12 Tbit/s erreicht der DS-C9706 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
+    "Die 12 Tbit/s erreicht der DS-C9706 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
    ],
    [
     "Welche Module unterstützt der DS-C9706?",
@@ -130,7 +130,7 @@
   "kurzbeschreibung": "<p>Der Cisco DS-C9710 ist ein modulares Fibre-Channel-Director-Chassis der Cisco-MDS-9700-Serie (14 HE) mit 8 Linecard-Slots und bis zu 24 Tbit/s Switching-Kapazität für großskalige Storage-Area-Networks.</p><p>Der DS-C9710 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich. Er läuft unter Cisco NX-OS mit Grid-redundanter Stromversorgung.</p>",
   "intro": [
    "Der Cisco DS-C9710 ist ein modulares Multilayer-Director-Chassis der Cisco-MDS-9700-Serie (14 HE) mit 8 Linecard-Slots, 2 Supervisor-Slots und bis zu 6 Crossbar-Fabric-Slots für hochverfügbare, großskalige Fibre-Channel-Fabrics. Der DS-C9710 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
-   "Die Switching-Kapazität von 24 Tbit/s erreicht der DS-C9710 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9710 ist 64G-ready.",
+   "Die Switching-Kapazität von 24 Tbit/s erreicht der DS-C9710 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9710 ist 64G-ready.",
    "Der DS-C9710 läuft unter Cisco NX-OS (ab 6.2; 64G-Optik ab 9.3(1)) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, Crossbar-Fabric und Netzteile (Grid). Der Luftstrom verläuft front-to-back. Aufgrund von Übermaß und -gewicht wird der DS-C9710 per Spedition mit Terminabstimmung geliefert."
   ],
   "kompatibilitaet": [
@@ -150,7 +150,7 @@
    ],
    [
     "Wie erreicht der DS-C9710 24 Tbit/s?",
-    "Die 24 Tbit/s erreicht der DS-C9710 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
+    "Die 24 Tbit/s erreicht der DS-C9710 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
    ],
    [
     "Welche Module unterstützt der DS-C9710?",
@@ -247,7 +247,7 @@
   "kurzbeschreibung": "<p>Der Cisco DS-C9718 ist ein modulares Fibre-Channel-Director-Chassis der Cisco-MDS-9700-Serie (26 HE) mit 16 Linecard-Slots und bis zu 48 Tbit/s Switching-Kapazität für großskalige Storage-Area-Networks.</p><p>Der DS-C9718 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich. Er läuft unter Cisco NX-OS mit Grid-redundanter Stromversorgung.</p>",
   "intro": [
    "Der Cisco DS-C9718 ist ein modulares Multilayer-Director-Chassis der Cisco-MDS-9700-Serie (26 HE) mit 16 Linecard-Slots, 2 Supervisor-Slots und bis zu 6 Crossbar-Fabric-Slots für hochverfügbare, großskalige Fibre-Channel-Fabrics. Der DS-C9718 wird als Leermodul-Chassis inklusive Lüfter geliefert; Supervisoren, Crossbar-Fabric-Module, Linecards und Netzteile sind separat erhältlich (Kategorie Module und Komponenten).",
-   "Die Switching-Kapazität von 48 Tbit/s erreicht der DS-C9718 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9718 ist 64G-ready.",
+   "Die Switching-Kapazität von 48 Tbit/s erreicht der DS-C9718 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Linecards liefern die Ports mit 2/4/8/16/32/64 Gbit/s Fibre Channel sowie 10/40 Gbit/s FCoE. Unterstützt werden Supervisoren (Sup-1, Sup-1E, Sup-4), Fabric-Module (FAB1/FAB3) und Linecards für 16G/32G/64G FC, 10G/40G FCoE und FCIP/SAN-Extension; der DS-C9718 ist 64G-ready.",
    "Der DS-C9718 läuft unter Cisco NX-OS (ab 6.2; 64G-Optik ab 9.3(1)) und bietet Redundanz auf allen Hauptkomponenten – Supervisor 1+1, Crossbar-Fabric und Netzteile (Grid). Der Luftstrom verläuft front-to-back. Aufgrund von Übermaß und -gewicht wird der DS-C9718 per Spedition mit Terminabstimmung geliefert."
   ],
   "kompatibilitaet": [
@@ -267,7 +267,7 @@
    ],
    [
     "Wie erreicht der DS-C9718 48 Tbit/s?",
-    "Die 48 Tbit/s erreicht der DS-C9718 mit bestückten Crossbar-Fabric-Modulen (1,5 Tbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
+    "Die 48 Tbit/s erreicht der DS-C9718 mit bestückten Crossbar-Fabric-Modulen (1500 Gbit/s pro Slot); die Ports kommen von Linecards (2/4/8/16/32/64G FC, 10/40G FCoE)."
    ],
    [
     "Welche Module unterstützt der DS-C9718?",
