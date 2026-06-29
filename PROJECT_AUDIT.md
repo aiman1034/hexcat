@@ -3779,6 +3779,15 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (stellt|unterstützt|bietet|verfügt über|liefert|beherrscht) so sentence-initial yes-answers are untouched; underlying
   PoE/Stacking attribute values UNCHANGED. Verify: leak re-scan 0 (was 123), spot-read clean, validate_dir 0, dedup 0, suite
   444, prices untouched, 995/995 intact.
+- **GROUNDING BATCH FIX — SECTION A (2026-06-29, L8 grounding pass; `CISCO_SWITCH_GROUNDING_BATCH_FIX.md`).** 34 confirmed
+  OEM-grounding corrections at the content-JSON layer (+ re-emit; attr token propagated through prose so cross-field stays
+  consistent): **A1** C9500 `Switching-Kapazität` unidir→full-duplex on exactly 5 SKUs (C9500-12Q/40X/40X-2Q/48X 480→960,
+  C9500-24Q 960→1920 Gbit/s; C9500-16X-2Q left at 480 = already FD). **A2** 2960-Plus (10) + 2960-SF (7) `Switching-Kapazität`
+  port-sum→Cisco uniform fabric **16 Gbit/s** (Durchsatz untouched). **A3** 2960-C (7) + 3560-C (5) `Durchsatz` port-sum→Cisco
+  (8-port FE 4,2→3,8; 12-port FE 4,8→4,6; CG 14,9→13,2 Mpps; SwK held for B5). Manifest = exactly 34 rows (22 SwK + 12
+  Durchsatz). Verify: validate_dir 0, dedup 0, cross-field 0, prices untouched, src-diff 0 (content-only), 995/995 intact.
+  Section B (operator decisions: B1 MDS category, B2 9804 SwK, B3/B4 SX-350X/550X forwarding, B5 2960-C/3560-C SwK, B6 chassis
+  schema) + Section C (informational) NOT actioned.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
