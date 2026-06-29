@@ -3739,6 +3739,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `validate_dir` **0 errors across the tree / 1034 SKUs**. Manifest: **9800 catch-all retired → 2-SKU built-block; 995/995 built;
   the missing rows are down to ONE** (N3K-C34200YC-SM, the only un-groundable Cisco switch left). **Cisco modular-chassis class
   is now COMPLETE** across all families.
+- **CISCO FULL FIND-MISTAKES AUDIT (2026-06-29, report-only — see `CISCO_AUDIT_FINDINGS.md`).** Independent deep audit
+  of all **113 Cisco bundles / 995 SKUs** (reconciles to manifest 995). **CRITICAL: 0** (no fabrication, no un-flagged
+  placeholder, 0 dedup, 0 exclusion, 0 cross-field factual contradiction — the 4948E class is the only one and is fixed).
+  **MAJOR ×3:** (1) the Catalyst 9300 bundle is named `output/switches/Cisco/` (brand-level) not `Cisco_9300/` — breaks
+  `Cisco_*` family globs + silently undercounts (a naïve glob sees 955/112); (2) modular-chassis schema split — 5 bundles
+  Class-A (`Switch-Typ='Modular-Chassis'`+Steckplätze/Redundanz: 4500E/6500E/6807XL/Nexus_7000/7700, 19 SKUs) vs 6
+  production (`Managed`, 7-attr: Cat9400/9600/C9610/Nexus_9400/9500/9800, 11 SKUs); (3) MDS SAN/FC (13 SKUs) use Ebene-2
+  `SAN & Fibre Channel` outside the sanctioned set (coherent FC class, but confirm the category + the Fibre-Channel-Director
+  E3). **MINOR:** Prices.csv line-ending split (77 LF / 36 CRLF; canonical writers.py = CRLF; gate is LE-agnostic so it
+  passed; Ameise-tolerant); Wertliste fragmentation (en-dash→double-space in PoE/Stacking; temp `+70`; `2.5G` dot-decimal
+  IE9300; `10G SFP+`vs`10G-SFP+`; Cisco_350 trailing `,0`; capacity Tbit-vs-grouped-Gbit `1.280/1280/1,28 Tbit`; Durchsatz
+  2-vs-1-decimal); `oder`-alternatives in Merkmale (S.3 review); VLog note-row column quirk (cosmetic, internal).
+  **Cleared false positives:** 58 "capacity contradictions" = stacking bandwidth (matches Stacking Merkmal); 5 Mpps =
+  ingress/egress + L3-daughter-card; MDS missing-Layer = correct for FC; 73 "no cisco.com" = Meraki→documentation.meraki.com;
+  Cat4500E 22 weights = ZU_VERIFIZIEREN-flagged placeholders. Recent fixes re-verified (4948E 176/131/8,62+airflow, M2
+  240/240/200, 9800 16/10 HE). **Independent cisco.com re-fetch (5 SKUs via Wayback): 24/24 confirmed after courier**,
+  surfacing: **MAJOR-4** = switch weight-provenance traceability gap (532/995 SKUs have no per-SKU weight source in the
+  deliverable; the central weight configs are transceiver-only) — operator-HELD, NOT a correctness defect; **the C9500-Y4C
+  "sibling-graft" was RETRACTED** by the L8 courier (live Catalyst 9500 HIG Table 3 publishes 48Y4C 9,96 kg + 24Y4C 9,52 kg,
+  matching the catalog — my agent's miss was a Wayback snapshot without the physical-spec table); and the **C9300X capacity
+  rendering** `1,000`/`2,000`/`1,760 Tbit/s` (values courier-confirmed correct but ambiguously 3-decimal, misreadable as 1000×).
+- **POST-AUDIT FIX PASS (2026-06-29):** report committed; then FIX 1 (rename Cisco/→Cisco_9300 at source), FIX 2 (format
+  normalizations incl. C9300X capacity → ungrouped Gbit/s catalog-wide), FIX 3 (Y4C weight provenance rows). HELD by operator:
+  MAJOR-2 chassis schema, MAJOR-3 MDS category, the 532 weight-provenance process question, Prices line-endings (reconcile
+  canonical first). [hashes appended below as commits land.]
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
