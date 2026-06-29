@@ -1,0 +1,972 @@
+{
+ "MS130-8-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco Meraki MS130-8-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45, 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS130-8-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS130-8-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45, 2× SFP (1G), 20 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "0,88",
+  "versandgewicht": "3,38",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS130-8-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45, 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, ohne PoE.</p><p>Hinweis: Für den Betrieb des MS130-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS130-8-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS130-Serie – ein kompaktes Desktop-Gerät mit 8× 1G-RJ45 und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS130-8-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und arbeitet im reinen Datenbetrieb ohne PoE. Hinweis: Für den Betrieb des MS130-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im kompakten Desktop-Gehäuse arbeitet der MS130-8-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS130-8-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS130-8-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS130-8-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS130-8-HW verwaltet?",
+    "Der MS130-8-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS130-8-HW stapeln?",
+    "Nein – der MS130-8-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Unterstützt der MS130-8-HW PoE?",
+    "Nein – der MS130-8-HW ist ein reiner Datenswitch ohne PoE."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "Desktop"
+   ],
+   [
+    "Stromversorgung",
+    "Externes Steckernetzteil"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Desktop-Switch mit 8× 1G-RJ45 und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS130-8-HW",
+    "Status",
+    "Cisco Meraki MS130-8-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS130-8-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8-HW",
+    "Gewicht",
+    "0,88 kg verbatim aus dem Cisco-Meraki-MS130-Datenblatt; Versandgewicht 3,38 kg (+2,5 kg Verpackung).",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8-HW",
+    "PID",
+    "Ordering-PID MS130-8-HW verbatim (Basis-HW-SKU). NICHT gebankt: Meraki-Lizenzen (LIC-*), MA-*-Zubehör, Netzteile.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ]
+  ]
+ },
+ "MS130-8P-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco Meraki MS130-8P-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45 (PoE), 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS130-8P-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS130-8P-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "0,88",
+  "versandgewicht": "3,38",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS130-8P-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, mit PoE (IEEE 802.3bt, bis 30 W/Port), 120 W.</p><p>Hinweis: Für den Betrieb des MS130-8P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS130-8P-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS130-Serie – ein kompaktes Desktop-Gerät mit 8× 1G-RJ45 (PoE) und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS130-8P-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und speist angeschlossene Geräte per Power over Ethernet (PoE (IEEE 802.3bt, bis 30 W/Port), 120 W). Hinweis: Für den Betrieb des MS130-8P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im kompakten Desktop-Gehäuse arbeitet der MS130-8P-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS130-8P-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS130-8P-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS130-8P-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS130-8P-HW verwaltet?",
+    "Der MS130-8P-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS130-8P-HW stapeln?",
+    "Nein – der MS130-8P-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Wieviel PoE liefert der MS130-8P-HW?",
+    "Der MS130-8P-HW speist per PoE (IEEE 802.3bt, bis 30 W/Port), 120 W und versorgt damit Access Points, IP-Telefone und Kameras direkt über das Netzwerkkabel."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "PoE (IEEE 802.3bt, bis 30 W/Port), 120 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "Desktop"
+   ],
+   [
+    "Stromversorgung",
+    "Externes Steckernetzteil"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Desktop-Switch mit 8× 1G-RJ45 (PoE) und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS130-8P-HW",
+    "Status",
+    "Cisco Meraki MS130-8P-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS130-8P-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-HW",
+    "Gewicht",
+    "0,88 kg verbatim aus dem Cisco-Meraki-MS130-Datenblatt; Versandgewicht 3,38 kg (+2,5 kg Verpackung).",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-HW",
+    "PID",
+    "Ordering-PID MS130-8P-HW verbatim (Basis-HW-SKU). NICHT gebankt: Meraki-Lizenzen (LIC-*), MA-*-Zubehör, Netzteile.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ]
+  ]
+ },
+ "MS130-8P-I-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco Meraki MS130-8P-I-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45 (PoE), 2× SFP (1G))",
+  "titel_tag": "Cisco Meraki MS130-8P-I-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS130-8P-I-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "1,3",
+  "versandgewicht": "3,80",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS130-8P-I-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45 (PoE), 2× SFP (1G), 20 Gbit/s, verwaltet über das Cisco Meraki Dashboard, mit PoE (IEEE 802.3bt, bis 30 W/Port), 120 W.</p><p>Hinweis: Für den Betrieb des MS130-8P-I-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS130-8P-I-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS130-Serie – ein kompaktes Desktop-Gerät mit 8× 1G-RJ45 (PoE) und 2× SFP (1G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS130-8P-I-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 20 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und speist angeschlossene Geräte per Power over Ethernet (PoE (IEEE 802.3bt, bis 30 W/Port), 120 W). Hinweis: Für den Betrieb des MS130-8P-I-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im kompakten Desktop-Gehäuse arbeitet der MS130-8P-I-HW mit passiv (lüfterlos) im Bereich 0 bis 45 °C. Der MS130-8P-I-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS130-8P-I-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS130-8P-I-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS130-8P-I-HW verwaltet?",
+    "Der MS130-8P-I-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS130-8P-I-HW stapeln?",
+    "Nein – der MS130-8P-I-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Wieviel PoE liefert der MS130-8P-I-HW?",
+    "Der MS130-8P-I-HW speist per PoE (IEEE 802.3bt, bis 30 W/Port), 120 W und versorgt damit Access Points, IP-Telefone und Kameras direkt über das Netzwerkkabel."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP (1G)"
+   ],
+   [
+    "PoE",
+    "PoE (IEEE 802.3bt, bis 30 W/Port), 120 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "20 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "Desktop"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Netzteil"
+   ],
+   [
+    "Kühlung",
+    "Passiv (lüfterlos)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Desktop-Switch mit 8× 1G-RJ45 (PoE) und 2× SFP (1G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS130-8P-I-HW",
+    "Status",
+    "Cisco Meraki MS130-8P-I-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-I-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS130-8P-I-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-I-HW",
+    "Gewicht",
+    "1,3 kg verbatim aus dem Cisco-Meraki-MS130-Datenblatt; Versandgewicht 3,80 kg (+2,5 kg Verpackung).",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8P-I-HW",
+    "PID",
+    "Ordering-PID MS130-8P-I-HW verbatim (Basis-HW-SKU). NICHT gebankt: Meraki-Lizenzen (LIC-*), MA-*-Zubehör, Netzteile.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ]
+  ]
+ },
+ "MS130-8X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco Meraki MS130-8X-HW cloud-gemanagter Layer-2-Access-Switch (6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS130-8X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS130-8X-HW: cloud-gemanagter L2-Switch, 6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G), 62 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "0,96",
+  "versandgewicht": "3,46",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS130-8X-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G), 62 Gbit/s, verwaltet über das Cisco Meraki Dashboard, mit PoE (IEEE 802.3bt, bis 30 W/Port), 120 W.</p><p>Hinweis: Für den Betrieb des MS130-8X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS130-8X-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS130-Serie – ein kompaktes Desktop-Gerät mit 6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE) und 2× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS130-8X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 62 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und speist angeschlossene Geräte per Power over Ethernet (PoE (IEEE 802.3bt, bis 30 W/Port), 120 W). Hinweis: Für den Betrieb des MS130-8X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im kompakten Desktop-Gehäuse arbeitet der MS130-8X-HW mit aktiv (interner lüfter) im Bereich 0 bis 45 °C. Der MS130-8X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS130-8X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS130-8X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS130-8X-HW verwaltet?",
+    "Der MS130-8X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS130-8X-HW stapeln?",
+    "Nein – der MS130-8X-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Wieviel PoE liefert der MS130-8X-HW?",
+    "Der MS130-8X-HW speist per PoE (IEEE 802.3bt, bis 30 W/Port), 120 W und versorgt damit Access Points, IP-Telefone und Kameras direkt über das Netzwerkkabel."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "8"
+   ],
+   [
+    "Port-Konfiguration",
+    "6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + 2,5G-mGig"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "PoE (IEEE 802.3bt, bis 30 W/Port), 120 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "62 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "Desktop"
+   ],
+   [
+    "Stromversorgung",
+    "Externes Steckernetzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Desktop-Switch mit 6× 1G-RJ45 + 2× 2,5G-mGig-RJ45 (PoE) und 2× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS130-8X-HW",
+    "Status",
+    "Cisco Meraki MS130-8X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS130-8X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8X-HW",
+    "Gewicht",
+    "0,96 kg verbatim aus dem Cisco-Meraki-MS130-Datenblatt; Versandgewicht 3,46 kg (+2,5 kg Verpackung).",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-8X-HW",
+    "PID",
+    "Ordering-PID MS130-8X-HW verbatim (Basis-HW-SKU). NICHT gebankt: Meraki-Lizenzen (LIC-*), MA-*-Zubehör, Netzteile.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ]
+  ]
+ },
+ "MS130-12X-HW": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco Meraki MS130-12X-HW cloud-gemanagter Layer-2-Access-Switch (8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G))",
+  "titel_tag": "Cisco Meraki MS130-12X-HW L2-Switch | Hexwaren",
+  "meta_description": "Original Cisco Meraki MS130-12X-HW: cloud-gemanagter L2-Switch, 8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G), 76 Gbit/s. Meraki-Lizenz separat. Neuwertig.",
+  "artikelgewicht": "1,06",
+  "versandgewicht": "3,56",
+  "kurzbeschreibung": "<p>Der Cisco Meraki MS130-12X-HW ist ein cloud-gemanagter Layer-2-Access-Switch: 8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE), 2× SFP+ (10G), 76 Gbit/s, verwaltet über das Cisco Meraki Dashboard, mit PoE (IEEE 802.3bt, bis 30 W/Port), 240 W.</p><p>Hinweis: Für den Betrieb des MS130-12X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit. Aktuelles, lieferbares Modell. Ungebrauchte Original-Hardware.</p>",
+  "intro": [
+   "Der Cisco Meraki MS130-12X-HW ist ein cloud-gemanagter Layer-2-Access-Switch der Meraki-MS130-Serie – ein kompaktes Desktop-Gerät mit 8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE) und 2× SFP+ (10G) für den Enterprise- und Campus-Zugang.",
+   "Verwaltet wird der MS130-12X-HW vollständig über das Cisco Meraki Dashboard (Meraki OS) – cloud-gemanagt ohne lokale CLI. Er liefert 76 Gbit/s Switching-Kapazität und Line-Rate (nicht-blockierend) Durchsatz und speist angeschlossene Geräte per Power over Ethernet (PoE (IEEE 802.3bt, bis 30 W/Port), 240 W). Hinweis: Für den Betrieb des MS130-12X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (Laufzeit 1, 3, 5, 7 oder 10 Jahre, separat erforderlich) zwingend nötig – ohne aktive Lizenz ist das Gerät nicht betriebsbereit.",
+   "Im kompakten Desktop-Gehäuse arbeitet der MS130-12X-HW mit aktiv (interner lüfter) im Bereich 0 bis 45 °C. Der MS130-12X-HW ist ein aktuelles, lieferbares Modell; Hexwaren führt ausschließlich ungebrauchte Original-Hardware."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Benötigt der MS130-12X-HW eine Lizenz?",
+    "Ja – für den Betrieb des MS130-12X-HW ist eine Cisco-Meraki-Enterprise-Lizenz (1, 3, 5, 7 oder 10 Jahre, separat erhältlich) zwingend erforderlich; ohne aktive Lizenz ist das Gerät nicht betriebsbereit."
+   ],
+   [
+    "Wie wird der MS130-12X-HW verwaltet?",
+    "Der MS130-12X-HW wird vollständig cloud-basiert über das Cisco Meraki Dashboard (Meraki OS) verwaltet – ohne lokale Kommandozeile; Konfiguration, Monitoring und Firmware laufen zentral über die Cloud."
+   ],
+   [
+    "Lässt sich der MS130-12X-HW stapeln?",
+    "Nein – der MS130-12X-HW ist ein eigenständiger Switch ohne physisches Stacking; mehrere Geräte werden zentral über das Cisco Meraki Dashboard verwaltet."
+   ],
+   [
+    "Wieviel PoE liefert der MS130-12X-HW?",
+    "Der MS130-12X-HW speist per PoE (IEEE 802.3bt, bis 30 W/Port), 240 W und versorgt damit Access Points, IP-Telefone und Kameras direkt über das Netzwerkkabel."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1G + 2,5G-mGig"
+   ],
+   [
+    "Uplink-Ports",
+    "2× SFP+ (10G)"
+   ],
+   [
+    "PoE",
+    "PoE (IEEE 802.3bt, bis 30 W/Port), 240 W"
+   ],
+   [
+    "Switching-Kapazität",
+    "76 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Line-Rate (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "Desktop"
+   ],
+   [
+    "Stromversorgung",
+    "Externes Steckernetzteil"
+   ],
+   [
+    "Kühlung",
+    "Aktiv (interner Lüfter)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Cloud-gemanagter Enterprise-/Campus-Zugang (Gigabit-Ethernet, Layer 2); Desktop-Switch mit 8× 1G-RJ45 + 4× 2,5G-mGig-RJ45 (PoE) und 2× SFP+ (10G); verwaltet über das Cisco Meraki Dashboard (Meraki OS); Lizenz separat erforderlich"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "MS130-12X-HW",
+    "Status",
+    "Cisco Meraki MS130-12X-HW – AKTUELL/lieferbar (nicht abgekündigt); ungebrauchte Original-Hardware.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-12X-HW",
+    "Verwaltung/OS",
+    "Cisco Meraki MS130-12X-HW: cloud-gemanagt über das Cisco Meraki Dashboard (Meraki OS); KEINE klassische Cisco-Switch-Software/IOS-XE (Meraki-Plattform). Die IOS-XE-Invariante wird NICHT angewendet.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-12X-HW",
+    "Gewicht",
+    "1,06 kg verbatim aus dem Cisco-Meraki-MS130-Datenblatt; Versandgewicht 3,56 kg (+2,5 kg Verpackung).",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ],
+   [
+    "MS130-12X-HW",
+    "PID",
+    "Ordering-PID MS130-12X-HW verbatim (Basis-HW-SKU). NICHT gebankt: Meraki-Lizenzen (LIC-*), MA-*-Zubehör, Netzteile.",
+    "https://documentation.meraki.com/MS/MS_Overview_and_Specifications/MS130_Datasheet"
+   ]
+  ]
+ }
+}

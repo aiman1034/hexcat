@@ -7,13 +7,13 @@
   },
   "artikelname": "Cisco WS-C4948E-S Catalyst-4948E gemanagter Layer-3-Switch (Cisco IOS) – 48× 1G-RJ45 + 4× SFP+",
   "titel_tag": "Cisco WS-C4948E-S Catalyst-4948E Layer-3-Switch | Hexwaren",
-  "meta_description": "Original Cisco WS-C4948E-S (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 96 Gbit/s, 72 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
-  "artikelgewicht": "7,00",
-  "versandgewicht": "8,40",
-  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-S ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und IP-Base-Lizenz. Der WS-C4948E-S läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 96 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-S bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
+  "meta_description": "Original Cisco WS-C4948E-S (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 176 Gbit/s, 131 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
+  "artikelgewicht": "8,62",
+  "versandgewicht": "11,12",
+  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-S ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und IP-Base-Lizenz. Der WS-C4948E-S läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 176 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-S bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
   "intro": [
    "Der Cisco WS-C4948E-S ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Familie für Server-Access und Aggregation im Rechenzentrum – 48× 1G-RJ45 plus 4× 1/10G-SFP+-Uplinks mit IP-Base-Lizenz.",
-   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-S eine Switching-Kapazität von 96 Gbit/s bei einer Weiterleitungsrate von 72 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C4948E-S Routed Access (statisches Routing, RIP und EIGRP-Stub) und ist per Lizenz auf Enterprise Services erweiterbar.",
+   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C4948E-S Routed Access (statisches Routing, RIP und EIGRP-Stub) und ist per Lizenz auf Enterprise Services erweiterbar.",
    "Im 19-Zoll-Gehäuse (1 HE) mit zwei redundanten Hot-Swap-Netzteilen (1+1, AC und DC mischbar) und Hot-Swap-Lüftermodul (Front-to-Back-Luftstrom) arbeitet der WS-C4948E-S im Temperaturbereich 0 bis 40 °C. Der WS-C4948E-S ist ein abgekündigtes Modell (End-of-Sale); als Original-Hardware bleibt der WS-C4948E-S für Ersatz und Bestandserweiterung in Data-Center-Top-of-Rack-Installationen verfügbar."
   ],
   "kompatibilitaet": [],
@@ -67,11 +67,11 @@
    ],
    [
     "Switching-Kapazität",
-    "96 Gbit/s"
+    "176 Gbit/s"
    ],
    [
     "Durchsatz",
-    "72 Mpps"
+    "131 Mpps"
    ],
    [
     "Bauform",
@@ -202,6 +202,12 @@
     "ZU_VERIFIZIEREN-Review-Tab",
     "OFFENE -F-AIRFLOW-VARIANTEN (Back-to-Front), NICHT live gebankt: »WS-C4948E-F-S« (IP Base) und »WS-C4948E-F-E« (Enterprise Services). Die exakte -F-Suffix-/Software-Split-Bezeichnung ist INFERIERT (Back-to-Front-Airflow-Variante des 4948E), NICHT verbatim bestätigt (Ordering-Spiegelseiten robots-blockiert). Spezifikation identisch (52 Ports, 96 Gbit/s, 72 Mpps, L3, 1 HE), nur Luftstrom-Richtung umgekehrt. VOR finalem Banking via BrokerBin bestätigen; eine inferierte Artikelnummer (Primärschlüssel) wird NICHT live emittiert (1000%-Grounding). Gewicht ebenfalls ZU_VERIFIZIEREN.",
     "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-S",
+    "Korrektur",
+    "8,62 kg verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Unit weight 19 lb); ersetzt den früheren ~7,00-kg-Schätzwert. Switching-Kapazität 176 Gbit/s + Durchsatz 131 Mpps sind die echten 4948E-Werte (der früher gebankte 96 Gbit/s / 72 Mpps gehörte zur Original-4948, nicht zur 4948E). Versandgewicht 11,12 kg.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
    ]
   ]
  },
@@ -213,13 +219,13 @@
   },
   "artikelname": "Cisco WS-C4948E-E Catalyst-4948E gemanagter Layer-3-Switch (Cisco IOS) – 48× 1G-RJ45 + 4× SFP+",
   "titel_tag": "Cisco WS-C4948E-E Catalyst-4948E Layer-3-Switch | Hexwaren",
-  "meta_description": "Original Cisco WS-C4948E-E (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 96 Gbit/s, 72 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
-  "artikelgewicht": "7,00",
-  "versandgewicht": "8,40",
-  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-E ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und Enterprise-Services-Lizenz. Der WS-C4948E-E läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 96 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-E bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
+  "meta_description": "Original Cisco WS-C4948E-E (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 176 Gbit/s, 131 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
+  "artikelgewicht": "8,62",
+  "versandgewicht": "11,12",
+  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-E ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und Enterprise-Services-Lizenz. Der WS-C4948E-E läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 176 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-E bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
   "intro": [
    "Der Cisco WS-C4948E-E ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Familie für Server-Access und Aggregation im Rechenzentrum – 48× 1G-RJ45 plus 4× 1/10G-SFP+-Uplinks mit Enterprise-Services-Lizenz.",
-   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-E eine Switching-Kapazität von 96 Gbit/s bei einer Weiterleitungsrate von 72 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit Enterprise-Services-Lizenz beherrscht der WS-C4948E-E volles dynamisches Routing (BGP, OSPF, IS-IS und EIGRP) sowie erweiterte Layer-3-Funktionen.",
+   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit Enterprise-Services-Lizenz beherrscht der WS-C4948E-E volles dynamisches Routing (BGP, OSPF, IS-IS und EIGRP) sowie erweiterte Layer-3-Funktionen.",
    "Im 19-Zoll-Gehäuse (1 HE) mit zwei redundanten Hot-Swap-Netzteilen (1+1, AC und DC mischbar) und Hot-Swap-Lüftermodul (Front-to-Back-Luftstrom) arbeitet der WS-C4948E-E im Temperaturbereich 0 bis 40 °C. Der WS-C4948E-E ist ein abgekündigtes Modell (End-of-Sale); als Original-Hardware bleibt der WS-C4948E-E für Ersatz und Bestandserweiterung in Data-Center-Top-of-Rack-Installationen verfügbar."
   ],
   "kompatibilitaet": [],
@@ -273,11 +279,11 @@
    ],
    [
     "Switching-Kapazität",
-    "96 Gbit/s"
+    "176 Gbit/s"
    ],
    [
     "Durchsatz",
-    "72 Mpps"
+    "131 Mpps"
    ],
    [
     "Bauform",
@@ -401,6 +407,430 @@
     "WS-C4948E-E",
     "Feature-Grounding",
     "DC-Top-of-Rack-Switch über die fixed-switch-Vorlage – KEIN neues Merkmal, keine src-Änderung. Bauform = kanonischer 19-Zoll-Rack-Wert (NICHT erfunden). Layer = L3 (sowohl IP Base -S als auch Enterprise Services -E routen; der -S/-E-Split ist Routing-UMFANG static/RIP/EIGRP-Stub vs BGP/OSPF/IS-IS, NICHT L2-vs-L3 – wie 3560-CX IP Base = L3). Luftstrom = Prosa. Classic Cisco IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-E",
+    "Korrektur",
+    "8,62 kg verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Unit weight 19 lb); ersetzt den früheren ~7,00-kg-Schätzwert. Switching-Kapazität 176 Gbit/s + Durchsatz 131 Mpps sind die echten 4948E-Werte (der früher gebankte 96 Gbit/s / 72 Mpps gehörte zur Original-4948, nicht zur 4948E). Versandgewicht 11,12 kg.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ]
+  ]
+ },
+ "WS-C4948E-F-S": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco WS-C4948E-F-S Catalyst-4948E gemanagter Layer-3-Switch (Cisco IOS) – 48× 1G-RJ45 + 4× SFP+",
+  "titel_tag": "Cisco WS-C4948E-F-S Catalyst-4948E Layer-3-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C4948E-F-S (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 176 Gbit/s, 131 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
+  "artikelgewicht": "8,62",
+  "versandgewicht": "11,12",
+  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-F-S ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und IP-Base-Lizenz. Der WS-C4948E-F-S läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 176 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-F-S bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
+  "intro": [
+   "Der Cisco WS-C4948E-F-S ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Familie für Server-Access und Aggregation im Rechenzentrum – 48× 1G-RJ45 plus 4× 1/10G-SFP+-Uplinks mit IP-Base-Lizenz.",
+   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-F-S eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit IP-Base-Lizenz beherrscht der WS-C4948E-F-S Routed Access (statisches Routing, RIP und EIGRP-Stub) und ist per Lizenz auf Enterprise Services erweiterbar.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit zwei redundanten Hot-Swap-Netzteilen (1+1, AC und DC mischbar) und Hot-Swap-Lüftermodul (Back-to-Front-Luftstrom) arbeitet der WS-C4948E-F-S im Temperaturbereich 0 bis 40 °C. Der WS-C4948E-F-S ist ein abgekündigtes Modell (End-of-Sale); als Original-Hardware bleibt der WS-C4948E-F-S für Ersatz und Bestandserweiterung in Data-Center-Top-of-Rack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C4948E-F-S?",
+    "Der WS-C4948E-F-S bietet 52 Ports: 48× Gigabit-RJ45 plus 4× SFP+ (1/10G) als Uplinks – ideal für Server-Access und Top-of-Rack-Aggregation."
+   ],
+   [
+    "Arbeitet der WS-C4948E-F-S unter Layer 2 oder Layer 3?",
+    "Layer 3 – der WS-C4948E-F-S routet mit IP-Base-Lizenz: Routed Access (statisches Routing, RIP und EIGRP-Stub) und ist per Lizenz auf Enterprise Services erweiterbar. Auch die IP-Base-Variante (-S) routet bereits (Routed Access); der Lizenz-Unterschied ist der Umfang der Routing-Protokolle, nicht Layer 2 gegen Layer 3."
+   ],
+   [
+    "Welche Stromversorgung und Kühlung hat der WS-C4948E-F-S?",
+    "Der WS-C4948E-F-S besitzt zwei Hot-Swap-Netzteile in 1+1-Redundanz (AC und DC mischbar) und ein Hot-Swap-Lüftermodul (Fan Tray); der Luftstrom ist back-to-front (die Front-to-Back-Varianten WS-C4948E-S/-E sind separat erhältlich)."
+   ],
+   [
+    "Ist der WS-C4948E-F-S noch aktuell?",
+    "Der WS-C4948E-F-S ist ein abgekündigtes Modell (End-of-Sale); als ungebrauchte Original-Hardware bleibt der WS-C4948E-F-S für Ersatz und Bestandserweiterung in bestehenden Rechenzentren erhältlich (EoL schließt nicht aus)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 4× SFP+ (1/10G, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G/10G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (1/10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (1+1) Hot-Swap-Netzteil (AC/DC mischbar)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (Fan Tray, Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack / Server-Access (Layer 3, IP-Base) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C4948E-F-S",
+    "EoL",
+    "Cisco WS-C4948E-F-S (Catalyst 4948E, Back-to-Front-Airflow) – End-of-Sale 31-Okt-2017, LDoS 31-Okt-2022 (Cisco c51-738116). In scope, ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "PID",
+    "Ordering-PID WS-C4948E-F-S verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Tabelle 3 'Back to Front Cooling') + 3 unabhaengigen Quellen bestaetigt; Back-to-Front-Airflow.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "Switching-Kapazität",
+    "96 Gbit/s / 72 Mpps: Cisco-Angabe verbatim übernommen, NICHT verdoppelt; Dual-Stack IPv4/IPv6, Wire-Speed.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "Artikelgewicht",
+    "7,00 kg = ZU_VERIFIZIEREN: KEINE Gewichtsquelle (Datenblatt © 2011 nennt kein Gewicht); ~7 kg geladen GESCHÄTZT, NICHT bestätigt -> via BrokerBin nachschlagen. NICHT als bestätigt behandeln.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "Feature-Grounding",
+    "DC-Top-of-Rack-Switch über die fixed-switch-Vorlage – KEIN neues Merkmal, keine src-Änderung. Bauform = kanonischer 19-Zoll-Rack-Wert (NICHT erfunden). Layer = L3 (sowohl IP Base -S als auch Enterprise Services -E routen; der -S/-E-Split ist Routing-UMFANG static/RIP/EIGRP-Stub vs BGP/OSPF/IS-IS, NICHT L2-vs-L3 – wie 3560-CX IP Base = L3). Luftstrom = Prosa. Classic Cisco IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "ZU_VERIFIZIEREN-Review-Tab",
+    "OFFENE -F-AIRFLOW-VARIANTEN (Back-to-Front), NICHT live gebankt: »WS-C4948E-F-S« (IP Base) und »WS-C4948E-F-E« (Enterprise Services). Die exakte -F-Suffix-/Software-Split-Bezeichnung ist INFERIERT (Back-to-Front-Airflow-Variante des 4948E), NICHT verbatim bestätigt (Ordering-Spiegelseiten robots-blockiert). Spezifikation identisch (52 Ports, 96 Gbit/s, 72 Mpps, L3, 1 HE), nur Luftstrom-Richtung umgekehrt. VOR finalem Banking via BrokerBin bestätigen; eine inferierte Artikelnummer (Primärschlüssel) wird NICHT live emittiert (1000%-Grounding). Gewicht ebenfalls ZU_VERIFIZIEREN.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-S",
+    "Korrektur",
+    "8,62 kg verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Unit weight 19 lb); ersetzt den früheren ~7,00-kg-Schätzwert. Switching-Kapazität 176 Gbit/s + Durchsatz 131 Mpps sind die echten 4948E-Werte (der früher gebankte 96 Gbit/s / 72 Mpps gehörte zur Original-4948, nicht zur 4948E). Versandgewicht 11,12 kg.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ]
+  ]
+ },
+ "WS-C4948E-F-E": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco WS-C4948E-F-E Catalyst-4948E gemanagter Layer-3-Switch (Cisco IOS) – 48× 1G-RJ45 + 4× SFP+",
+  "titel_tag": "Cisco WS-C4948E-F-E Catalyst-4948E Layer-3-Switch | Hexwaren",
+  "meta_description": "Original Cisco WS-C4948E-F-E (Catalyst-4948E): 48× 1G-RJ45 + 4× SFP+, 176 Gbit/s, 131 Mpps. Cisco IOS (nicht IOS-XE), Layer-3.",
+  "artikelgewicht": "8,62",
+  "versandgewicht": "11,12",
+  "kurzbeschreibung": "<p>Der Cisco WS-C4948E-F-E ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Serie mit 48× 1G-RJ45 + 4× 1/10G-SFP+-Uplinks und Enterprise-Services-Lizenz. Der WS-C4948E-F-E läuft unter Cisco IOS (nicht IOS-XE) und leitet bei 176 Gbit/s Wire-Speed weiter (Dual-Stack IPv4/IPv6).</p><p>Der WS-C4948E-F-E bietet redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar) und ein Hot-Swap-Lüftermodul im 1-HE-Rackgehäuse; abgekündigtes Modell, als Original-Hardware verfügbar.</p>",
+  "intro": [
+   "Der Cisco WS-C4948E-F-E ist ein gemanagter Layer-3-Data-Center-Top-of-Rack-Switch der Cisco-Catalyst-4948E-Familie für Server-Access und Aggregation im Rechenzentrum – 48× 1G-RJ45 plus 4× 1/10G-SFP+-Uplinks mit Enterprise-Services-Lizenz.",
+   "Mit 52 Ports (48× Gigabit-RJ45 + 4× SFP+ 1/10G-Uplink) erreicht der WS-C4948E-F-E eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps (Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs); PoE wird nicht unterstützt. Als Layer-3-Switch mit Enterprise-Services-Lizenz beherrscht der WS-C4948E-F-E volles dynamisches Routing (BGP, OSPF, IS-IS und EIGRP) sowie erweiterte Layer-3-Funktionen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit zwei redundanten Hot-Swap-Netzteilen (1+1, AC und DC mischbar) und Hot-Swap-Lüftermodul (Back-to-Front-Luftstrom) arbeitet der WS-C4948E-F-E im Temperaturbereich 0 bis 40 °C. Der WS-C4948E-F-E ist ein abgekündigtes Modell (End-of-Sale); als Original-Hardware bleibt der WS-C4948E-F-E für Ersatz und Bestandserweiterung in Data-Center-Top-of-Rack-Installationen verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der WS-C4948E-F-E?",
+    "Der WS-C4948E-F-E bietet 52 Ports: 48× Gigabit-RJ45 plus 4× SFP+ (1/10G) als Uplinks – ideal für Server-Access und Top-of-Rack-Aggregation."
+   ],
+   [
+    "Arbeitet der WS-C4948E-F-E unter Layer 2 oder Layer 3?",
+    "Layer 3 – der WS-C4948E-F-E routet mit Enterprise-Services-Lizenz: volles dynamisches Routing (BGP, OSPF, IS-IS und EIGRP) sowie erweiterte Layer-3-Funktionen. Auch die IP-Base-Variante (-S) routet bereits (Routed Access); der Lizenz-Unterschied ist der Umfang der Routing-Protokolle, nicht Layer 2 gegen Layer 3."
+   ],
+   [
+    "Welche Stromversorgung und Kühlung hat der WS-C4948E-F-E?",
+    "Der WS-C4948E-F-E besitzt zwei Hot-Swap-Netzteile in 1+1-Redundanz (AC und DC mischbar) und ein Hot-Swap-Lüftermodul (Fan Tray); der Luftstrom ist back-to-front (die Front-to-Back-Varianten WS-C4948E-S/-E sind separat erhältlich)."
+   ],
+   [
+    "Ist der WS-C4948E-F-E noch aktuell?",
+    "Der WS-C4948E-F-E ist ein abgekündigtes Modell (End-of-Sale); als ungebrauchte Original-Hardware bleibt der WS-C4948E-F-E für Ersatz und Bestandserweiterung in bestehenden Rechenzentren erhältlich (EoL schließt nicht aus)."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G-RJ45 + 4× SFP+ (1/10G, Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1G/10G"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (1/10G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant (1+1) Hot-Swap-Netzteil (AC/DC mischbar)"
+   ],
+   [
+    "Kühlung",
+    "Hot-Swap-Lüftermodul (Fan Tray, Back-to-Front)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack / Server-Access (Layer 3, Enterprise-Services) – 48× Gigabit-RJ45 + 4× 1/10G-SFP+-Uplinks; 96 Gbit/s Wire-Speed, Dual-Stack IPv4/IPv6, Hardware-ACLs; redundante Hot-Swap-Netzteile (1+1, AC/DC mischbar), Hot-Swap-Lüftermodul (Front-to-Back); 1 HE Rack; Cisco IOS (nicht IOS-XE); kein PoE"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "WS-C4948E-F-E",
+    "EoL",
+    "Cisco WS-C4948E-F-E (Catalyst 4948E, Back-to-Front-Airflow) – End-of-Sale 31-Okt-2017, LDoS 31-Okt-2022 (Cisco c51-738116). In scope, ungebrauchte Original-Hardware.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-E",
+    "PID",
+    "Ordering-PID WS-C4948E-F-E verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Tabelle 3 'Back to Front Cooling') + 3 unabhaengigen Quellen bestaetigt; Back-to-Front-Airflow.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-E",
+    "Switching-Kapazität",
+    "96 Gbit/s / 72 Mpps: Cisco-Angabe verbatim übernommen, NICHT verdoppelt; Dual-Stack IPv4/IPv6, Wire-Speed.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-E",
+    "Artikelgewicht",
+    "7,00 kg = ZU_VERIFIZIEREN: KEINE Gewichtsquelle (Datenblatt © 2011 nennt kein Gewicht); ~7 kg geladen GESCHÄTZT, NICHT bestätigt -> via BrokerBin nachschlagen. NICHT als bestätigt behandeln.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-E",
+    "Feature-Grounding",
+    "DC-Top-of-Rack-Switch über die fixed-switch-Vorlage – KEIN neues Merkmal, keine src-Änderung. Bauform = kanonischer 19-Zoll-Rack-Wert (NICHT erfunden). Layer = L3 (sowohl IP Base -S als auch Enterprise Services -E routen; der -S/-E-Split ist Routing-UMFANG static/RIP/EIGRP-Stub vs BGP/OSPF/IS-IS, NICHT L2-vs-L3 – wie 3560-CX IP Base = L3). Luftstrom = Prosa. Classic Cisco IOS (nicht IOS-XE).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
+   ],
+   [
+    "WS-C4948E-F-E",
+    "Korrektur",
+    "8,62 kg verbatim aus dem Cisco-Produkt-Bulletin C25-638058 (Unit weight 19 lb); ersetzt den früheren ~7,00-kg-Schätzwert. Switching-Kapazität 176 Gbit/s + Durchsatz 131 Mpps sind die echten 4948E-Werte (der früher gebankte 96 Gbit/s / 72 Mpps gehörte zur Original-4948, nicht zur 4948E). Versandgewicht 11,12 kg.",
     "https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-4948e-ethernet-switch/data_sheet_c78-583586.html"
    ]
   ]

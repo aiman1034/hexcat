@@ -1,0 +1,374 @@
+{
+ "N5K-C5010P-BF": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco N5K-C5010P-BF 5010 Data-Center-Switch (NX-OS, L2) – 20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "Cisco N5K-C5010P-BF 5010 FCoE-ToR | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5010P-BF (5010): L2-Data-Center-Switch, 20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz, 520 Gbit/s, 386,9 Mpps, 19-Zoll-Rackmontage (1 HE). Cisco …",
+  "artikelgewicht": "15,88",
+  "versandgewicht": "18,38",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5010P-BF ist ein gemanagter Layer-2-Data-Center-Switch der ersten Cisco-Nexus-5000-Generation mit 20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 12 FEX sowie FCoE.</p><p>Im 19-Zoll-Rackmontage (1 HE)-Gehäuse liefert der N5K-C5010P-BF 520 Gbit/s bei 386,9 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Daughter-Card.</p>",
+  "intro": [
+   "Der Cisco N5K-C5010P-BF ist ein gemanagter Layer-2-Data-Center-Switch der ersten Cisco-Nexus-5000-Generation, ausgelegt als FCoE-fähiger Top-of-Rack-Switch im 19-Zoll-Rackmontage (1 HE)-Gehäuse.",
+   "Mit 20 festen 10-Gigabit-Ports erreicht der N5K-C5010P-BF eine Switching-Kapazität von 520 Gbit/s bei einer Weiterleitungsrate von 386,9 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5010P-BF über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 12 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar (nicht im Lieferumfang). Die festen Ports sind Ethernet/FCoE-fähig; natives Fibre Channel ist ausschließlich über ein Expansionsmodul im Erweiterungssteckplatz verfügbar – die Basis-Ports selbst sind nicht Unified.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) mit fest verbautem Lüfter (Front-to-Back) und bis zu zwei redundanten Hot-Swap-Netzteilen (550 W) arbeitet der N5K-C5010P-BF im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 28-Nov-2012) bleibt der N5K-C5010P-BF als ungebrauchte Original-Hardware für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5010P-BF?",
+    "Der N5K-C5010P-BF bietet 20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz."
+   ],
+   [
+    "Unterstützt der N5K-C5010P-BF Stacking oder PoE?",
+    "Nein – der N5K-C5010P-BF nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N5K-C5010P-BF natives Fibre Channel?",
+    "Der N5K-C5010P-BF ist FCoE-fähig auf den Basis-Ports, aber nicht Unified: natives Fibre Channel ist nur über ein Expansionsmodul im Erweiterungssteckplatz verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5010P-BF?",
+    "Der N5K-C5010P-BF läuft unter Cisco NX-OS und bietet Layer 2, vPC, FCoE und bis zu 12 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "20"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+; Ethernet/FCoE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "520 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "386,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (550 W)"
+   ],
+   [
+    "Kühlung",
+    "Fest verbaute Lüfter (Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack (FCoE-Konvergenz) – 20× 10G-SFP+ (Ethernet/FCoE; Ports 1–8 auch 1G); 1 Expansion-Steckplatz; FCoE (natives FC nur via Expansionsmodul, nicht Unified); Layer 2 (Layer 3 optional via Daughter-Card); NX-OS mit vPC und bis 12 FEX; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5010P-BF",
+    "EoL",
+    "Cisco 5010 (Nexus-5000 erste Generation) – End-of-Sale 28-Nov-2012; LDoS 28-Nov-2017. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5010P-BF",
+    "PID",
+    "Ordering-PID N5K-C5010P-BF verbatim aus c78-461802 (nur Basis-Chassis-PID gebankt; Expansionsmodule, L3-Daughter-Card, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5010P-BF",
+    "Gewicht",
+    "15,88 kg: Cisco-Datenblatt-Gewicht (Table 6, VOLL-Konfiguration mit 2 Netzteilen, Expansionsmodulen und Lüftern); das leere Basis-Chassis (wie die -BF-PID ausgeliefert) ist leichter und von Cisco NICHT separat publiziert -> Bare-Chassis-Gewicht ZU_VERIFIZIEREN. Versandgewicht 18,38 kg.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5010P-BF",
+    "Prosa-Fakt",
+    "FCoE/Unified-Ports + Layer-3-Option in der Beschreibung geführt (kein Merkmal); VXLAN fehlt auf der ersten 5000-Generation (per-Datenblatt, nicht behauptet).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ]
+  ]
+ },
+ "N5K-C5020P-BF": {
+  "_facts": {
+   "unterkategorie": "Data-Center-Switch",
+   "quell_url": "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+   "verifiziert_am": "2026-06-29"
+  },
+  "artikelname": "Cisco N5K-C5020P-BF 5020 Data-Center-Switch (NX-OS, L2) – 40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze, 19-Zoll-Rackmontage (2 HE)",
+  "titel_tag": "Cisco N5K-C5020P-BF 5020 FCoE-ToR | Hexwaren",
+  "meta_description": "Original Cisco N5K-C5020P-BF (5020): L2-Data-Center-Switch, 40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze, 1,04 Tbit/s, 773,8 Mpps, 19-Zoll-Rackmontage (2 HE). Cisco …",
+  "artikelgewicht": "22,68",
+  "versandgewicht": "25,18",
+  "kurzbeschreibung": "<p>Der Cisco N5K-C5020P-BF ist ein gemanagter Layer-2-Data-Center-Switch der ersten Cisco-Nexus-5000-Generation mit 40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze. Unter Cisco NX-OS übernimmt er das Line-Rate-Layer-2-Switching mit Cut-Through-Latenz, vPC-Hochverfügbarkeit, bis zu 12 FEX sowie FCoE.</p><p>Im 19-Zoll-Rackmontage (2 HE)-Gehäuse liefert der N5K-C5020P-BF 1,04 Tbit/s bei 773,8 Mpps; ohne PoE und ohne Stacking (vPC), mit redundanten Hot-Swap-Netzteilen und -Lüftern. Layer 3 optional via Layer-3-Daughter-Card.</p>",
+  "intro": [
+   "Der Cisco N5K-C5020P-BF ist ein gemanagter Layer-2-Data-Center-Switch der ersten Cisco-Nexus-5000-Generation, ausgelegt als FCoE-fähiger Top-of-Rack-Switch im 19-Zoll-Rackmontage (2 HE)-Gehäuse.",
+   "Mit 40 festen 10-Gigabit-Ports erreicht der N5K-C5020P-BF eine Switching-Kapazität von 1,04 Tbit/s bei einer Weiterleitungsrate von 773,8 Mpps (Cut-Through-Switching, Line-Rate Layer 2, MTU 9216); PoE wird nicht unterstützt. Hochverfügbarkeit erreicht der N5K-C5020P-BF über vPC (Multichassis-LAG) statt über Stacking, mit Unterstützung für bis zu 12 Fabric Extender (FEX); betrieben wird er unter Cisco NX-OS. Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar (nicht im Lieferumfang). Die festen Ports sind Ethernet/FCoE-fähig; natives Fibre Channel ist ausschließlich über ein Expansionsmodul im Erweiterungssteckplatz verfügbar – die Basis-Ports selbst sind nicht Unified.",
+   "Im Formfaktor 19-Zoll-Rackmontage (2 HE) mit fest verbautem Lüfter (Front-to-Back) und bis zu zwei redundanten Hot-Swap-Netzteilen (750/1200 W) arbeitet der N5K-C5020P-BF im Temperaturbereich 0 bis 40 °C. Als abgekündigtes Modell (End-of-Sale 28-Nov-2012) bleibt der N5K-C5020P-BF als ungebrauchte Original-Hardware für Ersatz und Bestandserweiterung verfügbar."
+  ],
+  "kompatibilitaet": [],
+  "faq": [
+   [
+    "Wie viele Ports hat der N5K-C5020P-BF?",
+    "Der N5K-C5020P-BF bietet 40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze."
+   ],
+   [
+    "Unterstützt der N5K-C5020P-BF Stacking oder PoE?",
+    "Nein – der N5K-C5020P-BF nutzt vPC (Multichassis-LAG) statt Stacking und bietet kein PoE; es ist ein Data-Center-Switch ohne PoE-Einspeisung."
+   ],
+   [
+    "Unterstützt der N5K-C5020P-BF natives Fibre Channel?",
+    "Der N5K-C5020P-BF ist FCoE-fähig auf den Basis-Ports, aber nicht Unified: natives Fibre Channel ist nur über ein Expansionsmodul im Erweiterungssteckplatz verfügbar."
+   ],
+   [
+    "Welches Betriebssystem nutzt der N5K-C5020P-BF?",
+    "Der N5K-C5020P-BF läuft unter Cisco NX-OS und bietet Layer 2, vPC, FCoE und bis zu 12 Fabric Extender (FEX); Layer 3 ist optional per Layer-3-Daughter-Card nachrüstbar."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+; Ethernet/FCoE)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,04 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "773,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2× redundant; AC (750/1200 W)"
+   ],
+   [
+    "Kühlung",
+    "Fest verbaute Lüfter (Front-to-Back)"
+   ],
+   [
+    "Stacking",
+    "Nein"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center Top-of-Rack (FCoE-Konvergenz) – 40× 10G-SFP+ (Ethernet/FCoE; Ports 1–16 auch 1G); 2 Expansion-Steckplätze; FCoE (natives FC nur via Expansionsmodul, nicht Unified); Layer 2 (Layer 3 optional via Daughter-Card); NX-OS mit vPC und bis 12 FEX; Jumbo bis 9216"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html",
+    "datasheet"
+   ]
+  },
+  "beschreibung": "",
+  "netto_vk": null,
+  "extra_log": [
+   [
+    "N5K-C5020P-BF",
+    "EoL",
+    "Cisco 5020 (Nexus-5000 erste Generation) – End-of-Sale 28-Nov-2012; LDoS 28-Nov-2017. In scope (EoL-Generation; Hexwaren führt ungebrauchte Original-Hardware), nicht entfernt.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5020P-BF",
+    "PID",
+    "Ordering-PID N5K-C5020P-BF verbatim aus c78-461802 (nur Basis-Chassis-PID gebankt; Expansionsmodule, L3-Daughter-Card, PSUs, Lüfter, Lizenzen NICHT gebankt).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5020P-BF",
+    "Gewicht",
+    "22,68 kg: Cisco-Datenblatt-Gewicht (Table 6, VOLL-Konfiguration mit 2 Netzteilen, Expansionsmodulen und Lüftern); das leere Basis-Chassis (wie die -BF-PID ausgeliefert) ist leichter und von Cisco NICHT separat publiziert -> Bare-Chassis-Gewicht ZU_VERIFIZIEREN. Versandgewicht 25,18 kg.",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ],
+   [
+    "N5K-C5020P-BF",
+    "Prosa-Fakt",
+    "FCoE/Unified-Ports + Layer-3-Option in der Beschreibung geführt (kein Merkmal); VXLAN fehlt auf der ersten 5000-Generation (per-Datenblatt, nicht behauptet).",
+    "https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-461802.html"
+   ]
+  ]
+ }
+}
