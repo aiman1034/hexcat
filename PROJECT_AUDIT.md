@@ -3771,6 +3771,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   contradictions (attr+prose consistent), validate_dir 0, dedup 0, suite 444, gate 0/0 all 63. HELD by operator: MAJOR-2
   chassis schema, MAJOR-3 MDS category, the 532 weight-provenance process question, Prices line-endings (reconcile canonical
   first). Pre-existing (NOT a FIX-2 regression): a few Beschreibung at 176-177w by whitespace-split (gate tokenizer passes).
+- **FIX 4 `26befcd` (MAJOR, L8 follow-up — FAQ grammar).** The FAQ answers leaked boolean-prefixed PoE/Stacking Merkmal
+  values verbatim into a sentence object ("stellt **Ja (Cisco UPOE, 60 W/Port, ...)** bereit", "unterstützt **Ja (StackWise-480,
+  ...)**") — broken German, **123 sentences / 78 SKUs** (Catalyst 9200/9300/9350); FAQ-only (prose was clean). Fixed in the FAQ
+  generator **`src/hexcat/intake.normalize_faq`** (the only src-diff): a general transform promotes `Ja (FIRST, REST...)` ->
+  `FIRST (REST...)` (drops the Ja/Nein boolean + redundant outer parens), scoped to the verb-object position
+  (stellt|unterstützt|bietet|verfügt über|liefert|beherrscht) so sentence-initial yes-answers are untouched; underlying
+  PoE/Stacking attribute values UNCHANGED. Verify: leak re-scan 0 (was 123), spot-read clean, validate_dir 0, dedup 0, suite
+  444, prices untouched, 995/995 intact.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
