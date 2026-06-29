@@ -53,7 +53,7 @@ exist**) → `audited` (operator L8 independent re-audit passed) → `imported` 
 | Brand | Count | Status | Note |
 |---|---|---|---|
 | MikroTik | 36/36 | emitted `…_e48e5a7.zip` (legacy gate) | weights cited+cross-checked; **awaiting operator L8 audit** |
-| **Cisco** | **993/993 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 modules COMPLETE (96 Class-B). **Long-tail reconcile+build (2026-06-29): +10 fixed switches** — Meraki MS130 desktop 5, Nexus 5010/5020 2, Nexus 3132C-Z 1, Catalyst 4948E-F 2 (+ corrected the built 4948E-S/-E specs). Only **2 manifest rows left missing, both legitimate**: Nexus 9800 (PARK — chassis decision) + Nexus 3000 34200YC-SM (VERIFY — Cisco published no datasheet). Prices Phase-1 provisional |
+| **Cisco** | **995/995 built** (`catalog_manifest/cisco_switches.csv`) | fixed Catalyst/Nexus/SMB/Meraki + modular chassis (incl. **Nexus 9800 — last modular chassis**) + **Class-B modules**; per-bundle gate L1–L8 PASS, `validate_dir` 0 errors across the switch tree | Batch M-1 modules COMPLETE (96 Class-B). Long-tail (2026-06-29) +10 fixed switches; **Nexus 9800 chassis +2** (N9K-C9808/9804, production chassis pattern, operator-approved new Bauform values). **Exactly ONE manifest row left missing**: Nexus 3000 N3K-C34200YC-SM (VERIFY — Cisco published no datasheet → flag-don't-fabricate). Prices Phase-1 provisional |
 | HPE/Aruba/Juniper/Arista/Dell/… | — | **not-started** | source-gated; core brands first |
 
 ### Server Memory — NOT IN SCOPE (charter error, corrected 2026-06-14)
@@ -3720,6 +3720,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **Verify:** suite 444; byte-contract PASS (4 bundles, Beschr 124-155w); `validate_dir` **0 errors across 113 bundles / 1032 SKUs**;
   manifest **993/993 built, the 6 missing rows → 2** (Nexus 9800 PARK + 34200YC-SM VERIFY); L6 += MS130_Desktop 5 / Nexus_5000 2 /
   Nexus_3132C_Z 1 / 4948E 2→4. NO new Wertliste value (Bauform Desktop + Kühlung Aktiv/Passiv all pre-existing).
+- **NEXUS 9800 — last unbuilt modular chassis BUILT (2026-06-29). Cisco switch lane now leaves EXACTLY ONE row missing
+  (N3K-C34200YC-SM VERIFY).** Content-only (src-diff EMPTY). **PHASE 1 — locked the PRODUCTION chassis pattern** by reading the
+  built siblings: Nexus 9400 + Catalyst 9600 use Kat-L3 `Modularer Switch (Chassis)`, **Switch-Typ=`Managed`**, 7 Merkmale
+  (Switch-Typ/Switching-Kapazität/Bauform/Stromversorgung/Kühlung/Betriebstemperatur/Anwendung), Betriebstemperatur as a Merkmal.
+  **Did NOT apply the Class-A test model** (`tests/test_modular_chassis_model.py` Switch-Typ=`Modular-Chassis` + Steckplätze/
+  Unterstützte-Supervisor-Engines/Redundanz). **Observation flagged (not changed):** the built Nexus 7000/7700 carry the older
+  Class-A model — an inconsistency vs the 9400/9600/9800 production pattern; catalog-wide normalisation would be a separate
+  operator decision. **PHASE 2/3 — BUILT `Cisco_Nexus_9800` (2, gate ok=True/0/0):** N9K-C9808 (8 Linecard-Slots, 16 HE, bis
+  115,2 Tbit/s System, 9 Netzteile/3 Trays, **73 kg** Leergehäuse) + N9K-C9804 (4 Linecard-Slots, 10 HE, 6 Netzteile/2 Trays,
+  **56,36 kg**). All verbatim from datasheet C78-3007446-02 + the 9808/9804 NX-OS HIGs. **N9K-C9816 confirmed NON-existent**
+  (16-slot = Nexus 9500 C9516). Chassis-only (Leermodul); supervisors/fabric/line-cards = separate deferred (like the 9400/9600
+  modules). **3 operator STOP-ask decisions (approved):** (1) the **2 new Bauform Wertliste values** (8-slot/16 HE + 4-slot/10 HE
+  — operator adds to JTL); (2) **Betriebstemperatur = `bis 40 °C`** (Cisco publishes only the upper bound — no 0 °C floor →
+  flag-don't-fabricate); (3) **9804 Switching-Kapazität Merkmal = `ZU_VERIFIZIEREN`** (Cisco publishes no discrete 9804 system
+  figure; the published series frame 57-115,2 Tbit/s + the ~57-Tbit/s series-floor derivation live in the Beschreibung + VL, NOT
+  as a fabricated discrete Merkmal). NX-OS, CURRENT/in-channel. **Verify:** suite 444; byte-contract PASS (Beschr 157-170w);
+  `validate_dir` **0 errors across the tree / 1034 SKUs**. Manifest: **9800 catch-all retired → 2-SKU built-block; 995/995 built;
+  the missing rows are down to ONE** (N3K-C34200YC-SM, the only un-groundable Cisco switch left). **Cisco modular-chassis class
+  is now COMPLETE** across all families.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
