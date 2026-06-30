@@ -1,0 +1,686 @@
+{
+ "S4R54A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50004267enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10040 S4R54A Managed Switch (L3) – 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD, 19-Zoll-Rackmontage (2 HE)",
+  "titel_tag": "HPE Aruba CX 10040 S4R54A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10040 S4R54A: gemanagter Layer-3-Switch mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), Switching-Kapazität 8 Tbit/s, 6× 400G-QSFP-DD-Uplinks, ohne PoE, 19-Zo",
+  "artikelgewicht": "15,00",
+  "versandgewicht": "17,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10040 S4R54A ist ein gemanagter Layer-3-Switch der Aruba-CX-10040-Serie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (2 HE) liefert er eine Switching-Kapazität von 8 Tbit/s und bindet per 6× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10040 S4R54A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10040-Familie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 40 Ports erreicht der S4R54A eine Switching-Kapazität von 8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4R54A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4R54A erfolgt über 6× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S4R54A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (2 HE) arbeitet der S4R54A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4R54A übernehmen 4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle). Unter AOS-CX bietet der S4R54A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, vier AMD-Pensando-DPUs für 1,6 Tbit/s zustandsbehaftete Inline-Services (verteilte Firewall, Segmentierung, NAT, Telemetrie) und eine portflexible 4,8-Tbit/s-Verschlüsselungs-Engine (MACsec), PTP-Boundary-Clock und Programmierbarkeit per REST-API/Python. Geliefert wird der S4R54A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4R54A ist HPE-Aruba-Networking-Original-Neuware der CX-10040-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4R54A?",
+    "Der S4R54A bietet insgesamt 40 Ports: 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S4R54A PoE?",
+    "Nein. Der S4R54A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4R54A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4R54A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24000.00"
+ },
+ "S4R55A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50004267enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10040 S4R55A Managed Switch (L3) – 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD, 19-Zoll-Rackmontage (2 HE)",
+  "titel_tag": "HPE Aruba CX 10040 S4R55A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10040 S4R55A: gemanagter Layer-3-Switch mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), Switching-Kapazität 8 Tbit/s, 6× 400G-QSFP-DD-Uplinks, ohne PoE, 19-Zo",
+  "artikelgewicht": "15,00",
+  "versandgewicht": "17,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10040 S4R55A ist ein gemanagter Layer-3-Switch der Aruba-CX-10040-Serie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (2 HE) liefert er eine Switching-Kapazität von 8 Tbit/s und bindet per 6× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10040 S4R55A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10040-Familie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 40 Ports erreicht der S4R55A eine Switching-Kapazität von 8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4R55A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4R55A erfolgt über 6× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S4R55A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (2 HE) arbeitet der S4R55A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4R55A übernehmen 4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle). Unter AOS-CX bietet der S4R55A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, vier AMD-Pensando-DPUs für 1,6 Tbit/s zustandsbehaftete Inline-Services (verteilte Firewall, Segmentierung, NAT, Telemetrie) und eine portflexible 4,8-Tbit/s-Verschlüsselungs-Engine (MACsec), PTP-Boundary-Clock und Programmierbarkeit per REST-API/Python. Geliefert wird der S4R55A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4R55A ist HPE-Aruba-Networking-Original-Neuware der CX-10040-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4R55A?",
+    "Der S4R55A bietet insgesamt 40 Ports: 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S4R55A PoE?",
+    "Nein. Der S4R55A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4R55A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4R55A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24000.00"
+ },
+ "S4R56A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50004267enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10040 S4R56A Managed Switch (L3) – 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD, 19-Zoll-Rackmontage (2 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 10040 S4R56A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10040 S4R56A: gemanagter Layer-3-Switch mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), Switching-Kapazität 8 Tbit/s, 6× 400G-QSFP-DD-Uplinks, ohne PoE, 19-Zo",
+  "artikelgewicht": "15,00",
+  "versandgewicht": "17,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10040 S4R56A ist ein gemanagter Layer-3-Switch der Aruba-CX-10040-Serie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (2 HE) liefert er eine Switching-Kapazität von 8 Tbit/s und bindet per 6× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10040 S4R56A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10040-Familie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 40 Ports erreicht der S4R56A eine Switching-Kapazität von 8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4R56A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4R56A erfolgt über 6× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S4R56A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (2 HE) arbeitet der S4R56A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4R56A übernehmen 4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle). Unter AOS-CX bietet der S4R56A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, vier AMD-Pensando-DPUs für 1,6 Tbit/s zustandsbehaftete Inline-Services (verteilte Firewall, Segmentierung, NAT, Telemetrie) und eine portflexible 4,8-Tbit/s-Verschlüsselungs-Engine (MACsec), PTP-Boundary-Clock und Programmierbarkeit per REST-API/Python. Geliefert wird der S4R56A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4R56A ist HPE-Aruba-Networking-Original-Neuware der CX-10040-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4R56A?",
+    "Der S4R56A bietet insgesamt 40 Ports: 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S4R56A PoE?",
+    "Nein. Der S4R56A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4R56A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4R56A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24500.00"
+ },
+ "S4R57A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50004267enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10040 S4R57A Managed Switch (L3) – 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD, 19-Zoll-Rackmontage (2 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 10040 S4R57A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10040 S4R57A: gemanagter Layer-3-Switch mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), Switching-Kapazität 8 Tbit/s, 6× 400G-QSFP-DD-Uplinks, ohne PoE, 19-Zo",
+  "artikelgewicht": "15,00",
+  "versandgewicht": "17,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10040 S4R57A ist ein gemanagter Layer-3-Switch der Aruba-CX-10040-Serie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (2 HE) liefert er eine Switching-Kapazität von 8 Tbit/s und bindet per 6× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10040 S4R57A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10040-Familie mit 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 40 Ports erreicht der S4R57A eine Switching-Kapazität von 8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4R57A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4R57A erfolgt über 6× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S4R57A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (2 HE) arbeitet der S4R57A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4R57A übernehmen 4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle). Unter AOS-CX bietet der S4R57A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, vier AMD-Pensando-DPUs für 1,6 Tbit/s zustandsbehaftete Inline-Services (verteilte Firewall, Segmentierung, NAT, Telemetrie) und eine portflexible 4,8-Tbit/s-Verschlüsselungs-Engine (MACsec), PTP-Boundary-Clock und Programmierbarkeit per REST-API/Python. Geliefert wird der S4R57A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4R57A ist HPE-Aruba-Networking-Original-Neuware der CX-10040-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4R57A?",
+    "Der S4R57A bietet insgesamt 40 Ports: 32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S4R57A PoE?",
+    "Nein. Der S4R57A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4R57A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4R57A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "40"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (3000 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50004267enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24500.00"
+ }
+}
