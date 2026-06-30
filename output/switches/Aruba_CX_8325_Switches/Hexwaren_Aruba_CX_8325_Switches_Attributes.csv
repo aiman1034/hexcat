@@ -89,3 +89,213 @@ JL636A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (A
 JL636A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
 JL636A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
 JL636A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+S4A51A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4A51A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4A51A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S4A51A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S4A51A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S4A51A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S4A51A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4A51A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S4A51A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S4A51A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4A51A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – AC (100–240 VAC), NEBS-konform",11,Wertliste,Attribut
+S4A51A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S4A51A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4A51A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4A51A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4A52A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4A52A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4A52A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S4A52A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S4A52A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S4A52A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S4A52A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4A52A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S4A52A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S4A52A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4A52A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – AC (100–240 VAC), NEBS-konform",11,Wertliste,Attribut
+S4A52A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow back-to-front)",12,Wertliste,Attribut
+S4A52A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4A52A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4A52A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4A49A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4A49A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4A49A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S4A49A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S4A49A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S4A49A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S4A49A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4A49A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S4A49A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S4A49A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4A49A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – DC (-48 V), NEBS-konform",11,Wertliste,Attribut
+S4A49A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S4A49A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4A49A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4A49A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4A50A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4A50A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4A50A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S4A50A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S4A50A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S4A50A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S4A50A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4A50A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S4A50A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S4A50A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4A50A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – DC (-48 V), NEBS-konform",11,Wertliste,Attribut
+S4A50A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow back-to-front)",12,Wertliste,Attribut
+S4A50A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4A50A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4A50A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4A48A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4A48A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4A48A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S4A48A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S4A48A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S4A48A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S4A48A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4A48A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S4A48A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S4A48A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4A48A,,Switch,Stromversorgung,"Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1); NEBS-konform",11,Wertliste,Attribut
+S4A48A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))",12,Wertliste,Attribut
+S4A48A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4A48A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4A48A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S0G09A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0G09A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0G09A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S0G09A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S0G09A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S0G09A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S0G09A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0G09A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S0G09A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S0G09A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0G09A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – AC (100–240 VAC), NEBS-konform",11,Wertliste,Attribut
+S0G09A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S0G09A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0G09A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S0G09A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S0G10A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0G10A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0G10A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S0G10A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S0G10A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S0G10A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S0G10A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0G10A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S0G10A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S0G10A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0G10A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – AC (100–240 VAC), NEBS-konform",11,Wertliste,Attribut
+S0G10A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow back-to-front)",12,Wertliste,Attribut
+S0G10A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0G10A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S0G10A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S0G07A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0G07A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0G07A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S0G07A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S0G07A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S0G07A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S0G07A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0G07A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S0G07A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S0G07A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0G07A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – DC (-48 V), NEBS-konform",11,Wertliste,Attribut
+S0G07A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S0G07A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0G07A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S0G07A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S0G08A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0G08A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0G08A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S0G08A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S0G08A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S0G08A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S0G08A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0G08A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S0G08A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S0G08A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0G08A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteile, redundant (N+1) – DC (-48 V), NEBS-konform",11,Wertliste,Attribut
+S0G08A,,Switch,Kühlung,"6 Hot-Swap-Lüfter (N+1, Airflow back-to-front)",12,Wertliste,Attribut
+S0G08A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0G08A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S0G08A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S0G12A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0G12A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0G12A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S0G12A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S0G12A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); erweiterte Breakout-Flexibilität (bis 128 Ports 10G/25G),5,Wertliste,Attribut
+S0G12A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; bis zu 128× 10G/25G per Breakout),6,Wertliste,Attribut
+S0G12A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0G12A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S0G12A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S0G12A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0G12A,,Switch,Stromversorgung,"Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1); NEBS-konform",11,Wertliste,Attribut
+S0G12A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))",12,Wertliste,Attribut
+S0G12A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0G12A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S0G12A,,Switch,Anwendung,"Telco-/5G-RAN-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit präziser Zeitsynchronisation (PTP 1588v2, SyncE, ITU-T G.8275.1/.2 Class C, GNSS/Boundary-Clock, SMPTE), NEBS-Konformität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+JL857A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JL857A,,Switch,Layer,L3,2,Wertliste,Attribut
+JL857A,,Switch,Portanzahl,56,3,Wertliste,Attribut
+JL857A,,Switch,Port-Konfiguration,48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink),4,Wertliste,Attribut
+JL857A,,Switch,Port-Geschwindigkeit,"1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)",5,Wertliste,Attribut
+JL857A,,Switch,Uplink-Ports,8× QSFP28 (40/100G),6,Wertliste,Attribut
+JL857A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JL857A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+JL857A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+JL857A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JL857A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+JL857A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back),12,Wertliste,Attribut
+JL857A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+JL857A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+JL857A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+JL858A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JL858A,,Switch,Layer,L3,2,Wertliste,Attribut
+JL858A,,Switch,Portanzahl,56,3,Wertliste,Attribut
+JL858A,,Switch,Port-Konfiguration,48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink),4,Wertliste,Attribut
+JL858A,,Switch,Port-Geschwindigkeit,"1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)",5,Wertliste,Attribut
+JL858A,,Switch,Uplink-Ports,8× QSFP28 (40/100G),6,Wertliste,Attribut
+JL858A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JL858A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+JL858A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+JL858A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JL858A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+JL858A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front),12,Wertliste,Attribut
+JL858A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+JL858A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+JL858A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+JL859A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JL859A,,Switch,Layer,L3,2,Wertliste,Attribut
+JL859A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+JL859A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+JL859A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout,5,Wertliste,Attribut
+JL859A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout),6,Wertliste,Attribut
+JL859A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JL859A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+JL859A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+JL859A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JL859A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+JL859A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back),12,Wertliste,Attribut
+JL859A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+JL859A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+JL859A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+JL860A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JL860A,,Switch,Layer,L3,2,Wertliste,Attribut
+JL860A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+JL860A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+JL860A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout,5,Wertliste,Attribut
+JL860A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout),6,Wertliste,Attribut
+JL860A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JL860A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+JL860A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+JL860A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JL860A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+JL860A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front),12,Wertliste,Attribut
+JL860A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+JL860A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+JL860A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut

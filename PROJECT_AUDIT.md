@@ -3998,6 +3998,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Pricing = Phase-1 ESTIMATE. Footprint: 4 bundles + 4 content JSONs + rules.yaml(+4) + gate_completeness(+4) + driver + audit + note;
   0 src/ change, 0 new Merkmal, nothing in JTL. **HPE/Aruba switch total now 112 authored.** NEXT: CX 8360/9300/9300S/10000/10040
   (batch 4) + ArubaOS-Switch + Comware (FlexFabric/FlexNetwork) + SMB + the module/chassis batches, per the FULL manifest.
+- **HPE/Aruba SWITCHES — BATCH-3 ADDENDUM: 8325 family re-enumeration (2026-06-30; +14 SKUs).** Auditor pinned the live
+  a00059009ENW Rev.3 ordering guide (an enumeration agent fetched the full version — the cached 8325.pdf was truncated, no
+  ordering section). **Added 14 in-scope switch SKUs to the existing Aruba CX 8325 bundle (6 → 20):** the **8325P-32C telco line**
+  (10: S4A48-52A + TAA S0G07-10A/S0G12A) + **8325 DC-power bundles** (4: 48Y8C JL857A/JL858A + 32C JL859A/JL860A). 8325 bundle
+  re-emitted `gate ok=True viol=0`, validate_dir=0; whole switch tree **1160 SKUs all unique**. The **8325P telco differentiation**
+  (PTP/SyncE/G.8275.1-.2 Class C/GNSS/NEBS, 128× breakout, 5G-RAN) is woven into PROSE (feat + Anwendung), **NOT a new Merkmal**
+  (operator-instructed); a display-series decoupling (`disp` field) gives "CX 8325P" branding while the bundle stays "Aruba CX 8325
+  Switches". **9 new Wertliste VALUES** (AC/DC-NEBS Stromversorgung, breakout), **0 new Merkmal NAMES**, 0 rules.yaml change (E3
+  already exists). Completeness sweep confirmed (flag-don't-fabricate): **8325H = AC-only/fixed-PSU (no DC variants)**, **8100 = 12
+  AC complete**, **8320 = 3 FtB-AC complete** per its doc; **S0G11A DEFERRED** (absent from the doc — skipped number, not fabricated);
+  **R9F** not in the 8325 doc (origin ZU_VERIFIZIEREN). gate_completeness 8325 6→20. Details: `BATCH3_ADDENDUM_PRE_IMPORT.md`.
+  Pricing Phase-1 ESTIMATE; 8325P weight = 32C-sibling estimate (flagged). **HPE/Aruba switch total now 126 authored.**
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
