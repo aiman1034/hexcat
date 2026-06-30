@@ -3817,6 +3817,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   0 Prices/categories/src/config touched. **Flagged (out of scope):** the existing N9K-C9808 = `Bis zu 115,2 Tbit/s` is NOT in
   the current datasheet (230.4 Tbps series max) — recommend a separate 9808 re-ground; and B5's keep-derived-vs-flat-10-Gbps is
   an operator call.
+- **B2 RESOLVED + coverage refresh (2026-06-30).** Nexus 9800 Switching-Kapazität re-grounded on the operator-set **800G-line-card
+  basis** (per-LC 28,8 Tbit/s — Cisco Nexus 9800 DS, N9K-X9836E-SP2R-O 36-port 800G, verbatim "up to 28.8 Tbps capacity" + "scale
+  up to 230.4 Tbps with current-generation line cards"): **N9K-C9808 = `Bis zu 230,4 Tbit/s`** (8 × 28,8) · **N9K-C9804 = `Bis zu
+  115,2 Tbit/s`** (4 × 28,8; was `ZU_VERIFIZIEREN`). The superseded "57–115,2 / ~57-Tbit/s series-floor" narrative (old 400G-gen
+  revision) was rewritten to the 800G basis across attr+Beschreibung+Kurz+FAQ+VLog. Footprint: **only Switching-Kapazität (2 attr
+  rows) + matching prose** — 0 other attributes, 0 prices, 0 categories, 0 src/config; cross-field 0, validate_dir 0, dedup 0,
+  Beschr 155/162 w. **Coverage reconciler re-run** (`lib/coverage_reconcile.py switches` → `coverage_report.md`, regenerated):
+  **113/114 families fully built · 995/996 models (99,9 %)**; the ONLY genuinely-missing model is **N3K-C34200YC-SM** (VERIFY —
+  Cisco published no datasheet → deferred, flag-don't-fabricate). The prior stale report (Meraki/Nexus-9800/Nexus-3000 listed
+  not-built) is **corrected** — all built. Manifest current (995 built = 995 emitted). Latent note: `_built_switch_pns` globs only
+  `*_Switches_Main.csv` → relies on manifest `Status=built` to count the 96 `_Modules` SKUs (not affecting this result).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
