@@ -3967,6 +3967,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (12) + 6200M (10) flagged, not authored. **AUDITOR ACTION: cache a00059762enw → batch 2b authors the 22.** Pricing = Phase-1
   ESTIMATE (flagged). Footprint: 5 bundles + 5 content JSONs + rules.yaml(+5) + gate_completeness(+5) + driver + this audit + note;
   0 src/ change, 0 new Merkmal, nothing in JTL. NEXT: auditor caches the 6200F/M doc (batch 2b) + continues the remaining HPE tiers.
+- **HPE/Aruba SWITCHES — STEP 2 BATCH-2b: the 22 deferred 6200 PIDs AUTHORED (2026-06-30; cache gap resolved).** The auditor
+  couriered the live-HPE grounding (a00059762enw); I also mirror-fetched the same QuickSpecs (kickstartcomputers.com.au rehost;
+  HPE origin Akamai-blocked) to verify/complete. **All 22 now authored + gate-clean:** NEW bundle Aruba CX 6200M (10) +
+  EXTENDED Aruba CX 6200F 15→27 (+12: S0M81-85A, S0G13-17A, R8Q72A, R8V13A). All 6 access bundles ok=True viol=0;
+  validate_dir=0; whole switch tree **1117 SKUs all unique**. **⚠️ SwK DISCREPANCY corrected (operator-instructed):** the
+  couriered 6200F-1G SwK (56/104) was CONTRADICTED by the authoritative a00059762enw table (**128/176** — the 1G-SFP models
+  share their SFP+ siblings' rated switching capacity, not derated by uplink) → used the doc, flagged in BATCH2b note. The 3
+  formerly-ZU_VERIFIZIEREN cells grounded: **R8Q71A=272 Gbit/s** (48-port multigig, courier mislabelled 24p), **R8Q72A=68**
+  (12-port compact fanless, 3,24 kg), **R8V13A=176** (TAA twin of S0M85A). Also fixed a prose bug carried from batch-2: the VSF
+  sentence hardcoded "zehn Einheiten" while 6200F/M stack 8 — now derived from the Stacking attribute ("acht" for 6200F/M,
+  "zehn" for 6300L); the re-emitted 6200F bundle carries the fix. CONFIG: +1 E3 (Aruba CX 6200M Switches); gate_completeness
+  6200F→27/27 (12 harvest-gap flags cleared) + 6200M 10/10. **17 new Wertliste VALUES**, 0 new Merkmal NAMES →
+  `BATCH2b_PRE_IMPORT_REQUIREMENTS.md`. Pricing = Phase-1 ESTIMATE. Footprint: 6200M bundle + re-emitted 6200F + 2 content JSONs
+  + rules.yaml(+1) + gate_completeness + driver + audit + note; 0 src/ change, 0 new Merkmal, nothing in JTL. **HPE/Aruba switch
+  total now 83 authored (CX 6000/6100/6200F/6200M/6300F/6300M/6300L/4100i complete).** NEXT: continue the remaining HPE tiers
+  (8100/8320/8325/8360/9300/10000 + ArubaOS-Switch + Comware/FlexFabric/FlexNetwork + SMB + modules/chassis) per the FULL manifest.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

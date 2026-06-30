@@ -105,6 +105,9 @@ compact ×2, 6200F campus ×3, 6300L L2 ×3, 4100i industrial ×2)
   8-member. SwK 128 (24p) / 176 (48p), throughput 95,2 / 130,9 Mpps — verbatim from the cached A-rev sheet.
 
 ## E. ⚠️ DEFERRED — 22 PIDs NOT authored (CACHE GAP — auditor action needed)
+> ✅ **RESOLVED in BATCH 2b** (auditor couriered a00059762enw): all 22 are now authored — 6200M (10) as a new bundle,
+> 6200F extended 15→27. See `BATCH2b_PRE_IMPORT_REQUIREMENTS.md`. (Note: the couriered 6200F-1G SwK 56/104 was corrected
+> to the doc's authoritative 128/176.) The text below is the historical batch-2 state.
 **Root cause:** the cached `datasheets/cache/hpe-aruba/6200F.pdf` is the **wrong/older doc — `a00097415enw`
 (2022, 6200F-only A-rev, only JL724A–728A)**, NOT the `a00059762enw` the manifest assumed. The current combined
 **6200F+6200M** datasheet (B-rev, S-prefix, 1G-SFP variants, compact, AND the entire 6200M) is **not cached
