@@ -3788,6 +3788,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Durchsatz). Verify: validate_dir 0, dedup 0, cross-field 0, prices untouched, src-diff 0 (content-only), 995/995 intact.
   Section B (operator decisions: B1 MDS category, B2 9804 SwK, B3/B4 SX-350X/550X forwarding, B5 2960-C/3560-C SwK, B6 chassis
   schema) + Section C (informational) NOT actioned.
+- **CATEGORY REMAP (2026-06-30, `CISCO_CATEGORY_REMAP_FINAL.md` / `CISCO_CATEGORY_REMAP_MANIFEST.md`).** All 113 Cisco bundles
+  remapped to E1 `Netzwerk & Infrastruktur` / E2 `Switches` (retiring the old `Switch-Module & Komponenten` + `SAN & Fibre
+  Channel` E2 for the 109 module/MDS SKUs) / E3 = per-SERIES string (58 distinct, e.g. `Cisco Catalyst 9300 Switches`, `Cisco
+  Catalyst 6500 Modules`, `Cisco MDS 9000 Switches`). **Mechanism (operator-chosen): post-emit Main rewrite** — the internal
+  switch CLASS-token (`_facts.unterkategorie`, Attributes/Attributgruppe, gate) is UNCHANGED; only the Main's E2/E3 columns are
+  rewritten as a final packaging step (`_scratch/remap_categories.py`, wired into the build via `reemit_fix2.py` post-gate so it
+  persists). **Two pipeline changes were forced + operator-sanctioned:** (1) `config/rules.yaml` `kategorie_ebene_3_switch_allowed`
+  += the 58 series (else validate treats a series-E3 as transceiver → 564 content-check violations/bundle); (2) **`src/hexcat/
+  validate.py`** — the module/chassis carve-out detection changed from Kat-L3-based to ATTRIBUTE-based (module = has Modultyp;
+  chassis = switch with no Portanzahl; FC Layer-drop = `\bFC\b` in Port-Geschwindigkeit), because the series E3 merges chassis+
+  fixed and can't be patched in config. Verify: **validate_dir 0** (was 917 on the 15 module+chassis pre-validate-fix), **dedup
+  0**, suite **444**; assertions: 0 SKUs with old E2, 58 distinct E3, 995/995. Byte-safe: only E2+E3 Main columns changed (0
+  collateral, Prices/Attributes/slug untouched). **NOT done (flagged):** the old-E3 strings in SEO meta/prose (e.g. titles
+  "Cisco C9300-48U **Managed Switch (L3)**", 120 "Industrie-Switch", 81 "Data-Center-Switch") were LEFT — they are accurate
+  product DESCRIPTORS; a literal replace with the series name yields redundant titles ("Cisco C9300 Cisco Catalyst 9300
+  Switches"). Awaiting operator's preferred transformation (or keep as descriptors).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

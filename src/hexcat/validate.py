@@ -843,27 +843,30 @@ class Validator:
 
     def _check_switch_sku(self, fname, sku, k3, names, vals):
         """Rule-7 switch gold-slice: required-attr completeness + S.1-S.5. (B.4/B.8 run elsewhere.)"""
-        # CHASSIS-SWITCH carve-out: a modular director/chassis (Kat-L3 in CHASSIS_KAT3_VALUES) is a bare
-        # chassis — no fixed ports/PoE/stacking — so it uses a reduced 7-attr set and the port-rules
-        # (S.1/S.3/S.4) do not apply. Routed to a SEPARATE method so the fixed-switch path below is
-        # untouched (zero-regression for the existing port-centric families).
-        if k3 in C.CHASSIS_KAT3_VALUES:
-            self._check_chassis_sku(fname, sku, k3, names, vals)
-            return
-        # MODULE carve-out (Class-B sup/linecard/fabric/port-card): a bare module rides the switch path but
-        # carries the REDUCED module set — required Modultyp+Kompatible Serie, FORBIDS the switch/chassis-only
-        # Merkmale, keeps the port-rules S.1/S.3 (a linecard has ports) but skips S.2/S.4/S.5 (no Layer/
-        # Stacking/operating-temperature). Separate method -> the fixed-switch path below stays byte-identical.
-        if k3 in C.MODULE_KAT3_VALUES:
+        # CARVE-OUT detection is ATTRIBUTE-based, NOT Kat-L3-based (changed 2026-06-30 for the post-emit
+        # category remap, CISCO_CATEGORY_REMAP_FINAL.md): the remap makes Kategorie-Ebene-3 a per-SERIES
+        # string (e.g. "Cisco Catalyst 4500 Switches", which contains BOTH the 4500-E chassis and the 4500-X
+        # fixed switch), so the switch CLASS can no longer be read from k3. The attribute signature is exact
+        # and zero-regression (the pre-remap Kat-L3 tokens in CHASSIS_KAT3_VALUES/MODULE_KAT3_VALUES carry it):
+        #   * MODULE  — carries Modultyp (only Class-B sup/linecard/fabric/port-cards do). Checked FIRST: a
+        #     portless supervisor module also lacks Portanzahl, so the chassis test must not claim it.
+        #   * CHASSIS — a (non-module) switch with NO fixed Portanzahl (both the production 7-attr chassis and
+        #     the Class-A chassis omit Portanzahl; every fixed switch carries it — also covers FC directors).
+        # The reduced-set checks live in SEPARATE methods so the fixed-switch path below is byte-identical.
+        if "Modultyp" in names:
             self._check_module_sku(fname, sku, k3, names, vals)
             return
-        # Fibre Channel SAN switches are switch-class but use the 12-attr FC model: no Ethernet Layer
-        # (FC does FC-switching/NPV/IVR, not L2/L3) and no separate Durchsatz (the aggregate FC bandwidth
-        # IS the throughput, carried in Switching-Kapazität). Drop Layer from the required set for FC;
-        # Durchsatz is not in the required set for any switch, so it is already tolerated absent.
+        if "Portanzahl" not in names:
+            self._check_chassis_sku(fname, sku, k3, names, vals)
+            return
+        # Fibre Channel SAN switches are switch-class but use the FC model: no Ethernet Layer (FC does
+        # FC-switching/NPV/IVR, not L2/L3) and no separate Durchsatz (the aggregate FC bandwidth IS the
+        # throughput, carried in Switching-Kapazität). Detect by the FC port-speed signal — an FC switch's
+        # Port-Geschwindigkeit reads "<n> Gbit/s FC"; an Ethernet switch never carries a bare 'FC' token
+        # (FCoE does not match \bFC\b). Drop Layer from the required set for FC; Durchsatz is already absent-tolerant.
         required = ("Switch-Typ", "Layer", "Portanzahl", "Port-Konfiguration",
                     "Port-Geschwindigkeit", "PoE", "Bauform", "Anwendung", "Betriebstemperatur")
-        if k3 == "Fibre-Channel-Switch":
+        if re.search(r"\bFC\b", vals.get("Port-Geschwindigkeit", "")):
             required = tuple(a for a in required if a != "Layer")
         for req in required:
             if req not in names:
