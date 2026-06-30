@@ -3849,6 +3849,13 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (all 58 families, per-family **verbatim** anchor URLs pulled from the research agents' reports; `URL not captured` where a source
   was named without a clean URL — no reconstruction/guessing). Every table anchor is now traceable. Research-doc only: 0
   price/catalog/src/config.
+- **CATALOG follow-up — Task 2 (2026-06-30):** `N3K-C34200YC-SM` (the single deferred Nexus 3000 model) — FINAL thorough source
+  hunt → **DEFER confirmed, NOT built.** Cisco publishes no full specs for this exact PID; only the PID-specific EoS bulletin gives
+  ports verbatim ("Nexus 48p 10/25G and 8p of 100G" = 48× SFP28 10/25G + 8× QSFP28 100G) — no form factor, no switching-capacity, no
+  throughput, no datasheet link. Per flag-don't-fabricate: NOT built (no sibling-inference, **no live ZU_VERIFIZIEREN SKU**). Manifest
+  Notes hardened + 6 lifecycle/datasheet HTML cached to `datasheets/cache/cisco-switches/`; **coverage stays 995/996** (acceptable).
+  Sources checked (all cached): support model page, EoS bulletin, Nexus-3000 master datasheet-listing (no 34200 entry), 3 sibling
+  datasheets (34180YC+3464C / 3408-S / 3432D-S — none covers 34200).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
