@@ -3804,6 +3804,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   "Cisco C9300-48U **Managed Switch (L3)**", 120 "Industrie-Switch", 81 "Data-Center-Switch") were LEFT — they are accurate
   product DESCRIPTORS; a literal replace with the series name yields redundant titles ("Cisco C9300 Cisco Catalyst 9300
   Switches"). Awaiting operator's preferred transformation (or keep as descriptors).
+- **SPEC GROUNDING B2/B3/B4/B5 (2026-06-30, `CISCO_B2B5_GROUNDING_MANIFEST.md`).** 19 SKUs re-grounded against OFFICIAL
+  cisco.com datasheets (4 PDFs cached to `datasheets/cache/cisco-switches/`, gitignored). **Result: 0 catalog edits** — every
+  value is either datasheet-correct (confirmed verbatim) or unpinnable-from-Cisco (kept per flag-don't-fabricate). **B2**
+  N9K-C9804 SwK = kept `ZU_VERIFIZIEREN` — the Nexus 9800 DS publishes NO per-chassis system figure (series max **230.4 Tbps**;
+  `115.2`/`57.6` absent; per-LC 28.8/14.4 Tbps → 4-slot is config-dependent, not cleanly derivable). **B3** SX350X-24/-24F +
+  SX550X-24/-24F/-24FT Durchsatz = **confirmed 240,00 Mpps** (Cisco prints 240.00 verbatim — conservative, below the 357.12
+  line-rate the SG550XG-24T sibling shows). **B4** SG350X-8PMD SwK 80 + Durchsatz 29,76 = **both confirmed** (Cisco's own DS is
+  internally inconsistent — 29.76 omits the two 10G uplinks — transcribed verbatim, not "fixed"). **B5** 12× 2960-C/3560-C SwK
+  (5,6/6,4/20) = **kept (derived)** — the DS (C78-639705) has NO per-model switching-capacity row; Cisco prints only a flat
+  "Forwarding Bandwidth 10 Gbps" per series + per-model mpps (14,9/4,2/4,8, which match Durchsatz). validate_dir 0, dedup 0,
+  0 Prices/categories/src/config touched. **Flagged (out of scope):** the existing N9K-C9808 = `Bis zu 115,2 Tbit/s` is NOT in
+  the current datasheet (230.4 Tbps series max) — recommend a separate 9808 re-ground; and B5's keep-derived-vs-flat-10-Gbps is
+  an operator call.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
