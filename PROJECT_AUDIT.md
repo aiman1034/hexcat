@@ -4010,6 +4010,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   AC complete**, **8320 = 3 FtB-AC complete** per its doc; **S0G11A DEFERRED** (absent from the doc — skipped number, not fabricated);
   **R9F** not in the 8325 doc (origin ZU_VERIFIZIEREN). gate_completeness 8325 6→20. Details: `BATCH3_ADDENDUM_PRE_IMPORT.md`.
   Pricing Phase-1 ESTIMATE; 8325P weight = 32C-sibling estimate (flagged). **HPE/Aruba switch total now 126 authored.**
+- **HPE/Aruba SWITCHES — STEP 2 BATCH-4 (CX high-end DC tail): 37 authored, 10040 (6) deferred (2026-06-30).** Enumerated each
+  family against the FULL ordering guide (the 8325 lesson). Authored + gate-clean: **8360 (18), 9300 (3), 9300S (8), 10000 (4)** +
+  **8325 +4** (S1D09-12A = DC-PSU TAA twins of JL857-860A, resolved via QuickSpecs a00056519enw; **8325 now 24**). All `ok=True
+  viol=0`, validate_dir=0; whole switch tree **1197 SKUs all unique**. **43 new Wertliste VALUES, 0 new Merkmal NAMES** →
+  `BATCH4_PRE_IMPORT_REQUIREMENTS.md`. Grounding/flag-don't-fabricate: **8360 = AC-ONLY, no DC/TAA** (deviated from 8325 — 18 = floor),
+  per-model SwK (4.8/2.4/1.76/1.2/2.4/0.88 Tbps), Durchsatz not per-model → wire-speed flagged; **9300-32D = 25.6 Tbit/s** (manifest
+  hint 12.8 was WRONG — used doc), 32× QSFP-DD 400G spine, AC-only; **9300S-32C8D = 16 Tbit/s** + line-rate MACsec/IPSec/VXLANsec + PTP
+  in PROSE; **10000 = 3.6 Tbit/s DSS, AMD-Pensando-DPU in PROSE** (not a Merkmal, like MACsec). VSX/L3/EVPN throughout; PoE=Nein.
+  CONFIG: +5 E3 (8360/9300/9300S/10000/10040; additions-only) + gate_completeness (8325→24, +8360/9300/9300S/10000). **R9F* EXCLUDED**
+  per operator (integration-tracking). **⚠️ CX 10040 (S4R54-59A, 6 incl. FRU S4R58A/S4R59A) DEFERRED to batch-4b:** clean OEM doc
+  a50004267enw is Akamai-blocked from this host (only reseller mirrors), and per-model weight + Durchsatz are un-groundable from
+  those (reseller specs proved unreliable on 6200F-1G SwK + S1D AC-tags) → auditor to courier/cache a50004267enw + sign off the FRU.
+  Pricing Phase-1 ESTIMATE. **HPE/Aruba switch total now 163 authored** (CX 6000–6300/8100–8360/9300/9300S/10000/4100i; remaining:
+  10040 + 6400/8400 chassis + modules; then ArubaOS-Switch + Comware + SMB).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

@@ -1,0 +1,3080 @@
+{
+ "JL700C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL700C Managed Switch (L3) – 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL700C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL700C: gemanagter Layer-3-Switch mit 32× 1/10/25G-SFP28, Switching-Kapazität 2,4 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,19",
+  "versandgewicht": "10,19",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL700C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 32× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL700C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 32× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 36 Ports erreicht der JL700C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL700C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL700C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL700C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL700C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL700C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL700C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL700C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL700C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL700C?",
+    "Der JL700C bietet insgesamt 36 Ports: 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL700C PoE?",
+    "Nein. Der JL700C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL700C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL700C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "36"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-25G-Aggregation/ToR (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "7000.00"
+ },
+ "JL701C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL701C Managed Switch (L3) – 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL701C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL701C: gemanagter Layer-3-Switch mit 32× 1/10/25G-SFP28, Switching-Kapazität 2,4 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,19",
+  "versandgewicht": "10,19",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL701C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 32× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL701C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 32× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 36 Ports erreicht der JL701C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL701C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL701C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL701C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL701C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL701C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL701C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL701C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL701C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL701C?",
+    "Der JL701C bietet insgesamt 36 Ports: 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL701C PoE?",
+    "Nein. Der JL701C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL701C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL701C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "36"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-25G-Aggregation/ToR (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "7000.00"
+ },
+ "JL717C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL717C Managed Switch (L3) – 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL717C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL717C: gemanagter Layer-3-Switch mit 32× 1/10/25G-SFP28, Switching-Kapazität 2,4 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,19",
+  "versandgewicht": "10,19",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL717C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 32× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL717C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 32× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 36 Ports erreicht der JL717C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL717C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL717C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL717C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL717C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL717C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL717C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL717C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL717C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL717C?",
+    "Der JL717C bietet insgesamt 36 Ports: 32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL717C PoE?",
+    "Nein. Der JL717C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL717C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL717C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "36"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 1/10/25G-SFP28 + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-25G-Aggregation/ToR (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6300.00"
+ },
+ "JL702C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL702C Managed Switch (L3) – 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL702C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL702C: gemanagter Layer-3-Switch mit 16× 1/10/25G-SFP28, Switching-Kapazität 1,2 Tbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "7,71",
+  "versandgewicht": "9,71",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL702C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 16× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,2 Tbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL702C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 16× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 18 Ports erreicht der JL702C eine Switching-Kapazität von 1,2 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL702C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL702C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL702C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL702C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL702C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL702C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL702C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL702C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL702C?",
+    "Der JL702C bietet insgesamt 18 Ports: 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL702C PoE?",
+    "Nein. Der JL702C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL702C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL702C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "18"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,2 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakte Data-Center-25G-Aggregation (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5000.00"
+ },
+ "JL703C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL703C Managed Switch (L3) – 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL703C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL703C: gemanagter Layer-3-Switch mit 16× 1/10/25G-SFP28, Switching-Kapazität 1,2 Tbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "7,71",
+  "versandgewicht": "9,71",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL703C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 16× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,2 Tbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL703C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 16× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 18 Ports erreicht der JL703C eine Switching-Kapazität von 1,2 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL703C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL703C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL703C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL703C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL703C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL703C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL703C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL703C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL703C?",
+    "Der JL703C bietet insgesamt 18 Ports: 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL703C PoE?",
+    "Nein. Der JL703C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL703C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL703C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "18"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,2 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakte Data-Center-25G-Aggregation (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5000.00"
+ },
+ "JL718C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL718C Managed Switch (L3) – 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL718C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL718C: gemanagter Layer-3-Switch mit 16× 1/10/25G-SFP28, Switching-Kapazität 1,2 Tbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "7,71",
+  "versandgewicht": "9,71",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL718C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 16× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,2 Tbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL718C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 16× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 18 Ports erreicht der JL718C eine Switching-Kapazität von 1,2 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL718C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL718C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL718C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL718C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL718C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL718C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL718C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL718C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL718C?",
+    "Der JL718C bietet insgesamt 18 Ports: 16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL718C PoE?",
+    "Nein. Der JL718C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL718C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL718C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "18"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 1/10/25G-SFP28 + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,2 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "Kompakte Data-Center-25G-Aggregation (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4500.00"
+ },
+ "JL704C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL704C Managed Switch (L3) – 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL704C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL704C: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 4,8 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10,73",
+  "versandgewicht": "12,73",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL704C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 4,8 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL704C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der JL704C eine Switching-Kapazität von 4,8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL704C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL704C erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL704C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL704C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL704C übernehmen 5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL704C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL704C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL704C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL704C?",
+    "Der JL704C bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL704C PoE?",
+    "Nein. Der JL704C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL704C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL704C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-25G-Data-Center-Aggregation/Spine-Leaf (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "11000.00"
+ },
+ "JL705C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL705C Managed Switch (L3) – 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL705C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL705C: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 4,8 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10,73",
+  "versandgewicht": "12,73",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL705C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 4,8 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL705C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der JL705C eine Switching-Kapazität von 4,8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL705C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL705C erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL705C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL705C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL705C übernehmen 5 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL705C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL705C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL705C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL705C?",
+    "Der JL705C bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL705C PoE?",
+    "Nein. Der JL705C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL705C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL705C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "5 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-25G-Data-Center-Aggregation/Spine-Leaf (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "11000.00"
+ },
+ "JL719C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL719C Managed Switch (L3) – 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL719C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL719C: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 4,8 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10,73",
+  "versandgewicht": "12,73",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL719C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 1/10/25G-SFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 4,8 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL719C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 1/10/25G-SFP28, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der JL719C eine Switching-Kapazität von 4,8 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL719C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL719C erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL719C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL719C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL719C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL719C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL719C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL719C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL719C?",
+    "Der JL719C bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL719C PoE?",
+    "Nein. Der JL719C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL719C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL719C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4,8 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "High-Density-25G-Data-Center-Aggregation/Spine-Leaf (Layer 3, AOS-CX) mit 100G-Uplinks, MACsec, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "10000.00"
+ },
+ "JL706C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL706C Managed Switch (L3) – 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL706C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL706C: gemanagter Layer-3-Switch mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), Switching-Kapazität 1,76 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Z",
+  "artikelgewicht": "8,55",
+  "versandgewicht": "10,55",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL706C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL706C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der JL706C eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL706C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL706C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL706C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL706C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL706C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL706C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL706C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL706C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL706C?",
+    "Der JL706C bietet insgesamt 52 Ports: 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL706C PoE?",
+    "Nein. Der JL706C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL706C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL706C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (10GBASE-T Smart Rate, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "10GBASE-T-Kupfer-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9500.00"
+ },
+ "JL707C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL707C Managed Switch (L3) – 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL707C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL707C: gemanagter Layer-3-Switch mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), Switching-Kapazität 1,76 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Z",
+  "artikelgewicht": "8,55",
+  "versandgewicht": "10,55",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL707C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL707C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der JL707C eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL707C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL707C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL707C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL707C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL707C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL707C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL707C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL707C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL707C?",
+    "Der JL707C bietet insgesamt 52 Ports: 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL707C PoE?",
+    "Nein. Der JL707C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL707C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL707C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (10GBASE-T Smart Rate, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "10GBASE-T-Kupfer-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9500.00"
+ },
+ "JL720C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL720C Managed Switch (L3) – 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL720C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL720C: gemanagter Layer-3-Switch mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), Switching-Kapazität 1,76 Tbit/s, 4× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Z",
+  "artikelgewicht": "8,55",
+  "versandgewicht": "10,55",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL720C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL720C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der JL720C eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL720C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL720C erfolgt über 4× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL720C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL720C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL720C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL720C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL720C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL720C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL720C?",
+    "Der JL720C bietet insgesamt 52 Ports: 48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL720C PoE?",
+    "Nein. Der JL720C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL720C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL720C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100M/1/2.5/5/10G-BASE-T (Smart Rate, Kupfer) + 4× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (10GBASE-T Smart Rate, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "10GBASE-T-Kupfer-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8700.00"
+ },
+ "JL708C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL708C Managed Switch (L3) – 12× 40/50/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL708C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL708C: gemanagter Layer-3-Switch mit 12× 40/50/100G-QSFP28, Switching-Kapazität 2,4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,01",
+  "versandgewicht": "10,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL708C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 12× 40/50/100G-QSFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL708C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 12× 40/50/100G-QSFP28, ausgelegt für den Access an kleinen Standorten und betrieben unter AOS-CX.",
+   "Mit 12 Ports erreicht der JL708C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL708C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL708C erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei JL708C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL708C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL708C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL708C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL708C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL708C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL708C?",
+    "Der JL708C bietet insgesamt 12 Ports: 12× 40/50/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der JL708C PoE?",
+    "Nein. Der JL708C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL708C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL708C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 40/50/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/50/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 12× QSFP+/QSFP28 flexibel (40/50/100G; Breakout 4×10G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter 100G-Data-Center-Spine (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8500.00"
+ },
+ "JL709C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL709C Managed Switch (L3) – 12× 40/50/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL709C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL709C: gemanagter Layer-3-Switch mit 12× 40/50/100G-QSFP28, Switching-Kapazität 2,4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,01",
+  "versandgewicht": "10,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL709C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 12× 40/50/100G-QSFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL709C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 12× 40/50/100G-QSFP28, ausgelegt für den Access an kleinen Standorten und betrieben unter AOS-CX.",
+   "Mit 12 Ports erreicht der JL709C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL709C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL709C erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei JL709C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL709C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL709C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL709C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL709C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL709C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL709C?",
+    "Der JL709C bietet insgesamt 12 Ports: 12× 40/50/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der JL709C PoE?",
+    "Nein. Der JL709C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL709C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL709C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 40/50/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/50/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 12× QSFP+/QSFP28 flexibel (40/50/100G; Breakout 4×10G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter 100G-Data-Center-Spine (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8500.00"
+ },
+ "JL721C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL721C Managed Switch (L3) – 12× 40/50/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL721C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL721C: gemanagter Layer-3-Switch mit 12× 40/50/100G-QSFP28, Switching-Kapazität 2,4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,01",
+  "versandgewicht": "10,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL721C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 12× 40/50/100G-QSFP28. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL721C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 12× 40/50/100G-QSFP28, ausgelegt für den Access an kleinen Standorten und betrieben unter AOS-CX.",
+   "Mit 12 Ports erreicht der JL721C eine Switching-Kapazität von 2,4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL721C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL721C erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei JL721C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL721C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL721C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL721C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL721C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL721C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL721C?",
+    "Der JL721C bietet insgesamt 12 Ports: 12× 40/50/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der JL721C PoE?",
+    "Nein. Der JL721C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL721C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL721C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "12"
+   ],
+   [
+    "Port-Konfiguration",
+    "12× 40/50/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/50/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 12× QSFP+/QSFP28 flexibel (40/50/100G; Breakout 4×10G/25G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "Kompakter 100G-Data-Center-Spine (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "7800.00"
+ },
+ "JL710C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL710C Managed Switch (L3) – 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL710C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL710C: gemanagter Layer-3-Switch mit 24× 1/10G-SFP/SFP+, Switching-Kapazität 880 Gbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,07",
+  "versandgewicht": "10,07",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL710C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 24× 1/10G-SFP/SFP+. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 880 Gbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL710C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 24× 1/10G-SFP/SFP+, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 26 Ports erreicht der JL710C eine Switching-Kapazität von 880 Gbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL710C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL710C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL710C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL710C im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL710C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL710C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL710C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL710C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL710C?",
+    "Der JL710C bietet insgesamt 26 Ports: 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL710C PoE?",
+    "Nein. Der JL710C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL710C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL710C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP/SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "880 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "1/10G-Glasfaser-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4500.00"
+ },
+ "JL711C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL711C Managed Switch (L3) – 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL711C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL711C: gemanagter Layer-3-Switch mit 24× 1/10G-SFP/SFP+, Switching-Kapazität 880 Gbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,07",
+  "versandgewicht": "10,07",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL711C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 24× 1/10G-SFP/SFP+. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 880 Gbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL711C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 24× 1/10G-SFP/SFP+, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 26 Ports erreicht der JL711C eine Switching-Kapazität von 880 Gbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL711C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL711C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL711C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL711C im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL711C übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL711C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL711C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL711C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL711C?",
+    "Der JL711C bietet insgesamt 26 Ports: 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL711C PoE?",
+    "Nein. Der JL711C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL711C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL711C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP/SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "880 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "1/10G-Glasfaser-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4500.00"
+ },
+ "JL722C": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002121enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8360 JL722C Managed Switch (L3) – 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8360 JL722C Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8360 JL722C: gemanagter Layer-3-Switch mit 24× 1/10G-SFP/SFP+, Switching-Kapazität 880 Gbit/s, 2× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,07",
+  "versandgewicht": "10,07",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8360 JL722C ist ein gemanagter Layer-3-Switch der Aruba-CX-8360-Serie mit 24× 1/10G-SFP/SFP+. Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 880 Gbit/s und bindet per 2× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8360 JL722C ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8360-Familie mit 24× 1/10G-SFP/SFP+, ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 26 Ports erreicht der JL722C eine Switching-Kapazität von 880 Gbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der JL722C ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL722C erfolgt über 2× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei JL722C per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL722C im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des JL722C übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der JL722C Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der JL722C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL722C ist HPE-Aruba-Networking-Original-Neuware der CX-8360-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL722C?",
+    "Der JL722C bietet insgesamt 26 Ports: 24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JL722C PoE?",
+    "Nein. Der JL722C ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL722C redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL722C ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "26"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP/SFP+ + 2× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP/SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "880 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "1/10G-Glasfaser-Aggregation im Rechenzentrum (Layer 3, AOS-CX) mit 100G-Uplinks, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002121enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4000.00"
+ }
+}

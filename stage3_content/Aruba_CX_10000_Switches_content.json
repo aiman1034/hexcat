@@ -1,0 +1,686 @@
+{
+ "R8P13A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00119682enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10000 R8P13A Managed Switch (L3) – 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 10000 R8P13A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10000 R8P13A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28 (Access), Switching-Kapazität 3,6 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE",
+  "artikelgewicht": "9,75",
+  "versandgewicht": "11,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10000 R8P13A ist ein gemanagter Layer-3-Switch der Aruba-CX-10000-Serie mit 48× 1/10/25G-SFP28 (Access). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 3,6 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10000 R8P13A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10000-Familie mit 48× 1/10/25G-SFP28 (Access), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der R8P13A eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der R8P13A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R8P13A erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei R8P13A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R8P13A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R8P13A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle). Unter AOS-CX bietet der R8P13A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, integrierte AMD-Pensando-DPU für zustandsbehaftete Inline-Dienste (verteilte Stateful-Firewall, Ost-West-Segmentierung, NAT, Verschlüsselung, Telemetrie; 800 G über zwei DPUs) und Programmierbarkeit per REST-API/Python. Geliefert wird der R8P13A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R8P13A ist HPE-Aruba-Networking-Original-Neuware der CX-10000-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R8P13A?",
+    "Der R8P13A bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der R8P13A PoE?",
+    "Nein. Der R8P13A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R8P13A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R8P13A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) im Rechenzentrum mit integrierter AMD-Pensando-DPU für zustandsbehaftete Inline-Sicherheit (verteilte Firewall, Mikrosegmentierung, NAT, Verschlüsselung, Telemetrie) an jedem Zugriffsport, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17000.00"
+ },
+ "R8P14A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00119682enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10000 R8P14A Managed Switch (L3) – 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 10000 R8P14A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10000 R8P14A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28 (Access), Switching-Kapazität 3,6 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE",
+  "artikelgewicht": "9,75",
+  "versandgewicht": "11,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10000 R8P14A ist ein gemanagter Layer-3-Switch der Aruba-CX-10000-Serie mit 48× 1/10/25G-SFP28 (Access). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 3,6 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10000 R8P14A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10000-Familie mit 48× 1/10/25G-SFP28 (Access), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der R8P14A eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der R8P14A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R8P14A erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei R8P14A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R8P14A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R8P14A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle). Unter AOS-CX bietet der R8P14A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, integrierte AMD-Pensando-DPU für zustandsbehaftete Inline-Dienste (verteilte Stateful-Firewall, Ost-West-Segmentierung, NAT, Verschlüsselung, Telemetrie; 800 G über zwei DPUs) und Programmierbarkeit per REST-API/Python. Geliefert wird der R8P14A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R8P14A ist HPE-Aruba-Networking-Original-Neuware der CX-10000-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R8P14A?",
+    "Der R8P14A bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der R8P14A PoE?",
+    "Nein. Der R8P14A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R8P14A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R8P14A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) im Rechenzentrum mit integrierter AMD-Pensando-DPU für zustandsbehaftete Inline-Sicherheit (verteilte Firewall, Mikrosegmentierung, NAT, Verschlüsselung, Telemetrie) an jedem Zugriffsport, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17000.00"
+ },
+ "S0F97A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00119682enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10000 S0F97A Managed Switch (L3) – 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 10000 S0F97A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10000 S0F97A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28 (Access), Switching-Kapazität 3,6 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE",
+  "artikelgewicht": "9,75",
+  "versandgewicht": "11,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10000 S0F97A ist ein gemanagter Layer-3-Switch der Aruba-CX-10000-Serie mit 48× 1/10/25G-SFP28 (Access). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 3,6 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10000 S0F97A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10000-Familie mit 48× 1/10/25G-SFP28 (Access), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der S0F97A eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S0F97A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F97A erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei S0F97A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F97A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F97A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F97A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, integrierte AMD-Pensando-DPU für zustandsbehaftete Inline-Dienste (verteilte Stateful-Firewall, Ost-West-Segmentierung, NAT, Verschlüsselung, Telemetrie; 800 G über zwei DPUs) und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F97A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F97A ist HPE-Aruba-Networking-Original-Neuware der CX-10000-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F97A?",
+    "Der S0F97A bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F97A PoE?",
+    "Nein. Der S0F97A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F97A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F97A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) im Rechenzentrum mit integrierter AMD-Pensando-DPU für zustandsbehaftete Inline-Sicherheit (verteilte Firewall, Mikrosegmentierung, NAT, Verschlüsselung, Telemetrie) an jedem Zugriffsport, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17500.00"
+ },
+ "S0F98A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00119682enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 10000 S0F98A Managed Switch (L3) – 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 10000 S0F98A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 10000 S0F98A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28 (Access), Switching-Kapazität 3,6 Tbit/s, 6× 40/100G-QSFP28-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE",
+  "artikelgewicht": "9,75",
+  "versandgewicht": "11,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 10000 S0F98A ist ein gemanagter Layer-3-Switch der Aruba-CX-10000-Serie mit 48× 1/10/25G-SFP28 (Access). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 3,6 Tbit/s und bindet per 6× 40/100G-QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 10000 S0F98A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-10000-Familie mit 48× 1/10/25G-SFP28 (Access), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der S0F98A eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S0F98A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F98A erfolgt über 6× 40/100G-QSFP28; für Hochverfügbarkeit lassen sich zwei S0F98A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F98A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F98A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F98A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, integrierte AMD-Pensando-DPU für zustandsbehaftete Inline-Dienste (verteilte Stateful-Firewall, Ost-West-Segmentierung, NAT, Verschlüsselung, Telemetrie; 800 G über zwei DPUs) und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F98A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F98A ist HPE-Aruba-Networking-Original-Neuware der CX-10000-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F98A?",
+    "Der S0F98A bietet insgesamt 54 Ports: 48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F98A PoE?",
+    "Nein. Der S0F98A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F98A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F98A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 (Access) + 6× 40/100G-QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40/100G-QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (800 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Distributed-Services-Switch (DSS, Layer 3, AOS-CX) im Rechenzentrum mit integrierter AMD-Pensando-DPU für zustandsbehaftete Inline-Sicherheit (verteilte Firewall, Mikrosegmentierung, NAT, Verschlüsselung, Telemetrie) an jedem Zugriffsport, BGP-EVPN/VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00119682enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17500.00"
+ }
+}

@@ -299,3 +299,63 @@ JL860A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-fr
 JL860A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
 JL860A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
 JL860A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+S1D09A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S1D09A,,Switch,Layer,L3,2,Wertliste,Attribut
+S1D09A,,Switch,Portanzahl,56,3,Wertliste,Attribut
+S1D09A,,Switch,Port-Konfiguration,48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink),4,Wertliste,Attribut
+S1D09A,,Switch,Port-Geschwindigkeit,"1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)",5,Wertliste,Attribut
+S1D09A,,Switch,Uplink-Ports,8× QSFP28 (40/100G),6,Wertliste,Attribut
+S1D09A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S1D09A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S1D09A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S1D09A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S1D09A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+S1D09A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back),12,Wertliste,Attribut
+S1D09A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S1D09A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S1D09A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+S1D10A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S1D10A,,Switch,Layer,L3,2,Wertliste,Attribut
+S1D10A,,Switch,Portanzahl,56,3,Wertliste,Attribut
+S1D10A,,Switch,Port-Konfiguration,48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink),4,Wertliste,Attribut
+S1D10A,,Switch,Port-Geschwindigkeit,"1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)",5,Wertliste,Attribut
+S1D10A,,Switch,Uplink-Ports,8× QSFP28 (40/100G),6,Wertliste,Attribut
+S1D10A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S1D10A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S1D10A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S1D10A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S1D10A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+S1D10A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front),12,Wertliste,Attribut
+S1D10A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S1D10A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S1D10A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+S1D11A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S1D11A,,Switch,Layer,L3,2,Wertliste,Attribut
+S1D11A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S1D11A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S1D11A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout,5,Wertliste,Attribut
+S1D11A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout),6,Wertliste,Attribut
+S1D11A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S1D11A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S1D11A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S1D11A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S1D11A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+S1D11A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back),12,Wertliste,Attribut
+S1D11A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S1D11A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S1D11A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut
+S1D12A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S1D12A,,Switch,Layer,L3,2,Wertliste,Attribut
+S1D12A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+S1D12A,,Switch,Port-Konfiguration,32× 40/100G-QSFP28,4,Wertliste,Attribut
+S1D12A,,Switch,Port-Geschwindigkeit,40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout,5,Wertliste,Attribut
+S1D12A,,Switch,Uplink-Ports,alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout),6,Wertliste,Attribut
+S1D12A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S1D12A,,Switch,Switching-Kapazität,"6,4 Tbit/s",8,Wertliste,Attribut
+S1D12A,,Switch,Durchsatz,2.000 Mpps,9,Wertliste,Attribut
+S1D12A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S1D12A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)",11,Wertliste,Attribut
+S1D12A,,Switch,Kühlung,6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front),12,Wertliste,Attribut
+S1D12A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S1D12A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S1D12A,,Switch,Anwendung,"High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit",15,Wertliste,Attribut

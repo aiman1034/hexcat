@@ -1,0 +1,515 @@
+{
+ "R9A29A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300 R9A29A Managed Switch (L3) – 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300 R9A29A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300 R9A29A: gemanagter Layer-3-Switch mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), Switching-Kapazität 25,6 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zo",
+  "artikelgewicht": "11,85",
+  "versandgewicht": "13,85",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300 R9A29A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300-Serie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 25,6 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300 R9A29A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300-Familie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 34 Ports erreicht der R9A29A eine Switching-Kapazität von 25,6 Tbit/s bei einer Weiterleitungsrate von 5.000 Mpps. Der R9A29A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9A29A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei R9A29A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9A29A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R9A29A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1500 W AC, N+1, im Bundle). Unter AOS-CX bietet der R9A29A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9A29A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9A29A ist HPE-Aruba-Networking-Original-Neuware der CX-9300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9A29A?",
+    "Der R9A29A bietet insgesamt 34 Ports: 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)."
+   ],
+   [
+    "Unterstützt der R9A29A PoE?",
+    "Nein. Der R9A29A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9A29A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9A29A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/200/400 GbE (QSFP-DD; 400G teilbar 4×100/2×200G), 10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32× QSFP-DD flexibel (100/200/400G; Breakout 4×100/2×200G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "25,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "5.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1500 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Radix-400G-Data-Center-Spine (Layer 3, AOS-CX) mit 25,6-Tbit/s-Kapazität, QSFP-DD-Ports, BGP-EVPN/VXLAN, RoCEv2-Storage und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "16000.00"
+ },
+ "R9A30A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300 R9A30A Managed Switch (L3) – 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300 R9A30A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300 R9A30A: gemanagter Layer-3-Switch mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), Switching-Kapazität 25,6 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zo",
+  "artikelgewicht": "11,85",
+  "versandgewicht": "13,85",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300 R9A30A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300-Serie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 25,6 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300 R9A30A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300-Familie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 34 Ports erreicht der R9A30A eine Switching-Kapazität von 25,6 Tbit/s bei einer Weiterleitungsrate von 5.000 Mpps. Der R9A30A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9A30A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei R9A30A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9A30A im Temperaturbereich 0 bis 35 °C; Kühlung und Stromversorgung des R9A30A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1500 W AC, N+1, im Bundle). Unter AOS-CX bietet der R9A30A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9A30A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9A30A ist HPE-Aruba-Networking-Original-Neuware der CX-9300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9A30A?",
+    "Der R9A30A bietet insgesamt 34 Ports: 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)."
+   ],
+   [
+    "Unterstützt der R9A30A PoE?",
+    "Nein. Der R9A30A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9A30A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9A30A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/200/400 GbE (QSFP-DD; 400G teilbar 4×100/2×200G), 10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32× QSFP-DD flexibel (100/200/400G; Breakout 4×100/2×200G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "25,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "5.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1500 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 35 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Radix-400G-Data-Center-Spine (Layer 3, AOS-CX) mit 25,6-Tbit/s-Kapazität, QSFP-DD-Ports, BGP-EVPN/VXLAN, RoCEv2-Storage und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "16000.00"
+ },
+ "R8Z96A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300 R8Z96A Managed Switch (L3) – 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300 R8Z96A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300 R8Z96A: gemanagter Layer-3-Switch mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), Switching-Kapazität 25,6 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zo",
+  "artikelgewicht": "11,85",
+  "versandgewicht": "13,85",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300 R8Z96A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300-Serie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 25,6 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300 R8Z96A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300-Familie mit 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 34 Ports erreicht der R8Z96A eine Switching-Kapazität von 25,6 Tbit/s bei einer Weiterleitungsrate von 5.000 Mpps. Der R8Z96A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R8Z96A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei R8Z96A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R8Z96A im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 35 °C (Back-to-Front); Kühlung und Stromversorgung des R8Z96A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); 1500 W AC. Unter AOS-CX bietet der R8Z96A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R8Z96A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R8Z96A ist HPE-Aruba-Networking-Original-Neuware der CX-9300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R8Z96A?",
+    "Der R8Z96A bietet insgesamt 34 Ports: 32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)."
+   ],
+   [
+    "Unterstützt der R8Z96A PoE?",
+    "Nein. Der R8Z96A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R8Z96A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R8Z96A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100/200/400G-QSFP-DD + 2× 10G-SFP+ (Management)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/200/400 GbE (QSFP-DD; 400G teilbar 4×100/2×200G), 10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32× QSFP-DD flexibel (100/200/400G; Breakout 4×100/2×200G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "25,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "5.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); 1500 W AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 35 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "High-Radix-400G-Data-Center-Spine (Layer 3, AOS-CX) mit 25,6-Tbit/s-Kapazität, QSFP-DD-Ports, BGP-EVPN/VXLAN, RoCEv2-Storage und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "14500.00"
+ }
+}

@@ -3418,5 +3418,689 @@
    ]
   },
   "netto_vk": "14500.00"
+ },
+ "S1D09A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325 S1D09A Managed Switch (L3) – 48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325 S1D09A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325 S1D09A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 6,4 Tbit/s, 8× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10",
+  "versandgewicht": "12,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325 S1D09A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325-Serie mit 48× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 6,4 Tbit/s und bindet per 8× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325 S1D09A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325-Familie mit 48× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 56 Ports erreicht der S1D09A eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S1D09A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S1D09A erfolgt über 8× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S1D09A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S1D09A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S1D09A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V). Unter AOS-CX bietet der S1D09A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S1D09A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S1D09A ist HPE-Aruba-Networking-Original-Neuware der CX-8325-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S1D09A?",
+    "Der S1D09A bietet insgesamt 56 Ports: 48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S1D09A PoE?",
+    "Nein. Der S1D09A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S1D09A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S1D09A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "56"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12900.00"
+ },
+ "S1D10A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325 S1D10A Managed Switch (L3) – 48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325 S1D10A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325 S1D10A: gemanagter Layer-3-Switch mit 48× 1/10/25G-SFP28, Switching-Kapazität 6,4 Tbit/s, 8× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10",
+  "versandgewicht": "12,00",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325 S1D10A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325-Serie mit 48× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 6,4 Tbit/s und bindet per 8× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325 S1D10A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325-Familie mit 48× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 56 Ports erreicht der S1D10A eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S1D10A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S1D10A erfolgt über 8× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S1D10A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S1D10A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S1D10A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V). Unter AOS-CX bietet der S1D10A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S1D10A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S1D10A ist HPE-Aruba-Networking-Original-Neuware der CX-8325-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S1D10A?",
+    "Der S1D10A bietet insgesamt 56 Ports: 48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S1D10A PoE?",
+    "Nein. Der S1D10A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S1D10A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S1D10A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "56"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10/25G-SFP28 + 8× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12900.00"
+ },
+ "S1D11A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325 S1D11A Managed Switch (L3) – 32× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325 S1D11A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325 S1D11A: gemanagter Layer-3-Switch mit 32× 40/100G-QSFP28, Switching-Kapazität 6,4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10,87",
+  "versandgewicht": "12,87",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325 S1D11A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325-Serie mit 32× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 6,4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325 S1D11A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325-Familie mit 32× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der S1D11A eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S1D11A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S1D11A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S1D11A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S1D11A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S1D11A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V). Unter AOS-CX bietet der S1D11A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S1D11A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S1D11A ist HPE-Aruba-Networking-Original-Neuware der CX-8325-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S1D11A?",
+    "Der S1D11A bietet insgesamt 32 Ports: 32× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S1D11A PoE?",
+    "Nein. Der S1D11A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S1D11A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S1D11A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "14900.00"
+ },
+ "S1D12A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325 S1D12A Managed Switch (L3) – 32× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325 S1D12A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325 S1D12A: gemanagter Layer-3-Switch mit 32× 40/100G-QSFP28, Switching-Kapazität 6,4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "10,87",
+  "versandgewicht": "12,87",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325 S1D12A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325-Serie mit 32× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 6,4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325 S1D12A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325-Familie mit 32× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der S1D12A eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.000 Mpps. Der S1D12A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S1D12A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S1D12A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S1D12A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S1D12A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V). Unter AOS-CX bietet der S1D12A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S1D12A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S1D12A ist HPE-Aruba-Networking-Original-Neuware der CX-8325-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S1D12A?",
+    "Der S1D12A bietet insgesamt 32 Ports: 32× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S1D12A PoE?",
+    "Nein. Der S1D12A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S1D12A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S1D12A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×10G/4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32 Ports flexibel (40/100G-QSFP28; 4×10G/4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.000 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); DC (-48 V)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Data-Center-Spine/Leaf (Layer 3, AOS-CX) mit 6,4-Tbit/s-Kapazität, 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "14900.00"
  }
 }

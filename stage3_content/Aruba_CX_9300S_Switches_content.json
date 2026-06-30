@@ -1,0 +1,1370 @@
+{
+ "S0F82A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F82A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300S S0F82A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F82A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F82A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F82A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F82A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F82A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F82A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F82A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F82A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S0F82A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F82A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F82A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F82A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F82A?",
+    "Der S0F82A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F82A PoE?",
+    "Nein. Der S0F82A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F82A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F82A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18000.00"
+ },
+ "S0F84A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F84A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300S S0F84A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F84A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F84A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F84A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F84A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F84A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F84A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F84A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F84A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F84A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F84A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F84A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F84A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F84A?",
+    "Der S0F84A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F84A PoE?",
+    "Nein. Der S0F84A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F84A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F84A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18000.00"
+ },
+ "S0F88A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F88A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300S S0F88A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F88A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,7",
+  "versandgewicht": "15,70",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F88A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F88A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F88A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F88A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F88A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F88A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F88A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F88A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle). Unter AOS-CX bietet der S0F88A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F88A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F88A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F88A?",
+    "Der S0F88A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F88A PoE?",
+    "Nein. Der S0F88A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F88A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F88A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18500.00"
+ },
+ "S0F81A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F81A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 9300S S0F81A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F81A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F81A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F81A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F81A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F81A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F81A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F81A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F81A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S0F81A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F81A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F81A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F81A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F81A?",
+    "Der S0F81A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F81A PoE?",
+    "Nein. Der S0F81A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F81A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F81A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18500.00"
+ },
+ "S0F83A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F83A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 9300S S0F83A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F83A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F83A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F83A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F83A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F83A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F83A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F83A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F83A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F83A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle). Unter AOS-CX bietet der S0F83A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F83A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F83A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F83A?",
+    "Der S0F83A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F83A PoE?",
+    "Nein. Der S0F83A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F83A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F83A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W AC, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18500.00"
+ },
+ "S0F87A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F87A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 9300S S0F87A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F87A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,7",
+  "versandgewicht": "15,70",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F87A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F87A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F87A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F87A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F87A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F87A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F87A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S0F87A übernehmen 6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle). Unter AOS-CX bietet der S0F87A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F87A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F87A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F87A?",
+    "Der S0F87A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F87A PoE?",
+    "Nein. Der S0F87A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F87A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F87A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle)"
+   ],
+   [
+    "Kühlung",
+    "6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "19000.00"
+ },
+ "S0F96A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F96A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 9300S S0F96A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F96A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F96A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F96A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F96A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F96A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F96A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F96A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F96A im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des S0F96A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1). Unter AOS-CX bietet der S0F96A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F96A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F96A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F96A?",
+    "Der S0F96A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F96A PoE?",
+    "Nein. Der S0F96A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F96A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F96A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1)"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "16500.00"
+ },
+ "S0F95A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00125744enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 9300S S0F95A Managed Switch (L3) – 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD, 19-Zoll-Rackmontage (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 9300S S0F95A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 9300S S0F95A: gemanagter Layer-3-Switch mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), Switching-Kapazität 16 Tbit/s, 8× 400G-QSFP-DD-Uplinks, ohne PoE, 1",
+  "artikelgewicht": "13,6",
+  "versandgewicht": "15,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 9300S S0F95A ist ein gemanagter Layer-3-Switch der Aruba-CX-9300S-Serie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie). Unter AOS-CX übernimmt er den Zugang im Campus-Access-Layer.</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 16 Tbit/s und bindet per 8× 400G-QSFP-DD an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 9300S S0F95A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-9300S-Familie mit 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie), ausgelegt für den Layer-3-Campus-Access und betrieben unter AOS-CX.",
+   "Mit 42 Ports erreicht der S0F95A eine Switching-Kapazität von 16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S0F95A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0F95A erfolgt über 8× 400G-QSFP-DD; für Hochverfügbarkeit lassen sich zwei S0F95A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der S0F95A im Temperaturbereich 0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front); Kühlung und Stromversorgung des S0F95A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1). Unter AOS-CX bietet der S0F95A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung (6,4 / 4,8 Tbit/s), PTP-Zeitsynchronisation und Programmierbarkeit per REST-API/Python. Geliefert wird der S0F95A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0F95A ist HPE-Aruba-Networking-Original-Neuware der CX-9300S-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0F95A?",
+    "Der S0F95A bietet insgesamt 42 Ports: 32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)."
+   ],
+   [
+    "Unterstützt der S0F95A PoE?",
+    "Nein. Der S0F95A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0F95A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S0F95A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "42"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× 400G-QSFP-DD"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile (AC oder DC), separat bestellt (bis 2, N+1)"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front)"
+   ],
+   [
+    "Anwendung",
+    "Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00125744enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17000.00"
+ }
+}
