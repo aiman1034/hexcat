@@ -329,3 +329,123 @@ S0G02A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (back-to
 S0G02A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
 S0G02A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
 S0G02A,,Switch,Anwendung,"Rechenzentrums-ToR/OOBM-Bundle: 1GbE-Server- und Management-Anbindung mit Back-to-Front-Airflow (Power-to-Port), Layer 3 unter AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P41A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P41A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P41A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4P41A,,Switch,Port-Konfiguration,"32× 1G-RJ45 (10/100/1000BASE-T) + 16× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 8 PoE, 90 W, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P41A,,Switch,Port-Geschwindigkeit,"1 GbE (RJ45) und 100M/1/2.5/5 GbE (Smart Rate, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P41A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P41A,,Switch,PoE,"Ja (IEEE 802.3af/at/bt Class 8, 90 W/Port auf den 16 Smart-Rate-Ports, Budget ZU_VERIFIZIEREN)",7,Wertliste,Attribut
+S4P41A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P41A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P41A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P41A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P41A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P41A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P41A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P41A,,Switch,Anwendung,"Campus-Access mit 1G-Kupfer- und Smart-Rate-Downlinks (Class-8-PoE, MACsec) sowie 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P42A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P42A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P42A,,Switch,Portanzahl,44,3,Wertliste,Attribut
+S4P42A,,Switch,Port-Konfiguration,"32× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 8 PoE, 90 W, MACsec) + 8× SFP+ (1/10G LRM, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P42A,,Switch,Port-Geschwindigkeit,"100M/1/2.5/5 GbE (Smart Rate) und 1/10 GbE (SFP+, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P42A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P42A,,Switch,PoE,"Ja (IEEE 802.3af/at/bt Class 8, 90 W/Port auf den 32 Smart-Rate-Ports, Budget ZU_VERIFIZIEREN)",7,Wertliste,Attribut
+S4P42A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P42A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P42A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P42A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P42A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P42A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P42A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P42A,,Switch,Anwendung,"Campus-Access mit Smart-Rate-Downlinks (Class-8-PoE, MACsec) und 10G-SFP+-LRM-Ports sowie 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P43A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P43A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P43A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4P43A,,Switch,Port-Konfiguration,"48× SFP (1G, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P43A,,Switch,Port-Geschwindigkeit,"1 GbE (SFP, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P43A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P43A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4P43A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P43A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P43A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P43A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P43A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P43A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P43A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P43A,,Switch,Anwendung,"Glasfaser-Aggregation/Server-Access (48× 1G-SFP mit MACsec) und 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P44A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P44A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P44A,,Switch,Portanzahl,28,3,Wertliste,Attribut
+S4P44A,,Switch,Port-Konfiguration,"24× SFP (1G, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P44A,,Switch,Port-Geschwindigkeit,"1 GbE (SFP, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P44A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P44A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4P44A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P44A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P44A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P44A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P44A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P44A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P44A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P44A,,Switch,Anwendung,"Glasfaser-Aggregation/Server-Access (24× 1G-SFP mit MACsec) und 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P45A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P45A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P45A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4P45A,,Switch,Port-Konfiguration,"32× 1G-RJ45 (10/100/1000BASE-T) + 16× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 8 PoE, 90 W, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P45A,,Switch,Port-Geschwindigkeit,"1 GbE (RJ45) und 100M/1/2.5/5 GbE (Smart Rate, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P45A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P45A,,Switch,PoE,"Ja (IEEE 802.3af/at/bt Class 8, 90 W/Port auf den 16 Smart-Rate-Ports, Budget ZU_VERIFIZIEREN)",7,Wertliste,Attribut
+S4P45A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P45A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P45A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P45A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P45A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P45A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P45A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P45A,,Switch,Anwendung,"Campus-Access mit 1G-Kupfer- und Smart-Rate-Downlinks (Class-8-PoE, MACsec) sowie 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P46A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P46A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P46A,,Switch,Portanzahl,44,3,Wertliste,Attribut
+S4P46A,,Switch,Port-Konfiguration,"32× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 8 PoE, 90 W, MACsec) + 8× SFP+ (1/10G LRM, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P46A,,Switch,Port-Geschwindigkeit,"100M/1/2.5/5 GbE (Smart Rate) und 1/10 GbE (SFP+, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P46A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P46A,,Switch,PoE,"Ja (IEEE 802.3af/at/bt Class 8, 90 W/Port auf den 32 Smart-Rate-Ports, Budget ZU_VERIFIZIEREN)",7,Wertliste,Attribut
+S4P46A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P46A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P46A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P46A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P46A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P46A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P46A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P46A,,Switch,Anwendung,"Campus-Access mit Smart-Rate-Downlinks (Class-8-PoE, MACsec) und 10G-SFP+-LRM-Ports sowie 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P47A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P47A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P47A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4P47A,,Switch,Port-Konfiguration,"48× SFP (1G, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P47A,,Switch,Port-Geschwindigkeit,"1 GbE (SFP, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P47A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P47A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4P47A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P47A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P47A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P47A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P47A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P47A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P47A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P47A,,Switch,Anwendung,"Glasfaser-Aggregation/Server-Access (48× 1G-SFP mit MACsec) und 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut
+S4P48A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4P48A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4P48A,,Switch,Portanzahl,28,3,Wertliste,Attribut
+S4P48A,,Switch,Port-Konfiguration,"24× SFP (1G, MACsec) + 2× SFP56 (50G) + 2× SFP28 (25G) (Uplink)",4,Wertliste,Attribut
+S4P48A,,Switch,Port-Geschwindigkeit,"1 GbE (SFP, Access), bis 50 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4P48A,,Switch,Uplink-Ports,2× SFP56 (50G) + 2× SFP28 (25G),6,Wertliste,Attribut
+S4P48A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4P48A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4P48A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4P48A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4P48A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, separat bestellt)",11,Wertliste,Attribut
+S4P48A,,Switch,Kühlung,"2 feldaustauschbare Hot-Swap-Lüftereinschübe (front-to-back), je 2 Lüfter",12,Wertliste,Attribut
+S4P48A,,Switch,Stacking,"Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)",13,Wertliste,Attribut
+S4P48A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4P48A,,Switch,Anwendung,"Glasfaser-Aggregation/Server-Access (24× 1G-SFP mit MACsec) und 50G/25G-Uplinks, Layer 3 AOS-CX, VSF-Stacking",15,Wertliste,Attribut

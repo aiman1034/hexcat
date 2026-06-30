@@ -4068,6 +4068,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Touched: `config/rules.yaml` kategorie_ebene_3_switch_allowed (3) + `CISCO_CATEGORY_REMAP_MANIFEST.md` (3) + the 3 emitted Main CSV
   E3 cells (67 SKUs: 24+20+23). **validate_dir=0** on all 3; 58 distinct Cisco-switch E3 unchanged (rename, not add/remove); E3-string
   isolation verified (col-15 only, 0 prose/Artikelname collisions). 0 src/ changes; 0 re-grounding (pure category-label rename).
+- **HPE/Aruba SWITCHES — FIXED-LINE COMPLETENESS SWEEP (2026-06-30; +28 SKUs).** Before opening the CX chassis/ArubaOS lane,
+  re-enumerated all 17 fixed CX families at ordering-guide depth (the 8325/9300S precedent — both had gained variants the reseller
+  floors missed). Method per family: AOS-CX **Release Notes "Products Supported" table** (deepest source; Aruba techdocs CDN 403s →
+  Jina `r.jina.ai` proxy) + QuickSpec/IGSG + buy.hpe.com; read the published table, never port-math. Spawned 7 enumeration agents
+  (agents returned findings only; I consolidated — no agent edited PROJECT_AUDIT). **RESULT: 28 net-new authored, 13 families
+  confirmed complete.** **CX 6000 6→22** (+16: 6 "B"-rev silicon-refresh units + 6 TAA twins + NEW 8-port tier S4R22/23/28/29A);
+  **CX 6100 5→6** (+1: R9Y04A 740-W twin of JL675A, cap 176 grounded); **CX 6300M 22→30** (+8: S4P41-48A "2L 2Y" MACsec sub-family
+  incl. a new 32-port density; titles grounded buy.hpe.com); **CX 6300L 3→6** (+3: TAA tier S2P49/50/51A). Confirmed COMPLETE (0
+  net-new): 6200F, 6200M, 6300F, 8100, 8320, 8325, 8325H, 8360, 9300, 9300S, 10000, 10040, 4100i. **flag-don't-fabricate:** the 8-port
+  6000 + the 6300M S4P4x have NO published per-model switching capacity → SwK/Durchsatz = `ZU_VERIFIZIEREN` (new value; graceful prose
+  guard added to both build drivers; never port-math); 6300M S4P4x PoE-budget watts + 6300L-TAA verbatim title + 6100-740W PSU rating
+  also ZU_VERIFIZIEREN. **HELD as `duplicate`:** the 12 CX 8360 R9G "Attached Bundle" PNs (same hardware as the JL…C bundles, newer
+  PN scheme; reversible to PN-twins on operator request). **S1T83A resolved** — a CX 6400 *module*, not a fixed switch (future 6400
+  lane). All gate-clean (ok=True viol=0, validate_dir=0); whole switch tree **1233 SKUs all unique**; **21 new Wertliste values, 0 new
+  Merkmal NAMES, 0 new E3 / 0 rules.yaml change, 0 src/**. Phase-1 estimate prices, flagged. Details: `BATCH_FIXEDLINE_SWEEP_PRE_IMPORT_REQUIREMENTS.md`.
+  Commits: `dd59ea4` (6000/6100/6300L), 6300M + this entry next. **HPE/Aruba switch total now 199 authored** (171 → 199). NEXT
+  (unchanged): CX 6400/8400 chassis + module families; then ArubaOS-Switch + Comware + SMB.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

@@ -120,9 +120,10 @@ Aruba_CX_6300F_switches:
   captured: 8
   enumerated: 8
   flagged: []
+# 6300M: completeness-sweep 22 -> 30 (+8: S4P41-48A "2L 2Y" MACsec sub-family, incl. new 32-port density; OEM IGSG + buy.hpe.com)
 Aruba_CX_6300M_switches:
-  captured: 22
-  enumerated: 22
+  captured: 30
+  enumerated: 30
   flagged: []
 # 6000: completeness-sweep 6 -> 22 (+16: 6 B-rev silicon refresh + 6 TAA twins + new 8-port tier S4R22/23/28/29A)
 Aruba_CX_6000_switches:
