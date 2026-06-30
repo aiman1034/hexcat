@@ -43,7 +43,7 @@
   "attributes": [
    [
     "Switch-Typ",
-    "Managed"
+    "Modular-Chassis"
    ],
    [
     "Switching-Kapazität",
@@ -72,6 +72,18 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Steckplätze",
+    "10 (2 Supervisor + 8 I/O) + 8 Fabric-Steckplätze"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "N9K-C9800-SUP-A und N9K-C9800-SUP-B"
+   ],
+   [
+    "Redundanz",
+    "Supervisor 1+1, Fabric-Module (n+1, bis zu 8), Netzteil und Lüfter (alle hot-swap)"
    ]
   ],
   "provenance": {
@@ -183,7 +195,7 @@
   "attributes": [
    [
     "Switch-Typ",
-    "Managed"
+    "Modular-Chassis"
    ],
    [
     "Switching-Kapazität",
@@ -212,6 +224,18 @@
    [
     "Zustand",
     "Neu, versiegelt"
+   ],
+   [
+    "Steckplätze",
+    "6 (2 Supervisor + 4 I/O) + 8 Fabric-Steckplätze"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "N9K-C9800-SUP-A und N9K-C9800-SUP-B"
+   ],
+   [
+    "Redundanz",
+    "Supervisor 1+1, Fabric-Module (n+1), Netzteil und Lüfter (alle hot-swap)"
    ]
   ],
   "provenance": {

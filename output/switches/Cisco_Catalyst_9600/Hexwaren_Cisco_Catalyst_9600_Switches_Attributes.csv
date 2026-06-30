@@ -1,8 +1,11 @@
 ﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
-C9606R,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9606R,,Switch,Switch-Typ,Modular-Chassis,1,Wertliste,Attribut
 C9606R,,Switch,Switching-Kapazität,"Bis zu 25,6 Tbit/s",8,Wertliste,Attribut
 C9606R,,Switch,Bauform,"Modularer Campus-Switch-Chassis (4 Linecard-Slots, 8 HE)",10,Wertliste,Attribut
 C9606R,,Switch,Stromversorgung,"Bis zu 4× Hot-Swap-Netzteil (3000 W / 2000 W AC oder 2000 W DC), min. 2, Combined/N+1-redundant",11,Wertliste,Attribut
 C9606R,,Switch,Kühlung,"Aktiv (Lüfter-Tray C9606-FAN, 9 redundante Lüfter, Airflow side-to-side)",12,Wertliste,Attribut
 C9606R,,Switch,Betriebstemperatur,-5 bis 45 °C,14,Wertliste,Attribut
 C9606R,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
+C9606R,,Switch,Steckplätze,6 (2 Supervisor + 4 Linecard),16,Wertliste,Attribut
+C9606R,,Switch,Unterstützte Supervisor-Engines,Cisco Catalyst 9600 Series Supervisor Engine-1 (C9600-SUP-1) und Supervisor Engine-2 (C9600X-SUP-2),17,Wertliste,Attribut
+C9606R,,Switch,Redundanz,"Supervisor (1+1, SSO), Netzteil (Combined / N+1, bis zu 4 Schächte, min. 2) und Lüftereinschub (1 Tray mit 9 redundanten Lüftern)",18,Wertliste,Attribut

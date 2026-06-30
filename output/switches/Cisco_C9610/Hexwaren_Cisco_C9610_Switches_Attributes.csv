@@ -1,8 +1,11 @@
 ﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
-C9610R,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+C9610R,,Switch,Switch-Typ,Modular-Chassis,1,Wertliste,Attribut
 C9610R,,Switch,Switching-Kapazität,"Bis zu 51,2 Tbit/s",8,Wertliste,Attribut
 C9610R,,Switch,Bauform,"Modularer Campus-Switch-Chassis (8 Linecard-Slots, 18 HE)",10,Wertliste,Attribut
 C9610R,,Switch,Stromversorgung,"Bis zu 8× Hot-Swap-Netzteil (3000 W / 2000 W AC oder 2000 W DC), Combined/N+1-redundant",11,Wertliste,Attribut
 C9610R,,Switch,Kühlung,"Aktiv (4× Lüfter-Tray C9610-FAN, Airflow front-to-back)",12,Wertliste,Attribut
 C9610R,,Switch,Betriebstemperatur,-5 bis 40 °C,14,Wertliste,Attribut
 C9610R,,Switch,Anwendung,Campus-Netzwerk,15,Wertliste,Attribut
+C9610R,,Switch,Steckplätze,10 (2 Supervisor + 8 Linecard),16,Wertliste,Attribut
+C9610R,,Switch,Unterstützte Supervisor-Engines,Cisco C9610 Series Supervisor Engine 3 (C9610-SUP-3) und Supervisor Engine 3XL (C9610-SUP-3XL),17,Wertliste,Attribut
+C9610R,,Switch,Redundanz,"Supervisor (1+1, SSO), Netzteil (Combined / N+1, bis zu 4 Schächte) und Lüftereinschub (4 Lüfter-Trays C9610-FAN, je 6 redundante Lüfter)",18,Wertliste,Attribut

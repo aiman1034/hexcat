@@ -3856,6 +3856,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Notes hardened + 6 lifecycle/datasheet HTML cached to `datasheets/cache/cisco-switches/`; **coverage stays 995/996** (acceptable).
   Sources checked (all cached): support model page, EoS bulletin, Nexus-3000 master datasheet-listing (no 34200 entry), 3 sibling
   datasheets (34180YC+3464C / 3408-S / 3432D-S — none covers 34200).
+- **CATALOG follow-up — Task 3 (2026-06-30, MAJOR-2):** Normalized the **11 newer modular chassis** to the existing
+  Modular-Chassis schema — Cisco_Catalyst_9400 (C9404R/C9407R/C9410R), Cisco_Catalyst_9600 (C9606R), Cisco_C9610 (C9610R),
+  Cisco_Nexus_9400 (N9K-C9408), Cisco_Nexus_9500 (N9K-C9504/9508/9516), Cisco_Nexus_9800 (N9K-C9804/9808). Each: **Switch-Typ
+  Managed→Modular-Chassis** + ADDED the 3 existing chassis Merkmale **Steckplätze (Sort 16) / Unterstützte Supervisor-Engines (17) /
+  Redundanz (18)**, grounded **verbatim** per that chassis's official Cisco datasheet (Catalyst 9400 nb-06-cat9400; 9600
+  nb-06-cat9600; C9610 c9610-series-smart-switches; Nexus 9400 nexus9400-ds; Nexus 9500 C78-729404; Nexus 9800 nexus9800-ds — all
+  PDFs cached). No NEW Merkmal invented. Footprint: **only Switch-Typ + the 3 attr rows on the 11 — 0 Main (categories/prose), 0
+  Prices, 0 other SKUs, 0 src/config.** Re-emit gate ok=True/viol=0 per bundle; **validate_dir 0** (114 bundles); Task 3 introduced
+  **0** dedup findings (no chassis in any collision; 0 Main changed). Grounding notes: C9404R has **2** sup slots (1+1) not 1; 9400
+  sups are C9400-SUP style; 9400 is centralized-modular (no fabric slots, single active sup, PSU 2+2 / fan 4+1); **C9610R is its own
+  2026 Smart-Switch series** (10-slot, SUP-3/3XL), distinct from Catalyst 9600. Layer intentionally NOT added (outside the named
+  3-attr scope; validate line-954 only fires when a Layer attr is present).
+- **PRE-EXISTING dedup (flagged 2026-06-30, NOT Task-3, NOT actioned):** sweep_catalog reports **4 Beschreibung collisions**
+  unrelated to the chassis work — shared boilerplate across SMB 350/350X/550X (PoE+-budget sentences "382/740/195 W") + Meraki
+  MS210/MS225 (Enterprise-license note). Present at HEAD (Task 3 changed 0 Main). Separate sibling-differentiation content item for a
+  future pass.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
