@@ -169,6 +169,9 @@ kategorie_ebene_3_switch_allowed:
   - "Aruba CX 9300S Switches"
   - "Aruba CX 10000 Switches"
   - "Aruba CX 10040 Switches"
+  # CX 6400/8400 modular chassis + modules (Phase A validation; mirrors the Cisco chassis/Modules E3 pattern)
+  - "Aruba CX 6400 Switches"
+  - "Aruba CX 6400 Modules"
   # --- original switch-CLASS tokens (pre-rewrite; drive Attributgruppe/gate/chassis) ---
   - "Industrie-Switch"
   - "Data-Center-Switch"

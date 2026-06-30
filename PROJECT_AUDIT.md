@@ -4085,6 +4085,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Merkmal NAMES, 0 new E3 / 0 rules.yaml change, 0 src/**. Phase-1 estimate prices, flagged. Details: `BATCH_FIXEDLINE_SWEEP_PRE_IMPORT_REQUIREMENTS.md`.
   Commits: `dd59ea4` (6000/6100/6300L), 6300M + this entry next. **HPE/Aruba switch total now 199 authored** (171 → 199). NEXT
   (unchanged): CX 6400/8400 chassis + module families; then ArubaOS-Switch + Comware + SMB.
+- **HPE/Aruba SWITCHES — CX 6400/8400 CHASSIS + MODULES, PHASE A (schema + validation case; 2026-06-30; STOPPED for approval).**
+  NEW-SCHEMA batch (the 15 fixed-switch Merkmale don't fit a modular chassis/line card). **STEP-0 repo audit: the Cisco
+  modular-chassis + module schema already covers HPE → reuse verbatim → 0 new Merkmal NAMES.** CHASSIS = Switch-Typ
+  (value `Modular-Chassis`)/Layer/Steckplätze/Bauform/Switching-Kapazität/Stromversorgung/Kühlung/Unterstützte
+  Supervisor-Engines/Redundanz/Anwendung (drops port-level Merkmale; temp→prose; unterkategorie `Modularer Switch (Chassis)`).
+  MODULE = Modultyp (vocab Supervisor-Engine/Linecard/Port-Card/Fabric-Module; **new VALUE `Management-Modul`**) + Kompatible
+  Serie + reused Portanzahl/Port-Konfiguration/Switching-Kapazität/PoE on line cards (NO Port-Geschwindigkeit — gate enforces
+  its absence; unterkategorie `Switch-Modul`). Mapping mirrors the ratified Cisco modules: E2=`Switches`, E3 chassis=`Aruba CX
+  6400 Switches` / modules=`Aruba CX 6400 Modules` (plural — Cisco-consistent + the gate keys Class-B bundles on `_Modules`).
+  **SCOPE enumerated (2 agents, findings-only — I wrote this entry): 6400 = 11 chassis + 19 modules (incl. S1T83A = a 6400 v2
+  line card, the loose end from the sweep); 8400 = 1 chassis + 6 modules (EOL, kept); total 12 chassis + 25 modules = 37.**
+  **VALIDATION CASE authored + gate-clean (5 SKUs):** chassis R0X27C (6410 v2, 28 Tbit/s, 12 HE) + 4 modules (R0X31A mgmt,
+  R0X44A 48×SFP28, R0X45A 12×QSFP28, R0X41A 48×SmartRate-PoE+4×SFP56). `gate ok=True viol=0`, validate_dir=0, whole tree
+  **1238 SKUs all unique**. ZU_VERIFIZIEREN: per-component weights (flagged estimates; IGSG p.95 table didn't render),
+  per-card switching capacity, R0X41A PoE budget (PSU-dependent), 6410 12U-vs-13U doc conflict (QuickSpec 12U used).
+  **0 new Merkmal NAMES · 0 src/ change** — the chassis L5 weight ceiling (>50 kg) was solved by **gating PRE-remap** (E3 still
+  = `Modularer Switch (Chassis)` ∈ C.CHASSIS_KAT3_VALUES), the same order the Cisco chassis used; no gate/constants edit.
+  Phase-1 estimate prices. **STOPPED** per the brief: awaiting (1) Merkmal-set approval, (2) the two mapping decisions
+  (E2=Switches? · plural Modules?), (3) JTL creation of the 2 E3 + new Wertliste VALUES — THEN author the remaining 32.
+  Details: `BATCH_CX6400_8400_PHASE_A_PROPOSAL.md`.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
