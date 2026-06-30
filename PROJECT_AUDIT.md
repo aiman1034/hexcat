@@ -3901,6 +3901,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   cache, NOT a live origin fetch — recommend a residential-IP confirmation pass before authoring. PDFs cached to
   `datasheets/cache/hpe-aruba/` (gitignored). [3 enumeration agents concurrently edited PROJECT_AUDIT mid-run; their edits were
   discarded + replaced by this single consolidated entry.] NO SKU authored · NO Merkmal added · NOTHING created in JTL.
+- **HPE/Aruba SWITCHES — STEP 1b: LOCKED in-scope PID inventory + denominator (2026-06-30; inventory/docs only, 0 SKU/specs/Merkmal).**
+  Applied the operator's 4 locked decisions to the STEP-1 manifest. **D4** dropped the 4 modular line-card chassis families (CX 6400,
+  CX 8400, 5400R zl2, FlexNetwork 10500) + all 5 module families + the 5930/5940 modular slot-variants (JH178A/JH179A/JH397A/JH398A)
+  → fixed-config only. **D3** (End-of-Sale < 2020-01-01 cutoff, every date cited): dropped **15 families** — AOS-S 2615/2620/2915/
+  2920/3500; FlexFabric 5800/5930 + FlexNetwork 5120SI/5500EI/5500HI; SMB 1410/1620/1810v1/1910/1920. **D2** (ALL orderable PIDs incl
+  airflow/power/TAA, exclude pure-redundant bundles + accessories): enumerated the complete per-PID set from cached OEM PDFs.
+  **LOCKED DENOMINATOR = 224 in-scope PIDs across 30 IN families** (CX 13 · AOS-Switch 5 · FlexFabric 3 · FlexNetwork 3 · SMB 6) —
+  **this REPLACES the STEP-1 ~352 base-model figure** as the number every later "done" claim is held against. Deliverables:
+  `catalog_manifest/hpe_aruba_switches_SCOPED.csv` (one row per in-scope PID) + `HPE_ARUBA_EOL_DETERMINATIONS.md` (per-family EoS date
+  + IN/OUT + source). **Open variables (auditor):** CX 6200F = current B-rev 20 (cached A-rev 5, EoS 2024-07-31); 3810M incl 3
+  config-bundles JL428A/429A/430A (else 6); 2530-FE J9778A-83A+JL070A + 1810v2 = ZU_VERIFIZIEREN (lean OUT, undated); CX 8320 EoS
+  undated (IN — no pre-2020 evidence); 8325 JL857A/TAA + 6200F B-rev list confirm vs live datasheet; 5940 JH390A/391A/394A/395A exact
+  EoS. **SOURCE CAVEAT:** EoS dates + PIDs from cached/mirror OEM PDFs + the Aruba Hardware-EoS master list (2020-05-06) + dedicated
+  EoS PDFs; hpe.com/arubanetworks.com Akamai-blocked → recommend a live-fetch confirmation pass before STEP-2 authoring. 0 SKU
+  authored · 0 Merkmal · nothing in JTL. (STEP-1b agents ran read-only; PROJECT_AUDIT untouched by them.)
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
