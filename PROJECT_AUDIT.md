@@ -3828,19 +3828,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Cisco published no datasheet → deferred, flag-don't-fabricate). The prior stale report (Meraki/Nexus-9800/Nexus-3000 listed
   not-built) is **corrected** — all built. Manifest current (995 built = 995 emitted). Latent note: `_built_switch_pns` globs only
   `*_Switches_Main.csv` → relies on manifest `Status=built` to count the 96 `_Modules` SKUs (not affecting this result).
-- **PRICING PHASE-2 market research — RESEARCH ONLY, IN PROGRESS (2026-06-30).** Operator directive: re-anchor each of the
+- **PRICING PHASE-2 market research — RESEARCH ONLY, ✅ COMPLETE 58/58 (2026-06-30).** Operator directive: re-anchor each of the
   **58 Cisco switch E3 families** to its OWN real market data (Phase-1 = a flat multiplier off one calibration point). Deliverable =
   **`CISCO_PRICING_PHASE2_RESEARCH.md`** (a market-data table for Fawaz to set positioning) — **NO prices / catalog / src / config
   changed** (assert every commit). Method: per-family / small-cluster **direct-fetch** agents (WebFetch/WebSearch/curl, browser UA);
   **NEW-SEALED anchor only** (MISSION §1 — refurb/used/broker are never competitors, captured as a *context* floor only); Δ vs
   new-sealed (prefer **EU B2B EUR** — it-market/Senetic/tonitrus/stack-systems/layer23/Bechtle; router-switch USD = directional,
   AJAX/sell-not-GPL); **DATA GAP** where no clean new-sealed anchor (never fabricate/infer from siblings); BrokerBin login-gated (not
-  used). **FIRST COMMIT = 34/58** families (top-16 + Wave A #17–26,28,29,31,33,37–39,43,55). Headline: Phase-1 systematically **LOW
-  vs new-sealed** for EOL chassis/modules/DC/FC + rugged IE (MDS −75 %, Nexus 5000 −64…−85 %, N77-F430CQ-36 −85 %, Cat 6800
-  −80…−85 %, Cat 6500 Modules −83…−85 %, IE3400 −52…−67 %); **HIGH** for Cat 9400 (+53…+146 %) + some EOL access (2960G +113 %,
-  C9200-24P +79 %, SG350-52MP +135 %, N3K-C3064TQ +5–8×); **GAPS** = Cat 9350 / C9610R / WS-C6506-E / WS-C3560-48PS-E (too new or
-  NOS-only). Resume = ranked **#3 (Nexus 9500 refetch) + Wave B (23: SMB Cat 1000/1200/1300/Micro, IE 3000/3100/3200/3300/5000/1000,
-  13 Meraki MS)** in-flight; IE5000/IE1000 already back (fold into final commit).
+  used). **DONE: all 58 families** (top-16 + Wave A 19 + Nexus 9500 refetch + Wave B 23). Two commits: `48ec0b5` (first 34/58),
+  then the full 58/58 (this). Headline: Phase-1 runs **systematically LOW vs new-sealed** for the bulk of EOL chassis/modules/DC/FC +
+  rugged IE + current Meraki (MDS −75 %, Nexus 5000 −64…−85 %, N77-F430CQ-36 −85 %, Cat 6800/Modules −68…−85 %, IE3400 −52…−67 %,
+  MS130 −62…−70 %, MS150-48MP −75 %); **HIGH** for **Nexus 9500 bare chassis (+72…+650 %!)**, Cat 9400 (+53…+146 %), 2960G (+113 %),
+  C9200-24P (+79 %), SG350-52MP (+135 %), N3K-C3064TQ (+5–8×), C1200-48P-4X (+60…+73 %); **~12 DATA GAPS** (too-new: Cat 9350,
+  C9610R, IE3100, IE3300-8U2X-A, MS150-24P-4X · NOS/EOL-delisted: WS-C6506-E, WS-C3560-48PS-E, IE2000, Cat 1000/Micro EU, Meraki
+  MS125/MS120/MS225, Cat 4500/6500 Modules EU). Key data-quality caveats baked into the doc: router-switch USD = AJAX/directional;
+  stack-systems = USD-tier (€ was mojibake-$); it-market €2,975/net-€2,500 = default list placeholder; 4startech = EOL-clearance
+  skew-low. Deliverable `CISCO_PRICING_PHASE2_RESEARCH.md` committed; **no Hexwaren prices proposed** (operator's call). Raw per-family
+  collection (with all source URLs) kept in scratchpad `pricing_raw.md` (not in repo).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
