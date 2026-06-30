@@ -3872,6 +3872,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   unrelated to the chassis work — shared boilerplate across SMB 350/350X/550X (PoE+-budget sentences "382/740/195 W") + Meraki
   MS210/MS225 (Enterprise-license note). Present at HEAD (Task 3 changed 0 Main). Separate sibling-differentiation content item for a
   future pass.
+- **PRICING PHASE-2 APPLIED to live prices (2026-06-30) — MARKET-MATCH, PER-SKU, NEW-SEALED-ONLY.** Applied the already-banked
+  `CISCO_PRICING_PHASE2_RESEARCH.md` anchors to live Netto-VK (no re-research/re-fetch). Rule: target = **lowest CREDIBLE new-sealed
+  anchor for the EXACT PN**; excluded refurb/used/broker + router-switch USD-sell + stack-systems mojibake-€ + ORMSystems +
+  it-market €2,975 placeholder + license-variant mismatch + single-soft/OOS/NOS-inversion/anomalous; EUR as-stated, USD ×0.93 (NET —
+  no VAT add/strip); change only if |current−target| > ±30%. **13 SKUs changed across 10 families; 74 held (each with reason).**
+  Changes: IE-3400H-8T-A 2000→6150 · IE-3400H-24T-A 3200→6650 · C1200-48P-4X 1030→596 · SF350-48 440→323 · SG350-52MP 1550→660 ·
+  MS130-24P-HW 600→1589 · MS130-48X-HW 1300→4352 · C9407R 12000→6515 · C9606R 14000→9800 · N2K-C2248TP-E-1GE 600→1000 ·
+  N3K-C3432D-S 16000→42779 · IE-3500H-12P2MU2XA 4600→12158 · DS-C9396S-48EK9 7000→37276 (anchors = firm EU-B2B-net
+  Senetic/Bechtle/it-market/layer23 OR ≥2 corroborating credible US new; per-SKU source+URL in PRICING_APPLY_CHANGED.csv). HELD =
+  GAP families, router-switch/stack/refurb-only, bare-vs-bundle (Nexus 9500), license-variant siblings, within-±30%, single-soft
+  anchors (PRICING_APPLY_HELD.csv). Footprint: **PRICES FILES ONLY — 10 files / 13 lines; 0 Main/Attributes/PlatformFlag/Condition/
+  FAQ/categories/contentJSON/src/config.** validate_dir 0; dedup unchanged (the 4 pre-existing Beschreibung). Audit artifacts (NOT
+  imported — repo-root, outside output/): PRICING_APPLY_CHANGED.csv (13) + PRICING_APPLY_HELD.csv (74).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
