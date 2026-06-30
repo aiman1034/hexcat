@@ -3845,6 +3845,10 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   stack-systems = USD-tier (€ was mojibake-$); it-market €2,975/net-€2,500 = default list placeholder; 4startech = EOL-clearance
   skew-low. Deliverable `CISCO_PRICING_PHASE2_RESEARCH.md` committed; **no Hexwaren prices proposed** (operator's call). Raw per-family
   collection (with all source URLs) kept in scratchpad `pricing_raw.md` (not in repo).
+- **PRICING PHASE-2 follow-up — Task 1 (2026-06-30):** Source-URLs appendix appended to `CISCO_PRICING_PHASE2_RESEARCH.md`
+  (all 58 families, per-family **verbatim** anchor URLs pulled from the research agents' reports; `URL not captured` where a source
+  was named without a clean URL — no reconstruction/guessing). Every table anchor is now traceable. Research-doc only: 0
+  price/catalog/src/config.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
