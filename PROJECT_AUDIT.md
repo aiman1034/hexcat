@@ -4120,6 +4120,18 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Operator couriering the per-card + weight/dimension tables to fill these. **HPE/Aruba switch+module total now 199 switches + 37
   chassis/module SKUs.** rules.yaml +2 8400 E3 (6400 pair from Phase A). Phase-1 estimate prices. Details:
   `BATCH_CX6400_8400_PHASE_B_REQUIREMENTS.md`. NEXT: fill the courier ZU_VERIFIZIEREN; then ArubaOS-Switch + Comware + SMB.
+- **HPE/Aruba SWITCHES — CX 6400 ZU_VERIFIZIEREN FILL (auditor courier a00085158ENW; 2026-06-30).** Filled the grounded
+  CX 6400 values (VALUES only, 0 new Merkmal NAMES, 0 src/). **CHASSIS** (both v1/v2 per size): 6405 = 7 HE, 29,30 kg
+  (Konfigurationsgewicht, qualified in prose), 2 Lüfter-Trays, bis 4 Netzteile (1.800/3.000 W, 80 PLUS Platinum),
+  14 Tbit/s / 5,7 Bpps; 6410 = 12 HE (**resolves the 12-vs-13 flag → 12**), 53,50 kg, 4 Lüfter-Trays, same PSUs,
+  28 Tbit/s / 11,4 Bpps (R0X27C validation chassis updated in lockstep). **LINE CARDS (all 6400):** Switching-Kapazität =
+  `2,8 Tbit/s` (nicht-blockierende Fabric-Anbindung pro Steckplatz — HPE per-slot figure; **clears the per-card-capacity flag**,
+  not port-math); PoE-Budget now `abhängig von der Netzteilbestückung` (Class stays grounded, no fabricated watt number);
+  packet buffer 8/16/32 MB woven into prose (8 MB A/B revs, 16 MB C revs + S1T83A, 32 MB R0X44/45 + S0E48A). All 4 bundles
+  re-emitted gate-clean (`ok=True viol=0`), validate_dir=0, whole tree **1270 SKUs all unique**. (Boilerplate fix: the new
+  Konfigurationsgewicht sentence was PID-welded.) **STAYS FLAGGED (per operator):** per-line-card weights (estimate; QuickSpec
+  per-card weights couriered separately) + ALL CX 8400 fills (own courier pending). Details in
+  `BATCH_CX6400_8400_PHASE_B_REQUIREMENTS.md` §C.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

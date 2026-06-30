@@ -29,6 +29,10 @@ S0E48A, **S1T83A** (the sweep's loose end — a 6400 v2 Class-8-PoE line card). 
 - **Stromversorgung — 2 · Kühlung — 5 · Port-Konfiguration — 11 · PoE — 2 NEW** (the per-chassis/per-card strings; see Attributes.csv).
 
 ## C. ⚠️ ZU_VERIFIZIEREN — flagged, awaiting your couriered datasheet tables (flag-don't-fabricate, never port-math)
+> **FILL UPDATE (a00085158ENW courier, 2026-06-30):** items 1 (chassis weights/fans/PSU/system-cap+Bpps), 2 (per-card
+> Switching-Kapazität = 2,8 Tbit/s per-slot), 3 (PoE-Budget → "abhängig von Netzteilbestückung"), 4 (6405 PSU/fan counts),
+> 6 (6410 = 12 HE) are **FILLED**. **STILL FLAGGED:** per-line-card weights (item 1 weights are still estimates — QuickSpec
+> per-card weights couriered separately) + **all CX 8400 fills** (item 5 and 8400 weights — own courier pending).
 1. **Per-component weights** — every line card + the mgmt/fabric modules + the chassis carry **flagged ESTIMATE** artikelgewicht
    (the IGSG/QuickSpec weight tables didn't render through the proxy). Fill from your courier.
 2. **Per-card Switching-Kapazität** — not published per line card → `ZU_VERIFIZIEREN` on all 17 line cards.
