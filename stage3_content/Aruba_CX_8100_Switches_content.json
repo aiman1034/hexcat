@@ -1,0 +1,2054 @@
+{
+ "R9W86A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W86A Managed Switch (L3) – 24× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W86A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W86A: gemanagter Layer-3-Switch mit 24× 1/10G-SFP+, Switching-Kapazität 1,28 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,16",
+  "versandgewicht": "10,16",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W86A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,28 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W86A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der R9W86A eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W86A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W86A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W86A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W86A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R9W86A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W86A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W86A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W86A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W86A?",
+    "Der R9W86A bietet insgesamt 28 Ports: 24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W86A PoE?",
+    "Nein. Der R9W86A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W86A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W86A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6000.00"
+ },
+ "R9W87A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W87A Managed Switch (L3) – 24× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W87A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W87A: gemanagter Layer-3-Switch mit 24× 1/10G-SFP+, Switching-Kapazität 1,28 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,16",
+  "versandgewicht": "10,16",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W87A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,28 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W87A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der R9W87A eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W87A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W87A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W87A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W87A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9W87A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W87A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W87A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W87A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W87A?",
+    "Der R9W87A bietet insgesamt 28 Ports: 24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W87A PoE?",
+    "Nein. Der R9W87A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W87A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W87A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6000.00"
+ },
+ "R9W94A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W94A Managed Switch (L3) – 24× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W94A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W94A: gemanagter Layer-3-Switch mit 24× 1/10G-SFP+, Switching-Kapazität 1,28 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,16",
+  "versandgewicht": "10,16",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W94A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,28 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W94A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der R9W94A eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W94A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W94A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W94A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W94A im Temperaturbereich 0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C); Kühlung und Stromversorgung des R9W94A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der R9W94A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W94A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W94A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W94A?",
+    "Der R9W94A bietet insgesamt 28 Ports: 24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W94A PoE?",
+    "Nein. Der R9W94A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W94A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W94A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C)"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5400.00"
+ },
+ "R9W88A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W88A Managed Switch (L3) – 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W88A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W88A: gemanagter Layer-3-Switch mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, Switching-Kapazität 1,36 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,30",
+  "versandgewicht": "10,30",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W88A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,36 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W88A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der R9W88A eine Switching-Kapazität von 1,36 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W88A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W88A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W88A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W88A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R9W88A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W88A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W88A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W88A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W88A?",
+    "Der R9W88A bietet insgesamt 32 Ports: 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W88A PoE?",
+    "Nein. Der R9W88A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W88A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W88A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,36 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6800.00"
+ },
+ "R9W89A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W89A Managed Switch (L3) – 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W89A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W89A: gemanagter Layer-3-Switch mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, Switching-Kapazität 1,36 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,30",
+  "versandgewicht": "10,30",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W89A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,36 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W89A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der R9W89A eine Switching-Kapazität von 1,36 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W89A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W89A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W89A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W89A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9W89A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W89A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W89A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W89A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W89A?",
+    "Der R9W89A bietet insgesamt 32 Ports: 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W89A PoE?",
+    "Nein. Der R9W89A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W89A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W89A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,36 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6800.00"
+ },
+ "R9W95A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W95A Managed Switch (L3) – 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W95A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W95A: gemanagter Layer-3-Switch mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, Switching-Kapazität 1,36 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,30",
+  "versandgewicht": "10,30",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W95A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,36 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W95A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der R9W95A eine Switching-Kapazität von 1,36 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W95A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W95A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W95A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W95A im Temperaturbereich 0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C); Kühlung und Stromversorgung des R9W95A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der R9W95A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W95A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W95A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W95A?",
+    "Der R9W95A bietet insgesamt 32 Ports: 24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W95A PoE?",
+    "Nein. Der R9W95A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W95A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W95A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 4× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,36 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C)"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6100.00"
+ },
+ "R9W90A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W90A Managed Switch (L3) – 48× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W90A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W90A: gemanagter Layer-3-Switch mit 48× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,39",
+  "versandgewicht": "10,39",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W90A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 48× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W90A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 48× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W90A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W90A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W90A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W90A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W90A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R9W90A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W90A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W90A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W90A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W90A?",
+    "Der R9W90A bietet insgesamt 52 Ports: 48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W90A PoE?",
+    "Nein. Der R9W90A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W90A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W90A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8200.00"
+ },
+ "R9W91A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W91A Managed Switch (L3) – 48× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W91A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W91A: gemanagter Layer-3-Switch mit 48× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,39",
+  "versandgewicht": "10,39",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W91A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 48× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W91A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 48× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W91A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W91A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W91A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W91A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W91A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9W91A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W91A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W91A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W91A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W91A?",
+    "Der R9W91A bietet insgesamt 52 Ports: 48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W91A PoE?",
+    "Nein. Der R9W91A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W91A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W91A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8200.00"
+ },
+ "R9W96A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W96A Managed Switch (L3) – 48× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W96A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W96A: gemanagter Layer-3-Switch mit 48× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "8,39",
+  "versandgewicht": "10,39",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W96A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 48× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W96A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 48× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W96A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W96A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W96A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W96A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W96A im Temperaturbereich 0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C); Kühlung und Stromversorgung des R9W96A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der R9W96A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W96A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W96A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W96A?",
+    "Der R9W96A bietet insgesamt 52 Ports: 48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W96A PoE?",
+    "Nein. Der R9W96A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W96A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W96A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C)"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "7400.00"
+ },
+ "R9W92A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W92A Managed Switch (L3) – 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W92A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W92A: gemanagter Layer-3-Switch mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,57",
+  "versandgewicht": "10,57",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W92A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W92A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W92A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W92A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W92A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W92A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W92A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R9W92A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W92A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W92A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W92A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W92A?",
+    "Der R9W92A bietet insgesamt 52 Ports: 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W92A PoE?",
+    "Nein. Der R9W92A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W92A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W92A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9000.00"
+ },
+ "R9W93A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W93A Managed Switch (L3) – 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W93A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W93A: gemanagter Layer-3-Switch mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,57",
+  "versandgewicht": "10,57",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W93A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W93A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W93A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W93A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W93A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W93A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W93A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9W93A übernehmen 3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der R9W93A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W93A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W93A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W93A?",
+    "Der R9W93A bietet insgesamt 52 Ports: 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W93A PoE?",
+    "Nein. Der R9W93A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W93A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W93A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "3 feldaustauschbare Hot-Swap-Lüfter (Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9000.00"
+ },
+ "R9W97A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00131340enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8100 R9W97A Managed Switch (L3) – 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8100 R9W97A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8100 R9W97A: gemanagter Layer-3-Switch mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, Switching-Kapazität 1,76 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne",
+  "artikelgewicht": "8,57",
+  "versandgewicht": "10,57",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8100 R9W97A ist ein gemanagter Layer-3-Switch der Aruba-CX-8100-Serie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 1,76 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8100 R9W97A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8100-Familie mit 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der R9W97A eine Switching-Kapazität von 1,76 Tbit/s bei einer Weiterleitungsrate von 1.309 Mpps. Der R9W97A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9W97A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei R9W97A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der R9W97A im Temperaturbereich 0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C); Kühlung und Stromversorgung des R9W97A übernehmen Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front)) sowie Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC. Unter AOS-CX bietet der R9W97A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der R9W97A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9W97A ist HPE-Aruba-Networking-Original-Neuware der CX-8100-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9W97A?",
+    "Der R9W97A bietet insgesamt 52 Ports: 40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der R9W97A PoE?",
+    "Nein. Der R9W97A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9W97A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei R9W97A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 100M/1/2.5/5/10G-BASE-T (Smart Rate) + 8× 1/10G-SFP+ + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (Smart Rate) + 1/10 GbE (SFP+, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,76 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.309 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Feldaustauschbare Hot-Swap-Netzteile, separat bestellt (bis 2, N+1); AC"
+   ],
+   [
+    "Kühlung",
+    "Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (Airflow konfigurierbar (front-to-back oder back-to-front))"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C (bei Front-to-Back-Konfiguration bis 45 °C)"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Aggregation/Spine-Leaf-ToR (Layer 3, AOS-CX) mit 10GBASE-T-Smart-Rate-Ports, BGP-EVPN/VXLAN, VSX-Hochverfügbarkeit und 40/100G-QSFP28-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00131340enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8100.00"
+ }
+}

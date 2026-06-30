@@ -1,0 +1,515 @@
+{
+ "JL479A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00036440enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8320 JL479A Managed Switch (L3) – 48× 1/10G-SFP/SFP+ + 6× QSFP+ (40G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8320 JL479A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8320 JL479A: gemanagter Layer-3-Switch mit 48× 1/10G-SFP/SFP+, Switching-Kapazität 2,5 Tbit/s, 6× QSFP+ (40G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "9,4",
+  "versandgewicht": "11,40",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8320 JL479A ist ein gemanagter Layer-3-Switch der Aruba-CX-8320-Serie mit 48× 1/10G-SFP/SFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,5 Tbit/s und bindet per 6× QSFP+ (40G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8320 JL479A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8320-Familie mit 48× 1/10G-SFP/SFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der JL479A eine Switching-Kapazität von 2,5 Tbit/s bei einer Weiterleitungsrate von 1.905 Mpps. Der JL479A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL479A erfolgt über 6× QSFP+ (40G); für Hochverfügbarkeit lassen sich zwei JL479A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL479A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL479A übernehmen 5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL479A Layer-3-Routing (BGP, OSPF, OSPFv3, VRF, VRRP, ECMP), umfangreiche Layer-2-Funktionen und Programmierbarkeit per REST-API. Geliefert wird der JL479A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL479A ist HPE-Aruba-Networking-Original-Neuware der CX-8320-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL479A?",
+    "Der JL479A bietet insgesamt 54 Ports: 48× 1/10G-SFP/SFP+ + 6× QSFP+ (40G) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL479A PoE?",
+    "Nein. Der JL479A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL479A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL479A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G-SFP/SFP+ + 6× QSFP+ (40G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP/SFP+, Access), 40 GbE (QSFP+-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,5 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.905 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Spine/Aggregation (Layer 3, AOS-CX) mit BGP/OSPF/VRF, VSX-Hochverfügbarkeit und 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5500.00"
+ },
+ "JL579A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00036440enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8320 JL579A Managed Switch (L3) – 32× 40G-QSFP+, 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8320 JL579A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8320 JL579A: gemanagter Layer-3-Switch mit 32× 40G-QSFP+, Switching-Kapazität 2,5 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "9,7",
+  "versandgewicht": "11,70",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8320 JL579A ist ein gemanagter Layer-3-Switch der Aruba-CX-8320-Serie mit 32× 40G-QSFP+. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,5 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8320 JL579A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8320-Familie mit 32× 40G-QSFP+, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 32 Ports erreicht der JL579A eine Switching-Kapazität von 2,5 Tbit/s bei einer Weiterleitungsrate von 1.905 Mpps. Der JL579A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL579A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei JL579A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL579A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL579A übernehmen 5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL579A Layer-3-Routing (BGP, OSPF, OSPFv3, VRF, VRRP, ECMP), umfangreiche Layer-2-Funktionen und Programmierbarkeit per REST-API. Geliefert wird der JL579A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL579A ist HPE-Aruba-Networking-Original-Neuware der CX-8320-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL579A?",
+    "Der JL579A bietet insgesamt 32 Ports: 32× 40G-QSFP+."
+   ],
+   [
+    "Unterstützt der JL579A PoE?",
+    "Nein. Der JL579A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL579A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL579A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 40G-QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+); optional 4×10G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 32 Ports flexibel (40G-QSFP+; 4×10G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,5 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.905 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Spine/Aggregation (Layer 3, AOS-CX) mit BGP/OSPF/VRF, VSX-Hochverfügbarkeit und 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6500.00"
+ },
+ "JL581A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00036440enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8320 JL581A Managed Switch (L3) – 48× 1G/10GBASE-T (Kupfer) + 6× QSFP+ (40G), 19-Zoll-Rackmontage (1 HE)",
+  "titel_tag": "HPE Aruba CX 8320 JL581A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8320 JL581A: gemanagter Layer-3-Switch mit 48× 1G/10GBASE-T (Kupfer), Switching-Kapazität 2,5 Tbit/s, 6× QSFP+ (40G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE).",
+  "artikelgewicht": "9,5",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8320 JL581A ist ein gemanagter Layer-3-Switch der Aruba-CX-8320-Serie mit 48× 1G/10GBASE-T (Kupfer). Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE) liefert er eine Switching-Kapazität von 2,5 Tbit/s und bindet per 6× QSFP+ (40G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8320 JL581A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8320-Familie mit 48× 1G/10GBASE-T (Kupfer), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 54 Ports erreicht der JL581A eine Switching-Kapazität von 2,5 Tbit/s bei einer Weiterleitungsrate von 1.905 Mpps. Der JL581A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL581A erfolgt über 6× QSFP+ (40G); für Hochverfügbarkeit lassen sich zwei JL581A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE) arbeitet der JL581A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des JL581A übernehmen 5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back) sowie 2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V. Unter AOS-CX bietet der JL581A Layer-3-Routing (BGP, OSPF, OSPFv3, VRF, VRRP, ECMP), umfangreiche Layer-2-Funktionen und Programmierbarkeit per REST-API. Geliefert wird der JL581A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL581A ist HPE-Aruba-Networking-Original-Neuware der CX-8320-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL581A?",
+    "Der JL581A bietet insgesamt 54 Ports: 48× 1G/10GBASE-T (Kupfer) + 6× QSFP+ (40G) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL581A PoE?",
+    "Nein. Der JL581A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL581A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei JL581A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1G/10GBASE-T (Kupfer) + 6× QSFP+ (40G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, Access), 40 GbE (QSFP+-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× QSFP+ (40G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,5 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.905 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 feldaustauschbare Hot-Swap-Netzteile (N+1, im Bundle); AC 100–240 V"
+   ],
+   [
+    "Kühlung",
+    "5 feldaustauschbare Hot-Swap-Lüfter (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Data-Center-Spine/Aggregation (Layer 3, AOS-CX) mit BGP/OSPF/VRF, VSX-Hochverfügbarkeit und 40G-QSFP+-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00036440enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5800.00"
+ }
+}

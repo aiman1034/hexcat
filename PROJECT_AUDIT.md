@@ -3983,6 +3983,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   + rules.yaml(+1) + gate_completeness + driver + audit + note; 0 src/ change, 0 new Merkmal, nothing in JTL. **HPE/Aruba switch
   total now 83 authored (CX 6000/6100/6200F/6200M/6300F/6300M/6300L/4100i complete).** NEXT: continue the remaining HPE tiers
   (8100/8320/8325/8360/9300/10000 + ArubaOS-Switch + Comware/FlexFabric/FlexNetwork + SMB + modules/chassis) per the FULL manifest.
+- **HPE/Aruba SWITCHES — STEP 2 BATCH-3: CX DATA-CENTER tier (29) AUTHORED (2026-06-30).** Authored CX 8100 (12) + 8320 (3) +
+  8325 (6) + 8325H (8) through the proven pipeline, extended with **VSX/DC/L3 prose branches** (driver `_scratch/aruba_cx_access_build.py`).
+  All 4 bundles `gate ok=True viol=0`, validate_dir=0; whole switch tree **1146 SKUs all unique** (FtB/BtF/TAA airflow variants
+  distinct via PID-welding). **0 new Merkmal NAMES; 51 new Wertliste VALUES** → `BATCH3_PRE_IMPORT_REQUIREMENTS.md`. Headline new
+  value = **VSX (Virtual Switching Extension)** in the Stacking Merkmal — a 2-node active-active HA pair, distinct from VSF; given a
+  dedicated VSX prose branch so it isn't misdescribed as stacking. CONFIG: +4 E3 (8100/8320/8325/8325H) + 4 gate_completeness records
+  (all complete). Cache-currency check (the 6200 lesson): 8100/8320/8325 cached current; **8325H's own doc a00142954enw unobtainable**
+  (Akamai/mirror 403) → grounded from the current combined series datasheet a00059009enw (verbatim 8325H tables) via OEM mirror.
+  Flag-don't-fabricate findings: **per-model SwK** for 8100 (1.28/1.36/1.76 Tbps) + 8325H (2.16/4.0); **series-wide** SwK for 8320
+  (2.5) + 8325 (6.4 — both models, not invented-lower); Durchsatz series-wide (8100 1.309 / 8320 1.905 / 8325 2.000 Mpps), **8325H
+  wire-speed flagged** (the 2.000 Mpps is the 32C, not transcribed); **8320 has NO EVPN/VXLAN** (feat override); temp airflow-dependent
+  (FtB 0-45 / BtF 0-40); **8325H = fixed PSU/fans + half-width**; base/spares = configurable airflow, PSU/fans separate. PoE=Nein all.
+  Pricing = Phase-1 ESTIMATE. Footprint: 4 bundles + 4 content JSONs + rules.yaml(+4) + gate_completeness(+4) + driver + audit + note;
+  0 src/ change, 0 new Merkmal, nothing in JTL. **HPE/Aruba switch total now 112 authored.** NEXT: CX 8360/9300/9300S/10000/10040
+  (batch 4) + ArubaOS-Switch + Comware (FlexFabric/FlexNetwork) + SMB + the module/chassis batches, per the FULL manifest.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

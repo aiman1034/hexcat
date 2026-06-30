@@ -1,0 +1,1370 @@
+{
+ "S4B20A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S4B20A Managed Switch (L3) – 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "titel_tag": "HPE Aruba CX 8325H S4B20A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S4B20A: gemanagter Layer-3-Switch mit 18× 1/10/25G-SFP28, Switching-Kapazität 2,16 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE, halb",
+  "artikelgewicht": "5,94",
+  "versandgewicht": "7,94",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S4B20A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 18× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 2,16 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S4B20A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 18× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 22 Ports erreicht der S4B20A eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4B20A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4B20A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S4B20A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S4B20A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S4B20A übernehmen 4 fest verbaute Lüfter (N+1, Airflow front-to-back) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S4B20A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S4B20A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4B20A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4B20A?",
+    "Der S4B20A bietet insgesamt 22 Ports: 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S4B20A PoE?",
+    "Nein. Der S4B20A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4B20A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4B20A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "22"
+   ],
+   [
+    "Port-Konfiguration",
+    "18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "10000.00"
+ },
+ "S4B21A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S4B21A Managed Switch (L3) – 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "titel_tag": "HPE Aruba CX 8325H S4B21A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S4B21A: gemanagter Layer-3-Switch mit 18× 1/10/25G-SFP28, Switching-Kapazität 2,16 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE, halb",
+  "artikelgewicht": "5,94",
+  "versandgewicht": "7,94",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S4B21A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 18× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 2,16 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S4B21A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 18× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 22 Ports erreicht der S4B21A eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4B21A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4B21A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S4B21A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S4B21A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4B21A übernehmen 4 fest verbaute Lüfter (N+1, Airflow back-to-front) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S4B21A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S4B21A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4B21A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4B21A?",
+    "Der S4B21A bietet insgesamt 22 Ports: 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S4B21A PoE?",
+    "Nein. Der S4B21A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4B21A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4B21A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "22"
+   ],
+   [
+    "Port-Konfiguration",
+    "18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "10000.00"
+ },
+ "S2T42A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S2T42A Managed Switch (L3) – 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE, halbe Breite) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325H S2T42A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S2T42A: gemanagter Layer-3-Switch mit 18× 1/10/25G-SFP28, Switching-Kapazität 2,16 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE, halb",
+  "artikelgewicht": "5,94",
+  "versandgewicht": "7,94",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S2T42A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 18× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 2,16 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S2T42A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 18× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 22 Ports erreicht der S2T42A eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S2T42A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S2T42A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S2T42A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S2T42A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S2T42A übernehmen 4 fest verbaute Lüfter (N+1, Airflow front-to-back) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S2T42A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S2T42A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S2T42A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S2T42A?",
+    "Der S2T42A bietet insgesamt 22 Ports: 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S2T42A PoE?",
+    "Nein. Der S2T42A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S2T42A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S2T42A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "22"
+   ],
+   [
+    "Port-Konfiguration",
+    "18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "10500.00"
+ },
+ "S2T46A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S2T46A Managed Switch (L3) – 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G), 19-Zoll-Rackmontage (1 HE, halbe Breite) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325H S2T46A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S2T46A: gemanagter Layer-3-Switch mit 18× 1/10/25G-SFP28, Switching-Kapazität 2,16 Tbit/s, 4× QSFP28 (40/100G)-Uplinks, ohne PoE, 19-Zoll-Rackmontage (1 HE, halb",
+  "artikelgewicht": "5,94",
+  "versandgewicht": "7,94",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S2T46A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 18× 1/10/25G-SFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 2,16 Tbit/s und bindet per 4× QSFP28 (40/100G) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S2T46A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 18× 1/10/25G-SFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 22 Ports erreicht der S2T46A eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S2T46A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S2T46A erfolgt über 4× QSFP28 (40/100G); für Hochverfügbarkeit lassen sich zwei S2T46A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S2T46A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S2T46A übernehmen 4 fest verbaute Lüfter (N+1, Airflow back-to-front) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S2T46A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S2T46A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S2T46A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S2T46A?",
+    "Der S2T46A bietet insgesamt 22 Ports: 18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S2T46A PoE?",
+    "Nein. Der S2T46A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S2T46A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S2T46A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "22"
+   ],
+   [
+    "Port-Konfiguration",
+    "18× 1/10/25G-SFP28 + 4× QSFP28 (40/100G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10/25 GbE (SFP28, Access), 40/100 GbE (QSFP28-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× QSFP28 (40/100G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "10500.00"
+ },
+ "S4B22A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S4B22A Managed Switch (L3) – 16× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "titel_tag": "HPE Aruba CX 8325H S4B22A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S4B22A: gemanagter Layer-3-Switch mit 16× 40/100G-QSFP28, Switching-Kapazität 4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "artikelgewicht": "6,01",
+  "versandgewicht": "8,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S4B22A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 16× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S4B22A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 16× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 16 Ports erreicht der S4B22A eine Switching-Kapazität von 4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4B22A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4B22A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S4B22A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S4B22A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S4B22A übernehmen 4 fest verbaute Lüfter (N+1, Airflow front-to-back) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S4B22A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S4B22A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4B22A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4B22A?",
+    "Der S4B22A bietet insgesamt 16 Ports: 16× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S4B22A PoE?",
+    "Nein. Der S4B22A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4B22A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4B22A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 16 Ports flexibel (40/100G-QSFP28; 4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13000.00"
+ },
+ "S4B23A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S4B23A Managed Switch (L3) – 16× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "titel_tag": "HPE Aruba CX 8325H S4B23A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S4B23A: gemanagter Layer-3-Switch mit 16× 40/100G-QSFP28, Switching-Kapazität 4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "artikelgewicht": "6,01",
+  "versandgewicht": "8,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S4B23A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 16× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S4B23A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 16× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 16 Ports erreicht der S4B23A eine Switching-Kapazität von 4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S4B23A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4B23A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S4B23A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S4B23A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4B23A übernehmen 4 fest verbaute Lüfter (N+1, Airflow back-to-front) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S4B23A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S4B23A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4B23A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4B23A?",
+    "Der S4B23A bietet insgesamt 16 Ports: 16× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S4B23A PoE?",
+    "Nein. Der S4B23A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4B23A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S4B23A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 16 Ports flexibel (40/100G-QSFP28; 4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13000.00"
+ },
+ "S2T47A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S2T47A Managed Switch (L3) – 16× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE, halbe Breite) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325H S2T47A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S2T47A: gemanagter Layer-3-Switch mit 16× 40/100G-QSFP28, Switching-Kapazität 4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "artikelgewicht": "6,01",
+  "versandgewicht": "8,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S2T47A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 16× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S2T47A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 16× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 16 Ports erreicht der S2T47A eine Switching-Kapazität von 4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S2T47A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S2T47A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S2T47A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S2T47A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des S2T47A übernehmen 4 fest verbaute Lüfter (N+1, Airflow front-to-back) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S2T47A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S2T47A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S2T47A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S2T47A?",
+    "Der S2T47A bietet insgesamt 16 Ports: 16× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S2T47A PoE?",
+    "Nein. Der S2T47A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S2T47A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S2T47A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 16 Ports flexibel (40/100G-QSFP28; 4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13500.00"
+ },
+ "S2T48A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00059009enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 8325H S2T48A Managed Switch (L3) – 16× 40/100G-QSFP28, 19-Zoll-Rackmontage (1 HE, halbe Breite) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 8325H S2T48A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 8325H S2T48A: gemanagter Layer-3-Switch mit 16× 40/100G-QSFP28, Switching-Kapazität 4 Tbit/s, flexible QSFP28-Ports, ohne PoE, 19-Zoll-Rackmontage (1 HE, halbe Breite)",
+  "artikelgewicht": "6,01",
+  "versandgewicht": "8,01",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 8325H S2T48A ist ein gemanagter Layer-3-Switch der Aruba-CX-8325H-Serie mit 16× 40/100G-QSFP28. Unter AOS-CX übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage (1 HE, halbe Breite) liefert er eine Switching-Kapazität von 4 Tbit/s und bindet per die flexiblen QSFP28-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 8325H S2T48A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-8325H-Familie mit 16× 40/100G-QSFP28, ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter AOS-CX.",
+   "Mit 16 Ports erreicht der S2T48A eine Switching-Kapazität von 4 Tbit/s bei einer Weiterleitungsrate von Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen). Der S2T48A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S2T48A erfolgt über die flexiblen QSFP28-Ports; für Hochverfügbarkeit lassen sich zwei S2T48A per Aruba VSX (Virtual Switching Extension) zu einem aktiv-aktiven Paar mit synchronisiertem Forwarding-Zustand koppeln.",
+   "Im Gehäuse 19-Zoll-Rackmontage (1 HE, halbe Breite) arbeitet der S2T48A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S2T48A übernehmen 4 fest verbaute Lüfter (N+1, Airflow back-to-front) sowie 2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W. Unter AOS-CX bietet der S2T48A Layer-3-Routing (BGP, OSPF, VRF), BGP-EVPN/VXLAN-Overlays, ECMP und Programmierbarkeit per REST-API/Python. Geliefert wird der S2T48A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central",
+   "Aruba NetEdit"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S2T48A ist HPE-Aruba-Networking-Original-Neuware der CX-8325H-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S2T48A?",
+    "Der S2T48A bietet insgesamt 16 Ports: 16× 40/100G-QSFP28."
+   ],
+   [
+    "Unterstützt der S2T48A PoE?",
+    "Nein. Der S2T48A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S2T48A redundant koppeln (VSX)?",
+    "Ja. Über Aruba VSX (Virtual Switching Extension) bilden zwei S2T48A ein aktiv-aktives Hochverfügbarkeitspaar mit synchronisiertem Forwarding-Zustand und Multi-Chassis-LAG."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 40/100G-QSFP28"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40/100 GbE (QSFP+/QSFP28); optional 4×25G-Breakout"
+   ],
+   [
+    "Uplink-Ports",
+    "alle 16 Ports flexibel (40/100G-QSFP28; 4×25G-Breakout)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "2 fest verbaute Netzteile (1+1-Redundanz), 100–240 VAC, max. 500 W"
+   ],
+   [
+    "Kühlung",
+    "4 fest verbaute Lüfter (N+1, Airflow back-to-front)"
+   ],
+   [
+    "Stacking",
+    "VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "Kompakter Data-Center-Spine/Leaf (halbe Breite, Layer 3, AOS-CX) mit 25G/100G-Ports, BGP-EVPN/VXLAN und VSX-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00059009enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13500.00"
+ }
+}
