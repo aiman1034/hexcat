@@ -3916,6 +3916,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   EoS. **SOURCE CAVEAT:** EoS dates + PIDs from cached/mirror OEM PDFs + the Aruba Hardware-EoS master list (2020-05-06) + dedicated
   EoS PDFs; hpe.com/arubanetworks.com Akamai-blocked → recommend a live-fetch confirmation pass before STEP-2 authoring. 0 SKU
   authored · 0 Merkmal · nothing in JTL. (STEP-1b agents ran read-only; PROJECT_AUDIT untouched by them.)
+- **HPE/Aruba SWITCHES — STEP 1c: FULL-SCOPE re-enumeration to MATCH CISCO (2026-06-30; inventory only, 0 SKU/specs/Merkmal).**
+  Operator REVERSED the two HPE-specific cuts (D3 EoL-cutoff + D4 chassis/module-drop); kept granularity (D2) + E3 (D1). HPE/Aruba
+  switches now scoped **exactly like Cisco** — EOL is normal sellable new-sealed stock; fixed + chassis + modules all IN. Rebuilt the
+  COMPLETE per-PID inventory via 4 parallel agents (new CX 6200M/6300L/8325H/10040; new FlexFabric 5945/5950/5980/7900/12900;
+  complete module lists; SMB-EOL+1430+1920S+ProCurve) + carried forward every STEP-1/1b PID (no regression). **FULL DENOMINATOR = 533
+  orderable PIDs across 72 E3 families** — CX 159/19 · ArubaOS-Switch 103/15 · Modules 103/7 · SMB 85/13 · FlexFabric 45/11 ·
+  FlexNetwork 38/7; by type fixed 392 / chassis 38 / module 103. **REPLACES the 224 (STEP-1b) and ~352 (STEP-1) figures.** Deliverables:
+  `catalog_manifest/hpe_aruba_switches_FULL.csv` (one row per PID) + `HPE_ARUBA_FULL_COVERAGE.md` (per-family counts + ZU_VERIFIZIEREN).
+  Confirmed the prior pass UNDER-COUNTED: **6200M entirely missed** (10), 6200F 20→27, + 6300L/8325H/10040 + FlexFabric
+  5945/5950/5980/7900/12900 + ProCurve 2510/2610/2810/3800 + Instant On 1430 + 1920S. **flag-don't-fabricate held:** agents rejected
+  non-existent SKUs (FF 7902/7912 don't exist; 12900E = 5 chassis not 4; 5950/5980 single-count confirmed) + flagged 21 ZU_VERIFIZIEREN
+  rows + whole-family gaps (12900E full module table needs QS c04928717; 7900 modules not enumerated; 8325H DC-bundle existence).
+  **OPEN:** E3 sub-family granularity (6200F/M, 6300F/M/L, 8325/8325H kept separate vs merge); 3800 enterprise-vs-SMB lane; oldest-
+  ProCurve new-sealed-availability. SOURCE CAVEAT: verbatim OEM PIDs from cached PDFs + verbatim-OEM CDN mirrors (hpe.com/
+  arubanetworks.com Akamai-blocked from host) → recommend a live-fetch confirmation pass before STEP-2. `hpe_aruba_switches_SCOPED.csv`
+  (224, EoL-filtered) is SUPERSEDED by FULL but kept as history. (STEP-1c agents read-only; PROJECT_AUDIT untouched by them. The late
+  "CX-DC agent failed" notice was STALE — that STEP-1b data was banked, grounded, and carried forward.)
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
