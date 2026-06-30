@@ -1,11 +1,11 @@
 ﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
 JL375A,,Switch,Switch-Typ,Modular-Chassis,1,Wertliste,Attribut
 JL375A,,Switch,Layer,L3,2,Wertliste,Attribut
-JL375A,,Switch,Switching-Kapazität,"ZU_VERIFIZIEREN (System-Gesamtkapazität; je Fabric-Modul JL367A 7,2 Tbit/s)",8,Wertliste,Attribut
+JL375A,,Switch,Switching-Kapazität,"19,2 Tbit/s (System-Switching-Kapazität)",8,Wertliste,Attribut
 JL375A,,Switch,Bauform,19-Zoll-Rackmontage (8 HE),10,Wertliste,Attribut
-JL375A,,Switch,Stromversorgung,"Front-serviceable Hot-Swap-Netzteile (X382 2.700 W, separat bestellt; N+1/N+N-Redundanz)",11,Wertliste,Attribut
-JL375A,,Switch,Kühlung,3 Lüftertrays mit 18 Lüftern (im Chassis-Bundle enthalten),12,Wertliste,Attribut
+JL375A,,Switch,Stromversorgung,"bis 4 Netzteile (X382 2.700 W AC / 54 VDC, JL372A; mindestens 2 für Vollbestückung; N+1/N+N-Redundanz; separat bestellt)",11,Wertliste,Attribut
+JL375A,,Switch,Kühlung,3 Lüfter-Trays / 18 Lüfter (im Chassis-Bundle enthalten),12,Wertliste,Attribut
 JL375A,,Switch,Anwendung,"Campus-Core/Aggregation (modularer Layer-3-Switch, AOS-CX)",15,Wertliste,Attribut
-JL375A,,Switch,Steckplätze,8 Line-Modul-Steckplätze + 2 Management-Modul-Steckplätze (zzgl. separate Fabric-Modul-Steckplätze),16,Wertliste,Attribut
+JL375A,,Switch,Steckplätze,8 Linecard-Steckplätze + 2 Management-Modul-Steckplätze + 3 Fabric-Modul-Steckplätze,16,Wertliste,Attribut
 JL375A,,Switch,Unterstützte Supervisor-Engines,"Aruba CX 8400 Management Module (JL368A), redundant aktiv/standby",17,Wertliste,Attribut
-JL375A,,Switch,Redundanz,"Management-Modul (1+1 aktiv/standby), Fabric-Modul, Netzteil und Lüfter",18,Wertliste,Attribut
+JL375A,,Switch,Redundanz,"Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene",18,Wertliste,Attribut

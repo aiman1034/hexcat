@@ -4132,6 +4132,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Konfigurationsgewicht sentence was PID-welded.) **STAYS FLAGGED (per operator):** per-line-card weights (estimate; QuickSpec
   per-card weights couriered separately) + ALL CX 8400 fills (own courier pending). Details in
   `BATCH_CX6400_8400_PHASE_B_REQUIREMENTS.md` §C.
+- **HPE/Aruba SWITCHES — CX 8400 ZU_VERIFIZIEREN FILL (auditor courier a00021508enw + a00017758enw; 2026-06-30).** Filled the
+  grounded CX 8400 values (VALUES only, 0 new Merkmal NAMES, 0 src/). **CHASSIS JL375A:** Switching-Kapazität = `19,2 Tbit/s
+  (System-Switching-Kapazität)` (**clears the system-capacity flag**); weight 34 kg (Grundkonfigurationsgewicht, ohne Module/
+  Netzteile — qualified in prose); Steckplätze = 8 Linecard + 2 Management + 3 Fabric; Stromversorgung = bis 4 Netzteile (X382
+  2.700 W AC / 54 VDC, JL372A; mind. 2 für Vollbestückung); Kühlung = 3 Lüfter-Trays / 18 Lüfter; Redundanz = redundante Fabric-/
+  Management-/Netzteil-/Lüfter-Ebene; Betriebstemperatur 0–40 °C (prose). **LINE CARDS:** Port-Konfiguration confirmed/filled
+  (JL363A 32×SFP/SFP+ 10G MACsec · JL365A 8×QSFP+ 40G · JL366A 6×QSFP28 40/100G · JL687A 32×SFP/SFP+/SFP28 1/10/25G). **8400
+  per-card Switching-Kapazität STAYS un-published** (discrete-fabric design, no per-slot equivalent of the 6400's 2,8 Tbit/s) →
+  rephrased customer-safe to `Fabric-vermittelt (modellspezifischer Wert nicht ausgewiesen)` — **never ships "ZU_VERIFIZIEREN"**.
+  All 4 bundles re-emit gate-clean, validate_dir=0, whole tree **1270 SKUs all unique**; **CX 6400/8400 attributes now carry 0
+  ZU_VERIFIZIEREN cells.** STAYS FLAGGED: per-line-card weights (6400+8400) = estimates (chassis weight only published).
+  **⚠️ PRINCIPLE GAP FLAGGED (operator decision):** 28 customer-facing `ZU_VERIFIZIEREN` cells remain from the fixed-line sweep —
+  CX 6000 8-port tier (4 SKUs: SwK+Durchsatz) + CX 6300M S4P4x (8 SKUs: SwK+Durchsatz+PoE). Same "never ship ZU_VERIFIZIEREN"
+  rule applies; pending operator call: rephrase customer-safe vs courier the real values.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
