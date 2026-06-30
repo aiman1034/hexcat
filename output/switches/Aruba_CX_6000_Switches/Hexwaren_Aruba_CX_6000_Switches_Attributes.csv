@@ -89,3 +89,243 @@ R8N89A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
 R8N89A,,Switch,Stacking,Nein,13,Wertliste,Attribut
 R8N89A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
 R8N89A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) mit Class-4-PoE für kleine Standorte",15,Wertliste,Attribut
+R9Y03B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R9Y03B,,Switch,Layer,L2,2,Wertliste,Attribut
+R9Y03B,,Switch,Portanzahl,52,3,Wertliste,Attribut
+R9Y03B,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R9Y03B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R9Y03B,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+R9Y03B,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 740 W)",7,Wertliste,Attribut
+R9Y03B,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+R9Y03B,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+R9Y03B,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+R9Y03B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R9Y03B,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+R9Y03B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R9Y03B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R9Y03B,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+R8N85B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R8N85B,,Switch,Layer,L2,2,Wertliste,Attribut
+R8N85B,,Switch,Portanzahl,52,3,Wertliste,Attribut
+R8N85B,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R8N85B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R8N85B,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+R8N85B,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 370 W)",7,Wertliste,Attribut
+R8N85B,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+R8N85B,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+R8N85B,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+R8N85B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R8N85B,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+R8N85B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R8N85B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R8N85B,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+R8N86B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R8N86B,,Switch,Layer,L2,2,Wertliste,Attribut
+R8N86B,,Switch,Portanzahl,52,3,Wertliste,Attribut
+R8N86B,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R8N86B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R8N86B,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+R8N86B,,Switch,PoE,Nein,7,Wertliste,Attribut
+R8N86B,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+R8N86B,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+R8N86B,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+R8N86B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R8N86B,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+R8N86B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R8N86B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R8N86B,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung",15,Wertliste,Attribut
+R8N87B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R8N87B,,Switch,Layer,L2,2,Wertliste,Attribut
+R8N87B,,Switch,Portanzahl,28,3,Wertliste,Attribut
+R8N87B,,Switch,Port-Konfiguration,"24× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R8N87B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R8N87B,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+R8N87B,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 370 W)",7,Wertliste,Attribut
+R8N87B,,Switch,Switching-Kapazität,56 Gbit/s,8,Wertliste,Attribut
+R8N87B,,Switch,Durchsatz,"41,6 Mpps",9,Wertliste,Attribut
+R8N87B,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+R8N87B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R8N87B,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+R8N87B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R8N87B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R8N87B,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+R8N88B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R8N88B,,Switch,Layer,L2,2,Wertliste,Attribut
+R8N88B,,Switch,Portanzahl,28,3,Wertliste,Attribut
+R8N88B,,Switch,Port-Konfiguration,"24× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R8N88B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R8N88B,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+R8N88B,,Switch,PoE,Nein,7,Wertliste,Attribut
+R8N88B,,Switch,Switching-Kapazität,56 Gbit/s,8,Wertliste,Attribut
+R8N88B,,Switch,Durchsatz,"41,6 Mpps",9,Wertliste,Attribut
+R8N88B,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+R8N88B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R8N88B,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+R8N88B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R8N88B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R8N88B,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung",15,Wertliste,Attribut
+R8N89B,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+R8N89B,,Switch,Layer,L2,2,Wertliste,Attribut
+R8N89B,,Switch,Portanzahl,16,3,Wertliste,Attribut
+R8N89B,,Switch,Port-Konfiguration,"12× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 2× 1G-RJ45 + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+R8N89B,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+R8N89B,,Switch,Uplink-Ports,2× 1G-RJ45 + 2× SFP (1G),6,Wertliste,Attribut
+R8N89B,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 139 W)",7,Wertliste,Attribut
+R8N89B,,Switch,Switching-Kapazität,32 Gbit/s,8,Wertliste,Attribut
+R8N89B,,Switch,Durchsatz,"23,8 Mpps",9,Wertliste,Attribut
+R8N89B,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+R8N89B,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+R8N89B,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+R8N89B,,Switch,Stacking,Nein,13,Wertliste,Attribut
+R8N89B,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+R8N89B,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) mit Class-4-PoE für kleine Standorte",15,Wertliste,Attribut
+S4R20A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R20A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R20A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4R20A,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R20A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R20A,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+S4R20A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 740 W)",7,Wertliste,Attribut
+S4R20A,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+S4R20A,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+S4R20A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4R20A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R20A,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+S4R20A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R20A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R20A,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+S4R24A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R24A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R24A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4R24A,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R24A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R24A,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+S4R24A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 370 W)",7,Wertliste,Attribut
+S4R24A,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+S4R24A,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+S4R24A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4R24A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R24A,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+S4R24A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R24A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R24A,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+S4R25A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R25A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R25A,,Switch,Portanzahl,52,3,Wertliste,Attribut
+S4R25A,,Switch,Port-Konfiguration,"48× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R25A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R25A,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+S4R25A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R25A,,Switch,Switching-Kapazität,104 Gbit/s,8,Wertliste,Attribut
+S4R25A,,Switch,Durchsatz,"77,3 Mpps",9,Wertliste,Attribut
+S4R25A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4R25A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R25A,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+S4R25A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R25A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R25A,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung",15,Wertliste,Attribut
+S4R26A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R26A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R26A,,Switch,Portanzahl,28,3,Wertliste,Attribut
+S4R26A,,Switch,Port-Konfiguration,"24× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R26A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R26A,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+S4R26A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 370 W)",7,Wertliste,Attribut
+S4R26A,,Switch,Switching-Kapazität,56 Gbit/s,8,Wertliste,Attribut
+S4R26A,,Switch,Durchsatz,"41,6 Mpps",9,Wertliste,Attribut
+S4R26A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4R26A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R26A,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+S4R26A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R26A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R26A,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) mit Class-4-PoE für Access Points und IP-Telefone",15,Wertliste,Attribut
+S4R27A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R27A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R27A,,Switch,Portanzahl,28,3,Wertliste,Attribut
+S4R27A,,Switch,Port-Konfiguration,"24× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 4× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R27A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R27A,,Switch,Uplink-Ports,4× SFP (1G),6,Wertliste,Attribut
+S4R27A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R27A,,Switch,Switching-Kapazität,56 Gbit/s,8,Wertliste,Attribut
+S4R27A,,Switch,Durchsatz,"41,6 Mpps",9,Wertliste,Attribut
+S4R27A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S4R27A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R27A,,Switch,Kühlung,Feste Lüfter (nicht austauschbar),12,Wertliste,Attribut
+S4R27A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R27A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R27A,,Switch,Anwendung,"Entry-Level-Campus-Access (Layer 2, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung",15,Wertliste,Attribut
+S4R21A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R21A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R21A,,Switch,Portanzahl,16,3,Wertliste,Attribut
+S4R21A,,Switch,Port-Konfiguration,"12× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 2× 1G-RJ45 + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R21A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R21A,,Switch,Uplink-Ports,2× 1G-RJ45 + 2× SFP (1G),6,Wertliste,Attribut
+S4R21A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 139 W)",7,Wertliste,Attribut
+S4R21A,,Switch,Switching-Kapazität,32 Gbit/s,8,Wertliste,Attribut
+S4R21A,,Switch,Durchsatz,"23,8 Mpps",9,Wertliste,Attribut
+S4R21A,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+S4R21A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R21A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+S4R21A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R21A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R21A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) mit Class-4-PoE für kleine Standorte",15,Wertliste,Attribut
+S4R22A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R22A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R22A,,Switch,Portanzahl,10,3,Wertliste,Attribut
+S4R22A,,Switch,Port-Konfiguration,"8× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R22A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R22A,,Switch,Uplink-Ports,2× SFP (1G),6,Wertliste,Attribut
+S4R22A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R22A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4R22A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4R22A,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+S4R22A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R22A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+S4R22A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R22A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R22A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) ohne PoE für sehr kleine Standorte",15,Wertliste,Attribut
+S4R23A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R23A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R23A,,Switch,Portanzahl,10,3,Wertliste,Attribut
+S4R23A,,Switch,Port-Konfiguration,"8× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R23A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R23A,,Switch,Uplink-Ports,2× SFP (1G),6,Wertliste,Attribut
+S4R23A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 67 W)",7,Wertliste,Attribut
+S4R23A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4R23A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4R23A,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+S4R23A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R23A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+S4R23A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R23A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R23A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) mit Class-4-PoE (67 W) für sehr kleine Standorte",15,Wertliste,Attribut
+S4R28A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R28A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R28A,,Switch,Portanzahl,10,3,Wertliste,Attribut
+S4R28A,,Switch,Port-Konfiguration,"8× 1G-RJ45 (10/100/1000BASE-T, ohne PoE) + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R28A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R28A,,Switch,Uplink-Ports,2× SFP (1G),6,Wertliste,Attribut
+S4R28A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R28A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4R28A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4R28A,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+S4R28A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R28A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+S4R28A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R28A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R28A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) ohne PoE für sehr kleine Standorte",15,Wertliste,Attribut
+S4R29A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R29A,,Switch,Layer,L2,2,Wertliste,Attribut
+S4R29A,,Switch,Portanzahl,10,3,Wertliste,Attribut
+S4R29A,,Switch,Port-Konfiguration,"8× 1G-RJ45 (10/100/1000BASE-T, Class 4 PoE, 30 W) + 2× SFP (1G) (Uplink)",4,Wertliste,Attribut
+S4R29A,,Switch,Port-Geschwindigkeit,"10/100/1000 Mbit/s (RJ45, Access), 1 GbE (SFP-Uplink)",5,Wertliste,Attribut
+S4R29A,,Switch,Uplink-Ports,2× SFP (1G),6,Wertliste,Attribut
+S4R29A,,Switch,PoE,"Ja (IEEE 802.3af/at Class 4, 30 W/Port, Budget 67 W)",7,Wertliste,Attribut
+S4R29A,,Switch,Switching-Kapazität,ZU_VERIFIZIEREN,8,Wertliste,Attribut
+S4R29A,,Switch,Durchsatz,ZU_VERIFIZIEREN,9,Wertliste,Attribut
+S4R29A,,Switch,Bauform,"Kompakt (lüfterlos, halbe Breite); 19-Zoll-Montagekit",10,Wertliste,Attribut
+S4R29A,,Switch,Stromversorgung,"Internes Festnetzteil (nicht hot-swap, nicht feldaustauschbar)",11,Wertliste,Attribut
+S4R29A,,Switch,Kühlung,Lüfterlos (passiv gekühlt),12,Wertliste,Attribut
+S4R29A,,Switch,Stacking,Nein,13,Wertliste,Attribut
+S4R29A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S4R29A,,Switch,Anwendung,"Kompakter, lüfterloser Entry-Level-Access (Layer 2, AOS-CX) mit Class-4-PoE (67 W) für sehr kleine Standorte",15,Wertliste,Attribut

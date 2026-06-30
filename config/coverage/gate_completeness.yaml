@@ -124,13 +124,15 @@ Aruba_CX_6300M_switches:
   captured: 22
   enumerated: 22
   flagged: []
+# 6000: completeness-sweep 6 -> 22 (+16: 6 B-rev silicon refresh + 6 TAA twins + new 8-port tier S4R22/23/28/29A)
 Aruba_CX_6000_switches:
+  captured: 22
+  enumerated: 22
+  flagged: []
+# 6100: completeness-sweep 5 -> 6 (+1: R9Y04A 740W-PoE twin of JL675A)
+Aruba_CX_6100_switches:
   captured: 6
   enumerated: 6
-  flagged: []
-Aruba_CX_6100_switches:
-  captured: 5
-  enumerated: 5
   flagged: []
 Aruba_CX_6200F_switches:
   captured: 27
@@ -140,9 +142,10 @@ Aruba_CX_6200M_switches:
   captured: 10
   enumerated: 10
   flagged: []
+# 6300L: completeness-sweep 3 -> 6 (+3: TAA tier S2P49/50/51A, TAA twins of S3L75/76/77A)
 Aruba_CX_6300L_switches:
-  captured: 3
-  enumerated: 3
+  captured: 6
+  enumerated: 6
   flagged: []
 Aruba_CX_4100i_switches:
   captured: 2
