@@ -188,15 +188,23 @@ Aruba_CX_10040_switches:
   captured: 6
   enumerated: 6
   flagged: []
-# CX 6400/8400 PHASE A — VALIDATION SUBSET ONLY (schema proof; full enumeration pending Merkmal approval + JTL creation).
-# True scope: 6400 = 11 chassis + 19 modules; 8400 = 1 chassis + 6 modules. Emitted here = 1 chassis (R0X27C) + 4 modules.
+# CX 6400/8400 PHASE B — full scope authored (schema locked in Phase A, commit 97d98a3).
+# 6400 = 11 chassis + 19 modules (incl. S1T83A); 8400 = 1 chassis + 6 modules (EOL, retained). No fabric SKU on the 6400.
 Aruba_CX_6400_switches:
+  captured: 11
+  enumerated: 11
+  flagged: []
+Aruba_CX_6400_modules:
+  captured: 19
+  enumerated: 19
+  flagged: []
+Aruba_CX_8400_switches:
   captured: 1
   enumerated: 1
   flagged: []
-Aruba_CX_6400_modules:
-  captured: 4
-  enumerated: 4
+Aruba_CX_8400_modules:
+  captured: 6
+  enumerated: 6
   flagged: []
 Aruba_CX_8325H_switches:
   captured: 8

@@ -4105,6 +4105,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Phase-1 estimate prices. **STOPPED** per the brief: awaiting (1) Merkmal-set approval, (2) the two mapping decisions
   (E2=Switches? · plural Modules?), (3) JTL creation of the 2 E3 + new Wertliste VALUES — THEN author the remaining 32.
   Details: `BATCH_CX6400_8400_PHASE_A_PROPOSAL.md`.
+- **HPE/Aruba SWITCHES — CX 6400/8400 CHASSIS + MODULES, PHASE B (full author against the locked schema; 2026-06-30).**
+  Schema APPROVED (Phase A, commit 97d98a3) — reused verbatim, 0 re-proposal. **Authored the remaining 32 SKUs:** CX 6400
+  chassis 1→**11** (+10: bare R0X24A/C 6405, R0X25A/C 6410; bundles R0X26A/C, R0X27A; pre-config R0X29A/R0X30A/JL741A; v1/v2
+  carry-both), CX 6400 modules 4→**19** (+15: line cards R0X38-45 across A/B/C revs + S0E48A + **S1T83A**; no fabric SKU — 6400
+  forwarding is distributed), CX 8400 **1 chassis** (JL375A, 8-slot/8U) + **6 modules** (mgmt JL368A, **fabric JL367A** 7,2 Tbit/s
+  `Modultyp=Fabric-Module`, line cards JL363A/JL365A/JL366A/JL687A — EOL/EoS-2019, kept). All gate-clean (`ok=True viol=0`),
+  validate_dir=0, whole switch tree **1270 SKUs all unique**. **29 new Wertliste VALUES, 0 new Merkmal NAMES.** Generators in the
+  Phase-A driver produce the chassis/line-card/mgmt/fabric prose (validation 5 keep their hand-written prose → no churn). Gate
+  fitting (driver-only, 0 src/): non-PoE line-card + mgmt/fabric kurz needed ≥40 words and the fabric Beschreibung ≥90 (lengthened);
+  chassis >50 kg L5 ceiling cleared by gating PRE-remap (Cisco order). **ZU_VERIFIZIEREN (courier-pending):** per-component weights
+  (flagged estimates — IGSG/QuickSpec weight tables didn't render), per-card switching capacity (all 17 line cards), per-card PoE
+  budget watts (PSU-dependent), 6405 PSU/fan counts, 8400 system capacity (JL367A 7,2 Tbit/s/module grounded), 6410 12U-vs-13U.
+  Operator couriering the per-card + weight/dimension tables to fill these. **HPE/Aruba switch+module total now 199 switches + 37
+  chassis/module SKUs.** rules.yaml +2 8400 E3 (6400 pair from Phase A). Phase-1 estimate prices. Details:
+  `BATCH_CX6400_8400_PHASE_B_REQUIREMENTS.md`. NEXT: fill the courier ZU_VERIFIZIEREN; then ArubaOS-Switch + Comware + SMB.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
