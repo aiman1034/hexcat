@@ -3885,6 +3885,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   anchors (PRICING_APPLY_HELD.csv). Footprint: **PRICES FILES ONLY — 10 files / 13 lines; 0 Main/Attributes/PlatformFlag/Condition/
   FAQ/categories/contentJSON/src/config.** validate_dir 0; dedup unchanged (the 4 pre-existing Beschreibung). Audit artifacts (NOT
   imported — repo-root, outside output/): PRICING_APPLY_CHANGED.csv (13) + PRICING_APPLY_HELD.csv (74).
+- **HPE/Aruba SWITCHES — STEP 1 enumeration + scope proposal (2026-06-30; manifest + 3 docs only, 0 SKU authored).** NEW lane
+  (prior HPE/Aruba work = 147 transceivers, done). Enumerated all families from OEM via 8 parallel agents (arubanetworks.com /
+  arubainstanton.com data sheets + HPE QuickSpecs; PIDs **verbatim**; counts **MEASURED** from OEM Models tables;
+  transceivers/PSU/fan/cable/license/CTO/refurb excluded; flag-don't-fabricate). **Deliverables:** `catalog_manifest/
+  hpe_aruba_switches.csv` (54 family rows + TOTAL) · `HPE_ARUBA_CATEGORY_PROPOSAL.md` (E1 Netzwerk&Infrastruktur > E2 Switches > E3 =
+  "<OEM sub-brand> <series> Switches", Hersteller=HP; + the OPEN-DECISIONS) · `HPE_ARUBA_MERKMAL_FIT.md` (**every spec maps to the
+  existing 15 fixed + 3 chassis + 2 module Merkmale → 0 new Merkmal needed**; MACsec/DPU = prose). **DENOMINATOR = 282 switches (259
+  fixed + 23 chassis) + ~70 modules ≈ 352 SKUs across 54 families** (CX 15 · ArubaOS-Switch 11 · FlexFabric 5 · FlexNetwork 7 · SMB 11
+  · Modules 5). Modular chassis: CX 6400/8400, 5400R zl2, FlexNetwork 10500 (+ FlexFabric 5930/5940 slot-variants, mixed). **Key
+  OPEN-DECISIONS (sign-off before STEP-2):** E3 branding ratify + EOL-ProCurve HP-vs-HPE label · base-switch vs orderable-bundle
+  counting (CX airflow/AC-DC/TAA) · EOL/legacy scope · module families + port-adding stacking modules · new CX candidates
+  (10040/8325H/6200M/6300L) · DSS (10000/10040) positioning · TAA twins. **SOURCE CAVEAT:** hpe.com + arubanetworks.com origins
+  Akamai-blocked from this host → counts measured from **byte-verbatim OEM PDFs** (doc#/copyright-verified) via CDN mirrors + prior
+  cache, NOT a live origin fetch — recommend a residential-IP confirmation pass before authoring. PDFs cached to
+  `datasheets/cache/hpe-aruba/` (gitignored). [3 enumeration agents concurrently edited PROJECT_AUDIT mid-run; their edits were
+  discarded + replaced by this single consolidated entry.] NO SKU authored · NO Merkmal added · NOTHING created in JTL.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

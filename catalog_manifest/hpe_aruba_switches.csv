@@ -1,0 +1,56 @@
+Family,OEM-line,Models-in-scope (measured),Representative-PIDs (verbatim),Modular-chassis,OEM-source-URL,Notes / RS-divergence
+Aruba CX 6000,CX,6,R8N85A; R8N86A; R8N87A; R9Y03A,N,hpe.com/psnow/doc/a00112996enw,L2; uplinks 1G SFP (not SFP+); no stacking
+Aruba CX 6100,CX,5,JL675A; JL676A; JL677A; JL679A,N,hpe.com/psnow/doc/a00106853enw,L2; 1/10G SFP+ uplinks; no stacking
+Aruba CX 6200F,CX,5,JL724A; JL725A; JL727A; JL728A,N,arubanetworks.com DS_6200Series (a00...),L2+; VSF<=8; 6200M modular-uplink variant separate (OPEN)
+Aruba CX 6300F,CX,8,JL665A; JL667A; S0G95A; S0G97A,N,arubanetworks.com a00085162ENW rev052524,L3; VSF<=10; 4 base + 4 TAA; PSU/fan modular only (no line-card slots)
+Aruba CX 6300M,CX,20,JL658A; JL661A; R8S90A; S0E91A,N,arubanetworks.com a00085162ENW rev052524,L3; VSF<=10; +2 Power-to-Port bundles excluded; large TAA set; 6300-rev-trap (verify live count)
+Aruba CX 6400,CX,7,R0X26A; R0X26C; R0X27A; R0X30A,Y,arubanetworks.com a00085158ENW,"LINE-CARD CHASSIS (6405=5-slot/7RU, 6410=10-slot/12RU); VSX; line cards = CX 6400 Modules"
+Aruba CX 4100i,CX,2,JL817A; JL818A,N,hpe.com/psnow/doc/a00117285ENW (2025),"Industrial DIN/1U, IP30, -40..+70C; L3; not in router-switch seed (new candidate)"
+Aruba CX 8100,CX,4,R9W94A; R9W95A; R9W96A; R9W97A,N,arubanetworks.com (8100 DS),L3; VSX; 8 airflow bundles
+Aruba CX 8320,CX,3,JL479A; JL579A; JL581A,N,arubanetworks.com (8320 DS),bundle-only PIDs; EOL-gen (original Broadcom CX)
+Aruba CX 8325,CX,2,JL635A; JL636A,N,arubanetworks.com (8325 DS),2 base; +AC/DC/TAA bundles (full bundle count ZU_VERIFIZIEREN); 8325H half-width sibling (OPEN)
+Aruba CX 8360,CX,6,JL717C; JL719C; JL721C; JL722C,N,arubanetworks.com (8360 v2 DS),v2 gen (C-suffix); 12 airflow bundles; VSX+VSF
+Aruba CX 8400,CX,2,JL375A; JL376A,Y,arubanetworks.com a00017758enw (8400 DS),"LINE-CARD CHASSIS (8-slot/8U, 19.2 Tbps); line cards = CX 8400 Modules"
+Aruba CX 9300,CX,1,R8Z96A,N,arubanetworks.com (9300 DS 2025),9300-32D 400G QSFP-DD; 25.6 Tbps; +2 bundles
+Aruba CX 9300S,CX,2,S0F95A; S0F96A,N,arubanetworks.com (9300 DS),16 Tbps; 100G+400G; +6 bundles
+Aruba CX 10000,CX,1,R8P13A; R8P14A,N,"arubanetworks.com (10000 DS, AMD Pensando)",DSS = switch + DPU (firewall/NAT/encrypt); bundle-only; CX 10040 2025 successor (OPEN)
+Aruba 2530,ArubaOS-Switch,17,J9772A; J9775A; J9853A; JL070A,N,hpe.com/psnow/doc/c04111414,L2; 13 base + 4x2SFP+ (data sheet) = 17 union; EoS-era
+Aruba 2540,ArubaOS-Switch,4,JL354A; JL355A; JL356A; JL357A,N,hpe.com/psnow/doc/c05278966,L2+static/RIP; no stacking; JL448A=console cable excluded
+Aruba 2615,ArubaOS-Switch,1,J9565A,N,support.hpe.com kmpmoid 4219919,"EOL ProCurve, branded 'HP'; single-model (OPEN scope)"
+HP 2620,ArubaOS-Switch,5,J9623A; J9625A; J9626A; J9627A,N,hpe.com/psnow/doc/c04111491,"EOL, branded 'HP'; lite L3 (OPEN scope)"
+HP 2915,ArubaOS-Switch,1,J9562A,N,support.hpe.com kmpmoid 4219915,EOL ProCurve 'HP'; single-model (OPEN scope)
+Aruba 2920,ArubaOS-Switch,5,J9726A; J9727A; J9728A; J9836A,N,hpe.com/psnow/doc/c04111401,basic L3; modular stacking<=4 via 2-port module (separate)
+Aruba 2930F,ArubaOS-Switch,14,JL253A; JL256A; JL258A; JL559A,N,hpe.com/psnow/doc/c05052929,L3; VSF<=8; +1 phantom 740W-non-TAA name w/ NO PID = ZU_VERIFIZIEREN
+Aruba 2930M,ArubaOS-Switch,8,JL319A; JL322A; JL323A; R0M68A,N,hpe.com/psnow/doc/a00004551enw,L3; backplane-stack; expansion modules separate
+Aruba 3500 / 3500yl,ArubaOS-Switch,8,J9470A; J9472A; J8692A; J9310A,N,support.hpe.com c01813146,"EOL legacy, branded 'HP' (ProVision) (OPEN scope)"
+Aruba 3810M,ArubaOS-Switch,6,JL071A; JL072A; JL074A; JL076A,N,hpe.com/psnow/doc/c04843019,L3; backplane-stack<=336Gb/s; uplink modules separate
+Aruba 5400R zl2,ArubaOS-Switch,10,J9821A; J9822A; JL001A; JL095A,Y,hpe.com/psnow/doc/c04293383,"LINE-CARD CHASSIS (5406R 6-slot/4U, 5412R 12-slot/7U); v2+v3 chassis (OPEN v2-vs-v3); line cards separate"
+HPE FlexFabric 5700,Comware-FlexFabric,3,JG894A; JG896A; JG898A,N,hpe.com/psnow/doc/c04347352,EOSL 2022-10-31; +2 TAA twins excluded; JG900/901A=PSU excluded
+HPE FlexFabric 5800,Comware-FlexFabric,7,JC099B; JC100B; JC104B; JG225B,N,hpe.com/psnow/doc/c04111584,legacy/EOL; OAA expansion slots (not chassis)
+HPE FlexFabric 5900,Comware-FlexFabric,2,JG510A; JL864A,N,hpe.com/psnow/doc/c04111469,current set only; 5900CP + broad 5900AF EOL = ZU_VERIFIZIEREN
+HPE FlexFabric 5930,Comware-FlexFabric,3,JG726A; JH178A; JH179A,Y (partial),hpe.com/psnow/doc/c04111326,MIXED: 1 fixed + 2 modular slot-chassis (JH178A/JH179A); EOSL; line cards separate
+HPE FlexFabric 5940,Comware-FlexFabric,7,JH394A; JH396A; JH397A; JH398A,Y (partial),hpe.com/psnow/doc/c05158726,"MIXED: 5 fixed + 2 modular slot-chassis (JH397A/JH398A); JQ04xA=bundles, JD089B=transceiver excluded"
+HPE FlexNetwork 5130 EI,FlexNetwork,9,JG932A; JG934A; JG937A; JG941A,N,hpe.com/psnow/doc/c04394228,L2+static/RIP; IRF
+HPE FlexNetwork 5130 HI,FlexNetwork,4,JH323A; JH324A; JH325A; JH326A,N,hpe.com/psnow/doc/c04843026,L2+Lite L3; 9-ch IRF
+HPE FlexNetwork 5120 SI,FlexNetwork,6,JE072B; JE074B; JG091B; JG309B,N,hpe.com/psnow/doc/c04111588,entry L2+static; IRF-Lite; B-suffix current
+HPE FlexNetwork 5500 EI,FlexNetwork,5,JD374A; JD375A; JG240A; JG241A,N,hpe.com/psnow/doc/c04111661,EoS; full L2/L3; IRF
+HPE FlexNetwork 5500 HI,FlexNetwork,5,JG311A; JG312A; JG541A; JG543A,N,hpe.com/psnow/doc/c04111542,EoS; full L2/L3+BGP/MPLS; IRF
+HPE FlexNetwork 5510 HI,FlexNetwork,5,JH145A; JH146A; JH148A; JH149A,N,hpe.com/psnow/doc/c04843027,L2/L3; 9-ch IRF 160Gb/s
+HPE FlexNetwork 10500,FlexNetwork,4,JC611A; JC612A; JC613A; JC748A,Y,hpe.com/psnow/doc/c04212581,LINE-CARD CHASSIS (10504/10508/10508-V/10512); <=11.52 Tbps; line cards = 10500 Modules
+HPE OfficeConnect 1410,SMB,9,ZU_VERIFIZIEREN (PIDs in cache ENUMERATION_STEP1.md),N,hpe.com QuickSpecs,unmanaged L2 fanless; EOL (OPEN scope)
+HPE OfficeConnect 1420,SMB,9,JH016A; JH327A; JG708B (verify map),N,hpe.com/psnow/doc/c04609036,unmanaged L2; PID<->config map ZU_VERIFIZIEREN
+HPE OfficeConnect 1620,SMB,3,ZU_VERIFIZIEREN (in cache),N,hpe.com QuickSpecs,smart/web L2; EOL
+HPE OfficeConnect 1810,SMB,5,J9449A; J9450A; J9800A; J9801A,N,hpe.com QuickSpecs,web/smart L2; EOL; v1 (3) + v2 (2) - split decision OPEN
+HPE OfficeConnect 1820,SMB,6,ZU_VERIFIZIEREN (in cache),N,hpe.com QuickSpecs,smart L2; EOL
+Aruba Instant On 1830,SMB,5,ZU_VERIFIZIEREN (in cache),N,arubainstanton.com,smart L2; CURRENT
+HP V1910,SMB,5,ZU_VERIFIZIEREN (in cache),N,hpe.com QuickSpecs,Comware smart L2+; EOL
+HPE OfficeConnect 1920,SMB,9,ZU_VERIFIZIEREN (in cache),N,hpe.com QuickSpecs,smart L2+static-L3; EOL; 1920S successor (OPEN)
+Aruba Instant On 1930,SMB,7,ZU_VERIFIZIEREN (in cache),N,arubainstanton.com,smart L2+; CURRENT; B-rev = hw-rev not new model
+HPE OfficeConnect 1950,SMB,5,JG962A; JG963A,N,hpe.com QuickSpecs,smart L2+static-L3; stacking<=4; caught phantom JH962A/JH963A duplicate (OEM has only JG)
+Aruba Instant On 1960,SMB,6,ZU_VERIFIZIEREN (in cache),N,arubainstanton.com,smart L2+; stacking<=4; CURRENT
+Aruba CX 6400 Modules,Modules,11,R0X40C; R0X42C; S0E48A; R0X31A,n/a (module),arubanetworks.com a00073541enw,line cards + mgmt; host CX 6405/6410; v1 A/B superseded (OPEN author?)
+Aruba CX 8400 Modules,Modules,6,JL363A; JL365A; JL367A; JL368A,n/a (module),arubanetworks.com a00017758enw,4 line + 1 fabric (JL367A) + 1 mgmt (JL368A); host 8400
+Aruba 5400R zl2 Modules,Modules,10,J9986A; J9988A; J9990A; J9995A,n/a (module),hpe.com/psnow/doc/c04293383,v3 zl2 line cards; 40G-QSFP+ v3 PID + JL745 binding = ZU_VERIFIZIEREN
+ArubaOS-Switch Expansion Modules,Modules,9,JL078A; JL081A; JL083A; J9731A,n/a (module),hpe.com a00004551 / c04843019,2930M/3810M/2920 uplink + port-adding stacking modules (JL325A/JL084A/J9733A) - OPEN confirm
+HPE FlexNetwork 10500 Modules,Modules,34,JH197A; JH432A; JH434A; JC751A,n/a (module),hpe.com/psnow/doc/c04212581,~24 line + 6 fabric (JC749-754A) + 4 MPU; exact line count confirm at author
+TOTAL,(54 families),282 switches (259 fixed + 23 chassis) + ~70 modules = ~352 SKUs,--,"23 chassis (CX6400 7, CX8400 2, 5400Rzl2 10, 10500 4) + 4 FlexFabric slot-variants",--,DENOMINATOR for all later 'done' claims. Counts MEASURED from OEM PDFs (doc#/copyright-verified) via CDN mirrors + cache; hpe.com/arubanetworks.com Akamai-blocked from host -> recommend residential-IP confirmation pass. router-switch counts NOT used as truth.
