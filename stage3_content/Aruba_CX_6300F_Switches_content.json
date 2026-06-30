@@ -1,0 +1,1370 @@
+{
+ "JL665A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F JL665A Managed Switch (L3) – 48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE)",
+  "titel_tag": "HPE Aruba CX 6300F JL665A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F JL665A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W), Switching-Kapazität 496 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, Po",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,10",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F JL665A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 496 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Über Power over Ethernet versorgt der JL665A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F JL665A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der JL665A eine Switching-Kapazität von 496 Gbit/s bei einer Weiterleitungsrate von 369 Mpps. Der JL665A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL665A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der JL665A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der JL665A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL665A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL665A?",
+    "Der JL665A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL665A?",
+    "Der JL665A stellt Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 740 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL665A stapeln (Stacking)?",
+    "Ja. Der JL665A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 740 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "496 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "369 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) mit PoE-Versorgung für Access Points, IP-Telefone und Kameras; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2800.00"
+ },
+ "JL666A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F JL666A Managed Switch (L3) – 24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE)",
+  "titel_tag": "HPE Aruba CX 6300F JL666A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F JL666A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W), Switching-Kapazität 448 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, Po",
+  "artikelgewicht": "4,95",
+  "versandgewicht": "6,95",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F JL666A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 448 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Über Power over Ethernet versorgt der JL666A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F JL666A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der JL666A eine Switching-Kapazität von 448 Gbit/s bei einer Weiterleitungsrate von 334 Mpps. Der JL666A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL666A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der JL666A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der JL666A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL666A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL666A?",
+    "Der JL666A bietet insgesamt 28 Ports: 24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL666A?",
+    "Der JL666A stellt Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL666A stapeln (Stacking)?",
+    "Ja. Der JL666A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "448 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "334 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) mit PoE-Versorgung für Access Points, IP-Telefone und Kameras; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2100.00"
+ },
+ "JL667A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F JL667A Managed Switch (L3) – 48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE)",
+  "titel_tag": "HPE Aruba CX 6300F JL667A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F JL667A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (ohne PoE), Switching-Kapazität 496 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, ohne PoE, 1",
+  "artikelgewicht": "4,46",
+  "versandgewicht": "6,46",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F JL667A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 48× 10/100/1000BASE-T (ohne PoE). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 496 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F JL667A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 48× 10/100/1000BASE-T (ohne PoE), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der JL667A eine Switching-Kapazität von 496 Gbit/s bei einer Weiterleitungsrate von 369 Mpps. Der JL667A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL667A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der JL667A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der JL667A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL667A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL667A?",
+    "Der JL667A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL667A PoE?",
+    "Nein. Der JL667A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL667A stapeln (Stacking)?",
+    "Ja. Der JL667A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "496 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "369 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung und Uplink-Verdichtung; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "1900.00"
+ },
+ "JL668A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F JL668A Managed Switch (L3) – 24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE)",
+  "titel_tag": "HPE Aruba CX 6300F JL668A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F JL668A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (ohne PoE), Switching-Kapazität 448 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, ohne PoE, 1",
+  "artikelgewicht": "4,36",
+  "versandgewicht": "6,36",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F JL668A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 24× 10/100/1000BASE-T (ohne PoE). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 448 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F JL668A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 24× 10/100/1000BASE-T (ohne PoE), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der JL668A eine Switching-Kapazität von 448 Gbit/s bei einer Weiterleitungsrate von 334 Mpps. Der JL668A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL668A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der JL668A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der JL668A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL668A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL668A?",
+    "Der JL668A bietet insgesamt 28 Ports: 24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL668A PoE?",
+    "Nein. Der JL668A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL668A stapeln (Stacking)?",
+    "Ja. Der JL668A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "448 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "334 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung und Uplink-Verdichtung; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "1400.00"
+ },
+ "S0G95A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F S0G95A Managed Switch (L3) – 48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 6300F S0G95A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F S0G95A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W), Switching-Kapazität 496 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, Po",
+  "artikelgewicht": "5,10",
+  "versandgewicht": "7,10",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F S0G95A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 496 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Über Power over Ethernet versorgt der S0G95A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F S0G95A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 48× 10/100/1000BASE-T (Class 4 PoE, 30 W), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der S0G95A eine Switching-Kapazität von 496 Gbit/s bei einer Weiterleitungsrate von 369 Mpps. Der S0G95A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des S0G95A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der S0G95A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der S0G95A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0G95A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0G95A?",
+    "Der S0G95A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des S0G95A?",
+    "Der S0G95A stellt Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 740 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der S0G95A stapeln (Stacking)?",
+    "Ja. Der S0G95A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 740 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "496 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "369 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) mit PoE-Versorgung für Access Points, IP-Telefone und Kameras; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2950.00"
+ },
+ "S0G96A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F S0G96A Managed Switch (L3) – 24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 6300F S0G96A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F S0G96A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W), Switching-Kapazität 448 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, Po",
+  "artikelgewicht": "4,95",
+  "versandgewicht": "6,95",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F S0G96A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 448 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Über Power over Ethernet versorgt der S0G96A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F S0G96A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 24× 10/100/1000BASE-T (Class 4 PoE, 30 W), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der S0G96A eine Switching-Kapazität von 448 Gbit/s bei einer Weiterleitungsrate von 334 Mpps. Der S0G96A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des S0G96A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der S0G96A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der S0G96A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0G96A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0G96A?",
+    "Der S0G96A bietet insgesamt 28 Ports: 24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des S0G96A?",
+    "Der S0G96A stellt Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der S0G96A stapeln (Stacking)?",
+    "Ja. Der S0G96A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (Class 4 PoE, 30 W) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at/bt Class 4, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "448 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "334 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 950 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) mit PoE-Versorgung für Access Points, IP-Telefone und Kameras; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2200.00"
+ },
+ "S0G97A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F S0G97A Managed Switch (L3) – 48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 6300F S0G97A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F S0G97A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (ohne PoE), Switching-Kapazität 496 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, ohne PoE, 1",
+  "artikelgewicht": "4,46",
+  "versandgewicht": "6,46",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F S0G97A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 48× 10/100/1000BASE-T (ohne PoE). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 496 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F S0G97A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 48× 10/100/1000BASE-T (ohne PoE), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 52 Ports erreicht der S0G97A eine Switching-Kapazität von 496 Gbit/s bei einer Weiterleitungsrate von 369 Mpps. Der S0G97A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0G97A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der S0G97A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der S0G97A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0G97A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0G97A?",
+    "Der S0G97A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S0G97A PoE?",
+    "Nein. Der S0G97A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0G97A stapeln (Stacking)?",
+    "Ja. Der S0G97A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "496 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "369 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung und Uplink-Verdichtung; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2000.00"
+ },
+ "S0G98A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00085162enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking CX 6300F S0G98A Managed Switch (L3) – 24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G), 19-Zoll (1 HE) (TAA, Trade Agreements Act)",
+  "titel_tag": "HPE Aruba CX 6300F S0G98A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking CX 6300F S0G98A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (ohne PoE), Switching-Kapazität 448 Gbit/s, 4× SFP56 (1/10/25/50G)-Uplinks, VSF-Stacking, ohne PoE, 1",
+  "artikelgewicht": "4,36",
+  "versandgewicht": "6,36",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking CX 6300F S0G98A ist ein gemanagter Layer-3-Switch der Aruba-CX-6300-Serie mit 24× 10/100/1000BASE-T (ohne PoE). Unter AOS-CX übernimmt er Routing und Segmentierung im Campus-Access- und -Aggregations-Layer.</p><p>Im 19-Zoll-Gehäuse (1 HE) liefert er eine Switching-Kapazität von 448 Gbit/s und bindet per 4× SFP56 (1/10/25/50G) an das Aggregations-Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking CX 6300F S0G98A ist ein gemanagter Layer-3-Switch aus der Aruba-CX-6300-Familie mit 24× 10/100/1000BASE-T (ohne PoE), ausgelegt für campus-access (layer 3 und betrieben unter AOS-CX.",
+   "Mit 28 Ports erreicht der S0G98A eine Switching-Kapazität von 448 Gbit/s bei einer Weiterleitungsrate von 334 Mpps. Der S0G98A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S0G98A erfolgt über 4× SFP56 (1/10/25/50G), und per Aruba VSF (Virtual Switching Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im 19-Zoll-Gehäuse (1 HE) mit Feste Lüfter (nicht austauschbar)) und Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar) arbeitet der S0G98A im Temperaturbereich 0 bis 45 °C. Unter AOS-CX bietet er vollständiges Layer-3-Routing (OSPF, BGP, VRRP), EVPN/VXLAN, Aruba Dynamic Segmentation, Zero-Touch-Provisioning und eine REST-API; geliefert wird der S0G98A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking AOS-CX",
+   "Aruba Central / NetEdit",
+   "Aruba VSF (Virtual Switching Framework)"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S0G98A ist HPE-Aruba-Networking-Original-Neuware der CX-6300-Serie – versiegelt geliefert und für den Betrieb unter AOS-CX vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S0G98A?",
+    "Der S0G98A bietet insgesamt 28 Ports: 24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)."
+   ],
+   [
+    "Unterstützt der S0G98A PoE?",
+    "Nein. Der S0G98A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S0G98A stapeln (Stacking)?",
+    "Ja. Der S0G98A unterstützt Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (ohne PoE) + 4× SFP56 (1/10/25/50G) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (10/100/1000BASE-T, Access), bis 50 GbE (SFP56-Uplink)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP56 (1/10/25/50G)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "448 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "334 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil 200 W (nicht hot-swap, nicht feldaustauschbar)"
+   ],
+   [
+    "Kühlung",
+    "Feste Lüfter (nicht austauschbar), Airflow front-to-back"
+   ],
+   [
+    "Stacking",
+    "Ja (Aruba VSF, bis 10 Einheiten, bis 400 Gbit/s, über die SFP56-Uplinks)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Campus-Access (Layer 3, AOS-CX) ohne PoE für Arbeitsplatz-Anbindung und Uplink-Verdichtung; Dynamic Segmentation, VSF-Stacking über die SFP56-Uplinks"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00085162enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "1480.00"
+ }
+}

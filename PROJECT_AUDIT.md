@@ -3933,6 +3933,24 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   arubanetworks.com Akamai-blocked from host) → recommend a live-fetch confirmation pass before STEP-2. `hpe_aruba_switches_SCOPED.csv`
   (224, EoL-filtered) is SUPERSEDED by FULL but kept as history. (STEP-1c agents read-only; PROJECT_AUDIT untouched by them. The late
   "CX-DC agent failed" notice was STALE — that STEP-1b data was banked, grounded, and carried forward.)
+- **HPE/Aruba SWITCHES — STEP 2 BATCH-1: AUTHORED + GATE-CLEAN (2026-06-30; first HPE switch SKUs emitted).** Authored
+  **Aruba CX 6300F (8) + CX 6300M (22) = 30 fixed switches** through the LOCKED Cisco switch pipeline verbatim
+  (`reconcile_content → assemble_bundle → scrub_uwg → category-remap → gate`), driver `_scratch/aruba_cx_6300_build.py`.
+  Hersteller=HP; E1/E2/E3 = Netzwerk & Infrastruktur / Switches / "Aruba CX 6300F|M Switches". **Both bundles `gate ok=True
+  viol=0`, validate_dir=0, dedup 30/30 unique.** Output: `output/switches/Aruba_CX_6300{F,M}_Switches/` (8-file set each) +
+  `stage3_content/Aruba_CX_6300{F,M}_Switches_content.json`. **GROUNDED verbatim from cached current datasheet a00085162ENW**
+  (two grounding passes; flag-don't-fabricate caught brief errors: 6300F has INTERNAL FIXED PSU 950/200 W + fixed fans + PoE
+  budget 740/370 W — NOT the 6300M's 2640/2880 W hot-swap design; JL762A/S0G02A = 48p 1GbE NON-PoE Power-to-Port ToR bundle,
+  not SmartRate PoE; JL658A=880/654 not 720/535; R8S92A=no-PoE; TAA twins inherit base specs). **0 new Merkmal NAMES** (reused
+  the locked 15 fixed-switch Merkmale). **Risk-test 1 (PoE budget) PASS** — existing `PoE` Merkmal holds the wattage budget
+  (`Ja (... Class 8, 90 W/Port, Budget 2.880 W)`), no STOP-and-ask. **Risk-test 2 (new Wertliste values):** 63 NEW VALUES across
+  10 descriptive Merkmale (categorical 5 = 0 new); full per-Merkmal list in `BATCH1_PRE_IMPORT_REQUIREMENTS.md`. CONFIG: 2
+  additions-only lines in `config/rules.yaml` (the 2 E3 series) + 2 completeness records in `config/coverage/gate_completeness.yaml`
+  (8/22). **Pricing = Phase-1 ESTIMATE** (tier placeholder, flagged Methode="geschätzt-Tier (PLATZHALTER)" in VLog_Prices; real
+  HPE market-price phase later). **PRE-IMPORT (operator to create in JTL before import):** the 2 E3 categories + the 63 Wertliste
+  values — per `BATCH1_PRE_IMPORT_REQUIREMENTS.md`. Footprint: 2 bundles + 2 content JSONs + rules.yaml(+2) + gate_completeness(+2)
+  + build driver + this audit; 0 src/ change, 0 new Merkmal, nothing in JTL. NEXT: operator review → scale STEP-2 to the remaining
+  503 HPE/Aruba PIDs once batch-1 import is confirmed clean on the live shop.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

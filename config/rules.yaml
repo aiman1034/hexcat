@@ -144,6 +144,12 @@ kategorie_ebene_3_switch_allowed:
   - "Cisco Nexus 9200 Switches"
   - "Cisco Nexus 9300 Switches"
   - "Cisco Nexus 9500 Switches"
+  # --- HPE/Aruba SERIES E3 categories (STEP-2 authoring; same post-emit remap pattern as the Cisco block).
+  # ADDITIONS-ONLY: the switch CLASS-token ("Managed Switch (L3)") still drives Attributgruppe/gate/chassis;
+  # these series strings are the Main's final Kategorie-Ebene-3 and MUST be recognised as switch-class so
+  # validate_dir treats the bundles as switches (else it falls to transceiver checks -> ~564 viol/bundle).
+  - "Aruba CX 6300F Switches"
+  - "Aruba CX 6300M Switches"
   # --- original switch-CLASS tokens (pre-rewrite; drive Attributgruppe/gate/chassis) ---
   - "Industrie-Switch"
   - "Data-Center-Switch"
