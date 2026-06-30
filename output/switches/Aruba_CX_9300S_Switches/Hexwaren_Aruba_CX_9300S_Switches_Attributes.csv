@@ -119,3 +119,33 @@ S0F95A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüfter, separat bestellt (A
 S0F95A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
 S0F95A,,Switch,Betriebstemperatur,0 bis 45 °C (Front-to-Back) bzw. 0 bis 40 °C (Back-to-Front),14,Wertliste,Attribut
 S0F95A,,Switch,Anwendung,"Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX",15,Wertliste,Attribut
+S0F86A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0F86A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0F86A,,Switch,Portanzahl,42,3,Wertliste,Attribut
+S0F86A,,Switch,Port-Konfiguration,32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink),4,Wertliste,Attribut
+S0F86A,,Switch,Port-Geschwindigkeit,"10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)",5,Wertliste,Attribut
+S0F86A,,Switch,Uplink-Ports,8× 400G-QSFP-DD,6,Wertliste,Attribut
+S0F86A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0F86A,,Switch,Switching-Kapazität,16 Tbit/s,8,Wertliste,Attribut
+S0F86A,,Switch,Durchsatz,Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen),9,Wertliste,Attribut
+S0F86A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0F86A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle)",11,Wertliste,Attribut
+S0F86A,,Switch,Kühlung,"6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S0F86A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0F86A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S0F86A,,Switch,Anwendung,"Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX",15,Wertliste,Attribut
+S0F85A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S0F85A,,Switch,Layer,L3,2,Wertliste,Attribut
+S0F85A,,Switch,Portanzahl,42,3,Wertliste,Attribut
+S0F85A,,Switch,Port-Konfiguration,32× 10/25/100G-QSFP28 (Access) + 2× 1/10G (Telemetrie) + 8× 400G-QSFP-DD (Uplink),4,Wertliste,Attribut
+S0F85A,,Switch,Port-Geschwindigkeit,"10/25/100/200 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink)",5,Wertliste,Attribut
+S0F85A,,Switch,Uplink-Ports,8× 400G-QSFP-DD,6,Wertliste,Attribut
+S0F85A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S0F85A,,Switch,Switching-Kapazität,16 Tbit/s,8,Wertliste,Attribut
+S0F85A,,Switch,Durchsatz,Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen),9,Wertliste,Attribut
+S0F85A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+S0F85A,,Switch,Stromversorgung,"2 feldaustauschbare Hot-Swap-Netzteile (1600 W DC, -40/-75 V, N+1, im Bundle)",11,Wertliste,Attribut
+S0F85A,,Switch,Kühlung,"6 feldaustauschbare Hot-Swap-Lüfter (N+1, Airflow front-to-back)",12,Wertliste,Attribut
+S0F85A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S0F85A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+S0F85A,,Switch,Anwendung,"Sicheres Data-Center-Leaf/DCI (Layer 3, AOS-CX) mit 100G-Access und 400G-QSFP-DD-Uplinks, line-rate MACsec/IPSec/VXLANsec-Verschlüsselung, EVPN-VXLAN und VSX",15,Wertliste,Attribut

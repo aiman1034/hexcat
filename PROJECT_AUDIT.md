@@ -4024,6 +4024,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   those (reseller specs proved unreliable on 6200F-1G SwK + S1D AC-tags) → auditor to courier/cache a50004267enw + sign off the FRU.
   Pricing Phase-1 ESTIMATE. **HPE/Aruba switch total now 163 authored** (CX 6000–6300/8100–8360/9300/9300S/10000/4100i; remaining:
   10040 + 6400/8400 chassis + modules; then ArubaOS-Switch + Comware + SMB).
+- **HPE/Aruba SWITCHES — STEP-2 BATCH-4 CORRECTION (auditor live-HPE re-verification; 2026-06-30 — DONE, committed).** Three items.
+  **(1) CX 10000 Switching-Kapazität 3,6 → 3,2 Tbit/s** on all 4 SKUs — HPE's CURRENT published figure (a50004267enw QuickSpec + a00119682enw
+  datasheet + HPE Store all agree; the 3,6 was the port-sum, not the published spec). Durchsatz confirmed **2.000 Mpps** (published for the
+  10000, unlike the 10040). Re-emitted; "3,2 Tbit/s" is a REUSED value (0 new). **(2) CX 8360 per-model SwK — RE-VERIFIED, all 6 CORRECT**
+  (2,4/1,2/4,8/1,76/2,4/0,88 Tbit/s) against the CURRENT a50002121ENW Rev.2 (©2025); both the 2023 cache and the 2025 doc report identical
+  per-model table cells — the 4,8 in web summaries is the series-max headline, correctly not mis-applied. No change. **(3) 9300/9300S RE-ENUMERATION**
+  (8325-precedent depth):
+  Re-ran the full switch-SKU enumeration for CX 9300 + 9300S against BOTH the datasheet **a00125744ENW Rev.2 (2025)** AND ordering-depth
+  sources. **NET-NEW = 2: S0F85A** (9300S 32C8D Front-to-Back 6xFan **2xDC TAA** Bundle) + **S0F86A** (9300S 32C8D Front-to-Back 6xFan
+  **2xDC** non-TAA Bundle) — the FtB-DC twins of the BtF-DC pair S0F87A/S0F88A we already have. **These are the exact 9300S analogue of
+  the 8325 S1D09-12A finding:** absent from the datasheet "Product SKUs" table (which lists only S0F81-84A + S0F87-88A + S0F95-96A) but
+  PRESENT in the OEM **AOS-CX 10.13.1040 Release Notes "Products Supported"** table (arubanetworking.hpe.com, Aug-2024; min-sw 10.14.0005;
+  fetched via Jina PDF reader — Aruba techdocs CDN 403s WebFetch+curl directly). Internally consistent: the datasheet already lists BOTH a
+  FtB DC PSU (S0F89A) and a BtF DC PSU (S0F90A), so both DC airflows have bundles. **9300S AUTHORED to 10 (was 8).** Confirmed ABSENT
+  (flag-don't-fabricate, triangulated datasheet+QuickSpec+RN): **9300-32D has NO DC bundle and NO TAA bundle** (AC-only: voltage
+  100-127/220-240 VAC, PSUs R8Z97A/R8Z98A AC only) — 9300-32D stays at **3** (R9A29A/R9A30A/R8Z96A). QuickSpec **a50004291enw is the OLD
+  9300-only revision** (V3, 07-Nov-2022 — predates 9300S; 8x/6000-server era; lists only R9A29A/R9A30A/R8Z96A + AC PSU/fan/rack accessories)
+  → for 9300S the RN supported-products table is the ordering-depth source, not this QuickSpec. EXCLUDED accessories (per-doc-line):
+  9300-32D fans R8Z99A/R9A00A, AC PSUs R8Z97A/R8Z98A; 9300S fans S0F93A(X761)/S0F94A(X762), DC PSUs S0F89A/S0F90A, AC PSUs S0F91A/S0F92A;
+  rack kits JL482C/JL483C/J9583B; feature-pack/Central/Fabric-Composer subscription SKUs. No R9F*-style tracking SKU seen in either 9300 doc.
+  **AUTHORED:** S0F86A (FtB-DC) + S0F85A (FtB-DC TAA) added to the `Aruba CX 9300S` E3 (additions-only, like the 8325 +4); gate_completeness
+  9300S 8→10; both = same spec as S0F87A/S0F88A except airflow Front-to-Back (+ S0F85A TAA), temp 0–45 °C (FtB-airflow rule). **All 3 items:**
+  `gate ok=True viol=0`, validate_dir=0; whole switch tree **1205 SKUs all unique**; 0 new Merkmal NAMES. **HPE/Aruba switch total 169 → 171.**
+  ZU_VERIFIZIEREN: S0F85A/S0F86A verbatim bundle-title long-description (RN canonical; a00125744enw has no SKU row) + the FtB-DC 0–45 °C temp
+  (FtB-airflow pattern, not a per-doc 9300S-FtB-DC cell) — auditor to confirm. Details: `BATCH4_CORRECTION_NOTE.md`.
 - **HPE/Aruba SWITCHES — STEP 2 BATCH-4b: CX 10040 authored (2026-06-30; batch-4 deferral resolved).** Auditor couriered the full
   a50004267enw. Authored the **4 AC bundles** (S4R54A/S4R55A FtB/BtF + TAA S4R56A/S4R57A) into the existing `Aruba CX 10040 Switches`
   E3. `gate ok=True viol=0`, validate_dir=0; whole switch tree **1201 SKUs all unique**. Grounded: **2U** (new Bauform reuse), **8 Tbit/s**

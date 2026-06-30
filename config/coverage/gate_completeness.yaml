@@ -168,9 +168,11 @@ Aruba_CX_9300_switches:
   captured: 3
   enumerated: 3
   flagged: []
+# 9300S: batch-4 correction +2 — S0F85A/S0F86A (FtB-DC twins of S0F87A/S0F88A), from the AOS-CX RN "Products Supported"
+# table (a00125744enw datasheet has no SKU row for them; same 8325-S1D found-beyond-datasheet pattern). 8 -> 10.
 Aruba_CX_9300S_switches:
-  captured: 8
-  enumerated: 8
+  captured: 10
+  enumerated: 10
   flagged: []
 Aruba_CX_10000_switches:
   captured: 4
