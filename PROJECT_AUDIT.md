@@ -3951,6 +3951,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   values — per `BATCH1_PRE_IMPORT_REQUIREMENTS.md`. Footprint: 2 bundles + 2 content JSONs + rules.yaml(+2) + gate_completeness(+2)
   + build driver + this audit; 0 src/ change, 0 new Merkmal, nothing in JTL. NEXT: operator review → scale STEP-2 to the remaining
   503 HPE/Aruba PIDs once batch-1 import is confirmed clean on the live shop.
+- **HPE/Aruba SWITCHES — STEP 2 BATCH-2: CX ACCESS tier, 31 authored / 22 deferred (2026-06-30).** Authored the CX access
+  tier through the proven batch-1 pipeline (generalised author() for Layer L2/L3 + VSF/no-VSF + industrial), driver
+  `_scratch/aruba_cx_access_build.py`. **Emitted 5 gate-clean bundles = 31 SKUs:** CX 6000 (6), 6100 (5), 6200F (15 of 27),
+  6300L (3), 4100i (2). All `gate ok=True viol=0`, validate_dir=0; whole switch tree 1095 SKUs all unique (A-rev/B-rev/TAA
+  distinct via PID-welding). GROUNDED verbatim from cached current per-family datasheets (6000 a00112996enw, 6100 a00106853enw,
+  6200F a00097415enw, 6300L a00085162enw, 4100i a00117285enw). Flag-don't-fabricate findings: **6000/6100 = NO VSF**
+  (Stacking=Nein, entry tier), **6300L = Layer 2** (own VSF domain, doesn't stack with F/M), **4100i = Industrie-Switch**
+  (IP30, DIN-rail, fanless, −40…70 °C — reuses the Cisco-IE temp value), **6200F = fixed-PSU L2** (SwK 128/176). **0 new
+  Merkmal NAMES**; **59 new Wertliste VALUES** (categorical 4 = 0 new) → `BATCH2_PRE_IMPORT_REQUIREMENTS.md`. CONFIG: 5
+  additions-only E3 series in rules.yaml (6200M omitted — deferred) + 5 gate_completeness records (6200F = 15 captured / 27
+  enumerated / 12 `harvest-gap` flags). **⚠️ DEFERRED 22 PIDs (cache gap):** the cached `6200F.pdf` is the WRONG doc —
+  `a00097415enw` (2022, 6200F-only A-rev, just JL724A–728A), NOT the `a00059762enw` the manifest claimed. The current combined
+  6200F+6200M datasheet (B-rev/S-prefix/1G-SFP variants + the entire 6200M family) is NOT cached anywhere → 6200F 4SFP-1G+compact
+  (12) + 6200M (10) flagged, not authored. **AUDITOR ACTION: cache a00059762enw → batch 2b authors the 22.** Pricing = Phase-1
+  ESTIMATE (flagged). Footprint: 5 bundles + 5 content JSONs + rules.yaml(+5) + gate_completeness(+5) + driver + this audit + note;
+  0 src/ change, 0 new Merkmal, nothing in JTL. NEXT: auditor caches the 6200F/M doc (batch 2b) + continues the remaining HPE tiers.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

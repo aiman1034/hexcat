@@ -124,6 +124,38 @@ Aruba_CX_6300M_switches:
   captured: 22
   enumerated: 22
   flagged: []
+Aruba_CX_6000_switches:
+  captured: 6
+  enumerated: 6
+  flagged: []
+Aruba_CX_6100_switches:
+  captured: 5
+  enumerated: 5
+  flagged: []
+Aruba_CX_6200F_switches:
+  captured: 15
+  enumerated: 27
+  flagged:
+    - {pn: S0M81A, reason_code: harvest-gap}
+    - {pn: S0M82A, reason_code: harvest-gap}
+    - {pn: S0M83A, reason_code: harvest-gap}
+    - {pn: S0M84A, reason_code: harvest-gap}
+    - {pn: S0M85A, reason_code: harvest-gap}
+    - {pn: S0G13A, reason_code: harvest-gap}
+    - {pn: S0G14A, reason_code: harvest-gap}
+    - {pn: S0G15A, reason_code: harvest-gap}
+    - {pn: S0G16A, reason_code: harvest-gap}
+    - {pn: S0G17A, reason_code: harvest-gap}
+    - {pn: R8V13A, reason_code: harvest-gap}
+    - {pn: R8Q72A, reason_code: harvest-gap}
+Aruba_CX_6300L_switches:
+  captured: 3
+  enumerated: 3
+  flagged: []
+Aruba_CX_4100i_switches:
+  captured: 2
+  enumerated: 2
+  flagged: []
 Cisco_Nexus9200_switches:
   captured: 8
   enumerated: 8
