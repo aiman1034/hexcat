@@ -4030,11 +4030,11 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (new SwK value), 32× 100G-QSFP28 + 2× 10G-SFP+ (mgmt) + 6× 400G-QSFP-DD (n=40), VSX, L3, 3000 W AC, 0–40 °C, PoE Nein; **DSS / 4× AMD
   Pensando DPU + 1,6 Tbps stateful + 4,8 Tbps MACsec + PTP in PROSE** (not a Merkmal). Durchsatz wire-speed-flagged (the 10000's 2.000
   Mpps deliberately NOT carried). **8 new Wertliste VALUES, 0 new Merkmal NAMES.** ZU_VERIFIZIEREN: artikelgewicht (15,00 kg ESTIMATE,
-  2U-class, flagged), fan count (defaulted 4; doc BtF=6 likely typo), 2× SFP+ modeled as mgmt. **⚠️ 2 FRU (S4R58A/S4R59A) HELD pending
-  OPERATOR DECISION** (include as sealed-switch FRU vs exclude as replacement-only; auditor lean: exclude); gate_completeness 10040 = 4/4
-  + a held-FRU YAML comment ("policy-pending" is not a valid L6 reason-code). Details: `BATCH4b_PRE_IMPORT_REQUIREMENTS.md`. Pricing
-  Phase-1 ESTIMATE. **HPE/Aruba switch total now 167 authored** (the full CX FIXED line complete: 6000/6100/6200F/6200M/6300F/6300M/6300L/
-  4100i/8100/8320/8325/8325H/8360/9300/9300S/10000/10040). NEXT: CX 6400/8400 chassis + module families; then ArubaOS-Switch + Comware + SMB.
+  2U-class, flagged), fan count (defaulted 4; doc BtF=6 likely typo), 2× SFP+ modeled as mgmt. **OPERATOR DECISION (FRU): INCLUDE** —
+  S4R58A + S4R59A (TAA) authored as sealed-switch bare-chassis FRU (configurable airflow, PSU/fans separate, like the base/spare units);
+  **CX 10040 now 6/6** (gate_completeness updated). Details: `BATCH4b_PRE_IMPORT_REQUIREMENTS.md`. Pricing Phase-1 ESTIMATE; whole switch
+  tree **1203 SKUs all unique**. **HPE/Aruba switch total now 169 authored** (the full CX FIXED line complete: 6000/6100/6200F/6200M/
+  6300F/6300M/6300L/4100i/8100/8320/8325/8325H/8360/9300/9300S/10000/10040). NEXT: CX 6400/8400 chassis + module families; then ArubaOS-Switch + Comware + SMB.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

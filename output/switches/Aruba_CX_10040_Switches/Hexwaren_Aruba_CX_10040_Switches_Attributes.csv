@@ -59,3 +59,33 @@ S4R57A,,Switch,Kühlung,"4 feldaustauschbare Hot-Swap-Lüftertrays (N+1, Airflow
 S4R57A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
 S4R57A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
 S4R57A,,Switch,Anwendung,"Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4R58A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R58A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4R58A,,Switch,Portanzahl,40,3,Wertliste,Attribut
+S4R58A,,Switch,Port-Konfiguration,32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink),4,Wertliste,Attribut
+S4R58A,,Switch,Port-Geschwindigkeit,"100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)",5,Wertliste,Attribut
+S4R58A,,Switch,Uplink-Ports,6× 400G-QSFP-DD,6,Wertliste,Attribut
+S4R58A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R58A,,Switch,Switching-Kapazität,8 Tbit/s,8,Wertliste,Attribut
+S4R58A,,Switch,Durchsatz,Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen),9,Wertliste,Attribut
+S4R58A,,Switch,Bauform,19-Zoll-Rackmontage (2 HE),10,Wertliste,Attribut
+S4R58A,,Switch,Stromversorgung,"Feldaustauschbare Hot-Swap-Netzteile (3000 W AC), separat bestellt (bis 2, N+1)",11,Wertliste,Attribut
+S4R58A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüftertrays (N+1, separat bestellt, Airflow konfigurierbar (front-to-back oder back-to-front))",12,Wertliste,Attribut
+S4R58A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4R58A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4R58A,,Switch,Anwendung,"Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut
+S4R59A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+S4R59A,,Switch,Layer,L3,2,Wertliste,Attribut
+S4R59A,,Switch,Portanzahl,40,3,Wertliste,Attribut
+S4R59A,,Switch,Port-Konfiguration,32× 100G-QSFP28 (Access) + 2× 10G-SFP+ (Management) + 6× 400G-QSFP-DD (Uplink),4,Wertliste,Attribut
+S4R59A,,Switch,Port-Geschwindigkeit,"100 GbE (QSFP28, Access), 400 GbE (QSFP-DD, Uplink); 10 GbE (SFP+, Management)",5,Wertliste,Attribut
+S4R59A,,Switch,Uplink-Ports,6× 400G-QSFP-DD,6,Wertliste,Attribut
+S4R59A,,Switch,PoE,Nein,7,Wertliste,Attribut
+S4R59A,,Switch,Switching-Kapazität,8 Tbit/s,8,Wertliste,Attribut
+S4R59A,,Switch,Durchsatz,Wire-Speed (modellspezifischer Mpps-Wert nicht im Datenblatt ausgewiesen),9,Wertliste,Attribut
+S4R59A,,Switch,Bauform,19-Zoll-Rackmontage (2 HE),10,Wertliste,Attribut
+S4R59A,,Switch,Stromversorgung,"Feldaustauschbare Hot-Swap-Netzteile (3000 W AC), separat bestellt (bis 2, N+1)",11,Wertliste,Attribut
+S4R59A,,Switch,Kühlung,"Feldaustauschbare Hot-Swap-Lüftertrays (N+1, separat bestellt, Airflow konfigurierbar (front-to-back oder back-to-front))",12,Wertliste,Attribut
+S4R59A,,Switch,Stacking,"VSX (Aruba Virtual Switching Extension) – 2-Node-Hochverfügbarkeit, aktiv-aktiv mit synchronisiertem Forwarding-Zustand (MC-LAG)",13,Wertliste,Attribut
+S4R59A,,Switch,Betriebstemperatur,0 bis 40 °C,14,Wertliste,Attribut
+S4R59A,,Switch,Anwendung,"Distributed-Services-Switch (DSS, Layer 3, AOS-CX) für Leaf-Spine/ToR/EoR im Rechenzentrum mit vier AMD-Pensando-DPUs (1,6 Tbit/s Stateful-Services inline), 4,8-Tbit/s-MACsec-Verschlüsselung, PTP-Boundary-Clock, 100G-Access und 400G-Uplinks, BGP-EVPN/VXLAN und VSX",15,Wertliste,Attribut

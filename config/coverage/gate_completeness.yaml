@@ -176,12 +176,11 @@ Aruba_CX_10000_switches:
   captured: 4
   enumerated: 4
   flagged: []
-# CX 10040: 4 AC bundles authored (S4R54A/S4R55A + TAA S4R56A/S4R57A). The 2 FRU (S4R58A/S4R59A) are HELD pending
-# an operator policy decision (auditor lean: exclude — bare replacement chassis, no PSU/fans). Recorded as 4/4 here
-# (the emitted bundle's completeness); the FRU are not enumerated until the operator decides include vs out-of-scope.
+# CX 10040: 4 AC bundles (S4R54A/S4R55A + TAA S4R56A/S4R57A) + 2 FRU (S4R58A/S4R59A) — operator decided INCLUDE the FRU
+# as sealed-switch bare-chassis units (configurable airflow, PSU/fans separate). Family complete at 6/6.
 Aruba_CX_10040_switches:
-  captured: 4
-  enumerated: 4
+  captured: 6
+  enumerated: 6
   flagged: []
 Aruba_CX_8325H_switches:
   captured: 8

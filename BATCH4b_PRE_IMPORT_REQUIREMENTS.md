@@ -26,16 +26,11 @@ Durchsatz (`Wire-Speed…`) all reuse existing values.
 - **Port-Geschwindigkeit / Uplink-Ports / Port-Konfiguration — 1 each:** the 100G/400G + management-SFP+ DSS strings (see Attributes).
 - **Anwendung — 1 NEW:** the 10040 DSS/DPU string.
 
-## D. ⚠️ OPERATOR DECISION OUTSTANDING — the 2 FRU (S4R58A / S4R59A)
-`S4R58A` (10040-32C6D Field Replacement Unit) + `S4R59A` (TAA FRU). **NOT authored** — held pending your call:
-- **Include** as sealed-switch FRU (consistent with the base/spare units authored for 8325/8360/9300), OR
-- **Exclude** as replacement-units-only — **auditor's lean** (bare chassis, no PSU/fans, not a complete sellable bundle; the
-  new-sealed-deployment focus of MISSION §1).
-
-`gate_completeness.yaml` records `Aruba_CX_10040_switches: 4/4` (the emitted bundle) with a YAML comment documenting the held FRU.
-("policy-pending" is not a valid L6 reason-code, so the FRU are not enumerated until decided — this keeps the gate green without
-pre-judging.) **On your decision:** *include* → I author the 2 (enumerated→6, captured→6); *exclude* → I set enumerated=6, captured=4,
-flagged=[S4R58A, S4R59A] reason `out-of-scope`.
+## D. ✅ OPERATOR DECISION — the 2 FRU (S4R58A / S4R59A): INCLUDE (resolved)
+The operator chose **INCLUDE as sealed-switch FRU** (consistent with the base/spare units authored for 8325/8360/9300).
+`S4R58A` + `S4R59A` (TAA) are now authored as **bare-chassis 10040-32C6D switch units** — configurable airflow, PSU/fans ordered
+separately (prose: "Netzteile/Lüftertrays separat bestellt"); they carry the same 8 Tbit/s / wire-speed / weight-estimate
+ZU_VERIFIZIEREN flags as the bundles. **CX 10040 is now 6/6** in `gate_completeness.yaml` (4 AC bundles + 2 FRU).
 
 ## E. ZU_VERIFIZIEREN (flagged, shipped on best grounding)
 - **Artikelgewicht = 15,00 kg (ESTIMATE, 2U-class)** — the doc's Technical-Specs weight was not in the courier; flagged for the
