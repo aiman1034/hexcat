@@ -13,8 +13,8 @@ Cisco_2960Plus | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Ne
 Cisco_2960S | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 2960 Switches
 Cisco_2960SF | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 2960 Switches
 Cisco_2960X | Netzwerk & Infrastruktur / Switches / {Managed Switch (L2), Managed Switch (L3)} -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 2960 Switches
-Cisco_350 | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco 350 Switches
-Cisco_350X | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco 350X Switches
+Cisco_350 | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco Small Business 350 Switches
+Cisco_350X | Netzwerk & Infrastruktur / Switches / Managed Switch (L2) -> Netzwerk & Infrastruktur / Switches / Cisco Small Business 350X Switches
 Cisco_3560 | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 3560 Switches
 Cisco_3560C | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 3560 Switches
 Cisco_3560CX | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 3560 Switches
@@ -26,7 +26,7 @@ Cisco_3750X | Netzwerk & Infrastruktur / Switches / {Managed Switch (L2), Manage
 Cisco_4500E | Netzwerk & Infrastruktur / Switches / Modularer Switch (Chassis) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 4500 Switches
 Cisco_4500X | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 4500 Switches
 Cisco_4948E | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 4900 Switches
-Cisco_550X | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco 550X Switches
+Cisco_550X | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Small Business 550X Switches
 Cisco_6500E | Netzwerk & Infrastruktur / Switches / Modularer Switch (Chassis) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 6500 Switches
 Cisco_6800X | Netzwerk & Infrastruktur / Switches / Managed Switch (L3) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 6800 Switches
 Cisco_6807XL | Netzwerk & Infrastruktur / Switches / Modularer Switch (Chassis) -> Netzwerk & Infrastruktur / Switches / Cisco Catalyst 6800 Switches

@@ -4060,6 +4060,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **CX 10040 now 6/6** (gate_completeness updated). Details: `BATCH4b_PRE_IMPORT_REQUIREMENTS.md`. Pricing Phase-1 ESTIMATE; whole switch
   tree **1203 SKUs all unique**. **HPE/Aruba switch total now 169 authored** (the full CX FIXED line complete: 6000/6100/6200F/6200M/
   6300F/6300M/6300L/4100i/8100/8320/8325/8325H/8360/9300/9300S/10000/10040). NEXT: CX 6400/8400 chassis + module families; then ArubaOS-Switch + Comware + SMB.
+- **CISCO SWITCHES — E3 category rename: the 3 Small Business families (2026-06-30, operator-directed).** The 350/350X/550X were the
+  ONLY 3 of the 58 Cisco-switch E3 categories with a bare "Cisco <number>" name (every other carries a line token —
+  Catalyst/Nexus/Meraki MS/Industrial Ethernet/MDS/Catalyst IE). Renamed to carry Cisco's own "Small Business" line token (the SG/SF
+  350/350X/550X line — NOT the newer CBS "Cisco Business" line; the Beschreibung prose already said "(Small Business)"):
+  **Cisco 350 → Cisco Small Business 350 Switches · 350X → Cisco Small Business 350X Switches · 550X → Cisco Small Business 550X Switches.**
+  Touched: `config/rules.yaml` kategorie_ebene_3_switch_allowed (3) + `CISCO_CATEGORY_REMAP_MANIFEST.md` (3) + the 3 emitted Main CSV
+  E3 cells (67 SKUs: 24+20+23). **validate_dir=0** on all 3; 58 distinct Cisco-switch E3 unchanged (rename, not add/remove); E3-string
+  isolation verified (col-15 only, 0 prose/Artikelname collisions). 0 src/ changes; 0 re-grounding (pure category-label rename).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

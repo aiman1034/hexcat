@@ -86,9 +86,9 @@ kategorie_ebene_3_switch_allowed:
   # switch CLASS-token below still drives Attributgruppe + chassis carve-out at build/gate time). They must be
   # recognised as switch-class E3 so validate_dir treats the bundles as switches (a series E3 not in this set
   # makes validate fall to transceiver content-checks -> ~564 violations/bundle).
-  - "Cisco 350 Switches"
-  - "Cisco 350X Switches"
-  - "Cisco 550X Switches"
+  - "Cisco Small Business 350 Switches"
+  - "Cisco Small Business 350X Switches"
+  - "Cisco Small Business 550X Switches"
   - "Cisco Catalyst 1000 Switches"
   - "Cisco Catalyst 1200 Switches"
   - "Cisco Catalyst 1300 Switches"
