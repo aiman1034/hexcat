@@ -1,0 +1,1312 @@
+{
+ "J8715A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J8715A modulares Basissystem-Chassis (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – Basissystem mit zwölf Modul-Steckplätzen",
+  "titel_tag": "HP ProCurve 8212zl J8715A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J8715A: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Basissystem mit zwölf Modul-Steckplätzen. Neu und versiegelt.",
+  "artikelgewicht": "22,88",
+  "versandgewicht": "24,88",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J8715A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J8715A nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J8715A wird als Basissystem-Chassis geliefert (Basissystem mit zwölf Modul-Steckplätzen) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J8715A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J8715A wird als Basissystem-Chassis geliefert: Basissystem mit zwölf Modul-Steckplätzen.",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J8715A bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J8715A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J8715A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J8715A. Das angegebene Artikelgewicht des J8715A ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J8715A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J8715A?",
+    "Der J8715A bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J8715A ein diskretes Fabric-Modul?",
+    "Ja. Der J8715A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J8715A?",
+    "Der J8715A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J8715A ein originales HPE-Produkt?",
+    "Ja. Der J8715A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12000.00"
+ },
+ "J8715B": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J8715B modulares Basissystem-Chassis (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – Basissystem mit zwölf Modul-Steckplätzen (Revision B)",
+  "titel_tag": "HP ProCurve 8212zl J8715B Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J8715B: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Basissystem mit zwölf Modul-Steckplätzen (Revision B). Neu und versiegelt.",
+  "artikelgewicht": "22,88",
+  "versandgewicht": "24,88",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J8715B ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J8715B nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J8715B wird als Basissystem-Chassis geliefert (Basissystem mit zwölf Modul-Steckplätzen (Revision B)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J8715B ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J8715B wird als Basissystem-Chassis geliefert: Basissystem mit zwölf Modul-Steckplätzen (Revision B).",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J8715B bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J8715B ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J8715B im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J8715B. Das angegebene Artikelgewicht des J8715B ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J8715B als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J8715B?",
+    "Der J8715B bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J8715B ein diskretes Fabric-Modul?",
+    "Ja. Der J8715B der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J8715B?",
+    "Der J8715B nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J8715B ein originales HPE-Produkt?",
+    "Ja. Der J8715B ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12200.00"
+ },
+ "J9091A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J9091A modulares Ersatz-/Leergehäuse (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil)",
+  "titel_tag": "HP ProCurve 8212zl J9091A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J9091A: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil). Neu und versiegelt.",
+  "artikelgewicht": "22,88",
+  "versandgewicht": "24,88",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J9091A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9091A nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9091A wird als Ersatz-/Leergehäuse geliefert (Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J9091A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9091A wird als Ersatz-/Leergehäuse geliefert: Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil).",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9091A bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9091A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J9091A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9091A. Das angegebene Artikelgewicht des J9091A ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J9091A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9091A?",
+    "Der J9091A bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J9091A ein diskretes Fabric-Modul?",
+    "Ja. Der J9091A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9091A?",
+    "Der J9091A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9091A ein originales HPE-Produkt?",
+    "Ja. Der J9091A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9000.00"
+ },
+ "J9091B": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J9091B modulares Ersatz-/Leergehäuse (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil, Revision B)",
+  "titel_tag": "HP ProCurve 8212zl J9091B Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J9091B: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil, Revision B). Neu und versiegelt.",
+  "artikelgewicht": "22,88",
+  "versandgewicht": "24,88",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J9091B ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9091B nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9091B wird als Ersatz-/Leergehäuse geliefert (Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil, Revision B)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J9091B ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9091B wird als Ersatz-/Leergehäuse geliefert: Ersatzgehäuse mit Lüftertray (ohne Module, Ersatzteil, Revision B).",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9091B bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9091B ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J9091B im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9091B. Das angegebene Artikelgewicht des J9091B ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J9091B als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9091B?",
+    "Der J9091B bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J9091B ein diskretes Fabric-Modul?",
+    "Ja. Der J9091B der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9091B?",
+    "Der J9091B nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9091B ein originales HPE-Produkt?",
+    "Ja. Der J9091B ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9200.00"
+ },
+ "J9639A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J9639A modulares vorkonfiguriertes Switch-Bundle (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – v2-zl-Bundle mit Premium-Software, 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert",
+  "titel_tag": "HP ProCurve 8212zl J9639A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J9639A: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. v2-zl-Bundle mit Premium-Software, 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert. Neu und versiegelt.",
+  "artikelgewicht": "30,00",
+  "versandgewicht": "32,00",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J9639A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9639A nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9639A wird als vorkonfiguriertes Switch-Bundle geliefert (v2-zl-Bundle mit Premium-Software, 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J9639A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9639A wird als vorkonfiguriertes Switch-Bundle geliefert: v2-zl-Bundle mit Premium-Software, 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert.",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9639A bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9639A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J9639A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9639A. Das angegebene Artikelgewicht des J9639A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9639A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9639A?",
+    "Der J9639A bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J9639A ein diskretes Fabric-Modul?",
+    "Ja. Der J9639A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9639A?",
+    "Der J9639A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9639A ein originales HPE-Produkt?",
+    "Ja. Der J9639A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "20000.00"
+ },
+ "J9641A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8212zl J9641A modulares vorkonfiguriertes Switch-Bundle (12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 9 HE) – v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards)",
+  "titel_tag": "HP ProCurve 8212zl J9641A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8212zl J9641A: modulares 9-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards). Neu und versiegelt.",
+  "artikelgewicht": "24,00",
+  "versandgewicht": "26,00",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8212zl J9641A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9641A nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9641A wird als vorkonfiguriertes Switch-Bundle geliefert (v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8212zl J9641A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9641A wird als vorkonfiguriertes Switch-Bundle geliefert: v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards).",
+   "Mit 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9641A bis zu 288× 10/100/1000 oder 48× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9641A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (9 HE) arbeitet der J9641A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9641A. Das angegebene Artikelgewicht des J9641A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9641A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9641A?",
+    "Der J9641A bietet 12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 288× 10/100/1000 oder 48× 10-GbE auf."
+   ],
+   [
+    "Hat der J9641A ein diskretes Fabric-Modul?",
+    "Ja. Der J9641A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9641A?",
+    "Der J9641A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9641A ein originales HPE-Produkt?",
+    "Ja. Der J9641A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (9 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen; bis 428 Mpps Durchsatz)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "16000.00"
+ },
+ "J9475A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8206zl J9475A modulares Basissystem-Chassis (6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 6 HE) – Basissystem mit sechs Modul-Steckplätzen",
+  "titel_tag": "HP ProCurve 8206zl J9475A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8206zl J9475A: modulares 6-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Basissystem mit sechs Modul-Steckplätzen. Neu und versiegelt.",
+  "artikelgewicht": "17,36",
+  "versandgewicht": "19,36",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8206zl J9475A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9475A nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9475A wird als Basissystem-Chassis geliefert (Basissystem mit sechs Modul-Steckplätzen) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8206zl J9475A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9475A wird als Basissystem-Chassis geliefert: Basissystem mit sechs Modul-Steckplätzen.",
+   "Mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9475A bis zu 144× 10/100/1000 oder 24× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9475A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (6 HE) arbeitet der J9475A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9475A. Das angegebene Artikelgewicht des J9475A ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J9475A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9475A?",
+    "Der J9475A bietet 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf."
+   ],
+   [
+    "Hat der J9475A ein diskretes Fabric-Modul?",
+    "Ja. Der J9475A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9475A?",
+    "Der J9475A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9475A ein originales HPE-Produkt?",
+    "Ja. Der J9475A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (6 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9000.00"
+ },
+ "J9477A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8206zl J9477A modulares Ersatz-/Leergehäuse (6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 6 HE) – Ersatzgehäuse (ohne Module, Ersatzteil)",
+  "titel_tag": "HP ProCurve 8206zl J9477A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8206zl J9477A: modulares 6-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. Ersatzgehäuse (ohne Module, Ersatzteil). Neu und versiegelt.",
+  "artikelgewicht": "17,36",
+  "versandgewicht": "19,36",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8206zl J9477A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9477A nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9477A wird als Ersatz-/Leergehäuse geliefert (Ersatzgehäuse (ohne Module, Ersatzteil)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8206zl J9477A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9477A wird als Ersatz-/Leergehäuse geliefert: Ersatzgehäuse (ohne Module, Ersatzteil).",
+   "Mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9477A bis zu 144× 10/100/1000 oder 24× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9477A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (6 HE) arbeitet der J9477A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9477A. Das angegebene Artikelgewicht des J9477A ist das Grundgewicht des Chassis (ohne Module und Netzteile). Geliefert wird der J9477A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9477A?",
+    "Der J9477A bietet 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf."
+   ],
+   [
+    "Hat der J9477A ein diskretes Fabric-Modul?",
+    "Ja. Der J9477A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9477A?",
+    "Der J9477A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9477A ein originales HPE-Produkt?",
+    "Ja. Der J9477A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (6 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "7000.00"
+ },
+ "J9638A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8206zl J9638A modulares vorkonfiguriertes Switch-Bundle (6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 6 HE) – v2-zl-Bundle mit Premium-Software, 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert",
+  "titel_tag": "HP ProCurve 8206zl J9638A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8206zl J9638A: modulares 6-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. v2-zl-Bundle mit Premium-Software, 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert. Neu und versiegelt.",
+  "artikelgewicht": "23,00",
+  "versandgewicht": "25,00",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8206zl J9638A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9638A nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9638A wird als vorkonfiguriertes Switch-Bundle geliefert (v2-zl-Bundle mit Premium-Software, 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8206zl J9638A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9638A wird als vorkonfiguriertes Switch-Bundle geliefert: v2-zl-Bundle mit Premium-Software, 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert.",
+   "Mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9638A bis zu 144× 10/100/1000 oder 24× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9638A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (6 HE) arbeitet der J9638A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9638A. Das angegebene Artikelgewicht des J9638A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9638A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9638A?",
+    "Der J9638A bietet 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf."
+   ],
+   [
+    "Hat der J9638A ein diskretes Fabric-Modul?",
+    "Ja. Der J9638A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9638A?",
+    "Der J9638A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9638A ein originales HPE-Produkt?",
+    "Ja. Der J9638A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (6 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "15000.00"
+ },
+ "J9640A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HP ProCurve 8206zl J9640A modulares vorkonfiguriertes Switch-Bundle (6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, 6 HE) – v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards)",
+  "titel_tag": "HP ProCurve 8206zl J9640A Chassis | Hexwaren",
+  "meta_description": "Original HP ProCurve 8206zl J9640A: modulares 6-HE-Layer-3-Chassis der ProCurve-8200zl-Serie, 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte, ProVision. v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards). Neu und versiegelt.",
+  "artikelgewicht": "19,00",
+  "versandgewicht": "21,00",
+  "kurzbeschreibung": "<p>Der HP ProCurve 8206zl J9640A ist ein modulares Layer-3-Chassis der ProCurve-8200zl-Serie für Campus-Core und -Aggregation mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte. Der J9640A nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf und wird unter dem HP-ProVision-Betriebssystem betrieben.</p><p>Der J9640A wird als vorkonfiguriertes Switch-Bundle geliefert (v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards)) und trägt die zl-Modul- und zl-Netzteil-Familie; Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HP ProCurve 8206zl J9640A ist ein modularer Layer-3-Switch (Chassis) der HP-ProCurve-8200zl-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter dem HP-ProVision-Betriebssystem. Der J9640A wird als vorkonfiguriertes Switch-Bundle geliefert: v2-zl-Bundle mit Premium-Software (Chassis mit Premium-Lizenz, ohne vorinstallierte Linecards).",
+   "Mit 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte nimmt der J9640A bis zu 144× 10/100/1000 oder 24× 10-GbE auf; die Weiterleitung erfolgt über das diskrete Fabric-Modul (J9093A), die zentrale Switching-Fabric des Chassis; ein Management-Modul (J9092A) und ein System-Support-Modul (J9095A) ergänzen Steuerung und Systemdienste. Die System-Switching-Kapazität des J9640A ist mit „Fabric-vermittelt“ ausgewiesen.",
+   "Im 19-Zoll-Gehäuse (6 HE) arbeitet der J9640A im Temperaturbereich 0 bis 45 °C; ein Lüftertray (Airflow front-to-back) und Hot-Swap-zl-Netzteile (J8712A 875 W / J9306A 1500 W PoE+, separat bestellt) versorgen den J9640A. Das angegebene Artikelgewicht des J9640A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9640A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HP ProVision-Firmware",
+   "HP PCM+ (ProCurve Manager Plus)",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9640A?",
+    "Der J9640A bietet 6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte und nimmt bis zu 144× 10/100/1000 oder 24× 10-GbE auf."
+   ],
+   [
+    "Hat der J9640A ein diskretes Fabric-Modul?",
+    "Ja. Der J9640A der 8200zl-Serie nutzt ein diskretes Fabric-Modul (J9093A) als zentrale Switching-Fabric – als einzige zl-Chassis-Serie."
+   ],
+   [
+    "Welche Module passen in den J9640A?",
+    "Der J9640A nimmt die gemeinsamen HP-ProCurve-zl-Linecards sowie das 8200zl-Management-, -Fabric- und -System-Support-Modul auf."
+   ],
+   [
+    "Ist der J9640A ein originales HPE-Produkt?",
+    "Ja. Der J9640A ist HP-Original-Neuware der ProCurve-8200zl-Serie, versiegelt geliefert und für den Betrieb unter dem HP-ProVision-Betriebssystem vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 Linecard-Steckplätze + dedizierte Management-, Fabric- und System-Support-Modul-Schächte"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (6 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen)"
+   ],
+   [
+    "Stromversorgung",
+    "Hot-Swap-zl-Netzteilschächte (J8712A 875 W / J9306A 1500 W PoE+; N+1-Redundanz, hot-swap; separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Lüftertray, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HP ProCurve 8200zl Management Module (J9092A) mit diskretem Fabric-Modul (J9093A) und System-Support-Modul (J9095A), redundant"
+   ],
+   [
+    "Redundanz",
+    "Redundante Fabric-, Management-, Netzteil- und Lüfter-Ebene"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Rechenzentrums-Aggregation (modularer Layer-3-Switch, ProVision)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://support.hpe.com/hpesc/public/docDisplay?docId=emr_na-c02051709",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12000.00"
+ }
+}

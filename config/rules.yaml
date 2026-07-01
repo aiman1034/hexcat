@@ -192,6 +192,10 @@ kategorie_ebene_3_switch_allowed:
   - "HP ProCurve 3500 Switches"
   - "HP ProCurve 6600 Switches"
   - "HP 3800 Switches"
+  # ArubaOS-Switch legacy zl modular lane (Phase 2d) — chassis + shared module pool
+  - "HP ProCurve 5400zl Switches"
+  - "HP ProCurve 8200zl Switches"
+  - "HP ProCurve zl Modules"
   # --- original switch-CLASS tokens (pre-rewrite; drive Attributgruppe/gate/chassis) ---
   - "Industrie-Switch"
   - "Data-Center-Switch"

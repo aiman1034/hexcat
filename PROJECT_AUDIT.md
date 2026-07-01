@@ -4214,6 +4214,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   3-commit split, PUSHED to origin/main (hash moved off 356edd4; confirmed via `git ls-remote` and reported to operator). Whole
   switch tree now **1373 SKUs**. NEXT: the modular
   zl chassis (5400R zl2 · 8200zl · 5400zl v1) + their module pools on the validated CX chassis/module schema.
+- **HPE/Aruba SWITCHES — ArubaOS-Switch PHASE 2d AUTHORED (legacy zl modular lane; 2026-07-01; GREEN + PUSHED). LAST HPE/Aruba
+  switch lane — the whole HPE/Aruba switch catalog is now authored.** Authored **36 SKUs** across 3 E3 on the VALIDATED CX chassis/
+  module schema (commit 97d98a3) reused verbatim: **HP ProCurve 5400zl Switches (6 chassis)** · **HP ProCurve 8200zl Switches (10
+  chassis)** · **HP ProCurve zl Modules (20, shared pool)**. Driver `_scratch/aruba_zl_build.py` (chassis = 10 Merkmale, unterkat
+  "Modularer Switch (Chassis)", temp→prose, GATE PRE-REMAP; modules = Modultyp/Kompatible Serie + reused port Merkmale, NO Port-
+  Geschwindigkeit; ProVision/ProCurve prose, NOT AOS-CX). Grounded: 5400zl QuickSpec DA-12436 + zl module Install Guide 5998-4703
+  (2 findings-only agents — I wrote this entry); **8200zl operator-couriered** (IGSG + 8212 datasheet). Never port-math. **Gate GREEN
+  all 3 (viol=0), validate_dir=0, 0 customer-facing ZU_VERIFIZIEREN, 0 cross-bundle near-dup ≥0.80** (worst 0.57). Module fixes: the
+  scrub strips the "versiegelte Original-Neuware" closer sentence from the Kurzbeschreibung → short non-PoE cards + mgmt/ssm fell
+  under 40 words; lengthened the generators with grounded content (hot-swap/slot detail); + varied the 16 line-card prices (L5
+  identical-price cluster). rules.yaml +3 E3 (additions-only, now 108 switch-E3); gate_completeness +3. Hersteller=HP. Prices PHASE-1
+  ESTIMATE (flagged). **0 new Merkmal NAMES; exactly ONE new Modultyp VALUE = `System-Support-Modul` (J9095A).** **New Wertliste
+  VALUES:** Kompatible Serie `HP ProCurve 5400zl / 8200zl` (shared linecards), `HP ProCurve 5400zl` (J8726A), `HP ProCurve 8200zl`
+  (trio); Switching-Kapazität customer-safe `Chassis-Backplane-vermittelt (modellspezifischer Wert nicht ausgewiesen)` (all zl
+  linecards — per-card capacity un-published) + `Fabric-vermittelt (System-Switching-Kapazität modellspezifisch nicht ausgewiesen;
+  bis 428 Mpps Durchsatz)` (8200zl chassis — Gbit/s un-couriered). **Corrections from grounding (flagged):** (1) 5406zl = **4U not
+  7U**; (2) 5400zl J9447A/J9448A are **base-software PoE+ bundles, NOT "with Premium"** (real Premium J9532A/J9533A/J9539A/J9540A =
+  separate family not in the v1 QuickSpec → OUT-OF-SCOPE, not authored); (3) **5400zl = integrated fabric+mgmt (J8726A carries it);
+  8200zl = ONLY zl chassis with a discrete fabric (J9093A)**; (4) module corrections — J9546A = 8× 10GBASE-T no-PoE (not 24-port
+  PoE+/2SFP+), J9547A = 24× 10/100 PoE+, J9308A = 20×GbE PoE+/4SFP (not 2×10G), J8707A = X2 / J8708A = CX4, J8702A = 802.3af (not
+  PoE+); (5) **per-zl-module switching capacity is un-published by HP** → customer-safe for all. Excluded (not on list / not fully
+  spec'd, available-if-wanted): J9548A/J9549A/J9637A v2 cards, J9478A. 3-commit split, PUSHED — origin/main moved off 0b11abd
+  (confirmed via `git ls-remote`, reported to operator). Whole switch tree now **1409 SKUs**. **HPE/Aruba switch catalog COMPLETE**
+  (CX access + CX 6400/8400 chassis+modules + ArubaOS-Switch fixed 2a/2b + zl modular 2d). NEXT HPE/Aruba: non-switch lanes per the
+  MASTER MANIFEST (Comware/FlexFabric/FlexNetwork, SMB Instant On/1920S/1430) — operator's call.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
