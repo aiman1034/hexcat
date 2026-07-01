@@ -10,9 +10,10 @@ vendors:
   "Cisco":   { hersteller: "Cisco",   slug: "cisco" }
   "Juniper": { hersteller: "Juniper", slug: "juniper" }
   "Arista":  { hersteller: "Arista",  slug: "arista" }
-  "Meraki":  { hersteller: "Meraki",  slug: "meraki" }
-  # Cisco Meraki MS switches: cloud-managed line, Hersteller=Cisco (operator directive), distinct slug.
-  # Additive — does NOT change the "Meraki" entry above (that serves the built Meraki transceivers).
+  # Meraki is a Cisco brand (operator 2026-07-01, like Aruba is an HP brand) -> Hersteller=Cisco.
+  # Slug kept "meraki" so the 23 transceivers' URL-Pfad (meraki/<sku>) is unchanged; brand name in prose = "Cisco Meraki".
+  "Meraki":  { hersteller: "Cisco",   slug: "meraki" }
+  # Cisco Meraki MS switches: cloud-managed line, Hersteller=Cisco, distinct slug.
   "Cisco Meraki": { hersteller: "Cisco", slug: "cisco-meraki" }
   "Fortinet": { hersteller: "Fortinet", slug: "fortinet" }
   "MikroTik": { hersteller: "MikroTik", slug: "mikrotik" }

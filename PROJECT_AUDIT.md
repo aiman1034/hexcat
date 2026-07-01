@@ -4301,6 +4301,23 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   ZU_VERIFIZIEREN. **Judgment/flags:** ~10 pairs are genuinely byte-identical products under successor/alternate order
   numbers (e.g. R8V13A↔S0G17A, S4R54A↔S4R56A) — distinguished by the factual order-number series, NOT a fabricated spec.
   39 files changed. PUSHED — origin/main moved off c7d1d19 (confirmed via `git ls-remote`, reported).
+- **MERAKI = CISCO BRAND (operator 2026-07-01; Hersteller flip).** Operator clarified Meraki is a Cisco brand (like Aruba is
+  an HP brand), so the 23 Meraki transceivers' **Hersteller Meraki → Cisco**. rules.yaml `"Meraki"` vendor entry → `{hersteller:
+  "Cisco", slug: "meraki"}` (slug kept `meraki` so URL-Pfad `meraki/<sku>` is unchanged; the slug↔Hersteller map now resolves
+  meraki→Cisco so URL-Pfad validation still holds). Prose already said "Cisco Meraki" (69×). Applied via **pure byte replace**
+  `;Meraki;`→`;Cisco;` (23 rows in final_transceiver_output, +25 in stage3_Meraki/_audit_export) to preserve exact format.
+  NOTE: `final_transceiver_output/*` archived transceiver bundles fail the CURRENT `validate_dir` with a **pre-existing systemic
+  header-drift** ("header/columns/order/delimiter mismatch") — confirmed identical on Dell/Arista/Fortinet git-originals, NOT caused
+  by this edit and not a JTL-import problem. **OPEN (operator's call):** align the transceiver slug to `cisco-meraki` (matches the
+  Aruba→hpe-aruba precedent + the existing Cisco Meraki MS-switch entry) — deferred, changes 23 URLs.
+- **DELL SHEET — form-factor + asterisk findings (operator flagged 2026-07-01; NOT yet corrected — awaiting decision).** (a)
+  **SFP-DD is REAL** (SFP Double Density MSA; Dell S56DD-100G-FR/LR/SR1.2 = genuine 100G SFP-DD) — the operator's rename SFP-DD→SFP
+  mislabels 100G modules as 1G; recommend KEEP SFP-DD. (b) **"QSFP28-DD" is NOT a standard form-factor name** — the MSA is QSFP-DD
+  (Dell already has it, 11 SKUs); the single product **Q28DD-200G-2SR4** (200G, 8×25G) belongs in **QSFP-DD**, not QSFP28 (which is
+  single-density 4-lane 100G). (c) The trailing **`*`** on 5 Dell PIDs (400G-Q56DD-ZR+*, 800G-O112-2FR4*, AEC-O112-800G-2M*/3M*/4M*)
+  is the Dell datasheet footnote **"Supported in upcoming software release"** (verified in cached `dell-networking-optics-CURRENT.pdf`)
+  — a footnote marker, NOT part of the SKU; the real part numbers omit it. Recommend: strip `*` from those 5 Artikelnummer + note the
+  OS10-release dependency in prose. All 3 fixes deferred pending operator direction (Dell already imported with -DD removed).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
