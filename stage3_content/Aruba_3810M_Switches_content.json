@@ -1,0 +1,1541 @@
+{
+ "JL071A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL071A Managed Switch (L3) – 24× 10/100/1000BASE-T (MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL071A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL071A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (MACsec), Switching-Kapazität 160 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "5,79",
+  "versandgewicht": "7,79",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL071A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 24 Ports, betrieben unter ArubaOS-Switch. Der JL071A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL071A liefert eine Switching-Kapazität von 160 Gbit/s und bindet per 1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL071A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 24× 10/100/1000BASE-T (MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL071A eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 95,2 Mpps. Der JL071A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Über ein dediziertes Stacking-Modul lassen sich mehrere JL071A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL071A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL071A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL071A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL071A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL071A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL071A?",
+    "Der JL071A bietet insgesamt 24 Ports: 24× 10/100/1000BASE-T (MACsec)."
+   ],
+   [
+    "Unterstützt der JL071A PoE?",
+    "Nein. Der JL071A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL071A stapeln (Stacking)?",
+    "Ja. Der JL071A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3200.00"
+ },
+ "JL072A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL072A Managed Switch (L3) – 48× 10/100/1000BASE-T (MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL072A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL072A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (MACsec), Switching-Kapazität 320 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "5,99",
+  "versandgewicht": "7,99",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL072A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 48 Ports, betrieben unter ArubaOS-Switch. Der JL072A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL072A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL072A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 48× 10/100/1000BASE-T (MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL072A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JL072A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Über ein dediziertes Stacking-Modul lassen sich mehrere JL072A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL072A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL072A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL072A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL072A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL072A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL072A?",
+    "Der JL072A bietet insgesamt 48 Ports: 48× 10/100/1000BASE-T (MACsec)."
+   ],
+   [
+    "Unterstützt der JL072A PoE?",
+    "Nein. Der JL072A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL072A stapeln (Stacking)?",
+    "Ja. Der JL072A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3900.00"
+ },
+ "JL073A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL073A Managed Switch (L3) – 24× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL073A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL073A: gemanagter Layer-3-Switch mit 24× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), Switching-Kapazität 160 Gbit/s, PoE-Budget 840 W, ArubaOS-Switch.",
+  "artikelgewicht": "5,91",
+  "versandgewicht": "7,91",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL073A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 24 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL073A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL073A liefert eine Switching-Kapazität von 160 Gbit/s und bindet per 1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL073A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL073A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 24× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL073A eine Switching-Kapazität von 160 Gbit/s bei einer Weiterleitungsrate von 95,2 Mpps. Der JL073A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Über ein dediziertes Stacking-Modul lassen sich mehrere JL073A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL073A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL073A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL073A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL073A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL073A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL073A?",
+    "Der JL073A bietet insgesamt 24 Ports: 24× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL073A?",
+    "Der JL073A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL073A stapeln (Stacking)?",
+    "Ja. Der JL073A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "160 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3900.00"
+ },
+ "JL074A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL074A Managed Switch (L3) – 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL074A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL074A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), Switching-Kapazität 320 Gbit/s, PoE-Budget 1440 W, ArubaOS-Switch.",
+  "artikelgewicht": "6,18",
+  "versandgewicht": "8,18",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL074A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 48 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL074A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL074A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL074A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL074A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL074A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JL074A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Über ein dediziertes Stacking-Modul lassen sich mehrere JL074A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL074A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL074A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL074A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL074A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL074A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL074A?",
+    "Der JL074A bietet insgesamt 48 Ports: 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL074A?",
+    "Der JL074A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL074A stapeln (Stacking)?",
+    "Ja. Der JL074A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4700.00"
+ },
+ "JL075A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL075A Managed Switch (L3) – 16× SFP+ (1/10G, MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL075A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL075A: gemanagter Layer-3-Switch mit 16× SFP+ (1/10G, MACsec), Switching-Kapazität 480 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "6,02",
+  "versandgewicht": "8,02",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL075A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 16 Ports, betrieben unter ArubaOS-Switch. Der JL075A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL075A liefert eine Switching-Kapazität von 480 Gbit/s und bindet per 2 Modulschächte (optional bis 8× SFP+ 10G oder 2× 40G-QSFP+, separat) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL075A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 16× SFP+ (1/10G, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 16 Ports erreicht der JL075A eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 285,7 Mpps. Der JL075A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Über ein dediziertes Stacking-Modul lassen sich mehrere JL075A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL075A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL075A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL075A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL075A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL075A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL075A?",
+    "Der JL075A bietet insgesamt 16 Ports: 16× SFP+ (1/10G, MACsec)."
+   ],
+   [
+    "Unterstützt der JL075A PoE?",
+    "Nein. Der JL075A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL075A stapeln (Stacking)?",
+    "Ja. Der JL075A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "16"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× SFP+ (1/10G, MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "2 Modulschächte (optional bis 8× SFP+ 10G oder 2× 40G-QSFP+, separat)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "285,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5200.00"
+ },
+ "JL076A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL076A Managed Switch (L3) – 40× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W, MACsec), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL076A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL076A: gemanagter Layer-3-Switch mit 40× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W, MACsec), Switchi",
+  "artikelgewicht": "6,17",
+  "versandgewicht": "8,17",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL076A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 48 Ports inklusive HPE-Smart-Rate-Multi-Gigabit-Ports, betrieben unter ArubaOS-Switch. Der JL076A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL076A liefert eine Switching-Kapazität von 480 Gbit/s und bindet per 1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL076A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL076A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 40× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL076A eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 273,8 Mpps. Der JL076A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Über ein dediziertes Stacking-Modul lassen sich mehrere JL076A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL076A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL076A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL076A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL076A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL076A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL076A?",
+    "Der JL076A bietet insgesamt 48 Ports: 40× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W, MACsec)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL076A?",
+    "Der JL076A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL076A stapeln (Stacking)?",
+    "Ja. Der JL076A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "40× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W, MACsec)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (HPE Smart Rate)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "273,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5500.00"
+ },
+ "JL428A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL428A Managed Switch (L3) – 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL428A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL428A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), Switching-Kapazität 320 Gbit/s, PoE-Budget 680 W, ArubaOS-Switch.",
+  "artikelgewicht": "6,18",
+  "versandgewicht": "8,18",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL428A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 52 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL428A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL428A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) an das Netz an. Über Power over Ethernet versorgt der JL428A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL428A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 52 Ports erreicht der JL428A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JL428A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Über ein dediziertes Stacking-Modul lassen sich mehrere JL428A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL428A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL428A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (1× X372 680 W AC enthalten, redundant erweiterbar). Unter ArubaOS-Switch bietet der JL428A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL428A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL428A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL428A?",
+    "Der JL428A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL428A?",
+    "Der JL428A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 680 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL428A stapeln (Stacking)?",
+    "Ja. Der JL428A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (1/10G, über enthaltenes JL083A-Modul)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 680 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (1× X372 680 W AC enthalten, redundant erweiterbar)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5000.00"
+ },
+ "JL429A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL429A Managed Switch (L3) – 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL429A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL429A: gemanagter Layer-3-Switch mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), Switching-Kapazität 320 Gbit/s, PoE-Budget 1050 W, ArubaOS-Switch.",
+  "artikelgewicht": "6,18",
+  "versandgewicht": "8,18",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL429A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 52 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL429A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL429A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) an das Netz an. Über Power over Ethernet versorgt der JL429A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL429A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 52 Ports erreicht der JL429A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JL429A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Über ein dediziertes Stacking-Modul lassen sich mehrere JL429A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL429A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL429A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (1× X372 1.050 W AC enthalten, redundant erweiterbar). Unter ArubaOS-Switch bietet der JL429A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL429A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL429A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL429A?",
+    "Der JL429A bietet insgesamt 52 Ports: 48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) (Uplink)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL429A?",
+    "Der JL429A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1050 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL429A stapeln (Stacking)?",
+    "Ja. Der JL429A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000BASE-T (Class 4 PoE+, 30 W, MACsec) + 4× SFP+ (1/10G, über enthaltenes JL083A-Modul) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× SFP+ (1/10G, über enthaltenes JL083A-Modul)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1050 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (1× X372 1.050 W AC enthalten, redundant erweiterbar)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5400.00"
+ },
+ "JL430A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843019",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 3810M JL430A Managed Switch (L3) – 16× SFP+ (1/10G, fest, MACsec) + 8× SFP+ (1/10G, über zwei enthaltene JL083A-Module), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 3810M JL430A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 3810M JL430A: gemanagter Layer-3-Switch mit 16× SFP+ (1/10G, fest, MACsec), Switching-Kapazität 480 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "6,02",
+  "versandgewicht": "8,02",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 3810M JL430A ist ein gemanagter Layer-3-Switch der Aruba-3810M-Serie mit 24 Ports, betrieben unter ArubaOS-Switch. Der JL430A liefert mit Backplane-Stapelung und durchgängigem MACsec chassisähnliche Ausfallsicherheit.</p><p>Der JL430A liefert eine Switching-Kapazität von 480 Gbit/s und bindet per 8× SFP+ (1/10G, über zwei enthaltene JL083A-Module) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 3810M JL430A ist ein gemanagter Layer-3-Switch aus der Aruba-3810M-Familie mit 16× SFP+ (1/10G, fest, MACsec), ausgelegt für die Layer-3-Campus-Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL430A eine Switching-Kapazität von 480 Gbit/s bei einer Weiterleitungsrate von 285,7 Mpps. Der JL430A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Über ein dediziertes Stacking-Modul lassen sich mehrere JL430A per Backplane-Stacking (bis 336 Gbit/s) zu einem stapelbaren Switch mit chassisähnlicher Ausfallsicherheit zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL430A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL430A übernehmen Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear) sowie 2 Hot-Swap-Netzteilschächte (1× X371 250 W AC enthalten, redundant erweiterbar). Unter ArubaOS-Switch bietet der JL430A Layer-3-Routing (OSPF, BGP, IPv6, VRRP, PIM) unter ArubaOS-Switch mit durchgängigem MACsec, VLANs, ACLs, QoS und Robust-Stacking. Geliefert wird der JL430A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL430A ist HPE-Aruba-Networking-Original-Neuware der Aruba-3810M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL430A?",
+    "Der JL430A bietet insgesamt 24 Ports: 16× SFP+ (1/10G, fest, MACsec) + 8× SFP+ (1/10G, über zwei enthaltene JL083A-Module) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL430A PoE?",
+    "Nein. Der JL430A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL430A stapeln (Stacking)?",
+    "Ja. Der JL430A unterstützt Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× SFP+ (1/10G, fest, MACsec) + 8× SFP+ (1/10G, über zwei enthaltene JL083A-Module) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "8× SFP+ (1/10G, über zwei enthaltene JL083A-Module)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "480 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "285,7 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (1× X371 250 W AC enthalten, redundant erweiterbar)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (austauschbarer Lüftereinschub JL088A, front-to-side/rear)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (dediziertes Stacking-Modul, bis 336 Gbit/s)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Aggregation (ArubaOS-Switch) mit Backplane-Stacking und durchgängigem MACsec"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843019",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5600.00"
+ }
+}

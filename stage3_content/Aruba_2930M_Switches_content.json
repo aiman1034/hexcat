@@ -1,0 +1,1370 @@
+{
+ "JL319A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL319A Managed Switch (L3) – 20× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL319A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL319A: gemanagter Layer-3-Switch mit 20× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), Switching-Kapazität 128 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "4,45",
+  "versandgewicht": "6,45",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL319A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 24 Ports, betrieben unter ArubaOS-Switch. Der JL319A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL319A liefert eine Switching-Kapazität von 128 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL319A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 20× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL319A eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,2 Mpps. Der JL319A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL319A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL319A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des JL319A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL319A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL319A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL319A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL319A?",
+    "Der JL319A bietet insgesamt 24 Ports: 20× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP)."
+   ],
+   [
+    "Unterstützt der JL319A PoE?",
+    "Nein. Der JL319A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL319A stapeln (Stacking)?",
+    "Ja. Der JL319A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2100.00"
+ },
+ "JL320A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL320A Managed Switch (L3) – 20× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL320A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL320A: gemanagter Layer-3-Switch mit 20× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), Switching-Kapazität 128 Gbit/s, PoE-B",
+  "artikelgewicht": "4,50",
+  "versandgewicht": "6,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL320A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 24 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL320A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL320A liefert eine Switching-Kapazität von 128 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL320A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL320A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 20× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL320A eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95,2 Mpps. Der JL320A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL320A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL320A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des JL320A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL320A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL320A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL320A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL320A?",
+    "Der JL320A bietet insgesamt 24 Ports: 20× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL320A?",
+    "Der JL320A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL320A stapeln (Stacking)?",
+    "Ja. Der JL320A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "20× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95,2 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2600.00"
+ },
+ "JL321A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL321A Managed Switch (L3) – 44× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL321A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL321A: gemanagter Layer-3-Switch mit 44× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), Switching-Kapazität 176 Gbit/s, ohne PoE, ArubaOS-Switch.",
+  "artikelgewicht": "4,60",
+  "versandgewicht": "6,60",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL321A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 48 Ports, betrieben unter ArubaOS-Switch. Der JL321A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL321A liefert eine Switching-Kapazität von 176 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL321A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 44× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL321A eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der JL321A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL321A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL321A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des JL321A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL321A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL321A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL321A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL321A?",
+    "Der JL321A bietet insgesamt 48 Ports: 44× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP)."
+   ],
+   [
+    "Unterstützt der JL321A PoE?",
+    "Nein. Der JL321A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL321A stapeln (Stacking)?",
+    "Ja. Der JL321A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "44× 10/100/1000BASE-T + 4× Combo (10/100/1000BASE-T oder SFP)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "2600.00"
+ },
+ "JL322A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL322A Managed Switch (L3) – 44× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL322A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL322A: gemanagter Layer-3-Switch mit 44× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), Switching-Kapazität 176 Gbit/s, PoE-B",
+  "artikelgewicht": "4,65",
+  "versandgewicht": "6,65",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL322A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 48 Ports mit PoE+, betrieben unter ArubaOS-Switch. Der JL322A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL322A liefert eine Switching-Kapazität von 176 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL322A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL322A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 44× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL322A eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der JL322A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL322A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL322A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des JL322A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL322A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL322A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL322A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL322A?",
+    "Der JL322A bietet insgesamt 48 Ports: 44× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL322A?",
+    "Der JL322A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL322A stapeln (Stacking)?",
+    "Ja. Der JL322A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "44× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3200.00"
+ },
+ "JL323A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL323A Managed Switch (L3) – 36× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL323A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL323A: gemanagter Layer-3-Switch mit 36× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G,",
+  "artikelgewicht": "4,45",
+  "versandgewicht": "6,45",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL323A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 48 Ports inklusive HPE-Smart-Rate-Multi-Gigabit-Ports, betrieben unter ArubaOS-Switch. Der JL323A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL323A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL323A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL323A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 36× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der JL323A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der JL323A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL323A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL323A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des JL323A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL323A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL323A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL323A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL323A?",
+    "Der JL323A bietet insgesamt 48 Ports: 36× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL323A?",
+    "Der JL323A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL323A stapeln (Stacking)?",
+    "Ja. Der JL323A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "36× 10/100/1000BASE-T (Class 4 PoE+, 30 W) + 4× Combo (10/100/1000BASE-T PoE+ oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 4 PoE+, 30 W)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (HPE Smart Rate)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3800.00"
+ },
+ "JL324A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M JL324A Managed Switch (L3) – 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 4 PoE+, 30 W), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M JL324A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M JL324A: gemanagter Layer-3-Switch mit 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 4 PoE+, 30 W), Switching-Kapazität 320 Gbit/s, PoE-Budget 840 W, ArubaOS-Switch",
+  "artikelgewicht": "4,50",
+  "versandgewicht": "6,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M JL324A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 24 Ports inklusive HPE-Smart-Rate-Multi-Gigabit-Ports, betrieben unter ArubaOS-Switch. Der JL324A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der JL324A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der JL324A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M JL324A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 4 PoE+, 30 W), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der JL324A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der JL324A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere JL324A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der JL324A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL324A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der JL324A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der JL324A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL324A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL324A?",
+    "Der JL324A bietet insgesamt 24 Ports: 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 4 PoE+, 30 W)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des JL324A?",
+    "Der JL324A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL324A stapeln (Stacking)?",
+    "Ja. Der JL324A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 4 PoE+, 30 W)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5 GbE (HPE Smart Rate)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 840 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3400.00"
+ },
+ "R0M67A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M R0M67A Managed Switch (L3) – 36× 10/100/1000BASE-T (Class 6 PoE, 60 W) + 4× Combo (10/100/1000BASE-T Class 6 oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 6 PoE, 60 W), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M R0M67A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M R0M67A: gemanagter Layer-3-Switch mit 36× 10/100/1000BASE-T (Class 6 PoE, 60 W) + 4× Combo (10/100/1000BASE-T Class 6 oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10",
+  "artikelgewicht": "4,49",
+  "versandgewicht": "6,49",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M R0M67A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 48 Ports inklusive HPE-Smart-Rate-Multi-Gigabit-Ports, betrieben unter ArubaOS-Switch. Der R0M67A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der R0M67A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der R0M67A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M R0M67A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 36× 10/100/1000BASE-T (Class 6 PoE, 60 W) + 4× Combo (10/100/1000BASE-T Class 6 oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 6 PoE, 60 W), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 48 Ports erreicht der R0M67A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der R0M67A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere R0M67A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der R0M67A im Temperaturbereich 0 bis 55 °C; Kühlung und Stromversorgung des R0M67A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der R0M67A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der R0M67A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R0M67A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R0M67A?",
+    "Der R0M67A bietet insgesamt 48 Ports: 36× 10/100/1000BASE-T (Class 6 PoE, 60 W) + 4× Combo (10/100/1000BASE-T Class 6 oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 6 PoE, 60 W)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des R0M67A?",
+    "Der R0M67A stellt Ja (IEEE 802.3bt Class 6, 60 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der R0M67A stapeln (Stacking)?",
+    "Ja. Der R0M67A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "48"
+   ],
+   [
+    "Port-Konfiguration",
+    "36× 10/100/1000BASE-T (Class 6 PoE, 60 W) + 4× Combo (10/100/1000BASE-T Class 6 oder SFP) + 8× HPE Smart Rate (100M/1/2.5/5/10G, Class 6 PoE, 60 W)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5/10 GbE (HPE Smart Rate)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3bt Class 6, 60 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 55 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "4200.00"
+ },
+ "R0M68A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00004551enw",
+   "verifiziert_am": "2026-06-30"
+  },
+  "artikelname": "HPE Aruba Networking 2930M R0M68A Managed Switch (L3) – 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 6 PoE, 60 W), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE Aruba 2930M R0M68A Switch | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 2930M R0M68A: gemanagter Layer-3-Switch mit 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 6 PoE, 60 W), Switching-Kapazität 320 Gbit/s, PoE-Budget 1440 W, ArubaOS-Switch",
+  "artikelgewicht": "4,52",
+  "versandgewicht": "6,52",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 2930M R0M68A ist ein gemanagter Layer-3-Switch der Aruba-2930M-Serie mit 24 Ports inklusive HPE-Smart-Rate-Multi-Gigabit-Ports, betrieben unter ArubaOS-Switch. Der R0M68A skaliert mit modularen Uplinks und VSF-Stapelung vom Access bis in die Aggregation.</p><p>Der R0M68A liefert eine Switching-Kapazität von 320 Gbit/s und bindet per 1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat) an das Netz an. Über Power over Ethernet versorgt der R0M68A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 2930M R0M68A ist ein gemanagter Layer-3-Switch aus der Aruba-2930M-Familie mit 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 6 PoE, 60 W), ausgelegt für den Layer-3-Campus-Access und die Aggregation und betrieben unter ArubaOS-Switch (ProVision).",
+   "Mit 24 Ports erreicht der R0M68A eine Switching-Kapazität von 320 Gbit/s bei einer Weiterleitungsrate von 112 Mpps. Der R0M68A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Per VSF-Backplane-Stacking (Ring bis zehn Einheiten, 100 Gbit/s je Switch) lassen sich mehrere R0M68A zu einem logischen Switch zusammenfassen.",
+   "Im Formfaktor 19-Zoll-Rackmontage (1 HE) arbeitet der R0M68A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des R0M68A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt). Unter ArubaOS-Switch bietet der R0M68A Layer-3-Routing (statisch, RIP, OSPF) unter ArubaOS-Switch, dazu VLANs, ACLs, QoS, LACP, Spanning Tree und Tunneled-Node. Geliefert wird der R0M68A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "Aruba AirWave"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R0M68A ist HPE-Aruba-Networking-Original-Neuware der Aruba-2930M-Serie – versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R0M68A?",
+    "Der R0M68A bietet insgesamt 24 Ports: 24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 6 PoE, 60 W)."
+   ],
+   [
+    "Wie hoch ist das PoE-Budget des R0M68A?",
+    "Der R0M68A stellt Ja (IEEE 802.3bt Class 6, 60 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der R0M68A stapeln (Stacking)?",
+    "Ja. Der R0M68A unterstützt Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul) und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "24"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× HPE Smart Rate 100M/1/2.5/5G-BASE-T (Class 6 PoE, 60 W)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100M/1/2.5/5 GbE (HPE Smart Rate)"
+   ],
+   [
+    "Uplink-Ports",
+    "1 Uplink-Modulschacht (optional 4× SFP+ 10G, 40G-QSFP+ oder 4× HPE Smart Rate, separat)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3bt Class 6, 60 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "320 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "112 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 erforderlich, redundant, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "Backplane-Stacking (VSF, Ring bis 10 Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Layer-3-Campus-Access und -Aggregation (ArubaOS-Switch) mit VSF-Backplane-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00004551enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3800.00"
+ }
+}

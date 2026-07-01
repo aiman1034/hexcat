@@ -4165,6 +4165,28 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (b) 3810M CTO bundles JL428-430A keep-vs-exclude (base=6); (c) shared-zl single-bundle; (d) apply the 5 seed corrections; +
   8200zl needs a clean OEM-QuickSpec confirmation (reseller-corroborated only). Manifest: `BATCH_ARUBAOS_PROCURVE_PHASE1_MANIFEST.md`.
   NEXT (post-approval): Phase 2 authoring — fixed on the 15-Merkmal set, zl chassis/modules on the validated CX chassis/module schema.
+- **HPE/Aruba SWITCHES — ArubaOS-Switch PHASE 2a AUTHORED (current fixed families; 2026-07-01; GREEN).** Authored all **59 SKUs**
+  across the 6 current ArubaOS-Switch fixed families on the 15-Merkmal set: **2530 (17) · 2540 (4) · 2920 (5) · 2930F (16) ·
+  2930M (8) · 3810M (9 = 6 base + 3 CTO bundles JL428A/429A/430A, kept per operator)**. Driver `_scratch/aruba_os_switch_build.py`
+  (SPECS per-PID + FAM per-family; author() emits ArubaOS-Switch/ProVision German prose, no "CX"). Grounded cell-by-cell from the
+  cached QuickSpecs Models tables + AOS-S 16.x RN (3 grounding agents, findings-only — I wrote this entry): per-model SwK/Durchsatz/
+  PoE-budget read from the published table, never port-math. **Gate GREEN all 6 (viol=0), validate_dir=0, 0 customer-facing
+  ZU_VERIFIZIEREN, 0 cross-bundle near-dup ≥0.80** (2530↔2540 Gigabit-PoE+-SFP+ collision at 0.81 fixed by swapping the shared
+  "übernimmt den Campus-Access" sentence for a per-family positioning sentence with distinct vocabulary → worst now 0.69).
+  **rules.yaml** (additions-only): +6 E3 `Aruba 2530/2540/2920/2930F/2930M/3810M Switches` (E1=Netzwerk & Infrastruktur, E2=Switches;
+  now 95 switch-E3). **gate_completeness.yaml:** +6 records (17/4/5/16/8/9, all captured==enumerated, flagged=[]). Hersteller=HP.
+  Prices PHASE-1 ESTIMATE (flagged in Verification_Log). **0 new Merkmal NAMES.** **New Wertliste VALUES:** Stacking — `Backplane-
+  Stacking (bis 4 Einheiten, 40 Gbit/s je Stacking-Port; optionales Stacking-Modul)` (2920), `Backplane-Stacking (VSF, Ring bis 10
+  Einheiten, 100 Gbit/s je Switch; optionales Stacking-Modul)` (2930M), `Backplane-Stacking (dediziertes Stacking-Modul, bis 336
+  Gbit/s)` (3810M), `VSF (Virtual Switching Framework, bis 8 Einheiten)` (2930F), `Kein (Standalone; Single-IP-Virtual-Stacking bis
+  16 Einheiten…)` (2530), `Kein (eigenständiger Access-Switch)` (2540); PoE — Class-6 tier `Ja (IEEE 802.3bt Class 6, 60 W/Port,
+  Budget 1440 W)` (2930M R0M67A/R0M68A) + 740W tier `…Budget 740 W` (2930F JL557-559A, 2920 J9836A); Port-Konfiguration/Portanzahl —
+  `16` for the 12-port JL693A (12× PoE+ + 2× 1G + 2× SFP+). **Two manifest-shorthand reconciliations (flagged to operator):** (1)
+  **JL693A Portanzahl=16, not the manifest's "12"** — the house rule counts fixed uplinks (JL258A=10, JL253A=28), and the S.3 gate
+  requires Portanzahl==ports-in-Port-Konfiguration; "12" was the headline PoE-port count. (2) modeled the JL693A "2G/2SFP+" as 2× 1G
+  RJ45 (access) + 2× SFP+ (uplink), split for precision. **JL557A/JL558A confirmed = 48G/740W non-TAA; TAA members = JL559A + JL692A
+  only** (agent-corrected datasheet caption errors). Whole switch tree now **1329 SKUs**. NEXT: ArubaOS-Switch Phase 2b (legacy
+  ProCurve fixed tail, needs the 4 open decisions) + the modular zl chassis/modules on the CX chassis/module schema.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
