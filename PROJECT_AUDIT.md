@@ -4323,6 +4323,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   `*` from the 5 PIDs across every Dell file (Main/Attributes/Prices/FAQ/PlatformFlag/Condition/Verification_Log), URL-Pfad/
   Artikelnummer kept consistent. rules.yaml form-factor allowlist left intact (QSFP28-DD token now unused by Dell; harmless).
   Operator re-imports the affected Dell rows. Pushed.
+- **HPE COMWARE + SMB SWITCH LINES — PHASE 1 ENUMERATION MANIFEST (operator 2026-07-01; MANIFEST ONLY, authored NOTHING,
+  output/ + config/ untouched).** Established the *measured* OEM-grounded denominator for FlexFabric (Comware DC), FlexNetwork
+  (Comware campus/core) and SMB (Instant On + OfficeConnect) via 5 parallel research agents restricted to OEM docs (QuickSpecs/
+  datasheets/EoS notices; Jina proxy + HPE-hosted PDF mirrors for Akamai-blocked hosts; reseller data excluded). **DELIVERABLE:
+  `BATCH_HPE_COMWARE_SMB_PHASE1_MANIFEST.md` (repo root).** Agent grounding detail in `_scratch/comware_smb_phase1_grounding.md`.
+  **Result ≈ 350–360 measured PIDs across 35 families** (distinct-product basis: FlexFabric-fixed 33, FlexNetwork-fixed 37, SMB 56,
+  + 33 chassis + ~6 module pools). Per-lane: **FlexFabric-fixed** 10 fams / 33 distinct / ~55 orderable (5700/5710/5900+CP/5920/5930/
+  5940/5945/5950/5960/5980; negatives 5990/5970/5701/5712; **5920 + 5965 exist, operator-omitted → flagged**); **FlexFabric-modular**
+  12900E(7ch+55mod) · 7900(4ch+5mod) · 12500(6ch+pool-BLOCKED) · 11900(1ch+~9mod); **FlexNetwork-fixed** 7 fams / 37 core / 44
+  (5120v3/5130EI/HI/5140EI/HI/5510HI/5520HI); **FlexNetwork-modular** 7500(7ch+51mod) · 10500(8ch+45mod) ≈107 unique (**disambig:
+  ONLY 7500+10500 are FlexNetwork; 11900/12500/12900E are FlexFabric**); **SMB** Instant On 1960/1930/1830/1430=25 (current) +
+  OfficeConnect 1405-1420/1620/1820/1920S/1950=31 (**ALL EOL**). **SCHEMA:** all fixed + all SMB fit the 15-Merkmal set (0 new NAME);
+  modules ride Class-B lane (new Modultyp VALUES only). **🚨 TWO new-Merkmal-NAME candidates FLAGGED (not invented, operator must
+  rule — gates modular authoring):** `Fabric-Steckplätze` (fabric-slot count ≠ I/O-slot count) + `Modul-Generation` (F/H/H2/X interop
+  gating). New VALUES: IRF, CP-FCoE, 25G/SFP28, 200G/QSFP56, 400G/QSFP-DD, mGig; Modultyp MPU/Route-Processor, Fabric/MPU-kombiniert,
+  Service-Modul, Träger/Sub-slot; Unmanaged cascade (SMB). **PENDING COURIER (Akamai-blocked, 3 pools):** FlexFabric 7900 module
+  pool (c04293387 retired, ~2-4), FlexFabric 12500 full module pool (c04111591 blocked, ~15-30 — largest gap), 10500-TAA descriptors
+  (only if TAA lane built); + re-verify 12900E JH252A/JH257A/JH422A + 5965 a50009252enw before shipping. **STOPPED for operator review**
+  of denominator + E3/schema/scope decisions (§8: new NAMES, VALUES, 5920/5965 scope, SMB-EOL scope, legacy-within-family, variants
+  basis, branding, courier order) before any Phase-2 authoring. Pushed.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
