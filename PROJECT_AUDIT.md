@@ -4239,6 +4239,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (confirmed via `git ls-remote`, reported to operator). Whole switch tree now **1409 SKUs**. **HPE/Aruba switch catalog COMPLETE**
   (CX access + CX 6400/8400 chassis+modules + ArubaOS-Switch fixed 2a/2b + zl modular 2d). NEXT HPE/Aruba: non-switch lanes per the
   MASTER MANIFEST (Comware/FlexFabric/FlexNetwork, SMB Instant On/1920S/1430) — operator's call.
+- **HPE/Aruba SWITCHES — ArubaOS-Switch PHASE 2c AUTHORED (5400R zl2, the skipped current modular flagship; 2026-07-01; GREEN +
+  PUSHED).** Authored **22 SKUs** across 2 E3 on the VALIDATED CX chassis/module schema (commit 97d98a3) reused verbatim: **Aruba
+  5400R zl2 Switches (11 chassis)** + **Aruba 5400R zl2 Modules (11 = 10 line cards + J9827A mgmt)**. Driver
+  `_scratch/aruba_5400r_zl2_build.py` (ArubaOS-Switch prose, current-gen; NO discrete fabric — forwarding integrated in the J9827A
+  management module, up to 2 redundant for Nonstop-Switching → prose). DISTINCT from the legacy 5400zl v1 (Phase 2d) — separate E3,
+  not merged. Grounded: cached 5400R QuickSpec c04293383 (chassis; 11 = v3 No-PSU J9821/9822/JL001/JL002/JL003/JL095A + v2 J9823/
+  9824/9825/9868A + **J9826A RN-only, the seed missed**) + **AOS-S 16.11 RN authoritative for the modules** (agent cross-checked vs
+  the QuickSpec column-scramble — clean 3-source agreement, 0 scramble in the config section used). **Per-chassis SwK is the 5400R's
+  OWN figure, never port-math, never the 6400's 2,8 Tbit/s:** 5406R = 960 Gbit/s R/S (Fabric 1.015, 571,4 Mpps); 5412R = 1.920 Gbit/s
+  R/S (Fabric 2.030, 1.142,8 Mpps). **Gate GREEN both (viol=0, PRE-remap for the >50kg ceiling — all ≤20,5 kg), validate_dir=0, 0
+  customer-facing ZU_VERIFIZIEREN, 0 cross-bundle near-dup ≥0.80** (worst 0.54, J9989A↔legacy-zl J9535A combo cards — the MACsec/
+  ArubaOS prose keeps the pools apart). One chassis boilerplate FAIL fixed (PID-welded the "bis zu zwei Management-Module redundant"
+  sentence). rules.yaml +2 E3 (additions-only, now 110 switch-E3); gate_completeness +2. Hersteller=HP. Prices PHASE-1 ESTIMATE
+  (flagged). **0 new Merkmal NAMES; NO new Modultyp value** (reused Linecard/Management-Modul). **New Wertliste VALUES:** Kompatible
+  Serie `Aruba 5400R zl2`; per-chassis SwK strings (960/1.920 Gbit/s); customer-safe module SwK `Chassis-Fabric-vermittelt
+  (modellspezifischer Wert nicht ausgewiesen)`. **6 module roster-guess corrections from the RN (flagged):** J9988A = 24× SFP 1G
+  (not 20p PoE+/4SFP+), J9991A = 20× GbE + 4× SmartRate PoE+ (not 24p 10GBASE-T), J9992A = 20× GbE PoE+ + 1× 40G QSFP+ (not 24p 10G
+  SFP+), J9995A = 8× SmartRate 10GBASE-T (not 12p 10G SFP+), J9996A = 2× 40G QSFP+ (not 20p PoE+/4SFP+), J9989A = 12×PoE+/12×SFP combo.
+  **All zl2 PoE cards = 802.3at PoE+ (30W), NONE 802.3bt/Class 6** (SmartRate ports = 802.3bz 2.5/5G); per-module capacity un-published
+  by HP → customer-safe. 3-commit split, PUSHED — origin/main moved off c5eb448 (confirmed via `git ls-remote`, reported to operator).
+  Whole switch tree now **1431 SKUs**. **HPE/Aruba switch catalog now FULLY COMPLETE incl. the current modular flagship.**
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

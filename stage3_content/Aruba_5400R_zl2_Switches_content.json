@@ -1,0 +1,1443 @@
+{
+ "J9821A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R zl2 Switch J9821A modulares Basissystem-Chassis (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – Leergehäuse mit sechs Modul-Steckplätzen, alle Steckplätze frei",
+  "titel_tag": "Aruba 5406R zl2 Switch J9821A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R zl2 Switch (J9821A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. Leergehäuse mit sechs Modul-Steckplätzen, alle Steckplätze frei. Neu und versiegelt.",
+  "artikelgewicht": "11,11",
+  "versandgewicht": "13,11",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R zl2 Switch (J9821A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9821A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9821A wird als Basissystem-Chassis geliefert (Leergehäuse mit sechs Modul-Steckplätzen, alle Steckplätze frei); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R zl2 Switch (J9821A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9821A wird als Basissystem-Chassis geliefert: Leergehäuse mit sechs Modul-Steckplätzen, alle Steckplätze frei.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9821A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9821A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der J9821A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9821A. Das angegebene Artikelgewicht des J9821A ist das Grundgewicht des Chassis (ohne Linecards und Netzteile). Geliefert wird der J9821A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9821A?",
+    "Der J9821A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9821A?",
+    "Der J9821A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9821A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9821A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9821A ein originales HPE-Produkt?",
+    "Ja. Der J9821A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "18000.00"
+ },
+ "J9822A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5412R zl2 Switch J9822A modulares Basissystem-Chassis (12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 7 HE) – Leergehäuse mit zwölf Modul-Steckplätzen, alle Steckplätze frei",
+  "titel_tag": "Aruba 5412R zl2 Switch J9822A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5412R zl2 Switch (J9822A): modulares 7-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. Leergehäuse mit zwölf Modul-Steckplätzen, alle Steckplätze frei. Neu und versiegelt.",
+  "artikelgewicht": "17,28",
+  "versandgewicht": "19,28",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5412R zl2 Switch (J9822A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9822A erreicht eine Switching-Kapazität von 1.920 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9822A wird als Basissystem-Chassis geliefert (Leergehäuse mit zwölf Modul-Steckplätzen, alle Steckplätze frei); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5412R zl2 Switch (J9822A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9822A wird als Basissystem-Chassis geliefert: Leergehäuse mit zwölf Modul-Steckplätzen, alle Steckplätze frei.",
+   "Mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9822A eine Switching-Kapazität von 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9822A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (7 HE) arbeitet der J9822A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9832A, Airflow front-to-back) und bis zu 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9822A. Das angegebene Artikelgewicht des J9822A ist das Grundgewicht des Chassis (ohne Linecards und Netzteile). Geliefert wird der J9822A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9822A?",
+    "Der J9822A bietet 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9822A?",
+    "Der J9822A erreicht 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9822A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9822A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9822A ein originales HPE-Produkt?",
+    "Ja. Der J9822A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (7 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9832A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "26000.00"
+ },
+ "J9823A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-44G-PoE+/2SFP+ v2 zl2 Switch J9823A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 J9823A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-44G-PoE+/2SFP+ v2 zl2 Switch (J9823A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "12,75",
+  "versandgewicht": "14,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-44G-PoE+/2SFP+ v2 zl2 Switch (J9823A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9823A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9823A wird als vorkonfiguriertes Switch-Bundle geliefert (44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-44G-PoE+/2SFP+ v2 zl2 Switch (J9823A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9823A wird als vorkonfiguriertes Switch-Bundle geliefert: 44 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9823A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9823A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der J9823A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9823A. Das angegebene Artikelgewicht des J9823A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9823A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9823A?",
+    "Der J9823A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9823A?",
+    "Der J9823A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9823A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9823A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9823A ein originales HPE-Produkt?",
+    "Ja. Der J9823A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24000.00"
+ },
+ "J9824A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-44G-PoE+/4SFP v2 zl2 Switch J9824A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – 44 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 J9824A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-44G-PoE+/4SFP v2 zl2 Switch (J9824A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 44 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "11,88",
+  "versandgewicht": "13,88",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-44G-PoE+/4SFP v2 zl2 Switch (J9824A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9824A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9824A wird als vorkonfiguriertes Switch-Bundle geliefert (44 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-44G-PoE+/4SFP v2 zl2 Switch (J9824A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9824A wird als vorkonfiguriertes Switch-Bundle geliefert: 44 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9824A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9824A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der J9824A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9824A. Das angegebene Artikelgewicht des J9824A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9824A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9824A?",
+    "Der J9824A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9824A?",
+    "Der J9824A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9824A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9824A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9824A ein originales HPE-Produkt?",
+    "Ja. Der J9824A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "23000.00"
+ },
+ "J9825A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5412R-92G-PoE+/2SFP+ v2 zl2 Switch J9825A modulares vorkonfiguriertes Switch-Bundle (12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 7 HE) – 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 J9825A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5412R-92G-PoE+/2SFP+ v2 zl2 Switch (J9825A): modulares 7-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "20,50",
+  "versandgewicht": "22,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5412R-92G-PoE+/2SFP+ v2 zl2 Switch (J9825A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9825A erreicht eine Switching-Kapazität von 1.920 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9825A wird als vorkonfiguriertes Switch-Bundle geliefert (92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5412R-92G-PoE+/2SFP+ v2 zl2 Switch (J9825A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9825A wird als vorkonfiguriertes Switch-Bundle geliefert: 92 Gigabit-PoE+-Ports und zwei 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze.",
+   "Mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9825A eine Switching-Kapazität von 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9825A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (7 HE) arbeitet der J9825A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9832A, Airflow front-to-back) und bis zu 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9825A. Das angegebene Artikelgewicht des J9825A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9825A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9825A?",
+    "Der J9825A bietet 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9825A?",
+    "Der J9825A erreicht 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9825A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9825A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9825A ein originales HPE-Produkt?",
+    "Ja. Der J9825A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (7 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9832A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "34000.00"
+ },
+ "J9826A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5412R-92G-PoE+/4SFP v2 zl2 Switch J9826A modulares vorkonfiguriertes Switch-Bundle (12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 7 HE) – 92 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, acht freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 J9826A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5412R-92G-PoE+/4SFP v2 zl2 Switch (J9826A): modulares 7-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 92 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, acht freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "20,50",
+  "versandgewicht": "22,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5412R-92G-PoE+/4SFP v2 zl2 Switch (J9826A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9826A erreicht eine Switching-Kapazität von 1.920 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9826A wird als vorkonfiguriertes Switch-Bundle geliefert (92 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, acht freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5412R-92G-PoE+/4SFP v2 zl2 Switch (J9826A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9826A wird als vorkonfiguriertes Switch-Bundle geliefert: 92 Gigabit-PoE+-Ports und vier SFP-Ports vorinstalliert, acht freie Steckplätze.",
+   "Mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9826A eine Switching-Kapazität von 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9826A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (7 HE) arbeitet der J9826A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9832A, Airflow front-to-back) und bis zu 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9826A. Das angegebene Artikelgewicht des J9826A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9826A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9826A?",
+    "Der J9826A bietet 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9826A?",
+    "Der J9826A erreicht 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9826A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9826A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9826A ein originales HPE-Produkt?",
+    "Ja. Der J9826A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (7 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9832A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "35000.00"
+ },
+ "J9868A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-8XGT/8SFP+ v2 zl2 Switch J9868A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – acht 10GBASE-T-Ports und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 J9868A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-8XGT/8SFP+ v2 zl2 Switch (J9868A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. acht 10GBASE-T-Ports und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "12,75",
+  "versandgewicht": "14,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-8XGT/8SFP+ v2 zl2 Switch (J9868A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der J9868A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der J9868A wird als vorkonfiguriertes Switch-Bundle geliefert (acht 10GBASE-T-Ports und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-8XGT/8SFP+ v2 zl2 Switch (J9868A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der J9868A wird als vorkonfiguriertes Switch-Bundle geliefert: acht 10GBASE-T-Ports und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der J9868A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im J9868A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der J9868A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den J9868A. Das angegebene Artikelgewicht des J9868A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der J9868A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der J9868A?",
+    "Der J9868A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des J9868A?",
+    "Der J9868A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der J9868A ein diskretes Fabric-Modul?",
+    "Nein. Beim J9868A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der J9868A ein originales HPE-Produkt?",
+    "Ja. Der J9868A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "26000.00"
+ },
+ "JL001A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5412R-92GT-PoE+/4SFP+ v3 zl2 Switch JL001A modulares vorkonfiguriertes Switch-Bundle (12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 7 HE) – 92 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 JL001A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5412R-92GT-PoE+/4SFP+ v3 zl2 Switch (JL001A): modulares 7-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 92 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "20,50",
+  "versandgewicht": "22,50",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5412R-92GT-PoE+/4SFP+ v3 zl2 Switch (JL001A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der JL001A erreicht eine Switching-Kapazität von 1.920 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der JL001A wird als vorkonfiguriertes Switch-Bundle geliefert (92 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5412R-92GT-PoE+/4SFP+ v3 zl2 Switch (JL001A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der JL001A wird als vorkonfiguriertes Switch-Bundle geliefert: 92 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, acht freie Steckplätze.",
+   "Mit 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der JL001A eine Switching-Kapazität von 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im JL001A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (7 HE) arbeitet der JL001A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9832A, Airflow front-to-back) und bis zu 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den JL001A. Das angegebene Artikelgewicht des JL001A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der JL001A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JL001A?",
+    "Der JL001A bietet 12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des JL001A?",
+    "Der JL001A erreicht 1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz."
+   ],
+   [
+    "Hat der JL001A ein diskretes Fabric-Modul?",
+    "Nein. Beim JL001A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der JL001A ein originales HPE-Produkt?",
+    "Ja. Der JL001A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "12 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (7 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "1.920 Gbit/s (Routing/Switching; Switch-Fabric 2.030 Gbit/s), 1.142,8 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 4 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9832A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "36000.00"
+ },
+ "JL002A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-8-SmartRate-PoE+/8SFP+ v3 zl2 Switch JL002A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – acht HPE-Smart-Rate-PoE+-Ports (1/2.5/5/10GBASE-T) und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 JL002A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-8-SmartRate-PoE+/8SFP+ v3 zl2 Switch (JL002A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. acht HPE-Smart-Rate-PoE+-Ports (1/2.5/5/10GBASE-T) und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "12,75",
+  "versandgewicht": "14,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-8-SmartRate-PoE+/8SFP+ v3 zl2 Switch (JL002A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der JL002A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der JL002A wird als vorkonfiguriertes Switch-Bundle geliefert (acht HPE-Smart-Rate-PoE+-Ports (1/2.5/5/10GBASE-T) und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-8-SmartRate-PoE+/8SFP+ v3 zl2 Switch (JL002A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der JL002A wird als vorkonfiguriertes Switch-Bundle geliefert: acht HPE-Smart-Rate-PoE+-Ports (1/2.5/5/10GBASE-T) und acht 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der JL002A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im JL002A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der JL002A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den JL002A. Das angegebene Artikelgewicht des JL002A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der JL002A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JL002A?",
+    "Der JL002A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des JL002A?",
+    "Der JL002A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der JL002A ein diskretes Fabric-Modul?",
+    "Nein. Beim JL002A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der JL002A ein originales HPE-Produkt?",
+    "Ja. Der JL002A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "28000.00"
+ },
+ "JL003A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-44GT-PoE+/4SFP+ v3 zl2 Switch JL003A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – 44 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5400R zl2 JL003A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-44GT-PoE+/4SFP+ v3 zl2 Switch (JL003A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 44 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "12,75",
+  "versandgewicht": "14,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-44GT-PoE+/4SFP+ v3 zl2 Switch (JL003A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der JL003A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der JL003A wird als vorkonfiguriertes Switch-Bundle geliefert (44 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-44GT-PoE+/4SFP+ v3 zl2 Switch (JL003A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der JL003A wird als vorkonfiguriertes Switch-Bundle geliefert: 44 Gigabit-PoE+-Ports und vier 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der JL003A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im JL003A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der JL003A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den JL003A. Das angegebene Artikelgewicht des JL003A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der JL003A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JL003A?",
+    "Der JL003A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des JL003A?",
+    "Der JL003A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der JL003A ein diskretes Fabric-Modul?",
+    "Nein. Beim JL003A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der JL003A ein originales HPE-Produkt?",
+    "Ja. Der JL003A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "25000.00"
+ },
+ "JL095A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04293383",
+   "verifiziert_am": "2026-07-01"
+  },
+  "artikelname": "HPE Aruba Networking 5406R-16SFP+ v3 zl2 Switch JL095A modulares vorkonfiguriertes Switch-Bundle (6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), 4 HE) – 16 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze",
+  "titel_tag": "Aruba 5406R-16SFP+ v3 zl2 Switch JL095A Chassis | Hexwaren",
+  "meta_description": "Original HPE Aruba Networking 5406R-16SFP+ v3 zl2 Switch (JL095A): modulares 4-HE-Layer-3-Chassis der Aruba-5400R-zl2-Serie, 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric), ArubaOS-Switch. 16 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze. Neu und versiegelt.",
+  "artikelgewicht": "12,75",
+  "versandgewicht": "14,75",
+  "kurzbeschreibung": "<p>Der HPE Aruba Networking 5406R-16SFP+ v3 zl2 Switch (JL095A) ist ein modulares Layer-3-Chassis der Aruba-5400R-zl2-Serie für Campus-Core und -Aggregation mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric). Der JL095A erreicht eine Switching-Kapazität von 960 Gbit/s und wird unter ArubaOS-Switch betrieben.</p><p>Der JL095A wird als vorkonfiguriertes Switch-Bundle geliefert (16 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze); Management-Modul (J9827A) und Lüftertray sind enthalten, das Netzteil wird separat bestellt. Auslieferung als versiegelte Original-Neuware.</p>",
+  "intro": [
+   "Der HPE Aruba Networking 5406R-16SFP+ v3 zl2 Switch (JL095A) ist ein modularer Layer-3-Switch (Chassis) der Aruba-5400R-zl2-Serie, ausgelegt für Campus-Core und -Aggregation und betrieben unter ArubaOS-Switch (ProVision-ASIC). Der JL095A wird als vorkonfiguriertes Switch-Bundle geliefert: 16 10-GbE-SFP+-Ports vorinstalliert, vier freie Steckplätze.",
+   "Mit 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric) erreicht der JL095A eine Switching-Kapazität von 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz; die Weiterleitung ist im Management-Modul (J9827A) integriert, ein diskretes Fabric-Modul entfällt. Für Hochverfügbarkeit lassen sich im JL095A bis zu zwei Management-Module redundant betreiben (Nonstop-Switching).",
+   "Im 19-Zoll-Gehäuse (4 HE) arbeitet der JL095A im Temperaturbereich 0 bis 45 °C; ein Hot-Swap-Lüftertray (J9831A, Airflow front-to-back) und bis zu 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2, separat bestellt) versorgen den JL095A. Das angegebene Artikelgewicht des JL095A ist ein Konfigurationsgewicht (Herstellerangabe für das ab Werk bestückte System). Geliefert wird der JL095A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE Aruba Networking ArubaOS-Switch",
+   "Aruba Central",
+   "HP IMC (Intelligent Management Center)"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JL095A?",
+    "Der JL095A bietet 6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric); das Management-Modul J9827A ist bereits enthalten."
+   ],
+   [
+    "Wie hoch ist die Switching-Kapazität des JL095A?",
+    "Der JL095A erreicht 960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz."
+   ],
+   [
+    "Hat der JL095A ein diskretes Fabric-Modul?",
+    "Nein. Beim JL095A ist die Switch-Fabric im Management-Modul (J9827A) integriert; ein separates Fabric-Modul entfällt. Für Redundanz lassen sich bis zu zwei Management-Module betreiben."
+   ],
+   [
+    "Ist der JL095A ein originales HPE-Produkt?",
+    "Ja. Der JL095A ist HPE-Aruba-Networking-Original-Neuware der 5400R-zl2-Serie, versiegelt geliefert und für den Betrieb unter ArubaOS-Switch vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 zl2-Modul-Steckplätze (Management-Modul mit integrierter Fabric)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s (Routing/Switching; Switch-Fabric 1.015 Gbit/s), 571,4 Mpps Durchsatz"
+   ],
+   [
+    "Stromversorgung",
+    "bis 2 Hot-Swap-Netzteile (5400R 700 W oder 1100 W PoE+ zl2; redundant; separat bestellt, Chassis ohne Netzteil)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertray J9831A, Airflow front-to-back)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE Aruba Networking 5400R zl2 Management Module (J9827A), bis 2 redundant; Weiterleitung im Management-Modul integriert (kein diskretes Fabric-Modul)"
+   ],
+   [
+    "Redundanz",
+    "Management-Modul (bis 2, redundant), Netzteil (N+1, Hot-Swap) und Hot-Swap-Lüftertray; VSF-Stacking chassisübergreifend"
+   ],
+   [
+    "Anwendung",
+    "Campus-Core/Aggregation (modularer Layer-3-Switch, ArubaOS-Switch)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04293383",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24000.00"
+ }
+}
