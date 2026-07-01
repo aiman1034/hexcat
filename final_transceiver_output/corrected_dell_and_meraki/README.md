@@ -1,11 +1,21 @@
 # Corrected Dell + Meraki content (2026-07-01)
 
-Ready-to-import, corrected copies of the Dell and Meraki transceiver bundles. Same CSV
-formats as the rest of `final_transceiver_output` (Main = `;` UTF-8-BOM; Attributes/FAQ =
-`,` UTF-8-BOM). Roster, prices, and Beschreibung are unchanged from the originals — only the
-fields listed below were touched.
+Ready-to-import, corrected content. **`Dell/` = only the 24 AFFECTED part numbers** (not the
+full 156-SKU Dell catalog) — re-importing it touches nothing else. **`Meraki/` = all 23**
+(every Meraki transceiver changed). Byte-exact rows filtered from the full corrected bundles;
+same CSV formats as the rest of `final_transceiver_output`. Roster, prices, and Beschreibung
+are unchanged from the originals — only the fields listed below were touched.
 
-## Dell/ — 3 corrections
+## Dell/ — 24 affected part numbers (of 156), 3 corrections
+Breakdown by reason:
+- **SFP-DD form factor (3):** `S56DD-100G-FR / -LR / -SR1.2` — re-import to restore the SFP-DD
+  category (undo the JTL rename to "SFP").
+- **QSFP28-DD → QSFP-DD (16):** `Q28DD-200G-2SR4` (the E3-category product) + the 15 `Q28DD-*`
+  DAC/AOC cables (their `Formfaktor` attribute) — re-import to fix the form factor.
+- **`*` stripped (5):** `AEC-O112-800G-2M / -3M / -4M`, `400G-Q56DD-ZR+`, `800G-O112-2FR4` —
+  corrected part numbers (the `*` was a Dell footnote, not part of the SKU).
+
+The corrections themselves:
 1. **SFP-DD kept as its own category.** SFP-DD is a real MSA form factor; the 3 modules
    `S56DD-100G-FR / -LR / -SR1.2` are genuine 100G SFP-DD (do NOT merge into "SFP" = 1G).
 2. **`QSFP28-DD` → `QSFP-DD` everywhere.** "QSFP28-DD" is not a standard MSA name; the real
