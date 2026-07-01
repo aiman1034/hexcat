@@ -4343,6 +4343,29 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (only if TAA lane built); + re-verify 12900E JH252A/JH257A/JH422A + 5965 a50009252enw before shipping. **STOPPED for operator review**
   of denominator + E3/schema/scope decisions (§8: new NAMES, VALUES, 5920/5965 scope, SMB-EOL scope, legacy-within-family, variants
   basis, branding, courier order) before any Phase-2 authoring. Pushed.
+- **HPE COMWARE FIXED SWITCHES — PHASE 2 AUTHORED (operator 2026-07-02; the two UNBLOCKED fixed lanes; modular chassis held for
+  the later courier lane).** Authored **70 distinct SKUs across 17 E3 families** onto the validated 15-Merkmal FIXED-switch schema
+  (REUSED verbatim; 0 new Merkmal NAMES). Driver `_scratch/comware_fixed_build.py` (force-added; reuses the locked reconcile→
+  assemble→scrub→remap→gate pipeline), grounded specs in `_scratch/comware_fixed_specs.md`. Hersteller=HP, BRAND="HPE" (slug
+  hpe-aruba). Per-PID SwK/Durchsatz VERBATIM from OEM QuickSpecs (6 grounding agents, Jina proxy + HPE-hosted mirrors for the
+  Akamai-blocked/RETIRED docs), NEVER port-math. **FlexNetwork (campus, 37):** 5120 v3 (1, L2), 5130 EI (9, L2+), 5130 HI (4, L2+),
+  5140 EI (9, L3), 5140 HI (4, L3), 5510 HI (5, L3), 5520 HI (5, L3). **FlexFabric (DC, 33):** 5700 (3), 5710 (4), 5900 (4, incl
+  JG838A 5900CP FCoE), 5920 (1, deep-buffer 3,6 GB), 5930 (3), 5940 (7), 5945 (4), 5950 (3), 5960 (3), 5980 (1). **Modeling levers
+  reused:** IRF stacking = Wertliste VALUE (per-family max: 9 / 10 [5710,5945] / 4 [5920] / 2 [5980]); 5960 = DRNI (not IRF);
+  CP/FCoE + 25G/SFP28 + 100G/QSFP28 + 200G/QSFP56 + 400G/QSFP-DD + mGig-2,5/5G = new VALUES only. **Word-form lever** on the
+  0-fixed-port slot models (JH179A/JH398A → Portanzahl=0, "vier I/O-Modulschächte" worded so S.3's Σ`N×`==Portanzahl holds; slots
+  never port-mathed). **Wire-Speed graceful path** for genuinely-unpublished SwK/Durchsatz (JG838A 5900CP, JQ075A/JQ076A 5945
+  2/4-slot, R9Y12A/R9Y13A 5960 Durchsatz, JQ026A 5980) — customer-safe "Non-Blocking-Architektur (Wire-Speed)" / "Wire-Speed-
+  Weiterleitung", the ZU_VERIFIZIEREN token is NEVER shipped. Dedupe: TAA/Brazil/airflow-bundle re-badges collapsed to the base
+  distinct product per the manifest recommendation. E3 = "HPE FlexFabric/FlexNetwork <model> Switches" (customer-searchable; the
+  current "HPE Networking Comware" relabel is noted in prose for 5120v3/5140/5710/5945/5960). Config: `rules.yaml`
+  kategorie_ebene_3_switch_allowed += 17 E3 (additions-only); `gate_completeness.yaml` += 17 records (captured==emitted). **VERIFIED:
+  all 17 families gate ok=True viol=0; validate_dir 0; 70 SKUs with 0 masked Meta/Titel/Artikelname dup-groups + 0 collisions with
+  the existing tree; switch tree now 1510 SKUs.** Prices = Phase-1 PLACEHOLDER estimate (flagged in Verification_Log_*_Prices; real
+  HPE market-pricing is a later phase). ⚠️ FOLLOW-UPS for the operator: JG838A capacity corroborated (not grounded) at 1280 Gbps/
+  952 Mpps via sibling JC772A — currently Wire-Speed; 5980/5945-slot/5960-hi Durchsatz pending a clean QuickSpec page-image; 5920
+  JG296A module slots ZU_VERIF (kept worded/optional). Modular chassis (12900E/7900/12500/11900/7500/10500) + module pools still
+  pending the courier of the 3 Akamai-blocked pools (see the Phase-1 manifest). Split into 2 commits by line (FlexNetwork, FlexFabric).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

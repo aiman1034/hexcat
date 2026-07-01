@@ -1,0 +1,686 @@
+{
+ "JH323A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843026",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130 24G 4SFP+ 1-slot HI JH323A Managed Switch (L2) – 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130 24G 4SFP+ 1-slot HI JH323A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130 24G 4SFP+ 1-slot HI (JH323A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 168 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,0",
+  "versandgewicht": "7,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130 24G 4SFP+ 1-slot HI (JH323A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 HI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH323A eine Switching-Kapazität von 168 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130 24G 4SFP+ 1-slot HI (JH323A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 HI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH323A erreicht eine Switching-Kapazität von 168 Gbit/s bei einer Weiterleitungsrate von 154,8 Mpps. Der JH323A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH323A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH323A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH323A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC). Unter dem HPE-Comware-Betriebssystem bietet der JH323A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JH323A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH323A ist HPE-Original-Neuware der FlexNetwork-5130 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH323A?",
+    "Der JH323A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH323A PoE?",
+    "Nein. Der JH323A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH323A stapeln (Stacking)?",
+    "Ja. Der JH323A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "168 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "154,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, Hot-Swap-Netzteilen und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "560.00"
+ },
+ "JH324A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843026",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130 48G 4SFP+ 1-slot HI JH324A Managed Switch (L2) – 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130 48G 4SFP+ 1-slot HI JH324A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130 48G 4SFP+ 1-slot HI (JH324A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45), Switching-Kapazität 216 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "6,0",
+  "versandgewicht": "8,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130 48G 4SFP+ 1-slot HI (JH324A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 HI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH324A eine Switching-Kapazität von 216 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130 48G 4SFP+ 1-slot HI (JH324A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 HI-Familie mit 52 Ports (48× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH324A erreicht eine Switching-Kapazität von 216 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JH324A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH324A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH324A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH324A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC). Unter dem HPE-Comware-Betriebssystem bietet der JH324A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JH324A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH324A ist HPE-Original-Neuware der FlexNetwork-5130 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH324A?",
+    "Der JH324A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH324A PoE?",
+    "Nein. Der JH324A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH324A stapeln (Stacking)?",
+    "Ja. Der JH324A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "216 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, Hot-Swap-Netzteilen und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "720.00"
+ },
+ "JH325A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843026",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130 24G PoE+ 4SFP+ 1-slot HI JH325A Managed Switch (L2) – 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5130 24G PoE+ 4SFP+ 1-slot HI JH325A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130 24G PoE+ 4SFP+ 1-slot HI (JH325A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 168 Gbit/s, PoE-Budget 740 W, HPE-Comware-Betriebssyste",
+  "artikelgewicht": "6,8",
+  "versandgewicht": "8,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130 24G PoE+ 4SFP+ 1-slot HI (JH325A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 HI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH325A eine Switching-Kapazität von 168 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JH325A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130 24G PoE+ 4SFP+ 1-slot HI (JH325A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 HI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH325A erreicht eine Switching-Kapazität von 168 Gbit/s bei einer Weiterleitungsrate von 154,8 Mpps. Der JH325A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JH325A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH325A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH325A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC). Unter dem HPE-Comware-Betriebssystem bietet der JH325A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JH325A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH325A ist HPE-Original-Neuware der FlexNetwork-5130 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH325A?",
+    "Der JH325A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH325A PoE?",
+    "Ja. Der JH325A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 740 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JH325A stapeln (Stacking)?",
+    "Ja. Der JH325A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 740 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "168 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "154,8 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, Hot-Swap-Netzteilen und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "760.00"
+ },
+ "JH326A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843026",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130 48G PoE+ 4SFP+ 1-slot HI JH326A Managed Switch (L2) – 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5130 48G PoE+ 4SFP+ 1-slot HI JH326A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130 48G PoE+ 4SFP+ 1-slot HI (JH326A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 216 Gbit/s, PoE-Budget 1440 W, HPE-Comware-Betriebssyst",
+  "artikelgewicht": "7,8",
+  "versandgewicht": "9,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130 48G PoE+ 4SFP+ 1-slot HI (JH326A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 HI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH326A eine Switching-Kapazität von 216 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JH326A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130 48G PoE+ 4SFP+ 1-slot HI (JH326A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 HI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH326A erreicht eine Switching-Kapazität von 216 Gbit/s bei einer Weiterleitungsrate von 190,5 Mpps. Der JH326A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JH326A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH326A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH326A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC). Unter dem HPE-Comware-Betriebssystem bietet der JH326A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JH326A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH326A ist HPE-Original-Neuware der FlexNetwork-5130 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH326A?",
+    "Der JH326A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH326A PoE?",
+    "Ja. Der JH326A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JH326A stapeln (Stacking)?",
+    "Ja. Der JH326A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "216 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "190,5 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, Hot-Swap-Netzteilen und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843026",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "980.00"
+ }
+}

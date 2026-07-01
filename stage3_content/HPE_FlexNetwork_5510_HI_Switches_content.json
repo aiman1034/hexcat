@@ -1,0 +1,857 @@
+{
+ "JH145A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843027",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5510 24G 4SFP+ HI 1-slot JH145A Managed Switch (L3) – 24× 10/100/1000 (RJ45) + 4× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5510 24G 4SFP+ HI 1-slot JH145A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5510 24G 4SFP+ HI 1-slot (JH145A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 288 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,0",
+  "versandgewicht": "7,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5510 24G 4SFP+ HI 1-slot (JH145A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5510 HI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH145A eine Switching-Kapazität von 288 Gbit/s und bindet per 4× 10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5510 24G 4SFP+ HI 1-slot (JH145A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5510 HI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH145A erreicht eine Switching-Kapazität von 288 Gbit/s bei einer Weiterleitungsrate von 214 Mpps. Der JH145A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH145A erfolgt über 4× 10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH145A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH145A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH145A Layer-3-Routing (OSPF, IS-IS, BGP, RIP; IPv6, MPLS/VPLS), dazu VRRP, BFD, QoS und IRF-Stacking. Geliefert wird der JH145A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH145A ist HPE-Original-Neuware der FlexNetwork-5510 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH145A?",
+    "Der JH145A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 4× 10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH145A PoE?",
+    "Nein. Der JH145A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH145A stapeln (Stacking)?",
+    "Ja. Der JH145A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 4× 10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "288 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "214 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagte Gigabit-Campus-Aggregation (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, vollem dynamischem Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "700.00"
+ },
+ "JH146A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843027",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5510 48G 4SFP+ HI 1-slot JH146A Managed Switch (L3) – 48× 10/100/1000 (RJ45) + 4× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5510 48G 4SFP+ HI 1-slot JH146A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5510 48G 4SFP+ HI 1-slot (JH146A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45), Switching-Kapazität 336 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "6,0",
+  "versandgewicht": "8,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5510 48G 4SFP+ HI 1-slot (JH146A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5510 HI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH146A eine Switching-Kapazität von 336 Gbit/s und bindet per 4× 10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5510 48G 4SFP+ HI 1-slot (JH146A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5510 HI-Familie mit 52 Ports (48× 10/100/1000 (RJ45)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH146A erreicht eine Switching-Kapazität von 336 Gbit/s bei einer Weiterleitungsrate von 250 Mpps. Der JH146A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH146A erfolgt über 4× 10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH146A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH146A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH146A Layer-3-Routing (OSPF, IS-IS, BGP, RIP; IPv6, MPLS/VPLS), dazu VRRP, BFD, QoS und IRF-Stacking. Geliefert wird der JH146A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH146A ist HPE-Original-Neuware der FlexNetwork-5510 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH146A?",
+    "Der JH146A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45) + 4× 10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH146A PoE?",
+    "Nein. Der JH146A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH146A stapeln (Stacking)?",
+    "Ja. Der JH146A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 4× 10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "336 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "250 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagte Gigabit-Campus-Aggregation (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, vollem dynamischem Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "880.00"
+ },
+ "JH147A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843027",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5510 24G PoE+ 4SFP+ HI 1-slot JH147A Managed Switch (L3) – 24× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5510 24G PoE+ 4SFP+ HI 1-slot JH147A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5510 24G PoE+ 4SFP+ HI 1-slot (JH147A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 288 Gbit/s, PoE-Budget 740 W, HPE-Comware-Betriebssyste",
+  "artikelgewicht": "6,8",
+  "versandgewicht": "8,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5510 24G PoE+ 4SFP+ HI 1-slot (JH147A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5510 HI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH147A eine Switching-Kapazität von 288 Gbit/s und bindet per 4× 10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JH147A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5510 24G PoE+ 4SFP+ HI 1-slot (JH147A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5510 HI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH147A erreicht eine Switching-Kapazität von 288 Gbit/s bei einer Weiterleitungsrate von 214 Mpps. Der JH147A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JH147A erfolgt über 4× 10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH147A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH147A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH147A Layer-3-Routing (OSPF, IS-IS, BGP, RIP; IPv6, MPLS/VPLS), dazu VRRP, BFD, QoS und IRF-Stacking. Geliefert wird der JH147A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH147A ist HPE-Original-Neuware der FlexNetwork-5510 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH147A?",
+    "Der JH147A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH147A PoE?",
+    "Ja. Der JH147A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 740 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JH147A stapeln (Stacking)?",
+    "Ja. Der JH147A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 740 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "288 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "214 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagte Gigabit-Campus-Aggregation (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, vollem dynamischem Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "920.00"
+ },
+ "JH148A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843027",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5510 48G PoE+ 4SFP+ HI 1-slot JH148A Managed Switch (L3) – 48× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5510 48G PoE+ 4SFP+ HI 1-slot JH148A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5510 48G PoE+ 4SFP+ HI 1-slot (JH148A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 336 Gbit/s, PoE-Budget 1440 W, HPE-Comware-Betriebssyst",
+  "artikelgewicht": "7,8",
+  "versandgewicht": "9,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5510 48G PoE+ 4SFP+ HI 1-slot (JH148A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5510 HI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH148A eine Switching-Kapazität von 336 Gbit/s und bindet per 4× 10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JH148A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5510 48G PoE+ 4SFP+ HI 1-slot (JH148A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5510 HI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH148A erreicht eine Switching-Kapazität von 336 Gbit/s bei einer Weiterleitungsrate von 250 Mpps. Der JH148A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JH148A erfolgt über 4× 10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH148A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH148A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH148A Layer-3-Routing (OSPF, IS-IS, BGP, RIP; IPv6, MPLS/VPLS), dazu VRRP, BFD, QoS und IRF-Stacking. Geliefert wird der JH148A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH148A ist HPE-Original-Neuware der FlexNetwork-5510 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH148A?",
+    "Der JH148A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH148A PoE?",
+    "Ja. Der JH148A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JH148A stapeln (Stacking)?",
+    "Ja. Der JH148A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 4× 10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 1440 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "336 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "250 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagte Gigabit-Campus-Aggregation (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, vollem dynamischem Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "1150.00"
+ },
+ "JH149A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04843027",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5510 24G SFP 4SFP+ HI 1-slot JH149A Managed Switch (L3) – 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5510 24G SFP 4SFP+ HI 1-slot JH149A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5510 24G SFP 4SFP+ HI 1-slot (JH149A): gemanagter Layer-3-Switch mit 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP), Switching-Kapazität 288 Gbi",
+  "artikelgewicht": "5,2",
+  "versandgewicht": "7,20",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5510 24G SFP 4SFP+ HI 1-slot (JH149A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5510 HI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH149A eine Switching-Kapazität von 288 Gbit/s und bindet per 4× 10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5510 24G SFP 4SFP+ HI 1-slot (JH149A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5510 HI-Familie mit 28 Ports (16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH149A erreicht eine Switching-Kapazität von 288 Gbit/s bei einer Weiterleitungsrate von 214 Mpps. Der JH149A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH149A erfolgt über 4× 10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH149A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH149A übernehmen Lüftergekühlt (Airflow front-to-back) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH149A Layer-3-Routing (OSPF, IS-IS, BGP, RIP; IPv6, MPLS/VPLS), dazu VRRP, BFD, QoS und IRF-Stacking. Geliefert wird der JH149A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH149A ist HPE-Original-Neuware der FlexNetwork-5510 HI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH149A?",
+    "Der JH149A bietet insgesamt 28 Ports: 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH149A PoE?",
+    "Nein. Der JH149A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH149A stapeln (Stacking)?",
+    "Ja. Der JH149A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/1000 Mbit/s (SFP), 10/100/1000 Mbit/s (RJ45-Combo), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "288 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "214 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Airflow front-to-back)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagte Gigabit-Campus-Aggregation (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, vollem dynamischem Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04843027",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "820.00"
+ }
+}

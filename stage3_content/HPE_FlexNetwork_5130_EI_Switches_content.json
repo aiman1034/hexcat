@@ -1,0 +1,1541 @@
+{
+ "JG932A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-24G-4SFP+ EI JG932A Managed Switch (L2) – 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-24G-4SFP+ EI JG932A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-24G-4SFP+ EI (JG932A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 128 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "3,5",
+  "versandgewicht": "5,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-24G-4SFP+ EI (JG932A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG932A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-24G-4SFP+ EI (JG932A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG932A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 96 Mpps. Der JG932A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG932A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG932A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG932A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG932A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG932A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG932A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG932A?",
+    "Der JG932A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG932A PoE?",
+    "Nein. Der JG932A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG932A stapeln (Stacking)?",
+    "Ja. Der JG932A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "96 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "380.00"
+ },
+ "JG933A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-24G-SFP-4SFP+ EI JG933A Managed Switch (L2) – 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-24G-SFP-4SFP+ EI JG933A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-24G-SFP-4SFP+ EI (JG933A): gemanagter Layer-2-Switch mit 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP), Switching-Kapazität 128 Gbit/s, oh",
+  "artikelgewicht": "3,6",
+  "versandgewicht": "5,60",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-24G-SFP-4SFP+ EI (JG933A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG933A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-24G-SFP-4SFP+ EI (JG933A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 28 Ports (16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG933A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 96 Mpps. Der JG933A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG933A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG933A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG933A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG933A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG933A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG933A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG933A?",
+    "Der JG933A bietet insgesamt 28 Ports: 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG933A PoE?",
+    "Nein. Der JG933A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG933A stapeln (Stacking)?",
+    "Ja. Der JG933A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/1000 Mbit/s (SFP), 10/100/1000 Mbit/s (RJ45-Combo), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "96 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "520.00"
+ },
+ "JG934A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-48G-4SFP+ EI JG934A Managed Switch (L2) – 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-48G-4SFP+ EI JG934A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-48G-4SFP+ EI (JG934A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45), Switching-Kapazität 176 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,5",
+  "versandgewicht": "6,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-48G-4SFP+ EI (JG934A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG934A eine Switching-Kapazität von 176 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-48G-4SFP+ EI (JG934A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG934A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,9 Mpps. Der JG934A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG934A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG934A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG934A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG934A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG934A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG934A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG934A?",
+    "Der JG934A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG934A PoE?",
+    "Nein. Der JG934A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG934A stapeln (Stacking)?",
+    "Ja. Der JG934A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "520.00"
+ },
+ "JG936A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-24G-PoE+-4SFP+ EI JG936A Managed Switch (L2) – 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-24G-PoE+-4SFP+ EI JG936A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-24G-PoE+-4SFP+ EI (JG936A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 128 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-24G-PoE+-4SFP+ EI (JG936A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG936A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JG936A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-24G-PoE+-4SFP+ EI (JG936A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG936A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 96 Mpps. Der JG936A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JG936A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG936A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG936A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG936A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG936A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG936A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG936A?",
+    "Der JG936A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG936A PoE?",
+    "Ja. Der JG936A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JG936A stapeln (Stacking)?",
+    "Ja. Der JG936A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "96 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "620.00"
+ },
+ "JG937A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-48G-PoE+-4SFP+ EI JG937A Managed Switch (L2) – 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-48G-PoE+-4SFP+ EI JG937A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-48G-PoE+-4SFP+ EI (JG937A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 176 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,8",
+  "versandgewicht": "7,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-48G-PoE+-4SFP+ EI (JG937A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG937A eine Switching-Kapazität von 176 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JG937A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-48G-PoE+-4SFP+ EI (JG937A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG937A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,9 Mpps. Der JG937A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JG937A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG937A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG937A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG937A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG937A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG937A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG937A?",
+    "Der JG937A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG937A PoE?",
+    "Ja. Der JG937A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JG937A stapeln (Stacking)?",
+    "Ja. Der JG937A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "760.00"
+ },
+ "JG938A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-24G-2SFP+-2XGT EI JG938A Managed Switch (L2) – 24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-24G-2SFP+-2XGT EI JG938A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-24G-2SFP+-2XGT EI (JG938A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 128 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "3,5",
+  "versandgewicht": "5,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-24G-2SFP+-2XGT EI (JG938A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG938A eine Switching-Kapazität von 128 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-24G-2SFP+-2XGT EI (JG938A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG938A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 96 Mpps. Der JG938A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG938A erfolgt über 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG938A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG938A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG938A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG938A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG938A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG938A?",
+    "Der JG938A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JG938A PoE?",
+    "Nein. Der JG938A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG938A stapeln (Stacking)?",
+    "Ja. Der JG938A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+), 1/10 GbE (10GBASE-T, RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "96 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "420.00"
+ },
+ "JG939A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-48G-2SFP+-2XGT EI JG939A Managed Switch (L2) – 48× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5130-48G-2SFP+-2XGT EI JG939A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-48G-2SFP+-2XGT EI (JG939A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45), Switching-Kapazität 176 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,5",
+  "versandgewicht": "6,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-48G-2SFP+-2XGT EI (JG939A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG939A eine Switching-Kapazität von 176 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-48G-2SFP+-2XGT EI (JG939A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG939A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,9 Mpps. Der JG939A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG939A erfolgt über 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG939A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG939A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG939A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG939A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG939A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG939A?",
+    "Der JG939A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JG939A PoE?",
+    "Nein. Der JG939A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG939A stapeln (Stacking)?",
+    "Ja. Der JG939A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+), 1/10 GbE (10GBASE-T, RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "560.00"
+ },
+ "JG940A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-24G-PoE+-2SFP+-2XGT EI JG940A Managed Switch (L2) – 24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5130-24G-PoE+-2SFP+-2XGT EI JG940A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-24G-PoE+-2SFP+-2XGT EI (JG940A): gemanagter Layer-2-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 128 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-24G-PoE+-2SFP+-2XGT EI (JG940A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG940A eine Switching-Kapazität von 128 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) an das Netz an. Über Power over Ethernet (PoE+) versorgt der JG940A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-24G-PoE+-2SFP+-2XGT EI (JG940A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG940A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 96 Mpps. Der JG940A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JG940A erfolgt über 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG940A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG940A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG940A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG940A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG940A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG940A?",
+    "Der JG940A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JG940A PoE?",
+    "Ja. Der JG940A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JG940A stapeln (Stacking)?",
+    "Ja. Der JG940A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+), 1/10 GbE (10GBASE-T, RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "96 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "660.00"
+ },
+ "JG941A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L2)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04394228",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5130-48G-PoE+-2SFP+-2XGT EI JG941A Managed Switch (L2) – 48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5130-48G-PoE+-2SFP+-2XGT EI JG941A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5130-48G-PoE+-2SFP+-2XGT EI (JG941A): gemanagter Layer-2-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 176 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,8",
+  "versandgewicht": "7,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5130-48G-PoE+-2SFP+-2XGT EI (JG941A) ist ein gemanagter Layer-2-Switch der HPE-FlexNetwork-5130 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG941A eine Switching-Kapazität von 176 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) an das Netz an. Über Power over Ethernet (PoE+) versorgt der JG941A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5130-48G-PoE+-2SFP+-2XGT EI (JG941A) ist ein gemanagter Layer-2-Switch aus der HPE-FlexNetwork-5130 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-2-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG941A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 130,9 Mpps. Der JG941A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JG941A erfolgt über 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG941A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JG941A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JG941A Layer-2-Funktionen mit statischem und RIP-Routing (Layer 2+), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Geliefert wird der JG941A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG941A ist HPE-Original-Neuware der FlexNetwork-5130 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG941A?",
+    "Der JG941A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JG941A PoE?",
+    "Ja. Der JG941A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JG941A stapeln (Stacking)?",
+    "Ja. Der JG941A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L2"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+), 1/10 GbE (10GBASE-T, RJ45)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/10GBASE-T (RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "130,9 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 2+, HPE Comware) mit 10-GbE-SFP+-Uplinks, statischem/RIP-Routing und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04394228",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "800.00"
+ }
+}

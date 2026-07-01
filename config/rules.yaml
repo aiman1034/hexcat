@@ -202,6 +202,28 @@ kategorie_ebene_3_switch_allowed:
   - "Aruba 5400R zl2 Modules"
   # ArubaOS-Switch fixed-switch expansion modules (2920/2930M/3810M uplink + stacking) — one E3, Serie tagged per module
   - "ArubaOS-Switch Expansion Modules"
+  # --- HPE Comware FIXED switch families (STEP-2 Phase 2; BATCH_HPE_COMWARE_SMB_PHASE1_MANIFEST.md).
+  # FlexFabric = Comware data-center ToR/leaf/spine; FlexNetwork = Comware campus/core. Hersteller=HP,
+  # slug=hpe-aruba (HPE umbrella). E3 keeps the customer-searchable "FlexFabric/FlexNetwork" branding even
+  # where HPE has since relabelled the line "HPE Networking Comware" (noted in prose). Fixed lanes only —
+  # modular chassis (12900E/7900/12500/11900/7500/10500) are a later lane pending courier of blocked pools.
+  - "HPE FlexFabric 5700 Switches"
+  - "HPE FlexFabric 5710 Switches"
+  - "HPE FlexFabric 5900 Switches"
+  - "HPE FlexFabric 5920 Switches"
+  - "HPE FlexFabric 5930 Switches"
+  - "HPE FlexFabric 5940 Switches"
+  - "HPE FlexFabric 5945 Switches"
+  - "HPE FlexFabric 5950 Switches"
+  - "HPE FlexFabric 5960 Switches"
+  - "HPE FlexFabric 5980 Switches"
+  - "HPE FlexNetwork 5120 v3 Switches"
+  - "HPE FlexNetwork 5130 EI Switches"
+  - "HPE FlexNetwork 5130 HI Switches"
+  - "HPE FlexNetwork 5140 EI Switches"
+  - "HPE FlexNetwork 5140 HI Switches"
+  - "HPE FlexNetwork 5510 HI Switches"
+  - "HPE FlexNetwork 5520 HI Switches"
   # --- original switch-CLASS tokens (pre-rewrite; drive Attributgruppe/gate/chassis) ---
   - "Industrie-Switch"
   - "Data-Center-Switch"

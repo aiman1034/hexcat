@@ -1,0 +1,1541 @@
+{
+ "JL823A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 24G PoE+ 2SFP+ 2XGT EI JL823A Managed Switch (L3) – 24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5140 24G PoE+ 2SFP+ 2XGT EI JL823A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 24G PoE+ 2SFP+ 2XGT EI (JL823A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 128 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 24G PoE+ 2SFP+ 2XGT EI (JL823A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL823A eine Switching-Kapazität von 128 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) an das Netz an. Über Power over Ethernet (PoE+) versorgt der JL823A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 24G PoE+ 2SFP+ 2XGT EI (JL823A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL823A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95 Mpps. Der JL823A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL823A erfolgt über 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL823A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL823A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL823A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL823A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL823A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL823A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL823A?",
+    "Der JL823A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL823A PoE?",
+    "Ja. Der JL823A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL823A stapeln (Stacking)?",
+    "Ja. Der JL823A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 2,5/5 GbE (Multi-Gig, RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "680.00"
+ },
+ "JL824A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 48G PoE+ 4SFP+ EI JL824A Managed Switch (L3) – 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5140 48G PoE+ 4SFP+ EI JL824A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 48G PoE+ 4SFP+ EI (JL824A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 176 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,8",
+  "versandgewicht": "7,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 48G PoE+ 4SFP+ EI (JL824A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL824A eine Switching-Kapazität von 176 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JL824A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 48G PoE+ 4SFP+ EI (JL824A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL824A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps. Der JL824A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL824A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL824A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL824A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL824A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL824A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL824A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL824A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL824A?",
+    "Der JL824A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JL824A PoE?",
+    "Ja. Der JL824A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL824A stapeln (Stacking)?",
+    "Ja. Der JL824A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "780.00"
+ },
+ "JL825A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 48G PoE+ 2SFP+ 2XGT EI JL825A Managed Switch (L3) – 48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5140 48G PoE+ 2SFP+ 2XGT EI JL825A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 48G PoE+ 2SFP+ 2XGT EI (JL825A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 176 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "5,9",
+  "versandgewicht": "7,90",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 48G PoE+ 2SFP+ 2XGT EI (JL825A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL825A eine Switching-Kapazität von 176 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) an das Netz an. Über Power over Ethernet (PoE+) versorgt der JL825A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 48G PoE+ 2SFP+ 2XGT EI (JL825A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL825A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps. Der JL825A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL825A erfolgt über 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL825A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL825A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL825A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL825A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL825A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL825A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL825A?",
+    "Der JL825A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL825A PoE?",
+    "Ja. Der JL825A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL825A stapeln (Stacking)?",
+    "Ja. Der JL825A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45, PoE+) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 2,5/5 GbE (Multi-Gig, RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "860.00"
+ },
+ "JL826A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 24G SFP 8Combo 4SFP+ EI JL826A Managed Switch (L3) – 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "FlexNetwork 5140 24G SFP 8Combo 4SFP+ EI JL826A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 24G SFP 8Combo 4SFP+ EI (JL826A): gemanagter Layer-3-Switch mit 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP), Switching-Kapazität 128 Gbi",
+  "artikelgewicht": "4,2",
+  "versandgewicht": "6,20",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 24G SFP 8Combo 4SFP+ EI (JL826A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL826A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 24G SFP 8Combo 4SFP+ EI (JL826A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 28 Ports (16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL826A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95 Mpps. Der JL826A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL826A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL826A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL826A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie 2 Netzteilschächte (mindestens 1 Netzteil, separat bestellbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JL826A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL826A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL826A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL826A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL826A?",
+    "Der JL826A bietet insgesamt 28 Ports: 16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JL826A PoE?",
+    "Nein. Der JL826A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL826A stapeln (Stacking)?",
+    "Ja. Der JL826A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100/1000 Mbit/s (SFP), 10/100/1000 Mbit/s (RJ45-Combo), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, separat bestellbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "560.00"
+ },
+ "JL827A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 24G PoE+ 4SFP+ EI JL827A Managed Switch (L3) – 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5140 24G PoE+ 4SFP+ EI JL827A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 24G PoE+ 4SFP+ EI (JL827A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45, PoE+), Switching-Kapazität 128 Gbit/s, PoE-Budget 370 W, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,8",
+  "versandgewicht": "6,80",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 24G PoE+ 4SFP+ EI (JL827A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL827A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Über Power over Ethernet (PoE+) versorgt der JL827A angeschlossene Endgeräte direkt per Netzwerkkabel. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 24G PoE+ 4SFP+ EI (JL827A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45, PoE+)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL827A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95 Mpps. Der JL827A versorgt Access Points, IP-Telefone und Kameras per Power over Ethernet direkt über das Netzwerkkabel. Die Uplink-Anbindung des JL827A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL827A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL827A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL827A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL827A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL827A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL827A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL827A?",
+    "Der JL827A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JL827A PoE?",
+    "Ja. Der JL827A stellt Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W) bereit und versorgt angeschlossene Geräte direkt über das Netzwerkkabel."
+   ],
+   [
+    "Lässt sich der JL827A stapeln (Stacking)?",
+    "Ja. Der JL827A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45, PoE+) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Ja (IEEE 802.3at Class 4 PoE+, 30 W/Port, Budget 370 W)"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "620.00"
+ },
+ "JL828A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 24G 4SFP+ EI JL828A Managed Switch (L3) – 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5140 24G 4SFP+ EI JL828A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 24G 4SFP+ EI (JL828A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 128 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "3,5",
+  "versandgewicht": "5,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 24G 4SFP+ EI (JL828A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL828A eine Switching-Kapazität von 128 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 24G 4SFP+ EI (JL828A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL828A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95 Mpps. Der JL828A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL828A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL828A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL828A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL828A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL828A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL828A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL828A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL828A?",
+    "Der JL828A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JL828A PoE?",
+    "Nein. Der JL828A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL828A stapeln (Stacking)?",
+    "Ja. Der JL828A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "420.00"
+ },
+ "JL829A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 48G 4SFP+ EI JL829A Managed Switch (L3) – 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5140 48G 4SFP+ EI JL829A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 48G 4SFP+ EI (JL829A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45), Switching-Kapazität 176 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "4,5",
+  "versandgewicht": "6,50",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 48G 4SFP+ EI (JL829A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL829A eine Switching-Kapazität von 176 Gbit/s und bindet per 4× 1/10G SFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 48G 4SFP+ EI (JL829A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 52 Ports (48× 10/100/1000 (RJ45)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL829A erreicht eine Switching-Kapazität von 176 Gbit/s bei einer Weiterleitungsrate von 131 Mpps. Der JL829A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL829A erfolgt über 4× 1/10G SFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL829A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des JL829A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der JL829A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der JL829A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der JL829A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL829A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL829A?",
+    "Der JL829A bietet insgesamt 52 Ports: 48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JL829A PoE?",
+    "Nein. Der JL829A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL829A stapeln (Stacking)?",
+    "Ja. Der JL829A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 4× 1/10G SFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 1/10G SFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "176 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "131 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "560.00"
+ },
+ "R8J41A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 24G 2SFP+ 2XGT EI R8J41A Managed Switch (L3) – 24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexNetwork 5140 24G 2SFP+ 2XGT EI R8J41A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 24G 2SFP+ 2XGT EI (R8J41A): gemanagter Layer-3-Switch mit 24× 10/100/1000 (RJ45), Switching-Kapazität 128 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "3,6",
+  "versandgewicht": "5,60",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 24G 2SFP+ 2XGT EI (R8J41A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 28 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der R8J41A eine Switching-Kapazität von 128 Gbit/s und bindet per 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 24G 2SFP+ 2XGT EI (R8J41A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 28 Ports (24× 10/100/1000 (RJ45)), ausgelegt für den Layer-3-Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der R8J41A erreicht eine Switching-Kapazität von 128 Gbit/s bei einer Weiterleitungsrate von 95 Mpps. Der R8J41A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R8J41A erfolgt über 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der R8J41A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des R8J41A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der R8J41A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der R8J41A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der R8J41A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R8J41A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R8J41A?",
+    "Der R8J41A bietet insgesamt 28 Ports: 24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der R8J41A PoE?",
+    "Nein. Der R8J41A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R8J41A stapeln (Stacking)?",
+    "Ja. Der R8J41A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "28"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 10/100/1000 (RJ45) + 2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 2,5/5 GbE (Multi-Gig, RJ45), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "128 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "95 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "480.00"
+ },
+ "R8J42A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50002579enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 5140 8G 2SFP 2GT Combo EI R8J42A Managed Switch (L3) – 8× 10/100/1000 (RJ45) + 2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45), Kompakt",
+  "titel_tag": "HPE FlexNetwork 5140 8G 2SFP 2GT Combo EI R8J42A | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 5140 8G 2SFP 2GT Combo EI (R8J42A): gemanagter Layer-3-Switch mit 8× 10/100/1000 (RJ45), Switching-Kapazität 24 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "2,2",
+  "versandgewicht": "4,20",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 5140 8G 2SFP 2GT Combo EI (R8J42A) ist ein gemanagter Layer-3-Switch der HPE-FlexNetwork-5140 EI-Serie mit 10 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er den gemanagten Zugang bzw. die Aggregation im Campus.</p><p>Im Formfaktor Kompakt liefert der R8J42A eine Switching-Kapazität von 24 Gbit/s und bindet per 2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 5140 8G 2SFP 2GT Combo EI (R8J42A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexNetwork-5140 EI-Familie mit 10 Ports (8× 10/100/1000 (RJ45)), ausgelegt für den kompakten Campus-Access und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der R8J42A erreicht eine Switching-Kapazität von 24 Gbit/s bei einer Weiterleitungsrate von 18 Mpps. Der R8J42A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R8J42A erfolgt über 2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45), und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse Kompakt arbeitet der R8J42A im Temperaturbereich -5 bis 45 °C; Kühlung und Stromversorgung des R8J42A übernehmen Lüftergekühlt (variable Lüfterdrehzahl) sowie Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar. Unter dem HPE-Comware-Betriebssystem bietet der R8J42A Layer-3-Routing (statisch, RIP, OSPF), dazu VLANs, ACLs, QoS, LACP, Spanning Tree und IRF-Stacking. Der R8J42A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5140 EI“ geführt. Geliefert wird der R8J42A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R8J42A ist HPE-Original-Neuware der FlexNetwork-5140 EI-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R8J42A?",
+    "Der R8J42A bietet insgesamt 10 Ports: 8× 10/100/1000 (RJ45) + 2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45) (Uplink)."
+   ],
+   [
+    "Unterstützt der R8J42A PoE?",
+    "Nein. Der R8J42A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R8J42A stapeln (Stacking)?",
+    "Ja. Der R8J42A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "10"
+   ],
+   [
+    "Port-Konfiguration",
+    "8× 10/100/1000 (RJ45) + 2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 1 GbE (SFP)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "24 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "18 Mpps"
+   ],
+   [
+    "Bauform",
+    "Kompakt (1 HE, halbe Breite)"
+   ],
+   [
+    "Stromversorgung",
+    "Internes Festnetzteil (AC); PoE-Modelle optional über externes HPE RPS1600 absicherbar"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (variable Lüfterdrehzahl)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "-5 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Gemanagter Gigabit-Campus-Access (Layer 3, HPE Comware) mit 10-GbE-SFP+-Uplinks, optionalem Multi-Gigabit und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50002579enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "300.00"
+ }
+}
