@@ -4143,9 +4143,12 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   rephrased customer-safe to `Fabric-vermittelt (modellspezifischer Wert nicht ausgewiesen)` — **never ships "ZU_VERIFIZIEREN"**.
   All 4 bundles re-emit gate-clean, validate_dir=0, whole tree **1270 SKUs all unique**; **CX 6400/8400 attributes now carry 0
   ZU_VERIFIZIEREN cells.** STAYS FLAGGED: per-line-card weights (6400+8400) = estimates (chassis weight only published).
-  **⚠️ PRINCIPLE GAP FLAGGED (operator decision):** 28 customer-facing `ZU_VERIFIZIEREN` cells remain from the fixed-line sweep —
-  CX 6000 8-port tier (4 SKUs: SwK+Durchsatz) + CX 6300M S4P4x (8 SKUs: SwK+Durchsatz+PoE). Same "never ship ZU_VERIFIZIEREN"
-  rule applies; pending operator call: rephrase customer-safe vs courier the real values.
+  **✅ PRINCIPLE GAP RESOLVED (operator-directed rephrase, 2026-06-30):** the 28 fixed-line-sweep `ZU_VERIFIZIEREN` cells (CX 6000
+  8-port S4R22A/23A/28A/29A + CX 6300M S4P4x S4P41-48A) were rephrased customer-safe — SwK → `Wire-Speed (nicht-blockierend[, CX-
+  6300M-Serie])`, Durchsatz → `Wire-Speed`, 6300M PoE-Budget → `abhängig von der Netzteilbestückung`; the `zk` prose guard in both
+  drivers was repurposed to a clean "leitet nicht-blockierend mit Wire-Speed weiter" phrasing (+ the R0X41A validation FAQ cleaned).
+  VALUES only, 0 new Merkmal NAMES, 0 src/; all bundles gate-clean, validate_dir=0. **The WHOLE switch tree now carries 0
+  customer-facing ZU_VERIFIZIEREN.** (Per-line-card weights remain flagged estimates — numeric, never the ZU_VERIFIZIEREN token.)
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
