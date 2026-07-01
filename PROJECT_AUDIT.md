@@ -4260,6 +4260,26 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   **All zl2 PoE cards = 802.3at PoE+ (30W), NONE 802.3bt/Class 6** (SmartRate ports = 802.3bz 2.5/5G); per-module capacity un-published
   by HP → customer-safe. 3-commit split, PUSHED — origin/main moved off c5eb448 (confirmed via `git ls-remote`, reported to operator).
   Whole switch tree now **1431 SKUs**. **HPE/Aruba switch catalog now FULLY COMPLETE incl. the current modular flagship.**
+- **HPE/Aruba SWITCHES — ArubaOS-Switch EXPANSION MODULES AUTHORED (the section-(C) Phase-1 hole; 2026-07-01; GREEN + PUSHED).**
+  Authored the **9-module** 2920/2930M/3810M uplink + stacking family (the coverage-reconciler-flagged gap, never built) on the
+  validated module schema. Driver `_scratch/aruba_expansion_modules_build.py`. **1 new E3 `ArubaOS-Switch Expansion Modules`**
+  (PLURAL, E2=Switches; one E3 for all 9, Kompatible Serie tagged PER module). **0 new Merkmal NAMES; TWO new Modultyp VALUES:
+  `Uplink-Modul` + `Stacking-Modul`.** Roster (agent-confirmed COMPLETE vs 2930M IGSG + 3810 datasheet + 2920 QuickSpec; findings-
+  only, I wrote this entry): uplink JL078A(1×QSFP+ 40G, 2930M/3810M) · JL079A(2×QSFP+ 40G, 3810M) · JL081A(4×SmartRate PoE+,
+  2930M/3810M — **the ONLY PoE module**) · JL083A(4×SFP+ 10G MACsec, 2930M/3810M) · J9731A(2×SFP+ 10G, 2920) · J9732A(2×10GBASE-T,
+  2920); stacking JL084A(4-port, 3810M) · JL325A(2-port, 2930M) · J9733A(2-port, 2920). **EXCLUDED as accessories** (agent-confirmed):
+  stacking CABLES J9734A/J9735A/J9736A (shared 2920/2930M) + J9578A/J9665A/J9579A (3810M) + -RF/refurb. **Switching-Kapazität grounded
+  vs port-math:** the "40 Gbit/s" is verbatim the **2930M uplink slot** (IGSG: "The slot support 40Gbps... 4 Smart Rate, 4 SFP+, or
+  1 QSFP+") → JL078A/JL081A/JL083A = `40 Gbit/s (Uplink-Modulschacht-Bandbreite, Aruba 2930M)`; JL084A grounded `Bis zu 336 Gbit/s
+  Stacking-Durchsatz (42 Gbit/s je Richtung und Port)`; J9733A grounded `Bis zu 40 Gbit/s je Stacking-Port`; 3810M/2920 publish NO
+  per-module figure (switch-level only) → JL079A/J9731A/J9732A/JL325A customer-safe `…modellspezifischer Wert nicht ausgewiesen`
+  (never shipped ZU_VERIFIZIEREN). **Gate GREEN (viol=0, dup hard=[]; the two stacking siblings warn at 0.65-0.67, below the 0.80 hard
+  bar — a per-module `detail` sentence cut JL084A↔JL325A from 0.97→0.77 Besch-only), validate_dir=0, 0 customer-facing ZU_VERIFIZIEREN,
+  0 cross-bundle near-dup ≥0.80** (worst 0.13). Two build fixes: 7 short-prose word-count fails (lengthened intro + fixed a "das
+  {func}" relative-clause) and 1 PID-less sentence (welded). rules.yaml +1 E3 (now 111 switch-E3); gate_completeness +1. Hersteller=HP.
+  Prices PHASE-1 ESTIMATE (flagged). PUSHED — origin/main moved off 8a7a593 (confirmed via `git ls-remote`, reported). Whole switch
+  tree now **1440 SKUs**. **The HPE/Aruba SWITCH lane is now 100% complete** (fixed 2a/2b + modular 2c/2d + these expansion modules);
+  remaining HPE/Aruba = non-switch (Comware/FlexFabric/FlexNetwork, SMB) per the master manifest.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
