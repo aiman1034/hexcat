@@ -1,11 +1,13 @@
 ﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
 JL078A,,Switch,Portanzahl,1,3,Wertliste,Attribut
 JL078A,,Switch,Port-Konfiguration,1× QSFP+ (40G),4,Wertliste,Attribut
+JL078A,,Switch,PoE,Nein,7,Wertliste,Attribut
 JL078A,,Switch,Switching-Kapazität,"40 Gbit/s (Uplink-Modulschacht-Bandbreite, Aruba 2930M)",8,Wertliste,Attribut
 JL078A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 JL078A,,Switch,Kompatible Serie,Aruba 2930M / Aruba 3810M,20,Wertliste,Attribut
 JL079A,,Switch,Portanzahl,2,3,Wertliste,Attribut
 JL079A,,Switch,Port-Konfiguration,2× QSFP+ (40G),4,Wertliste,Attribut
+JL079A,,Switch,PoE,Nein,7,Wertliste,Attribut
 JL079A,,Switch,Switching-Kapazität,Modulschacht-vermittelt (modellspezifischer Wert nicht ausgewiesen),8,Wertliste,Attribut
 JL079A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 JL079A,,Switch,Kompatible Serie,Aruba 3810M,20,Wertliste,Attribut
@@ -17,31 +19,37 @@ JL081A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 JL081A,,Switch,Kompatible Serie,Aruba 2930M / Aruba 3810M,20,Wertliste,Attribut
 JL083A,,Switch,Portanzahl,4,3,Wertliste,Attribut
 JL083A,,Switch,Port-Konfiguration,"4× SFP+ (10G, MACsec)",4,Wertliste,Attribut
+JL083A,,Switch,PoE,Nein,7,Wertliste,Attribut
 JL083A,,Switch,Switching-Kapazität,"40 Gbit/s (Uplink-Modulschacht-Bandbreite, Aruba 2930M)",8,Wertliste,Attribut
 JL083A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 JL083A,,Switch,Kompatible Serie,Aruba 2930M / Aruba 3810M,20,Wertliste,Attribut
 JL084A,,Switch,Portanzahl,4,3,Wertliste,Attribut
 JL084A,,Switch,Port-Konfiguration,4× Stacking-Ports (Backplane-Stacking),4,Wertliste,Attribut
+JL084A,,Switch,PoE,Nein,7,Wertliste,Attribut
 JL084A,,Switch,Switching-Kapazität,Bis zu 336 Gbit/s Stacking-Durchsatz (42 Gbit/s je Richtung und Port),8,Wertliste,Attribut
 JL084A,,Switch,Modultyp,Stacking-Modul,19,Wertliste,Attribut
 JL084A,,Switch,Kompatible Serie,Aruba 3810M,20,Wertliste,Attribut
 JL325A,,Switch,Portanzahl,2,3,Wertliste,Attribut
 JL325A,,Switch,Port-Konfiguration,2× Stacking-Ports (VSF-Backplane-Stacking),4,Wertliste,Attribut
+JL325A,,Switch,PoE,Nein,7,Wertliste,Attribut
 JL325A,,Switch,Switching-Kapazität,Stacking-Backplane-vermittelt (modellspezifischer Wert nicht ausgewiesen),8,Wertliste,Attribut
 JL325A,,Switch,Modultyp,Stacking-Modul,19,Wertliste,Attribut
 JL325A,,Switch,Kompatible Serie,Aruba 2930M,20,Wertliste,Attribut
 J9731A,,Switch,Portanzahl,2,3,Wertliste,Attribut
 J9731A,,Switch,Port-Konfiguration,2× SFP+ (10G),4,Wertliste,Attribut
+J9731A,,Switch,PoE,Nein,7,Wertliste,Attribut
 J9731A,,Switch,Switching-Kapazität,Modulschacht-vermittelt (modellspezifischer Wert nicht ausgewiesen),8,Wertliste,Attribut
 J9731A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 J9731A,,Switch,Kompatible Serie,Aruba 2920,20,Wertliste,Attribut
 J9732A,,Switch,Portanzahl,2,3,Wertliste,Attribut
 J9732A,,Switch,Port-Konfiguration,"2× 10GBASE-T (10 GbE, RJ45)",4,Wertliste,Attribut
+J9732A,,Switch,PoE,Nein,7,Wertliste,Attribut
 J9732A,,Switch,Switching-Kapazität,Modulschacht-vermittelt (modellspezifischer Wert nicht ausgewiesen),8,Wertliste,Attribut
 J9732A,,Switch,Modultyp,Uplink-Modul,19,Wertliste,Attribut
 J9732A,,Switch,Kompatible Serie,Aruba 2920,20,Wertliste,Attribut
 J9733A,,Switch,Portanzahl,2,3,Wertliste,Attribut
 J9733A,,Switch,Port-Konfiguration,2× Stacking-Ports (Backplane-Stacking),4,Wertliste,Attribut
+J9733A,,Switch,PoE,Nein,7,Wertliste,Attribut
 J9733A,,Switch,Switching-Kapazität,Bis zu 40 Gbit/s je Stacking-Port,8,Wertliste,Attribut
 J9733A,,Switch,Modultyp,Stacking-Modul,19,Wertliste,Attribut
 J9733A,,Switch,Kompatible Serie,Aruba 2920,20,Wertliste,Attribut

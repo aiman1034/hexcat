@@ -4280,6 +4280,27 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Prices PHASE-1 ESTIMATE (flagged). PUSHED — origin/main moved off 8a7a593 (confirmed via `git ls-remote`, reported). Whole switch
   tree now **1440 SKUs**. **The HPE/Aruba SWITCH lane is now 100% complete** (fixed 2a/2b + modular 2c/2d + these expansion modules);
   remaining HPE/Aruba = non-switch (Comware/FlexFabric/FlexNetwork, SMB) per the master manifest.
+- **HPE/Aruba SWITCHES — CONTENT REMEDIATION (edit-in-place, 3 gaps; 2026-07-01; GREEN + PUSHED).** Fixed three
+  content-quality gaps the deep audit found across the 43-folder / **406-PID** HP switch tree, WITHOUT touching roster,
+  prices, Beschreibung/Kurzbeschreibung, or encoding (Main `;`-UTF-8-BOM, Attributes/FAQ `,`-UTF-8-BOM force-quoted FAQ).
+  Driver `_scratch/remediate_hp_switch_content.py` (dry-run/`--apply`). **FIX1 chassis** (5400R zl2 · 5400zl · 8200zl ·
+  CX 6400/8400): every populated bundle previously shared its empty-sibling's FAQ+Meta+Title verbatim → now each reflects
+  ITS config, derived from the (correct) Artikelname (base "Leergehäuse/Basis-Chassis" vs "92 Gigabit-PoE+-Ports…
+  vorinstalliert"). **FIX2 twin Meta/Title** (tree-wide): the distinguisher is DERIVED from the already-correct Artikelname
+  + attributes — TAA-konform (incl. the 2930F JL263A/JL264A grounding correction: they ARE the TAA SKUs), v2/v3 hardware-
+  generation, Hardware-Revision A/B/C, real spec diffs (airflow F2B/B2F, AC/DC PSU, PoE-budget, ToR-bundle via
+  attribute-diff), and — only for byte-identical successor part numbers — the factual order-number series (never a
+  fabricated spec). **FIX3 PoE facet**: within any E3 family carrying PoE, every port-bearing non-PoE line card now carries
+  `PoE=Nein` (29 rows: Expansion 8, 5400R zl2 Modules 4, CX 6400 Modules 9, zl Modules 8; Sortiernummer 7 + Verification_Log
+  entry each) — pure mgmt/fabric/SSM modules + empty base chassis correctly EXEMPT (no Portanzahl). **Counts:** 217 Meta/
+  Title cells rewritten (heaviest: CX 6200F 25 · 6300M 24 · 8325 23 · 6000 21), 128 FAQ Q&A injected (config + different-
+  model distinguishers), 29 PoE=Nein rows. **BINDING ACCEPTANCE MET:** for every folder, FAQ + Meta after PID-masking have
+  0 cross-PID collision between DIFFERENT (functional) models; tree-wide Meta 100% unique after masking. **Gate viol=0 +
+  validate_dir=0 across all 43 HP folders** (chassis gated PRE-remap per their build; L1 FAQ-quote/L3 Sortiernummer-order/
+  L4 Verification-log all fixed). Roster + prices byte-identical (asserted), 0 Beschreibung/Netto changes, 0 customer-facing
+  ZU_VERIFIZIEREN. **Judgment/flags:** ~10 pairs are genuinely byte-identical products under successor/alternate order
+  numbers (e.g. R8V13A↔S0G17A, S4R54A↔S4R56A) — distinguished by the factual order-number series, NOT a fabricated spec.
+  39 files changed. PUSHED — origin/main moved off c7d1d19 (confirmed via `git ls-remote`, reported).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
