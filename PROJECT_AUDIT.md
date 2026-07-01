@@ -4187,6 +4187,33 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   RJ45 (access) + 2× SFP+ (uplink), split for precision. **JL557A/JL558A confirmed = 48G/740W non-TAA; TAA members = JL559A + JL692A
   only** (agent-corrected datasheet caption errors). Whole switch tree now **1329 SKUs**. NEXT: ArubaOS-Switch Phase 2b (legacy
   ProCurve fixed tail, needs the 4 open decisions) + the modular zl chassis/modules on the CX chassis/module schema.
+- **HPE/Aruba SWITCHES — ArubaOS-Switch PHASE 2b AUTHORED (legacy ProCurve/HP fixed tail; 2026-07-01; GREEN + PUSHED).** Authored all
+  **44 SKUs** across the 10 legacy fixed/stackable families on the 15-Merkmal set: **2510 (4, incl. J9279A 2510G-24) · 2610 (5) ·
+  2615 (1) · 2620 (5) · 2810 (2) · 2910al (4, J9145-48A) · 2915 (1) · 3500 (8, the 3500+3500yl MERGE) · 3800 (9) · 6600 (5, J9263-65A/
+  J9451-52A)**. Driver `_scratch/aruba_procurve_build.py` (per-PID SPECS + per-family FAM; ProVision/ProCurve German prose, NOT
+  ArubaOS-Switch — these predate AOS-S 16.x). Grounded cell-by-cell from the QuickSpecs Models/spec tables (4 findings-only agents —
+  I wrote this entry): cached `datasheets/cache/hpe-aruba/` for 2615/2620/2915/3500 (c01813146), web-mirror QuickSpecs (DA-12599/
+  DA-13032/DA-12600/c01844343/c04111485/DA-13267) for 2510/2610/2810/2910al/3800/6600; per-model SwK/Durchsatz/PoE-budget read from
+  the table, never port-math. **Gate GREEN all 10 (viol=0), validate_dir=0, 0 customer-facing ZU_VERIFIZIEREN, 0 cross-bundle near-dup
+  ≥0.80** (worst 0.73, the 2615↔2915 compact-PoE siblings). One 3800 boilerplate FAIL fixed: the `bzw.`/`1.050` mid-sentence periods
+  in the X312-PSU string fragmented the sentence, orphaning a PID-less tail across all 9 → reworded (`oder`, `1000 W`, `;`). **E3
+  (per operator, grounded per-family):** `HP ProCurve 2510/2610/2615/2620/2810/2910al/2915/3500/6600 Switches` + `HP 3800 Switches`
+  (3800 launched under HP Networking, never ProCurve; 3500 merge = ONE E3 for all 8). rules.yaml +10 E3 (additions-only, now 105
+  switch-E3); gate_completeness +10. Hersteller=HP. Prices PHASE-1 ESTIMATE (flagged, EOL tier). **0 new Merkmal NAMES.** **New
+  Wertliste VALUES:** Stacking — `Meshed Stacking (dediziertes Stacking-Modul J9577A, bis 10 Einheiten, bis 336 Gbit/s)` (3800),
+  `Kein (kein dedizierter Stacking-Bus; Ausfallsicherheit über HP-Switch-Meshing und Distributed Trunking)` (3500/6600),
+  `Kein (Standalone; Single-IP-Virtual-Stacking-Verwaltung bis 16 Einheiten)` (2510/2610/2810/2910al); PoE — legacy `IEEE 802.3af
+  Class 3, 15,4 W/Port` tier (Budget 67/124/398 W) + customer-safe PSU/EPS-dependent phrasings (2610-PWR, 2910al-PoE+, 3800-PoE+
+  budgets un-published in the QuickSpec → rephrased, never shipped ZU_VERIFIZIEREN); Betriebstemperatur `0 bis 50 °C` (2610),
+  `5 bis 40 °C` (6600, J9265A=`0 bis 40 °C`); Port-Geschwindigkeit `100/1000 Mbit/s (SFP)` (3800-24SFP) + `10 GbE (10GBASE-T)`
+  (3800-XG). **Corrections applied from grounding (flagged to operator):** (1) 3800-XG uplinks = **10GBASE-T copper, NOT CX4**;
+  (2) **6600 has NO backplane/ProVision stack** (meshing + distributed-trunking only → Stacking=Kein) — corrects the Phase-1 premise;
+  (3) 3500 **10-GbE module slot only on the 4 yl Gigabit models**, not the FE-base four (their uplinks = 4 dual-personality); (4)
+  cooling is NOT all-fanless — only J9019B/J9085A/J9565A/J9562A/J9623A are fanless, rest fan-cooled; (5) 6600 low-temp = 5 °C.
+  Layer rule (consistent with Phase 2a static-routing→L2): L2 = 2510/2610/2615/2810, L3 = 2620/2915/2910al/3500/3800/6600.
+  3-commit split, PUSHED to origin/main (hash moved off 356edd4; confirmed via `git ls-remote` and reported to operator). Whole
+  switch tree now **1373 SKUs**. NEXT: the modular
+  zl chassis (5400R zl2 · 8200zl · 5400zl v1) + their module pools on the validated CX chassis/module schema.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
