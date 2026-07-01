@@ -1,0 +1,1199 @@
+{
+ "JH390A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-48SFP+-6QSFP28 JH390A Managed Switch (L3) – 48× 1/10G SFP+ + 6× 100G QSFP28, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-48SFP+-6QSFP28 JH390A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-48SFP+-6QSFP28 (JH390A): gemanagter Layer-3-Switch mit 48× 1/10G SFP+, Switching-Kapazität 2,16 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-48SFP+-6QSFP28 (JH390A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH390A eine Switching-Kapazität von 2,16 Tbit/s und bindet per 6× 100G QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-48SFP+-6QSFP28 (JH390A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 54 Ports (48× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH390A erreicht eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von 1.607 Mpps. Der JH390A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH390A erfolgt über 6× 100G QSFP28, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH390A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH390A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH390A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH390A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH390A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH390A?",
+    "Der JH390A bietet insgesamt 54 Ports: 48× 1/10G SFP+ + 6× 100G QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JH390A PoE?",
+    "Nein. Der JH390A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH390A stapeln (Stacking)?",
+    "Ja. Der JH390A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G SFP+ + 6× 100G QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+), 100 GbE (QSFP28; 40 GbE bzw. 25 GbE-Breakout)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 100G QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.607 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13500.00"
+ },
+ "JH391A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-48XGT-6QSFP28 JH391A Managed Switch (L3) – 48× 1/10GBASE-T (RJ45) + 6× 100G QSFP28, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-48XGT-6QSFP28 JH391A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-48XGT-6QSFP28 (JH391A): gemanagter Layer-3-Switch mit 48× 1/10GBASE-T (RJ45), Switching-Kapazität 2,16 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "9,0",
+  "versandgewicht": "11,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-48XGT-6QSFP28 (JH391A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH391A eine Switching-Kapazität von 2,16 Tbit/s und bindet per 6× 100G QSFP28 an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-48XGT-6QSFP28 (JH391A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 54 Ports (48× 1/10GBASE-T (RJ45)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH391A erreicht eine Switching-Kapazität von 2,16 Tbit/s bei einer Weiterleitungsrate von 1.607 Mpps. Der JH391A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH391A erfolgt über 6× 100G QSFP28, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH391A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH391A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH391A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH391A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH391A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH391A?",
+    "Der JH391A bietet insgesamt 54 Ports: 48× 1/10GBASE-T (RJ45) + 6× 100G QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JH391A PoE?",
+    "Nein. Der JH391A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH391A stapeln (Stacking)?",
+    "Ja. Der JH391A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10GBASE-T (RJ45) + 6× 100G QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, RJ45), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 100G QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.607 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13900.00"
+ },
+ "JH394A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-48XGT-6QSFP+ JH394A Managed Switch (L3) – 48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-48XGT-6QSFP+ JH394A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-48XGT-6QSFP+ (JH394A): gemanagter Layer-3-Switch mit 48× 1/10GBASE-T (RJ45), Switching-Kapazität 1,44 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "9,0",
+  "versandgewicht": "11,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-48XGT-6QSFP+ (JH394A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH394A eine Switching-Kapazität von 1,44 Tbit/s und bindet per 6× 40G QSFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-48XGT-6QSFP+ (JH394A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 54 Ports (48× 1/10GBASE-T (RJ45)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH394A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JH394A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH394A erfolgt über 6× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH394A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH394A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH394A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH394A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH394A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH394A?",
+    "Der JH394A bietet insgesamt 54 Ports: 48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH394A PoE?",
+    "Nein. Der JH394A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH394A stapeln (Stacking)?",
+    "Ja. Der JH394A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12500.00"
+ },
+ "JH395A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-48SFP+-6QSFP+ JH395A Managed Switch (L3) – 48× 1/10G SFP+ + 6× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-48SFP+-6QSFP+ JH395A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-48SFP+-6QSFP+ (JH395A): gemanagter Layer-3-Switch mit 48× 1/10G SFP+, Switching-Kapazität 1,44 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-48SFP+-6QSFP+ (JH395A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH395A eine Switching-Kapazität von 1,44 Tbit/s und bindet per 6× 40G QSFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-48SFP+-6QSFP+ (JH395A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 54 Ports (48× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH395A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JH395A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH395A erfolgt über 6× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH395A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH395A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH395A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH395A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH395A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH395A?",
+    "Der JH395A bietet insgesamt 54 Ports: 48× 1/10G SFP+ + 6× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JH395A PoE?",
+    "Nein. Der JH395A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH395A stapeln (Stacking)?",
+    "Ja. Der JH395A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G SFP+ + 6× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12000.00"
+ },
+ "JH396A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-32QSFP+ JH396A Managed Switch (L3) – 32× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-32QSFP+ JH396A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-32QSFP+ (JH396A): gemanagter Layer-3-Switch mit 32× 40G QSFP+, Switching-Kapazität 2,56 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-32QSFP+ (JH396A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 32 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH396A eine Switching-Kapazität von 2,56 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-32QSFP+ (JH396A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 32 Ports (32× 40G QSFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH396A erreicht eine Switching-Kapazität von 2,56 Tbit/s bei einer Weiterleitungsrate von 1.904 Mpps. Der JH396A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH396A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH396A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH396A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH396A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH396A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH396A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH396A?",
+    "Der JH396A bietet insgesamt 32 Ports: 32× 40G QSFP+."
+   ],
+   [
+    "Unterstützt der JH396A PoE?",
+    "Nein. Der JH396A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH396A stapeln (Stacking)?",
+    "Ja. Der JH396A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 40G QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+; 10 GbE über 4×10G-Breakout)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,56 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.904 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "13000.00"
+ },
+ "JH397A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-2-slot JH397A Managed Switch (L3) – 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-2-slot JH397A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-2-slot (JH397A): gemanagter Layer-3-Switch mit 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar), Switching-Kapazität 1,44 Tbit/s, ohne PoE, HPE-Comw",
+  "artikelgewicht": "8,8",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-2-slot (JH397A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5940-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH397A eine Switching-Kapazität von 1,44 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-2-slot (JH397A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit 2 Ports (2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH397A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JH397A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH397A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH397A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH397A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH397A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH397A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH397A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH397A?",
+    "Der JH397A bietet insgesamt 2 Ports: 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der JH397A PoE?",
+    "Nein. Der JH397A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH397A stapeln (Stacking)?",
+    "Ja. Der JH397A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "2"
+   ],
+   [
+    "Port-Konfiguration",
+    "2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+, fest); modulabhängig 10/40/100 GbE"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "12500.00"
+ },
+ "JH398A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c05158726",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5940-4-slot JH398A Managed Switch (L3) – vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5940-4-slot JH398A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5940-4-slot (JH398A): gemanagter Layer-3-Switch mit vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar), Switching-Kapazität 2,56 Tbit/s, ohne",
+  "artikelgewicht": "11,0",
+  "versandgewicht": "13,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5940-4-slot (JH398A) ist ein gemanagter Layer-3-Slot-Switch der HPE-FlexFabric-5940-Serie mit vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar). Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH398A eine Switching-Kapazität von 2,56 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5940-4-slot (JH398A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5940-Familie mit vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH398A erreicht eine Switching-Kapazität von 2,56 Tbit/s bei einer Weiterleitungsrate von 1.904 Mpps. Der JH398A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH398A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH398A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH398A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH398A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), BGP-EVPN/VXLAN (Layer 2 und Layer 3, RFC 7432), ECMP, OpenFlow/SDN und IRF-Stacking. Geliefert wird der JH398A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH398A ist HPE-Original-Neuware der FlexFabric-5940-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH398A?",
+    "Der JH398A stellt vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar) bereit."
+   ],
+   [
+    "Unterstützt der JH398A PoE?",
+    "Nein. Der JH398A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH398A stapeln (Stacking)?",
+    "Ja. Der JH398A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "0"
+   ],
+   [
+    "Port-Konfiguration",
+    "vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "modulabhängig (10/40/100 GbE bzw. FC/FCoE)"
+   ],
+   [
+    "Uplink-Ports",
+    "modulabhängige Uplinks je nach Bestückung"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,56 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.904 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/40/100-GbE, BGP-EVPN/VXLAN (L2/L3) und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c05158726",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "16000.00"
+ }
+}

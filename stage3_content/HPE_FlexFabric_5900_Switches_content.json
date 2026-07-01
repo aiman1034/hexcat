@@ -1,0 +1,686 @@
+{
+ "JC772A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111469",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5900AF-48XG-4QSFP+ JC772A Managed Switch (L3) – 48× 1/10G SFP+ + 4× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5900AF-48XG-4QSFP+ JC772A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5900AF-48XG-4QSFP+ (JC772A): gemanagter Layer-3-Switch mit 48× 1/10G SFP+, Switching-Kapazität 1,28 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5900AF-48XG-4QSFP+ (JC772A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5900-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JC772A eine Switching-Kapazität von 1,28 Tbit/s und bindet per 4× 40G QSFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5900AF-48XG-4QSFP+ (JC772A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5900-Familie mit 52 Ports (48× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JC772A erreicht eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 952 Mpps. Der JC772A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JC772A erfolgt über 4× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JC772A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JC772A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JC772A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6 via OSPFv3/BGP4+), dazu FCoE/DCB, TRILL, IRF-Stacking und QoS. Geliefert wird der JC772A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JC772A ist HPE-Original-Neuware der FlexFabric-5900-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JC772A?",
+    "Der JC772A bietet insgesamt 52 Ports: 48× 1/10G SFP+ + 4× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JC772A PoE?",
+    "Nein. Der JC772A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JC772A stapeln (Stacking)?",
+    "Ja. Der JC772A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G SFP+ + 4× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40-GbE-Ports, FCoE/DCB, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5200.00"
+ },
+ "JG336A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111469",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5900AF-48XGT-4QSFP+ JG336A Managed Switch (L3) – 48× 1/10GBASE-T (RJ45) + 4× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5900AF-48XGT-4QSFP+ JG336A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5900AF-48XGT-4QSFP+ (JG336A): gemanagter Layer-3-Switch mit 48× 1/10GBASE-T (RJ45), Switching-Kapazität 1,28 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5900AF-48XGT-4QSFP+ (JG336A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5900-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG336A eine Switching-Kapazität von 1,28 Tbit/s und bindet per 4× 40G QSFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5900AF-48XGT-4QSFP+ (JG336A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5900-Familie mit 52 Ports (48× 1/10GBASE-T (RJ45)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG336A erreicht eine Switching-Kapazität von 1,28 Tbit/s bei einer Weiterleitungsrate von 952 Mpps. Der JG336A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG336A erfolgt über 4× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG336A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JG336A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JG336A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6 via OSPFv3/BGP4+), dazu FCoE/DCB, TRILL, IRF-Stacking und QoS. Geliefert wird der JG336A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG336A ist HPE-Original-Neuware der FlexFabric-5900-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG336A?",
+    "Der JG336A bietet insgesamt 52 Ports: 48× 1/10GBASE-T (RJ45) + 4× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG336A PoE?",
+    "Nein. Der JG336A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG336A stapeln (Stacking)?",
+    "Ja. Der JG336A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10GBASE-T (RJ45) + 4× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,28 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "952 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40-GbE-Ports, FCoE/DCB, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5400.00"
+ },
+ "JG510A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111469",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5900AF-48G-4XG-2QSFP+ JG510A Managed Switch (L3) – 48× 10/100/1000 (RJ45) + 4× 10G SFP+ + 2× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5900AF-48G-4XG-2QSFP+ JG510A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5900AF-48G-4XG-2QSFP+ (JG510A): gemanagter Layer-3-Switch mit 48× 10/100/1000 (RJ45) + 4× 10G SFP+, Switching-Kapazität 336 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5900AF-48G-4XG-2QSFP+ (JG510A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5900-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG510A eine Switching-Kapazität von 336 Gbit/s und bindet per 2× 40G QSFP+ an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5900AF-48G-4XG-2QSFP+ (JG510A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5900-Familie mit 54 Ports (48× 10/100/1000 (RJ45) + 4× 10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG510A erreicht eine Switching-Kapazität von 336 Gbit/s bei einer Weiterleitungsrate von 250 Mpps. Der JG510A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG510A erfolgt über 2× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG510A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JG510A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JG510A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6 via OSPFv3/BGP4+), dazu FCoE/DCB, TRILL, IRF-Stacking und QoS. Geliefert wird der JG510A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG510A ist HPE-Original-Neuware der FlexFabric-5900-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG510A?",
+    "Der JG510A bietet insgesamt 54 Ports: 48× 10/100/1000 (RJ45) + 4× 10G SFP+ + 2× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG510A PoE?",
+    "Nein. Der JG510A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG510A stapeln (Stacking)?",
+    "Ja. Der JG510A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10/100/1000 (RJ45) + 4× 10G SFP+ + 2× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10/100/1000 Mbit/s (RJ45), 10 GbE (SFP+), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "2× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "336 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "250 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40-GbE-Ports, FCoE/DCB, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "3400.00"
+ },
+ "JG838A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111469",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5900CP-48XG-4QSFP+ JG838A Managed Switch (L3) – 48× 1/10G SFP+ (Konvergenzports, FC/FCoE) + 4× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5900CP-48XG-4QSFP+ JG838A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5900CP-48XG-4QSFP+ (JG838A): gemanagter Layer-3-Switch mit 48× 1/10G SFP+ (Konvergenzports, FC/FCoE), ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,2",
+  "versandgewicht": "10,20",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5900CP-48XG-4QSFP+ (JG838A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5900-Serie mit 52 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage leitet der JG838A nicht-blockierend mit Wire-Speed weiter und bindet über seine Konvergenz- und QSFP+-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5900CP-48XG-4QSFP+ (JG838A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5900-Familie mit 52 Ports (48× 1/10G SFP+ (Konvergenzports, FC/FCoE)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG838A leitet nicht-blockierend mit Wire-Speed weiter. Der JG838A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG838A erfolgt über 4× 40G QSFP+, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG838A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JG838A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JG838A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6 via OSPFv3/BGP4+), dazu FCoE/DCB, TRILL, IRF-Stacking und QoS. Geliefert wird der JG838A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG838A ist HPE-Original-Neuware der FlexFabric-5900-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG838A?",
+    "Der JG838A bietet insgesamt 52 Ports: 48× 1/10G SFP+ (Konvergenzports, FC/FCoE) + 4× 40G QSFP+ (Uplink)."
+   ],
+   [
+    "Unterstützt der JG838A PoE?",
+    "Nein. Der JG838A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG838A stapeln (Stacking)?",
+    "Ja. Der JG838A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "52"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G SFP+ (Konvergenzports, FC/FCoE) + 4× 40G QSFP+ (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+, FC/FCoE-Konvergenz), 40 GbE (QSFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "4× 40G QSFP+"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "Non-Blocking-Architektur (Wire-Speed)"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40-GbE-Ports, FCoE/DCB, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111469",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5600.00"
+ }
+}

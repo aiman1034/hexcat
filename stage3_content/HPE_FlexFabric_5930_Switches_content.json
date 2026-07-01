@@ -1,0 +1,515 @@
+{
+ "JG726A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111326",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5930-32QSFP+ JG726A Managed Switch (L3) – 32× 40G QSFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5930-32QSFP+ JG726A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5930-32QSFP+ (JG726A): gemanagter Layer-3-Switch mit 32× 40G QSFP+, Switching-Kapazität 2,56 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5930-32QSFP+ (JG726A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5930-Serie mit 32 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JG726A eine Switching-Kapazität von 2,56 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5930-32QSFP+ (JG726A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5930-Familie mit 32 Ports (32× 40G QSFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JG726A erreicht eine Switching-Kapazität von 2,56 Tbit/s bei einer Weiterleitungsrate von 1.429 Mpps. Der JG726A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JG726A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JG726A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JG726A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JG726A Layer-3-Routing (OSPF, BGP, IS-IS, RIP; IPv6), VXLAN-Layer-2-Gateway, TRILL/SPB, FCoE/DCB, ECMP und IRF-Stacking. Geliefert wird der JG726A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JG726A ist HPE-Original-Neuware der FlexFabric-5930-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JG726A?",
+    "Der JG726A bietet insgesamt 32 Ports: 32× 40G QSFP+."
+   ],
+   [
+    "Unterstützt der JG726A PoE?",
+    "Nein. Der JG726A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JG726A stapeln (Stacking)?",
+    "Ja. Der JG726A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "32"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 40G QSFP+"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+; 10 GbE über 4×10G-Breakout)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,56 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.429 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "9500.00"
+ },
+ "JH178A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111326",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5930-2QSFP+-2-slot JH178A Managed Switch (L3) – 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5930-2QSFP+-2-slot JH178A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5930-2QSFP+-2-slot (JH178A): gemanagter Layer-3-Switch mit 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar), Switching-Kapazität 1,44 Tbit/s, ohne PoE, H",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5930-2QSFP+-2-slot (JH178A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5930-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH178A eine Switching-Kapazität von 1,44 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5930-2QSFP+-2-slot (JH178A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5930-Familie mit 2 Ports (2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH178A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JH178A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH178A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH178A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH178A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH178A Layer-3-Routing (OSPF, BGP, IS-IS, RIP; IPv6), VXLAN-Layer-2-Gateway, TRILL/SPB, FCoE/DCB, ECMP und IRF-Stacking. Geliefert wird der JH178A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH178A ist HPE-Original-Neuware der FlexFabric-5930-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH178A?",
+    "Der JH178A bietet insgesamt 2 Ports: 2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der JH178A PoE?",
+    "Nein. Der JH178A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH178A stapeln (Stacking)?",
+    "Ja. Der JH178A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "2"
+   ],
+   [
+    "Port-Konfiguration",
+    "2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "40 GbE (QSFP+, fest); modulabhängig 10/40 GbE"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8500.00"
+ },
+ "JH179A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111326",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5930-4-slot JH179A Managed Switch (L3) – vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5930-4-slot JH179A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5930-4-slot (JH179A): gemanagter Layer-3-Switch mit vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar), Switching-Kapazität 2,56 Tbit/s, ohne PoE",
+  "artikelgewicht": "11,0",
+  "versandgewicht": "13,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5930-4-slot (JH179A) ist ein gemanagter Layer-3-Slot-Switch der HPE-FlexFabric-5930-Serie mit vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar). Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JH179A eine Switching-Kapazität von 2,56 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5930-4-slot (JH179A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5930-Familie mit vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JH179A erreicht eine Switching-Kapazität von 2,56 Tbit/s bei einer Weiterleitungsrate von 1.429 Mpps. Der JH179A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JH179A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu neun Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JH179A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JH179A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JH179A Layer-3-Routing (OSPF, BGP, IS-IS, RIP; IPv6), VXLAN-Layer-2-Gateway, TRILL/SPB, FCoE/DCB, ECMP und IRF-Stacking. Geliefert wird der JH179A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JH179A ist HPE-Original-Neuware der FlexFabric-5930-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JH179A?",
+    "Der JH179A stellt vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar) bereit."
+   ],
+   [
+    "Unterstützt der JH179A PoE?",
+    "Nein. Der JH179A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JH179A stapeln (Stacking)?",
+    "Ja. Der JH179A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "0"
+   ],
+   [
+    "Port-Konfiguration",
+    "vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "modulabhängig (10/40 GbE bzw. FC/FCoE)"
+   ],
+   [
+    "Uplink-Ports",
+    "modulabhängige Uplinks je nach Bestückung"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "2,56 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.429 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111326",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "11000.00"
+ }
+}

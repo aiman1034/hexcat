@@ -1,0 +1,686 @@
+{
+ "JQ074A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00047323enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5945-48SFP28-8QSFP28 JQ074A Managed Switch (L3) – 48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5945-48SFP28-8QSFP28 JQ074A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5945-48SFP28-8QSFP28 (JQ074A): gemanagter Layer-3-Switch mit 48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP, Switching-Kapazität 4 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,8",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-48SFP28-8QSFP28 (JQ074A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 58 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ074A eine Switching-Kapazität von 4 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5945-48SFP28-8QSFP28 (JQ074A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 58 Ports (48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JQ074A erreicht eine Switching-Kapazität von 4 Tbit/s bei einer Weiterleitungsrate von 2.024 Mpps. Der JQ074A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ074A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ074A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ074A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ074A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ074A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ074A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JQ074A ist HPE-Original-Neuware der FlexFabric-5945-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JQ074A?",
+    "Der JQ074A bietet insgesamt 58 Ports: 48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP."
+   ],
+   [
+    "Unterstützt der JQ074A PoE?",
+    "Nein. Der JQ074A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JQ074A stapeln (Stacking)?",
+    "Ja. Der JQ074A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "58"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "25 GbE (SFP28), 100 GbE (QSFP28), 1 GbE (SFP)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.024 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-Rechenzentrums-Spine/Leaf (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN, MPLS und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "22000.00"
+ },
+ "JQ075A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00047323enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5945-2-slot JQ075A Managed Switch (L3) – 2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5945-2-slot JQ075A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5945-2-slot (JQ075A): gemanagter Layer-3-Switch mit 2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar), Switching-Kapazität 3,6 Tbit/s, ohne PoE, HPE-Com",
+  "artikelgewicht": "11,0",
+  "versandgewicht": "13,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-2-slot (JQ075A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ075A eine Switching-Kapazität von 3,6 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5945-2-slot (JQ075A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 2 Ports (2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JQ075A erreicht eine Switching-Kapazität von 3,6 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der JQ075A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ075A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ075A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ075A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ075A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ075A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ075A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JQ075A ist HPE-Original-Neuware der FlexFabric-5945-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JQ075A?",
+    "Der JQ075A bietet insgesamt 2 Ports: 2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der JQ075A PoE?",
+    "Nein. Der JQ075A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JQ075A stapeln (Stacking)?",
+    "Ja. Der JQ075A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "2"
+   ],
+   [
+    "Port-Konfiguration",
+    "2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28, fest); modulabhängig 10/25/40/100 GbE"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "3,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-Rechenzentrums-Spine/Leaf (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN, MPLS und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "20000.00"
+ },
+ "JQ076A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00047323enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5945-4-slot JQ076A Managed Switch (L3) – 2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5945-4-slot JQ076A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5945-4-slot (JQ076A): gemanagter Layer-3-Switch mit 2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar), Switching-Kapazität 6,4 Tbit/s, ohne P",
+  "artikelgewicht": "11,5",
+  "versandgewicht": "13,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-4-slot (JQ076A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ076A eine Switching-Kapazität von 6,4 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5945-4-slot (JQ076A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 2 Ports (2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JQ076A erreicht eine Switching-Kapazität von 6,4 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der JQ076A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ076A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ076A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ076A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ076A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ076A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ076A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JQ076A ist HPE-Original-Neuware der FlexFabric-5945-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JQ076A?",
+    "Der JQ076A bietet insgesamt 2 Ports: 2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der JQ076A PoE?",
+    "Nein. Der JQ076A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JQ076A stapeln (Stacking)?",
+    "Ja. Der JQ076A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "2"
+   ],
+   [
+    "Port-Konfiguration",
+    "2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1 GbE (SFP, fest); modulabhängig 10/25/40/100 GbE"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-Rechenzentrums-Spine/Leaf (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN, MPLS und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "26000.00"
+ },
+ "JQ077A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00047323enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5945-32QSFP28 JQ077A Managed Switch (L3) – 32× 100G QSFP28 + 2× 1G SFP, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5945-32QSFP28 JQ077A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5945-32QSFP28 (JQ077A): gemanagter Layer-3-Switch mit 32× 100G QSFP28 + 2× 1G SFP, Switching-Kapazität 6,4 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,8",
+  "versandgewicht": "10,80",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-32QSFP28 (JQ077A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 34 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ077A eine Switching-Kapazität von 6,4 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5945-32QSFP28 (JQ077A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 34 Ports (32× 100G QSFP28 + 2× 1G SFP), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JQ077A erreicht eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.024 Mpps. Der JQ077A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ077A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ077A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ077A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ077A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ077A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ077A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JQ077A ist HPE-Original-Neuware der FlexFabric-5945-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JQ077A?",
+    "Der JQ077A bietet insgesamt 34 Ports: 32× 100G QSFP28 + 2× 1G SFP."
+   ],
+   [
+    "Unterstützt der JQ077A PoE?",
+    "Nein. Der JQ077A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JQ077A stapeln (Stacking)?",
+    "Ja. Der JQ077A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 100G QSFP28 + 2× 1G SFP"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28), 1 GbE (SFP)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "6,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.024 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Density-Rechenzentrums-Spine/Leaf (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN, MPLS und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00047323enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "24000.00"
+ }
+}

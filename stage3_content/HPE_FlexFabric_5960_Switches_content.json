@@ -1,0 +1,515 @@
+{
+ "S4J82A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50007000enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5960R-48QSFP28-6QSFP-DD S4J82A Managed Switch (L3) – 48× 100G QSFP28 + 6× 400G QSFP-DD, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5960R-48QSFP28-6QSFP-DD S4J82A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5960R-48QSFP28-6QSFP-DD (S4J82A): gemanagter Layer-3-Switch mit 48× 100G QSFP28 + 6× 400G QSFP-DD, Switching-Kapazität 14,4 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "12,0",
+  "versandgewicht": "14,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5960R-48QSFP28-6QSFP-DD (S4J82A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5960-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem (Comware v9) übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der S4J82A eine Switching-Kapazität von 14,4 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5960R-48QSFP28-6QSFP-DD (S4J82A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5960-Familie mit 54 Ports (48× 100G QSFP28 + 6× 400G QSFP-DD), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem (Comware v9).",
+   "Der S4J82A erreicht eine Switching-Kapazität von 14,4 Tbit/s bei einer Weiterleitungsrate von 2.700 Mpps. Der S4J82A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des S4J82A erfolgt über die Hochgeschwindigkeits-Ports; für Hochverfügbarkeit bilden zwei S4J82A per DRNI (Distributed Resilient Network Interconnect) einen aktiv-aktiven Multi-Chassis-Verbund.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der S4J82A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des S4J82A übernehmen Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear) sowie Dual redundante Hot-Swap-Netzteile (AC oder DC). Unter dem HPE-Comware-Betriebssystem (Comware v9) bietet der S4J82A Layer-3-Routing (OSPFv2/v3, BGP, IS-IS), BGP-EVPN/VXLAN, SR-MPLS/SRv6, PTP/SyncE, ECMP und DRNI-Hochverfügbarkeit. Der S4J82A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5960“ geführt. Geliefert wird der S4J82A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der S4J82A ist HPE-Original-Neuware der FlexFabric-5960-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der S4J82A?",
+    "Der S4J82A bietet insgesamt 54 Ports: 48× 100G QSFP28 + 6× 400G QSFP-DD + ein I/O-Modulschacht (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der S4J82A PoE?",
+    "Nein. Der S4J82A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der S4J82A redundant koppeln?",
+    "Ja. Über DRNI (Distributed Resilient Network Interconnect) bilden zwei S4J82A einen aktiv-aktiven Multi-Chassis-Verbund für Hochverfügbarkeit."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 100G QSFP28 + 6× 400G QSFP-DD + ein I/O-Modulschacht (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "100 GbE (QSFP28), 400 GbE (QSFP-DD)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "14,4 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "2.700 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (2 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual redundante Hot-Swap-Netzteile (AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear)"
+   ],
+   [
+    "Stacking",
+    "DRNI (Distributed Resilient Network Interconnect) – Multi-Chassis-Link-Aggregation für aktiv-aktive Hochverfügbarkeit"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Rechenzentrums-Spine (Layer 3, HPE Comware) mit 100/200/400-GbE, EVPN/VXLAN, SR-MPLS/SRv6 und DRNI-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "36000.00"
+ },
+ "R9Y12A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50007000enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5960-24QSFP56-8QSFP-DD R9Y12A Managed Switch (L3) – 24× 100/200G QSFP56 + 8× 400G QSFP-DD + 2× 10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5960-24QSFP56-8QSFP-DD R9Y12A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5960-24QSFP56-8QSFP-DD (R9Y12A): gemanagter Layer-3-Switch mit 24× 100/200G QSFP56 + 8× 400G QSFP-DD + 2× 10G SFP+, Switching-Kapazität 16 Tbit/s, ohne PoE, HPE-Comware-Betrieb",
+  "artikelgewicht": "9,5",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5960-24QSFP56-8QSFP-DD (R9Y12A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5960-Serie mit 34 Ports. Unter dem HPE-Comware-Betriebssystem (Comware v9) übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der R9Y12A eine Switching-Kapazität von 16 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5960-24QSFP56-8QSFP-DD (R9Y12A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5960-Familie mit 34 Ports (24× 100/200G QSFP56 + 8× 400G QSFP-DD + 2× 10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem (Comware v9).",
+   "Der R9Y12A erreicht eine Switching-Kapazität von 16 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der R9Y12A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9Y12A erfolgt über die Hochgeschwindigkeits-Ports; für Hochverfügbarkeit bilden zwei R9Y12A per DRNI (Distributed Resilient Network Interconnect) einen aktiv-aktiven Multi-Chassis-Verbund.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der R9Y12A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9Y12A übernehmen Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear) sowie Dual redundante Hot-Swap-Netzteile (AC oder DC). Unter dem HPE-Comware-Betriebssystem (Comware v9) bietet der R9Y12A Layer-3-Routing (OSPFv2/v3, BGP, IS-IS), BGP-EVPN/VXLAN, SR-MPLS/SRv6, PTP/SyncE, ECMP und DRNI-Hochverfügbarkeit. Der R9Y12A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5960“ geführt. Geliefert wird der R9Y12A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9Y12A ist HPE-Original-Neuware der FlexFabric-5960-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9Y12A?",
+    "Der R9Y12A bietet insgesamt 34 Ports: 24× 100/200G QSFP56 + 8× 400G QSFP-DD + 2× 10G SFP+ + ein I/O-Modulschacht (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der R9Y12A PoE?",
+    "Nein. Der R9Y12A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9Y12A redundant koppeln?",
+    "Ja. Über DRNI (Distributed Resilient Network Interconnect) bilden zwei R9Y12A einen aktiv-aktiven Multi-Chassis-Verbund für Hochverfügbarkeit."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 100/200G QSFP56 + 8× 400G QSFP-DD + 2× 10G SFP+ + ein I/O-Modulschacht (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "200 GbE (QSFP56), 400 GbE (QSFP-DD), 10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "16 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual redundante Hot-Swap-Netzteile (AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear)"
+   ],
+   [
+    "Stacking",
+    "DRNI (Distributed Resilient Network Interconnect) – Multi-Chassis-Link-Aggregation für aktiv-aktive Hochverfügbarkeit"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Rechenzentrums-Spine (Layer 3, HPE Comware) mit 100/200/400-GbE, EVPN/VXLAN, SR-MPLS/SRv6 und DRNI-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "42000.00"
+ },
+ "R9Y13A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a50007000enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5960-32QSFP-DD-2SFP+ R9Y13A Managed Switch (L3) – 32× 400G QSFP-DD + 2× 1/10G SFP+, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5960-32QSFP-DD-2SFP+ R9Y13A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5960-32QSFP-DD-2SFP+ (R9Y13A): gemanagter Layer-3-Switch mit 32× 400G QSFP-DD + 2× 1/10G SFP+, Switching-Kapazität 25,6 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "9,5",
+  "versandgewicht": "11,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5960-32QSFP-DD-2SFP+ (R9Y13A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5960-Serie mit 34 Ports. Unter dem HPE-Comware-Betriebssystem (Comware v9) übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der R9Y13A eine Switching-Kapazität von 25,6 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5960-32QSFP-DD-2SFP+ (R9Y13A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5960-Familie mit 34 Ports (32× 400G QSFP-DD + 2× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem (Comware v9).",
+   "Der R9Y13A erreicht eine Switching-Kapazität von 25,6 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der R9Y13A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des R9Y13A erfolgt über die Hochgeschwindigkeits-Ports; für Hochverfügbarkeit bilden zwei R9Y13A per DRNI (Distributed Resilient Network Interconnect) einen aktiv-aktiven Multi-Chassis-Verbund.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der R9Y13A im Temperaturbereich 0 bis 40 °C; Kühlung und Stromversorgung des R9Y13A übernehmen Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear) sowie Dual redundante Hot-Swap-Netzteile (AC oder DC). Unter dem HPE-Comware-Betriebssystem (Comware v9) bietet der R9Y13A Layer-3-Routing (OSPFv2/v3, BGP, IS-IS), BGP-EVPN/VXLAN, SR-MPLS/SRv6, PTP/SyncE, ECMP und DRNI-Hochverfügbarkeit. Der R9Y13A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5960“ geführt. Geliefert wird der R9Y13A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der R9Y13A ist HPE-Original-Neuware der FlexFabric-5960-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der R9Y13A?",
+    "Der R9Y13A bietet insgesamt 34 Ports: 32× 400G QSFP-DD + 2× 1/10G SFP+ + ein I/O-Modulschacht (optional, separat bestückbar)."
+   ],
+   [
+    "Unterstützt der R9Y13A PoE?",
+    "Nein. Der R9Y13A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der R9Y13A redundant koppeln?",
+    "Ja. Über DRNI (Distributed Resilient Network Interconnect) bilden zwei R9Y13A einen aktiv-aktiven Multi-Chassis-Verbund für Hochverfügbarkeit."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "34"
+   ],
+   [
+    "Port-Konfiguration",
+    "32× 400G QSFP-DD + 2× 1/10G SFP+ + ein I/O-Modulschacht (optional, separat bestückbar)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "400 GbE (QSFP-DD), 1/10 GbE (SFP+)"
+   ],
+   [
+    "Uplink-Ports",
+    "kein dedizierter Uplink (alle Ports gleichwertig nutzbar)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "25,6 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "Dual redundante Hot-Swap-Netzteile (AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (6 Hot-Swap-Lüftertrays, Airflow front-to-rear)"
+   ],
+   [
+    "Stacking",
+    "DRNI (Distributed Resilient Network Interconnect) – Multi-Chassis-Link-Aggregation für aktiv-aktive Hochverfügbarkeit"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 40 °C"
+   ],
+   [
+    "Anwendung",
+    "High-Performance-Rechenzentrums-Spine (Layer 3, HPE Comware) mit 100/200/400-GbE, EVPN/VXLAN, SR-MPLS/SRv6 und DRNI-Hochverfügbarkeit"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a50007000enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "48000.00"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "JQ026A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00029144enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5980-48SFP+-6QSFP28 JQ026A Managed Switch (L3) – 48× 10G SFP+ + 6× 100G QSFP28, 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5980-48SFP+-6QSFP28 JQ026A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5980-48SFP+-6QSFP28 (JQ026A): gemanagter Layer-3-Switch mit 48× 10G SFP+, ohne PoE, HPE-Comware-Betriebssystem Neu und versiegelt.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5980-48SFP+-6QSFP28 (JQ026A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5980-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage leitet der JQ026A nicht-blockierend mit Wire-Speed weiter und bindet über seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5980-48SFP+-6QSFP28 (JQ026A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5980-Familie mit 54 Ports (48× 10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JQ026A leitet nicht-blockierend mit Wire-Speed weiter. Der JQ026A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ026A erfolgt über 6× 100G QSFP28, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zwei Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ026A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ026A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ026A Layer-3-Routing (OSPF, BGP; IPv6), BGP-EVPN/VXLAN (Layer-2/Layer-3-Gateway), ECMP und IRF-Stacking. Geliefert wird der JQ026A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JQ026A ist HPE-Original-Neuware der FlexFabric-5980-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JQ026A?",
+    "Der JQ026A bietet insgesamt 54 Ports: 48× 10G SFP+ + 6× 100G QSFP28 (Uplink)."
+   ],
+   [
+    "Unterstützt der JQ026A PoE?",
+    "Nein. Der JQ026A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JQ026A stapeln (Stacking)?",
+    "Ja. Der JQ026A unterstützt IRF (Intelligent Resilient Framework) – Dual-Aktiv-Stapelung von bis zu 2 Einheiten und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 10G SFP+ + 6× 100G QSFP28 (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "10 GbE (SFP+), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 100G QSFP28"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "Non-Blocking-Architektur (Wire-Speed)"
+   ],
+   [
+    "Durchsatz",
+    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Dual-Aktiv-Stapelung von bis zu 2 Einheiten"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 10/100-GbE, EVPN/VXLAN-L2/L3-Gateway und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00029144enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "17000.00"
+ }
+}

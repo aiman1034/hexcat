@@ -1,0 +1,686 @@
+{
+ "JL585A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00045647enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5710-48SFP+-6QSFP+/2QSFP28 JL585A Managed Switch (L3) – 48× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5710-48SFP+-6QSFP+/2QSFP28 JL585A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5710-48SFP+-6QSFP+/2QSFP28 (JL585A): gemanagter Layer-3-Switch mit 48× 1/10G SFP+, Switching-Kapazität 1,44 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5710-48SFP+-6QSFP+/2QSFP28 (JL585A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5710-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL585A eine Switching-Kapazität von 1,44 Tbit/s und bindet per 6× 40G QSFP+ (100-GbE-QSFP28-fähig) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5710-48SFP+-6QSFP+/2QSFP28 (JL585A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5710-Familie mit 54 Ports (48× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL585A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JL585A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL585A erfolgt über 6× 40G QSFP+ (100-GbE-QSFP28-fähig), und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL585A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL585A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JL585A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), EVPN/VXLAN, DCB und IRF-Stacking. Der JL585A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5710“ geführt. Geliefert wird der JL585A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL585A ist HPE-Original-Neuware der FlexFabric-5710-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL585A?",
+    "Der JL585A bietet insgesamt 54 Ports: 48× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL585A PoE?",
+    "Nein. Der JL585A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL585A stapeln (Stacking)?",
+    "Ja. Der JL585A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+), 40 GbE (QSFP+), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+ (100-GbE-QSFP28-fähig)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40/100-GbE-Ports, EVPN/VXLAN und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6500.00"
+ },
+ "JL586A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00045647enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5710-48XGT-6QSFP+/2QSFP28 JL586A Managed Switch (L3) – 48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5710-48XGT-6QSFP+/2QSFP28 JL586A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5710-48XGT-6QSFP+/2QSFP28 (JL586A): gemanagter Layer-3-Switch mit 48× 1/10GBASE-T (RJ45), Switching-Kapazität 1,44 Tbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,5",
+  "versandgewicht": "10,50",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5710-48XGT-6QSFP+/2QSFP28 (JL586A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5710-Serie mit 54 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL586A eine Switching-Kapazität von 1,44 Tbit/s und bindet per 6× 40G QSFP+ (100-GbE-QSFP28-fähig) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5710-48XGT-6QSFP+/2QSFP28 (JL586A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5710-Familie mit 54 Ports (48× 1/10GBASE-T (RJ45)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL586A erreicht eine Switching-Kapazität von 1,44 Tbit/s bei einer Weiterleitungsrate von 1.071 Mpps. Der JL586A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL586A erfolgt über 6× 40G QSFP+ (100-GbE-QSFP28-fähig), und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL586A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL586A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JL586A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), EVPN/VXLAN, DCB und IRF-Stacking. Der JL586A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5710“ geführt. Geliefert wird der JL586A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL586A ist HPE-Original-Neuware der FlexFabric-5710-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL586A?",
+    "Der JL586A bietet insgesamt 54 Ports: 48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL586A PoE?",
+    "Nein. Der JL586A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL586A stapeln (Stacking)?",
+    "Ja. Der JL586A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "54"
+   ],
+   [
+    "Port-Konfiguration",
+    "48× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+ (100-GbE-QSFP28-fähig)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "1,44 Tbit/s"
+   ],
+   [
+    "Durchsatz",
+    "1.071 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40/100-GbE-Ports, EVPN/VXLAN und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "6900.00"
+ },
+ "JL587A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00045647enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5710-24SFP+-6QSFP+/2QSFP28 JL587A Managed Switch (L3) – 24× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5710-24SFP+-6QSFP+/2QSFP28 JL587A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5710-24SFP+-6QSFP+/2QSFP28 (JL587A): gemanagter Layer-3-Switch mit 24× 1/10G SFP+, Switching-Kapazität 960 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "7,8",
+  "versandgewicht": "9,80",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5710-24SFP+-6QSFP+/2QSFP28 (JL587A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5710-Serie mit 30 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL587A eine Switching-Kapazität von 960 Gbit/s und bindet per 6× 40G QSFP+ (100-GbE-QSFP28-fähig) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5710-24SFP+-6QSFP+/2QSFP28 (JL587A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5710-Familie mit 30 Ports (24× 1/10G SFP+), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL587A erreicht eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 714 Mpps. Der JL587A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL587A erfolgt über 6× 40G QSFP+ (100-GbE-QSFP28-fähig), und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL587A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL587A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JL587A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), EVPN/VXLAN, DCB und IRF-Stacking. Der JL587A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5710“ geführt. Geliefert wird der JL587A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL587A ist HPE-Original-Neuware der FlexFabric-5710-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL587A?",
+    "Der JL587A bietet insgesamt 30 Ports: 24× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL587A PoE?",
+    "Nein. Der JL587A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL587A stapeln (Stacking)?",
+    "Ja. Der JL587A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "30"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10G SFP+ + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (SFP+), 40 GbE (QSFP+), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+ (100-GbE-QSFP28-fähig)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40/100-GbE-Ports, EVPN/VXLAN und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5200.00"
+ },
+ "JL689A": {
+  "_facts": {
+   "unterkategorie": "Managed Switch (L3)",
+   "quell_url": "https://www.hpe.com/psnow/doc/a00045647enw",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexFabric 5710-24XGT-6QSFP+/2QSFP28 JL689A Managed Switch (L3) – 24× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig), 19-Zoll-Rackmontage",
+  "titel_tag": "HPE FlexFabric 5710-24XGT-6QSFP+/2QSFP28 JL689A | Hexwaren",
+  "meta_description": "Original HPE FlexFabric 5710-24XGT-6QSFP+/2QSFP28 (JL689A): gemanagter Layer-3-Switch mit 24× 1/10GBASE-T (RJ45), Switching-Kapazität 960 Gbit/s, ohne PoE, HPE-Comware-Betriebssystem.",
+  "artikelgewicht": "8,0",
+  "versandgewicht": "10,00",
+  "kurzbeschreibung": "<p>Der HPE FlexFabric 5710-24XGT-6QSFP+/2QSFP28 (JL689A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5710-Serie mit 30 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JL689A eine Switching-Kapazität von 960 Gbit/s und bindet per 6× 40G QSFP+ (100-GbE-QSFP28-fähig) an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexFabric 5710-24XGT-6QSFP+/2QSFP28 (JL689A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5710-Familie mit 30 Ports (24× 1/10GBASE-T (RJ45)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
+   "Der JL689A erreicht eine Switching-Kapazität von 960 Gbit/s bei einer Weiterleitungsrate von 714 Mpps. Der JL689A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JL689A erfolgt über 6× 40G QSFP+ (100-GbE-QSFP28-fähig), und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JL689A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JL689A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JL689A Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), EVPN/VXLAN, DCB und IRF-Stacking. Der JL689A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5710“ geführt. Geliefert wird der JL689A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Ist dies ein originales HPE-Produkt?",
+    "Ja. Der JL689A ist HPE-Original-Neuware der FlexFabric-5710-Serie – versiegelt geliefert und für den Betrieb unter dem HPE-Comware-Betriebssystem vorgesehen."
+   ],
+   [
+    "Wie viele Ports hat der JL689A?",
+    "Der JL689A bietet insgesamt 30 Ports: 24× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)."
+   ],
+   [
+    "Unterstützt der JL689A PoE?",
+    "Nein. Der JL689A ist ein Modell ohne Power over Ethernet und für reine Datenanbindung ausgelegt."
+   ],
+   [
+    "Lässt sich der JL689A stapeln (Stacking)?",
+    "Ja. Der JL689A unterstützt IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch und lässt sich so zu einem logischen Switch zusammenfassen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Managed"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Portanzahl",
+    "30"
+   ],
+   [
+    "Port-Konfiguration",
+    "24× 1/10GBASE-T (RJ45) + 6× 40G QSFP+ (100-GbE-QSFP28-fähig) (Uplink)"
+   ],
+   [
+    "Port-Geschwindigkeit",
+    "1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+), 100 GbE (QSFP28)"
+   ],
+   [
+    "Uplink-Ports",
+    "6× 40G QSFP+ (100-GbE-QSFP28-fähig)"
+   ],
+   [
+    "PoE",
+    "Nein"
+   ],
+   [
+    "Switching-Kapazität",
+    "960 Gbit/s"
+   ],
+   [
+    "Durchsatz",
+    "714 Mpps"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (1 HE)"
+   ],
+   [
+    "Stromversorgung",
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
+   ],
+   [
+    "Kühlung",
+    "Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)"
+   ],
+   [
+    "Stacking",
+    "IRF (Intelligent Resilient Framework) – Stapelung von bis zu 10 Einheiten zu einem logischen Switch"
+   ],
+   [
+    "Betriebstemperatur",
+    "0 bis 45 °C"
+   ],
+   [
+    "Anwendung",
+    "Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40/100-GbE-Ports, EVPN/VXLAN und IRF-Stacking"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Portanzahl": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Konfiguration": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Port-Geschwindigkeit": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Uplink-Ports": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "PoE": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Durchsatz": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Stacking": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Betriebstemperatur": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/a00045647enw",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "5600.00"
+ }
+}

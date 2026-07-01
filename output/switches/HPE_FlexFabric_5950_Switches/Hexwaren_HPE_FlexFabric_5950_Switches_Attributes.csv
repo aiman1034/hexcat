@@ -1,0 +1,46 @@
+﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
+JH321A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JH321A,,Switch,Layer,L3,2,Wertliste,Attribut
+JH321A,,Switch,Portanzahl,34,3,Wertliste,Attribut
+JH321A,,Switch,Port-Konfiguration,32× 100G QSFP28 + 2× 1/10G SFP+,4,Wertliste,Attribut
+JH321A,,Switch,Port-Geschwindigkeit,"100 GbE (QSFP28), 1/10 GbE (SFP+)",5,Wertliste,Attribut
+JH321A,,Switch,Uplink-Ports,kein dedizierter Uplink (alle Ports gleichwertig nutzbar),6,Wertliste,Attribut
+JH321A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JH321A,,Switch,Switching-Kapazität,"3,2 Tbit/s",8,Wertliste,Attribut
+JH321A,,Switch,Durchsatz,3.169 Mpps,9,Wertliste,Attribut
+JH321A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JH321A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)",11,Wertliste,Attribut
+JH321A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, gleichgerichteter Airflow)",12,Wertliste,Attribut
+JH321A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung mehrerer Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JH321A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JH321A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN und IRF-Stacking",15,Wertliste,Attribut
+JH402A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JH402A,,Switch,Layer,L3,2,Wertliste,Attribut
+JH402A,,Switch,Portanzahl,58,3,Wertliste,Attribut
+JH402A,,Switch,Port-Konfiguration,48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP,4,Wertliste,Attribut
+JH402A,,Switch,Port-Geschwindigkeit,"25 GbE (SFP28), 100 GbE (QSFP28), 1 GbE (SFP)",5,Wertliste,Attribut
+JH402A,,Switch,Uplink-Ports,kein dedizierter Uplink (alle Ports gleichwertig nutzbar),6,Wertliste,Attribut
+JH402A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JH402A,,Switch,Switching-Kapazität,"3,2 Tbit/s",8,Wertliste,Attribut
+JH402A,,Switch,Durchsatz,3.169 Mpps,9,Wertliste,Attribut
+JH402A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JH402A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)",11,Wertliste,Attribut
+JH402A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, gleichgerichteter Airflow)",12,Wertliste,Attribut
+JH402A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung mehrerer Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JH402A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JH402A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN und IRF-Stacking",15,Wertliste,Attribut
+JH404A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JH404A,,Switch,Layer,L3,2,Wertliste,Attribut
+JH404A,,Switch,Portanzahl,3,3,Wertliste,Attribut
+JH404A,,Switch,Port-Konfiguration,"3× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/40/100 GbE, separat bestückbar)",4,Wertliste,Attribut
+JH404A,,Switch,Port-Geschwindigkeit,"1 GbE (SFP, fest); modulabhängig 10/40/100 GbE",5,Wertliste,Attribut
+JH404A,,Switch,Uplink-Ports,kein dedizierter Uplink (alle Ports gleichwertig nutzbar),6,Wertliste,Attribut
+JH404A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JH404A,,Switch,Switching-Kapazität,"3,2 Tbit/s",8,Wertliste,Attribut
+JH404A,,Switch,Durchsatz,3.169 Mpps,9,Wertliste,Attribut
+JH404A,,Switch,Bauform,19-Zoll-Rackmontage (2 HE),10,Wertliste,Attribut
+JH404A,,Switch,Stromversorgung,"4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)",11,Wertliste,Attribut
+JH404A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, gleichgerichteter Airflow)",12,Wertliste,Attribut
+JH404A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung mehrerer Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JH404A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JH404A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 25/100-GbE, EVPN/VXLAN und IRF-Stacking",15,Wertliste,Attribut

@@ -1,0 +1,46 @@
+﻿Artikelnummer,GTIN,Attributgruppe,Attributname,Attributwert,Sortiernummer,Datentyp (sonst automatisch ermittelt),Attributart
+JG726A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JG726A,,Switch,Layer,L3,2,Wertliste,Attribut
+JG726A,,Switch,Portanzahl,32,3,Wertliste,Attribut
+JG726A,,Switch,Port-Konfiguration,32× 40G QSFP+,4,Wertliste,Attribut
+JG726A,,Switch,Port-Geschwindigkeit,40 GbE (QSFP+; 10 GbE über 4×10G-Breakout),5,Wertliste,Attribut
+JG726A,,Switch,Uplink-Ports,kein dedizierter Uplink (alle Ports gleichwertig nutzbar),6,Wertliste,Attribut
+JG726A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JG726A,,Switch,Switching-Kapazität,"2,56 Tbit/s",8,Wertliste,Attribut
+JG726A,,Switch,Durchsatz,1.429 Mpps,9,Wertliste,Attribut
+JG726A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JG726A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)",11,Wertliste,Attribut
+JG726A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)",12,Wertliste,Attribut
+JG726A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JG726A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JG726A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking",15,Wertliste,Attribut
+JH178A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JH178A,,Switch,Layer,L3,2,Wertliste,Attribut
+JH178A,,Switch,Portanzahl,2,3,Wertliste,Attribut
+JH178A,,Switch,Port-Konfiguration,"2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)",4,Wertliste,Attribut
+JH178A,,Switch,Port-Geschwindigkeit,"40 GbE (QSFP+, fest); modulabhängig 10/40 GbE",5,Wertliste,Attribut
+JH178A,,Switch,Uplink-Ports,kein dedizierter Uplink (alle Ports gleichwertig nutzbar),6,Wertliste,Attribut
+JH178A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JH178A,,Switch,Switching-Kapazität,"1,44 Tbit/s",8,Wertliste,Attribut
+JH178A,,Switch,Durchsatz,1.071 Mpps,9,Wertliste,Attribut
+JH178A,,Switch,Bauform,19-Zoll-Rackmontage (1 HE),10,Wertliste,Attribut
+JH178A,,Switch,Stromversorgung,"2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)",11,Wertliste,Attribut
+JH178A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)",12,Wertliste,Attribut
+JH178A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JH178A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JH178A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking",15,Wertliste,Attribut
+JH179A,,Switch,Switch-Typ,Managed,1,Wertliste,Attribut
+JH179A,,Switch,Layer,L3,2,Wertliste,Attribut
+JH179A,,Switch,Portanzahl,0,3,Wertliste,Attribut
+JH179A,,Switch,Port-Konfiguration,"vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar)",4,Wertliste,Attribut
+JH179A,,Switch,Port-Geschwindigkeit,modulabhängig (10/40 GbE bzw. FC/FCoE),5,Wertliste,Attribut
+JH179A,,Switch,Uplink-Ports,modulabhängige Uplinks je nach Bestückung,6,Wertliste,Attribut
+JH179A,,Switch,PoE,Nein,7,Wertliste,Attribut
+JH179A,,Switch,Switching-Kapazität,"2,56 Tbit/s",8,Wertliste,Attribut
+JH179A,,Switch,Durchsatz,1.429 Mpps,9,Wertliste,Attribut
+JH179A,,Switch,Bauform,19-Zoll-Rackmontage (2 HE),10,Wertliste,Attribut
+JH179A,,Switch,Stromversorgung,"4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)",11,Wertliste,Attribut
+JH179A,,Switch,Kühlung,"Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar)",12,Wertliste,Attribut
+JH179A,,Switch,Stacking,IRF (Intelligent Resilient Framework) – Stapelung von bis zu 9 Einheiten zu einem logischen Switch,13,Wertliste,Attribut
+JH179A,,Switch,Betriebstemperatur,0 bis 45 °C,14,Wertliste,Attribut
+JH179A,,Switch,Anwendung,"Rechenzentrums-Spine/Leaf-ToR (Layer 3, HPE Comware) mit 40-GbE-QSFP+, VXLAN-L2-Gateway, TRILL und IRF-Stacking",15,Wertliste,Attribut
