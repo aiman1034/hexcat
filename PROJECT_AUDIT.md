@@ -4149,6 +4149,22 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   drivers was repurposed to a clean "leitet nicht-blockierend mit Wire-Speed weiter" phrasing (+ the R0X41A validation FAQ cleaned).
   VALUES only, 0 new Merkmal NAMES, 0 src/; all bundles gate-clean, validate_dir=0. **The WHOLE switch tree now carries 0
   customer-facing ZU_VERIFIZIEREN.** (Per-line-card weights remain flagged estimates — numeric, never the ZU_VERIFIZIEREN token.)
+- **HPE/Aruba SWITCHES — ArubaOS-Switch + ProCurve PHASE 1 MANIFEST (enumeration only; 2026-06-30; STOPPED for review).**
+  Enumerated the ArubaOS-Switch/ProVision line (current + legacy ProCurve) against the ordering guide + AOS-Switch/ProVision RN
+  "Products Supported" table (3 agents, findings-only — I wrote this entry). **True denominator ≈ 164 PIDs / ~19 families**
+  (seed floor `hpe_aruba_switches_FULL.csv` was 114/17 → +~50). **FIXED (100):** current Aruba 2530/2540/2920/2930F/2930M/3810M
+  (56) + legacy ProCurve 2510/2610/2615/2620/2810/2910al/2915/3500(+3500yl)/3800/6600 (44); 3810M/3800/6600 = stackable FIXED
+  (not chassis). **MODULAR CHASSIS (~21):** Aruba 5400R zl2 (11) + legacy 8200zl (~6, only family with a discrete Fabric Module)
+  + 5400zl v1 (4). **MODULES (~43):** 5400R zl2 Modules (11) + ArubaOS-Switch Expansion Modules (9) + shared ProCurve zl pool
+  (~23, model once, Kompatible Serie={5400zl,8200zl}). **0 new Merkmal NAMES** — ArubaOS specifics = new VALUES (Stacking
+  `Backplane-Stacking`/`Meshed`, PoE `Class 6`/`740W`, Modultyp `System-Support-Modul`) or prose. **Net-new vs seed:** 2910al(4)
+  + 6600(5) whole families, 2510G-24(J9279A), 5400R J9826A(RN-only), 8200zl+5400zl v1 chassis+modules. **Seed DEFECTS found
+  (not yet applied):** JL311A/JL312A mislabeled as switches (= Cable-Guard/Power-Shelf accessories; real 740W = JL557A/JL558A/
+  JL559A), JL557A/558A mislabeled "24G TAA", 2910al/6600 missing, 2510G-24 missing, 5400R module column-scramble in c04293383
+  (RN authoritative). **OPEN DECISIONS (for operator):** (a) legacy E3 prefix `HPE ProCurve <model>` vs `HPE <model>` vs `Aruba`;
+  (b) 3810M CTO bundles JL428-430A keep-vs-exclude (base=6); (c) shared-zl single-bundle; (d) apply the 5 seed corrections; +
+  8200zl needs a clean OEM-QuickSpec confirmation (reseller-corroborated only). Manifest: `BATCH_ARUBAOS_PROCURVE_PHASE1_MANIFEST.md`.
+  NEXT (post-approval): Phase 2 authoring — fixed on the 15-Merkmal set, zl chassis/modules on the validated CX chassis/module schema.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
