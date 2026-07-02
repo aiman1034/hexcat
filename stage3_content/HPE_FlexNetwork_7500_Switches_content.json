@@ -1,0 +1,919 @@
+{
+ "JD242C": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7502 JD242C modulares Switch-Chassis – 2 I/O + 2 MPU-Steckplätze, 4 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7502 JD242C Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7502 (JD242C): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 2 I/O + 2 MPU-Steckplätze, bis 640 Gbit/s (System-Switching-Kapazität, mit zwei JH208A); Durchsatz bis 476 M",
+  "artikelgewicht": "26,76",
+  "versandgewicht": "29,76",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7502 (JD242C) ist ein modulares Layer-3-Chassis mit 2 I/O + 2 MPU-Steckplätze. Unter HPE Comware v7 liefert der JD242C bis 640 Gbit/s (System-Switching-Kapazität, mit zwei JH208A); Durchsatz bis 476 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (4 HE) nimmt der JD242C die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7502 (JD242C) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 2 I/O + 2 MPU-Steckplätze erreicht der JD242C bis 640 Gbit/s (System-Switching-Kapazität, mit zwei JH208A); Durchsatz bis 476 Mpps. Als Steuerungs- und Fabric-Ebene des JD242C dienen HPE 7502 Main Processing Unit (JH208A) oder JH207A/JH209A (Comware v7), 2 MPU-Steckplätze. Für die Ausfallsicherheit des JD242C sorgt Dual-MPU (2 Steckplätze) und redundante Netzteile; IRF auf dem 7502 nicht unterstützt.",
+   "Im Formfaktor 19-Zoll-Rackmontage (4 HE) ist der JD242C für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JD242C übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JD242C ist ein Konfigurationsgewicht. Geliefert wird der JD242C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JD242C?",
+    "Der JD242C bietet 2 I/O + 2 MPU-Steckplätze."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JD242C?",
+    "Der JD242C erreicht bis 640 Gbit/s (System-Switching-Kapazität, mit zwei JH208A); Durchsatz bis 476 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JD242C?",
+    "Als Steuerungs- und Fabric-Ebene des JD242C dienen HPE 7502 Main Processing Unit (JH208A) oder JH207A/JH209A (Comware v7), 2 MPU-Steckplätze. Für die Ausfallsicherheit des JD242C sorgt Dual-MPU (2 Steckplätze) und redundante Netzteile; IRF auf dem 7502 nicht unterstützt."
+   ],
+   [
+    "Ist der JD242C ein originales HPE-Produkt?",
+    "Ja. Der JD242C ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "2 I/O + 2 MPU-Steckplätze"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (4 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 640 Gbit/s (System-Switching-Kapazität, mit zwei JH208A); Durchsatz bis 476 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "HPE 7502 Main Processing Unit (JH208A) oder JH207A/JH209A (Comware v7), 2 MPU-Steckplätze"
+   ],
+   [
+    "Redundanz",
+    "Dual-MPU (2 Steckplätze) und redundante Netzteile; IRF auf dem 7502 nicht unterstützt"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "8000.00"
+ },
+ "JD240C": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7503 JD240C modulares Switch-Chassis – 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze, 10 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7503 JD240C Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7503 (JD240C): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze, bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durc",
+  "artikelgewicht": "66,68",
+  "versandgewicht": "69,68",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7503 (JD240C) ist ein modulares Layer-3-Chassis mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze. Unter HPE Comware v7 liefert der JD240C bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (10 HE) nimmt der JD240C die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7503 (JD240C) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze erreicht der JD240C bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps. Als Steuerungs- und Fabric-Ebene des JD240C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD240C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (10 HE) ist der JD240C für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JD240C übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JD240C ist ein Konfigurationsgewicht. Geliefert wird der JD240C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JD240C?",
+    "Der JD240C bietet 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JD240C?",
+    "Der JD240C erreicht bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JD240C?",
+    "Als Steuerungs- und Fabric-Ebene des JD240C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD240C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JD240C ein originales HPE-Produkt?",
+    "Ja. Der JD240C ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "3 I/O + 2 Fabric/MPU-Kombi-Steckplätze"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (10 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "14000.00"
+ },
+ "JD239C": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7506 JD239C modulares Switch-Chassis – 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze, 13 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7506 JD239C Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7506 (JD239C): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze, bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durc",
+  "artikelgewicht": "93,90",
+  "versandgewicht": "96,90",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7506 (JD239C) ist ein modulares Layer-3-Chassis mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze. Unter HPE Comware v7 liefert der JD239C bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (13 HE) nimmt der JD239C die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7506 (JD239C) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze erreicht der JD239C bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps. Als Steuerungs- und Fabric-Ebene des JD239C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD239C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (13 HE) ist der JD239C für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JD239C übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JD239C ist ein Konfigurationsgewicht. Geliefert wird der JD239C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JD239C?",
+    "Der JD239C bietet 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JD239C?",
+    "Der JD239C erreicht bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JD239C?",
+    "Als Steuerungs- und Fabric-Ebene des JD239C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD239C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JD239C ein originales HPE-Produkt?",
+    "Ja. Der JD239C ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 I/O + 2 Fabric/MPU-Kombi-Steckplätze"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (13 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "20000.00"
+ },
+ "JD238C": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7510 JD238C modulares Switch-Chassis – 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze, 16 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7510 JD238C Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7510 (JD238C): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze, bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Dur",
+  "artikelgewicht": "95,71",
+  "versandgewicht": "98,71",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7510 (JD238C) ist ein modulares Layer-3-Chassis mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze. Unter HPE Comware v7 liefert der JD238C bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (16 HE) nimmt der JD238C die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7510 (JD238C) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze erreicht der JD238C bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps. Als Steuerungs- und Fabric-Ebene des JD238C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD238C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (16 HE) ist der JD238C für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JD238C übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JD238C ist ein Konfigurationsgewicht. Geliefert wird der JD238C als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JD238C?",
+    "Der JD238C bietet 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JD238C?",
+    "Der JD238C erreicht bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JD238C?",
+    "Als Steuerungs- und Fabric-Ebene des JD238C dienen kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JD238C sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JD238C ein originales HPE-Produkt?",
+    "Ja. Der JD238C ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "10 I/O + 2 Fabric/MPU-Kombi-Steckplätze"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (16 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "kombiniertes Fabric/Main-Processing-Unit-Modul (JH209A 2,4-Tbps-Fabric+MPU oder JH207A, Comware v7), 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "28000.00"
+ },
+ "JH331A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7503 Bundle JH331A modulares Switch-Chassis – 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), 10 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7503 Bundle JH331A Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7503 Bundle (JH331A): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), bis 1.920 Gbit/s (System-Switc",
+  "artikelgewicht": "72,00",
+  "versandgewicht": "75,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7503 Bundle (JH331A) ist ein modulares Layer-3-Chassis mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert). Unter HPE Comware v7 liefert der JH331A bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (10 HE) nimmt der JH331A die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7503 Bundle (JH331A) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert) erreicht der JH331A bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps. Als Steuerungs- und Fabric-Ebene des JH331A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH331A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (10 HE) ist der JH331A für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JH331A übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JH331A ist ein Konfigurationsgewicht. Geliefert wird der JH331A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JH331A?",
+    "Der JH331A bietet 3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JH331A?",
+    "Der JH331A erreicht bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JH331A?",
+    "Als Steuerungs- und Fabric-Ebene des JH331A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH331A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JH331A ein originales HPE-Produkt?",
+    "Ja. Der JH331A ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "3 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (10 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 1.920 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 714 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "22000.00"
+ },
+ "JH332A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7506 Bundle JH332A modulares Switch-Chassis – 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), 13 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7506 Bundle JH332A Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7506 Bundle (JH332A): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), bis 2.880 Gbit/s (System-Switc",
+  "artikelgewicht": "99,00",
+  "versandgewicht": "102,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7506 Bundle (JH332A) ist ein modulares Layer-3-Chassis mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert). Unter HPE Comware v7 liefert der JH332A bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (13 HE) nimmt der JH332A die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7506 Bundle (JH332A) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert) erreicht der JH332A bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps. Als Steuerungs- und Fabric-Ebene des JH332A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH332A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (13 HE) ist der JH332A für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JH332A übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JH332A ist ein Konfigurationsgewicht. Geliefert wird der JH332A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JH332A?",
+    "Der JH332A bietet 6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JH332A?",
+    "Der JH332A erreicht bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JH332A?",
+    "Als Steuerungs- und Fabric-Ebene des JH332A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH332A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JH332A ein originales HPE-Produkt?",
+    "Ja. Der JH332A ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "6 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (13 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 2.880 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 1.428 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "28000.00"
+ },
+ "JH333A": {
+  "_facts": {
+   "unterkategorie": "Modularer Switch (Chassis)",
+   "quell_url": "https://www.hpe.com/psnow/doc/c04111585",
+   "verifiziert_am": "2026-07-02"
+  },
+  "artikelname": "HPE FlexNetwork 7510 Bundle JH333A modulares Switch-Chassis – 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), 16 HE, HPE Comware v7",
+  "titel_tag": "HPE FlexNetwork 7510 Bundle JH333A Chassis | Hexwaren",
+  "meta_description": "Original HPE FlexNetwork 7510 Bundle (JH333A): modulares Layer-3-Core-Chassis (HPE Comware v7) mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert), bis 4.160 Gbit/s (System-Swit",
+  "artikelgewicht": "101,00",
+  "versandgewicht": "104,00",
+  "kurzbeschreibung": "<p>Der HPE FlexNetwork 7510 Bundle (JH333A) ist ein modulares Layer-3-Chassis mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert). Unter HPE Comware v7 liefert der JH333A bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps.</p><p>Im Formfaktor 19-Zoll-Rackmontage (16 HE) nimmt der JH333A die kompatiblen Linecards, Fabric- und Management-Module auf und wird als versiegelte Original-Neuware geliefert.</p>",
+  "intro": [
+   "Der HPE FlexNetwork 7510 Bundle (JH333A) ist ein modularer Layer-3-Switch (Chassis) aus der HPE-FlexNetwork-7500-Serie, ausgelegt für Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7) und betrieben unter HPE Comware v7.",
+   "Mit 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert) erreicht der JH333A bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps. Als Steuerungs- und Fabric-Ebene des JH333A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH333A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking.",
+   "Im Formfaktor 19-Zoll-Rackmontage (16 HE) ist der JH333A für den Rechenzentrums- oder Campus-Core-Betrieb ausgelegt; Kühlung und Stromversorgung des JH333A übernehmen Lüftertray (1 Schacht, hot-swap; separat bestellt) sowie 2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt). Das Artikelgewicht des JH333A ist ein Konfigurationsgewicht. Geliefert wird der JH333A als versiegelte Original-Neuware. Originaler HP-Switch."
+  ],
+  "kompatibilitaet": [
+   "HPE-Comware-Betriebssystem",
+   "HPE Intelligent Management Center (IMC)",
+   "NETCONF/YANG & SNMP"
+  ],
+  "faq": [
+   [
+    "Wie viele Steckplätze hat der JH333A?",
+    "Der JH333A bietet 10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)."
+   ],
+   [
+    "Welche Switching-Kapazität erreicht der JH333A?",
+    "Der JH333A erreicht bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps – der Wert stammt aus dem OEM-Datenblatt und ist nicht aus der Portzahl hochgerechnet."
+   ],
+   [
+    "Welche Management-/Fabric-Module nutzt der JH333A?",
+    "Als Steuerungs- und Fabric-Ebene des JH333A dienen 2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby. Für die Ausfallsicherheit des JH333A sorgt Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking."
+   ],
+   [
+    "Ist der JH333A ein originales HPE-Produkt?",
+    "Ja. Der JH333A ist HPE-Original-Neuware der HPE FlexNetwork 7500-Serie – versiegelt geliefert und für den Betrieb unter HPE Comware v7 vorgesehen."
+   ]
+  ],
+  "verwandte": [],
+  "attributes": [
+   [
+    "Switch-Typ",
+    "Modular-Chassis"
+   ],
+   [
+    "Layer",
+    "L3"
+   ],
+   [
+    "Steckplätze",
+    "10 I/O + 2 Fabric/MPU-Kombi-Steckplätze (mit 2× JH209A vorinstalliert)"
+   ],
+   [
+    "Bauform",
+    "19-Zoll-Rackmontage (16 HE)"
+   ],
+   [
+    "Switching-Kapazität",
+    "bis 4.160 Gbit/s (System-Switching-Kapazität, mit zwei JH209A); Durchsatz bis 2.380 Mpps"
+   ],
+   [
+    "Stromversorgung",
+    "2 Netzteilschächte (mindestens 1 Netzteil, redundant; AC oder DC, separat bestellt)"
+   ],
+   [
+    "Kühlung",
+    "Lüftertray (1 Schacht, hot-swap; separat bestellt)"
+   ],
+   [
+    "Unterstützte Supervisor-Engines",
+    "2× JH209A (kombiniertes 2,4-Tbps-Fabric/MPU-Modul, Comware v7) vorinstalliert, 2 Steckplätze aktiv/standby"
+   ],
+   [
+    "Redundanz",
+    "Dual-Fabric/MPU (aktiv/standby), redundante Netzteile und Lüfter; IRF-Stacking"
+   ],
+   [
+    "Anwendung",
+    "Campus-/Rechenzentrums-Core und -Aggregation (modularer Layer-3-Multiservice-Switch, HPE Comware v7)"
+   ],
+   [
+    "Zustand",
+    "Neu, versiegelt"
+   ]
+  ],
+  "provenance": {
+   "Switch-Typ": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Layer": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Steckplätze": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Bauform": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Switching-Kapazität": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Stromversorgung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Kühlung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Unterstützte Supervisor-Engines": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Redundanz": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ],
+   "Anwendung": [
+    "https://www.hpe.com/psnow/doc/c04111585",
+    "datasheet"
+   ]
+  },
+  "netto_vk": "36000.00"
+ }
+}

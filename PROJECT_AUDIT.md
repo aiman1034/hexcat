@@ -4435,6 +4435,17 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   JG622A/JG623A = 12910 not 12916E; JG625A 16-port not sibling-copied; R9F19A/R9F20A 400G-QSFP-DD/100G-QSFP28 numbering-swap avoided;
   JH422A HB vs JH425A HF split). Only a German dative grammar nit ("mit die"→"mit den") — fixed. 2 pools gate ok=True viol=0; 61 SKUs,
   0 different-model dups; gate_completeness += 2. Prices Phase-1 estimate. FF 12500 + 7900 module pools still DEFERRED (pending courier).
+- **FLEXNETWORK MODULAR CHASSIS — LANE B build (operator 2026-07-02; multi-agent workflow).** Authored **15 chassis / 2 E3** on
+  the validated Modular-Chassis schema (driver `_scratch/comware_fn_modular_build.py`; gate-pre-remap → 200 kg ceiling → E3 remap).
+  **0 new Merkmal NAMES — fold held** (Steckplätze role-string). **7500** (7): JD242C=7502 (distinct 2 MPU slots, IRF-NOT-supported),
+  JD240C/JD239C/JD238C=7503/06/10 (2 combined Fabric/MPU-Kombi slots), + 3 bundles JH331A/332A/333A (=chassis + 2× JH209A). **10500**
+  (8): 4 base (JC613A/JC612A/JC611A/JC748A) + 4 TAA (JG820A-823A); 4 I/O(8/8/12)+4 Fabric+2 MPU, dual Type-D/Type-B SwK, IRF up to 4.
+  Per-chassis SwK/slots/weight VERBATIM (never port-summed); temp→prose. Gate lesson: **"bzw." broke the sentence splitter** (period
+  → orphaned PID-less fragment → L3 reuse fail on the 8-SKU 10500) — replaced with "oder"; also {pid} injected into every Beschreibung
+  sentence + word-count trim (max 175). **Verify fleet (3 agents) = 2 upheld + 3 minor, all OEM-cited:** COPIED-SIBLING — JC613A(10504)
+  + TAA JG820A PSU slots "bis 6"→**"bis 4"** (10504 = 4 slots/3+1; the 6 was lifted from the 10508/12 and contradicted its own 3+1);
+  and the 7503/06/10 Supervisor list wrongly included **JH208A** (the 7502-only MPU) → removed (they take JH209A or JH207A). 7 TAA/
+  bundle weights unverifiable → kept + flagged. 2 families gate ok=True viol=0; 15 SKUs, 0 dups; gate_completeness += 2. Prices Phase-1.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

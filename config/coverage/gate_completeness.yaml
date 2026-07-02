@@ -1023,3 +1023,12 @@ HPE_FlexFabric_11900_modules:
   captured: 8
   enumerated: 8
   flagged: []
+# HPE FlexNetwork modular chassis (Phase-1 build). 7500 = 7 (4 bare + 3 Fabric/MPU bundles); 10500 = 8 (4 base + 4 TAA).
+HPE_FlexNetwork_7500_switches:
+  captured: 7
+  enumerated: 7
+  flagged: []
+HPE_FlexNetwork_10500_switches:
+  captured: 8
+  enumerated: 8
+  flagged: []
