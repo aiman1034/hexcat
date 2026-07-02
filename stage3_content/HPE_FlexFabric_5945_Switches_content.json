@@ -179,13 +179,13 @@
   "artikelname": "HPE FlexFabric 5945-2-slot JQ075A Managed Switch (L3) – 2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar), 19-Zoll-Rackmontage",
   "titel_tag": "HPE FlexFabric 5945-2-slot JQ075A | Hexwaren",
   "meta_description": "Original HPE FlexFabric 5945-2-slot (JQ075A): gemanagter Layer-3-Switch mit 2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar), Switching-Kapazität 3,6 Tbit/s, ohne PoE, HPE-Com",
-  "artikelgewicht": "11,0",
-  "versandgewicht": "13,00",
+  "artikelgewicht": "9,0",
+  "versandgewicht": "11,00",
   "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-2-slot (JQ075A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ075A eine Switching-Kapazität von 3,6 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
   "intro": [
    "Der HPE FlexFabric 5945-2-slot (JQ075A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 2 Ports (2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
-   "Der JQ075A erreicht eine Switching-Kapazität von 3,6 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der JQ075A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ075A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
-   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ075A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ075A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ075A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ075A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ075A als versiegelte Original-Neuware. Originaler HP-Switch."
+   "Der JQ075A erreicht eine Switching-Kapazität von 3,6 Tbit/s bei einer Weiterleitungsrate von 2.024 Mpps. Der JQ075A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ075A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ075A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ075A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ075A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ075A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ075A als versiegelte Original-Neuware. Originaler HP-Switch."
   ],
   "kompatibilitaet": [
    "HPE-Comware-Betriebssystem",
@@ -246,15 +246,15 @@
    ],
    [
     "Durchsatz",
-    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+    "2.024 Mpps"
    ],
    [
     "Bauform",
-    "19-Zoll-Rackmontage (2 HE)"
+    "19-Zoll-Rackmontage (1 HE)"
    ],
    [
     "Stromversorgung",
-    "4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC)"
+    "2 Hot-Swap-Netzteilschächte (mindestens 1 Netzteil erforderlich, redundant erweiterbar; AC oder DC)"
    ],
    [
     "Kühlung",
@@ -355,7 +355,7 @@
   "kurzbeschreibung": "<p>Der HPE FlexFabric 5945-4-slot (JQ076A) ist ein gemanagter Layer-3-Switch der HPE-FlexFabric-5945-Serie mit 2 Ports. Unter dem HPE-Comware-Betriebssystem übernimmt er die Aggregation und das Routing im Rechenzentrum (Spine-Leaf/ToR).</p><p>Im Formfaktor 19-Zoll-Rackmontage liefert der JQ076A eine Switching-Kapazität von 6,4 Tbit/s und bindet per seine Hochgeschwindigkeits-Ports an das Netz an. Er wird als versiegelte Original-Neuware geliefert.</p>",
   "intro": [
    "Der HPE FlexFabric 5945-4-slot (JQ076A) ist ein gemanagter Layer-3-Switch aus der HPE-FlexFabric-5945-Familie mit 2 Ports (2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)), ausgelegt für den Aggregations- und Spine-Leaf-Einsatz im Rechenzentrum und betrieben unter dem HPE-Comware-Betriebssystem.",
-   "Der JQ076A erreicht eine Switching-Kapazität von 6,4 Tbit/s und leitet nicht-blockierend mit Wire-Speed weiter. Der JQ076A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ076A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
+   "Der JQ076A erreicht eine Switching-Kapazität von 6,4 Tbit/s bei einer Weiterleitungsrate von 2.024 Mpps. Der JQ076A ist ein Modell ohne PoE und konzentriert sich auf reine Datenanbindung. Die Uplink-Anbindung des JQ076A erfolgt über die Hochgeschwindigkeits-Ports, und per IRF (Intelligent Resilient Framework) lassen sich bis zu zehn Einheiten zu einem logischen Switch zusammenfassen.",
    "Im Gehäuse 19-Zoll-Rackmontage arbeitet der JQ076A im Temperaturbereich 0 bis 45 °C; Kühlung und Stromversorgung des JQ076A übernehmen Lüftergekühlt (Hot-Swap-Lüftertrays, Airflow front-to-back oder back-to-front wählbar) sowie 4 Hot-Swap-Netzteilschächte (mindestens 2 Netzteile, redundant; AC oder DC). Unter dem HPE-Comware-Betriebssystem bietet der JQ076A Layer-3-Routing (OSPF, BGP, IS-IS), BGP-EVPN/VXLAN, MPLS, ECMP und IRF-Stacking. Der JQ076A wird von HPE aktuell unter der Serienbezeichnung „HPE Networking Comware 5945“ geführt. Geliefert wird der JQ076A als versiegelte Original-Neuware. Originaler HP-Switch."
   ],
   "kompatibilitaet": [
@@ -417,7 +417,7 @@
    ],
    [
     "Durchsatz",
-    "Wire-Speed-Weiterleitung (nicht-blockierend)"
+    "2.024 Mpps"
    ],
    [
     "Bauform",

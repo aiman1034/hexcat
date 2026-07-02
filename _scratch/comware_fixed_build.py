@@ -104,7 +104,7 @@ FAM = {
    anw="Rechenzentrums-Top-of-Rack (Layer 3, HPE Comware) mit 10/40-GbE-Ports, statischem/RIP-Routing und IRF-Stacking",
    os="dem HPE-Comware-Betriebssystem", dc=True),
  "5710": dict(e3="HPE FlexFabric 5710 Switches", line="FlexFabric", ser="5710", lyr="L3",
-   stk=IRF10, btemp="0 bis 45 °C", strom=PSU_2HS, kueh=KFB, doc=D("a00045647enw"),
+   stk=IRF9, btemp="0 bis 45 °C", strom=PSU_2HS, kueh=KFB, doc=D("a00045647enw"),
    feat="Layer-3-Routing (OSPF, BGP, IS-IS; IPv6), EVPN/VXLAN, DCB und IRF-Stacking",
    anw="Rechenzentrums-Top-of-Rack/-Leaf (Layer 3, HPE Comware) mit 10/40/100-GbE-Ports, EVPN/VXLAN und IRF-Stacking",
    os="dem HPE-Comware-Betriebssystem", dc=True, brand="HPE Networking Comware"),
@@ -182,15 +182,15 @@ SPECS={
  "JH325A":P("5130HI","5130 24G PoE+ 4SFP+ 1-slot HI",28,"24× 10/100/1000 (RJ45, PoE+)","4× 1/10G SFP+",SP_GSFPP,PoEp(740),"168 Gbit/s","154,8 Mpps",760,"6,8"),
  "JH326A":P("5130HI","5130 48G PoE+ 4SFP+ 1-slot HI",52,"48× 10/100/1000 (RJ45, PoE+)","4× 1/10G SFP+",SP_GSFPP,PoEp(1440),"216 Gbit/s","190,5 Mpps",980,"7,8"),
  # ===== 5140 EI (9) =====
- "JL823A":P("5140EI","5140 24G PoE+ 2SFP+ 2XGT EI",28,"24× 10/100/1000 (RJ45, PoE+)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,PoEp(370),"128 Gbit/s","95 Mpps",680,"4,8"),
+ "JL823A":P("5140EI","5140 24G PoE+ 2SFP+ 2XGT EI",28,"24× 10/100/1000 (RJ45, PoE+)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,PoEp(370),"128 Gbit/s","95 Mpps",680,"4,8",btemp="-5 bis 50 °C"),
  "JL824A":P("5140EI","5140 48G PoE+ 4SFP+ EI",52,"48× 10/100/1000 (RJ45, PoE+)","4× 1/10G SFP+",SP_GSFPP,PoEp(370),"176 Gbit/s","131 Mpps",780,"5,8"),
- "JL825A":P("5140EI","5140 48G PoE+ 2SFP+ 2XGT EI",52,"48× 10/100/1000 (RJ45, PoE+)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,PoEp(370),"176 Gbit/s","131 Mpps",860,"5,9"),
+ "JL825A":P("5140EI","5140 48G PoE+ 2SFP+ 2XGT EI",52,"48× 10/100/1000 (RJ45, PoE+)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,PoEp(370),"176 Gbit/s","131 Mpps",860,"5,9",btemp="-5 bis 50 °C"),
  "JL826A":P("5140EI","5140 24G SFP 8Combo 4SFP+ EI",28,"16× 100/1000 (SFP) + 8× Dual-Personality (10/100/1000 RJ45 oder 100/1000 SFP)","4× 1/10G SFP+",SP_SFPCB,"Nein","128 Gbit/s","95 Mpps",560,"4,2",strom="2 Netzteilschächte (mindestens 1 Netzteil, separat bestellbar; AC oder DC)"),
  "JL827A":P("5140EI","5140 24G PoE+ 4SFP+ EI",28,"24× 10/100/1000 (RJ45, PoE+)","4× 1/10G SFP+",SP_GSFPP,PoEp(370),"128 Gbit/s","95 Mpps",620,"4,8"),
  "JL828A":P("5140EI","5140 24G 4SFP+ EI",28,"24× 10/100/1000 (RJ45)","4× 1/10G SFP+",SP_GSFPP,"Nein","128 Gbit/s","95 Mpps",420,"3,5"),
  "JL829A":P("5140EI","5140 48G 4SFP+ EI",52,"48× 10/100/1000 (RJ45)","4× 1/10G SFP+",SP_GSFPP,"Nein","176 Gbit/s","131 Mpps",560,"4,5"),
- "R8J41A":P("5140EI","5140 24G 2SFP+ 2XGT EI",28,"24× 10/100/1000 (RJ45)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,"Nein","128 Gbit/s","95 Mpps",480,"3,6"),
- "R8J42A":P("5140EI","5140 8G 2SFP 2GT Combo EI",10,"8× 10/100/1000 (RJ45)","2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45)",SP_G_SFP,"Nein","24 Gbit/s","18 Mpps",300,"2,2",bauform="CMP"),
+ "R8J41A":P("5140EI","5140 24G 2SFP+ 2XGT EI",28,"24× 10/100/1000 (RJ45)","2× 1/10G SFP+ + 2× 1/2,5/5/10G Multi-Gig (RJ45)",SP_GMG,"Nein","128 Gbit/s","95 Mpps",480,"3,6",btemp="-5 bis 50 °C"),
+ "R8J42A":P("5140EI","5140 8G 2SFP 2GT Combo EI",10,"8× 10/100/1000 (RJ45)","2× Dual-Personality-Combo (1G SFP oder 10/100/1000 RJ45)",SP_G_SFP,"Nein","24 Gbit/s","18 Mpps",300,"2,2",bauform="CMP",btemp="-5 bis 50 °C"),
  # ===== 5140 HI (4) =====
  "R9L61A":P("5140HI","5140 24G 4SFP+ 1-slot HI",28,"24× 10/100/1000 (RJ45)","4× 1/10G SFP+",SP_GSFPP,"Nein","288 Gbit/s","180 Mpps",620,"5,0"),
  "R9L62A":P("5140HI","5140 48G 4SFP+ 1-slot HI",52,"48× 10/100/1000 (RJ45)","4× 1/10G SFP+",SP_GSFPP,"Nein","336 Gbit/s","180 Mpps",780,"6,0"),
@@ -218,7 +218,7 @@ SPECS={
  "JL587A":P("5710","5710-24SFP+-6QSFP+/2QSFP28",30,"24× 1/10G SFP+","6× 40G QSFP+ (100-GbE-QSFP28-fähig)","1/10 GbE (SFP+), 40 GbE (QSFP+), 100 GbE (QSFP28)","Nein","960 Gbit/s","714 Mpps",5200,"7,8"),
  "JL689A":P("5710","5710-24XGT-6QSFP+/2QSFP28",30,"24× 1/10GBASE-T (RJ45)","6× 40G QSFP+ (100-GbE-QSFP28-fähig)","1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+), 100 GbE (QSFP28)","Nein","960 Gbit/s","714 Mpps",5600,"8,0"),
  # ===== 5920 (1) — deep-buffer (3,6 GB) DC ToR, IRF 4 =====
- "JG296A":P("5920","5920AF-24XG",24,"24× 1/10G SFP+ + zwei Modulschächte (optional, separat bestückbar)","","1/10 GbE (SFP+)","Nein","480 Gbit/s","367 Mpps",4200,"8,0"),
+ "JG296A":P("5920","5920AF-24XG",24,"24× 1/10G SFP+","","1/10 GbE (SFP+)","Nein","480 Gbit/s","367 Mpps",4200,"8,0"),
  # ===== 5900 (4) — DC ToR, full L3 + FCoE/TRILL =====
  "JC772A":P("5900","5900AF-48XG-4QSFP+",52,"48× 1/10G SFP+","4× 40G QSFP+","1/10 GbE (SFP+), 40 GbE (QSFP+)","Nein","1,28 Tbit/s","952 Mpps",5200,"8,0"),
  "JG336A":P("5900","5900AF-48XGT-4QSFP+",52,"48× 1/10GBASE-T (RJ45)","4× 40G QSFP+","1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+)","Nein","1,28 Tbit/s","952 Mpps",5400,"8,5"),
@@ -229,7 +229,7 @@ SPECS={
  "JH178A":P("5930","5930-2QSFP+-2-slot",2,"2× 40G QSFP+ (fest) + zwei Modulschächte (optional, separat bestückbar)","","40 GbE (QSFP+, fest); modulabhängig 10/40 GbE","Nein","1,44 Tbit/s","1.071 Mpps",8500,"8,5",slot=True),
  "JH179A":P("5930","5930-4-slot",0,"vier I/O-Modulschächte (I/O-Module 10/40 GbE bzw. konvergent, separat bestückbar)","","modulabhängig (10/40 GbE bzw. FC/FCoE)","Nein","2,56 Tbit/s","1.429 Mpps",11000,"11,0",bauform="2U",pureslot=True,strom=PSU_4HS),
  # ===== 5940 (7) — DC spine/leaf, EVPN L2/L3 =====
- "JH390A":P("5940","5940-48SFP+-6QSFP28",54,"48× 1/10G SFP+","6× 100G QSFP28","1/10 GbE (SFP+), 100 GbE (QSFP28; 40 GbE bzw. 25 GbE-Breakout)","Nein","2,16 Tbit/s","1.607 Mpps",13500,"8,5"),
+ "JH390A":P("5940","5940-48SFP+-6QSFP28",54,"48× 1/10G SFP+","6× 100G QSFP28","1/10 GbE (SFP+), 100 GbE (QSFP28)","Nein","2,16 Tbit/s","1.607 Mpps",13500,"8,5"),
  "JH391A":P("5940","5940-48XGT-6QSFP28",54,"48× 1/10GBASE-T (RJ45)","6× 100G QSFP28","1/10 GbE (10GBASE-T, RJ45), 100 GbE (QSFP28)","Nein","2,16 Tbit/s","1.607 Mpps",13900,"9,0"),
  "JH394A":P("5940","5940-48XGT-6QSFP+",54,"48× 1/10GBASE-T (RJ45)","6× 40G QSFP+","1/10 GbE (10GBASE-T, RJ45), 40 GbE (QSFP+)","Nein","1,44 Tbit/s","1.071 Mpps",12500,"9,0"),
  "JH395A":P("5940","5940-48SFP+-6QSFP+",54,"48× 1/10G SFP+","6× 40G QSFP+","1/10 GbE (SFP+), 40 GbE (QSFP+)","Nein","1,44 Tbit/s","1.071 Mpps",12000,"8,5"),
@@ -238,8 +238,8 @@ SPECS={
  "JH398A":P("5940","5940-4-slot",0,"vier I/O-Modulschächte (I/O-Module 10/40/100 GbE bzw. konvergent, separat bestückbar)","","modulabhängig (10/40/100 GbE bzw. FC/FCoE)","Nein","2,56 Tbit/s","1.904 Mpps",16000,"11,0",bauform="2U",pureslot=True,strom=PSU_4HS),
  # ===== 5945 (4) — DC spine 25/100G, EVPN/MPLS, IRF 10 =====
  "JQ074A":P("5945","5945-48SFP28-8QSFP28",58,"48× 25G SFP28 + 8× 100G QSFP28 + 2× 1G SFP","","25 GbE (SFP28), 100 GbE (QSFP28), 1 GbE (SFP)","Nein","4 Tbit/s","2.024 Mpps",22000,"8,8"),
- "JQ075A":P("5945","5945-2-slot",2,"2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)","","100 GbE (QSFP28, fest); modulabhängig 10/25/40/100 GbE","Nein","3,6 Tbit/s","WS",20000,"11,0",bauform="2U",slot=True,strom=PSU_4HS),
- "JQ076A":P("5945","5945-4-slot",2,"2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)","","1 GbE (SFP, fest); modulabhängig 10/25/40/100 GbE","Nein","6,4 Tbit/s","WS",26000,"11,5",bauform="2U",slot=True,strom=PSU_4HS),
+ "JQ075A":P("5945","5945-2-slot",2,"2× 100G QSFP28 (fest) + zwei Modulschächte (optional, separat bestückbar)","","100 GbE (QSFP28, fest); modulabhängig 10/25/40/100 GbE","Nein","3,6 Tbit/s","2.024 Mpps",20000,"9,0",bauform="1U",slot=True),
+ "JQ076A":P("5945","5945-4-slot",2,"2× 1G SFP + vier I/O-Modulschächte (I/O-Module 10/25/40/100 GbE, separat bestückbar)","","1 GbE (SFP, fest); modulabhängig 10/25/40/100 GbE","Nein","6,4 Tbit/s","2.024 Mpps",26000,"11,5",bauform="2U",slot=True,strom=PSU_4HS),
  "JQ077A":P("5945","5945-32QSFP28",34,"32× 100G QSFP28 + 2× 1G SFP","","100 GbE (QSFP28), 1 GbE (SFP)","Nein","6,4 Tbit/s","2.024 Mpps",24000,"8,8"),
  # ===== 5950 (3) — DC spine 25/100G, EOSL =====
  "JH321A":P("5950","5950-32QSFP28-2SFP+",34,"32× 100G QSFP28 + 2× 1/10G SFP+","","100 GbE (QSFP28), 1/10 GbE (SFP+)","Nein","3,2 Tbit/s","3.169 Mpps",15000,"8,5"),

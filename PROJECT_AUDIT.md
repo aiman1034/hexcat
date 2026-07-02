@@ -4366,6 +4366,25 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   952 Mpps via sibling JC772A — currently Wire-Speed; 5980/5945-slot/5960-hi Durchsatz pending a clean QuickSpec page-image; 5920
   JG296A module slots ZU_VERIF (kept worded/optional). Modular chassis (12900E/7900/12500/11900/7500/10500) + module pools still
   pending the courier of the 3 Akamai-blocked pools (see the Phase-1 manifest). Split into 2 commits by line (FlexNetwork, FlexFabric).
+- **COMWARE FIXED — ADVERSARIAL VERIFICATION PASS (multi-agent Workflow, operator 2026-07-02).** After Phase-2 authoring, ran a
+  read-only adversarial-verify FLEET (Workflow `verify-comware-fixed`, 21 agents: 17 per-family verifiers that assume every encoded
+  value is WRONG until an OEM source re-confirms it, + independent adjudicators that uphold a correction ONLY on an OEM citation).
+  RATIONALE: the deterministic gate proves CONSISTENCY, not TRUTH — a single self-transcription pass + a structural gate ships
+  green with factual errors. The verify caught what the gate cannot. **15 field corrections applied (all OEM-cited):** 5140 EI
+  Betriebstemperatur 45→**50 °C** on the mGig/combo models JL823A/JL825A/R8J41A/R8J42A (non-mGig 4SFP+ stay 45 °C) [a50002579enw];
+  5710 IRF max 10→**9** (attribute + prose, all 4 PIDs) [5710 data sheet a00046960enw/a00045647enw + platform-consistent]; 5920
+  JG296A **removed a fabricated "zwei Modulschächte"** — the 5920AF-24XG is 24× fixed SFP+ only, no I/O slots [c04111528 p10];
+  5945 JQ075A Bauform 2U→**1U** + Stromversorgung 4-slot/min2→**2-slot/min1** (both were the JQ076A 4-slot values wrongly copied)
+  [a00047323enw]; 5945 JQ075A+JQ076A Durchsatz Wire-Speed→**2.024 Mpps** (OEM-grounded, removed 2 placeholders); 5940 JH390A
+  **removed an unsourced "25 GbE-Breakout"** embellishment the OEM datasheet never states [4AA6-6465ENW, cached
+  datasheets/cache/hpe-aruba/5940.pdf]. Error class = "copied a sibling model's cell" + "invented/extrapolated a spec" — exactly
+  what self-grading misses. Rebuilt → all 17 families gate ok=True viol=0; 70 SKUs, 0 masked Meta/Titel/Artikelname dups.
+  **⚠️ TOP FOLLOW-UP (unverifiable-but-suspect, NOT changed):** 5130 HI SwK/Durchsatz (168/216 Gbit/s, 154,8/190,5 Mpps) — grounded
+  verbatim from 2 HPE-content mirrors but the verify flags them as high vs the port-count sanity (24×1G+4×10G ⇒ ~128 Gbit/s) and
+  vs the commonly-published 5130 HI figures; OEM doc c04843026 is RETIRED/unreachable so neither side could adjudicate against a
+  live table. KEPT the 2-mirror value (not port-mathed away) + flagged for the operator to re-source a live QuickSpec. Other
+  Wire-Speed placeholders (5900CP JG838A, 5960 R9Y12A/R9Y13A Durchsatz, 5980 JQ026A SwK/Durchsatz) remain correctly
+  unpublished-in-OEM. **STANDING CHANGE:** an adversarial verify pass is now part of every data batch, not just structure-gating. Pushed.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
