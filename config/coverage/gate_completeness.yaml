@@ -1014,7 +1014,7 @@ HPE_FlexFabric_11900_switches:
   flagged: []
 # HPE Comware FlexFabric module pools (Phase-1 build). 12900E Modules = 53 (8 MPU + 13 Fabric + 31 linecards/
 # carriers + 1 LPU-adapter; legacy 12900 EA/EB/EC/FX/FE merged in). 11900 Modules = 8. FF 12500 + 7900 module
-# pools remain DEFERRED (pending auditor courier).
+# pools are PRINCIPLED-DEFERRED (retired/unreachable QuickSpecs) — see _hpe_comware_modular_deferred_note below.
 HPE_FlexFabric_12900E_modules:
   captured: 53
   enumerated: 53
@@ -1032,9 +1032,10 @@ HPE_FlexNetwork_10500_switches:
   captured: 8
   enumerated: 8
   flagged: []
-# HPE FlexNetwork module pools (Phase-1 build). 7500 Modules = 51 (7 Fabric/MPU-kombiniert + 5 Fabric + 33 LPU +
-# 5 Service [incl. the 3 cross-listed w/ 10500] + 1 PoE-DIMM). 10500 Modules = 42 (5 MPU + 7 Fabric + 30 LPU;
-# the 3 cross-listed service cards live once in the 7500 pool). 10500-TAA module descriptors DEFERRED.
+# HPE FlexNetwork module pools (Phase-1 build). 7500 Modules = 50 (7 Fabric/MPU-kombiniert + 5 Fabric + 33 LPU +
+# 4 Service [incl. the 3 cross-listed w/ 10500] + 1 PoE-DIMM; JD245A removed = OEM-confirmed 9500-series VPN-FW
+# SecBlade). 10500 Modules = 42 (5 MPU + 7 Fabric + 30 LPU; the 3 cross-listed service cards live once in the
+# 7500 pool). 10500-TAA module descriptors are PRINCIPLED-DEFERRED — see _hpe_comware_modular_deferred_note below.
 HPE_FlexNetwork_7500_modules:
   captured: 50
   enumerated: 50
@@ -1043,3 +1044,17 @@ HPE_FlexNetwork_10500_modules:
   captured: 42
   enumerated: 42
   flagged: []
+# ===== PRINCIPLED-DEFERRED (un-buildable at $0 — NOT coverage gaps) =====
+_hpe_comware_modular_deferred_note: 'Three module pools are NOT built because their OEM QuickSpecs are officially
+  RETIRED/obsolete and unreachable from BOTH the build and audit IPs, the products are obsolete/not sold new, and
+  building from reseller listings would risk fabrication (violates MISSION §0 flag-don''t-fabricate):
+  (1) FF 12500 module pool — QuickSpecs RETIRED 2018-06; partial roster already reached for a future courier =
+  JC072A (12500 MPU) + JG792A (12500 40-port SFP+ FD LPU).
+  (2) FF 7900 module pool — QuickSpecs c04293387 RETIRED; the 7900 EA/EB/EC/EG I/O + fabric line cards were not
+  enumerated (chassis are in, =4).
+  (3) FN 10500-TAA module descriptors — TAA-variant descriptors of the 10500 LPUs; source retired/unreachable.
+  Carried-forward smaller HELD items (not built, pending a reachable OEM source/courier): 12500E generation
+  (flagged, not built); FlexFabric 5965; 12900E JG632A (12916-legacy) + JH113A (12910-TAA); JD245A -> belongs to a
+  future HPE 9500 lane (OEM-confirmed 9500 VPN Firewall SecBlade, removed from the 7500 pool); FN 7500 LPUs
+  JD197B/JD198B (grounded, not yet built). UNBLOCK = residential-IP/authenticated courier fetch of the retired
+  QuickSpecs, then build to the same 8-layer-gated pipeline.'

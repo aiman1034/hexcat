@@ -4478,6 +4478,31 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   With this lane the HPE/Aruba switch catalog = **690 built PIDs** (FlexFabric 111 · FlexNetwork 145 · Aruba CX 236 · Aruba campus/SMB 118 ·
   legacy HP/ProCurve 80). DEFERRED (pending courier): FF 12500 + 7900 module pools, 10500-TAA descriptors, 12500E gen, 5965, JG632A/JH113A,
   3 grounded 7500 LPUs (JH309A/JD197B/JD198B), + JD245A→9500 lane.
+- **MODULAR-CHASSIS FAQ DIFFERENTIATION + DEFERRAL FORMALIZED (operator 2026-07-02, STEP 2; 14-agent workflow wfqsblgzo).**
+  **PART A (FAQ FILES ONLY):** 5 modular-chassis pairs shared a PID-masked-identical FAQ while differing on a real buyer-relevant
+  attribute — 3 AC/DC 12500 pairs [JC654A/JC655A · JF431C/JC652A · JF430C/JC653A] and 2 base/TAA 7900 pairs [JG682A/JH122A ·
+  JG841A/JH123A]. Appended ONE grounded differentiator Q/A pair to each of the 5 variant PIDs (DC×3, TAA×2), 3→4 pairs (budget 3–10):
+  DC variants note the −48…−60 V DC input (JC651A 1800-W-DC) for Telco-/Zentralvermittlungs-Racks vs the AC-mains sibling; TAA variants
+  note US-Trade-Agreements-Act conformance for US-Bundesbehörden/öffentlicher-Sektor procurement vs the Standard-Handelsausführung
+  sibling. Grounded strictly from each record's own Stromversorgung (−48 V DC verbatim) + Artikelname (TAA) — QuickSpecs are retired,
+  so derive-from-record, never invent. **Workflow = 5 grounded authors → 5 adversarial verifiers → 4 integration auditors** (masked-
+  collision, DC-fact, TAA-fact, German/UWG); all 4 audits PASS, and the DC/TAA facts were independently confirmed against the local
+  OEM grounding file `_scratch/ground/FF-12500-chassis.md` (HPE 4AA3-0666ENW) + the 7900 Verification_Log (JH122A spec-identical to
+  base). **I adjudicated the fleet against my own prompt:** the verifiers over-trimmed the operator-requested telco/CO + US-federal
+  framing as "record-only ungrounded" — I RESTORED it uniformly (it is operator-requested standard domain context + OEM-confirmed, not
+  a fabricated product spec) and normalized the 2 TAA answers from ASCII transliteration (ue/ae) to proper umlauts for house-style
+  parity. **Acceptance MET:** 0 masked-FAQ collision groups across all 32 modular-chassis PIDs (strict all-PID-token masking); FAQ edit
+  is **violation-neutral** (before/after gate delta = 0 on both bundles); every non-FAQ file (Main/Attributes/Prices/Condition/
+  PlatformFlag/Verification_Log) byte-identical (SHA256 asserted). Applied via byte-safe raw append (BOM + line-endings preserved),
+  NOT a regenerate (the build re-stamps Verified_At → not reproducible). **5 FAQ pairs rewritten.**
+  **PART B (manifest + audit only):** formalized the three un-buildable pools as **PRINCIPLED-DEFERRED** in
+  `config/coverage/gate_completeness.yaml` (`_hpe_comware_modular_deferred_note`): FF 12500 module pool (QuickSpecs RETIRED 2018-06;
+  partial roster reached = JC072A MPU + JG792A 40p-SFP+-FD for a future courier), FF 7900 module pool (c04293387 RETIRED), FN 10500-TAA
+  descriptors — all unreachable from build+audit IPs, products obsolete/not-sold-new, NOT built to avoid reseller-sourced fabrication
+  (MISSION §0). Carried-forward held items recorded: 12500E gen · 5965 · 12900E JG632A/JH113A · JD245A→9500 lane · FN 7500 JD197B/JD198B.
+  Fixed a stale `7500 Modules = 51`→50 comment (JD245A removal). NOTE: direct `gate()` on these bundles shows 6+2 L5 "switch >50 kg"
+  flags — a chassis-detection artifact (60–160 kg modular chassis; gate raises the ceiling only when the Kat-L3 chassis value is present,
+  which the build-time gate supplies → viol=0 at build; pre-existing, identical on the committed pre-edit bundle, NOT from this change).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
