@@ -1012,3 +1012,14 @@ HPE_FlexFabric_11900_switches:
   captured: 1
   enumerated: 1
   flagged: []
+# HPE Comware FlexFabric module pools (Phase-1 build). 12900E Modules = 53 (8 MPU + 13 Fabric + 31 linecards/
+# carriers + 1 LPU-adapter; legacy 12900 EA/EB/EC/FX/FE merged in). 11900 Modules = 8. FF 12500 + 7900 module
+# pools remain DEFERRED (pending auditor courier).
+HPE_FlexFabric_12900E_modules:
+  captured: 53
+  enumerated: 53
+  flagged: []
+HPE_FlexFabric_11900_modules:
+  captured: 8
+  enumerated: 8
+  flagged: []

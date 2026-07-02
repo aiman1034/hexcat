@@ -4422,6 +4422,19 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (=real 12910-TAA) pending courier; the **12500E generation** (JG782A-785A, in the OEM datasheet, absent from the operator roster)
   flagged as an operator-decision addition, not auto-built. UNVERIFIABLE-kept: JG619A capacity/weight (V32-mirror only), 12500
   fan-tray + JF430C spec-column (AC-sibling-inherited from JC653A). DEFERRED module pools (12500, 7900) still pending courier.
+- **FLEXFABRIC MODULE POOLS — LANE A build (operator 2026-07-02; multi-agent workflow).** Authored **61 modules / 2 E3** on the
+  validated Class-B MODULE schema (driver `_scratch/comware_ff_modules_build.py`; unterkategorie="Switch-Modul", gate-pre-remap → E3
+  remap to PLURAL "…Modules"). **0 new Merkmal NAMES — module GENERATION folded into `Kompatible Serie`** ("HPE FlexFabric 12900E,
+  Type H"); new Modultyp VALUES only: MPU/Route-Processor, Fabric-Modul, Linecard, Trägermodul/Sub-slot-Adapter. Pools: **12900E
+  Modules = 53** (8 MPU + 13 Fabric + 31 linecards/carriers + 1 LPU-adapter; legacy 12900 EA/EB/EC/FX/FE MERGED into this E3),
+  **11900 Modules = 8** (1 MPU + 1 Fabric 1,92 Tbps Type D + 6 linecards). Per-LINECARD SwK UNPUBLISHED → OMITTED (never port-math);
+  Fabric modules carry the OEM-named Tbps. Module-schema rules learned at the gate: Port-Geschwindigkeit FORBIDDEN on modules (speed
+  lives in Port-Konfiguration), PoE attr omitted (all non-PoE), Kurzbeschreibung min 40 words, "59XX"→"5900" (the "59X" tripped S.3),
+  price-cluster spread (L5). **Verify fleet (2 agents) = 0 upheld / 0 refuted / 0 unverifiable — both pools CLEAN**; the fleet
+  confirmed the copied-sibling traps were all handled right (Type F ladder 2,5/5,0/10,0 + Type H 7,2/14,4/21,6/43,2 distinct;
+  JG622A/JG623A = 12910 not 12916E; JG625A 16-port not sibling-copied; R9F19A/R9F20A 400G-QSFP-DD/100G-QSFP28 numbering-swap avoided;
+  JH422A HB vs JH425A HF split). Only a German dative grammar nit ("mit die"→"mit den") — fixed. 2 pools gate ok=True viol=0; 61 SKUs,
+  0 different-model dups; gate_completeness += 2. Prices Phase-1 estimate. FF 12500 + 7900 module pools still DEFERRED (pending courier).
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
