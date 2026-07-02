@@ -4503,6 +4503,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   Fixed a stale `7500 Modules = 51`→50 comment (JD245A removal). NOTE: direct `gate()` on these bundles shows 6+2 L5 "switch >50 kg"
   flags — a chassis-detection artifact (60–160 kg modular chassis; gate raises the ceiling only when the Kat-L3 chassis value is present,
   which the build-time gate supplies → viol=0 at build; pre-existing, identical on the committed pre-edit bundle, NOT from this change).
+- **WERTLISTE NORMALIZATION across the HP switch tree (operator 2026-07-02, STEP 2; Attributes CSVs only, no grounding — pure string
+  normalization).** Two consistency fixes, applied to the Attributwert column of the `*_Attributes.csv` AND — REQUIRED for validate_dir=0
+  — its lockstep provenance mirror `Verification_Log_<batch>.csv` (validate.py `_check_verification` fails if every Attributes
+  (sku,name,value) lacks an exact-match log row). All other files frozen + SHA256-asserted byte-identical (Main incl. Meta/Title, Prices,
+  FAQ, Condition, PlatformFlag, `_Prices` provenance log). **FIX 1 — Modultyp value merge:** `Fabric-Module`→`Fabric-Modul` on exactly the
+  2 operator-named PIDs (JL367A in Aruba_CX_8400_Modules, J9093A in HP_ProCurve_zl_Modules) = **4 cells** (2 Attributes + 2 Vlog); the HP
+  Modultyp facet now has one Fabric value (`Fabric-Modul`). `rules.yaml` does NOT enumerate Modultyp values (data-derived facet) → no
+  schema edit needed. ⚠️ FLAG (out of the operator's 2-PID scope, NOT changed): 4 **Cisco** Nexus 7000 FAB modules (N7K-C7010-FAB-1,
+  N7K-C7018-FAB-1, N7K-C7009-FAB-2, N7K-C7010-FAB-2) still carry `Fabric-Module` — the catalog-wide facet keeps the variant until a
+  future Cisco-scope merge. **FIX 2 — German thousands-dot on 4-digit wattages** in PoE + Stromversorgung values only (regex: a 4-digit
+  run before W/ W/-W with no preceding dot; idempotent): 1000→1.000 … 3000→3.000 = **198 cells** (99 Attributes [15 PoE + 84
+  Stromversorgung] + 99 Vlog), **216 figures** dotted. 0 out-of-list matches (every found figure ∈ the operator's set); prices,
+  Switching-Kapazität/Durchsatz, model numbers, and 3-digit watts untouched. **Verification:** 20 affected bundles → validate_dir 0/20;
+  gate before/after delta = **0 new violations** (violation-neutral); 0 residual `Fabric-Module` + 0 bare-4-digit watts in the HP tree;
+  git diff scope = only `*_Attributes.csv` + content `Verification_Log`. 0 new Merkmal NAMES; Datentyp=Wertliste untouched.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
