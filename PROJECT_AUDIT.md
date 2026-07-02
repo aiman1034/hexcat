@@ -4446,6 +4446,38 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   + TAA JG820A PSU slots "bis 6"→**"bis 4"** (10504 = 4 slots/3+1; the 6 was lifted from the 10508/12 and contradicted its own 3+1);
   and the 7503/06/10 Supervisor list wrongly included **JH208A** (the 7502-only MPU) → removed (they take JH209A or JH207A). 7 TAA/
   bundle weights unverifiable → kept + flagged. 2 families gate ok=True viol=0; 15 SKUs, 0 dups; gate_completeness += 2. Prices Phase-1.
+- **FLEXNETWORK MODULE POOLS — LANE B build + TWO-ROUND adversarial verify (operator 2026-07-02; multi-agent workflow).** Authored the
+  two FN module pools (driver `_scratch/comware_fn_modules_build.py`) on the validated Class-B module schema. **0 new Merkmal NAMES**
+  (generation folded into Kompatible Serie; Modultyp VALUES reused). Final: **7500 Modules = 50** (7 Fabric/MPU-Kombi · 5 Fabric · 33
+  linecards · 4 Service · 1 Trägermodul) + **10500 Modules = 42** (MPU/Fabric/linecards). The 3 cross-listed service cards
+  (JG372A/JG639A/JD254A) live ONCE in the 7500 pool. **Two adversarial-verify rounds — grounding for the 7500 legacy Comware-v5
+  linecards proved UNRELIABLE and round-1's own corrections had to be re-corrected in round-2:**
+  • **Round 1** (verify fleet on 92 modules) caught: JF290A fabricated ("8-port 10G SFP+ SC", not "24-port GbE SFP LEB"); JD210A missing
+  PoE-ready; **JH191A/JH196A were SWAPPED** — JH191A = 44-port GbE SFP/4-port 10GbE SFP+ SE (48p), JH196A = distinct 2-port 100GbE CFP EC
+  (my dedup had WRONGLY removed JH196A → RE-ADDED, 10500 → 42); + SD/SC suffix fidelity.
+  • **Round 2** (re-verify fleet, 6 OEM-cited verifiers + independent adjudicators; task wexgpmnpf) = **18 upheld / 6 rejected**, and it
+  caught that round-1 had **over-corrected**: HPE's "**24-port GbE SFP with 8 Combo**" naming means 16 dedicated SFP **+ 8 combo = 24**
+  (combo counted INSIDE the 24) → **JD234A 32→24** (pk "16× SFP + 8× Combo"), **JD230A 34→26** (pk "16× SFP + 8× Combo + 2× XFP"). Also:
+  **JC631A** whole record was copied from sibling JC628A → it is the **8-port 10GbE SFP+ SE** (was mis-encoded 16-port SC); **JC666A**
+  (7503-S Fabric/MPU) + **JH209A** (2.4T MPU) carry genuine INTEGRATED data ports (24 = 20 Gig-T + 4 combo; 10 = 8 SFP+ + 2 QSFP+) that the
+  LC-only emit gate had dropped → **broadened emit to `has_ports`** (FMK-with-ports now emit Portanzahl/Port-Konfiguration while Modultyp
+  stays "Fabric/MPU (kombiniert)"); **JG639A** = Unified Wired-WLAN module, dropped the wrong "(OAA-Service-Slot)" qualifier; **JH191A/
+  JH432A/JH434A** pk descriptor cleanups ("1/10GbE"→"10GbE", "QSFP+/QSFP28"→"QSFP28"). **JD245A REMOVED** (51→50): OEM-confirmed a
+  **9500-series VPN Firewall SecBlade** (H3C 0231A0SE, A9500 chassis), appears in the 7500 QuickSpec only as a config-rule cross-ref —
+  NOT a native 7500 module → dropped + FLAGGED for a future 9500 lane. **I over-rode 2 upheld findings after adjudicating the fleet
+  against itself:** (1) **JC701A/Kompatible Serie** — one adjudicator upheld "7503-S 144Gbps", but two independent adjudicators on its
+  port fields proved a CITATION-SWAP (JC701A = 768Gbps TAA pure MPU, which the project's own encoded 768 Gbit/s SwK corroborates; the
+  "7503-S 20-port" descriptor is JC666A's) → kept JC701A as-is; (2) **JC669A** "PoE-ready"→"PoE-upgradable" declined for pool-consistency
+  (the OEM verbatim "PoE-upgradable" already lives in the artikelname; "PoE-ready" is the house pk token used pool-wide, per the JC666A
+  adjudicator's own consistency argument). **Both pools gate ok=True viol=0**; **0 duplicate PIDs across all 1,723 switch-tree SKUs**;
+  validate_dir = WARN-only (padmod boilerplate, below FAIL threshold). NOTE: the catalog-wide cross-tree `sweep` FAILs on pre-existing
+  cross-brand boilerplate — 4 pure-Cisco clusters (350/350X/550X SMB + Meraki MS, untouched by this lane) + 1 shared HPE-module template
+  sentence ("Die Forwarding-Leistung liegt verteilt auf den Linecards.") already carried by the committed FF module pools (76587f2); not
+  a regression → flagged as a catalog-wide follow-up (differentiate module-pool padding). Lesson reinforced: **the deterministic gate
+  proves CONSISTENCY not TRUTH, and a single verify round is not enough when grounding is weak — round-2 caught round-1's over-corrections.**
+  With this lane the HPE/Aruba switch catalog = **690 built PIDs** (FlexFabric 111 · FlexNetwork 145 · Aruba CX 236 · Aruba campus/SMB 118 ·
+  legacy HP/ProCurve 80). DEFERRED (pending courier): FF 12500 + 7900 module pools, 10500-TAA descriptors, 12500E gen, 5965, JG632A/JH113A,
+  3 grounded 7500 LPUs (JH309A/JD197B/JD198B), + JD245A→9500 lane.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

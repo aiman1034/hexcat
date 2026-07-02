@@ -1032,3 +1032,14 @@ HPE_FlexNetwork_10500_switches:
   captured: 8
   enumerated: 8
   flagged: []
+# HPE FlexNetwork module pools (Phase-1 build). 7500 Modules = 51 (7 Fabric/MPU-kombiniert + 5 Fabric + 33 LPU +
+# 5 Service [incl. the 3 cross-listed w/ 10500] + 1 PoE-DIMM). 10500 Modules = 42 (5 MPU + 7 Fabric + 30 LPU;
+# the 3 cross-listed service cards live once in the 7500 pool). 10500-TAA module descriptors DEFERRED.
+HPE_FlexNetwork_7500_modules:
+  captured: 50
+  enumerated: 50
+  flagged: []
+HPE_FlexNetwork_10500_modules:
+  captured: 42
+  enumerated: 42
+  flagged: []
