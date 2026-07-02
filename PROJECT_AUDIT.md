@@ -4385,6 +4385,14 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   live table. KEPT the 2-mirror value (not port-mathed away) + flagged for the operator to re-source a live QuickSpec. Other
   Wire-Speed placeholders (5900CP JG838A, 5960 R9Y12A/R9Y13A Durchsatz, 5980 JQ026A SwK/Durchsatz) remain correctly
   unpublished-in-OEM. **STANDING CHANGE:** an adversarial verify pass is now part of every data batch, not just structure-gating. Pushed.
+- **COMWARE FIXED — CROSS-MODEL FAQ COLLISION FIX (operator 2026-07-02, FAQ FILES ONLY).** An adversarial FAQ dedup over the 70
+  found **10 groups** where DIFFERENT models shared a masked FAQ block (the FAQ file carries only the 3 config-driven pairs —
+  ports/PoE/stacking — so two different-family models with the same port/PoE/stacking config collided, e.g. 5140 EI JL824A ≡
+  5130 EI JG937A, both 48G-PoE+-4SFP+). FIX: added one grounded **technical-differentiator FAQ pair** ("Was zeichnet den <PID>
+  technisch aus?") citing per-model SwK + Durchsatz + the family routing/fabric feature + PSU + cooling — all already-grounded,
+  0 fabrication. Result: **0 cross-model FAQ collisions AND 0 exact masked-FAQ dup groups** across the 70; FAQ now 4 pairs/PID.
+  HARD FREEZE honored: Main + Attributes + Meta + Titel + roster + prices BYTE-IDENTICAL (verified via git diff --stat = 0). All
+  17 families still gate ok=True viol=0. Committed as its own FAQ-only commit.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

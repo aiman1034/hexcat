@@ -328,6 +328,13 @@ def author(pid):
         faq.append([f"Lässt sich der {pid} redundant koppeln?", f"Ja. Über DRNI (Distributed Resilient Network Interconnect) bilden zwei {pid} einen aktiv-aktiven Multi-Chassis-Verbund für Hochverfügbarkeit."])
     else:
         faq.append([f"Lässt sich der {pid} stapeln (Stacking)?", f"Ja. Der {pid} unterstützt {stk} und lässt sich so zu einem logischen Switch zusammenfassen."])
+    # differentiator pair — grounded per-model distinguishers (SwK/Durchsatz/feature/PSU/cooling) so no two
+    # DIFFERENT models share a masked FAQ block (kills the cross-model FAQ collisions; 0 fabrication).
+    swkp=("eine nicht-blockierende Wire-Speed-Weiterleitung" if ws_swk else f"eine Switching-Kapazität von {b['swk']}")
+    mppp=("" if (ws_mpps or ws_swk) else f" und eine Weiterleitungsrate von {b['mpps']}")
+    faq.append([f"Was zeichnet den {pid} technisch aus?",
+                f"Der {pid} bietet {swkp}{mppp}. Unter {f['os']} beherrscht er {f['feat']}. "
+                f"Für Stromversorgung und Kühlung des {pid} sorgen {strom} sowie {kueh}."])
     # attributes (16)
     portanz=str(n)
     attrs=[["Switch-Typ","Managed"],["Layer",lyr],["Portanzahl",portanz],["Port-Konfiguration",portkonfig],
