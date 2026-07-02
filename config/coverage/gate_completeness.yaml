@@ -994,3 +994,21 @@ Aruba_Instant_On_1430_switches:
   captured: 7
   enumerated: 7
   flagged: []
+# HPE Comware modular CHASSIS (Phase-1 build). 12900E=6 built (JG632A 12916-legacy + JH113A 12910-TAA pending
+# courier); 7900=4; 12500=6 (12500E gen flagged, not built); 11900=1.
+HPE_FlexFabric_12900E_switches:
+  captured: 6
+  enumerated: 6
+  flagged: []
+HPE_FlexFabric_7900_switches:
+  captured: 4
+  enumerated: 4
+  flagged: []
+HPE_FlexFabric_12500_switches:
+  captured: 6
+  enumerated: 6
+  flagged: []
+HPE_FlexFabric_11900_switches:
+  captured: 1
+  enumerated: 1
+  flagged: []

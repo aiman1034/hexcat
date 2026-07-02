@@ -4407,6 +4407,21 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   (the 3 A/B-rev FAQ pairs share by design = same model). rules.yaml += 4 Instant On E3 + gate_completeness += 4 records. Prices =
   Phase-1 estimate (flagged). Committed as the Instant On line. (Note: rules.yaml also pre-registers the 10 modular Comware E3 —
   inert allowlist entries until those bundles build next.)
+- **FLEXFABRIC MODULAR CHASSIS — LANE A build (operator 2026-07-02; multi-agent workflow).** Authored **17 chassis / 4 E3** on the
+  validated Modular-Chassis schema (driver `_scratch/comware_ff_modular_build.py`; gate-pre-remap on unterkategorie="Modularer Switch
+  (Chassis)" → 200 kg chassis ceiling → remap E3 to family). **0 new Merkmal NAMES — both folds held:** fabric+MPU slot counts folded
+  into `Steckplätze` as a role-string ("N I/O + M Fabric + K MPU"; 7900="Fabric/MPU-Kombi"), module generation into prose/Kompatible-
+  Serie. Families: 12900E (6 = 5 E-chassis + legacy 12910 JG619A), 7900 (4: 7904/7910 + TAA), 12500 (6: 12504/08/18 × AC/DC), 11900
+  (1: 11908-V). Per-chassis SwK/slots/weight VERBATIM (never port-summed); temp→prose. **Verify fleet (6 agents) caught 8 upheld + 2
+  minor, all OEM-cited:** STALE-DOC SwK on the two mid-chassis — JH262A(12904E) 28,8→**76,8 Tbit/s/16 Bpps**, JH255A(12908E) 57,6→
+  **152 Tbit/s/32 Bpps** (grounding used the retired V32 base-fabric figures; current c04111378 quotes the H2-fabric system capacity,
+  consistent with the 12916E=184 already correct); COPIED-SIBLING on the 7910 pair (JG841A+TAA JH123A) — fan trays 4→**2** (lifted from
+  the "4 PSU slots" row) in Kühlung+Redundanz, and Supervisor list missing the **JH001A** 2.4Tbps Fabric/MPU; +2 minor weights (70→
+  71,2 kg). Rebuilt: 4 families gate ok=True viol=0; 17 SKUs, 0 internal + 0 cross-tree dups. gate_completeness += 4 records. Prices
+  Phase-1 estimate. **HELD (per operator/pending courier):** JG632A (=12916 legacy AC, NOT "12910-TAA" — roster error caught) + JH113A
+  (=real 12910-TAA) pending courier; the **12500E generation** (JG782A-785A, in the OEM datasheet, absent from the operator roster)
+  flagged as an operator-decision addition, not auto-built. UNVERIFIABLE-kept: JG619A capacity/weight (V32-mirror only), 12500
+  fan-tray + JF430C spec-column (AC-sibling-inherited from JC653A). DEFERRED module pools (12500, 7900) still pending courier.
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context
