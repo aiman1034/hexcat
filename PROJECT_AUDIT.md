@@ -4393,6 +4393,20 @@ Engine = `lib/price_run.resolve` (T1-MARKET comp > FAMILY-pool > T2-LIST/GPL > M
   0 fabrication. Result: **0 cross-model FAQ collisions AND 0 exact masked-FAQ dup groups** across the 70; FAQ now 4 pairs/PID.
   HARD FREEZE honored: Main + Attributes + Meta + Titel + roster + prices BYTE-IDENTICAL (verified via git diff --stat = 0). All
   17 families still gate ok=True viol=0. Committed as its own FAQ-only commit.
+- **SMB ARUBA INSTANT ON — PHASE-1 BUILD (operator 2026-07-02; multi-agent workflow).** Authored **28 SKUs / 4 E3** on the validated
+  15-Merkmal FIXED schema (driver `_scratch/aruba_instanton_build.py`, BRAND="Aruba", Hersteller=HP, slug hpe-aruba, Instant On
+  cloud/PnP register). Grounding fleet (OEM data sheets, `_scratch/ground/IO-*.md`, 0 pending courier) → build → adversarial verify
+  fleet (`verify-instanton`, 7 agents) → adjudication → applied only upheld. Families: **1960** (5, Managed L2+, True-Stacking ×4),
+  **1930** (7 base + 3 same-spec B-revs JL683B/684B/686B, Managed L2+, no stacking), **1830** (6, Smart-Managed L2), **1430** (7,
+  **UNMANAGED** — Switch-Typ=Unmanaged, Layer=L2, Stacking Merkmal SUPPRESSED per operator ruling; new Switch-Typ VALUE "Unmanaged").
+  Per-PID SwK/Durchsatz VERBATIM from OEM, never port-math. S.3 fix: PoE-port counts inside a parenthetical rewritten to word form
+  ("davon 20 Class-4-…") so the inner "N×" isn't summed. **VERIFY FLEET caught 22 real errors (all OEM-cited, gate was already
+  viol=0):** 21 Artikelgewicht values (my 1830/1930/1960 estimates were ~0.2–1 kg off — fleet pulled exact datasheet kg; 1430
+  weights were grounded → 0 corrections) + **1 copied-sibling cooling error** (JL814A marked fanless, lifted from JL812A; the 48-port
+  1830 is fan-cooled per a00119988enw). Rebuilt: 4 families gate ok=True viol=0; 0 different-model Meta/Titel/Artikelname/FAQ dups
+  (the 3 A/B-rev FAQ pairs share by design = same model). rules.yaml += 4 Instant On E3 + gate_completeness += 4 records. Prices =
+  Phase-1 estimate (flagged). Committed as the Instant On line. (Note: rules.yaml also pre-registers the 10 modular Comware E3 —
+  inert allowlist entries until those bundles build next.)
 - **STANDING — NEW-CHAT HANDOFF DIRECTIVE (reaffirmed):** Claude Chat WILL hit its context limit and be replaced by a fresh chat
   that knows nothing. Whenever the operator says "we are starting a new Claude Chat" (or equivalent), IMMEDIATELY produce an
   EXTREMELY deep, fully self-contained, copy-paste-ready handoff prompt that cold-starts the next chat with zero prior context

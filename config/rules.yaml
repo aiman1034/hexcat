@@ -224,6 +224,25 @@ kategorie_ebene_3_switch_allowed:
   - "HPE FlexNetwork 5140 HI Switches"
   - "HPE FlexNetwork 5510 HI Switches"
   - "HPE FlexNetwork 5520 HI Switches"
+  # --- HPE Comware MODULAR chassis + module pools (STEP-2 Phase-1 build). Chassis = Modular-Chassis schema;
+  # Modules = Class-B module schema (PLURAL E3). Fabric-slot count folded into Steckplätze; module generation
+  # folded into Kompatible Serie (operator rulings 2026-07-02). 7900/12500 MODULE pools + 10500-TAA descriptors
+  # held pending auditor courier (Akamai-blocked) — their chassis E3 are added; their Modules E3 added on build.
+  - "HPE FlexFabric 12900E Switches"
+  - "HPE FlexFabric 7900 Switches"
+  - "HPE FlexFabric 12500 Switches"
+  - "HPE FlexFabric 11900 Switches"
+  - "HPE FlexFabric 12900E Modules"
+  - "HPE FlexFabric 11900 Modules"
+  - "HPE FlexNetwork 7500 Switches"
+  - "HPE FlexNetwork 10500 Switches"
+  - "HPE FlexNetwork 7500 Modules"
+  - "HPE FlexNetwork 10500 Modules"
+  # --- Aruba Instant On SMB (managed 1830/1930/1960 + unmanaged 1430) — validated 15-Merkmal FIXED schema
+  - "Aruba Instant On 1960 Switches"
+  - "Aruba Instant On 1930 Switches"
+  - "Aruba Instant On 1830 Switches"
+  - "Aruba Instant On 1430 Switches"
   # --- original switch-CLASS tokens (pre-rewrite; drive Attributgruppe/gate/chassis) ---
   - "Industrie-Switch"
   - "Data-Center-Switch"
